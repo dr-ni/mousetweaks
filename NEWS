@@ -1,0 +1,144 @@
+Version 0.2.8
+-------------
+
+Fixes/Improvements:
+	* Fix cursor restoring
+	* Several changes for packaging
+
+Translations:
+	* Gerd Kohlberger [de]
+	* Francesco Fumanti [it] [fr]
+
+2007-11-22 Gerd Kohlberger <lowfi@chello.at>
+
+
+Version 0.2.6
+-------------
+
+New features:
+	* Full documentation (Francesco Fumanti)
+	* New preferences dialog with HIG and Usability improvements 
+	* Man page for mousetweaks daemon
+
+Fixes/Improvements:
+	* Improved Autostart handling
+	* Build system improvements
+	* Fix possible leak
+	* Fix gesture dwelling in context menus
+	* Add Xfixes and remove libdaemon dependency
+	* Various code clean-ups
+
+Translations:
+	* Gerd Kohlberger [de]
+	* Francesco Fumanti [it] [fr]
+
+2007-11-14 Gerd Kohlberger <lowfi@chello.at>
+
+
+Version 0.2.4
+-------------
+
+New features:
+	* Split main application into daemon and configuration gui
+	* Can now be use in GDM
+
+Fixes/Improvements:
+	* Remove tray icon
+	* Start/Stop button for the daemon
+	* Improved command-line options
+	* Don't use the full argument vector as session restart command
+	
+Translations:
+	* Gerd Kohlberger [de]
+	* Francesco Fumanti [it] [fr]
+
+2007-10-12 Gerd Kohlberger <lowfi@chello.at>
+
+
+Version 0.2.2
+-------------
+
+New features:
+	* Add command-line options
+	
+Fixes/Improvements:
+	* Fix bug introduced in 0.2.0 which made dwelling with gesture mode unuseable
+
+Translations:
+	* Gerd Kohlberger [de]
+	* Francesco Fumanti [it] [fr]
+
+2007-08-22 Gerd Kohlberger <lowfi@chello.at>
+
+
+Version 0.2.0
+-------------
+
+New features:
+	* Internationlization support
+
+Fixes/Improvements:
+	* Moved about dialogs to glade
+	* Removed help buttons again, until we have documentation
+	* Use proper distance calculation
+	* Add missing window icons
+	
+Translations:
+	* Gerd Kohlberger [de]
+
+2007-08-13 Gerd Kohlberger <lowfi@chello.at>
+
+
+Version 0.1.6
+-------------
+
+New features:
+	* GNOME help support (no actual documentation yet)
+
+Fixes/Improvements:
+	* Removed dwell-click applet note
+	* added drag cursor for dwelling
+	* Dialogs always showed yes/no buttons
+	* Removed 'restore single click' option
+	* Split source files
+	* Build sytem improvements
+
+2007-07-18 Gerd Kohlberger <lowfi@chello.at>
+
+
+Version 0.1.4
+-------------
+
+Fixes/Improvements:
+	* Use gnome mouse icon and honor current theme
+	* Add 'Disable' option to dwell gesture menus
+	* Don't allow impossible gesture settings
+	* Improve warning dialogs
+	* Bug in the ctw context menu
+	* Under certain conditions disabling and reenabling dwell-click failed
+
+2007-07-13 Gerd Kohlberger <lowfi@chello.at>
+
+
+Version 0.1.2
+-------------
+
+New features:
+	* GNOME session support
+	* Preferences dialog for click-type applet
+	
+Fixes/Improvements:
+	* Better defaults
+	* Warning dialogs
+	* Better dbus implementation
+	* Build system improvements
+
+2007-06-29 Gerd Kohlberger <lowfi@chello.at>
+
+
+Version 0.1.0
+-------------
+
+	* Initial Release
+
+2007-06-23 Gerd Kohlberger <lowfi@chello.at>

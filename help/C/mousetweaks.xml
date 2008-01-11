@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "0.2.6">
+<!ENTITY manrevision "0.2">
+<!ENTITY date "October 2007">
+<!ENTITY app "<application>Mousetweaks</application>">
+]>
+<article id="index" lang="en">
+  <articleinfo>
+    <title><application>Mousetweaks</application> Manual</title>
+
+    <copyright>
+      <year>2007</year>
+
+      <holder>Francesco Fumanti</holder>
+    </copyright>
+
+   &legal;
+    <authorgroup>
+      <author>
+        <firstname>Francesco</firstname>
+
+        <surname>Fumanti</surname>
+
+        <affiliation>
+          <address><email>francesco.fumanti@gmx.net</email> </address>
+        </affiliation>
+      </author>
+    </authorgroup>
+
+    <revhistory>
+      <revision>
+        <revnumber>version 0.2</revnumber>
+
+        <date>November 2007</date>
+
+        <revdescription>
+          <para role="author">The contents of the manual have been adapted to
+          the default theme of GNOME, called Clearlooks. This version is
+          included with the release 0.2.6 of Mousetweaks. Francesco Fumanti
+          <email>francesco.fumanti@gmx.net</email></para>
+        </revdescription>
+      </revision>
+
+      <revision>
+        <revnumber>version 0.1</revnumber>
+
+        <date>October 2007</date>
+
+        <revdescription>
+          <para role="author">First draft of the manual. Francesco Fumanti
+          <email>francesco.fumanti@gmx.net</email></para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>This manual describes version 0.2.6 of
+    Mousetweaks.</releaseinfo>
+
+    <contrib>To report a bug or make a suggestion regarding the Mousetweaks
+    application or this manual, please go to Launchpad.</contrib>
+
+    <legalnotice>
+      <title>Feedback</title>
+
+      <para>To report a bug or make a suggestion regarding the
+      <application>Mousetweaks</application> application or this manual,
+      please go to <ulink type="http"
+      url="https://bugs.launchpad.net/mousetweaks/">Launchpad</ulink>.</para>
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index">
+    <primary>Mousetweaks</primary>
+  </indexterm>
+
+  <indexterm zone="index">
+    <primary>mousetweaks</primary>
+  </indexterm>
+
+  <sect1 id="mt-introduction">
+    <title>Introduction</title>
+
+    <para>The <application>Mousetweaks</application> application provides
+    mouse accessibility enhancements for the GNOME Desktop. Indeed, it offers
+    the following new pointer functions to the user:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>The possibility to perform a right click by holding the
+        <mousebutton>left mousebutton</mousebutton> pressed while keeping the
+        pointer motionless.</para>
+      </listitem>
+
+      <listitem>
+        <para>The possibility to perform the various clicks without pressing
+        any <hardware>hardware button</hardware>.</para>
+      </listitem>
+
+      <listitem>
+        <para>The possibility to lock the pointer in a determined area of the
+        panel until the user releases it by a predefined keystroke or mouse
+        button.</para>
+      </listitem>
+    </itemizedlist>
+  </sect1>
+
+  <sect1 id="mt-how-to-start">
+    <title>How to start the features</title>
+
+    <para>The right click feature and the buttonless click feature of
+    <application><application>Mousetweaks</application></application> depend
+    on the mousetweaks process; however the pointer capture applet depends on
+    the gnome panel. Consequently, they have to be started differently:</para>
+
+    <sect2 id="mt-start-right-click-feature">
+      <title>Starting the right click feature</title>
+
+      <para>You can start the right click feature of
+      <application>Mousetweaks</application> in two ways:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>from the graphical user interface</para>
+        </listitem>
+
+        <listitem>
+          <para>from the command line</para>
+        </listitem>
+      </itemizedlist>
+
+      <sect3 id="mt-start-right-click-by-menu">
+        <title>Start from the graphical user interface</title>
+
+        <para>Choose the menu <menuchoice>
+            <guimenu>Applications</guimenu>
+
+            <guisubmenu>Universal Access</guisubmenu>
+
+            <guimenuitem>Mousetweaks</guimenuitem>
+          </menuchoice> to open the control panel of Mousetweaks. You will get
+        the following window:</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mt-control-panel-delay-click-enabled.png"
+                       format="PNG" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture of the panel of
+            <application>Mousetweaks</application></para>
+          </textobject>
+        </mediaobject>
+
+        <para>To start the right click feature, put a checkmark into the
+        checkbox that says:</para>
+
+        <para><quote>Trigger secondary button when I hold down the primary
+        button</quote></para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mt-delay-click-checkbox.png" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture of the checkbox to start the right click
+            feature</para>
+          </textobject>
+        </mediaobject>
+      </sect3>
+
+      <sect3 id="mt-start-right-click-by-cli">
+        <title>Start from the command line</title>
+
+        <para>To start the right click feature from the command line, open the
+        <application>Terminal</application> and type the following:</para>
+
+        <para><command>mousetweaks <parameter>--enable
+        delay</parameter></command></para>
+      </sect3>
+    </sect2>
+
+    <sect2 id="mt-start-buttonless-click-feature">
+      <title>Starting the buttonless click feature</title>
+
+      <para>You can start the buttonless click feature of
+      <application>Mousetweaks</application> in two ways:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>from the graphical user interface</para>
+        </listitem>
+
+        <listitem>
+          <para>from the command line</para>
+        </listitem>
+      </itemizedlist>
+
+      <sect3 id="mt-start-buttonless-click-by-menu">
+        <title>Start from the graphical user interface</title>
+
+        <para>Choose the menu <menuchoice>
+            <guimenu>Applications</guimenu>
+
+            <guisubmenu>Universal Access</guisubmenu>
+
+            <guimenuitem>Mousetweaks</guimenuitem>
+          </menuchoice> to open the control panel of Mousetweaks. You will get
+        the following window:</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mt-control-panel-dwell-click-enabled.png"
+                       format="PNG" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture of the control panel of
+            <application>Mousetweaks</application></para>
+          </textobject>
+        </mediaobject>
+
+        <para>To start the buttonless click feature, put a checkmark into the
+        checkbox that says:</para>
+
+        <para><quote>Perform different clicks without using any
+        button</quote></para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mt-dwell-click-checkbox.png" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture of the checkbox to start the buttonless click
+            feature</para>
+          </textobject>
+        </mediaobject>
+      </sect3>
+
+      <sect3 id="mt-start-buttonless-click-by-cli">
+        <title>Start from the command line</title>
+
+        <para>To start the buttonless click feature and show the click type
+        window from the command line, open the
+        <application>Terminal</application> and type the following:</para>
+
+        <para><command>mousetweaks <parameter>--enable dwell
+        --show-ctw</parameter></command></para>
+      </sect3>
+    </sect2>
+
+    <sect2 id="mt-start-pointer-capture-feature">
+      <title>Starting the pointer capture feature</title>
+
+      <para>As the pointer capture applet comes in the from of a panel applet,
+      its starting method has to follow the rules dictated by the GNOME panel.
+      Thus, to start the pointer capture feature, you only have to install it
+      on the panel and it will automatically run, regardless of the state of
+      the other features of Mousetweaks.</para>
+
+      <para>In order to add it to the panel, proceed as you do with any panel
+      applet: right click on the panel to open its contextual menu, choose
+      <guimenuitem>Add to Panel</guimenuitem>, and you will get the window
+      showing all the applets that can be installed on the GNOME
+      panel.<mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mt-add-applet-to-panel-window.png" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture showing the Pointer Capture applet in the Add to
+            Panel window</para>
+          </textobject>
+        </mediaobject></para>
+
+      <para>By double clicking on the Pointer Capture item in the Add to Panel
+      window, the pointer capture applet will be added to the panel, and it
+      will be working until removed.</para>
+    </sect2>
+  </sect1>
+
+  <sect1 id="mt-how-to-stop-features">
+    <title>Quitting the features</title>
+
+    <para>Similar to the starting of the features, their quitting also depends
+    on the feature that you want to quit.</para>
+
+    <sect2 id="mt-stop-right-click-feature">
+      <title>Quitting the right click feature</title>
+
+      <para>It is possible to quit the right click feature of
+      <application>Mousetweaks</application> in two ways:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>By removing the mark from the corresponding checkbox in the
+          control panel of <application>Mousetweaks</application>.</para>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/mt-delay-click-checkbox.png" />
+            </imageobject>
+
+            <textobject>
+              <para>Picture of the checkbox to start the right click
+              feature</para>
+            </textobject>
+          </mediaobject>
+
+          <para>Please refer to <link
+          linkend="mt-start-right-click-by-menu">Starting the right click
+          feature from menu</link> to locate the checkbox.</para>
+        </listitem>
+
+        <listitem>
+          <para>By typing the following command at the command line:</para>
+
+          <para><command>mousetweaks</command>
+          <parameter>--shutdown</parameter></para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="mt-stop-buttonless-click-feature">
+      <title>Quitting the buttonless click feature</title>
+
+      <para>It is possible to quit the buttonless click feature of
+      <application>Mousetweaks</application> in two ways:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>By removing the mark from the corresponding checkbox in the
+          control panel of <application>Mousetweaks</application>.</para>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/mt-dwell-click-checkbox.png" />
+            </imageobject>
+
+            <textobject>
+              <para>Picture of the checkbox to start the buttonless click
+              feature</para>
+            </textobject>
+          </mediaobject>
+
+          <para>Please refer to <link
+          linkend="mt-start-buttonless-click-by-menu">Starting the buttonless
+          click feature from menu</link> to locate the checkbox.</para>
+        </listitem>
+
+        <listitem>
+          <para>By typing the following command at the command line:</para>
+
+          <para><command>mousetweaks</command>
+          <parameter>--shutdown</parameter></para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <sect2 id="mt-stop-pointer-capture-feature">
+      <title>Quitting the pointer capture feature</title>
+
+      <para>As the pointer capture feature comes in the form of a panel
+      applet, you have to quit it the same way that you do it with other
+      applets: perform a right click on the applet and choose
+      <guimenuitem>Remove From Panel</guimenuitem> from its contextual
+      menu.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="figures/mt-pointer-capture-context-menu.png" />
+        </imageobject>
+
+        <textobject>
+          <para>Picture showing the pointer capture area (green) with its
+          contextual menu</para>
+        </textobject>
+      </mediaobject>
+    </sect2>
+  </sect1>
+
+  <sect1 id="mt-features-description">
+    <title>Description of the features</title>
+
+    <para>The <application>Mousetweaks</application> application offers three
+    new pointer features to the user. These are: <itemizedlist>
+        <listitem>
+          <para><xref linkend="mt-delay-click" /></para>
+        </listitem>
+
+        <listitem>
+          <para><xref linkend="mt-dwell-click" /></para>
+        </listitem>
+
+        <listitem>
+          <para><xref linkend="mt-pointer-capture" /></para>
+        </listitem>
+      </itemizedlist><note>
+        <para>The manual assumes a right-handed user: consequently, left mouse
+        button indicates the primary mouse button and right mouse button
+        indicates the secondary mouse button. Of course, for a left-handed
+        user that has enabled the corresponding option in the Mouse control
+        panel, the terms left and right have to be exchanged.</para>
+      </note></para>
+
+    <sect2 id="mt-delay-click">
+      <title>Right clicking with the left button</title>
+
+      <para>When the user activates this feature, he will be able to perform
+      right clicks by using the <mousebutton>left mouse button</mousebutton>.
+      This is especially useful for users that have only one
+      <mousebutton>mouse button</mousebutton> at their disposal.</para>
+
+      <sect3 id="mt-delay-howto">
+        <title>How does it work?</title>
+
+        <para>When this feature is enabled, mousetweaks performs a right click
+        at the location of the pointer, if the user keeps the
+        <mousebutton>left mouse button</mousebutton> pressed without moving
+        the pointer for a determined time.</para>
+
+        <para>How long the user has to hold the <mousebutton>left mouse
+        button</mousebutton> pressed is determined by the slider in the
+        control panel of mousetweaks with the title:</para>
+
+        <para><quote>Time to hold primary button</quote></para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mt-delay-click-pause-time-slider.png" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture showing the slider to set how long to hold the left
+            button for the right click to be triggered</para>
+          </textobject>
+        </mediaobject>
+      </sect3>
+
+      <sect3 id="mt-delay-characteristics">
+        <title>Differences to the normal right button click</title>
+
+        <para>As <application>Mousetweaks</application> is not able to discard
+        the <mousebutton>left mouse button down</mousebutton> gesture from the
+        <mousebutton>left button press</mousebutton> of the user, it issues a
+        left click before issuing the right click. In other words, each right
+        click performed by this feature of mousetweaks is immediately preceded
+        by a left click, and this makes it behave a bit differently to the
+        normal right click performed by the <mousebutton>right mouse
+        button</mousebutton>. For example:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>It is not possible to perform a right click on multiple
+            items because the left click issued before the right click
+            deselects the items.</para>
+          </listitem>
+
+          <listitem>
+            <para>When this type of right click is performed on the trash icon
+            on the panel, not only does the contextual menu appear, but the
+            trash folder does also open. (The former is caused by the right
+            click, the latter by the left click preceding the right
+            click.)</para>
+          </listitem>
+        </itemizedlist>
+
+        <note>
+          <para>It is not possible to provide a list of all diverging
+          behaviours, because it depends on the reaction of the application
+          receiving the right click preceded by a left click.</para>
+        </note>
+
+        <para>Some users may also be surprised by the behaviour caused by the
+        fact, that it is not possible to perform a long motionless left click
+        and hold, without also doing a right click. For example:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>When doing a motionless left click and hold on the arrow of
+            a scrollbar, the scrollbar jumps to the bottom after some time.
+            This is in fact the normal behaviour of a right click on an arrow
+            of a scrollbar.</para>
+
+            <tip>
+              <para>To work around this behaviour, simply move the pointer
+              immediately after pressing the <mousebutton>mouse
+              button</mousebutton>. This way
+              <application>Mousetweaks</application> does not issue the right
+              click.</para>
+            </tip>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+    </sect2>
+
+    <sect2 id="mt-dwell-click">
+      <title>Clicking without the use of any hardware button</title>
+
+      <para>By activating this feature, users will be able to perform left
+      clicks, double clicks, drag clicks and right clicks without having to
+      press any <mousebutton>mouse button</mousebutton>.</para>
+
+      <note>
+        <para>When the buttonless click is active, the <mousebutton>mouse
+        buttons</mousebutton> remain functional and it is still possible to
+        click with the <mousebutton>mouse buttons</mousebutton>.</para>
+      </note>
+
+      <sect3 id="mt-dwell-trigger-choice">
+        <title>Click trigger and click type choice</title>
+
+        <para>The user can choose between two methods to trigger the clicks:
+        by time or by gesture. There are two radio buttons for this purpose in
+        the control panel of Mousetweaks.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mt-dwell-click-trigger-choice.png" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture showing the radio buttons to select trigger
+            method</para>
+          </textobject>
+        </mediaobject>
+
+        <para>To select the trigger method, the user only needs to click on
+        the radio button that corresponds to his desired trigger
+        method.</para>
+
+        <sect4>
+          <title>Trigger by time</title>
+
+          <para>In the trigger by time method, the Mousetweaks application
+          automatically performs the click after the pointer has been
+          motionless for a determined time.</para>
+
+          <remark>See <link linkend="mt-dwell-time-setting">Time settings for
+          buttonless clicks</link> for more information about how to set the
+          time lapse that the pointer has to be motionless before performing
+          the click.</remark>
+
+          <para>The type of click performed depends on the selection in the
+          click type window or click type applet. Have a look at the following
+          picture to see the click type window and the click type
+          applet:</para>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/mt-dwell-click-click-type-window.png" />
+            </imageobject>
+
+            <textobject>
+              <para>Picture showing the click type window</para>
+            </textobject>
+          </mediaobject>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/mt-dwell-click-click-type-applet.png" />
+            </imageobject>
+
+            <textobject>
+              <para>Picture showing the click type applet at the right of the
+              menus</para>
+            </textobject>
+          </mediaobject>
+
+          <para>To display the click type window on the screen, the user has
+          to put a checkmark in the corresponding checkbox <application>in the
+          control panel of Mousetweaks</application>.</para>
+
+          <para>To display the click type applet on the GNOME panel, please
+          follow the procedure you have to use in order to add any applet to
+          the GNOME panel. If you do not know how to add an applet to the
+          panel, please have a look at <link
+          linkend="mt-start-pointer-capture-feature">Starting the pointer
+          capture feature</link>.</para>
+
+          <para>The click type window and the click type applet can be used
+          simultaneously or each on its own.</para>
+
+          <tip>
+            <para>The click type applet is especially interesting for people
+            that do not want to cover their desktop with the click type
+            window.</para>
+          </tip>
+        </sect4>
+
+        <sect4>
+          <title>Trigger by gesture</title>
+
+          <para>In the trigger by gesture method, the shape of the pointer
+          changes to the gesture shape after being motionless for a determined
+          time.</para>
+
+          <remark>See <link linkend="mt-dwell-time-setting">Time settings for
+          buttonless clicks</link> for more information about how to set the
+          time lapse that the pointer has to be motionless before its shape
+          changes to the gesture shape.</remark>
+
+          <para>If the user moves the pointer while it is showing the gesture
+          shape, a click is performed. Moreover, the type of click performed
+          depends on the direction that the user moved the pointer.</para>
+
+          <para>If the user does not move the pointer while it is showing the
+          gesture shape, its shape returns to the normal pointer shape and the
+          user can again move the pointer without a click being
+          performed.</para>
+
+          <para>There is a section in the control panel of Mousetweaks for the
+          user to map click type to movement direction:</para>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/mt-dwell-click-gesture-mapping.png" />
+            </imageobject>
+
+            <textobject>
+              <para>Picture showing the configuration options to map click
+              type to movement direction</para>
+            </textobject>
+          </mediaobject>
+
+          <para>By using the <guimenu>popup</guimenu> menus, the user can set
+          what direction he wants to correspond to what click type. There is
+          also a <guimenuitem>Disabled</guimenuitem> menu item in each
+          <guimenu>popup</guimenu>, so that user can disable the click types
+          that he does not want to be performed automatically. This is
+          especially interesting for users that have problems only with
+          certain click types.</para>
+        </sect4>
+      </sect3>
+
+      <sect3>
+        <title id="mt-dwell-time-setting">Time settings for buttonless
+        clicks</title>
+
+        <para>When using the buttonless click feature, the pointer has to stay
+        motionless for a determined time before a click is automatically
+        performed or before the pointer changes its shape to the gesture
+        shape. The control panel of Mousetweaks offers the following slider to
+        set the time to wait before a click is triggered:</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mt-dwell-click-pause-time-slider.png" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture showing the slider to set how long the pointer has
+            to be motionless</para>
+          </textobject>
+        </mediaobject>
+
+        <para>By moving the Time to Wait slider, the user can tell
+        <application>Mousetweaks</application> how long the pointer has to be
+        motionless before a click is automatically performed or before the
+        pointer changes its shape to the gesture shape.</para>
+
+        <note>
+          <para>This function only works in the context of the buttonless
+          click.</para>
+        </note>
+      </sect3>
+
+      <sect3 id="mt-dwell-movement-tolerance">
+        <title>Movement tolerance for buttonless clicks</title>
+
+        <para>When using the buttonless click feature, the pointer has to stay
+        motionless for a determined time before a click is automatically
+        performed or before the pointer changes its shape to the gesture
+        shape. For people who have problems to keep the pointer motionless for
+        a determined time lapse, there is a slider in the control panel of
+        <application>Mousetweaks</application> to make it ignore small pointer
+        movements.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mt-dwell-click-ignore-movement-slider.png" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture showing the slider to set the amount of pointer
+            movement to ignore</para>
+          </textobject>
+        </mediaobject>
+
+        <para>By moving this slider, the user can indicate to Mousetweaks what
+        maximum movement size it has to consider as motionless.</para>
+
+        <note>
+          <para>This function only works in the context of the buttonless
+          click.</para>
+        </note>
+      </sect3>
+    </sect2>
+
+    <sect2 id="mt-pointer-capture">
+      <title>Locking the pointer</title>
+
+      <para>There are people that have to use their pointing device not only
+      for the computer. These people would welcome a way to lock the pointer
+      into an area of the screen, so that they can use their pointing device
+      for other tasks. The <application>Mousetweaks</application> application
+      ships with an applet called Pointer Capture that creates an area on the
+      panel into which the user can lock the pointer until he releases it in a
+      determined way.</para>
+
+      <remark>Have a look at <link
+      linkend="mt-start-pointer-capture-feature">Starting the pointer capture
+      feature</link> for instructions about how to install and remove it from
+      the GNOME panel.</remark>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="figures/mt-pointer-capture-context-menu.png" />
+        </imageobject>
+
+        <textobject>
+          <para>Picture showing the pointer capture area (green) with its
+          contextual menu</para>
+        </textobject>
+
+        <imageobject>
+          <imagedata fileref="figures/mt-pointer-capture-locked.png" />
+        </imageobject>
+
+        <textobject>
+          <para>Picture of the pointer capture area when the pointer has been
+          captured</para>
+        </textobject>
+      </mediaobject>
+
+      <para>By choosing Preferences in the contextual menu of the pointer
+      capture applet, the user gets a window with the options of the pointer
+      capture applet:</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="figures/mt-pointer-capture-preferences-window.png" />
+        </imageobject>
+
+        <textobject>
+          <para>Picture showing the preferences of the pointer capture
+          applet</para>
+        </textobject>
+      </mediaobject>
+
+      <para>The preferences window of the pointer capture applet has three
+      sections:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>In the Capture Pointer section, the user can specify under
+          what circumstances the pointer gets captured when it moves into the
+          capture area. For example: if the control modifier is checked, the
+          pointer gets captured when it is over the capture area and the user
+          presses the Control modifier key. If no modifier is checked and the
+          mouse button is set to 0, the pointer only has to move into the
+          capture area to get locked.</para>
+
+          <para>It is also possible to specify a combination of modifiers and
+          mouse button.</para>
+        </listitem>
+
+        <listitem>
+          <para>In the Release Pointer section, the user can specify what
+          modifier or mouse button releases the pointer.</para>
+
+          <para>It is also possible to specify a combination of modifiers and
+          mouse button.</para>
+        </listitem>
+
+        <listitem>
+          <para>In the Size of Capture Area section, the user can specify the
+          width of the capture area on the GNOME panel.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+  </sect1>
+
+  <sect1 id="mt-about">
+    <title>About <application>Mousetweaks</application></title>
+
+    <sect2>
+      <title>Authors and hosting site</title>
+
+      <para><application>Mousetweaks</application> is based on a <ulink
+      type="https"
+      url="https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks">specification</ulink>
+      hosted on Launchpad and was implemented by Gerd Kohlberger (
+      <email>lowfi@chello.at</email> ); Francesco Fumanti (
+      <email>francesco.fumanti@gmx.net</email> ) helped with testing and other
+      things.</para>
+
+      <para>You can find more informations about Mousetweaks on <ulink
+      type="https"
+      url="https://launchpad.net/mousetweaks">Launchpad</ulink>.</para>
+    </sect2>
+
+    <sect2>
+      <title>Feedback</title>
+
+      <para>To report a bug or make a suggestion regarding
+      <application>Mousetweaks</application> or this manual, please use the
+      facilities provided by the <ulink type="https"
+      url="https://launchpad.net/mousetweaks">Mousetweaks' pages on
+      Launchpad</ulink> .</para>
+    </sect2>
+
+    <sect2>
+      <title>License</title>
+
+      <para>This program is distributed under the terms of the GNU General
+      Public license as published by the Free Software Foundation; either
+      version 3 of the License, or (at your option) any later version. A copy
+      of this license can be found at this <ulink type="http"
+      url="http://www.gnu.org/licenses/gpl-3.0.txt">link</ulink>, or in the
+      file COPYING included with the source code of this program.</para>
+    </sect2>
+  </sect1>
+</article>

@@ -1,0 +1,32 @@
+Mousetweaks 0.3.0
+-----------------
+
+Description:
+
+	The Mousetweaks package provides mouse accessibility enhancements for 
+	the GNOME desktop. These enhancements are:
+	
+	1. It offers a way to perform the various clicks without using any 
+	hardware button.
+
+	2. It allows users to perform a right click by doing a click&hold 
+	of the left mousebutton. (For a left-handed mouse user, the termes 
+	left and right have to be inverted.) 
+
+	3. It provides an applet that the user can install on a panel. This
+	applet creates an area on the panel into which the pointer can 
+	be captured until the user releases it with a predefined button
+	and modifier combination.
+
+
+Components of Mousetweaks: 
+
+	* mousetweaks: daemon that provides the enhancements 1 and 2 of
+	the above description
+	
+	* dwell-click-applet: optional applet to select the click-types when 
+	enhancement 1 of the above description is used
+	
+	* pointer-capture-applet: applet that provides enhancement 3 of
+	the above description
+

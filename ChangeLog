@@ -1,0 +1,75 @@
+2008-01-11 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* Intial commit
+	* configure.ac: Bump version to 2.21.5
+
+---------------------------------
+
+Changes can be found in the revisions log on:
+https://code.launchpad.net/~mt-devel/mousetweaks/trunk
+
+----------------------------
+Pre Version Control Changes
+----------------------------
+
+2007-10-12 Gerd Kohlberger <lowfi@chello.at>
+	* Split main application into daemon and configuration gui
+	* Remove tray icon
+	* New Start/Stop button for the daemon
+	* Improved command-line options
+	* Fixes to make sure mousetweaks can be used in GDM
+	* fix: don't use the full argument vector as session restart command
+
+2007-08-22 Gerd Kohlberger <lowfi@chello.at> 
+	* l10n: it, fr (Francseco Fumanti)
+	* fixed a bug introduced in 0.2.0, which made dwelling with gesture
+	  mode unuseable
+	* added command-line options
+	* updated README and AUTHORS
+	* added 'add-applet.sh' shell script. It can be used to launch applets
+	  from the command-line 
+
+2007-08-13 Gerd Kohlberger <lowfi@chello.at>
+	* added internationlization support
+	* moved about dialogs to glade
+	* removed help buttons again
+	* fix: use proper distance calculation
+	* fix: missing window icons 
+	* l10n: de
+
+2007-07-18 Gerd Kohlberger <lowfi@chello.at>
+	* change gui title
+	* removed dwell-click applet note
+	* added drag cursor for dwelling
+	* fix: dialogs always showed yes/no buttons
+	* removed 'restore single click' option
+	* build: added --disable option for applets
+	* build: send hangup singnals to panel and gconf demon
+	* added gnome help support (no actual documentation yet)
+	* split source files
+
+2007-07-13 Gerd Kohlberger <lowfi@chello.at>
+	* use gnome mouse icon and honor current theme
+	* add 'Disable' option to dwell gesture menus
+	* don't allow impossible gesture settings
+	* improve warning dialogs
+	* fix: bug in the ctw context menu
+	* fix: under certain conditions disabling and reenabling dwell-click failed
+	* set dialog type hint for ctw and preferences
+
+2007-06-29 Gerd Kohlberger <lowfi@chello.at>
+	* set minimum delay and time to 0.5
+	* added warning dialogs
+	* sync click-type applet and window
+	* left click on tray icon will show the preferences
+	* added gnome session support
+	* better dbus implementation
+	* click-type applet can change sensitvity
+	* added preferences to click-type applet
+	* added a note about dwell-click appelt
+	* use a common header file
+	* remove hardcoded applet paths
+	* sync all versions and use VERSION macro 
+	* use ChangeLog file
+
+2007-06-23 Gerd Kohlberger <lowfi@chello.at> 
+	* Initial Release

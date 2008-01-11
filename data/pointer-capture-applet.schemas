@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+    <schemalist> 
+   
+      <schema>
+        <key>/schemas/apps/pointer-capture/size</key>
+        <owner>pointer-capture</owner>
+        <type>int</type>
+        <default>100</default>
+        <locale name="C">
+          <short>Size of capture area</short>
+          <long>The width in pixels of the capture area</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/pointer-capture/capture_button</key>
+        <owner>pointer-capture</owner>
+        <type>int</type>
+        <default>1</default>
+        <locale name="C">
+          <short>Capture button</short>
+          <long>Button to initiate pointer capturing</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/pointer-capture/release_button</key>
+        <owner>pointer-capture</owner>
+        <type>int</type>
+        <default>1</default>
+        <locale name="C">
+          <short>Release button</short>
+          <long>Button to release the pointer</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/pointer-capture/capture_mod_shift</key>
+        <owner>pointer-capture</owner>
+        <type>bool</type>
+        <default>false</default>
+        <locale name="C">
+          <short>Capture modifier</short>
+          <long>Key modifier</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/pointer-capture/capture_mod_alt</key>
+        <owner>pointer-capture</owner>
+        <type>bool</type>
+        <default>false</default>
+        <locale name="C">
+          <short>Capture modifier</short>
+          <long>Key modifier</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/pointer-capture/capture_mod_ctrl</key>
+        <owner>pointer-capture</owner>
+        <type>bool</type>
+        <default>false</default>
+        <locale name="C">
+          <short>Capture modifier</short>
+          <long>Key modifier</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/pointer-capture/release_mod_shift</key>
+        <owner>pointer-capture</owner>
+        <type>bool</type>
+        <default>false</default>
+        <locale name="C">
+          <short>Release modifier</short>
+          <long>Key modifier</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/pointer-capture/release_mod_alt</key>
+        <owner>pointer-capture</owner>
+        <type>bool</type>
+        <default>false</default>
+        <locale name="C">
+          <short>Release modifier</short>
+          <long>Key modifier</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/pointer-capture/release_mod_ctrl</key>
+        <owner>pointer-capture</owner>
+        <type>bool</type>
+        <default>false</default>
+        <locale name="C">
+          <short>Release modifier</short>
+          <long>Key modifier</long>
+        </locale>
+      </schema>
+
+    </schemalist>
+</gconfschemafile>

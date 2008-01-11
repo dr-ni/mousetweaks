@@ -1,0 +1,67 @@
+.\" Macros
+.\" define indentation for suboptions
+.nr SS 5
+.de IPs
+.IP "\\$1" \n(SS
+..
+.TH "Mousetweaks" 1
+.SH NAME
+Mousetweaks \- Accessibility enhancements for the mouse
+.SH SYNOPSIS
+.B mousetweaks
+[-e|--enable=STRING] [-m|--dwell-mode=STRING]
+[-c|--show-ctw] [-x|--ctw-x=INT] [-y|--ctw-y=INT] [-s|--shutdown]
+.br
+.B mousetweaks
+[-?|--help]
+.SH DESCRIPTION
+.B mousetweaks
+is a daemon that provides various mouse features for the GNOME desktop.
+It depends on Assistve Technology.
+.SH OPTIONS
+.TP
+.B \-e, \--enable=STRING
+Enable a mousetweaks feature. Available arguments are: dwell, delay
+.RS
+.IPs DWELL
+Automatically perform mouse clicks without using a physical button
+.IPs DELAY
+Trigger the secondary mouse button when the primary button is held down
+for a specified amount of time 
+.RE
+.TP
+.B \-m, \--dwell-mode=STRING
+Select a dwelling mode. Available arguments are: window, gesture
+.RS
+.IPs WINDOW
+Select the active click type from a window or a panel applet
+.IPs GESTURE
+Perform clicks by moving in different directions after the cursor changes
+to a cross
+.RE
+.TP
+.B \-c, \--show-ctw
+Show the click-type window. Only useful in combination with dwell-mode window
+.TP
+.B \-x, \--ctw-x=INT
+X Position of the click-type window on screen
+.TP
+.B \-y, \--ctw-y=INT
+Y Position of the click-type window on screen
+.TP
+.B \-s, \--shutdown
+Stop the mousetweaks daemon
+.SH FILES
+.I ~/.mousetweaks.pid
+.RS
+The daemon creates a lock file in the users home directory to keep track
+of its status.
+.SH BUGS
+See:
+.I https://bugs.launchpad.net/mousetweaks
+.SH AUTHORS
+Gerd Kohlberger <lowfi@chello.at>
+.SH LICENSE
+Licenced under the GNU General Public License v3 and later
+.SH SEE ALSO
+Assistive Technology Service Provider Interface (AT-SPI)

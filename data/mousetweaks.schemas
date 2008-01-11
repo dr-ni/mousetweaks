@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+    <schemalist> 
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/threshold</key>
+	<applyto>/desktop/gnome/accessibility/mouse/threshold</applyto>
+        <owner>mousetweaks</owner>
+        <type>int</type>
+        <default>10</default>
+        <locale name="C">
+          <short>Movement Threshold</short>
+          <long>Distance in pixels before movement will be recognized</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/delay_enable</key>
+	<applyto>/desktop/gnome/accessibility/mouse/delay_enable</applyto>
+        <owner>mousetweaks</owner>
+        <type>bool</type>
+        <default>false</default>
+        <locale name="C">
+          <short>Enable Delay Click</short>
+          <long>Enable Delay Click</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/delay_time</key>
+	<applyto>/desktop/gnome/accessibility/mouse/delay_time</applyto>
+        <owner>mousetweaks</owner>
+        <type>float</type>
+        <default>1.20</default>
+        <locale name="C">
+          <short>Delay Click Time</short>
+          <long>Seconds to hold left button before the context menu opens</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/dwell_enable</key>
+	<applyto>/desktop/gnome/accessibility/mouse/dwell_enable</applyto>
+        <owner>mousetweaks</owner>
+        <type>bool</type>
+        <default>false</default>
+        <locale name="C">
+          <short>Enable Dwell Click</short>
+          <long>Enable Dwell Click</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/dwell_time</key>
+	<applyto>/desktop/gnome/accessibility/mouse/dwell_time</applyto>
+        <owner>mousetweaks</owner>
+        <type>float</type>
+        <default>1.20</default>
+        <locale name="C">
+          <short>Dwell Click Time</short>
+          <long>Seconds before the click is exectued</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/dwell_gesture_single</key>
+	<applyto>/desktop/gnome/accessibility/mouse/dwell_gesture_single</applyto>
+        <owner>mousetweaks</owner>
+        <type>int</type>
+        <default>0</default>
+        <locale name="C">
+          <short>Gesture Single Click</short>
+          <long>Direction to perform a single click (0 = Left, 1 = Right, 2 = Up, 3 = Down)</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/dwell_gesture_double</key>
+	<applyto>/desktop/gnome/accessibility/mouse/dwell_gesture_double</applyto>
+        <owner>mousetweaks</owner>
+        <type>int</type>
+        <default>2</default>
+        <locale name="C">
+          <short>Gesture Double Click</short>
+          <long>Direction to perform a double click (0 = Left, 1 = Right, 2 = Up, 3 = Down)</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/dwell_gesture_drag</key>
+	<applyto>/desktop/gnome/accessibility/mouse/dwell_gesture_drag</applyto>
+        <owner>mousetweaks</owner>
+        <type>int</type>
+        <default>3</default>
+        <locale name="C">
+          <short>Gesture Drag Click</short>
+          <long>Direction to perform dragging (0 = Left, 1 = Right, 2 = Up, 3 = Down)</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/dwell_gesture_secondary</key>
+	<applyto>/desktop/gnome/accessibility/mouse/dwell_gesture_secondary</applyto>
+        <owner>mousetweaks</owner>
+        <type>int</type>
+        <default>1</default>
+        <locale name="C">
+          <short>Gesture Secondary Click</short>
+          <long>Direction to perform a secondary click (0 = Left, 1 = Right, 2 = Up, 3 = Down)</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/dwell_mode</key>
+	<applyto>/desktop/gnome/accessibility/mouse/dwell_mode</applyto>
+        <owner>mousetweaks</owner>
+        <type>int</type>
+        <default>1</default>
+        <locale name="C">
+          <short>Dwell Click Mode</short>
+          <long>(0 = Gesture mode, 1 = Click Type window mode)</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/dwell_show_ctw</key>
+	<applyto>/desktop/gnome/accessibility/mouse/dwell_show_ctw</applyto>
+        <owner>mousetweaks</owner>
+        <type>bool</type>
+        <default>false</default>
+        <locale name="C">
+          <short>Show Click Type Window</short>
+          <long>Show Click Type Window</long>
+        </locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/button_layout</key>
+	<applyto>/desktop/gnome/accessibility/mouse/button_layout</applyto>
+        <owner>mousetweaks</owner>
+        <type>int</type>
+        <default>2</default>
+        <locale name="C">
+          <short>Button Layout</short>
+          <long>Style of Click Type Buttons (0 = Text, 1 = Icon, 2 = Both)</long>
+        </locale>
+      </schema>
+
+    </schemalist>
+</gconfschemafile>

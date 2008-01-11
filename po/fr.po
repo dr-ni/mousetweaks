@@ -1,0 +1,181 @@
+# French language file for mousetweaks.
+# Copyright (C) 2007
+# Gerd Kohlberger <lowfi@chello.at>
+# Francesco Fumanti <francesco.fumanti@gmx.net>
+# This file is distributed under the same license as the PACKAGE package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks-0.2.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-12-15 11:46+0100\n"
+"PO-Revision-Date: 2007-11-05 15:32+0000\n"
+"Last-Translator: Francesco Fumanti <francesco.fumanti@gmx.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2007-11-09 20:40+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Applet pour choisir les différents types de clics à effectuer.\n"
+"Composant de MouseTweaks"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "Fenêtre De Choix Du Clic"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "Double Clic"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "Glisser Déposer"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "Clic Droit"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "Simple Clic"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Capture Du Pointeur</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<Libération Du Pointeur</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b<Taille De l'Aire De Capture</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Aire sur le panneau pour la capture du pointeur.\n"
+"Composant de Mousetweaks"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "Bo_uton:"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "Modificateur:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "Préférences De La Capture Du Pointeur"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "En choisissant le bouton 0, le pointeur sera immédiatement capturé"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_Bouton:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_Largeur:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "pixels"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "Type De Clic Automatique"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Afficher les Icônes et le Texte"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Afficher seulement les Icônes"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Afficher seulement le Texte"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "Clic Automatique"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "Choisis le type de clic automatique"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Aire de capture du pointeur"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "Capture De La Souris"
+
+#: ../src/mt-main.c:428
+msgid "Enable mousetweaks feature"
+msgstr "Active la fonction de mousetweaks"
+
+#: ../src/mt-main.c:430
+msgid "Use dwell mode"
+msgstr "Utilise le clic automatique"
+
+#: ../src/mt-main.c:432
+msgid "Show click type window"
+msgstr "Affiche la Fenêtre de Choix du clic"
+
+#: ../src/mt-main.c:434
+msgid "Window x position"
+msgstr "Position horizontale x de la fenêtre"
+
+#: ../src/mt-main.c:436
+msgid "Window y position"
+msgstr "Position verticale y de la fenêtre"
+
+#: ../src/mt-main.c:438
+msgid "Shutdown mousetweaks"
+msgstr "Quitter mousetweaks"
+
+#: ../src/mt-main.c:495
+msgid "Assistive Technologies not enabled"
+msgstr "Aides Techniques non activées"
+
+#: ../src/mt-main.c:496
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "Mousetweaks nécessite les Aides Techniques."
+
+#: ../src/pointer-capture-applet.c:88 ../src/dwell-click-applet.c:301
+msgid "Couldn't display help"
+msgstr "Affichage de l'aide impossible"
+
+#: ../src/pointer-capture-applet.c:216
+msgid "Locked"
+msgstr "Verrouillé"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:219
+msgid "L"
+msgstr "V"
+
+#: ../src/pointer-capture-applet.c:645
+msgid "Capture area"
+msgstr "Aire de capture"
+
+#: ../src/pointer-capture-applet.c:646
+msgid "Temporarily lock the mouse pointer"
+msgstr "Verrouille le pointeur temporairement"
+

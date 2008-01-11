@@ -1,0 +1,29 @@
+2007-11-17 Francesco Fumanti <francesco.fumanti@gmx.net>
+	* Fix references to GFDL in legal.xml
+
+2007-11-15 Francesco Fumanti <francesco.fumanti@gmx.net>
+	* Fix revision number error and license link
+
+2007-11-12 Francesco Fumanti <francesco.fumanti@gmx.net>
+	* Adapts pictures of manual to revision 55
+	* Adapts text of manual to revision 55
+
+2007-11-05 Francesco Fumanti <francesco.fumanti@gmx.net>
+	* Update version to 0.2
+	* Update pictures that contained GUI typos
+
+2007-11-03 Francesco Fumanti <francesco.fumanti@gmx.net>
+	* update of some text of the manual 
+	* addition and removal of pictures for the manual
+	* adaption of all pictures to default gnome theme
+
+2007-10-31 Gerd Kohlberger <lowfi@chello.at>
+	* Fix typo
+
+2007-10-30 Francesco Fumanti <francesco.fumanti@gmx.net>
+	* Finish first draft
+	* More figures
+
+2007-10-28 Francsco Fumanti <francesco.fumanti@gmx.net>
+	* Partial first draft of manual
+	* Initial figures

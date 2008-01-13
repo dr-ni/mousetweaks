@@ -1,3 +1,50 @@
+2008-01-13 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* modify /trunk/help/ChangeLog
+	* modify /trunk/COPYING.FDL
+	* modify /trunk/help/C/legal.xml
+	* modify /trunk/help/C/mousetweaks.xml
+	* add /trunk/help/C/figures/mouse-a11y-add-applet-to-panel-window.png
+	* add /trunk/help/C/figures/mouse-a11y-ssc-delay-slider.png
+	* add /trunk/help/C/figures/mouse-a11y-pointer-capture-context-menu.png
+	* add /trunk/help/C/figures/mouse-a11y-tab.png
+	* add /trunk/help/C/figures/mouse-a11y-dwell-gesture-mapping.png
+	* add /trunk/help/C/figures/mouse-a11y-ssc-checkbox.png
+	* add /trunk/help/C/figures/mouse-a11y-dwell-click-type-window.png
+	* add /trunk/help/C/figures/mouse-a11y-pointer-capture-preferences.png
+	* add /trunk/help/C/figures/mouse-a11y-pointer-capture-locked.png
+	* add /trunk/help/C/figures/mouse-a11y-dwell-mode-choice.png
+	* add /trunk/help/C/figures/mouse-a11y-dwell-delay-slider.png
+	* add /trunk/help/C/figures/mouse-a11y-dwell-ctw-checkbox.png
+	* add /trunk/help/C/figures/mouse-a11y-dwell-checkbox.png
+	* add /trunk/help/C/figures/mouse-a11y-dwell-click-type-applet.png
+	* add /trunk/help/C/figures/mouse-a11y-dwell-motion-treshold.png
+	* delete /trunk/help/C/figures/mt-dwell-click-checkbox.png
+	* delete /trunk/help/C/figures/mt-dwell-click-click-type-applet.png
+	* delete /trunk/help/C/figures/mt-pointer-capture-locked.png
+	* delete /trunk/help/C/figures/mt-dwell-click-pause-time-slider.png
+	* delete /trunk/help/C/figures/mt-dwell-click-trigger-choice.png
+	* delete /trunk/help/C/figures/mt-dwell-click-ignore-movement-slider.png
+	* delete /trunk/help/C/figures/mt-control-panel-delay-click-enabled.png
+	* delete /trunk/help/C/figures/mt-pointer-capture-preferences-window.png
+	* delete /trunk/help/C/figures/mt-control-panel-dwell-click-enabled.png
+	* delete /trunk/help/C/figures/mt-add-applet-to-panel-window.png
+	* delete /trunk/help/C/figures/mt-dwell-click-gesture-mapping.png
+	* delete /trunk/help/C/figures/mt-dwell-click-click-type-window.png
+	* delete /trunk/help/C/figures/mt-pointer-capture-context-menu.png
+	* delete /trunk/help/C/figures/mt-delay-click-checkbox.png
+	* delete /trunk/help/C/figures/mt-delay-click-pause-time-slider.png
+	
+	Update of the manual and related files to reflect the changes
+	performed on mousetweaks to integrate it into GNOME 2.22.
+	Change manual license from GFDL 1.1 to GFDL 1.2.
+
+---------------------------------
+
+Changes can be found in the revisions log on:
+https://code.launchpad.net/~mt-devel/mousetweaks/trunk
+
+----------------------------
 2007-11-17 Francesco Fumanti <francesco.fumanti@gmx.net>
 	* Fix references to GFDL in legal.xml
 

@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
-<!ENTITY legal SYSTEM "legal.xml">
 <!ENTITY appversion "0.2.6">
 <!ENTITY manrevision "0.2">
 <!ENTITY date "October 2007">
 <!ENTITY app "<application>Mousetweaks</application>">
+
+<!ENTITY legal SYSTEM "legal.xml">
 ]>
 <article id="index" lang="en">
   <articleinfo>
     <title><application>Mousetweaks</application> Manual</title>
 
     <copyright>
-      <year>2007</year>
+      <year>2007 - 2008</year>
 
       <holder>Francesco Fumanti</holder>
     </copyright>
 
-   &legal;
+    &legal;
+
     <authorgroup>
       <author>
         <firstname>Francesco</firstname>
@@ -25,12 +27,25 @@
         <surname>Fumanti</surname>
 
         <affiliation>
-          <address><email>francesco.fumanti@gmx.net</email> </address>
+          <address><email>frfumanti@svn.gnome.org</email> </address>
         </affiliation>
       </author>
     </authorgroup>
 
     <revhistory>
+      <revision>
+        <revnumber>version 2.21.5</revnumber>
+
+        <date>January 2008</date>
+
+        <revdescription>
+          <para role="author">The contents of the manual have been adapted to
+          the changes applied to mousetweaks for its integration into GNOME
+          2.22. Francesco Fumanti
+          <email>frfumanti@svn.gnome.org</email></para>
+        </revdescription>
+      </revision>
+
       <revision>
         <revnumber>version 0.2</revnumber>
 
@@ -56,19 +71,23 @@
       </revision>
     </revhistory>
 
-    <releaseinfo>This manual describes version 0.2.6 of
-    Mousetweaks.</releaseinfo>
+    <releaseinfo>This manual describes version 2.21.5 of mousetweaks and its
+    graphical user interface consisting of the accessibility tab of the mouse
+    control panel and two panel applets.</releaseinfo>
 
     <contrib>To report a bug or make a suggestion regarding the Mousetweaks
-    application or this manual, please go to Launchpad.</contrib>
+    application or this manual, please go to GNOME's Bugzilla, where where
+    mousetweaks should soon be available.</contrib>
 
     <legalnotice>
       <title>Feedback</title>
 
-      <para>To report a bug or make a suggestion regarding the
-      <application>Mousetweaks</application> application or this manual,
-      please go to <ulink type="http"
-      url="https://bugs.launchpad.net/mousetweaks/">Launchpad</ulink>.</para>
+      <para>To report a bug or make a suggestion regarding <application>the
+      mousetweaks module</application> (i.e.: mouse accessibility), its user
+      interface or its manual, please use the facilities provided by the
+      <ulink type="http" url="http://bugzilla.gnome.org/">GNOME's
+      Bugzilla</ulink>, where the corresponding module should soon be
+      available.</para>
     </legalnotice>
   </articleinfo>
 
@@ -80,46 +99,44 @@
     <primary>mousetweaks</primary>
   </indexterm>
 
-  <sect1 id="mt-introduction">
+  <sect1 id="mouse-a11y-introduction">
     <title>Introduction</title>
 
-    <para>The <application>Mousetweaks</application> application provides
-    mouse accessibility enhancements for the GNOME Desktop. Indeed, it offers
-    the following new pointer functions to the user:</para>
+    <para>The <application>mousetweaks module</application> provides mouse
+    accessibility enhancements for the GNOME Desktop. Indeed, it offers the
+    following new functions to the user:</para>
 
     <itemizedlist>
       <listitem>
-        <para>The possibility to perform a right click by holding the
-        <mousebutton>left mousebutton</mousebutton> pressed while keeping the
-        pointer motionless.</para>
+        <para>Simulated secondary click: it allows the user to perform a
+        secondary click (menu click) by holding down the primary mouse button
+        while keeping the pointer motionless.</para>
       </listitem>
 
       <listitem>
-        <para>The possibility to perform the various clicks without pressing
-        any <hardware>hardware button</hardware>.</para>
+        <para>Dwell click: it allows the user to perform the various clicks
+        without pressing any <hardware>hardware button</hardware>.</para>
       </listitem>
 
       <listitem>
-        <para>The possibility to lock the pointer in a determined area of the
-        panel until the user releases it by a predefined keystroke or mouse
-        button.</para>
+        <para>Pointer capture: it allows the user to lock the pointer in a
+        determined area of the panel until the user releases it by a
+        predefined keystroke or mouse button.</para>
       </listitem>
     </itemizedlist>
   </sect1>
 
-  <sect1 id="mt-how-to-start">
-    <title>How to start the features</title>
+  <sect1 id="mouse-a11y-how-to-start-features">
+    <title>How To Start The Functions</title>
 
-    <para>The right click feature and the buttonless click feature of
-    <application><application>Mousetweaks</application></application> depend
-    on the mousetweaks process; however the pointer capture applet depends on
-    the gnome panel. Consequently, they have to be started differently:</para>
+    <para>The simulated secondary click and the dwell click depend on the
+    mousetweaks process; however the pointer capture applet depends on the
+    gnome panel. Consequently, they have to be started differently.</para>
 
-    <sect2 id="mt-start-right-click-feature">
-      <title>Starting the right click feature</title>
+    <sect2 id="mouse-a11y-start-ssc">
+      <title>Starting The Simulated Secondary Click Function</title>
 
-      <para>You can start the right click feature of
-      <application>Mousetweaks</application> in two ways:</para>
+      <para>You can start the simulated secondary click in two ways:</para>
 
       <itemizedlist>
         <listitem>
@@ -131,64 +148,66 @@
         </listitem>
       </itemizedlist>
 
-      <sect3 id="mt-start-right-click-by-menu">
-        <title>Start from the graphical user interface</title>
+      <sect3 id="mouse-a11y-start-ssc-by-gui">
+        <title>Start From The Graphical User Interface</title>
 
-        <para>Choose the menu <menuchoice>
-            <guimenu>Applications</guimenu>
+        <para>The graphical user interface to start the simulated secondary
+        click is located in the accessibility tab of the mouse control panel.
+        To open it, choose the menu <menuchoice>
+            <guimenu>System</guimenu>
 
-            <guisubmenu>Universal Access</guisubmenu>
+            <guisubmenu>Preferences</guisubmenu>
 
-            <guimenuitem>Mousetweaks</guimenuitem>
-          </menuchoice> to open the control panel of Mousetweaks. You will get
-        the following window:</para>
+            <guimenuitem>Control Center</guimenuitem>
+          </menuchoice> and the Control Center will open. By clicking on Mouse
+        in the Control Center, the Mouse control panel will open and after
+        clicking on the Accessibility tab, you will see the following
+        settings:</para>
 
         <mediaobject>
           <imageobject>
-            <imagedata fileref="figures/mt-control-panel-delay-click-enabled.png"
-                       format="PNG" />
+            <imagedata fileref="figures/mouse-a11y-tab.png" format="PNG" />
           </imageobject>
 
           <textobject>
-            <para>Picture of the panel of
-            <application>Mousetweaks</application></para>
+            <para>Picture of the Mouse control panel</para>
           </textobject>
         </mediaobject>
 
-        <para>To start the right click feature, put a checkmark into the
-        checkbox that says:</para>
+        <para>To start the simulated secondary click function, put a checkmark
+        into the checkbox that says:</para>
 
-        <para><quote>Trigger secondary button when I hold down the primary
-        button</quote></para>
+        <para><quote>Trigger secondary secondary click by holding down the
+        primary button</quote></para>
 
         <mediaobject>
           <imageobject>
-            <imagedata fileref="figures/mt-delay-click-checkbox.png" />
+            <imagedata fileref="figures/mouse-a11y-ssc-checkbox.png" />
           </imageobject>
 
           <textobject>
-            <para>Picture of the checkbox to start the right click
-            feature</para>
+            <para>Picture of the checkbox to start the simulated secondary
+            click</para>
           </textobject>
         </mediaobject>
       </sect3>
 
-      <sect3 id="mt-start-right-click-by-cli">
-        <title>Start from the command line</title>
+      <sect3 id="mouse-a11y-start-ssc-by-cli" label="">
+        <title>Start From The Command Line</title>
 
-        <para>To start the right click feature from the command line, open the
-        <application>Terminal</application> and type the following:</para>
+        <para>To start the simulated secondary click from the command line,
+        open the <application>Terminal</application> and type the
+        following:</para>
 
         <para><command>mousetweaks <parameter>--enable
         delay</parameter></command></para>
       </sect3>
     </sect2>
 
-    <sect2 id="mt-start-buttonless-click-feature">
-      <title>Starting the buttonless click feature</title>
+    <sect2 id="mouse-a11y-start-dwell">
+      <title>Starting The Dwell Click Function</title>
 
-      <para>You can start the buttonless click feature of
-      <application>Mousetweaks</application> in two ways:</para>
+      <para>You can start the dwell click function in two ways:</para>
 
       <itemizedlist>
         <listitem>
@@ -200,76 +219,77 @@
         </listitem>
       </itemizedlist>
 
-      <sect3 id="mt-start-buttonless-click-by-menu">
-        <title>Start from the graphical user interface</title>
+      <sect3 id="mouse-a11y-start-dwell-by-gui">
+        <title>Start From The Graphical User Interface</title>
 
-        <para>Choose the menu <menuchoice>
-            <guimenu>Applications</guimenu>
+        <para>The graphical user interface to start the dwell click is located
+        in the accessibility tab of the mouse control panel. To open it,
+        choose the menu <menuchoice>
+            <guimenu>System</guimenu>
 
-            <guisubmenu>Universal Access</guisubmenu>
+            <guisubmenu>Preferences</guisubmenu>
 
-            <guimenuitem>Mousetweaks</guimenuitem>
-          </menuchoice> to open the control panel of Mousetweaks. You will get
-        the following window:</para>
+            <guimenuitem>Control Center</guimenuitem>
+          </menuchoice> and the Control Center will open. By clicking on Mouse
+        in the Control Center, the Mouse control panel will open and after
+        clicking on the Accessibility tab, you will see the following
+        settings:</para>
 
         <mediaobject>
           <imageobject>
-            <imagedata fileref="figures/mt-control-panel-dwell-click-enabled.png"
-                       format="PNG" />
+            <imagedata fileref="figures/mouse-a11y-tab.png" format="PNG" />
           </imageobject>
 
           <textobject>
-            <para>Picture of the control panel of
-            <application>Mousetweaks</application></para>
+            <para>Picture of the Mouse control panel</para>
           </textobject>
         </mediaobject>
 
-        <para>To start the buttonless click feature, put a checkmark into the
+        <para>To start the dwell click function, put a checkmark into the
         checkbox that says:</para>
 
-        <para><quote>Perform different clicks without using any
-        button</quote></para>
+        <para><quote>Initiate click when stopping pointer
+        movement</quote></para>
 
         <mediaobject>
           <imageobject>
-            <imagedata fileref="figures/mt-dwell-click-checkbox.png" />
+            <imagedata fileref="figures/mouse-a11y-dwell-checkbox.png" />
           </imageobject>
 
           <textobject>
-            <para>Picture of the checkbox to start the buttonless click
-            feature</para>
+            <para>Picture of the checkbox to start the dwell click
+            function</para>
           </textobject>
         </mediaobject>
       </sect3>
 
-      <sect3 id="mt-start-buttonless-click-by-cli">
-        <title>Start from the command line</title>
+      <sect3 id="mouse-a11y-start-dwell-by-cli">
+        <title>Start From The Command Line</title>
 
-        <para>To start the buttonless click feature and show the click type
-        window from the command line, open the
-        <application>Terminal</application> and type the following:</para>
+        <para>To start the dwell click function and show the click type window
+        from the command line, open the <application>Terminal</application>
+        and type the following:</para>
 
         <para><command>mousetweaks <parameter>--enable dwell
         --show-ctw</parameter></command></para>
       </sect3>
     </sect2>
 
-    <sect2 id="mt-start-pointer-capture-feature">
-      <title>Starting the pointer capture feature</title>
+    <sect2 id="mouse-a11y-start-pointer-capture">
+      <title>Starting The Pointer Capture Function</title>
 
       <para>As the pointer capture applet comes in the from of a panel applet,
       its starting method has to follow the rules dictated by the GNOME panel.
-      Thus, to start the pointer capture feature, you only have to install it
-      on the panel and it will automatically run, regardless of the state of
-      the other features of Mousetweaks.</para>
+      Thus, to start the pointer capture function, you only have to install it
+      on the panel and it will automatically run.</para>
 
       <para>In order to add it to the panel, proceed as you do with any panel
-      applet: right click on the panel to open its contextual menu, choose
-      <guimenuitem>Add to Panel</guimenuitem>, and you will get the window
-      showing all the applets that can be installed on the GNOME
+      applet: perform a secondary click on the panel to open its contextual
+      menu, choose <guimenuitem>Add to Panel</guimenuitem>, and you will get
+      the window showing all the applets that can be installed on the GNOME
       panel.<mediaobject>
           <imageobject>
-            <imagedata fileref="figures/mt-add-applet-to-panel-window.png" />
+            <imagedata fileref="figures/mouse-a11y-add-applet-to-panel-window.png" />
           </imageobject>
 
           <textobject>
@@ -278,23 +298,23 @@
           </textobject>
         </mediaobject></para>
 
-      <para>By double clicking on the Pointer Capture item in the Add to Panel
-      window, the pointer capture applet will be added to the panel, and it
-      will be working until removed.</para>
+      <para>By double clicking on the <guilabel>Pointer Capture</guilabel>
+      item in the Add to Panel window, the pointer capture applet will be
+      added to the panel, and it will be working until removed.</para>
     </sect2>
   </sect1>
 
-  <sect1 id="mt-how-to-stop-features">
-    <title>Quitting the features</title>
+  <sect1 id="mouse-a11y-how-to-stop-features">
+    <title>How To Quit The Functions</title>
 
-    <para>Similar to the starting of the features, their quitting also depends
-    on the feature that you want to quit.</para>
+    <para>Similar to the starting of the functions, their quitting also
+    depends on the feature that you want to quit.</para>
 
-    <sect2 id="mt-stop-right-click-feature">
-      <title>Quitting the right click feature</title>
+    <sect2 id="mouse-a11y-stop-ssc">
+      <title>Quitting The Simulated Secondary Click</title>
 
-      <para>It is possible to quit the right click feature of
-      <application>Mousetweaks</application> in two ways:</para>
+      <para>It is possible to quit the simulated secondary click in two
+      ways:</para>
 
       <itemizedlist>
         <listitem>
@@ -303,7 +323,7 @@
 
           <mediaobject>
             <imageobject>
-              <imagedata fileref="figures/mt-delay-click-checkbox.png" />
+              <imagedata fileref="figures/mouse-a11y-ssc-checkbox.png" />
             </imageobject>
 
             <textobject>
@@ -313,8 +333,9 @@
           </mediaobject>
 
           <para>Please refer to <link
-          linkend="mt-start-right-click-by-menu">Starting the right click
-          feature from menu</link> to locate the checkbox.</para>
+          linkend="mouse-a11y-start-ssc-by-gui">Start The Simulated Secondary
+          Click From The Graphical User Interface</link> to locate the
+          checkbox.</para>
         </listitem>
 
         <listitem>
@@ -326,11 +347,10 @@
       </itemizedlist>
     </sect2>
 
-    <sect2 id="mt-stop-buttonless-click-feature">
-      <title>Quitting the buttonless click feature</title>
+    <sect2 id="mouse-a11y-stop-dwell">
+      <title>Quitting The Dwell Click</title>
 
-      <para>It is possible to quit the buttonless click feature of
-      <application>Mousetweaks</application> in two ways:</para>
+      <para>It is possible to quit the dwell click in two ways:</para>
 
       <itemizedlist>
         <listitem>
@@ -339,7 +359,7 @@
 
           <mediaobject>
             <imageobject>
-              <imagedata fileref="figures/mt-dwell-click-checkbox.png" />
+              <imagedata fileref="figures/mouse-a11y-dwell-checkbox.png" />
             </imageobject>
 
             <textobject>
@@ -349,8 +369,8 @@
           </mediaobject>
 
           <para>Please refer to <link
-          linkend="mt-start-buttonless-click-by-menu">Starting the buttonless
-          click feature from menu</link> to locate the checkbox.</para>
+          linkend="mouse-a11y-start-dwell-by-gui">Start The Dwell Click From
+          The Graphical User Interface</link> to locate the checkbox.</para>
         </listitem>
 
         <listitem>
@@ -362,10 +382,10 @@
       </itemizedlist>
     </sect2>
 
-    <sect2 id="mt-stop-pointer-capture-feature">
-      <title>Quitting the pointer capture feature</title>
+    <sect2 id="mouse-a11y-stop-pointer-capture">
+      <title>Quitting The Pointer Capture Function</title>
 
-      <para>As the pointer capture feature comes in the form of a panel
+      <para>As the pointer capture function comes in the form of a panel
       applet, you have to quit it the same way that you do it with other
       applets: perform a right click on the applet and choose
       <guimenuitem>Remove From Panel</guimenuitem> from its contextual
@@ -373,7 +393,7 @@
 
       <mediaobject>
         <imageobject>
-          <imagedata fileref="figures/mt-pointer-capture-context-menu.png" />
+          <imagedata fileref="figures/mouse-a11y-pointer-capture-context-menu.png" />
         </imageobject>
 
         <textobject>
@@ -384,127 +404,122 @@
     </sect2>
   </sect1>
 
-  <sect1 id="mt-features-description">
-    <title>Description of the features</title>
+  <sect1 id="mouse-a11y-functions-description">
+    <title>Description Of The Functions</title>
 
     <para>The <application>Mousetweaks</application> application offers three
     new pointer features to the user. These are: <itemizedlist>
         <listitem>
-          <para><xref linkend="mt-delay-click" /></para>
+          <para><xref linkend="mouse-a11y-ssc-description" /></para>
         </listitem>
 
         <listitem>
-          <para><xref linkend="mt-dwell-click" /></para>
+          <para><xref linkend="mouse-a11y-dwell-description" /></para>
         </listitem>
 
         <listitem>
-          <para><xref linkend="mt-pointer-capture" /></para>
+          <para><xref
+          linkend="mouse-a11y-pointer-capture-description" /></para>
         </listitem>
-      </itemizedlist><note>
-        <para>The manual assumes a right-handed user: consequently, left mouse
-        button indicates the primary mouse button and right mouse button
-        indicates the secondary mouse button. Of course, for a left-handed
-        user that has enabled the corresponding option in the Mouse control
-        panel, the terms left and right have to be exchanged.</para>
-      </note></para>
+      </itemizedlist></para>
 
-    <sect2 id="mt-delay-click">
-      <title>Right clicking with the left button</title>
+    <sect2 id="mouse-a11y-ssc-description">
+      <title>Simulated Secondary Click Description</title>
 
       <para>When the user activates this feature, he will be able to perform
-      right clicks by using the <mousebutton>left mouse button</mousebutton>.
-      This is especially useful for users that have only one
-      <mousebutton>mouse button</mousebutton> at their disposal.</para>
+      secondary clicks by using the <mousebutton>primary mouse
+      button</mousebutton>. This is especially useful for users that have only
+      one <mousebutton>mouse button</mousebutton> at their disposal.</para>
 
-      <sect3 id="mt-delay-howto">
-        <title>How does it work?</title>
+      <sect3 id="mouse-a11y-ssc-howto">
+        <title>How Does It Work?</title>
 
-        <para>When this feature is enabled, mousetweaks performs a right click
-        at the location of the pointer, if the user keeps the
-        <mousebutton>left mouse button</mousebutton> pressed without moving
+        <para>When this feature is enabled, mousetweaks performs a secondary
+        click at the location of the pointer, if the user keeps the
+        <mousebutton>primary mouse button</mousebutton> pressed without moving
         the pointer for a determined time.</para>
 
-        <para>How long the user has to hold the <mousebutton>left mouse
-        button</mousebutton> pressed is determined by the slider in the
-        control panel of mousetweaks with the title:</para>
-
-        <para><quote>Time to hold primary button</quote></para>
+        <para>How long the user has to hold the <mousebutton>primary mouse
+        button</mousebutton> pressed is determined by the delay slider under
+        the activation checkbox:</para>
 
         <mediaobject>
           <imageobject>
-            <imagedata fileref="figures/mt-delay-click-pause-time-slider.png" />
+            <imagedata fileref="figures/mouse-a11y-ssc-delay-slider.png" />
           </imageobject>
 
           <textobject>
-            <para>Picture showing the slider to set how long to hold the left
-            button for the right click to be triggered</para>
+            <para>Picture showing the slider to set how long to hold the
+            primary button for the secondary click to be triggered</para>
           </textobject>
         </mediaobject>
       </sect3>
 
-      <sect3 id="mt-delay-characteristics">
-        <title>Differences to the normal right button click</title>
+      <sect3 id="mouse-a11y-ssc-pecularities">
+        <title>Differences To The Normal Secondary Click</title>
 
-        <para>As <application>Mousetweaks</application> is not able to discard
-        the <mousebutton>left mouse button down</mousebutton> gesture from the
-        <mousebutton>left button press</mousebutton> of the user, it issues a
-        left click before issuing the right click. In other words, each right
-        click performed by this feature of mousetweaks is immediately preceded
-        by a left click, and this makes it behave a bit differently to the
-        normal right click performed by the <mousebutton>right mouse
-        button</mousebutton>. For example:</para>
+        <para>As the simulated secondary click is not able to discard the
+        <mousebutton>mouse button down</mousebutton> gesture from the
+        <mousebutton> primary button press</mousebutton> of the user, it
+        issues a primary click before issuing the secondary click. In other
+        words, each secondary click performed by this function is immediately
+        preceded by a primary click, and this makes it behave a bit
+        differently to the normal secondary click performed by the
+        <mousebutton>secondary mouse button</mousebutton>. For example:</para>
 
         <itemizedlist>
           <listitem>
-            <para>It is not possible to perform a right click on multiple
-            items because the left click issued before the right click
+            <para>It is not possible to perform a secondary click on multiple
+            items because the primary click issued before the secondary click
             deselects the items.</para>
           </listitem>
 
           <listitem>
-            <para>When this type of right click is performed on the trash icon
-            on the panel, not only does the contextual menu appear, but the
-            trash folder does also open. (The former is caused by the right
-            click, the latter by the left click preceding the right
-            click.)</para>
+            <para>When the simulated secondary click is performed on the trash
+            icon on the panel, not only does the contextual menu appear, but
+            the trash folder does also open. (The former is caused by the
+            secondary click, the latter by the primary click preceding the
+            right click.)</para>
           </listitem>
         </itemizedlist>
 
         <note>
           <para>It is not possible to provide a list of all diverging
           behaviours, because it depends on the reaction of the application
-          receiving the right click preceded by a left click.</para>
+          receiving the secondary click preceded by a primary click.</para>
         </note>
 
-        <para>Some users may also be surprised by the behaviour caused by the
-        fact, that it is not possible to perform a long motionless left click
-        and hold, without also doing a right click. For example:</para>
+        <para>Some users may also be surprised by the consequences of the
+        following: it is not possible to perform a long motionless primary
+        button click and hold, without also triggering the secondary click.
+        For example:</para>
 
         <itemizedlist>
           <listitem>
-            <para>When doing a motionless left click and hold on the arrow of
-            a scrollbar, the scrollbar jumps to the bottom after some time.
-            This is in fact the normal behaviour of a right click on an arrow
-            of a scrollbar.</para>
+            <para>When doing a motionless primary button click and hold on the
+            arrow of a scrollbar, the scrollbar jumps to the bottom after some
+            time. This is in fact the normal behaviour of a secondary click on
+            an arrow of a scrollbar.</para>
 
             <tip>
               <para>To work around this behaviour, simply move the pointer
-              immediately after pressing the <mousebutton>mouse
-              button</mousebutton>. This way
-              <application>Mousetweaks</application> does not issue the right
-              click.</para>
+              immediately after pressing the <mousebutton>primary mouse
+              button</mousebutton>. This way the simulated secondary click is
+              not issued.</para>
             </tip>
           </listitem>
         </itemizedlist>
       </sect3>
     </sect2>
 
-    <sect2 id="mt-dwell-click">
-      <title>Clicking without the use of any hardware button</title>
+    <sect2 id="mouse-a11y-dwell-description">
+      <title>Dwell Click Description</title>
 
-      <para>By activating this feature, users will be able to perform left
-      clicks, double clicks, drag clicks and right clicks without having to
-      press any <mousebutton>mouse button</mousebutton>.</para>
+      <para>There are users that cannot use any hardware button. By activating
+      the <guilabel>Dwell Click</guilabel>, they can have the mouse perform
+      the various clicks without pressing any mouse button. The click types
+      that can be performed are: single primary click, double-click, drag
+      click and secondary click.</para>
 
       <note>
         <para>When the buttonless click is active, the <mousebutton>mouse
@@ -512,48 +527,97 @@
         click with the <mousebutton>mouse buttons</mousebutton>.</para>
       </note>
 
-      <sect3 id="mt-dwell-trigger-choice">
-        <title>Click trigger and click type choice</title>
+      <sect3>
+        <title id="mouse-a11y-dwell-delay">Dwell Delay Setting</title>
 
-        <para>The user can choose between two methods to trigger the clicks:
-        by time or by gesture. There are two radio buttons for this purpose in
-        the control panel of Mousetweaks.</para>
+        <para>With the <guilabel>Delay</guilabel> slider, the user can
+        configure how long the pointer has to be motionless for the click to
+        be initiated.</para>
 
         <mediaobject>
           <imageobject>
-            <imagedata fileref="figures/mt-dwell-click-trigger-choice.png" />
+            <imagedata fileref="figures/mouse-a11y-dwell-delay-slider.png" />
           </imageobject>
 
           <textobject>
-            <para>Picture showing the radio buttons to select trigger
-            method</para>
+            <para>Picture showing the delay slider of the dwell click</para>
           </textobject>
         </mediaobject>
 
-        <para>To select the trigger method, the user only needs to click on
-        the radio button that corresponds to his desired trigger
-        method.</para>
+        <para>Details about how to complete the click and how to choose the
+        click type can be found under <link
+        linkend="mouse-a11y-dwell-modes">How To Complete Clicks And Specify
+        The Click Type</link>.</para>
 
-        <sect4>
-          <title>Trigger by time</title>
+        <note>
+          <para>The dwell delay only works in the context of the dwell
+          click.</para>
+        </note>
+      </sect3>
 
-          <para>In the trigger by time method, the Mousetweaks application
-          automatically performs the click after the pointer has been
-          motionless for a determined time.</para>
+      <sect3 id="mouse-a11y-dwell-motion-treshold">
+        <title>Motion Treshold Setting</title>
 
-          <remark>See <link linkend="mt-dwell-time-setting">Time settings for
-          buttonless clicks</link> for more information about how to set the
-          time lapse that the pointer has to be motionless before performing
-          the click.</remark>
+        <para>For people that have trouble to keep the mouse motionless, there
+        is the <guilabel>Motion Treshold</guilabel> slider.</para>
 
-          <para>The type of click performed depends on the selection in the
-          click type window or click type applet. Have a look at the following
-          picture to see the click type window and the click type
-          applet:</para>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mouse-a11y-dwell-motion-treshold.png" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture showing the motion treshold slider of the dwell
+            click</para>
+          </textobject>
+        </mediaobject>
+
+        <para>When the slider is set towards low, even little mouse movements
+        are considered; however, by setting a higher treshold, the mouse has
+        to traverse a bigger distance before it is considered as
+        moving.</para>
+
+        <note>
+          <para>This function only works in the context of the dwell
+          click.</para>
+        </note>
+      </sect3>
+
+      <sect3 id="mouse-a11y-dwell-modes">
+        <title>How To Complete Clicks And Specify The Click Type</title>
+
+        <para>Each time she pointer stops moving, a click is initiated. How
+        the click is completed and how the click type is chosen depends on
+        what dwell mode the user has selected. The two available modes
+        are:</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/mouse-a11y-dwell-mode-choice.png" />
+          </imageobject>
+
+          <textobject>
+            <para>Picture showing the radio buttons to select dwell
+            mode</para>
+          </textobject>
+        </mediaobject>
+
+        <para>To select the mode, the user only has to click on the radio
+        button that corresponds to his choice.</para>
+
+        <sect4 id="mouse-a11y-dwell-mode-ctw">
+          <title>Dwell Click With Automatic Click Completion And Click Type
+          Choice Beforehand</title>
+
+          <para>This mode is active when the user selects <guilabel>Choose
+          type of click beforehand</guilabel>. In fact, after the mouse has
+          been motionless for the time defined by the Delay slider, the system
+          will automatically perform the click type that is selected in the
+          Click Type Window shown here:</para>
 
           <mediaobject>
             <imageobject>
-              <imagedata fileref="figures/mt-dwell-click-click-type-window.png" />
+              <imagedata fileref="figures/mouse-a11y-dwell-click-type-window.png" />
             </imageobject>
 
             <textobject>
@@ -561,65 +625,86 @@
             </textobject>
           </mediaobject>
 
+          <para>To display the click type window on the screen, the user has
+          to put a checkmark <application>in the checkbox named <quote>Show
+          click type window</quote>:</application></para>
+
           <mediaobject>
             <imageobject>
-              <imagedata fileref="figures/mt-dwell-click-click-type-applet.png" />
+              <imagedata fileref="figures/mouse-a11y-dwell-ctw-checkbox.png" />
+            </imageobject>
+
+            <textobject>
+              <para>Picture with the checkbox to display the click type
+              window</para>
+            </textobject>
+          </mediaobject>
+
+          <para>After the click has occurred, the single click type will be
+          automatically restored. In order to choose another click type, the
+          user has to perform an automatic click on the
+          <guibutton>button</guibutton> in the Click Type Window that
+          corresponds to its click type choice.</para>
+
+          <para>Some users might prefer to use the <guilabel>Dwell Click panel
+          applet</guilabel> instead of the Click Type Window. The advantage of
+          the panel applet is that it does not cover any open window on the
+          desktop.</para>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="figures/mouse-a11y-dwell-click-type-applet.png" />
             </imageobject>
 
             <textobject>
               <para>Picture showing the click type applet at the right of the
-              menus</para>
+              gnome menus</para>
             </textobject>
           </mediaobject>
-
-          <para>To display the click type window on the screen, the user has
-          to put a checkmark in the corresponding checkbox <application>in the
-          control panel of Mousetweaks</application>.</para>
 
           <para>To display the click type applet on the GNOME panel, please
           follow the procedure you have to use in order to add any applet to
           the GNOME panel. If you do not know how to add an applet to the
-          panel, please have a look at <link
-          linkend="mt-start-pointer-capture-feature">Starting the pointer
-          capture feature</link>.</para>
+          panel, have a look at <link
+          linkend="mouse-a11y-start-pointer-capture">Starting The Pointer
+          Capture Function</link>.</para>
 
           <para>The click type window and the click type applet can be used
           simultaneously or each on its own.</para>
-
-          <tip>
-            <para>The click type applet is especially interesting for people
-            that do not want to cover their desktop with the click type
-            window.</para>
-          </tip>
         </sect4>
 
-        <sect4>
-          <title>Trigger by gesture</title>
+        <sect4 id="mouse-a11y-dwell-mode-gestures">
+          <title>Dwell Click With Click Type Choice And Click Completion By A
+          Mouse Gesture</title>
 
-          <para>In the trigger by gesture method, the shape of the pointer
-          changes to the gesture shape after being motionless for a determined
-          time.</para>
+          <para>This mode is active when the user selects <guilabel>Choose
+          type of click with mouse gestures</guilabel>. In fact, after the
+          mouse has been motionless for the above predefined delay, the shape
+          of the pointer will change for a little while:</para>
 
-          <remark>See <link linkend="mt-dwell-time-setting">Time settings for
-          buttonless clicks</link> for more information about how to set the
-          time lapse that the pointer has to be motionless before its shape
-          changes to the gesture shape.</remark>
+          <itemizedlist>
+            <listitem>
+              <para>If the user moves the mouse while it is showing the
+              alternative shape, a click is performed and the pointer returns
+              to its normal shape. The type of click performed depends on the
+              direction of the movement of the mouse.</para>
+            </listitem>
 
-          <para>If the user moves the pointer while it is showing the gesture
-          shape, a click is performed. Moreover, the type of click performed
-          depends on the direction that the user moved the pointer.</para>
+            <listitem>
+              <para>If the user keeps the mouse motionless until the pointer
+              returns to its normal shape, the user can move the mouse without
+              a click being performed. The next dwell click can be performed
+              when the mouse stops moving again.</para>
+            </listitem>
+          </itemizedlist>
 
-          <para>If the user does not move the pointer while it is showing the
-          gesture shape, its shape returns to the normal pointer shape and the
-          user can again move the pointer without a click being
-          performed.</para>
-
-          <para>There is a section in the control panel of Mousetweaks for the
-          user to map click type to movement direction:</para>
+          <para>The user also has the possibility to match click type with
+          movement direction by using the 4 <guimenu>popups</guimenu>
+          available under this mode:</para>
 
           <mediaobject>
             <imageobject>
-              <imagedata fileref="figures/mt-dwell-click-gesture-mapping.png" />
+              <imagedata fileref="figures/mouse-a11y-dwell-gesture-mapping.png" />
             </imageobject>
 
             <textobject>
@@ -628,99 +713,35 @@
             </textobject>
           </mediaobject>
 
-          <para>By using the <guimenu>popup</guimenu> menus, the user can set
-          what direction he wants to correspond to what click type. There is
-          also a <guimenuitem>Disabled</guimenuitem> menu item in each
-          <guimenu>popup</guimenu>, so that user can disable the click types
-          that he does not want to be performed automatically. This is
+          <para>There is also a <guimenuitem>Disabled</guimenuitem> menu item
+          in each <guimenu>popup</guimenu>. The user can select it if he does
+          not want some click types to be performed automatically. This is
           especially interesting for users that have problems only with
           certain click types.</para>
         </sect4>
       </sect3>
-
-      <sect3>
-        <title id="mt-dwell-time-setting">Time settings for buttonless
-        clicks</title>
-
-        <para>When using the buttonless click feature, the pointer has to stay
-        motionless for a determined time before a click is automatically
-        performed or before the pointer changes its shape to the gesture
-        shape. The control panel of Mousetweaks offers the following slider to
-        set the time to wait before a click is triggered:</para>
-
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="figures/mt-dwell-click-pause-time-slider.png" />
-          </imageobject>
-
-          <textobject>
-            <para>Picture showing the slider to set how long the pointer has
-            to be motionless</para>
-          </textobject>
-        </mediaobject>
-
-        <para>By moving the Time to Wait slider, the user can tell
-        <application>Mousetweaks</application> how long the pointer has to be
-        motionless before a click is automatically performed or before the
-        pointer changes its shape to the gesture shape.</para>
-
-        <note>
-          <para>This function only works in the context of the buttonless
-          click.</para>
-        </note>
-      </sect3>
-
-      <sect3 id="mt-dwell-movement-tolerance">
-        <title>Movement tolerance for buttonless clicks</title>
-
-        <para>When using the buttonless click feature, the pointer has to stay
-        motionless for a determined time before a click is automatically
-        performed or before the pointer changes its shape to the gesture
-        shape. For people who have problems to keep the pointer motionless for
-        a determined time lapse, there is a slider in the control panel of
-        <application>Mousetweaks</application> to make it ignore small pointer
-        movements.</para>
-
-        <mediaobject>
-          <imageobject>
-            <imagedata fileref="figures/mt-dwell-click-ignore-movement-slider.png" />
-          </imageobject>
-
-          <textobject>
-            <para>Picture showing the slider to set the amount of pointer
-            movement to ignore</para>
-          </textobject>
-        </mediaobject>
-
-        <para>By moving this slider, the user can indicate to Mousetweaks what
-        maximum movement size it has to consider as motionless.</para>
-
-        <note>
-          <para>This function only works in the context of the buttonless
-          click.</para>
-        </note>
-      </sect3>
     </sect2>
 
-    <sect2 id="mt-pointer-capture">
-      <title>Locking the pointer</title>
+    <sect2 id="mouse-a11y-pointer-capture-description">
+      <title>Locking The Pointer Description</title>
 
       <para>There are people that have to use their pointing device not only
       for the computer. These people would welcome a way to lock the pointer
       into an area of the screen, so that they can use their pointing device
-      for other tasks. The <application>Mousetweaks</application> application
-      ships with an applet called Pointer Capture that creates an area on the
-      panel into which the user can lock the pointer until he releases it in a
-      determined way.</para>
+      for other tasks.</para>
+
+      <para>In fact, the Pointer Capture panel applet creates such an area on
+      the panel, into which the user can lock the pointer until he releases it
+      in a determined way.</para>
 
       <remark>Have a look at <link
-      linkend="mt-start-pointer-capture-feature">Starting the pointer capture
-      feature</link> for instructions about how to install and remove it from
-      the GNOME panel.</remark>
+      linkend="mouse-a11y-start-pointer-capture">Starting The Pointer Capture
+      Function</link> for instructions about how to install the pointer
+      capture applet on the GNOME panel.</remark>
 
       <mediaobject>
         <imageobject>
-          <imagedata fileref="figures/mt-pointer-capture-context-menu.png" />
+          <imagedata fileref="figures/mouse-a11y-pointer-capture-context-menu.png" />
         </imageobject>
 
         <textobject>
@@ -729,7 +750,7 @@
         </textobject>
 
         <imageobject>
-          <imagedata fileref="figures/mt-pointer-capture-locked.png" />
+          <imagedata fileref="figures/mouse-a11y-pointer-capture-locked.png" />
         </imageobject>
 
         <textobject>
@@ -744,7 +765,7 @@
 
       <mediaobject>
         <imageobject>
-          <imagedata fileref="figures/mt-pointer-capture-preferences-window.png" />
+          <imagedata fileref="figures/mouse-a11y-pointer-capture-preferences.png" />
         </imageobject>
 
         <textobject>
@@ -786,7 +807,7 @@
     </sect2>
   </sect1>
 
-  <sect1 id="mt-about">
+  <sect1 id="mouse-a11y-about">
     <title>About <application>Mousetweaks</application></title>
 
     <sect2>
@@ -795,24 +816,26 @@
       <para><application>Mousetweaks</application> is based on a <ulink
       type="https"
       url="https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks">specification</ulink>
-      hosted on Launchpad and was implemented by Gerd Kohlberger (
-      <email>lowfi@chello.at</email> ); Francesco Fumanti (
-      <email>francesco.fumanti@gmx.net</email> ) helped with testing and other
+      hosted on Launchpad. It was implemented by Gerd Kohlberger (
+      <email>gerdk@svn.gnome.org</email> ), while I (
+      <email>frfumanti@svn.gnome.org</email> ) helped with testing and other
       things.</para>
 
       <para>You can find more informations about Mousetweaks on <ulink
-      type="https"
-      url="https://launchpad.net/mousetweaks">Launchpad</ulink>.</para>
+      type="https" url="https://launchpad.net/mousetweaks">Launchpad</ulink>
+      and on <ulink url="http://live.gnome.org//Mousetweaks/Home">GNOME
+      Live</ulink>.</para>
     </sect2>
 
     <sect2>
       <title>Feedback</title>
 
-      <para>To report a bug or make a suggestion regarding
-      <application>Mousetweaks</application> or this manual, please use the
-      facilities provided by the <ulink type="https"
-      url="https://launchpad.net/mousetweaks">Mousetweaks' pages on
-      Launchpad</ulink> .</para>
+      <para>To report a bug or make a suggestion regarding <application>the
+      mousetweaks</application> module (i.e.: mouse accessibility), its user
+      interface or its manual, please use the facilities provided by the
+      <ulink type="http" url="http://bugzilla.gnome.org/">GNOME's
+      Bugzilla</ulink>, where the corresponding module should soon be
+      available.</para>
     </sect2>
 
     <sect2>

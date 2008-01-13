@@ -1,3 +1,19 @@
+Version 2.21.5
+--------------
+
+New features:
+	First development release as GNOME module.
+
+Misc improvements/fixes:
+	* Move GUI to gnome-control-center mouse capplet
+	* Remove autostart handling
+	* Misc changes for GNOME migration
+
+New and updated translations:
+	- Gerd Kohlberger [de]
+	- Francesco Fumanti [it] [fr]
+
+
 Version 0.2.8
 -------------
 

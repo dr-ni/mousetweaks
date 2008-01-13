@@ -1,4 +1,10 @@
 2008-01-13 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* NEWS:
+	* README:
+
+	Prepare for 2.21.5 release
+
+2008-01-13 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* COPYING: Update license information to FDL 1.2
 
 2008-01-13 Francesco Fumanti <frfumanti@svn.gnome.org>

@@ -1,5 +1,5 @@
-Mousetweaks 0.3.0
------------------
+Mousetweaks 2.21.5
+------------------
 
 Description:
 
@@ -18,15 +18,30 @@ Description:
 	be captured until the user releases it with a predefined button
 	and modifier combination.
 
+	The options can be accessed through the Accessibility tab of the
+	Mouse Preferences of Gnome-Control-Center or through command-line
+	switches.
 
 Components of Mousetweaks: 
 
 	* mousetweaks: daemon that provides the enhancements 1 and 2 of
 	the above description
 	
-	* dwell-click-applet: optional applet to select the click-types when 
-	enhancement 1 of the above description is used
+	* dwell-click-applet: optional gnome-panel applet to select the
+	click-types when enhancement 1 of the above description is used
 	
-	* pointer-capture-applet: applet that provides enhancement 3 of
-	the above description
+	* pointer-capture-applet: gnome-panel applet that provides
+	enhancement 3 of the above description
+
+Reporting Bugs:
+
+	https://bugs.launchpad.net/mousetweaks
+
+	Note: We're moving to the GNOME bug tracking system.  You can
+	reach it at http://bugzilla.gnome.org.
+
+License:
+
+	This program is released under the terms of the GNU General Public
+	License.  Please see the file COPYING for details.
 

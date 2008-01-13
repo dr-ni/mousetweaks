@@ -1,3 +1,10 @@
+2008-01-13 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* MAINTAINERS
+	
+	Fix the entry for gerdk in the MAINTAINERS file; the 
+	entry for frfumanti was fixed during revision 4.
+
 2008-01-11 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* Intial commit
 	* configure.ac: Bump version to 2.21.5

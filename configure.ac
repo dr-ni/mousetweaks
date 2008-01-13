@@ -1,6 +1,6 @@
 AC_PREREQ(2.57)
 
-AC_INIT([mousetweaks], [2.21.5], [lowfi@chello.at], [mousetweaks])
+AC_INIT([mousetweaks], [2.21.90], [lowfi@chello.at], [mousetweaks])
 AC_CONFIG_SRCDIR([src])
 AC_CONFIG_HEADER([config.h])
 AC_PREFIX_DEFAULT([/usr])

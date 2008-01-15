@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-15 02:06+0100\n"
+"PO-Revision-Date: 2008-01-15 02:09+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Panelprogram för att välja olika typer av uppehållsklick.\n"
+"Del av Musjusteringar"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "Klicktypsfönster"
+
+#: ../data/dwell-click-applet.glade.h:4
+#: ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "Dubbelklick"
+
+#: ../data/dwell-click-applet.glade.h:5
+#: ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "Dragklick"
+
+#: ../data/dwell-click-applet.glade.h:6
+#: ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "Högerklick"
+
+#: ../data/dwell-click-applet.glade.h:7
+#: ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "Enkelklick"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Fånga pekare</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>Släpp pekare</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>Storlek på fångstområde</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Område att frysa muspekaren på panelen.\n"
+"Del av Musjusteringar"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "K_napp:"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "Modifierare:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "Inställningar för pekarfångst"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Val av Knapp 0 kommer att fånga pekaren omedelbart"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_Knapp:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_Bredd:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "bildpunkter"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "Uppehållsklicktyp"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Visa ikoner och text"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Visa endast ikoner"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Visa endast text"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "Uppehållsklick"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "Välj uppehållsklicktyp"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Område att låsa pekaren"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "Pekarfångst"
+
+#: ../src/mt-main.c:428
+msgid "Enable mousetweaks feature"
+msgstr "Aktivera funktion för musjusteringar"
+
+#: ../src/mt-main.c:430
+msgid "Use dwell mode"
+msgstr "Använd uppehållsläget"
+
+#: ../src/mt-main.c:432
+msgid "Show click type window"
+msgstr "Visa klicktypsfönster"
+
+#: ../src/mt-main.c:434
+msgid "Window x position"
+msgstr "Fönstrets x-position"
+
+#: ../src/mt-main.c:436
+msgid "Window y position"
+msgstr "Fönstrets y-position"
+
+#: ../src/mt-main.c:438
+msgid "Shutdown mousetweaks"
+msgstr "Stäng av musjusteringar"
+
+#: ../src/mt-main.c:495
+msgid "Assistive Technologies not enabled"
+msgstr "Hjälpmedelstekniker är inte aktiverade"
+
+#: ../src/mt-main.c:496
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "Musjusteringar kräver hjälpmedelstekniker."
+
+#: ../src/pointer-capture-applet.c:88
+#: ../src/dwell-click-applet.c:301
+msgid "Couldn't display help"
+msgstr "Kunde inte visa hjälp"
+
+#: ../src/pointer-capture-applet.c:216
+msgid "Locked"
+msgstr "Låst"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:219
+msgid "L"
+msgstr "L"
+
+#: ../src/pointer-capture-applet.c:645
+msgid "Capture area"
+msgstr "Fångstområde"
+
+#: ../src/pointer-capture-applet.c:646
+msgid "Temporarily lock the mouse pointer"
+msgstr "Lås muspekaren temporärt"
+

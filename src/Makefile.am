@@ -53,7 +53,7 @@ dwell_click_applet_LDFLAGS = \
 	$(PANEL_LIBS)	     \
 	$(DBUS_LIBS)
 
-pointer_capture_applet_SOURCES = \ 
+pointer_capture_applet_SOURCES = \
 	pointer-capture-applet.c \
 	mt-common.c		 \
 	mt-common.h

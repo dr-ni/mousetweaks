@@ -1,3 +1,9 @@
+2008-01-15  Daniel Nylander <po@danielnylander.se>
+
+	* sv/sv.po: Added Swedish translation.
+	* sv/figures: Added screenshots.
+	* Makefile.am: Added DOC_LINGUAS.
+
 2008-01-13 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* modify /trunk/help/ChangeLog

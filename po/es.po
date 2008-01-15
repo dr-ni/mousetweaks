@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-15 01:59+0000\n"
-"PO-Revision-Date: 2008-01-15 09:19+0100\n"
+"POT-Creation-Date: 2008-01-15 08:26+0000\n"
+"PO-Revision-Date: 2008-01-15 14:14+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <<gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -60,6 +60,8 @@ msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of MouseTweaks"
 msgstr ""
+"Área en la que congelar el puntero del ratón en el panel.\n"
+"Parte de los Ajustes finos del ratón"
 
 #: ../data/pointer-capture-applet.glade.h:6
 msgid "B_utton:"
@@ -123,7 +125,7 @@ msgstr "Captura del puntero"
 
 #: ../src/mt-main.c:428
 msgid "Enable mousetweaks feature"
-msgstr ""
+msgstr "Activar las características de ajustado fino del ratón"
 
 #: ../src/mt-main.c:430
 msgid "Use dwell mode"
@@ -143,7 +145,7 @@ msgstr "Ventana y posición"
 
 #: ../src/mt-main.c:438
 msgid "Shutdown mousetweaks"
-msgstr ""
+msgstr "Apagar los ajustes finos del ratón"
 
 #: ../src/mt-main.c:495
 msgid "Assistive Technologies not enabled"
@@ -151,7 +153,7 @@ msgstr "Las tecnologías de asistencia no están activadas"
 
 #: ../src/mt-main.c:496
 msgid "Mousetweaks requires Assistive Technologies."
-msgstr ""
+msgstr "Los ajustes finos del ratón requieren las tecnologías de asistencia."
 
 #: ../src/pointer-capture-applet.c:88 ../src/dwell-click-applet.c:301
 msgid "Couldn't display help"

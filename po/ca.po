@@ -1,0 +1,177 @@
+# Catalan translation of mousetweaks.
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mousetweaks package.
+# Gil Forcada <gforcada@guifi.net>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-15 11:24+0100\n"
+"PO-Revision-Date: 2008-01-15 11:22+0100\n"
+"Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Miniaplicació per a seleccionar els diferents tipus de clics en pausa.\n"
+"Part del MouseTweaks"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "Finestra del tipus de clic"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "Doble clic"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "Clic d'arrossegar"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "Clic secundari"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "Un sol clic"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Captura el punter</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>Allibera el punter</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>Mida de l'àrea capturada</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Àrea on congelar el punter del ratolí en el quadre.\n"
+"Part del MouseTweaks"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "B_otó:"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "Modificador:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "Preferències de la captura del punter"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Si seleccioneu el botó 0 es capturarà immediatament el punter"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_Botó:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_Amplada:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "píxels"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "Tipus de clic en pausa"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Mostra les icones i el text"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Només icones"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Només text"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "Clic en pausa"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "Seleccioneu el tipus de clic en pausa"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Àrea on bloquejar el punter"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "Captura del punter"
+
+#: ../src/mt-main.c:428
+msgid "Enable mousetweaks feature"
+msgstr "Habilita les característiques del MouseTweaks"
+
+#: ../src/mt-main.c:430
+msgid "Use dwell mode"
+msgstr "Utilitza el mode en pausa"
+
+#: ../src/mt-main.c:432
+msgid "Show click type window"
+msgstr "Mostra la finestra de tipus de clic"
+
+#: ../src/mt-main.c:434
+msgid "Window x position"
+msgstr "Posició x de la finestra"
+
+#: ../src/mt-main.c:436
+msgid "Window y position"
+msgstr "Posició y de la finestra"
+
+#: ../src/mt-main.c:438
+msgid "Shutdown mousetweaks"
+msgstr "Apaga el MouseTweaks"
+
+#: ../src/mt-main.c:495
+msgid "Assistive Technologies not enabled"
+msgstr "No està habilitada la tecnologia assistiva"
+
+#: ../src/mt-main.c:496
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "El MouseTweaks necessita les tecnologies assistives."
+
+#: ../src/pointer-capture-applet.c:88 ../src/dwell-click-applet.c:301
+msgid "Couldn't display help"
+msgstr "No s'ha pogut mostrar l'ajuda"
+
+#: ../src/pointer-capture-applet.c:216
+msgid "Locked"
+msgstr "Bloquejat"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:219
+msgid "L"
+msgstr "B"
+
+#: ../src/pointer-capture-applet.c:645
+msgid "Capture area"
+msgstr "Àrea de captura"
+
+#: ../src/pointer-capture-applet.c:646
+msgid "Temporarily lock the mouse pointer"
+msgstr "Bloqueja temporalment el punter del ratolí"

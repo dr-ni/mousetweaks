@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-15 08:26+0000\n"
-"PO-Revision-Date: 2008-01-15 14:14+0100\n"
+"POT-Creation-Date: 2008-01-15 13:22+0000\n"
+"PO-Revision-Date: 2008-01-17 15:26+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <<gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,6 +22,8 @@ msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of MouseTweaks"
 msgstr ""
+"Miniaplicación para seleccionar los diferentes tipos de pulsación al posarse.\n"
+"Parte de los Ajustes finos del ratón."
 
 #: ../data/dwell-click-applet.glade.h:3
 msgid "Click Type Window"
@@ -93,7 +95,7 @@ msgstr "píxeles"
 
 #: ../data/ctw.glade.h:3
 msgid "Dwell Click Type"
-msgstr ""
+msgstr "Tipo de pulsación al posarse"
 
 #: ../data/ctw.glade.h:5
 msgid "Show Icons and Text"
@@ -109,11 +111,11 @@ msgstr "Mostrar sólo el texto"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1
 msgid "Dwell Click"
-msgstr ""
+msgstr "Pulsación al posarse"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr ""
+msgstr "Seleccione el tipo de pulsación al posarse"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
@@ -129,7 +131,7 @@ msgstr "Activar las características de ajustado fino del ratón"
 
 #: ../src/mt-main.c:430
 msgid "Use dwell mode"
-msgstr ""
+msgstr "Usar modo al posarse"
 
 #: ../src/mt-main.c:432
 msgid "Show click type window"

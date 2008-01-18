@@ -1,21 +1,22 @@
 # Italian language file for mousetweaks.
-# Copyright (C) 2007
-# Gerd Kohlberger <lowfi@chello.at>
-# Francesco Fumanti <francesco.fumanti@gmx.net>
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2007 Gerd Kohlberger <lowfi@chello.at>
+# This file is distributed under the same license as the mousetweaks package.
+# Francesco Fumanti <francesco.fumanti@gmx.net>, 2007.
+# Luca Ferretti <elle.uca@libero.it>, 2008
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks-0.2.6\n"
+"Project-Id-Version: mousetweaks-0.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-12-15 11:46+0100\n"
-"PO-Revision-Date: 2007-11-06 13:05+0000\n"
-"Last-Translator: Francesco Fumanti <francesco.fumanti@gmx.net>\n"
+"POT-Creation-Date: 2008-01-18 22:23+0100\n"
+"PO-Revision-Date: 2008-01-18 22:32+0100\n"
+"Language-Team: Italiano <tp@lists.linux.it>\n"
+"Last-Translator: Luca Ferretti <elle.uca@libero.it>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2007-11-09 20:40+0000\n"
+"X-Launchpad-Export-Date: 2008-01-09 20:36+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
 #: ../data/dwell-click-applet.glade.h:1
@@ -23,16 +24,16 @@ msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of MouseTweaks"
 msgstr ""
-"Applet per la scelta del tipo di clic automatico.\n"
-"Componente di MouseTweaks"
+"Applet per selezionare diversi tipi di clic automatici.\n"
+"Parte di MouseTweaks"
 
 #: ../data/dwell-click-applet.glade.h:3
 msgid "Click Type Window"
-msgstr "Finestra Di Scelta Del Clic"
+msgstr "Finestra tipo di clic"
 
 #: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
 msgid "Double Click"
-msgstr "Doppio clic:"
+msgstr "Doppio clic"
 
 #: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
 msgid "Drag Click"
@@ -48,15 +49,15 @@ msgstr "Clic singolo"
 
 #: ../data/pointer-capture-applet.glade.h:1
 msgid "<b>Capture Pointer</b>"
-msgstr "<b>Cattura Del Puntatore</b>"
+msgstr "<b>Cattura del puntatore</b>"
 
 #: ../data/pointer-capture-applet.glade.h:2
 msgid "<b>Release Pointer</b>"
-msgstr "<b>Rilascio Del Puntatore</b>"
+msgstr "<b>Rilascio del puntatore</b>"
 
 #: ../data/pointer-capture-applet.glade.h:3
 msgid "<b>Size of Capture Area</b>"
-msgstr "<b>Grandezza Del Area Di Cattura</b>"
+msgstr "<b>Dimensione dell'area di cattura</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
 msgid ""
@@ -64,11 +65,11 @@ msgid ""
 "Part of MouseTweaks"
 msgstr ""
 "Area sul panello per la cattura del puntatore.\n"
-"Componente di MouseTweaks"
+"Parte di MouseTweaks"
 
 #: ../data/pointer-capture-applet.glade.h:6
 msgid "B_utton:"
-msgstr "Bo_ttone:"
+msgstr "P_ulsante:"
 
 #: ../data/pointer-capture-applet.glade.h:7
 msgid "Modifier:"
@@ -76,19 +77,20 @@ msgstr "Modificatore:"
 
 #: ../data/pointer-capture-applet.glade.h:8
 msgid "Pointer Capture Preferences"
-msgstr "Impostazioni Di Cattura Del Puntatore"
+msgstr "Preferenze di Cattura del puntatore"
 
 #: ../data/pointer-capture-applet.glade.h:9
 msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Selezionando Bottone 0, il puntatore sarà catturato subito"
+msgstr ""
+"Selezionando 0 per «Pulsante», il puntatore sarà catturato immediatamente"
 
 #: ../data/pointer-capture-applet.glade.h:10
 msgid "_Button:"
-msgstr "_Bottone:"
+msgstr "_Pulsante:"
 
 #: ../data/pointer-capture-applet.glade.h:11
 msgid "_Width:"
-msgstr "_Larghezza:"
+msgstr "Larghe_zza:"
 
 #: ../data/pointer-capture-applet.glade.h:12
 msgid "pixels"
@@ -96,19 +98,19 @@ msgstr "pixel"
 
 #: ../data/ctw.glade.h:3
 msgid "Dwell Click Type"
-msgstr "Tipo Di Clic Automatica"
+msgstr "Tipo di clic automatico"
 
 #: ../data/ctw.glade.h:5
 msgid "Show Icons and Text"
-msgstr "Mostra Iconi e Testo"
+msgstr "Mostrare icone e testo"
 
 #: ../data/ctw.glade.h:6
 msgid "Show Icons only"
-msgstr "Mostra solo Iconi"
+msgstr "Mostrare solo le icone"
 
 #: ../data/ctw.glade.h:7
 msgid "Show Text only"
-msgstr "Mostra solo Testo"
+msgstr "Mostrare solo il testo"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1
 msgid "Dwell Click"
@@ -116,51 +118,51 @@ msgstr "Clic automatico"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr "Scegli il tipo di clic automatico"
+msgstr "Seleziona il tipo di clic automatico"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
-msgstr "Area di cattura del puntatore"
+msgstr "Area in cui bloccare il puntatore"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
 msgid "Pointer Capture"
-msgstr "Cattura Del Puntatore"
+msgstr "Cattura del puntatore"
 
 #: ../src/mt-main.c:428
 msgid "Enable mousetweaks feature"
-msgstr "Attiva le funzionalità di Mousetweaks"
+msgstr "Abilita le funzionalità di Mousetweaks"
 
 #: ../src/mt-main.c:430
 msgid "Use dwell mode"
-msgstr "Utilizza il clic automatico"
+msgstr "Usa la modalità automatica"
 
 #: ../src/mt-main.c:432
 msgid "Show click type window"
-msgstr "Mostra la finestra di scelta del clic"
+msgstr "Mostra la finestra per il tipo di clic"
 
 #: ../src/mt-main.c:434
 msgid "Window x position"
-msgstr "Posizione orizzontale x della finestra"
+msgstr "Posizione orizzontale della finestra"
 
 #: ../src/mt-main.c:436
 msgid "Window y position"
-msgstr "Posizione verticale y della finestra"
+msgstr "Posizione verticale della finestra"
 
 #: ../src/mt-main.c:438
 msgid "Shutdown mousetweaks"
-msgstr "Esci Mousetweaks"
+msgstr "Arresta Mousetweaks"
 
-#: ../src/mt-main.c:495
+#: ../src/mt-main.c:501
 msgid "Assistive Technologies not enabled"
-msgstr "Aiuti Tecnici non attivi"
+msgstr "Tecnologie assistive non abilitate"
 
-#: ../src/mt-main.c:496
+#: ../src/mt-main.c:502
 msgid "Mousetweaks requires Assistive Technologies."
-msgstr "Mousetweaks necessità i Aiuti Tecnici"
+msgstr "Mousetweaks richiede le tecnologie assistive."
 
 #: ../src/pointer-capture-applet.c:88 ../src/dwell-click-applet.c:301
 msgid "Couldn't display help"
-msgstr "Impossibile mostrare la guida"
+msgstr "Impossibile mostrare il manuale"
 
 #: ../src/pointer-capture-applet.c:216
 msgid "Locked"
@@ -177,5 +179,4 @@ msgstr "Area di cattura"
 
 #: ../src/pointer-capture-applet.c:646
 msgid "Temporarily lock the mouse pointer"
-msgstr "Blocca il puntatore temporaneamente"
-
+msgstr "Blocca temporaneamente il puntatore del mouse"

@@ -3,6 +3,8 @@ data/pointer-capture-applet.glade
 data/ctw.glade
 data/DwellClick_Factory.server.in.in
 data/PointerCapture_Factory.server.in.in
+data/DwellClick.xml
+data/PointerCapture.xml
 src/mt-main.c
 src/mt-ctw.c
 src/mt-dbus.c

@@ -1,3 +1,14 @@
+2008-01-20 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* data/PointerCapture.xml:
+	* data/DwellClick.xml:
+	* data/Makefile.am:
+	* src/dwell-click-applet.c:
+	* src/pointer-capture-applet.c:
+	
+	Move applet context menus to external XML file
+	
+	* po/POTFILES.in: Add new XML files
+
 2008-01-15 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* src/Makefile.am:

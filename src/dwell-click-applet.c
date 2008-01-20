@@ -54,18 +54,6 @@ static const gchar *img_widgets_v[] = {
     "single_click_img_v"
 };
 
-static const gchar menu_xml[] =
-    "<popup name=\"button3\">\n"
-    "  <menuitem name=\"Properties Item\" verb=\"PropertiesVerb\" "
-    "          _label=\"_Preferences\"\n"
-    "         pixtype=\"stock\" pixname=\"gtk-properties\"/>\n"
-    "  <menuitem name=\"Help Item\" verb=\"HelpVerb\" "
-    "          _label=\"_Help\"\n"
-    "         pixtype=\"stock\" pixname=\"gtk-help\"/>\n"
-    "  <menuitem name=\"About Item\" verb=\"AboutVerb\" _label=\"_About\"\n"
-    "         pixtype=\"stock\" pixname=\"gtk-about\"/>\n"
-    "</popup>\n";
-
 static void update_sensitivity (DwellData *dd);
 
 static void preferences_dialog (BonoboUIComponent *component,
@@ -237,7 +225,7 @@ fini_dwell_data (DwellData *dd)
     if (dd->conn)
 	dbus_connection_unref (dd->conn);
 
-     if (dd->client)
+    if (dd->client)
 	g_object_unref (dd->client);
 
     for (i = 0; i < N_CLICK_TYPES; i++)
@@ -494,7 +482,9 @@ fill_applet (PanelApplet *applet)
 			    PANEL_APPLET_EXPAND_MINOR |
 			    PANEL_APPLET_HAS_HANDLE);
     panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
-    panel_applet_setup_menu (applet, menu_xml, menu_verb, dd);
+    panel_applet_setup_menu_from_file (applet,
+				       GLADEDIR, "DwellClick.xml",
+				       NULL, menu_verb, dd);
 
     g_signal_connect (applet, "change-orient",
 		      G_CALLBACK(applet_orient_changed), dd);

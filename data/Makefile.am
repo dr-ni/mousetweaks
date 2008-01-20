@@ -2,11 +2,13 @@ if BUILD_PCA
 pca_schemas = pointer-capture-applet.schemas
 pca_glade   = pointer-capture-applet.glade
 pca_server  = PointerCapture_Factory.server.in
+pca_menu    = PointerCapture.xml
 endif
 
 if BUILD_CTA
 cta_glade  = dwell-click-applet.glade
 cta_server = DwellClick_Factory.server.in
+cta_menu   = DwellClick.xml
 endif
 
 serverdir = $(libdir)/bonobo/servers
@@ -30,6 +32,9 @@ xmldir = $(datadir)/mousetweaks
 xml_DATA = ctw.glade $(pca_glade) $(cta_glade)
 
 @INTLTOOL_DESKTOP_RULE@
+
+uidir = $(datadir)/mousetweaks
+ui_DATA = $(pca_menu) $(cta_menu)
 
 schemasdir = @GCONF_SCHEMA_FILE_DIR@
 schemas_DATA = mousetweaks.schemas $(pca_schemas)
@@ -55,7 +60,8 @@ endif
 EXTRA_DIST =		      \
 	$(xml_DATA)	      \
 	$(schemas_DATA)       \
-	$(server_in_in_files)
+	$(server_in_in_files) \
+	$(ui_DATA)
 
 DISTCLEANFILES =           \
 	$(server_DATA)     \

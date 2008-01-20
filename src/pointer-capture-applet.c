@@ -48,18 +48,6 @@ struct _CaptureData {
     guint rel_mask;
 };
 
-static const gchar menu_xml[] =
-    "<popup name=\"button3\">\n"
-    "  <menuitem name=\"Properties Item\" verb=\"PropertiesVerb\" "
-    "          _label=\"_Preferences\"\n"
-    "         pixtype=\"stock\" pixname=\"gtk-properties\"/>\n"
-    "  <menuitem name=\"Help Item\" verb=\"HelpVerb\" "
-    "          _label=\"_Help\"\n"
-    "         pixtype=\"stock\" pixname=\"gtk-help\"/>\n"
-    "  <menuitem name=\"About Item\" verb=\"AboutVerb\" _label=\"_About\"\n"
-    "         pixtype=\"stock\" pixname=\"gtk-about\"/>\n"
-    "</popup>\n";
-
 static void fini_capture_data (CaptureData *cd);
 
 static void
@@ -634,7 +622,9 @@ fill_applet (PanelApplet *applet)
 			    PANEL_APPLET_EXPAND_MINOR |
 			    PANEL_APPLET_HAS_HANDLE);
     panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
-    panel_applet_setup_menu (applet, menu_xml, menu_verb, cd);
+    panel_applet_setup_menu_from_file (applet,
+				       GLADEDIR, "PointerCapture.xml",
+				       NULL, menu_verb, cd);
 
     g_signal_connect (applet, "change-orient",
 		      G_CALLBACK(applet_orient_changed), cd);

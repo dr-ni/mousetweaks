@@ -1,0 +1,184 @@
+# Arabic translations for gnome package.
+# Copyright (C) 2008 THE gnome'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome package.
+# Automatically generated, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome 2-22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-17 10:09+0000\n"
+"PO-Revision-Date: 2008-01-20 15:04+0100\n"
+"Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
+"Language-Team: Arabeyes <doc@arabeyes.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Arabic\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"بريمج لاختيار أنواع نقر كامن مختلفة.\n"
+"جزء من برنامج ظبط الفأرة"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "نافذة نوع النّقر"
+
+#: ../data/dwell-click-applet.glade.h:4
+#: ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "نقر ثنائي"
+
+#: ../data/dwell-click-applet.glade.h:5
+#: ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "نقر"
+
+#: ../data/dwell-click-applet.glade.h:6
+#: ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "نقر أيمن"
+
+#: ../data/dwell-click-applet.glade.h:7
+#: ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "نقر وحيد"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>امسك المؤشّر</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>اترك المؤشّر</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>حجم مساحة الإمساك</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"مساحة تجميد مؤشر الفأرة على الشريط.\n"
+"جزء من برنامج ظبط الفأرة"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "_زر:"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "مغير:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "تفضيلات الإمساك بالمؤشّر"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "اختيار زر  0 سيثبت المؤشّر مباشرة"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_زر:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_عرض:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "بكسلات"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "نوع النقر الكامن"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "اعرض النص و الأيقونات"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "اعرض النص فقط"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "اعرض النصّ فقط"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "نقر كامن"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "انتق نوع النقر الكامن"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "مساحة لتثبيت المؤشّر"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "مسك المؤشّر"
+
+#: ../src/mt-main.c:428
+msgid "Enable mousetweaks feature"
+msgstr "فعّل ميزة برنامج ظبط الفأرة"
+
+#: ../src/mt-main.c:430
+msgid "Use dwell mode"
+msgstr "استخدم نمط الكمون"
+
+#: ../src/mt-main.c:432
+msgid "Show click type window"
+msgstr "اعرض نافذة نوع النّقر"
+
+#: ../src/mt-main.c:434
+msgid "Window x position"
+msgstr "موقع س للنافذة"
+
+#: ../src/mt-main.c:436
+msgid "Window y position"
+msgstr "موقع ع للنافذة"
+
+#: ../src/mt-main.c:438
+msgid "Shutdown mousetweaks"
+msgstr "اغلق برنامج ظبط الفأرة"
+
+#: ../src/mt-main.c:495
+msgid "Assistive Technologies not enabled"
+msgstr "لم يتم تفعيل تكنلوجيا الإتاحة"
+
+#: ../src/mt-main.c:496
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "يتطلّب هذا البرنامج تكنلوجيا الإتاحة"
+
+#: ../src/pointer-capture-applet.c:88
+#: ../src/dwell-click-applet.c:301
+msgid "Couldn't display help"
+msgstr "تعذّر عرض المساعدة"
+
+#: ../src/pointer-capture-applet.c:216
+msgid "Locked"
+msgstr "مثبّت"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:219
+msgid "L"
+msgstr "م"
+
+#: ../src/pointer-capture-applet.c:645
+msgid "Capture area"
+msgstr "مساحة الإمساك"
+
+#: ../src/pointer-capture-applet.c:646
+msgid "Temporarily lock the mouse pointer"
+msgstr "ثبّت مؤشّر الفأرة مؤقّتا"
+

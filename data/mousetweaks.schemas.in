@@ -8,7 +8,7 @@
         <type>int</type>
         <default>10</default>
         <locale name="C">
-          <short>Movement Threshold</short>
+          <short>Movement threshold</short>
           <long>Distance in pixels before movement will be recognized</long>
         </locale>
       </schema>
@@ -20,8 +20,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Enable Delay Click</short>
-          <long>Enable Delay Click</long>
+          <short>Enable secondary click</short>
+          <long>Enable simulated secondary click</long>
         </locale>
       </schema>
 
@@ -32,8 +32,8 @@
         <type>float</type>
         <default>1.20</default>
         <locale name="C">
-          <short>Delay Click Time</short>
-          <long>Seconds to hold left button before the context menu opens</long>
+          <short>Secondary click time</short>
+          <long>Time in seconds before a secondary click is triggered</long>
         </locale>
       </schema>
 
@@ -44,8 +44,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Enable Dwell Click</short>
-          <long>Enable Dwell Click</long>
+          <short>Enable dwell click</short>
+          <long>Enable dwell click</long>
         </locale>
       </schema>
 
@@ -56,8 +56,8 @@
         <type>float</type>
         <default>1.20</default>
         <locale name="C">
-          <short>Dwell Click Time</short>
-          <long>Seconds before the click is exectued</long>
+          <short>Dwell click time</short>
+          <long>Time in seconds before a click is triggered</long>
         </locale>
       </schema>
 
@@ -68,8 +68,8 @@
         <type>int</type>
         <default>0</default>
         <locale name="C">
-          <short>Gesture Single Click</short>
-          <long>Direction to perform a single click (0 = Left, 1 = Right, 2 = Up, 3 = Down)</long>
+          <short>Gesture single click</short>
+          <long>Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)</long>
         </locale>
       </schema>
 
@@ -80,8 +80,8 @@
         <type>int</type>
         <default>2</default>
         <locale name="C">
-          <short>Gesture Double Click</short>
-          <long>Direction to perform a double click (0 = Left, 1 = Right, 2 = Up, 3 = Down)</long>
+          <short>Gesture double click</short>
+          <long>Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)</long>
         </locale>
       </schema>
 
@@ -92,8 +92,8 @@
         <type>int</type>
         <default>3</default>
         <locale name="C">
-          <short>Gesture Drag Click</short>
-          <long>Direction to perform dragging (0 = Left, 1 = Right, 2 = Up, 3 = Down)</long>
+          <short>Gesture drag click</short>
+          <long>Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)</long>
         </locale>
       </schema>
 
@@ -104,8 +104,8 @@
         <type>int</type>
         <default>1</default>
         <locale name="C">
-          <short>Gesture Secondary Click</short>
-          <long>Direction to perform a secondary click (0 = Left, 1 = Right, 2 = Up, 3 = Down)</long>
+          <short>Gesture secondary click</short>
+          <long>Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)</long>
         </locale>
       </schema>
 
@@ -116,8 +116,8 @@
         <type>int</type>
         <default>1</default>
         <locale name="C">
-          <short>Dwell Click Mode</short>
-          <long>(0 = Gesture mode, 1 = Click Type window mode)</long>
+          <short>Dwell click mode</short>
+          <long>Dwell click mode (0=Gesture mode, 1=Window mode)</long>
         </locale>
       </schema>
 
@@ -128,8 +128,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Show Click Type Window</short>
-          <long>Show Click Type Window</long>
+          <short>Show click type window</short>
+          <long>Show click type window</long>
         </locale>
       </schema>
 
@@ -140,8 +140,8 @@
         <type>int</type>
         <default>2</default>
         <locale name="C">
-          <short>Button Layout</short>
-          <long>Style of Click Type Buttons (0 = Text, 1 = Icon, 2 = Both)</long>
+          <short>Button style</short>
+          <long>Button style in click type window (0=Text, 1=Icon, 2=Both)</long>
         </locale>
       </schema>
 

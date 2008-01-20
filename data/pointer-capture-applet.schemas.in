@@ -9,7 +9,7 @@
         <default>100</default>
         <locale name="C">
           <short>Size of capture area</short>
-          <long>The width in pixels of the capture area</long>
+          <long>Width of the capture area in pixels</long>
         </locale>
       </schema>
 
@@ -20,7 +20,7 @@
         <default>1</default>
         <locale name="C">
           <short>Capture button</short>
-          <long>Button to initiate pointer capturing</long>
+          <long>Button to capture the pointer (0=Capture immediately)</long>
         </locale>
       </schema>
 
@@ -42,7 +42,7 @@
         <default>false</default>
         <locale name="C">
           <short>Capture modifier</short>
-          <long>Key modifier</long>
+          <long>Capture modifier key (Shift)</long>
         </locale>
       </schema>
 
@@ -53,7 +53,7 @@
         <default>false</default>
         <locale name="C">
           <short>Capture modifier</short>
-          <long>Key modifier</long>
+          <long>Capture modifier key (Alt)</long>
         </locale>
       </schema>
 
@@ -64,7 +64,7 @@
         <default>false</default>
         <locale name="C">
           <short>Capture modifier</short>
-          <long>Key modifier</long>
+          <long>Capture modifier key (Ctrl)</long>
         </locale>
       </schema>
 
@@ -75,7 +75,7 @@
         <default>false</default>
         <locale name="C">
           <short>Release modifier</short>
-          <long>Key modifier</long>
+          <long>Release modifier key (Shift)</long>
         </locale>
       </schema>
 
@@ -86,7 +86,7 @@
         <default>false</default>
         <locale name="C">
           <short>Release modifier</short>
-          <long>Key modifier</long>
+          <long>Release modifier key (Alt)</long>
         </locale>
       </schema>
 
@@ -97,7 +97,7 @@
         <default>false</default>
         <locale name="C">
           <short>Release modifier</short>
-          <long>Key modifier</long>
+          <long>Release modifier key (Ctrl)</long>
         </locale>
       </schema>
 

@@ -1,3 +1,11 @@
+2008-01-21 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* data/mousetweaks.schemas.in:
+	* data/pointer-capture-applet.schemas.in:
+	* data/Makefile.am:
+	* po/POTFILES.in:
+
+	Mark schema files for translation and update descriptions.
+	
 2008-01-20 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* data/PointerCapture.xml:
 	* data/DwellClick.xml:

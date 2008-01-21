@@ -1,4 +1,7 @@
 2008-01-21 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* src/mt-main.c: Fix command-line -m switch to enable the correct mode.
+
+2008-01-21 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* data/mousetweaks.schemas.in:
 	* data/pointer-capture-applet.schemas.in:
 	* data/Makefile.am:

@@ -551,9 +551,11 @@ main (int argc, char **argv)
 	    gconf_client_set_bool (mt->client, OPT_CTW, TRUE, NULL);
 	if (mode) {
 	    if (g_str_equal (mode, "gesture"))
-		gconf_client_set_int (mt->client, OPT_MODE, 0, NULL);
-	    if (g_str_equal (mode, "window"))
-		gconf_client_set_int (mt->client, OPT_MODE, 1, NULL);
+		gconf_client_set_int (mt->client, OPT_MODE,
+				      DWELL_MODE_GESTURE, NULL);
+	    else if (g_str_equal (mode, "window"))
+		gconf_client_set_int (mt->client, OPT_MODE,
+				      DWELL_MODE_CTW, NULL);
 	}
 
 	/* gconf stuff */

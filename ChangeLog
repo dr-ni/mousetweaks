@@ -1,5 +1,11 @@
 2008-01-21 Francesco Fumanti <frfumanti@svn.gnome.org>
 
+	* README:
+
+	Fix version in README changed by mistake in revision 28
+
+2008-01-21 Francesco Fumanti <frfumanti@svn.gnome.org>
+
 	* man/dwell-click-applet.1:
 	* man/pointer-capture-applet.1:
 

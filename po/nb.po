@@ -1,0 +1,177 @@
+# Norwegian translation of mousetweaks (bokmål dialect).
+# Copyright (C) 1999-2005 Free Software Foundation, Inc.
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2008.
+# Terance Edward Sola <terance@lyse.net>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks 2.21.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-21 21:42+0100\n"
+"PO-Revision-Date: 2008-01-21 21:48+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "Klikk type vindu"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "Dobbeltklikk"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "Dra-og-klikk"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "Høyreklikk"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "Enkeltklikk"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Fang peker</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>Slipp peker løs</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>Størrelse på fangstområde</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "Kn_app:"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "Endringstast:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "Brukervalg for fanging av pekeren"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_Knapp:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_Bredde:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "piksler"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "Type dwell-klikk"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Vis ikoner og tekst"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Vis kun ikoner"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Vis kun tekst"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "Dwell-klikk"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr ""
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr ""
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr ""
+
+#: ../src/mt-main.c:428
+msgid "Enable mousetweaks feature"
+msgstr ""
+
+#: ../src/mt-main.c:430
+msgid "Use dwell mode"
+msgstr ""
+
+#: ../src/mt-main.c:432
+#, fuzzy
+msgid "Show click type window"
+msgstr "Vis _vindu for type klikk"
+
+#: ../src/mt-main.c:434
+#, fuzzy
+msgid "Window x position"
+msgstr "Skrift for _vindutittel:"
+
+#: ../src/mt-main.c:436
+#, fuzzy
+msgid "Window y position"
+msgstr "Skrift for _vindutittel:"
+
+#: ../src/mt-main.c:438
+msgid "Shutdown mousetweaks"
+msgstr ""
+
+#: ../src/mt-main.c:495
+msgid "Assistive Technologies not enabled"
+msgstr "Hjelpeteknologi ikke aktivert"
+
+#: ../src/mt-main.c:496
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "Mousetweaks krever hjelpeteknologi."
+
+#: ../src/pointer-capture-applet.c:88 ../src/dwell-click-applet.c:301
+msgid "Couldn't display help"
+msgstr "Kunne ikke vise hjelp"
+
+#: ../src/pointer-capture-applet.c:216
+msgid "Locked"
+msgstr "Låst"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:219
+msgid "L"
+msgstr "L"
+
+#: ../src/pointer-capture-applet.c:645
+msgid "Capture area"
+msgstr "Fangstområde"
+
+#: ../src/pointer-capture-applet.c:646
+msgid "Temporarily lock the mouse pointer"
+msgstr "Lås muspekeren midlertidig"

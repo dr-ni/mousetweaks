@@ -1,5 +1,5 @@
-Mousetweaks 2.21.90
--------------------
+Mousetweaks 2.21.5
+------------------
 
 Description:
 
@@ -19,8 +19,7 @@ Description:
 	and modifier combination.
 
 	The options can be accessed through the Accessibility tab of the
-	Mouse Preferences of Gnome-Control-Center or through command-line
-	switches.
+	Mouse Preferences of GNOME Control Center or through command-line.
 
 Components of Mousetweaks: 
 
@@ -32,6 +31,10 @@ Components of Mousetweaks:
 	
 	* pointer-capture-applet: gnome-panel applet that provides
 	enhancement 3 of the above description
+
+Host:
+
+	Homepage: http://live.gnome.org/Mousetweaks/Home
 
 Reporting Bugs:
 

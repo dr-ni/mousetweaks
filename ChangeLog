@@ -1,3 +1,9 @@
+2008-01-21 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* README:
+
+	Add homepage of mousetweaks to README
+
 2008-01-21 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* src/mt-main.c: Fix command-line -m switch to enable the correct mode.
 

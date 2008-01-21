@@ -4,23 +4,23 @@
 .de IPs
 .IP "\\$1" \n(SS
 ..
-.TH "Mousetweaks" 1
+.TH "mousetweaks" 1
 .SH NAME
-Mousetweaks \- Accessibility enhancements for the mouse
+mousetweaks \- Accessibility enhancements for the mouse
 .SH SYNOPSIS
 .B mousetweaks
-[-e|--enable=STRING] [-m|--dwell-mode=STRING]
-[-c|--show-ctw] [-x|--ctw-x=INT] [-y|--ctw-y=INT] [-s|--shutdown]
+[\-e|\-\-enable=STRING] [\-m|\-\-dwell\-mode=STRING]
+[\-c|\-\-show\-ctw] [\-x|\-\-ctw\-x=INT] [\-y|\-\-ctw\-y=INT] [\-s|\-\-shutdown]
 .br
 .B mousetweaks
-[-?|--help]
+[\-?|\-\-help]
 .SH DESCRIPTION
 .B mousetweaks
 is a daemon that provides various mouse features for the GNOME desktop.
 It depends on Assistve Technology.
 .SH OPTIONS
 .TP
-.B \-e, \--enable=STRING
+.B \-e, \-\-enable=STRING
 Enable a mousetweaks feature. Available arguments are: dwell, delay
 .RS
 .IPs DWELL
@@ -30,7 +30,7 @@ Trigger the secondary mouse button when the primary button is held down
 for a specified amount of time 
 .RE
 .TP
-.B \-m, \--dwell-mode=STRING
+.B \-m, \-\-dwell\-mode=STRING
 Select a dwelling mode. Available arguments are: window, gesture
 .RS
 .IPs WINDOW
@@ -40,16 +40,16 @@ Perform clicks by moving in different directions after the cursor changes
 to a cross
 .RE
 .TP
-.B \-c, \--show-ctw
-Show the click-type window. Only useful in combination with dwell-mode window
+.B \-c, \-\-show\-ctw
+Show the click\-type window. Only useful in combination with dwell\-mode window
 .TP
-.B \-x, \--ctw-x=INT
-X Position of the click-type window on screen
+.B \-x, \-\-ctw\-x=INT
+X Position of the click\-type window on screen
 .TP
-.B \-y, \--ctw-y=INT
-Y Position of the click-type window on screen
+.B \-y, \-\-ctw\-y=INT
+Y Position of the click\-type window on screen
 .TP
-.B \-s, \--shutdown
+.B \-s, \-\-shutdown
 Stop the mousetweaks daemon
 .SH FILES
 .I ~/.mousetweaks.pid
@@ -64,4 +64,4 @@ Gerd Kohlberger <lowfi@chello.at>
 .SH LICENSE
 Licenced under the GNU General Public License v3 and later
 .SH SEE ALSO
-Assistive Technology Service Provider Interface (AT-SPI)
+Assistive Technology Service Provider Interface (AT\-SPI)

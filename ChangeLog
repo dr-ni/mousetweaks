@@ -1,5 +1,11 @@
 2008-01-21 Francesco Fumanti <frfumanti@svn.gnome.org>
 
+	* man/mousetweaks.1:
+
+	Differentiate minus and hyphen in man page
+
+2008-01-21 Francesco Fumanti <frfumanti@svn.gnome.org>
+
 	* README:
 
 	Add homepage of mousetweaks to README

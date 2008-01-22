@@ -1,3 +1,10 @@
+2008-01-22 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* man/mousetweaks.1
+	* man/dwell-click-applet.1
+	* man/pointer-capture-applet.1
+	
+	Update bug information and some restructuring.
+	
 2008-01-21 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* README:

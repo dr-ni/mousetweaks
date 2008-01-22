@@ -1,26 +1,21 @@
-.\" Macros
-.\" define indentation for suboptions
-.nr SS 5
-.de IPs
-.IP "\\$1" \n(SS
-..
 .TH "pointer-capture-applet" 1
 .SH NAME
-pointer-capture-applet \- Creates an area on the panel to capture the pointer
+pointer\-capture\-applet \- Creates an area on the panel to capture the pointer
 .SH SYNOPSIS
-No command line interface.
+.B pointer\-capture\-applet
 .SH DESCRIPTION
-The Pointer Capture applet creates an area on the panel into which the pointer can be captured until the user releases it with a predefined button and modifier combination.
-.SH OPTIONS
-The \fBPointer Capture\fR panel applet does not have any command line interface.
-.SH FILES
-.I /usr/bin/pointer\-capture\-applet
+The Pointer Capture applet is part of the mousetweaks package. It creates an area on the panel which can capture the pointer until the user releases it with a predefined button and modifier key combination.
 .SH BUGS
-See:
-.I http://bugzilla.gnome.org
+Report bugs to
+.UR http://bugzilla.gnome.org/
+<http://bugzilla.gnome.org/>
+.UE
 .SH AUTHORS
-Gerd Kohlberger <gerdk@svn.gnome.org>
+.B pointer\-capture\-applet
+was written by Gerd Kohlberger <lowfi@chello.at>. This manual page was written by Francesco Fumanti <francesco.fumanti@gmx.net>
 .SH LICENSE
-Licenced under the GNU General Public License v3 and later
+Licenced under the GNU General Public License v3 or later.
 .SH SEE ALSO
+.BR "mousetweaks" (1),
+.BR "dwell\-click\-applet" (1),
 Assistive Technology Service Provider Interface (AT\-SPI)

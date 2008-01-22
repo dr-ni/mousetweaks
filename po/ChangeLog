@@ -1,3 +1,7 @@
+2008-01-22  Gerd Kohlberger  <gerdk@svn.gnome.org>
+	* LINGUAS: Add ja.
+	* ja.po: Import Japanese translation from Launchpad.
+
 2008-01-21  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* LINGUAS: Add nb. 

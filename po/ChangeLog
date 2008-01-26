@@ -1,3 +1,7 @@
+2008-01-26  Matej Urbančič  <mateju@svn.gnome.org>
+	* LINGUAS: Added sl.
+	* ja.po: Added Slovenian translation.
+
 2008-01-25  Inaki Larranaga Murgoitio  <dooteo@euskalgnu.org>
 
 	* LINGUAS: Added "eu" (Basque) entry.

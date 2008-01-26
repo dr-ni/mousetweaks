@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-25 08:14+0000\n"
-"PO-Revision-Date: 2008-01-25 16:11+0100\n"
+"PO-Revision-Date: 2008-01-26 09:27+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: ../data/dwell-click-applet.glade.h:3
 msgid "Click Type Window"
-msgstr ""
+msgstr "Okno vrste klike"
 
 #: ../data/dwell-click-applet.glade.h:4
 #: ../data/ctw.glade.h:1
@@ -36,7 +36,7 @@ msgstr "Dvojni klik"
 #: ../data/dwell-click-applet.glade.h:5
 #: ../data/ctw.glade.h:2
 msgid "Drag Click"
-msgstr ""
+msgstr "Klik s potegom"
 
 #: ../data/dwell-click-applet.glade.h:6
 #: ../data/ctw.glade.h:4
@@ -50,15 +50,15 @@ msgstr "Enojni klik"
 
 #: ../data/pointer-capture-applet.glade.h:1
 msgid "<b>Capture Pointer</b>"
-msgstr ""
+msgstr "<b>Kazalnik zajema</b>"
 
 #: ../data/pointer-capture-applet.glade.h:2
 msgid "<b>Release Pointer</b>"
-msgstr ""
+msgstr "<b>Kazalnik sprostitve gumba</b>"
 
 #: ../data/pointer-capture-applet.glade.h:3
 msgid "<b>Size of Capture Area</b>"
-msgstr ""
+msgstr "<b>Velikost območja zajemanja</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
 msgid ""
@@ -76,11 +76,11 @@ msgstr "Spremenilnik:"
 
 #: ../data/pointer-capture-applet.glade.h:8
 msgid "Pointer Capture Preferences"
-msgstr ""
+msgstr "Lastnosti zajemanja kazalnika"
 
 #: ../data/pointer-capture-applet.glade.h:9
 msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr ""
+msgstr "Z izborom gumba 0 bo zajem kazalnika trenuten"
 
 #: ../data/pointer-capture-applet.glade.h:10
 msgid "_Button:"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../data/ctw.glade.h:5
 msgid "Show Icons and Text"
-msgstr ""
+msgstr "Prikaži ikone in besedilo"
 
 #: ../data/ctw.glade.h:6
 msgid "Show Icons only"
@@ -120,11 +120,11 @@ msgstr ""
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
-msgstr ""
+msgstr "Območje za zaklepanje kazalnika"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
 msgid "Pointer Capture"
-msgstr ""
+msgstr "Zajem kazalnika"
 
 #: ../data/DwellClick.xml.h:1
 #: ../data/PointerCapture.xml.h:1
@@ -143,19 +143,19 @@ msgstr "_Lastnosti"
 
 #: ../data/mousetweaks.schemas.in.h:1
 msgid "Button style"
-msgstr ""
+msgstr "Slog gumbov"
 
 #: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
-msgstr ""
+msgstr "Slog gumbov v oknu vrste klikov (0=besedilo, 1=ikona, 2=oboje)"
 
 #: ../data/mousetweaks.schemas.in.h:3
 msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "Smer izvajanja dvojnega klika (0=levo, 1=desno, 2=navzgor, 3=navzdol)"
 
 #: ../data/mousetweaks.schemas.in.h:4
 msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "Smer izvajanja klika s potegom (0=levo, 1=desno, 2=navzgor, 3=navzdol)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
@@ -163,7 +163,7 @@ msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "Smer izvajanja enojnega klika (0=levo, 1=desno, 2=navzgor, 3=navzdol)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid "Distance in pixels before movement will be recognized"
@@ -195,11 +195,11 @@ msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:14
 msgid "Gesture double click"
-msgstr ""
+msgstr "Poteza dvojnega klika"
 
 #: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture drag click"
-msgstr ""
+msgstr "Poteza klika s potegom"
 
 #: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture secondary click"
@@ -207,11 +207,11 @@ msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture single click"
-msgstr ""
+msgstr "Poteza enojnega klika"
 
 #: ../data/mousetweaks.schemas.in.h:18
 msgid "Movement threshold"
-msgstr ""
+msgstr "Prag gibanja"
 
 #: ../data/mousetweaks.schemas.in.h:19
 msgid "Secondary click time"
@@ -220,7 +220,7 @@ msgstr ""
 #: ../data/mousetweaks.schemas.in.h:20
 #: ../src/mt-main.c:432
 msgid "Show click type window"
-msgstr ""
+msgstr "Prikaži okno vrste klika"
 
 #: ../data/mousetweaks.schemas.in.h:21
 msgid "Time in seconds before a click is triggered"
@@ -232,31 +232,31 @@ msgstr ""
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
 msgid "Button to capture the pointer (0=Capture immediately)"
-msgstr ""
+msgstr "Gumb za zajem kazalnika (0 = takojšnji zajem)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Button to release the pointer"
-msgstr ""
+msgstr "Gumb za sprostitev kazalnika"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture button"
-msgstr ""
+msgstr "Gumb zajemanja"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier"
-msgstr ""
+msgstr "Prilagoditev zajemanja"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
 msgid "Capture modifier key (Alt)"
-msgstr ""
+msgstr "Tipka prilagoditve zajemanja (Alt)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
 msgid "Capture modifier key (Ctrl)"
-msgstr ""
+msgstr "Tipka prilagoditve zajemanja (Ctrl)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
 msgid "Capture modifier key (Shift)"
-msgstr ""
+msgstr "Tipka prilagoditve zajemanja (Shift)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release button"
@@ -264,19 +264,19 @@ msgstr "Sprostitev gumba"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Release modifier"
-msgstr ""
+msgstr "Prilagoditev sproščanja"
 
 #: ../data/pointer-capture-applet.schemas.in.h:10
 msgid "Release modifier key (Alt)"
-msgstr ""
+msgstr "Tipka prilagoditve sproščanja (Alt)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:11
 msgid "Release modifier key (Ctrl)"
-msgstr ""
+msgstr "Tipka prilagoditve sproščanja (Ctrl)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid "Release modifier key (Shift)"
-msgstr ""
+msgstr "Tipka prilagoditve sproščanja (Shift)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
@@ -284,7 +284,7 @@ msgstr "Velikost območja zajemanja"
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
 msgid "Width of the capture area in pixels"
-msgstr ""
+msgstr "Širina območja zajema v točkah"
 
 #: ../src/mt-main.c:428
 msgid "Enable mousetweaks feature"
@@ -304,15 +304,15 @@ msgstr "Y Lega okna"
 
 #: ../src/mt-main.c:438
 msgid "Shutdown mousetweaks"
-msgstr ""
+msgstr "Izklopi mousetweaks"
 
 #: ../src/mt-main.c:495
 msgid "Assistive Technologies not enabled"
-msgstr ""
+msgstr "Pomožne tehnologije niso omogočene"
 
 #: ../src/mt-main.c:496
 msgid "Mousetweaks requires Assistive Technologies."
-msgstr ""
+msgstr "Mousetweaks zahteva uporabo pomožnih tehnologij."
 
 #: ../src/pointer-capture-applet.c:76
 #: ../src/dwell-click-applet.c:289

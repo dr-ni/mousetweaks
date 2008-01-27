@@ -1,3 +1,29 @@
+Version 2.21.90
+--------------
+
+Misc improvements/fixes:
+
+	Gerd Kohlberger:
+	* Move context menus of applets to external XML file
+	* Mark schema files for translation and update descriptions
+	* Fix command-line -m switch to enable the correct mode
+	
+	Francesco Fumanti, Gerd Kohlberger:
+	* Addition and updates of man pages
+
+New and updated translations:
+	- [ar] Djihed Afifi
+	- [ca] Gil Forcada
+	- [es] Jorge Gonzalez
+	- [eu] Inaki Larranaga Murgoitio
+	- [it] Luca Ferretti
+	- [ja] keblo1 gmail com imported from Launchpad
+	- [nb] Kjartan Maraas
+	- [pt] Duarte Loreto 
+	- [sl] Matej Urbančič
+	- [sv] Daniel Nylander
+
+
 Version 2.21.5
 --------------
 

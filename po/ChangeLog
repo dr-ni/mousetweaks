@@ -1,3 +1,8 @@
+2008-01-29  Jovan Naumovski  <jovan@lugola.net>
+
+	* mk.po: Added Macedonian translation.
+	* LINGUAS: Added mk to the list.
+
 2008-01-26  Duarte Loreto <happyguy_pt@hotmail.com>
 
 	* pt.po: Added Portuguese translation.

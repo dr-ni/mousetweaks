@@ -1,0 +1,331 @@
+# translation of mousetweaks.HEAD.po to Macedonian
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Jovan Naumovski <jovan@lugola.net>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-22 12:44+0000\n"
+"PO-Revision-Date: 2008-01-29 01:21+0100\n"
+"Last-Translator: Jovan Naumovski <jovan@lugola.net>\n"
+"Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Аплет за избирање на различни типови на кликање со задржување на стрелката над некој објект.\n"
+"Дел од MouseTweaks"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "Прозорец за тип на кликнување"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "Двоен клик"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "Кликнување со влечење"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "Десен клик"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "Еден клик"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Земи ја стрелката</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>Отпушти ја стрелката</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>Големина на опфатената површина</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Површина за замрзнување на стрелката на панелот.\n"
+"Дел од MouseTweaks"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "К_опче:"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "Помошно копче:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "Преференции за фаќачот на стрелката"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Избирањето на копчето 0 веднаш ќе ја фати стрелката"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_Копче:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_Ширина:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "пиксели"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "Тип на кликнување со задржување на стрелката"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Покажи икони и текст"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Покажи само икони"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Покажи само текст"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "Кликнување со задржување на стрелката"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "Изберете тип на кликнување со задржување на стрелката"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Површина за заклучување на стрелката"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "Фаќање на стрелката"
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "_За"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "_Помош"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "_Преференции"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Button style"
+msgstr "Стил на копче"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgstr "Стил на копче во прозорецот за тип на кликање (0=текст, 1=икона, 2=двете)"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Насока за извршување на двоен клик (0=лево, 1=десно, 2=горе, 3=долу)"
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Насока за извршување на клик со влечење (0=лево, 1=десно, 2=горе, 3=долу)"
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Насока за извршување на секундарен лик (0=лево, 1=десно, 2=горе, 3=долу)"
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Насока за извршување на еден клик (0=лево, 1=десно, 2=горе, 3=долу)"
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid "Distance in pixels before movement will be recognized"
+msgstr "Оддалеченост во пиксели пред поместувањето да биде препознато"
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Dwell click mode"
+msgstr "Режим на кликнување со задржување на стрелката"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgstr "Режим на кликнување со задржување на стрелката (0=режим со гестови, 1=режим во прозорец)"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click time"
+msgstr "Време за кликнување со задржување на стрелката"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Enable dwell click"
+msgstr "Овозможи кликнување со задржување на стрелката"
+
+#: ../data/mousetweaks.schemas.in.h:12
+msgid "Enable secondary click"
+msgstr "Овозможи секундарно кликнување"
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable simulated secondary click"
+msgstr "Овозможи симулирано секундарно кликнување"
+
+#: ../data/mousetweaks.schemas.in.h:14
+msgid "Gesture double click"
+msgstr "Двоен клик со гест"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture drag click"
+msgstr "Клик со влечење со гест"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture secondary click"
+msgstr "Секундарен клик со гест"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture single click"
+msgstr "Единечен клик со гест"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Movement threshold"
+msgstr "Праг на движење"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Secondary click time"
+msgstr "Време за секундарен клик"
+
+#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:432
+msgid "Show click type window"
+msgstr "Покажи го прозорецот за тип на кликање"
+
+#: ../data/mousetweaks.schemas.in.h:21
+msgid "Time in seconds before a click is triggered"
+msgstr "Време во секунди пред да се активира кликот"
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "Време во секунди пред да се активира секундарниот клик"
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Button to capture the pointer (0=Capture immediately)"
+msgstr "Копче за фаќање на стрелката (0=фати ја веднаш)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Button to release the pointer"
+msgstr "Копче за отпуштање на стрелката"
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture button"
+msgstr "Копче за фаќање"
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier"
+msgstr "Фати го помошното копче"
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture modifier key (Alt)"
+msgstr "Фати го помошното копче (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Capture modifier key (Ctrl)"
+msgstr "Фати го помошното копче (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Capture modifier key (Shift)"
+msgstr "Фати го помошното копче (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release button"
+msgstr "Копче за отпуштање"
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier"
+msgstr "Ослободи го помошното копче"
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Alt)"
+msgstr "Ослободи го помошното копче (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Ctrl)"
+msgstr "Ослободи го помошното копче (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release modifier key (Shift)"
+msgstr "Ослободи го помошното копче (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr "Големина на површината за фаќање"
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr "Ширина на површината за фаќање, во пиксели"
+
+#: ../src/mt-main.c:428
+msgid "Enable mousetweaks feature"
+msgstr "Овозможи ја опцијата mousetweaks"
+
+#: ../src/mt-main.c:430
+msgid "Use dwell mode"
+msgstr "Користи режим со задржување на стрелката"
+
+#: ../src/mt-main.c:434
+msgid "Window x position"
+msgstr "Позиција x на прозорецот"
+
+#: ../src/mt-main.c:436
+msgid "Window y position"
+msgstr "Позиција y на прозорецот"
+
+#: ../src/mt-main.c:438
+msgid "Shutdown mousetweaks"
+msgstr "Исклучи го mousetweaks"
+
+#: ../src/mt-main.c:495
+msgid "Assistive Technologies not enabled"
+msgstr "Помошните технологии не се овозможени"
+
+#: ../src/mt-main.c:496
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "Mousetweaks бара помошни технологии."
+
+#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:289
+msgid "Couldn't display help"
+msgstr "Не можам да прикажам помош"
+
+#: ../src/pointer-capture-applet.c:204
+msgid "Locked"
+msgstr "Заклучено"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:207
+msgid "L"
+msgstr "L"
+
+#: ../src/pointer-capture-applet.c:635
+msgid "Capture area"
+msgstr "Површина за задржување"
+
+#: ../src/pointer-capture-applet.c:636
+msgid "Temporarily lock the mouse pointer"
+msgstr "Привремено задржување на стрелката на глувчето"
+

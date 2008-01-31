@@ -323,7 +323,7 @@ mt_gconf_notify (GConfClient *client,
     MTClosure *mt = (MTClosure *) data;
 
     if (g_str_equal (key, OPT_THRESHOLD))
-	mt->threshold = gconf_value_get_float (value);
+	mt->threshold = gconf_value_get_int (value);
     else if (g_str_equal (key, OPT_DELAY))
 	mt->delay_enabled = gconf_value_get_bool (value);
     else if (g_str_equal (key, OPT_DELAY_T))

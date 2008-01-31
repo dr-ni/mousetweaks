@@ -1,3 +1,7 @@
+2008-01-31 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* mt-main.c: Fix critical gconf error.
+	Threshold option is integer, not float.
+
 2008-01-27 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* configure.ac:

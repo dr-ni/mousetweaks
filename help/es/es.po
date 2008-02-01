@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.help.HEAD\n"
 "POT-Creation-Date: 2008-01-26 15:23+0000\n"
-"PO-Revision-Date: 2008-01-30 15:43+0100\n"
+"PO-Revision-Date: 2008-02-01 16:00+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -998,6 +998,10 @@ msgid ""
 "time defined by the Delay slider, the system will automatically perform the "
 "click type that is selected in the Click Type Window shown here:"
 msgstr ""
+"Este modo está activo cuando el usuario selecciona <guilabel>Elija el tipo de pulsación "
+"de antemano</guilabel>. De hecho, después de que el ratón se haya dejado de mover "
+"durante el tiempo definido por el deslizador de retardo, el sistema realizará automáticamente el "
+"tipo de pulsación seleccionado en en la ventana Tipo de pulsación aquí mostrada:"
 
 #: C/mousetweaks.xml:624(para)
 msgid "Picture showing the click type window"
@@ -1009,6 +1013,8 @@ msgid ""
 "checkmark <application>in the checkbox named <quote>Show click type window</"
 "quote>:</application>"
 msgstr ""
+"Para mostrar la ventana del tipo de pulsación en la pantalla, el usuario debe marcar "
+"la casilla de verificación <application><quote>Mostrar la ventana de tipo de pulsación</quote></application>."
 
 #: C/mousetweaks.xml:638(para)
 msgid "Picture with the checkbox to display the click type window"
@@ -1102,6 +1108,10 @@ msgid ""
 "click types to be performed automatically. This is especially interesting "
 "for users that have problems only with certain click types."
 msgstr ""
+"Existe un elemento de menú <guimenuitem>Desactivar</guimenuitem> en cada "
+"<guimenu>ventana emergente</guimenu>. El usuario puede seleccionarlo si no quiere "
+"que algunos tipos de pulsación se realicen automáticamente. Esto es especialmente interesante "
+"para usuarios que sólo tienen problemas con ciertos tipos de pulsación."
 
 #: C/mousetweaks.xml:726(title)
 msgid "Locking The Pointer Description"
@@ -1113,6 +1123,9 @@ msgid ""
 "computer. These people would welcome a way to lock the pointer into an area "
 "of the screen, so that they can use their pointing device for other tasks."
 msgstr ""
+"Hay personas que tienen que usar su dispositivo apuntador no sólo para "
+"el equipo. Estas personas recibirán con agrado la posibilidad de capturar el puntero en un área "
+"de la pantalla, de tal forma que puedan usar su dispositivo apuntador para otras cosas. "
 
 #: C/mousetweaks.xml:733(para)
 msgid ""
@@ -1120,6 +1133,9 @@ msgid ""
 "into which the user can lock the pointer until he releases it in a "
 "determined way."
 msgstr ""
+"De hecho, la miniaplicación del panel Captura del puntero crea dicho área en el panel, "
+"en el que el usuario puede bloquear el puntero hasta que lo libere de una determinada "
+"forma."
 
 #: C/mousetweaks.xml:737(remark)
 msgid ""
@@ -1139,14 +1155,17 @@ msgid ""
 "applet, the user gets a window with the options of the pointer capture "
 "applet:"
 msgstr ""
+"Eligiendo Preferencias en el menú contextual de la miniaplicación de captura "
+"del puntero, el usuario obtiene una ventana con las opciones de la miniaplicación de "
+"captura del puntero."
 
 #: C/mousetweaks.xml:772(para)
 msgid "Picture showing the preferences of the pointer capture applet"
-msgstr ""
+msgstr "Imagen mostrando las preferencias de la miniaplicación de captura del puntero"
 
 #: C/mousetweaks.xml:777(para)
 msgid "The preferences window of the pointer capture applet has three sections:"
-msgstr ""
+msgstr "La ventana de preferencias de la miniaplicación de captura del puntero tiene tres secciones:"
 
 #: C/mousetweaks.xml:782(para)
 msgid ""
@@ -1157,22 +1176,32 @@ msgid ""
 "key. If no modifier is checked and the mouse button is set to 0, the pointer "
 "only has to move into the capture area to get locked."
 msgstr ""
+"En la sección de Captura del puntero el usuario puede especificar bajo qué "
+"circunstancias el puntero queda capturado cuando se mueve dentro del área de captura. "
+"Por ejemplo, si el modificador de control está seleccionado, el puntero queda capturado "
+"cuando está encima del área de captura y el usuario pulsa la tecla modificadora de control. "
+"Si no hay un modificador seleccionado y el botón del ratón está establecido a 0, el puntero "
+"sólo se tiene que mover en el área de captura para quedar bloqueado."
 
 #: C/mousetweaks.xml:790(para) C/mousetweaks.xml:798(para)
 msgid "It is also possible to specify a combination of modifiers and mouse button."
-msgstr ""
+msgstr "También es posible especificar una combinación de modificadores y un botón del ratón."
 
 #: C/mousetweaks.xml:795(para)
 msgid ""
 "In the Release Pointer section, the user can specify what modifier or mouse "
 "button releases the pointer."
 msgstr ""
+"En la sección Liberar el puntero el usuario puede especificar qué modificador o botón "
+"del ratón libera el puntero."
 
 #: C/mousetweaks.xml:803(para)
 msgid ""
 "In the Size of Capture Area section, the user can specify the width of the "
 "capture area on the GNOME panel."
 msgstr ""
+"En la sección Tamaño del área de captura el usuario puede especificar la anchura del "
+"área de captura en el panel de GNOME."
 
 #: C/mousetweaks.xml:811(title)
 msgid "About <application>Mousetweaks</application>"

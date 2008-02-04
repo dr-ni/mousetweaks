@@ -1,4 +1,7 @@
 2008-02-04 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* src/mt-main.c: Improve --shutdown handling.
+
+2008-02-04 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* src/Makefile.am: Remove some CFLAGS to be buildable on Solaris. 
 
 	Fixes bug #188872 (launchpad). Patch by Li Yuan.

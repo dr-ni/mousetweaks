@@ -42,8 +42,6 @@ static AccessibleEventListener  *motion_listener = NULL;
 
 static int fixes_event_base = 0;
 
-static volatile gboolean shutdown = FALSE;
-
 static void
 mt_cursor_set (GdkCursorType type)
 {
@@ -232,9 +230,6 @@ spi_motion_event (const AccessibleEvent *event, void *data)
 {
     MTClosure *mt = (MTClosure *) data;
 
-    if (shutdown)
-	spi_shutdown ();
-
     if (mt->dwell_enabled)
 	if (!within_tolerance (mt, event->detail1, event->detail2))
 	    if (!mt->dwell_gesture_started) {
@@ -299,19 +294,13 @@ cursor_changed (GdkXEvent *xevent, GdkEvent *event, gpointer data)
 void
 spi_shutdown (void)
 {
-    SPI_deregisterGlobalEventListener (motion_listener, "mouse:abs");
-    AccessibleEventListener_unref (motion_listener);
-
-    SPI_deregisterDeviceEventListener (button_listener, NULL);
-    AccessibleDeviceListener_unref (button_listener);
-
     SPI_event_quit ();
 }
 
 static void
 signal_handler (int sig)
 {
-    shutdown = TRUE;
+    spi_shutdown ();
 }
 
 static void
@@ -506,10 +495,6 @@ main (int argc, char **argv)
 	    goto FINISH;
 	}
 
-	mt->conn = mt_dbus_init (mt);
-	if (!mt->conn)
-	    goto CLEANUP;
-
 	mt_session_init ();
 
 	/* listen for cursor changes */
@@ -535,6 +520,10 @@ main (int argc, char **argv)
 					 SPI_BUTTON_PRESSED |
 					 SPI_BUTTON_RELEASED,
 					 NULL);
+
+	mt->conn = mt_dbus_init (mt);
+	if (!mt->conn)
+	    goto CLEANUP;
 
 	/* command-line options */
 	if (enable) {
@@ -582,6 +571,8 @@ main (int argc, char **argv)
     }
 
 CLEANUP:
+    AccessibleEventListener_unref (motion_listener);
+    AccessibleDeviceListener_unref (button_listener);
     SPI_exit ();
     mt_closure_free (mt);
     g_object_unref (program);

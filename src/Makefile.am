@@ -8,8 +8,7 @@ INCLUDES =			\
 AM_CFLAGS =				\
 	-DGLADEDIR=\"$(gladedir)\"	\
 	-DDATADIR=\"$(datadir)\"	\
-	-DLOCALEDIR=\"$(localedir)\"	\
-	-Wall -export-dynamic
+	-DLOCALEDIR=\"$(localedir)\"
 
 if BUILD_PCA
 pca_bin = pointer-capture-applet

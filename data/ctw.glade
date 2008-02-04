@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.4.0 on Sun Oct 14 13:20:35 2007 -->
+<!--Generated with glade3 3.4.1 on Mon Feb  4 23:47:48 2008 -->
 <glade-interface>
   <widget class="GtkMenu" id="popup">
     <property name="visible">True</property>
@@ -51,9 +51,9 @@
         <child>
           <widget class="GtkRadioButton" id="single">
             <property name="visible">True</property>
+            <property name="can_focus">True</property>
             <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
             <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
             <property name="image_position">GTK_POS_TOP</property>
             <property name="response_id">0</property>
             <property name="active">True</property>
@@ -89,9 +89,9 @@
         <child>
           <widget class="GtkRadioButton" id="double">
             <property name="visible">True</property>
+            <property name="can_focus">True</property>
             <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
             <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
             <property name="image_position">GTK_POS_TOP</property>
             <property name="response_id">0</property>
             <property name="group">single</property>
@@ -130,9 +130,9 @@
         <child>
           <widget class="GtkRadioButton" id="drag">
             <property name="visible">True</property>
+            <property name="can_focus">True</property>
             <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
             <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
             <property name="image_position">GTK_POS_TOP</property>
             <property name="response_id">0</property>
             <property name="group">single</property>
@@ -171,9 +171,9 @@
         <child>
           <widget class="GtkRadioButton" id="right">
             <property name="visible">True</property>
+            <property name="can_focus">True</property>
             <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
             <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
             <property name="image_position">GTK_POS_TOP</property>
             <property name="response_id">0</property>
             <property name="group">single</property>

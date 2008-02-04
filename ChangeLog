@@ -1,3 +1,9 @@
+2008-02-05 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* src/mt-ctw.c: 
+	* data/ctw.glade:
+	
+	Fix input focus handling in click-type window.
+
 2008-02-04 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* src/mt-main.c: Improve --shutdown handling.
 

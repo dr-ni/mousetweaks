@@ -44,6 +44,7 @@ mt_ctw_set_click_type (gint ct)
     data = g_slist_nth_data (group, ct);
 
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(data), TRUE);
+    gtk_widget_grab_focus (GTK_WIDGET(data));
 }
 
 void

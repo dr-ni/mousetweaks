@@ -1,3 +1,6 @@
+2008-02-06 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* src/dwell-click-applet.c: Add some error checking.
+
 2008-02-05 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* src/mt-ctw.c: 
 	* data/ctw.glade:

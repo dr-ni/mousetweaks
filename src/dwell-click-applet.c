@@ -179,13 +179,15 @@ box_size_allocate (GtkWidget *widget, GtkAllocation *alloc, gpointer data)
 	for (i = 0; i < N_CLICK_TYPES; i++) {
 	    w = glade_xml_get_widget (dd->xml, img_widgets_v[i]);
 
-	    if (alloc->width < 31) {
+	    if (alloc->width < 32) {
 		tmp = gdk_pixbuf_scale_simple (dd->click[i],
 					       alloc->width - 7,
 					       alloc->width - 7,
 					       GDK_INTERP_HYPER);
-		gtk_image_set_from_pixbuf (GTK_IMAGE(w), tmp);
-		g_object_unref (tmp);
+		if (tmp) {
+		    gtk_image_set_from_pixbuf (GTK_IMAGE(w), tmp);
+		    g_object_unref (tmp);
+		}
 	    }
 	    else
 		gtk_image_set_from_pixbuf (GTK_IMAGE(w), dd->click[i]);
@@ -195,13 +197,15 @@ box_size_allocate (GtkWidget *widget, GtkAllocation *alloc, gpointer data)
 	for (i = 0; i < N_CLICK_TYPES; i++) {
 	    w = glade_xml_get_widget (dd->xml, img_widgets[i]);
 
-	    if (alloc->height < 31) {
+	    if (alloc->height < 32) {
 		tmp = gdk_pixbuf_scale_simple (dd->click[i],
 					       alloc->height - 7,
 					       alloc->height - 7,
 					       GDK_INTERP_HYPER);
-		gtk_image_set_from_pixbuf (GTK_IMAGE(w), tmp);
-		g_object_unref (tmp);
+		if (tmp) {
+		    gtk_image_set_from_pixbuf (GTK_IMAGE(w), tmp);
+		    g_object_unref (tmp);
+		}
 	    }
 	    else
 		gtk_image_set_from_pixbuf (GTK_IMAGE(w), dd->click[i]);

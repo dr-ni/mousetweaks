@@ -25,14 +25,14 @@
 
 G_BEGIN_DECLS
 
-#define MOUSETWEAKS_DBUS_SERVICE     "org.freedesktop.mousetweaks"
-#define MOUSETWEAKS_DBUS_INTERFACE   "org.freedesktop.mousetweaks"
-#define MOUSETWEAKS_DBUS_PATH_MAIN   "/org/freedesktop/mousetweaks/main"
-#define MOUSETWEAKS_DBUS_PATH_APPLET "/org/freedesktop/mousetweaks/applet"
+#define MOUSETWEAKS_DBUS_SERVICE     "org.gnome.Mousetweaks"
+#define MOUSETWEAKS_DBUS_INTERFACE   "org.gnome.Mousetweaks"
+#define MOUSETWEAKS_DBUS_PATH_MAIN   "/org/gnome/Mousetweaks/Main"
+#define MOUSETWEAKS_DBUS_PATH_APPLET "/org/gnome/Mousetweaks/Applet"
 
-#define CLICK_TYPE_SIGNAL  "clicktype"
-#define RESTORE_SIGNAL     "restore"
-#define ACTIVE_SIGNAL      "active"
+#define CLICK_TYPE_SIGNAL  "Clicktype"
+#define RESTORE_SIGNAL     "Restore"
+#define ACTIVE_SIGNAL      "Active"
 
 DBusConnection * mt_dbus_init	     (gpointer data);
 

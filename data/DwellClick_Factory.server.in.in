@@ -8,6 +8,9 @@
         </oaf_attribute>
         <oaf_attribute name="name" type="string" value="Dwell Click Factory"/>
         <oaf_attribute name="description" type="string" value="Dwell Click Factory"/>
+        <oaf_attribute name="bonobo:environment" type="stringv">
+                <item value="DBUS_SESSION_BUS_ADDRESS"/>
+        </oaf_attribute>
 </oaf_server>
 <oaf_server iid="OAFIID:DwellClickApplet" type="factory"
             location="OAFIID:DwellClickApplet_Factory">

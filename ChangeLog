@@ -1,4 +1,8 @@
 2008-02-06 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* src/mt-common.h: Use proper dbus naming conventions.
+	* data/DwellClick_Factory.server.in.in: Set bonobo environment. 
+
+2008-02-06 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* src/dwell-click-applet.c: Add some error checking.
 
 2008-02-05 Gerd Kohlberger <gerdk@svn.gnome.org>

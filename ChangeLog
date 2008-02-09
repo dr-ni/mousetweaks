@@ -1,3 +1,6 @@
+2008-02-09 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* src/*: Update copyright.
+
 2008-02-06 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* src/mt-common.h: Use proper dbus naming conventions.
 	* data/DwellClick_Factory.server.in.in: Set bonobo environment. 

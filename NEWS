@@ -1,17 +1,44 @@
-Version 2.21.90
---------------
+Version 2.21.91
+---------------
 
 Misc improvements/fixes:
 
-	Gerd Kohlberger:
+	* Improve --shutdown handling
+	* Fix focus handling in click-type window
+	* Set bonobo environment for dwell applet
+	* Fix critical gconf error
+
+Bug fixes:
+
+	LP #188872: Fix compilation with SUN CC (Li Yuan)
+
+New and updated translations:
+
+	- [ar] Djihed Afifi
+	- [de] Hendrik Brandt
+	- [gl] Ignacio Casal Quinteiro
+	- [mk] Jovan Naumovski
+	- [oc] Yannig Marchegay
+	- [pt_BR] Luiz Armesto
+
+New and updated manual translations:
+
+	- [es] Jorge Gonzalez
+	- [oc] Yannig Marchegay
+
+
+Version 2.21.90
+---------------
+
+Misc improvements/fixes:
+
 	* Move context menus of applets to external XML file
 	* Mark schema files for translation and update descriptions
 	* Fix command-line -m switch to enable the correct mode
-	
-	Francesco Fumanti, Gerd Kohlberger:
-	* Addition and updates of man pages
+	* Addition and updates of man pages (Francesco Fumanti)
 
 New and updated translations:
+
 	- [ar] Djihed Afifi
 	- [ca] Gil Forcada
 	- [es] Jorge Gonzalez

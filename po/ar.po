@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome 2-22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-31 08:09+0000\n"
-"PO-Revision-Date: 2008-01-20 15:23+0100\n"
+"POT-Creation-Date: 2008-02-10 13:05+0000\n"
+"PO-Revision-Date: 2008-02-12 21:24+0100\n"
 "Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
 "Language-Team: Arabeyes <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,19 +28,23 @@ msgstr ""
 msgid "Click Type Window"
 msgstr "نافذة نوع النّقر"
 
-#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+#: ../data/dwell-click-applet.glade.h:4
+#: ../data/ctw.glade.h:1
 msgid "Double Click"
 msgstr "نقر ثنائي"
 
-#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+#: ../data/dwell-click-applet.glade.h:5
+#: ../data/ctw.glade.h:2
 msgid "Drag Click"
 msgstr "نقر"
 
-#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:6
+#: ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "نقر أيمن"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:7
+#: ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "نقر وحيد"
 
@@ -124,203 +128,196 @@ msgstr "مساحة لتثبيت المؤشّر"
 msgid "Pointer Capture"
 msgstr "مسك المؤشّر"
 
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+#: ../data/DwellClick.xml.h:1
+#: ../data/PointerCapture.xml.h:1
 msgid "_About"
-msgstr ""
+msgstr "_حول"
 
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+#: ../data/DwellClick.xml.h:2
+#: ../data/PointerCapture.xml.h:2
 msgid "_Help"
-msgstr ""
+msgstr "_مساعدة"
 
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+#: ../data/DwellClick.xml.h:3
+#: ../data/PointerCapture.xml.h:3
 msgid "_Preferences"
-msgstr ""
+msgstr "ال_تفضيلات"
 
 #: ../data/mousetweaks.schemas.in.h:1
-#, fuzzy
 msgid "Button style"
-msgstr "ال_زر:"
+msgstr "أسلوب الزر"
 
 #: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
-msgstr ""
+msgstr "أسلوب الزر في نافذة نوع النقرة (0=نص، 1=أيقونة، 3=كلاهما)"
 
 #: ../data/mousetweaks.schemas.in.h:3
 msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "الاتجاه لانجاز نقرة مزدوجة (0=الشمال، 1=اليمين، 2=الأعلى، 3=الأسفل)"
 
 #: ../data/mousetweaks.schemas.in.h:4
 msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "الاتجاه لانجاز نقرة السحب (0=اليسار، 1=اليمين، 2=الأعلى، 3=الأسفل)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "الاتجاه لانجاز نقرة ثانوية (0=اليسار، 1=اليمين، 2=الأعلى، 3=الأسفل)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "الاتجاه لانجاز نقرة وحيدة (0=اليسار، 1=اليمين، 2=الأعلى، 3=الأسفل)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid "Distance in pixels before movement will be recognized"
-msgstr ""
+msgstr "المسافة بالبكسل حتى يَتِمَّ التعرف على الحركة"
 
 #: ../data/mousetweaks.schemas.in.h:8
-#, fuzzy
 msgid "Dwell click mode"
-msgstr "نوع النقر الكامن"
+msgstr "نمط النقر الكامن"
 
 #: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
-msgstr ""
+msgstr "نمط النقر الكامن (0= نمط الحركة، 1=نمط النافذة)"
 
 #: ../data/mousetweaks.schemas.in.h:10
-#, fuzzy
 msgid "Dwell click time"
-msgstr "نوع النقر الكامن"
+msgstr "وقت النقر الكامن"
 
 #: ../data/mousetweaks.schemas.in.h:11
-#, fuzzy
 msgid "Enable dwell click"
-msgstr "انتق نوع النقر الكامن"
+msgstr "فعّل النقر الكامن"
 
 #: ../data/mousetweaks.schemas.in.h:12
 msgid "Enable secondary click"
-msgstr ""
+msgstr "فعّل النقر الثانوي"
 
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable simulated secondary click"
-msgstr ""
+msgstr "فعِّل محاكاة النقر الثانوي"
 
 #: ../data/mousetweaks.schemas.in.h:14
-#, fuzzy
 msgid "Gesture double click"
-msgstr "نقر ثنائي"
+msgstr "حركة نقر ثنائي"
 
 #: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture drag click"
-msgstr ""
+msgstr "حركة نقر السحب"
 
 #: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture secondary click"
-msgstr ""
+msgstr "حركة النقر الثانوي"
 
 #: ../data/mousetweaks.schemas.in.h:17
-#, fuzzy
 msgid "Gesture single click"
-msgstr "نقر وحيد"
+msgstr "حركة نقر وحيد"
 
 #: ../data/mousetweaks.schemas.in.h:18
 msgid "Movement threshold"
-msgstr ""
+msgstr "عتبة الحركة"
 
 #: ../data/mousetweaks.schemas.in.h:19
 msgid "Secondary click time"
-msgstr ""
+msgstr "وقت النقر الثانوي"
 
-#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:432
+#: ../data/mousetweaks.schemas.in.h:20
+#: ../src/mt-main.c:421
 msgid "Show click type window"
 msgstr "اعرض نافذة نوع النّقر"
 
 #: ../data/mousetweaks.schemas.in.h:21
 msgid "Time in seconds before a click is triggered"
-msgstr ""
+msgstr "الوقت بالثوان قبل إطلاق نقر"
 
 #: ../data/mousetweaks.schemas.in.h:22
 msgid "Time in seconds before a secondary click is triggered"
-msgstr ""
+msgstr "الوقت بالثوان قبل إطلاق نقر ثانوي"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-#, fuzzy
 msgid "Button to capture the pointer (0=Capture immediately)"
-msgstr "اختيار زر  0 سيثبت المؤشّر مباشرة"
+msgstr "الزر لامْساك المؤشّر (0=إمساك في الحين)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-#, fuzzy
 msgid "Button to release the pointer"
-msgstr "مساحة لتثبيت المؤشّر"
+msgstr "الزر لتَرك المؤشّر"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-#, fuzzy
 msgid "Capture button"
-msgstr "مساحة الإمساك"
+msgstr "زرّ الإمساك"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-#, fuzzy
 msgid "Capture modifier"
-msgstr "مساحة الإمساك"
+msgstr "متغيّر الإمساك"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
 msgid "Capture modifier key (Alt)"
-msgstr ""
+msgstr "التقاط مفتاح مُغير (Alt)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
 msgid "Capture modifier key (Ctrl)"
-msgstr ""
+msgstr "التقاط مفتاح مُغير (Ctrl)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
 msgid "Capture modifier key (Shift)"
-msgstr ""
+msgstr "التقاط مفتاح مُغير (Shift)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release button"
-msgstr ""
+msgstr "اترك الزر "
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-#, fuzzy
 msgid "Release modifier"
-msgstr "<b>اترك المؤشّر</b>"
+msgstr "متغيّر التّرك"
 
 #: ../data/pointer-capture-applet.schemas.in.h:10
 msgid "Release modifier key (Alt)"
-msgstr ""
+msgstr "اترك "
 
 #: ../data/pointer-capture-applet.schemas.in.h:11
 msgid "Release modifier key (Ctrl)"
-msgstr ""
+msgstr "اترك مفتاح مُغير(Ctrl)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid "Release modifier key (Shift)"
-msgstr ""
+msgstr "اترك مفتاح مُغير(Shift)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
-#, fuzzy
 msgid "Size of capture area"
-msgstr "<b>حجم مساحة الإمساك</b>"
+msgstr "حجم مساحة الإمساك"
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
 msgid "Width of the capture area in pixels"
-msgstr ""
+msgstr "عرض مساحة الامساك بالبكسل"
 
-#: ../src/mt-main.c:428
+#: ../src/mt-main.c:417
 msgid "Enable mousetweaks feature"
 msgstr "فعّل ميزة برنامج ضبط الفأرة"
 
-#: ../src/mt-main.c:430
+#: ../src/mt-main.c:419
 msgid "Use dwell mode"
 msgstr "استخدم نمط الكمون"
 
-#: ../src/mt-main.c:434
+#: ../src/mt-main.c:423
 msgid "Window x position"
 msgstr "موقع س للنافذة"
 
-#: ../src/mt-main.c:436
+#: ../src/mt-main.c:425
 msgid "Window y position"
 msgstr "موقع ع للنافذة"
 
-#: ../src/mt-main.c:438
+#: ../src/mt-main.c:427
 msgid "Shutdown mousetweaks"
 msgstr "اغلق برنامج ظبط الفأرة"
 
-#: ../src/mt-main.c:495
+#: ../src/mt-main.c:484
 msgid "Assistive Technologies not enabled"
 msgstr "لم يتم تفعيل تكنلوجيا الإتاحة"
 
-#: ../src/mt-main.c:496
+#: ../src/mt-main.c:485
 msgid "Mousetweaks requires Assistive Technologies."
 msgstr "يتطلّب هذا البرنامج تكنلوجيا الإتاحة"
 
-#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:289
+#: ../src/pointer-capture-applet.c:76
+#: ../src/dwell-click-applet.c:293
 msgid "Couldn't display help"
 msgstr "تعذّر عرض المساعدة"
 
@@ -340,3 +337,4 @@ msgstr "مساحة الإمساك"
 #: ../src/pointer-capture-applet.c:636
 msgid "Temporarily lock the mouse pointer"
 msgstr "ثبّت مؤشّر الفأرة مؤقّتا"
+

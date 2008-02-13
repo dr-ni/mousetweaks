@@ -32,19 +32,16 @@ Components of Mousetweaks:
 	* pointer-capture-applet: gnome-panel applet that provides
 	enhancement 3 of the above description
 
-Host:
+Homepage:
 
-	Homepage: http://live.gnome.org/Mousetweaks/Home
+	http://live.gnome.org/Mousetweaks/Home
 
 Reporting Bugs:
 
-	https://bugs.launchpad.net/mousetweaks
-
-	Note: We're moving to the GNOME bug tracking system.  You can
-	reach it at http://bugzilla.gnome.org.
+	http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks
 
 License:
 
 	This program is released under the terms of the GNU General Public
-	License.  Please see the file COPYING for details.
+	License. Please see the file COPYING for details.
 

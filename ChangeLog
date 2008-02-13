@@ -1,3 +1,7 @@
+2008-02-13 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* configure.ac: Add bugzilla info.
+	* README: Remove launchpad bug info.
+
 2008-02-10 Gerd Kohlberger <gerdk@svn.gnome.org>
 	* configure.ac:
 	* README:

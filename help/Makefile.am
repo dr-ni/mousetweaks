@@ -3,4 +3,4 @@ dist-hook: doc-dist-hook
 
 DOC_MODULE = mousetweaks
 DOC_INCLUDES = legal.xml
-DOC_LINGUAS = es oc sv
+DOC_LINGUAS = el es oc sv

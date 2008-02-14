@@ -1,3 +1,8 @@
+2008-02-14  Simos Xenitellis  <simos@gnome.org>
+
+	* Makefile.am: Added el (Greek)
+	* el/el.po: Added Greek translation by Giannis Katsampiris.
+
 2008-02-13 Gerd Kohlberger <gerdk@svn.gnome.org>           
 
 	* Makefile.am: Added oc to DOC_LINGUAS

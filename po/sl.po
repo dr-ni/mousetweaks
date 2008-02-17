@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-25 08:14+0000\n"
-"PO-Revision-Date: 2008-01-26 09:27+0100\n"
+"PO-Revision-Date: 2008-02-17 11:11+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -23,6 +23,8 @@ msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of MouseTweaks"
 msgstr ""
+"Aplet za izbiro različnih vrst zadržanega klika.\n"
+"Del MouseTweaks orodja."
 
 #: ../data/dwell-click-applet.glade.h:3
 msgid "Click Type Window"
@@ -65,6 +67,8 @@ msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of MouseTweaks"
 msgstr ""
+"Območje zamrznitve kazalnika miške na pladnju.\n"
+"Del MouseTweaks orodja."
 
 #: ../data/pointer-capture-applet.glade.h:6
 msgid "B_utton:"
@@ -96,7 +100,7 @@ msgstr "točke"
 
 #: ../data/ctw.glade.h:3
 msgid "Dwell Click Type"
-msgstr ""
+msgstr "Vrsta zadržanega klika"
 
 #: ../data/ctw.glade.h:5
 msgid "Show Icons and Text"
@@ -112,11 +116,11 @@ msgstr "Prikaži le besedilo"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1
 msgid "Dwell Click"
-msgstr ""
+msgstr "Zadržani klik"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr ""
+msgstr "Izbor vrste zadržanega klika"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
@@ -159,7 +163,7 @@ msgstr "Smer izvajanja klika s potegom (0=levo, 1=desno, 2=navzgor, 3=navzdol)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "Smer v katero se izvede drugi klik (0=levo, 1=desno, 2=navzgor, 3=navzdol)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
@@ -167,31 +171,31 @@ msgstr "Smer izvajanja enojnega klika (0=levo, 1=desno, 2=navzgor, 3=navzdol)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid "Distance in pixels before movement will be recognized"
-msgstr ""
+msgstr "Razdalja v točkah preden je zaznano gibanje"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Dwell click mode"
-msgstr ""
+msgstr "Način zadržanega klika"
 
 #: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
-msgstr ""
+msgstr "Način zadržanega klika (0=način premika miške, 1=način okna)"
 
 #: ../data/mousetweaks.schemas.in.h:10
 msgid "Dwell click time"
-msgstr ""
+msgstr "Čas zadržanega klika"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Enable dwell click"
-msgstr ""
+msgstr "Omogoči zadržani klik"
 
 #: ../data/mousetweaks.schemas.in.h:12
 msgid "Enable secondary click"
-msgstr ""
+msgstr "Omogoči drugi klik"
 
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable simulated secondary click"
-msgstr ""
+msgstr "Omogoči simulirane druge klike"
 
 #: ../data/mousetweaks.schemas.in.h:14
 msgid "Gesture double click"
@@ -203,7 +207,7 @@ msgstr "Poteza klika s potegom"
 
 #: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture secondary click"
-msgstr ""
+msgstr "Premik miške za drugi klik"
 
 #: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture single click"
@@ -215,20 +219,20 @@ msgstr "Prag gibanja"
 
 #: ../data/mousetweaks.schemas.in.h:19
 msgid "Secondary click time"
-msgstr ""
+msgstr "Čas drugega klika"
 
 #: ../data/mousetweaks.schemas.in.h:20
-#: ../src/mt-main.c:432
+#: ../src/mt-main.c:421
 msgid "Show click type window"
 msgstr "Prikaži okno vrste klika"
 
 #: ../data/mousetweaks.schemas.in.h:21
 msgid "Time in seconds before a click is triggered"
-msgstr ""
+msgstr "Čas v sekundah pred klikom"
 
 #: ../data/mousetweaks.schemas.in.h:22
 msgid "Time in seconds before a secondary click is triggered"
-msgstr ""
+msgstr "Čas v sekundah pred drugim klikom"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
 msgid "Button to capture the pointer (0=Capture immediately)"
@@ -286,36 +290,36 @@ msgstr "Velikost območja zajemanja"
 msgid "Width of the capture area in pixels"
 msgstr "Širina območja zajema v točkah"
 
-#: ../src/mt-main.c:428
+#: ../src/mt-main.c:417
 msgid "Enable mousetweaks feature"
-msgstr ""
+msgstr "Omogoči možnosti mousetweaks"
 
-#: ../src/mt-main.c:430
+#: ../src/mt-main.c:419
 msgid "Use dwell mode"
-msgstr ""
+msgstr "Uporabi način zadrževanja"
 
-#: ../src/mt-main.c:434
+#: ../src/mt-main.c:423
 msgid "Window x position"
 msgstr "X Lega okna"
 
-#: ../src/mt-main.c:436
+#: ../src/mt-main.c:425
 msgid "Window y position"
 msgstr "Y Lega okna"
 
-#: ../src/mt-main.c:438
+#: ../src/mt-main.c:427
 msgid "Shutdown mousetweaks"
 msgstr "Izklopi mousetweaks"
 
-#: ../src/mt-main.c:495
+#: ../src/mt-main.c:484
 msgid "Assistive Technologies not enabled"
 msgstr "Pomožne tehnologije niso omogočene"
 
-#: ../src/mt-main.c:496
+#: ../src/mt-main.c:485
 msgid "Mousetweaks requires Assistive Technologies."
 msgstr "Mousetweaks zahteva uporabo pomožnih tehnologij."
 
 #: ../src/pointer-capture-applet.c:76
-#: ../src/dwell-click-applet.c:289
+#: ../src/dwell-click-applet.c:293
 msgid "Couldn't display help"
 msgstr "Ni bilo mogoče prikazati pomoč"
 
@@ -334,5 +338,5 @@ msgstr "Območje zajemanja"
 
 #: ../src/pointer-capture-applet.c:636
 msgid "Temporarily lock the mouse pointer"
-msgstr ""
+msgstr "Začasni zaklep kazalnika miške"
 

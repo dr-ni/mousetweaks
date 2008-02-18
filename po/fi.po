@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-13 10:38+0300\n"
+"POT-Creation-Date: 2008-02-18 08:18+0300\n"
 "PO-Revision-Date: 2008-02-11 17:08+0300\n"
 "Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
@@ -20,6 +20,8 @@ msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of MouseTweaks"
 msgstr ""
+"Sovelma erilaisten pysenäpsäytystapojen valintaan.\n"
+"Osa MouseTweaks-pakettia"
 
 #: ../data/dwell-click-applet.glade.h:3
 msgid "Click Type Window"
@@ -31,7 +33,7 @@ msgstr "Kaksoisnapsautus"
 
 #: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
 msgid "Drag Click"
-msgstr ""
+msgstr "Vetonapsautus"
 
 #: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
 msgid "Right Click"
@@ -39,7 +41,7 @@ msgstr "Oikea napsautus"
 
 #: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
 msgid "Single Click"
-msgstr ""
+msgstr "Napsautus"
 
 #: ../data/pointer-capture-applet.glade.h:1
 msgid "<b>Capture Pointer</b>"
@@ -58,6 +60,8 @@ msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of MouseTweaks"
 msgstr ""
+"Alue, jolla hiiren kohdistin kaapataan paneelissa.\n"
+"Osa MouseTweaks-pakettia"
 
 #: ../data/pointer-capture-applet.glade.h:6
 msgid "B_utton:"
@@ -65,7 +69,7 @@ msgstr "N_appi:"
 
 #: ../data/pointer-capture-applet.glade.h:7
 msgid "Modifier:"
-msgstr ""
+msgstr "Muokkain:"
 
 #: ../data/pointer-capture-applet.glade.h:8
 msgid "Pointer Capture Preferences"
@@ -73,7 +77,7 @@ msgstr "Kohdistimen kaapauksen asetukset"
 
 #: ../data/pointer-capture-applet.glade.h:9
 msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr ""
+msgstr "Napin 0 valinta kaappaa hiiren välittömästi"
 
 #: ../data/pointer-capture-applet.glade.h:10
 msgid "_Button:"
@@ -89,7 +93,7 @@ msgstr "pikseliä"
 
 #: ../data/ctw.glade.h:3
 msgid "Dwell Click Type"
-msgstr ""
+msgstr "Pysenäpsäytyksen tyyppi"
 
 #: ../data/ctw.glade.h:5
 msgid "Show Icons and Text"
@@ -105,19 +109,19 @@ msgstr "Näytä vain teksti"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1
 msgid "Dwell Click"
-msgstr ""
+msgstr "Pysenäpsäytys"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr ""
+msgstr "Valitse pysenäpsäytyksen tyyppi"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
-msgstr ""
+msgstr "Alue, jolla hiiren kohdistin lukitaan"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
 msgid "Pointer Capture"
-msgstr ""
+msgstr "Kohdistimen kaappaus"
 
 #: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
 msgid "_About"
@@ -137,95 +141,95 @@ msgstr "Napin tyyli"
 
 #: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
-msgstr ""
+msgstr "Napsautustyyppi-ikkunan nappien tyyli (0=teksti, 1=kuvake, 2=molemmat)"
 
 #: ../data/mousetweaks.schemas.in.h:3
 msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "Suunta kaksoisnapsautukselle (0=vasen, 1=oikea, 2=ylös, 3=alas)"
 
 #: ../data/mousetweaks.schemas.in.h:4
 msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "Suunta vetonapsautukselle (0=vasen, 1=oikea, 2=ylös, 3=alas)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "Suunta oikealle napsautukselle (0=vasen, 1=oikea, 2=ylös, 3=alas)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
+msgstr "Suunta napsautukselle (0=vasen, 1=oikea, 2=ylös, 3=alas)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid "Distance in pixels before movement will be recognized"
-msgstr ""
+msgstr "Etäisyys pikseleinä, jonka jälkeen liike tunnistetaan"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Dwell click mode"
-msgstr ""
+msgstr "Pysenapsautustila"
 
 #: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
-msgstr ""
+msgstr "Pysenapsautuksen tila (0=hiirieletila, 1=ikkunatila)"
 
 #: ../data/mousetweaks.schemas.in.h:10
 msgid "Dwell click time"
-msgstr ""
+msgstr "Pysenäpsäytyksen aika"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Enable dwell click"
-msgstr ""
+msgstr "Ota pysenäpsäytys käyttöön"
 
 #: ../data/mousetweaks.schemas.in.h:12
 msgid "Enable secondary click"
-msgstr ""
+msgstr "Ota oikea napsautus käyttöön"
 
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable simulated secondary click"
-msgstr ""
+msgstr "Ota oikean napin pysenäpsäytys käyttöön"
 
 #: ../data/mousetweaks.schemas.in.h:14
 msgid "Gesture double click"
-msgstr ""
+msgstr "Kaksoisnapsautus hiirieleillä"
 
 #: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture drag click"
-msgstr ""
+msgstr "Vetonapsautus hiirieleillä"
 
 #: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture secondary click"
-msgstr ""
+msgstr "Oikea napsautus hiirieleillä"
 
 #: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture single click"
-msgstr ""
+msgstr "Napsautus hiirieleillä"
 
 #: ../data/mousetweaks.schemas.in.h:18
 msgid "Movement threshold"
-msgstr ""
+msgstr "Liikkeen kynnysarvo"
 
 #: ../data/mousetweaks.schemas.in.h:19
 msgid "Secondary click time"
-msgstr ""
+msgstr "Oikean napsautuksen aika"
 
 #: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
 msgid "Show click type window"
-msgstr ""
+msgstr "Näytä napsautustyyppi-ikkuna"
 
 #: ../data/mousetweaks.schemas.in.h:21
 msgid "Time in seconds before a click is triggered"
-msgstr ""
+msgstr "Aika sekunteina, ennen kuin napsautus tapahtuu"
 
 #: ../data/mousetweaks.schemas.in.h:22
 msgid "Time in seconds before a secondary click is triggered"
-msgstr ""
+msgstr "Aika sekunteina, ennen kuin oikea napsautus tapahtuu"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
 msgid "Button to capture the pointer (0=Capture immediately)"
-msgstr ""
+msgstr "Nappi, jolla kohdistin kaapataan (0=kaappaa heti)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Button to release the pointer"
-msgstr ""
+msgstr "Nappi, jolla kohdistin vapautetaan"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture button"
@@ -233,55 +237,55 @@ msgstr "Kaappaa nappi"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier"
-msgstr ""
+msgstr "Kaappaa muokkain"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
 msgid "Capture modifier key (Alt)"
-msgstr ""
+msgstr "Kaappaa muokkain (Alt)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
 msgid "Capture modifier key (Ctrl)"
-msgstr ""
+msgstr "Kaappaa muokkain (Ctrl)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
 msgid "Capture modifier key (Shift)"
-msgstr ""
+msgstr "Kaappaa muokkain (Vaihto)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release button"
-msgstr "Vapauta nappi"
+msgstr "Vapautusnappi"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Release modifier"
-msgstr ""
+msgstr "Vapauta muokkain"
 
 #: ../data/pointer-capture-applet.schemas.in.h:10
 msgid "Release modifier key (Alt)"
-msgstr ""
+msgstr "Vapauta muokkain (Alt)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:11
 msgid "Release modifier key (Ctrl)"
-msgstr ""
+msgstr "Vapauta muokkain (Ctrl)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid "Release modifier key (Shift)"
-msgstr ""
+msgstr "Vapauta muokkain (Vaihto)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
-msgstr ""
+msgstr "Kaappausalueen koko"
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
 msgid "Width of the capture area in pixels"
-msgstr ""
+msgstr "Kaappausalueen leveys pikseleinä"
 
 #: ../src/mt-main.c:417
 msgid "Enable mousetweaks feature"
-msgstr ""
+msgstr "Käytä mousetweaks-ominaisuutta"
 
 #: ../src/mt-main.c:419
 msgid "Use dwell mode"
-msgstr ""
+msgstr "käytä pysetilaa"
 
 #: ../src/mt-main.c:423
 msgid "Window x position"

@@ -1,3 +1,8 @@
+2008-02-18  Amanpreet Singh Alam <apreet.alam@gmail.com>
+
+ 	* LINGUAS: Punjabi (pa) added to file
+	* pa.po: Punjabi Translation added
+
 2008-02-18  Ilkka Tuohela <hile@iki.fi>
 
 	* fi.po: Updated Finnish translation.

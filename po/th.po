@@ -1,0 +1,329 @@
+# Thai translation of mousetweaks
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mousetweaks package.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-19 17:52+0700\n"
+"PO-Revision-Date: 2008-02-19 22:39+0700\n"
+"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"แอพเพล็ตสำหรับเลือกชนิดต่างๆ ของการคลิกด้วยการวางแช่\n"
+"เป็นส่วนหนึ่งของ MouseTweaks"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "หน้าต่างชนิดการคลิก"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "ดับเบิลคลิก"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "คลิกเพื่อลาก"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "คลิกขวา"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "คลิกเดียว"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>กักตัวชี้</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>ปล่อยคืนตัวชี้</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>ขนาดของพื้นที่กักตัวชี้</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"พื้นที่กักตัวชี้เมาส์ไว้ในพาเนล\n"
+"เป็นส่วนหนึ่งของ MouseTweaks"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "ปุ่_ม:"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "ปุ่มประกอบ"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "ปรับแต่งการกักตัวชี้"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "ถ้าเลือกปุ่ม 0 จะกักตัวชี้ทันที"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_ปุ่ม:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "ความ_กว้าง:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "พิกเซล"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "ชนิดของการคลิกด้วยการวางแช่"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "แสดงไอคอนและข้อความ"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "แสดงไอคอนอย่างเดียว"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "แสดงข้อความอย่างเดียว"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "การคลิกด้วยการวางแช่"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "เลือกชนิดของการคลิกด้วยการวางแช่"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "พื้นที่กักตัวชี้"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "กักตัวชี้"
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "เ_กี่ยวกับ"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "_วิธีใช้"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "_ปรับแต่ง"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Button style"
+msgstr "รูปแบบของปุ่ม"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgstr "รูปแบบของปุ่มในหน้าต่างเลือกชนิดของการคลิก (0=ข้อความ, 1=ไอคอน, 2=ทั้งสองอย่าง)"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "ทิศทางที่จะทำดับเบิลคลิก (0=ซ้าย, 1=ขวา, 2=ขึ้น, 3=ลง)"
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "ทิศทางที่จะทำคลิกเพื่อลาก (0=ซ้าย, 1=ขวา, 2=ขึ้น, 3=ลง)"
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "ทิศทางที่จะทำคลิกที่สอง (0=ซ้าย, 1=ขวา, 2=ขึ้น, 3=ลง)"
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "ทิศทางที่จะทำคลิกเดียว (0=ซ้าย, 1=ขวา, 2=ขึ้น, 3=ลง)"
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid "Distance in pixels before movement will be recognized"
+msgstr "ระยะทางเป็นพิกเซลก่อนจะเริ่มจับการเคลื่อนที่"
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Dwell click mode"
+msgstr "โหมดการคลิกด้วยการวางแช่"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgstr "โหมดการคลิกด้วยการวางแช่ (0=โหมดท่าขยับ, 1=โหมดหน้าต่าง)"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click time"
+msgstr "ระยะเวลาการคลิกด้วยการวางแช่"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Enable dwell click"
+msgstr "เปิดใช้การคลิกด้วยการวางแช่"
+
+#: ../data/mousetweaks.schemas.in.h:12
+msgid "Enable secondary click"
+msgstr "เปิดใช้คลิกที่สอง"
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable simulated secondary click"
+msgstr "เปิดใช้การจำลองคลิกที่สอง"
+
+#: ../data/mousetweaks.schemas.in.h:14
+msgid "Gesture double click"
+msgstr "ท่าขยับดับเบิลคลิก"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture drag click"
+msgstr "ท่าขยับคลิกเพื่อลาก"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture secondary click"
+msgstr "ท่าขยับคลิกที่สอง"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture single click"
+msgstr "ท่าขยับคลิกเดียว"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Movement threshold"
+msgstr "ระยะเริ่มเคลื่อน"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Secondary click time"
+msgstr "ระยะเวลาคลิกที่สอง"
+
+#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+msgid "Show click type window"
+msgstr "แสดงหน้าต่างชนิดของการคลิก"
+
+#: ../data/mousetweaks.schemas.in.h:21
+msgid "Time in seconds before a click is triggered"
+msgstr "ระยะเวลาเป็นวินาทีก่อนที่จะสร้างการคลิก"
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "ระยะเวลาเป็นวินาทีก่อนที่จะสร้างคลิกที่สอง"
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Button to capture the pointer (0=Capture immediately)"
+msgstr "ปุ่มที่จะเริ่มการกักตัวชี้ (0=กักทันที)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Button to release the pointer"
+msgstr "ปุ่มที่จะปล่อยคืนตัวชี้"
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture button"
+msgstr "ปุ่มเริ่มกัก"
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier"
+msgstr "ปุ่มประกอบปุ่มเริ่มกัก"
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture modifier key (Alt)"
+msgstr "ปุ่มประกอบปุ่มเริ่มกัก (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Capture modifier key (Ctrl)"
+msgstr "ปุ่มประกอบปุ่มเริ่มกัก (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Capture modifier key (Shift)"
+msgstr "ปุ่มประกอบปุ่มเริ่มกัก (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release button"
+msgstr "ปุ่มปล่อยคืน"
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier"
+msgstr "ปุ่มประกอบปุ่มปล่อยคืน"
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Alt)"
+msgstr "ปุ่มประกอบปุ่มปล่อยคืน (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Ctrl)"
+msgstr "ปุ่มประกอบปุ่มปล่อยคืน (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release modifier key (Shift)"
+msgstr "ปุ่มประกอบปุ่มปล่อยคืน (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr "ขนาดของพื้นที่กักตัวชี้"
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr "ความกว้างของพื้นที่กักตัวชี้ในหน่วยพิกเซล"
+
+#: ../src/mt-main.c:417
+msgid "Enable mousetweaks feature"
+msgstr "เปิดใช้ความสามารถของ mousetweaks"
+
+#: ../src/mt-main.c:419
+msgid "Use dwell mode"
+msgstr "ใช้โหมดการวางแช่"
+
+#: ../src/mt-main.c:423
+msgid "Window x position"
+msgstr "ตำแหน่ง x ของหน้าต่าง"
+
+#: ../src/mt-main.c:425
+msgid "Window y position"
+msgstr "ตำแหน่ง y ของหน้าต่าง"
+
+#: ../src/mt-main.c:427
+msgid "Shutdown mousetweaks"
+msgstr "ปิด mousetweaks"
+
+#: ../src/mt-main.c:484
+msgid "Assistive Technologies not enabled"
+msgstr "ไม่ได้เปิดใช้เทคโนโลยีสิ่งอำนวยความสะดวก"
+
+#: ../src/mt-main.c:485
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "Mousetweaks ต้องทำงานโดยมีเทคโนโลยีสิ่งอำนวยความสะดวกด้วย"
+
+#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
+msgid "Couldn't display help"
+msgstr "ไม่สามารถแสดงคู่มือวิธีใช้"
+
+#: ../src/pointer-capture-applet.c:204
+msgid "Locked"
+msgstr "ล็อค"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:207
+msgid "L"
+msgstr "ล"
+
+#: ../src/pointer-capture-applet.c:635
+msgid "Capture area"
+msgstr "พื้นที่กักตัวชี้"
+
+#: ../src/pointer-capture-applet.c:636
+msgid "Temporarily lock the mouse pointer"
+msgstr "ล็อคตัวชี้เมาส์ชั่วคราว"

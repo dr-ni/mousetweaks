@@ -1,0 +1,333 @@
+# translation of mousetweaks to Hungarian
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mousetweaks package.
+#
+# Balint Laza <laza@szentkoronaradio.com>, 2008.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-10 07:42+0000\n"
+"PO-Revision-Date: 2008-02-21 00:23+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
+"Language-Team: Hungarian <gnome@fsf.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Különböző elidőzési kattintástípusok kiválasztása.\n"
+"A MouseTweaks része"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "Kattintástípus ablak"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "Dupla kattintás"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "Húzás"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "Jobb kattintás"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "Egyszeres kattintás"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Mutató elfogása</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>Mutató elengedése</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>Az elfogási terület mérete</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Terület az egérmutató panelra rögzítéséhez.\n"
+"A MouseTweaks része"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "G_omb:"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "Módosítóbillentyű:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "Mutatóelfogás beállításai"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "A 0 gomb kiválasztása azonnal elfogja a mutatót"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_Gomb:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_Szélesség:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "képpont"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "Elidőzési kattintás típusa"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Ikonok és szöveg"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Csak ikonok"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Csak szöveg"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "Elidőzési kattintás"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "Válassza ki az elidőzési kattintás típusát"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Terület a mutató zárolására"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "Mutató elfogása"
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "_Névjegy"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "_Súgó"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "_Beállítások"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Button style"
+msgstr "Gombstílus"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgstr "Gombstílus a kattintás típusa ablakban (0=Szöveg, 1=Ikon, 2=Mindkettő"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "A dupla kattintás iránya (0=balra, 1=jobbra, 2=fel, 3=le)"
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "A húzási kattintás iránya (0=balra, 1=jobbra, 2=fel, 3=le)"
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "A másodlagos kattintás iránya (0=balra, 1=jobbra, 2=fel, 3=le)"
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Az egyszeres kattintás iránya (0=balra, 1=jobbra, 2=fel, 3=le)"
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid "Distance in pixels before movement will be recognized"
+msgstr "Megteendő távolság képpontban a mozgás felismerése előtt"
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Dwell click mode"
+msgstr "Elidőzési kattintás módja"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgstr "Elidőzési kattintás módja (0=gesztus, 1=ablak)"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click time"
+msgstr "Elidőzési kattintás ideje"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Enable dwell click"
+msgstr "Elidőzési kattintás engedélyezése"
+
+#: ../data/mousetweaks.schemas.in.h:12
+msgid "Enable secondary click"
+msgstr "Másodlagos kattintás engedélyezése"
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable simulated secondary click"
+msgstr "Szimulált másodlagos kattintás engedélyezése"
+
+#: ../data/mousetweaks.schemas.in.h:14
+msgid "Gesture double click"
+msgstr "Dupla kattintás gesztussal"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture drag click"
+msgstr "Húzás gesztussal"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture secondary click"
+msgstr "Másodlagos kattintás gesztussal"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture single click"
+msgstr "Egyszeres kattintás gesztussal"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Movement threshold"
+msgstr "Mozgási küszöb"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Secondary click time"
+msgstr "Másodlagos kattintás ideje"
+
+#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+msgid "Show click type window"
+msgstr "A Kattintástípus ablak megjelenítése"
+
+#: ../data/mousetweaks.schemas.in.h:21
+msgid "Time in seconds before a click is triggered"
+msgstr "A kattintás aktiválása előtti idő másodpercben"
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "A másodlagos kattintás aktiválása előtti idő másodpercben"
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Button to capture the pointer (0=Capture immediately)"
+msgstr "Gomb a mutató elfogására (0=azonnali elfogás)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Button to release the pointer"
+msgstr "Gomb a mutató elengedésére"
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture button"
+msgstr "Elfogás gomb"
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier"
+msgstr "Elfogás módosítóbillentyű"
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture modifier key (Alt)"
+msgstr "Elfogás módosítóbillentyű (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Capture modifier key (Ctrl)"
+msgstr "Elfogás módosítóbillentyű (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Capture modifier key (Shift)"
+msgstr "Elfogás módosítóbillentyű (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release button"
+msgstr "Elengedés gomb"
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier"
+msgstr "Elengedés módosítóbillentyű"
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Alt)"
+msgstr "Elengedés módosítóbillentyű (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Ctrl)"
+msgstr "Elengedés módosítóbillentyű (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release modifier key (Shift)"
+msgstr "Elengedés módosítóbillentyű (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr "Az elfogási terület mérete"
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr "Az elfogási terület szélessége képpontban"
+
+#: ../src/mt-main.c:417
+msgid "Enable mousetweaks feature"
+msgstr "A Mousetweaks szolgáltatás engedélyezése"
+
+#: ../src/mt-main.c:419
+msgid "Use dwell mode"
+msgstr "Elidőzési mód használata"
+
+#: ../src/mt-main.c:423
+msgid "Window x position"
+msgstr "Ablak x pozíciója"
+
+#: ../src/mt-main.c:425
+msgid "Window y position"
+msgstr "Ablak y pozíciója"
+
+#: ../src/mt-main.c:427
+msgid "Shutdown mousetweaks"
+msgstr "A Mousetweaks leállítása"
+
+#: ../src/mt-main.c:484
+msgid "Assistive Technologies not enabled"
+msgstr "Az akadálymentesítés támogatása nincs engedélyezve"
+
+#: ../src/mt-main.c:485
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "A Mousetweaks használatához az akadálymentesítés támogatása szükséges."
+
+#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
+msgid "Couldn't display help"
+msgstr "A súgó nem jeleníthető meg"
+
+#: ../src/pointer-capture-applet.c:204
+msgid "Locked"
+msgstr "Zárolva"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:207
+msgid "L"
+msgstr "Z"
+
+#: ../src/pointer-capture-applet.c:635
+msgid "Capture area"
+msgstr "Elfogási terület"
+
+#: ../src/pointer-capture-applet.c:636
+msgid "Temporarily lock the mouse pointer"
+msgstr "Az egérmutató ideiglenes zárolása"
+

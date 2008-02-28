@@ -1,0 +1,332 @@
+# mousetweaks Korean translation
+#
+# based on gnome-control-center translation,
+# Young-Ho Cha <ganadist@chollian.net>, 2002, 2006.
+# Changwoo Ryu <cwryu@debian.org>, 2002-2006, 2007, 2008.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-26 22:19+0900\n"
+"PO-Revision-Date: 2008-02-28 20:39+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"여러가지 자동 누르기 종류를 선택하는 애플릿.\n"
+"마우스트윅스의 일부"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "누르기 종류 창"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "두 번 누르기"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "끌어 누르기"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "오른쪽 단추 누르기"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "한 번 누르기"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>포인터 잡기</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>포인터 놓아주기</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>잡기 영역의 크기</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"마우스 포인터를 패널에 고정할 영역.\n"
+"마우스트윅스의 일부"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "단추(_U):"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "변경 키:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "포인터 잡기 기본 설정"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "단추 0을 선택하면 포인터를 즉시 잡습니다"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "단추(_B):"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "너비(_W):"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "픽셀"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "자동 누르기 종류"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "아이콘과 텍스트만 표시"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "아이콘만 표시"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "텍스트만 표시"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "자동 누르기"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "자동 누르기 종류 선택"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "포인터를 잠글 영역"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "포인터 잡기"
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "정보(_A)"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "도움말(_H)"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "기본 설정(_P)"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Button style"
+msgstr "단추 방식"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgstr "누르기 종류 창의 단추 모양 (0=텍스트, 1=아이콘, 2=둘 다)"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "두 번 누르기로 취급할 방향 (0=왼쪽, 1=오른쪽, 2=위, 3=아래)"
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "끌어 누르기로 취급할 방향 (0=왼쪽, 1=오른쪽, 2=위, 3=아래)"
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "두번째 누르기로 취급할 방향 (0=왼쪽, 1=오른쪽, 2=위, 3=아래)"
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "한번 누르기로 취급할 방향 (0=왼쪽, 1=오른쪽, 2=위, 3=아래)"
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid "Distance in pixels before movement will be recognized"
+msgstr "움직임을 인식할 거리, 픽셀 수"
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Dwell click mode"
+msgstr "자동 누르기 모드"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgstr "자동 누르기 모드 (0=제스쳐 모드, 1=창 모드)"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click time"
+msgstr "자동 누르기 시간"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Enable dwell click"
+msgstr "자동 누르기 사용"
+
+#: ../data/mousetweaks.schemas.in.h:12
+msgid "Enable secondary click"
+msgstr "두번째 누르기 사용"
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable simulated secondary click"
+msgstr "두번째 누르기 흉내 내기 사용"
+
+#: ../data/mousetweaks.schemas.in.h:14
+msgid "Gesture double click"
+msgstr "두 번 누르기 제스쳐"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture drag click"
+msgstr "끌어 누르기 제스쳐"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture secondary click"
+msgstr "두번째 누르기 제스쳐"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture single click"
+msgstr "한 번 누르기 제스쳐"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Movement threshold"
+msgstr "움직임 임계값"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Secondary click time"
+msgstr "두번째 누르기 시간"
+
+#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+msgid "Show click type window"
+msgstr "누르기 종류 창 표시"
+
+#: ../data/mousetweaks.schemas.in.h:21
+msgid "Time in seconds before a click is triggered"
+msgstr "누르기로 취급하기 전의 시간, 초 단위"
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "두 번째 누르기로 취급하기 전의 시간, 초 단위"
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Button to capture the pointer (0=Capture immediately)"
+msgstr "포인터를 잡을 단추 (0=즉시 캡쳐)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Button to release the pointer"
+msgstr "포인터를 놓아 줄 단추"
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture button"
+msgstr "잡기 단추"
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier"
+msgstr "잡기 변경 키"
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture modifier key (Alt)"
+msgstr "잡기 변경 키 (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Capture modifier key (Ctrl)"
+msgstr "잡기 변경 키 (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Capture modifier key (Shift)"
+msgstr "잡기 변경 키 (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release button"
+msgstr "놓아주기 단추"
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier"
+msgstr "놓아주기 변경 키"
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Alt)"
+msgstr "놓아주기 변경 키 (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Ctrl)"
+msgstr "놓아주기 변경 키 (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release modifier key (Shift)"
+msgstr "놓아주기 변경 키 (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr "잡기 영역의 크기"
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr "잡기 영역의 너비, 픽셀 단위"
+
+#: ../src/mt-main.c:417
+msgid "Enable mousetweaks feature"
+msgstr "마우스트윅스 기능 사용"
+
+#: ../src/mt-main.c:419
+msgid "Use dwell mode"
+msgstr "자동 누르기 모드 사용"
+
+#: ../src/mt-main.c:423
+msgid "Window x position"
+msgstr "창 가로 위치"
+
+#: ../src/mt-main.c:425
+msgid "Window y position"
+msgstr "창 세로 위치"
+
+#: ../src/mt-main.c:427
+msgid "Shutdown mousetweaks"
+msgstr "마우스트윅스 끝내기"
+
+#: ../src/mt-main.c:484
+msgid "Assistive Technologies not enabled"
+msgstr "보조 기술을 사용하지 않습니다"
+
+#: ../src/mt-main.c:485
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "마우스트윅스는 보조 기술을 사용해야 합니다."
+
+#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
+msgid "Couldn't display help"
+msgstr "도움말을 표시할 수 없습니다"
+
+#: ../src/pointer-capture-applet.c:204
+msgid "Locked"
+msgstr "잠금"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:207
+msgid "L"
+msgstr "잠"
+
+#: ../src/pointer-capture-applet.c:635
+msgid "Capture area"
+msgstr "잡기 영역"
+
+#: ../src/pointer-capture-applet.c:636
+msgid "Temporarily lock the mouse pointer"
+msgstr "임시로 마우스 포인터 잠그기"

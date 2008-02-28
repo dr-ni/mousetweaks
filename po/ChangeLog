@@ -1,3 +1,8 @@
+2008-02-28  Changwoo Ryu  <cwryu@debian.org>
+
+	* ko.po: Added Korean translation.
+	* LINGUAS: Added ko.
+
 2008-02-21  Claude Paroz  <claude@2xlibre.net>
 
 	* fr.po: Updated French translation by Robert-André Mauchin and Claude

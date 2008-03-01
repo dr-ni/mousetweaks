@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-01 12:36+0900\n"
-"PO-Revision-Date: 2008-03-01 12:33+0900\n"
+"POT-Creation-Date: 2008-03-01 12:52+0900\n"
+"PO-Revision-Date: 2008-03-01 12:49+0900\n"
 "Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
 "Language-Team: Japanese <takeshi.aihana@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -114,7 +114,7 @@ msgstr "自動クリック"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr "Dwell クリックの種類を選択します"
+msgstr "自動クリックの種類を選択します"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"

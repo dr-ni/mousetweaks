@@ -1,0 +1,330 @@
+# English (British) translation.
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousetweaks package.
+#
+# Philip Withnall <pwithnall@svn.gnome.org>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-02 17:20+0000\n"
+"PO-Revision-Date: 2008-03-02 17:20+0000\n"
+"Last-Translator: Philip Withnall <pwithnall@svn.gnome.org>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "Click Type Window"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "Double Click"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "Drag Click"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "Right Click"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "Single Click"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Capture Pointer</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>Release Pointer</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>Size of Capture Area</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "B_utton:"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "Modifier:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "Pointer Capture Preferences"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Selecting Button 0 will capture the pointer immediately"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_Button:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_Width:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "pixels"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "Dwell Click Type"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Show Icons and Text"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Show Icons only"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Show Text only"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "Dwell Click"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "Select dwelling click type"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Area to lock the pointer"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "Pointer Capture"
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "_About"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "_Help"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "_Preferences"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Button style"
+msgstr "Button style"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgstr "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid "Distance in pixels before movement will be recognized"
+msgstr "Distance in pixels before movement will be recognized"
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Dwell click mode"
+msgstr "Dwell click mode"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgstr "Dwell click mode (0=Gesture mode, 1=Window mode)"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click time"
+msgstr "Dwell click time"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Enable dwell click"
+msgstr "Enable dwell click"
+
+#: ../data/mousetweaks.schemas.in.h:12
+msgid "Enable secondary click"
+msgstr "Enable secondary click"
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable simulated secondary click"
+msgstr "Enable simulated secondary click"
+
+#: ../data/mousetweaks.schemas.in.h:14
+msgid "Gesture double click"
+msgstr "Gesture double click"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture drag click"
+msgstr "Gesture drag click"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture secondary click"
+msgstr "Gesture secondary click"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture single click"
+msgstr "Gesture single click"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Movement threshold"
+msgstr "Movement threshold"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Secondary click time"
+msgstr "Secondary click time"
+
+#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+msgid "Show click type window"
+msgstr "Show click type window"
+
+#: ../data/mousetweaks.schemas.in.h:21
+msgid "Time in seconds before a click is triggered"
+msgstr "Time in seconds before a click is triggered"
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "Time in seconds before a secondary click is triggered"
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Button to capture the pointer (0=Capture immediately)"
+msgstr "Button to capture the pointer (0=Capture immediately)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Button to release the pointer"
+msgstr "Button to release the pointer"
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture button"
+msgstr "Capture button"
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier"
+msgstr "Capture modifier"
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture modifier key (Alt)"
+msgstr "Capture modifier key (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Capture modifier key (Ctrl)"
+msgstr "Capture modifier key (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Capture modifier key (Shift)"
+msgstr "Capture modifier key (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release button"
+msgstr "Release button"
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier"
+msgstr "Release modifier"
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Alt)"
+msgstr "Release modifier key (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Ctrl)"
+msgstr "Release modifier key (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release modifier key (Shift)"
+msgstr "Release modifier key (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr "Size of capture area"
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr "Width of the capture area in pixels"
+
+#: ../src/mt-main.c:417
+msgid "Enable mousetweaks feature"
+msgstr "Enable mousetweaks feature"
+
+#: ../src/mt-main.c:419
+msgid "Use dwell mode"
+msgstr "Use dwell mode"
+
+#: ../src/mt-main.c:423
+msgid "Window x position"
+msgstr "Window x position"
+
+#: ../src/mt-main.c:425
+msgid "Window y position"
+msgstr "Window y position"
+
+#: ../src/mt-main.c:427
+msgid "Shutdown mousetweaks"
+msgstr "Shutdown mousetweaks"
+
+#: ../src/mt-main.c:484
+msgid "Assistive Technologies not enabled"
+msgstr "Assistive Technologies not enabled"
+
+#: ../src/mt-main.c:485
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "Mousetweaks requires Assistive Technologies."
+
+#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
+msgid "Couldn't display help"
+msgstr "Couldn't display help"
+
+#: ../src/pointer-capture-applet.c:204
+msgid "Locked"
+msgstr "Locked"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:207
+msgid "L"
+msgstr "L"
+
+#: ../src/pointer-capture-applet.c:635
+msgid "Capture area"
+msgstr "Capture area"
+
+#: ../src/pointer-capture-applet.c:636
+msgid "Temporarily lock the mouse pointer"
+msgstr "Temporarily lock the mouse pointer"

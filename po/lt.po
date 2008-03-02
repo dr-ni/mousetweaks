@@ -1,0 +1,328 @@
+# translation of lt.po to Lithuanian
+# Lithuanian translation of mousetweaks package.
+# This file is distributed under the same license as the mousetweaks package.
+#
+# Gintautas Miliauskas <gintas@akl.lt>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: lt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-02 16:04+0200\n"
+"PO-Revision-Date: 2008-03-02 16:04+0200\n"
+"Last-Translator: Gintautas Miliauskas <gintas@akl.lt>\n"
+"Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
+"100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr ""
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr ""
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr ""
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr ""
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "_Mygtukas:"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_Mygtukas:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_Plotis:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "pikseliai"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr ""
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Rodyti piktogramas ir tekstą"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Rodyti tik piktogramas"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Rodyti tik tekstą"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr ""
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr ""
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr ""
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr ""
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "_Apie"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "_Žinynas"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "_Nustatymai"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Button style"
+msgstr "Mygtukų stilius"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid "Distance in pixels before movement will be recognized"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Dwell click mode"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click time"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Enable dwell click"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:12
+msgid "Enable secondary click"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable simulated secondary click"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:14
+msgid "Gesture double click"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture drag click"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture secondary click"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture single click"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Movement threshold"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Secondary click time"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+msgid "Show click type window"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:21
+msgid "Time in seconds before a click is triggered"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Time in seconds before a secondary click is triggered"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Button to capture the pointer (0=Capture immediately)"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Button to release the pointer"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture button"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture modifier key (Alt)"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Capture modifier key (Ctrl)"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Capture modifier key (Shift)"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release button"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Alt)"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Ctrl)"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release modifier key (Shift)"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr ""
+
+#: ../src/mt-main.c:417
+msgid "Enable mousetweaks feature"
+msgstr ""
+
+#: ../src/mt-main.c:419
+msgid "Use dwell mode"
+msgstr ""
+
+#: ../src/mt-main.c:423
+msgid "Window x position"
+msgstr "Lango x pozicija"
+
+#: ../src/mt-main.c:425
+msgid "Window y position"
+msgstr "Lango y pozicija"
+
+#: ../src/mt-main.c:427
+msgid "Shutdown mousetweaks"
+msgstr "Išjungti mousetweaks"
+
+#: ../src/mt-main.c:484
+msgid "Assistive Technologies not enabled"
+msgstr "Pagalbinės technologijos neįjungtos"
+
+#: ../src/mt-main.c:485
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr ""
+
+#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
+msgid "Couldn't display help"
+msgstr "Nepavyko parodyti žinyno"
+
+#: ../src/pointer-capture-applet.c:204
+msgid "Locked"
+msgstr "Užrakinta"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:207
+msgid "L"
+msgstr "U"
+
+#: ../src/pointer-capture-applet.c:635
+msgid "Capture area"
+msgstr ""
+
+#: ../src/pointer-capture-applet.c:636
+msgid "Temporarily lock the mouse pointer"
+msgstr "Laikinai užrakinti pelės žymeklį"

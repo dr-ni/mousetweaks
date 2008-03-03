@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-20 23:09+0000\n"
+"POT-Creation-Date: 2008-01-21 17:48+0000\n"
 "PO-Revision-Date: 2008-01-21 18:42+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <<gnome-es-list@gnome.org>\n"
@@ -144,23 +144,33 @@ msgstr "Estilo de botón"
 
 #: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
-msgstr "Estilo del botón en el tipo de ventana de pulsación (0=texto, 1=icono, 2=ambos)"
+msgstr ""
+"Estilo del botón en el tipo de ventana de pulsación (0=texto, 1=icono, "
+"2=ambos)"
 
 #: ../data/mousetweaks.schemas.in.h:3
 msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "Dirección para realizar una pulsación doble (0=izquierda, 1=derecha, 2=arriba, 3=abajo)"
+msgstr ""
+"Dirección para realizar una pulsación doble (0=izquierda, 1=derecha, "
+"2=arriba, 3=abajo)"
 
 #: ../data/mousetweaks.schemas.in.h:4
 msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "Dirección para realizar una pulsación de arrastre (0=izquierda, 1=derecha, 2=arriba, 3=abajo)"
+msgstr ""
+"Dirección para realizar una pulsación de arrastre (0=izquierda, 1=derecha, "
+"2=arriba, 3=abajo)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "Dirección para realizar una pulsación secundaria (0=izquierda, 1=derecha, 2=arriba, 3=abajo)"
+msgstr ""
+"Dirección para realizar una pulsación secundaria (0=izquierda, 1=derecha, "
+"2=arriba, 3=abajo)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "Dirección para realizar una pulsación sencilla (0=izquierda, 1=derecha, 2=arriba, 3=abajo)"
+msgstr ""
+"Dirección para realizar una pulsación sencilla (0=izquierda, 1=derecha, "
+"2=arriba, 3=abajo)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid "Distance in pixels before movement will be recognized"
@@ -330,4 +340,3 @@ msgstr "Capturar área"
 #: ../src/pointer-capture-applet.c:636
 msgid "Temporarily lock the mouse pointer"
 msgstr "Bloquear temporalmente el puntero del ratón"
-

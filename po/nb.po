@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks 2.21.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-18 12:00+0100\n"
-"PO-Revision-Date: 2008-02-18 12:02+0100\n"
+"POT-Creation-Date: 2008-03-03 11:39+0100\n"
+"PO-Revision-Date: 2008-03-03 11:43+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,8 @@ msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of MouseTweaks"
 msgstr ""
+"Panelprogram for å velge mellom forskjellige typer dwell-klikk.\n"
+"En del av MouseTweaks"
 
 #: ../data/dwell-click-applet.glade.h:3
 msgid "Click Type Window"
@@ -59,6 +61,8 @@ msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of MouseTweaks"
 msgstr ""
+"Område på panelet hvor muspekeren fryses.\n"
+"En del av MouseTweaks"
 
 #: ../data/pointer-capture-applet.glade.h:6
 msgid "B_utton:"
@@ -74,7 +78,7 @@ msgstr "Brukervalg for fanging av pekeren"
 
 #: ../data/pointer-capture-applet.glade.h:9
 msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr ""
+msgstr "Hvis du velger knapp 0 vil pekeren fanges med én gang"
 
 #: ../data/pointer-capture-applet.glade.h:10
 msgid "_Button:"
@@ -110,15 +114,15 @@ msgstr "Dwell-klikk"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr ""
+msgstr "Velg klikk-type dwelling"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
-msgstr ""
+msgstr "Område for låsing av pekeren"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
 msgid "Pointer Capture"
-msgstr ""
+msgstr "Fangst av pekeren"
 
 #: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
 msgid "_About"
@@ -158,30 +162,27 @@ msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid "Distance in pixels before movement will be recognized"
-msgstr ""
+msgstr "Avstand i piksler før bevegelse gjenkjennes"
 
 #: ../data/mousetweaks.schemas.in.h:8
-#, fuzzy
 msgid "Dwell click mode"
-msgstr "Type dwell-klikk"
+msgstr "Modus for dwell-klikk"
 
 #: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
 msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:10
-#, fuzzy
 msgid "Dwell click time"
-msgstr "Type dwell-klikk"
+msgstr "Tid for dwell-klikk"
 
 #: ../data/mousetweaks.schemas.in.h:11
-#, fuzzy
 msgid "Enable dwell click"
-msgstr "Dwell-klikk"
+msgstr "Aktiver dwell-klikk"
 
 #: ../data/mousetweaks.schemas.in.h:12
 msgid "Enable secondary click"
-msgstr ""
+msgstr "Aktiver sekundært klikk"
 
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable simulated secondary click"
@@ -211,12 +212,11 @@ msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:19
 msgid "Secondary click time"
-msgstr ""
+msgstr "Tid for sekundært klikk"
 
 #: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
-#, fuzzy
 msgid "Show click type window"
-msgstr "Vis _vindu for type klikk"
+msgstr "Vis vindu for type klikk"
 
 #: ../data/mousetweaks.schemas.in.h:21
 msgid "Time in seconds before a click is triggered"
@@ -235,9 +235,8 @@ msgid "Button to release the pointer"
 msgstr ""
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-#, fuzzy
 msgid "Capture button"
-msgstr "Fangstområde"
+msgstr "Fangsknapp"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
 #, fuzzy
@@ -287,11 +286,11 @@ msgstr ""
 
 #: ../src/mt-main.c:417
 msgid "Enable mousetweaks feature"
-msgstr ""
+msgstr "Aktiver mousetweaks"
 
 #: ../src/mt-main.c:419
 msgid "Use dwell mode"
-msgstr ""
+msgstr "Bruk «dwell»-modus"
 
 #: ../src/mt-main.c:423
 msgid "Window x position"

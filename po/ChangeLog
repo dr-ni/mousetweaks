@@ -1,3 +1,8 @@
+2008-03-04  Wouter Bolsterlee  <wbolster@svn.gnome.org>
+
+	* LINGUAS: Added nl.
+	* nl.po: Added Dutch translation by Hendrik Maryns.
+
 2008-03-03  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation

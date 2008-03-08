@@ -1,0 +1,331 @@
+# Russian translation of mousetweaks
+# Copyright (C) 2008 Free Software Foundation
+# This file is distributed under the same license as the mousetweaks package
+#
+# Yuriy Penkin <yura.penkin@gmail.com>, 2008.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks trunk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-09 02:51+0300\n"
+"PO-Revision-Date: 2008-03-07 22:10+0300\n"
+"Last-Translator: Yuriy Penkin <yura.penkin@gmail.com>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Апплет для выбора различных типов шелчков при подёргивании указателя мыши"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "Окно настройки типа щелчка"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "Двойной щелчок"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "Щелчок с переносом"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "Щелчок правой кнопкой"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "Простой щелчок"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Захват указателя</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>Освобождение указателя</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>Размер области захвата</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Область для заморозки указателя мыши на панели.\n"
+"Входит в состав MouseTweaks"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "К_нопка"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "Модификатор:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "Настройки области захвата"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "При выборе кнопки 0 указатель будет захвачен сразу"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_Кнопка:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_Ширина"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "пиксел"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "Тип щелчка при подёргивании"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Показать значки и текст"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Показать только значки"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Показать только текст"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "Щелчок подёргиванием"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "Выберите щелчок при подёргивании"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Область для захвата указателя"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "Захват указателя"
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "_О программе"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "_Справка"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "_Параметры"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Button style"
+msgstr "Стиль кнопок"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgstr ""
+"Стиль кнопок в окне настройки типа щелчка (0=текст, 1=значки, 2=и то, и "
+"другое)"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Направление для двойного щелчка (0=лево, 1=право, 2=вверх, 3=вниз)"
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Направление для щелчка с переносом (0=лево, 1=право, 2=вверх, 3=вниз)"
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Направление для повторного щелчка (0=лево, 1=право, 2=вверх, 3=вниз)"
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Направление для обычного щелчка (0=лево, 1=право, 2=вверх, 3=вниз)"
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid "Distance in pixels before movement will be recognized"
+msgstr "Расстояние в пикселах, распознаваемое как движение"
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Dwell click mode"
+msgstr "Режим щелчка при подёргивании"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgstr "Режим щелчка при подёргивании (0=режим жестов, 1=режим окна)"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click time"
+msgstr "Время подёргивания"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Enable dwell click"
+msgstr "Включить щелчок при подёргивании"
+
+#: ../data/mousetweaks.schemas.in.h:12
+msgid "Enable secondary click"
+msgstr "Включить вторичный щелчок"
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable simulated secondary click"
+msgstr "Включить поддержку вторичного щелчка"
+
+#: ../data/mousetweaks.schemas.in.h:14
+msgid "Gesture double click"
+msgstr "Жест для двойного щелчка"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture drag click"
+msgstr "Жест для щелчка и переноса"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture secondary click"
+msgstr "Жест для повторного щелчка"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture single click"
+msgstr "Жест для обычного щелчка"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Movement threshold"
+msgstr "Порог точности движений"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Secondary click time"
+msgstr "Время второго щелчка"
+
+#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+msgid "Show click type window"
+msgstr "Показать окно с типами щелчков"
+
+#: ../data/mousetweaks.schemas.in.h:21
+msgid "Time in seconds before a click is triggered"
+msgstr "Время в секундах до выполнения щелчка"
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "Время в секундах до выполнения второго щелчка"
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Button to capture the pointer (0=Capture immediately)"
+msgstr "Кнопка для захвата указателя (0=захватить сразу)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Button to release the pointer"
+msgstr "Кнопка для освобождения указателя"
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture button"
+msgstr "Нажать кнопку"
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier"
+msgstr "Нажать клавишу модификатора"
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture modifier key (Alt)"
+msgstr "Нажат клавишу модификатора (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Capture modifier key (Ctrl)"
+msgstr "Нажать клавишу модификатора (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Capture modifier key (Shift)"
+msgstr "Нажать клавишу модификатора (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release button"
+msgstr "Отпустить кнопку"
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier"
+msgstr "Отпустить клавишу"
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Alt)"
+msgstr "Отпустить клавишу (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Ctrl)"
+msgstr "Отпустить клавишу (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release modifier key (Shift)"
+msgstr "Отпустить клавишу (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr "Размер области захвата"
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr "Ширина зоны захвата в пикселах"
+
+#: ../src/mt-main.c:417
+msgid "Enable mousetweaks feature"
+msgstr "Включить дополнительные возможности мыши"
+
+#: ../src/mt-main.c:419
+msgid "Use dwell mode"
+msgstr "Режим подёргивания"
+
+#: ../src/mt-main.c:423
+msgid "Window x position"
+msgstr "Позиция окна по горизонтали"
+
+#: ../src/mt-main.c:425
+msgid "Window y position"
+msgstr "Позиция окна по вертикали"
+
+#: ../src/mt-main.c:427
+msgid "Shutdown mousetweaks"
+msgstr "Выключить mousetweaks"
+
+#: ../src/mt-main.c:484
+msgid "Assistive Technologies not enabled"
+msgstr "Вспомогательные технологии не включены"
+
+#: ../src/mt-main.c:485
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "Mousetweaks требует вспомогательные технологии."
+
+#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
+msgid "Couldn't display help"
+msgstr "Не удалось показать справку"
+
+#: ../src/pointer-capture-applet.c:204
+msgid "Locked"
+msgstr "Заблокирован"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:207
+msgid "L"
+msgstr "Б"
+
+#: ../src/pointer-capture-applet.c:635
+msgid "Capture area"
+msgstr "Область захвата"
+
+#: ../src/pointer-capture-applet.c:636
+msgid "Temporarily lock the mouse pointer"
+msgstr "Временно заблокировать указатель мыши"

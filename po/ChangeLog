@@ -1,3 +1,9 @@
+2008-03-09  Nickolay V. Shmyrev  <nshmyrev@yandex.ru>
+
+	* LINGUAS: 
+	* ru.po: Added Russian translation by 
+	Yuriy Penkin <yura.penkin@gmail.com>
+
 2008-03-09  Gintautas Miliauskas  <gintas@akl.lt>
 
 	* lt.po: Committed Lithuanian translation by Vytautas Liuolia.

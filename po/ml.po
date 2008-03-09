@@ -73,8 +73,8 @@ msgstr ""
 
 #: ../data/pointer-capture-applet.glade.h:6
 msgid "B_utton:"
-msgstr "‌‌ബട്ടണ്‍:"
-‍
+msgstr "‌‌_ബട്ടണ്‍:"
+
 #: ../data/pointer-capture-applet.glade.h:7
 msgid "Modifier:"
 msgstr "പരിഷ്കര്‍ത്താവ്:"

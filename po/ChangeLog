@@ -1,3 +1,8 @@
+2008-03-09 Baris Cicek <baris@teamforce.name.tr>
+
+	* tr.po: Added Turkish translation from Emrah Unal
+	* LINGUAS: Added tr (turkish)
+	
 2008-03-09  I. Felix <ifelix@svn.gnome.org>
 
 	* ta.po:  Tamil Translation updated by Tirumurthi Vasudevan

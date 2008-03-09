@@ -1,0 +1,331 @@
+# Translation of mousetweaks to Ukrainian
+# Copyright (C) 2008 Free Software Foundation
+# This file is distributed under the same license as the mousetweaks package
+#
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2008.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks trunk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-06 03:17+0000\n"
+"PO-Revision-Date: 2008-03-09 02:07+0300\n"
+"Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Аплет для вибору різних типів клацання при утриманні вказівника миші"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "Вікно налаштовування типу клацання"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "Подвійне клацання"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "Клацання з переносом"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "Клацання правою кнопкою"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "Просте клацання"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Захоплення вказівника</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>Звільнення вказівника</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>Розмір області захоплення</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"Область для заморозки вказівника миші на панелі.\n"
+"Входить до складу MouseTweaks"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "К_нопка"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "Модифікатор:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "Параметри області захоплення"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "При виборі кнопки 0 вказівник буде захоплений одразу"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "_Кнопка:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_Ширина"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "точка"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "Тип клацання при утриманні"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Показувати значки та текст"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Показувати лише значки"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Показувати лише текст"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "Клацання утриманням"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "Виберіть клацання при утриманні"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Область для захоплення вказівника"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "Захоплення вказівника"
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "_Про програму"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "_Довідка"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "_Параметри"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Button style"
+msgstr "Стиль кнопок"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgstr ""
+"Стиль кнопок у вікні налаштовування типу клацання (0=текст, 1=значки, 2=і те, і "
+"інше)"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Напрямок для подвійного клацання (0=ліворуч, 1=праворуч, 2=вверх, 3=вниз)"
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Напрямок для клацання с переносом (0=ліворуч, 1=праворуч, 2=вверх, 3=вниз)"
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Напрямок для повторного клацання (0=ліворуч, 1=праворуч, 2=вверх, 3=вниз)"
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "Напрямок для звичайного клацання (0=ліворуч, 1=праворуч, 2=вверх, 3=вниз)"
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid "Distance in pixels before movement will be recognized"
+msgstr "Відстань у точках, що розпізнається як рух"
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Dwell click mode"
+msgstr "Режим клацання при утримуванні"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgstr "Режим клацання при утримуванні (0=режим жестів, 1=режим вікна)"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click time"
+msgstr "Час утримування"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Enable dwell click"
+msgstr "Увімкнути клацання при утримуванні"
+
+#: ../data/mousetweaks.schemas.in.h:12
+msgid "Enable secondary click"
+msgstr "Увімкнути вторинне клацання"
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable simulated secondary click"
+msgstr "Увімкнути підтримку клацання другою кнопкою"
+
+#: ../data/mousetweaks.schemas.in.h:14
+msgid "Gesture double click"
+msgstr "Жест для подвійного клацання"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture drag click"
+msgstr "Жест для клацання та переносу"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture secondary click"
+msgstr "Жест для повторного клацання"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture single click"
+msgstr "Жест для звичайного клацання"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Movement threshold"
+msgstr "Поріг точності рухів"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Secondary click time"
+msgstr "Час вторинного клацання"
+
+#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+msgid "Show click type window"
+msgstr "Показувати вікно з типами клацання"
+
+#: ../data/mousetweaks.schemas.in.h:21
+msgid "Time in seconds before a click is triggered"
+msgstr "Час у секундах до виконання клацання"
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "Час у секундах до виконання вторинного клацання"
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Button to capture the pointer (0=Capture immediately)"
+msgstr "Кнопка для захоплення вказівника (0=захопити одразу)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Button to release the pointer"
+msgstr "Кнопка для звільнення вказівника"
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture button"
+msgstr "Натиснути кнопку"
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier"
+msgstr "Натиснути клавішу модифікатора"
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture modifier key (Alt)"
+msgstr "Натиснути клавішу модифікатора (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Capture modifier key (Ctrl)"
+msgstr "Натиснути клавішу модифікатора (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Capture modifier key (Shift)"
+msgstr "Натиснути клавішу модифікатора (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release button"
+msgstr "Відпустити кнопку"
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier"
+msgstr "Відпустити модифікатор"
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Alt)"
+msgstr "Відпустити модифікатор (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Ctrl)"
+msgstr "Відпустити модифікатор (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release modifier key (Shift)"
+msgstr "Відпустити модифікатор (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr "Розмір області захоплення"
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr "Ширина зони захоплення у точках"
+
+#: ../src/mt-main.c:417
+msgid "Enable mousetweaks feature"
+msgstr "Увімкнути додаткові можливості миші"
+
+#: ../src/mt-main.c:419
+msgid "Use dwell mode"
+msgstr "Режим утримування"
+
+#: ../src/mt-main.c:423
+msgid "Window x position"
+msgstr "Позиція вікна по горизонталі"
+
+#: ../src/mt-main.c:425
+msgid "Window y position"
+msgstr "Позиція вікна по вертикалі"
+
+#: ../src/mt-main.c:427
+msgid "Shutdown mousetweaks"
+msgstr "Вимкнути mousetweaks"
+
+#: ../src/mt-main.c:484
+msgid "Assistive Technologies not enabled"
+msgstr "Технології доступності не увімкнені"
+
+#: ../src/mt-main.c:485
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "Mousetweaks вимагає технологій доступності."
+
+#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
+msgid "Couldn't display help"
+msgstr "Не вдається показати довідку"
+
+#: ../src/pointer-capture-applet.c:204
+msgid "Locked"
+msgstr "Заблокований"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:207
+msgid "L"
+msgstr "Б"
+
+#: ../src/pointer-capture-applet.c:635
+msgid "Capture area"
+msgstr "Область захоплення"
+
+#: ../src/pointer-capture-applet.c:636
+msgid "Temporarily lock the mouse pointer"
+msgstr "Тимчасово заблокувати вказівник миші"

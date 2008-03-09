@@ -1,3 +1,8 @@
+2008-03-09 Maxim Dziumanenko <dziumanenko@gmail.com>
+
+        * uk.po: Add Ukrainian translation.
+	* LINGUAS: Add Ukrainian (uk)
+
 2008-03-09  Praveen Arimbrathodiyil <pravi.a@gmail.com>
 
 	* ml.po:  Malayalam Translation added

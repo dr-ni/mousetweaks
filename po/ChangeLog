@@ -1,3 +1,8 @@
+2008-03-09  Praveen Arimbrathodiyil <pravi.a@gmail.com>
+
+	* ml.po:  Malayalam Translation added
+	* LINGUAS: Added Malayalam (ml) to The List of Languages.
+
 2008-03-09  Rajesh Ranjan <rajeshkajha@yahoo.com>
 
 	* hi.po:  Hindi Translation added

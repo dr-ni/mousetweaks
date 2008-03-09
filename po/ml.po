@@ -1,0 +1,343 @@
+# Malayalam translation of mousetweaks.
+# Copyright (C) 2008 mousetweaks' COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousetweaks package.
+# Arun.K.R|അരുണ്‍.കെ.ആര്‍ <code333@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks trunk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-09 09:06+0000\n"
+"PO-Revision-Date: 2008-03-09 23:14+0530\n"
+"Last-Translator: Arun.K.R | അരുണ്‍.കെ.ആര്‍ <code333@gmail.com>\n"
+"Language-Team: Swathanthra Malayalam Computing|||സ്വതന്ത്ര മലയാളം കമ്പ്യൂട്ടിങ്ങ് <smc-discuss@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Malayalam\n"
+"X-Poedit-Country: INDIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Bookmarks: -1,-1,54,-1,-1,-1,-1,-1,-1,-1\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"ഡ്വല്ല്  ഞെക്കു് രീതികള്‍ തെരഞ്ഞെടുക്കുന്നതിനുള്ള ലഘുപ്രയോഗം.\n"
+"മൌസ്ട്‌ട്വീക്കിന്റെ ഭാഗം"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "ഞെക്കുന്ന രീതി ജാലകം"
+
+#: ../data/dwell-click-applet.glade.h:4
+#: ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "ഇരട്ട ഞെക്കു്"
+
+#: ../data/dwell-click-applet.glade.h:5
+#: ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "വലിച്ചിടുന്ന ഞെക്കു്"
+
+#: ../data/dwell-click-applet.glade.h:6
+#: ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "വലതു് ഞെക്കു്"
+
+#: ../data/dwell-click-applet.glade.h:7
+#: ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "ഒറ്റ ഞെക്കു് "
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>സൂചിക പിടിക്കുക</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>സൂചിക വിടുക </b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>പിടിക്കേണ്ട സ്ഥലത്തിന്റെ വിസ്ത്രിതി </b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"പാളിയില്‍ മൌസ്ട്‌ട്വീക്കിനെ മരവിപ്പിക്കാനുള്ള സ്ഥലം.\n"
+"മൌസ്ട്‌ട്വീക്കിന്റെ ഭാഗം"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "‌‌ബട്ടണ്‍:"
+‍
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "പരിഷ്കര്‍ത്താവ്:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "പോയിന്റ‌റിനെ പിടിച്ചെടുക്കുന്ന്നതിനുള്ള മുന്‍ഗണനകള് "
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "ബട്ടണ്‍ 0 തെരഞ്ഞെടുത്താല്‍ പോയിന്റര്‍  ഉടനടി പിടിച്ചെടുക്കപ്പെടും "
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "‌‌_ബട്ടണ്:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "_വീതി:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "പിക്സലുകള് "
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "ഡ്വല്ല്  ഞെക്കു്മാത്ര്ക"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr " ഐക്കണും എഴുത്തും കാണിക്കുക "
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "ഐക്കണ്‍  മാത്രം കാണിക്കുക "
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "എഴുത്ത് മാത്രം കാണിക്കുക "
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "ഡ്വെല്ല്  ഞെക്കു്"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "ഡ്വെല്ല്  ഞെക്കു്മാത്രുക തെരെഞെടുക്കുക "
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "പോയിന്റ‌റിനെ പൂട്ടേണ്ട സ്ഥലം"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "പോയിന്റ‌റിനെ പിടിച്ചെടുക്കുക "
+
+#: ../data/DwellClick.xml.h:1
+#: ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "‌_എന്നെ പറ്റി"
+
+#: ../data/DwellClick.xml.h:2
+#: ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "_സഹായം "
+
+#: ../data/DwellClick.xml.h:3
+#: ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "‌_മുന്‍ഗണനകള് "
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Button style"
+msgstr "ബട്ടണ് ശൈലി "
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgstr "ഞെക്കുന്ന തരത്തിലുള്ള ജാലകത്തിലെ ബട്ടണ് ശൈലി (0=എഴുത്ത്, 1=ഐക്കണ്‍, 2=രണ്ടും)"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "ഒരു ഇരട്ട ഞെക്കു് നടത്തേണ്ട ദിശ (0=ഇടത്, 1=വലത്, 2=മുകളില്‍, 3=താഴെ) "
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "ഒരു ‌വലിച്ചിടല്  ഞെക്കു് നടത്തേണ്ട ദിശ (0=ഇടത്, 1=വലത്, 2=മുകളില്‍, 3=താഴെ) "
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "ഒരു രണ്ടാമതു ഞെക്കു് നടത്തേണ്ട ദിശ (0=ഇടത്, 1=വലത്, 2=മുകളില്‍, 3=താഴെ) "
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "ഒരു ഒറ്റ ഞെക്കു് നടത്തേണ്ട ദിശ (0=ഇടത്, 1=വലത്, 2=മുകളില്‍, 3=താഴെ) "
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid "Distance in pixels before movement will be recognized"
+msgstr "നീക്കം തിരിച്ച്റിയുന്നതിനു മുന്‍പുള്ള അകലം പിക്സലില്‍ "
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Dwell click mode"
+msgstr "ഡ്വ്വ്ല്ല്  ഞെക്കുന്ന രീതി"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgstr "ഡ്വ്വ്ല്ല്  ഞെക്കുന്ന രീതി(0=ഊഹ രീതി, 1=ജാലക രീതി)"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click time"
+msgstr "ഡ്വ്വ്ല്ല്  ഞെക്കുന്ന സമയം"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Enable dwell click"
+msgstr "ഡ്വ്വ്ല്ല്  ഞെക്കു് ഉണര്‍ത്തുക "
+
+#: ../data/mousetweaks.schemas.in.h:12
+msgid "Enable secondary click"
+msgstr "രണ്ടാമത്   ഞെക്കു് ഉണര്‍ത്തുക "
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable simulated secondary click"
+msgstr "രണ്ടാമതു ഞെക്കു് അനുകരിക്കുന്നത് ഉണര്‍ത്തുക "
+
+#: ../data/mousetweaks.schemas.in.h:14
+msgid "Gesture double click"
+msgstr "ഊഹ ഇരട്ട ഞെക്കു്"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture drag click"
+msgstr "ഊഹ വലിച്ചിടുന്ന ഞെക്കു്"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture secondary click"
+msgstr "ഊഹ രണ്ടാമതു ഞെക്കു്"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture single click"
+msgstr "ഊഹ ഒറ്റ ഞെക്കു്"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Movement threshold"
+msgstr "നീക്കത്തിന്റെ തുടക്കം"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Secondary click time"
+msgstr "രണ്ടാമതു ഞെക്കുന്നസമയം"
+
+#: ../data/mousetweaks.schemas.in.h:20
+#: ../src/mt-main.c:421
+msgid "Show click type window"
+msgstr "ഞെക്കുന്ന രീതി ജാലകം കാണിക്കുക "
+
+#: ../data/mousetweaks.schemas.in.h:21
+msgid "Time in seconds before a click is triggered"
+msgstr "ഞെക്കു് ആരംഭിക്കുന്നതിനു മുന്‍പുള്ള സമയം സെക്കന്റില്‍ "
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "രണ്ടാമതു ഞെക്കു് ആരംഭിക്കുന്നതിനു മുന്‍പുള്ള സമയം സെക്കന്റില്‍ "
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Button to capture the pointer (0=Capture immediately)"
+msgstr "പോയിന്ററിനെ പിടിച്ചെടുക്കുന്നതിനുള്ള ബട്ടണ്‍  (0=ഉടനടി പിടിച്ചെടുക്കുക)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Button to release the pointer"
+msgstr "പോയിന്ററിനെ വിടുവിക്കുന്നതിനുള്ള ബട്ടണ്‍"
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture button"
+msgstr "ബട്ടണ് പിടിച്ചെടുക്കുക "
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier"
+msgstr "പരിഷ്കര്‍ത്താവിനെ പിടിച്ചെടുക്കുക "
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture modifier key (Alt)"
+msgstr "പിടിച്ചെടുക്കുല്‍ പരിഷ്കരണ ചാവി (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Capture modifier key (Ctrl)"
+msgstr "പിടിച്ചെടുക്കുല്‍ പരിഷ്കരണ ചാവി (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Capture modifier key (Shift)"
+msgstr "പിടിച്ചെടുക്കുല്‍ പരിഷ്കരണ ചാവി (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release button"
+msgstr "ബട്ടണ് വിടുക "
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier"
+msgstr "പരിഷ്കര്‍ത്താവിനെ വിടുക "
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Alt)"
+msgstr "വിടുതല്‍ പരിഷ്കരണ ചാവി (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Ctrl)"
+msgstr "വിടുതല്‍ പരിഷ്കരണ ചാവി (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release modifier key (Shift)"
+msgstr "വിടുതല്‍ പരിഷ്കരണ ചാവി (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr "പിടിച്ചെടുക്കേണ്ട ഭാഗത്തിന്റെ വലുപ്പം"
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr "പിടിച്ചെടുക്കുന്ന സ്ഥലത്തിന്റെ വീതി പിക്സലില്‍ "
+
+#: ../src/mt-main.c:417
+msgid "Enable mousetweaks feature"
+msgstr "മൌസ്ട്‌ട്വീക്ക് ലക്ഷണങ്ങള്‍  ഉണര്‍ത്തുക   "
+
+#: ../src/mt-main.c:419
+msgid "Use dwell mode"
+msgstr "ഡ്വല്ല് രീതി ഉപയോഗിക്കുക "
+
+#: ../src/mt-main.c:423
+msgid "Window x position"
+msgstr "ജാലകത്തിന്റെ എക്സ്  നില "
+
+#: ../src/mt-main.c:425
+msgid "Window y position"
+msgstr "ജാലകത്തിന്റെ വൈ  നില "
+
+#: ../src/mt-main.c:427
+msgid "Shutdown mousetweaks"
+msgstr "മൌസ്ട്‌ട്വീക്കുകള്‍ അടയ്ക്കുക   "
+
+#: ../src/mt-main.c:484
+msgid "Assistive Technologies not enabled"
+msgstr "സഹായക സാങ്കേതികവിദ്യകള്‍ ഉണര്‍ത്തിയിട്ടില്ല "
+
+#: ../src/mt-main.c:485
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "മൌസ്ട്‌ട്വീക്കിന്  സഹായക സാങ്കേതികവിദ്യകള്‍ ആവശ്യമാണ് "
+
+#: ../src/pointer-capture-applet.c:76
+#: ../src/dwell-click-applet.c:293
+msgid "Couldn't display help"
+msgstr "സഹായം കാണിക്കുവാന്‍ സാധിക്കുന്നില്ല "
+
+#: ../src/pointer-capture-applet.c:204
+msgid "Locked"
+msgstr "പൂട്ടിയിരിക്കുന്നു "
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:207
+msgid "L"
+msgstr "പൂ"
+
+#: ../src/pointer-capture-applet.c:635
+msgid "Capture area"
+msgstr "പിടിച്ചെടുക്കുന്ന സ്ഥലം "
+
+#: ../src/pointer-capture-applet.c:636
+msgid "Temporarily lock the mouse pointer"
+msgstr "മൌസ് പോയിന്റ‌റിനെ താത്കാലികമായി പൂട്ടുക "
+

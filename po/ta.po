@@ -1,0 +1,333 @@
+# translation of mousetweaks.ta.HEAD.po to Tamil
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2008.
+# I. Felix <ifelix@redhat.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks.ta.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-08 04:12+0000\n"
+"PO-Revision-Date: 2008-03-09 13:11+0530\n"
+"Last-Translator: I. Felix <ifelix@redhat.com>\n"
+"Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of MouseTweaks"
+msgstr ""
+"வித்தியாசமான நிலை சொடுக்கு வகைகள் தேர்வுக்கு குறுநிரல். \n"
+"மவுஸ்ட்வீக்ஸ் இன் பகுதி"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "சொடுக்கும் வகை சாளரம்"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "இரட்டை சொடுக்கு"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "இழுத்து சொடுக்கு"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "வலது சொடுக்கு"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "தனி சொடுக்கு "
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b> பிடிப்பு முனை</b> "
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b> கைவிடல் முனை</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>பிடிப்பு பரப்பு அளவு</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of MouseTweaks"
+msgstr ""
+"பலகத்தில் சொடுக்கி முனையை நிலைக்க வைக்க இடம். \n"
+"மவுஸ்ட்வீக்ஸ் இன் பகுதி"
+
+#: ../data/pointer-capture-applet.glade.h:6
+msgid "B_utton:"
+msgstr "பொத்தான் (_u):"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Modifier:"
+msgstr "மாற்றி:"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Pointer Capture Preferences"
+msgstr "சுட்டி பிடிப்பு விருப்பங்கள்"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "பொத்தான் 0 ஐ தேர்ந்தெடுப்பது சுட்டியை உடனே பிடிக்கும்."
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "_Button:"
+msgstr "பொத்தான் (_B):"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "_Width:"
+msgstr "அகலம் (_W):"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "pixels"
+msgstr "பிக்ஸல்கள்"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "நிலை வகை சொடுக்கு"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "சின்னங்கள் மற்றும் உரைகளை காட்டு"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "சின்னங்கள் மட்டும் காட்டு"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "உரை மட்டும் காட்டு"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "நிலை சொடுக்கு"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "நிலையான சொடுக்கு வகையை தேர்ந்தெடுத்தல்"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "சுட்டியை பூட்ட பரப்பு"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "சுட்டு பிடிப்பு"
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "பற்றி (_A)"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "உதவி (_H)"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "முன்னுரிமைகள் (_P)"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Button style"
+msgstr "பொத்தான் பாங்கு"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgstr "சொடுக்கு வகை சாளரத்தில் பொத்தான் பாங்கு(0= உரை, 1=சின்னம், 2=இரண்டும்)"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "இரட்டிப்பு சொடுக்கு செய்ய வழிகாட்டி (0=இடது, 1=வலது, 2=மேலே, 3=கீழ்)"
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "சொடுக்கு இழுப்பு  செய்ய வழிகாட்டி (0= இடது, 1=வலது, 2=மேலே, 3=கீழ்)"
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "இரண்டாவது சொடுக்கு செய்ய வழிகாட்டி (0= இடது, 1=வலது, 2=மேலே, 3=கீழ்)"
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgstr "தனி சொடுக்கு செய்ய வழிகாட்டி (0= இடது, 1=வலது, 2=மேலே, 3=கீழ்)"
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid "Distance in pixels before movement will be recognized"
+msgstr "அசைவு அடையாளம் காணப்பட குறைந்த பட்ச நகர்வு தொலைவு  பிக்ஸல்களில்."
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Dwell click mode"
+msgstr "நிலை சொடுக்கு முறைமை"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgstr "நிலை சொடுக்கு முறைமை (0= அசைவு முறைமை, 1=சாளரம் முறைமை)"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click time"
+msgstr "நிலை சொடுக்கு நேரம்"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Enable dwell click"
+msgstr "நிலை சொடுக்கு செயல்படுத்து"
+
+#: ../data/mousetweaks.schemas.in.h:12
+msgid "Enable secondary click"
+msgstr "இரண்டாம் சொடுக்கு செயல்படுத்து"
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable simulated secondary click"
+msgstr "மெய்நிகர் இரண்டாம்  சொடுக்கு செயல்படுத்து"
+
+#: ../data/mousetweaks.schemas.in.h:14
+msgid "Gesture double click"
+msgstr "அசைவால் இரட்டிப்பு சொடுக்கு"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture drag click"
+msgstr "அசைவால் இழுப்பு சொடுக்கு"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture secondary click"
+msgstr "அசைவால் இரண்டாம் சொடுக்கு"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture single click"
+msgstr "அசைவால் தனி சொடுக்கு"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Movement threshold"
+msgstr "அசைவுக்கு குறைந்த பட்ச வரை"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Secondary click time"
+msgstr "இரண்டாம் சொடுக்கு நேரம்"
+
+#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+msgid "Show click type window"
+msgstr "சொடுக்கு வகை சாளரத்தை காட்டு "
+
+#: ../data/mousetweaks.schemas.in.h:21
+msgid "Time in seconds before a click is triggered"
+msgstr "ஒரு சொடுக்கு இடரப்படும் முன் நேரம், வினாடிகளில்"
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "இரண்டாம் சொடுக்கு இடரப்படும் முன் நேரம், வினாடிகளில்"
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Button to capture the pointer (0=Capture immediately)"
+msgstr "சுட்டியை பிடிக்க பொத்தான் (0=உடனே பிடி)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Button to release the pointer"
+msgstr "சுட்டியை கைவிட பொத்தான் "
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture button"
+msgstr "பிடிப்பு பொத்தான்"
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier"
+msgstr "பிடிப்பு மாற்றி"
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture modifier key (Alt)"
+msgstr "பிடிப்பு மாற்ற விசை ஆல்ட்(Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Capture modifier key (Ctrl)"
+msgstr "பிடிப்பு மாற்ற விசை (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Capture modifier key (Shift)"
+msgstr "பிடிப்பு மாற்ற விசை (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release button"
+msgstr "பொத்தான் ஐ கைவிடு"
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier"
+msgstr "கைவிடல் மாற்றி"
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Alt)"
+msgstr "கைவிடல் மாற்று விசை (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Ctrl)"
+msgstr "கைவிடல் மாற்று விசை (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release modifier key (Shift)"
+msgstr "கைவிடல் மாற்று விசை (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr "பிடிப்பு பரப்பின் அளவு "
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr "பிடிப்பு பரப்பின் அகலம் பிக்ஸல்களில்"
+
+#: ../src/mt-main.c:417
+msgid "Enable mousetweaks feature"
+msgstr "மவுஸ்ட்வீக்ஸ் செயல்களை செயல்படுத்துக"
+
+#: ../src/mt-main.c:419
+msgid "Use dwell mode"
+msgstr "நிலை முறைமையை பயன்படுத்துக"
+
+#: ../src/mt-main.c:423
+msgid "Window x position"
+msgstr "சாளரம் x நிலை"
+
+#: ../src/mt-main.c:425
+msgid "Window y position"
+msgstr "சாளரம் y நிலை"
+
+#: ../src/mt-main.c:427
+msgid "Shutdown mousetweaks"
+msgstr "மவுஸ்ட்வீக்ஸ் செயல்களை பணி நிறுத்தம் செய்க"
+
+#: ../src/mt-main.c:484
+msgid "Assistive Technologies not enabled"
+msgstr "துணை தொழிற் நுட்பங்கள் செயற்படுத்தப்படவில்லை"
+
+#: ../src/mt-main.c:485
+msgid "Mousetweaks requires Assistive Technologies."
+msgstr "மவுஸ்ட்வீக்ஸ் க்கு துணை தொழிற் நுட்பங்கள் தேவை."
+
+#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
+msgid "Couldn't display help"
+msgstr "உதவியை காட்ட இயலவில்லை"
+
+#: ../src/pointer-capture-applet.c:204
+msgid "Locked"
+msgstr "பூட்டப்பட்டது"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:207
+msgid "L"
+msgstr "L"
+
+#: ../src/pointer-capture-applet.c:635
+msgid "Capture area"
+msgstr "பிடிப்பு பரப்பு"
+
+#: ../src/pointer-capture-applet.c:636
+msgid "Temporarily lock the mouse pointer"
+msgstr "சொடுக்கி முனையை தற்காலிகமாக பூட்டுக."
+

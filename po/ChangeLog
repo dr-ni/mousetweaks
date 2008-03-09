@@ -1,3 +1,8 @@
+2008-03-09  Kenneth Nielsen  <k.nielsen81@gmail.com>
+
+	* LINGUAS: Added da to the list of languages
+	* da.po: Added Danish translation
+
 2008-03-09 Maxim Dziumanenko <dziumanenko@gmail.com>
 
         * uk.po: Add Ukrainian translation.

@@ -1,3 +1,9 @@
+2008-03-10  Petr Kovar  <pknbe@volny.cz>
+
+	* cs.po: Added Czech translation by Lucas Lommer,
+	still incomplete though.
+	* LINGUAS: Added cs.
+
 2008-03-09  Kenneth Nielsen  <k.nielsen81@gmail.com>
 
 	* LINGUAS: Added da to the list of languages

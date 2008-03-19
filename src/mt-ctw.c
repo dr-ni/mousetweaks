@@ -162,7 +162,7 @@ mt_ctw_init (MTClosure *mt, gint x, gint y)
     gpointer data;
     gint i;
 
-    xml = glade_xml_new (GLADEDIR "/ctw.glade", NULL, NULL);
+    xml = glade_xml_new (DATADIR "/ctw.glade", NULL, NULL);
     if (!xml)
 	return FALSE;
 

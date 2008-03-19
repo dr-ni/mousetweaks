@@ -26,13 +26,10 @@
 #include <gdk/gdkx.h>
 #include <X11/extensions/Xfixes.h>
 #include <cspi/spi.h>
-#include <libgnome/gnome-program.h>
-#include <libgnomeui/gnome-ui-init.h>
 
 #include "mt-common.h"
 #include "mt-dbus.h"
 #include "mt-main.h"
-#include "mt-session.h"
 #include "mt-pidfile.h"
 #include "mt-ctw.h"
 #include "mt-timer.h"
@@ -404,7 +401,6 @@ mt_closure_free (MTClosure *mt)
 int
 main (int argc, char **argv)
 {
-    GnomeProgram *program;
     MTClosure *mt;
     int fixes_error_base;
     pid_t pid;
@@ -428,11 +424,17 @@ main (int argc, char **argv)
 	{NULL}
     };
 
+    bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+    textdomain (GETTEXT_PACKAGE);
+
     context = g_option_context_new ("");
     g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
     g_option_context_add_group (context, gtk_get_option_group (FALSE));
     g_option_context_parse (context, &argc, &argv, NULL);
     g_option_context_free (context);
+
+    gtk_init (&argc, &argv);
 
     if (shutdown) {
 	int ret;
@@ -465,20 +467,9 @@ main (int argc, char **argv)
 	signal (SIGQUIT, signal_handler);
 	signal (SIGHUP, signal_handler);
 
-	bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-	textdomain (GETTEXT_PACKAGE);
-
-	program = gnome_program_init (PACKAGE, VERSION,
-				      LIBGNOMEUI_MODULE,
-				      argc, argv,
-				      GNOME_PARAM_NONE);
-
 	mt = mt_closure_init ();
-	if (!mt) {
-	    g_object_unref (program);
+	if (!mt)
 	    goto FINISH;
-	}
 
 	if (SPI_init ()) {
 	    mt_show_dialog (_("Assistive Technologies not enabled"),
@@ -490,12 +481,8 @@ main (int argc, char **argv)
 	    gconf_client_set_bool (mt->client, OPT_DWELL, FALSE, NULL);
 
 	    mt_closure_free (mt);
-	    g_object_unref (program);
-
 	    goto FINISH;
 	}
-
-	mt_session_init ();
 
 	/* listen for cursor changes */
 	if (XFixesQueryExtension (GDK_DISPLAY(),
@@ -575,7 +562,6 @@ CLEANUP:
     AccessibleDeviceListener_unref (button_listener);
     SPI_exit ();
     mt_closure_free (mt);
-    g_object_unref (program);
 
 FINISH:
     mt_pidfile_remove ();

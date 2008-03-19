@@ -1,3 +1,20 @@
+2008-03-20 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* configure.ac:
+	* src/Makefile.am:
+	* data/Makefile.am:
+	
+	Clean up build system.
+	
+	* src/mt-main.c: Remove obsolete session support.
+	
+	* src/dwell-click-applet.c:
+	* src/pointer-capture-applet.c:
+	* src/mt-ctw.c:
+	* src/mt-main.c:
+	
+	Use new DATADIR.
+
 2008-03-15 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* configure.ac:

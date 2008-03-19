@@ -427,7 +427,7 @@ fill_applet (PanelApplet *applet)
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
 
-    dd->xml = glade_xml_new (GLADEDIR "/dwell-click-applet.glade", NULL, NULL);
+    dd->xml = glade_xml_new (DATADIR "/dwell-click-applet.glade", NULL, NULL);
     if (!dd->xml) {
 	fini_dwell_data (dd);
 	return FALSE;
@@ -474,20 +474,20 @@ fill_applet (PanelApplet *applet)
 		      G_CALLBACK(gconf_value_changed), dd);
 
     dd->click[DWELL_CLICK_TYPE_SINGLE] =
-	gdk_pixbuf_new_from_file (GLADEDIR "/human-single.png", NULL);
+	gdk_pixbuf_new_from_file (DATADIR "/human-single.png", NULL);
     dd->click[DWELL_CLICK_TYPE_DOUBLE] =
-	gdk_pixbuf_new_from_file (GLADEDIR "/human-double.png", NULL);
+	gdk_pixbuf_new_from_file (DATADIR "/human-double.png", NULL);
     dd->click[DWELL_CLICK_TYPE_DRAG] =
-	gdk_pixbuf_new_from_file (GLADEDIR "/human-drag.png", NULL);
+	gdk_pixbuf_new_from_file (DATADIR "/human-drag.png", NULL);
     dd->click[DWELL_CLICK_TYPE_RIGHT] =
-	gdk_pixbuf_new_from_file (GLADEDIR "/human-right.png", NULL);
+	gdk_pixbuf_new_from_file (DATADIR "/human-right.png", NULL);
 
     panel_applet_set_flags (applet,
 			    PANEL_APPLET_EXPAND_MINOR |
 			    PANEL_APPLET_HAS_HANDLE);
     panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
     panel_applet_setup_menu_from_file (applet,
-				       GLADEDIR, "DwellClick.xml",
+				       DATADIR, "DwellClick.xml",
 				       NULL, menu_verb, dd);
 
     g_signal_connect (applet, "change-orient",

@@ -437,7 +437,8 @@ init_preferences (CaptureData *cd)
 {
     GtkWidget *w;
 
-    cd->xml = glade_xml_new (GLADEDIR "/pointer-capture-applet.glade", NULL, NULL);
+    cd->xml = glade_xml_new (DATADIR "/pointer-capture-applet.glade",
+			     NULL, NULL);
     if (!cd->xml)
 	return FALSE;
 
@@ -623,7 +624,7 @@ fill_applet (PanelApplet *applet)
 			    PANEL_APPLET_HAS_HANDLE);
     panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
     panel_applet_setup_menu_from_file (applet,
-				       GLADEDIR, "PointerCapture.xml",
+				       DATADIR, "PointerCapture.xml",
 				       NULL, menu_verb, cd);
 
     g_signal_connect (applet, "change-orient",

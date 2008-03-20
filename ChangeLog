@@ -1,5 +1,15 @@
 2008-03-20 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/Makefile.am: Remove unused PIXDIR.
+
+	* src/dwell-click-applet.c:
+	* data/ctw.glade:
+	* pixmaps/Makefile.am:
+
+	Rename pixmaps to remove ubuntuism.
+
+2008-03-20 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* configure.ac:
 	* src/Makefile.am:
 	* data/Makefile.am:

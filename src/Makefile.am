@@ -1,7 +1,6 @@
 INCLUDES =				     \
 	$(DEPENDENCIES_CFLAGS)		     \
 	-DDATADIR=\"$(datadir)/mousetweaks\" \
-	-DPIXMAPDIR=\"$(datadir)/pixmaps\"   \
 	-DLOCALEDIR=\"$(datadir)/locale\"
 
 if BUILD_PCA

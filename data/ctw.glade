@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.4.1 on Mon Feb  4 23:47:48 2008 -->
+<!--Generated with glade3 3.4.2 on Thu Mar 20 00:55:23 2008 -->
 <glade-interface>
   <widget class="GtkMenu" id="popup">
     <property name="visible">True</property>
@@ -67,7 +67,7 @@
                     <property name="visible">True</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
                     <property name="yalign">1</property>
-                    <property name="pixbuf">human-single.png</property>
+                    <property name="pixbuf">single-click.png</property>
                     <property name="icon_size">5</property>
                   </widget>
                 </child>
@@ -105,7 +105,7 @@
                     <property name="visible">True</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
                     <property name="yalign">1</property>
-                    <property name="pixbuf">human-double.png</property>
+                    <property name="pixbuf">double-click.png</property>
                     <property name="icon_size">5</property>
                   </widget>
                 </child>
@@ -146,7 +146,7 @@
                     <property name="visible">True</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
                     <property name="yalign">1</property>
-                    <property name="pixbuf">human-drag.png</property>
+                    <property name="pixbuf">drag-click.png</property>
                     <property name="icon_size">5</property>
                   </widget>
                 </child>
@@ -187,7 +187,7 @@
                     <property name="visible">True</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
                     <property name="yalign">1</property>
-                    <property name="pixbuf">human-right.png</property>
+                    <property name="pixbuf">right-click.png</property>
                     <property name="icon_size">5</property>
                   </widget>
                 </child>

@@ -474,13 +474,13 @@ fill_applet (PanelApplet *applet)
 		      G_CALLBACK(gconf_value_changed), dd);
 
     dd->click[DWELL_CLICK_TYPE_SINGLE] =
-	gdk_pixbuf_new_from_file (DATADIR "/human-single.png", NULL);
+	gdk_pixbuf_new_from_file (DATADIR "/single-click.png", NULL);
     dd->click[DWELL_CLICK_TYPE_DOUBLE] =
-	gdk_pixbuf_new_from_file (DATADIR "/human-double.png", NULL);
+	gdk_pixbuf_new_from_file (DATADIR "/double-click.png", NULL);
     dd->click[DWELL_CLICK_TYPE_DRAG] =
-	gdk_pixbuf_new_from_file (DATADIR "/human-drag.png", NULL);
+	gdk_pixbuf_new_from_file (DATADIR "/drag-click.png", NULL);
     dd->click[DWELL_CLICK_TYPE_RIGHT] =
-	gdk_pixbuf_new_from_file (DATADIR "/human-right.png", NULL);
+	gdk_pixbuf_new_from_file (DATADIR "/right-click.png", NULL);
 
     panel_applet_set_flags (applet,
 			    PANEL_APPLET_EXPAND_MINOR |

@@ -1,5 +1,9 @@
 2008-03-20 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/mt-main.c: Add options context description.
+
+2008-03-20 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/Makefile.am: Remove unused PIXDIR.
 
 	* src/dwell-click-applet.c:

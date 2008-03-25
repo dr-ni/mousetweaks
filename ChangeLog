@@ -1,3 +1,12 @@
+2008-03-25 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/mt-main.c: Fix typo.
+	* data/pointer-capture.glade: Button -> Mouse button
+	* data/pointer-capture.schemas.in: Enclose literal values in double quotes.
+	* data/mousetweaks.schemas.in: Enclose literal values in double quotes.
+
+	Fixes bug #516191.
+
 2008-03-20 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/mt-main.c: Add options context description.

@@ -12,7 +12,6 @@
           <long>Distance in pixels before movement will be recognized</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/delay_enable</key>
 	<applyto>/desktop/gnome/accessibility/mouse/delay_enable</applyto>
@@ -24,7 +23,6 @@
           <long>Enable simulated secondary click</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/delay_time</key>
 	<applyto>/desktop/gnome/accessibility/mouse/delay_time</applyto>
@@ -36,7 +34,6 @@
           <long>Time in seconds before a secondary click is triggered</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/dwell_enable</key>
 	<applyto>/desktop/gnome/accessibility/mouse/dwell_enable</applyto>
@@ -48,7 +45,6 @@
           <long>Enable dwell click</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/dwell_time</key>
 	<applyto>/desktop/gnome/accessibility/mouse/dwell_time</applyto>
@@ -60,7 +56,6 @@
           <long>Time in seconds before a click is triggered</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/dwell_gesture_single</key>
 	<applyto>/desktop/gnome/accessibility/mouse/dwell_gesture_single</applyto>
@@ -69,10 +64,9 @@
         <default>0</default>
         <locale name="C">
           <short>Gesture single click</short>
-          <long>Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)</long>
+          <long>Direction to perform a single click ("0" = Left, "1" = Right, "2" = Up, "3" = Down)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/dwell_gesture_double</key>
 	<applyto>/desktop/gnome/accessibility/mouse/dwell_gesture_double</applyto>
@@ -81,10 +75,9 @@
         <default>2</default>
         <locale name="C">
           <short>Gesture double click</short>
-          <long>Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)</long>
+          <long>Direction to perform a double click ("0" = Left, "1" = Right, "2" = Up, "3" = Down)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/dwell_gesture_drag</key>
 	<applyto>/desktop/gnome/accessibility/mouse/dwell_gesture_drag</applyto>
@@ -93,10 +86,9 @@
         <default>3</default>
         <locale name="C">
           <short>Gesture drag click</short>
-          <long>Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)</long>
+          <long>Direction to perform a drag click ("0" = Left, "1" = Right, "2" = Up, "3" = Down)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/dwell_gesture_secondary</key>
 	<applyto>/desktop/gnome/accessibility/mouse/dwell_gesture_secondary</applyto>
@@ -105,10 +97,9 @@
         <default>1</default>
         <locale name="C">
           <short>Gesture secondary click</short>
-          <long>Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)</long>
+          <long>Direction to perform a secondary click ("0" = Left, "1" = Right, "2" = Up, "3" = Down)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/dwell_mode</key>
 	<applyto>/desktop/gnome/accessibility/mouse/dwell_mode</applyto>
@@ -117,10 +108,9 @@
         <default>1</default>
         <locale name="C">
           <short>Dwell click mode</short>
-          <long>Dwell click mode (0=Gesture mode, 1=Window mode)</long>
+          <long>Dwell click mode ("0" = Gesture mode, "1" = Window mode)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/dwell_show_ctw</key>
 	<applyto>/desktop/gnome/accessibility/mouse/dwell_show_ctw</applyto>
@@ -132,7 +122,6 @@
           <long>Show click type window</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/desktop/gnome/accessibility/mouse/button_layout</key>
 	<applyto>/desktop/gnome/accessibility/mouse/button_layout</applyto>
@@ -141,9 +130,8 @@
         <default>2</default>
         <locale name="C">
           <short>Button style</short>
-          <long>Button style in click type window (0=Text, 1=Icon, 2=Both)</long>
+          <long>Button style in click type window ("0" = Text, "1" = Icon, "2" = Both)</long>
         </locale>
       </schema>
-
     </schemalist>
 </gconfschemafile>

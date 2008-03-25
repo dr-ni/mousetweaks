@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <gconfschemafile>
-    <schemalist> 
-   
+    <schemalist>
       <schema>
         <key>/schemas/apps/pointer-capture/size</key>
         <owner>pointer-capture</owner>
@@ -12,29 +11,26 @@
           <long>Width of the capture area in pixels</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/apps/pointer-capture/capture_button</key>
         <owner>pointer-capture</owner>
         <type>int</type>
         <default>1</default>
         <locale name="C">
-          <short>Capture button</short>
-          <long>Button to capture the pointer (0=Capture immediately)</long>
+          <short>Capture mouse button</short>
+          <long>Mouse button to capture the pointer ("0" = Capture immediately)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/apps/pointer-capture/release_button</key>
         <owner>pointer-capture</owner>
         <type>int</type>
         <default>1</default>
         <locale name="C">
-          <short>Release button</short>
-          <long>Button to release the pointer</long>
+          <short>Release mouse button</short>
+          <long>Mouse button to release the pointer</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/apps/pointer-capture/capture_mod_shift</key>
         <owner>pointer-capture</owner>
@@ -45,7 +41,6 @@
           <long>Capture modifier key (Shift)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/apps/pointer-capture/capture_mod_alt</key>
         <owner>pointer-capture</owner>
@@ -56,7 +51,6 @@
           <long>Capture modifier key (Alt)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/apps/pointer-capture/capture_mod_ctrl</key>
         <owner>pointer-capture</owner>
@@ -67,7 +61,6 @@
           <long>Capture modifier key (Ctrl)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/apps/pointer-capture/release_mod_shift</key>
         <owner>pointer-capture</owner>
@@ -78,7 +71,6 @@
           <long>Release modifier key (Shift)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/apps/pointer-capture/release_mod_alt</key>
         <owner>pointer-capture</owner>
@@ -89,7 +81,6 @@
           <long>Release modifier key (Alt)</long>
         </locale>
       </schema>
-
       <schema>
         <key>/schemas/apps/pointer-capture/release_mod_ctrl</key>
         <owner>pointer-capture</owner>
@@ -100,6 +91,5 @@
           <long>Release modifier key (Ctrl)</long>
         </locale>
       </schema>
-
     </schemalist>
 </gconfschemafile>

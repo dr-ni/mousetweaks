@@ -420,7 +420,7 @@ main (int argc, char **argv)
 	{"ctw-y", 'y', 0, G_OPTION_ARG_INT, &pos_y,
 	    _("Window y position"), 0},
 	{"shutdown", 's', 0, G_OPTION_ARG_NONE, &shutdown,
-	    _("Shutdown mousetweaks"), 0},
+	    _("Shut down mousetweaks"), 0},
 	{NULL}
     };
 

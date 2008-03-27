@@ -1,5 +1,9 @@
 2008-03-27 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/pointer-capture-applet.c: Clean up.
+
+2008-03-27 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/mt-service.c:
 	* src/mt-service.h:
 	* src/mousetweaks-service.xml:

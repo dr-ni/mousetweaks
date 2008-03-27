@@ -52,15 +52,12 @@ static void fini_capture_data (CaptureData *cd);
 
 static void
 capture_preferences (BonoboUIComponent *component,
-		     gpointer data,
-		     const char *cname)
+		     gpointer           data,
+		     const char        *cname)
 {
     CaptureData *cd = (CaptureData *) data;
 
-    if (GTK_WIDGET_VISIBLE(cd->prefs))
-	gtk_window_present (GTK_WINDOW(cd->prefs));
-    else
-	gtk_widget_show (cd->prefs);
+    gtk_window_present (GTK_WINDOW (cd->prefs));
 }
 
 static void
@@ -90,14 +87,8 @@ static void
 capture_about (BonoboUIComponent *component, gpointer data, const char *cname)
 {
     CaptureData *cd = (CaptureData *) data;
-    GtkWidget *about;
 
-    about = glade_xml_get_widget (cd->xml, "about");
-
-    if (GTK_WIDGET_VISIBLE(about))
-	gtk_window_present (GTK_WINDOW(about));
-    else
-	gtk_widget_show (about);
+    gtk_window_present (GTK_WINDOW (glade_xml_get_widget (cd->xml, "about")));
 }
 
 static const BonoboUIVerb menu_verb[] = {
@@ -442,66 +433,64 @@ init_preferences (CaptureData *cd)
     if (!cd->xml)
 	return FALSE;
 
-    gtk_window_set_default_icon_name (MT_ICON_NAME);
-
     cd->prefs = glade_xml_get_widget (cd->xml, "capture_preferences");
-    g_signal_connect (G_OBJECT(cd->prefs), "delete-event",
-		      G_CALLBACK(gtk_widget_hide_on_delete), NULL);
+    g_signal_connect (cd->prefs, "delete-event",
+		      G_CALLBACK (gtk_widget_hide_on_delete), NULL);
 
     w = glade_xml_get_widget (cd->xml, "close");
-    g_signal_connect (G_OBJECT(w), "clicked",
-		      G_CALLBACK(prefs_closed), cd);
+    g_signal_connect (w, "clicked",
+		      G_CALLBACK (prefs_closed), cd);
 
     w = glade_xml_get_widget (cd->xml, "help");
-    g_signal_connect (G_OBJECT(w), "clicked",
-		      G_CALLBACK(prefs_help), NULL);
+    g_signal_connect (w, "clicked",
+		      G_CALLBACK (prefs_help), NULL);
 
     w = glade_xml_get_widget (cd->xml, "size");
-    gtk_spin_button_set_value (GTK_SPIN_BUTTON(w), cd->size);
-    g_signal_connect (G_OBJECT(w), "value_changed",
-		      G_CALLBACK(prefs_size_changed), cd);
+    gtk_spin_button_set_value (GTK_SPIN_BUTTON (w), cd->size);
+    g_signal_connect (w, "value_changed",
+		      G_CALLBACK (prefs_size_changed), cd);
 
     /* capture modifier signals */
     w = glade_xml_get_widget (cd->xml, "cap_button");
-    gtk_spin_button_set_value (GTK_SPIN_BUTTON(w), cd->cap_button);
-    g_signal_connect (G_OBJECT(w), "value_changed",
-		      G_CALLBACK(prefs_cap_button), cd);
+    gtk_spin_button_set_value (GTK_SPIN_BUTTON (w), cd->cap_button);
+    g_signal_connect (w, "value_changed",
+		      G_CALLBACK (prefs_cap_button), cd);
     w = glade_xml_get_widget (cd->xml, "cap_alt");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(w),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
 				  (cd->cap_mask & GDK_MOD1_MASK));
-    g_signal_connect (G_OBJECT(w), "toggled",
-		      G_CALLBACK(prefs_cap_alt), cd);
+    g_signal_connect (w, "toggled",
+		      G_CALLBACK (prefs_cap_alt), cd);
     w = glade_xml_get_widget (cd->xml, "cap_shift");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(w),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
 				  (cd->cap_mask & GDK_SHIFT_MASK));
-    g_signal_connect (G_OBJECT(w), "toggled",
-		      G_CALLBACK(prefs_cap_shift), cd);
+    g_signal_connect (w, "toggled",
+		      G_CALLBACK (prefs_cap_shift), cd);
     w = glade_xml_get_widget (cd->xml, "cap_ctrl");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(w),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
 				  (cd->cap_mask & GDK_CONTROL_MASK));
-    g_signal_connect (G_OBJECT(w), "toggled",
-		      G_CALLBACK(prefs_cap_ctrl), cd);
+    g_signal_connect (w, "toggled",
+		      G_CALLBACK (prefs_cap_ctrl), cd);
 
     /* release modifier signals */
     w = glade_xml_get_widget (cd->xml, "rel_button");
-    gtk_spin_button_set_value (GTK_SPIN_BUTTON(w), cd->rel_button);
-    g_signal_connect (G_OBJECT(w), "value_changed",
-		      G_CALLBACK(prefs_rel_button), cd);
+    gtk_spin_button_set_value (GTK_SPIN_BUTTON (w), cd->rel_button);
+    g_signal_connect (w, "value_changed",
+		      G_CALLBACK (prefs_rel_button), cd);
     w = glade_xml_get_widget (cd->xml, "rel_alt");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(w),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
 				  (cd->rel_mask & GDK_MOD1_MASK));
-    g_signal_connect (G_OBJECT(w), "toggled",
-		      G_CALLBACK(prefs_rel_alt), cd);
+    g_signal_connect (w, "toggled",
+		      G_CALLBACK (prefs_rel_alt), cd);
     w = glade_xml_get_widget (cd->xml, "rel_shift");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(w),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
 				  (cd->rel_mask & GDK_SHIFT_MASK));
-    g_signal_connect (G_OBJECT(w), "toggled",
-		      G_CALLBACK(prefs_rel_shift), cd);
+    g_signal_connect (w, "toggled",
+		      G_CALLBACK (prefs_rel_shift), cd);
     w = glade_xml_get_widget (cd->xml, "rel_ctrl");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(w),
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
 				  (cd->rel_mask & GDK_CONTROL_MASK));
-    g_signal_connect (G_OBJECT(w), "toggled",
-		      G_CALLBACK(prefs_rel_ctrl), cd);
+    g_signal_connect (w, "toggled",
+		      G_CALLBACK (prefs_rel_ctrl), cd);
 
     return TRUE;
 }
@@ -511,7 +500,7 @@ init_capture_data (PanelApplet *applet)
 {
     CaptureData *cd;
 
-    cd = g_new0 (CaptureData, 1);
+    cd = g_slice_new0 (CaptureData);
     if (!cd)
 	return NULL;
 
@@ -528,7 +517,7 @@ fini_capture_data (CaptureData *cd)
     if (cd->null_cursor)
 	gdk_cursor_unref (cd->null_cursor);
 
-    g_free (cd);
+    g_slice_free (CaptureData, cd);
 }
 
 static gboolean
@@ -552,10 +541,6 @@ fill_applet (PanelApplet *applet)
 	return FALSE;
     }
 
-    bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-    textdomain (GETTEXT_PACKAGE);
-
     cd->null_cursor = gdk_cursor_new_from_pixmap (bmp0, bmp0, &c0, &c0, 0, 0);
     g_object_unref (bmp0);
 
@@ -563,6 +548,13 @@ fill_applet (PanelApplet *applet)
 	g_free (cd);
 	return FALSE;
     }
+
+    bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+    textdomain (GETTEXT_PACKAGE);
+
+    g_set_application_name (_("Pointer Capture Applet"));
+    gtk_window_set_default_icon_name (MT_ICON_NAME);
 
     /* gconf settings */
     panel_applet_add_preferences (applet,
@@ -599,12 +591,12 @@ fill_applet (PanelApplet *applet)
 			   GDK_ENTER_NOTIFY_MASK |
 			   GDK_BUTTON_PRESS_MASK);
 
-    g_signal_connect (G_OBJECT(cd->area), "enter-notify-event",
-		      G_CALLBACK(area_entered), cd);
-    g_signal_connect (G_OBJECT(cd->area), "expose-event",
-		      G_CALLBACK(area_exposed), cd);
-    g_signal_connect (G_OBJECT(cd->area), "button-press-event",
-		      G_CALLBACK(area_button_press), cd);
+    g_signal_connect (cd->area, "enter-notify-event",
+		      G_CALLBACK (area_entered), cd);
+    g_signal_connect (cd->area, "expose-event",
+		      G_CALLBACK (area_exposed), cd);
+    g_signal_connect (cd->area, "button-press-event",
+		      G_CALLBACK (area_button_press), cd);
 
     update_orientation (cd, panel_applet_get_orient (applet));
     gtk_widget_show (cd->area);
@@ -613,32 +605,32 @@ fill_applet (PanelApplet *applet)
     about = glade_xml_get_widget (cd->xml, "about");
     g_object_set (about, "version", VERSION, NULL);
 
-    g_signal_connect (G_OBJECT(about), "delete-event",
-		      G_CALLBACK(gtk_widget_hide_on_delete), NULL);
-    g_signal_connect (G_OBJECT(about), "response",
-		      G_CALLBACK(about_response), cd);
+    g_signal_connect (about, "delete-event",
+		      G_CALLBACK (gtk_widget_hide_on_delete), NULL);
+    g_signal_connect (about, "response",
+		      G_CALLBACK (about_response), cd);
 
     /* applet initialisation */
     panel_applet_set_flags (applet,
 			    PANEL_APPLET_EXPAND_MINOR |
 			    PANEL_APPLET_HAS_HANDLE);
-    panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
+    panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
     panel_applet_setup_menu_from_file (applet,
 				       DATADIR, "PointerCapture.xml",
 				       NULL, menu_verb, cd);
 
     g_signal_connect (applet, "change-orient",
-		      G_CALLBACK(applet_orient_changed), cd);
+		      G_CALLBACK (applet_orient_changed), cd);
     g_signal_connect (applet, "unrealize",
-		      G_CALLBACK(applet_unrealize), cd);
+		      G_CALLBACK (applet_unrealize), cd);
 
-    obj = gtk_widget_get_accessible (GTK_WIDGET(applet));
+    obj = gtk_widget_get_accessible (GTK_WIDGET (applet));
     atk_object_set_name (obj, _("Capture area"));
     atk_object_set_description (obj, _("Temporarily lock the mouse pointer"));
 
-    gtk_container_add (GTK_CONTAINER(applet), cd->area);
-    gtk_container_set_border_width (GTK_CONTAINER(applet), 1);
-    gtk_widget_show (GTK_WIDGET(applet));
+    gtk_container_add (GTK_CONTAINER (applet), cd->area);
+    gtk_container_set_border_width (GTK_CONTAINER (applet), 1);
+    gtk_widget_show (GTK_WIDGET (applet));
 
     return TRUE;
 }
@@ -655,6 +647,6 @@ applet_factory (PanelApplet *applet, const gchar *iid, gpointer data)
 PANEL_APPLET_BONOBO_FACTORY ("OAFIID:PointerCaptureApplet_Factory",
 			     PANEL_TYPE_APPLET,
 			     "Pointer Capture Factory",
-			     "0",
+			     VERSION,
 			     applet_factory,
 			     NULL);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.3.3 on Mon Aug 13 20:46:54 2007 -->
+<!--Generated with glade3 3.4.2 on Thu Mar 27 13:11:06 2008 -->
 <glade-interface>
   <widget class="GtkWindow" id="horizontal">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
@@ -209,12 +209,11 @@
     <property name="icon_name">gnome-dev-mouse-optical</property>
     <property name="type_hint">GDK_WINDOW_TYPE_HINT_DIALOG</property>
     <property name="has_separator">False</property>
-    <property name="copyright">Copyright 2007 © Gerd Kohlberger</property>
+    <property name="copyright">Copyright 2007-2008 © Gerd Kohlberger</property>
     <property name="comments" translatable="yes">Applet to select different dwell-click types.
-Part of MouseTweaks</property>
+Part of Mousetweaks</property>
     <property name="authors">Gerd Kohlberger &lt;lowfi@chello.at&gt;</property>
-    <property name="translator_credits">Gerd Kohlberger &lt;lowfi@chello.at&gt; - de
-Francesco Fumanti &lt;francesco.fumanti@gmx.net&gt; - fr, it</property>
+    <property name="translator_credits">GNOME Translation Team</property>
     <property name="logo_icon_name">gnome-dev-mouse-optical</property>
     <child internal-child="vbox">
       <widget class="GtkVBox" id="dialog-vbox1">

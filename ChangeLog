@@ -1,5 +1,13 @@
 2008-03-27 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* data/pointer-capture-applet.glade:
+	* data/dwell-click-applet.glade:
+
+	Add more credits to about dialog and update copyright year.
+	No doc credits yet - glade doesn't like modifying documenters atm. 
+
+2008-03-27 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/pointer-capture-applet.c: Clean up.
 
 2008-03-27 Gerd Kohlberger <gerdk@svn.gnome.org>

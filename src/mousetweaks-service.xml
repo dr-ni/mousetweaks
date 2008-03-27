@@ -1,0 +1,22 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+  "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+
+<node name="/org/gnome/Mousetweaks">
+  <interface name="org.gnome.Mousetweaks">
+    <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="mt_service"/>
+    <signal name="StatusChanged">
+      <arg name="status" type="b"/>
+    </signal>
+    <signal name="ClicktypeChanged">
+      <arg name="clicktype" type="u"/>
+    </signal>
+    <method name="GetClicktype">
+      <arg name="clicktype" type="u" direction="out">
+        <annotation name="org.freedesktop.DBus.GLib.ReturnVal" value=""/>
+      </arg>
+    </method>
+    <method name="SetClicktype">
+      <arg name="clicktype" type="u" direction="in"/>
+    </method>
+  </interface>
+</node>

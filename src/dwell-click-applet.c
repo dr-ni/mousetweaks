@@ -18,21 +18,20 @@
 #include <gtk/gtk.h>
 #include <glade/glade.h>
 #include <panel-applet.h>
-#include <dbus/dbus-glib-lowlevel.h>
+#include <gconf/gconf-client.h>
+#include <dbus/dbus-glib.h>
 #include <libgnomeui/gnome-help.h>
 
 #include "mt-common.h"
-#include "mt-dbus.h"
 
 typedef struct _DwellData DwellData;
 struct _DwellData {
-    DBusConnection *conn;
-    GConfClient    *client;
-
-    GladeXML  *xml;
-    GtkWidget *box;
-    GtkWidget *button;
-    GdkPixbuf *click[4];
+    GConfClient *client;
+    DBusGProxy  *proxy;
+    GladeXML    *xml;
+    GtkWidget   *box;
+    GtkWidget   *button;
+    GdkPixbuf   *click[4];
 
     gint button_width;
     gint button_height;
@@ -73,69 +72,6 @@ static const BonoboUIVerb menu_verb[] = {
     BONOBO_UI_VERB_END
 };
 
-static void
-send_dbus_signal (DBusConnection *conn, const gchar *type, gint arg)
-{
-    DBusMessage *msg;
-
-    msg = dbus_message_new_signal (MOUSETWEAKS_DBUS_PATH_MAIN,
-				   MOUSETWEAKS_DBUS_INTERFACE,
-				   type);
-    dbus_message_append_args (msg,
-			      DBUS_TYPE_INT32, &arg,
-			      DBUS_TYPE_INVALID);
-    dbus_connection_send (conn, msg, NULL);
-    dbus_connection_flush (conn);
-    dbus_message_unref (msg);
-}
-
-static DBusHandlerResult
-receive_dbus_signal (DBusConnection *conn, DBusMessage *msg, void *data)
-{
-    DwellData *dd = (DwellData *) data;
-
-    if (dbus_message_is_signal (msg,
-				MOUSETWEAKS_DBUS_INTERFACE,
-				CLICK_TYPE_SIGNAL)) {
-	if (dbus_message_get_args (msg,
-				   NULL, 
-				   DBUS_TYPE_INT32,
-				   &dd->cct,
-				   DBUS_TYPE_INVALID)) {
-	    GSList *group;
-	    gpointer data;
-
-	    group = gtk_radio_button_get_group (GTK_RADIO_BUTTON(dd->button));
-	    data = g_slist_nth_data (group, dd->cct);
-	    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(data), TRUE);
-
-	    return DBUS_HANDLER_RESULT_HANDLED;
-	}
-    }
-    else if (dbus_message_is_signal (msg,
-				     MOUSETWEAKS_DBUS_INTERFACE,
-				     RESTORE_SIGNAL)) {
-	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(dd->button), TRUE);
-
-	return DBUS_HANDLER_RESULT_HANDLED;
-    }
-    else if (dbus_message_is_signal (msg,
-				     MOUSETWEAKS_DBUS_INTERFACE,
-				     ACTIVE_SIGNAL)) {
-	if (dbus_message_get_args (msg,
-			       NULL, 
-			       DBUS_TYPE_INT32,
-			       &dd->active,
-			       DBUS_TYPE_INVALID)) {
-	    update_sensitivity (dd);
-
-	    return DBUS_HANDLER_RESULT_HANDLED;
-	}
-    }
-
-    return DBUS_HANDLER_RESULT_NOT_YET_HANDLED;
-}
-
 static gboolean
 do_not_eat (GtkWidget *widget, GdkEventButton *bev, gpointer user)
 {
@@ -154,9 +90,10 @@ button_cb (GtkToggleButton *button, gpointer data)
 	GSList *group;
 
 	group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (button));
-	dd->cct = g_slist_index (group, (gconstpointer) button);
-
-	send_dbus_signal (dd->conn, CLICK_TYPE_SIGNAL, dd->cct);
+	dd->cct = g_slist_index (group, button);
+	dbus_g_proxy_call_no_reply (dd->proxy, "SetClicktype",
+				    G_TYPE_UINT, dd->cct,
+				    G_TYPE_INVALID);
     }
 }
 
@@ -215,36 +152,13 @@ box_size_allocate (GtkWidget *widget, GtkAllocation *alloc, gpointer data)
     dd->button_height = alloc->height;
 }
 
-static void
-fini_dwell_data (DwellData *dd)
-{
-    GtkWidget *w;
-    gint i;
-
-    w = glade_xml_get_widget (dd->xml, "box_vert");
-    g_object_unref (w);
-    w = glade_xml_get_widget (dd->xml, "box_hori");
-    g_object_unref (w);
-
-    if (dd->conn)
-	dbus_connection_unref (dd->conn);
-
-    if (dd->client)
-	g_object_unref (dd->client);
-
-    for (i = 0; i < N_CLICK_TYPES; i++)
-	g_object_unref (dd->click[i]);
-
-    g_free (dd);
-}
-
 /* applet callbacks */
 static void
 applet_orient_changed (PanelApplet *applet, guint orient, gpointer data)
 {
     DwellData *dd = (DwellData *) data;
 
-    gtk_container_remove (GTK_CONTAINER(applet), dd->box);
+    gtk_container_remove (GTK_CONTAINER (applet), dd->box);
 
     switch (orient) {
     case PANEL_APPLET_ORIENT_UP:
@@ -261,15 +175,27 @@ applet_orient_changed (PanelApplet *applet, guint orient, gpointer data)
     }
 
     if (dd->box->parent)
-	gtk_widget_reparent (dd->box, GTK_WIDGET(applet));
+	gtk_widget_reparent (dd->box, GTK_WIDGET (applet));
     else
-	gtk_container_add (GTK_CONTAINER(applet), dd->box);
+	gtk_container_add (GTK_CONTAINER (applet), dd->box);
 }
 
 static void
 applet_unrealized (GtkWidget *widget, gpointer data)
 {
-    fini_dwell_data ((DwellData *) data);
+    DwellData *dd = (DwellData *) data;
+    gint i;
+
+    for (i = 0; i < N_CLICK_TYPES; i++)
+	g_object_unref (dd->click[i]);
+
+    g_object_unref (glade_xml_get_widget (dd->xml, "box_vert"));
+    g_object_unref (glade_xml_get_widget (dd->xml, "box_hori"));
+    g_object_unref (dd->client);
+    g_object_unref (dd->proxy);
+    g_object_unref (dd->xml);
+
+    g_slice_free (DwellData, dd);
 }
 
 static void
@@ -305,8 +231,8 @@ about_dialog (BonoboUIComponent *component, gpointer data, const char *cname)
 
     about = glade_xml_get_widget (dd->xml, "about");
 
-    if (GTK_WIDGET_VISIBLE(about))
-	gtk_window_present (GTK_WINDOW(about));
+    if (GTK_WIDGET_VISIBLE (about))
+	gtk_window_present (GTK_WINDOW (about));
     else
 	gtk_widget_show (about);
 }
@@ -322,11 +248,11 @@ about_response (GtkWidget *about, gint response, gpointer data)
 static inline void
 init_button (DwellData *dd, GtkWidget *button)
 {
-    gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON(button), FALSE);
-    g_signal_connect (G_OBJECT(button), "button-press-event",
-		      G_CALLBACK(do_not_eat), NULL);
-    g_signal_connect (G_OBJECT(button), "toggled",
-		      G_CALLBACK(button_cb), dd);
+    gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (button), FALSE);
+    g_signal_connect (button, "button-press-event",
+		      G_CALLBACK (do_not_eat), NULL);
+    g_signal_connect (button, "toggled",
+		      G_CALLBACK (button_cb), dd);
 }
 
 static void
@@ -339,8 +265,8 @@ init_horizontal_box (DwellData *dd)
     g_object_ref (w);
 
     w = glade_xml_get_widget (dd->xml, "single_click");
-    g_signal_connect (G_OBJECT(w), "size-allocate",
-		      G_CALLBACK(box_size_allocate), dd);
+    g_signal_connect (w, "size-allocate",
+		      G_CALLBACK (box_size_allocate), dd);
     init_button (dd, w);
 
     w = glade_xml_get_widget (dd->xml, "double_click");
@@ -401,6 +327,65 @@ update_sensitivity (DwellData *dd)
 }
 
 static void
+clicktype_changed (DBusGProxy *proxy,
+		   guint       clicktype,
+		   gpointer    data)
+{
+    DwellData *dd = (DwellData *) data;
+    GtkToggleButton *button;
+    GSList *group;
+
+    group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dd->button));
+    button = GTK_TOGGLE_BUTTON (g_slist_nth_data (group, clicktype));
+
+    g_signal_handlers_block_by_func (button, button_cb, dd);
+    gtk_toggle_button_set_active (button, TRUE);
+    g_signal_handlers_unblock_by_func (button, button_cb, dd);
+}
+
+static void
+status_changed (DBusGProxy *proxy,
+		gboolean    status,
+		gpointer    data)
+{
+    DwellData *dd = (DwellData *) data;
+
+    dd->active = status;
+    update_sensitivity (dd);
+}
+
+static gboolean
+setup_dbus_proxy (DwellData *dd)
+{
+    DBusGConnection *bus;
+    GError *error = NULL;
+
+    bus = dbus_g_bus_get (DBUS_BUS_SESSION, &error);
+    if (error != NULL) {
+	g_print ("Unable to connect to session bus: %s\n", error->message);
+	g_error_free (error);
+	return FALSE;
+    }
+
+    dd->proxy = dbus_g_proxy_new_for_name (bus,
+					   "org.gnome.Mousetweaks",
+					   "/org/gnome/Mousetweaks",
+					   "org.gnome.Mousetweaks");
+
+    dbus_g_proxy_add_signal (dd->proxy, "ClicktypeChanged",
+			     G_TYPE_UINT, G_TYPE_INVALID);
+    dbus_g_proxy_connect_signal (dd->proxy, "ClicktypeChanged",
+				 G_CALLBACK (clicktype_changed), dd, NULL);
+
+    dbus_g_proxy_add_signal (dd->proxy, "StatusChanged",
+			     G_TYPE_BOOLEAN, G_TYPE_INVALID);
+    dbus_g_proxy_connect_signal (dd->proxy, "StatusChanged",
+				 G_CALLBACK (status_changed), dd, NULL);
+
+    return TRUE;
+}
+
+static void
 gconf_value_changed (GConfClient *client,
 		     const gchar *key,
 		     GConfValue *value,
@@ -417,7 +402,7 @@ fill_applet (PanelApplet *applet)
     GtkWidget *about;
     PanelAppletOrient orient;
 
-    dd = g_new0 (DwellData, 1);
+    dd = g_slice_new0 (DwellData);
     if (!dd)
 	return FALSE;
 
@@ -427,51 +412,33 @@ fill_applet (PanelApplet *applet)
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
 
+    g_set_application_name (_("Dwell Click Applet"));
+    gtk_window_set_default_icon_name (MT_ICON_NAME);
+
     dd->xml = glade_xml_new (DATADIR "/dwell-click-applet.glade", NULL, NULL);
     if (!dd->xml) {
-	fini_dwell_data (dd);
+	g_slice_free (DwellData, dd);
 	return FALSE;
     }
 
-    /* about dialog */
-    gtk_window_set_default_icon_name (MT_ICON_NAME);
+    if (!setup_dbus_proxy (dd)) {
+	g_object_unref (dd->xml);
+	g_slice_free (DwellData, dd);
+	return FALSE;
+    }
 
     about = glade_xml_get_widget (dd->xml, "about");
     g_object_set (about, "version", VERSION, NULL);
-
-    g_signal_connect (G_OBJECT(about), "delete-event",
-		      G_CALLBACK(gtk_widget_hide_on_delete), NULL);
-    g_signal_connect (G_OBJECT(about), "response",
-		      G_CALLBACK(about_response), dd);
-
-    dd->conn = dbus_bus_get (DBUS_BUS_SESSION, NULL);
-    if (!dd->conn) {
-	fini_dwell_data (dd);
-	return FALSE;
-    }
-
-    dbus_bus_add_match (dd->conn,
-			"type='signal',"
-			"sender='"   MOUSETWEAKS_DBUS_SERVICE"',"
-			"interface='"MOUSETWEAKS_DBUS_INTERFACE"',"
-			"path='"     MOUSETWEAKS_DBUS_PATH_APPLET"'",
-			NULL);
-    dbus_connection_add_filter (dd->conn,
-				receive_dbus_signal,
-				dd,
-				NULL);
-    dbus_connection_setup_with_g_main (dd->conn, NULL);
-
-    if (dbus_bus_name_has_owner (dd->conn, MOUSETWEAKS_DBUS_SERVICE, NULL))
-	dd->active = 1;
+    g_signal_connect (about, "delete-event",
+		      G_CALLBACK (gtk_widget_hide_on_delete), NULL);
+    g_signal_connect (about, "response",
+		      G_CALLBACK (about_response), dd);
 
     dd->client = gconf_client_get_default ();
-    gconf_client_add_dir (dd->client,
-			  MT_GCONF_HOME,
-			  GCONF_CLIENT_PRELOAD_ONELEVEL,
-			  NULL);
-    g_signal_connect (G_OBJECT(dd->client), "value_changed",
-		      G_CALLBACK(gconf_value_changed), dd);
+    gconf_client_add_dir (dd->client, MT_GCONF_HOME,
+			  GCONF_CLIENT_PRELOAD_ONELEVEL, NULL);
+    g_signal_connect (dd->client, "value_changed",
+		      G_CALLBACK (gconf_value_changed), dd);
 
     dd->click[DWELL_CLICK_TYPE_SINGLE] =
 	gdk_pixbuf_new_from_file (DATADIR "/single-click.png", NULL);
@@ -491,9 +458,9 @@ fill_applet (PanelApplet *applet)
 				       NULL, menu_verb, dd);
 
     g_signal_connect (applet, "change-orient",
-		      G_CALLBACK(applet_orient_changed), dd);
+		      G_CALLBACK (applet_orient_changed), dd);
     g_signal_connect (applet, "unrealize",
-		      G_CALLBACK(applet_unrealized), dd);
+		      G_CALLBACK (applet_unrealized), dd);
 
     orient = panel_applet_get_orient (applet);
     if (orient == PANEL_APPLET_ORIENT_UP ||
@@ -509,8 +476,8 @@ fill_applet (PanelApplet *applet)
     init_horizontal_box (dd);
     init_vertical_box (dd);
 
-    gtk_widget_reparent (dd->box, GTK_WIDGET(applet));
-    gtk_widget_show (GTK_WIDGET(applet));
+    gtk_widget_reparent (dd->box, GTK_WIDGET (applet));
+    gtk_widget_show (GTK_WIDGET (applet));
 
     update_sensitivity (dd);
 
@@ -529,6 +496,6 @@ applet_factory (PanelApplet *applet, const gchar *iid, gpointer data)
 PANEL_APPLET_BONOBO_FACTORY ("OAFIID:DwellClickApplet_Factory",
 			     PANEL_TYPE_APPLET,
 			     "Dwell Click Factory",
-			     "0",
+			     VERSION,
 			     applet_factory,
 			     NULL);

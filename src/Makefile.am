@@ -20,8 +20,8 @@ mousetweaks_SOURCES =	\
 	mt-common.h	\
 	mt-pidfile.c	\
 	mt-pidfile.h	\
-	mt-dbus.c	\
-	mt-dbus.h	\
+	mt-service.c	\
+	mt-service.h	\
 	mt-ctw.c	\
 	mt-ctw.h	\
 	mt-timer.c	\
@@ -42,3 +42,11 @@ pointer_capture_applet_SOURCES = \
 	mt-common.h
 
 pointer_capture_applet_LDFLAGS = $(DEPENDENCIES_LIBS)
+
+BUILT_SOURCES = mt-service-glue.h
+
+mt-service-glue.h: mousetweaks-service.xml
+	-dbus-binding-tool --prefix=mt_service --mode=glib-server $<> $@
+
+EXTRA_DIST = mousetweaks-service.xml
+CLEANFILES = $(BUILT_SOURCES)

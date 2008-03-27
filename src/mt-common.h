@@ -24,7 +24,6 @@
 #include "config.h"
 #endif
 
-#include <gconf/gconf-client.h>
 #include <glib/gi18n.h>
 
 G_BEGIN_DECLS

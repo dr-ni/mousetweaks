@@ -1,3 +1,21 @@
+2008-03-27 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/mt-service.c:
+	* src/mt-service.h:
+	* src/mousetweaks-service.xml:
+	* src/Makefile.am:
+
+	Added new dbus object with introspection.
+
+	* src/mt-main.c:
+	* src/mt-main.h:
+	* src/mt-common.h:
+	* src/dwell-click-applet.c:
+	* src/mt-ctw.c:
+	* src/mt-ctw.h:
+
+	Use new dbus object and some general code clean up.
+
 2008-03-25 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* ChangeLog: Remove pre-gnome changes.

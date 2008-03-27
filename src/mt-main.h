@@ -20,21 +20,20 @@
 #ifndef __MT_MAIN_H__
 #define __MT_MAIN_H__
 
-#include <dbus/dbus-glib-lowlevel.h>
 #include <gconf/gconf-client.h>
 
 #include "mt-timer.h"
+#include "mt-service.h"
 
 G_BEGIN_DECLS
 
 typedef struct _MTClosure MTClosure;
 struct _MTClosure {
-    DBusConnection *conn;
-    GConfClient    *client;
+    GConfClient *client;
+    MtService   *service;
+    MtTimer     *delay_timer;
+    MtTimer     *dwell_timer;
 
-    MtTimer *delay_timer;
-    MtTimer *dwell_timer;
-    gint     dwell_cct;
     gboolean dwell_drag_started;
     gboolean dwell_gesture_started;
     gboolean override_cursor;
@@ -52,8 +51,6 @@ struct _MTClosure {
     gint     dwell_mode;
     gint     dwell_dirs[4];
 };
-
-void spi_shutdown (void);
 
 G_END_DECLS
 

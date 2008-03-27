@@ -21,8 +21,10 @@
 #include <glade/glade.h>
 
 #include "mt-main.h"
-#include "mt-dbus.h"
+#include "mt-service.h"
 #include "mt-common.h"
+
+#define WID(n) (glade_xml_get_widget (xml, n))
 
 enum {
     BUTTON_STYLE_TEXT = 0,
@@ -33,27 +35,24 @@ enum {
 static GladeXML *xml = NULL;
 
 void
-mt_ctw_set_click_type (gint ct)
+mt_ctw_set_clicktype (guint clicktype)
 {
-    GtkWidget *button;
     GSList *group;
     gpointer data;
 
-    button = glade_xml_get_widget (xml, "single");
-    group = gtk_radio_button_get_group (GTK_RADIO_BUTTON(button));
-    data = g_slist_nth_data (group, ct);
-
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON(data), TRUE);
-    gtk_widget_grab_focus (GTK_WIDGET(data));
+    group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (WID ("single")));
+    data = g_slist_nth_data (group, clicktype);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (data), TRUE);
+    gtk_widget_grab_focus (GTK_WIDGET (data));
 }
 
 void
 mt_ctw_update_visibility (MTClosure *mt)
 {
     if (mt->dwell_enabled && mt->dwell_show_ctw)
-	gtk_widget_show (glade_xml_get_widget (xml, "ctw"));
+	gtk_widget_show (WID ("ctw"));
     else
-	gtk_widget_hide (glade_xml_get_widget (xml, "ctw"));
+	gtk_widget_hide (WID ("ctw"));
 }
 
 void
@@ -62,7 +61,7 @@ mt_ctw_update_sensitivity (MTClosure *mt)
     gboolean sensitive;
 
     sensitive = mt->dwell_enabled && mt->dwell_mode == DWELL_MODE_CTW;
-    gtk_widget_set_sensitive (glade_xml_get_widget (xml, "box"), sensitive);
+    gtk_widget_set_sensitive (WID ("box"), sensitive);
 }
 
 void
@@ -74,8 +73,8 @@ mt_ctw_update_style (gint style)
     gint i;
 
     for (i = 0; i < N_CLICK_TYPES; i++) {
-	label = glade_xml_get_widget (xml, l[i]);
-	icon = glade_xml_get_widget (xml, img[i]);
+	label = WID (l[i]);
+	icon = WID (img[i]);
 
 	switch (style) {
 	case BUTTON_STYLE_BOTH:
@@ -109,10 +108,10 @@ ctw_button_cb (GtkToggleButton *button, gpointer data)
     if (gtk_toggle_button_get_active (button)) {
 	GSList *group;
 
-	group = gtk_radio_button_get_group (GTK_RADIO_BUTTON(button));
-	mt->dwell_cct = g_slist_index (group, (gconstpointer) button);
-
-	mt_dbus_send_signal (mt->conn, CLICK_TYPE_SIGNAL, mt->dwell_cct);
+	group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (button));
+	mt_service_set_clicktype (mt->service, 
+				  g_slist_index (group, button),
+				  NULL);
     }
 }
 
@@ -120,7 +119,7 @@ static gboolean
 ctw_context_menu (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 {
     if (bev->button == 3) {
-	gtk_menu_popup (GTK_MENU(glade_xml_get_widget (xml, "popup")),
+	gtk_menu_popup (GTK_MENU (WID ("popup")),
 			0, 0, 0, 0, bev->button, bev->time);
 	return TRUE;
     }
@@ -138,8 +137,8 @@ ctw_menu_toggled (GtkCheckMenuItem *item, gpointer data)
     if (!gtk_check_menu_item_get_active (item))
 	return;
 
-    group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM(item));
-    index = g_slist_index (group, (gconstpointer) item);
+    group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (item));
+    index = g_slist_index (group, item);
     gconf_client_set_int (mt->client, OPT_STYLE, index, NULL);
 }
 
@@ -156,7 +155,7 @@ ctw_delete_cb (GtkWidget *win, GdkEvent *ev, gpointer data)
 gboolean
 mt_ctw_init (MTClosure *mt, gint x, gint y)
 {
-    GtkWidget *ctw, *button, *item;
+    GtkWidget *ctw, *w;
     const gchar *b[] = { "single", "double", "drag", "right" };
     GSList *group;
     gpointer data;
@@ -166,42 +165,36 @@ mt_ctw_init (MTClosure *mt, gint x, gint y)
     if (!xml)
 	return FALSE;
 
-    ctw = glade_xml_get_widget (xml, "ctw");
-    gtk_window_stick (GTK_WINDOW(ctw));
-    gtk_window_set_keep_above (GTK_WINDOW(ctw), TRUE);
-    g_signal_connect (G_OBJECT(ctw), "delete-event", 
-		      G_CALLBACK(ctw_delete_cb), mt);
+    ctw = WID ("ctw");
+    gtk_window_stick (GTK_WINDOW (ctw));
+    gtk_window_set_keep_above (GTK_WINDOW (ctw), TRUE);
+    g_signal_connect (ctw, "delete-event", G_CALLBACK (ctw_delete_cb), mt);
 
     for (i = 0; i < N_CLICK_TYPES; i++) {
-	button = glade_xml_get_widget (xml, b[i]);
-	gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON(button), FALSE);
-
-	g_signal_connect (G_OBJECT(button), "toggled", 
-			  G_CALLBACK(ctw_button_cb), (gpointer) mt);
-	g_signal_connect (G_OBJECT(button), "button-press-event", 
-			  G_CALLBACK(ctw_context_menu), NULL);
+	w = WID (b[i]);
+	gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (w), FALSE);
+	g_signal_connect (w, "toggled", G_CALLBACK (ctw_button_cb), mt);
+	g_signal_connect (w, "button-press-event",
+			  G_CALLBACK (ctw_context_menu), NULL);
     }
 
-    item = glade_xml_get_widget (xml, "text");
-    g_signal_connect (G_OBJECT(item), "toggled", 
-		      G_CALLBACK(ctw_menu_toggled), (gpointer) mt);
-    item = glade_xml_get_widget (xml, "icon");
-    g_signal_connect (G_OBJECT(item), "toggled", 
-		      G_CALLBACK(ctw_menu_toggled), (gpointer) mt);
-    item = glade_xml_get_widget (xml, "both");
-    g_signal_connect (G_OBJECT(item), "toggled", 
-		      G_CALLBACK(ctw_menu_toggled), (gpointer) mt);
-
-    group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM(item));
+    g_signal_connect (WID ("text"), "toggled", 
+		      G_CALLBACK (ctw_menu_toggled), mt);
+    g_signal_connect (WID ("icon"), "toggled", 
+		      G_CALLBACK (ctw_menu_toggled), mt);
+    w = WID ("both");
+    g_signal_connect (w, "toggled", 
+		      G_CALLBACK (ctw_menu_toggled), mt);
+    group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (w));
     data = g_slist_nth_data (group, mt->style);
-    gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM(data), TRUE);
+    gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (data), TRUE);
 
     mt_ctw_update_style (mt->style);
     mt_ctw_update_sensitivity (mt);
     mt_ctw_update_visibility (mt);
 
     if (x != -1 && y != -1)
-	gtk_window_move (GTK_WINDOW(ctw), x, y);
+	gtk_window_move (GTK_WINDOW (ctw), x, y);
 
     return TRUE;
 }

@@ -28,14 +28,11 @@
 #include <cspi/spi.h>
 
 #include "mt-common.h"
-#include "mt-dbus.h"
-#include "mt-main.h"
+#include "mt-service.h"
 #include "mt-pidfile.h"
 #include "mt-ctw.h"
 #include "mt-timer.h"
-
-static AccessibleDeviceListener *button_listener = NULL;
-static AccessibleEventListener  *motion_listener = NULL;
+#include "mt-main.h"
 
 static int fixes_event_base = 0;
 
@@ -43,29 +40,29 @@ static void
 mt_cursor_set (GdkCursorType type)
 {
     GdkCursor *cursor;
-    GdkWindow *root;
 
     cursor = gdk_cursor_new (type);
-    root = gdk_get_default_root_window ();
-    gdk_window_set_cursor (root, cursor);
+    gdk_window_set_cursor (gdk_get_default_root_window (), cursor);
     gdk_cursor_unref (cursor);
 }
 
 static void
 dwell_restore_single_click (MTClosure *mt)
 {
-    if (mt->dwell_mode == DWELL_MODE_CTW) {
-	mt_ctw_set_click_type (DWELL_CLICK_TYPE_SINGLE);
-	mt_dbus_send_signal (mt->conn, RESTORE_SIGNAL, 0);
-    }
-    else
-	mt->dwell_cct = DWELL_CLICK_TYPE_SINGLE;
+    if (mt->dwell_mode == DWELL_MODE_CTW)
+	mt_ctw_set_clicktype (DWELL_CLICK_TYPE_SINGLE);
+
+    mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);
 }
 
 static void
 dwell_do_pointer_click (MTClosure *mt, gint x, gint y)
 {
-    switch (mt->dwell_cct) {
+    guint clicktype;
+
+    clicktype = mt_service_get_clicktype (mt->service);
+
+    switch (clicktype) {
     case DWELL_CLICK_TYPE_SINGLE:
 	SPI_generateMouseEvent (x, y, "b1c");
 	break;
@@ -134,7 +131,7 @@ analyze_direction (MTClosure *mt, gint x, gint y)
     /* get click type for direction */
     for (i = 0; i < N_CLICK_TYPES; i++)
 	if (mt->dwell_dirs[i] == gd) {
-	    mt->dwell_cct = i;
+	    mt_service_set_clicktype (mt->service, i, NULL);
 	    return TRUE;
 	}
 
@@ -181,7 +178,7 @@ dwell_time_elapsed (MtTimer *timer, gpointer data)
     MTClosure *mt = (MTClosure *) data;
     gint x, y;
 
-    gdk_display_get_pointer (gdk_display_get_default(), NULL, &x, &y, NULL);
+    gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
 
     /* stop active drag */
     if (mt->dwell_drag_started) {
@@ -208,7 +205,7 @@ dwell_time_elapsed (MtTimer *timer, gpointer data)
 	else
 	    dwell_start_gesture (mt);
     default:
-	    break;
+	break;
     }
 }
 
@@ -240,32 +237,24 @@ spi_motion_event (const AccessibleEvent *event, void *data)
 	    mt_timer_stop (mt->delay_timer);
 }
 
-static SPIBoolean
-spi_button_event (const AccessibleDeviceEvent *event, void *data)
+static void
+spi_button_event (const AccessibleEvent *event, void *data)
 {
     MTClosure *mt = (MTClosure *) data;
 
-    if (event->keycode != 1)
-	return FALSE;
-
-    switch (event->type) {
-    case SPI_BUTTON_PRESSED:
+    if (g_str_equal (event->type, "mouse:button:b1p")) {
 	if (mt->delay_enabled) {
 	    gdk_display_get_pointer (gdk_display_get_default (), NULL,
 				     &mt->pointer_x, &mt->pointer_y, NULL);
 	    mt_timer_start (mt->delay_timer);
 	}
+
 	if (mt->dwell_gesture_started)
 	    dwell_stop_gesture (mt);
-	break;
-    case SPI_BUTTON_RELEASED:
+    }
+    else if (g_str_equal (event->type, "mouse:button:b1r"))
 	if (mt_timer_is_running (mt->delay_timer))
 	    mt_timer_stop (mt->delay_timer);
-    default:
-	break;
-    }
-
-    return FALSE;
 }
 
 static GdkFilterReturn
@@ -288,23 +277,17 @@ cursor_changed (GdkXEvent *xevent, GdkEvent *event, gpointer data)
     return GDK_FILTER_CONTINUE;
 }
 
-void
-spi_shutdown (void)
+static void
+signal_handler (int sig)
 {
     SPI_event_quit ();
 }
 
 static void
-signal_handler (int sig)
-{
-    spi_shutdown ();
-}
-
-static void
-mt_gconf_notify (GConfClient *client,
-		 const gchar *key,
-		 GConfValue  *value,
-		 gpointer     data)
+gconf_value_changed (GConfClient *client,
+		     const gchar *key,
+		     GConfValue  *value,
+		     gpointer     data)
 {
     MTClosure *mt = (MTClosure *) data;
 
@@ -346,8 +329,10 @@ mt_gconf_notify (GConfClient *client,
 }
 
 static void
-mt_gconf_read_options (MTClosure *mt)
+get_gconf_options (MTClosure *mt)
 {
+    gdouble val;
+
     mt->threshold = gconf_client_get_int (mt->client, OPT_THRESHOLD, NULL);
     mt->delay_enabled = gconf_client_get_bool (mt->client, OPT_DELAY, NULL);
     mt->dwell_enabled = gconf_client_get_bool (mt->client, OPT_DWELL, NULL);
@@ -355,15 +340,19 @@ mt_gconf_read_options (MTClosure *mt)
     mt->dwell_mode = gconf_client_get_int (mt->client, OPT_MODE, NULL);
     mt->style = gconf_client_get_int (mt->client, OPT_STYLE, NULL);
 
-    mt_timer_set_target_time (mt->delay_timer,
-			      gconf_client_get_float (mt->client, OPT_DELAY_T, NULL));
-    mt_timer_set_target_time (mt->dwell_timer,
-			      gconf_client_get_float (mt->client, OPT_DWELL_T, NULL));
+    val = gconf_client_get_float (mt->client, OPT_DELAY_T, NULL);
+    mt_timer_set_target_time (mt->delay_timer, val);
+    val = gconf_client_get_float (mt->client, OPT_DWELL_T, NULL);
+    mt_timer_set_target_time (mt->dwell_timer, val);
 
-    mt->dwell_dirs[DWELL_CLICK_TYPE_SINGLE] = gconf_client_get_int (mt->client, OPT_G_SINGLE, NULL);
-    mt->dwell_dirs[DWELL_CLICK_TYPE_DOUBLE] = gconf_client_get_int (mt->client, OPT_G_DOUBLE, NULL);
-    mt->dwell_dirs[DWELL_CLICK_TYPE_DRAG] = gconf_client_get_int (mt->client, OPT_G_DRAG, NULL);
-    mt->dwell_dirs[DWELL_CLICK_TYPE_RIGHT] = gconf_client_get_int (mt->client, OPT_G_RIGHT, NULL);
+    mt->dwell_dirs[DWELL_CLICK_TYPE_SINGLE] =
+	gconf_client_get_int (mt->client, OPT_G_SINGLE, NULL);
+    mt->dwell_dirs[DWELL_CLICK_TYPE_DOUBLE] =
+	gconf_client_get_int (mt->client, OPT_G_DOUBLE, NULL);
+    mt->dwell_dirs[DWELL_CLICK_TYPE_DRAG] =
+	gconf_client_get_int (mt->client, OPT_G_DRAG, NULL);
+    mt->dwell_dirs[DWELL_CLICK_TYPE_RIGHT] =
+	gconf_client_get_int (mt->client, OPT_G_RIGHT, NULL);
 }
 
 static MTClosure *
@@ -371,12 +360,15 @@ mt_closure_init (void)
 {
     MTClosure *mt;
 
-    mt = g_try_new0 (MTClosure, 1);
+    mt = g_slice_new0 (MTClosure);
     if (!mt)
 	return NULL;
 
     mt->client = gconf_client_get_default ();
-    mt->dwell_cct = DWELL_CLICK_TYPE_SINGLE;
+    gconf_client_add_dir (mt->client, MT_GCONF_HOME,
+			  GCONF_CLIENT_PRELOAD_ONELEVEL, NULL);
+    g_signal_connect (mt->client, "value_changed",
+		      G_CALLBACK (gconf_value_changed), mt);
 
     mt->delay_timer = mt_timer_new ();
     g_signal_connect (mt->delay_timer, "finished",
@@ -386,6 +378,9 @@ mt_closure_init (void)
     g_signal_connect (mt->dwell_timer, "finished",
 		      G_CALLBACK (dwell_time_elapsed), mt);
 
+    mt->service = mt_service_get_default ();
+    mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);
+
     return mt;
 }
 
@@ -394,14 +389,17 @@ mt_closure_free (MTClosure *mt)
 {
     g_object_unref (mt->delay_timer);
     g_object_unref (mt->dwell_timer);
+    g_object_unref (mt->service);
     g_object_unref (mt->client);
-    g_free (mt);
+
+    g_slice_free (MTClosure, mt);
 }
 
 int
 main (int argc, char **argv)
 {
     MTClosure *mt;
+    AccessibleEventListener *bl, *ml;
     int fixes_error_base;
     pid_t pid;
     gboolean shutdown = FALSE, ctw = FALSE;
@@ -434,8 +432,6 @@ main (int argc, char **argv)
     g_option_context_parse (context, &argc, &argv, NULL);
     g_option_context_free (context);
 
-    gtk_init (&argc, &argv);
-
     if (shutdown) {
 	int ret;
 
@@ -448,16 +444,19 @@ main (int argc, char **argv)
     }
 
     if ((pid = mt_pidfile_is_running()) >= 0) {
-	g_print ("Already running on PID file %u.\n", pid);
+	g_print ("Daemon is already running. (PID %u)\n", pid);
 	return 1;
     }
 
     g_print ("Starting daemon.\n");
 
-    if ((pid = fork ()) < 0)
+    if ((pid = fork ()) < 0) {
+	g_print ("Fork failed.\n");
 	return 1;
-    else if (pid)
+    }
+    else if (pid) {
 	return 0;
+    }
     else {
 	if (mt_pidfile_create () < 0)
 	    goto FINISH;
@@ -467,11 +466,13 @@ main (int argc, char **argv)
 	signal (SIGQUIT, signal_handler);
 	signal (SIGHUP, signal_handler);
 
+	gtk_init (&argc, &argv);
+
 	mt = mt_closure_init ();
 	if (!mt)
 	    goto FINISH;
 
-	if (SPI_init ()) {
+	if (SPI_init () != 0) {
 	    mt_show_dialog (_("Assistive Technologies not enabled"),
 			    _("Mousetweaks requires Assistive Technologies."),
 			    GTK_MESSAGE_ERROR);
@@ -492,25 +493,15 @@ main (int argc, char **argv)
 				     GDK_ROOT_WINDOW(),
 				     XFixesDisplayCursorNotifyMask);
 	    gdk_window_add_filter (gdk_get_default_root_window (),
-				   cursor_changed,
-				   (gpointer) mt);
+				   cursor_changed, mt);
 	}
 
 	/* add at-spi listeners */
-	motion_listener = SPI_createAccessibleEventListener
-	    (spi_motion_event, (void *) mt);
-	SPI_registerGlobalEventListener (motion_listener, "mouse:abs");
-
-	button_listener = SPI_createAccessibleDeviceListener
-	    (spi_button_event, (void *) mt);
-	SPI_registerDeviceEventListener (button_listener,
-					 SPI_BUTTON_PRESSED |
-					 SPI_BUTTON_RELEASED,
-					 NULL);
-
-	mt->conn = mt_dbus_init (mt);
-	if (!mt->conn)
-	    goto CLEANUP;
+	ml = SPI_createAccessibleEventListener (spi_motion_event, (void *) mt);
+	SPI_registerGlobalEventListener (ml, "mouse:abs");
+	bl = SPI_createAccessibleEventListener (spi_button_event, (void *) mt);
+	SPI_registerGlobalEventListener (bl, "mouse:button:1p");
+	SPI_registerGlobalEventListener (bl, "mouse:button:1r");
 
 	/* command-line options */
 	if (enable) {
@@ -523,8 +514,10 @@ main (int argc, char **argv)
 		gconf_client_set_bool (mt->client, OPT_DELAY, TRUE, NULL);
 	    }
 	}
+
 	if (ctw)
 	    gconf_client_set_bool (mt->client, OPT_CTW, TRUE, NULL);
+
 	if (mode) {
 	    if (g_str_equal (mode, "gesture"))
 		gconf_client_set_int (mt->client, OPT_MODE,
@@ -534,32 +527,19 @@ main (int argc, char **argv)
 				      DWELL_MODE_CTW, NULL);
 	}
 
-	/* gconf stuff */
-	mt_gconf_read_options (mt);
-	gconf_client_add_dir (mt->client,
-			      MT_GCONF_HOME,
-			      GCONF_CLIENT_PRELOAD_ONELEVEL,
-			      NULL);
-	g_signal_connect (G_OBJECT(mt->client), "value_changed",
-			  G_CALLBACK(mt_gconf_notify), (gpointer) mt);
+	get_gconf_options (mt);
 
-	if (!mt_ctw_init (mt, pos_x, pos_y)) {
-	    mt_dbus_fini (mt->conn);
+	if (!mt_ctw_init (mt, pos_x, pos_y))
 	    goto CLEANUP;
-	}
-
-	/* tell the dwell click applet we are here */
-	mt_dbus_send_signal (mt->conn, ACTIVE_SIGNAL, 1);
 
 	SPI_event_main ();
-
-	mt_dbus_send_signal (mt->conn, ACTIVE_SIGNAL, 0);
-	mt_dbus_fini (mt->conn);
     }
 
 CLEANUP:
-    AccessibleEventListener_unref (motion_listener);
-    AccessibleDeviceListener_unref (button_listener);
+    SPI_deregisterGlobalEventListenerAll (bl);
+    AccessibleDeviceListener_unref (bl);
+    SPI_deregisterGlobalEventListenerAll (ml);
+    AccessibleEventListener_unref (ml);
     SPI_exit ();
     mt_closure_free (mt);
 

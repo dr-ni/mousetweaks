@@ -1,5 +1,9 @@
 2008-03-27 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* po/POTFILES.in: Remove deleted mt-dbus.c file.
+
+2008-03-27 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* data/pointer-capture-applet.glade:
 	* data/dwell-click-applet.glade:
 

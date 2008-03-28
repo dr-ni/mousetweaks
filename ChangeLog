@@ -1,3 +1,9 @@
+2008-03-28 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* mt-timer.c: Add new 'tick' signal. Remove properties.
+	* mt-timer.h: Clean up.
+	* mt-main.c: Use changed function name.
+
 2008-03-27 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* po/POTFILES.in: Remove deleted mt-dbus.c file.

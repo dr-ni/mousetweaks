@@ -33,11 +33,7 @@ struct _MtTimerPrivate {
 };
 
 enum {
-    PROP_0,
-    PROP_TARGET
-};
-
-enum {
+    TICK,
     FINISHED,
     LAST_SIGNAL
 };
@@ -46,39 +42,34 @@ static guint signals[LAST_SIGNAL] = { 0 };
 
 G_DEFINE_TYPE (MtTimer, mt_timer, G_TYPE_OBJECT)
 
-static void mt_timer_dispose      (GObject      *object);
-static void mt_timer_finalize     (GObject      *object);
-static void mt_timer_set_property (GObject      *object,
-				   guint         property,
-				   const GValue *value,
-				   GParamSpec   *pspec);
-static void mt_timer_get_property (GObject      *object,
-				   guint         property,
-				   GValue       *value,
-				   GParamSpec   *pspec);
+static void mt_timer_dispose  (GObject *object);
+static void mt_timer_finalize (GObject *object);
 
 static void
 mt_timer_class_init (MtTimerClass *klass)
 {
-    GParamSpec   *pspec;
     GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
 
-    gobject_class->dispose      = mt_timer_dispose;
-    gobject_class->finalize     = mt_timer_finalize;
-    gobject_class->set_property = mt_timer_set_property;
-    gobject_class->get_property = mt_timer_get_property;
+    gobject_class->dispose  = mt_timer_dispose;
+    gobject_class->finalize = mt_timer_finalize;
 
-    pspec = g_param_spec_double ("target", "Target", "Target time to check for",
-				 0.5, 3.0, 1.2, G_PARAM_READWRITE);
-    g_object_class_install_property (gobject_class, PROP_TARGET, pspec);
+    signals[TICK] = 
+	g_signal_new (g_intern_static_string ("tick"),
+		      G_OBJECT_CLASS_TYPE (klass),
+		      G_SIGNAL_RUN_LAST,
+		      G_STRUCT_OFFSET (MtTimerClass, tick),
+		      NULL, NULL,
+		      g_cclosure_marshal_VOID__DOUBLE,
+		      G_TYPE_NONE, 1, G_TYPE_DOUBLE);
 
-    signals[FINISHED] = g_signal_new (g_intern_static_string ("finished"),
-				      G_OBJECT_CLASS_TYPE (klass),
-				      G_SIGNAL_RUN_LAST,
-				      G_STRUCT_OFFSET (MtTimerClass, finished),
-				      NULL, NULL,
-				      g_cclosure_marshal_VOID__VOID,
-				      G_TYPE_NONE, 0);
+    signals[FINISHED] =
+	g_signal_new (g_intern_static_string ("finished"),
+		      G_OBJECT_CLASS_TYPE (klass),
+		      G_SIGNAL_RUN_LAST,
+		      G_STRUCT_OFFSET (MtTimerClass, finished),
+		      NULL, NULL,
+		      g_cclosure_marshal_VOID__VOID,
+		      G_TYPE_NONE, 0);
 
     g_type_class_add_private (klass, sizeof (MtTimerPrivate));
 }
@@ -86,7 +77,7 @@ mt_timer_class_init (MtTimerClass *klass)
 static void
 mt_timer_init (MtTimer *timer)
 {
-    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE(timer);
+    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE (timer);
 
     priv->timer   = NULL;
     priv->tid     = 0;
@@ -97,8 +88,8 @@ mt_timer_init (MtTimer *timer)
 static void
 mt_timer_dispose (GObject *object)
 {
-    MtTimer *timer = MT_TIMER(object);
-    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE(timer);
+    MtTimer *timer = MT_TIMER (object);
+    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE (timer);
 
     if (mt_timer_is_running (timer)) {
 	g_timer_stop (priv->timer);
@@ -116,57 +107,21 @@ mt_timer_dispose (GObject *object)
 static void
 mt_timer_finalize (GObject *object)
 {
-    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE(object);
+    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE (object);
 
     g_timer_destroy (priv->timer);
-    priv->timer = NULL;
 
     G_OBJECT_CLASS (mt_timer_parent_class)->finalize (object);
-}
-
-static void
-mt_timer_set_property (GObject      *object,
-		       guint         property,
-		       const GValue *value,
-		       GParamSpec   *pspec)
-{
-    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE(object);
-
-    switch (property) {
-    case PROP_TARGET:
-	priv->target = g_value_get_double (value);
-	break;
-    default:
-	G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property, pspec);
-	break;
-    }
-}
-
-static void
-mt_timer_get_property (GObject    *object,
-		       guint       property,
-		       GValue     *value,
-		       GParamSpec *pspec)
-{
-    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE(object);
-
-    switch (property) {
-    case PROP_TARGET:
-	g_value_set_double (value, priv->target);
-	break;
-    default:
-	G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property, pspec);
-	break;
-    }
 }
 
 static gboolean
 mt_timer_check_time (gpointer data)
 {
     MtTimer *timer = (MtTimer *) data;
-    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE(timer);
+    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE (timer);
 
     priv->elapsed = g_timer_elapsed (priv->timer, NULL);
+    g_signal_emit (timer, signals[TICK], 0, priv->elapsed);
 
     if (priv->elapsed >= priv->target) {
 	priv->tid = 0;
@@ -187,7 +142,7 @@ mt_timer_new (void)
     MtTimerPrivate *priv;
 
     timer = g_object_new (MT_TYPE_TIMER, NULL);
-    priv = MT_TIMER_GET_PRIVATE(timer);
+    priv = MT_TIMER_GET_PRIVATE (timer);
 
     priv->timer = g_timer_new ();
     g_timer_stop (priv->timer);
@@ -200,9 +155,9 @@ mt_timer_start (MtTimer *timer)
 {
     MtTimerPrivate *priv;
 
-    g_return_if_fail (MT_IS_TIMER(timer));
+    g_return_if_fail (MT_IS_TIMER (timer));
 
-    priv = MT_TIMER_GET_PRIVATE(timer);
+    priv = MT_TIMER_GET_PRIVATE (timer);
     g_timer_start (priv->timer);
 
     if (priv->tid == 0)
@@ -214,9 +169,9 @@ mt_timer_stop (MtTimer *timer)
 {
     MtTimerPrivate *priv;
 
-    g_return_if_fail (MT_IS_TIMER(timer));
+    g_return_if_fail (MT_IS_TIMER (timer));
 
-    priv = MT_TIMER_GET_PRIVATE(timer);
+    priv = MT_TIMER_GET_PRIVATE (timer);
     g_timer_stop (priv->timer);
 
     if (priv->tid != 0) {
@@ -228,30 +183,36 @@ mt_timer_stop (MtTimer *timer)
 gboolean
 mt_timer_is_running (MtTimer *timer)
 {
-    MtTimerPrivate *priv;
+    g_return_val_if_fail (MT_IS_TIMER (timer), FALSE);
 
-    g_return_val_if_fail (MT_IS_TIMER(timer), FALSE);
-
-    priv = MT_TIMER_GET_PRIVATE(timer);
-
-    return (priv->tid != 0);
+    return (MT_TIMER_GET_PRIVATE (timer)->tid != 0);
 }
 
 gdouble
 mt_timer_elapsed (MtTimer *timer)
 {
-    g_return_val_if_fail (MT_IS_TIMER(timer), 0.0);
+    g_return_val_if_fail (MT_IS_TIMER (timer), 0.0);
 
-    return MT_TIMER_GET_PRIVATE(timer)->elapsed;
+    return MT_TIMER_GET_PRIVATE (timer)->elapsed;
 }
 
-void
-mt_timer_set_target_time (MtTimer *timer, gdouble time)
+gdouble
+mt_timer_get_target (MtTimer *timer)
 {
     MtTimerPrivate *priv;
 
-    g_return_if_fail (MT_IS_TIMER(timer));
+    g_return_val_if_fail (MT_IS_TIMER (timer), 0.0);
 
-    priv = MT_TIMER_GET_PRIVATE(timer);
-    g_object_set (timer, "target", time, NULL);
+    return MT_TIMER_GET_PRIVATE (timer)->target;
+}
+
+void
+mt_timer_set_target (MtTimer *timer, gdouble time)
+{
+    MtTimerPrivate *priv;
+
+    g_return_if_fail (MT_IS_TIMER (timer));
+    g_return_if_fail (time >= 0.5);
+
+    MT_TIMER_GET_PRIVATE (timer)->target = time;
 }

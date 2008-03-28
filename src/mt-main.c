@@ -341,9 +341,9 @@ get_gconf_options (MTClosure *mt)
     mt->style = gconf_client_get_int (mt->client, OPT_STYLE, NULL);
 
     val = gconf_client_get_float (mt->client, OPT_DELAY_T, NULL);
-    mt_timer_set_target_time (mt->delay_timer, val);
+    mt_timer_set_target (mt->delay_timer, val);
     val = gconf_client_get_float (mt->client, OPT_DWELL_T, NULL);
-    mt_timer_set_target_time (mt->dwell_timer, val);
+    mt_timer_set_target (mt->dwell_timer, val);
 
     mt->dwell_dirs[DWELL_CLICK_TYPE_SINGLE] =
 	gconf_client_get_int (mt->client, OPT_G_SINGLE, NULL);

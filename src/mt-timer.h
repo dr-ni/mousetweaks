@@ -41,18 +41,21 @@ struct _MtTimer {
 struct _MtTimerClass {
     GObjectClass parent;
 
+    void (*tick)     (MtTimer *timer,
+		      gdouble  time);
     void (*finished) (MtTimer *timer);
 };
 
-GType     mt_timer_get_type   (void) G_GNUC_CONST;
+GType mt_timer_get_type (void) G_GNUC_CONST;
 
-MtTimer * mt_timer_new             (void);
-void      mt_timer_start           (MtTimer *timer);
-void      mt_timer_stop            (MtTimer *timer);
-gboolean  mt_timer_is_running      (MtTimer *timer);
-gdouble   mt_timer_elapsed         (MtTimer *timer);
-void      mt_timer_set_target_time (MtTimer *timer,
-				    gdouble  time);
+MtTimer * mt_timer_new        (void);
+void      mt_timer_start      (MtTimer *timer);
+void      mt_timer_stop       (MtTimer *timer);
+gboolean  mt_timer_is_running (MtTimer *timer);
+gdouble   mt_timer_elapsed    (MtTimer *timer);
+gdouble   mt_timer_get_target (MtTimer *timer);
+void      mt_timer_set_target (MtTimer *timer,
+			       gdouble  time);
 
 G_END_DECLS
 

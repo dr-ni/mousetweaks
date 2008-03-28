@@ -291,40 +291,38 @@ gconf_value_changed (GConfClient *client,
 {
     MTClosure *mt = (MTClosure *) data;
 
-    if (g_str_equal (key, OPT_THRESHOLD))
+    if (g_str_equal (key, OPT_THRESHOLD) && value->type == GCONF_VALUE_INT)
 	mt->threshold = gconf_value_get_int (value);
-    else if (g_str_equal (key, OPT_DELAY))
+    else if (g_str_equal (key, OPT_DELAY) && value->type == GCONF_VALUE_BOOL)
 	mt->delay_enabled = gconf_value_get_bool (value);
-    else if (g_str_equal (key, OPT_DELAY_T))
-	mt_timer_set_target_time (mt->delay_timer,
-				  gconf_value_get_float (value));
-    else if (g_str_equal (key, OPT_DWELL)) {
+    else if (g_str_equal (key, OPT_DELAY_T) && value->type == GCONF_VALUE_FLOAT)
+	mt_timer_set_target (mt->delay_timer, gconf_value_get_float (value));
+    else if (g_str_equal (key, OPT_DWELL) && value->type == GCONF_VALUE_BOOL) {
 	mt->dwell_enabled = gconf_value_get_bool (value);
 	mt_ctw_update_sensitivity (mt);
 	mt_ctw_update_visibility (mt);
     }
-    else if (g_str_equal (key, OPT_DWELL_T))
-	mt_timer_set_target_time (mt->dwell_timer,
-				  gconf_value_get_float (value));
-    else if (g_str_equal (key, OPT_CTW)) {
+    else if (g_str_equal (key, OPT_DWELL_T) && value->type == GCONF_VALUE_FLOAT)
+	mt_timer_set_target (mt->dwell_timer, gconf_value_get_float (value));
+    else if (g_str_equal (key, OPT_CTW) && value->type == GCONF_VALUE_BOOL) {
 	mt->dwell_show_ctw = gconf_value_get_bool (value);
 	mt_ctw_update_visibility (mt);
     }
-    else if (g_str_equal (key, OPT_MODE)) {
+    else if (g_str_equal (key, OPT_MODE) && value->type == GCONF_VALUE_INT) {
 	mt->dwell_mode = gconf_value_get_int (value);
 	mt_ctw_update_sensitivity (mt);
     }
-    else if (g_str_equal (key, OPT_STYLE)) {
+    else if (g_str_equal (key, OPT_STYLE) && value->type == GCONF_VALUE_INT) {
 	mt->style = gconf_value_get_int (value);
 	mt_ctw_update_style (mt->style);
     }
-    else if (g_str_equal (key, OPT_G_SINGLE))
+    else if (g_str_equal (key, OPT_G_SINGLE) && value->type == GCONF_VALUE_INT)
 	mt->dwell_dirs[DWELL_CLICK_TYPE_SINGLE] = gconf_value_get_int (value);
-    else if (g_str_equal (key, OPT_G_DOUBLE))
+    else if (g_str_equal (key, OPT_G_DOUBLE) && value->type == GCONF_VALUE_INT)
 	mt->dwell_dirs[DWELL_CLICK_TYPE_DOUBLE] = gconf_value_get_int (value);
-    else if (g_str_equal (key, OPT_G_DRAG))
+    else if (g_str_equal (key, OPT_G_DRAG) && value->type == GCONF_VALUE_INT)
 	mt->dwell_dirs[DWELL_CLICK_TYPE_DRAG] = gconf_value_get_int (value);
-    else if (g_str_equal (key, OPT_G_RIGHT))
+    else if (g_str_equal (key, OPT_G_RIGHT) && value->type == GCONF_VALUE_INT)
 	mt->dwell_dirs[DWELL_CLICK_TYPE_RIGHT] = gconf_value_get_int (value);
 }
 

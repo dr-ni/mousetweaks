@@ -43,6 +43,7 @@ G_BEGIN_DECLS
 #define OPT_G_DRAG    MT_GCONF_HOME "/dwell_gesture_drag"
 #define OPT_G_RIGHT   MT_GCONF_HOME "/dwell_gesture_secondary"
 #define OPT_STYLE     MT_GCONF_HOME "/button_layout"
+#define OPT_ANIMATE   MT_GCONF_HOME "/animate_cursor"
 
 enum {
     DWELL_MODE_CTW = 0,

@@ -1,3 +1,17 @@
+2008-03-29 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/mt-cusor.c/h: Initial commit.
+	* src/mt-cusor-manager.c/h: Initial commit.
+	* src/Makefile.am: Add new cursor files.
+	* src/mt-main.c/h: Use new objects. Add cursor drawing code.
+	* src/mt-common.h: New animate_cursor option.
+	* data/mousetwaks.schemas.in: New animate_cursor option.
+
+	Add cursor animation to give visual feedback for the internal
+	state of the timers. For dwell-click this means - how long the 
+	cursor has been motionless, for secondary clicks - how long the
+	primary button has been pressed.
+	
 2008-03-28 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* mt-main.c: Check gconf value types before using them.

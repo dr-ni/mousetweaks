@@ -24,6 +24,7 @@
 
 #include "mt-timer.h"
 #include "mt-service.h"
+#include "mt-cursor.h"
 
 G_BEGIN_DECLS
 
@@ -33,6 +34,7 @@ struct _MTClosure {
     MtService   *service;
     MtTimer     *delay_timer;
     MtTimer     *dwell_timer;
+    MtCursor    *cursor;
 
     gboolean dwell_drag_started;
     gboolean dwell_gesture_started;
@@ -50,6 +52,7 @@ struct _MTClosure {
     gboolean dwell_show_ctw;
     gint     dwell_mode;
     gint     dwell_dirs[4];
+    gboolean animate_cursor;
 };
 
 G_END_DECLS

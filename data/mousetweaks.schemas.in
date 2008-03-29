@@ -133,5 +133,16 @@
           <long>Button style in click type window ("0" = Text, "1" = Icon, "2" = Both)</long>
         </locale>
       </schema>
+      <schema>
+        <key>/schemas/desktop/gnome/accessibility/mouse/animate_cursor</key>
+	<applyto>/desktop/gnome/accessibility/mouse/animate_cursor</applyto>
+        <owner>mousetweaks</owner>
+        <type>bool</type>
+        <default>true</default>
+        <locale name="C">
+          <short>Animate cursor</short>
+          <long>Show elapsed time as cursor overlay.</long>
+        </locale>
+      </schema>
     </schemalist>
 </gconfschemafile>

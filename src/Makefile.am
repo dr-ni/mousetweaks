@@ -13,19 +13,23 @@ endif
 
 bin_PROGRAMS = mousetweaks $(pca_bin) $(dca_bin)
 
-mousetweaks_SOURCES =	\
-	mt-main.c	\
-	mt-main.h	\
-	mt-common.c	\
-	mt-common.h	\
-	mt-pidfile.c	\
-	mt-pidfile.h	\
-	mt-service.c	\
-	mt-service.h	\
-	mt-ctw.c	\
-	mt-ctw.h	\
-	mt-timer.c	\
-	mt-timer.h
+mousetweaks_SOURCES =	    \
+	mt-main.c	    \
+	mt-main.h	    \
+	mt-common.c	    \
+	mt-common.h	    \
+	mt-pidfile.c	    \
+	mt-pidfile.h	    \
+	mt-service.c	    \
+	mt-service.h	    \
+	mt-ctw.c	    \
+	mt-ctw.h	    \
+	mt-timer.c	    \
+	mt-timer.h	    \
+	mt-cursor.c	    \
+	mt-cursor.h	    \
+	mt-cursor-manager.c \
+	mt-cursor-manager.h
 
 mousetweaks_LDFLAGS = $(DEPENDENCIES_LIBS)
 

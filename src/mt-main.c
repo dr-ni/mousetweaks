@@ -22,9 +22,9 @@
 #include <string.h>
 #include <math.h>
 #include <unistd.h>
+
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>
-#include <X11/extensions/Xfixes.h>
 #include <cspi/spi.h>
 
 #include "mt-common.h"
@@ -32,9 +32,9 @@
 #include "mt-pidfile.h"
 #include "mt-ctw.h"
 #include "mt-timer.h"
+#include "mt-cursor-manager.h"
+#include "mt-cursor.h"
 #include "mt-main.h"
-
-static int fixes_event_base = 0;
 
 static void
 mt_cursor_set (GdkCursorType type)
@@ -173,12 +173,13 @@ dwell_stop_gesture (MTClosure *mt)
 }
 
 static void
-dwell_time_elapsed (MtTimer *timer, gpointer data)
+dwell_timer_finished (MtTimer *timer, gpointer data)
 {
     MTClosure *mt = (MTClosure *) data;
     gint x, y;
 
     gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
+    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
     /* stop active drag */
     if (mt->dwell_drag_started) {
@@ -210,9 +211,11 @@ dwell_time_elapsed (MtTimer *timer, gpointer data)
 }
 
 static void
-delay_time_elapsed (MtTimer *timer, gpointer data)
+delay_timer_finished (MtTimer *timer, gpointer data)
 {
     MTClosure *mt = (MTClosure *) data;
+
+    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
     SPI_generateMouseEvent (0, 0, "b1r");
     SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "b3c");
@@ -224,17 +227,21 @@ spi_motion_event (const AccessibleEvent *event, void *data)
 {
     MTClosure *mt = (MTClosure *) data;
 
-    if (mt->dwell_enabled)
-	if (!within_tolerance (mt, event->detail1, event->detail2))
-	    if (!mt->dwell_gesture_started) {
-		mt->pointer_x = (gint) event->detail1;
-		mt->pointer_y = (gint) event->detail2;
-		mt_timer_start (mt->dwell_timer);
-	    }
+    if (mt->dwell_enabled) {
+	if (!within_tolerance (mt, event->detail1, event->detail2) &&
+	    !mt->dwell_gesture_started) {
+	    mt->pointer_x = (gint) event->detail1;
+	    mt->pointer_y = (gint) event->detail2;
+	    mt_timer_start (mt->dwell_timer);
+	}
+    }
 
-    if (mt_timer_is_running (mt->delay_timer))
-	if (!within_tolerance (mt, event->detail1, event->detail2))
+    if (mt_timer_is_running (mt->delay_timer)) {
+	if (!within_tolerance (mt, event->detail1, event->detail2)) {
 	    mt_timer_stop (mt->delay_timer);
+	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
+	}
+    }
 }
 
 static void
@@ -242,7 +249,7 @@ spi_button_event (const AccessibleEvent *event, void *data)
 {
     MTClosure *mt = (MTClosure *) data;
 
-    if (g_str_equal (event->type, "mouse:button:b1p")) {
+    if (g_str_equal (event->type, "mouse:button:1p")) {
 	if (mt->delay_enabled) {
 	    gdk_display_get_pointer (gdk_display_get_default (), NULL,
 				     &mt->pointer_x, &mt->pointer_y, NULL);
@@ -252,29 +259,108 @@ spi_button_event (const AccessibleEvent *event, void *data)
 	if (mt->dwell_gesture_started)
 	    dwell_stop_gesture (mt);
     }
-    else if (g_str_equal (event->type, "mouse:button:b1r"))
-	if (mt_timer_is_running (mt->delay_timer))
+    else if (g_str_equal (event->type, "mouse:button:1r")) {
+	if (mt->delay_enabled) {
 	    mt_timer_stop (mt->delay_timer);
+	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
+	}
+    }
 }
 
-static GdkFilterReturn
-cursor_changed (GdkXEvent *xevent, GdkEvent *event, gpointer data)
+static gboolean
+cursor_overlay_time (guchar  *image,
+		     gint     width,
+		     gint     height,
+		     MtTimer *timer,
+		     gdouble  time)
 {
-    XEvent *xev = (XEvent *) xevent;
+    cairo_surface_t *surface;
+    cairo_t *cr;
+    gdouble target;
 
-    if (xev->type == fixes_event_base + XFixesCursorNotify) {
-	MTClosure *mt = (MTClosure *) data;
-	XFixesCursorImage *ci;
+    target = mt_timer_get_target (timer);
 
-	ci = XFixesGetCursorImage (GDK_DISPLAY());
+    surface = cairo_image_surface_create_for_data (image,
+						   CAIRO_FORMAT_ARGB32,
+						   width, height,
+						   width * 4);
+    if (cairo_surface_status (surface) != CAIRO_STATUS_SUCCESS)
+	return FALSE;
 
-	if (!mt->dwell_gesture_started)
-	    mt->override_cursor = !g_str_equal (ci->name, "left_ptr");
+    cr = cairo_create (surface);
+    if (cairo_status (cr) != CAIRO_STATUS_SUCCESS)
+	return FALSE;
 
-	XFree (ci);
+    cairo_set_operator (cr, CAIRO_OPERATOR_ATOP);
+    cairo_rectangle (cr, 0, 0, width, height / (target / time));
+    cairo_set_source_rgba (cr, 0., 0., 0., 0.75);
+    cairo_fill (cr);
+    cairo_destroy (cr);
+    cairo_surface_destroy (surface);
+
+    return TRUE;
+}
+
+void
+mt_update_cursor (MtCursor *cursor, MtTimer *timer, gdouble time)
+{
+    guchar *image;
+    gushort width, height;
+
+    image = mt_cursor_get_image_copy (cursor);
+    if (image == NULL)
+	return;
+
+    mt_cursor_get_dimension (cursor, &width, &height);
+
+    if (cursor_overlay_time (image, width, height, timer, time)) {
+	MtCursorManager *manager;
+	MtCursor *new_cursor;
+	const gchar *name;
+	gushort xhot, yhot;
+
+	name = mt_cursor_get_name (cursor);
+	mt_cursor_get_hotspot (cursor, &xhot, &yhot);
+	new_cursor = mt_cursor_new (name, image, width, height, xhot, yhot);
+	manager = mt_cursor_manager_get_default ();
+	mt_cursor_manager_set_cursor (manager, new_cursor);
+	g_object_unref (new_cursor);
     }
 
-    return GDK_FILTER_CONTINUE;
+    g_free (image);
+}
+
+static void
+delay_timer_tick (MtTimer *timer, gdouble time, gpointer data)
+{
+    MTClosure *mt = (MTClosure *) data;
+
+    if (mt->animate_cursor && mt->cursor != NULL)
+	mt_update_cursor (mt->cursor, timer, time);
+}
+
+static void
+dwell_timer_tick (MtTimer *timer, gdouble time, gpointer data)
+{
+    MTClosure *mt = (MTClosure *) data;
+
+    if (mt->animate_cursor &&
+	mt->cursor != NULL &&
+	mt->dwell_mode == DWELL_MODE_CTW)
+	mt_update_cursor (mt->cursor, timer, time);
+}
+
+static void
+cursor_changed (MtCursorManager *manager,
+		const gchar     *name,
+		gpointer         data)
+{
+    MTClosure *mt = (MTClosure *) data;
+
+    if (!mt->dwell_gesture_started)
+	mt->override_cursor = !g_str_equal (name, "left_ptr");
+
+    mt->cursor = mt_cursor_manager_lookup_cursor (manager, name);
 }
 
 static void
@@ -324,6 +410,17 @@ gconf_value_changed (GConfClient *client,
 	mt->dwell_dirs[DWELL_CLICK_TYPE_DRAG] = gconf_value_get_int (value);
     else if (g_str_equal (key, OPT_G_RIGHT) && value->type == GCONF_VALUE_INT)
 	mt->dwell_dirs[DWELL_CLICK_TYPE_RIGHT] = gconf_value_get_int (value);
+    else if (g_str_equal (key, OPT_ANIMATE) && value->type == GCONF_VALUE_BOOL) {
+	MtCursorManager *manager;
+
+	manager = mt_cursor_manager_get_default ();
+	mt->animate_cursor = gconf_value_get_bool (value);
+
+	if (mt->animate_cursor)
+	    mt->cursor = mt_cursor_manager_current_cursor (manager);
+	else
+	    mt_cursor_manager_restore_all (manager);
+    }
 }
 
 static void
@@ -337,6 +434,7 @@ get_gconf_options (MTClosure *mt)
     mt->dwell_show_ctw = gconf_client_get_bool (mt->client, OPT_CTW, NULL);
     mt->dwell_mode = gconf_client_get_int (mt->client, OPT_MODE, NULL);
     mt->style = gconf_client_get_int (mt->client, OPT_STYLE, NULL);
+    mt->animate_cursor = gconf_client_get_bool (mt->client, OPT_ANIMATE, NULL);
 
     val = gconf_client_get_float (mt->client, OPT_DELAY_T, NULL);
     mt_timer_set_target (mt->delay_timer, val);
@@ -370,11 +468,15 @@ mt_closure_init (void)
 
     mt->delay_timer = mt_timer_new ();
     g_signal_connect (mt->delay_timer, "finished",
-		      G_CALLBACK (delay_time_elapsed), mt);
+		      G_CALLBACK (delay_timer_finished), mt);
+    g_signal_connect (mt->delay_timer, "tick",
+		      G_CALLBACK (delay_timer_tick), mt);
 
     mt->dwell_timer = mt_timer_new ();
     g_signal_connect (mt->dwell_timer, "finished",
-		      G_CALLBACK (dwell_time_elapsed), mt);
+		      G_CALLBACK (dwell_timer_finished), mt);
+    g_signal_connect (mt->dwell_timer, "tick",
+		      G_CALLBACK (dwell_timer_tick), mt);
 
     mt->service = mt_service_get_default ();
     mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);
@@ -397,8 +499,8 @@ int
 main (int argc, char **argv)
 {
     MTClosure *mt;
+    MtCursorManager *manager;
     AccessibleEventListener *bl, *ml;
-    int fixes_error_base;
     pid_t pid;
     gboolean shutdown = FALSE, ctw = FALSE;
     gchar *mode = NULL, *enable = NULL;
@@ -483,17 +585,6 @@ main (int argc, char **argv)
 	    goto FINISH;
 	}
 
-	/* listen for cursor changes */
-	if (XFixesQueryExtension (GDK_DISPLAY(),
-				  &fixes_event_base,
-				  &fixes_error_base)) {
-	    XFixesSelectCursorInput (GDK_DISPLAY(),
-				     GDK_ROOT_WINDOW(),
-				     XFixesDisplayCursorNotifyMask);
-	    gdk_window_add_filter (gdk_get_default_root_window (),
-				   cursor_changed, mt);
-	}
-
 	/* add at-spi listeners */
 	ml = SPI_createAccessibleEventListener (spi_motion_event, (void *) mt);
 	SPI_registerGlobalEventListener (ml, "mouse:abs");
@@ -530,7 +621,16 @@ main (int argc, char **argv)
 	if (!mt_ctw_init (mt, pos_x, pos_y))
 	    goto CLEANUP;
 
+	manager = mt_cursor_manager_get_default ();
+	g_signal_connect (manager, "cursor_changed",
+			  G_CALLBACK (cursor_changed), mt);
+
+	mt->cursor = mt_cursor_manager_current_cursor (manager);
+
 	SPI_event_main ();
+
+	mt_cursor_manager_restore_all (manager);
+	g_object_unref (manager);
     }
 
 CLEANUP:

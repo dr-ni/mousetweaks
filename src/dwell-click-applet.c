@@ -203,7 +203,8 @@ preferences_dialog (BonoboUIComponent *component,
 		    gpointer           data,
 		    const char        *cname)
 {
-    g_spawn_command_line_async ("gnome-mouse-properties", NULL);
+    g_spawn_command_line_async ("gnome-mouse-properties -p accessibility",
+				NULL);
 }
 
 static void

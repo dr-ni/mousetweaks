@@ -1,5 +1,9 @@
 2008-03-29 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/dwell-click-applet.c: Use new 'show-page' option of mouse capplet.
+
+2008-03-29 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/mt-cusor.c/h: Initial commit.
 	* src/mt-cusor-manager.c/h: Initial commit.
 	* src/Makefile.am: Add new cursor files.

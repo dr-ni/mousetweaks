@@ -1,3 +1,8 @@
+2008-03-30 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/Makefile.am: LDFLAGS -> LDADD.
+	Make sure "-Wl,--as-needed" gets a front row seat. Fixes bug #525032.
+
 2008-03-29 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/dwell-click-applet.c: Use new 'show-page' option of mouse capplet.

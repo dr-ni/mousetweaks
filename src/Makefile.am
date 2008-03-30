@@ -31,21 +31,21 @@ mousetweaks_SOURCES =	    \
 	mt-cursor-manager.c \
 	mt-cursor-manager.h
 
-mousetweaks_LDFLAGS = $(DEPENDENCIES_LIBS)
+mousetweaks_LDADD = $(DEPENDENCIES_LIBS)
 
 dwell_click_applet_SOURCES = \
 	dwell-click-applet.c \
 	mt-common.c	     \
 	mt-common.h
 
-dwell_click_applet_LDFLAGS = $(DEPENDENCIES_LIBS)
+dwell_click_applet_LDADD = $(DEPENDENCIES_LIBS)
 
 pointer_capture_applet_SOURCES = \
 	pointer-capture-applet.c \
 	mt-common.c		 \
 	mt-common.h
 
-pointer_capture_applet_LDFLAGS = $(DEPENDENCIES_LIBS)
+pointer_capture_applet_LDADD = $(DEPENDENCIES_LIBS)
 
 BUILT_SOURCES = mt-service-glue.h
 

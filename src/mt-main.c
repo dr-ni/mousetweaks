@@ -210,6 +210,16 @@ dwell_timer_finished (MtTimer *timer, gpointer data)
     }
 }
 
+static gboolean
+right_click_timeout (gpointer data)
+{
+    MTClosure *mt = (MTClosure *) data;
+
+    SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "b3c");
+
+    return FALSE;
+}
+
 static void
 delay_timer_finished (MtTimer *timer, gpointer data)
 {
@@ -218,7 +228,9 @@ delay_timer_finished (MtTimer *timer, gpointer data)
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
     SPI_generateMouseEvent (0, 0, "b1r");
-    SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "b3c");
+    SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "abs");
+
+    g_timeout_add (100, right_click_timeout, data);
 }
 
 /* at-spi callbacks */
@@ -278,8 +290,6 @@ cursor_overlay_time (guchar  *image,
     cairo_t *cr;
     gdouble target;
 
-    target = mt_timer_get_target (timer);
-
     surface = cairo_image_surface_create_for_data (image,
 						   CAIRO_FORMAT_ARGB32,
 						   width, height,
@@ -291,6 +301,7 @@ cursor_overlay_time (guchar  *image,
     if (cairo_status (cr) != CAIRO_STATUS_SUCCESS)
 	return FALSE;
 
+    target = mt_timer_get_target (timer);
     cairo_set_operator (cr, CAIRO_OPERATOR_ATOP);
     cairo_rectangle (cr, 0, 0, width, height / (target / time));
     cairo_set_source_rgba (cr, 0., 0., 0., 0.75);

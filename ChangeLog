@@ -1,3 +1,9 @@
+2008-04-06 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/mt-timer.c: Remove unused variables.
+	* src/mt-main.c: Don't send right-clicks too fast. This helps
+	to avoid running into active pointer grabs. (eg. gnome-panel)
+
 2008-03-30 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/Makefile.am: LDFLAGS -> LDADD.
@@ -23,13 +29,13 @@
 	
 2008-03-28 Gerd Kohlberger <gerdk@svn.gnome.org>
 
-	* mt-main.c: Check gconf value types before using them.
+	* src/mt-main.c: Check gconf value types before using them.
 
 2008-03-28 Gerd Kohlberger <gerdk@svn.gnome.org>
 
-	* mt-timer.c: Add new 'tick' signal. Remove properties.
-	* mt-timer.h: Clean up.
-	* mt-main.c: Use changed function name.
+	* src/mt-timer.c: Add new 'tick' signal. Remove properties.
+	* src/mt-timer.h: Clean up.
+	* src/mt-main.c: Use changed function name.
 
 2008-03-27 Gerd Kohlberger <gerdk@svn.gnome.org>
 

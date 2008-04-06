@@ -185,7 +185,7 @@ mt_timer_is_running (MtTimer *timer)
 {
     g_return_val_if_fail (MT_IS_TIMER (timer), FALSE);
 
-    return (MT_TIMER_GET_PRIVATE (timer)->tid != 0);
+    return MT_TIMER_GET_PRIVATE (timer)->tid != 0;
 }
 
 gdouble
@@ -199,8 +199,6 @@ mt_timer_elapsed (MtTimer *timer)
 gdouble
 mt_timer_get_target (MtTimer *timer)
 {
-    MtTimerPrivate *priv;
-
     g_return_val_if_fail (MT_IS_TIMER (timer), 0.0);
 
     return MT_TIMER_GET_PRIVATE (timer)->target;
@@ -209,8 +207,6 @@ mt_timer_get_target (MtTimer *timer)
 void
 mt_timer_set_target (MtTimer *timer, gdouble time)
 {
-    MtTimerPrivate *priv;
-
     g_return_if_fail (MT_IS_TIMER (timer));
     g_return_if_fail (time >= 0.5);
 

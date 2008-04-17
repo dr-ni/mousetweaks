@@ -139,6 +139,29 @@ analyze_direction (MTClosure *mt, gint x, gint y)
 }
 
 static void
+draw_line (gint x1, gint y1, gint x2, gint y2)
+{
+    GdkScreen *screen;
+    GdkWindow *root;
+    GdkGC *gc;
+
+    screen = gdk_display_get_default_screen (gdk_display_get_default ());
+    root = gdk_screen_get_root_window (screen);
+
+    gc = gdk_gc_new (root);
+    gdk_gc_set_subwindow (gc, GDK_INCLUDE_INFERIORS);
+    gdk_gc_set_function (gc, GDK_INVERT);
+    gdk_gc_set_line_attributes (gc, 1,
+				GDK_LINE_SOLID,
+				GDK_CAP_ROUND,
+				GDK_JOIN_ROUND);
+    gdk_draw_arc (root, gc, TRUE,
+		  x1 - 4, y1 - 4, 8, 8, 0, 23040);
+    gdk_draw_line (root, gc, x1, y1, x2, y2);
+    g_object_unref (gc);
+}
+
+static void
 dwell_start_gesture (MTClosure *mt)
 {
     if (mt->override_cursor) {
@@ -167,6 +190,12 @@ dwell_stop_gesture (MTClosure *mt)
 	gdk_pointer_ungrab (GDK_CURRENT_TIME);
     else
 	mt_cursor_set (GDK_LEFT_PTR);
+
+    if (mt->x_old > -1 && mt->y_old > -1) {
+	draw_line (mt->pointer_x, mt->pointer_y, mt->x_old, mt->y_old);
+	mt->x_old = -1;
+	mt->y_old = -1;
+    }
 
     mt->dwell_gesture_started = FALSE;
     mt_timer_stop (mt->dwell_timer);
@@ -245,6 +274,17 @@ spi_motion_event (const AccessibleEvent *event, void *data)
 	    mt->pointer_x = (gint) event->detail1;
 	    mt->pointer_y = (gint) event->detail2;
 	    mt_timer_start (mt->dwell_timer);
+	}
+
+	if (mt->dwell_gesture_started) {
+	    if (mt->x_old > -1 && mt->y_old > -1)
+		draw_line (mt->pointer_x, mt->pointer_y, mt->x_old, mt->y_old);
+
+	    draw_line (mt->pointer_x, mt->pointer_y,
+		       event->detail1, event->detail2);
+
+	    mt->x_old = event->detail1;
+	    mt->y_old = event->detail2;
 	}
     }
 
@@ -498,6 +538,9 @@ mt_closure_init (void)
 
     mt->service = mt_service_get_default ();
     mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);
+
+    mt->x_old = -1;
+    mt->y_old = -1;
 
     return mt;
 }

@@ -1,5 +1,9 @@
 2008-04-17 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/mt-main.c/h: Add simple line drawing for gesture mode.
+
+2008-04-17 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/mt-main.c:
 	* src/mt-cusor-manager.c:
 	Handle cursor theme changes correctly.

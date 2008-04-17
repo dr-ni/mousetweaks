@@ -1,3 +1,9 @@
+2008-04-17 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/mt-main.c:
+	* src/mt-cusor-manager.c:
+	Handle cursor theme changes correctly.
+
 2008-04-06 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/mt-timer.c: Remove unused variables.

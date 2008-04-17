@@ -39,6 +39,7 @@ struct _MtCursorManagerPrivate {
 
 enum {
     CURSOR_CHANGED,
+    CACHE_CLEARED,
     LAST_SIGNAL
 };
 
@@ -64,6 +65,14 @@ mt_cursor_manager_class_init (MtCursorManagerClass *klass)
 		      0, NULL, NULL,
 		      g_cclosure_marshal_VOID__STRING,
 		      G_TYPE_NONE, 1, G_TYPE_STRING);
+
+    signals[CACHE_CLEARED] =
+	g_signal_new (g_intern_static_string ("cache_cleared"),
+		      G_OBJECT_CLASS_TYPE (klass),
+		      G_SIGNAL_RUN_LAST,
+		      0, NULL, NULL,
+		      g_cclosure_marshal_VOID__VOID,
+		      G_TYPE_NONE, 0);
 
     g_type_class_add_private (klass, sizeof (MtCursorManagerPrivate));
 }
@@ -189,11 +198,13 @@ xfixes_filter (GdkXEvent *xevent, GdkEvent *event, gpointer data)
     return GDK_FILTER_CONTINUE;
 }
 
+static void
 _clear_cursor_cache (GObject    *settings,
 		     GParamSpec *pspec,
 		     gpointer    data)
 {
     mt_cursor_manager_clear_cache (data);
+    g_signal_emit (data, signals[CACHE_CLEARED], 0);
 }
 
 static MtCursorManager *
@@ -249,7 +260,6 @@ mt_cursor_manager_clear_cache (MtCursorManager *manager)
 MtCursor *
 mt_cursor_manager_current_cursor (MtCursorManager *manager)
 {
-    MtCursorManagerPrivate *priv;
     XFixesCursorImage *image;
     MtCursor *cursor;
 

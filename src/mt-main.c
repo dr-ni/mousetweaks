@@ -355,10 +355,17 @@ dwell_timer_tick (MtTimer *timer, gdouble time, gpointer data)
 {
     MTClosure *mt = (MTClosure *) data;
 
-    if (mt->animate_cursor &&
-	mt->cursor != NULL &&
-	mt->dwell_mode == DWELL_MODE_CTW)
+    if (mt->animate_cursor && mt->cursor != NULL)
 	mt_update_cursor (mt->cursor, timer, time);
+}
+
+static void
+cursor_cache_cleared (MtCursorManager *manager,
+		      gpointer         data)
+{
+    MTClosure *mt = (MTClosure *) data;
+
+    mt->cursor = mt_cursor_manager_current_cursor (manager);
 }
 
 static void
@@ -635,6 +642,8 @@ main (int argc, char **argv)
 	manager = mt_cursor_manager_get_default ();
 	g_signal_connect (manager, "cursor_changed",
 			  G_CALLBACK (cursor_changed), mt);
+	g_signal_connect (manager, "cache_cleared",
+			  G_CALLBACK (cursor_cache_cleared), mt);
 
 	mt->cursor = mt_cursor_manager_current_cursor (manager);
 

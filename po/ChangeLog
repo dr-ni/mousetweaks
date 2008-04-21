@@ -1,3 +1,7 @@
+2008-04-13  Matej Urbančič  <mateju@svn.gnome.org>
+
+	* sl.po: Updated Slovenian translation.
+
 2008-04-12  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
@@ -139,6 +143,10 @@
 
 	* ca.po: Updated Catalan translation.
 
+2008-02-17  Matej Urbančič  <mateju@svn.gnome.org>
+
+	* sl.po: Updated Slovenian translation.
+
 2008-02-16  Luca Ferretti  <elle.uca@libero.it>
 
 	* it.po: Updated Italian translation.
@@ -202,8 +210,12 @@
 	* LINGUAS: Added Portuguese (pt) to list.
 
 2008-01-26  Matej Urbančič  <mateju@svn.gnome.org>
+
+	* sl.po: Updated Slovenian translation.
+
+2008-01-26  Matej Urbančič  <mateju@svn.gnome.org>
 	* LINGUAS: Added sl.
-	* ja.po: Added Slovenian translation.
+	* sl.po: Added Slovenian translation.
 
 2008-01-25  Inaki Larranaga Murgoitio  <dooteo@euskalgnu.org>
 

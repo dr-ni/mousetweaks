@@ -1,3 +1,8 @@
+2008-04-21 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* NEWS: Prepare 2.23.1 release and remove pre-GNOME news.
+	* po/ChangeLog: Add some missing entries.
+
 2008-04-17 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/mt-main.c/h: Add simple line drawing for gesture mode.

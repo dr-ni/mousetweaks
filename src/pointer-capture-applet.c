@@ -70,9 +70,9 @@ show_help (void)
 				     "mousetweaks",
 				     NULL,
 				     &error)) {
-	mt_show_dialog (_("Couldn't display help"),
-			error->message,
-			GTK_MESSAGE_ERROR);
+	mt_common_show_dialog (_("Couldn't display help"),
+			       error->message,
+			       MT_MESSAGE_WARNING);
 	g_error_free (error);
     }
 }

@@ -45,6 +45,8 @@ G_BEGIN_DECLS
 #define OPT_STYLE     MT_GCONF_HOME "/button_layout"
 #define OPT_ANIMATE   MT_GCONF_HOME "/animate_cursor"
 
+#define GNOME_A11Y_KEY "/desktop/gnome/interface/accessibility"
+
 enum {
     DWELL_MODE_CTW = 0,
     DWELL_MODE_GESTURE
@@ -66,9 +68,16 @@ enum {
     DIRECTION_DISABLE
 };
 
-gint mt_show_dialog (const gchar   *primary,
-		     const gchar   *secondary,
-		     GtkMessageType type);
+typedef enum {
+    MT_MESSAGE_ERROR = 0,
+    MT_MESSAGE_WARNING,
+    MT_MESSAGE_QUESTION,
+    MT_MESSAGE_LOGOUT
+} MtMessageType;
+
+gint mt_common_show_dialog (const gchar   *primary,
+			    const gchar   *secondary,
+			    MtMessageType  type);
 
 G_END_DECLS
 

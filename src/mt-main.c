@@ -27,6 +27,10 @@
 #include <gdk/gdkx.h>
 #include <cspi/spi.h>
 
+#include <libgnome/gnome-program.h>
+#include <libgnomeui/gnome-ui-init.h>
+#include <libgnomeui/gnome-client.h>
+
 #include "mt-common.h"
 #include "mt-service.h"
 #include "mt-pidfile.h"
@@ -338,8 +342,10 @@ cursor_overlay_time (guchar  *image,
 	return FALSE;
 
     cr = cairo_create (surface);
-    if (cairo_status (cr) != CAIRO_STATUS_SUCCESS)
+    if (cairo_status (cr) != CAIRO_STATUS_SUCCESS) {
+	cairo_surface_destroy (surface);
 	return FALSE;
+    }
 
     target = mt_timer_get_target (timer);
     cairo_set_operator (cr, CAIRO_OPERATOR_ATOP);
@@ -509,6 +515,36 @@ get_gconf_options (MTClosure *mt)
 	gconf_client_get_int (mt->client, OPT_G_RIGHT, NULL);
 }
 
+static gboolean
+accessibility_enabled (MTClosure *mt,
+		       gint       spi_status)
+{
+    gboolean a11y;
+
+    a11y = gconf_client_get_bool (mt->client, GNOME_A11Y_KEY, NULL);
+    if (!a11y || spi_status != 0) {
+	gint ret;
+
+	ret = mt_common_show_dialog
+	    (_("Assistive Technology Support Is Not Enabled"),
+	     _("To enable support for assistive technologies "
+	       "and log in to a new session with the change enabled, click:"
+	       "\n\n"
+	       "\"Enable and Log Out\""),
+	     MT_MESSAGE_LOGOUT);
+	if (ret == GTK_RESPONSE_ACCEPT) {
+	    GnomeClient *session;
+
+	    gconf_client_set_bool (mt->client, GNOME_A11Y_KEY, TRUE, NULL);
+	    if ((session = gnome_master_client ()))
+		gnome_client_request_save (session, GNOME_SAVE_GLOBAL, TRUE,
+					   GNOME_INTERACT_ANY, FALSE, TRUE);
+	}
+	return FALSE;
+    }
+    return TRUE;
+}
+
 static MTClosure *
 mt_closure_init (void)
 {
@@ -559,13 +595,11 @@ mt_closure_free (MTClosure *mt)
 int
 main (int argc, char **argv)
 {
-    MTClosure *mt;
-    MtCursorManager *manager;
-    AccessibleEventListener *bl, *ml;
     pid_t pid;
     gboolean shutdown = FALSE, ctw = FALSE;
     gchar *mode = NULL, *enable = NULL;
     gint pos_x = -1, pos_y = -1;
+    GnomeProgram *program;
     GOptionContext *context;
     GOptionEntry entries[] = {
 	{"enable", 'e', 0, G_OPTION_ARG_STRING, &enable,
@@ -589,9 +623,11 @@ main (int argc, char **argv)
 
     context = g_option_context_new (_("- GNOME mousetweaks daemon"));
     g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
-    g_option_context_add_group (context, gtk_get_option_group (FALSE));
-    g_option_context_parse (context, &argc, &argv, NULL);
-    g_option_context_free (context);
+    program = gnome_program_init (PACKAGE, VERSION, LIBGNOMEUI_MODULE,
+				  argc, argv,
+				  GNOME_PARAM_GOPTION_CONTEXT, context,
+				  GNOME_PARAM_NONE);
+    g_set_application_name ("Mousetweaks");
 
     if (shutdown) {
 	int ret;
@@ -601,11 +637,13 @@ main (int argc, char **argv)
 	else
 	    g_print ("Shutdown successful.\n");
 
+	g_object_unref (program);
 	return ret < 0 ? 1 : 0;
     }
 
-    if ((pid = mt_pidfile_is_running()) >= 0) {
+    if ((pid = mt_pidfile_is_running ()) >= 0) {
 	g_print ("Daemon is already running. (PID %u)\n", pid);
+	g_object_unref (program);
 	return 1;
     }
 
@@ -613,12 +651,20 @@ main (int argc, char **argv)
 
     if ((pid = fork ()) < 0) {
 	g_print ("Fork failed.\n");
+	g_object_unref (program);
 	return 1;
     }
     else if (pid) {
+	/* Parent return */
 	return 0;
     }
     else {
+	/* Child process */
+	MTClosure *mt;
+	MtCursorManager *manager;
+	AccessibleEventListener *bl, *ml;
+	gint spi_status;
+
 	if (mt_pidfile_create () < 0)
 	    goto FINISH;
 
@@ -627,21 +673,15 @@ main (int argc, char **argv)
 	signal (SIGQUIT, signal_handler);
 	signal (SIGHUP, signal_handler);
 
-	gtk_init (&argc, &argv);
-
 	mt = mt_closure_init ();
 	if (!mt)
 	    goto FINISH;
 
-	if (SPI_init () != 0) {
-	    mt_show_dialog (_("Assistive Technologies not enabled"),
-			    _("Mousetweaks requires Assistive Technologies."),
-			    GTK_MESSAGE_ERROR);
-
-	    /* make sure we leave in a clean state */
+	spi_status = SPI_init ();
+	if (!accessibility_enabled (mt, spi_status)) {
+	    /* disable options again */
 	    gconf_client_set_bool (mt->client, OPT_DELAY, FALSE, NULL);
 	    gconf_client_set_bool (mt->client, OPT_DWELL, FALSE, NULL);
-
 	    mt_closure_free (mt);
 	    goto FINISH;
 	}
@@ -694,18 +734,17 @@ main (int argc, char **argv)
 
 	mt_cursor_manager_restore_all (manager);
 	g_object_unref (manager);
+
+	CLEANUP:
+	    SPI_deregisterGlobalEventListenerAll (bl);
+	    AccessibleDeviceListener_unref (bl);
+	    SPI_deregisterGlobalEventListenerAll (ml);
+	    AccessibleEventListener_unref (ml);
+	    SPI_exit ();
+	    mt_closure_free (mt);
+	FINISH:
+	    mt_pidfile_remove ();
+	    g_object_unref (program);
     }
-
-CLEANUP:
-    SPI_deregisterGlobalEventListenerAll (bl);
-    AccessibleDeviceListener_unref (bl);
-    SPI_deregisterGlobalEventListenerAll (ml);
-    AccessibleEventListener_unref (ml);
-    SPI_exit ();
-    mt_closure_free (mt);
-
-FINISH:
-    mt_pidfile_remove ();
-
     return 0;
 }

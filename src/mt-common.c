@@ -22,34 +22,48 @@
 #include "mt-common.h"
 
 gint
-mt_show_dialog (const gchar *primary,
-		const gchar *secondary,
-		GtkMessageType type)
+mt_common_show_dialog (const gchar  *primary,
+		       const gchar  *secondary,
+		       MtMessageType type)
 {
     GtkWidget *dialog;
     gint ret;
 
-    dialog = gtk_message_dialog_new (NULL,
-				     GTK_DIALOG_MODAL,
-				     type,
-				     GTK_BUTTONS_NONE,
-				     primary);
-    gtk_window_set_title (GTK_WINDOW(dialog), "Mousetweaks");
-    gtk_window_set_icon_name (GTK_WINDOW(dialog), MT_ICON_NAME);
-    gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG(dialog),
+    dialog = gtk_message_dialog_new (NULL, 0, GTK_MESSAGE_ERROR,
+				     GTK_BUTTONS_NONE, primary);
+    gtk_window_set_title (GTK_WINDOW (dialog), g_get_application_name ());
+    gtk_window_set_icon_name (GTK_WINDOW (dialog), MT_ICON_NAME);
+    gtk_window_set_keep_above (GTK_WINDOW (dialog), TRUE);
+    gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
 					      secondary);
-
-    if (type == GTK_MESSAGE_QUESTION)
-	gtk_dialog_add_buttons (GTK_DIALOG(dialog),
+    switch (type) {
+    case MT_MESSAGE_QUESTION:
+	g_object_set (dialog, "message-type", GTK_MESSAGE_QUESTION, NULL);
+	gtk_dialog_add_buttons (GTK_DIALOG (dialog),
 				GTK_STOCK_YES, GTK_RESPONSE_YES,
 				GTK_STOCK_NO, GTK_RESPONSE_NO,
 				NULL);
-    else
-	gtk_dialog_add_button (GTK_DIALOG(dialog),
+	break;
+    case MT_MESSAGE_WARNING:
+	g_object_set (dialog, "message-type", GTK_MESSAGE_WARNING, NULL);
+	gtk_dialog_add_button (GTK_DIALOG (dialog),
 			       GTK_STOCK_OK, GTK_RESPONSE_OK);
+	break;
+    case MT_MESSAGE_LOGOUT:
+	gtk_dialog_add_buttons (GTK_DIALOG (dialog),
+				_("Enable and Log Out"), GTK_RESPONSE_ACCEPT,
+				GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
+				NULL);
+	gtk_dialog_set_default_response (GTK_DIALOG (dialog),
+					 GTK_RESPONSE_ACCEPT);
+	break;
+    case MT_MESSAGE_ERROR:
+    default:
+	gtk_dialog_add_button (GTK_DIALOG (dialog),
+			       GTK_STOCK_OK, GTK_RESPONSE_OK);
+    }
 
-    gtk_widget_show_all (dialog);
-    ret = gtk_dialog_run (GTK_DIALOG(dialog));
+    ret = gtk_dialog_run (GTK_DIALOG (dialog));
     gtk_widget_destroy (dialog);
 
     return ret;

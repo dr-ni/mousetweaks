@@ -1,3 +1,16 @@
+2008-05-08 Gerd Kohlberger <gerdk@svn.gnome.org>
+	* src/mt-common.c:
+	* src/mt-common.h:
+	Add more dialog types.
+	
+	* src/pointer-capture-applet.c:
+	* src/dwell-click-applet.c:
+	Switch to new dialog function.
+
+	* src/mt-main.c:
+	Improve the Assistive Technology warning dialog and add an
+	'Enable and Log Out' button, similar to GOK. (Bug #531693)
+
 2008-04-21 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* configure.ac:

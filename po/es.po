@@ -7,12 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-29 20:33+0000\n"
-"PO-Revision-Date: 2008-04-12 21:23+0200\n"
+"POT-Creation-Date: 2008-05-08 06:41+0000\n"
+"PO-Revision-Date: 2008-05-09 08:12+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type:  text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
@@ -22,7 +22,8 @@ msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of Mousetweaks"
 msgstr ""
-"Miniaplicación para seleccionar los diferentes tipos de pulsación al posarse.\n"
+"Miniaplicación para seleccionar los diferentes tipos de pulsación al "
+"posarse.\n"
 "Parte de los Ajustes finos del ratón."
 
 #: ../data/dwell-click-applet.glade.h:3
@@ -146,32 +147,43 @@ msgid "Button style"
 msgstr "Estilo de botón"
 
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
-msgstr "Estilo del botón en el tipo de ventana de pulsación (\"0\" = texto, \"1\" = icono, \"2\" = ambos)"
+msgid ""
+"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgstr ""
+"Estilo del botón en el tipo de ventana de pulsación (\"0\" = texto, \"1\" = "
+"icono, \"2\" = ambos)"
 
 #: ../data/mousetweaks.schemas.in.h:4
 msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
-msgstr "Dirección para realizar una pulsación doble (\"0\" = izquierda, \"1\" = derecha, \"2\" = arriba, \"3\" = abajo)"
+msgstr ""
+"Dirección para realizar una pulsación doble (\"0\" = izquierda, \"1\" = "
+"derecha, \"2\" = arriba, \"3\" = abajo)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
-msgstr "Dirección para realizar una pulsación de arrastre (\"0\" = izquierda, \"1\" = derecha, \"2\" = arriba, \"3\" = abajo)"
+msgstr ""
+"Dirección para realizar una pulsación de arrastre (\"0\" = izquierda, \"1\" "
+"= derecha, \"2\" = arriba, \"3\" = abajo)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
-msgstr "Dirección para realizar una pulsación secundaria (\"0\" = izquierda, \"1\" = derecha, \"2\"= arriba, \"3\" = abajo)"
+msgstr ""
+"Dirección para realizar una pulsación secundaria (\"0\" = izquierda, \"1\" = "
+"derecha, \"2\"= arriba, \"3\" = abajo)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
-msgstr "Dirección para realizar una pulsación sencilla (\"0\" = izquierda, \"1\" = derecha, \"2\" = arriba, \"3\" = abajo)"
+msgstr ""
+"Dirección para realizar una pulsación sencilla (\"0\" = izquierda, \"1\" = "
+"derecha, \"2\" = arriba, \"3\" = abajo)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
@@ -183,7 +195,8 @@ msgstr "Modo pulsación al posarse"
 
 #: ../data/mousetweaks.schemas.in.h:10
 msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Modo de pulsación al posarse (\"0\" = modo gesto, \"1\" = modo ventana)"
+msgstr ""
+"Modo de pulsación al posarse (\"0\" = modo gesto, \"1\" = modo ventana)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -225,7 +238,7 @@ msgstr "Umbral de movimiento"
 msgid "Secondary click time"
 msgstr "Tiempo de la pulsación secundaria"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:515
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:610
 msgid "Show click type window"
 msgstr "Mostrar la ventana de tipo de pulsación"
 
@@ -297,39 +310,47 @@ msgstr "Tamaño del área de captura"
 msgid "Width of the capture area in pixels"
 msgstr "Ancho del área de captura en píxeles"
 
-#: ../src/mt-main.c:511
+#: ../src/mt-main.c:529
+msgid "Assistive Technology Support Is Not Enabled"
+msgstr "El soporte para tecnologías de asistencia no está activado"
+
+#: ../src/mt-main.c:530
+msgid ""
+"To enable support for assistive technologies and log in to a new session "
+"with the change enabled, click:\n"
+"\n"
+"\"Enable and Log Out\""
+msgstr ""
+"Para activar el soporte para las tecnologías de asistencia e iniciar una "
+"nueva sesión con el cambio activado, pulse:\n"
+"\n"
+"«Activar y salir de la sesión»"
+
+#: ../src/mt-main.c:606
 msgid "Enable mousetweaks feature"
 msgstr "Activar las características de ajustado fino del ratón"
 
-#: ../src/mt-main.c:513
+#: ../src/mt-main.c:608
 msgid "Use dwell mode"
 msgstr "Usar modo al posarse"
 
-#: ../src/mt-main.c:517
+#: ../src/mt-main.c:612
 msgid "Window x position"
 msgstr "Posición x de la ventana"
 
-#: ../src/mt-main.c:519
+#: ../src/mt-main.c:614
 msgid "Window y position"
 msgstr "Ventana y posición"
 
-#: ../src/mt-main.c:521
+#: ../src/mt-main.c:616
 msgid "Shut down mousetweaks"
 msgstr "Apagar los ajustes finos del ratón"
 
-#: ../src/mt-main.c:529
+#: ../src/mt-main.c:624
 msgid "- GNOME mousetweaks daemon"
 msgstr " - Demonio de los ajustes finos del ratón de GNOME"
 
-#: ../src/mt-main.c:576
-msgid "Assistive Technologies not enabled"
-msgstr "Las tecnologías de asistencia no están activadas"
-
-#: ../src/mt-main.c:577
-msgid "Mousetweaks requires Assistive Technologies."
-msgstr "Los ajustes finos del ratón requieren las tecnologías de asistencia."
-
-#: ../src/pointer-capture-applet.c:73 ../src/dwell-click-applet.c:219
+#: ../src/pointer-capture-applet.c:73 ../src/dwell-click-applet.c:220
 msgid "Couldn't display help"
 msgstr "No se pudo mostrar la ayuda"
 
@@ -354,7 +375,10 @@ msgstr "Capturar área"
 msgid "Temporarily lock the mouse pointer"
 msgstr "Bloquear temporalmente el puntero del ratón"
 
-#: ../src/dwell-click-applet.c:415
+#: ../src/dwell-click-applet.c:416
 msgid "Dwell Click Applet"
 msgstr "Miniaplicación Pulsación al posarse"
 
+#~ msgid "Mousetweaks requires Assistive Technologies."
+#~ msgstr ""
+#~ "Los ajustes finos del ratón requieren las tecnologías de asistencia."

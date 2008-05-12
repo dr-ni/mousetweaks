@@ -9,5 +9,6 @@ data/mousetweaks.schemas.in
 data/pointer-capture-applet.schemas.in
 src/mt-main.c
 src/mt-ctw.c
+src/mt-common.c
 src/pointer-capture-applet.c
 src/dwell-click-applet.c

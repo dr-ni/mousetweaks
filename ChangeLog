@@ -1,5 +1,9 @@
 2008-05-12 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* po/POTFILES.in: Add mt-common.c
+
+2008-05-12 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/mt-main.c:
 	Initialize GnomeProgram in child process.
 	Add more info to the a11y warning dialog.

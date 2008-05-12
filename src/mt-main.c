@@ -527,10 +527,11 @@ accessibility_enabled (MTClosure *mt,
 
 	ret = mt_common_show_dialog
 	    (_("Assistive Technology Support Is Not Enabled"),
-	     _("To enable support for assistive technologies "
-	       "and log in to a new session with the change enabled, click:"
+	     _("Mousetweaks requires assistive technologies to be enabled "
+	       "in your session."
 	       "\n\n"
-	       "\"Enable and Log Out\""),
+	       "To enable support for assistive technologies and restart "
+	       "your session, press \"Enable and Log Out\"."),
 	     MT_MESSAGE_LOGOUT);
 	if (ret == GTK_RESPONSE_ACCEPT) {
 	    GnomeClient *session;
@@ -599,7 +600,6 @@ main (int argc, char **argv)
     gboolean shutdown = FALSE, ctw = FALSE;
     gchar *mode = NULL, *enable = NULL;
     gint pos_x = -1, pos_y = -1;
-    GnomeProgram *program;
     GOptionContext *context;
     GOptionEntry entries[] = {
 	{"enable", 'e', 0, G_OPTION_ARG_STRING, &enable,
@@ -623,11 +623,8 @@ main (int argc, char **argv)
 
     context = g_option_context_new (_("- GNOME mousetweaks daemon"));
     g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
-    program = gnome_program_init (PACKAGE, VERSION, LIBGNOMEUI_MODULE,
-				  argc, argv,
-				  GNOME_PARAM_GOPTION_CONTEXT, context,
-				  GNOME_PARAM_NONE);
-    g_set_application_name ("Mousetweaks");
+    g_option_context_parse (context, &argc, &argv, NULL);
+    g_option_context_free (context);
 
     if (shutdown) {
 	int ret;
@@ -637,13 +634,11 @@ main (int argc, char **argv)
 	else
 	    g_print ("Shutdown successful.\n");
 
-	g_object_unref (program);
 	return ret < 0 ? 1 : 0;
     }
 
     if ((pid = mt_pidfile_is_running ()) >= 0) {
 	g_print ("Daemon is already running. (PID %u)\n", pid);
-	g_object_unref (program);
 	return 1;
     }
 
@@ -651,7 +646,6 @@ main (int argc, char **argv)
 
     if ((pid = fork ()) < 0) {
 	g_print ("Fork failed.\n");
-	g_object_unref (program);
 	return 1;
     }
     else if (pid) {
@@ -660,18 +654,23 @@ main (int argc, char **argv)
     }
     else {
 	/* Child process */
+	GnomeProgram *program;
 	MTClosure *mt;
 	MtCursorManager *manager;
 	AccessibleEventListener *bl, *ml;
 	gint spi_status;
 
 	if (mt_pidfile_create () < 0)
-	    goto FINISH;
+	    return 1;
 
 	signal (SIGINT, signal_handler);
 	signal (SIGTERM, signal_handler);
 	signal (SIGQUIT, signal_handler);
 	signal (SIGHUP, signal_handler);
+
+	g_set_application_name ("Mousetweaks");
+	program = gnome_program_init (PACKAGE, VERSION, LIBGNOMEUI_MODULE,
+				      argc, argv, GNOME_PARAM_NONE);
 
 	mt = mt_closure_init ();
 	if (!mt)
@@ -703,6 +702,7 @@ main (int argc, char **argv)
 		gconf_client_set_bool (mt->client, OPT_DWELL, FALSE, NULL);
 		gconf_client_set_bool (mt->client, OPT_DELAY, TRUE, NULL);
 	    }
+	    g_free (enable);
 	}
 
 	if (ctw)
@@ -715,6 +715,7 @@ main (int argc, char **argv)
 	    else if (g_str_equal (mode, "window"))
 		gconf_client_set_int (mt->client, OPT_MODE,
 				      DWELL_MODE_CTW, NULL);
+	    g_free (mode);
 	}
 
 	get_gconf_options (mt);

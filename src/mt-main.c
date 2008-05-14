@@ -541,6 +541,11 @@ accessibility_enabled (MTClosure *mt,
 		gnome_client_request_save (session, GNOME_SAVE_GLOBAL, TRUE,
 					   GNOME_INTERACT_ANY, FALSE, TRUE);
 	}
+	else {
+	    /* reset the selected option again */
+	    gconf_client_set_bool (mt->client, OPT_DELAY, FALSE, NULL);
+	    gconf_client_set_bool (mt->client, OPT_DWELL, FALSE, NULL);
+	}
 	return FALSE;
     }
     return TRUE;
@@ -596,25 +601,43 @@ mt_closure_free (MTClosure *mt)
 int
 main (int argc, char **argv)
 {
-    pid_t pid;
-    gboolean shutdown = FALSE, ctw = FALSE;
-    gchar *mode = NULL, *enable = NULL;
-    gint pos_x = -1, pos_y = -1;
+    pid_t    pid;
+    gboolean delay_click = FALSE;
+    gboolean dwell_click = FALSE;
+    gdouble  delay_time  = -1.;
+    gdouble  dwell_time  = -1.;
+    gboolean shutdown    = FALSE;
+    gboolean ctw         = FALSE;
+    gboolean animate     = FALSE;
+    gchar   *mode        = NULL;
+    gint     pos_x       = -1;
+    gint     pos_y       = -1;
+    gint     threshold   = -1;
     GOptionContext *context;
     GOptionEntry entries[] = {
-	{"enable", 'e', 0, G_OPTION_ARG_STRING, &enable,
-	    _("Enable mousetweaks feature"), "(dwell|delay)"},
+	{"enable-dwell", 0, 0, G_OPTION_ARG_NONE, &dwell_click,
+	    _("Enable dwell click"), 0},
+	{"enable-seconadry", 0, 0, G_OPTION_ARG_NONE, &delay_click,
+	    _("Enable simualted secondary click"), 0},
+	{"dwell-time", 0, 0, G_OPTION_ARG_DOUBLE, &dwell_time,
+	    _("Dwell click time"), "[0.5-3.0]"},
+	{"seconadry-time", 0, 0, G_OPTION_ARG_DOUBLE, &delay_time,
+	    _("Simualted secondary click time"), "[0.5-3.0]"},
 	{"dwell-mode", 'm', 0, G_OPTION_ARG_STRING, &mode,
-	    _("Use dwell mode"), "(window|gesture)"},
+	    _("Dwell mode to use"), "[window|gesture]"},
 	{"show-ctw", 'c', 0, G_OPTION_ARG_NONE, &ctw,
 	    _("Show click type window"), 0},
 	{"ctw-x", 'x', 0, G_OPTION_ARG_INT, &pos_x,
 	    _("Window x position"), 0},
 	{"ctw-y", 'y', 0, G_OPTION_ARG_INT, &pos_y,
 	    _("Window y position"), 0},
+	{"threshold", 't', 0, G_OPTION_ARG_INT, &threshold,
+	    _("Ignore small pointer movements"), "[0-30]"},
+	{"animate-cursor", 'a', 0, G_OPTION_ARG_NONE, &animate,
+	    _("Show elapsed time as cursor overlay"), 0},
 	{"shutdown", 's', 0, G_OPTION_ARG_NONE, &shutdown,
 	    _("Shut down mousetweaks"), 0},
-	{NULL}
+	{ NULL }
     };
 
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
@@ -636,12 +659,10 @@ main (int argc, char **argv)
 
 	return ret < 0 ? 1 : 0;
     }
-
     if ((pid = mt_pidfile_is_running ()) >= 0) {
 	g_print ("Daemon is already running. (PID %u)\n", pid);
 	return 1;
     }
-
     g_print ("Starting daemon.\n");
 
     if ((pid = fork ()) < 0) {
@@ -678,9 +699,6 @@ main (int argc, char **argv)
 
 	spi_status = SPI_init ();
 	if (!accessibility_enabled (mt, spi_status)) {
-	    /* disable options again */
-	    gconf_client_set_bool (mt->client, OPT_DELAY, FALSE, NULL);
-	    gconf_client_set_bool (mt->client, OPT_DWELL, FALSE, NULL);
 	    mt_closure_free (mt);
 	    goto FINISH;
 	}
@@ -693,21 +711,20 @@ main (int argc, char **argv)
 	SPI_registerGlobalEventListener (bl, "mouse:button:1r");
 
 	/* command-line options */
-	if (enable) {
-	    if (g_str_equal (enable, "dwell")) {
-		gconf_client_set_bool (mt->client, OPT_DELAY, FALSE, NULL);
-		gconf_client_set_bool (mt->client, OPT_DWELL, TRUE, NULL);
-	    }
-	    if (g_str_equal (enable, "delay")) {
-		gconf_client_set_bool (mt->client, OPT_DWELL, FALSE, NULL);
-		gconf_client_set_bool (mt->client, OPT_DELAY, TRUE, NULL);
-	    }
-	    g_free (enable);
-	}
-
+	if (dwell_click)
+	    gconf_client_set_bool (mt->client, OPT_DWELL, TRUE, NULL);
+	if (delay_click)
+	    gconf_client_set_bool (mt->client, OPT_DELAY, TRUE, NULL);
+	if (delay_time >= .5 && delay_time <= 3.)
+	    gconf_client_set_float (mt->client, OPT_DELAY_T, delay_time, NULL);
+	if (dwell_time >= .5 && dwell_time <= 3.)
+	    gconf_client_set_float (mt->client, OPT_DWELL_T, dwell_time, NULL);
+	if (threshold >= 0 && threshold <= 30)
+	    gconf_client_set_int (mt->client, OPT_THRESHOLD, threshold, NULL);
 	if (ctw)
 	    gconf_client_set_bool (mt->client, OPT_CTW, TRUE, NULL);
-
+	if (animate)
+	    gconf_client_set_bool (mt->client, OPT_ANIMATE, TRUE, NULL);
 	if (mode) {
 	    if (g_str_equal (mode, "gesture"))
 		gconf_client_set_int (mt->client, OPT_MODE,

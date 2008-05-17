@@ -33,10 +33,10 @@ struct _DwellData {
     GtkWidget   *button;
     GdkPixbuf   *click[4];
 
-    gint button_width;
-    gint button_height;
-    gint cct;
-    gint active;
+    gint         button_width;
+    gint         button_height;
+    gint         cct;
+    gboolean     active;
 };
 
 static const gchar *img_widgets[] = {
@@ -84,7 +84,7 @@ do_not_eat (GtkWidget *widget, GdkEventButton *bev, gpointer user)
 static void
 button_cb (GtkToggleButton *button, gpointer data)
 {
-    DwellData *dd = (DwellData *) data;
+    DwellData *dd = data;
 
     if (gtk_toggle_button_get_active (button)) {
 	GSList *group;
@@ -100,7 +100,7 @@ button_cb (GtkToggleButton *button, gpointer data)
 static void
 box_size_allocate (GtkWidget *widget, GtkAllocation *alloc, gpointer data)
 {
-    DwellData *dd = (DwellData *) data;
+    DwellData *dd = data;
     GtkWidget *w;
     GdkPixbuf *tmp;
     const gchar *name;
@@ -183,7 +183,7 @@ applet_orient_changed (PanelApplet *applet, guint orient, gpointer data)
 static void
 applet_unrealized (GtkWidget *widget, gpointer data)
 {
-    DwellData *dd = (DwellData *) data;
+    DwellData *dd = data;
     gint i;
 
     for (i = 0; i < N_CLICK_TYPES; i++)
@@ -336,6 +336,10 @@ clicktype_changed (DBusGProxy *proxy,
     GtkToggleButton *button;
     GSList *group;
 
+    if (clicktype >= N_CLICK_TYPES)
+	return;
+
+    dd->cct = clicktype;
     group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dd->button));
     button = GTK_TOGGLE_BUTTON (g_slist_nth_data (group, clicktype));
 
@@ -349,7 +353,7 @@ status_changed (DBusGProxy *proxy,
 		gboolean    status,
 		gpointer    data)
 {
-    DwellData *dd = (DwellData *) data;
+    DwellData *dd = data;
 
     dd->active = status;
     update_sensitivity (dd);
@@ -386,6 +390,29 @@ setup_dbus_proxy (DwellData *dd)
     return TRUE;
 }
 
+static gboolean
+mousetweaks_is_active (void)
+{
+    DBusGConnection *bus;
+    DBusGProxy *proxy;
+    gboolean result = FALSE;
+
+    bus = dbus_g_bus_get (DBUS_BUS_SESSION, NULL);
+    if (bus) {
+	proxy = dbus_g_proxy_new_for_name (bus,
+					   DBUS_SERVICE_DBUS,
+					   DBUS_PATH_DBUS,
+					   DBUS_INTERFACE_DBUS);
+	dbus_g_proxy_call (proxy, "NameHasOwner", NULL,
+			   G_TYPE_STRING, "org.gnome.Mousetweaks",
+			   G_TYPE_INVALID,
+			   G_TYPE_BOOLEAN, &result,
+			   G_TYPE_INVALID);
+	g_object_unref (proxy);
+    }
+    return result;
+}
+
 static void
 gconf_value_changed (GConfClient *client,
 		     const gchar *key,
@@ -393,7 +420,7 @@ gconf_value_changed (GConfClient *client,
 		     gpointer data)
 {
     if (g_str_equal (key, OPT_MODE) || g_str_equal (key, OPT_DWELL))
-	update_sensitivity ((DwellData *) data);
+	update_sensitivity (data);
 }
 
 static gboolean
@@ -406,8 +433,6 @@ fill_applet (PanelApplet *applet)
     dd = g_slice_new0 (DwellData);
     if (!dd)
 	return FALSE;
-
-    dd->cct = DWELL_CLICK_TYPE_SINGLE;
 
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
@@ -422,12 +447,17 @@ fill_applet (PanelApplet *applet)
 	return FALSE;
     }
 
+    /* dbus */
     if (!setup_dbus_proxy (dd)) {
 	g_object_unref (dd->xml);
 	g_slice_free (DwellData, dd);
 	return FALSE;
     }
 
+    dd->active = mousetweaks_is_active ();
+    dd->cct = DWELL_CLICK_TYPE_SINGLE;
+
+    /* about dialog */
     about = glade_xml_get_widget (dd->xml, "about");
     g_object_set (about, "version", VERSION, NULL);
     g_signal_connect (about, "delete-event",
@@ -435,12 +465,14 @@ fill_applet (PanelApplet *applet)
     g_signal_connect (about, "response",
 		      G_CALLBACK (about_response), dd);
 
+    /* gconf */
     dd->client = gconf_client_get_default ();
     gconf_client_add_dir (dd->client, MT_GCONF_HOME,
 			  GCONF_CLIENT_PRELOAD_ONELEVEL, NULL);
     g_signal_connect (dd->client, "value_changed",
 		      G_CALLBACK (gconf_value_changed), dd);
 
+    /* icons */
     dd->click[DWELL_CLICK_TYPE_SINGLE] =
 	gdk_pixbuf_new_from_file (DATADIR "/single-click.png", NULL);
     dd->click[DWELL_CLICK_TYPE_DOUBLE] =
@@ -450,6 +482,7 @@ fill_applet (PanelApplet *applet)
     dd->click[DWELL_CLICK_TYPE_RIGHT] =
 	gdk_pixbuf_new_from_file (DATADIR "/right-click.png", NULL);
 
+    /* applet initialization */
     panel_applet_set_flags (applet,
 			    PANEL_APPLET_EXPAND_MINOR |
 			    PANEL_APPLET_HAS_HANDLE);

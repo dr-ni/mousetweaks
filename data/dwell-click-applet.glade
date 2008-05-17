@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.4.2 on Thu Mar 27 13:11:06 2008 -->
+<!--Generated with glade3 3.4.5 on Sat May 17 14:59:29 2008 -->
 <glade-interface>
   <widget class="GtkWindow" id="horizontal">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
@@ -8,95 +8,133 @@
     <child>
       <widget class="GtkHBox" id="box_hori">
         <property name="visible">True</property>
-        <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-        <property name="homogeneous">True</property>
+        <property name="spacing">4</property>
         <child>
-          <widget class="GtkRadioButton" id="single_click">
+          <widget class="GtkToggleButton" id="enable">
             <property name="visible">True</property>
-            <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-            <property name="tooltip" translatable="yes">Single Click</property>
-            <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
-            <property name="image_position">GTK_POS_TOP</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip_text">Enable Dwell Click</property>
             <property name="response_id">0</property>
-            <property name="active">True</property>
             <child>
-              <widget class="GtkImage" id="single_click_img">
+              <widget class="GtkImage" id="image1">
                 <property name="visible">True</property>
-                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="stock">gtk-missing-image</property>
-                <property name="icon_size">5</property>
-              </widget>
-            </child>
-          </widget>
-        </child>
-        <child>
-          <widget class="GtkRadioButton" id="double_click">
-            <property name="visible">True</property>
-            <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-            <property name="tooltip" translatable="yes">Double Click</property>
-            <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
-            <property name="image_position">GTK_POS_TOP</property>
-            <property name="response_id">0</property>
-            <property name="group">single_click</property>
-            <child>
-              <widget class="GtkImage" id="double_click_img">
-                <property name="visible">True</property>
-                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="stock">gtk-missing-image</property>
-                <property name="icon_size">5</property>
+                <property name="stock">gtk-ok</property>
               </widget>
             </child>
           </widget>
           <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkVSeparator" id="vseparator1">
+            <property name="visible">True</property>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
             <property name="position">1</property>
           </packing>
         </child>
         <child>
-          <widget class="GtkRadioButton" id="drag_click">
+          <widget class="GtkHBox" id="ct_box">
             <property name="visible">True</property>
             <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-            <property name="tooltip" translatable="yes">Drag Click</property>
-            <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
-            <property name="image_position">GTK_POS_TOP</property>
-            <property name="response_id">0</property>
-            <property name="group">single_click</property>
+            <property name="homogeneous">True</property>
             <child>
-              <widget class="GtkImage" id="drag_click_img">
+              <widget class="GtkRadioButton" id="single_click">
                 <property name="visible">True</property>
                 <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="stock">gtk-missing-image</property>
-                <property name="icon_size">5</property>
+                <property name="tooltip" translatable="yes">Single Click</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="focus_on_click">False</property>
+                <property name="image_position">GTK_POS_TOP</property>
+                <property name="response_id">0</property>
+                <property name="active">True</property>
+                <child>
+                  <widget class="GtkImage" id="single_click_img">
+                    <property name="visible">True</property>
+                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                    <property name="stock">gtk-missing-image</property>
+                    <property name="icon_size">5</property>
+                  </widget>
+                </child>
               </widget>
+            </child>
+            <child>
+              <widget class="GtkRadioButton" id="double_click">
+                <property name="visible">True</property>
+                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                <property name="tooltip" translatable="yes">Double Click</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="focus_on_click">False</property>
+                <property name="image_position">GTK_POS_TOP</property>
+                <property name="response_id">0</property>
+                <property name="group">single_click</property>
+                <child>
+                  <widget class="GtkImage" id="double_click_img">
+                    <property name="visible">True</property>
+                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                    <property name="stock">gtk-missing-image</property>
+                    <property name="icon_size">5</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkRadioButton" id="drag_click">
+                <property name="visible">True</property>
+                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                <property name="tooltip" translatable="yes">Drag Click</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="focus_on_click">False</property>
+                <property name="image_position">GTK_POS_TOP</property>
+                <property name="response_id">0</property>
+                <property name="group">single_click</property>
+                <child>
+                  <widget class="GtkImage" id="drag_click_img">
+                    <property name="visible">True</property>
+                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                    <property name="stock">gtk-missing-image</property>
+                    <property name="icon_size">5</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkRadioButton" id="right_click">
+                <property name="visible">True</property>
+                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                <property name="tooltip" translatable="yes">Right Click</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="focus_on_click">False</property>
+                <property name="image_position">GTK_POS_TOP</property>
+                <property name="response_id">0</property>
+                <property name="group">single_click</property>
+                <child>
+                  <widget class="GtkImage" id="right_click_img">
+                    <property name="visible">True</property>
+                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                    <property name="stock">gtk-missing-image</property>
+                    <property name="icon_size">5</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="position">3</property>
+              </packing>
             </child>
           </widget>
           <packing>
+            <property name="expand">False</property>
             <property name="position">2</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="GtkRadioButton" id="right_click">
-            <property name="visible">True</property>
-            <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-            <property name="tooltip" translatable="yes">Right Click</property>
-            <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
-            <property name="image_position">GTK_POS_TOP</property>
-            <property name="response_id">0</property>
-            <property name="group">single_click</property>
-            <child>
-              <widget class="GtkImage" id="right_click_img">
-                <property name="visible">True</property>
-                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="stock">gtk-missing-image</property>
-                <property name="icon_size">5</property>
-              </widget>
-            </child>
-          </widget>
-          <packing>
-            <property name="position">3</property>
           </packing>
         </child>
       </widget>
@@ -107,94 +145,132 @@
     <child>
       <widget class="GtkVBox" id="box_vert">
         <property name="visible">True</property>
-        <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+        <property name="spacing">4</property>
         <child>
-          <widget class="GtkRadioButton" id="single_click_v">
+          <widget class="GtkToggleButton" id="enable_v">
             <property name="visible">True</property>
-            <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-            <property name="tooltip" translatable="yes">Single Click</property>
-            <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
-            <property name="image_position">GTK_POS_TOP</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip_text">Enable Dwell Click</property>
             <property name="response_id">0</property>
-            <property name="active">True</property>
             <child>
-              <widget class="GtkImage" id="single_click_img_v">
+              <widget class="GtkImage" id="image2">
                 <property name="visible">True</property>
-                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="stock">gtk-missing-image</property>
-                <property name="icon_size">5</property>
-              </widget>
-            </child>
-          </widget>
-        </child>
-        <child>
-          <widget class="GtkRadioButton" id="double_click_v">
-            <property name="visible">True</property>
-            <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-            <property name="tooltip" translatable="yes">Double Click</property>
-            <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
-            <property name="image_position">GTK_POS_TOP</property>
-            <property name="response_id">0</property>
-            <property name="group">single_click_v</property>
-            <child>
-              <widget class="GtkImage" id="double_click_img_v">
-                <property name="visible">True</property>
-                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="stock">gtk-missing-image</property>
-                <property name="icon_size">5</property>
+                <property name="stock">gtk-ok</property>
               </widget>
             </child>
           </widget>
           <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHSeparator" id="hseparator1">
+            <property name="visible">True</property>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
             <property name="position">1</property>
           </packing>
         </child>
         <child>
-          <widget class="GtkRadioButton" id="drag_click_v">
+          <widget class="GtkVBox" id="ct_box_v">
             <property name="visible">True</property>
             <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-            <property name="tooltip" translatable="yes">Drag Click</property>
-            <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
-            <property name="image_position">GTK_POS_TOP</property>
-            <property name="response_id">0</property>
-            <property name="group">single_click_v</property>
             <child>
-              <widget class="GtkImage" id="drag_click_img_v">
+              <widget class="GtkRadioButton" id="single_click_v">
                 <property name="visible">True</property>
                 <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="stock">gtk-missing-image</property>
-                <property name="icon_size">5</property>
+                <property name="tooltip" translatable="yes">Single Click</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="focus_on_click">False</property>
+                <property name="image_position">GTK_POS_TOP</property>
+                <property name="response_id">0</property>
+                <property name="active">True</property>
+                <child>
+                  <widget class="GtkImage" id="single_click_img_v">
+                    <property name="visible">True</property>
+                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                    <property name="stock">gtk-missing-image</property>
+                    <property name="icon_size">5</property>
+                  </widget>
+                </child>
               </widget>
+            </child>
+            <child>
+              <widget class="GtkRadioButton" id="double_click_v">
+                <property name="visible">True</property>
+                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                <property name="tooltip" translatable="yes">Double Click</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="focus_on_click">False</property>
+                <property name="image_position">GTK_POS_TOP</property>
+                <property name="response_id">0</property>
+                <property name="group">single_click_v</property>
+                <child>
+                  <widget class="GtkImage" id="double_click_img_v">
+                    <property name="visible">True</property>
+                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                    <property name="stock">gtk-missing-image</property>
+                    <property name="icon_size">5</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkRadioButton" id="drag_click_v">
+                <property name="visible">True</property>
+                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                <property name="tooltip" translatable="yes">Drag Click</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="focus_on_click">False</property>
+                <property name="image_position">GTK_POS_TOP</property>
+                <property name="response_id">0</property>
+                <property name="group">single_click_v</property>
+                <child>
+                  <widget class="GtkImage" id="drag_click_img_v">
+                    <property name="visible">True</property>
+                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                    <property name="stock">gtk-missing-image</property>
+                    <property name="icon_size">5</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkRadioButton" id="right_click_v">
+                <property name="visible">True</property>
+                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                <property name="tooltip" translatable="yes">Right Click</property>
+                <property name="relief">GTK_RELIEF_NONE</property>
+                <property name="focus_on_click">False</property>
+                <property name="image_position">GTK_POS_TOP</property>
+                <property name="response_id">0</property>
+                <property name="group">single_click_v</property>
+                <child>
+                  <widget class="GtkImage" id="right_click_img_v">
+                    <property name="visible">True</property>
+                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                    <property name="stock">gtk-missing-image</property>
+                    <property name="icon_size">5</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="position">3</property>
+              </packing>
             </child>
           </widget>
           <packing>
+            <property name="expand">False</property>
             <property name="position">2</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="GtkRadioButton" id="right_click_v">
-            <property name="visible">True</property>
-            <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-            <property name="tooltip" translatable="yes">Right Click</property>
-            <property name="relief">GTK_RELIEF_NONE</property>
-            <property name="focus_on_click">False</property>
-            <property name="image_position">GTK_POS_TOP</property>
-            <property name="response_id">0</property>
-            <property name="group">single_click_v</property>
-            <child>
-              <widget class="GtkImage" id="right_click_img_v">
-                <property name="visible">True</property>
-                <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="stock">gtk-missing-image</property>
-                <property name="icon_size">5</property>
-              </widget>
-            </child>
-          </widget>
-          <packing>
-            <property name="position">3</property>
           </packing>
         </child>
       </widget>

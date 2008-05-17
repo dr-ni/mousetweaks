@@ -1,5 +1,11 @@
 2008-05-17 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/dwell-click-applet.c:
+	Fix ref counting bug.
+	Add on/off button to activate dwelling.
+
+2008-05-17 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/dwell-click-applet.c: Use a macro instead of calling
 	glade_xml_get_widget all the time.
 

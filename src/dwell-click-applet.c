@@ -32,12 +32,15 @@ struct _DwellData {
     DBusGProxy  *proxy;
     GladeXML    *xml;
     GtkWidget   *box;
+    GtkWidget   *ct_box;
+    GtkWidget   *enable;
     GtkWidget   *button;
     GdkPixbuf   *click[4];
     gint         button_width;
     gint         button_height;
     gint         cct;
     gboolean     active;
+    guint        tid;
 };
 
 static const gchar *img_widgets[] = {
@@ -54,7 +57,6 @@ static const gchar *img_widgets_v[] = {
     "single_click_img_v"
 };
 
-static void update_sensitivity (DwellData         *dd);
 static void preferences_dialog (BonoboUIComponent *component,
 				gpointer           data,
 				const char        *cname);
@@ -72,12 +74,74 @@ static const BonoboUIVerb menu_verb[] = {
     BONOBO_UI_VERB_END
 };
 
+static void
+update_sensitivity (DwellData *dd)
+{
+    gboolean dwell, sensitive;
+    gint mode;
+
+    dwell = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dd->enable));
+    mode = gconf_client_get_int (dd->client, OPT_MODE, NULL);
+    sensitive = dd->active && dwell && mode == DWELL_MODE_CTW;
+    gtk_widget_set_sensitive (dd->ct_box, sensitive);
+}
+
 static gboolean
 do_not_eat (GtkWidget *widget, GdkEventButton *bev, gpointer user)
 {
     if (bev->button != 1)
 	g_signal_stop_emission_by_name (widget, "button_press_event");
 
+    return FALSE;
+}
+
+static void
+enable_dwell_changed (GtkToggleButton *button, gpointer data)
+{
+    DwellData *dd = data;
+    gboolean dwell, ctw;
+
+    ctw = gconf_client_get_bool (dd->client, OPT_CTW, NULL);
+    if (ctw)
+	gconf_client_set_bool (dd->client, OPT_CTW, FALSE, NULL);
+
+    dwell = gtk_toggle_button_get_active (button);
+    gconf_client_set_bool (dd->client, OPT_DWELL, dwell, NULL);
+}
+
+static gboolean
+activation_timeout (gpointer data)
+{
+    DwellData *dd = data;
+
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), TRUE);
+    dd->tid = 0;
+
+    return FALSE;
+}
+
+static gboolean
+enable_dwell_crossing (GtkWidget        *widget,
+		       GdkEventCrossing *event,
+		       gpointer          data)
+{
+    DwellData *dd = data;
+
+    if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dd->enable)))
+	return FALSE;
+
+    if (event->type == GDK_ENTER_NOTIFY) {
+	gdouble delay;
+
+	delay = gconf_client_get_float (dd->client, OPT_DWELL_T, NULL);
+	dd->tid = g_timeout_add (delay * 1000, activation_timeout, dd);
+    }
+    else {
+	if (dd->tid != 0) {
+	    g_source_remove (dd->tid);
+	    dd->tid = 0;
+	}
+    }
     return FALSE;
 }
 
@@ -158,18 +222,23 @@ static void
 applet_orient_changed (PanelApplet *applet, guint orient, gpointer data)
 {
     DwellData *dd = data;
+    gboolean dwell;
 
-    gtk_container_remove (GTK_CONTAINER (applet), dd->box);
+    gtk_container_remove (GTK_CONTAINER (applet), g_object_ref (dd->box));
 
     switch (orient) {
     case PANEL_APPLET_ORIENT_UP:
     case PANEL_APPLET_ORIENT_DOWN:
 	dd->box = WID ("box_hori");
+	dd->ct_box = WID ("ct_box");
+	dd->enable = WID ("enable");
 	dd->button = WID ("single_click");
 	break;
     case PANEL_APPLET_ORIENT_LEFT:
     case PANEL_APPLET_ORIENT_RIGHT:
 	dd->box = WID ("box_vert");
+	dd->ct_box = WID ("ct_box_v");
+	dd->enable = WID ("enable_v");
 	dd->button = WID ("single_click_v");
     default:
 	break;
@@ -177,8 +246,14 @@ applet_orient_changed (PanelApplet *applet, guint orient, gpointer data)
 
     if (dd->box->parent)
 	gtk_widget_reparent (dd->box, GTK_WIDGET (applet));
-    else
+    else {
 	gtk_container_add (GTK_CONTAINER (applet), dd->box);
+	g_object_unref (dd->box);
+    }
+
+    dwell = gconf_client_get_bool (dd->client, OPT_DWELL, NULL);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), dwell);
+    update_sensitivity (dd);
 }
 
 static void
@@ -191,12 +266,9 @@ applet_unrealized (GtkWidget *widget, gpointer data)
 	if (dd->click[i])
 	    g_object_unref (dd->click[i]);
 
-    g_object_unref (WID ("box_vert"));
-    g_object_unref (WID ("box_hori"));
     g_object_unref (dd->client);
     g_object_unref (dd->proxy);
     g_object_unref (dd->xml);
-
     g_slice_free (DwellData, dd);
 }
 
@@ -266,19 +338,46 @@ init_button (DwellData *dd, GtkWidget *button)
 static void
 setup_box (DwellData *dd)
 {
+    GtkWidget *widget;
     gint i;
 
     /* horizontal */
-    init_button (dd, WID ("single_click"));
+    widget = WID ("single_click");
+    init_button (dd, widget);
+    g_signal_connect (widget, "size-allocate",
+		      G_CALLBACK (button_size_allocate), dd);
     init_button (dd, WID ("double_click"));
     init_button (dd, WID ("drag_click"));
     init_button (dd, WID ("right_click"));
 
+    widget = WID ("enable");
+    g_signal_connect (widget, "button-press-event",
+		      G_CALLBACK (do_not_eat), NULL);
+    g_signal_connect (widget, "toggled",
+		      G_CALLBACK (enable_dwell_changed), dd);
+    g_signal_connect (widget, "enter-notify-event",
+		      G_CALLBACK (enable_dwell_crossing), dd);
+    g_signal_connect (widget, "leave-notify-event",
+		      G_CALLBACK (enable_dwell_crossing), dd);
+
     /* vertical */
-    init_button (dd, WID ("single_click_v"));
+    widget = WID ("single_click_v");
+    init_button (dd, widget);
+    g_signal_connect (WID ("single_click_v"), "size-allocate",
+		      G_CALLBACK (button_size_allocate), dd);
     init_button (dd, WID ("double_click_v"));
     init_button (dd, WID ("drag_click_v"));
     init_button (dd, WID ("right_click_v"));
+
+    widget = WID ("enable_v");
+    g_signal_connect (widget, "button-press-event",
+		      G_CALLBACK (do_not_eat), NULL);
+    g_signal_connect (widget, "toggled",
+		      G_CALLBACK (enable_dwell_changed), dd);
+    g_signal_connect (widget, "enter-notify-event",
+		      G_CALLBACK (enable_dwell_crossing), dd);
+    g_signal_connect (widget, "leave-notify-event",
+		      G_CALLBACK (enable_dwell_crossing), dd);
 
     for (i = 0; i < N_CLICK_TYPES; i++) {
 	gtk_image_set_from_pixbuf (GTK_IMAGE (WID (img_widgets[i])),
@@ -286,27 +385,6 @@ setup_box (DwellData *dd)
 	gtk_image_set_from_pixbuf (GTK_IMAGE (WID (img_widgets_v[i])),
 				   dd->click[i]);
     }
-    /* make sure widgets don't get destroyed (reparenting) */
-    g_object_ref (WID ("box_hori"));
-    g_object_ref (WID ("box_vert"));
-
-    g_signal_connect (WID ("single_click"), "size-allocate",
-		      G_CALLBACK (button_size_allocate), dd);
-    g_signal_connect (WID ("single_click_v"), "size-allocate",
-		      G_CALLBACK (button_size_allocate), dd);
-}
-
-static void
-update_sensitivity (DwellData *dd)
-{
-    gint mode;
-    gboolean enabled, sensitive;
-
-    enabled = gconf_client_get_bool (dd->client, OPT_DWELL, NULL);
-    mode = gconf_client_get_int (dd->client, OPT_MODE, NULL);
-
-    sensitive = dd->active && enabled && mode == DWELL_MODE_CTW;
-    gtk_widget_set_sensitive (dd->box, sensitive);
 }
 
 static void
@@ -314,7 +392,7 @@ clicktype_changed (DBusGProxy *proxy,
 		   guint       clicktype,
 		   gpointer    data)
 {
-    DwellData *dd = (DwellData *) data;
+    DwellData *dd = data;
     GtkToggleButton *button;
     GSList *group;
 
@@ -398,11 +476,19 @@ mousetweaks_is_active (void)
 static void
 gconf_value_changed (GConfClient *client,
 		     const gchar *key,
-		     GConfValue *value,
-		     gpointer data)
+		     GConfValue  *value,
+		     gpointer     data)
 {
-    if (g_str_equal (key, OPT_MODE) || g_str_equal (key, OPT_DWELL))
-	update_sensitivity (data);
+    DwellData *dd = data;
+
+    if (g_str_equal (key, OPT_MODE)) {
+	update_sensitivity (dd);
+    } else if (g_str_equal (key, OPT_DWELL) &&
+	       value->type == GCONF_VALUE_BOOL) {
+	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable),
+				      gconf_value_get_bool (value));
+	update_sensitivity (dd);
+    }
 }
 
 static gboolean
@@ -411,6 +497,7 @@ fill_applet (PanelApplet *applet)
     DwellData *dd;
     GtkWidget *about;
     PanelAppletOrient orient;
+    gboolean dwell;
 
     dd = g_slice_new0 (DwellData);
     if (!dd)
@@ -483,12 +570,19 @@ fill_applet (PanelApplet *applet)
     if (orient == PANEL_APPLET_ORIENT_UP ||
 	orient == PANEL_APPLET_ORIENT_DOWN) {
 	dd->box = WID ("box_hori");
+	dd->ct_box = WID ("ct_box");
+	dd->enable = WID ("enable");
 	dd->button = WID ("single_click");
     }
     else {
 	dd->box = WID ("box_vert");
+	dd->ct_box = WID ("ct_box_v");
+	dd->enable = WID ("enable_v");
 	dd->button = WID ("single_click_v");
     }
+
+    dwell = gconf_client_get_bool (dd->client, OPT_DWELL, NULL);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), dwell);
 
     setup_box (dd);
     gtk_widget_reparent (dd->box, GTK_WIDGET (applet));

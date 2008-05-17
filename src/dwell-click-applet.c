@@ -32,7 +32,6 @@ struct _DwellData {
     GtkWidget   *box;
     GtkWidget   *button;
     GdkPixbuf   *click[4];
-
     gint         button_width;
     gint         button_height;
     gint         cct;
@@ -203,12 +202,21 @@ preferences_dialog (BonoboUIComponent *component,
 		    gpointer           data,
 		    const char        *cname)
 {
-    g_spawn_command_line_async ("gnome-mouse-properties -p accessibility",
-				NULL);
+    GError *error = NULL;
+
+    if (!g_spawn_command_line_async ("gnome-mouse-properties -p accessibility",
+				     &error)) {
+	mt_common_show_dialog (_("Failed to Launch Mouse Preferences"),
+			       error->message,
+			       MT_MESSAGE_WARNING);
+	g_error_free (error);
+    }
 }
 
 static void
-help_dialog (BonoboUIComponent *component, gpointer data, const char *cname)
+help_dialog (BonoboUIComponent *component,
+	     gpointer           data,
+	     const char        *cname)
 {
     GError *error = NULL;
 
@@ -217,7 +225,7 @@ help_dialog (BonoboUIComponent *component, gpointer data, const char *cname)
 				     "mousetweaks",
 				     NULL,
 				     &error)) {
-	mt_common_show_dialog (_("Couldn't display help"),
+	mt_common_show_dialog (_("Failed to Display Help"),
 			       error->message,
 			       MT_MESSAGE_WARNING);
 	g_error_free (error);
@@ -225,23 +233,21 @@ help_dialog (BonoboUIComponent *component, gpointer data, const char *cname)
 }
 
 static void
-about_dialog (BonoboUIComponent *component, gpointer data, const char *cname)
+about_dialog (BonoboUIComponent *component,
+	      gpointer           data,
+	      const char        *cname)
 {
-    DwellData *dd = (DwellData *) data;
+    DwellData *dd = data;
     GtkWidget *about;
 
     about = glade_xml_get_widget (dd->xml, "about");
-
-    if (GTK_WIDGET_VISIBLE (about))
-	gtk_window_present (GTK_WINDOW (about));
-    else
-	gtk_widget_show (about);
+    gtk_window_present (GTK_WINDOW (about));
 }
 
 static void
 about_response (GtkWidget *about, gint response, gpointer data)
 {
-    DwellData *dd = (DwellData *) data;
+    DwellData *dd = data;
 
     gtk_widget_hide (glade_xml_get_widget (dd->xml, "about"));
 }

@@ -1,6 +1,12 @@
 2008-05-17 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/dwell-click-applet.c:
+	Show a warning if we can't launch gnome-mouse-properties.
+	Fix minor HIG issue in warning strings.
+
+2008-05-17 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/dwell-click-applet.c:
 	Check on start-up if the daemon is already running.
 	Remove some unnecessary casts. 
 

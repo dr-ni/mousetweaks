@@ -1,5 +1,10 @@
 2008-05-17 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/dwell-click-applet.c: Use a macro instead of calling
+	glade_xml_get_widget all the time.
+
+2008-05-17 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/dwell-click-applet.c:
 	Show a warning if we can't launch gnome-mouse-properties.
 	Fix minor HIG issue in warning strings.

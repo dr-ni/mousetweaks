@@ -24,6 +24,8 @@
 
 #include "mt-common.h"
 
+#define WID(n) (glade_xml_get_widget (dd->xml, (n)))
+
 typedef struct _DwellData DwellData;
 struct _DwellData {
     GConfClient *client;
@@ -52,17 +54,16 @@ static const gchar *img_widgets_v[] = {
     "single_click_img_v"
 };
 
-static void update_sensitivity (DwellData *dd);
-
+static void update_sensitivity (DwellData         *dd);
 static void preferences_dialog (BonoboUIComponent *component,
-				gpointer data,
-				const char *cname);
+				gpointer           data,
+				const char        *cname);
 static void help_dialog        (BonoboUIComponent *component,
-				gpointer data,
-				const char *cname);
+				gpointer           data,
+				const char        *cname);
 static void about_dialog       (BonoboUIComponent *component,
-				gpointer data,
-				const char *cname);
+				gpointer           data,
+				const char        *cname);
 
 static const BonoboUIVerb menu_verb[] = {
     BONOBO_UI_UNSAFE_VERB ("PropertiesVerb", preferences_dialog),
@@ -97,7 +98,9 @@ button_cb (GtkToggleButton *button, gpointer data)
 }
 
 static void
-box_size_allocate (GtkWidget *widget, GtkAllocation *alloc, gpointer data)
+button_size_allocate (GtkWidget     *widget,
+		      GtkAllocation *alloc,
+		      gpointer       data)
 {
     DwellData *dd = data;
     GtkWidget *w;
@@ -105,48 +108,47 @@ box_size_allocate (GtkWidget *widget, GtkAllocation *alloc, gpointer data)
     const gchar *name;
     gint i;
 
-    if (dd->button_width == alloc->width && dd->button_height == alloc->height)
+    if (dd->button_width == alloc->width &&
+	dd->button_height == alloc->height)
 	return;
 
     name = glade_get_widget_name (dd->box);
-
-    if (g_str_equal (name, "box_vert"))
+    if (g_str_equal (name, "box_vert")) {
 	/* vertical */
 	for (i = 0; i < N_CLICK_TYPES; i++) {
-	    w = glade_xml_get_widget (dd->xml, img_widgets_v[i]);
-
+	    w = WID (img_widgets_v[i]);
 	    if (alloc->width < 32) {
 		tmp = gdk_pixbuf_scale_simple (dd->click[i],
 					       alloc->width - 7,
 					       alloc->width - 7,
 					       GDK_INTERP_HYPER);
 		if (tmp) {
-		    gtk_image_set_from_pixbuf (GTK_IMAGE(w), tmp);
+		    gtk_image_set_from_pixbuf (GTK_IMAGE (w), tmp);
 		    g_object_unref (tmp);
 		}
 	    }
 	    else
-		gtk_image_set_from_pixbuf (GTK_IMAGE(w), dd->click[i]);
+		gtk_image_set_from_pixbuf (GTK_IMAGE (w), dd->click[i]);
 	}
-    else
+    }
+    else {
 	/* horizontal */
 	for (i = 0; i < N_CLICK_TYPES; i++) {
-	    w = glade_xml_get_widget (dd->xml, img_widgets[i]);
-
+	    w = WID (img_widgets[i]);
 	    if (alloc->height < 32) {
 		tmp = gdk_pixbuf_scale_simple (dd->click[i],
 					       alloc->height - 7,
 					       alloc->height - 7,
 					       GDK_INTERP_HYPER);
 		if (tmp) {
-		    gtk_image_set_from_pixbuf (GTK_IMAGE(w), tmp);
+		    gtk_image_set_from_pixbuf (GTK_IMAGE (w), tmp);
 		    g_object_unref (tmp);
 		}
 	    }
 	    else
-		gtk_image_set_from_pixbuf (GTK_IMAGE(w), dd->click[i]);
+		gtk_image_set_from_pixbuf (GTK_IMAGE (w), dd->click[i]);
 	}
-
+    }
     dd->button_width = alloc->width;
     dd->button_height = alloc->height;
 }
@@ -155,20 +157,20 @@ box_size_allocate (GtkWidget *widget, GtkAllocation *alloc, gpointer data)
 static void
 applet_orient_changed (PanelApplet *applet, guint orient, gpointer data)
 {
-    DwellData *dd = (DwellData *) data;
+    DwellData *dd = data;
 
     gtk_container_remove (GTK_CONTAINER (applet), dd->box);
 
     switch (orient) {
     case PANEL_APPLET_ORIENT_UP:
     case PANEL_APPLET_ORIENT_DOWN:
-	dd->box = glade_xml_get_widget (dd->xml, "box_hori");
-	dd->button = glade_xml_get_widget (dd->xml, "single_click");
+	dd->box = WID ("box_hori");
+	dd->button = WID ("single_click");
 	break;
     case PANEL_APPLET_ORIENT_LEFT:
     case PANEL_APPLET_ORIENT_RIGHT:
-	dd->box = glade_xml_get_widget (dd->xml, "box_vert");
-	dd->button = glade_xml_get_widget (dd->xml, "single_click_v");
+	dd->box = WID ("box_vert");
+	dd->button = WID ("single_click_v");
     default:
 	break;
     }
@@ -186,10 +188,11 @@ applet_unrealized (GtkWidget *widget, gpointer data)
     gint i;
 
     for (i = 0; i < N_CLICK_TYPES; i++)
-	g_object_unref (dd->click[i]);
+	if (dd->click[i])
+	    g_object_unref (dd->click[i]);
 
-    g_object_unref (glade_xml_get_widget (dd->xml, "box_vert"));
-    g_object_unref (glade_xml_get_widget (dd->xml, "box_hori"));
+    g_object_unref (WID ("box_vert"));
+    g_object_unref (WID ("box_hori"));
     g_object_unref (dd->client);
     g_object_unref (dd->proxy);
     g_object_unref (dd->xml);
@@ -238,10 +241,8 @@ about_dialog (BonoboUIComponent *component,
 	      const char        *cname)
 {
     DwellData *dd = data;
-    GtkWidget *about;
 
-    about = glade_xml_get_widget (dd->xml, "about");
-    gtk_window_present (GTK_WINDOW (about));
+    gtk_window_present (GTK_WINDOW (WID ("about")));
 }
 
 static void
@@ -249,7 +250,7 @@ about_response (GtkWidget *about, gint response, gpointer data)
 {
     DwellData *dd = data;
 
-    gtk_widget_hide (glade_xml_get_widget (dd->xml, "about"));
+    gtk_widget_hide (WID ("about"));
 }
 
 static inline void
@@ -263,61 +264,36 @@ init_button (DwellData *dd, GtkWidget *button)
 }
 
 static void
-init_horizontal_box (DwellData *dd)
+setup_box (DwellData *dd)
 {
-    GtkWidget *w;
     gint i;
 
-    w = glade_xml_get_widget (dd->xml, "box_hori");
-    g_object_ref (w);
+    /* horizontal */
+    init_button (dd, WID ("single_click"));
+    init_button (dd, WID ("double_click"));
+    init_button (dd, WID ("drag_click"));
+    init_button (dd, WID ("right_click"));
 
-    w = glade_xml_get_widget (dd->xml, "single_click");
-    g_signal_connect (w, "size-allocate",
-		      G_CALLBACK (box_size_allocate), dd);
-    init_button (dd, w);
-
-    w = glade_xml_get_widget (dd->xml, "double_click");
-    init_button (dd, w);
-
-    w = glade_xml_get_widget (dd->xml, "drag_click");
-    init_button (dd, w);
-
-    w = glade_xml_get_widget (dd->xml, "right_click");
-    init_button (dd, w);
+    /* vertical */
+    init_button (dd, WID ("single_click_v"));
+    init_button (dd, WID ("double_click_v"));
+    init_button (dd, WID ("drag_click_v"));
+    init_button (dd, WID ("right_click_v"));
 
     for (i = 0; i < N_CLICK_TYPES; i++) {
-	w = glade_xml_get_widget (dd->xml, img_widgets[i]);
-	gtk_image_set_from_pixbuf (GTK_IMAGE(w), dd->click[i]);
+	gtk_image_set_from_pixbuf (GTK_IMAGE (WID (img_widgets[i])),
+				   dd->click[i]);
+	gtk_image_set_from_pixbuf (GTK_IMAGE (WID (img_widgets_v[i])),
+				   dd->click[i]);
     }
-}
+    /* make sure widgets don't get destroyed (reparenting) */
+    g_object_ref (WID ("box_hori"));
+    g_object_ref (WID ("box_vert"));
 
-static void
-init_vertical_box (DwellData *dd)
-{
-    GtkWidget *w;
-    gint i;
-
-    w = glade_xml_get_widget (dd->xml, "box_vert");
-    g_object_ref (w);
-
-    w = glade_xml_get_widget (dd->xml, "single_click_v");
-    g_signal_connect (G_OBJECT(w), "size-allocate",
-		      G_CALLBACK(box_size_allocate), dd);
-    init_button (dd, w);
-
-    w = glade_xml_get_widget (dd->xml, "double_click_v");
-    init_button (dd, w);
-
-    w = glade_xml_get_widget (dd->xml, "drag_click_v");
-    init_button (dd, w);
-
-    w = glade_xml_get_widget (dd->xml, "right_click_v");
-    init_button (dd, w);
-
-    for (i = 0; i < N_CLICK_TYPES; i++) {
-	w = glade_xml_get_widget (dd->xml, img_widgets_v[i]);
-	gtk_image_set_from_pixbuf (GTK_IMAGE(w), dd->click[i]);
-    }
+    g_signal_connect (WID ("single_click"), "size-allocate",
+		      G_CALLBACK (button_size_allocate), dd);
+    g_signal_connect (WID ("single_click_v"), "size-allocate",
+		      G_CALLBACK (button_size_allocate), dd);
 }
 
 static void
@@ -464,7 +440,7 @@ fill_applet (PanelApplet *applet)
     dd->cct = DWELL_CLICK_TYPE_SINGLE;
 
     /* about dialog */
-    about = glade_xml_get_widget (dd->xml, "about");
+    about = WID ("about");
     g_object_set (about, "version", VERSION, NULL);
     g_signal_connect (about, "delete-event",
 		      G_CALLBACK (gtk_widget_hide_on_delete), NULL);
@@ -502,23 +478,21 @@ fill_applet (PanelApplet *applet)
     g_signal_connect (applet, "unrealize",
 		      G_CALLBACK (applet_unrealized), dd);
 
+    /* check initial orientation */
     orient = panel_applet_get_orient (applet);
     if (orient == PANEL_APPLET_ORIENT_UP ||
 	orient == PANEL_APPLET_ORIENT_DOWN) {
-	dd->box = glade_xml_get_widget (dd->xml, "box_hori");
-	dd->button = glade_xml_get_widget (dd->xml, "single_click");
+	dd->box = WID ("box_hori");
+	dd->button = WID ("single_click");
     }
     else {
-	dd->box = glade_xml_get_widget (dd->xml, "box_vert");
-	dd->button = glade_xml_get_widget (dd->xml, "single_click_v");
+	dd->box = WID ("box_vert");
+	dd->button = WID ("single_click_v");
     }
 
-    init_horizontal_box (dd);
-    init_vertical_box (dd);
-
+    setup_box (dd);
     gtk_widget_reparent (dd->box, GTK_WIDGET (applet));
     gtk_widget_show (GTK_WIDGET (applet));
-
     update_sensitivity (dd);
 
     return TRUE;

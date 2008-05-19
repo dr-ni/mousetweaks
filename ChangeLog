@@ -1,3 +1,7 @@
+2008-05-19 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/mt-main.c: Fix typos.
+
 2008-05-17 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/dwell-click-applet.c:

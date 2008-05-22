@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome 2-22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-19 01:59+0100\n"
+"POT-Creation-Date: 2008-05-22 23:40+0100\n"
 "PO-Revision-Date: 2008-02-12 21:24+0100\n"
 "Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
 "Language-Team: Arabeyes <doc@arabeyes.org>\n"
@@ -195,7 +195,7 @@ msgstr "نمط النقر الكامن"
 msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
 msgstr "نمط النقر الكامن (0= نمط الحركة، 1=نمط النافذة)"
 
-#: ../data/mousetweaks.schemas.in.h:11 ../src/mt-main.c:623
+#: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "وقت النقر الكامن"
 
@@ -207,7 +207,7 @@ msgstr "فعّل النقر الكامن"
 msgid "Enable secondary click"
 msgstr "فعّل النقر الثانوي"
 
-#: ../data/mousetweaks.schemas.in.h:14
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:621
 msgid "Enable simulated secondary click"
 msgstr "فعِّل محاكاة النقر الثانوي"
 
@@ -324,15 +324,14 @@ msgid ""
 "\"Enable and Log Out\"."
 msgstr ""
 
-#: ../src/mt-main.c:621
-#, fuzzy
-msgid "Enable simualted secondary click"
-msgstr "فعِّل محاكاة النقر الثانوي"
+#: ../src/mt-main.c:623
+msgid "Time to wait before a dwell click"
+msgstr ""
 
 #: ../src/mt-main.c:625
 #, fuzzy
-msgid "Simualted secondary click time"
-msgstr "وقت النقر الثانوي"
+msgid "Time to wait before a simulated secondary click"
+msgstr "فعِّل محاكاة النقر الثانوي"
 
 #: ../src/mt-main.c:627
 #, fuzzy
@@ -408,6 +407,14 @@ msgstr "تعذّر عرض المساعدة"
 #, fuzzy
 msgid "Dwell Click Applet"
 msgstr "نوع النقر الكامن"
+
+#, fuzzy
+#~ msgid "Enable simualted secondary click"
+#~ msgstr "فعِّل محاكاة النقر الثانوي"
+
+#, fuzzy
+#~ msgid "Simualted secondary click time"
+#~ msgstr "وقت النقر الثانوي"
 
 #~ msgid "B_utton:"
 #~ msgstr "ال_زر:"

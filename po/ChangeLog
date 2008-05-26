@@ -1,3 +1,8 @@
+2008-05-26  Subhransu Behera <arya_subhransu@yahoo.co.in>
+
+	* LINGUAS: Added Oriya (or) to the list of languages.
+	* or.po: Added and Updated Oriya translation by Manoj Giri.
+
 2008-05-22  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.

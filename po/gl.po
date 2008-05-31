@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-21 11:13+0200\n"
-"PO-Revision-Date: 2008-05-21 11:20+0200\n"
+"POT-Creation-Date: 2008-05-31 18:09+0200\n"
+"PO-Revision-Date: 2008-05-31 18:11+0200\n"
 "Last-Translator: Ignacio Casal Quinteiro <icq@svn.gnome.org>\n"
 "Language-Team: Galego <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
@@ -318,20 +318,23 @@ msgid ""
 "To enable support for assistive technologies and restart your session, press "
 "\"Enable and Log Out\"."
 msgstr ""
+"Os axustes finos do rato requiren que as tecnoloxías de asistencia estén "
+"activadas na súa sesión.\n"
+"\n"
+"Para activar o soporte para as tecnoloxías de asistencia e reiniciar a súa "
+"sesión, prema \"Activar e saír da sesión\"."
 
 #: ../src/mt-main.c:623
 msgid "Time to wait before a dwell click"
-msgstr ""
+msgstr "Tempo a esperar antes dunha pulsación ao pousarse"
 
 #: ../src/mt-main.c:625
-#, fuzzy
 msgid "Time to wait before a simulated secondary click"
-msgstr "Activar clic secundario simulado"
+msgstr "Tempo a esperar antes dunha pulsación secundaria simulada"
 
 #: ../src/mt-main.c:627
-#, fuzzy
 msgid "Dwell mode to use"
-msgstr "Modo clic ao pousarse"
+msgstr "Modo clic ao pousarsa a usar"
 
 #: ../src/mt-main.c:631
 msgid "Window x position"
@@ -347,7 +350,7 @@ msgstr "Ignorar movementos pequenos do punteiro"
 
 #: ../src/mt-main.c:637
 msgid "Show elapsed time as cursor overlay"
-msgstr ""
+msgstr "Mostrar o tempo transcorrido superposto ao cursor"
 
 #: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
@@ -359,7 +362,7 @@ msgstr "- Daemon dos axustes finos do rato de Gnome"
 
 #: ../src/mt-common.c:54
 msgid "Enable and Log Out"
-msgstr ""
+msgstr "Activar e saír da sesión"
 
 #: ../src/pointer-capture-applet.c:73
 msgid "Couldn't display help"
@@ -375,9 +378,8 @@ msgid "L"
 msgstr "B"
 
 #: ../src/pointer-capture-applet.c:556
-#, fuzzy
 msgid "Pointer Capture Applet"
-msgstr "Captura do punteiro"
+msgstr "Applet captura do punteiro"
 
 #: ../src/pointer-capture-applet.c:628
 msgid "Capture area"
@@ -396,9 +398,8 @@ msgid "Failed to Display Help"
 msgstr "Fallou ao mostrar a axuda"
 
 #: ../src/dwell-click-applet.c:510
-#, fuzzy
 msgid "Dwell Click Applet"
-msgstr "Tipo de pulsación ao pousarse"
+msgstr "Applet pulsación ao pousarse"
 
 #~ msgid "B_utton:"
 #~ msgstr "B_otón:"

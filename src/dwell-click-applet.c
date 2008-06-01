@@ -107,6 +107,8 @@ enable_dwell_changed (GtkToggleButton *button, gpointer data)
 
     dwell = gtk_toggle_button_get_active (button);
     gconf_client_set_bool (dd->client, OPT_DWELL, dwell, NULL);
+
+    gtk_button_set_label (GTK_BUTTON (button), dwell ? _("On") : _("Off"));
 }
 
 static gboolean
@@ -339,18 +341,23 @@ static void
 setup_box (DwellData *dd)
 {
     GtkWidget *widget;
+    GtkSizeGroup *hgroup, *vgroup;
     gint i;
 
     /* horizontal */
+    hgroup = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
     widget = WID ("single_click");
     init_button (dd, widget);
+    gtk_size_group_add_widget (hgroup, widget);
     g_signal_connect (widget, "size-allocate",
 		      G_CALLBACK (button_size_allocate), dd);
+
     init_button (dd, WID ("double_click"));
     init_button (dd, WID ("drag_click"));
     init_button (dd, WID ("right_click"));
 
     widget = WID ("enable");
+    gtk_size_group_add_widget (hgroup, widget);
     g_signal_connect (widget, "button-press-event",
 		      G_CALLBACK (do_not_eat), NULL);
     g_signal_connect (widget, "toggled",
@@ -361,7 +368,9 @@ setup_box (DwellData *dd)
 		      G_CALLBACK (enable_dwell_crossing), dd);
 
     /* vertical */
+    vgroup = gtk_size_group_new (GTK_SIZE_GROUP_VERTICAL);
     widget = WID ("single_click_v");
+    gtk_size_group_add_widget (vgroup, widget);
     init_button (dd, widget);
     g_signal_connect (WID ("single_click_v"), "size-allocate",
 		      G_CALLBACK (button_size_allocate), dd);
@@ -370,6 +379,7 @@ setup_box (DwellData *dd)
     init_button (dd, WID ("right_click_v"));
 
     widget = WID ("enable_v");
+    gtk_size_group_add_widget (vgroup, widget);
     g_signal_connect (widget, "button-press-event",
 		      G_CALLBACK (do_not_eat), NULL);
     g_signal_connect (widget, "toggled",
@@ -583,6 +593,7 @@ fill_applet (PanelApplet *applet)
 
     dwell = gconf_client_get_bool (dd->client, OPT_DWELL, NULL);
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), dwell);
+    gtk_button_set_label (GTK_BUTTON (dd->enable), dwell ? _("On") : _("Off"));
 
     setup_box (dd);
     gtk_widget_reparent (dd->box, GTK_WIDGET (applet));

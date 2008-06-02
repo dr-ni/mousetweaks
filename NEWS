@@ -1,3 +1,27 @@
+Version 2.23.3
+--------------
+
+New features:
+
+	* Add dwellable On/Off button to dwell applet
+	* Show warning if gnome-mouse-properties cannot launch
+
+Misc improvements/fixes:
+
+	* Check on start-up if daemon is already running
+	* Code cleanup
+	* Add more command-line options
+	* Fix typos in command-line options
+	* Fix ref counting bug in dwell applet glade file
+	* Fix minor HIG issue in dwell applet
+
+New and updated translations:
+
+	- [ar] Djihed Afifi
+	- [es] Jorge Gonzalez
+	- [gl] Ignacio Casal Quinteiro
+	- [or] Subhransu Behera
+
 Version 2.23.2
 --------------
 

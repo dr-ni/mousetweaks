@@ -1,3 +1,7 @@
+2008-06-02 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* NEWS: Prepare 2.23.3 release.
+
 2008-06-01 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/dwell-click-applet.c: Change 'enable dwell' icon to a label.

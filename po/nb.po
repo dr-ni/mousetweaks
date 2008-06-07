@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks 2.21.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-03 11:39+0100\n"
-"PO-Revision-Date: 2008-03-03 11:43+0100\n"
+"POT-Creation-Date: 2008-06-07 20:41+0200\n"
+"PO-Revision-Date: 2008-06-07 20:45+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 #: ../data/dwell-click-applet.glade.h:1
 msgid ""
 "Applet to select different dwell-click types.\n"
-"Part of MouseTweaks"
+"Part of Mousetweaks"
 msgstr ""
 "Panelprogram for å velge mellom forskjellige typer dwell-klikk.\n"
 "En del av MouseTweaks"
@@ -36,11 +36,16 @@ msgstr "Dobbeltklikk"
 msgid "Drag Click"
 msgstr "Dra-og-klikk"
 
-#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:111
+#: ../src/dwell-click-applet.c:596
+msgid "On"
+msgstr "På"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "Høyreklikk"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "Enkeltklikk"
 
@@ -59,30 +64,30 @@ msgstr "<b>Størrelse på fangstområde</b>"
 #: ../data/pointer-capture-applet.glade.h:4
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
-"Part of MouseTweaks"
+"Part of Mousetweaks"
 msgstr ""
 "Område på panelet hvor muspekeren fryses.\n"
 "En del av MouseTweaks"
 
 #: ../data/pointer-capture-applet.glade.h:6
-msgid "B_utton:"
-msgstr "Kn_app:"
-
-#: ../data/pointer-capture-applet.glade.h:7
 msgid "Modifier:"
 msgstr "Endringstast:"
 
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Mouse _button:"
+msgstr "Mus_knapp:"
+
 #: ../data/pointer-capture-applet.glade.h:8
+msgid "Mouse b_utton:"
+msgstr "M_usknapp:"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Pointer Capture Preferences"
 msgstr "Brukervalg for fanging av pekeren"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:10
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Hvis du velger knapp 0 vil pekeren fanges med én gang"
-
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "_Button:"
-msgstr "_Knapp:"
 
 #: ../data/pointer-capture-applet.glade.h:11
 msgid "_Width:"
@@ -137,144 +142,165 @@ msgid "_Preferences"
 msgstr "_Brukervalg"
 
 #: ../data/mousetweaks.schemas.in.h:1
+msgid "Animate cursor"
+msgstr "Animer peker"
+
+#: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style"
 msgstr "Stil for knapp"
 
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
-msgstr ""
-
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgid ""
+"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
 msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:4
-msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgid ""
+"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
 msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:5
-msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgid ""
+"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+"\"3\" = Down)"
 msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:6
-msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgid ""
+"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
 msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:7
+msgid ""
+"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
 msgstr "Avstand i piksler før bevegelse gjenkjennes"
 
-#: ../data/mousetweaks.schemas.in.h:8
+#: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
 msgstr "Modus for dwell-klikk"
 
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:10
+#: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "Tid for dwell-klikk"
 
-#: ../data/mousetweaks.schemas.in.h:11
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:619
 msgid "Enable dwell click"
 msgstr "Aktiver dwell-klikk"
 
-#: ../data/mousetweaks.schemas.in.h:12
+#: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Aktiver sekundært klikk"
 
-#: ../data/mousetweaks.schemas.in.h:13
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:621
 msgid "Enable simulated secondary click"
-msgstr ""
+msgstr "Slå på simulert andreklikk"
 
-#: ../data/mousetweaks.schemas.in.h:14
+#: ../data/mousetweaks.schemas.in.h:15
 #, fuzzy
 msgid "Gesture double click"
 msgstr "Dobbeltklikk"
 
-#: ../data/mousetweaks.schemas.in.h:15
+#: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture drag click"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:16
+#: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:17
+#: ../data/mousetweaks.schemas.in.h:18
 #, fuzzy
 msgid "Gesture single click"
 msgstr "Enkeltklikk"
 
-#: ../data/mousetweaks.schemas.in.h:18
+#: ../data/mousetweaks.schemas.in.h:19
 msgid "Movement threshold"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:19
+#: ../data/mousetweaks.schemas.in.h:20
 msgid "Secondary click time"
 msgstr "Tid for sekundært klikk"
 
-#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:629
 msgid "Show click type window"
 msgstr "Vis vindu for type klikk"
 
-#: ../data/mousetweaks.schemas.in.h:21
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Show elapsed time as cursor overlay."
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:23
 msgid "Time in seconds before a click is triggered"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:22
+#: ../data/mousetweaks.schemas.in.h:24
 msgid "Time in seconds before a secondary click is triggered"
 msgstr ""
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Button to capture the pointer (0=Capture immediately)"
-msgstr ""
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Button to release the pointer"
-msgstr ""
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture button"
-msgstr "Fangsknapp"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
 #, fuzzy
 msgid "Capture modifier"
 msgstr "Fangstområde"
 
-#: ../data/pointer-capture-applet.schemas.in.h:5
+#: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Capture modifier key (Alt)"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:6
+#: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture modifier key (Ctrl)"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:7
+#: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier key (Shift)"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release button"
-msgstr ""
+#: ../data/pointer-capture-applet.schemas.in.h:5
+#, fuzzy
+msgid "Capture mouse button"
+msgstr "Fangsknapp"
 
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/pointer-capture-applet.schemas.in.h:6
+#, fuzzy
+msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+msgstr "Hvis du velger knapp 0 vil pekeren fanges med én gang"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+#, fuzzy
+msgid "Mouse button to release the pointer"
+msgstr "Område for låsing av pekeren"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
 #, fuzzy
 msgid "Release modifier"
 msgstr "<b>Slipp peker løs</b>"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
+#: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Release modifier key (Alt)"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:11
+#: ../data/pointer-capture-applet.schemas.in.h:10
 msgid "Release modifier key (Ctrl)"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:12
+#: ../data/pointer-capture-applet.schemas.in.h:11
 msgid "Release modifier key (Shift)"
 msgstr ""
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+#, fuzzy
+msgid "Release mouse button"
+msgstr "<b>Slipp peker løs</b>"
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
@@ -284,51 +310,99 @@ msgstr "Størrelse på fangstområde"
 msgid "Width of the capture area in pixels"
 msgstr ""
 
-#: ../src/mt-main.c:417
-msgid "Enable mousetweaks feature"
-msgstr "Aktiver mousetweaks"
+#: ../src/mt-main.c:529
+#, fuzzy
+msgid "Assistive Technology Support Is Not Enabled"
+msgstr "Hjelpeteknologi ikke aktivert"
 
-#: ../src/mt-main.c:419
-msgid "Use dwell mode"
-msgstr "Bruk «dwell»-modus"
+#: ../src/mt-main.c:530
+msgid ""
+"Mousetweaks requires assistive technologies to be enabled in your session.\n"
+"\n"
+"To enable support for assistive technologies and restart your session, press "
+"\"Enable and Log Out\"."
+msgstr ""
+"Mousetweaks krever at hjelpeteknologi er aktivert i din sesjon.\n"
+"\n"
+"Trykk «Slå på og logg ut» for å slå på støtte for hjelpeteknologier og starte sesjonen på nytt."
 
-#: ../src/mt-main.c:423
+#: ../src/mt-main.c:623
+msgid "Time to wait before a dwell click"
+msgstr "Tidsavbrudd før dwell-klikk"
+
+#: ../src/mt-main.c:625
+msgid "Time to wait before a simulated secondary click"
+msgstr "Tidsavbrudd før et simulert andreklikk"
+
+#: ../src/mt-main.c:627
+msgid "Dwell mode to use"
+msgstr "Dwell-modus som skal brukes"
+
+#: ../src/mt-main.c:631
 msgid "Window x position"
 msgstr "X-posisjon for vindu"
 
-#: ../src/mt-main.c:425
+#: ../src/mt-main.c:633
 msgid "Window y position"
 msgstr "Y-posisjon for vindu"
 
-#: ../src/mt-main.c:427
-msgid "Shutdown mousetweaks"
-msgstr "Steng ned mousetweaks"
+#: ../src/mt-main.c:635
+msgid "Ignore small pointer movements"
+msgstr "Ignorer små pekerbevegelser"
 
-#: ../src/mt-main.c:484
-msgid "Assistive Technologies not enabled"
-msgstr "Hjelpeteknologi ikke aktivert"
+#: ../src/mt-main.c:637
+msgid "Show elapsed time as cursor overlay"
+msgstr "Vis medgått tid markøroverlegg"
 
-#: ../src/mt-main.c:485
-msgid "Mousetweaks requires Assistive Technologies."
-msgstr "Mousetweaks krever hjelpeteknologi."
+#: ../src/mt-main.c:639
+msgid "Shut down mousetweaks"
+msgstr "Slå av mousetweaks"
 
-#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
+#: ../src/mt-main.c:647
+msgid "- GNOME mousetweaks daemon"
+msgstr "- GNOME mousetweaks tjeneste"
+
+#: ../src/mt-common.c:54
+msgid "Enable and Log Out"
+msgstr "Aktiver og logg ut"
+
+#: ../src/pointer-capture-applet.c:73
 msgid "Couldn't display help"
 msgstr "Kunne ikke vise hjelp"
 
-#: ../src/pointer-capture-applet.c:204
+#: ../src/pointer-capture-applet.c:195
 msgid "Locked"
 msgstr "Låst"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:207
+#: ../src/pointer-capture-applet.c:198
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:635
+#: ../src/pointer-capture-applet.c:556
+msgid "Pointer Capture Applet"
+msgstr "Panelprogram for pekerfangst"
+
+#: ../src/pointer-capture-applet.c:628
 msgid "Capture area"
 msgstr "Fangstområde"
 
-#: ../src/pointer-capture-applet.c:636
+#: ../src/pointer-capture-applet.c:629
 msgid "Temporarily lock the mouse pointer"
 msgstr "Lås muspekeren midlertidig"
+
+#: ../src/dwell-click-applet.c:111 ../src/dwell-click-applet.c:596
+msgid "Off"
+msgstr "Av"
+
+#: ../src/dwell-click-applet.c:286
+msgid "Failed to Launch Mouse Preferences"
+msgstr "Klarte ikke å starte brukervalg for mus"
+
+#: ../src/dwell-click-applet.c:305
+msgid "Failed to Display Help"
+msgstr "Kunne ikke vise hjelp"
+
+#: ../src/dwell-click-applet.c:520
+msgid "Dwell Click Applet"
+msgstr "Dwell-klikk panelprogram"

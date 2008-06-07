@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-19 13:39+0000\n"
-"PO-Revision-Date: 2008-05-22 19:37+0200\n"
+"POT-Creation-Date: 2008-06-01 08:37+0000\n"
+"PO-Revision-Date: 2008-06-07 16:33+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -38,11 +38,16 @@ msgstr "Pulsación doble"
 msgid "Drag Click"
 msgstr "Pulsación de arrastre"
 
-#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:111
+#: ../src/dwell-click-applet.c:596
+msgid "On"
+msgstr "Activado"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "Pulsación derecha"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "Pulsación sencilla"
 
@@ -392,15 +397,19 @@ msgstr "Capturar área"
 msgid "Temporarily lock the mouse pointer"
 msgstr "Bloquear temporalmente el puntero del ratón"
 
-#: ../src/dwell-click-applet.c:284
+#: ../src/dwell-click-applet.c:111 ../src/dwell-click-applet.c:596
+msgid "Off"
+msgstr "Desactivado"
+
+#: ../src/dwell-click-applet.c:286
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Falló al lanzar las Preferencias del ratón"
 
-#: ../src/dwell-click-applet.c:303
+#: ../src/dwell-click-applet.c:305
 msgid "Failed to Display Help"
 msgstr "Falló al mostrar la ayuda"
 
-#: ../src/dwell-click-applet.c:510
+#: ../src/dwell-click-applet.c:520
 msgid "Dwell Click Applet"
 msgstr "Miniaplicación Pulsación al posarse"
 

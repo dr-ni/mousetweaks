@@ -75,9 +75,17 @@ dwell_do_pointer_click (MTClosure *mt, gint x, gint y)
 	dwell_restore_single_click (mt);
 	break;
     case DWELL_CLICK_TYPE_DRAG:
-	SPI_generateMouseEvent (x, y, "b1p");
-	mt->dwell_drag_started = TRUE;
-	mt_cursor_set (GDK_FLEUR);
+	if (!mt->dwell_drag_started) {
+	    SPI_generateMouseEvent (x, y, "b1p");
+	    mt->dwell_drag_started = TRUE;
+	    mt_cursor_set (GDK_FLEUR);
+	}
+	else {
+	    SPI_generateMouseEvent (x, y, "b1r");
+	    mt->dwell_drag_started = FALSE;
+	    mt_cursor_set (GDK_LEFT_PTR);
+	    dwell_restore_single_click (mt);
+	}
 	break;
     case DWELL_CLICK_TYPE_RIGHT:
 	SPI_generateMouseEvent (x, y, "b3c");
@@ -208,38 +216,22 @@ dwell_stop_gesture (MTClosure *mt)
 static void
 dwell_timer_finished (MtTimer *timer, gpointer data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
     gint x, y;
 
     gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
-    /* stop active drag */
-    if (mt->dwell_drag_started) {
-	SPI_generateMouseEvent (x, y, "b1r");
-
-	mt->dwell_drag_started = FALSE;
-	mt_cursor_set (GDK_LEFT_PTR);
-	dwell_restore_single_click (mt);
-
-	return;
-    }
-
-    switch (mt->dwell_mode) {
-    case DWELL_MODE_CTW:
+    if (mt->dwell_mode == DWELL_MODE_CTW)
 	dwell_do_pointer_click (mt, x, y);
-	break;
-    case DWELL_MODE_GESTURE:
+    else if (mt->dwell_mode == DWELL_MODE_GESTURE) {
 	if (mt->dwell_gesture_started) {
 	    dwell_stop_gesture (mt);
-
 	    if (analyze_direction (mt, x, y))
 		dwell_do_pointer_click (mt, mt->pointer_x, mt->pointer_y);
 	}
 	else
 	    dwell_start_gesture (mt);
-    default:
-	break;
     }
 }
 

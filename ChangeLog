@@ -1,3 +1,9 @@
+2008-06-15 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/mt-main.c: (main): Use correct _unref function.
+	(spi_button_event): Use position info from event.
+	(spi_motion_event): Remove whitespace.
+
 2008-06-02 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* configure.ac:

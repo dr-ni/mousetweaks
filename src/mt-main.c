@@ -279,7 +279,6 @@ spi_motion_event (const AccessibleEvent *event, void *data)
 	    mt->pointer_y = (gint) event->detail2;
 	    mt_timer_start (mt->dwell_timer);
 	}
-
 	if (mt->dwell_gesture_started) {
 	    if (mt->x_old > -1 && mt->y_old > -1)
 		draw_line (mt->pointer_x, mt->pointer_y, mt->x_old, mt->y_old);
@@ -291,7 +290,6 @@ spi_motion_event (const AccessibleEvent *event, void *data)
 	    mt->y_old = event->detail2;
 	}
     }
-
     if (mt_timer_is_running (mt->delay_timer)) {
 	if (!within_tolerance (mt, event->detail1, event->detail2)) {
 	    mt_timer_stop (mt->delay_timer);
@@ -307,11 +305,10 @@ spi_button_event (const AccessibleEvent *event, void *data)
 
     if (g_str_equal (event->type, "mouse:button:1p")) {
 	if (mt->delay_enabled) {
-	    gdk_display_get_pointer (gdk_display_get_default (), NULL,
-				     &mt->pointer_x, &mt->pointer_y, NULL);
+	    mt->pointer_x = (gint) event->detail1;
+	    mt->pointer_y = (gint) event->detail2;
 	    mt_timer_start (mt->delay_timer);
 	}
-
 	if (mt->dwell_gesture_started)
 	    dwell_stop_gesture (mt);
     }
@@ -755,7 +752,7 @@ main (int argc, char **argv)
 
 	CLEANUP:
 	    SPI_deregisterGlobalEventListenerAll (bl);
-	    AccessibleDeviceListener_unref (bl);
+	    AccessibleEventListener_unref (bl);
 	    SPI_deregisterGlobalEventListenerAll (ml);
 	    AccessibleEventListener_unref (ml);
 	    SPI_exit ();

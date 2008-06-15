@@ -238,7 +238,7 @@ dwell_timer_finished (MtTimer *timer, gpointer data)
 static gboolean
 right_click_timeout (gpointer data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "b3c");
 
@@ -248,7 +248,7 @@ right_click_timeout (gpointer data)
 static void
 delay_timer_finished (MtTimer *timer, gpointer data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
@@ -262,7 +262,7 @@ delay_timer_finished (MtTimer *timer, gpointer data)
 static void
 spi_motion_event (const AccessibleEvent *event, void *data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     if (mt->dwell_enabled) {
 	if (!within_tolerance (mt, event->detail1, event->detail2) &&
@@ -293,7 +293,7 @@ spi_motion_event (const AccessibleEvent *event, void *data)
 static void
 spi_button_event (const AccessibleEvent *event, void *data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     if (g_str_equal (event->type, "mouse:button:1p")) {
 	if (mt->delay_enabled) {
@@ -379,7 +379,7 @@ mt_update_cursor (MtCursor *cursor, MtTimer *timer, gdouble time)
 static void
 delay_timer_tick (MtTimer *timer, gdouble time, gpointer data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     if (mt->animate_cursor && mt->cursor != NULL)
 	mt_update_cursor (mt->cursor, timer, time);
@@ -388,7 +388,7 @@ delay_timer_tick (MtTimer *timer, gdouble time, gpointer data)
 static void
 dwell_timer_tick (MtTimer *timer, gdouble time, gpointer data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     if (mt->animate_cursor && mt->cursor != NULL)
 	mt_update_cursor (mt->cursor, timer, time);
@@ -398,7 +398,7 @@ static void
 cursor_cache_cleared (MtCursorManager *manager,
 		      gpointer         data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     mt->cursor = mt_cursor_manager_current_cursor (manager);
 }
@@ -408,7 +408,7 @@ cursor_changed (MtCursorManager *manager,
 		const gchar     *name,
 		gpointer         data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     if (!mt->dwell_gesture_started)
 	mt->override_cursor = !g_str_equal (name, "left_ptr");
@@ -428,7 +428,7 @@ gconf_value_changed (GConfClient *client,
 		     GConfValue  *value,
 		     gpointer     data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     if (g_str_equal (key, OPT_THRESHOLD) && value->type == GCONF_VALUE_INT)
 	mt->threshold = gconf_value_get_int (value);

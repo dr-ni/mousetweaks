@@ -1,5 +1,9 @@
 2008-06-15 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/mt-main.c: Remove unnecessary casts.
+
+2008-06-15 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/mt-main.c: Move 'drag-release' code to more appropriate place.
 
 2008-06-15 Gerd Kohlberger <gerdk@svn.gnome.org>

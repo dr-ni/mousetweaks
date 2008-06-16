@@ -1,3 +1,21 @@
+Version 2.23.4
+--------------
+
+Misc improvements/fixes:
+
+	* Fix memory leak
+	* Code cleanup
+
+New and updated translations:
+
+	- [ar] Djihed Afifi
+	- [bg] Alexander Shopov
+	- [es] Jorge Gonzalez
+	- [gl] Ignacio Casal Quinteiro
+	- [he] Yair Hershkovitz
+	- [nb] Kjartan Maraas
+	- [vi] Clytie Siddall
+
 Version 2.23.3
 --------------
 

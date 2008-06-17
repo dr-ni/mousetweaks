@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-16 04:23+0000\n"
-"PO-Revision-Date: 2008-04-13 08:56+0100\n"
+"POT-Creation-Date: 2008-06-17 06:42+0000\n"
+"PO-Revision-Date: 2008-06-17 20:29+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -41,11 +41,17 @@ msgid "Drag Click"
 msgstr "Klik s potegom"
 
 #: ../data/dwell-click-applet.glade.h:6
+#: ../src/dwell-click-applet.c:111
+#: ../src/dwell-click-applet.c:596
+msgid "On"
+msgstr "Vključeno"
+
+#: ../data/dwell-click-applet.glade.h:7
 #: ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "Desni klik"
 
-#: ../data/dwell-click-applet.glade.h:7
+#: ../data/dwell-click-applet.glade.h:8
 #: ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "Enojni klik"
@@ -190,6 +196,7 @@ msgid "Dwell click time"
 msgstr "Čas zadržanega klika"
 
 #: ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:608
 msgid "Enable dwell click"
 msgstr "Omogoči zadržani klik"
 
@@ -198,8 +205,9 @@ msgid "Enable secondary click"
 msgstr "Omogoči drugi klik"
 
 #: ../data/mousetweaks.schemas.in.h:14
+#: ../src/mt-main.c:610
 msgid "Enable simulated secondary click"
-msgstr "Omogoči simulirane druge klike"
+msgstr "Omogoči simulirani drugi klik"
 
 #: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
@@ -226,7 +234,7 @@ msgid "Secondary click time"
 msgstr "Čas drugega klika"
 
 #: ../data/mousetweaks.schemas.in.h:21
-#: ../src/mt-main.c:526
+#: ../src/mt-main.c:618
 msgid "Show click type window"
 msgstr "Prikaži okno vrste klika"
 
@@ -298,40 +306,61 @@ msgstr "Velikost območja zajemanja"
 msgid "Width of the capture area in pixels"
 msgstr "Širina območja zajema v točkah"
 
-#: ../src/mt-main.c:522
-msgid "Enable mousetweaks feature"
-msgstr "Omogoči možnosti mousetweaks"
+#: ../src/mt-main.c:518
+msgid "Assistive Technology Support Is Not Enabled"
+msgstr "Pomožne tehnologije niso omogočene"
 
-#: ../src/mt-main.c:524
-msgid "Use dwell mode"
-msgstr "Uporabi način zadrževanja"
+#: ../src/mt-main.c:519
+msgid ""
+"Mousetweaks requires assistive technologies to be enabled in your session.\n"
+"\n"
+"To enable support for assistive technologies and restart your session, press \"Enable and Log Out\"."
+msgstr ""
+"Mousetweaks za delovanje potrebujejo pomožne tehnologije zagnane preko seje.\n"
+"\n"
+"V primeru, da jih želite omogočiti in ponovno zagnati sejo, pritisnite \"Omogoči in se odjavi\"."
 
-#: ../src/mt-main.c:528
+#: ../src/mt-main.c:612
+msgid "Time to wait before a dwell click"
+msgstr "Čas postanka pred zadržanim klikom"
+
+#: ../src/mt-main.c:614
+msgid "Time to wait before a simulated secondary click"
+msgstr "Čas postanka pred navideznim drugim klikom"
+
+#: ../src/mt-main.c:616
+msgid "Dwell mode to use"
+msgstr "Način zadržanega klika"
+
+#: ../src/mt-main.c:620
 msgid "Window x position"
 msgstr "X Lega okna"
 
-#: ../src/mt-main.c:530
+#: ../src/mt-main.c:622
 msgid "Window y position"
 msgstr "Y Lega okna"
 
-#: ../src/mt-main.c:532
+#: ../src/mt-main.c:624
+msgid "Ignore small pointer movements"
+msgstr "Prezri drobne gibe kazalnika"
+
+#: ../src/mt-main.c:626
+msgid "Show elapsed time as cursor overlay"
+msgstr "Pokaži pretečen čas s prekrivanjem kazalnika."
+
+#: ../src/mt-main.c:628
 msgid "Shut down mousetweaks"
 msgstr "Izklopi mousetweaks"
 
-#: ../src/mt-main.c:540
+#: ../src/mt-main.c:636
 msgid "- GNOME mousetweaks daemon"
 msgstr " - GNOME demone mousetweaks"
 
-#: ../src/mt-main.c:587
-msgid "Assistive Technologies not enabled"
-msgstr "Pomožne tehnologije niso omogočene"
-
-#: ../src/mt-main.c:588
-msgid "Mousetweaks requires Assistive Technologies."
-msgstr "Mousetweaks zahteva uporabo pomožnih tehnologij."
+#: ../src/mt-common.c:54
+msgid "Enable and Log Out"
+msgstr "Omogoči in se odjavi"
 
 #: ../src/pointer-capture-applet.c:73
-#: ../src/dwell-click-applet.c:220
 msgid "Couldn't display help"
 msgstr "Ni bilo mogoče prikazati pomoč"
 
@@ -356,7 +385,31 @@ msgstr "Območje zajemanja"
 msgid "Temporarily lock the mouse pointer"
 msgstr "Začasni zaklep kazalnika miške"
 
-#: ../src/dwell-click-applet.c:416
+#: ../src/dwell-click-applet.c:111
+#: ../src/dwell-click-applet.c:596
+msgid "Off"
+msgstr "Izključeno"
+
+#: ../src/dwell-click-applet.c:286
+msgid "Failed to Launch Mouse Preferences"
+msgstr "Napaka med zaganjanjem lastnosti miške"
+
+#: ../src/dwell-click-applet.c:305
+msgid "Failed to Display Help"
+msgstr "Napaka med prikazovanjem pomoči"
+
+#: ../src/dwell-click-applet.c:520
 msgid "Dwell Click Applet"
 msgstr "Aplet zadržanega klika"
+
+#~ msgid "Enable simualted secondary click"
+#~ msgstr "Omogoči navidezni drugi klik"
+#~ msgid "Simualted secondary click time"
+#~ msgstr "Čas navideznega drugega klika"
+#~ msgid "Enable mousetweaks feature"
+#~ msgstr "Omogoči možnosti mousetweaks"
+#~ msgid "Use dwell mode"
+#~ msgstr "Uporabi način zadrževanja"
+#~ msgid "Mousetweaks requires Assistive Technologies."
+#~ msgstr "Mousetweaks zahteva uporabo pomožnih tehnologij."
 

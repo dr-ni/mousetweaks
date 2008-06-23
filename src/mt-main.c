@@ -59,6 +59,16 @@ dwell_restore_single_click (MTClosure *mt)
     mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);
 }
 
+static gboolean
+dwell_b1r_timeout (gpointer data)
+{
+    MTClosure *mt = data;
+
+    SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "b1r");
+
+    return FALSE;
+}
+
 static void
 dwell_do_pointer_click (MTClosure *mt, gint x, gint y)
 {
@@ -68,7 +78,11 @@ dwell_do_pointer_click (MTClosure *mt, gint x, gint y)
 
     switch (clicktype) {
     case DWELL_CLICK_TYPE_SINGLE:
-	SPI_generateMouseEvent (x, y, "b1c");
+	SPI_generateMouseEvent (x, y, "b1p");
+	/* Wait a few msecs before releasing the button again.
+	 * This allows GOK to see our clicks.
+	 */
+	g_timeout_add (60, dwell_b1r_timeout, mt);
 	break;
     case DWELL_CLICK_TYPE_DOUBLE:
 	SPI_generateMouseEvent (x, y, "b1d");

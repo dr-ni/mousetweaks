@@ -30,12 +30,12 @@ mt_common_show_dialog (const gchar  *primary,
     gint ret;
 
     dialog = gtk_message_dialog_new (NULL, 0, GTK_MESSAGE_ERROR,
-				     GTK_BUTTONS_NONE, primary);
+				     GTK_BUTTONS_NONE, "%s", primary);
     gtk_window_set_title (GTK_WINDOW (dialog), g_get_application_name ());
     gtk_window_set_icon_name (GTK_WINDOW (dialog), MT_ICON_NAME);
     gtk_window_set_keep_above (GTK_WINDOW (dialog), TRUE);
     gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
-					      secondary);
+					      "%s", secondary);
     switch (type) {
     case MT_MESSAGE_QUESTION:
 	g_object_set (dialog, "message-type", GTK_MESSAGE_QUESTION, NULL);

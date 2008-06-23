@@ -96,13 +96,14 @@ dwell_do_pointer_click (MTClosure *mt, gint x, gint y)
 }
 
 static inline gboolean
-within_tolerance (MTClosure *mt, gint x, gint y)
+below_threshold (MTClosure *mt, gint x, gint y)
 {
-    gdouble distance;
+    gint dx, dy;
 
-    distance = sqrt(pow(x - mt->pointer_x, 2.) + pow(y - mt->pointer_y, 2.));
+    dx = x - mt->pointer_x;
+    dy = y - mt->pointer_y;
 
-    return distance < mt->threshold;
+    return (dx * dx + dy * dy) < (mt->threshold * mt->threshold);
 }
 
 static gboolean
@@ -110,10 +111,10 @@ analyze_direction (MTClosure *mt, gint x, gint y)
 {
     gint gd, i, dx, dy;
 
-    dx = ABS(x - mt->pointer_x);
-    dy = ABS(y - mt->pointer_y);
+    dx = ABS (x - mt->pointer_x);
+    dy = ABS (y - mt->pointer_y);
 
-    if (within_tolerance (mt, x, y))
+    if (below_threshold (mt, x, y))
 	return FALSE;
 
     /* find direction */
@@ -265,7 +266,7 @@ spi_motion_event (const AccessibleEvent *event, void *data)
     MTClosure *mt = data;
 
     if (mt->dwell_enabled) {
-	if (!within_tolerance (mt, event->detail1, event->detail2) &&
+	if (!below_threshold (mt, event->detail1, event->detail2) &&
 	    !mt->dwell_gesture_started) {
 	    mt->pointer_x = (gint) event->detail1;
 	    mt->pointer_y = (gint) event->detail2;
@@ -283,7 +284,7 @@ spi_motion_event (const AccessibleEvent *event, void *data)
 	}
     }
     if (mt_timer_is_running (mt->delay_timer)) {
-	if (!within_tolerance (mt, event->detail1, event->detail2)) {
+	if (!below_threshold (mt, event->detail1, event->detail2)) {
 	    mt_timer_stop (mt->delay_timer);
 	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 	}
@@ -347,7 +348,7 @@ cursor_overlay_time (guchar  *image,
     return TRUE;
 }
 
-void
+static void
 mt_update_cursor (MtCursor *cursor, MtTimer *timer, gdouble time)
 {
     guchar *image;
@@ -669,6 +670,7 @@ main (int argc, char **argv)
 	MtCursorManager *manager;
 	AccessibleEventListener *bl, *ml;
 	gint spi_status;
+	gint spi_leaks;
 
 	if (mt_pidfile_create () < 0)
 	    return 1;
@@ -686,6 +688,7 @@ main (int argc, char **argv)
 	if (!mt)
 	    goto FINISH;
 
+	spi_leaks = 0;
 	spi_status = SPI_init ();
 	if (!accessibility_enabled (mt, spi_status)) {
 	    mt_closure_free (mt);
@@ -747,11 +750,14 @@ main (int argc, char **argv)
 	    AccessibleEventListener_unref (bl);
 	    SPI_deregisterGlobalEventListenerAll (ml);
 	    AccessibleEventListener_unref (ml);
-	    SPI_exit ();
+	    spi_leaks = SPI_exit ();
 	    mt_closure_free (mt);
 	FINISH:
 	    mt_pidfile_remove ();
 	    g_object_unref (program);
+
+	if (spi_leaks)
+	    g_warning ("AT-SPI reported %i leaks", spi_leaks);
     }
     return 0;
 }

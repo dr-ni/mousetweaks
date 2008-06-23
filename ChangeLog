@@ -1,3 +1,10 @@
+2008-06-23 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/mt-common.c: Fix compiler warnings
+	* src/mt-main.c: (main): Report at-spi leaks if there are any.
+	(within_tolerance): rename function to below_threshold and
+	remove sqrt() and pow() calls.
+
 2008-06-16 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* configure.ac:

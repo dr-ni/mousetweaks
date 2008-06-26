@@ -40,7 +40,10 @@ struct _DwellData {
     gint         button_height;
     gint         cct;
     gboolean     active;
+    GTimer      *timer;
     guint        tid;
+    gdouble      delay;
+    gdouble      elapsed;
 };
 
 static const gchar *img_widgets[] = {
@@ -115,11 +118,19 @@ static gboolean
 activation_timeout (gpointer data)
 {
     DwellData *dd = data;
+    gboolean stop;
 
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), TRUE);
-    dd->tid = 0;
+    if ((dd->elapsed = g_timer_elapsed (dd->timer, NULL)) < dd->delay)
+	stop = TRUE;
+    else {
+	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), TRUE);
+	dd->tid = 0;
+	dd->elapsed = 0.0;
+	stop = FALSE;
+    }
+    gtk_widget_queue_draw (dd->enable);
 
-    return FALSE;
+    return stop;
 }
 
 static gboolean
@@ -128,6 +139,7 @@ enable_dwell_crossing (GtkWidget        *widget,
 		       gpointer          data)
 {
     DwellData *dd = data;
+    GError *error = NULL;
 
     if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dd->enable)))
 	return FALSE;
@@ -135,15 +147,55 @@ enable_dwell_crossing (GtkWidget        *widget,
     if (event->type == GDK_ENTER_NOTIFY) {
 	gdouble delay;
 
-	delay = gconf_client_get_float (dd->client, OPT_DWELL_T, NULL);
-	dd->tid = g_timeout_add (delay * 1000, activation_timeout, dd);
-    }
-    else {
-	if (dd->tid != 0) {
-	    g_source_remove (dd->tid);
-	    dd->tid = 0;
+	if (!dd->tid) {
+	    dd->delay = gconf_client_get_float (dd->client, OPT_DWELL_T, &error);
+	    if (error) {
+		g_error_free (error);
+		dd->delay = 1.2;
+	    }
+	    g_timer_start (dd->timer);
+	    dd->tid = g_timeout_add (100, activation_timeout, dd);
 	}
     }
+    else {
+	if (dd->tid) {
+	    g_source_remove (dd->tid);
+	    dd->tid = 0;
+	    dd->elapsed = 0.0;
+	}
+    }
+    return FALSE;
+}
+
+static gboolean
+enable_dwell_exposed (GtkWidget      *widget,
+		      GdkEventExpose *event,
+		      gpointer        data)
+{
+    DwellData *dd = data;
+    cairo_t *cr;
+    GdkColor c;
+    gdouble x, y, w, h;
+    gint fwidth, fpad;
+
+    c = widget->style->bg[GTK_STATE_SELECTED];
+    gtk_widget_style_get (widget,
+			  "focus-line-width", &fwidth,
+			  "focus-padding", &fpad,
+			  NULL); 
+    x = widget->allocation.x + fwidth + fpad;
+    y = widget->allocation.y + fwidth + fpad;
+    w = widget->allocation.width - (fwidth + fpad) * 2;
+    h = widget->allocation.height - (fwidth + fpad) * 2;
+
+    cr = gdk_cairo_create (widget->window);
+    cairo_set_source_rgba (cr,
+			   c.red / 65535., c.green / 65535., c.blue / 65535.,
+			   0.5); 
+    cairo_rectangle (cr, x, y, w, (h * dd->elapsed) / dd->delay);
+    cairo_fill (cr);
+    cairo_destroy (cr);
+
     return FALSE;
 }
 
@@ -271,6 +323,7 @@ applet_unrealized (GtkWidget *widget, gpointer data)
     g_object_unref (dd->client);
     g_object_unref (dd->proxy);
     g_object_unref (dd->xml);
+    g_timer_destroy (dd->timer);
     g_slice_free (DwellData, dd);
 }
 
@@ -366,6 +419,8 @@ setup_box (DwellData *dd)
 		      G_CALLBACK (enable_dwell_crossing), dd);
     g_signal_connect (widget, "leave-notify-event",
 		      G_CALLBACK (enable_dwell_crossing), dd);
+    g_signal_connect_after (widget, "expose-event",
+			    G_CALLBACK (enable_dwell_exposed), dd);
 
     /* vertical */
     vgroup = gtk_size_group_new (GTK_SIZE_GROUP_VERTICAL);
@@ -388,6 +443,8 @@ setup_box (DwellData *dd)
 		      G_CALLBACK (enable_dwell_crossing), dd);
     g_signal_connect (widget, "leave-notify-event",
 		      G_CALLBACK (enable_dwell_crossing), dd);
+    g_signal_connect_after (widget, "expose-event",
+			    G_CALLBACK (enable_dwell_exposed), dd);
 
     for (i = 0; i < N_CLICK_TYPES; i++) {
 	gtk_image_set_from_pixbuf (GTK_IMAGE (WID (img_widgets[i])),
@@ -535,6 +592,7 @@ fill_applet (PanelApplet *applet)
 
     dd->active = mousetweaks_is_active ();
     dd->cct = DWELL_CLICK_TYPE_SINGLE;
+    dd->timer = g_timer_new ();
 
     /* about dialog */
     about = WID ("about");

@@ -1,3 +1,7 @@
+2008-06-26 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/dwell-click-applet.c: Add time animation to enable button.
+
 2008-06-24 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/mt-main.c: (dwell_do_pointer_click): Add a short delay between

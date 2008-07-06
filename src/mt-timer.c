@@ -208,7 +208,7 @@ void
 mt_timer_set_target (MtTimer *timer, gdouble time)
 {
     g_return_if_fail (MT_IS_TIMER (timer));
-    g_return_if_fail (time >= 0.5);
+    g_return_if_fail (time >= 0.0);
 
     MT_TIMER_GET_PRIVATE (timer)->target = time;
 }

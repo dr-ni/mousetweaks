@@ -624,7 +624,7 @@ main (int argc, char **argv)
 	{"enable-secondary", 0, 0, G_OPTION_ARG_NONE, &delay_click,
 	    _("Enable simulated secondary click"), 0},
 	{"dwell-time", 0, 0, G_OPTION_ARG_DOUBLE, &dwell_time,
-	    _("Time to wait before a dwell click"), "[0.5-3.0]"},
+	    _("Time to wait before a dwell click"), "[0.2-3.0]"},
 	{"secondary-time", 0, 0, G_OPTION_ARG_DOUBLE, &delay_time,
 	    _("Time to wait before a simulated secondary click"), "[0.5-3.0]"},
 	{"dwell-mode", 'm', 0, G_OPTION_ARG_STRING, &mode,
@@ -723,7 +723,7 @@ main (int argc, char **argv)
 	    gconf_client_set_bool (mt->client, OPT_DELAY, TRUE, NULL);
 	if (delay_time >= .5 && delay_time <= 3.)
 	    gconf_client_set_float (mt->client, OPT_DELAY_T, delay_time, NULL);
-	if (dwell_time >= .5 && dwell_time <= 3.)
+	if (dwell_time >= .2 && dwell_time <= 3.)
 	    gconf_client_set_float (mt->client, OPT_DWELL_T, dwell_time, NULL);
 	if (threshold >= 0 && threshold <= 30)
 	    gconf_client_set_int (mt->client, OPT_THRESHOLD, threshold, NULL);

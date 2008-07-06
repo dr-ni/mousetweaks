@@ -1,3 +1,11 @@
+2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/mt-main.c:
+	* src/mt-timer.c:
+	* man/mousetweaks.1:
+
+	Change the dwell delay range from 0.5-3.0 sec to 0.2-3.0 sec.
+
 2008-06-26 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/dwell-click-applet.c: Add time animation to enable button.

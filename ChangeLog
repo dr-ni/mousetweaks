@@ -1,5 +1,11 @@
 2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* data/dwell-click-applet.glade:
+	* data/pointer-capture-applet.glade:	
+	Finally add Francesco to doc credits. See changelog from 2008-03-27.
+
+2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/mt-main.c: (accessibility_enabled): Avoid getting launched by
 	g-s-d again when we disable our gconf keys.
 	* src/dwell-click-applet.c: Remove an unused var and some cleanup.

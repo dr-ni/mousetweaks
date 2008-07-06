@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.4.5 on Sun Jun  1 06:37:11 2008 -->
+<!--Generated with glade3 3.4.5 on Sun Jul  6 13:51:52 2008 -->
 <glade-interface>
   <widget class="GtkWindow" id="horizontal">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
@@ -279,6 +279,7 @@
     <property name="comments" translatable="yes">Applet to select different dwell-click types.
 Part of Mousetweaks</property>
     <property name="authors">Gerd Kohlberger &lt;lowfi@chello.at&gt;</property>
+    <property name="documenters">Francesco Fumanti &lt;francesco.fumanti@gmx.net&gt;</property>
     <property name="translator_credits">GNOME Translation Team</property>
     <property name="logo_icon_name">gnome-dev-mouse-optical</property>
     <child internal-child="vbox">

@@ -44,7 +44,7 @@ install-data-local:
 	$(GCONFTOOL) --makefile-install-rule mousetweaks.schemas
 if BUILD_PCA
 	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
-	$(GCONFTOOL) --makefile-install-rule $(pca_schemas)
+	$(GCONFTOOL) --makefile-install-rule pointer-capture-applet.schemas
 endif
 
 uninstall-local:
@@ -52,7 +52,7 @@ uninstall-local:
 	$(GCONFTOOL) --makefile-uninstall-rule mousetweaks.schemas
 if BUILD_PCA
 	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
-	$(GCONFTOOL) --makefile-uninstall-rule $(pca_schemas)
+	$(GCONFTOOL) --makefile-uninstall-rule pointer-capture-applet.schemas
 endif
 endif
 

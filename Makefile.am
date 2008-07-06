@@ -1,13 +1,14 @@
 SUBDIRS = src data pixmaps po help man
 
+ACLOCAL_AMFLAGS = -I m4
+
 EXTRA_DIST =			\
-	intltool-extract.in     \
-	intltool-merge.in       \
-	intltool-update.in	\
+	gnome-doc-utils.make	\
+	MAINTAINERS		\
 	COPYING.GPL		\
 	COPYING.FDL
 
 DISTCLEANFILES =		\
-	intltool-extract	\
-	intltool-merge		\
-	intltool-update
+	gnome-doc-utils.make	\
+	omf.make		\
+	xmldocs.make

@@ -1,5 +1,17 @@
 2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* help/Makefile.am: Add -Wno-portability to get rid of
+	gnome-doc-utils warnings.
+	* src/Makefile.am: Use GNOME_MAINTAINER_MODE_DEFINES.
+	* data/Makefile.am: Don't try to install schemas.in files. Sigh.
+
+	* configure.ac:
+	* Makefile.am:
+	Use m4 subdir for macros + bump intltool requirement to 0.40.0 +
+	misc. nitpicking.
+
+2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* data/dwell-click-applet.glade:
 	* data/pointer-capture-applet.glade:	
 	Finally add Francesco to doc credits. See changelog from 2008-03-27.

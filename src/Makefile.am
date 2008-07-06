@@ -1,5 +1,6 @@
 INCLUDES =				     \
 	$(DEPENDENCIES_CFLAGS)		     \
+	$(DISABLE_DEPRECATED)		     \
 	-DDATADIR=\"$(datadir)/mousetweaks\" \
 	-DLOCALEDIR=\"$(datadir)/locale\"
 

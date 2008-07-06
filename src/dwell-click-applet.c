@@ -102,11 +102,10 @@ static void
 enable_dwell_changed (GtkToggleButton *button, gpointer data)
 {
     DwellData *dd = data;
-    gboolean dwell, ctw;
+    gboolean dwell;
 
-    ctw = gconf_client_get_bool (dd->client, OPT_CTW, NULL);
-    if (ctw)
-	gconf_client_set_bool (dd->client, OPT_CTW, FALSE, NULL);
+    /* disable click-type window if it's active */
+    gconf_client_set_bool (dd->client, OPT_CTW, FALSE, NULL);
 
     dwell = gtk_toggle_button_get_active (button);
     gconf_client_set_bool (dd->client, OPT_DWELL, dwell, NULL);
@@ -145,8 +144,6 @@ enable_dwell_crossing (GtkWidget        *widget,
 	return FALSE;
 
     if (event->type == GDK_ENTER_NOTIFY) {
-	gdouble delay;
-
 	if (!dd->tid) {
 	    dd->delay = gconf_client_get_float (dd->client, OPT_DWELL_T, &error);
 	    if (error) {
@@ -550,8 +547,8 @@ gconf_value_changed (GConfClient *client,
 
     if (g_str_equal (key, OPT_MODE)) {
 	update_sensitivity (dd);
-    } else if (g_str_equal (key, OPT_DWELL) &&
-	       value->type == GCONF_VALUE_BOOL) {
+    }
+    else if (g_str_equal (key, OPT_DWELL) && value->type == GCONF_VALUE_BOOL) {
 	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable),
 				      gconf_value_get_bool (value));
 	update_sensitivity (dd);

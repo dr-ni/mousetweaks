@@ -1,5 +1,11 @@
 2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/mt-main.c: (accessibility_enabled): Avoid getting launched by
+	g-s-d again when we disable our gconf keys.
+	* src/dwell-click-applet.c: Remove an unused var and some cleanup.
+
+2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/mt-timer.c: Remove unnecessary g_timer_stop() calls.
 
 2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>

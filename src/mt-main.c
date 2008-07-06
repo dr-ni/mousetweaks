@@ -547,8 +547,10 @@ accessibility_enabled (MTClosure *mt,
 	}
 	else {
 	    /* reset the selected option again */
-	    gconf_client_set_bool (mt->client, OPT_DELAY, FALSE, NULL);
-	    gconf_client_set_bool (mt->client, OPT_DWELL, FALSE, NULL);
+	    if (gconf_client_get_bool (mt->client, OPT_DELAY, NULL))
+		gconf_client_set_bool (mt->client, OPT_DELAY, FALSE, NULL);
+	    if (gconf_client_get_bool (mt->client, OPT_DWELL, NULL))
+		gconf_client_set_bool (mt->client, OPT_DWELL, FALSE, NULL);
 	}
 	return FALSE;
     }

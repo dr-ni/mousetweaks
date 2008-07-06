@@ -91,10 +91,7 @@ mt_timer_dispose (GObject *object)
     MtTimer *timer = MT_TIMER (object);
     MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE (timer);
 
-    if (mt_timer_is_running (timer)) {
-	g_timer_stop (priv->timer);
-	priv->elapsed = 0.0;
-    }
+    priv->elapsed = 0.0;
 
     if (priv->tid != 0) {
 	g_source_remove (priv->tid);
@@ -125,9 +122,8 @@ mt_timer_check_time (gpointer data)
 
     if (priv->elapsed >= priv->target) {
 	priv->tid = 0;
-	g_timer_stop (priv->timer);
-	g_signal_emit (timer, signals[FINISHED], 0);
 	priv->elapsed = 0.0;
+	g_signal_emit (timer, signals[FINISHED], 0);
 
 	return FALSE;
     }
@@ -145,7 +141,6 @@ mt_timer_new (void)
     priv = MT_TIMER_GET_PRIVATE (timer);
 
     priv->timer = g_timer_new ();
-    g_timer_stop (priv->timer);
 
     return timer;
 }
@@ -170,9 +165,7 @@ mt_timer_stop (MtTimer *timer)
     MtTimerPrivate *priv;
 
     g_return_if_fail (MT_IS_TIMER (timer));
-
     priv = MT_TIMER_GET_PRIVATE (timer);
-    g_timer_stop (priv->timer);
 
     if (priv->tid != 0) {
 	g_source_remove (priv->tid);

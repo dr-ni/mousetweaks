@@ -1,5 +1,9 @@
 2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/mt-timer.c: Remove unnecessary g_timer_stop() calls.
+
+2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/mt-main.c:
 	* src/mt-timer.c:
 	* man/mousetweaks.1:

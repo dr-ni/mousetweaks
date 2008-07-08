@@ -1,5 +1,13 @@
 2008-07-08 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/mt.main.c: Make sure we really click on the current positon of
+	the pointer. Part of the GOK workaround.
+	* src/mt-cursor-manager.c: Don't send cursor_changed signals if
+	the new cursor has no name.
+	eg. busy, custom pixmap cursors.
+
+2008-07-08 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* configure.ac: Remove AC_SUBST for LINGUAS path.
 
 2008-07-06 Gerd Kohlberger <gerdk@svn.gnome.org>

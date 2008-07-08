@@ -62,9 +62,10 @@ dwell_restore_single_click (MTClosure *mt)
 static gboolean
 dwell_b1r_timeout (gpointer data)
 {
-    MTClosure *mt = data;
+    gint x, y;
 
-    SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "b1r");
+    gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
+    SPI_generateMouseEvent (x, y, "b1r");
 
     return FALSE;
 }
@@ -82,7 +83,7 @@ dwell_do_pointer_click (MTClosure *mt, gint x, gint y)
 	/* Wait a few msecs before releasing the button again.
 	 * This allows GOK to see our clicks.
 	 */
-	g_timeout_add (60, dwell_b1r_timeout, mt);
+	g_timeout_add (60, dwell_b1r_timeout, NULL);
 	break;
     case DWELL_CLICK_TYPE_DOUBLE:
 	SPI_generateMouseEvent (x, y, "b1d");
@@ -293,8 +294,8 @@ spi_motion_event (const AccessibleEvent *event, void *data)
 	    draw_line (mt->pointer_x, mt->pointer_y,
 		       event->detail1, event->detail2);
 
-	    mt->x_old = event->detail1;
-	    mt->y_old = event->detail2;
+	    mt->x_old = (gint) event->detail1;
+	    mt->y_old = (gint) event->detail2;
 	}
     }
     if (mt_timer_is_running (mt->delay_timer)) {

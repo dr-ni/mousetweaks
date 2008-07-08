@@ -171,30 +171,27 @@ xfixes_filter (GdkXEvent *xevent, GdkEvent *event, gpointer data)
 
     if (xev->type == fixes_event + XFixesCursorNotify) {
 	XFixesCursorNotifyEvent *cn = (XFixesCursorNotifyEvent *) xev;
-	MtCursorManager *manager = (MtCursorManager *) data;
 
 	if (cn->cursor_name != None) {
-	    MtCursorManagerPrivate *priv = MT_CURSOR_MANAGER_GET_PRIVATE (manager);
+	    MtCursorManager *manager = data;
+	    MtCursorManagerPrivate *priv;
 
+	    priv = MT_CURSOR_MANAGER_GET_PRIVATE (manager);
 	    if (!priv->cursor_set) {
 		XFixesCursorImage *image;
 
 		image = XFixesGetCursorImage (GDK_DISPLAY ());
 
-		if (mt_cursor_manager_lookup_cursor (manager, image->name) == NULL)
+		if (!mt_cursor_manager_lookup_cursor (manager, image->name))
 		    mt_cursor_manager_add_cursor (manager, image);
 
 		g_signal_emit (manager, signals[CURSOR_CHANGED], 0, image->name);
-
 		XFree (image);
 	    }
 	    else
 		priv->cursor_set = FALSE;
 	}
-	else
-	    g_signal_emit (manager, signals[CURSOR_CHANGED], 0, "");
     }
-
     return GDK_FILTER_CONTINUE;
 }
 

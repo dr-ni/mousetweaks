@@ -44,6 +44,7 @@ PKG_CHECK_MODULES(DEPENDENCIES,
 	libpanelapplet-2.0
 	libgnome-2.0
 	cspi-1.0
+	xcursor
 	xfixes)
 
 AC_SUBST(DEPENDENCIES_CFLAGS)

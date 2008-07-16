@@ -1,3 +1,9 @@
+2008-07-16 Gerd Kohlberger <gerdk@svn.gnome.org>
+	
+	Patch by Thadeu Lima de Souza Cascardo (bug #543272)
+
+	* configure.ac: Add dependency to xcursor
+
 2008-07-09 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* Makefile.am: Add ofm.make and xmldocs.make to EXTRA_DIST.

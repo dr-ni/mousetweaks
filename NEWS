@@ -1,3 +1,29 @@
+Version 2.23.5
+--------------
+
+New features:
+
+	* New time animation for enable button in the dwell-click applet
+
+Misc improvements/fixes:
+
+	* Change the dwell delay range to 0.2-3.0 sec
+	* Don't send cursor_changed signals if the new cursor has no name
+	* Build system improvements
+	* Don't try to install schemas.in files
+	* Bump intltool to 0.40.0
+
+Bug fixes:
+
+	#543272: Add dependency to xcursor (Thadeu Lima de Souza Cascardo)
+	#538004: gok does not see synthetic clicks from mousetweaks
+
+New and updated translations:
+
+	- [nb] Kjartan Maraas
+	- [th] Theppitak Karoonboonyanan 
+
+
 Version 2.23.4
 --------------
 

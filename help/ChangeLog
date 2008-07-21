@@ -1,3 +1,10 @@
+2008-07-21 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* modified trunk/help/C/mousetweaks.xml
+	* modified trunk/help/C/figures/mouse-a11y-dwell-click-type-applet.png
+
+	Updates to reflect the imprisonments done to mousetweaks for GNOME 2.24.
+
 2008-03-09  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation

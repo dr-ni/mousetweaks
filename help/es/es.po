@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.help.HEAD\n"
-"POT-Creation-Date: 2008-07-22 05:10+0000\n"
-"PO-Revision-Date: 2008-07-25 11:27+0200\n"
+"POT-Creation-Date: 2008-07-25 09:28+0000\n"
+"PO-Revision-Date: 2008-07-25 15:56+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -307,8 +307,8 @@ msgid ""
 "frfumanti@svn.gnome.org&gt;</email>"
 msgstr ""
 "El contenido de este manual se ha adaptado a los cambios en los Ajustes "
-"finos del ratón para su integración en GNOME 2.24. <email> Francesco Fumanti &lt;"
-"frfumanti@svn.gnome.org&gt;</email>."
+"finos del ratón para su integración en GNOME 2.24. <email> Francesco Fumanti "
+"&lt;frfumanti@svn.gnome.org&gt;</email>."
 
 #: C/mousetweaks.xml:50(revnumber)
 msgid "version 2.21.5"
@@ -369,9 +369,10 @@ msgid ""
 "its graphical user interfaces consisting of the accessibility tab of the "
 "mouse control panel and two panel applets."
 msgstr ""
-"Este manual describe las herramientas de accesibilidad proporcionadas porlos Ajustes finos del ratón y "
-"su interfaz gráfica de usuario que consiste en la solapa de accesibilidad del "
-"panel del control del ratón y dos miniaplicaciones del panel."
+"Este manual describe las herramientas de accesibilidad proporcionadas porlos "
+"Ajustes finos del ratón y su interfaz gráfica de usuario que consiste en la "
+"solapa de accesibilidad del panel del control del ratón y dos "
+"miniaplicaciones del panel."
 
 #: C/mousetweaks.xml:92(contrib)
 msgid ""
@@ -419,9 +420,9 @@ msgid ""
 "enhancements for the GNOME Desktop. Indeed, it offers the following "
 "functions to the user:"
 msgstr ""
-"Los <application>Ajustes finos del ratón</application> proporciona "
-"mejoras de accesibilidad para el ratón en el Escritorio GNOME. Efectivamente "
-"ofrece al usuario las siguientes nuevas funciones:"
+"Los <application>Ajustes finos del ratón</application> proporciona mejoras "
+"de accesibilidad para el ratón en el Escritorio GNOME. Efectivamente ofrece "
+"al usuario las siguientes nuevas funciones:"
 
 #: C/mousetweaks.xml:123(para)
 msgid ""
@@ -539,9 +540,8 @@ msgstr ""
 "abra el <application>Terminal</application> y escriba lo siguiente:"
 
 #: C/mousetweaks.xml:215(parameter)
-#, fuzzy
 msgid "--enable-secondary"
-msgstr "--enable delay"
+msgstr "--enable-secondary"
 
 #: C/mousetweaks.xml:214(command) C/mousetweaks.xml:290(command)
 msgid "mousetweaks <placeholder-1/>"
@@ -552,23 +552,20 @@ msgid "Starting The Dwell Click Function"
 msgstr "Iniciar la función de pulsación al posarse"
 
 #: C/mousetweaks.xml:222(para)
-#, fuzzy
 msgid "You can start the dwell click function in three ways:"
-msgstr "Puede iniciar la función de pulsación al posarse de dos formas:"
+msgstr "Puede iniciar la función de pulsación al posarse de tres formas:"
 
 #: C/mousetweaks.xml:226(para)
-#, fuzzy
 msgid "from the Accessibility tab of the Mouse control panel"
-msgstr "Imagen del panel de control del ratón"
+msgstr "desde la solapa Accesibilidad del panel de control del ratón"
 
 #: C/mousetweaks.xml:234(para)
 msgid "from the On/Off button on the Dwell Click panel applet"
-msgstr ""
+msgstr "desde el botón Activar/Desactivar en la miniaplicación del panel Pulsación al posarse"
 
 #: C/mousetweaks.xml:239(title)
-#, fuzzy
 msgid "Start From The Accessibility tab of the Mouse control panel"
-msgstr "Imagen del panel de control del ratón"
+msgstr "Iniciar desde la solapa Accesibilidad en el panel de control del ratón"
 
 #: C/mousetweaks.xml:242(para)
 msgid ""
@@ -617,13 +614,12 @@ msgstr ""
 "application> y escriba lo siguiente:"
 
 #: C/mousetweaks.xml:290(parameter)
-#, fuzzy
 msgid "--enable-dwell --show-ctw"
-msgstr "--enable dwell --show-ctw"
+msgstr "--enable-dwell --show-ctw"
 
 #: C/mousetweaks.xml:295(title)
 msgid "Start From The On/Off button On The Dwell Click Panel Applet"
-msgstr ""
+msgstr "Iniciar desde el botón Activar/Desactivar en la miniaplicación del panel Pulsación al posarse"
 
 #: C/mousetweaks.xml:298(para)
 msgid ""
@@ -636,10 +632,9 @@ msgstr ""
 
 #: C/mousetweaks.xml:311(para) C/mousetweaks.xml:442(para)
 #: C/mousetweaks.xml:738(para)
-#, fuzzy
 msgid "Picture showing the click type applet at the right of the GNOME menus"
 msgstr ""
-"Imagen mostrando la miniaplicación del tipo de pulsación en la parte derecha "
+"Imagen mostrando la miniaplicación Tipo de pulsación en la parte derecha "
 "de los menús de GNOME"
 
 #: C/mousetweaks.xml:318(link) C/mousetweaks.xml:326(title)
@@ -654,6 +649,10 @@ msgid ""
 "done for the Pointer Capture panel applet. The procedure for the Dwell Click "
 "panel applet is similar."
 msgstr ""
+"Para obtener información acerca de cómo instalar la miniaplicación Pulsación al posarse en el "
+"panel de GNOME, consulte <placeholder-1/> donde puede ver cómo se hace "
+"para la miniaplicación del panel Captura del puntero. El procedimiento para la miniaplicación "
+"Pulsación al posarse es similar."
 
 #: C/mousetweaks.xml:328(para)
 msgid ""
@@ -754,9 +753,8 @@ msgid "Quitting The Dwell Click"
 msgstr "Salir de la pulsación al posarse"
 
 #: C/mousetweaks.xml:401(para)
-#, fuzzy
 msgid "It is possible to quit the dwell click in three ways:"
-msgstr "Se puede quitar la pulsación al posarse de dos formas:"
+msgstr "Se puede quitar la pulsación al posarse de tres formas:"
 
 #: C/mousetweaks.xml:414(para)
 msgid "Picture of the checkbox to start the buttonless click feature"
@@ -778,6 +776,8 @@ msgid ""
 "If the Dwell Click applet has been installed on the GNOME panel, the dwell "
 "click can be disabled by dwelling with the pointer on its On/Off button."
 msgstr ""
+"Si la miniaplicación Pulsación al posarse se ha instalado en el panel de GNOME, se puede "
+"desactivar la pulsación al posarse posando el puntero en el botón Activar/Desactivar."
 
 #: C/mousetweaks.xml:451(title)
 msgid "Quitting The Pointer Capture Function"
@@ -823,6 +823,9 @@ msgid ""
 "this section you will find the description of the three functions: "
 "<placeholder-1/>"
 msgstr ""
+"Los ajustes finos del ratón ofrecen tres funciones de accesibilidad para el usuario. En "
+"esta sección encontrará las descripciones para las tres funciones: "
+"<placeholder-1/>"
 
 #: C/mousetweaks.xml:499(title)
 msgid "Simulated Secondary Click Description"
@@ -841,11 +844,8 @@ msgstr ""
 "un <mousebutton>botón de ratón</mousebutton> a su disposición."
 
 #: C/mousetweaks.xml:512(para)
-#, fuzzy
 msgid "Picture showing the settings belonging to the Simulated Secondary Click."
-msgstr ""
-"Imagen de la casilla de verificación para iniciar la pulsación secundaria "
-"simulada"
+msgstr "Imagen que muestra los ajustes pertenecientes a la Pulsación secundaria simulada."
 
 #: C/mousetweaks.xml:518(title) C/mousetweaks.xml:644(title)
 msgid "How Does It Work?"
@@ -855,7 +855,7 @@ msgstr "¿Cómo funciona?"
 msgid ""
 "Let us assume that the user has enabled the Simulated Secondary Click "
 "feature."
-msgstr ""
+msgstr "Se asume que el usuario ha activado la característica Pulsación secundaria del ratón."
 
 #: C/mousetweaks.xml:523(para)
 #, fuzzy
@@ -882,6 +882,8 @@ msgid ""
 "Under some circumstances, it happens that the feedback on the arrow of the "
 "pointer does not work. The Simulated Secondary Click is issued nevertheless."
 msgstr ""
+"Bajo ciertas circunstancias sucede que no funciona la acción de la flecha del puntero. "
+"En cualquier caso se ejecuta la pulsación secundaria simulada."
 
 #: C/mousetweaks.xml:541(title)
 msgid "The Delay Slider"
@@ -900,9 +902,8 @@ msgstr ""
 "la casilla de activación:"
 
 #: C/mousetweaks.xml:551(title)
-#, fuzzy
 msgid "Motion Treshold"
-msgstr "Ajuste del umbral de movimiento"
+msgstr "Umbral de movimiento"
 
 #: C/mousetweaks.xml:553(para)
 msgid ""
@@ -1145,16 +1146,17 @@ msgid ""
 "Instead of the Click Type Window some users might prefer to use the "
 "<guilabel>Dwell Click</guilabel> panel applet, that has some advantages:."
 msgstr ""
-"En lugar de la ventana Tipo de pulsación, algunos usuarios pueden preferir usar la "
-"miniaplicación del panel <guilabel>Pulsación al posarse</guilabel> que tiene ciertas ventajas:"
+"En lugar de la ventana Tipo de pulsación, algunos usuarios pueden preferir "
+"usar la miniaplicación del panel <guilabel>Pulsación al posarse</guilabel> "
+"que tiene ciertas ventajas:"
 
 #: C/mousetweaks.xml:746(para)
 msgid ""
 "The user does not need the <guilabel>Click Type Window</guilabel> that "
 "covers other windows on the desktop."
 msgstr ""
-"El usuario no necesita la ventana del <guilabel>Tipo de pulsación</guilabel> que "
-"cubra otras ventanas del escritorio."
+"El usuario no necesita la ventana del <guilabel>Tipo de pulsación</guilabel> "
+"que cubra otras ventanas del escritorio."
 
 #: C/mousetweaks.xml:752(para)
 msgid ""
@@ -1169,8 +1171,8 @@ msgid ""
 "Indeed, by using the <guilabel>Dwell Click</guilabel> panel applet: "
 "<placeholder-1/>"
 msgstr ""
-"Usando la miniaplicación del panel <guilabel>Pulsación al posarse</guilabel>: "
-"<placeholder-1/>"
+"Usando la miniaplicación del panel <guilabel>Pulsación al posarse</"
+"guilabel>: <placeholder-1/>"
 
 #: C/mousetweaks.xml:761(para)
 #, fuzzy
@@ -1385,13 +1387,12 @@ msgid "Picture showing the preferences of the pointer capture applet"
 msgstr "Imagen mostrando las preferencias de la miniaplicación de captura del puntero"
 
 #: C/mousetweaks.xml:931(para)
-#, fuzzy
 msgid ""
 "The <guilabel>Preferences</guilabel> window of the <guilabel>Pointer "
 "Capture</guilabel> applet has three sections:"
 msgstr ""
-"La ventana de preferencias de la miniaplicación de captura del puntero tiene "
-"tres secciones:"
+"La ventana <guilabel>Preferencias</guilabel> de la miniaplicación <guilabel>Captura "
+"del puntero</guilabel> tiene tres secciones:"
 
 #: C/mousetweaks.xml:936(para)
 #, fuzzy

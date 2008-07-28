@@ -23,6 +23,6 @@
         <oaf_attribute name="name" type="string" _value="Dwell Click"/>
         <oaf_attribute name="description" type="string" _value="Select dwelling click type"/>
         <oaf_attribute name="panel:category" type="string" value="Accessibility"/>
-        <oaf_attribute name="panel:icon" type="string" value="gnome-dev-mouse-optical"/>
+        <oaf_attribute name="panel:icon" type="string" value="input-mouse"/>
 </oaf_server>
 </oaf_info>

@@ -1,3 +1,12 @@
+2008-07-28 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	Patch by Matthias Clasen. Fixes #545059.
+
+	* src/mt-common.h:
+	* data/DwellClick_Factory.server.in.in:
+	* data/PointerCapture_Factory.server.in.in:
+	Use standard icon name.
+
 2008-07-20 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* configure.ac:

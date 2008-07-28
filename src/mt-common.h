@@ -28,7 +28,7 @@
 
 G_BEGIN_DECLS
 
-#define MT_ICON_NAME  "gnome-dev-mouse-optical"
+#define MT_ICON_NAME  "input-mouse"
 
 #define MT_GCONF_HOME "/desktop/gnome/accessibility/mouse"
 #define OPT_THRESHOLD MT_GCONF_HOME "/threshold"

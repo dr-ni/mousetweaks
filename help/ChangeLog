@@ -1,3 +1,9 @@
+2008-08-01 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* modified trunk/help/C/figures/mouse-a11y-dwell-click-type-applet.png
+
+	Remove Ubuntu logo from figure with Dwell Click applet.
+
 2008-05-25  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
         * es/es.po: Updated Spanish translation

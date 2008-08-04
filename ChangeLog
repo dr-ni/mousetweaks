@@ -1,3 +1,7 @@
+2008-06-16 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* NEWS: Prepare 2.23.6 release.
+
 2008-08-04 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* configure.ac: Check for libgnomeui

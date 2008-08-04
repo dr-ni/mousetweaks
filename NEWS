@@ -1,3 +1,25 @@
+Version 2.23.6
+--------------
+
+Misc improvements/fixes:
+
+	* Fix new compile warnings
+	* Remove Ubuntu logo from figure with Dwell Click applet
+
+Bug fixes:
+
+	#545059: Use standard icon name (Matthias Clasen)
+
+Manual:
+
+	* Update manual for the coming 2.24 release
+
+New and updated translations:
+
+	- [ar] Djihed Afifi
+	- [es] Jorge González
+	- [sv] Daniel Nylander
+
 Version 2.23.5
 --------------
 

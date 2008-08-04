@@ -687,7 +687,7 @@ main (int argc, char **argv)
 	MtCursorManager *manager;
 	AccessibleEventListener *bl, *ml;
 	gint spi_status;
-	gint spi_leaks;
+	gint spi_leaks = 0;
 
 	if (mt_pidfile_create () < 0)
 	    return 1;
@@ -705,7 +705,6 @@ main (int argc, char **argv)
 	if (!mt)
 	    goto FINISH;
 
-	spi_leaks = 0;
 	spi_status = SPI_init ();
 	if (!accessibility_enabled (mt, spi_status)) {
 	    mt_closure_free (mt);

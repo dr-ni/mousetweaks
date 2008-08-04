@@ -43,6 +43,7 @@ PKG_CHECK_MODULES(DEPENDENCIES,
 	dbus-glib-1 >= 0.7
 	libpanelapplet-2.0
 	libgnome-2.0
+	libgnomeui-2.0
 	cspi-1.0
 	xcursor
 	xfixes)

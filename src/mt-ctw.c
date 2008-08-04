@@ -23,6 +23,7 @@
 #include "mt-main.h"
 #include "mt-service.h"
 #include "mt-common.h"
+#include "mt-ctw.h"
 
 #define WID(n) (glade_xml_get_widget (xml, n))
 

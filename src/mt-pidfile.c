@@ -18,7 +18,7 @@
  */
 
 /*
- * Modified version of dpid.c -libdaemon
+ * Modified version of dpid.c - libdaemon.
  * Copyright 2003-2007 Lennart Poettering <mzqnrzba (at) 0pointer (dot) de>
  */
 
@@ -37,6 +37,8 @@
 #include <stddef.h>
 
 #include <glib.h>
+
+#include "mt-pidfile.h"
 
 #ifndef ETIME
 #define ETIME ETIMEDOUT /* For FreeBSD */

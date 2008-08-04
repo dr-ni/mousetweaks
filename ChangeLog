@@ -1,3 +1,14 @@
+2008-08-04 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* configure.ac: Check for libgnomeui
+	* src/Makefile.am: Use GNOME_COMPILE_WARNINGS.
+ 
+	* src/mt-ctw.c: Add header file.
+	* src/mt-main.c: (main): spi_leaks might be used uninitialized.
+	* src/mt-pidfile.c: Add header file.
+
+	Fix new compile warnings.
+
 2008-07-28 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	Patch by Matthias Clasen. Fixes #545059.

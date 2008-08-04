@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.help.HEAD\n"
-"POT-Creation-Date: 2008-07-25 09:28+0000\n"
-"PO-Revision-Date: 2008-07-25 15:56+0200\n"
+"POT-Creation-Date: 2008-08-01 17:38+0000\n"
+"PO-Revision-Date: 2008-08-04 22:30+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -151,9 +151,10 @@ msgstr ""
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/mousetweaks.xml:307(None) C/mousetweaks.xml:438(None)
 #: C/mousetweaks.xml:734(None)
+#, fuzzy
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-"md5=6cae0cb8fd2d6919ae93133f9ab2c635"
+"md5=d14731688177da795de6d7679c6fb8ca"
 msgstr ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
 "md5=6cae0cb8fd2d6919ae93133f9ab2c635"
@@ -561,7 +562,9 @@ msgstr "desde la solapa Accesibilidad del panel de control del ratón"
 
 #: C/mousetweaks.xml:234(para)
 msgid "from the On/Off button on the Dwell Click panel applet"
-msgstr "desde el botón Activar/Desactivar en la miniaplicación del panel Pulsación al posarse"
+msgstr ""
+"desde el botón Activar/Desactivar en la miniaplicación del panel Pulsación "
+"al posarse"
 
 #: C/mousetweaks.xml:239(title)
 msgid "Start From The Accessibility tab of the Mouse control panel"
@@ -619,7 +622,9 @@ msgstr "--enable-dwell --show-ctw"
 
 #: C/mousetweaks.xml:295(title)
 msgid "Start From The On/Off button On The Dwell Click Panel Applet"
-msgstr "Iniciar desde el botón Activar/Desactivar en la miniaplicación del panel Pulsación al posarse"
+msgstr ""
+"Iniciar desde el botón Activar/Desactivar en la miniaplicación del panel "
+"Pulsación al posarse"
 
 #: C/mousetweaks.xml:298(para)
 msgid ""
@@ -629,13 +634,18 @@ msgid ""
 "getting filled with another colour. When it is completely filled, the button "
 "turns back to its original color and the dwell click gets started."
 msgstr ""
+"Es posible iniciar la Pulsación al posarse simplemente posando durante cierto "
+"tiempo el puntero en el botón Activar/Desactivar de la miniaplicación del panel "
+"Pulsación al posarse. El botón Activar/Desactivar proporciona contexto del tiempo "
+"transcurrido llenando la flecha de otro color. Cuando está completamente llena, el "
+"botón vuelve a su color original y la pulsación al posarse se inicia."
 
 #: C/mousetweaks.xml:311(para) C/mousetweaks.xml:442(para)
 #: C/mousetweaks.xml:738(para)
 msgid "Picture showing the click type applet at the right of the GNOME menus"
 msgstr ""
-"Imagen mostrando la miniaplicación Tipo de pulsación en la parte derecha "
-"de los menús de GNOME"
+"Imagen mostrando la miniaplicación Tipo de pulsación en la parte derecha de "
+"los menús de GNOME"
 
 #: C/mousetweaks.xml:318(link) C/mousetweaks.xml:326(title)
 #: C/mousetweaks.xml:891(link)
@@ -649,10 +659,10 @@ msgid ""
 "done for the Pointer Capture panel applet. The procedure for the Dwell Click "
 "panel applet is similar."
 msgstr ""
-"Para obtener información acerca de cómo instalar la miniaplicación Pulsación al posarse en el "
-"panel de GNOME, consulte <placeholder-1/> donde puede ver cómo se hace "
-"para la miniaplicación del panel Captura del puntero. El procedimiento para la miniaplicación "
-"Pulsación al posarse es similar."
+"Para obtener información acerca de cómo instalar la miniaplicación Pulsación "
+"al posarse en el panel de GNOME, consulte <placeholder-1/> donde puede ver "
+"cómo se hace para la miniaplicación del panel Captura del puntero. El "
+"procedimiento para la miniaplicación Pulsación al posarse es similar."
 
 #: C/mousetweaks.xml:328(para)
 msgid ""
@@ -776,8 +786,9 @@ msgid ""
 "If the Dwell Click applet has been installed on the GNOME panel, the dwell "
 "click can be disabled by dwelling with the pointer on its On/Off button."
 msgstr ""
-"Si la miniaplicación Pulsación al posarse se ha instalado en el panel de GNOME, se puede "
-"desactivar la pulsación al posarse posando el puntero en el botón Activar/Desactivar."
+"Si la miniaplicación Pulsación al posarse se ha instalado en el panel de "
+"GNOME, se puede desactivar la pulsación al posarse posando el puntero en el "
+"botón Activar/Desactivar."
 
 #: C/mousetweaks.xml:451(title)
 msgid "Quitting The Pointer Capture Function"
@@ -823,9 +834,9 @@ msgid ""
 "this section you will find the description of the three functions: "
 "<placeholder-1/>"
 msgstr ""
-"Los ajustes finos del ratón ofrecen tres funciones de accesibilidad para el usuario. En "
-"esta sección encontrará las descripciones para las tres funciones: "
-"<placeholder-1/>"
+"Los ajustes finos del ratón ofrecen tres funciones de accesibilidad para el "
+"usuario. En esta sección encontrará las descripciones para las tres "
+"funciones: <placeholder-1/>"
 
 #: C/mousetweaks.xml:499(title)
 msgid "Simulated Secondary Click Description"
@@ -845,7 +856,9 @@ msgstr ""
 
 #: C/mousetweaks.xml:512(para)
 msgid "Picture showing the settings belonging to the Simulated Secondary Click."
-msgstr "Imagen que muestra los ajustes pertenecientes a la Pulsación secundaria simulada."
+msgstr ""
+"Imagen que muestra los ajustes pertenecientes a la Pulsación secundaria "
+"simulada."
 
 #: C/mousetweaks.xml:518(title) C/mousetweaks.xml:644(title)
 msgid "How Does It Work?"
@@ -855,7 +868,9 @@ msgstr "¿Cómo funciona?"
 msgid ""
 "Let us assume that the user has enabled the Simulated Secondary Click "
 "feature."
-msgstr "Se asume que el usuario ha activado la característica Pulsación secundaria del ratón."
+msgstr ""
+"Se asume que el usuario ha activado la característica Pulsación secundaria "
+"del ratón."
 
 #: C/mousetweaks.xml:523(para)
 #, fuzzy
@@ -876,14 +891,17 @@ msgid ""
 "arrow of the pointer with another color to give feedback that it is counting "
 "down the time before issuing the simulated secondary click."
 msgstr ""
+"Mientras se realiza el gesto de la pulsación secundaria simulada, los ajustes finos del ratón rellenarán "
+"la flecha del puntero de otro color para dar contexto de que se está llevando a cabo "
+"una cuenta atrás antes de disparar la pulsación secundaria del ratón."
 
 #: C/mousetweaks.xml:534(para)
 msgid ""
 "Under some circumstances, it happens that the feedback on the arrow of the "
 "pointer does not work. The Simulated Secondary Click is issued nevertheless."
 msgstr ""
-"Bajo ciertas circunstancias sucede que no funciona la acción de la flecha del puntero. "
-"En cualquier caso se ejecuta la pulsación secundaria simulada."
+"Bajo ciertas circunstancias sucede que no funciona la acción de la flecha "
+"del puntero. En cualquier caso se ejecuta la pulsación secundaria simulada."
 
 #: C/mousetweaks.xml:541(title)
 msgid "The Delay Slider"
@@ -915,6 +933,12 @@ msgid ""
 "treshold\">Motion Treshold slider of the Dwell Click feature</link> for more "
 "information about it."
 msgstr ""
+"Las personas que tienen problemas para mantener completamente sin movimiento "
+"el puntero del ratón pueden usar el deslizador Umbral de movimiento de la característica Pulsación al posarse. Éste ajuste "
+"hace que los ajustes finos del ratón ignoren pequeños movimientos del ratón, de tal forma que la "
+"pulsación secundaria simulada se dispara incluso si el puntero no está del todo detenido. Consulte la "
+"sección <link linkend=\"mouse-a11y-dwell-motion-treshold\">Umbral de movimiento de la característica "
+"Pulsación al posarse</link> para obtener más información sobre ello."
 
 #: C/mousetweaks.xml:563(para)
 msgid ""
@@ -923,6 +947,10 @@ msgid ""
 "<guilabel>Simulated Secondary Click</guilabel> feature, even if the "
 "<guilabel>Dwell Click</guilabel> feature is disabled."
 msgstr ""
+"El deslizador de <guilabel>Umbral de movimiento</guilabel> ubicado en la "
+"característica <guilabel>Pulsación al posarse</guilabel> también funciona para "
+"la característica <guilabel>Pulsación secundaria simulada</guilabel>, incluso si "
+"la característica <guilabel>Pulsación al posarse</guilabel> está desactivada."
 
 #: C/mousetweaks.xml:572(title)
 msgid "Differences To The Normal Secondary Click"
@@ -1047,12 +1075,17 @@ msgid ""
 "another color while it is counting down the time before the click completion "
 "kicks in."
 msgstr ""
+"Cada vez que el puntero deja de moverse se inicia una pulsación al posarse. Para dar "
+"contexto al usuario, los ajustes finos del ratón llenarán la flecha del puntero con otro "
+"color mientras se acaba la cuenta atrás antes de que se dispare la pulsación."
 
 #: C/mousetweaks.xml:652(para)
 msgid ""
 "Under some circumstances, it happens that the feedback on the arrow of the "
 "pointer does not work; the dwell clicks are nevertheless issued."
 msgstr ""
+"Bajo ciertas circunstancias, sucede que el contexto en la flecha del puntero no "
+"funciona; en cualquier caso se disparan las pulsaciones al posarse."
 
 #: C/mousetweaks.xml:657(para)
 #, fuzzy
@@ -1165,6 +1198,10 @@ msgid ""
 "applet. This is especially useful when he wants to disable dwelling for a "
 "little while to read some text without the interference of a dwell click."
 msgstr ""
+"El usuario tiene una forma directa de iniciar y parar la pulsación al posarse usando el "
+"botón <guilabel>Activar/Desactivar</guilabel> de la miniaplicación <guilabel>Pulsación "
+"al posarse</guilabel>. Esto es especialmente útil cuando quiere desactivar la pulsación durante "
+"cierto tiempo para leer algún texto sin que interfiera la pulsación al posarse."
 
 #: C/mousetweaks.xml:743(para)
 msgid ""
@@ -1333,6 +1370,8 @@ msgid ""
 "The Motion Treshold setting does not only work for the dwell click, but also "
 "for the simulated secondary click, even if the dwell click is disabled."
 msgstr ""
+"El ajuste del Umbral de movimiento no sólo funciona para la pulsación al posarse, sino también "
+"para la pulsación secundaria simulada, incluso si la pulsación al posarse está desactivada."
 
 #: C/mousetweaks.xml:879(title)
 msgid "Locking The Pointer Description"
@@ -1350,12 +1389,11 @@ msgstr ""
 "dispositivo apuntador para otras cosas."
 
 #: C/mousetweaks.xml:886(para)
-#, fuzzy
 msgid ""
 "In fact, the Pointer Capture panel applet creates an area on the panel, into "
 "which the user can lock the pointer until he releases it in a determined way."
 msgstr ""
-"De hecho, la miniaplicación del panel Captura del puntero crea dicho área en "
+"De hecho, la miniaplicación del panel Captura del puntero crea un área en "
 "el panel, en el que el usuario puede bloquear el puntero hasta que lo libere "
 "de una determinada forma."
 
@@ -1391,8 +1429,8 @@ msgid ""
 "The <guilabel>Preferences</guilabel> window of the <guilabel>Pointer "
 "Capture</guilabel> applet has three sections:"
 msgstr ""
-"La ventana <guilabel>Preferencias</guilabel> de la miniaplicación <guilabel>Captura "
-"del puntero</guilabel> tiene tres secciones:"
+"La ventana <guilabel>Preferencias</guilabel> de la miniaplicación "
+"<guilabel>Captura del puntero</guilabel> tiene tres secciones:"
 
 #: C/mousetweaks.xml:936(para)
 #, fuzzy

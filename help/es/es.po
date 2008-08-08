@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.help.HEAD\n"
 "POT-Creation-Date: 2008-08-01 17:38+0000\n"
-"PO-Revision-Date: 2008-08-04 22:30+0200\n"
+"PO-Revision-Date: 2008-08-08 15:00+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -151,13 +151,12 @@ msgstr ""
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/mousetweaks.xml:307(None) C/mousetweaks.xml:438(None)
 #: C/mousetweaks.xml:734(None)
-#, fuzzy
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
 "md5=d14731688177da795de6d7679c6fb8ca"
 msgstr ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-"md5=6cae0cb8fd2d6919ae93133f9ab2c635"
+"md5=d14731688177da795de6d7679c6fb8ca"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -388,7 +387,6 @@ msgid "Feedback"
 msgstr "Comentarios"
 
 #: C/mousetweaks.xml:98(para)
-#, fuzzy
 msgid ""
 "To report a bug or make a suggestion regarding <application>the mousetweaks "
 "module</application> (i.e.: mouse accessibility), its user interface or its "
@@ -696,15 +694,14 @@ msgstr ""
 "que se pueden instalar en el panel de GNOME. <placeholder-1/>"
 
 #: C/mousetweaks.xml:348(para)
-#, fuzzy
 msgid ""
 "By double clicking on the <guilabel>Pointer Capture</guilabel> item in the "
 "Add to Panel window, the pointer capture applet will be added to the panel, "
 "and it will run until it is removed from the GNOME panel; even across."
 msgstr ""
-"Al pulsar en el elemento <guilabel>Captura de puntero</guilabel> de la "
+"Al pulsar dos veces en el elemento <guilabel>Captura de puntero</guilabel> de la "
 "ventana Añadir al panel..., la miniaplicación de captura del puntero se "
-"añadirá al panel y funcionará hasta que se quite."
+"añadirá al panel y funcionará hasta que se quite del panel de GNOME."
 
 #: C/mousetweaks.xml:356(title)
 msgid "How To Quit The Functions"
@@ -795,7 +792,6 @@ msgid "Quitting The Pointer Capture Function"
 msgstr "Salir de la captura del puntero"
 
 #: C/mousetweaks.xml:453(para)
-#, fuzzy
 msgid ""
 "As the pointer capture function comes in the form of a panel applet, you "
 "have to quit it the same way that you do it with other applets: you have to "
@@ -804,8 +800,8 @@ msgid ""
 "from its contextual menu."
 msgstr ""
 "Ya que la función de captura del ratón viene en forma de miniaplicación del "
-"panel, debe quitarla de la misma forma que quita otras miniaplicaciones: "
-"pulse con el botón derecho del ratón sobre la aplicación y elija "
+"panel, debe quitarla de la misma forma que quita otras miniaplicaciones del "
+"panel de GNOME. Para ello, pulse con el botón derecho del ratón sobre la aplicación y elija "
 "<guimenuitem>Quitar del panel</guimenuitem> del menú contextual."
 
 #: C/mousetweaks.xml:465(para) C/mousetweaks.xml:901(para)
@@ -815,14 +811,12 @@ msgstr ""
 "contextual"
 
 #: C/mousetweaks.xml:471(para)
-#, fuzzy
 msgid ""
 "When using the default GNOME theme, the handle of the Pointer Capture applet "
 "are the two vertical dotted lines at the left of the pointer capture area."
 msgstr ""
-"Eligiendo Preferencias en el menú contextual de la miniaplicación de captura "
-"del puntero, el usuario obtiene una ventana con las opciones de la "
-"miniaplicación de captura del puntero:"
+"Cuando use el tema predeterminado de GNOME, los manejadores de la miniaplicación "
+"Captura del puntero son las dos líneas verticales punteadas a la izquierda del área de captura."
 
 #: C/mousetweaks.xml:479(title)
 msgid "Description Of The Functions"
@@ -873,17 +867,16 @@ msgstr ""
 "del ratón."
 
 #: C/mousetweaks.xml:523(para)
-#, fuzzy
 msgid ""
 "To perform a simulated secondary click, the user has to keep the "
 "<mousebutton>primary mouse button</mousebutton> pressed without moving the "
 "pointer for a determined time. As soon as the determined time has elapsed, "
 "the simulated secondary click is issued."
 msgstr ""
-"Cuando esta característica está activada, los ajustes finos del ratón "
-"realizan una pulsación secundaria sobre la posición del ratón, si el usuario "
-"mantiene el <mousebutton>botón primario del ratón</mousebutton> pulsado "
-"durante un tiempo determinado y sin moverlo."
+"Para realizar una pulsación secundaria simulada el usuario debe mantener el "
+"<mousebutton>botón primario del ratón</mousebutton> pulsado durante un tiempo "
+"determinado y sin moverlo. Tan pronto como haya pasado el tiempo determinado se "
+"activará la pulsación secundaria simulada."
 
 #: C/mousetweaks.xml:528(para)
 msgid ""
@@ -908,7 +901,6 @@ msgid "The Delay Slider"
 msgstr "El deslizador de retardo"
 
 #: C/mousetweaks.xml:543(para)
-#, fuzzy
 msgid ""
 "How long the user has to hold the <mousebutton>primary mouse button</"
 "mousebutton> pressed, is determined by the <guilabel>Delay</guilabel> slider "
@@ -916,8 +908,9 @@ msgid ""
 "choose the delay most appropriate to him."
 msgstr ""
 "El tiempo que el usuario tiene que mantener el <mousebutton>botón primario "
-"del ratón</mousebutton> pulsado lo determina el deslizador de retardo bajo "
-"la casilla de activación:"
+"del ratón</mousebutton> pulsado lo determina el deslizador <guilabel>Retardo</guilabel> "
+"ubicado bajo la casilla de verificación. Usando este deslizador, el usuario puede "
+"elegir el retoardo más apropiado para él."
 
 #: C/mousetweaks.xml:551(title)
 msgid "Motion Treshold"
@@ -1088,13 +1081,11 @@ msgstr ""
 "funciona; en cualquier caso se disparan las pulsaciones al posarse."
 
 #: C/mousetweaks.xml:657(para)
-#, fuzzy
 msgid ""
 "How the click is completed and how the click type is chosen depends on what "
 "dwell mode the user has selected. The two available modes are:"
 msgstr ""
-"Cada vez que el puntero deja de moverse, se inicia una pulsación. Cómo se "
-"completa la pulsación y qué tipo de pulsación se elige depende del modo de "
+"Cómo se completa la pulsación y qué tipo de pulsación se elige depende del modo de "
 "posado que haya seleccionado el usuario. Los dos modos disponibles son:"
 
 #: C/mousetweaks.xml:663(para)
@@ -1144,15 +1135,14 @@ msgid "Picture showing the click type window"
 msgstr "Imagen mostrando la ventana de tipo de pulsación"
 
 #: C/mousetweaks.xml:706(para)
-#, fuzzy
 msgid ""
 "To display the <guimenu>Click Type Window</guimenu> on the screen, the user "
 "has to put a checkmark <application>in the checkbox named "
 "<quote><guilabel>Show click type window</guilabel></quote>:</application>"
 msgstr ""
-"Para mostrar la ventana del tipo de pulsación en la pantalla, el usuario "
-"debe marcar la casilla de verificación <application><quote>Mostrar la "
-"ventana de tipo de pulsación</quote></application>:"
+"Para mostrar la ventana <guimenu>Tipo de pulsación</guimenu> en la pantalla, el usuario "
+"debe marcar la casilla de verificación <application><quote><guilabel>Mostrar la "
+"ventana de tipo de pulsación</guilabel></quote></application>:"
 
 #: C/mousetweaks.xml:717(para)
 msgid "Picture with the checkbox to display the click type window"
@@ -1161,7 +1151,6 @@ msgstr ""
 "de pulsación"
 
 #: C/mousetweaks.xml:722(para)
-#, fuzzy
 msgid ""
 "After the click has occurred, the single click type will be automatically "
 "restored. In order to choose another click type, the user has to perform an "
@@ -1171,7 +1160,7 @@ msgstr ""
 "Después de que se haya realizado la pulsación, se restaurará la pulsación "
 "sencilla automáticamente. Para elegir otro tipo de pulsación, el usuario "
 "tiene que realizar una pulsación automática en el <guibutton>botón</"
-"guibutton> de la ventana de tipo de pulsación que corresponda con su "
+"guibutton> de la ventana <guilabel>Tipo de pulsación</guilabel> que corresponda con su "
 "elección de tipo de pulsación."
 
 #: C/mousetweaks.xml:728(para)

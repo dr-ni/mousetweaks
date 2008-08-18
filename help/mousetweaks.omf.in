@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<omf>
+  <resource>
+    <subject category="GNOME|Accessibility"/>
+    <type>manual</type>
+    <relation seriesid="09192735-b643-67d7-2908-4d262a55bc64e0"/>
+    <rights type="GNU FDL" license.version="1.2" holder="Francesco Fumanti"/>
+  </resource>
+</omf>

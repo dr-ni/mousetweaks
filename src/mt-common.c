@@ -21,6 +21,18 @@
 
 #include "mt-common.h"
 
+void
+mt_common_show_help (GdkScreen *screen, guint32 timestamp)
+{
+    GError *error = NULL;
+
+    if (!gtk_show_uri (screen, "ghelp:mousetweaks", timestamp, &error)) {
+	mt_common_show_dialog (_("Failed to Display Help"),
+			       error->message, MT_MESSAGE_WARNING);
+	g_error_free (error);
+    }
+}
+
 gint
 mt_common_show_dialog (const gchar  *primary,
 		       const gchar  *secondary,

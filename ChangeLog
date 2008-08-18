@@ -1,3 +1,20 @@
+2008-08-18 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/pointer-capture-applet.c:
+	* src/dwell-click-applet.c:
+	* src/mt-common.c:
+	* src/mt-common.h:
+
+	Switch to gtk_show_uri and move the code to mt-common.
+
+	* configure.ac: Bump gtk requirement to 2.13.1
+	* Makfile.am: Add --disable-scrollkeeper
+	
+	* help/mousetweaks.omf.in: Add .omf template
+	* help/Makefile.am: Move legal.xml to DOC_ENTITIES
+	* help/C/mousetweaks.xml: Add "maintainer" and "description" roles
+	needed by scrollkeeper.
+
 2008-08-18 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* configure.ac:

@@ -19,7 +19,6 @@
 #include <glade/glade.h>
 #include <panel-applet.h>
 #include <panel-applet-gconf.h>
-#include <libgnomeui/gnome-help.h>
 
 #include "mt-common.h"
 
@@ -55,38 +54,24 @@ capture_preferences (BonoboUIComponent *component,
 		     gpointer           data,
 		     const char        *cname)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     gtk_window_present (GTK_WINDOW (cd->prefs));
 }
 
 static void
-show_help (void)
-{
-    GError *error = NULL;
-
-    if (!gnome_help_display_desktop (NULL,
-				     "mousetweaks",
-				     "mousetweaks",
-				     NULL,
-				     &error)) {
-	mt_common_show_dialog (_("Couldn't display help"),
-			       error->message,
-			       MT_MESSAGE_WARNING);
-	g_error_free (error);
-    }
-}
-
-static void
 capture_help (BonoboUIComponent *component, gpointer data, const char *cname)
 {
-    show_help ();
+    CaptureData *cd = data;
+
+    mt_common_show_help (gtk_widget_get_screen (cd->area),
+			 gtk_get_current_event_time ());
 }
 
 static void
 capture_about (BonoboUIComponent *component, gpointer data, const char *cname)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     gtk_window_present (GTK_WINDOW (glade_xml_get_widget (cd->xml, "about")));
 }
@@ -324,7 +309,8 @@ prefs_closed (GtkButton *button, gpointer data)
 static void
 prefs_help (GtkButton *button, gpointer data)
 {
-    show_help ();
+    mt_common_show_help (gtk_widget_get_screen (GTK_WIDGET (button)),
+			 gtk_get_current_event_time ());
 }
 
 static void

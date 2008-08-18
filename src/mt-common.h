@@ -75,6 +75,8 @@ typedef enum {
     MT_MESSAGE_LOGOUT
 } MtMessageType;
 
+void mt_common_show_help   (GdkScreen     *screen,
+			    guint32        timestamp);
 gint mt_common_show_dialog (const gchar   *primary,
 			    const gchar   *secondary,
 			    MtMessageType  type);

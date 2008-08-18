@@ -20,7 +20,6 @@
 #include <panel-applet.h>
 #include <gconf/gconf-client.h>
 #include <dbus/dbus-glib.h>
-#include <libgnomeui/gnome-help.h>
 
 #include "mt-common.h"
 
@@ -345,18 +344,10 @@ help_dialog (BonoboUIComponent *component,
 	     gpointer           data,
 	     const char        *cname)
 {
-    GError *error = NULL;
+    DwellData *dd = data;
 
-    if (!gnome_help_display_desktop (NULL,
-				     "mousetweaks",
-				     "mousetweaks",
-				     NULL,
-				     &error)) {
-	mt_common_show_dialog (_("Failed to Display Help"),
-			       error->message,
-			       MT_MESSAGE_WARNING);
-	g_error_free (error);
-    }
+    mt_common_show_help (gtk_widget_get_screen (dd->box),
+			 gtk_get_current_event_time ());
 }
 
 static void

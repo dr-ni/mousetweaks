@@ -11,7 +11,7 @@
 <article id="index" lang="en">
   <articleinfo>
     <title><application>Mousetweaks</application> Manual</title>
-
+    <abstract role="description"></abstract>
     <copyright>
       <year>2007 - 2008</year>
 
@@ -21,7 +21,7 @@
     &legal;
 
     <authorgroup>
-      <author>
+      <author role="maintainer">
         <firstname>Francesco</firstname>
 
         <surname>Fumanti</surname>

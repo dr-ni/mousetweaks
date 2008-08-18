@@ -1,5 +1,10 @@
 2008-08-18 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/mt-main.c: Use dbus instead of libgnomeui to communicate with
+	the session manager.
+
+2008-08-18 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/pointer-capture-applet.c:
 	* src/dwell-click-applet.c:
 	* src/mt-common.c:

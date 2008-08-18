@@ -26,10 +26,10 @@
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>
 #include <cspi/spi.h>
+#include <dbus/dbus-glib.h>
 
 #include <libgnome/gnome-program.h>
 #include <libgnomeui/gnome-ui-init.h>
-#include <libgnomeui/gnome-client.h>
 
 #include "mt-common.h"
 #include "mt-service.h"
@@ -520,6 +520,29 @@ get_gconf_options (MTClosure *mt)
 	gconf_client_get_int (mt->client, OPT_G_RIGHT, NULL);
 }
 
+static void
+mt_main_request_logout (MTClosure *mt)
+{
+    DBusGConnection *bus;
+    DBusGProxy *proxy;
+
+    bus = dbus_g_bus_get (DBUS_BUS_SESSION, NULL);
+    if (bus) {
+	proxy = dbus_g_proxy_new_for_name (bus,
+					   "org.gnome.SessionManager",
+					   "/org/gnome/SessionManager",
+					   "org.gnome.SessionManager");
+	/*
+	 * Call logout method of session manager:
+	 * mode: 0 = normal, 1 = no confirmation, 2 = force
+	 */
+	dbus_g_proxy_call (proxy, "Logout", NULL,
+			   G_TYPE_INT, 1, G_TYPE_INVALID,
+			   G_TYPE_INVALID);
+	g_object_unref (proxy);
+    }
+}
+
 static gboolean
 accessibility_enabled (MTClosure *mt,
 		       gint       spi_status)
@@ -538,13 +561,10 @@ accessibility_enabled (MTClosure *mt,
 	       "To enable support for assistive technologies and restart "
 	       "your session, press \"Enable and Log Out\"."),
 	     MT_MESSAGE_LOGOUT);
-	if (ret == GTK_RESPONSE_ACCEPT) {
-	    GnomeClient *session;
 
+	if (ret == GTK_RESPONSE_ACCEPT) {
 	    gconf_client_set_bool (mt->client, GNOME_A11Y_KEY, TRUE, NULL);
-	    if ((session = gnome_master_client ()))
-		gnome_client_request_save (session, GNOME_SAVE_GLOBAL, TRUE,
-					   GNOME_INTERACT_ANY, FALSE, TRUE);
+	    mt_main_request_logout (mt);
 	}
 	else {
 	    /* reset the selected option again */

@@ -1,5 +1,9 @@
 2008-08-18 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/mt-main.c:(mt_main_request_logout): Fix argument type.
+
+2008-08-18 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* confiure.ac: remove libgnome and libgnomeui dependency
 	* src/Makefile.am: use per-file CFLAGS.
 	* src/mt-main.c: remove last bits of libgnome and libgnomeui

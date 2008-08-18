@@ -1,8 +1,7 @@
-INCLUDES =				     \
-	$(DEPENDENCIES_CFLAGS)		     \
-	$(DISABLE_DEPRECATED)		     \
-	$(WARN_CFLAGS)			     \
-	-DDATADIR=\"$(datadir)/mousetweaks\" \
+AM_CFLAGS =					\
+	$(DEPENDENCIES_CFLAGS)			\
+	$(WARN_CFLAGS)				\
+	-DDATADIR=\"$(datadir)/mousetweaks\"	\
 	-DLOCALEDIR=\"$(datadir)/locale\"
 
 if BUILD_PCA
@@ -33,21 +32,35 @@ mousetweaks_SOURCES =	    \
 	mt-cursor-manager.c \
 	mt-cursor-manager.h
 
-mousetweaks_LDADD = $(DEPENDENCIES_LIBS)
+mousetweaks_CFLAGS =		\
+	$(AM_CFLAGS)		\
+	$(DISABLE_DEPRECATED)
+mousetweaks_LDADD =		\
+	$(DEPENDENCIES_LIBS)
 
-dwell_click_applet_SOURCES = \
-	dwell-click-applet.c \
-	mt-common.c	     \
+dwell_click_applet_SOURCES =	\
+	dwell-click-applet.c	\
+	mt-common.c		\
 	mt-common.h
 
-dwell_click_applet_LDADD = $(DEPENDENCIES_LIBS)
+dwell_click_applet_CFLAGS =	\
+	$(PANELAPPLET_CFLAGS)	\
+	$(AM_CFLAGS)
+dwell_click_applet_LDADD =	\
+	$(PANELAPPLET_LIBS)	\
+	$(DEPENDENCIES_LIBS)
 
-pointer_capture_applet_SOURCES = \
-	pointer-capture-applet.c \
-	mt-common.c		 \
+pointer_capture_applet_SOURCES =	\
+	pointer-capture-applet.c	\
+	mt-common.c			\
 	mt-common.h
 
-pointer_capture_applet_LDADD = $(DEPENDENCIES_LIBS)
+pointer_capture_applet_CFLAGS =	\
+	$(PANELAPPLET_CFLAGS)	\
+	$(AM_CFLAGS)
+pointer_capture_applet_LDADD =	\
+	$(PANELAPPLET_LIBS)	\
+	$(DEPENDENCIES_LIBS)
 
 BUILT_SOURCES = mt-service-glue.h
 

@@ -28,9 +28,6 @@
 #include <cspi/spi.h>
 #include <dbus/dbus-glib.h>
 
-#include <libgnome/gnome-program.h>
-#include <libgnomeui/gnome-ui-init.h>
-
 #include "mt-common.h"
 #include "mt-service.h"
 #include "mt-pidfile.h"
@@ -702,7 +699,6 @@ main (int argc, char **argv)
     }
     else {
 	/* Child process */
-	GnomeProgram *program;
 	MTClosure *mt;
 	MtCursorManager *manager;
 	AccessibleEventListener *bl, *ml;
@@ -717,9 +713,8 @@ main (int argc, char **argv)
 	signal (SIGQUIT, signal_handler);
 	signal (SIGHUP, signal_handler);
 
+	gtk_init (&argc, &argv);
 	g_set_application_name ("Mousetweaks");
-	program = gnome_program_init (PACKAGE, VERSION, LIBGNOMEUI_MODULE,
-				      argc, argv, GNOME_PARAM_NONE);
 
 	mt = mt_closure_init ();
 	if (!mt)
@@ -790,7 +785,6 @@ main (int argc, char **argv)
 	    mt_closure_free (mt);
 	FINISH:
 	    mt_pidfile_remove ();
-	    g_object_unref (program);
 
 	if (spi_leaks)
 	    g_warning ("AT-SPI reported %i leaks", spi_leaks);

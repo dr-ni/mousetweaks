@@ -1,5 +1,11 @@
 2008-08-18 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* confiure.ac: remove libgnome and libgnomeui dependency
+	* src/Makefile.am: use per-file CFLAGS.
+	* src/mt-main.c: remove last bits of libgnome and libgnomeui
+
+2008-08-18 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/mt-main.c: Use dbus instead of libgnomeui to communicate with
 	the session manager.
 
@@ -13,7 +19,7 @@
 	Switch to gtk_show_uri and move the code to mt-common.
 
 	* configure.ac: Bump gtk requirement to 2.13.1
-	* Makfile.am: Add --disable-scrollkeeper
+	* Makefile.am: Add --disable-scrollkeeper
 	
 	* help/mousetweaks.omf.in: Add .omf template
 	* help/Makefile.am: Move legal.xml to DOC_ENTITIES

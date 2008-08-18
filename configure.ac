@@ -1,8 +1,7 @@
 AC_PREREQ(2.57)
 AC_INIT([mousetweaks],
 	[2.23.91],
-	[http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks], 
-	[mousetweaks])
+	[http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks])
 
 AC_CONFIG_SRCDIR([src])
 AC_CONFIG_HEADER([config.h])
@@ -16,6 +15,7 @@ AC_PROG_CC
 AC_PROG_INSTALL
 AC_HEADER_STDC
 AC_C_CONST
+AM_PROG_CC_C_O
 
 GNOME_COMMON_INIT
 GNOME_COMPILE_WARNINGS([maximum])
@@ -41,24 +41,12 @@ PKG_CHECK_MODULES(DEPENDENCIES,
 	libglade-2.0 >= 2.4.0
 	gconf-2.0 >= 2.16.0
 	dbus-glib-1 >= 0.7
-	libpanelapplet-2.0
-	libgnome-2.0
-	libgnomeui-2.0
 	cspi-1.0
 	xcursor
 	xfixes)
 
 AC_SUBST(DEPENDENCIES_CFLAGS)
 AC_SUBST(DEPENDENCIES_LIBS)
-
-dnl *** gconf ***
-
-AC_PATH_PROG(GCONFTOOL, gconftool-2, no)
-if test x"$GCONFTOOL" = xno; then
-	AC_MSG_ERROR([gconftool-2 executable not found in your path])
-fi
-
-AM_GCONF_SOURCE_2
 
 dnl *** arguments ***
 
@@ -79,6 +67,25 @@ AM_CONDITIONAL(BUILD_DCA, test "x$build_dca" = "xyes")
 if test "$build_dca" = yes; then
   AC_DEFINE(BUILD_DCA, 1, [Build dwell-click applet])
 fi
+
+dnl *** libpanelapplet ***
+
+if test "$build_dca" = yes -o "$build_pca" = yes; then
+	PKG_CHECK_MODULES(PANELAPPLET, libpanelapplet-2.0)
+	AC_SUBST(PANELAPPLET_CFLAGS)
+	AC_SUBST(PANELAPPLET_LIBS)
+fi
+
+dnl *** gconf ***
+
+AC_PATH_PROG(GCONFTOOL, gconftool-2, no)
+if test x"$GCONFTOOL" = xno; then
+	AC_MSG_ERROR([gconftool-2 executable not found in your path])
+fi
+
+AM_GCONF_SOURCE_2
+
+dnl *** output ***
 
 AC_OUTPUT([Makefile
 	   src/Makefile

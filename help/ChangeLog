@@ -1,3 +1,16 @@
+2008-08-21 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* modified trunk/help/C/figures/mouse-a11y-dwell-click-type-applet.png
+	* modified trunk/help/C/figures/mouse-a11y-ssc-delay-slider.png
+	* modified trunk/help/C/figures/mouse-a11y-dwell-gesture-mapping.png
+	* modified trunk/help/C/figures/mouse-a11y-pointer-capture-preferences.png
+	* modified trunk/help/C/figures/mouse-a11y-dwell-mode-choice.png
+	* modified trunk/help/C/figures/mouse-a11y-dwell-ctw-checkbox.png
+	* modified trunk/help/C/figures/mouse-a11y-dwell-motion-treshold.png
+	* modified trunk/help/C/mousetweaks.xml
+
+	Update some figures and fix typo in the manual.
+
 2008-08-12  Jorge Gonzalez  <jorgegonz@svn.gnome.org>  
 
 	* es/es.po: Updated Spanish translation

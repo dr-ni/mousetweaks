@@ -1,5 +1,12 @@
 2008-08-21 Francesco Fumanti <frfumanti@svn.gnome.org>
 
+	* delete trunk/help/C/figures/mouse-a11y-add-applet-to-panel-window.png
+	* modified trunk/help/C/mousetweaks.xml
+
+	Deleted non distribution agnostic picture in manual.
+
+2008-08-21 Francesco Fumanti <frfumanti@svn.gnome.org>
+
 	* modified trunk/help/C/figures/mouse-a11y-dwell-click-type-applet.png
 	* modified trunk/help/C/figures/mouse-a11y-ssc-delay-slider.png
 	* modified trunk/help/C/figures/mouse-a11y-dwell-gesture-mapping.png

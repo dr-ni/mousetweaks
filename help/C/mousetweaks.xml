@@ -5,13 +5,14 @@
 <!ENTITY manrevision "0.2">
 <!ENTITY date "October 2007">
 <!ENTITY app "<application>Mousetweaks</application>">
-
 <!ENTITY legal SYSTEM "legal.xml">
 ]>
 <article id="index" lang="en">
   <articleinfo>
     <title><application>Mousetweaks</application> Manual</title>
+
     <abstract role="description"></abstract>
+
     <copyright>
       <year>2007 - 2008</year>
 
@@ -334,16 +335,7 @@
       applet: perform a secondary click on the panel to open its contextual
       menu, choose <guimenuitem>Add to Panel</guimenuitem>, and you will get
       the window showing all the applets that can be installed on the GNOME
-      panel.<mediaobject>
-          <imageobject>
-            <imagedata fileref="figures/mouse-a11y-add-applet-to-panel-window.png" />
-          </imageobject>
-
-          <textobject>
-            <para>Picture showing the Pointer Capture applet in the Add to
-            Panel window</para>
-          </textobject>
-        </mediaobject></para>
+      panel.</para>
 
       <para>By double clicking on the <guilabel>Pointer Capture</guilabel>
       item in the Add to Panel window, the pointer capture applet will be
@@ -523,7 +515,7 @@
         <para>To perform a simulated secondary click, the user has to keep the
         <mousebutton>primary mouse button</mousebutton> pressed without moving
         the pointer for a determined time. As soon as the determined time has
-        elapsed, the simulated secondary click is issued. </para>
+        elapsed, the simulated secondary click is issued.</para>
 
         <para>While doing the simulated secondary click gesture, mousetweaks
         will fill the arrow of the pointer with another color to give feedback
@@ -789,7 +781,7 @@
               normal shape. The type of click performed depends on the
               direction of the movement of the mouse. During the movement of
               the pointer, a line is drawn following the movement of the
-              pointer to give feedback to the user. </para>
+              pointer to give feedback to the user.</para>
             </listitem>
 
             <listitem>

@@ -30,7 +30,9 @@ mousetweaks_SOURCES =	    \
 	mt-cursor.c	    \
 	mt-cursor.h	    \
 	mt-cursor-manager.c \
-	mt-cursor-manager.h
+	mt-cursor-manager.h \
+	mt-listener.c	    \
+	mt-listener.h
 
 mousetweaks_CFLAGS =		\
 	$(AM_CFLAGS)		\

@@ -1,3 +1,14 @@
+2008-08-22 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	* src/mt-listener.c:
+	* src/mt-listener.h:
+	Create a MtListener object and move all at-spi signal related
+	things to a new file.
+
+	* src/mt-main.c: Use new listener object.
+	* src/Makefile.am: Add new files.
+	* po/POTFILES.skip: Add mt-listener.c
+
 2008-08-18 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/mt-main.c:(mt_main_request_logout): Fix argument type.

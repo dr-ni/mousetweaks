@@ -18,13 +18,9 @@
  */
 
 #include <signal.h>
-#include <errno.h>
-#include <string.h>
-#include <math.h>
 #include <unistd.h>
 
 #include <gtk/gtk.h>
-#include <gdk/gdkx.h>
 #include <cspi/spi.h>
 #include <dbus/dbus-glib.h>
 
@@ -36,6 +32,7 @@
 #include "mt-cursor-manager.h"
 #include "mt-cursor.h"
 #include "mt-main.h"
+#include "mt-listener.h"
 
 static void
 mt_cursor_set (GdkCursorType type)
@@ -271,32 +268,34 @@ delay_timer_finished (MtTimer *timer, gpointer data)
     g_timeout_add (100, right_click_timeout, data);
 }
 
-/* at-spi callbacks */
+/* at-spi listener callbacks */
 static void
-spi_motion_event (const AccessibleEvent *event, void *data)
+global_motion_event (MtListener *listener,
+		     MtEvent    *event,
+		     gpointer    data)
 {
     MTClosure *mt = data;
 
     if (mt->dwell_enabled) {
-	if (!below_threshold (mt, event->detail1, event->detail2) &&
+	if (!below_threshold (mt, event->x, event->y) &&
 	    !mt->dwell_gesture_started) {
-	    mt->pointer_x = (gint) event->detail1;
-	    mt->pointer_y = (gint) event->detail2;
+	    mt->pointer_x = event->x;
+	    mt->pointer_y = event->y;
 	    mt_timer_start (mt->dwell_timer);
 	}
+
 	if (mt->dwell_gesture_started) {
 	    if (mt->x_old > -1 && mt->y_old > -1)
 		draw_line (mt->pointer_x, mt->pointer_y, mt->x_old, mt->y_old);
 
-	    draw_line (mt->pointer_x, mt->pointer_y,
-		       event->detail1, event->detail2);
-
-	    mt->x_old = (gint) event->detail1;
-	    mt->y_old = (gint) event->detail2;
+	    draw_line (mt->pointer_x, mt->pointer_y, event->x, event->y);
+	    mt->x_old = event->x;
+	    mt->y_old = event->y;
 	}
     }
+
     if (mt_timer_is_running (mt->delay_timer)) {
-	if (!below_threshold (mt, event->detail1, event->detail2)) {
+	if (!below_threshold (mt, event->x, event->y)) {
 	    mt_timer_stop (mt->delay_timer);
 	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 	}
@@ -304,20 +303,22 @@ spi_motion_event (const AccessibleEvent *event, void *data)
 }
 
 static void
-spi_button_event (const AccessibleEvent *event, void *data)
+global_button_event (MtListener *listener,
+		     MtEvent    *event,
+		     gpointer    data)
 {
     MTClosure *mt = data;
 
-    if (g_str_equal (event->type, "mouse:button:1p")) {
+    if (event->type == EV_BUTTON_PRESS) {
 	if (mt->delay_enabled) {
-	    mt->pointer_x = (gint) event->detail1;
-	    mt->pointer_y = (gint) event->detail2;
+	    mt->pointer_x = event->x;
+	    mt->pointer_y = event->y;
 	    mt_timer_start (mt->delay_timer);
 	}
 	if (mt->dwell_gesture_started)
 	    dwell_stop_gesture (mt);
     }
-    else if (g_str_equal (event->type, "mouse:button:1r")) {
+    else {
 	if (mt->delay_enabled) {
 	    mt_timer_stop (mt->delay_timer);
 	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
@@ -432,7 +433,7 @@ cursor_changed (MtCursorManager *manager,
 static void
 signal_handler (int sig)
 {
-    SPI_event_quit ();
+    gtk_main_quit ();
 }
 
 static void
@@ -690,7 +691,7 @@ main (int argc, char **argv)
     g_print ("Starting daemon.\n");
 
     if ((pid = fork ()) < 0) {
-	g_print ("Fork failed.\n");
+	g_error ("fork() failed.");
 	return 1;
     }
     else if (pid) {
@@ -701,7 +702,7 @@ main (int argc, char **argv)
 	/* Child process */
 	MTClosure *mt;
 	MtCursorManager *manager;
-	AccessibleEventListener *bl, *ml;
+	MtListener *listener;
 	gint spi_status;
 	gint spi_leaks = 0;
 
@@ -725,13 +726,6 @@ main (int argc, char **argv)
 	    mt_closure_free (mt);
 	    goto FINISH;
 	}
-
-	/* add at-spi listeners */
-	ml = SPI_createAccessibleEventListener (spi_motion_event, (void *) mt);
-	SPI_registerGlobalEventListener (ml, "mouse:abs");
-	bl = SPI_createAccessibleEventListener (spi_button_event, (void *) mt);
-	SPI_registerGlobalEventListener (bl, "mouse:button:1p");
-	SPI_registerGlobalEventListener (bl, "mouse:button:1r");
 
 	/* command-line options */
 	if (dwell_click)
@@ -763,6 +757,7 @@ main (int argc, char **argv)
 	if (!mt_ctw_init (mt, pos_x, pos_y))
 	    goto CLEANUP;
 
+	/* init cursor animation */
 	manager = mt_cursor_manager_get_default ();
 	g_signal_connect (manager, "cursor_changed",
 			  G_CALLBACK (cursor_changed), mt);
@@ -771,23 +766,28 @@ main (int argc, char **argv)
 
 	mt->cursor = mt_cursor_manager_current_cursor (manager);
 
-	SPI_event_main ();
+	/* init at-spi signals */
+	listener = mt_listener_get_default ();
+	g_signal_connect (listener, "motion_event",
+			  G_CALLBACK (global_motion_event), mt);
+	g_signal_connect (listener, "button_event",
+			  G_CALLBACK (global_button_event), mt);
+
+	gtk_main ();
 
 	mt_cursor_manager_restore_all (manager);
 	g_object_unref (manager);
+	g_object_unref (listener);
 
 	CLEANUP:
-	    SPI_deregisterGlobalEventListenerAll (bl);
-	    AccessibleEventListener_unref (bl);
-	    SPI_deregisterGlobalEventListenerAll (ml);
-	    AccessibleEventListener_unref (ml);
 	    spi_leaks = SPI_exit ();
 	    mt_closure_free (mt);
 	FINISH:
 	    mt_pidfile_remove ();
 
 	if (spi_leaks)
-	    g_warning ("AT-SPI reported %i leaks", spi_leaks);
+	    g_warning ("AT-SPI reported %i leak%s.",
+		       spi_leaks, spi_leaks != 1 ? "s" : "");
     }
     return 0;
 }

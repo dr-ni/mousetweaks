@@ -1,3 +1,9 @@
+2008-08-22  Gerd Kohlberger  <gerdk@svn.gnome.org> 
+
+	* C/mousetweaks.xml: Add short description needed by
+	.omf.in template. Fixes make distcheck.
+	* ChangeLog: Remove reference to launchpad repo.
+
 2008-08-22  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation
@@ -149,12 +155,6 @@
 	performed on mousetweaks to integrate it into GNOME 2.22.
 	Change manual license from GFDL 1.1 to GFDL 1.2.
 
----------------------------------
-
-Changes can be found in the revisions log on:
-https://code.launchpad.net/~mt-devel/mousetweaks/trunk
-
-----------------------------
 2007-11-17 Francesco Fumanti <francesco.fumanti@gmx.net>
 	* Fix references to GFDL in legal.xml
 

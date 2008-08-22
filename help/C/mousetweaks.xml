@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
-<!ENTITY appversion "0.2.6">
+<!ENTITY appversion "2.24.0">
 <!ENTITY manrevision "0.2">
 <!ENTITY date "October 2007">
-<!ENTITY app "<application>Mousetweaks</application>">
+<!ENTITY app "Mousetweaks">
+<!ENTITY application "<application>&app;</application>">
 <!ENTITY legal SYSTEM "legal.xml">
 ]>
 <article id="index" lang="en">
   <articleinfo>
-    <title><application>Mousetweaks</application> Manual</title>
-
-    <abstract role="description"></abstract>
-
+    <title>&app; Manual</title>
+    <abstract role="description">
+      <para>
+	&application; provides mouse accessibility enhancements for 
+        the GNOME Desktop.
+      </para>
+    </abstract>
     <copyright>
       <year>2007 - 2008</year>
-
       <holder>Francesco Fumanti</holder>
     </copyright>
 
@@ -24,9 +27,7 @@
     <authorgroup>
       <author role="maintainer">
         <firstname>Francesco</firstname>
-
         <surname>Fumanti</surname>
-
         <affiliation>
           <address><email>frfumanti@svn.gnome.org</email> </address>
         </affiliation>

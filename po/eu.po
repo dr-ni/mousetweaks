@@ -1,28 +1,28 @@
-# translation of mousetweaks.HEAD.po to Basque
+# translation of eu.po to Basque
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks.HEAD\n"
+"Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-01-25 17:53+0100\n"
-"PO-Revision-Date: 2008-01-23 22:53+0100\n"
+"POT-Creation-Date: 2008-08-23 16:10+0200\n"
+"PO-Revision-Date: 2008-08-23 16:52+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../data/dwell-click-applet.glade.h:1
 msgid ""
 "Applet to select different dwell-click types.\n"
-"Part of MouseTweaks"
+"Part of Mousetweaks"
 msgstr ""
-"Klik-tenporizatu mota desberdina aukeratzeko applet-a.\n"
+"Klik-tenporizatu mota desberdina aukeratzeko miniaplikazioa.\n"
 "'MouseTweaks'-en osagaia"
 
 #: ../data/dwell-click-applet.glade.h:3
@@ -37,11 +37,16 @@ msgstr "Klik bikoitza"
 msgid "Drag Click"
 msgstr "Arrastatzeko klik-a"
 
-#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
+msgid "On"
+msgstr "Aktibatu"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "Eskuineko klik-a"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "Klik bakuna"
 
@@ -60,30 +65,30 @@ msgstr "<b>Kapturatzeko arearen tamaina</b>"
 #: ../data/pointer-capture-applet.glade.h:4
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
-"Part of MouseTweaks"
+"Part of Mousetweaks"
 msgstr ""
 "Area saguaren erakuslea panelean izozteko.\n"
 "'MouseTweaks'-en osagaia"
 
 #: ../data/pointer-capture-applet.glade.h:6
-msgid "B_utton:"
-msgstr "B_otoia:"
-
-#: ../data/pointer-capture-applet.glade.h:7
 msgid "Modifier:"
 msgstr "Aldatzailea:"
 
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "Mouse _button:"
+msgstr "Saguaren _botoia:"
+
 #: ../data/pointer-capture-applet.glade.h:8
+msgid "Mouse b_utton:"
+msgstr "Saguaren b_otoia:"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Pointer Capture Preferences"
 msgstr "Erakuslea hartzeko hobespenak"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:10
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "0 botoia hautatzean erakuslea berehala hartuko da"
-
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "_Button:"
-msgstr "_Botoia:"
 
 #: ../data/pointer-capture-applet.glade.h:11
 msgid "_Width:"
@@ -138,146 +143,160 @@ msgid "_Preferences"
 msgstr "_Hobespenak"
 
 #: ../data/mousetweaks.schemas.in.h:1
+msgid "Animate cursor"
+msgstr "Animatu kurtsorea"
+
+#: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style"
 msgstr "Botoi-estiloa"
 
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
-msgstr "Botoi-estiloa klik motaren leihoan (0=testua, 1=ikonoa, 2=biak)"
-
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
-"Norabidea klik bikoitza lantzeko (0=ezkerrera, 1=eskuinera, 2=gora, 3=behera)"
+msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgstr "Botoi-estiloa klik motaren leihoan (\"0\"=testua, \"1\"=ikonoa, \"2\"=biak)"
 
 #: ../data/mousetweaks.schemas.in.h:4
-msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr ""
-"Norabidea arrastatzeko klik-a lantzeko (0=ezkerrera, 1=eskuinera, 2=gora, "
-"3=behera)"
+msgid ""
+"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr "Norabidea klik bikoitza lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2\"=gora, \"3\"=behera)"
 
 #: ../data/mousetweaks.schemas.in.h:5
-msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgid ""
+"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+"\"3\" = Down)"
 msgstr ""
-"Norabidea 2. mailako klik-a lantzeko (0=ezkerrera, 1=eskuinera, 2=gora, "
-"3=behera)"
+"Norabidea arrastatzeko klik-a lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2\"=gora, "
+"\"3\"=behera)"
 
 #: ../data/mousetweaks.schemas.in.h:6
-msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgid ""
+"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
 msgstr ""
-"Norabidea klik bakuna lantzeko (0=ezkerrera, 1=eskuinera, 2=gora, 3=behera)"
+"Norabidea 2. mailako klik-a lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2\"=gora, "
+"\"3\"=behera)"
 
 #: ../data/mousetweaks.schemas.in.h:7
+msgid ""
+"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr "Norabidea klik bakuna lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2\"=gora, \"3\"=behera)"
+
+#: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
 msgstr "Distantzia pixeletan mugimendua antzeman aurretik"
 
-#: ../data/mousetweaks.schemas.in.h:8
+#: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
 msgstr "Klik-tenporizatuaren modua"
 
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
-msgstr "Klik-tenporizatuaren modua (0=keinu-modua, 1=leiho-modua)"
-
 #: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgstr "Klik-tenporizatuaren modua (\"0\"=keinu-modua, \"1\"=leiho-modua)"
+
+#: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "Klik-tenporizatuaren denbora"
 
-#: ../data/mousetweaks.schemas.in.h:11
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:644
 msgid "Enable dwell click"
 msgstr "Gaitu klik-tenporizatua"
 
-#: ../data/mousetweaks.schemas.in.h:12
+#: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Gaitu 2. mailako klik-a"
 
-#: ../data/mousetweaks.schemas.in.h:13
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:646
 msgid "Enable simulated secondary click"
 msgstr "Gaitu simulatutako 2. mailako klik-a"
 
-#: ../data/mousetweaks.schemas.in.h:14
+#: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
 msgstr "Klik bikoitzaren keinua"
 
-#: ../data/mousetweaks.schemas.in.h:15
+#: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture drag click"
 msgstr "Arrastatzeko klik-aren keinua"
 
-#: ../data/mousetweaks.schemas.in.h:16
+#: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
 msgstr "2. mailako klik-aren keinua"
 
-#: ../data/mousetweaks.schemas.in.h:17
+#: ../data/mousetweaks.schemas.in.h:18
 msgid "Gesture single click"
 msgstr "Klik bakunaren keinua"
 
-#: ../data/mousetweaks.schemas.in.h:18
+#: ../data/mousetweaks.schemas.in.h:19
 msgid "Movement threshold"
 msgstr "Mugimenduaren atalasea"
 
-#: ../data/mousetweaks.schemas.in.h:19
+#: ../data/mousetweaks.schemas.in.h:20
 msgid "Secondary click time"
 msgstr "2. mailako klik-aren denbora"
 
-#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:432
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:654
 msgid "Show click type window"
 msgstr "Erakutsi klik motaren leihoa"
 
-#: ../data/mousetweaks.schemas.in.h:21
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Show elapsed time as cursor overlay."
+msgstr "Erakutsi aterapena kurtsorearen gainean."
+
+#: ../data/mousetweaks.schemas.in.h:23
 msgid "Time in seconds before a click is triggered"
 msgstr "Denbora segundotan klik bat abiarazi aurretik"
 
-#: ../data/mousetweaks.schemas.in.h:22
+#: ../data/mousetweaks.schemas.in.h:24
 msgid "Time in seconds before a secondary click is triggered"
 msgstr "Denbora segundotan 2. mailako klik bat abiarazi aurretik"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Button to capture the pointer (0=Capture immediately)"
-msgstr "Botoia erakuslea kapturatzeko (0=kapturatu berehala)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Button to release the pointer"
-msgstr "Botoia erakuslea askatzeko"
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture button"
-msgstr "Kapturaren botoia"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier"
 msgstr "Kapturaren aldatzailearen"
 
-#: ../data/pointer-capture-applet.schemas.in.h:5
+#: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Capture modifier key (Alt)"
 msgstr "Kapturaren tekla aldatzailea (Alt)"
 
-#: ../data/pointer-capture-applet.schemas.in.h:6
+#: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture modifier key (Ctrl)"
 msgstr "Kapturaren tekla aldatzailea (Ktrl)"
 
-#: ../data/pointer-capture-applet.schemas.in.h:7
+#: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier key (Shift)"
 msgstr "Kapturaren tekla aldatzailea (Maius)"
 
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release button"
-msgstr "Askatzeko botoia"
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture mouse button"
+msgstr "Kapturatu saguaren botoia"
 
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+msgstr "Saguaren botoia erakuslea kapturatzeko (\"0\"=kapturatu berehala)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Mouse button to release the pointer"
+msgstr "Saguaren botoia erakuslea askatzeko"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release modifier"
 msgstr "Askatzeko aldatzailea"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
+#: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Release modifier key (Alt)"
 msgstr "Askatzeko tekla aldatzailea (Alt)"
 
-#: ../data/pointer-capture-applet.schemas.in.h:11
+#: ../data/pointer-capture-applet.schemas.in.h:10
 msgid "Release modifier key (Ctrl)"
 msgstr "Askatzeko tekla aldatzailea (Ktrl)"
 
-#: ../data/pointer-capture-applet.schemas.in.h:12
+#: ../data/pointer-capture-applet.schemas.in.h:11
 msgid "Release modifier key (Shift)"
 msgstr "Askatzeko tekla aldatzailea (Maius)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release mouse button"
+msgstr "Askatu saguaren botoia"
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
@@ -287,51 +306,96 @@ msgstr "Kaptura-arearen tamaina"
 msgid "Width of the capture area in pixels"
 msgstr "Kaptura-arearen zabalera (pixeletan)"
 
-#: ../src/mt-main.c:428
-msgid "Enable mousetweaks feature"
-msgstr "Gaitu 'mousetweaks' eginbidea"
+#: ../src/mt-main.c:555
+msgid "Assistive Technology Support Is Not Enabled"
+msgstr "Laguntza-teknologia euskarria ez dago gaituta"
 
-#: ../src/mt-main.c:430
-msgid "Use dwell mode"
-msgstr "Erabili tenporizazio-modua"
+#: ../src/mt-main.c:556
+msgid ""
+"Mousetweaks requires assistive technologies to be enabled in your session.\n"
+"\n"
+"To enable support for assistive technologies and restart your session, press "
+"\"Enable and Log Out\"."
+msgstr ""
+"MouseTweaks-ek laguntza-teknologia behar du zure saioan gaitua izateko.\n"
+"\n"
+"Laguntza-teknologiaren euskarria gaitzeko eta saioa berrabiarazteko, sakatu "
+"\"Gaitu eta amaitu saioa\"."
 
-#: ../src/mt-main.c:434
+#: ../src/mt-main.c:648
+msgid "Time to wait before a dwell click"
+msgstr "Denbora klik-tenporizatua landu aurretik"
+
+#: ../src/mt-main.c:650
+msgid "Time to wait before a simulated secondary click"
+msgstr "Denbora simulatutako 2. mailako klik-a landu aurretik"
+
+#: ../src/mt-main.c:652
+msgid "Dwell mode to use"
+msgstr "Klik-tenporizatuaren modua"
+
+#: ../src/mt-main.c:656
 msgid "Window x position"
 msgstr "Leihoaren x posizioa"
 
-#: ../src/mt-main.c:436
+#: ../src/mt-main.c:658
 msgid "Window y position"
 msgstr "Leihoaren y posizioa"
 
-#: ../src/mt-main.c:438
-msgid "Shutdown mousetweaks"
+#: ../src/mt-main.c:660
+msgid "Ignore small pointer movements"
+msgstr "Ez ikusi egin erakuslearen mugimendu txikiei"
+
+#: ../src/mt-main.c:662
+msgid "Show elapsed time as cursor overlay"
+msgstr "Erakutsi atzerapena kurtsorearen gainean"
+
+#: ../src/mt-main.c:664
+msgid "Shut down mousetweaks"
 msgstr "Itzali 'mousetweaks'"
 
-#: ../src/mt-main.c:495
-msgid "Assistive Technologies not enabled"
-msgstr "Laguntza-teknologia ez dago gaituta"
+#: ../src/mt-main.c:672
+msgid "- GNOME mousetweaks daemon"
+msgstr "- GNOMEko 'mousetweaks' daemona"
 
-#: ../src/mt-main.c:496
-msgid "Mousetweaks requires Assistive Technologies."
-msgstr "'Mousetweaks'-ek laguntza-teknologia behar du."
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
+msgstr "Huts egin du laguntza bistaratzean"
 
-#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:289
-msgid "Couldn't display help"
-msgstr "Ezin izan da laguntza bistaratu"
+#: ../src/mt-common.c:66
+msgid "Enable and Log Out"
+msgstr "Gaitu eta amaitu saioa"
 
-#: ../src/pointer-capture-applet.c:204
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "Blokeatuta"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:207
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "B"
 
-#: ../src/pointer-capture-applet.c:635
+#: ../src/pointer-capture-applet.c:542
+msgid "Pointer Capture Applet"
+msgstr "Erakuslearen kapturaren miniaplikazioa"
+
+#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "Kapturatu area"
 
-#: ../src/pointer-capture-applet.c:636
+#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
 msgstr "Blokeatu saguaren erakuslea aldi baterako"
+
+#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
+msgid "Off"
+msgstr "Desaktibatu"
+
+#: ../src/dwell-click-applet.c:335
+msgid "Failed to Launch Mouse Preferences"
+msgstr "Huts egin du saguaren hobespenak abiaraztean"
+
+#: ../src/dwell-click-applet.c:565
+msgid "Dwell Click Applet"
+msgstr "Klik-tenporizatuaren miniaplikazioa"
+

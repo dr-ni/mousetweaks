@@ -103,14 +103,17 @@ mt_cursor_new (const gchar *name,
     MtCursorPrivate *priv;
     guchar *copy;
 
-    g_return_val_if_fail (name != NULL && name[0] != '\0', NULL);
+    g_return_val_if_fail (name != NULL, NULL);
     g_return_val_if_fail (image != NULL, NULL);
     g_return_val_if_fail (width > 0 && height > 0, NULL);
     g_return_val_if_fail (xhot <= width && yhot <= height, NULL);
 
-    copy = mt_cursor_copy_image (image, width, height);
+    if (*name == 0)
+	return NULL;
 
-    g_return_val_if_fail (copy != NULL, NULL);
+    copy = mt_cursor_copy_image (image, width, height);
+    if (!copy)
+	return NULL;
 
     cursor = g_object_new (MT_TYPE_CURSOR, NULL);
     priv = MT_CURSOR_GET_PRIVATE (cursor);

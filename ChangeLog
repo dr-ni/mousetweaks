@@ -1,5 +1,10 @@
 2008-08-23 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/mt-cursor.c: Don't show a critical warning if a cursor
+	has no name.
+
+2008-08-23 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	Improve a workaround for secondary clicks that caused 
 	problems with window frames and desktop icons. See bug #532934.
 

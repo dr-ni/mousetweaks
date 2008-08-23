@@ -39,6 +39,7 @@ struct _MTClosure {
     gboolean dwell_drag_started;
     gboolean dwell_gesture_started;
     gboolean override_cursor;
+    gboolean move_release;
 
     gint direction;
     gint pointer_x;

@@ -33,6 +33,7 @@
 #include "mt-cursor.h"
 #include "mt-main.h"
 #include "mt-listener.h"
+#include "mt-accessible.h"
 
 static void
 mt_cursor_set (GdkCursorType type)
@@ -262,9 +263,19 @@ delay_timer_finished (MtTimer *timer, gpointer data)
 
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
-    SPI_generateMouseEvent (0, 0, "b1r");
-    SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "abs");
-
+    if (mt->move_release) {
+	/* release the click outside of the focused object to
+	 * abort any action started by button-press.
+	 */
+	SPI_generateMouseEvent (0, 0, "b1r");
+	SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "abs");
+    }
+    else {
+	SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "b1r");
+    }
+    /* wait 100 msec before releasing the button again -
+     * gives apps some time to release active grabs, eg: gnome-panel 'move'
+     */
     g_timeout_add (100, right_click_timeout, data);
 }
 
@@ -323,6 +334,21 @@ global_button_event (MtListener *listener,
 	    mt_timer_stop (mt->delay_timer);
 	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 	}
+    }
+}
+
+static void
+global_focus_event (MtListener *listener, gpointer data)
+{
+    MTClosure *mt = data;
+    Accessible *accessible;
+
+    if (mt->delay_enabled) {
+	accessible = mt_listener_current_focus (listener);
+	/* TODO: check for more objects and conditions.
+	 * Some links don't have jump actions, eg: text-mails in thunderbird.
+	 */
+	mt->move_release = mt_accessible_supports_action (accessible, "jump");
     }
 }
 
@@ -772,6 +798,8 @@ main (int argc, char **argv)
 			  G_CALLBACK (global_motion_event), mt);
 	g_signal_connect (listener, "button_event",
 			  G_CALLBACK (global_button_event), mt);
+	g_signal_connect (listener, "focus_changed",
+			  G_CALLBACK (global_focus_event), mt);
 
 	gtk_main ();
 

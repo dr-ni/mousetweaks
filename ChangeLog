@@ -1,3 +1,17 @@
+2008-08-23 Gerd Kohlberger <gerdk@svn.gnome.org>
+
+	Improve a workaround for secondary clicks that caused 
+	problems with window frames and desktop icons. See bug #532934.
+
+	* src/mt-main.h: Listen for focus changes.
+	* src/mt-main.h: Add 'move-release' variable.
+
+	* src/Makefile.am: Add new files.
+	* src/mt-accessible.c: New file.
+	* src/mt-accessible.h: New file.
+	Add AT-SPI utility functions. Most of them aren't
+	used yet.
+
 2008-08-22 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/mt-listener.c:

@@ -153,6 +153,12 @@ ctw_delete_cb (GtkWidget *win, GdkEvent *ev, gpointer data)
     return TRUE;
 }
 
+GtkWidget *
+mt_ctw_get_window (void)
+{
+    return WID ("ctw");
+}
+
 gboolean
 mt_ctw_init (MTClosure *mt, gint x, gint y)
 {
@@ -166,7 +172,7 @@ mt_ctw_init (MTClosure *mt, gint x, gint y)
     if (!xml)
 	return FALSE;
 
-    ctw = WID ("ctw");
+    ctw = mt_ctw_get_window ();
     gtk_window_stick (GTK_WINDOW (ctw));
     gtk_window_set_keep_above (GTK_WINDOW (ctw), TRUE);
     g_signal_connect (ctw, "delete-event", G_CALLBACK (ctw_delete_cb), mt);
@@ -190,6 +196,7 @@ mt_ctw_init (MTClosure *mt, gint x, gint y)
     data = g_slist_nth_data (group, mt->style);
     gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (data), TRUE);
 
+    gtk_widget_realize (ctw);
     mt_ctw_update_style (mt->style);
     mt_ctw_update_sensitivity (mt);
     mt_ctw_update_visibility (mt);

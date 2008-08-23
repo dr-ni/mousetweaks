@@ -24,14 +24,14 @@
 
 G_BEGIN_DECLS
 
-gboolean mt_ctw_init		   (MTClosure *mt,
-				    gint       x,
-				    gint       y);
-void	 mt_ctw_set_clicktype	   (guint      ct);
-void	 mt_ctw_update_sensitivity (MTClosure *mt);
-void	 mt_ctw_update_visibility  (MTClosure *mt);
-void	 mt_ctw_update_style	   (gint       style);
-
+gboolean    mt_ctw_init               (MTClosure *mt,
+				       gint       x,
+				       gint       y);
+GtkWidget * mt_ctw_get_window         (void);
+void        mt_ctw_set_clicktype      (guint      ct);
+void        mt_ctw_update_sensitivity (MTClosure *mt);
+void        mt_ctw_update_visibility  (MTClosure *mt);
+void        mt_ctw_update_style       (gint       style);
 
 G_END_DECLS
 

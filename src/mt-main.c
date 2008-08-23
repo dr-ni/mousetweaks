@@ -359,6 +359,8 @@ cursor_overlay_time (guchar  *image,
 		     MtTimer *timer,
 		     gdouble  time)
 {
+    GtkWidget *ctw;
+    GdkColor c;
     cairo_surface_t *surface;
     cairo_t *cr;
     gdouble target;
@@ -376,10 +378,17 @@ cursor_overlay_time (guchar  *image,
 	return FALSE;
     }
 
+    ctw = mt_ctw_get_window ();
+    c = ctw->style->bg[GTK_STATE_SELECTED];
     target = mt_timer_get_target (timer);
+
     cairo_set_operator (cr, CAIRO_OPERATOR_ATOP);
     cairo_rectangle (cr, 0, 0, width, height / (target / time));
-    cairo_set_source_rgba (cr, 0., 0., 0., 0.75);
+    cairo_set_source_rgba (cr,
+			   c.red   / 65535.,
+			   c.green / 65535.,
+			   c.blue  / 65535.,
+			   0.75);
     cairo_fill (cr);
     cairo_destroy (cr);
     cairo_surface_destroy (surface);

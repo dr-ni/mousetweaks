@@ -1,5 +1,14 @@
 2008-08-23 Gerd Kohlberger <gerdk@svn.gnome.org>
 
+	* src/mt-main.c:(cursor_overlay_time):
+	* src/mt-ctw.c:
+	* src/mt-ctw.h:
+
+	Use theme colors for the cursor overlay. Looks nicer and works
+	better with dark cursor themes.
+
+2008-08-23 Gerd Kohlberger <gerdk@svn.gnome.org>
+
 	* src/mt-cursor.c: Don't show a critical warning if a cursor
 	has no name.
 

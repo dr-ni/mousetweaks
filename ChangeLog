@@ -1,5 +1,10 @@
 2008-08-24  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
+	* src/mt-listener.c: I_() macro was a bad idea.
+	* po/POTFILES.skip: Remove mt-listener.c again.
+
+2008-08-24  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
 	* src/mt-main.c: Add multiscreen support and generate events
 	with XTest instead of AT-SPI.
 	* src/mt-main.h: Add variables.

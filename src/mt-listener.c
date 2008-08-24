@@ -22,12 +22,6 @@
 
 #include "mt-listener.h"
 
-#if GLIB_CHECK_VERSION (2, 10, 0)
-#define I_(s) (g_intern_static_string (s))
-#else
-#define I_(s) (s)
-#endif
-
 #define MT_LISTENER_GET_PRIVATE(o) \
     (G_TYPE_INSTANCE_GET_PRIVATE ((o), MT_TYPE_LISTENER, MtListenerPrivate))
 
@@ -67,7 +61,7 @@ mt_listener_class_init (MtListenerClass *klass)
     gobject_class->dispose = mt_listener_dispose;
 
     signals[MOTION_EVENT] = 
-	g_signal_new (I_("motion_event"),
+	g_signal_new (g_intern_static_string ("motion_event"),
 		      G_OBJECT_CLASS_TYPE (klass),
 		      G_SIGNAL_RUN_LAST,
 		      0, NULL, NULL,
@@ -75,7 +69,7 @@ mt_listener_class_init (MtListenerClass *klass)
 		      1, MT_TYPE_EVENT | G_SIGNAL_TYPE_STATIC_SCOPE);
 
     signals[BUTTON_EVENT] = 
-	g_signal_new (I_("button_event"),
+	g_signal_new (g_intern_static_string ("button_event"),
 		      G_OBJECT_CLASS_TYPE (klass),
 		      G_SIGNAL_RUN_LAST,
 		      0, NULL, NULL,
@@ -83,7 +77,7 @@ mt_listener_class_init (MtListenerClass *klass)
 		      1, MT_TYPE_EVENT | G_SIGNAL_TYPE_STATIC_SCOPE);
 
     signals[FOCUS_CHANGED] =
-	g_signal_new (I_("focus_changed"),
+	g_signal_new (g_intern_static_string ("focus_changed"),
 		      G_OBJECT_CLASS_TYPE (klass),
 		      G_SIGNAL_RUN_LAST,
 		      0, NULL, NULL,
@@ -147,7 +141,7 @@ mt_event_get_type (void)
     static GType event = 0;
 
     if (G_UNLIKELY (event == 0))
-	event = g_boxed_type_register_static (I_("MtEvent"),
+	event = g_boxed_type_register_static (g_intern_static_string ("MtEvent"),
 					      (GBoxedCopyFunc) mt_event_copy,
 					      (GBoxedFreeFunc) mt_event_free);
     return event;

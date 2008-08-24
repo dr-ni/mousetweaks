@@ -1,3 +1,12 @@
+2008-08-24  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* src/mt-main.c: Add multiscreen support and generate events
+	with XTest instead of AT-SPI.
+	* src/mt-main.h: Add variables.
+	* src/mt-ctw.c: (mt_ctw_update_visibility): Map click-type window
+	on the current screen.
+	* configure.ac: Add xtst check.
+
 2008-08-23 Gerd Kohlberger <gerdk@svn.gnome.org>
 
 	* src/mt-main.c:(cursor_overlay_time):

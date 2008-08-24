@@ -43,7 +43,8 @@ PKG_CHECK_MODULES(DEPENDENCIES,
 	dbus-glib-1 >= 0.7
 	cspi-1.0
 	xcursor
-	xfixes)
+	xfixes
+	xtst)
 
 AC_SUBST(DEPENDENCIES_CFLAGS)
 AC_SUBST(DEPENDENCIES_LIBS)

@@ -21,8 +21,10 @@
 #include <unistd.h>
 
 #include <gtk/gtk.h>
+#include <gdk/gdkx.h>
 #include <cspi/spi.h>
 #include <dbus/dbus-glib.h>
+#include <X11/extensions/XTest.h>
 
 #include "mt-common.h"
 #include "mt-service.h"
@@ -35,13 +37,85 @@
 #include "mt-listener.h"
 #include "mt-accessible.h"
 
-static void
-mt_cursor_set (GdkCursorType type)
+#define GSM_DBUS_NAME      "org.gnome.SessionManager"
+#define GSM_DBUS_PATH      "/org/gnome/SessionManager"
+#define GSM_DBUS_INTERFACE "org.gnome.SessionManager"
+
+enum {
+    PRESS = 0,
+    RELEASE,
+    CLICK,
+    DOUBLE_CLICK
+};
+
+static GdkScreen *
+mt_main_current_screen (MTClosure *mt)
 {
+    GdkScreen *screen;
+
+    if (mt->n_screens > 1)
+	gdk_display_get_pointer (gdk_display_get_default (),
+				 &screen, NULL, NULL, NULL);
+    else
+	screen = gdk_screen_get_default ();
+
+    return screen;
+}
+
+static void
+mt_main_generate_motion_event (GdkScreen *screen, gint x, gint y)
+{
+    gdk_display_warp_pointer (gdk_display_get_default (),
+			      screen, x, y);
+}
+
+static void
+mt_main_generate_button_event (MTClosure *mt,
+			       guint      button,
+			       gboolean   type,
+			       gulong     delay)
+{
+    switch (type) {
+	case PRESS:
+	    XTestFakeButtonEvent (mt->xtst_display,
+				  button, True, delay);
+	    break;
+	case RELEASE:
+	    XTestFakeButtonEvent (mt->xtst_display,
+				  button, False, delay);
+	    break;
+	case CLICK:
+	    XTestFakeButtonEvent (mt->xtst_display,
+				  button, True, CurrentTime);
+	    XTestFakeButtonEvent (mt->xtst_display,
+				  button, False, delay);
+	    break;
+	case DOUBLE_CLICK:
+	    XTestFakeButtonEvent (mt->xtst_display,
+				  button, True, CurrentTime);
+	    XTestFakeButtonEvent (mt->xtst_display,
+				  button, True, delay);
+	    XTestFakeButtonEvent (mt->xtst_display,
+				  button, True, CurrentTime);
+	    XTestFakeButtonEvent (mt->xtst_display,
+				  button, True, delay);
+	    break;
+	default:
+	    g_warning ("Unknown sequence.");
+	    break;
+    }
+    XFlush (mt->xtst_display);
+}
+
+static void
+mt_main_set_cursor (MTClosure *mt, GdkCursorType type)
+{
+    GdkWindow *root;
     GdkCursor *cursor;
 
     cursor = gdk_cursor_new (type);
-    gdk_window_set_cursor (gdk_get_default_root_window (), cursor);
+    root = gdk_screen_get_root_window (mt_main_current_screen (mt));
+    gdk_window_set_cursor (root, cursor);
     gdk_cursor_unref (cursor);
 }
 
@@ -54,54 +128,42 @@ dwell_restore_single_click (MTClosure *mt)
     mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);
 }
 
-static gboolean
-dwell_b1r_timeout (gpointer data)
-{
-    gint x, y;
-
-    gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
-    SPI_generateMouseEvent (x, y, "b1r");
-
-    return FALSE;
-}
-
 static void
 dwell_do_pointer_click (MTClosure *mt, gint x, gint y)
 {
     guint clicktype;
 
     clicktype = mt_service_get_clicktype (mt->service);
+    mt_main_generate_motion_event (mt_main_current_screen (mt), x, y);
 
     switch (clicktype) {
-    case DWELL_CLICK_TYPE_SINGLE:
-	SPI_generateMouseEvent (x, y, "b1p");
-	/* Wait a few msecs before releasing the button again.
-	 * This allows GOK to see our clicks.
-	 */
-	g_timeout_add (60, dwell_b1r_timeout, NULL);
-	break;
-    case DWELL_CLICK_TYPE_DOUBLE:
-	SPI_generateMouseEvent (x, y, "b1d");
-	dwell_restore_single_click (mt);
-	break;
-    case DWELL_CLICK_TYPE_DRAG:
-	if (!mt->dwell_drag_started) {
-	    SPI_generateMouseEvent (x, y, "b1p");
-	    mt->dwell_drag_started = TRUE;
-	    mt_cursor_set (GDK_FLEUR);
-	}
-	else {
-	    SPI_generateMouseEvent (x, y, "b1r");
-	    mt->dwell_drag_started = FALSE;
-	    mt_cursor_set (GDK_LEFT_PTR);
+	case DWELL_CLICK_TYPE_SINGLE:
+	    mt_main_generate_button_event (mt, 1, CLICK, 60);
+	    break;
+	case DWELL_CLICK_TYPE_DOUBLE:
+	    mt_main_generate_button_event (mt, 1, DOUBLE_CLICK, 10);
 	    dwell_restore_single_click (mt);
-	}
-	break;
-    case DWELL_CLICK_TYPE_RIGHT:
-	SPI_generateMouseEvent (x, y, "b3c");
-	dwell_restore_single_click (mt);
-    default:
-	break;
+	    break;
+	case DWELL_CLICK_TYPE_DRAG:
+	    if (!mt->dwell_drag_started) {
+		mt_main_generate_button_event (mt, 1, PRESS, CurrentTime);
+		mt_main_set_cursor (mt, GDK_FLEUR);
+		mt->dwell_drag_started = TRUE;
+	    }
+	    else {
+		mt_main_generate_button_event (mt, 1, RELEASE, CurrentTime);
+		mt_main_set_cursor (mt, GDK_LEFT_PTR);
+		mt->dwell_drag_started = FALSE;
+		dwell_restore_single_click (mt);
+	    }
+	    break;
+	case DWELL_CLICK_TYPE_RIGHT:
+	    mt_main_generate_button_event (mt, 3, CLICK, 10);
+	    dwell_restore_single_click (mt);
+	    break;
+	default:
+	    g_warning ("Unknown click-type.");
+	    break;
     }
 }
 
@@ -162,15 +224,12 @@ analyze_direction (MTClosure *mt, gint x, gint y)
 }
 
 static void
-draw_line (gint x1, gint y1, gint x2, gint y2)
+mt_main_draw_line (MTClosure *mt, gint x1, gint y1, gint x2, gint y2)
 {
-    GdkScreen *screen;
     GdkWindow *root;
     GdkGC *gc;
 
-    screen = gdk_display_get_default_screen (gdk_display_get_default ());
-    root = gdk_screen_get_root_window (screen);
-
+    root = gdk_screen_get_root_window (mt_main_current_screen (mt));
     gc = gdk_gc_new (root);
     gdk_gc_set_subwindow (gc, GDK_INCLUDE_INFERIORS);
     gdk_gc_set_function (gc, GDK_INVERT);
@@ -178,8 +237,7 @@ draw_line (gint x1, gint y1, gint x2, gint y2)
 				GDK_LINE_SOLID,
 				GDK_CAP_ROUND,
 				GDK_JOIN_ROUND);
-    gdk_draw_arc (root, gc, TRUE,
-		  x1 - 4, y1 - 4, 8, 8, 0, 23040);
+    gdk_draw_arc (root, gc, TRUE, x1 - 4, y1 - 4, 8, 8, 0, 23040);
     gdk_draw_line (root, gc, x1, y1, x2, y2);
     g_object_unref (gc);
 }
@@ -187,20 +245,19 @@ draw_line (gint x1, gint y1, gint x2, gint y2)
 static void
 dwell_start_gesture (MTClosure *mt)
 {
-    if (mt->override_cursor) {
-	GdkCursor *cursor;
+    GdkCursor *cursor;
+    GdkWindow *root;
 
+    if (mt->override_cursor) {
 	cursor = gdk_cursor_new (GDK_CROSS);
-	gdk_pointer_grab (gdk_get_default_root_window (),
-			  FALSE,
-			  GDK_POINTER_MOTION_MASK, 
-			  NULL,
-			  cursor,
-			  GDK_CURRENT_TIME);
+	root = gdk_screen_get_root_window (mt_main_current_screen (mt));
+	gdk_pointer_grab (root, FALSE, GDK_POINTER_MOTION_MASK, 
+			  NULL, cursor, GDK_CURRENT_TIME);
 	gdk_cursor_unref (cursor);
     }
-    else
-	mt_cursor_set (GDK_CROSS);
+    else {
+	mt_main_set_cursor (mt, GDK_CROSS);
+    }
 
     mt->dwell_gesture_started = TRUE;
     mt_timer_start (mt->dwell_timer);
@@ -212,10 +269,12 @@ dwell_stop_gesture (MTClosure *mt)
     if (mt->override_cursor)
 	gdk_pointer_ungrab (GDK_CURRENT_TIME);
     else
-	mt_cursor_set (GDK_LEFT_PTR);
+	mt_main_set_cursor (mt, GDK_LEFT_PTR);
 
     if (mt->x_old > -1 && mt->y_old > -1) {
-	draw_line (mt->pointer_x, mt->pointer_y, mt->x_old, mt->y_old);
+	mt_main_draw_line (mt, 
+			   mt->pointer_x, mt->pointer_y,
+			   mt->x_old, mt->y_old);
 	mt->x_old = -1;
 	mt->y_old = -1;
     }
@@ -233,9 +292,10 @@ dwell_timer_finished (MtTimer *timer, gpointer data)
     gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
-    if (mt->dwell_mode == DWELL_MODE_CTW)
+    if (mt->dwell_mode == DWELL_MODE_CTW) {
 	dwell_do_pointer_click (mt, x, y);
-    else if (mt->dwell_mode == DWELL_MODE_GESTURE) {
+    }
+    else {
 	if (mt->dwell_gesture_started) {
 	    dwell_stop_gesture (mt);
 	    if (analyze_direction (mt, x, y))
@@ -251,7 +311,7 @@ right_click_timeout (gpointer data)
 {
     MTClosure *mt = data;
 
-    SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "b3c");
+    mt_main_generate_button_event (mt, 3, CLICK, CurrentTime);
 
     return FALSE;
 }
@@ -260,6 +320,7 @@ static void
 delay_timer_finished (MtTimer *timer, gpointer data)
 {
     MTClosure *mt = data;
+    GdkScreen *screen;
 
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
@@ -267,11 +328,13 @@ delay_timer_finished (MtTimer *timer, gpointer data)
 	/* release the click outside of the focused object to
 	 * abort any action started by button-press.
 	 */
-	SPI_generateMouseEvent (0, 0, "b1r");
-	SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "abs");
+	screen = mt_main_current_screen (mt);
+	mt_main_generate_motion_event (screen, 0, 0);
+	mt_main_generate_button_event (mt, 1, RELEASE, CurrentTime);
+	mt_main_generate_motion_event (screen, mt->pointer_x, mt->pointer_y);
     }
     else {
-	SPI_generateMouseEvent (mt->pointer_x, mt->pointer_y, "b1r");
+	mt_main_generate_button_event (mt, 1, RELEASE, CurrentTime);
     }
     /* wait 100 msec before releasing the button again -
      * gives apps some time to release active grabs, eg: gnome-panel 'move'
@@ -296,10 +359,14 @@ global_motion_event (MtListener *listener,
 	}
 
 	if (mt->dwell_gesture_started) {
-	    if (mt->x_old > -1 && mt->y_old > -1)
-		draw_line (mt->pointer_x, mt->pointer_y, mt->x_old, mt->y_old);
-
-	    draw_line (mt->pointer_x, mt->pointer_y, event->x, event->y);
+	    if (mt->x_old > -1 && mt->y_old > -1) {
+		mt_main_draw_line (mt,
+				   mt->pointer_x, mt->pointer_y,
+				   mt->x_old, mt->y_old);
+	    }
+	    mt_main_draw_line (mt, 
+			       mt->pointer_x, mt->pointer_y,
+			       event->x, event->y);
 	    mt->x_old = event->x;
 	    mt->y_old = event->y;
 	}
@@ -562,9 +629,9 @@ mt_main_request_logout (MTClosure *mt)
     bus = dbus_g_bus_get (DBUS_BUS_SESSION, NULL);
     if (bus) {
 	proxy = dbus_g_proxy_new_for_name (bus,
-					   "org.gnome.SessionManager",
-					   "/org/gnome/SessionManager",
-					   "org.gnome.SessionManager");
+					   GSM_DBUS_NAME,
+					   GSM_DBUS_PATH,
+					   GSM_DBUS_INTERFACE);
 	/*
 	 * Call logout method of session manager:
 	 * mode: 0 = normal, 1 = no confirmation, 2 = force
@@ -615,10 +682,18 @@ static MTClosure *
 mt_closure_init (void)
 {
     MTClosure *mt;
+    gint ev_base, err_base, maj, min;
 
     mt = g_slice_new0 (MTClosure);
-    if (!mt)
+    mt->xtst_display = XOpenDisplay (NULL);
+
+    if (!XTestQueryExtension (mt->xtst_display,
+			      &ev_base, &err_base, &maj, &min)) {
+	XCloseDisplay (mt->xtst_display);
+	g_slice_free (MTClosure, mt);
+	g_critical ("No XTest extension found. Aborting..");
 	return NULL;
+    }
 
     mt->client = gconf_client_get_default ();
     gconf_client_add_dir (mt->client, MT_GCONF_HOME,
@@ -640,6 +715,8 @@ mt_closure_init (void)
 
     mt->service = mt_service_get_default ();
     mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);
+
+    mt->n_screens = gdk_display_get_n_screens (gdk_display_get_default ());
 
     mt->x_old = -1;
     mt->y_old = -1;

@@ -11,14 +11,15 @@
 <article id="index" lang="en">
   <articleinfo>
     <title>&app; Manual</title>
+
     <abstract role="description">
-      <para>
-	&application; provides mouse accessibility enhancements for 
-        the GNOME Desktop.
-      </para>
+      <para>&application; provides mouse accessibility enhancements for the
+      GNOME Desktop.</para>
     </abstract>
+
     <copyright>
       <year>2007 - 2008</year>
+
       <holder>Francesco Fumanti</holder>
     </copyright>
 
@@ -27,7 +28,9 @@
     <authorgroup>
       <author role="maintainer">
         <firstname>Francesco</firstname>
+
         <surname>Fumanti</surname>
+
         <affiliation>
           <address><email>frfumanti@svn.gnome.org</email> </address>
         </affiliation>
@@ -541,19 +544,19 @@
       </sect3>
 
       <sect3>
-        <title id="mouse-a11y-ssc-motion-treshold">Motion Treshold</title>
+        <title id="mouse-a11y-ssc-motion-treshold">Motion Threshold</title>
 
         <para>People that have trouble to keep the pointer completely
-        motionless can use the Motion Treshold slider of the Dwell Click
+        motionless can use the Motion Threshold slider of the Dwell Click
         feature. This setting makes mousetweaks ignore little mouse movements,
         so that the simulated secondary click is issued even if the pointer is
         not completely motionless. Please have a look at the section of the
-        <link linkend="mouse-a11y-dwell-motion-treshold">Motion Treshold
+        <link linkend="mouse-a11y-dwell-motion-treshold">Motion Threshold
         slider of the Dwell Click feature</link> for more information about
         it.</para>
 
         <note>
-          <para>The <guilabel>Motion Treshold</guilabel> slider that is
+          <para>The <guilabel>Motion Threshold</guilabel> slider that is
           located under the <guilabel>Dwell Click</guilabel> feature is also
           effective for the <guilabel>Simulated Secondary Click</guilabel>
           feature, even if the <guilabel>Dwell Click</guilabel> feature is
@@ -840,10 +843,10 @@
       </sect3>
 
       <sect3 id="mouse-a11y-dwell-motion-treshold">
-        <title>Motion Treshold Setting</title>
+        <title>Motion Threshold Setting</title>
 
         <para>For people that have trouble to keep the mouse motionless, there
-        is the <guilabel>Motion Treshold</guilabel> slider.</para>
+        is the <guilabel>Motion Threshold</guilabel> slider.</para>
 
         <mediaobject>
           <imageobject>
@@ -851,17 +854,18 @@
           </imageobject>
 
           <textobject>
-            <para>Picture showing the motion treshold slider of the dwell
+            <para>Picture showing the motion threshold slider of the dwell
             click</para>
           </textobject>
         </mediaobject>
 
         <para>When the slider is set towards low, even little mouse movements
-        are considered; however, by setting a higher treshold, the pointer has
-        to travel a bigger distance before it is considered as moving.</para>
+        are considered; however, by setting a higher threshold, the pointer
+        has to travel a bigger distance before it is considered as
+        moving.</para>
 
         <note>
-          <para>The Motion Treshold setting does not only work for the dwell
+          <para>The Motion Threshold setting does not only work for the dwell
           click, but also for the simulated secondary click, even if the dwell
           click is disabled.</para>
         </note>

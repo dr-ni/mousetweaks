@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome 2-22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-29 02:20+0100\n"
+"POT-Creation-Date: 2008-08-26 14:49+0100\n"
 "PO-Revision-Date: 2008-02-12 21:24+0100\n"
 "Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
 "Language-Team: Arabeyes <doc@arabeyes.org>\n"
@@ -37,8 +37,8 @@ msgstr "نقر ثنائي"
 msgid "Drag Click"
 msgstr "نقر"
 
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:113
-#: ../src/dwell-click-applet.c:651
+#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
 msgid "On"
 msgstr ""
 
@@ -204,7 +204,7 @@ msgstr "نمط النقر الكامن (0= نمط الحركة، 1=نمط الن
 msgid "Dwell click time"
 msgstr "وقت النقر الكامن"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:626
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:756
 msgid "Enable dwell click"
 msgstr "فعّل النقر الكامن"
 
@@ -212,7 +212,7 @@ msgstr "فعّل النقر الكامن"
 msgid "Enable secondary click"
 msgstr "فعّل النقر الثانوي"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:628
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:758
 msgid "Enable simulated secondary click"
 msgstr "فعِّل محاكاة النقر الثانوي"
 
@@ -240,7 +240,7 @@ msgstr "عتبة الحركة"
 msgid "Secondary click time"
 msgstr "وقت النقر الثانوي"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:636
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:766
 msgid "Show click type window"
 msgstr "اعرض نافذة نوع النّقر"
 
@@ -316,12 +316,12 @@ msgstr "حجم مساحة الإمساك"
 msgid "Width of the capture area in pixels"
 msgstr "عرض مساحة الامساك بالبكسل"
 
-#: ../src/mt-main.c:534
+#: ../src/mt-main.c:657
 #, fuzzy
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "لم يتم تفعيل تكنلوجيا الإتاحة"
 
-#: ../src/mt-main.c:535
+#: ../src/mt-main.c:658
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -329,93 +329,92 @@ msgid ""
 "\"Enable and Log Out\"."
 msgstr ""
 
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:760
 msgid "Time to wait before a dwell click"
 msgstr ""
 
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:762
 #, fuzzy
 msgid "Time to wait before a simulated secondary click"
 msgstr "فعِّل محاكاة النقر الثانوي"
 
-#: ../src/mt-main.c:634
+#: ../src/mt-main.c:764
 #, fuzzy
 msgid "Dwell mode to use"
 msgstr "نمط النقر الكامن"
 
-#: ../src/mt-main.c:638
+#: ../src/mt-main.c:768
 msgid "Window x position"
 msgstr "موقع س للنافذة"
 
-#: ../src/mt-main.c:640
+#: ../src/mt-main.c:770
 msgid "Window y position"
 msgstr "موقع ع للنافذة"
 
-#: ../src/mt-main.c:642
+#: ../src/mt-main.c:772
 msgid "Ignore small pointer movements"
 msgstr ""
 
-#: ../src/mt-main.c:644
+#: ../src/mt-main.c:774
 msgid "Show elapsed time as cursor overlay"
 msgstr ""
 
-#: ../src/mt-main.c:646
+#: ../src/mt-main.c:776
 #, fuzzy
 msgid "Shut down mousetweaks"
 msgstr "اغلق برنامج ظبط الفأرة"
 
-#: ../src/mt-main.c:654
+#: ../src/mt-main.c:784
 #, fuzzy
 msgid "- GNOME mousetweaks daemon"
 msgstr "فعّل ميزة برنامج ضبط الفأرة"
 
-#: ../src/mt-common.c:54
-msgid "Enable and Log Out"
-msgstr ""
-
-#: ../src/pointer-capture-applet.c:73
-msgid "Couldn't display help"
-msgstr "تعذّر عرض المساعدة"
-
-#: ../src/pointer-capture-applet.c:195
-msgid "Locked"
-msgstr "مثبّت"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:198
-msgid "L"
-msgstr "م"
-
-#: ../src/pointer-capture-applet.c:556
-#, fuzzy
-msgid "Pointer Capture Applet"
-msgstr "مسك المؤشّر"
-
-#: ../src/pointer-capture-applet.c:628
-msgid "Capture area"
-msgstr "مساحة الإمساك"
-
-#: ../src/pointer-capture-applet.c:629
-msgid "Temporarily lock the mouse pointer"
-msgstr "ثبّت مؤشّر الفأرة مؤقّتا"
-
-#: ../src/dwell-click-applet.c:113 ../src/dwell-click-applet.c:651
-msgid "Off"
-msgstr ""
-
-#: ../src/dwell-click-applet.c:336
-msgid "Failed to Launch Mouse Preferences"
-msgstr ""
-
-#: ../src/dwell-click-applet.c:355
+#: ../src/mt-common.c:30
 #, fuzzy
 msgid "Failed to Display Help"
 msgstr "تعذّر عرض المساعدة"
 
-#: ../src/dwell-click-applet.c:574
+#: ../src/mt-common.c:66
+msgid "Enable and Log Out"
+msgstr ""
+
+#: ../src/pointer-capture-applet.c:180
+msgid "Locked"
+msgstr "مثبّت"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:183
+msgid "L"
+msgstr "م"
+
+#: ../src/pointer-capture-applet.c:542
+#, fuzzy
+msgid "Pointer Capture Applet"
+msgstr "مسك المؤشّر"
+
+#: ../src/pointer-capture-applet.c:614
+msgid "Capture area"
+msgstr "مساحة الإمساك"
+
+#: ../src/pointer-capture-applet.c:615
+msgid "Temporarily lock the mouse pointer"
+msgstr "ثبّت مؤشّر الفأرة مؤقّتا"
+
+#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
+msgid "Off"
+msgstr ""
+
+#: ../src/dwell-click-applet.c:335
+msgid "Failed to Launch Mouse Preferences"
+msgstr ""
+
+#: ../src/dwell-click-applet.c:565
 #, fuzzy
 msgid "Dwell Click Applet"
 msgstr "نوع النقر الكامن"
+
+#~ msgid "Couldn't display help"
+#~ msgstr "تعذّر عرض المساعدة"
 
 #, fuzzy
 #~ msgid "Enable simualted secondary click"

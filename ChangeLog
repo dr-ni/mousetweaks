@@ -1,5 +1,9 @@
 2008-08-27  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
+	* src/mt-main.c: Change cursor on all root windows.
+
+2008-08-27  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
 	* src/mt-timer.c: Minor cleanup.
 
 2008-08-24  Gerd Kohlberger  <gerdk@svn.gnome.org>

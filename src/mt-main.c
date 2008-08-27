@@ -110,12 +110,15 @@ mt_main_generate_button_event (MTClosure *mt,
 static void
 mt_main_set_cursor (MTClosure *mt, GdkCursorType type)
 {
-    GdkWindow *root;
+    GdkScreen *screen;
     GdkCursor *cursor;
+    gint i;
 
     cursor = gdk_cursor_new (type);
-    root = gdk_screen_get_root_window (mt_main_current_screen (mt));
-    gdk_window_set_cursor (root, cursor);
+    for (i = 0; i < mt->n_screens; ++i) {
+	screen = gdk_display_get_screen (gdk_display_get_default (), i);
+	gdk_window_set_cursor (gdk_screen_get_root_window (screen), cursor);
+    }
     gdk_cursor_unref (cursor);
 }
 

@@ -79,7 +79,7 @@ mt_timer_init (MtTimer *timer)
 {
     MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE (timer);
 
-    priv->timer   = NULL;
+    priv->timer   = g_timer_new ();
     priv->tid     = 0;
     priv->elapsed = 0.0;
     priv->target  = 1.2;
@@ -134,15 +134,7 @@ mt_timer_check_time (gpointer data)
 MtTimer *
 mt_timer_new (void)
 {
-    MtTimer *timer;
-    MtTimerPrivate *priv;
-
-    timer = g_object_new (MT_TYPE_TIMER, NULL);
-    priv = MT_TIMER_GET_PRIVATE (timer);
-
-    priv->timer = g_timer_new ();
-
-    return timer;
+    return g_object_new (MT_TYPE_TIMER, NULL);
 }
 
 void

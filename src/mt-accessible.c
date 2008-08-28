@@ -222,7 +222,6 @@ mt_accessible_at_point (gint x, gint y)
 
 	    if (!Accessible_getRole (frame) == SPI_ROLE_FRAME ||
 		!mt_accessible_is_visible (frame) ||
-		!mt_accessible_is_active (frame) ||
 		!Accessible_isComponent (frame)) {
 		Accessible_unref (frame);
 		continue;

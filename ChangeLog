@@ -1,3 +1,11 @@
+2008-08-28  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	Fix secondary clicks on the "Window List" applet.
+
+	* src/mt-main.c:(mt_main_generate_motion_event): Flush connection.
+	* src/mt-accessible.c:(mt_accessible_at_point):
+	Don't skip inactive objects.
+
 2008-08-27  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
 	* src/mt-main.c: Change cursor on all root windows.

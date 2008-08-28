@@ -67,6 +67,7 @@ mt_main_generate_motion_event (GdkScreen *screen, gint x, gint y)
 {
     gdk_display_warp_pointer (gdk_display_get_default (),
 			      screen, x, y);
+    gdk_flush ();
 }
 
 static void
@@ -310,6 +311,57 @@ dwell_timer_finished (MtTimer *timer, gpointer data)
 }
 
 static gboolean
+eval_func (Accessible *a, gpointer data)
+{
+    gboolean found;
+    char *name;
+
+    name = Accessible_getName (a);
+    found = g_str_equal (name, "Window List");
+    SPI_freeString (name);
+
+    return found;
+}
+
+static gboolean 
+push_func (Accessible *a, gpointer data)
+{
+    MTClosure *mt = data;
+    AccessibleRole role;
+
+    role = Accessible_getRole (a);
+    if (role != SPI_ROLE_PANEL && role != SPI_ROLE_EMBEDDED)
+	return FALSE;
+
+    if (!mt_accessible_is_visible (a))
+	return FALSE;
+
+    if (Accessible_isComponent (a))
+	return mt_accessible_in_extents (a, mt->pointer_x, mt->pointer_y);
+
+    return TRUE;
+}
+
+static gboolean
+mt_main_use_move_release (MTClosure *mt)
+{
+    Accessible *point, *search;
+
+    point = mt_accessible_at_point (mt->pointer_x, mt->pointer_y);
+    if (point) {
+	search = mt_accessible_search (point,
+				       MT_SEARCH_TYPE_BREADTH,
+				       eval_func, push_func, mt);
+	Accessible_unref (point);
+	if (search) {
+	    Accessible_unref (search);
+	    return TRUE;
+	}
+    }
+    return FALSE;
+}
+
+static gboolean
 right_click_timeout (gpointer data)
 {
     MTClosure *mt = data;
@@ -327,7 +379,7 @@ delay_timer_finished (MtTimer *timer, gpointer data)
 
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
-    if (mt->move_release) {
+    if (mt->move_release || mt_main_use_move_release (mt)) {
 	/* release the click outside of the focused object to
 	 * abort any action started by button-press.
 	 */

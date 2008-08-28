@@ -27,11 +27,11 @@
 G_BEGIN_DECLS
 
 #define MT_TYPE_CURSOR_MANAGER		  (mt_cursor_manager_get_type ())
-#define MT_CURSOR_MANAGER(obj)		  (G_TYPE_CHECK_INSTANCE_CAST ((obj), MT_TYPE_CURSOR_MANAGER, MtCursor))
-#define MT_CURSOR_MANAGER_CLASS(klass)	  (G_TYPE_CHECK_CLASS_CAST ((klass), MT_TYPE_CURSOR_MANAGER, MtCursorClass))
+#define MT_CURSOR_MANAGER(obj)		  (G_TYPE_CHECK_INSTANCE_CAST ((obj), MT_TYPE_CURSOR_MANAGER, MtCursorManager))
+#define MT_CURSOR_MANAGER_CLASS(klass)	  (G_TYPE_CHECK_CLASS_CAST ((klass), MT_TYPE_CURSOR_MANAGER, MtCursorManagerClass))
 #define MT_IS_CURSOR_MANAGER(obj)	  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), MT_TYPE_CURSOR_MANAGER))
 #define MT_IS_CURSOR_MANAGER_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), MT_TYPE_CURSOR_MANAGER))
-#define MT_CURSOR_MANAGER_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), MT_TYPE_CURSOR_MANAGER, MtCursorClass))
+#define MT_CURSOR_MANAGER_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), MT_TYPE_CURSOR_MANAGER, MtCursorManagerClass))
 
 typedef struct _MtCursorManager MtCursorManager;
 typedef struct _MtCursorManagerClass MtCursorManagerClass;
@@ -44,8 +44,7 @@ struct _MtCursorManagerClass {
     GObjectClass parent;
 };
 
-GType mt_cursor_manager_get_type (void) G_GNUC_CONST;
-
+GType             mt_cursor_manager_get_type       (void) G_GNUC_CONST;
 MtCursorManager * mt_cursor_manager_get_default    (void);
 MtCursor *        mt_cursor_manager_current_cursor (MtCursorManager *manager);
 MtCursor *        mt_cursor_manager_lookup_cursor  (MtCursorManager *manager,

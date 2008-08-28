@@ -133,12 +133,15 @@ dwell_restore_single_click (MTClosure *mt)
 }
 
 static void
-dwell_do_pointer_click (MTClosure *mt, gint x, gint y)
+mt_main_do_dwell_click (MTClosure *mt)
 {
     guint clicktype;
 
     clicktype = mt_service_get_clicktype (mt->service);
-    mt_main_generate_motion_event (mt_main_current_screen (mt), x, y);
+
+    if (mt->dwell_mode == DWELL_MODE_GESTURE)
+	mt_main_generate_motion_event (mt_main_current_screen (mt),
+				       mt->pointer_x, mt->pointer_y);
 
     switch (clicktype) {
 	case DWELL_CLICK_TYPE_SINGLE:
@@ -183,15 +186,19 @@ below_threshold (MTClosure *mt, gint x, gint y)
 }
 
 static gboolean
-analyze_direction (MTClosure *mt, gint x, gint y)
+mt_main_analyze_gesture (MTClosure *mt)
 {
-    gint gd, i, dx, dy;
+    gint x, y, gd, i, dx, dy;
+
+    if (mt_service_get_clicktype (mt->service) == DWELL_CLICK_TYPE_DRAG)
+	return TRUE;
+
+    gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
+    if (below_threshold (mt, x, y))
+	return FALSE;
 
     dx = ABS (x - mt->pointer_x);
     dy = ABS (y - mt->pointer_y);
-
-    if (below_threshold (mt, x, y))
-	return FALSE;
 
     /* find direction */
     if (x < mt->pointer_x)
@@ -218,12 +225,12 @@ analyze_direction (MTClosure *mt, gint x, gint y)
 		gd = DIRECTION_RIGHT;
 
     /* get click type for direction */
-    for (i = 0; i < N_CLICK_TYPES; i++)
+    for (i = 0; i < N_CLICK_TYPES; i++) {
 	if (mt->dwell_dirs[i] == gd) {
 	    mt_service_set_clicktype (mt->service, i, NULL);
 	    return TRUE;
 	}
-
+    }
     return FALSE;
 }
 
@@ -255,8 +262,10 @@ dwell_start_gesture (MTClosure *mt)
     if (mt->override_cursor) {
 	cursor = gdk_cursor_new (GDK_CROSS);
 	root = gdk_screen_get_root_window (mt_main_current_screen (mt));
-	gdk_pointer_grab (root, FALSE, GDK_POINTER_MOTION_MASK, 
-			  NULL, cursor, GDK_CURRENT_TIME);
+	gdk_pointer_grab (root, FALSE,
+			  GDK_POINTER_MOTION_MASK, 
+			  NULL, cursor,
+			  gtk_get_current_event_time ());
 	gdk_cursor_unref (cursor);
     }
     else {
@@ -271,7 +280,7 @@ static void
 dwell_stop_gesture (MTClosure *mt)
 {
     if (mt->override_cursor)
-	gdk_pointer_ungrab (GDK_CURRENT_TIME);
+	gdk_pointer_ungrab (gtk_get_current_event_time ());
     else
 	mt_main_set_cursor (mt, GDK_LEFT_PTR);
 
@@ -291,19 +300,18 @@ static void
 dwell_timer_finished (MtTimer *timer, gpointer data)
 {
     MTClosure *mt = data;
-    gint x, y;
 
-    gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
     if (mt->dwell_mode == DWELL_MODE_CTW) {
-	dwell_do_pointer_click (mt, x, y);
+	mt_main_do_dwell_click (mt);
     }
     else {
 	if (mt->dwell_gesture_started) {
 	    dwell_stop_gesture (mt);
-	    if (analyze_direction (mt, x, y))
-		dwell_do_pointer_click (mt, mt->pointer_x, mt->pointer_y);
+
+	    if (mt_main_analyze_gesture (mt))
+		mt_main_do_dwell_click (mt);
 	}
 	else
 	    dwell_start_gesture (mt);

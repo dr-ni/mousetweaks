@@ -1,5 +1,9 @@
 2008-08-28  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
+	* src/mt-main.c: Fix regression with drag clicks.
+
+2008-08-28  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
 	Fix secondary clicks on the "Window List" applet.
 
 	* src/mt-main.c:(mt_main_generate_motion_event): Flush connection.

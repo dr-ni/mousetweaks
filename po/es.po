@@ -7,12 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-07 14:39+0000\n"
-"PO-Revision-Date: 2008-07-25 14:49+0200\n"
+"POT-Creation-Date: 2008-08-18 16:25+0000\n"
+"PO-Revision-Date: 2008-08-29 15:42+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type:  text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
@@ -38,8 +38,8 @@ msgstr "Pulsación doble"
 msgid "Drag Click"
 msgstr "Pulsación de arrastre"
 
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:111
-#: ../src/dwell-click-applet.c:596
+#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
 msgid "On"
 msgstr "Activar"
 
@@ -133,7 +133,7 @@ msgstr "Captura del puntero"
 
 #: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
 msgid "_About"
-msgstr "_Acerca de"
+msgstr "Acerca _de"
 
 #: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
 msgid "_Help"
@@ -152,7 +152,8 @@ msgid "Button style"
 msgstr "Estilo de botón"
 
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgid ""
+"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
 msgstr ""
 "Estilo del botón en el tipo de ventana de pulsación (\"0\" = texto, \"1\" = "
 "icono, \"2\" = ambos)"
@@ -199,13 +200,14 @@ msgstr "Modo pulsación al posarse"
 
 #: ../data/mousetweaks.schemas.in.h:10
 msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Modo de pulsación al posarse (\"0\" = modo gesto, \"1\" = modo ventana)"
+msgstr ""
+"Modo de pulsación al posarse (\"0\" = modo gesto, \"1\" = modo ventana)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "Tiempo de la pulsación al posarse"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:619
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:626
 msgid "Enable dwell click"
 msgstr "Activar la pulsación al posarse"
 
@@ -213,7 +215,7 @@ msgstr "Activar la pulsación al posarse"
 msgid "Enable secondary click"
 msgstr "Activar la pulsación secundaria"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:621
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:628
 msgid "Enable simulated secondary click"
 msgstr "Activar la pulsación secundaria simulada"
 
@@ -241,7 +243,7 @@ msgstr "Umbral de movimiento"
 msgid "Secondary click time"
 msgstr "Tiempo de la pulsación secundaria"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:629
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:636
 msgid "Show click type window"
 msgstr "Mostrar la ventana de tipo de pulsación"
 
@@ -313,11 +315,11 @@ msgstr "Tamaño del área de captura"
 msgid "Width of the capture area in pixels"
 msgstr "Ancho del área de captura en píxeles"
 
-#: ../src/mt-main.c:529
+#: ../src/mt-main.c:534
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "El soporte para tecnologías de asistencia no está activado"
 
-#: ../src/mt-main.c:530
+#: ../src/mt-main.c:535
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -330,84 +332,82 @@ msgstr ""
 "Para activar el soporte para las tecnologías de asistencia y reiniciar su "
 "sesión, pulse «Activar y salir de la sesión»."
 
-#: ../src/mt-main.c:623
+#: ../src/mt-main.c:630
 msgid "Time to wait before a dwell click"
 msgstr "Tiempo que esperar antes de una pulsación al posarse"
 
-#: ../src/mt-main.c:625
+#: ../src/mt-main.c:632
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tiempo que esperar antes de una pulsación secundaria simulada"
 
-#: ../src/mt-main.c:627
+#: ../src/mt-main.c:634
 msgid "Dwell mode to use"
 msgstr "Modo pulsación al posarse que usar"
 
-#: ../src/mt-main.c:631
+#: ../src/mt-main.c:638
 msgid "Window x position"
 msgstr "Posición x de la ventana"
 
-#: ../src/mt-main.c:633
+#: ../src/mt-main.c:640
 msgid "Window y position"
 msgstr "Ventana y posición"
 
-#: ../src/mt-main.c:635
+#: ../src/mt-main.c:642
 msgid "Ignore small pointer movements"
 msgstr "Ignorar los movimientos pequeños del puntero"
 
-#: ../src/mt-main.c:637
+#: ../src/mt-main.c:644
 msgid "Show elapsed time as cursor overlay"
 msgstr "Mostrar el tiempo transcurrido superpuesto al cursor"
 
-#: ../src/mt-main.c:639
+#: ../src/mt-main.c:646
 msgid "Shut down mousetweaks"
 msgstr "Apagar los ajustes finos del ratón"
 
-#: ../src/mt-main.c:647
+#: ../src/mt-main.c:654
 msgid "- GNOME mousetweaks daemon"
 msgstr " - Demonio de los ajustes finos del ratón de GNOME"
 
-#: ../src/mt-common.c:54
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
+msgstr "Falló al mostrar la ayuda"
+
+#: ../src/mt-common.c:66
 msgid "Enable and Log Out"
 msgstr "Activar y salir de la sesión"
 
-#: ../src/pointer-capture-applet.c:73
-msgid "Couldn't display help"
-msgstr "No se pudo mostrar la ayuda"
-
-#: ../src/pointer-capture-applet.c:195
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "Bloqueado"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:198
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:556
+#: ../src/pointer-capture-applet.c:542
 msgid "Pointer Capture Applet"
 msgstr "Miniaplicación Captura del puntero"
 
-#: ../src/pointer-capture-applet.c:628
+#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "Capturar área"
 
-#: ../src/pointer-capture-applet.c:629
+#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
 msgstr "Bloquear temporalmente el puntero del ratón"
 
-#: ../src/dwell-click-applet.c:111 ../src/dwell-click-applet.c:596
+#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
 msgid "Off"
 msgstr "Desactivar"
 
-#: ../src/dwell-click-applet.c:286
+#: ../src/dwell-click-applet.c:335
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Falló al lanzar las Preferencias del ratón"
 
-#: ../src/dwell-click-applet.c:305
-msgid "Failed to Display Help"
-msgstr "Falló al mostrar la ayuda"
-
-#: ../src/dwell-click-applet.c:520
+#: ../src/dwell-click-applet.c:565
 msgid "Dwell Click Applet"
 msgstr "Miniaplicación Pulsación al posarse"
 
+#~ msgid "Couldn't display help"
+#~ msgstr "No se pudo mostrar la ayuda"

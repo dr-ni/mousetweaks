@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: mousetweaks HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-27 04:29+0000\n"
-"PO-Revision-Date: 2008-08-27 21:32+0300\n"
+"PO-Revision-Date: 2008-09-01 19:37+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -98,7 +98,7 @@ msgstr "pikslit"
 
 #: ../data/ctw.glade.h:3
 msgid "Dwell Click Type"
-msgstr ""
+msgstr "Ooteajaga klõpsu liik"
 
 #: ../data/ctw.glade.h:5
 msgid "Show Icons and Text"
@@ -114,11 +114,11 @@ msgstr "Ainult tekstide näitamine"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1
 msgid "Dwell Click"
-msgstr ""
+msgstr "Ooteajaga klõps"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr ""
+msgstr "Ooteajaga klõpsu liigi valimine"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
@@ -183,7 +183,7 @@ msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
-msgstr ""
+msgstr "Ooteajaga klõpsu režiim"
 
 #: ../data/mousetweaks.schemas.in.h:10
 msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
@@ -191,11 +191,11 @@ msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
-msgstr ""
+msgstr "Ooteajaga klõpsu aeg"
 
 #: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:756
 msgid "Enable dwell click"
-msgstr ""
+msgstr "Ooteajaga klõpsu lubamine"
 
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
@@ -376,7 +376,7 @@ msgstr ""
 
 #: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
-msgstr ""
+msgstr "Hiirekursori ajutine lukustamine"
 
 #: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
 msgid "Off"
@@ -384,8 +384,8 @@ msgstr ""
 
 #: ../src/dwell-click-applet.c:335
 msgid "Failed to Launch Mouse Preferences"
-msgstr ""
+msgstr "Tõrge hiire-eelistuste käivitaminsel"
 
 #: ../src/dwell-click-applet.c:565
 msgid "Dwell Click Applet"
-msgstr ""
+msgstr "Ooteajaga klõpsu rakend"

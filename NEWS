@@ -1,5 +1,33 @@
+Version 2.23.91
+---------------
+
+Misc improvements/fixes:
+
+	* Multiscreen support
+	* Fix regression with drag clicks.
+	* Use theme colors for cursor overlays.
+	* Drop libgnomeui and libgnome.
+
+Bug fixes:
+
+	#532934: Improve secondary clicks on window frames and desktop icons.
+
+New and updated translations:
+
+	- [es] Jorge Gonzalez
+	- [et] Ivar Smolin
+	- [eu] Inaki Larranaga Murgoitio
+	- [fr] Robert-André Mauchin
+	- [gu] Sweta Kothari
+	- [ml] Harivisnhu, Manilal and Praveen
+
+New and updated manual translation:
+
+	- [es] Jorge Gonzalez
+
+
 Version 2.23.90
---------------
+---------------
 
 New and updated translations:
 

@@ -1,3 +1,8 @@
+2008-09-05  Runa Bhattacharjee  <runab@redhat.com>
+
+	* bn_IN.po: Added Bengali India Translation
+	* LINGUAS: Added Entry for Bengali India (bn_IN)
+
 2008-09-04  Takeshi AIHANA <takeshi.aihana@gmail.com>
 
 	* ja.po: Updated Japanese translation.
@@ -239,6 +244,7 @@
 	* ko.po: Added Korean translation.
 	* LINGUAS: Added ko.
 
+>>>>>>> .r270
 2008-02-21  Claude Paroz  <claude@2xlibre.net>
 
 	* fr.po: Updated French translation by Robert-André Mauchin and Claude

@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2008.
+# Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-03 21:59+0200\n"
-"PO-Revision-Date: 2008-06-03 22:00+0200\n"
-"Last-Translator: Ignacio Casal Quinteiro <icq@svn.gnome.org>\n"
+"POT-Creation-Date: 2008-09-06 21:22+0200\n"
+"PO-Revision-Date: 2008-09-06 21:23+0200\n"
+"Last-Translator: Ignacio Casal Quinteiro <nacho.resa@gmail.com>\n"
 "Language-Team: Galego <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type:  text/plain; charset=UTF-8\n"
+"Content-Type:  text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
@@ -36,8 +37,8 @@ msgstr "Clic duplo"
 msgid "Drag Click"
 msgstr "Clic de arrastre"
 
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:111
-#: ../src/dwell-click-applet.c:596
+#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
 msgid "On"
 msgstr "Activado"
 
@@ -62,6 +63,10 @@ msgid "<b>Size of Capture Area</b>"
 msgstr "<b>Tamaño da área de captura</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -69,31 +74,51 @@ msgstr ""
 "Área na que conxelar o punteiro do rato no panel.\n"
 "Parte dos axustes finos do rato"
 
-#: ../data/pointer-capture-applet.glade.h:6
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr "Modificador:"
 
-#: ../data/pointer-capture-applet.glade.h:7
+#: ../data/pointer-capture-applet.glade.h:10
 msgid "Mouse _button:"
 msgstr "_Botón do rato:"
 
-#: ../data/pointer-capture-applet.glade.h:8
+#: ../data/pointer-capture-applet.glade.h:11
 msgid "Mouse b_utton:"
 msgstr "B_otón do rato:"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:12
 msgid "Pointer Capture Preferences"
 msgstr "Preferencias da captura do punteiro"
 
-#: ../data/pointer-capture-applet.glade.h:10
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "_Maiús"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Se selecciona botón 0 capturará o punteiro inmediatamente"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "Maiú_s"
+
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "_Largura:"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "píxeles"
 
@@ -204,7 +229,7 @@ msgstr "Modo clic ao pousarse (\"0\" = Modo xesto, \"1\" = Modo ventá)"
 msgid "Dwell click time"
 msgstr "Tempo de clic ao pousarse"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:619
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
 msgid "Enable dwell click"
 msgstr "Activar clic ao pousarse"
 
@@ -212,7 +237,7 @@ msgstr "Activar clic ao pousarse"
 msgid "Enable secondary click"
 msgstr "Activar clic secundario"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:621
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
 msgid "Enable simulated secondary click"
 msgstr "Activar clic secundario simulado"
 
@@ -240,7 +265,7 @@ msgstr "Umbral de movemento"
 msgid "Secondary click time"
 msgstr "Tempo do clic secundario"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:629
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
 msgid "Show click type window"
 msgstr "Mostrar a ventá de tipo de clic"
 
@@ -312,11 +337,11 @@ msgstr "Tamaño da área de captura"
 msgid "Width of the capture area in pixels"
 msgstr "Largura da área de captura en píxeles"
 
-#: ../src/mt-main.c:529
+#: ../src/mt-main.c:720
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "O soporte de tecnoloxía de asistencia non está activado"
 
-#: ../src/mt-main.c:530
+#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -329,86 +354,85 @@ msgstr ""
 "Para activar o soporte para as tecnoloxías de asistencia e reiniciar a súa "
 "sesión, prema \"Activar e saír da sesión\"."
 
-#: ../src/mt-main.c:623
+#: ../src/mt-main.c:823
 msgid "Time to wait before a dwell click"
 msgstr "Tempo a esperar antes dunha pulsación ao pousarse"
 
-#: ../src/mt-main.c:625
+#: ../src/mt-main.c:825
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo a esperar antes dunha pulsación secundaria simulada"
 
-#: ../src/mt-main.c:627
+#: ../src/mt-main.c:827
 msgid "Dwell mode to use"
 msgstr "Modo clic ao pousarsa a usar"
 
-#: ../src/mt-main.c:631
+#: ../src/mt-main.c:831
 msgid "Window x position"
 msgstr "Posición x da ventá"
 
-#: ../src/mt-main.c:633
+#: ../src/mt-main.c:833
 msgid "Window y position"
 msgstr "Posición y da ventá"
 
-#: ../src/mt-main.c:635
+#: ../src/mt-main.c:835
 msgid "Ignore small pointer movements"
 msgstr "Ignorar movementos pequenos do punteiro"
 
-#: ../src/mt-main.c:637
+#: ../src/mt-main.c:837
 msgid "Show elapsed time as cursor overlay"
 msgstr "Mostrar o tempo transcorrido superposto ao cursor"
 
-#: ../src/mt-main.c:639
+#: ../src/mt-main.c:839
 msgid "Shut down mousetweaks"
 msgstr "Apagar os axustes finos do rato"
 
-#: ../src/mt-main.c:647
+#: ../src/mt-main.c:847
 msgid "- GNOME mousetweaks daemon"
 msgstr "- Daemon dos axustes finos do rato de Gnome"
 
-#: ../src/mt-common.c:54
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
+msgstr "Fallou ao mostrar a axuda"
+
+#: ../src/mt-common.c:66
 msgid "Enable and Log Out"
 msgstr "Activar e saír da sesión"
 
-#: ../src/pointer-capture-applet.c:73
-msgid "Couldn't display help"
-msgstr "Non se puido mostrar a axuda"
-
-#: ../src/pointer-capture-applet.c:195
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "Bloqueado"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:198
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "B"
 
-#: ../src/pointer-capture-applet.c:556
+#: ../src/pointer-capture-applet.c:542
 msgid "Pointer Capture Applet"
 msgstr "Applet captura do punteiro"
 
-#: ../src/pointer-capture-applet.c:628
+#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "Capturar área"
 
-#: ../src/pointer-capture-applet.c:629
+#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
 msgstr "Bloquear temporalmente o punteiro do rato"
 
-#: ../src/dwell-click-applet.c:111 ../src/dwell-click-applet.c:596
+#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
 msgid "Off"
 msgstr "Desactivado"
 
-#: ../src/dwell-click-applet.c:286
+#: ../src/dwell-click-applet.c:335
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Fallou ao lanzar as preferencias do rato"
 
-#: ../src/dwell-click-applet.c:305
-msgid "Failed to Display Help"
-msgstr "Fallou ao mostrar a axuda"
-
-#: ../src/dwell-click-applet.c:520
+#: ../src/dwell-click-applet.c:565
 msgid "Dwell Click Applet"
 msgstr "Applet pulsación ao pousarse"
+
+#~ msgid "Couldn't display help"
+#~ msgstr "Non se puido mostrar a axuda"
 
 #~ msgid "B_utton:"
 #~ msgstr "B_otón:"

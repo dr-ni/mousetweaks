@@ -1,3 +1,10 @@
+2008-09-06  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* data/pointer-capture-applet.glade: Mark modifier labels
+	for translation.
+
+	Patch by Milo Casagrande. Fixes bug #551133.
+
 2008-09-01  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
 	* configure.ac:

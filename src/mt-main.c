@@ -65,9 +65,10 @@ mt_main_current_screen (MTClosure *mt)
 static void
 mt_main_generate_motion_event (GdkScreen *screen, gint x, gint y)
 {
-    gdk_display_warp_pointer (gdk_display_get_default (),
-			      screen, x, y);
+    gdk_error_trap_push ();
+    gdk_display_warp_pointer (gdk_display_get_default (), screen, x, y);
     gdk_flush ();
+    gdk_error_trap_pop ();
 }
 
 static void
@@ -76,6 +77,7 @@ mt_main_generate_button_event (MTClosure *mt,
 			       gboolean   type,
 			       gulong     delay)
 {
+    gdk_error_trap_push ();
     switch (type) {
 	case PRESS:
 	    XTestFakeButtonEvent (mt->xtst_display,
@@ -95,17 +97,18 @@ mt_main_generate_button_event (MTClosure *mt,
 	    XTestFakeButtonEvent (mt->xtst_display,
 				  button, True, CurrentTime);
 	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, True, delay);
+				  button, False, delay);
 	    XTestFakeButtonEvent (mt->xtst_display,
 				  button, True, CurrentTime);
 	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, True, delay);
+				  button, False, delay);
 	    break;
 	default:
 	    g_warning ("Unknown sequence.");
 	    break;
     }
     XFlush (mt->xtst_display);
+    gdk_error_trap_pop ();
 }
 
 static void
@@ -139,7 +142,7 @@ mt_main_do_dwell_click (MTClosure *mt)
 
     clicktype = mt_service_get_clicktype (mt->service);
 
-    if (mt->dwell_mode == DWELL_MODE_GESTURE)
+    if (mt->dwell_mode == DWELL_MODE_GESTURE && !mt->dwell_drag_started)
 	mt_main_generate_motion_event (mt_main_current_screen (mt),
 				       mt->pointer_x, mt->pointer_y);
 
@@ -312,6 +315,10 @@ dwell_timer_finished (MtTimer *timer, gpointer data)
 
 	    if (mt_main_analyze_gesture (mt))
 		mt_main_do_dwell_click (mt);
+	}
+	/* if a drag action is in progress stop it */
+	else if (mt->dwell_drag_started) {
+	    mt_main_do_dwell_click (mt);
 	}
 	else
 	    dwell_start_gesture (mt);

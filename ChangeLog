@@ -1,3 +1,10 @@
+2008-09-07  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* src/mt-main.c: (mt_main_generate_button_event): Fix typo that
+	caused double clicks not to work.
+	(mt_main_do_dwell_click)(dwell_timer_finished): Improve drag click
+	handling. (mt_main_generate_motion_event): Add error trap
+
 2008-09-06  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
 	* data/pointer-capture-applet.glade: Mark modifier labels

@@ -44,14 +44,14 @@ static guint signals[LAST_SIGNAL] = { 0 };
 
 G_DEFINE_TYPE (MtService, mt_service, G_TYPE_OBJECT)
 
-static void mt_service_finalize (GObject *object);
+static void mt_service_dispose (GObject *object);
 
 static void
 mt_service_class_init (MtServiceClass *klass)
 {
     GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
 
-    gobject_class->finalize = mt_service_finalize;
+    gobject_class->dispose = mt_service_dispose;
 
     signals[STATUS_CHANGED] =
 	g_signal_new (g_intern_static_string ("status_changed"),
@@ -119,11 +119,11 @@ mt_service_init (MtService *service)
 }
 
 static void
-mt_service_finalize (GObject *object)
+mt_service_dispose (GObject *object)
 {
     g_signal_emit (object, signals[STATUS_CHANGED], 0, FALSE);
 
-    G_OBJECT_CLASS (mt_service_parent_class)->finalize (object);
+    G_OBJECT_CLASS (mt_service_parent_class)->dispose (object);
 }
 
 static MtService *

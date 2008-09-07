@@ -1,5 +1,9 @@
 2008-09-07  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
+	* src/mt-service.c: Fix StatusChanged signal emission.
+
+2008-09-07  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
 	* src/mt-main.c: Cleanup.
 
 2008-09-07  Gerd Kohlberger  <gerdk@svn.gnome.org>

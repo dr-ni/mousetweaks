@@ -525,7 +525,7 @@ cursor_overlay_time (guchar  *image,
 			   c.red   / 65535.,
 			   c.green / 65535.,
 			   c.blue  / 65535.,
-			   0.75);
+			   0.60);
     cairo_fill (cr);
     cairo_destroy (cr);
     cairo_surface_destroy (surface);
@@ -534,7 +534,9 @@ cursor_overlay_time (guchar  *image,
 }
 
 static void
-mt_update_cursor (MtCursor *cursor, MtTimer *timer, gdouble time)
+mt_main_update_cursor (MtCursor *cursor,
+		       MtTimer  *timer,
+		       gdouble   time)
 {
     guchar *image;
     gushort width, height;
@@ -563,21 +565,14 @@ mt_update_cursor (MtCursor *cursor, MtTimer *timer, gdouble time)
 }
 
 static void
-delay_timer_tick (MtTimer *timer, gdouble time, gpointer data)
+mt_main_timer_tick (MtTimer *timer,
+		    gdouble  time,
+		    gpointer data)
 {
     MTClosure *mt = data;
 
     if (mt->animate_cursor && mt->cursor != NULL)
-	mt_update_cursor (mt->cursor, timer, time);
-}
-
-static void
-dwell_timer_tick (MtTimer *timer, gdouble time, gpointer data)
-{
-    MTClosure *mt = data;
-
-    if (mt->animate_cursor && mt->cursor != NULL)
-	mt_update_cursor (mt->cursor, timer, time);
+	mt_main_update_cursor (mt->cursor, timer, time);
 }
 
 static void
@@ -775,13 +770,13 @@ mt_closure_init (void)
     g_signal_connect (mt->delay_timer, "finished",
 		      G_CALLBACK (delay_timer_finished), mt);
     g_signal_connect (mt->delay_timer, "tick",
-		      G_CALLBACK (delay_timer_tick), mt);
+		      G_CALLBACK (mt_main_timer_tick), mt);
 
     mt->dwell_timer = mt_timer_new ();
     g_signal_connect (mt->dwell_timer, "finished",
 		      G_CALLBACK (dwell_timer_finished), mt);
     g_signal_connect (mt->dwell_timer, "tick",
-		      G_CALLBACK (dwell_timer_tick), mt);
+		      G_CALLBACK (mt_main_timer_tick), mt);
 
     mt->service = mt_service_get_default ();
     mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);

@@ -1,5 +1,9 @@
 2008-09-07  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
+	* src/mt-main.c: Cleanup.
+
+2008-09-07  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
 	* src/mt-main.c: (mt_main_generate_button_event): Fix typo that
 	caused double clicks not to work.
 	(mt_main_do_dwell_click)(dwell_timer_finished): Improve drag click

@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-08 12:22+0200\n"
-"PO-Revision-Date: 2008-09-08 12:22+0200\n"
+"POT-Creation-Date: 2008-09-08 16:54+0200\n"
+"PO-Revision-Date: 2008-09-08 16:58+0200\n"
 "Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@nl.gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -176,46 +176,41 @@ msgid "Button style"
 msgstr "Knopstijl"
 
 #: ../data/mousetweaks.schemas.in.h:3
-#, fuzzy
 msgid ""
 "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
-msgstr "Knopstijl in kliktypevenster (0=tekst, 1=icoon, 2=beide)"
+msgstr "Knopstijl in kliktypevenster (‘0’ = tekst, ‘1’ = pictogram, ‘2’ = beide)"
 
 #: ../data/mousetweaks.schemas.in.h:4
-#, fuzzy
 msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Richting om een dubbelklik uit te voeren (0=links, 1=rechts, 2=omhoog, "
-"3=omlaag)"
+"Richting om een dubbelklik uit te voeren (‘0’ = links, ‘1’ = rechts, ‘2’ = omhoog, "
+"‘3’ = omlaag)"
 
 #: ../data/mousetweaks.schemas.in.h:5
-#, fuzzy
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
 msgstr ""
-"Richting om een sleepklik uit te voeren (0=links, 1=rechts, 2=omhoog, "
-"3=omlaag)"
+"Richting om een sleepklik uit te voeren (‘0’ = links, ‘1’ = rechts, ‘2’ = omhoog, "
+"‘3’ = omlaag)"
 
 #: ../data/mousetweaks.schemas.in.h:6
-#, fuzzy
 msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Richting om een secundaire klik uit te voeren (0=links, 1=rechts, 2=omhoog, "
-"3=omlaag)"
+"Richting om een secundaire klik uit te voeren (‘0’ = links, ‘1’ = rechts, ‘2’ = omhoog, "
+"‘3’ = omlaag)"
 
 #: ../data/mousetweaks.schemas.in.h:7
-#, fuzzy
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Richting om een enkele klik uit te voeren (0=links, 1=rechts, 2=omhoog, "
-"3=omlaag)"
+"Richting om een enkele klik uit te voeren (‘0’ = links, ‘1’ = rechts, ‘2’ = omhoog, "
+"‘3’ = omlaag)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
@@ -226,9 +221,8 @@ msgid "Dwell click mode"
 msgstr "Hangklikmodus"
 
 #: ../data/mousetweaks.schemas.in.h:10
-#, fuzzy
 msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Hangklikmodus (0=bewegingsmodus, 1=venstermodus)"
+msgstr "Hangklikmodus (‘0’ = bewegingsmodus, ‘1’ = venstermodus)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -308,14 +302,12 @@ msgid "Capture mouse button"
 msgstr "Muisknop afvangen"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
-#, fuzzy
 msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-msgstr "Knop om de aanwijzer te vangen (0=onmiddellijk vangen)"
+msgstr "Knop om de aanwijzer te vangen (‘0’ = onmiddellijk vangen)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
-#, fuzzy
 msgid "Mouse button to release the pointer"
-msgstr "Knop om de aanwijzer los te laten"
+msgstr "Muisknop om de aanwijzer los te laten"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release modifier"
@@ -334,9 +326,8 @@ msgid "Release modifier key (Shift)"
 msgstr "Loslaatmodificatortoets (Shift)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
-#, fuzzy
 msgid "Release mouse button"
-msgstr "Loslaatknop"
+msgstr "Loslaatmuisknop"
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
@@ -347,9 +338,8 @@ msgid "Width of the capture area in pixels"
 msgstr "Breedte van het vanggebied in pixels"
 
 #: ../src/mt-main.c:722
-#, fuzzy
 msgid "Assistive Technology Support Is Not Enabled"
-msgstr "Assisterende technologieën niet geactiveerd"
+msgstr "Assisterende technologieën zijn niet geactiveerd"
 
 #: ../src/mt-main.c:723
 msgid ""

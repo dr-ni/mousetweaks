@@ -1,3 +1,31 @@
+Version 2.23.92
+---------------
+
+Misc improvements/fixes:
+
+	* Improved drag click handling
+	* Fix typo causing double clicks to not work
+	* Fix StatusChanged signal emission.
+	* Cleanup
+
+Bug fixes:
+
+	#551133: Mark modifier labels for translation; patch by Milo Casagrande.
+
+New and updated translations:
+
+	- [bn_IN] Runa Bhattacharjee
+	- [de] Hendrik Richter
+	- [en_GB] Philip Withnall
+	- [et] Ivar Smolin
+	- [fr] Claude Paroz
+	- [gl] Ignacio Casal Quinteiro
+	- [ja] Takeshi AIHANA
+	- [nl] Wouter Bolsterlee
+	- [pt] Duarte Loreto
+	- [sl] Matej Urbančič
+	- [th] Theppitak Karoonboonyanan
+
 Version 2.23.91
 ---------------
 

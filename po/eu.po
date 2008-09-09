@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-23 16:10+0200\n"
-"PO-Revision-Date: 2008-08-23 16:52+0200\n"
+"POT-Creation-Date: 2008-09-09 12:53+0200\n"
+"PO-Revision-Date: 2008-09-09 12:54+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -63,6 +63,10 @@ msgid "<b>Size of Capture Area</b>"
 msgstr "<b>Kapturatzeko arearen tamaina</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -70,31 +74,51 @@ msgstr ""
 "Area saguaren erakuslea panelean izozteko.\n"
 "'MouseTweaks'-en osagaia"
 
-#: ../data/pointer-capture-applet.glade.h:6
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "_Ktrl"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "K_trl"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr "Aldatzailea:"
 
-#: ../data/pointer-capture-applet.glade.h:7
+#: ../data/pointer-capture-applet.glade.h:10
 msgid "Mouse _button:"
 msgstr "Saguaren _botoia:"
 
-#: ../data/pointer-capture-applet.glade.h:8
+#: ../data/pointer-capture-applet.glade.h:11
 msgid "Mouse b_utton:"
 msgstr "Saguaren b_otoia:"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:12
 msgid "Pointer Capture Preferences"
 msgstr "Erakuslea hartzeko hobespenak"
 
-#: ../data/pointer-capture-applet.glade.h:10
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "_Maius"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "0 botoia hautatzean erakuslea berehala hartuko da"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "Ma_ius"
+
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "_Zabalera:"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "pixel"
 
@@ -158,29 +182,33 @@ msgstr "Botoi-estiloa klik motaren leihoan (\"0\"=testua, \"1\"=ikonoa, \"2\"=bi
 msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
-msgstr "Norabidea klik bikoitza lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2\"=gora, \"3\"=behera)"
+msgstr ""
+"Norabidea klik bikoitza lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2"
+"\"=gora, \"3\"=behera)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
 msgstr ""
-"Norabidea arrastatzeko klik-a lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2\"=gora, "
-"\"3\"=behera)"
+"Norabidea arrastatzeko klik-a lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2"
+"\"=gora, \"3\"=behera)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Norabidea 2. mailako klik-a lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2\"=gora, "
-"\"3\"=behera)"
+"Norabidea 2. mailako klik-a lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2"
+"\"=gora, \"3\"=behera)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
-msgstr "Norabidea klik bakuna lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2\"=gora, \"3\"=behera)"
+msgstr ""
+"Norabidea klik bakuna lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2"
+"\"=gora, \"3\"=behera)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
@@ -198,7 +226,7 @@ msgstr "Klik-tenporizatuaren modua (\"0\"=keinu-modua, \"1\"=leiho-modua)"
 msgid "Dwell click time"
 msgstr "Klik-tenporizatuaren denbora"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:644
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:821
 msgid "Enable dwell click"
 msgstr "Gaitu klik-tenporizatua"
 
@@ -206,7 +234,7 @@ msgstr "Gaitu klik-tenporizatua"
 msgid "Enable secondary click"
 msgstr "Gaitu 2. mailako klik-a"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:646
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
 msgid "Enable simulated secondary click"
 msgstr "Gaitu simulatutako 2. mailako klik-a"
 
@@ -234,7 +262,7 @@ msgstr "Mugimenduaren atalasea"
 msgid "Secondary click time"
 msgstr "2. mailako klik-aren denbora"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:654
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
 msgid "Show click type window"
 msgstr "Erakutsi klik motaren leihoa"
 
@@ -306,11 +334,11 @@ msgstr "Kaptura-arearen tamaina"
 msgid "Width of the capture area in pixels"
 msgstr "Kaptura-arearen zabalera (pixeletan)"
 
-#: ../src/mt-main.c:555
+#: ../src/mt-main.c:722
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "Laguntza-teknologia euskarria ez dago gaituta"
 
-#: ../src/mt-main.c:556
+#: ../src/mt-main.c:723
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -322,39 +350,39 @@ msgstr ""
 "Laguntza-teknologiaren euskarria gaitzeko eta saioa berrabiarazteko, sakatu "
 "\"Gaitu eta amaitu saioa\"."
 
-#: ../src/mt-main.c:648
+#: ../src/mt-main.c:825
 msgid "Time to wait before a dwell click"
 msgstr "Denbora klik-tenporizatua landu aurretik"
 
-#: ../src/mt-main.c:650
+#: ../src/mt-main.c:827
 msgid "Time to wait before a simulated secondary click"
 msgstr "Denbora simulatutako 2. mailako klik-a landu aurretik"
 
-#: ../src/mt-main.c:652
+#: ../src/mt-main.c:829
 msgid "Dwell mode to use"
 msgstr "Klik-tenporizatuaren modua"
 
-#: ../src/mt-main.c:656
+#: ../src/mt-main.c:833
 msgid "Window x position"
 msgstr "Leihoaren x posizioa"
 
-#: ../src/mt-main.c:658
+#: ../src/mt-main.c:835
 msgid "Window y position"
 msgstr "Leihoaren y posizioa"
 
-#: ../src/mt-main.c:660
+#: ../src/mt-main.c:837
 msgid "Ignore small pointer movements"
 msgstr "Ez ikusi egin erakuslearen mugimendu txikiei"
 
-#: ../src/mt-main.c:662
+#: ../src/mt-main.c:839
 msgid "Show elapsed time as cursor overlay"
 msgstr "Erakutsi atzerapena kurtsorearen gainean"
 
-#: ../src/mt-main.c:664
+#: ../src/mt-main.c:841
 msgid "Shut down mousetweaks"
 msgstr "Itzali 'mousetweaks'"
 
-#: ../src/mt-main.c:672
+#: ../src/mt-main.c:849
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOMEko 'mousetweaks' daemona"
 

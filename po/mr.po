@@ -1,14 +1,14 @@
-# translation of mousetweaks.HEAD.po to marathi
+# translation of mousetweaks.HEAD.mr.po to marathi
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks.HEAD\n"
+"Project-Id-Version: mousetweaks.HEAD.mr\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-01 11:07+0000\n"
-"PO-Revision-Date: 2008-03-05 12:51+0530\n"
+"POT-Creation-Date: 2008-09-06 18:33+0000\n"
+"PO-Revision-Date: 2008-09-09 18:11+0530\n"
 "Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
 "Language-Team: marathi\n"
 "MIME-Version: 1.0\n"
@@ -20,9 +20,9 @@ msgstr ""
 #: ../data/dwell-click-applet.glade.h:1
 msgid ""
 "Applet to select different dwell-click types.\n"
-"Part of MouseTweaks"
+"Part of Mousetweaks"
 msgstr ""
-"वेगळे dwell-click प्रकार निवडण्याकरीताचे ऍपलेट.\n"
+"वेगळे dwell-click प्रकार निवडण्याकरीता ऍपलेट.\n"
 "MouseTweaks चा भाग आहे"
 
 #: ../data/dwell-click-applet.glade.h:3
@@ -37,11 +37,16 @@ msgstr "दुहेरी क्लिक"
 msgid "Drag Click"
 msgstr "ओढा क्लिक"
 
-#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
+msgid "On"
+msgstr "चालू करा"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "उजवी क्लिक"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "एकदा क्लिक करा"
 
@@ -58,38 +63,62 @@ msgid "<b>Size of Capture Area</b>"
 msgstr "<b>प्राप्ती क्षेत्राचे आकार</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "Alt (_l)"
+
+#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
-"Part of MouseTweaks"
+"Part of Mousetweaks"
 msgstr ""
-"पटलावरील माउस पॉईंटर स्तब्ध करण्याचे क्षेत्र.\n"
+"पटलावरील माउस पॉईंटर स्तब्ध करण्याकरीता क्षेत्र.\n"
 "MouseTweaks चा भाग आहे"
 
-#: ../data/pointer-capture-applet.glade.h:6
-msgid "B_utton:"
-msgstr "बटण (_u):"
-
 #: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "Ctrl (_t)"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "Ctrl (_r)"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr "बदलकर्ता:"
 
-#: ../data/pointer-capture-applet.glade.h:8
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "Mouse _button:"
+msgstr "माऊस बटन (_b):"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "Mouse b_utton:"
+msgstr "माऊस बटन (_u):"
+
+#: ../data/pointer-capture-applet.glade.h:12
 msgid "Pointer Capture Preferences"
 msgstr "पॉईंटर प्राप्ती करीताचे प्राधान्यता"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "Shift (_h)"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "बटण 0 निवडल्यास पॉईंटर त्वारीत प्राप्त केले जाईल"
+msgstr "बटन 0 निवडल्यास पॉईंटर त्वारीत प्राप्त केले जाईल"
 
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "_Button:"
-msgstr "बटण (_B):"
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "Shift (_i)"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "Alt (_A)"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "रुंदी(_W):"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "बिंदू"
 
@@ -111,7 +140,7 @@ msgstr "फक्त पाठ्य दर्शवा"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1
 msgid "Dwell Click"
-msgstr "Dwell Click"
+msgstr "Dwell क्लिक"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
@@ -138,140 +167,156 @@ msgid "_Preferences"
 msgstr "प्राधान्यता (_P)"
 
 #: ../data/mousetweaks.schemas.in.h:1
-msgid "Button style"
-msgstr "बटण शैली"
+msgid "Animate cursor"
+msgstr "चित्रचेतनीकरण कर्सर"
 
 #: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
-msgstr "क्लिक प्रकार चौकट मधील बटण शैली (0=पाठ्य, 1=चिन्ह, 2=दोन्ही)"
+msgid "Button style"
+msgstr "बटन शैली"
 
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "दुहेरी क्लिक कार्यरत करीता दिशा (0=डावी, 1=उजवी, 2=वर, 3=खाली)"
+msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgstr "क्लिक प्रकार चौकटीतील बटन शैली (\"0\" = पाठ्य, \"1\" = चिन्ह, \"2\" = दोन्ही)"
 
 #: ../data/mousetweaks.schemas.in.h:4
-msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "ओढा क्लिक कार्यरत करीता दिशा (0=डावी, 1=उजवी, 2=वर, 3=खाली)"
+msgid ""
+"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr "दुहेरी क्लिक कार्यरत करण्याकरीता दिशा (\"0\" = डावी, \"1\" = उजवी, \"2\" = वर, \"3\" = खाली)"
 
 #: ../data/mousetweaks.schemas.in.h:5
-msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "दुसरी क्लिक कार्यरत करीता दिशा (0=डावी, 1=उजवी, 2=वर, 3=खाली)"
+msgid ""
+"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+"\"3\" = Down)"
+msgstr "ओढा क्लिक कार्यरत करण्याकरीता दिशा (\"0\" = डावी, \"1\" = उजवी, \"2\" = वर, \"3\" = खाली)"
 
 #: ../data/mousetweaks.schemas.in.h:6
-msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "पहिली क्लिक कार्यरत करीता दिशा (0=डावी, 1=उजवी, 2=वर, 3=खाली)"
+msgid ""
+"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr "दुसरी क्लिक कार्यरत करण्याकरीता दिशा (\"0\" = डावी, \"1\" = उजवी, \"2\" = वर, \"3\" = खाली)"
 
 #: ../data/mousetweaks.schemas.in.h:7
+msgid ""
+"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr "पहिली क्लिक कार्यरत करण्याकरीता दिशा (\"0\" = डावी, \"1\" = उजवी, \"2\" = वर, \"3\" = खाली)"
+
+#: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
 msgstr "हालचाल ओळखले जाईल यापूर्वी पीक्सेल मधील अंतर"
 
-#: ../data/mousetweaks.schemas.in.h:8
+#: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
 msgstr "Dwell क्लिक पध्दती"
 
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
-msgstr "Dwell क्लिक पध्दती (0=ओळख पध्दती, 1=चौकट पध्दती)"
-
 #: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgstr "Dwell क्लिक पध्दती (\"0\" = ओळख पध्दती, \"1\"= चौकट पध्दती)"
+
+#: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "Dwell क्लिक वेळ"
 
-#: ../data/mousetweaks.schemas.in.h:11
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
 msgid "Enable dwell click"
 msgstr "ड्वेल क्लिक कार्यान्वीत करा"
 
-#: ../data/mousetweaks.schemas.in.h:12
+#: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "दुहेरी क्लिक कार्यान्वीत करा"
 
-#: ../data/mousetweaks.schemas.in.h:13
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
 msgid "Enable simulated secondary click"
 msgstr "दर्शविलेली दुहेरी क्लिक कार्यान्वीत करा"
 
-#: ../data/mousetweaks.schemas.in.h:14
+#: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
 msgstr "दुहेरी क्लिक ओळखा"
 
-#: ../data/mousetweaks.schemas.in.h:15
+#: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture drag click"
 msgstr "ओढा क्लिक ओळखा"
 
-#: ../data/mousetweaks.schemas.in.h:16
+#: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
 msgstr "दुसरी क्लिक ओळखा"
 
-#: ../data/mousetweaks.schemas.in.h:17
+#: ../data/mousetweaks.schemas.in.h:18
 msgid "Gesture single click"
 msgstr "पहिली क्लिक ओळखा"
 
-#: ../data/mousetweaks.schemas.in.h:18
+#: ../data/mousetweaks.schemas.in.h:19
 msgid "Movement threshold"
 msgstr "हालचालीची मर्यादा"
 
-#: ../data/mousetweaks.schemas.in.h:19
+#: ../data/mousetweaks.schemas.in.h:20
 msgid "Secondary click time"
 msgstr "दुहेरी क्लिक वेळ"
 
-#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
 msgid "Show click type window"
 msgstr "क्लिक प्रकार चौकट दर्शवा"
 
-#: ../data/mousetweaks.schemas.in.h:21
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Show elapsed time as cursor overlay."
+msgstr "प्रतिक्षा वेळ कर्सर स्थिती म्हणून दर्शवा."
+
+#: ../data/mousetweaks.schemas.in.h:23
 msgid "Time in seconds before a click is triggered"
 msgstr "क्लिक प्रारंभ होण्यापूर्वीचे सेकंद मधील वेळ"
 
-#: ../data/mousetweaks.schemas.in.h:22
+#: ../data/mousetweaks.schemas.in.h:24
 msgid "Time in seconds before a secondary click is triggered"
 msgstr "दुसरी क्लिक प्रारंभ होण्यापूर्वीचे सेकंद मधील वेळ"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Button to capture the pointer (0=Capture immediately)"
-msgstr "पॉईंटर प्राप्त करण्याचे बटण (0=लगेच प्राप्त करा)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Button to release the pointer"
-msgstr "पॉईंटर सोडण्याकरीताचे बटण"
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture button"
-msgstr "बटण प्राप्त करा"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier"
 msgstr "संपादक प्राप्त करा"
 
-#: ../data/pointer-capture-applet.schemas.in.h:5
+#: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Capture modifier key (Alt)"
 msgstr "संपादक कळ (Alt) प्राप्त करा"
 
-#: ../data/pointer-capture-applet.schemas.in.h:6
+#: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture modifier key (Ctrl)"
 msgstr "संपादक कळ (Ctrl) प्राप्त करा"
 
-#: ../data/pointer-capture-applet.schemas.in.h:7
+#: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier key (Shift)"
 msgstr "संपादक कळ (Shift) प्राप्त करा"
 
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release button"
-msgstr "बटण सोडा"
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture mouse button"
+msgstr "माऊस बटन प्राप्त करा"
 
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+msgstr "पॉईंटर प्राप्त करण्याकरीता माऊस बटन (\"0\" = लगेच प्राप्त करा)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Mouse button to release the pointer"
+msgstr "पॉईंटर सोडण्याकरीताच माऊस बटन"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release modifier"
 msgstr "संपादक सोडा"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
+#: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Release modifier key (Alt)"
 msgstr "संपादक कळ (Alt) सोडा"
 
-#: ../data/pointer-capture-applet.schemas.in.h:11
+#: ../data/pointer-capture-applet.schemas.in.h:10
 msgid "Release modifier key (Ctrl)"
 msgstr "संपादक कळ (Ctrl) सोडा"
 
-#: ../data/pointer-capture-applet.schemas.in.h:12
+#: ../data/pointer-capture-applet.schemas.in.h:11
 msgid "Release modifier key (Shift)"
 msgstr "संपादक कळ (Shift) सोडा"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release mouse button"
+msgstr "माऊस बटन सोडा"
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
@@ -281,52 +326,96 @@ msgstr "प्राप्ती कक्षाचे आकार"
 msgid "Width of the capture area in pixels"
 msgstr "प्राप्ती कक्षाची पीक्सेल मधील रूंदी"
 
-#: ../src/mt-main.c:417
-msgid "Enable mousetweaks feature"
-msgstr "mousetweaks विशेषता कार्यान्वीत करा"
+#: ../src/mt-main.c:720
+msgid "Assistive Technology Support Is Not Enabled"
+msgstr "सहाय्यक तंत्रज्ञाण समर्थन कार्यान्वीत नाही"
 
-#: ../src/mt-main.c:419
-msgid "Use dwell mode"
-msgstr "dwell पध्दती वापरा वापरा"
+#: ../src/mt-main.c:721
+msgid ""
+"Mousetweaks requires assistive technologies to be enabled in your session.\n"
+"\n"
+"To enable support for assistive technologies and restart your session, press "
+"\"Enable and Log Out\"."
+msgstr ""
+"सत्र अंतर्गत कार्यान्वीत करण्याकरीता Mousetweaks ला सहाय्यक तंत्रज्ञाणाची आवश्यकता आहे.\n"
+"\n"
+"सहाय्यक तंत्रज्ञाण करीता समर्थन कार्यान्वीत करण्याकरीता व सत्र पुन्ह प्रारंभ करीता,  "
+"\"कार्यान्वीत व बाहेर पडा\" दाबा."
 
-#: ../src/mt-main.c:423
+#: ../src/mt-main.c:823
+msgid "Time to wait before a dwell click"
+msgstr "ड्वेल क्लिक पूर्वी प्रतिक्षा वेळ"
+
+#: ../src/mt-main.c:825
+msgid "Time to wait before a simulated secondary click"
+msgstr "दर्शविलेले दुहेरी क्लिक पूर्वी प्रतिक्षा करण्याजोगी वेळ"
+
+#: ../src/mt-main.c:827
+msgid "Dwell mode to use"
+msgstr "वापरण्याजोगी Dwell पध्दती"
+
+#: ../src/mt-main.c:831
 msgid "Window x position"
 msgstr "चौकट x स्थिती"
 
-#: ../src/mt-main.c:425
+#: ../src/mt-main.c:833
 msgid "Window y position"
 msgstr "चौकट y स्थिती"
 
-#: ../src/mt-main.c:427
-msgid "Shutdown mousetweaks"
+#: ../src/mt-main.c:835
+msgid "Ignore small pointer movements"
+msgstr "लहान पॉईंटर हालचाली दुर्लक्ष करा"
+
+#: ../src/mt-main.c:837
+msgid "Show elapsed time as cursor overlay"
+msgstr "कर्सर स्थीत होण्याकरीताचे वेळ दर्शवा"
+
+#: ../src/mt-main.c:839
+msgid "Shut down mousetweaks"
 msgstr "mousetweaks बंद करा"
 
-#: ../src/mt-main.c:484
-msgid "Assistive Technologies not enabled"
-msgstr "सहाय्यक तंत्रज्ञाण कार्यान्वीत नाही"
+#: ../src/mt-main.c:847
+msgid "- GNOME mousetweaks daemon"
+msgstr "- GNOME mousetweaks डीमन"
 
-#: ../src/mt-main.c:485
-msgid "Mousetweaks requires Assistive Technologies."
-msgstr "Mousetweaks ला सहाय्यक तंत्रज्ञाणची आवश्यकता आहे."
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
+msgstr "मदत दर्शविण्यास अपयशी"
 
-#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
-msgid "Couldn't display help"
-msgstr "मदत दर्शवू शकत नाही"
+#: ../src/mt-common.c:66
+msgid "Enable and Log Out"
+msgstr "कार्यान्वीत व बाहेर पडा"
 
-#: ../src/pointer-capture-applet.c:204
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "कुलूप बंद झाले"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:207
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:635
+#: ../src/pointer-capture-applet.c:542
+msgid "Pointer Capture Applet"
+msgstr "पॉईंटर प्राप्य ऍपलेट"
+
+#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "प्राप्ती क्षेत्र"
 
-#: ../src/pointer-capture-applet.c:636
+#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
 msgstr "माउस पॉईंटरला तात्पूर्ते कुलूपबंद करा"
+
+#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
+msgid "Off"
+msgstr "बंद"
+
+#: ../src/dwell-click-applet.c:335
+msgid "Failed to Launch Mouse Preferences"
+msgstr "माऊस प्राधान्यता दाखल करण्यास अपयश"
+
+#: ../src/dwell-click-applet.c:565
+msgid "Dwell Click Applet"
+msgstr "Dwell क्लिक ऍपलेट"
 

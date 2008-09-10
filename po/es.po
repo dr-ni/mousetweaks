@@ -7,12 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-18 16:25+0000\n"
-"PO-Revision-Date: 2008-08-29 15:42+0200\n"
+"POT-Creation-Date: 2008-09-06 18:33+0000\n"
+"PO-Revision-Date: 2008-09-10 20:21+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type:  text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
@@ -64,6 +64,10 @@ msgid "<b>Size of Capture Area</b>"
 msgstr "<b>Tamaño del área de captura</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -71,31 +75,51 @@ msgstr ""
 "Área en la que congelar el puntero del ratón en el panel.\n"
 "Parte de los Ajustes finos del ratón"
 
-#: ../data/pointer-capture-applet.glade.h:6
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr "Modificador:"
 
-#: ../data/pointer-capture-applet.glade.h:7
+#: ../data/pointer-capture-applet.glade.h:10
 msgid "Mouse _button:"
 msgstr "_Botón del ratón:"
 
-#: ../data/pointer-capture-applet.glade.h:8
+#: ../data/pointer-capture-applet.glade.h:11
 msgid "Mouse b_utton:"
 msgstr "B_otón del ratón:"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:12
 msgid "Pointer Capture Preferences"
 msgstr "Preferencias de la captura del puntero"
 
-#: ../data/pointer-capture-applet.glade.h:10
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "_Mayús"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Si selecciona Botón 0 capturará el puntero inmediatamente"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "May_ús"
+
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "_Anchura:"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "píxeles"
 
@@ -207,7 +231,7 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Tiempo de la pulsación al posarse"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:626
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
 msgid "Enable dwell click"
 msgstr "Activar la pulsación al posarse"
 
@@ -215,7 +239,7 @@ msgstr "Activar la pulsación al posarse"
 msgid "Enable secondary click"
 msgstr "Activar la pulsación secundaria"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:628
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
 msgid "Enable simulated secondary click"
 msgstr "Activar la pulsación secundaria simulada"
 
@@ -243,7 +267,7 @@ msgstr "Umbral de movimiento"
 msgid "Secondary click time"
 msgstr "Tiempo de la pulsación secundaria"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:636
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
 msgid "Show click type window"
 msgstr "Mostrar la ventana de tipo de pulsación"
 
@@ -315,11 +339,11 @@ msgstr "Tamaño del área de captura"
 msgid "Width of the capture area in pixels"
 msgstr "Ancho del área de captura en píxeles"
 
-#: ../src/mt-main.c:534
+#: ../src/mt-main.c:720
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "El soporte para tecnologías de asistencia no está activado"
 
-#: ../src/mt-main.c:535
+#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -332,39 +356,39 @@ msgstr ""
 "Para activar el soporte para las tecnologías de asistencia y reiniciar su "
 "sesión, pulse «Activar y salir de la sesión»."
 
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:823
 msgid "Time to wait before a dwell click"
 msgstr "Tiempo que esperar antes de una pulsación al posarse"
 
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:825
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tiempo que esperar antes de una pulsación secundaria simulada"
 
-#: ../src/mt-main.c:634
+#: ../src/mt-main.c:827
 msgid "Dwell mode to use"
 msgstr "Modo pulsación al posarse que usar"
 
-#: ../src/mt-main.c:638
+#: ../src/mt-main.c:831
 msgid "Window x position"
 msgstr "Posición x de la ventana"
 
-#: ../src/mt-main.c:640
+#: ../src/mt-main.c:833
 msgid "Window y position"
 msgstr "Ventana y posición"
 
-#: ../src/mt-main.c:642
+#: ../src/mt-main.c:835
 msgid "Ignore small pointer movements"
 msgstr "Ignorar los movimientos pequeños del puntero"
 
-#: ../src/mt-main.c:644
+#: ../src/mt-main.c:837
 msgid "Show elapsed time as cursor overlay"
 msgstr "Mostrar el tiempo transcurrido superpuesto al cursor"
 
-#: ../src/mt-main.c:646
+#: ../src/mt-main.c:839
 msgid "Shut down mousetweaks"
 msgstr "Apagar los ajustes finos del ratón"
 
-#: ../src/mt-main.c:654
+#: ../src/mt-main.c:847
 msgid "- GNOME mousetweaks daemon"
 msgstr " - Demonio de los ajustes finos del ratón de GNOME"
 

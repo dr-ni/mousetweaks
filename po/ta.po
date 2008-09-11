@@ -1,4 +1,4 @@
-# translation of mousetweaks.ta.HEAD.po to Tamil
+# translation of mousetweaks.HEAD.ta.po to
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
@@ -6,22 +6,25 @@
 # I. Felix <ifelix@redhat.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks.ta.HEAD\n"
+"Project-Id-Version: mousetweaks.HEAD.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-08 04:12+0000\n"
-"PO-Revision-Date: 2008-03-09 13:11+0530\n"
-"Last-Translator: I. Felix <ifelix@redhat.com>\n"
-"Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
+"POT-Creation-Date: 2008-09-06 18:33+0000\n"
+"PO-Revision-Date: 2008-09-11 12:57+0530\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
 
 #: ../data/dwell-click-applet.glade.h:1
+#,
 msgid ""
 "Applet to select different dwell-click types.\n"
-"Part of MouseTweaks"
+"Part of Mousetweaks"
 msgstr ""
 "வித்தியாசமான நிலை சொடுக்கு வகைகள் தேர்வுக்கு குறுநிரல். \n"
 "மவுஸ்ட்வீக்ஸ் இன் பகுதி"
@@ -38,11 +41,16 @@ msgstr "இரட்டை சொடுக்கு"
 msgid "Drag Click"
 msgstr "இழுத்து சொடுக்கு"
 
-#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
+msgid "On"
+msgstr "மேல்"
+
+#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "வலது சொடுக்கு"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "தனி சொடுக்கு "
 
@@ -59,38 +67,64 @@ msgid "<b>Size of Capture Area</b>"
 msgstr "<b>பிடிப்பு பரப்பு அளவு</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "(_l) ஆல்ட்"
+
+#: ../data/pointer-capture-applet.glade.h:5
+#,
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
-"Part of MouseTweaks"
+"Part of Mousetweaks"
 msgstr ""
-"பலகத்தில் சொடுக்கி முனையை நிலைக்க வைக்க இடம். \n"
+"சொடுக்கி முனையை பலகத்தில்  நிலைக்க வைக்க இடம். \n"
 "மவுஸ்ட்வீக்ஸ் இன் பகுதி"
 
-#: ../data/pointer-capture-applet.glade.h:6
-msgid "B_utton:"
-msgstr "பொத்தான் (_u):"
-
 #: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "(_t) கன்ட்ரோல்"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "(_r) கன்ட்ரோல்"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr "மாற்றி:"
 
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Pointer Capture Preferences"
-msgstr "சுட்டி பிடிப்பு விருப்பங்கள்"
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "Mouse _button:"
+msgstr "_b சொடுக்கி பொத்தான்:"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "Mouse b_utton:"
+msgstr "(_u) சொடுக்கி பொத்தான்:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "Pointer Capture Preferences"
+msgstr "சொடுக்கி  பிடிப்பு விருப்பங்கள்"
+
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "(_h) ஷிப்ட்"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "பொத்தான் 0 ஐ தேர்ந்தெடுப்பது சுட்டியை உடனே பிடிக்கும்."
 
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "_Button:"
-msgstr "பொத்தான் (_B):"
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "(_i) ஷிப்ட்"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:16
+#,
+msgid "_Alt"
+msgstr "ஆல்ட் (_A)"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "அகலம் (_W):"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "பிக்ஸல்கள்"
 
@@ -139,140 +173,156 @@ msgid "_Preferences"
 msgstr "முன்னுரிமைகள் (_P)"
 
 #: ../data/mousetweaks.schemas.in.h:1
+msgid "Animate cursor"
+msgstr "அசைவூட்ட நிலைக்காட்டி"
+
+#: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style"
 msgstr "பொத்தான் பாங்கு"
 
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
-msgstr "சொடுக்கு வகை சாளரத்தில் பொத்தான் பாங்கு(0= உரை, 1=சின்னம், 2=இரண்டும்)"
-
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "இரட்டிப்பு சொடுக்கு செய்ய வழிகாட்டி (0=இடது, 1=வலது, 2=மேலே, 3=கீழ்)"
+msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgstr "சொடுக்கு வகை சாளரத்தில் பொத்தான் பாங்கு (\"0\" = உரை, \"1\"= சின்னம், \"2\"=இரண்டும்)"
 
 #: ../data/mousetweaks.schemas.in.h:4
-msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "சொடுக்கு இழுப்பு  செய்ய வழிகாட்டி (0= இடது, 1=வலது, 2=மேலே, 3=கீழ்)"
+msgid ""
+"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr "இரட்டிப்பு சொடுக்கு செய்ய வழிகாட்டி (\"0\" = இடது, \"1\" = வலது, \"2\" = மேலே, \"3\" =கீழ்)"
 
 #: ../data/mousetweaks.schemas.in.h:5
-msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "இரண்டாவது சொடுக்கு செய்ய வழிகாட்டி (0= இடது, 1=வலது, 2=மேலே, 3=கீழ்)"
+msgid ""
+"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+"\"3\" = Down)"
+msgstr "சொடுக்கு இழுப்பு  செய்ய வழிகாட்டி (\"0\" = இடது, \"1\" = வலது, \"2\" = மேலே, \"3\" = கீழ்)"
 
 #: ../data/mousetweaks.schemas.in.h:6
-msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "தனி சொடுக்கு செய்ய வழிகாட்டி (0= இடது, 1=வலது, 2=மேலே, 3=கீழ்)"
+msgid ""
+"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr "இரண்டாவது சொடுக்கு செய்ய வழிகாட்டி (\"0\" = இடது, \"1\" = வலது, \"2\" = மேலே, \"3\" = கீழ்)"
 
 #: ../data/mousetweaks.schemas.in.h:7
+msgid ""
+"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr "தனி சொடுக்கு செய்ய வழிகாட்டி (\"0\" = இடது, \"1\" = வலது, \"2\" = மேலே, \"3\" = கீழ்)"
+
+#: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
 msgstr "அசைவு அடையாளம் காணப்பட குறைந்த பட்ச நகர்வு தொலைவு  பிக்ஸல்களில்."
 
-#: ../data/mousetweaks.schemas.in.h:8
+#: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
 msgstr "நிலை சொடுக்கு முறைமை"
 
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
-msgstr "நிலை சொடுக்கு முறைமை (0= அசைவு முறைமை, 1=சாளரம் முறைமை)"
-
 #: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgstr "நிலை சொடுக்கு முறைமை (\"0\" = அசைவு முறைமை, \"1\" = சாளரம் முறைமை)"
+
+#: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "நிலை சொடுக்கு நேரம்"
 
-#: ../data/mousetweaks.schemas.in.h:11
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
 msgid "Enable dwell click"
 msgstr "நிலை சொடுக்கு செயல்படுத்து"
 
-#: ../data/mousetweaks.schemas.in.h:12
+#: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "இரண்டாம் சொடுக்கு செயல்படுத்து"
 
-#: ../data/mousetweaks.schemas.in.h:13
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
 msgid "Enable simulated secondary click"
 msgstr "மெய்நிகர் இரண்டாம்  சொடுக்கு செயல்படுத்து"
 
-#: ../data/mousetweaks.schemas.in.h:14
+#: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
 msgstr "அசைவால் இரட்டிப்பு சொடுக்கு"
 
-#: ../data/mousetweaks.schemas.in.h:15
+#: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture drag click"
 msgstr "அசைவால் இழுப்பு சொடுக்கு"
 
-#: ../data/mousetweaks.schemas.in.h:16
+#: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
 msgstr "அசைவால் இரண்டாம் சொடுக்கு"
 
-#: ../data/mousetweaks.schemas.in.h:17
+#: ../data/mousetweaks.schemas.in.h:18
 msgid "Gesture single click"
 msgstr "அசைவால் தனி சொடுக்கு"
 
-#: ../data/mousetweaks.schemas.in.h:18
+#: ../data/mousetweaks.schemas.in.h:19
 msgid "Movement threshold"
 msgstr "அசைவுக்கு குறைந்த பட்ச வரை"
 
-#: ../data/mousetweaks.schemas.in.h:19
+#: ../data/mousetweaks.schemas.in.h:20
 msgid "Secondary click time"
 msgstr "இரண்டாம் சொடுக்கு நேரம்"
 
-#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
 msgid "Show click type window"
 msgstr "சொடுக்கு வகை சாளரத்தை காட்டு "
 
-#: ../data/mousetweaks.schemas.in.h:21
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Show elapsed time as cursor overlay."
+msgstr "நிலைகாட்டி மீது கடந்த நேரத்தை காட்டுக."
+
+#: ../data/mousetweaks.schemas.in.h:23
 msgid "Time in seconds before a click is triggered"
 msgstr "ஒரு சொடுக்கு இடரப்படும் முன் நேரம், வினாடிகளில்"
 
-#: ../data/mousetweaks.schemas.in.h:22
+#: ../data/mousetweaks.schemas.in.h:24
 msgid "Time in seconds before a secondary click is triggered"
 msgstr "இரண்டாம் சொடுக்கு இடரப்படும் முன் நேரம், வினாடிகளில்"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Button to capture the pointer (0=Capture immediately)"
-msgstr "சுட்டியை பிடிக்க பொத்தான் (0=உடனே பிடி)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Button to release the pointer"
-msgstr "சுட்டியை கைவிட பொத்தான் "
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture button"
-msgstr "பிடிப்பு பொத்தான்"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier"
 msgstr "பிடிப்பு மாற்றி"
 
-#: ../data/pointer-capture-applet.schemas.in.h:5
+#: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Capture modifier key (Alt)"
 msgstr "பிடிப்பு மாற்ற விசை ஆல்ட்(Alt)"
 
-#: ../data/pointer-capture-applet.schemas.in.h:6
+#: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture modifier key (Ctrl)"
 msgstr "பிடிப்பு மாற்ற விசை (Ctrl)"
 
-#: ../data/pointer-capture-applet.schemas.in.h:7
+#: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier key (Shift)"
 msgstr "பிடிப்பு மாற்ற விசை (Shift)"
 
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release button"
-msgstr "பொத்தான் ஐ கைவிடு"
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture mouse button"
+msgstr "பிடிப்பு சொடுக்கி பொத்தான்"
 
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+msgstr "சுட்டியை பிடிக்க பொத்தான் (\"0\" = உடனே பிடி)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Mouse button to release the pointer"
+msgstr "சுட்டி முனையை கைவிட பொத்தான் "
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release modifier"
 msgstr "கைவிடல் மாற்றி"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
+#: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Release modifier key (Alt)"
 msgstr "கைவிடல் மாற்று விசை (Alt)"
 
-#: ../data/pointer-capture-applet.schemas.in.h:11
+#: ../data/pointer-capture-applet.schemas.in.h:10
 msgid "Release modifier key (Ctrl)"
 msgstr "கைவிடல் மாற்று விசை (Ctrl)"
 
-#: ../data/pointer-capture-applet.schemas.in.h:12
+#: ../data/pointer-capture-applet.schemas.in.h:11
 msgid "Release modifier key (Shift)"
 msgstr "கைவிடல் மாற்று விசை (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release mouse button"
+msgstr "கைவிடல் பொத்தான்"
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
@@ -282,52 +332,96 @@ msgstr "பிடிப்பு பரப்பின் அளவு "
 msgid "Width of the capture area in pixels"
 msgstr "பிடிப்பு பரப்பின் அகலம் பிக்ஸல்களில்"
 
-#: ../src/mt-main.c:417
-msgid "Enable mousetweaks feature"
-msgstr "மவுஸ்ட்வீக்ஸ் செயல்களை செயல்படுத்துக"
-
-#: ../src/mt-main.c:419
-msgid "Use dwell mode"
-msgstr "நிலை முறைமையை பயன்படுத்துக"
-
-#: ../src/mt-main.c:423
-msgid "Window x position"
-msgstr "சாளரம் x நிலை"
-
-#: ../src/mt-main.c:425
-msgid "Window y position"
-msgstr "சாளரம் y நிலை"
-
-#: ../src/mt-main.c:427
-msgid "Shutdown mousetweaks"
-msgstr "மவுஸ்ட்வீக்ஸ் செயல்களை பணி நிறுத்தம் செய்க"
-
-#: ../src/mt-main.c:484
-msgid "Assistive Technologies not enabled"
+#: ../src/mt-main.c:720
+msgid "Assistive Technology Support Is Not Enabled"
 msgstr "துணை தொழிற் நுட்பங்கள் செயற்படுத்தப்படவில்லை"
 
-#: ../src/mt-main.c:485
-msgid "Mousetweaks requires Assistive Technologies."
-msgstr "மவுஸ்ட்வீக்ஸ் க்கு துணை தொழிற் நுட்பங்கள் தேவை."
+#: ../src/mt-main.c:721
+msgid ""
+"Mousetweaks requires assistive technologies to be enabled in your session.\n"
+"\n"
+"To enable support for assistive technologies and restart your session, press "
+"\"Enable and Log Out\"."
+msgstr ""
+"மவுஸ்ட்வீக்குக்கு துணை தொழிற் நுட்பங்கள் செயற்படுத்தப்படவேண்டும். \n"
+"\n"
+"துணை தொழிற் நுட்பங்கள் செயற்படுத்தி கணினியை மீள்துவக்க இதை அழுத்தவும்"
+"\"செயற்படுத்தி வெளியேறு\"."
 
-#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
-msgid "Couldn't display help"
+#: ../src/mt-main.c:823
+msgid "Time to wait before a dwell click"
+msgstr "நிலை சொடுக்குக்கு காத்திருக்க வேண்டிய நேரம்"
+
+#: ../src/mt-main.c:825
+msgid "Time to wait before a simulated secondary click"
+msgstr "மெய்நிகர் இரண்டாம்  சொடுக்கு செயல்பட காத்திருக்க வேண்டிய நேரம்."
+
+#: ../src/mt-main.c:827
+msgid "Dwell mode to use"
+msgstr "பயன்படுத்த நிலை சொடுக்கு முறைமை"
+
+#: ../src/mt-main.c:831
+msgid "Window x position"
+msgstr "சாளரத்தின் x நிலை"
+
+#: ../src/mt-main.c:833
+msgid "Window y position"
+msgstr "சாளரத்தின் y நிலை"
+
+#: ../src/mt-main.c:835
+msgid "Ignore small pointer movements"
+msgstr "சிறு சுட்டி நகர்வுகளை உதாசீனம் செய்க."
+
+#: ../src/mt-main.c:837
+msgid "Show elapsed time as cursor overlay"
+msgstr "கடந்த நேரத்தை சுட்டியின் மீது காட்டுக."
+
+#: ../src/mt-main.c:839
+msgid "Shut down mousetweaks"
+msgstr "மவுஸ்ட்வீக்ஸ் செயல்களை பணி நிறுத்தம் செய்க"
+
+#: ../src/mt-main.c:847
+msgid "- GNOME mousetweaks daemon"
+msgstr "- க்னோம்  மவுஸ்ட்வீக்ஸ் கிங்கரன்"
+
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
 msgstr "உதவியை காட்ட இயலவில்லை"
 
-#: ../src/pointer-capture-applet.c:204
+#: ../src/mt-common.c:66
+msgid "Enable and Log Out"
+msgstr "செயற்படுத்தி வெளியேறு"
+
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "பூட்டப்பட்டது"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:207
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:635
+#: ../src/pointer-capture-applet.c:542
+msgid "Pointer Capture Applet"
+msgstr "சுட்டி பிடிப்பு குறு நிரல்"
+
+#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "பிடிப்பு பரப்பு"
 
-#: ../src/pointer-capture-applet.c:636
+#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
 msgstr "சொடுக்கி முனையை தற்காலிகமாக பூட்டுக."
+
+#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
+msgid "Off"
+msgstr "நிறுத்துக"
+
+#: ../src/dwell-click-applet.c:335
+msgid "Failed to Launch Mouse Preferences"
+msgstr "சொடுக்கி தேர்வுகளை துவக்குதல் தோல்வியுற்றது."
+
+#: ../src/dwell-click-applet.c:565
+msgid "Dwell Click Applet"
+msgstr "நிலை வகை சொடுக்கு குறு நிரல்"
 

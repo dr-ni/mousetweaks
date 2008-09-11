@@ -1,3 +1,7 @@
+2008-09-11  Luca Ferretti  <elle.uca@libero.it>
+
+	* it.po: Fixed a duplicated accelerator.
+
 2008-09-10  Claude Paroz  <claude@2xlibre.net>
 
 	* fr.po: Updated French translation by Bruno Brouard ('dwell click' ->

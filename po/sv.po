@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-22 12:07+0200\n"
-"PO-Revision-Date: 2008-07-22 12:25+0100\n"
+"POT-Creation-Date: 2008-09-11 20:35+0200\n"
+"PO-Revision-Date: 2008-09-11 20:35+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -38,17 +38,23 @@ msgid "Drag Click"
 msgstr "Dragklick"
 
 #: ../data/dwell-click-applet.glade.h:6
-#: ../src/dwell-click-applet.c:113
-#: ../src/dwell-click-applet.c:651
+#: ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:821
+msgid "Enable dwell click"
+msgstr "Aktivera uppehållsklick"
+
+#: ../data/dwell-click-applet.glade.h:7
+#: ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
 msgid "On"
 msgstr "På"
 
-#: ../data/dwell-click-applet.glade.h:7
+#: ../data/dwell-click-applet.glade.h:8
 #: ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "Högerklick"
 
-#: ../data/dwell-click-applet.glade.h:8
+#: ../data/dwell-click-applet.glade.h:9
 #: ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "Enkelklick"
@@ -66,6 +72,10 @@ msgid "<b>Size of Capture Area</b>"
 msgstr "<b>Storlek på fångstområde</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -73,31 +83,51 @@ msgstr ""
 "Område att frysa muspekaren på panelen.\n"
 "Del av Musjusteringar"
 
-#: ../data/pointer-capture-applet.glade.h:6
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr "Modifierare:"
 
-#: ../data/pointer-capture-applet.glade.h:7
+#: ../data/pointer-capture-applet.glade.h:10
 msgid "Mouse _button:"
 msgstr "Mus_knapp:"
 
-#: ../data/pointer-capture-applet.glade.h:8
+#: ../data/pointer-capture-applet.glade.h:11
 msgid "Mouse b_utton:"
 msgstr "M_usknapp:"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:12
 msgid "Pointer Capture Preferences"
 msgstr "Inställningar för muspekarfångst"
 
-#: ../data/pointer-capture-applet.glade.h:10
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "S_kift"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Val av Knapp 0 kommer att fånga muspekaren omedelbart"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "Sk_ift"
+
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "_Bredd:"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "bildpunkter"
 
@@ -192,17 +222,12 @@ msgstr "Läge för uppehållsklick (\"0\" = Gestläge, \"1\" = Fönsterläge)"
 msgid "Dwell click time"
 msgstr "Tid för uppehållsklick"
 
-#: ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:626
-msgid "Enable dwell click"
-msgstr "Aktivera uppehållsklick"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Aktivera sekundärklick"
 
 #: ../data/mousetweaks.schemas.in.h:14
-#: ../src/mt-main.c:628
+#: ../src/mt-main.c:823
 msgid "Enable simulated secondary click"
 msgstr "Aktivera simulerat sekundärklick"
 
@@ -231,7 +256,7 @@ msgid "Secondary click time"
 msgstr "Tid för sekundärklick"
 
 #: ../data/mousetweaks.schemas.in.h:21
-#: ../src/mt-main.c:636
+#: ../src/mt-main.c:831
 msgid "Show click type window"
 msgstr "Visa klicktypsfönster"
 
@@ -303,11 +328,11 @@ msgstr "Storlek på fångstområde"
 msgid "Width of the capture area in pixels"
 msgstr "Bredd för fångstområde i bildpunkter"
 
-#: ../src/mt-main.c:534
+#: ../src/mt-main.c:722
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "Hjälpmedelstekniker är inte aktiverade"
 
-#: ../src/mt-main.c:535
+#: ../src/mt-main.c:723
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -317,88 +342,86 @@ msgstr ""
 "\n"
 "Tryck på \"Aktivera och logga ut\" för att aktivera stöd för hjälpmedelstekniker och starta om din session."
 
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:825
 msgid "Time to wait before a dwell click"
 msgstr "Tid att vänta innan ett uppehållsklick"
 
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:827
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tid att vänta innan en simulerad sekundärklickning"
 
-#: ../src/mt-main.c:634
+#: ../src/mt-main.c:829
 msgid "Dwell mode to use"
 msgstr "Läge för uppehållsklick att använda"
 
-#: ../src/mt-main.c:638
+#: ../src/mt-main.c:833
 msgid "Window x position"
 msgstr "Fönstrets x-position"
 
-#: ../src/mt-main.c:640
+#: ../src/mt-main.c:835
 msgid "Window y position"
 msgstr "Fönstrets y-position"
 
-#: ../src/mt-main.c:642
+#: ../src/mt-main.c:837
 msgid "Ignore small pointer movements"
 msgstr "Ignorera mindre muspekarrörelser"
 
-#: ../src/mt-main.c:644
+#: ../src/mt-main.c:839
 msgid "Show elapsed time as cursor overlay"
 msgstr "Visa åtgången tid som markörtext"
 
-#: ../src/mt-main.c:646
+#: ../src/mt-main.c:841
 msgid "Shut down mousetweaks"
 msgstr "Stäng av musjusteringar"
 
-#: ../src/mt-main.c:654
+#: ../src/mt-main.c:849
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME-musjusteringsdemon"
 
-#: ../src/mt-common.c:54
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
+msgstr "Kunde inte visa hjälp"
+
+#: ../src/mt-common.c:66
 msgid "Enable and Log Out"
 msgstr "Aktivera och logga ut"
 
-#: ../src/pointer-capture-applet.c:73
-msgid "Couldn't display help"
-msgstr "Kunde inte visa hjälp"
-
-#: ../src/pointer-capture-applet.c:195
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "Låst"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:198
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:556
+#: ../src/pointer-capture-applet.c:542
 msgid "Pointer Capture Applet"
 msgstr "Panelprogram för muspekarfångst"
 
-#: ../src/pointer-capture-applet.c:628
+#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "Fångstområde"
 
-#: ../src/pointer-capture-applet.c:629
+#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
 msgstr "Lås muspekaren temporärt"
 
-#: ../src/dwell-click-applet.c:113
-#: ../src/dwell-click-applet.c:651
+#: ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
 msgid "Off"
 msgstr "Av"
 
-#: ../src/dwell-click-applet.c:336
+#: ../src/dwell-click-applet.c:335
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Misslyckades med att starta musinställningar"
 
-#: ../src/dwell-click-applet.c:355
-msgid "Failed to Display Help"
-msgstr "Kunde inte visa hjälp"
-
-#: ../src/dwell-click-applet.c:574
+#: ../src/dwell-click-applet.c:565
 msgid "Dwell Click Applet"
 msgstr "Panelprogram för uppehållsklick"
 
+#~ msgid "Couldn't display help"
+#~ msgstr "Kunde inte visa hjälp"
 #~ msgid "B_utton:"
 #~ msgstr "K_napp:"
 #~ msgid "_Button:"

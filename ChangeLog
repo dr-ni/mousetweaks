@@ -1,3 +1,8 @@
+2008-09-11  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* data/dwell-click-applet.glade: Mark tooltip for translation and
+	change capitalization. Bug #551762.
+
 2008-09-08 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* configure.ac:

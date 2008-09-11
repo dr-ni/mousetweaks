@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-13 17:33+0200\n"
-"PO-Revision-Date: 2008-08-12 21:15+0100\n"
+"POT-Creation-Date: 2008-09-12 00:44+0200\n"
+"PO-Revision-Date: 2008-09-11 20:08+0100\n"
 "Last-Translator: Adrian Guniš <andygun@seznam.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -36,16 +36,21 @@ msgstr "Dvojklik"
 msgid "Drag Click"
 msgstr "Táhnutí"
 
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:113
-#: ../src/dwell-click-applet.c:651
-msgid "On"
-msgstr "Zapnout"
+#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:821
+msgid "Enable dwell click"
+msgstr "Zapnout kliknutí počkáním"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
+msgid "On"
+msgstr "Zapnuto"
+
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "Kliknutí pravým tlačítkem"
 
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:9 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "Kliknutí levým tlačítkem"
 
@@ -62,6 +67,10 @@ msgid "<b>Size of Capture Area</b>"
 msgstr "<b>Velikost oblasti zachycení</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -69,31 +78,51 @@ msgstr ""
 "Oblast uzamčení kurzoru myši na panelu.\n"
 "Součást Mousetweaks"
 
-#: ../data/pointer-capture-applet.glade.h:6
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr "Modifikátor:"
 
-#: ../data/pointer-capture-applet.glade.h:7
+#: ../data/pointer-capture-applet.glade.h:10
 msgid "Mouse _button:"
-msgstr "_Tlačítko myši:"
+msgstr "Tlačítko _myši:"
 
-#: ../data/pointer-capture-applet.glade.h:8
+#: ../data/pointer-capture-applet.glade.h:11
 msgid "Mouse b_utton:"
-msgstr "T_lačítko myši:"
+msgstr "Tlačítko m_yši:"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:12
 msgid "Pointer Capture Preferences"
 msgstr "Nastavení zachycení kurzoru"
 
-#: ../data/pointer-capture-applet.glade.h:10
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Stisknutím tlačítka 0 se zachytí kurzor okamžitě"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "Šíř_ka:"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "pixelů"
 
@@ -205,15 +234,11 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Čas nutný pro kliknutí počkáním"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:626
-msgid "Enable dwell click"
-msgstr "Zapnout kliknutí počkáním"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Zapnout kliknutí pravým tlačítkem"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:628
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
 msgid "Enable simulated secondary click"
 msgstr "Zapnout simulované kliknutí pravým tlačítkem"
 
@@ -241,7 +266,7 @@ msgstr "Práh pohybu"
 msgid "Secondary click time"
 msgstr "Čas nutný pro kliknutí pravým tlačítkem"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:636
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
 msgid "Show click type window"
 msgstr "Zobrazit okno typů kliknutí"
 
@@ -313,11 +338,11 @@ msgstr "Velikost oblasti zachycení"
 msgid "Width of the capture area in pixels"
 msgstr "Šířka oblasti zachycení v pixelech"
 
-#: ../src/mt-main.c:534
+#: ../src/mt-main.c:722
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "Není povolena podpora pro technologii usnadnění"
 
-#: ../src/mt-main.c:535
+#: ../src/mt-main.c:723
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -330,83 +355,79 @@ msgstr ""
 "K povolení podpory pro technologie usnadnění a restartování sezení stiskněte "
 "\"Povolit a odhlásit\"."
 
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:825
 msgid "Time to wait before a dwell click"
 msgstr "Doba čekání před kliknutím počkáním"
 
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:827
 msgid "Time to wait before a simulated secondary click"
 msgstr "Doba čekání před simulovaným kliknutím pravým tlačítkem"
 
-#: ../src/mt-main.c:634
+#: ../src/mt-main.c:829
 msgid "Dwell mode to use"
 msgstr "Režim kliknutí počkáním, který použít"
 
-#: ../src/mt-main.c:638
+#: ../src/mt-main.c:833
 msgid "Window x position"
 msgstr "Pozice x okna"
 
-#: ../src/mt-main.c:640
+#: ../src/mt-main.c:835
 msgid "Window y position"
 msgstr "Pozice y okna"
 
-#: ../src/mt-main.c:642
+#: ../src/mt-main.c:837
 msgid "Ignore small pointer movements"
 msgstr "Ignorovat nepatrné pohyby kurzoru"
 
-#: ../src/mt-main.c:644
+#: ../src/mt-main.c:839
 msgid "Show elapsed time as cursor overlay"
 msgstr "Zobrazit uplynulý čas jako překrytí kurzoru"
 
-#: ../src/mt-main.c:646
+#: ../src/mt-main.c:841
 msgid "Shut down mousetweaks"
 msgstr "Vypnout mousetweaks"
 
-#: ../src/mt-main.c:654
+#: ../src/mt-main.c:849
 msgid "- GNOME mousetweaks daemon"
 msgstr "- Démon GNOME mousetweaks"
 
-#: ../src/mt-common.c:54
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
+msgstr "Selhalo zobrazení nápovědy"
+
+#: ../src/mt-common.c:66
 msgid "Enable and Log Out"
 msgstr "Povolit a odhlásit"
 
-#: ../src/pointer-capture-applet.c:73
-msgid "Couldn't display help"
-msgstr "Nelze zobrazit nápovědu"
-
-#: ../src/pointer-capture-applet.c:195
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "Uzamčeno"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:198
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "U"
 
-#: ../src/pointer-capture-applet.c:556
+#: ../src/pointer-capture-applet.c:542
 msgid "Pointer Capture Applet"
 msgstr "Applet zachycení kurzoru"
 
-#: ../src/pointer-capture-applet.c:628
+#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "Oblast zachycení"
 
-#: ../src/pointer-capture-applet.c:629
+#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
 msgstr "Dočasné uzamčení kurzoru myši"
 
-#: ../src/dwell-click-applet.c:113 ../src/dwell-click-applet.c:651
+#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
 msgid "Off"
-msgstr "Vypnout"
+msgstr "Vypnuto"
 
-#: ../src/dwell-click-applet.c:336
+#: ../src/dwell-click-applet.c:335
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Selhalo spuštění Nastavení myši"
 
-#: ../src/dwell-click-applet.c:355
-msgid "Failed to Display Help"
-msgstr "Selhalo zobrazení nápovědy"
-
-#: ../src/dwell-click-applet.c:574
+#: ../src/dwell-click-applet.c:565
 msgid "Dwell Click Applet"
 msgstr "Applet kliknutí počkáním"

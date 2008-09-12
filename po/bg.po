@@ -1,4 +1,4 @@
-# Bulgarian translation of mousetweaks.
+# Bulgarian translation of mousetweaks po-file.
 # Copyright (C) 2008 Free Software Foundation, Inc.
 # Alexander Shopov <ash@contact.bg>, 2008.
 #
@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-16 08:43+0300\n"
-"PO-Revision-Date: 2008-06-14 22:56+0300\n"
+"POT-Creation-Date: 2008-09-12 10:05+0300\n"
+"PO-Revision-Date: 2008-09-12 10:05+0300\n"
 "Last-Translator: Alexander Shopov <ash@contact.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -35,16 +35,21 @@ msgstr "Двойно натискане"
 msgid "Drag Click"
 msgstr "Натискане с провлачване"
 
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:111
-#: ../src/dwell-click-applet.c:596
+#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:821
+msgid "Enable dwell click"
+msgstr "Включване на натискане чрез задържане"
+
+#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
 msgid "On"
 msgstr "Включено"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "Натискане с десния бутон"
 
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:9 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "Единично натискане"
 
@@ -61,6 +66,10 @@ msgid "<b>Size of Capture Area</b>"
 msgstr "<b>Размер на зоната на прихващане</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -68,31 +77,51 @@ msgstr ""
 "Зона, в която да се спре показалеца върху панела.\n"
 "Част от Mousetweaks"
 
-#: ../data/pointer-capture-applet.glade.h:6
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "_Ctrl"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr "Модификатор:"
 
-#: ../data/pointer-capture-applet.glade.h:7
+#: ../data/pointer-capture-applet.glade.h:10
 msgid "Mouse _button:"
 msgstr "_Бутон на мишката:"
 
-#: ../data/pointer-capture-applet.glade.h:8
+#: ../data/pointer-capture-applet.glade.h:11
 msgid "Mouse b_utton:"
 msgstr "Б_утон на мишката:"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:12
 msgid "Pointer Capture Preferences"
 msgstr "Настройки на прихващането на показалеца"
 
-#: ../data/pointer-capture-applet.glade.h:10
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "_Shift"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Избирането на бутон 0 ще прихване показалеца веднага"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "_Широчина:"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "пиксели"
 
@@ -205,15 +234,11 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Време за натискане чрез задържане"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:608
-msgid "Enable dwell click"
-msgstr "Включване на натискане чрез задържане"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Включване на второ натискане"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:610
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
 msgid "Enable simulated secondary click"
 msgstr "Включване на симулирано второ натискане"
 
@@ -241,7 +266,7 @@ msgstr "Праг за движение"
 msgid "Secondary click time"
 msgstr "Време за второто натискане"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:618
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
 msgid "Show click type window"
 msgstr "Показване на прозорец за вида натискане"
 
@@ -314,11 +339,11 @@ msgstr "Размер на зоната за прихващане"
 msgid "Width of the capture area in pixels"
 msgstr "Широчина на зоната за прихващане"
 
-#: ../src/mt-main.c:518
+#: ../src/mt-main.c:722
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "Поддръжката на помощните технологии не е включена"
 
-#: ../src/mt-main.c:519
+#: ../src/mt-main.c:723
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -329,83 +354,79 @@ msgstr ""
 "\n"
 "За да ги включите и рестартирате сесията си, натиснете „Включване и изход“."
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:825
 msgid "Time to wait before a dwell click"
 msgstr "Време за изчакване за натискане чрез задържане"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:827
 msgid "Time to wait before a simulated secondary click"
 msgstr "Време за изчакване за симулирано второ натискане"
 
-#: ../src/mt-main.c:616
+#: ../src/mt-main.c:829
 msgid "Dwell mode to use"
 msgstr "Режим за натискане чрез задържане"
 
-#: ../src/mt-main.c:620
+#: ../src/mt-main.c:833
 msgid "Window x position"
 msgstr "Хоризонтална позиция на прозореца"
 
-#: ../src/mt-main.c:622
+#: ../src/mt-main.c:835
 msgid "Window y position"
 msgstr "Вертикална позиция на прозореца"
 
-#: ../src/mt-main.c:624
+#: ../src/mt-main.c:837
 msgid "Ignore small pointer movements"
 msgstr "Пренебрегване на малките движения на показалеца"
 
-#: ../src/mt-main.c:626
+#: ../src/mt-main.c:839
 msgid "Show elapsed time as cursor overlay"
 msgstr "Показване на миналото време върху показалеца"
 
-#: ../src/mt-main.c:628
+#: ../src/mt-main.c:841
 msgid "Shut down mousetweaks"
 msgstr "Спиране на програмата"
 
-#: ../src/mt-main.c:636
+#: ../src/mt-main.c:849
 msgid "- GNOME mousetweaks daemon"
 msgstr "— демон за допълнителните настройки на мишката на GNOME"
 
-#: ../src/mt-common.c:54
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
+msgstr "Неуспех при показването на помощта"
+
+#: ../src/mt-common.c:66
 msgid "Enable and Log Out"
 msgstr "Включване и излизане от системата"
 
-#: ../src/pointer-capture-applet.c:73
-msgid "Couldn't display help"
-msgstr "Помощта не може да бъде показана"
-
-#: ../src/pointer-capture-applet.c:195
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "Заключено"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:198
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "З"
 
-#: ../src/pointer-capture-applet.c:556
+#: ../src/pointer-capture-applet.c:542
 msgid "Pointer Capture Applet"
 msgstr "Аплет за прихващане на показалеца"
 
-#: ../src/pointer-capture-applet.c:628
+#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "Област на прихващане"
 
-#: ../src/pointer-capture-applet.c:629
+#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
 msgstr "Временно заключване на показалеца на мишката"
 
-#: ../src/dwell-click-applet.c:111 ../src/dwell-click-applet.c:596
+#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
 msgid "Off"
 msgstr "Изключено"
 
-#: ../src/dwell-click-applet.c:286
+#: ../src/dwell-click-applet.c:335
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Неуспех при стартирането на настройките на мишката"
 
-#: ../src/dwell-click-applet.c:305
-msgid "Failed to Display Help"
-msgstr "Неуспех при показването на помощта"
-
-#: ../src/dwell-click-applet.c:520
+#: ../src/dwell-click-applet.c:565
 msgid "Dwell Click Applet"
 msgstr "Аплет за натискане чрез задържане"

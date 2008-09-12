@@ -34,7 +34,6 @@ static int fixes_error = 0;
 typedef struct _MtCursorManagerPrivate MtCursorManagerPrivate;
 struct _MtCursorManagerPrivate {
     GHashTable *cache;
-    gboolean    cursor_set;
 };
 
 enum {
@@ -83,7 +82,6 @@ mt_cursor_manager_init (MtCursorManager *manager)
     MtCursorManagerPrivate *priv = MT_CURSOR_MANAGER_GET_PRIVATE (manager);
 
     priv->cache = NULL;
-    priv->cursor_set = FALSE;
 }
 
 static void
@@ -100,11 +98,12 @@ mt_cursor_manager_finalize (GObject *object)
     G_OBJECT_CLASS (mt_cursor_manager_parent_class)->finalize (object);
 }
 
-static gboolean
+static void
 mt_cursor_manager_set_xcursor (MtCursor *cursor)
 {
     XcursorImage *ximage;
     const guchar *image;
+    const gchar  *name;
     Cursor        xcursor;
     gushort       width, height;
     gushort       xhot, yhot;
@@ -120,21 +119,15 @@ mt_cursor_manager_set_xcursor (MtCursor *cursor)
     ximage->pixels = (XcursorPixel *) image;
 
     xcursor = XcursorImageLoadCursor (GDK_DISPLAY (), ximage);
-    if (xcursor) {
-	const gchar *name;
+    XcursorImageDestroy (ximage);
 
+    if (xcursor) {
 	name = mt_cursor_get_name (cursor);
 	XFixesSetCursorName (GDK_DISPLAY (), xcursor, name);
 	XFixesChangeCursorByName (GDK_DISPLAY (), xcursor, name);
 	XFreeCursor (GDK_DISPLAY (), xcursor);
-	XcursorImageDestroy (ximage);
-
-	return TRUE;
+	gdk_flush ();
     }
-
-    XcursorImageDestroy (ximage);
-
-    return FALSE;
 }
 
 static void
@@ -142,9 +135,7 @@ mt_cursor_manager_restore_cursor (gpointer key,
 				  gpointer value,
 				  gpointer data)
 {
-    MtCursorManagerPrivate *priv = MT_CURSOR_MANAGER_GET_PRIVATE (data);
-
-    priv->cursor_set = mt_cursor_manager_set_xcursor (MT_CURSOR (value));
+    mt_cursor_manager_set_xcursor (MT_CURSOR (value));
 }
 
 static void
@@ -174,22 +165,14 @@ xfixes_filter (GdkXEvent *xevent, GdkEvent *event, gpointer data)
 
 	if (cn->cursor_name != None) {
 	    MtCursorManager *manager = data;
-	    MtCursorManagerPrivate *priv;
+	    XFixesCursorImage *image;
 
-	    priv = MT_CURSOR_MANAGER_GET_PRIVATE (manager);
-	    if (!priv->cursor_set) {
-		XFixesCursorImage *image;
+	    image = XFixesGetCursorImage (GDK_DISPLAY ());
+	    if (!mt_cursor_manager_lookup_cursor (manager, image->name))
+		mt_cursor_manager_add_cursor (manager, image);
 
-		image = XFixesGetCursorImage (GDK_DISPLAY ());
-
-		if (!mt_cursor_manager_lookup_cursor (manager, image->name))
-		    mt_cursor_manager_add_cursor (manager, image);
-
-		g_signal_emit (manager, signals[CURSOR_CHANGED], 0, image->name);
-		XFree (image);
-	    }
-	    else
-		priv->cursor_set = FALSE;
+	    g_signal_emit (manager, signals[CURSOR_CHANGED], 0, image->name);
+	    XFree (image);
 	}
     }
     return GDK_FILTER_CONTINUE;
@@ -299,13 +282,10 @@ void
 mt_cursor_manager_set_cursor (MtCursorManager *manager,
 			      MtCursor        *cursor)
 {
-    MtCursorManagerPrivate *priv;
-
     g_return_if_fail (MT_IS_CURSOR_MANAGER (manager));
     g_return_if_fail (MT_IS_CURSOR (cursor));
 
-    priv = MT_CURSOR_MANAGER_GET_PRIVATE (manager);
-    priv->cursor_set = mt_cursor_manager_set_xcursor (cursor);
+    mt_cursor_manager_set_xcursor (cursor);
 }
 
 void

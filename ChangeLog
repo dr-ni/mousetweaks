@@ -1,3 +1,8 @@
+2008-09-12  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* src/mt-cursor-manager.c: Remove cursor_set guard. Seems to get
+	out of sync when grabs are involved.
+
 2008-09-11  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
 	* data/dwell-click-applet.glade: Mark tooltip for translation and

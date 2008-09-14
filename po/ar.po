@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome 2-22\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-26 14:49+0100\n"
+"POT-Creation-Date: 2008-09-14 11:10+0100\n"
 "PO-Revision-Date: 2008-02-12 21:24+0100\n"
 "Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
 "Language-Team: Arabeyes <doc@arabeyes.org>\n"
@@ -37,16 +37,21 @@ msgstr "نقر ثنائي"
 msgid "Drag Click"
 msgstr "نقر"
 
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
+#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:821
+msgid "Enable dwell click"
+msgstr "فعّل النقر الكامن"
+
+#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:112
 #: ../src/dwell-click-applet.c:642
 msgid "On"
 msgstr ""
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "نقر أيمن"
 
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:9 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "نقر وحيد"
 
@@ -63,6 +68,10 @@ msgid "<b>Size of Capture Area</b>"
 msgstr "<b>حجم مساحة الإمساك</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:5
 #, fuzzy
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
@@ -71,33 +80,54 @@ msgstr ""
 "مساحة تجميد مؤشر الفأرة على الشريط.\n"
 "جزء من برنامج ضبط الفأرة"
 
-#: ../data/pointer-capture-applet.glade.h:6
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr "مغير:"
 
-#: ../data/pointer-capture-applet.glade.h:7
+#: ../data/pointer-capture-applet.glade.h:10
 #, fuzzy
 msgid "Mouse _button:"
 msgstr "زرّ الإمساك"
 
-#: ../data/pointer-capture-applet.glade.h:8
+#: ../data/pointer-capture-applet.glade.h:11
 #, fuzzy
 msgid "Mouse b_utton:"
 msgstr "زرّ الإمساك"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:12
 msgid "Pointer Capture Preferences"
 msgstr "تفضيلات الإمساك بالمؤشّر"
 
-#: ../data/pointer-capture-applet.glade.h:10
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "اختيار زر  0 سيثبت المؤشّر مباشرة"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:16
+#, fuzzy
+msgid "_Alt"
+msgstr "_حول"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "ال_عرض:"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "بكسلات"
 
@@ -204,15 +234,11 @@ msgstr "نمط النقر الكامن (0= نمط الحركة، 1=نمط الن
 msgid "Dwell click time"
 msgstr "وقت النقر الكامن"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:756
-msgid "Enable dwell click"
-msgstr "فعّل النقر الكامن"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "فعّل النقر الثانوي"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:758
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
 msgid "Enable simulated secondary click"
 msgstr "فعِّل محاكاة النقر الثانوي"
 
@@ -240,7 +266,7 @@ msgstr "عتبة الحركة"
 msgid "Secondary click time"
 msgstr "وقت النقر الثانوي"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:766
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
 msgid "Show click type window"
 msgstr "اعرض نافذة نوع النّقر"
 
@@ -316,12 +342,12 @@ msgstr "حجم مساحة الإمساك"
 msgid "Width of the capture area in pixels"
 msgstr "عرض مساحة الامساك بالبكسل"
 
-#: ../src/mt-main.c:657
+#: ../src/mt-main.c:722
 #, fuzzy
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "لم يتم تفعيل تكنلوجيا الإتاحة"
 
-#: ../src/mt-main.c:658
+#: ../src/mt-main.c:723
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -329,42 +355,42 @@ msgid ""
 "\"Enable and Log Out\"."
 msgstr ""
 
-#: ../src/mt-main.c:760
+#: ../src/mt-main.c:825
 msgid "Time to wait before a dwell click"
 msgstr ""
 
-#: ../src/mt-main.c:762
+#: ../src/mt-main.c:827
 #, fuzzy
 msgid "Time to wait before a simulated secondary click"
 msgstr "فعِّل محاكاة النقر الثانوي"
 
-#: ../src/mt-main.c:764
+#: ../src/mt-main.c:829
 #, fuzzy
 msgid "Dwell mode to use"
 msgstr "نمط النقر الكامن"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:833
 msgid "Window x position"
 msgstr "موقع س للنافذة"
 
-#: ../src/mt-main.c:770
+#: ../src/mt-main.c:835
 msgid "Window y position"
 msgstr "موقع ع للنافذة"
 
-#: ../src/mt-main.c:772
+#: ../src/mt-main.c:837
 msgid "Ignore small pointer movements"
 msgstr ""
 
-#: ../src/mt-main.c:774
+#: ../src/mt-main.c:839
 msgid "Show elapsed time as cursor overlay"
 msgstr ""
 
-#: ../src/mt-main.c:776
+#: ../src/mt-main.c:841
 #, fuzzy
 msgid "Shut down mousetweaks"
 msgstr "اغلق برنامج ظبط الفأرة"
 
-#: ../src/mt-main.c:784
+#: ../src/mt-main.c:849
 #, fuzzy
 msgid "- GNOME mousetweaks daemon"
 msgstr "فعّل ميزة برنامج ضبط الفأرة"

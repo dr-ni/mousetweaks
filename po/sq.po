@@ -1,0 +1,435 @@
+# Përkthimi i mousetweaks në shqip.
+# Copyright (C) 2008 THE mousetweaks'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousetweaks package.
+# Laurent Dhima <laurenti@alblinux.net>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-16 18:38+0200\n"
+"PO-Revision-Date: 2008-09-16 18:34+0200\n"
+"Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
+"Language-Team: albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/dwell-click-applet.glade.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Mini-aplikativ për të zgjedhur lloje të ndryshëm klikimesh automatike.\n"
+"Pjesë e Mousetweaks"
+
+#: ../data/dwell-click-applet.glade.h:3
+msgid "Click Type Window"
+msgstr "Dritarja e llojeve të klik"
+
+#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+msgid "Double Click"
+msgstr "Dopio klik"
+
+#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+msgid "Drag Click"
+msgstr "Klik zvarritje"
+
+#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:821
+msgid "Enable dwell click"
+msgstr "Aktivizo klik automatik"
+
+# Është një lloj pulsanti On, Off
+# Kuptohet pa problem edhe në shqip.
+#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
+msgid "On"
+msgstr "On"
+
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:4
+msgid "Right Click"
+msgstr "Klik i djathtë"
+
+#: ../data/dwell-click-applet.glade.h:9 ../data/ctw.glade.h:8
+msgid "Single Click"
+msgstr "Klik i vetëm"
+
+#: ../data/pointer-capture-applet.glade.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Kapja e kursorit</b>"
+
+#: ../data/pointer-capture-applet.glade.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>Lëshimi i kursorit</b>"
+
+#: ../data/pointer-capture-applet.glade.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>Madhësia e zonës së kapjes</b>"
+
+#: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.glade.h:5
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Zona për kapjen e kursorit të mouse në panel.\n"
+"Pjesë e Mousetweaks"
+
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.glade.h:9
+msgid "Modifier:"
+msgstr "Ndryshuesi:"
+
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "Mouse _button:"
+msgstr "_Pulsanti i mouse:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "Mouse b_utton:"
+msgstr "P_ulsanti i mouse:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "Pointer Capture Preferences"
+msgstr "Preferimet e kapjes së kursorit"
+
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.glade.h:14
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Duke zgjedhur 0 për «Pulsant», kursori do të kapet menjëherë"
+
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.glade.h:17
+msgid "_Width:"
+msgstr "_Gjerësia:"
+
+#: ../data/pointer-capture-applet.glade.h:18
+msgid "pixels"
+msgstr "pixel"
+
+#: ../data/ctw.glade.h:3
+msgid "Dwell Click Type"
+msgstr "Lloji i klik automatik"
+
+#: ../data/ctw.glade.h:5
+msgid "Show Icons and Text"
+msgstr "Shfaq Ikonat dhe tekstin"
+
+#: ../data/ctw.glade.h:6
+msgid "Show Icons only"
+msgstr "Shfaq vetëm ikonat"
+
+#: ../data/ctw.glade.h:7
+msgid "Show Text only"
+msgstr "Shfaq vetëm tekstin"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1
+msgid "Dwell Click"
+msgstr "Klik automatik"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "Zgjidh llojin e klik automatik"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Zona ku të bllokohet kursori"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+msgid "Pointer Capture"
+msgstr "Kapja e kursorit"
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "_Informacione"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "_Ndihmë"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "_Preferime"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Animate cursor"
+msgstr "Kursor i animuar"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style"
+msgstr "Stili i butonëve"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid ""
+"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgstr ""
+"Stili i butonëve në dritaren për llojin e klik (\"0\" = tekst, \"1\"= ikonë, "
+"\"2\" = së bashku)"
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid ""
+"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Drejtimi për kryerjen e dopio klik (\"0\" = majtas, \"1\" = djathtas, \"2\" "
+"= sipër, \"3\" = poshtë)"
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid ""
+"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+"\"3\" = Down)"
+msgstr ""
+"Drejtimi për kryerjen e klik zvarritës (\"0\" = majtas, \"1\" = djathtas, \"2"
+"\" = sipër, \"3\" = poshtë)"
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid ""
+"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Drejtimi për kryerjen e klik dytësor (\"0\" = majtas, \"1\" = djathtas, \"2"
+"\" = sipër, \"3\" = poshtë)"
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid ""
+"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Drejtimi për kryerjen e klik të vetëm (\"0\" = majtas, \"1\" = djathtas, \"2"
+"\" = sipër, \"3\" = poshtë)"
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Distance in pixels before movement will be recognized"
+msgstr "Distanca në pixel para se lëvizja të njihet"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode"
+msgstr "Modaliteti klik automatik"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgstr ""
+"Modaliteti klik automatik (\"0\" = modalitet gjest, \"1\" = modalitet "
+"dritare)"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Dwell click time"
+msgstr "Koha e klikimit automatik"
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable secondary click"
+msgstr "Aktivizon klik dytësor"
+
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
+msgid "Enable simulated secondary click"
+msgstr "Aktivizon klik dytësor të simuluar"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture double click"
+msgstr "Gjesti për dopio klik"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture drag click"
+msgstr "Gjesti për klik zvarritës"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture secondary click"
+msgstr "Gjesti për klik dytësor"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Gesture single click"
+msgstr "Gjesti për klik të vetëm"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Movement threshold"
+msgstr "Kufiri i lëvizjes"
+
+#: ../data/mousetweaks.schemas.in.h:20
+msgid "Secondary click time"
+msgstr "Koha e klik dytësor"
+
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
+msgid "Show click type window"
+msgstr "Shfaq dritaern për lloji i klik"
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Show elapsed time as cursor overlay."
+msgstr "Shfaq kohën e kaluar si mbivendosje tek kursori."
+
+#: ../data/mousetweaks.schemas.in.h:23
+msgid "Time in seconds before a click is triggered"
+msgstr "Koha në sekonda para se të niset një klik"
+
+#: ../data/mousetweaks.schemas.in.h:24
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "Koha në sekonda para se të niset një klik dytësor"
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Capture modifier"
+msgstr "Ndryshuesi i kapjes"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Capture modifier key (Alt)"
+msgstr "Pulsanti ndryshues i kapjes (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture modifier key (Ctrl)"
+msgstr "Pulsanti ndryshues i kapjes (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Capture modifier key (Shift)"
+msgstr "Pulsanti ndryshues i kapjes (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture mouse button"
+msgstr "Pulsanti i mouse për kapjen"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+msgstr "Pulsanti i mouse për të kapur kursorin (\"0\" = kap menjëherë)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Mouse button to release the pointer"
+msgstr "Pulsanti i mouse për të lëshuar kursorin"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release modifier"
+msgstr "Ndryshuesi i lëshimit"
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Release modifier key (Alt)"
+msgstr "Pulsanti ndryshues i lëshimit (Alt)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "Release modifier key (Ctrl)"
+msgstr "Pulsanti ndryshues i lëshimit (Ctrl)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "Release modifier key (Shift)"
+msgstr "Pulsanti ndryshues i lëshimit (Shift)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release mouse button"
+msgstr "Pulsanti i mouse për lëshimin"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Size of capture area"
+msgstr "Madhësia e zonës së kapjes"
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Width of the capture area in pixels"
+msgstr "Gjerësia e zonës së kapjes në pixel"
+
+#: ../src/mt-main.c:722
+msgid "Assistive Technology Support Is Not Enabled"
+msgstr "Suporti për teknologjitë asistuese nuk është aktivizuar"
+
+#: ../src/mt-main.c:723
+msgid ""
+"Mousetweaks requires assistive technologies to be enabled in your session.\n"
+"\n"
+"To enable support for assistive technologies and restart your session, press "
+"\"Enable and Log Out\"."
+msgstr ""
+"Mousetweaks kërkon që teknollogjitë asistuese të jenë aktivizuar gjatë "
+"seancës.\n"
+"\n"
+"Për të aktivizuar suportin e teknollogjive asistuese dhe të rinisur seancën, "
+"kliko tek «Aktivizo dhe përfundo seancën»."
+
+#: ../src/mt-main.c:825
+msgid "Time to wait before a dwell click"
+msgstr "Koha e pritjes para një klikimi automatik"
+
+#: ../src/mt-main.c:827
+msgid "Time to wait before a simulated secondary click"
+msgstr "Koha e pritjes para një klikimi dytësor të simuluar"
+
+#: ../src/mt-main.c:829
+msgid "Dwell mode to use"
+msgstr "Modaliteti klik automatik për tu përdorur"
+
+#: ../src/mt-main.c:833
+msgid "Window x position"
+msgstr "Pozicioni horizontal i dritares"
+
+#: ../src/mt-main.c:835
+msgid "Window y position"
+msgstr "Pozicioni vertikal i dritares"
+
+#: ../src/mt-main.c:837
+msgid "Ignore small pointer movements"
+msgstr "Shpërfill lëvizje të vogla të mouse"
+
+#: ../src/mt-main.c:839
+msgid "Show elapsed time as cursor overlay"
+msgstr "Shfaq kohën e kaluar si mbivendosje tek kursori"
+
+#: ../src/mt-main.c:841
+msgid "Shut down mousetweaks"
+msgstr "Ndalo mousetweaks"
+
+#: ../src/mt-main.c:849
+msgid "- GNOME mousetweaks daemon"
+msgstr "- Demoni mousetweaks GNOME"
+
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
+msgstr "Shfaqja e ndihmës dështoi"
+
+#: ../src/mt-common.c:66
+msgid "Enable and Log Out"
+msgstr "Aktivizo dhe përfundo seancën"
+
+#: ../src/pointer-capture-applet.c:180
+msgid "Locked"
+msgstr "Bllokuar"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:183
+msgid "L"
+msgstr "B"
+
+#: ../src/pointer-capture-applet.c:542
+msgid "Pointer Capture Applet"
+msgstr "Mini-aplikativi Kapja e kursorit"
+
+#: ../src/pointer-capture-applet.c:614
+msgid "Capture area"
+msgstr "Zona e kapjes"
+
+#: ../src/pointer-capture-applet.c:615
+msgid "Temporarily lock the mouse pointer"
+msgstr "Blloko përkohësisht kursorin e mouse"
+
+#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
+msgid "Off"
+msgstr "Off"
+
+#: ../src/dwell-click-applet.c:335
+msgid "Failed to Launch Mouse Preferences"
+msgstr "Nisja e «Preferimeve të mouse» nuk pati sukses"
+
+#: ../src/dwell-click-applet.c:565
+msgid "Dwell Click Applet"
+msgstr "Mini-aplikativi Klikime automatike"

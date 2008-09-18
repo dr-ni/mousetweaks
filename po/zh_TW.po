@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweak 2.21.92\n"
+"Project-Id-Version: mousetweak 2.24.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-13 21:27+0800\n"
-"PO-Revision-Date: 2008-02-05 16:52+0800\n"
+"POT-Creation-Date: 2008-09-17 08:52+0800\n"
+"PO-Revision-Date: 2008-09-17 17:23+0800\n"
 "Last-Translator: chainsaw <chainsawtiney@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <community@linuxhall.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,76 +17,116 @@ msgstr ""
 #: ../data/dwell-click-applet.glade.h:1
 msgid ""
 "Applet to select different dwell-click types.\n"
-"Part of MouseTweaks"
+"Part of Mousetweaks"
 msgstr ""
-"選擇替代點擊類型的面板程序。\n"
-"MouseTweaks 的一部份"
+"選擇替代點擊類型的面板程式。\n"
+"Mousetweaks 的一部份"
 
 #: ../data/dwell-click-applet.glade.h:3
 msgid "Click Type Window"
 msgstr "點擊類型視窗"
 
-#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+#: ../data/dwell-click-applet.glade.h:4
+#: ../data/ctw.glade.h:1
 msgid "Double Click"
 msgstr "雙點擊"
 
-#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+#: ../data/dwell-click-applet.glade.h:5
+#: ../data/ctw.glade.h:2
 msgid "Drag Click"
 msgstr "拖拉點擊"
 
-#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:6
+#: ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:821
+msgid "Enable dwell click"
+msgstr "啟動替代點擊"
+
+#: ../data/dwell-click-applet.glade.h:7
+#: ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
+msgid "On"
+msgstr "開"
+
+#: ../data/dwell-click-applet.glade.h:8
+#: ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "右鍵點擊"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:9
+#: ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "單次點擊"
 
 #: ../data/pointer-capture-applet.glade.h:1
 msgid "<b>Capture Pointer</b>"
-msgstr "<b>捕捉游標</b>"
+msgstr "<b>捕捉指標</b>"
 
 #: ../data/pointer-capture-applet.glade.h:2
 msgid "<b>Release Pointer</b>"
-msgstr "<b>釋放游標</b>"
+msgstr "<b>釋放指標</b>"
 
 #: ../data/pointer-capture-applet.glade.h:3
 msgid "<b>Size of Capture Area</b>"
 msgstr "<b>捕捉範圍大小</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
-"Part of MouseTweaks"
+"Part of Mousetweaks"
 msgstr ""
-"在面版上停止滑鼠游標移動的範圍。\n"
-"MouseTweaks 的一部份"
-
-#: ../data/pointer-capture-applet.glade.h:6
-msgid "B_utton:"
-msgstr "按鈕（B_）:"
+"在面版上停止滑鼠指標移動的範圍。\n"
+"Mousetweaks 的一部份"
 
 #: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr "變更鍵:"
 
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Pointer Capture Preferences"
-msgstr "游標捕捉偏好設定"
+#: ../data/pointer-capture-applet.glade.h:10
+msgid "Mouse _button:"
+msgstr "滑鼠按鈕(_B):"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "Mouse b_utton:"
+msgstr "滑鼠按鈕(_U):"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "Pointer Capture Preferences"
+msgstr "指標捕捉偏好設定"
+
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "選擇 0 按鈕將會即時捕捉按鈕"
 
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "_Button:"
-msgstr "按鈕(_B)"
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "Sh_ift"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "寬度(_W)"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "像素"
 
@@ -116,159 +156,168 @@ msgstr "選擇替代點擊類型"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
-msgstr "鎖定游標的範圍"
+msgstr "鎖定指標的範圍"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
 msgid "Pointer Capture"
-msgstr "鎖定游標"
+msgstr "鎖定指標"
 
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+#: ../data/DwellClick.xml.h:1
+#: ../data/PointerCapture.xml.h:1
 msgid "_About"
 msgstr "關於(_A)"
 
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+#: ../data/DwellClick.xml.h:2
+#: ../data/PointerCapture.xml.h:2
 msgid "_Help"
 msgstr "求助(_H)"
 
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+#: ../data/DwellClick.xml.h:3
+#: ../data/PointerCapture.xml.h:3
 msgid "_Preferences"
 msgstr "偏好設定(_P)"
 
 #: ../data/mousetweaks.schemas.in.h:1
+msgid "Animate cursor"
+msgstr "動畫游標"
+
+#: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style"
 msgstr "按鈕類型"
 
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
-msgstr "在點擊類型視窗的按鈕類別（0=文字、1=圖示、2=兩者）"
-
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "進行雙點擊的方向（0=左、1=右、2=上、3=下）"
+msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgstr "在點擊類型視窗的按鈕類別（\"0\"=文字、\"1\"=圖示、\"2\"=兩者）"
 
 #: ../data/mousetweaks.schemas.in.h:4
-msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "進行拖拉點擊的方向（0=左、1=右、2=上、3=下）"
+msgid "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
+msgstr "進行雙點擊的方向（\"0\"=左、\"1\"=右、\"2\"=上、\"3\"=下）"
 
 #: ../data/mousetweaks.schemas.in.h:5
-msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "進行次要點擊的方向（0=左、1=右、2=上、3=下）"
+msgid "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
+msgstr "進行拖拉點擊的方向（\"0\"=左、\"1\"=右、\"2\"=上、\"3\"=下）"
 
 #: ../data/mousetweaks.schemas.in.h:6
-msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "進行單次點擊的方向（0=左、1=右、2=上、3=下）"
+msgid "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
+msgstr "進行次要點擊的方向（\"0\"=左、\"1\"=右、\"2\"=上、\"3\"=下）"
 
 #: ../data/mousetweaks.schemas.in.h:7
+msgid "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
+msgstr "進行單次點擊的方向（\"0\"=左、\"1\"=右、\"2\"=上、\"3\"=下）"
+
+#: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
 msgstr "在動作被識別之前以像素計的距離"
 
-#: ../data/mousetweaks.schemas.in.h:8
+#: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
 msgstr "替代點擊模式"
 
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
-msgstr "替代點擊模式（0=滑鼠手勢識別模式、1=視窗模式）"
-
 #: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgstr "替代點擊模式（\"0\"=滑鼠手勢識別模式、\"1\"=視窗模式）"
+
+#: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "替代點擊時間"
 
-#: ../data/mousetweaks.schemas.in.h:11
-msgid "Enable dwell click"
-msgstr "啟動替代點擊"
-
-#: ../data/mousetweaks.schemas.in.h:12
+#: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "啟動次要點擊"
 
-#: ../data/mousetweaks.schemas.in.h:13
+#: ../data/mousetweaks.schemas.in.h:14
+#: ../src/mt-main.c:823
 msgid "Enable simulated secondary click"
 msgstr "啟動模擬次要點擊"
 
-#: ../data/mousetweaks.schemas.in.h:14
+#: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
 msgstr "滑鼠手勢啟動雙點擊"
 
-#: ../data/mousetweaks.schemas.in.h:15
+#: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture drag click"
 msgstr "滑鼠手勢啟動拖拉點擊"
 
-#: ../data/mousetweaks.schemas.in.h:16
+#: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
 msgstr "滑鼠手勢啟動次要點擊"
 
-#: ../data/mousetweaks.schemas.in.h:17
+#: ../data/mousetweaks.schemas.in.h:18
 msgid "Gesture single click"
 msgstr "滑鼠手勢啟動單次點擊"
 
-#: ../data/mousetweaks.schemas.in.h:18
+#: ../data/mousetweaks.schemas.in.h:19
 msgid "Movement threshold"
 msgstr "移動界限"
 
-#: ../data/mousetweaks.schemas.in.h:19
+#: ../data/mousetweaks.schemas.in.h:20
 msgid "Secondary click time"
 msgstr "次要點擊時間"
 
-#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+#: ../data/mousetweaks.schemas.in.h:21
+#: ../src/mt-main.c:831
 msgid "Show click type window"
 msgstr "展示點擊類型視窗"
 
-#: ../data/mousetweaks.schemas.in.h:21
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Show elapsed time as cursor overlay."
+msgstr ""
+
+#: ../data/mousetweaks.schemas.in.h:23
 msgid "Time in seconds before a click is triggered"
 msgstr "在點擊進行之前的秒數"
 
-#: ../data/mousetweaks.schemas.in.h:22
+#: ../data/mousetweaks.schemas.in.h:24
 msgid "Time in seconds before a secondary click is triggered"
 msgstr "在次要點擊之前的秒數"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Button to capture the pointer (0=Capture immediately)"
-msgstr "捕捉游標的按鈕（0=即時捕捉）"
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Button to release the pointer"
-msgstr "釋放游標的按鈕"
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture button"
-msgstr "捕捉按鈕"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier"
 msgstr "捕捉變更鍵"
 
-#: ../data/pointer-capture-applet.schemas.in.h:5
+#: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Capture modifier key (Alt)"
 msgstr "捕捉變更鍵（Alt）"
 
-#: ../data/pointer-capture-applet.schemas.in.h:6
+#: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture modifier key (Ctrl)"
 msgstr "捕捉變更鍵（Ctrl）"
 
-#: ../data/pointer-capture-applet.schemas.in.h:7
+#: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier key (Shift)"
 msgstr "捕捉變更鍵（Shift）"
 
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release button"
-msgstr "釋放按鈕"
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Capture mouse button"
+msgstr "捕捉滑鼠按鈕"
 
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+msgstr "捕捉指標的滑鼠按鈕（\"0\"=即時捕捉）"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Mouse button to release the pointer"
+msgstr "釋放指標的滑鼠按鈕"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release modifier"
 msgstr "釋放變更鍵"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
+#: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Release modifier key (Alt)"
 msgstr "釋放變更鍵（Alt）"
 
-#: ../data/pointer-capture-applet.schemas.in.h:11
+#: ../data/pointer-capture-applet.schemas.in.h:10
 msgid "Release modifier key (Ctrl)"
 msgstr "釋放變更鍵（Ctrl）"
 
-#: ../data/pointer-capture-applet.schemas.in.h:12
+#: ../data/pointer-capture-applet.schemas.in.h:11
 msgid "Release modifier key (Shift)"
 msgstr "釋放變更鍵（Shift）"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Release mouse button"
+msgstr "釋放滑鼠按鈕"
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
@@ -278,51 +327,104 @@ msgstr "捕捉範圍的大小"
 msgid "Width of the capture area in pixels"
 msgstr "捕捉範圍以像素計的寬度"
 
-#: ../src/mt-main.c:417
-msgid "Enable mousetweaks feature"
-msgstr "啟動 mousetweaks 功能"
+#: ../src/mt-main.c:722
+msgid "Assistive Technology Support Is Not Enabled"
+msgstr "輔助科技支援未啟用"
 
-#: ../src/mt-main.c:419
-msgid "Use dwell mode"
-msgstr "使用替代點擊模式"
+#: ../src/mt-main.c:723
+msgid ""
+"Mousetweaks requires assistive technologies to be enabled in your session.\n"
+"\n"
+"To enable support for assistive technologies and restart your session, press \"Enable and Log Out\"."
+msgstr ""
+"Mousetweaks 要求在作業階段中啟用輔助科技。\n"
+"\n"
+"要啟用輔助科技的支援並重新啟動您的作業階段，請按「啟用並登出」。"
 
-#: ../src/mt-main.c:423
+#: ../src/mt-main.c:825
+msgid "Time to wait before a dwell click"
+msgstr "在替代點擊之前等待的時間"
+
+#: ../src/mt-main.c:827
+msgid "Time to wait before a simulated secondary click"
+msgstr "模擬次要點擊之前等待的時間"
+
+#: ../src/mt-main.c:829
+msgid "Dwell mode to use"
+msgstr "要使用的替代點擊模式"
+
+#: ../src/mt-main.c:833
 msgid "Window x position"
 msgstr "視窗 X 坐標"
 
-#: ../src/mt-main.c:425
+#: ../src/mt-main.c:835
 msgid "Window y position"
 msgstr "視窗 Y 坐標"
 
-#: ../src/mt-main.c:427
-msgid "Shutdown mousetweaks"
+#: ../src/mt-main.c:837
+msgid "Ignore small pointer movements"
+msgstr "忽略微小的指標移動"
+
+#: ../src/mt-main.c:839
+msgid "Show elapsed time as cursor overlay"
+msgstr ""
+
+#: ../src/mt-main.c:841
+msgid "Shut down mousetweaks"
 msgstr "關閉 Mousetweaks"
 
-#: ../src/mt-main.c:484
-msgid "Assistive Technologies not enabled"
-msgstr "無障礙環境未啟動"
+#: ../src/mt-main.c:849
+msgid "- GNOME mousetweaks daemon"
+msgstr "- GNOME mousetweaks 伺服程式"
 
-#: ../src/mt-main.c:485
-msgid "Mousetweaks requires Assistive Technologies."
-msgstr "Mousetweaks 需要啟動無障礙環境"
-
-#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:293
-msgid "Couldn't display help"
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
 msgstr "無法顯示說明文件"
 
-#: ../src/pointer-capture-applet.c:204
+#: ../src/mt-common.c:66
+msgid "Enable and Log Out"
+msgstr "啟用並登出"
+
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "已鎖定"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:207
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:635
+#: ../src/pointer-capture-applet.c:542
+msgid "Pointer Capture Applet"
+msgstr "指標捕捉面板程式"
+
+#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "捕捉範圍"
 
-#: ../src/pointer-capture-applet.c:636
+#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
-msgstr "暫時鎖定滑鼠游標"
+msgstr "暫時鎖定滑鼠指標"
+
+#: ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
+msgid "Off"
+msgstr "關"
+
+#: ../src/dwell-click-applet.c:335
+msgid "Failed to Launch Mouse Preferences"
+msgstr "執行滑鼠偏好設定失敗"
+
+#: ../src/dwell-click-applet.c:565
+msgid "Dwell Click Applet"
+msgstr "替代點擊面板程式"
+
+#~ msgid "B_utton:"
+#~ msgstr "按鈕（B_）:"
+#~ msgid "_Button:"
+#~ msgstr "按鈕(_B)"
+#~ msgid "Use dwell mode"
+#~ msgstr "使用替代點擊模式"
+#~ msgid "Mousetweaks requires Assistive Technologies."
+#~ msgstr "Mousetweaks 需要啟動無障礙環境"
+

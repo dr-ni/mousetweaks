@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the mousetweaks package.
 # Luiz Armesto <luiz.armesto@gmail.com>, 2008.
 # Enrico Nicoletto <liverig@gmail.com>, 2008.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 18:33+0000\n"
+"POT-Creation-Date: 2008-09-13 21:09+0000\n"
 "PO-Revision-Date: 2008-09-13 12:06-0300\n"
-"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
+"Last-Translator: Leonardo Ferreira Fontenelle <leonardof@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,16 +40,21 @@ msgstr "Clique duplo"
 msgid "Drag Click"
 msgstr "Clique de arrastar"
 
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
+#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:821
+msgid "Enable dwell click"
+msgstr "Habilitar clique de permanência"
+
+#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:112
 #: ../src/dwell-click-applet.c:642
 msgid "On"
 msgstr "Ativado"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "Clique com o botão direito"
 
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:9 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "Clique único"
 
@@ -232,15 +238,11 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Tempo do clique de permanência"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
-msgid "Enable dwell click"
-msgstr "Habilitar clique de permanência"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Habilitar clique secundário"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
 msgid "Enable simulated secondary click"
 msgstr "Habilitar clique secundário simulado"
 
@@ -268,7 +270,7 @@ msgstr "Limiar de movimento"
 msgid "Secondary click time"
 msgstr "Tempo do clique secundário"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
 msgid "Show click type window"
 msgstr "Mostra a janela de tipo de clique"
 
@@ -286,19 +288,19 @@ msgstr "Tempo em segundos até que um clique secundário seja executado"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
 msgid "Capture modifier"
-msgstr "Modificador de captura"
+msgstr "Modificador de captura do ponteiro"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Capture modifier key (Alt)"
-msgstr "Tecla modificadora de captura (Alt)"
+msgstr "Captura o ponteiro apenas se a tecla Alt estiver pressionada."
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture modifier key (Ctrl)"
-msgstr "Tecla modificadora de captura (Ctrl)"
+msgstr "Captura o ponteiro apenas se a tecla Control estiver pressionada."
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Capture modifier key (Shift)"
-msgstr "Tecla modificadora de captura (Shift)"
+msgstr "Captura o ponteiro apenas se a tecla Shift estiver pressionada."
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
 msgid "Capture mouse button"
@@ -307,7 +309,9 @@ msgstr "Botão de captura do mouse"
 #: ../data/pointer-capture-applet.schemas.in.h:6
 msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
 msgstr ""
-"Botão do mouse para capturar o ponteiro (\"0\" = Capturar imediatamente)"
+"Botão do mouse para capturar o ponteiro (\"0\" = assim que o ponteiro parar "
+"sobre o miniaplicativo, \"1\" = botão esquerdo, \"2\" = botão do meio, \"3\" "
+"= botão direito)."
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
 msgid "Mouse button to release the pointer"
@@ -315,19 +319,19 @@ msgstr "Botão do mouse para liberar o ponteiro"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release modifier"
-msgstr "Modificador de liberar"
+msgstr "Modificador de liberação do ponteiro"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Release modifier key (Alt)"
-msgstr "Tecla modificadora de liberar (Alt)"
+msgstr "Libera o ponteiro apenas se a tecla Alt estiver pressionada."
 
 #: ../data/pointer-capture-applet.schemas.in.h:10
 msgid "Release modifier key (Ctrl)"
-msgstr "Tecla modificadora de liberar (Ctrl)"
+msgstr "Libera o ponteiro apenas se a tecla Control estiver pressionada."
 
 #: ../data/pointer-capture-applet.schemas.in.h:11
 msgid "Release modifier key (Shift)"
-msgstr "Tecla modificadora de liberar (Shift)"
+msgstr "Libera o ponteiro apenas se a tecla Shift estiver pressionada."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid "Release mouse button"
@@ -341,11 +345,11 @@ msgstr "Tamanho da área de captura"
 msgid "Width of the capture area in pixels"
 msgstr "Largura da área de captura em pixels"
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:722
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "O Suporte para Tecnologias Assistivas não está Habilitado"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:723
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -358,39 +362,39 @@ msgstr ""
 "Para ativar suporte para tecnologias assistivas e reiniciar sua sessão, "
 "pressione \"Ativar e Encerrar Sessão\"."
 
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:825
 msgid "Time to wait before a dwell click"
 msgstr "Tempo de espera antes do clique de permanência"
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:827
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo de espera antes de simular um clique secundário"
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:829
 msgid "Dwell mode to use"
 msgstr "Modo de clique de permanência a utilizar"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:833
 msgid "Window x position"
 msgstr "Posição x da janela"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:835
 msgid "Window y position"
 msgstr "Posição y da janela"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:837
 msgid "Ignore small pointer movements"
 msgstr "Ignorar pequenos movimentos do ponteiro"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:839
 msgid "Show elapsed time as cursor overlay"
 msgstr "Mostrar tempo decorrido como sobreposição do cursor"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:841
 msgid "Shut down mousetweaks"
 msgstr "Desligar o mousetweaks"
 
-#: ../src/mt-main.c:847
+#: ../src/mt-main.c:849
 msgid "- GNOME mousetweaks daemon"
 msgstr "- Daemon do GNOME mousetweak"
 

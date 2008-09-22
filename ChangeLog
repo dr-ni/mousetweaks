@@ -1,3 +1,7 @@
+2008-09-22 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* NEWS: Prepare 2.24.0 release.
+
 2008-09-12  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
 	* src/mt-cursor-manager.c: Remove cursor_set guard. Seems to get

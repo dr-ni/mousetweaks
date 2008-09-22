@@ -1,3 +1,58 @@
+Version 2.24.0
+---------------
+
+Major changes since 2.22.0:
+
+	* addition of timing feedback on the cursor for the simulated 
+	  secondary click and for the dwell click
+	* addition of a button to the Dwell Click applet that can be used
+	  to start the dwell feature by dwelling on that button
+	* draws a line when making the gesture to specify the click type
+	* it is now possible to set the dwell delay as low as 0.2 second
+	* addition of more command line options 
+	* is now able to also handle multiscreen setups
+
+Detailed changes since 2.23.92:
+
+  Misc improvements/fixes:
+
+	* Removed cursor_set guard to avoid out of syncs on grabs
+	* Fix of a duplicated accelerator in it.po by Luca Ferretti
+
+  Bug fixes:
+
+	#551762: "Enable Dwell Click" tooltip not marked for translation.
+
+  New and updated translations:
+
+	- [ar] Djihed Afifi, Usama Akkad
+	- [bg] Alexander Shopov
+	- [ca] Gil Forcada
+	- [cs] Adrian Guniš
+	- [da] Ask H. Larsen
+	- [es] Jorge González
+	- [eu] Iñaki Larrañaga Murgoitio
+	- [fi] Timo Jyrinki
+	- [fr] Bruno Brouard
+	- [he] Yair Hershkovitz
+	- [hu] Gabor Kelemen
+	- [it] Milo Casagrande
+	- [ko] Changwoo Ryu
+	- [lt] Vytautas Liuolia
+	- [mr] Sandeep Shedmake
+	- [or] Manoj Kumar Giri
+	- [pl] Tomasz Dominikowski
+	- [pt_BR] Enrico Nicoletto, Leonardo Ferreira Fontenelle
+	- [ru] Yuriy Penkin
+	- [sq] Laurent Dhima
+	- [sv] Daniel Nylander
+	- [ta] I. Felix
+	- [tr] Baris Cicek
+	- [uk] Maxim Dziumanenko
+	- [zh_CN] Funda Wang
+	- [zh_HK] Chung-hong Chan
+	- [zh_TW] Chung-hong Chan
+
 Version 2.23.92
 ---------------
 

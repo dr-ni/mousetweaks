@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-07 14:39+0000\n"
+"POT-Creation-Date: 2008-09-06 18:33+0000\n"
 "PO-Revision-Date: 2008-06-07 14:39+0000\n"
 "Last-Translator: yairhr@gmail.com\n"
 "Language-Team: he\n"
@@ -19,7 +19,8 @@ msgstr ""
 msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of Mousetweaks"
-msgstr "יישומון לבחירת סוגי לחיצת שהייה שונים.\n"
+msgstr ""
+"יישומון לבחירת סוגי לחיצת שהייה שונים.\n"
 "חלק מ-Mousetweaks"
 
 #: ../data/dwell-click-applet.glade.h:3
@@ -34,8 +35,8 @@ msgstr "לחיצה כפולה"
 msgid "Drag Click"
 msgstr "לחיצת גרירה"
 
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:111
-#: ../src/dwell-click-applet.c:596
+#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
+#: ../src/dwell-click-applet.c:642
 msgid "On"
 msgstr "מופעל"
 
@@ -60,6 +61,10 @@ msgid "<b>Size of Capture Area</b>"
 msgstr "<b>גודל איזור הלכידה</b>"
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -67,31 +72,51 @@ msgstr ""
 "איזור להקפאת סמן העכבר בלוח.\n"
 "חלק מ-Mousetweaks"
 
-#: ../data/pointer-capture-applet.glade.h:6
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr ""
 
-#: ../data/pointer-capture-applet.glade.h:7
+#: ../data/pointer-capture-applet.glade.h:10
 msgid "Mouse _button:"
 msgstr "כפ_תור עכבר:"
 
-#: ../data/pointer-capture-applet.glade.h:8
+#: ../data/pointer-capture-applet.glade.h:11
 msgid "Mouse b_utton:"
 msgstr "כ_פתור עכבר:"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.glade.h:12
 msgid "Pointer Capture Preferences"
 msgstr "מאפייני לכידת סמן"
 
-#: ../data/pointer-capture-applet.glade.h:10
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "בחירה בכפתור 0 תגרום ללכידה מיידית"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "_רוחב:"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "פיקסלים"
 
@@ -201,7 +226,7 @@ msgstr "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
 msgid "Dwell click time"
 msgstr "Dwell click time"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:619
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
 msgid "Enable dwell click"
 msgstr "Enable dwell click"
 
@@ -209,7 +234,7 @@ msgstr "Enable dwell click"
 msgid "Enable secondary click"
 msgstr "Enable secondary click"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:621
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
 msgid "Enable simulated secondary click"
 msgstr "Enable simulated secondary click"
 
@@ -237,7 +262,7 @@ msgstr "Movement threshold"
 msgid "Secondary click time"
 msgstr "Secondary click time"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:629
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
 msgid "Show click type window"
 msgstr "Show click type window"
 
@@ -309,11 +334,11 @@ msgstr "Size of capture area"
 msgid "Width of the capture area in pixels"
 msgstr "Width of the capture area in pixels"
 
-#: ../src/mt-main.c:529
+#: ../src/mt-main.c:720
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "תמיכה בטכנולוגיות מסייעות אינה מופעלת"
 
-#: ../src/mt-main.c:530
+#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -322,85 +347,85 @@ msgid ""
 msgstr ""
 "‏Mousetweaks דורשת שתמיכה בטכנולוגיות מסייעות תופעל בהפעלה שלך.\n"
 "\n"
-"על מנת לאפשר תמיכה בטכנולוגיות מסייעות ולשתחול ההפעלה שלך, לחץ על \"אפשר והתנתק\". "
+"על מנת לאפשר תמיכה בטכנולוגיות מסייעות ולשתחול ההפעלה שלך, לחץ על \"אפשר "
+"והתנתק\". "
 
-#: ../src/mt-main.c:623
+#: ../src/mt-main.c:823
 msgid "Time to wait before a dwell click"
 msgstr "Time to wait before a dwell click"
 
-#: ../src/mt-main.c:625
+#: ../src/mt-main.c:825
 msgid "Time to wait before a simulated secondary click"
 msgstr "Time to wait before a simulated secondary click"
 
-#: ../src/mt-main.c:627
+#: ../src/mt-main.c:827
 msgid "Dwell mode to use"
 msgstr "Dwell mode to use"
 
-#: ../src/mt-main.c:631
+#: ../src/mt-main.c:831
 msgid "Window x position"
 msgstr "Window x position"
 
-#: ../src/mt-main.c:633
+#: ../src/mt-main.c:833
 msgid "Window y position"
 msgstr "Window y position"
 
-#: ../src/mt-main.c:635
+#: ../src/mt-main.c:835
 msgid "Ignore small pointer movements"
 msgstr "Ignore small pointer movements"
 
-#: ../src/mt-main.c:637
+#: ../src/mt-main.c:837
 msgid "Show elapsed time as cursor overlay"
 msgstr "Show elapsed time as cursor overlay"
 
-#: ../src/mt-main.c:639
+#: ../src/mt-main.c:839
 msgid "Shut down mousetweaks"
 msgstr "Shut down mousetweaks"
 
-#: ../src/mt-main.c:647
+#: ../src/mt-main.c:847
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME mousetweaks daemon"
 
-#: ../src/mt-common.c:54
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
+msgstr "נכשל בהצגת עזרה"
+
+#: ../src/mt-common.c:66
 msgid "Enable and Log Out"
 msgstr "אפשר והתנתק"
 
-#: ../src/pointer-capture-applet.c:73
-msgid "Couldn't display help"
-msgstr "לא ניתן להציג עזרה"
-
-#: ../src/pointer-capture-applet.c:195
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "נעול"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:198
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "נ"
 
-#: ../src/pointer-capture-applet.c:556
+#: ../src/pointer-capture-applet.c:542
 msgid "Pointer Capture Applet"
 msgstr "יישומון לכידת סמן"
 
-#: ../src/pointer-capture-applet.c:628
+#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "איזור לכידה"
 
-#: ../src/pointer-capture-applet.c:629
+#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
 msgstr "נעל את סמן העכבר באופן זמני"
 
-#: ../src/dwell-click-applet.c:111 ../src/dwell-click-applet.c:596
+#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
 msgid "Off"
 msgstr "מכובה"
 
-#: ../src/dwell-click-applet.c:286
+#: ../src/dwell-click-applet.c:335
 msgid "Failed to Launch Mouse Preferences"
 msgstr "נכשל בשיגור מאפייני העכבר"
 
-#: ../src/dwell-click-applet.c:305
-msgid "Failed to Display Help"
-msgstr "נכשל בהצגת עזרה"
-
-#: ../src/dwell-click-applet.c:520
+#: ../src/dwell-click-applet.c:565
 msgid "Dwell Click Applet"
 msgstr "יישומון לחיצת שהייה"
+
+#~ msgid "Couldn't display help"
+#~ msgstr "לא ניתן להציג עזרה"

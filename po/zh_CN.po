@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweak.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 18:33+0000\n"
-"PO-Revision-Date: 2008-09-19 8:38+0800\n"
+"POT-Creation-Date: 2008-09-23 05:14+0000\n"
+"PO-Revision-Date: 2008-09-24 21:23+0800\n"
 "Last-Translator: Funda Wang <fundawang@gmail.com>\n"
 "Language-Team: Chinese (simplified) <translation-team-zh-cn@lists."
 "sourceforge.net>\n"
@@ -37,16 +37,21 @@ msgstr "双击"
 msgid "Drag Click"
 msgstr "拖动"
 
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
+#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:821
+msgid "Enable dwell click"
+msgstr "启用增强型点击"
+
+#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:112
 #: ../src/dwell-click-applet.c:642
 msgid "On"
 msgstr "开"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "右击"
 
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.glade.h:9 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "单击"
 
@@ -219,15 +224,11 @@ msgstr "增强型点击模式 (“0”=鼠标手势模式，“1”=窗口模式
 msgid "Dwell click time"
 msgstr "增强型点击时间间隔"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
-msgid "Enable dwell click"
-msgstr "启用增强型点击"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "启用二次点击"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
 msgid "Enable simulated secondary click"
 msgstr "启用二次点击模拟"
 
@@ -255,13 +256,13 @@ msgstr "移动阀值"
 msgid "Secondary click time"
 msgstr "二次点击时间间隔"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
 msgid "Show click type window"
 msgstr "显示点击方式窗口"
 
 #: ../data/mousetweaks.schemas.in.h:22
 msgid "Show elapsed time as cursor overlay."
-msgstr ""
+msgstr "显示光标停留时间。"
 
 #: ../data/mousetweaks.schemas.in.h:23
 msgid "Time in seconds before a click is triggered"
@@ -327,52 +328,54 @@ msgstr "锁定区域的范围"
 msgid "Width of the capture area in pixels"
 msgstr "锁定区域的宽度(像素点)"
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:722
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr "未启用辅助技术支持"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:723
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
 "To enable support for assistive technologies and restart your session, press "
 "\"Enable and Log Out\"."
 msgstr ""
-"Mousetweaks 需要在您的会话中启用辅助技术。\n\n要启用辅助技术支持并重新启动您的会话，请点击“启用并注销”。"
+"Mousetweaks 需要在您的会话中启用辅助技术。\n"
+"\n"
+"要启用辅助技术支持并重新启动您的会话，请点击“启用并注销”。"
 
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:825
 msgid "Time to wait before a dwell click"
 msgstr "增强型点击前等候的时间"
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:827
 msgid "Time to wait before a simulated secondary click"
 msgstr "二次点击模拟前等候的时间"
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:829
 msgid "Dwell mode to use"
 msgstr "要使用的增强模式"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:833
 msgid "Window x position"
 msgstr "窗口坐标 x"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:835
 msgid "Window y position"
 msgstr "窗口坐标 y"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:837
 msgid "Ignore small pointer movements"
 msgstr "忽略鼠标指针移动"
 
-#: ../src/mt-main.c:837
-msgid "Show elapsed time as cursor overlay"
-msgstr ""
-
 #: ../src/mt-main.c:839
+msgid "Show elapsed time as cursor overlay"
+msgstr "显示光标停留时间"
+
+#: ../src/mt-main.c:841
 msgid "Shut down mousetweaks"
 msgstr "关闭 mousetweaks"
 
-#: ../src/mt-main.c:847
+#: ../src/mt-main.c:849
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME mousetweaks 守护程序"
 

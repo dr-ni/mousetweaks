@@ -1,4 +1,4 @@
-# Mousetweaks'i eesti keele tõlge.
+# Hiiretuuningute eesti keele tõlge.
 # Estonian translation of Mousetweaks.
 #
 # Copyright (C) 2008 The GNOME Project.
@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-27 04:29+0000\n"
-"PO-Revision-Date: 2008-09-01 19:37+0300\n"
+"POT-Creation-Date: 2008-09-06 18:33+0000\n"
+"PO-Revision-Date: 2008-09-24 23:47+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -44,11 +44,11 @@ msgstr ""
 
 #: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
 msgid "Right Click"
-msgstr ""
+msgstr "Paremklõps"
 
 #: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
 msgid "Single Click"
-msgstr ""
+msgstr "Üksikklõps"
 
 #: ../data/pointer-capture-applet.glade.h:1
 msgid "<b>Capture Pointer</b>"
@@ -63,36 +63,60 @@ msgid "<b>Size of Capture Area</b>"
 msgstr ""
 
 #: ../data/pointer-capture-applet.glade.h:4
+msgid "A_lt"
+msgstr ""
+
+#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
 
-#: ../data/pointer-capture-applet.glade.h:6
+#: ../data/pointer-capture-applet.glade.h:7
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.glade.h:8
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr ""
 
-#: ../data/pointer-capture-applet.glade.h:7
-msgid "Mouse _button:"
-msgstr ""
-
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Mouse b_utton:"
-msgstr ""
-
-#: ../data/pointer-capture-applet.glade.h:9
-msgid "Pointer Capture Preferences"
-msgstr ""
-
 #: ../data/pointer-capture-applet.glade.h:10
+msgid "Mouse _button:"
+msgstr "Hiire _nupp:"
+
+#: ../data/pointer-capture-applet.glade.h:11
+msgid "Mouse b_utton:"
+msgstr "Hiire n_upp:"
+
+#: ../data/pointer-capture-applet.glade.h:12
+msgid "Pointer Capture Preferences"
+msgstr "Kursori hõivamise eelistused"
+
+#: ../data/pointer-capture-applet.glade.h:13
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr ""
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.glade.h:15
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.glade.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "_Laius:"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "pikslit"
 
@@ -126,7 +150,7 @@ msgstr ""
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
 msgid "Pointer Capture"
-msgstr ""
+msgstr "Kursori hõivamine"
 
 #: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
 msgid "_About"
@@ -193,7 +217,7 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Ooteajaga klõpsu aeg"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:756
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
 msgid "Enable dwell click"
 msgstr "Ooteajaga klõpsu lubamine"
 
@@ -201,7 +225,7 @@ msgstr "Ooteajaga klõpsu lubamine"
 msgid "Enable secondary click"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:758
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
 msgid "Enable simulated secondary click"
 msgstr ""
 
@@ -229,7 +253,7 @@ msgstr ""
 msgid "Secondary click time"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:766
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
 msgid "Show click type window"
 msgstr ""
 
@@ -295,17 +319,17 @@ msgstr ""
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
-msgstr ""
+msgstr "Hõivamispiirkonna suurus"
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
 msgid "Width of the capture area in pixels"
-msgstr ""
+msgstr "Hõivamispiirkonna laius pikslites"
 
-#: ../src/mt-main.c:657
+#: ../src/mt-main.c:720
 msgid "Assistive Technology Support Is Not Enabled"
 msgstr ""
 
-#: ../src/mt-main.c:658
+#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -313,41 +337,41 @@ msgid ""
 "\"Enable and Log Out\"."
 msgstr ""
 
-#: ../src/mt-main.c:760
+#: ../src/mt-main.c:823
 msgid "Time to wait before a dwell click"
 msgstr ""
 
-#: ../src/mt-main.c:762
+#: ../src/mt-main.c:825
 msgid "Time to wait before a simulated secondary click"
 msgstr ""
 
-#: ../src/mt-main.c:764
+#: ../src/mt-main.c:827
 msgid "Dwell mode to use"
 msgstr ""
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:831
 msgid "Window x position"
 msgstr "Akna asukoht X-teljel"
 
-#: ../src/mt-main.c:770
+#: ../src/mt-main.c:833
 msgid "Window y position"
 msgstr "Akna asukoht Y-teljel"
 
-#: ../src/mt-main.c:772
+#: ../src/mt-main.c:835
 msgid "Ignore small pointer movements"
 msgstr "Väikeste kursoriliigutuste eiramine"
 
-#: ../src/mt-main.c:774
+#: ../src/mt-main.c:837
 msgid "Show elapsed time as cursor overlay"
 msgstr ""
 
-#: ../src/mt-main.c:776
+#: ../src/mt-main.c:839
 msgid "Shut down mousetweaks"
 msgstr ""
 
-#: ../src/mt-main.c:784
+#: ../src/mt-main.c:847
 msgid "- GNOME mousetweaks daemon"
-msgstr ""
+msgstr "- GNOME hiiretuuningute deemon"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -368,11 +392,11 @@ msgstr "L"
 
 #: ../src/pointer-capture-applet.c:542
 msgid "Pointer Capture Applet"
-msgstr ""
+msgstr "Kursori hõivamise rakend"
 
 #: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
-msgstr ""
+msgstr "Hõivamise piirkond"
 
 #: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"

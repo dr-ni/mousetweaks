@@ -1,3 +1,10 @@
+2008-10-23  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* src/mt-main.c: Fix capitalization in warning dialog. Don't rely on
+	gnome accessibility gconf key to dedect if AT support is enabled.
+	Testing the return value of SPI_init() is enough and also works
+	with GDM. 
+
 2008-09-22 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* configure.ac:

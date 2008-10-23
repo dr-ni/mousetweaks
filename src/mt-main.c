@@ -712,14 +712,11 @@ static gboolean
 accessibility_enabled (MTClosure *mt,
 		       gint       spi_status)
 {
-    gboolean a11y;
+    gint ret;
 
-    a11y = gconf_client_get_bool (mt->client, GNOME_A11Y_KEY, NULL);
-    if (!a11y || spi_status != 0) {
-	gint ret;
-
+    if (spi_status != 0) {
 	ret = mt_common_show_dialog
-	    (_("Assistive Technology Support Is Not Enabled"),
+	    (_("Assistive Technology Support is not Enabled"),
 	     _("Mousetweaks requires assistive technologies to be enabled "
 	       "in your session."
 	       "\n\n"

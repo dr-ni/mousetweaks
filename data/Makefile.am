@@ -1,12 +1,12 @@
 if BUILD_PCA
 pca_schemas = pointer-capture-applet.schemas.in
-pca_glade   = pointer-capture-applet.glade
+pca_ui      = pointer-capture-applet.ui
 pca_server  = PointerCapture_Factory.server.in
 pca_menu    = PointerCapture.xml
 endif
 
 if BUILD_DCA
-dca_glade  = dwell-click-applet.glade
+dca_ui     = dwell-click-applet.ui
 dca_server = DwellClick_Factory.server.in
 dca_menu   = DwellClick.xml
 endif
@@ -27,11 +27,11 @@ $(dca_server): $(dca_server).in Makefile
 	sed -e "s|\@bindir\@|$(bindir)|g" < $< > $@
 endif
 
-xmldir = $(datadir)/mousetweaks
-xml_DATA = ctw.glade $(pca_glade) $(dca_glade)
-
 uidir = $(datadir)/mousetweaks
-ui_DATA = $(pca_menu) $(dca_menu)
+ui_DATA = mousetweaks.ui $(pca_ui) $(dca_ui)
+
+menudir = $(datadir)/mousetweaks
+menu_DATA = $(pca_menu) $(dca_menu)
 
 @INTLTOOL_SCHEMAS_RULE@
 schemasdir = @GCONF_SCHEMA_FILE_DIR@
@@ -57,10 +57,10 @@ endif
 endif
 
 EXTRA_DIST =		      \
-	$(xml_DATA)	      \
+	$(ui_DATA)	      \
 	$(schemas_in_files)   \
 	$(server_in_in_files) \
-	$(ui_DATA)
+	$(menu_DATA)
 
 DISTCLEANFILES =           \
 	$(server_DATA)     \

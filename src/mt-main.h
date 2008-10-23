@@ -32,6 +32,8 @@ G_BEGIN_DECLS
 typedef struct _MTClosure MTClosure;
 struct _MTClosure {
     GConfClient *client;
+    GtkBuilder  *ui;
+
     MtService   *service;
     MtTimer     *delay_timer;
     MtTimer     *dwell_timer;

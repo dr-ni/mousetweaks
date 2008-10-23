@@ -18,14 +18,13 @@
  */
 
 #include <gtk/gtk.h>
-#include <glade/glade.h>
 
 #include "mt-main.h"
 #include "mt-service.h"
 #include "mt-common.h"
 #include "mt-ctw.h"
 
-#define WID(n) (glade_xml_get_widget (xml, n))
+#define WID(n) (GTK_WIDGET (gtk_builder_get_object (mt->ui, n)))
 
 enum {
     BUTTON_STYLE_TEXT = 0,
@@ -33,10 +32,8 @@ enum {
     BUTTON_STYLE_BOTH
 };
 
-static GladeXML *xml = NULL;
-
 void
-mt_ctw_set_clicktype (guint clicktype)
+mt_ctw_set_clicktype (MTClosure *mt, guint clicktype)
 {
     GSList *group;
     gpointer data;
@@ -53,7 +50,7 @@ mt_ctw_update_visibility (MTClosure *mt)
     GtkWidget *ctw;
     GdkScreen *screen;
 
-    ctw = mt_ctw_get_window ();
+    ctw = mt_ctw_get_window (mt);
 
     if (mt->dwell_enabled && mt->dwell_show_ctw) {
 	if (mt->n_screens > 1) {
@@ -78,7 +75,7 @@ mt_ctw_update_sensitivity (MTClosure *mt)
 }
 
 void
-mt_ctw_update_style (gint style)
+mt_ctw_update_style (MTClosure *mt, gint style)
 {
     GtkWidget *icon, *label;
     const gchar *l[] = { "single_l", "double_l", "drag_l", "right_l" };
@@ -116,7 +113,7 @@ mt_ctw_update_style (gint style)
 static void
 ctw_button_cb (GtkToggleButton *button, gpointer data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     if (gtk_toggle_button_get_active (button)) {
 	GSList *group;
@@ -131,6 +128,8 @@ ctw_button_cb (GtkToggleButton *button, gpointer data)
 static gboolean
 ctw_context_menu (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 {
+    MTClosure *mt = data;
+
     if (bev->button == 3) {
 	gtk_menu_popup (GTK_MENU (WID ("popup")),
 			0, 0, 0, 0, bev->button, bev->time);
@@ -143,7 +142,7 @@ ctw_context_menu (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 static void
 ctw_menu_toggled (GtkCheckMenuItem *item, gpointer data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
     GSList *group;
     gint index;
 
@@ -158,7 +157,7 @@ ctw_menu_toggled (GtkCheckMenuItem *item, gpointer data)
 static gboolean
 ctw_delete_cb (GtkWidget *win, GdkEvent *ev, gpointer data)
 {
-    MTClosure *mt = (MTClosure *) data;
+    MTClosure *mt = data;
 
     gconf_client_set_bool (mt->client, OPT_CTW, FALSE, NULL);
 
@@ -166,7 +165,7 @@ ctw_delete_cb (GtkWidget *win, GdkEvent *ev, gpointer data)
 }
 
 GtkWidget *
-mt_ctw_get_window (void)
+mt_ctw_get_window (MTClosure *mt)
 {
     return WID ("ctw");
 }
@@ -175,16 +174,25 @@ gboolean
 mt_ctw_init (MTClosure *mt, gint x, gint y)
 {
     GtkWidget *ctw, *w;
+    GError *error = NULL;
     const gchar *b[] = { "single", "double", "drag", "right" };
     GSList *group;
     gpointer data;
     gint i;
 
-    xml = glade_xml_new (DATADIR "/ctw.glade", NULL, NULL);
-    if (!xml)
-	return FALSE;
+    mt->ui = gtk_builder_new ();
+    gtk_builder_add_from_file (mt->ui, DATADIR "/mousetweaks.ui", &error);
+    if (error) {
+	g_print ("%s\n", error->message);
+	g_error_free (error);
 
-    ctw = mt_ctw_get_window ();
+	g_object_unref (mt->ui);
+	mt->ui = NULL;
+
+	return FALSE;
+    }
+
+    ctw = mt_ctw_get_window (mt);
     gtk_window_stick (GTK_WINDOW (ctw));
     gtk_window_set_keep_above (GTK_WINDOW (ctw), TRUE);
     g_signal_connect (ctw, "delete-event", G_CALLBACK (ctw_delete_cb), mt);
@@ -194,7 +202,7 @@ mt_ctw_init (MTClosure *mt, gint x, gint y)
 	gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (w), FALSE);
 	g_signal_connect (w, "toggled", G_CALLBACK (ctw_button_cb), mt);
 	g_signal_connect (w, "button-press-event",
-			  G_CALLBACK (ctw_context_menu), NULL);
+			  G_CALLBACK (ctw_context_menu), mt);
     }
 
     g_signal_connect (WID ("text"), "toggled", 
@@ -209,7 +217,7 @@ mt_ctw_init (MTClosure *mt, gint x, gint y)
     gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (data), TRUE);
 
     gtk_widget_realize (ctw);
-    mt_ctw_update_style (mt->style);
+    mt_ctw_update_style (mt, mt->style);
     mt_ctw_update_sensitivity (mt);
     mt_ctw_update_visibility (mt);
 

@@ -130,7 +130,7 @@ static void
 dwell_restore_single_click (MTClosure *mt)
 {
     if (mt->dwell_mode == DWELL_MODE_CTW)
-	mt_ctw_set_clicktype (DWELL_CLICK_TYPE_SINGLE);
+	mt_ctw_set_clicktype (mt, DWELL_CLICK_TYPE_SINGLE);
 
     mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);
 }
@@ -490,11 +490,12 @@ global_focus_event (MtListener *listener, gpointer data)
 }
 
 static gboolean
-cursor_overlay_time (guchar  *image,
-		     gint     width,
-		     gint     height,
-		     MtTimer *timer,
-		     gdouble  time)
+cursor_overlay_time (MTClosure *mt,
+		     guchar    *image,
+		     gint       width,
+		     gint       height,
+		     MtTimer   *timer,
+		     gdouble    time)
 {
     GtkWidget *ctw;
     GdkColor c;
@@ -515,7 +516,7 @@ cursor_overlay_time (guchar  *image,
 	return FALSE;
     }
 
-    ctw = mt_ctw_get_window ();
+    ctw = mt_ctw_get_window (mt);
     c = ctw->style->bg[GTK_STATE_SELECTED];
     target = mt_timer_get_target (timer);
 
@@ -534,33 +535,32 @@ cursor_overlay_time (guchar  *image,
 }
 
 static void
-mt_main_update_cursor (MtCursor *cursor,
-		       MtTimer  *timer,
-		       gdouble   time)
+mt_main_update_cursor (MTClosure *mt,
+		       MtTimer   *timer,
+		       gdouble    time)
 {
     guchar *image;
     gushort width, height;
 
-    image = mt_cursor_get_image_copy (cursor);
-    if (image == NULL)
+    image = mt_cursor_get_image_copy (mt->cursor);
+    if (!image)
 	return;
 
-    mt_cursor_get_dimension (cursor, &width, &height);
+    mt_cursor_get_dimension (mt->cursor, &width, &height);
 
-    if (cursor_overlay_time (image, width, height, timer, time)) {
+    if (cursor_overlay_time (mt, image, width, height, timer, time)) {
 	MtCursorManager *manager;
 	MtCursor *new_cursor;
 	const gchar *name;
 	gushort xhot, yhot;
 
-	name = mt_cursor_get_name (cursor);
-	mt_cursor_get_hotspot (cursor, &xhot, &yhot);
+	name = mt_cursor_get_name (mt->cursor);
+	mt_cursor_get_hotspot (mt->cursor, &xhot, &yhot);
 	new_cursor = mt_cursor_new (name, image, width, height, xhot, yhot);
 	manager = mt_cursor_manager_get_default ();
 	mt_cursor_manager_set_cursor (manager, new_cursor);
 	g_object_unref (new_cursor);
     }
-
     g_free (image);
 }
 
@@ -571,8 +571,8 @@ mt_main_timer_tick (MtTimer *timer,
 {
     MTClosure *mt = data;
 
-    if (mt->animate_cursor && mt->cursor != NULL)
-	mt_main_update_cursor (mt->cursor, timer, time);
+    if (mt->animate_cursor && mt->cursor)
+	mt_main_update_cursor (mt, timer, time);
 }
 
 static void
@@ -634,7 +634,7 @@ gconf_value_changed (GConfClient *client,
     }
     else if (g_str_equal (key, OPT_STYLE) && value->type == GCONF_VALUE_INT) {
 	mt->style = gconf_value_get_int (value);
-	mt_ctw_update_style (mt->style);
+	mt_ctw_update_style (mt, mt->style);
     }
     else if (g_str_equal (key, OPT_G_SINGLE) && value->type == GCONF_VALUE_INT)
 	mt->dwell_dirs[DWELL_CLICK_TYPE_SINGLE] = gconf_value_get_int (value);
@@ -793,6 +793,11 @@ mt_closure_free (MTClosure *mt)
     g_object_unref (mt->dwell_timer);
     g_object_unref (mt->service);
     g_object_unref (mt->client);
+
+    if (mt->ui) {
+	gtk_widget_destroy (mt_ctw_get_window (mt));
+	g_object_unref (mt->ui);
+    }
 
     g_slice_free (MTClosure, mt);
 }

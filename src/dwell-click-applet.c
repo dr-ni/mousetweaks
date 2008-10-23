@@ -16,20 +16,19 @@
  */
 
 #include <gtk/gtk.h>
-#include <glade/glade.h>
 #include <panel-applet.h>
 #include <gconf/gconf-client.h>
 #include <dbus/dbus-glib.h>
 
 #include "mt-common.h"
 
-#define WID(n) (glade_xml_get_widget (dd->xml, (n)))
+#define WID(n) (GTK_WIDGET (gtk_builder_get_object (dd->ui, n)))
 
 typedef struct _DwellData DwellData;
 struct _DwellData {
     GConfClient *client;
     DBusGProxy  *proxy;
-    GladeXML    *xml;
+    GtkBuilder  *ui;
     GtkWidget   *box;
     GtkWidget   *ct_box;
     GtkWidget   *enable;
@@ -186,9 +185,11 @@ enable_dwell_exposed (GtkWidget      *widget,
 
     cr = gdk_cairo_create (widget->window);
     cairo_set_source_rgba (cr,
-			   c.red / 65535., c.green / 65535., c.blue / 65535.,
+			   c.red   / 65535.,
+			   c.green / 65535.,
+			   c.blue  / 65535.,
 			   0.5); 
-    cairo_rectangle (cr, x, y, w, (h * dd->elapsed) / dd->delay);
+    cairo_rectangle (cr, x, y, w, h * dd->elapsed / dd->delay);
     cairo_fill (cr);
     cairo_destroy (cr);
 
@@ -219,15 +220,13 @@ button_size_allocate (GtkWidget     *widget,
     DwellData *dd = data;
     GtkWidget *w;
     GdkPixbuf *tmp;
-    const gchar *name;
     gint i;
 
     if (dd->button_width == alloc->width &&
 	dd->button_height == alloc->height)
 	return;
 
-    name = glade_get_widget_name (dd->box);
-    if (g_str_equal (name, "box_vert")) {
+    if (g_str_equal (gtk_widget_get_name (dd->box), "box_vert")) {
 	/* vertical */
 	for (i = 0; i < N_CLICK_TYPES; i++) {
 	    w = WID (img_widgets_v[i]);
@@ -316,10 +315,11 @@ applet_unrealized (GtkWidget *widget, gpointer data)
 	if (dd->click[i])
 	    g_object_unref (dd->click[i]);
 
+    g_object_unref (dd->ui);
     g_object_unref (dd->client);
     g_object_unref (dd->proxy);
-    g_object_unref (dd->xml);
     g_timer_destroy (dd->timer);
+
     g_slice_free (DwellData, dd);
 }
 
@@ -550,31 +550,38 @@ static gboolean
 fill_applet (PanelApplet *applet)
 {
     DwellData *dd;
+    GError *error = NULL;
     GtkWidget *about;
     PanelAppletOrient orient;
     gboolean dwell;
-
-    dd = g_slice_new0 (DwellData);
-    if (!dd)
-	return FALSE;
 
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
 
-    g_set_application_name (_("Dwell Click Applet"));
+    g_set_application_name (_("Dwell Click"));
     gtk_window_set_default_icon_name (MT_ICON_NAME);
 
-    dd->xml = glade_xml_new (DATADIR "/dwell-click-applet.glade", NULL, NULL);
-    if (!dd->xml) {
+    dd = g_slice_new0 (DwellData);
+
+    /* user interface */
+    dd->ui = gtk_builder_new ();
+    gtk_builder_add_from_file (dd->ui, DATADIR "/dwell-click-applet.ui", &error);
+    if (error) {
+	g_print ("%s\n", error->message);
+	g_error_free (error);
+
+	g_object_unref (dd->ui);
 	g_slice_free (DwellData, dd);
+
 	return FALSE;
     }
 
     /* dbus */
     if (!setup_dbus_proxy (dd)) {
-	g_object_unref (dd->xml);
+	g_object_unref (dd->ui);
 	g_slice_free (DwellData, dd);
+
 	return FALSE;
     }
 

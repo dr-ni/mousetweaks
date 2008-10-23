@@ -38,7 +38,6 @@ dnl *** dependencies ***
 
 PKG_CHECK_MODULES(DEPENDENCIES,
 	gtk+-2.0 >= 2.13.1
-	libglade-2.0 >= 2.4.0
 	gconf-2.0 >= 2.16.0
 	dbus-glib-1 >= 0.7
 	cspi-1.0

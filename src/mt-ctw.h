@@ -27,11 +27,13 @@ G_BEGIN_DECLS
 gboolean    mt_ctw_init               (MTClosure *mt,
 				       gint       x,
 				       gint       y);
-GtkWidget * mt_ctw_get_window         (void);
-void        mt_ctw_set_clicktype      (guint      ct);
+GtkWidget * mt_ctw_get_window         (MTClosure *mt);
+void        mt_ctw_set_clicktype      (MTClosure *mt,
+				       guint      ct);
 void        mt_ctw_update_sensitivity (MTClosure *mt);
 void        mt_ctw_update_visibility  (MTClosure *mt);
-void        mt_ctw_update_style       (gint       style);
+void        mt_ctw_update_style       (MTClosure *mt,
+				       gint       style);
 
 G_END_DECLS
 

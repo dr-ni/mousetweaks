@@ -1,3 +1,19 @@
+Version 2.25.1
+--------------
+
+Misc improvements/fixes:
+
+	* Migrated from libglade to GtkBuilder
+
+Bug fixes:
+
+	#556946: Fixed accessibility warning at GDM
+
+New and updated translations:
+
+	- [et] Ivar Smolin
+	- [zh_CN] Funda Wang
+
 Version 2.24.0
 ---------------
 

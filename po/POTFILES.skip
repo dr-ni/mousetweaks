@@ -1,2 +1,5 @@
 data/DwellClick_Factory.server.in
 data/PointerCapture_Factory.server.in
+data/mousetweaks.glade
+data/dwell-click-applet.glade
+data/pointer-capture-applet.glade

@@ -1,6 +1,5 @@
 data/dwell-click-applet.glade
 data/pointer-capture-applet.glade
-data/ctw.glade
 data/DwellClick_Factory.server.in.in
 data/PointerCapture_Factory.server.in.in
 data/DwellClick.xml

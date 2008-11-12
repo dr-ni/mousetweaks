@@ -1,3 +1,8 @@
+2008-11-13  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* src/mt-main.c: (mt_main_generate_button_event): Fix typo and
+	increase double click delay. (Helps changing directories in gftp)
+
 2008-11-09  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
 	Change to new interface descriptions.

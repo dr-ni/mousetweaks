@@ -74,7 +74,7 @@ mt_main_generate_motion_event (GdkScreen *screen, gint x, gint y)
 static void
 mt_main_generate_button_event (MTClosure *mt,
 			       guint      button,
-			       gboolean   type,
+			       gint       type,
 			       gulong     delay)
 {
     gdk_error_trap_push ();
@@ -99,7 +99,7 @@ mt_main_generate_button_event (MTClosure *mt,
 	    XTestFakeButtonEvent (mt->xtst_display,
 				  button, False, delay);
 	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, True, CurrentTime);
+				  button, True, delay);
 	    XTestFakeButtonEvent (mt->xtst_display,
 				  button, False, delay);
 	    break;

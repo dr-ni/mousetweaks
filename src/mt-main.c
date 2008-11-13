@@ -420,6 +420,13 @@ global_motion_event (MtListener *listener,
 {
     MTClosure *mt = data;
 
+    if (mt_timer_is_running (mt->delay_timer)) {
+	if (!below_threshold (mt, event->x, event->y)) {
+	    mt_timer_stop (mt->delay_timer);
+	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
+	}
+    }
+
     if (mt->dwell_enabled) {
 	if (!below_threshold (mt, event->x, event->y) &&
 	    !mt->dwell_gesture_started) {
@@ -439,13 +446,6 @@ global_motion_event (MtListener *listener,
 			       event->x, event->y);
 	    mt->x_old = event->x;
 	    mt->y_old = event->y;
-	}
-    }
-
-    if (mt_timer_is_running (mt->delay_timer)) {
-	if (!below_threshold (mt, event->x, event->y)) {
-	    mt_timer_stop (mt->delay_timer);
-	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 	}
     }
 }

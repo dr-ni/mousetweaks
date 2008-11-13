@@ -1,5 +1,10 @@
 2008-11-13  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
+	* src/mt-main.c: (global_motion_event): Make sure drag-clicks also
+	work if both Dwell Click and Simulated Secondary Click are enabled.
+
+2008-11-13  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
 	* src/mt-main.c: (mt_main_generate_button_event): Fix typo and
 	increase double click delay. (Helps changing directories in gftp)
 

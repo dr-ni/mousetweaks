@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: mousetweaks HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-06 18:33+0000\n"
-"PO-Revision-Date: 2008-09-24 23:47+0300\n"
+"PO-Revision-Date: 2008-10-31 12:04+0200\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -24,6 +24,8 @@ msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of Mousetweaks"
 msgstr ""
+"Ooteajaga klõpsu liikide vahel valimise rakend.\n"
+"See rakend kuulub Hiiretuuningute koosseisu."
 
 #: ../data/dwell-click-applet.glade.h:3
 msgid "Click Type Window"
@@ -40,7 +42,7 @@ msgstr ""
 #: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
 #: ../src/dwell-click-applet.c:642
 msgid "On"
-msgstr ""
+msgstr "Sees"
 
 #: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
 msgid "Right Click"
@@ -327,7 +329,7 @@ msgstr "Hõivamispiirkonna laius pikslites"
 
 #: ../src/mt-main.c:720
 msgid "Assistive Technology Support Is Not Enabled"
-msgstr ""
+msgstr "Abistava tehnika tugi pole lubatud"
 
 #: ../src/mt-main.c:721
 msgid ""
@@ -336,6 +338,11 @@ msgid ""
 "To enable support for assistive technologies and restart your session, press "
 "\"Enable and Log Out\"."
 msgstr ""
+"Hiiretuuningute kasutamiseks peab seansil olema abistava tehnika tugi "
+"lubatud.\n"
+"\n"
+"Abistava tehnika lubamiseks ja seansi uuestikäivitamiseks vajuta \"Luba ja "
+"logi välja\"."
 
 #: ../src/mt-main.c:823
 msgid "Time to wait before a dwell click"
@@ -347,7 +354,7 @@ msgstr ""
 
 #: ../src/mt-main.c:827
 msgid "Dwell mode to use"
-msgstr ""
+msgstr "Kasutatav ooterežiim"
 
 #: ../src/mt-main.c:831
 msgid "Window x position"
@@ -367,7 +374,7 @@ msgstr ""
 
 #: ../src/mt-main.c:839
 msgid "Shut down mousetweaks"
-msgstr ""
+msgstr "Hiiretuuningute seiskamine"
 
 #: ../src/mt-main.c:847
 msgid "- GNOME mousetweaks daemon"
@@ -375,11 +382,11 @@ msgstr "- GNOME hiiretuuningute deemon"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
-msgstr ""
+msgstr "Abiteabe kuvamisel tekkis viga"
 
 #: ../src/mt-common.c:66
 msgid "Enable and Log Out"
-msgstr ""
+msgstr "Luba ja logi välja"
 
 #: ../src/pointer-capture-applet.c:180
 msgid "Locked"
@@ -404,7 +411,7 @@ msgstr "Hiirekursori ajutine lukustamine"
 
 #: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
 msgid "Off"
-msgstr ""
+msgstr "Väljas"
 
 #: ../src/dwell-click-applet.c:335
 msgid "Failed to Launch Mouse Preferences"

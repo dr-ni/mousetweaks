@@ -1,3 +1,7 @@
+2008-12-01 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* NEWS: Prepare 2.25.2 release.
+
 2008-11-13  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
 	* src/mt-main.c: (global_motion_event): Make sure drag-clicks also

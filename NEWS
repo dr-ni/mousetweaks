@@ -1,3 +1,23 @@
+Version 2.25.2
+--------------
+
+Misc improvements/fixes:
+
+	* Increase internal double click delay in dwell mode to
+	  make it compatible to gftp.
+
+Bug fixes:
+
+	#562212: Fix conflict when dwell click and simulated secondary
+	         click are simultaneously running. 
+
+New and updated translations:
+
+    - [cs] Adrian Guniš
+    - [es] Jorge González 
+	- [et] Ivar Smolin
+	- [eu] Iñaki Larrañaga Murgoitio
+
 Version 2.25.1
 --------------
 

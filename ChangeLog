@@ -1,3 +1,9 @@
+2009-01-05 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* data/pointer-capture-applet.schemas.in
+	
+	Improve short and long descriptions
+
 2008-12-15 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* configure.ac:

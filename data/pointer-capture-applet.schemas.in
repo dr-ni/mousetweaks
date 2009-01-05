@@ -8,7 +8,7 @@
         <default>100</default>
         <locale name="C">
           <short>Size of capture area</short>
-          <long>Width of the capture area in pixels</long>
+          <long>Width of the capture area in pixels.</long>
         </locale>
       </schema>
       <schema>
@@ -17,8 +17,8 @@
         <type>int</type>
         <default>1</default>
         <locale name="C">
-          <short>Capture mouse button</short>
-          <long>Mouse button to capture the pointer ("0" = Capture immediately)</long>
+          <short>Capture pointer by clicking mouse button</short>
+          <long>Mouse button to click in order to capture the pointer. 1 for left -, 2 for middle -, 3 for right button; 0 to capture without click.</long>
         </locale>
       </schema>
       <schema>
@@ -27,8 +27,8 @@
         <type>int</type>
         <default>1</default>
         <locale name="C">
-          <short>Release mouse button</short>
-          <long>Mouse button to release the pointer</long>
+          <short>Release pointer by clicking mouse button</short>
+          <long>Mouse button to click in order to release the pointer. 1 for left -, 2 for middle -, 3 for right button; 0 to release without click.</long>
         </locale>
       </schema>
       <schema>
@@ -37,8 +37,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Capture modifier</short>
-          <long>Capture modifier key (Shift)</long>
+          <short>Capture pointer by hitting Shift</short>
+          <long>Capture the pointer if the user hits the Shift key.</long>
         </locale>
       </schema>
       <schema>
@@ -47,8 +47,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Capture modifier</short>
-          <long>Capture modifier key (Alt)</long>
+          <short>Capture pointer by hitting Alt</short>
+          <long>Capture the pointer if the user hits the Alt key.</long>
         </locale>
       </schema>
       <schema>
@@ -57,8 +57,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Capture modifier</short>
-          <long>Capture modifier key (Ctrl)</long>
+          <short>Capture pointer by hitting Ctrl</short>
+          <long>Capture the pointer if the user hits the Ctrl key.</long>
         </locale>
       </schema>
       <schema>
@@ -67,8 +67,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Release modifier</short>
-          <long>Release modifier key (Shift)</long>
+          <short>Release pointer by hitting Shift</short>
+          <long>Release the pointer if the user hits the Shift key.</long>
         </locale>
       </schema>
       <schema>
@@ -77,8 +77,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Release modifier</short>
-          <long>Release modifier key (Alt)</long>
+          <short>Release pointer by hitting Alt</short>
+          <long>Release the pointer if the user hits the Alt key.</long>
         </locale>
       </schema>
       <schema>
@@ -87,8 +87,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Release modifier</short>
-          <long>Release modifier key (Ctrl)</long>
+          <short>Release pointer by hitting Ctrl</short>
+          <long>Release the pointer if the user hits the Ctrl key.</long>
         </locale>
       </schema>
     </schemalist>

@@ -3,6 +3,23 @@ Version 2.25.2
 
 Misc improvements/fixes:
 
+	* Improved descriptions in pointer-capture-applet.schemas
+	
+New and updated translations:
+
+    - [sl] Matej Urbančič
+
+
+Version 2.25.3
+--------------
+
+This version has been skipped.
+
+Version 2.25.2
+--------------
+
+Misc improvements/fixes:
+
 	* Increase internal double click delay in dwell mode to
 	  make it compatible to gftp.
 

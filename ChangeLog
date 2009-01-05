@@ -1,5 +1,12 @@
 2009-01-05 Francesco Fumanti <frfumanti@svn.gnome.org>
 
+	* configure.ac:
+	* README:
+
+	Post release version bump: 2.25.4
+
+2009-01-05 Francesco Fumanti <frfumanti@svn.gnome.org>
+
 	* NEWS: Prepare 2.25.4 release.
 
 2009-01-05 Francesco Fumanti <frfumanti@svn.gnome.org>

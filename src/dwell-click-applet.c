@@ -100,15 +100,14 @@ static void
 enable_dwell_changed (GtkToggleButton *button, gpointer data)
 {
     DwellData *dd = data;
-    gboolean dwell;
 
     /* disable click-type window if it's active */
     gconf_client_set_bool (dd->client, OPT_CTW, FALSE, NULL);
 
-    dwell = gtk_toggle_button_get_active (button);
-    gconf_client_set_bool (dd->client, OPT_DWELL, dwell, NULL);
-
-    gtk_button_set_label (GTK_BUTTON (button), dwell ? _("On") : _("Off"));
+    gconf_client_set_bool (dd->client,
+			   OPT_DWELL,
+			   gtk_toggle_button_get_active (button),
+			   NULL);
 }
 
 static gboolean
@@ -646,7 +645,6 @@ fill_applet (PanelApplet *applet)
 
     dwell = gconf_client_get_bool (dd->client, OPT_DWELL, NULL);
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), dwell);
-    gtk_button_set_label (GTK_BUTTON (dd->enable), dwell ? _("On") : _("Off"));
 
     setup_box (dd);
     gtk_widget_reparent (dd->box, GTK_WIDGET (applet));

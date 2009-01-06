@@ -1,3 +1,13 @@
+2009-01-07  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* src/dwell-click-applet.c:
+	* data/dwell-click-applet.ui:
+	
+	Change the enable button to use a stock icon instead of the
+	On/Off label.
+	
+	Use standard icon name. Bug #545059
+
 2009-01-05 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* configure.ac:

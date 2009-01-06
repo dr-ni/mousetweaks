@@ -1,5 +1,9 @@
 2009-01-07  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
+	* data/*.glade: Remove old .glade files from tree.
+
+2009-01-07  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
 	* data/pointer-capture-applet.ui:
 	* data/mousetweaks.ui:
 	

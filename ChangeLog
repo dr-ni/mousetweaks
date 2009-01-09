@@ -1,3 +1,8 @@
+2009-01-09  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* src/mt-main.c: Use N_() instead of _() for command-line options.
+	Fixes bug #567197.
+
 2009-01-09  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
 
 	reviewed by: Gerd Kohlberger

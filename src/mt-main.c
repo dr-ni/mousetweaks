@@ -820,33 +820,34 @@ main (int argc, char **argv)
     GOptionContext *context;
     GOptionEntry entries[] = {
 	{"enable-dwell", 0, 0, G_OPTION_ARG_NONE, &dwell_click,
-	    _("Enable dwell click"), 0},
+	    N_("Enable dwell click"), 0},
 	{"enable-secondary", 0, 0, G_OPTION_ARG_NONE, &delay_click,
-	    _("Enable simulated secondary click"), 0},
+	    N_("Enable simulated secondary click"), 0},
 	{"dwell-time", 0, 0, G_OPTION_ARG_DOUBLE, &dwell_time,
-	    _("Time to wait before a dwell click"), "[0.2-3.0]"},
+	    N_("Time to wait before a dwell click"), "[0.2-3.0]"},
 	{"secondary-time", 0, 0, G_OPTION_ARG_DOUBLE, &delay_time,
-	    _("Time to wait before a simulated secondary click"), "[0.5-3.0]"},
+	    N_("Time to wait before a simulated secondary click"), "[0.5-3.0]"},
 	{"dwell-mode", 'm', 0, G_OPTION_ARG_STRING, &mode,
-	    _("Dwell mode to use"), "[window|gesture]"},
+	    N_("Dwell mode to use"), "[window|gesture]"},
 	{"show-ctw", 'c', 0, G_OPTION_ARG_NONE, &ctw,
-	    _("Show click type window"), 0},
+	    N_("Show click type window"), 0},
 	{"ctw-x", 'x', 0, G_OPTION_ARG_INT, &pos_x,
-	    _("Window x position"), 0},
+	    N_("Window x position"), 0},
 	{"ctw-y", 'y', 0, G_OPTION_ARG_INT, &pos_y,
-	    _("Window y position"), 0},
+	    N_("Window y position"), 0},
 	{"threshold", 't', 0, G_OPTION_ARG_INT, &threshold,
-	    _("Ignore small pointer movements"), "[0-30]"},
+	    N_("Ignore small pointer movements"), "[0-30]"},
 	{"animate-cursor", 'a', 0, G_OPTION_ARG_NONE, &animate,
-	    _("Show elapsed time as cursor overlay"), 0},
+	    N_("Show elapsed time as cursor overlay"), 0},
 	{"shutdown", 's', 0, G_OPTION_ARG_NONE, &shutdown,
-	    _("Shut down mousetweaks"), 0},
+	    N_("Shut down mousetweaks"), 0},
 	{ NULL }
     };
 
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
+    setlocale (LC_ALL, "");
 
     context = g_option_context_new (_("- GNOME mousetweaks daemon"));
     g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);

@@ -68,7 +68,7 @@
         <default>false</default>
         <locale name="C">
           <short>Release pointer only if Shift is pressed</short>
-          <long>Whether if the Shift key must be pressed with the mouse button set in "release-button" for the pointer to be released from the capture area.</long>
+          <long>Whether if the Shift key must be pressed with the mouse button set in "release_button" for the pointer to be released from the capture area.</long>
         </locale>
       </schema>
       <schema>
@@ -78,7 +78,7 @@
         <default>false</default>
         <locale name="C">
           <short>Release pointer only if Alt is pressed</short>
-          <long>Whether if the Alt key must be pressed with the mouse button set in "release-button" for the pointer to be released from the capture area.</long>
+          <long>Whether if the Alt key must be pressed with the mouse button set in "release_button" for the pointer to be released from the capture area.</long>
         </locale>
       </schema>
       <schema>
@@ -88,7 +88,7 @@
         <default>false</default>
         <locale name="C">
           <short>Release pointer only if Ctrl is pressed</short>
-          <long>Whether if the Ctrl key must be pressed with the mouse button set in "release-button" for the pointer to be released from the capture area.</long>
+          <long>Whether if the Ctrl key must be pressed with the mouse button set in "release_button" for the pointer to be released from the capture area.</long>
         </locale>
       </schema>
     </schemalist>

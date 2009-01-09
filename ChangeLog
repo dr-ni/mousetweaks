@@ -1,3 +1,8 @@
+2009-01-09  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* data/pointer-capture-applet.schemas.in: Improve key
+	descriptions. Bug #552222.
+
 2009-01-07  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
 	* data/*.glade: Remove old .glade files from tree.

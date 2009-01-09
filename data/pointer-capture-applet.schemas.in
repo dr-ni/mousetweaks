@@ -18,7 +18,7 @@
         <default>1</default>
         <locale name="C">
           <short>Capture pointer by clicking mouse button</short>
-          <long>Mouse button to click in order to capture the pointer. 1 for left -, 2 for middle -, 3 for right button; 0 to capture without click.</long>
+          <long>Mouse button to click in order to capture the pointer. Use "1" for left -, "2" for middle -, "3" for right button. Select "0" to capture without a click.</long>
         </locale>
       </schema>
       <schema>
@@ -28,7 +28,7 @@
         <default>1</default>
         <locale name="C">
           <short>Release pointer by clicking mouse button</short>
-          <long>Mouse button to click in order to release the pointer. 1 for left -, 2 for middle -, 3 for right button; 0 to release without click.</long>
+          <long>Mouse button to click in order to release the pointer. Use "1" for left -, "2" for middle -, "3" for right mouse button.</long>
         </locale>
       </schema>
       <schema>
@@ -37,8 +37,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Capture pointer by hitting Shift</short>
-          <long>Capture the pointer if the user hits the Shift key.</long>
+          <short>Capture pointer if Shift is pressed</short>
+          <long>Capture the pointer when it is over the capture area and the Shift key is pressed.</long>
         </locale>
       </schema>
       <schema>
@@ -47,8 +47,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Capture pointer by hitting Alt</short>
-          <long>Capture the pointer if the user hits the Alt key.</long>
+          <short>Capture pointer if Alt is pressed</short>
+          <long>Capture the pointer when it is over the capture area and the Alt key is pressed.</long>
         </locale>
       </schema>
       <schema>
@@ -57,8 +57,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Capture pointer by hitting Ctrl</short>
-          <long>Capture the pointer if the user hits the Ctrl key.</long>
+          <short>Capture pointer if Ctrl is pressed</short>
+          <long>Capture the pointer when it is over the capture area and the Ctrl key is pressed.</long>
         </locale>
       </schema>
       <schema>
@@ -67,8 +67,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Release pointer by hitting Shift</short>
-          <long>Release the pointer if the user hits the Shift key.</long>
+          <short>Pointer release requires Shift to be pressed</short>
+          <long>Release the pointer by clicking while the Shift key is pressed.</long>
         </locale>
       </schema>
       <schema>
@@ -77,8 +77,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Release pointer by hitting Alt</short>
-          <long>Release the pointer if the user hits the Alt key.</long>
+          <short>Pointer release requires Alt to be pressed</short>
+          <long>Release the pointer by clicking while the Alt key is pressed.</long>
         </locale>
       </schema>
       <schema>
@@ -87,8 +87,8 @@
         <type>bool</type>
         <default>false</default>
         <locale name="C">
-          <short>Release pointer by hitting Ctrl</short>
-          <long>Release the pointer if the user hits the Ctrl key.</long>
+          <short>Pointer release requires Ctrl to be pressed</short>
+          <long>Release the pointer by clicking while the Ctrl key is pressed.</long>
         </locale>
       </schema>
     </schemalist>

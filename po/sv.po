@@ -1,153 +1,22 @@
 # Swedish translation for mousetweaks.
-# Copyright (C) 2008 Free Software Foundation, Inc.
+# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
-# Daniel Nylander <po@danielnylander.se>, 2008.
+# Daniel Nylander <po@danielnylander.se>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-11 20:35+0200\n"
-"PO-Revision-Date: 2008-09-11 20:35+0100\n"
+"POT-Creation-Date: 2009-01-12 03:32+0100\n"
+"PO-Revision-Date: 2009-01-12 03:40+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/dwell-click-applet.glade.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Panelprogram för att välja olika typer av uppehållsklick.\n"
-"Del av Musjusteringar"
-
-#: ../data/dwell-click-applet.glade.h:3
-msgid "Click Type Window"
-msgstr "Klicktypsfönster"
-
-#: ../data/dwell-click-applet.glade.h:4
-#: ../data/ctw.glade.h:1
-msgid "Double Click"
-msgstr "Dubbelklick"
-
-#: ../data/dwell-click-applet.glade.h:5
-#: ../data/ctw.glade.h:2
-msgid "Drag Click"
-msgstr "Dragklick"
-
-#: ../data/dwell-click-applet.glade.h:6
-#: ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:821
-msgid "Enable dwell click"
-msgstr "Aktivera uppehållsklick"
-
-#: ../data/dwell-click-applet.glade.h:7
-#: ../src/dwell-click-applet.c:112
-#: ../src/dwell-click-applet.c:642
-msgid "On"
-msgstr "På"
-
-#: ../data/dwell-click-applet.glade.h:8
-#: ../data/ctw.glade.h:4
-msgid "Right Click"
-msgstr "Högerklick"
-
-#: ../data/dwell-click-applet.glade.h:9
-#: ../data/ctw.glade.h:8
-msgid "Single Click"
-msgstr "Enkelklick"
-
-#: ../data/pointer-capture-applet.glade.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr "<b>Fånga muspekare</b>"
-
-#: ../data/pointer-capture-applet.glade.h:2
-msgid "<b>Release Pointer</b>"
-msgstr "<b>Släpp muspekare</b>"
-
-#: ../data/pointer-capture-applet.glade.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr "<b>Storlek på fångstområde</b>"
-
-#: ../data/pointer-capture-applet.glade.h:4
-msgid "A_lt"
-msgstr "A_lt"
-
-#: ../data/pointer-capture-applet.glade.h:5
-msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Område att frysa muspekaren på panelen.\n"
-"Del av Musjusteringar"
-
-#: ../data/pointer-capture-applet.glade.h:7
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-#: ../data/pointer-capture-applet.glade.h:9
-msgid "Modifier:"
-msgstr "Modifierare:"
-
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "Mouse _button:"
-msgstr "Mus_knapp:"
-
-#: ../data/pointer-capture-applet.glade.h:11
-msgid "Mouse b_utton:"
-msgstr "M_usknapp:"
-
-#: ../data/pointer-capture-applet.glade.h:12
-msgid "Pointer Capture Preferences"
-msgstr "Inställningar för muspekarfångst"
-
-#: ../data/pointer-capture-applet.glade.h:13
-msgid "S_hift"
-msgstr "S_kift"
-
-#: ../data/pointer-capture-applet.glade.h:14
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Val av Knapp 0 kommer att fånga muspekaren omedelbart"
-
-#: ../data/pointer-capture-applet.glade.h:15
-msgid "Sh_ift"
-msgstr "Sk_ift"
-
-#: ../data/pointer-capture-applet.glade.h:16
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.glade.h:17
-msgid "_Width:"
-msgstr "_Bredd:"
-
-#: ../data/pointer-capture-applet.glade.h:18
-msgid "pixels"
-msgstr "bildpunkter"
-
-#: ../data/ctw.glade.h:3
-msgid "Dwell Click Type"
-msgstr "Uppehållsklicktyp"
-
-#: ../data/ctw.glade.h:5
-msgid "Show Icons and Text"
-msgstr "Visa ikoner och text"
-
-#: ../data/ctw.glade.h:6
-msgid "Show Icons only"
-msgstr "Visa endast ikoner"
-
-#: ../data/ctw.glade.h:7
-msgid "Show Text only"
-msgstr "Visa endast text"
-
 #: ../data/DwellClick_Factory.server.in.in.h:1
+#: ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
 msgstr "Uppehållsklick"
 
@@ -160,6 +29,7 @@ msgid "Area to lock the pointer"
 msgstr "Område att låsa muspekaren"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
+#: ../src/pointer-capture-applet.c:549
 msgid "Pointer Capture"
 msgstr "Muspekarfångst"
 
@@ -222,12 +92,17 @@ msgstr "Läge för uppehållsklick (\"0\" = Gestläge, \"1\" = Fönsterläge)"
 msgid "Dwell click time"
 msgstr "Tid för uppehållsklick"
 
+#: ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:823
+msgid "Enable dwell click"
+msgstr "Aktivera uppehållsklick"
+
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Aktivera sekundärklick"
 
 #: ../data/mousetweaks.schemas.in.h:14
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:825
 msgid "Enable simulated secondary click"
 msgstr "Aktivera simulerat sekundärklick"
 
@@ -256,7 +131,7 @@ msgid "Secondary click time"
 msgstr "Tid för sekundärklick"
 
 #: ../data/mousetweaks.schemas.in.h:21
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:833
 msgid "Show click type window"
 msgstr "Visa klicktypsfönster"
 
@@ -273,66 +148,82 @@ msgid "Time in seconds before a secondary click is triggered"
 msgstr "Tid i sekunder innan en sekundärklickning utlöses"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture modifier"
-msgstr "Fångstmodifierare"
+msgid "Capture pointer only if Alt is pressed"
+msgstr "Fånga muspekare endast om Alt har tryckts ner"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture modifier key (Alt)"
-msgstr "Tangent för fångstmodifierare (Alt)"
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "Fånga muspekare endast om Ctrl har tryckts ner"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture modifier key (Ctrl)"
-msgstr "Tangent för fångstmodifierare (Ctrl)"
+msgid "Capture pointer only if Shift is pressed"
+msgstr "Fånga muspekare endast om Skift har tryckts ner"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier key (Shift)"
-msgstr "Tangent för fångstmodifierare (Skift)"
+msgid "Mouse button used to capture the pointer"
+msgstr "Musknapp som används för att fånga muspekaren"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture mouse button"
-msgstr "Fånga musknapp"
+msgid "Mouse button used to release the pointer"
+msgstr "Musknapp som används för att släppa muspekaren"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-msgstr "Musknapp för att fånga muspekaren (\"0\" = Fånga omedelbart)"
+msgid "Release pointer only if Alt is pressed"
+msgstr "Släpp muspekare endast om Alt har tryckts ner"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Mouse button to release the pointer"
-msgstr "Musknapp för att släppa muspekaren"
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "Släpp muspekare endast om Ctrl har tryckts ner"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release modifier"
-msgstr "Släppmodifierare"
+msgid "Release pointer only if Shift is pressed"
+msgstr "Släpp muspekare endast om Ctrl har tryckts ner"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier key (Alt)"
-msgstr "Tangent för släppmodifierare (Alt)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Ctrl)"
-msgstr "Tangent för släppmodifierare (Ctrl)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Shift)"
-msgstr "Tangent för släppmodifierare (Skift)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release mouse button"
-msgstr "Släpp musknapp"
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
 msgstr "Storlek på fångstområde"
 
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "This mouse button must be pressed to release the pointer from the capture area. Valid values are \"1\" for left button, \"2\" for middle button, and \"3\" for right button."
+msgstr "Denna musknapp måste tryckas ned för att släppa muspekaren från fångstområdet. Giltiga värden är \"1\" för vänsterknapp, \"2\" för mittenknapp och \"3\" för högerknapp."
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "This mouse button must be pressed while the pointer is over the capture area in order to capture the pointer. Valid values are \"0\" if no button is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right button."
+msgstr "Denna musknapp måste tryckas ned när muspekaren är över fångstområdet för att fånga muspekaren. Giltiga värden är \"0\" om ingen knapp behövs, \"1\" för vänsterknapp, \"2\" för mittenknapp och \"3\" för högerknapp."
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Whether if Alt must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Alt key must be pressed while the mouse button is pressed."
+msgstr "Huruvida Alt måste tryckas ned för att muspekaren ska fångas när den är över fångstområdet. Om detta alternativ är inställt till sant, och en musknapp är inställd i nyckeln \"capture_button\", så måste Alt-tangenten tryckas ned samtidigt som musknappen är nedtryckt."
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Whether if Ctrl must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Ctrl key must be pressed while the mouse button is pressed."
+msgstr "Huruvida Ctrl måste tryckas ned för att muspekaren ska fångas när den är över fångstområdet. Om detta alternativ är inställt till sant, och en musknapp är inställd i nyckeln \"capture_button\", så måste Ctrl-tangenten tryckas ned samtidigt som musknappen är nedtryckt."
+
 #: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
-msgstr "Bredd för fångstområde i bildpunkter"
+msgid "Whether if Shift must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Shift key must be pressed while the mouse button is pressed."
+msgstr "Huruvida Skift måste tryckas ned för att muspekaren ska fångas när den är över fångstområdet. Om detta alternativ är inställt till sant, och en musknapp är inställd i nyckeln \"capture_button\", så måste Skift-tangenten tryckas ned samtidigt som musknappen är nedtryckt."
 
-#: ../src/mt-main.c:722
-msgid "Assistive Technology Support Is Not Enabled"
-msgstr "Hjälpmedelstekniker är inte aktiverade"
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid "Whether if the Alt key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+msgstr "Huruvida Alt-tangenten måste tryckas ned med musknappen som är inställd i \"release_button\" för att muspekaren ska släppas från fångstområdet."
 
-#: ../src/mt-main.c:723
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid "Whether if the Ctrl key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+msgstr "Huruvida Ctrl-tangenten måste tryckas ned med musknappen som är inställd i \"release_button\" för att muspekaren ska släppas från fångstområdet."
+
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid "Whether if the Shift key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+msgstr "Huruvida Skift-tangenten måste tryckas ned med musknappen som är inställd i \"release_button\" för att muspekaren ska släppas från fångstområdet."
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+msgid "Width of the capture area in pixels."
+msgstr "Bredd för fångstområde i bildpunkter."
+
+#: ../src/mt-main.c:719
+msgid "Assistive Technology Support is not Enabled"
+msgstr "Stöd för hjälpmedelsteknik är inte aktiverat"
+
+#: ../src/mt-main.c:720
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -342,39 +233,39 @@ msgstr ""
 "\n"
 "Tryck på \"Aktivera och logga ut\" för att aktivera stöd för hjälpmedelstekniker och starta om din session."
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:827
 msgid "Time to wait before a dwell click"
 msgstr "Tid att vänta innan ett uppehållsklick"
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:829
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tid att vänta innan en simulerad sekundärklickning"
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:831
 msgid "Dwell mode to use"
 msgstr "Läge för uppehållsklick att använda"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:835
 msgid "Window x position"
 msgstr "Fönstrets x-position"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:837
 msgid "Window y position"
 msgstr "Fönstrets y-position"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:839
 msgid "Ignore small pointer movements"
 msgstr "Ignorera mindre muspekarrörelser"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:841
 msgid "Show elapsed time as cursor overlay"
 msgstr "Visa åtgången tid som markörtext"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:843
 msgid "Shut down mousetweaks"
 msgstr "Stäng av musjusteringar"
 
-#: ../src/mt-main.c:849
+#: ../src/mt-main.c:852
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME-musjusteringsdemon"
 
@@ -395,31 +286,110 @@ msgstr "Låst"
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:542
-msgid "Pointer Capture Applet"
-msgstr "Panelprogram för muspekarfångst"
-
-#: ../src/pointer-capture-applet.c:614
+#: ../src/pointer-capture-applet.c:621
 msgid "Capture area"
 msgstr "Fångstområde"
 
-#: ../src/pointer-capture-applet.c:615
+#: ../src/pointer-capture-applet.c:622
 msgid "Temporarily lock the mouse pointer"
 msgstr "Lås muspekaren temporärt"
 
-#: ../src/dwell-click-applet.c:112
-#: ../src/dwell-click-applet.c:642
-msgid "Off"
-msgstr "Av"
-
-#: ../src/dwell-click-applet.c:335
+#: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Misslyckades med att starta musinställningar"
 
-#: ../src/dwell-click-applet.c:565
-msgid "Dwell Click Applet"
-msgstr "Panelprogram för uppehållsklick"
-
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Panelprogram för att välja olika typer av uppehållsklick.\n"
+#~ "Del av Musjusteringar"
+#~ msgid "Click Type Window"
+#~ msgstr "Klicktypsfönster"
+#~ msgid "Double Click"
+#~ msgstr "Dubbelklick"
+#~ msgid "Drag Click"
+#~ msgstr "Dragklick"
+#~ msgid "On"
+#~ msgstr "På"
+#~ msgid "Right Click"
+#~ msgstr "Högerklick"
+#~ msgid "Single Click"
+#~ msgstr "Enkelklick"
+#~ msgid "<b>Capture Pointer</b>"
+#~ msgstr "<b>Fånga muspekare</b>"
+#~ msgid "<b>Release Pointer</b>"
+#~ msgstr "<b>Släpp muspekare</b>"
+#~ msgid "<b>Size of Capture Area</b>"
+#~ msgstr "<b>Storlek på fångstområde</b>"
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+#~ msgid ""
+#~ "Area to freeze the mouse pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Område att frysa muspekaren på panelen.\n"
+#~ "Del av Musjusteringar"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+#~ msgid "Modifier:"
+#~ msgstr "Modifierare:"
+#~ msgid "Mouse _button:"
+#~ msgstr "Mus_knapp:"
+#~ msgid "Mouse b_utton:"
+#~ msgstr "M_usknapp:"
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Inställningar för muspekarfångst"
+#~ msgid "S_hift"
+#~ msgstr "S_kift"
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Val av Knapp 0 kommer att fånga muspekaren omedelbart"
+#~ msgid "Sh_ift"
+#~ msgstr "Sk_ift"
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+#~ msgid "_Width:"
+#~ msgstr "_Bredd:"
+#~ msgid "pixels"
+#~ msgstr "bildpunkter"
+#~ msgid "Dwell Click Type"
+#~ msgstr "Uppehållsklicktyp"
+#~ msgid "Show Icons and Text"
+#~ msgstr "Visa ikoner och text"
+#~ msgid "Show Icons only"
+#~ msgstr "Visa endast ikoner"
+#~ msgid "Show Text only"
+#~ msgstr "Visa endast text"
+#~ msgid "Capture modifier"
+#~ msgstr "Fångstmodifierare"
+#~ msgid "Capture modifier key (Alt)"
+#~ msgstr "Tangent för fångstmodifierare (Alt)"
+#~ msgid "Capture modifier key (Ctrl)"
+#~ msgstr "Tangent för fångstmodifierare (Ctrl)"
+#~ msgid "Capture modifier key (Shift)"
+#~ msgstr "Tangent för fångstmodifierare (Skift)"
+#~ msgid "Capture mouse button"
+#~ msgstr "Fånga musknapp"
+#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+#~ msgstr "Musknapp för att fånga muspekaren (\"0\" = Fånga omedelbart)"
+#~ msgid "Release modifier"
+#~ msgstr "Släppmodifierare"
+#~ msgid "Release modifier key (Alt)"
+#~ msgstr "Tangent för släppmodifierare (Alt)"
+#~ msgid "Release modifier key (Ctrl)"
+#~ msgstr "Tangent för släppmodifierare (Ctrl)"
+#~ msgid "Release modifier key (Shift)"
+#~ msgstr "Tangent för släppmodifierare (Skift)"
+#~ msgid "Release mouse button"
+#~ msgstr "Släpp musknapp"
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Panelprogram för muspekarfångst"
+#~ msgid "Off"
+#~ msgstr "Av"
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Panelprogram för uppehållsklick"
 #~ msgid "Couldn't display help"
 #~ msgstr "Kunde inte visa hjälp"
 #~ msgid "B_utton:"

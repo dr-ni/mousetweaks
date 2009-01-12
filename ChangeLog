@@ -1,3 +1,7 @@
+2009-01-12  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* src/mt-main.c: Add missing <locale.h>. Bug #567483.
+
 2009-01-09  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
 
 	reviewed by: Gerd Kohlberger.

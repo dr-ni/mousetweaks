@@ -19,6 +19,7 @@
 
 #include <signal.h>
 #include <unistd.h>
+#include <locale.h>
 
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>

@@ -1,13 +1,13 @@
 # This file is distributed under the same license as the program package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2008.
+# Matej Urbančič <mateju@svn.gnome.org>, 2008 - 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&amp;component=general\n"
-"POT-Creation-Date: 2008-12-15 20:48+0000\n"
-"PO-Revision-Date: 2008-12-17 18:24+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2009-01-14 19:28+0000\n"
+"PO-Revision-Date: 2009-01-15 16:37+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1
-#: ../src/dwell-click-applet.c:562
+#: ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
 msgstr "Zadržani klik"
 
@@ -96,7 +96,7 @@ msgid "Dwell click time"
 msgstr "Čas zadržanega klika"
 
 #: ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:824
 msgid "Enable dwell click"
 msgstr "Omogoči zadržani klik"
 
@@ -105,7 +105,7 @@ msgid "Enable secondary click"
 msgstr "Omogoči drugi klik"
 
 #: ../data/mousetweaks.schemas.in.h:14
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:826
 msgid "Enable simulated secondary click"
 msgstr "Omogoči simulirani drugi klik"
 
@@ -134,7 +134,7 @@ msgid "Secondary click time"
 msgstr "Čas drugega klika"
 
 #: ../data/mousetweaks.schemas.in.h:21
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:834
 msgid "Show click type window"
 msgstr "Prikaži okno vrste klika"
 
@@ -151,66 +151,82 @@ msgid "Time in seconds before a secondary click is triggered"
 msgstr "Čas v sekundah pred drugim klikom"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture modifier"
-msgstr "Prilagoditev zajemanja"
+msgid "Capture pointer only if Alt is pressed"
+msgstr "Zajem kazalnika se izvede le, če je pritisnjena tipka Alt."
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture modifier key (Alt)"
-msgstr "Tipka prilagoditve zajemanja (Alt)"
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "Zajem kazalnika se izvede le, če je pritisnjena tipka Ctrl."
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture modifier key (Ctrl)"
-msgstr "Tipka prilagoditve zajemanja (Ctrl)"
+msgid "Capture pointer only if Shift is pressed"
+msgstr "Zajem kazalnika se izvede le, če je pritisnjena tipka Shift."
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier key (Shift)"
-msgstr "Tipka prilagoditve zajemanja (Shift)"
+msgid "Mouse button used to capture the pointer"
+msgstr "Gumb miške za zajem kazalnika"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture mouse button"
-msgstr "Gumb miške za zajemanje"
-
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-msgstr "Gumb miške za zajem kazalnika (\"0\" = takojšnji zajem)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Mouse button to release the pointer"
+msgid "Mouse button used to release the pointer"
 msgstr "Gumb miške za sprostitev kazalnika"
 
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Release pointer only if Alt is pressed"
+msgstr "Zajem kazalnika se sprosti le, če je pritisnjena tipka Alt."
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "Zajem kazalnika se sprosti le, če je pritisnjena tipka Ctrl."
+
 #: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release modifier"
-msgstr "Prilagoditev sproščanja"
+msgid "Release pointer only if Shift is pressed"
+msgstr "Zajem kazalnika se sprosti le, če je pritisnjena tipka Shift."
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier key (Alt)"
-msgstr "Tipka prilagoditve sproščanja (Alt)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Ctrl)"
-msgstr "Tipka prilagoditve sproščanja (Ctrl)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Shift)"
-msgstr "Tipka prilagoditve sproščanja (Shift)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release mouse button"
-msgstr "Sprostitev gumba miške"
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
 msgstr "Velikost območja zajemanja"
 
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
-msgstr "Širina območja zajema v točkah"
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid "This mouse button must be pressed to release the pointer from the capture area. Valid values are \"1\" for left button, \"2\" for middle button, and \"3\" for right button."
+msgstr "Za sprostitev kazalnika iz območja zajema zahteva klik posameznega gumba miške. Veljavne vrednosti so \"1\" za levi gumb miške, \"2\" za srednji in \"3\" za desni gumb."
 
-#: ../src/mt-main.c:719
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid "This mouse button must be pressed while the pointer is over the capture area in order to capture the pointer. Valid values are \"0\" if no button is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right button."
+msgstr "Za zajem kazalnika v območju zajema zahteva klik posameznega gumba miške. Veljavne vrednosti so \"0\", če ni treba uporabiti miške, \"1\" za levi gumb miške, \"2\" za srednji in \"3\" za desni gumb."
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid "Whether if Alt must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Alt key must be pressed while the mouse button is pressed."
+msgstr "Možnost omogoča, da mora biti za zajem kazalnika v območju zajema pritisnjena tipka Alt. V primeru, da je možnost omogočena in je izbrana tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko Alt pritisniti medtem, ko je pritisnjena tudi tipka miške."
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid "Whether if Ctrl must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Ctrl key must be pressed while the mouse button is pressed."
+msgstr "Možnost omogoča, da mora biti za zajem kazalnika v območju zajema pritisnjena tipka Ctrl. V primeru, da je možnost omogočena in je izbrana tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko Ctrl pritisniti medtem, ko je pritisnjena tudi tipka miške."
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Whether if Shift must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Shift key must be pressed while the mouse button is pressed."
+msgstr "Možnost omogoča, da mora biti za zajem kazalnika v območju zajema pritisnjena tipka Shift. V primeru, da je možnost omogočena in je izbrana tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko Shift pritisniti medtem, ko je pritisnjena tudi tipka miške."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid "Whether if the Alt key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+msgstr "Možnost omogoča, da je treba za sprostitev kazalnika iz območja zajemanja pritisniti tipko Alt."
+
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid "Whether if the Ctrl key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+msgstr "Možnost omogoča, da je treba za sprostitev kazalnika iz območja zajemanja pritisniti tipko Ctrl."
+
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid "Whether if the Shift key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+msgstr "Možnost omogoča, da je treba za sprostitev kazalnika iz območja zajemanja pritisniti tipko Shift."
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+msgid "Width of the capture area in pixels."
+msgstr "Širina območja zajema v točkah."
+
+#: ../src/mt-main.c:720
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Pomožne tehnologije niso omogočene"
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -220,39 +236,39 @@ msgstr ""
 "\n"
 "V primeru, da jih želite omogočiti in ponovno zagnati sejo, pritisnite \"Omogoči in se odjavi\"."
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:828
 msgid "Time to wait before a dwell click"
 msgstr "Čas postanka pred zadržanim klikom"
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:830
 msgid "Time to wait before a simulated secondary click"
 msgstr "Čas postanka pred navideznim drugim klikom"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:832
 msgid "Dwell mode to use"
 msgstr "Način zadržanega klika"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:836
 msgid "Window x position"
 msgstr "X Lega okna"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:838
 msgid "Window y position"
 msgstr "Y Lega okna"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:840
 msgid "Ignore small pointer movements"
 msgstr "Prezri drobne gibe kazalnika"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:842
 msgid "Show elapsed time as cursor overlay"
 msgstr "Pokaži pretečen čas s prekrivanjem kazalnika."
 
-#: ../src/mt-main.c:843
+#: ../src/mt-main.c:844
 msgid "Shut down mousetweaks"
 msgstr "Izklopi mousetweaks"
 
-#: ../src/mt-main.c:851
+#: ../src/mt-main.c:853
 msgid "- GNOME mousetweaks daemon"
 msgstr " - GNOME demone mousetweaks"
 
@@ -281,20 +297,36 @@ msgstr "Območje zajemanja"
 msgid "Temporarily lock the mouse pointer"
 msgstr "Začasni zaklep kazalnika miške"
 
-#: ../src/dwell-click-applet.c:111
-#: ../src/dwell-click-applet.c:649
-msgid "On"
-msgstr "Vključeno"
-
-#: ../src/dwell-click-applet.c:111
-#: ../src/dwell-click-applet.c:649
-msgid "Off"
-msgstr "Izključeno"
-
-#: ../src/dwell-click-applet.c:335
+#: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Napaka med zaganjanjem lastnosti miške"
 
+#~ msgid "Capture modifier"
+#~ msgstr "Prilagoditev zajemanja"
+#~ msgid "Capture modifier key (Alt)"
+#~ msgstr "Tipka prilagoditve zajemanja (Alt)"
+#~ msgid "Capture modifier key (Ctrl)"
+#~ msgstr "Tipka prilagoditve zajemanja (Ctrl)"
+#~ msgid "Capture modifier key (Shift)"
+#~ msgstr "Tipka prilagoditve zajemanja (Shift)"
+#~ msgid "Capture mouse button"
+#~ msgstr "Gumb miške za zajemanje"
+#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+#~ msgstr "Gumb miške za zajem kazalnika (\"0\" = takojšnji zajem)"
+#~ msgid "Release modifier"
+#~ msgstr "Prilagoditev sproščanja"
+#~ msgid "Release modifier key (Alt)"
+#~ msgstr "Tipka prilagoditve sproščanja (Alt)"
+#~ msgid "Release modifier key (Ctrl)"
+#~ msgstr "Tipka prilagoditve sproščanja (Ctrl)"
+#~ msgid "Release modifier key (Shift)"
+#~ msgstr "Tipka prilagoditve sproščanja (Shift)"
+#~ msgid "Release mouse button"
+#~ msgstr "Sprostitev gumba miške"
+#~ msgid "On"
+#~ msgstr "Vključeno"
+#~ msgid "Off"
+#~ msgstr "Izključeno"
 #~ msgid ""
 #~ "Applet to select different dwell-click types.\n"
 #~ "Part of Mousetweaks"

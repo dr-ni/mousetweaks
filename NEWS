@@ -1,4 +1,27 @@
-Version 2.25.2
+Version 2.25.5
+--------------
+
+Misc improvements/fixes:
+
+	* Remove old glade files.
+	* Improve key descriptions in pointer-capture-applet.schemas.
+
+Bug fixes:
+
+	#545059: Use standard icon for activation button on dwell applet
+	         and use standard icon name.
+	#567197: Use N_() instead of _() for command-line options.
+	#567483: Add missing <locale.h>.
+
+New and updated translations:
+
+    - [es] Jorge González
+    - [he] Yair Hershkovitz
+    - [pt_BR] Leonardo Ferreira Fontenelle
+    - [sl] Matej Urbančič
+    - [sv] Daniel Nylander
+
+Version 2.25.4
 --------------
 
 Misc improvements/fixes:

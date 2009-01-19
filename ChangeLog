@@ -1,3 +1,7 @@
+2009-01-19 Francesco Fumanti <frfumanti@svn.gnome.org>
+
+	* NEWS: Prepare 2.25.5 release.
+
 2009-01-12  Gerd Kohlberger  <gerdk@svn.gnome.org>
 
 	* src/mt-main.c: Add missing <locale.h>. Bug #567483.
@@ -52,7 +56,7 @@
 	* configure.ac:
 	* README:
 
-	Post release version bump: 2.25.4
+	Post release version bump: 2.25.5
 
 2009-01-05 Francesco Fumanti <frfumanti@svn.gnome.org>
 

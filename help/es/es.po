@@ -1,30 +1,33 @@
 # translation of mousetweaks.help.HEAD.po to Español
-# Jorge González <jorgegonz@svn.gnome.org>, 2008.
 # Jorge Gonzalez <jorge.gonzalez@artica.es>, 2008.
+# Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.help.HEAD\n"
-"POT-Creation-Date: 2008-08-25 18:41+0000\n"
-"PO-Revision-Date: 2008-08-26 20:54+0200\n"
+"POT-Creation-Date: 2009-02-02 20:07+0000\n"
+"PO-Revision-Date: 2009-02-03 20:46+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type:  text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:186(None) C/mousetweaks.xml:262(None)
+#: C/mousetweaks.xml:199(None) C/mousetweaks.xml:276(None)
+#| msgid ""
+#| "@@image: 'figures/mouse-a11y-tab.png'; "
+#| "md5=004aa356365e42b802199e0e51f84c15"
 msgid ""
-"@@image: 'figures/mouse-a11y-tab.png'; md5=004aa356365e42b802199e0e51f84c15"
+"@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
 msgstr ""
-"@@image: 'figures/mouse-a11y-tab.png'; md5=004aa356365e42b802199e0e51f84c15"
+"@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:202(None) C/mousetweaks.xml:370(None)
+#: C/mousetweaks.xml:216(None) C/mousetweaks.xml:387(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-ssc-checkbox.png'; "
 "md5=3f19228551e955ba0afda595b4bfd9bb"
@@ -34,28 +37,34 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:278(None) C/mousetweaks.xml:406(None)
+#: C/mousetweaks.xml:293(None) C/mousetweaks.xml:424(None)
+#| msgid ""
+#| "@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
+#| "md5=800e98da4b0ecaa15ed940dcd8fe91be"
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
-"md5=800e98da4b0ecaa15ed940dcd8fe91be"
+"md5=690dde37df60c6953b4c7e9b256c7a43"
 msgstr ""
-" @@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
-"md5=800e98da4b0ecaa15ed940dcd8fe91be"
+"@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
+"md5=690dde37df60c6953b4c7e9b256c7a43"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:312(None) C/mousetweaks.xml:434(None)
-#: C/mousetweaks.xml:730(None)
+#: C/mousetweaks.xml:328(None) C/mousetweaks.xml:453(None)
+#: C/mousetweaks.xml:756(None)
+#| msgid ""
+#| "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
+#| "md5=d14731688177da795de6d7679c6fb8ca"
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-"md5=d14731688177da795de6d7679c6fb8ca"
+"md5=e6eaa0d03499db4e26a56eb1ae57fe8b"
 msgstr ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-"md5=d14731688177da795de6d7679c6fb8ca"
+"md5=e6eaa0d03499db4e26a56eb1ae57fe8b"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:457(None) C/mousetweaks.xml:894(None)
+#: C/mousetweaks.xml:477(None) C/mousetweaks.xml:924(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; "
 "md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
@@ -65,7 +74,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:504(None)
+#: C/mousetweaks.xml:525(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; "
 "md5=c09db81cacad7d507a28b568d238da79"
@@ -75,7 +84,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:669(None)
+#: C/mousetweaks.xml:692(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; "
 "md5=eff4b5afa3ebc4287f244b72924e1fbf"
@@ -85,7 +94,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:694(None)
+#: C/mousetweaks.xml:718(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; "
 "md5=251686214f1a9b6e6cf4cc22a66b4b23"
@@ -95,7 +104,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:709(None)
+#: C/mousetweaks.xml:734(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; "
 "md5=ede77b0adbc7ac3d1ae1187096c8a51f"
@@ -105,7 +114,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:805(None)
+#: C/mousetweaks.xml:832(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; "
 "md5=e939b50cdd7f6ee7937f9fc311f31e58"
@@ -115,17 +124,20 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:831(None)
+#: C/mousetweaks.xml:859(None)
+#| msgid ""
+#| "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
+#| "md5=1978a91f3b51b1a61a9f8fe0852fd8f3"
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
-"md5=1978a91f3b51b1a61a9f8fe0852fd8f3"
+"md5=8d87a631347995c6a770bab22af9b65a"
 msgstr ""
 "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
-"md5=1978a91f3b51b1a61a9f8fe0852fd8f3"
+"md5=8d87a631347995c6a770bab22af9b65a"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:853(None)
+#: C/mousetweaks.xml:882(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; "
 "md5=da1313e8d5588a82dfb8321fc0b65eaa"
@@ -135,7 +147,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:903(None)
+#: C/mousetweaks.xml:934(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; "
 "md5=87295c217ba3b41a685bffbcedf92fb6"
@@ -145,7 +157,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:919(None)
+#: C/mousetweaks.xml:951(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; "
 "md5=a90ff1216071e8c2187be2464cf099ba"
@@ -166,21 +178,31 @@ msgstr ""
 "de accesibilidad para el ratón en el Escritorio GNOME."
 
 #: C/mousetweaks.xml:21(year)
-msgid "2007 - 2008"
-msgstr "2007 - 2008"
+#| msgid "2007 - 2008"
+msgid "2007 - 2009"
+msgstr "2007 - 2009"
 
 #: C/mousetweaks.xml:23(holder)
 msgid "Francesco Fumanti"
 msgstr "Francesco Fumanti"
 
 #: C/mousetweaks.xml:3(para)
+#, fuzzy
+#| msgid ""
+#| "Permission is granted to copy, distribute and/or modify this document "
+#| "under the terms of the GNU Free Documentation License (GFDL), Version 1.2 "
+#| "or any later version published by the Free Software Foundation with no "
+#| "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#| "can find a copy of the GFDL at this <ulink type=\"http\" url=\"http://www."
+#| "fsf.org/licensing/licenses/fdl.html\">link</ulink> or in the the top-"
+#| "level directory of the Mousetweaks source package."
 msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.2 or any "
-"later version published by the Free Software Foundation with no Invariant "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.3 or any "
+"later version published by the Free Software Foundation; with no Invariant "
 "Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"http\" url=\"http://www.fsf.org/licensing/"
-"licenses/fdl.html\">link</ulink> or in the the top-level directory of the "
+"of the GFDL at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/"
+"fdl-1.3.txt\">link</ulink> or in the the top-level directory of the "
 "Mousetweaks source package."
 msgstr ""
 "Se otorga permiso para copiar, distribuir y/o modificar este documento bajo "
@@ -294,14 +316,38 @@ msgid "frfumanti@svn.gnome.org"
 msgstr "frfumanti@svn.gnome.org"
 
 #: C/mousetweaks.xml:42(revnumber)
+#| msgid "version 2.21.5"
+msgid "version 2.25.90"
+msgstr "versión 2.25.90"
+
+#: C/mousetweaks.xml:44(date)
+msgid "February 2nd 2009"
+msgstr "2 de febrero de 2009"
+
+#: C/mousetweaks.xml:47(para)
+#| msgid ""
+#| "The contents of the manual have been upgraded to integrate the "
+#| "improvements done to mousetweaks for GNOME 2.24.<email>Francesco Fumanti "
+#| "&lt;frfumanti@svn.gnome.org&gt;</email>"
+msgid ""
+"The manual has been edited to match the changes done to mousetweaks for "
+"GNOME 2.26. Moreover, the license of the manual has been raised to GFDL 1.3."
+"<email>Francesco Fumanti &lt;frfumanti@svn.gnome.org&gt;</email>"
+msgstr ""
+"El contenido de este manual se ha adaptado a los cambios en los Ajustes "
+"finos del ratón para su integración en GNOME 2.26. La licencia de este "
+"manual se ha convertido a GFDL <email> Francesco Fumanti &lt;frfumanti@svn."
+"gnome.org&gt;</email>."
+
+#: C/mousetweaks.xml:55(revnumber)
 msgid "version 2.24"
 msgstr "versión 2.24"
 
-#: C/mousetweaks.xml:44(date)
+#: C/mousetweaks.xml:57(date)
 msgid "July 2008"
 msgstr "Julio de 2008"
 
-#: C/mousetweaks.xml:47(para)
+#: C/mousetweaks.xml:60(para)
 msgid ""
 "The contents of the manual have been upgraded to integrate the improvements "
 "done to mousetweaks for GNOME 2.24.<email>Francesco Fumanti &lt;"
@@ -311,15 +357,15 @@ msgstr ""
 "finos del ratón para su integración en GNOME 2.24. <email> Francesco Fumanti "
 "&lt;frfumanti@svn.gnome.org&gt;</email>."
 
-#: C/mousetweaks.xml:55(revnumber)
+#: C/mousetweaks.xml:68(revnumber)
 msgid "version 2.21.5"
 msgstr "versión 2.21.5"
 
-#: C/mousetweaks.xml:57(date)
+#: C/mousetweaks.xml:70(date)
 msgid "January 2008"
 msgstr "Enero de 2008"
 
-#: C/mousetweaks.xml:60(para)
+#: C/mousetweaks.xml:73(para)
 msgid ""
 "The contents of the manual have been adapted to the changes applied to "
 "mousetweaks for its integration into GNOME 2.22. Francesco Fumanti "
@@ -329,15 +375,15 @@ msgstr ""
 "finos del ratón para su integración en GNOME 2.22. Francesco Fumanti "
 "<email>frfumanti@svn.gnome.org</email>."
 
-#: C/mousetweaks.xml:68(revnumber)
+#: C/mousetweaks.xml:81(revnumber)
 msgid "version 0.2"
 msgstr "versión 0.2"
 
-#: C/mousetweaks.xml:70(date)
+#: C/mousetweaks.xml:83(date)
 msgid "November 2007"
 msgstr "Noviembre de 2007"
 
-#: C/mousetweaks.xml:73(para)
+#: C/mousetweaks.xml:86(para)
 msgid ""
 "The contents of the manual have been adapted to the default theme of GNOME, "
 "called Clearlooks. This version is included with the release 0.2.6 of "
@@ -348,15 +394,15 @@ msgstr ""
 "Ajustes finos del ratón. Francesco Fumanti <email>francesco.fumanti@gmx.net</"
 "email>."
 
-#: C/mousetweaks.xml:81(revnumber)
+#: C/mousetweaks.xml:94(revnumber)
 msgid "version 0.1"
 msgstr "versión 0.1"
 
-#: C/mousetweaks.xml:83(date)
+#: C/mousetweaks.xml:96(date)
 msgid "October 2007"
 msgstr "Octubre de 2007"
 
-#: C/mousetweaks.xml:86(para)
+#: C/mousetweaks.xml:99(para)
 msgid ""
 "First draft of the manual. Francesco Fumanti <email>francesco.fumanti@gmx."
 "net</email>"
@@ -364,7 +410,7 @@ msgstr ""
 "Primer borrador del manual. Francesco Fumanti <email>francesco.fumanti@gmx."
 "net</email>"
 
-#: C/mousetweaks.xml:92(releaseinfo)
+#: C/mousetweaks.xml:105(releaseinfo)
 msgid ""
 "This manual describes the accessibility tools provided by mousetweaks and "
 "its graphical user interfaces consisting of the accessibility tab of the "
@@ -375,7 +421,7 @@ msgstr ""
 "solapa de accesibilidad del panel del control del ratón y dos "
 "miniaplicaciones del panel."
 
-#: C/mousetweaks.xml:97(contrib)
+#: C/mousetweaks.xml:110(contrib)
 msgid ""
 "To report a bug or make a suggestion regarding the Mousetweaks application "
 "or this manual, please go to GNOME's Bugzilla."
@@ -383,11 +429,11 @@ msgstr ""
 "Para informar de un fallo, o hacer alguna sugerencia concerniente a la "
 "aplicación Ajustes finos del ratón o este manual, vaya al Bugzilla de GNOME."
 
-#: C/mousetweaks.xml:101(title) C/mousetweaks.xml:984(title)
+#: C/mousetweaks.xml:114(title) C/mousetweaks.xml:1016(title)
 msgid "Feedback"
 msgstr "Comentarios"
 
-#: C/mousetweaks.xml:103(para)
+#: C/mousetweaks.xml:116(para)
 msgid ""
 "To report a bug or make a suggestion regarding <application>the mousetweaks "
 "module</application> (i.e.: mouse accessibility), its user interface or its "
@@ -401,20 +447,20 @@ msgstr ""
 "seguimiento de errores de GNOME</ulink>, donde el correspondiente módulo "
 "pronto estará disponible."
 
-#: C/mousetweaks.xml:112(primary)
+#: C/mousetweaks.xml:125(primary)
 msgid "Mousetweaks"
 msgstr "Ajustes finos del ratón"
 
-#: C/mousetweaks.xml:116(primary) C/mousetweaks.xml:388(command)
-#: C/mousetweaks.xml:423(command)
+#: C/mousetweaks.xml:129(primary) C/mousetweaks.xml:405(command)
+#: C/mousetweaks.xml:441(command)
 msgid "mousetweaks"
 msgstr "Ajustes finos del ratón"
 
-#: C/mousetweaks.xml:120(title)
+#: C/mousetweaks.xml:133(title)
 msgid "Introduction"
 msgstr "Introducción"
 
-#: C/mousetweaks.xml:122(para)
+#: C/mousetweaks.xml:135(para)
 msgid ""
 "<application>Mousetweaks</application> provides mouse accessibility "
 "enhancements for the GNOME Desktop. Indeed, it offers the following "
@@ -424,7 +470,7 @@ msgstr ""
 "de accesibilidad para el ratón en el Escritorio GNOME. Efectivamente ofrece "
 "al usuario las siguientes funciones:"
 
-#: C/mousetweaks.xml:128(para)
+#: C/mousetweaks.xml:141(para)
 msgid ""
 "Simulated secondary click: it allows the user to perform a secondary click "
 "(menu click) by holding down the primary mouse button while keeping the "
@@ -434,7 +480,7 @@ msgstr ""
 "secundaria (pulsación de menú) manteniendo pulsado el botón primario del "
 "ratón mientras se mantiene el puntero sin movimiento."
 
-#: C/mousetweaks.xml:134(para)
+#: C/mousetweaks.xml:147(para)
 msgid ""
 "Dwell click: it allows the user to perform the various clicks without "
 "pressing any <hardware>hardware button</hardware>."
@@ -442,7 +488,7 @@ msgstr ""
 "Pulsación al posarse: permite al usuario realizar las diversas pulsaciones "
 "sin tener que pulsar ningún <hardware>botón físico</hardware>."
 
-#: C/mousetweaks.xml:139(para)
+#: C/mousetweaks.xml:152(para)
 msgid ""
 "Pointer capture: it allows the user to lock the pointer in a determined area "
 "of the panel until the user releases it by a predefined keystroke or mouse "
@@ -452,45 +498,61 @@ msgstr ""
 "determinada del panel hasta que el usuario lo libere con una pulsación de "
 "tecla predeterminada o un botón del ratón."
 
-#: C/mousetweaks.xml:147(title)
+#: C/mousetweaks.xml:160(title)
 msgid "How To Start The Functions"
 msgstr "Cómo iniciar las funciones"
 
-#: C/mousetweaks.xml:149(para)
+#: C/mousetweaks.xml:162(para)
+#| msgid ""
+#| "The simulated secondary click and the dwell click depend on the "
+#| "mousetweaks process; however the pointer capture applet depends on the "
+#| "GNOME panel. Consequently, also the methods to start them varies."
 msgid ""
 "The simulated secondary click and the dwell click depend on the mousetweaks "
 "process; however the pointer capture applet depends on the GNOME panel. "
-"Consequently, also the methods to start them varies."
+"Consequently, also the methods to start them vary."
 msgstr ""
 "La pulsación secundaria simulada y la pulsación al posarse dependen de los "
 "procesos de los ajustes finos del ratón; no obstante la miniaplicación de "
 "captura del puntero depende del panel de GNOME. Consecuentemente deben "
 "iniciarse de forma diferente."
 
-#: C/mousetweaks.xml:154(title)
+#: C/mousetweaks.xml:167(title)
 msgid "Starting The Simulated Secondary Click Function"
 msgstr "Iniciar la función de pulsación secundaria simulada"
 
-#: C/mousetweaks.xml:156(para)
-msgid "You can start the simulated secondary click in two ways:"
+#: C/mousetweaks.xml:169(para)
+#, fuzzy
+#| msgid "You can start the simulated secondary click in two ways:"
+msgid "You can start the Simulated Secondary Click in two ways:"
 msgstr "Puede iniciar la pulsación secundaria simulada de dos formas:"
 
-#: C/mousetweaks.xml:160(para)
+#: C/mousetweaks.xml:173(para)
 msgid "from the graphical user interface"
 msgstr "desde la interfaz gráfica de usuario"
 
-#: C/mousetweaks.xml:164(para) C/mousetweaks.xml:235(para)
+#: C/mousetweaks.xml:177(para) C/mousetweaks.xml:249(para)
 msgid "from the command line"
 msgstr "desde la línea de comandos"
 
-#: C/mousetweaks.xml:169(title)
+#: C/mousetweaks.xml:182(title)
 msgid "Start From The Graphical User Interface"
 msgstr "Inicio desde la interfaz gráfica de usuario"
 
-#: C/mousetweaks.xml:171(para)
+#: C/mousetweaks.xml:184(para)
+#, fuzzy
+#| msgid ""
+#| "The graphical user interface to start the simulated secondary click is "
+#| "located in the accessibility tab of the mouse control panel. To open it, "
+#| "choose the menu <menuchoice><guimenu>System</"
+#| "guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Control Center</"
+#| "guimenuitem></menuchoice> and the Control Center will open. By clicking "
+#| "on Mouse in the Control Center, the Mouse control panel will open and "
+#| "after clicking on the Accessibility tab, you will see the following "
+#| "settings:"
 msgid ""
 "The graphical user interface to start the simulated secondary click is "
-"located in the accessibility tab of the mouse control panel. To open it, "
+"located in the Accessibility tab of the Mouse control panel. To open it, "
 "choose the menu <menuchoice><guimenu>System</"
 "guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Control Center</"
 "guimenuitem></menuchoice> and the Control Center will open. By clicking on "
@@ -505,11 +567,11 @@ msgstr ""
 "Ratón en el Centro de control se abrirá el panel de control, después pulse "
 "en la solapa Accesibilidad y verá los siguientes ajustes:"
 
-#: C/mousetweaks.xml:190(para) C/mousetweaks.xml:266(para)
+#: C/mousetweaks.xml:203(para) C/mousetweaks.xml:280(para)
 msgid "Picture of the Mouse control panel"
 msgstr "Imagen del panel de control del ratón"
 
-#: C/mousetweaks.xml:194(para)
+#: C/mousetweaks.xml:207(para)
 msgid ""
 "To start the simulated secondary click function, put a checkmark into the "
 "checkbox that says:"
@@ -517,21 +579,23 @@ msgstr ""
 "Para iniciar la función de pulsación secundaria del ratón, marque la casilla "
 "de verificación que dice:"
 
-#: C/mousetweaks.xml:197(quote)
-msgid "Trigger secondary secondary click by holding down the primary button"
+#: C/mousetweaks.xml:210(quote)
+#, fuzzy
+#| msgid "Trigger secondary secondary click by holding down the primary button"
+msgid "Trigger secondary click by holding down the primary button"
 msgstr "Disparar la pulsación secundaria al mantener pulsado el botón primario"
 
-#: C/mousetweaks.xml:206(para)
+#: C/mousetweaks.xml:220(para)
 msgid "Picture of the checkbox to start the simulated secondary click"
 msgstr ""
 "Imagen de la casilla de verificación para iniciar la pulsación secundaria "
 "simulada"
 
-#: C/mousetweaks.xml:213(title) C/mousetweaks.xml:289(title)
+#: C/mousetweaks.xml:227(title) C/mousetweaks.xml:304(title)
 msgid "Start From The Command Line"
 msgstr "Inicio desde la línea de comandos"
 
-#: C/mousetweaks.xml:215(para)
+#: C/mousetweaks.xml:229(para)
 msgid ""
 "To start the simulated secondary click from the command line, open the "
 "<application>Terminal</application> and type the following:"
@@ -539,40 +603,49 @@ msgstr ""
 "Para iniciar la pulsación secundaria simulada desde la línea de comandos, "
 "abra el <application>Terminal</application> y escriba lo siguiente:"
 
-#: C/mousetweaks.xml:220(parameter)
+#: C/mousetweaks.xml:234(parameter)
 msgid "--enable-secondary"
 msgstr "--enable-secondary"
 
-#: C/mousetweaks.xml:219(command) C/mousetweaks.xml:295(command)
+#: C/mousetweaks.xml:233(command) C/mousetweaks.xml:310(command)
 msgid "mousetweaks <placeholder-1/>"
 msgstr "mousetweaks <placeholder-1/>"
 
-#: C/mousetweaks.xml:225(title)
+#: C/mousetweaks.xml:239(title)
 msgid "Starting The Dwell Click Function"
 msgstr "Iniciar la función de pulsación al posarse"
 
-#: C/mousetweaks.xml:227(para)
+#: C/mousetweaks.xml:241(para)
 msgid "You can start the dwell click function in three ways:"
 msgstr "Puede iniciar la función de pulsación al posarse de tres formas:"
 
-#: C/mousetweaks.xml:231(para)
+#: C/mousetweaks.xml:245(para)
 msgid "from the Accessibility tab of the Mouse control panel"
 msgstr "desde la solapa Accesibilidad del panel de control del ratón"
 
-#: C/mousetweaks.xml:239(para)
+#: C/mousetweaks.xml:253(para)
 msgid "from the On/Off button on the Dwell Click panel applet"
 msgstr ""
 "desde el botón Activar/Desactivar en la miniaplicación del panel Pulsación "
 "al posarse"
 
-#: C/mousetweaks.xml:244(title)
+#: C/mousetweaks.xml:258(title)
 msgid "Start From The Accessibility tab of the Mouse control panel"
 msgstr "Iniciar desde la solapa Accesibilidad en el panel de control del ratón"
 
-#: C/mousetweaks.xml:247(para)
+#: C/mousetweaks.xml:261(para)
+#, fuzzy
+#| msgid ""
+#| "The graphical user interface to start the dwell click is located in the "
+#| "accessibility tab of the mouse control panel. To open it, choose the menu "
+#| "<menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</"
+#| "guisubmenu><guimenuitem>Control Center</guimenuitem></menuchoice> and the "
+#| "Control Center will open. By clicking on Mouse in the Control Center, the "
+#| "Mouse control panel will open and after clicking on the Accessibility "
+#| "tab, you will see the following settings:"
 msgid ""
 "The graphical user interface to start the dwell click is located in the "
-"accessibility tab of the mouse control panel. To open it, choose the menu "
+"Accessibility tab of the Mouse control panel. To open it, choose the menu "
 "<menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</"
 "guisubmenu><guimenuitem>Control Center</guimenuitem></menuchoice> and the "
 "Control Center will open. By clicking on Mouse in the Control Center, the "
@@ -587,7 +660,7 @@ msgstr ""
 "botón Ratón del Centro de control, se abrirá el panel de control del ratón y "
 "después de pulsar en la solapa Accesibilidad, verá los siguientes ajustes:"
 
-#: C/mousetweaks.xml:270(para)
+#: C/mousetweaks.xml:284(para)
 msgid ""
 "To start the dwell click function, put a checkmark into the checkbox that "
 "says:"
@@ -595,17 +668,17 @@ msgstr ""
 "Para iniciar la función de pulsación al posarse, marque la casilla de "
 "verificación que dice:"
 
-#: C/mousetweaks.xml:273(quote)
+#: C/mousetweaks.xml:287(quote)
 msgid "Initiate click when stopping pointer movement"
 msgstr "Iniciar la pulsación al parar el movimiento del puntero"
 
-#: C/mousetweaks.xml:282(para)
+#: C/mousetweaks.xml:297(para)
 msgid "Picture of the checkbox to start the dwell click function"
 msgstr ""
 "Imagen de una casilla de verificación donde se va a iniciar la función de "
 "pulsación al posarse"
 
-#: C/mousetweaks.xml:291(para)
+#: C/mousetweaks.xml:306(para)
 msgid ""
 "To start the dwell click function and show the click type window from the "
 "command line, open the <application>Terminal</application> and type the "
@@ -615,23 +688,31 @@ msgstr ""
 "de pulsación desde la línea de comandos, abra una <application>Terminal</"
 "application> y escriba lo siguiente:"
 
-#: C/mousetweaks.xml:295(parameter)
+#: C/mousetweaks.xml:310(parameter)
 msgid "--enable-dwell --show-ctw"
 msgstr "--enable-dwell --show-ctw"
 
-#: C/mousetweaks.xml:300(title)
+#: C/mousetweaks.xml:315(title)
 msgid "Start From The On/Off button On The Dwell Click Panel Applet"
 msgstr ""
 "Iniciar desde el botón Activar/Desactivar en la miniaplicación del panel "
 "Pulsación al posarse"
 
-#: C/mousetweaks.xml:303(para)
+#: C/mousetweaks.xml:318(para)
+#, fuzzy
+#| msgid ""
+#| "It is possible to start the Dwell Click by simply resting (dwelling) for "
+#| "a little delay with the pointer on the On/Off button of the Dwell Click "
+#| "panel applet. The On/Off button provides feedback of the passing dwell "
+#| "time by getting filled with another colour. When it is completely filled, "
+#| "the button turns back to its original color and the dwell click gets "
+#| "started."
 msgid ""
 "It is possible to start the Dwell Click by simply resting (dwelling) for a "
 "little delay with the pointer on the On/Off button of the Dwell Click panel "
 "applet. The On/Off button provides feedback of the passing dwell time by "
-"getting filled with another colour. When it is completely filled, the button "
-"turns back to its original color and the dwell click gets started."
+"filling its frame with another colour. When the frame is completely filled, "
+"the button displays its active state and the dwell click gets started."
 msgstr ""
 "Es posible iniciar la Pulsación al posarse simplemente posando durante "
 "cierto tiempo el puntero en el botón Activar/Desactivar de la miniaplicación "
@@ -640,19 +721,19 @@ msgstr ""
 "está completamente llena, el botón vuelve a su color original y la pulsación "
 "al posarse se inicia."
 
-#: C/mousetweaks.xml:316(para) C/mousetweaks.xml:438(para)
-#: C/mousetweaks.xml:734(para)
+#: C/mousetweaks.xml:332(para) C/mousetweaks.xml:457(para)
+#: C/mousetweaks.xml:760(para)
 msgid "Picture showing the click type applet at the right of the GNOME menus"
 msgstr ""
 "Imagen mostrando la miniaplicación Tipo de pulsación en la parte derecha de "
 "los menús de GNOME"
 
-#: C/mousetweaks.xml:323(link) C/mousetweaks.xml:331(title)
-#: C/mousetweaks.xml:888(link)
+#: C/mousetweaks.xml:339(link) C/mousetweaks.xml:347(title)
+#: C/mousetweaks.xml:917(link)
 msgid "Starting The Pointer Capture Function"
 msgstr "Inicio de la función de captura del puntero"
 
-#: C/mousetweaks.xml:321(remark)
+#: C/mousetweaks.xml:337(remark)
 msgid ""
 "For instructions about how to install the Dwell Click applet on the GNOME "
 "panel, please have a look at <placeholder-1/> where you can see how it is "
@@ -664,11 +745,17 @@ msgstr ""
 "cómo se hace para la miniaplicación del panel Captura del puntero. El "
 "procedimiento para la miniaplicación Pulsación al posarse es similar."
 
-#: C/mousetweaks.xml:333(para)
+#: C/mousetweaks.xml:349(para)
+#, fuzzy
+#| msgid ""
+#| "As the pointer capture applet comes in the from of a panel applet, its "
+#| "starting method has to follow the rules dictated by the GNOME panel. "
+#| "Thus, to start the pointer capture function, you only have to install it "
+#| "on the panel and it will automatically run."
 msgid ""
-"As the pointer capture applet comes in the from of a panel applet, its "
+"As the Pointer Capture applet comes in the from of a panel applet, its "
 "starting method has to follow the rules dictated by the GNOME panel. Thus, "
-"to start the pointer capture function, you only have to install it on the "
+"to start the Pointer Capture function, you only have to install it on the "
 "panel and it will automatically run."
 msgstr ""
 "Ya que la miniaplicación de captura del puntero es una miniaplicación del "
@@ -676,7 +763,7 @@ msgstr ""
 "Por ello, para iniciar la función de captura del puntero sólo tiene que "
 "instalarla en el panel y se ejecutará automáticamente."
 
-#: C/mousetweaks.xml:338(para)
+#: C/mousetweaks.xml:354(para)
 msgid ""
 "In order to add it to the panel, proceed as you do with any panel applet: "
 "perform a secondary click on the panel to open its contextual menu, choose "
@@ -689,21 +776,27 @@ msgstr ""
 "guimenuitem> y obtendrá la ventana que le muestra todas las miniaplicaciones "
 "que se pueden instalar en el panel de GNOME."
 
-#: C/mousetweaks.xml:344(para)
+#: C/mousetweaks.xml:360(para)
+#, fuzzy
+#| msgid ""
+#| "By double clicking on the <guilabel>Pointer Capture</guilabel> item in "
+#| "the Add to Panel window, the pointer capture applet will be added to the "
+#| "panel, and it will run until it is removed from the GNOME panel; even "
+#| "across."
 msgid ""
 "By double clicking on the <guilabel>Pointer Capture</guilabel> item in the "
-"Add to Panel window, the pointer capture applet will be added to the panel, "
-"and it will run until it is removed from the GNOME panel; even across."
+"Add to Panel window, the Pointer Capture applet will be added to the panel, "
+"and it will run until it is removed from the GNOME panel."
 msgstr ""
 "Al pulsar dos veces en el elemento <guilabel>Captura de puntero</guilabel> "
 "de la ventana Añadir al panel..., la miniaplicación de captura del puntero "
 "se añadirá al panel y funcionará hasta que se quite del panel de GNOME."
 
-#: C/mousetweaks.xml:352(title)
+#: C/mousetweaks.xml:368(title)
 msgid "How To Quit The Functions"
 msgstr "Cómo deshabilitar las funciones"
 
-#: C/mousetweaks.xml:354(para)
+#: C/mousetweaks.xml:370(para)
 msgid ""
 "Similar to the starting of the functions, their quitting also depends on the "
 "feature that you want to quit."
@@ -711,15 +804,17 @@ msgstr ""
 "De forma similar al inicio de las funciones, la desactivación también "
 "depende de la característica que quiera deshabilitar."
 
-#: C/mousetweaks.xml:358(title)
+#: C/mousetweaks.xml:374(title)
 msgid "Quitting The Simulated Secondary Click"
 msgstr "Salir de la pulsación secundaria simulada"
 
-#: C/mousetweaks.xml:360(para)
-msgid "It is possible to quit the simulated secondary click in two ways:"
+#: C/mousetweaks.xml:376(para)
+#, fuzzy
+#| msgid "It is possible to quit the simulated secondary click in two ways:"
+msgid "It is possible to quit the Simulated Secondary Click in two ways:"
 msgstr "Se puede quitar la pulsación secundaria simulada de dos formas:"
 
-#: C/mousetweaks.xml:365(para) C/mousetweaks.xml:401(para)
+#: C/mousetweaks.xml:381(para) C/mousetweaks.xml:418(para)
 msgid ""
 "By removing the mark from the corresponding checkbox in the control panel of "
 "<application>Mousetweaks</application>."
@@ -727,13 +822,15 @@ msgstr ""
 "Quitando la marca de la casilla de verificación correspondiente en el panel "
 "de control de los <application>Ajustes finos del ratón</application>."
 
-#: C/mousetweaks.xml:374(para)
-msgid "Picture of the checkbox to start the right click feature"
+#: C/mousetweaks.xml:391(para)
+#, fuzzy
+#| msgid "Picture of the checkbox to start the right click feature"
+msgid "Picture of the checkbox to start the simulated right click feature"
 msgstr ""
 "Imagen de la casilla de verificación para iniciar la característica de "
 "pulsación con el botón derecho"
 
-#: C/mousetweaks.xml:379(para)
+#: C/mousetweaks.xml:396(para)
 msgid ""
 "Please refer to <link linkend=\"mouse-a11y-start-ssc-by-gui\">Start The "
 "Simulated Secondary Click From The Graphical User Interface</link> to locate "
@@ -743,29 +840,29 @@ msgstr ""
 "secundaria simulada desde la interfaz gráfica de usuario</link> para "
 "localizar la casilla de verificación."
 
-#: C/mousetweaks.xml:386(para) C/mousetweaks.xml:421(para)
+#: C/mousetweaks.xml:403(para) C/mousetweaks.xml:439(para)
 msgid "By typing the following command at the command line:"
 msgstr "Escribiendo el siguiente comando en la línea de comandos:"
 
-#: C/mousetweaks.xml:389(parameter) C/mousetweaks.xml:424(parameter)
+#: C/mousetweaks.xml:406(parameter) C/mousetweaks.xml:442(parameter)
 msgid "--shutdown"
 msgstr "--shutdown"
 
-#: C/mousetweaks.xml:395(title)
+#: C/mousetweaks.xml:412(title)
 msgid "Quitting The Dwell Click"
 msgstr "Salir de la pulsación al posarse"
 
-#: C/mousetweaks.xml:397(para)
+#: C/mousetweaks.xml:414(para)
 msgid "It is possible to quit the dwell click in three ways:"
 msgstr "Se puede quitar la pulsación al posarse de tres formas:"
 
-#: C/mousetweaks.xml:410(para)
+#: C/mousetweaks.xml:428(para)
 msgid "Picture of the checkbox to start the buttonless click feature"
 msgstr ""
 "Imagen de la casilla de verificación donde se va a iniciar la característica "
 "sin botones"
 
-#: C/mousetweaks.xml:415(para)
+#: C/mousetweaks.xml:433(para)
 msgid ""
 "Please refer to <link linkend=\"mouse-a11y-start-dwell-by-gui\">Start The "
 "Dwell Click From The Graphical User Interface</link> to locate the checkbox."
@@ -774,22 +871,34 @@ msgstr ""
 "al posarse desde la interfaz gráfica de usuario</link> para localizar la "
 "casilla de verificación."
 
-#: C/mousetweaks.xml:428(para)
+#: C/mousetweaks.xml:446(para)
+#, fuzzy
+#| msgid ""
+#| "If the Dwell Click applet has been installed on the GNOME panel, the "
+#| "dwell click can be disabled by dwelling with the pointer on its On/Off "
+#| "button."
 msgid ""
-"If the Dwell Click applet has been installed on the GNOME panel, the dwell "
-"click can be disabled by dwelling with the pointer on its On/Off button."
+"If the Dwell Click applet has been installed on the GNOME panel, the Dwell "
+"Click can be disabled by dwelling with the pointer on its On/Off button."
 msgstr ""
 "Si la miniaplicación Pulsación al posarse se ha instalado en el panel de "
 "GNOME, se puede desactivar la pulsación al posarse posando el puntero en el "
 "botón Activar/Desactivar."
 
-#: C/mousetweaks.xml:447(title)
+#: C/mousetweaks.xml:466(title)
 msgid "Quitting The Pointer Capture Function"
 msgstr "Salir de la captura del puntero"
 
-#: C/mousetweaks.xml:449(para)
+#: C/mousetweaks.xml:468(para)
+#, fuzzy
+#| msgid ""
+#| "As the pointer capture function comes in the form of a panel applet, you "
+#| "have to quit it the same way that you do it with other applets: you have "
+#| "to remove it from the GNOME panel. To do it, perform a right click on the "
+#| "handle of the applet and choose <guimenuitem>Remove From Panel</"
+#| "guimenuitem> from its contextual menu."
 msgid ""
-"As the pointer capture function comes in the form of a panel applet, you "
+"As the Pointer Capture function comes in the form of a panel applet, you "
 "have to quit it the same way that you do it with other applets: you have to "
 "remove it from the GNOME panel. To do it, perform a right click on the "
 "handle of the applet and choose <guimenuitem>Remove From Panel</guimenuitem> "
@@ -801,14 +910,14 @@ msgstr ""
 "aplicación y elija <guimenuitem>Quitar del panel</guimenuitem> del menú "
 "contextual."
 
-#: C/mousetweaks.xml:461(para) C/mousetweaks.xml:898(para)
+#: C/mousetweaks.xml:481(para) C/mousetweaks.xml:928(para)
 msgid ""
 "Picture showing the pointer capture area (green) with its contextual menu"
 msgstr ""
 "Imagen mostrando el área de captura del puntero (en verde) con su menú "
 "contextual"
 
-#: C/mousetweaks.xml:467(para)
+#: C/mousetweaks.xml:487(para)
 msgid ""
 "When using the default GNOME theme, the handle of the Pointer Capture applet "
 "are the two vertical dotted lines at the left of the pointer capture area."
@@ -817,11 +926,11 @@ msgstr ""
 "miniaplicación Captura del puntero son las dos líneas verticales punteadas a "
 "la izquierda del área de captura."
 
-#: C/mousetweaks.xml:475(title)
+#: C/mousetweaks.xml:495(title)
 msgid "Description Of The Functions"
 msgstr "Descripción de las funciones"
 
-#: C/mousetweaks.xml:477(para)
+#: C/mousetweaks.xml:497(para)
 msgid ""
 "Mousetweaks offers three pointer accessibility functions to the user. In "
 "this section you will find the description of the three functions: "
@@ -831,11 +940,11 @@ msgstr ""
 "usuario. En esta sección encontrará las descripciones para las tres "
 "funciones: <placeholder-1/>"
 
-#: C/mousetweaks.xml:495(title)
+#: C/mousetweaks.xml:515(title)
 msgid "Simulated Secondary Click Description"
 msgstr "Descripción de la pulsación secundaria simulada"
 
-#: C/mousetweaks.xml:497(para)
+#: C/mousetweaks.xml:517(para)
 msgid ""
 "When the user activates this feature, he will be able to perform secondary "
 "clicks by using the <mousebutton>primary mouse button</mousebutton>. This is "
@@ -847,18 +956,18 @@ msgstr ""
 "mousebutton>. Esto es especialmente útil para los usuarios que sólo tienen "
 "un <mousebutton>botón de ratón</mousebutton> a su disposición."
 
-#: C/mousetweaks.xml:508(para)
+#: C/mousetweaks.xml:529(para)
 msgid ""
 "Picture showing the settings belonging to the Simulated Secondary Click."
 msgstr ""
 "Imagen que muestra los ajustes pertenecientes a la Pulsación secundaria "
 "simulada."
 
-#: C/mousetweaks.xml:514(title) C/mousetweaks.xml:640(title)
+#: C/mousetweaks.xml:535(title) C/mousetweaks.xml:662(title)
 msgid "How Does It Work?"
 msgstr "¿Cómo funciona?"
 
-#: C/mousetweaks.xml:516(para)
+#: C/mousetweaks.xml:537(para)
 msgid ""
 "Let us assume that the user has enabled the Simulated Secondary Click "
 "feature."
@@ -866,7 +975,7 @@ msgstr ""
 "Se asume que el usuario ha activado la característica Pulsación secundaria "
 "del ratón."
 
-#: C/mousetweaks.xml:519(para)
+#: C/mousetweaks.xml:540(para)
 msgid ""
 "To perform a simulated secondary click, the user has to keep the "
 "<mousebutton>primary mouse button</mousebutton> pressed without moving the "
@@ -878,18 +987,24 @@ msgstr ""
 "tiempo determinado y sin moverlo. Tan pronto como haya pasado el tiempo "
 "determinado se activará la pulsación secundaria simulada."
 
-#: C/mousetweaks.xml:524(para)
+#: C/mousetweaks.xml:545(para)
+#, fuzzy
+#| msgid ""
+#| "While doing the simulated secondary click gesture, mousetweaks will fill "
+#| "the arrow of the pointer with another color to give feedback that it is "
+#| "counting down the time before issuing the simulated secondary click."
 msgid ""
-"While doing the simulated secondary click gesture, mousetweaks will fill the "
-"arrow of the pointer with another color to give feedback that it is counting "
-"down the time before issuing the simulated secondary click."
+"While the <mousebutton>primary mouse button</mousebutton> is being held "
+"pressed, mousetweaks will fill the arrow of the pointer with another color "
+"to give feedback that it is counting down the time before issuing the "
+"simulated secondary click."
 msgstr ""
 "Mientras se realiza el gesto de la pulsación secundaria simulada, los "
 "ajustes finos del ratón rellenarán la flecha del puntero de otro color para "
 "dar contexto de que se está llevando a cabo una cuenta atrás antes de "
 "disparar la pulsación secundaria del ratón."
 
-#: C/mousetweaks.xml:530(para)
+#: C/mousetweaks.xml:551(para)
 msgid ""
 "Under some circumstances, it happens that the feedback on the arrow of the "
 "pointer does not work. The Simulated Secondary Click is issued nevertheless."
@@ -897,11 +1012,11 @@ msgstr ""
 "Bajo ciertas circunstancias sucede que no funciona la acción de la flecha "
 "del puntero. En cualquier caso se ejecuta la pulsación secundaria simulada."
 
-#: C/mousetweaks.xml:537(title)
+#: C/mousetweaks.xml:558(title)
 msgid "The Delay Slider"
 msgstr "El deslizador de retardo"
 
-#: C/mousetweaks.xml:539(para)
+#: C/mousetweaks.xml:560(para)
 msgid ""
 "How long the user has to hold the <mousebutton>primary mouse button</"
 "mousebutton> pressed, is determined by the <guilabel>Delay</guilabel> slider "
@@ -913,11 +1028,11 @@ msgstr ""
 "<guilabel>Retardo</guilabel> ubicado bajo la casilla de verificación. Usando "
 "este deslizador, el usuario puede elegir el retoardo más apropiado para él."
 
-#: C/mousetweaks.xml:547(title)
+#: C/mousetweaks.xml:568(title)
 msgid "Motion Threshold"
 msgstr "Umbral de movimiento"
 
-#: C/mousetweaks.xml:549(para)
+#: C/mousetweaks.xml:570(para)
 msgid ""
 "People that have trouble to keep the pointer completely motionless can use "
 "the Motion Threshold slider of the Dwell Click feature. This setting makes "
@@ -936,7 +1051,7 @@ msgstr ""
 "treshold\">Umbral de movimiento de la característica Pulsación al posarse</"
 "link> para obtener más información sobre ello."
 
-#: C/mousetweaks.xml:559(para)
+#: C/mousetweaks.xml:580(para)
 msgid ""
 "The <guilabel>Motion Threshold</guilabel> slider that is located under the "
 "<guilabel>Dwell Click</guilabel> feature is also effective for the "
@@ -949,16 +1064,26 @@ msgstr ""
 "incluso si la característica <guilabel>Pulsación al posarse</guilabel> está "
 "desactivada."
 
-#: C/mousetweaks.xml:568(title)
+#: C/mousetweaks.xml:589(title)
 msgid "Differences To The Normal Secondary Click"
 msgstr "Diferencias con la pulsación secundaria normal"
 
-#: C/mousetweaks.xml:570(para)
+#: C/mousetweaks.xml:591(para)
+#, fuzzy
+#| msgid ""
+#| "As the simulated secondary click is not able to discard the "
+#| "<mousebutton>mouse button down</mousebutton> gesture from the "
+#| "<mousebutton>primary button press</mousebutton> of the user, it issues a "
+#| "primary click before issuing the secondary click. In other words, each "
+#| "secondary click performed by this function is immediately preceded by a "
+#| "primary click, and this makes it behave a bit differently to the normal "
+#| "secondary click performed by the <mousebutton>secondary mouse button</"
+#| "mousebutton>. For example:"
 msgid ""
-"As the simulated secondary click is not able to discard the "
-"<mousebutton>mouse button down</mousebutton> gesture from the "
+"As the Simulated Secondary Click is not able to discard the "
+"<mousebutton>mouse button down</mousebutton> event from the "
 "<mousebutton>primary button press</mousebutton> of the user, it issues a "
-"primary click before issuing the secondary click. In other words, each "
+"primary click just before issuing the secondary click. In other words, each "
 "secondary click performed by this function is immediately preceded by a "
 "primary click, and this makes it behave a bit differently to the normal "
 "secondary click performed by the <mousebutton>secondary mouse button</"
@@ -974,7 +1099,7 @@ msgstr ""
 "realizada por el <mousebutton>botón secundario del ratón</mousebutton>. Por "
 "ejemplo:"
 
-#: C/mousetweaks.xml:581(para)
+#: C/mousetweaks.xml:602(para)
 msgid ""
 "It is not possible to perform a secondary click on multiple items because "
 "the primary click issued before the secondary click deselects the items."
@@ -983,7 +1108,7 @@ msgstr ""
 "porque la pulsación primaria realizada antes de la pulsación secundaria "
 "delesecciona los elementos."
 
-#: C/mousetweaks.xml:587(para)
+#: C/mousetweaks.xml:608(para)
 msgid ""
 "When the simulated secondary click is performed on the trash icon on the "
 "panel, not only does the contextual menu appear, but the trash folder does "
@@ -995,7 +1120,7 @@ msgstr ""
 "abre la carpeta de la papelera. (Lo primero es causa de la pulsación "
 "secundaria, lo segundo de la pulsación primaria que la precede.)"
 
-#: C/mousetweaks.xml:596(para)
+#: C/mousetweaks.xml:617(para)
 msgid ""
 "It is not possible to provide a list of all diverging behaviours, because it "
 "depends on the reaction of the application receiving the secondary click "
@@ -1005,7 +1130,7 @@ msgstr ""
 "divergentes porque depende de la reacción de la aplicación que recibe la "
 "pulsación secundaria precedida por una pulsación primaria."
 
-#: C/mousetweaks.xml:601(para)
+#: C/mousetweaks.xml:622(para)
 msgid ""
 "Some users may also be surprised by the consequences of the following: it is "
 "not possible to perform a long motionless primary button click and hold, "
@@ -1016,18 +1141,23 @@ msgstr ""
 "movimiento y mantenerla, sin disparar el botón secundario del ratón. Por "
 "ejemplo:"
 
-#: C/mousetweaks.xml:608(para)
+#: C/mousetweaks.xml:629(para)
+#, fuzzy
+#| msgid ""
+#| "When doing a motionless primary button click and hold on the arrow of a "
+#| "scrollbar, the scrollbar jumps to the bottom after some time. This is in "
+#| "fact the normal behaviour of a secondary click on an arrow of a scrollbar."
 msgid ""
-"When doing a motionless primary button click and hold on the arrow of a "
-"scrollbar, the scrollbar jumps to the bottom after some time. This is in "
-"fact the normal behaviour of a secondary click on an arrow of a scrollbar."
+"When keeping the primary button pressed on the arrow of a scrollbar, the "
+"scrollbar jumps to the bottom after some time. This is in fact the normal "
+"behaviour of a secondary click on an arrow of a scrollbar."
 msgstr ""
 "Cuando realice una pulsación sin movimiento del botón primario y mantenga la "
 "flecha de una barra de desplazamiento, la barra de desplazamiento saltará al "
 "final tras cierto tiempo. Esto es debido al comportamiento normal de una "
 "pulsación secundaria sobre la flecha de una barra de desplazamiento."
 
-#: C/mousetweaks.xml:614(para)
+#: C/mousetweaks.xml:635(para)
 msgid ""
 "To work around this behaviour, simply move the pointer immediately after "
 "pressing the <mousebutton>primary mouse button</mousebutton>. This way the "
@@ -1037,16 +1167,23 @@ msgstr ""
 "después de pulsar el <mousebutton>botón primario del ratón</mousebutton>. De "
 "esta forma no se usará la pulsación secundaria simulada."
 
-#: C/mousetweaks.xml:625(title)
+#: C/mousetweaks.xml:646(title)
 msgid "Dwell Click Description"
 msgstr "Descripción de la pulsación al posarse"
 
-#: C/mousetweaks.xml:627(para)
+#: C/mousetweaks.xml:648(para)
+#, fuzzy
+#| msgid ""
+#| "There are users that cannot use any hardware button. By activating the "
+#| "<guilabel>Dwell Click</guilabel>, they can have the mouse perform the "
+#| "various clicks without pressing any mouse button. The click types that "
+#| "can be performed are: single primary click, double-click, drag click and "
+#| "secondary click."
 msgid ""
 "There are users that cannot use any hardware button. By activating the "
 "<guilabel>Dwell Click</guilabel>, they can have the mouse perform the "
 "various clicks without pressing any mouse button. The click types that can "
-"be performed are: single primary click, double-click, drag click and "
+"be performed are: single primary click, double click, drag click and "
 "secondary click."
 msgstr ""
 "Hay usuarios que no pueden pulsar ningún botón físico. Activando la "
@@ -1055,16 +1192,21 @@ msgstr ""
 "que se pueden realizar son: pulsación primaria simple, pulsación doble, "
 "pulsación de arrastre y pulsación secundaria."
 
-#: C/mousetweaks.xml:634(para)
+#: C/mousetweaks.xml:655(para)
+#, fuzzy
+#| msgid ""
+#| "When the buttonless click is active, the <mousebutton>mouse buttons</"
+#| "mousebutton> remain functional and it is still possible to click with the "
+#| "<mousebutton>mouse buttons</mousebutton>."
 msgid ""
-"When the buttonless click is active, the <mousebutton>mouse buttons</"
+"When the buttonless (dwell) click is active, the <mousebutton>mouse buttons</"
 "mousebutton> remain functional and it is still possible to click with the "
 "<mousebutton>mouse buttons</mousebutton>."
 msgstr ""
 "Cuando la pulsación sin botones está activada, los <mousebutton>botones del "
 "ratón</mousebutton> siguen funcionado y aún es posible pulsar con los ellos."
 
-#: C/mousetweaks.xml:642(para)
+#: C/mousetweaks.xml:664(para)
 msgid ""
 "Each time the pointer stops moving, a dwell click is initiated. To give "
 "feedback to the user, mousetweaks will fill the arrow of the pointer with "
@@ -1076,7 +1218,7 @@ msgstr ""
 "del puntero con otro color mientras se acaba la cuenta atrás antes de que se "
 "dispare la pulsación."
 
-#: C/mousetweaks.xml:648(para)
+#: C/mousetweaks.xml:670(para)
 msgid ""
 "Under some circumstances, it happens that the feedback on the arrow of the "
 "pointer does not work; the dwell clicks are nevertheless issued."
@@ -1084,7 +1226,7 @@ msgstr ""
 "Bajo ciertas circunstancias, sucede que el contexto en la flecha del puntero "
 "no funciona; en cualquier caso se disparan las pulsaciones al posarse."
 
-#: C/mousetweaks.xml:653(para)
+#: C/mousetweaks.xml:675(para)
 msgid ""
 "How the click is completed and how the click type is chosen depends on what "
 "dwell mode the user has selected. The two available modes are:"
@@ -1093,20 +1235,20 @@ msgstr ""
 "modo de posado que haya seleccionado el usuario. Los dos modos disponibles "
 "son:"
 
-#: C/mousetweaks.xml:659(para)
+#: C/mousetweaks.xml:681(para)
 msgid "Choose type of click beforehand"
 msgstr "Elegir un tipo de pulsación de antemano"
 
-#: C/mousetweaks.xml:663(para)
+#: C/mousetweaks.xml:685(para)
 msgid "Choose type of click with mouse gestures"
 msgstr "Elegir el tipo de pulsación con gestos del ratón"
 
-#: C/mousetweaks.xml:673(para)
+#: C/mousetweaks.xml:696(para)
 msgid "Picture showing the radio buttons to select dwell mode"
 msgstr ""
 "Imagen mostrando los botones de radio para seleccionar el modo de posado"
 
-#: C/mousetweaks.xml:678(para)
+#: C/mousetweaks.xml:701(para)
 msgid ""
 "To select the mode, the user only has to click on the radio button that "
 "corresponds to his choice."
@@ -1114,13 +1256,13 @@ msgstr ""
 "Para seleccionar el modo el usuario sólo tiene que puslar en el botón de "
 "radio que corresponda con su elección."
 
-#: C/mousetweaks.xml:682(title)
+#: C/mousetweaks.xml:705(title)
 msgid "Automatic Click Completion With Click Type Choice Beforehand"
 msgstr ""
 "Completado automático de pulsación con elección del tipo de pulsación de "
 "antemano"
 
-#: C/mousetweaks.xml:685(para)
+#: C/mousetweaks.xml:708(para)
 msgid ""
 "This mode is active when the user selects <guilabel>Choose type of click "
 "beforehand</guilabel>. In fact, after the mouse has been motionless for the "
@@ -1134,11 +1276,11 @@ msgstr ""
 "<guilabel>Retardo</guilabel>, el sistema realizará automáticamente el tipo "
 "de pulsación seleccionado en en la ventana Tipo de pulsación aquí mostrada:"
 
-#: C/mousetweaks.xml:698(para)
+#: C/mousetweaks.xml:722(para)
 msgid "Picture showing the click type window"
 msgstr "Imagen mostrando la ventana de tipo de pulsación"
 
-#: C/mousetweaks.xml:702(para)
+#: C/mousetweaks.xml:726(para)
 msgid ""
 "To display the <guimenu>Click Type Window</guimenu> on the screen, the user "
 "has to put a checkmark <application>in the checkbox named "
@@ -1149,13 +1291,13 @@ msgstr ""
 "<application><quote><guilabel>Mostrar la ventana de tipo de pulsación</"
 "guilabel></quote></application>:"
 
-#: C/mousetweaks.xml:713(para)
+#: C/mousetweaks.xml:738(para)
 msgid "Picture with the checkbox to display the click type window"
 msgstr ""
 "Imagen mostrando la casilla de verificación para mostrar la ventana del tipo "
 "de pulsación"
 
-#: C/mousetweaks.xml:718(para)
+#: C/mousetweaks.xml:743(para)
 msgid ""
 "After the click has occurred, the single click type will be automatically "
 "restored. In order to choose another click type, the user has to perform an "
@@ -1168,7 +1310,7 @@ msgstr ""
 "guibutton> de la ventana <guilabel>Tipo de pulsación</guilabel> que "
 "corresponda con su elección de tipo de pulsación."
 
-#: C/mousetweaks.xml:724(para)
+#: C/mousetweaks.xml:749(para)
 msgid ""
 "Instead of the Click Type Window some users might prefer to use the "
 "<guilabel>Dwell Click</guilabel> panel applet, that has some advantages:."
@@ -1177,15 +1319,19 @@ msgstr ""
 "usar la miniaplicación del panel <guilabel>Pulsación al posarse</guilabel> "
 "que tiene ciertas ventajas:"
 
-#: C/mousetweaks.xml:742(para)
+#: C/mousetweaks.xml:768(para)
+#, fuzzy
+#| msgid ""
+#| "The user does not need the <guilabel>Click Type Window</guilabel> that "
+#| "covers other windows on the desktop."
 msgid ""
-"The user does not need the <guilabel>Click Type Window</guilabel> that "
-"covers other windows on the desktop."
+"The user does not need the <guilabel>Click Type Window</guilabel> that might "
+"cover other windows on the desktop."
 msgstr ""
 "El usuario no necesita la ventana del <guilabel>Tipo de pulsación</guilabel> "
 "que cubra otras ventanas del escritorio."
 
-#: C/mousetweaks.xml:748(para)
+#: C/mousetweaks.xml:774(para)
 msgid ""
 "The user has a direct way to start and stop the dwell click by using the "
 "<guilabel>On/Off</guilabel> button of the <guilabel>Dwell Click</guilabel> "
@@ -1198,7 +1344,7 @@ msgstr ""
 "especialmente útil cuando quiere desactivar la pulsación durante cierto "
 "tiempo para leer algún texto sin que interfiera la pulsación al posarse."
 
-#: C/mousetweaks.xml:739(para)
+#: C/mousetweaks.xml:765(para)
 msgid ""
 "Indeed, by using the <guilabel>Dwell Click</guilabel> panel applet: "
 "<placeholder-1/>"
@@ -1206,7 +1352,7 @@ msgstr ""
 "Usando la miniaplicación del panel <guilabel>Pulsación al posarse</"
 "guilabel>: <placeholder-1/>"
 
-#: C/mousetweaks.xml:757(para)
+#: C/mousetweaks.xml:783(para)
 msgid ""
 "To display the <guilabel>Dwell Click</guilabel> applet on the GNOME panel, "
 "the user has to follow the usual procedure to add applets to the GNOME "
@@ -1220,7 +1366,7 @@ msgstr ""
 "cómo hacerlo en la sección <link linkend=\"mouse-a11y-start-pointer-capture"
 "\">Inicio de la función de captura del puntero</link>."
 
-#: C/mousetweaks.xml:764(para)
+#: C/mousetweaks.xml:790(para)
 msgid ""
 "The <guilabel>Click Type Window</guilabel> and the <guilabel>Dwell Click</"
 "guilabel> applet can be used simultaneously or each on its own."
@@ -1229,16 +1375,23 @@ msgstr ""
 "<guilabel>Pulsación al posarse</guilabel> se pueden usar simultáneamente o "
 "cada una por separado."
 
-#: C/mousetweaks.xml:770(title)
+#: C/mousetweaks.xml:796(title)
 msgid "Click Completion And Click Type Choice By Mouse Gesture"
 msgstr ""
 "Completado de pulsación y elección del tipo de pulsación por gesto del ratón"
 
-#: C/mousetweaks.xml:773(para)
+#: C/mousetweaks.xml:799(para)
+#, fuzzy
+#| msgid ""
+#| "This mode is active when the user selects <guilabel>Choose type of click "
+#| "with mouse gestures</guilabel>. In fact, after the mouse has been "
+#| "motionless for the delay defined by the <link linkend=\"mouse-a11y-dwell-"
+#| "delay\">delay slider</link>, the shape of the pointer will change for a "
+#| "little time lapse; let's call this shape the gesture shape:"
 msgid ""
 "This mode is active when the user selects <guilabel>Choose type of click "
 "with mouse gestures</guilabel>. In fact, after the mouse has been motionless "
-"for the delay defined by the <link linkend=\"mouse-a11y-dwell-delay\">delay "
+"for the delay defined by the <link linkend=\"mouse-a11y-dwell-delay\">Delay "
 "slider</link>, the shape of the pointer will change for a little time lapse; "
 "let's call this shape the gesture shape:"
 msgstr ""
@@ -1248,7 +1401,7 @@ msgstr ""
 "delay\">retardo</link> predefinido anteriormente, la forma del puntero "
 "cambiará durante un pequeño periodo:"
 
-#: C/mousetweaks.xml:782(para)
+#: C/mousetweaks.xml:808(para)
 msgid ""
 "If the user moves the pointer while it is showing the gesture shape, a click "
 "is performed at the location where the pointer was last motionless; finally "
@@ -1264,18 +1417,23 @@ msgstr ""
 "movimiento del puntero se dibuja una línea siguiendo el movimiento del "
 "puntero para dar contexto al usuario."
 
-#: C/mousetweaks.xml:792(para)
+#: C/mousetweaks.xml:818(para)
+#, fuzzy
+#| msgid ""
+#| "If the user keeps the pointer motionless until it returns to its normal "
+#| "shape, the user can move the mouse without a click being performed. The "
+#| "next dwell click can be performed at the next pointer stop.."
 msgid ""
 "If the user keeps the pointer motionless until it returns to its normal "
 "shape, the user can move the mouse without a click being performed. The next "
-"dwell click can be performed at the next pointer stop.."
+"dwell click can be performed at the next pointer stop."
 msgstr ""
 "Si el usuario mantiene el ratón sin movimiento hasta que el puntero vuelva a "
 "su forma normal, el usuario puede mover el ratón sin que se realice una "
 "pulsación. La siguiente pulsación al posarse se puede realizar cuando el "
 "ratón deje de moverse de nuevo."
 
-#: C/mousetweaks.xml:799(para)
+#: C/mousetweaks.xml:825(para)
 msgid ""
 "The user also has the possibility to match click type with movement "
 "direction by using the 4 <guimenu>popups</guimenu> available:"
@@ -1284,7 +1442,7 @@ msgstr ""
 "la dirección del movimiento, usando los 4 <guimenu>menús emergentes</"
 "guimenu> disponibles bajo este modo:"
 
-#: C/mousetweaks.xml:809(para)
+#: C/mousetweaks.xml:836(para)
 msgid ""
 "Picture showing the configuration options to map click type to movement "
 "direction"
@@ -1292,7 +1450,7 @@ msgstr ""
 "Imagen mostrando las opciones de configuración para mapear el tipo de "
 "pulsación con una dirección de movimiento"
 
-#: C/mousetweaks.xml:814(para)
+#: C/mousetweaks.xml:841(para)
 msgid ""
 "There is also a <guimenuitem>Disabled</guimenuitem> menu item in each "
 "<guimenu>popup</guimenu>. The user can select it if he does not want some "
@@ -1305,11 +1463,11 @@ msgstr ""
 "especialmente interesante para usuarios que sólo tienen problemas con "
 "ciertos tipos de pulsación."
 
-#: C/mousetweaks.xml:823(title)
+#: C/mousetweaks.xml:850(title)
 msgid "Dwell Delay Setting"
 msgstr "Ajuste de la pulsación al posarse"
 
-#: C/mousetweaks.xml:825(para)
+#: C/mousetweaks.xml:852(para)
 msgid ""
 "With the <guilabel>Delay</guilabel> slider, the user can configure how long "
 "the pointer has to be motionless for the click to be initiated."
@@ -1318,20 +1476,20 @@ msgstr ""
 "configurar durante cuánto tiempo el puntero no debe moverse para que se "
 "inicie la pulsación."
 
-#: C/mousetweaks.xml:835(para)
+#: C/mousetweaks.xml:863(para)
 msgid "Picture showing the delay slider of the dwell click"
 msgstr "Imagen mostrando el deslizador de retraso de la pulsación al posarse"
 
-#: C/mousetweaks.xml:840(para)
+#: C/mousetweaks.xml:868(para)
 msgid "The dwell delay only works in the context of the dwell click."
 msgstr ""
 "El retardo de posado sólo funciona en el contexto de la pulsación al posarse."
 
-#: C/mousetweaks.xml:846(title)
+#: C/mousetweaks.xml:874(title)
 msgid "Motion Threshold Setting"
 msgstr "Ajuste del umbral de movimiento"
 
-#: C/mousetweaks.xml:848(para)
+#: C/mousetweaks.xml:876(para)
 msgid ""
 "For people that have trouble to keep the mouse motionless, there is the "
 "<guilabel>Motion Threshold</guilabel> slider."
@@ -1339,13 +1497,13 @@ msgstr ""
 "Para personas que tienen problemas para mantener el ratón quieto, existe el "
 "deslizador <guilabel>Umbral de movimiento</guilabel>."
 
-#: C/mousetweaks.xml:857(para)
+#: C/mousetweaks.xml:886(para)
 msgid "Picture showing the motion threshold slider of the dwell click"
 msgstr ""
 "Imagen mostrando el deslizador del umbral de movimiento de la pulsación al "
 "posarse"
 
-#: C/mousetweaks.xml:862(para)
+#: C/mousetweaks.xml:891(para)
 msgid ""
 "When the slider is set towards low, even little mouse movements are "
 "considered; however, by setting a higher threshold, the pointer has to "
@@ -1356,20 +1514,25 @@ msgstr ""
 "el ratón tiene que atravesar una distancia mayor antes de que se considere "
 "como movimiento."
 
-#: C/mousetweaks.xml:868(para)
+#: C/mousetweaks.xml:897(para)
+#, fuzzy
+#| msgid ""
+#| "The Motion Threshold setting does not only work for the dwell click, but "
+#| "also for the simulated secondary click, even if the dwell click is "
+#| "disabled."
 msgid ""
-"The Motion Threshold setting does not only work for the dwell click, but "
-"also for the simulated secondary click, even if the dwell click is disabled."
+"The Motion Threshold setting does not only work for the Dwell Click, but "
+"also for the Simulated Secondary Click, even if the Dwell Click is disabled."
 msgstr ""
 "El ajuste Umbral de movimiento no sólo funciona para la pulsación al "
 "posarse, sino también para la pulsación secundaria simulada, incluso si la "
 "pulsación al posarse está desactivada."
 
-#: C/mousetweaks.xml:876(title)
+#: C/mousetweaks.xml:905(title)
 msgid "Locking The Pointer Description"
 msgstr "Descripción del bloqueo del puntero"
 
-#: C/mousetweaks.xml:878(para)
+#: C/mousetweaks.xml:907(para)
 msgid ""
 "There are people that have to use their pointing device not only for the "
 "computer. These people would welcome a way to lock the pointer into an area "
@@ -1380,7 +1543,7 @@ msgstr ""
 "puntero en un área de la pantalla, de tal forma que puedan usar su "
 "dispositivo apuntador para otras cosas."
 
-#: C/mousetweaks.xml:883(para)
+#: C/mousetweaks.xml:912(para)
 msgid ""
 "In fact, the Pointer Capture panel applet creates an area on the panel, into "
 "which the user can lock the pointer until he releases it in a determined way."
@@ -1389,7 +1552,7 @@ msgstr ""
 "panel, en el que el usuario puede bloquear el puntero hasta que lo libere de "
 "una determinada forma."
 
-#: C/mousetweaks.xml:887(remark)
+#: C/mousetweaks.xml:916(remark)
 msgid ""
 "Have a look at <placeholder-1/> for instructions about how to install the "
 "pointer capture applet on the GNOME panel."
@@ -1397,12 +1560,12 @@ msgstr ""
 "Eche un vistazo a <placeholder-1/> para obtener instrucciones acerca de cómo "
 "instalar la miniaplicación Captura del puntero en el panel de GNOME."
 
-#: C/mousetweaks.xml:907(para)
+#: C/mousetweaks.xml:938(para)
 msgid "Picture of the pointer capture area when the pointer has been captured"
 msgstr ""
 "Imagen del área de captura del puntero cuando el puntero se ha capturado"
 
-#: C/mousetweaks.xml:912(para)
+#: C/mousetweaks.xml:943(para)
 msgid ""
 "By choosing <guimenu>Preferences</guimenu> in the contextual menu of the "
 "<guilabel>Pointer Capture</guilabel> applet, the user gets a window with the "
@@ -1413,12 +1576,14 @@ msgstr ""
 "una ventana con las opciones de la miniaplicación <guilabel>Captura del "
 "puntero</guilabel>:"
 
-#: C/mousetweaks.xml:923(para)
-msgid "Picture showing the preferences of the pointer capture applet"
+#: C/mousetweaks.xml:955(para)
+#, fuzzy
+#| msgid "Picture showing the preferences of the pointer capture applet"
+msgid "Picture showing the preferences of the Pointer Capture applet"
 msgstr ""
 "Imagen mostrando las preferencias de la miniaplicación de captura del puntero"
 
-#: C/mousetweaks.xml:928(para)
+#: C/mousetweaks.xml:960(para)
 msgid ""
 "The <guilabel>Preferences</guilabel> window of the <guilabel>Pointer "
 "Capture</guilabel> applet has three sections:"
@@ -1426,7 +1591,7 @@ msgstr ""
 "La ventana <guilabel>Preferencias</guilabel> de la miniaplicación "
 "<guilabel>Captura del puntero</guilabel> tiene tres secciones:"
 
-#: C/mousetweaks.xml:933(para)
+#: C/mousetweaks.xml:965(para)
 msgid ""
 "In the <guilabel>Capture Pointer</guilabel> section, the user can specify "
 "under what circumstances the pointer gets captured when it moves into the "
@@ -1443,14 +1608,14 @@ msgstr ""
 "modificador seleccionado y el botón del ratón está establecido a 0, el "
 "puntero sólo se tiene que mover en el área de captura para quedar bloqueado."
 
-#: C/mousetweaks.xml:941(para) C/mousetweaks.xml:950(para)
+#: C/mousetweaks.xml:973(para) C/mousetweaks.xml:982(para)
 msgid ""
 "It is also possible to specify a combination of modifiers and mouse button."
 msgstr ""
 "También es posible especificar una combinación de modificadores y un botón "
 "del ratón."
 
-#: C/mousetweaks.xml:946(para)
+#: C/mousetweaks.xml:978(para)
 msgid ""
 "In the <guilabel>Release Pointer</guilabel> section, the user can specify "
 "what modifier or mouse button releases the pointer."
@@ -1458,7 +1623,7 @@ msgstr ""
 "En la sección <guilabel>Liberar el puntero</guilabel> el usuario puede "
 "especificar qué modificador o botón del ratón libera el puntero."
 
-#: C/mousetweaks.xml:955(para)
+#: C/mousetweaks.xml:987(para)
 msgid ""
 "In the <guilabel>Size of Capture Area</guilabel> section, the user can "
 "specify the width of the capture area on the GNOME panel."
@@ -1466,22 +1631,29 @@ msgstr ""
 "En la sección <guilabel>Tamaño del área de captura</guilabel> el usuario "
 "puede especificar la anchura del área de captura en el panel de GNOME."
 
-#: C/mousetweaks.xml:964(title)
+#: C/mousetweaks.xml:996(title)
 msgid "About <application>Mousetweaks</application>"
 msgstr "Acerca de <application>Ajustes finos del ratón</application>"
 
-#: C/mousetweaks.xml:967(title)
+#: C/mousetweaks.xml:999(title)
 msgid "Authors and hosting site"
 msgstr "Autores y hospedaje de la página web"
 
-#: C/mousetweaks.xml:969(para)
+#: C/mousetweaks.xml:1001(para)
+#, fuzzy
+#| msgid ""
+#| "<application>Mousetweaks</application> is based on a <ulink type=\"https"
+#| "\" url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks"
+#| "\">specification</ulink> hosted on Launchpad. It was implemented by Gerd "
+#| "Kohlberger ( <email>gerdk@svn.gnome.org</email> ), while I "
+#| "( <email>frfumanti@svn.gnome.org</email> ) helped with testing and "
+#| "logistics.."
 msgid ""
 "<application>Mousetweaks</application> is based on a <ulink type=\"https\" "
 "url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks"
 "\">specification</ulink> hosted on Launchpad. It was implemented by Gerd "
-"Kohlberger ( <email>gerdk@svn.gnome.org</email> ), while I "
-"( <email>frfumanti@svn.gnome.org</email> ) helped with testing and "
-"logistics.."
+"Kohlberger ( <email>gerdk@svn.gnome.org</email> ), and I "
+"( <email>frfumanti@svn.gnome.org</email> ) helped with testing and logistics."
 msgstr ""
 "Los <application>Ajustes finos del ratón</application> están basados en una "
 "<ulink type=\"https\" url=\"https://wiki.ubuntu.com/Accessibility/Specs/"
@@ -1490,7 +1662,7 @@ msgstr ""
 "Fumanti (<email>frfumanti@svn.gnome.org</email>) ayudó con las pruebas y "
 "logística."
 
-#: C/mousetweaks.xml:977(para)
+#: C/mousetweaks.xml:1009(para)
 msgid ""
 "You can find more informations about Mousetweaks on <ulink type=\"https\" "
 "url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> and on <ulink "
@@ -1501,15 +1673,24 @@ msgstr ""
 "ulink> y en el wiki <ulink url=\"http://live.gnome.org//Mousetweaks/Home"
 "\">GNOME Live</ulink>."
 
-#: C/mousetweaks.xml:986(para)
+#: C/mousetweaks.xml:1018(para)
+#, fuzzy
+#| msgid ""
+#| "To report a bug or make a suggestion regarding <application>the "
+#| "mousetweaks</application> module, its user interface or its manual, "
+#| "please use the facilities provided by the <ulink type=\"http\" url="
+#| "\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>. If it concerns "
+#| "the layout of the Accessibility tab of the Mouse control panel, please "
+#| "file it against the gnome-control-center module; for anything else "
+#| "regarding mousetweaks, please file it against the mousetweaks module."
 msgid ""
 "To report a bug or make a suggestion regarding <application>the mousetweaks</"
 "application> module, its user interface or its manual, please use the "
-"facilities provided by the <ulink type=\"http\" url=\"http://bugzilla.gnome."
-"org/\">GNOME's Bugzilla</ulink>. If it concerns the layout of the "
-"Accessibility tab of the Mouse control panel, please file it against the "
-"gnome-control-center module; for anything else regarding mousetweaks, please "
-"file it against the mousetweaks module."
+"facilities provided by <ulink type=\"http\" url=\"http://bugzilla.gnome.org/"
+"\">GNOME's Bugzilla</ulink>. If it concerns the layout of the Accessibility "
+"tab of the Mouse control panel, please file it against the gnome-control-"
+"center module; for anything else regarding mousetweaks, please file it "
+"against the mousetweaks module."
 msgstr ""
 "Para informar de un fallo, o hacer alguna sugerencia concerniente al módulo "
 "<application>Ajustes finos del ratón</application>, su interfaz de usuario o "
@@ -1520,11 +1701,11 @@ msgstr ""
 "cosa concerniente a los Ajustes finos del ratón, informe en el módulo "
 "mousetweaks."
 
-#: C/mousetweaks.xml:997(title)
+#: C/mousetweaks.xml:1029(title)
 msgid "License"
 msgstr "Licencia"
 
-#: C/mousetweaks.xml:999(para)
+#: C/mousetweaks.xml:1031(para)
 msgid ""
 "Mousetweaks is distributed under the terms of the GNU General Public License "
 "as published by the Free Software Foundation; either version 3 of the "
@@ -1540,13 +1721,21 @@ msgstr ""
 "\"http://www.gnu.org/licenses/gpl-3.0.txt\">enlace</ulink>, o en el archivo "
 "COPYING.GPL incluido con el código fuente de este programa."
 
-#: C/mousetweaks.xml:1006(para)
+#: C/mousetweaks.xml:1038(para)
+#, fuzzy
+#| msgid ""
+#| "This manual is distributed under the terms of the The GNU Free "
+#| "Documentation License as published by the Free Software Foundation; "
+#| "either version 1.2 of the License, or (at your option) any later version. "
+#| "A copy of the license can be found at this <ulink type=\"http\" url="
+#| "\"http://www.gnu.org/licenses/fdl-1.2.txt\">link</ulink>, or in the file "
+#| "COPYING.FDL included with the source code of this program."
 msgid ""
 "This manual is distributed under the terms of the The GNU Free Documentation "
-"License as published by the Free Software Foundation; either version 1.2 of "
+"License as published by the Free Software Foundation; either version 1.3 of "
 "the License, or (at your option) any later version. A copy of the license "
 "can be found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/"
-"fdl-1.2.txt\">link</ulink>, or in the file COPYING.FDL included with the "
+"fdl-1.3.txt\">link</ulink>, or in the file COPYING.FDL included with the "
 "source code of this program."
 msgstr ""
 "Este programa se distribuye bajo los términos de la Licencia Pública General "

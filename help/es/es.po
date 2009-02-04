@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.help.HEAD\n"
-"POT-Creation-Date: 2009-02-02 20:07+0000\n"
-"PO-Revision-Date: 2009-02-03 20:46+0100\n"
+"POT-Creation-Date: 2009-02-03 19:50+0000\n"
+"PO-Revision-Date: 2009-02-04 20:42+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,9 +17,6 @@ msgstr ""
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/mousetweaks.xml:199(None) C/mousetweaks.xml:276(None)
-#| msgid ""
-#| "@@image: 'figures/mouse-a11y-tab.png'; "
-#| "md5=004aa356365e42b802199e0e51f84c15"
 msgid ""
 "@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
 msgstr ""
@@ -38,9 +35,6 @@ msgstr ""
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/mousetweaks.xml:293(None) C/mousetweaks.xml:424(None)
-#| msgid ""
-#| "@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
-#| "md5=800e98da4b0ecaa15ed940dcd8fe91be"
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
 "md5=690dde37df60c6953b4c7e9b256c7a43"
@@ -52,9 +46,6 @@ msgstr ""
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/mousetweaks.xml:328(None) C/mousetweaks.xml:453(None)
 #: C/mousetweaks.xml:756(None)
-#| msgid ""
-#| "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-#| "md5=d14731688177da795de6d7679c6fb8ca"
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
 "md5=e6eaa0d03499db4e26a56eb1ae57fe8b"
@@ -125,9 +116,6 @@ msgstr ""
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/mousetweaks.xml:859(None)
-#| msgid ""
-#| "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
-#| "md5=1978a91f3b51b1a61a9f8fe0852fd8f3"
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
 "md5=8d87a631347995c6a770bab22af9b65a"
@@ -178,7 +166,6 @@ msgstr ""
 "de accesibilidad para el ratón en el Escritorio GNOME."
 
 #: C/mousetweaks.xml:21(year)
-#| msgid "2007 - 2008"
 msgid "2007 - 2009"
 msgstr "2007 - 2009"
 
@@ -187,7 +174,6 @@ msgid "Francesco Fumanti"
 msgstr "Francesco Fumanti"
 
 #: C/mousetweaks.xml:3(para)
-#, fuzzy
 #| msgid ""
 #| "Permission is granted to copy, distribute and/or modify this document "
 #| "under the terms of the GNU Free Documentation License (GFDL), Version 1.2 "
@@ -316,7 +302,6 @@ msgid "frfumanti@svn.gnome.org"
 msgstr "frfumanti@svn.gnome.org"
 
 #: C/mousetweaks.xml:42(revnumber)
-#| msgid "version 2.21.5"
 msgid "version 2.25.90"
 msgstr "versión 2.25.90"
 
@@ -325,10 +310,6 @@ msgid "February 2nd 2009"
 msgstr "2 de febrero de 2009"
 
 #: C/mousetweaks.xml:47(para)
-#| msgid ""
-#| "The contents of the manual have been upgraded to integrate the "
-#| "improvements done to mousetweaks for GNOME 2.24.<email>Francesco Fumanti "
-#| "&lt;frfumanti@svn.gnome.org&gt;</email>"
 msgid ""
 "The manual has been edited to match the changes done to mousetweaks for "
 "GNOME 2.26. Moreover, the license of the manual has been raised to GFDL 1.3."
@@ -503,10 +484,6 @@ msgid "How To Start The Functions"
 msgstr "Cómo iniciar las funciones"
 
 #: C/mousetweaks.xml:162(para)
-#| msgid ""
-#| "The simulated secondary click and the dwell click depend on the "
-#| "mousetweaks process; however the pointer capture applet depends on the "
-#| "GNOME panel. Consequently, also the methods to start them varies."
 msgid ""
 "The simulated secondary click and the dwell click depend on the mousetweaks "
 "process; however the pointer capture applet depends on the GNOME panel. "
@@ -522,7 +499,6 @@ msgid "Starting The Simulated Secondary Click Function"
 msgstr "Iniciar la función de pulsación secundaria simulada"
 
 #: C/mousetweaks.xml:169(para)
-#, fuzzy
 #| msgid "You can start the simulated secondary click in two ways:"
 msgid "You can start the Simulated Secondary Click in two ways:"
 msgstr "Puede iniciar la pulsación secundaria simulada de dos formas:"
@@ -580,7 +556,6 @@ msgstr ""
 "de verificación que dice:"
 
 #: C/mousetweaks.xml:210(quote)
-#, fuzzy
 #| msgid "Trigger secondary secondary click by holding down the primary button"
 msgid "Trigger secondary click by holding down the primary button"
 msgstr "Disparar la pulsación secundaria al mantener pulsado el botón primario"
@@ -699,7 +674,6 @@ msgstr ""
 "Pulsación al posarse"
 
 #: C/mousetweaks.xml:318(para)
-#, fuzzy
 #| msgid ""
 #| "It is possible to start the Dwell Click by simply resting (dwelling) for "
 #| "a little delay with the pointer on the On/Off button of the Dwell Click "
@@ -717,8 +691,8 @@ msgstr ""
 "Es posible iniciar la Pulsación al posarse simplemente posando durante "
 "cierto tiempo el puntero en el botón Activar/Desactivar de la miniaplicación "
 "del panel Pulsación al posarse. El botón Activar/Desactivar proporciona "
-"contexto del tiempo transcurrido llenando la flecha de otro color. Cuando "
-"está completamente llena, el botón vuelve a su color original y la pulsación "
+"contexto del tiempo transcurrido llenando su marco de otro color. Cuando "
+"está completamente lleno, el botón vuelve a su color original y la pulsación "
 "al posarse se inicia."
 
 #: C/mousetweaks.xml:332(para) C/mousetweaks.xml:457(para)
@@ -746,7 +720,6 @@ msgstr ""
 "procedimiento para la miniaplicación Pulsación al posarse es similar."
 
 #: C/mousetweaks.xml:349(para)
-#, fuzzy
 #| msgid ""
 #| "As the pointer capture applet comes in the from of a panel applet, its "
 #| "starting method has to follow the rules dictated by the GNOME panel. "
@@ -758,7 +731,7 @@ msgid ""
 "to start the Pointer Capture function, you only have to install it on the "
 "panel and it will automatically run."
 msgstr ""
-"Ya que la miniaplicación de captura del puntero es una miniaplicación del "
+"Ya que la miniaplicación de Captura del puntero es una miniaplicación del "
 "panel, su método de inicio tiene que seguir las reglas del panel de GNOME. "
 "Por ello, para iniciar la función de captura del puntero sólo tiene que "
 "instalarla en el panel y se ejecutará automáticamente."

@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.help.HEAD\n"
-"POT-Creation-Date: 2009-02-04 19:58+0000\n"
-"PO-Revision-Date: 2009-02-06 20:31+0100\n"
+"POT-Creation-Date: 2009-02-06 19:38+0000\n"
+"PO-Revision-Date: 2009-02-08 13:32+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -507,7 +507,6 @@ msgid "Start From The Graphical User Interface"
 msgstr "Inicio desde la interfaz gráfica de usuario"
 
 #: C/mousetweaks.xml:184(para)
-#, fuzzy
 #| msgid ""
 #| "The graphical user interface to start the simulated secondary click is "
 #| "located in the accessibility tab of the mouse control panel. To open it, "
@@ -527,12 +526,12 @@ msgid ""
 "clicking on the Accessibility tab, you will see the following settings:"
 msgstr ""
 "La interfaz gráfica de usuario para iniciar la pulsación secundaria simulada "
-"está ubicada en la solapa de accesibilidad del panel de control del ratón. "
+"está ubicada en la solapa de Accesibilidad del panel de control del ratón. "
 "Para abrirla elija el menú <menuchoice><guimenu>Sistema</"
 "guimenu><guisubmenu>Preferencias</guisubmenu><guimenuitem>Centro de control</"
 "guimenuitem></menuchoice>, ésto abrirá el Centro de control. Pulsando en "
 "Ratón en el Centro de control se abrirá el panel de control, después pulse "
-"en la solapa Accesibilidad y verá los siguientes ajustes:"
+"en la solapa Accesibilidad verá los siguientes ajustes:"
 
 #: C/mousetweaks.xml:203(para) C/mousetweaks.xml:280(para)
 msgid "Picture of the Mouse control panel"
@@ -599,7 +598,6 @@ msgid "Start From The Accessibility tab of the Mouse control panel"
 msgstr "Iniciar desde la solapa Accesibilidad en el panel de control del ratón"
 
 #: C/mousetweaks.xml:261(para)
-#, fuzzy
 #| msgid ""
 #| "The graphical user interface to start the dwell click is located in the "
 #| "accessibility tab of the mouse control panel. To open it, choose the menu "
@@ -621,9 +619,9 @@ msgstr ""
 "ubicada en la solapa de accesibilidad del panel de control del ratón. Para "
 "abrirla, elija el menú <menuchoice><guimenu>Sistema</"
 "guimenu><guisubmenu>Preferencias</guisubmenu><guimenuitem>Centro de control</"
-"guimenuitem></menuchoice> y se abrirá el Centro de control. Pulsando en el "
-"botón Ratón del Centro de control, se abrirá el panel de control del ratón y "
-"después de pulsar en la solapa Accesibilidad, verá los siguientes ajustes:"
+"guimenuitem></menuchoice> ésto abrirá el Centro de control. Pulsando en "
+"Ratón en el Centro de control se abrirá el panel de control del ratón y "
+"después de pulsar en la solapa Accesibilidad verá los siguientes ajustes:"
 
 #: C/mousetweaks.xml:284(para)
 msgid ""
@@ -728,7 +726,6 @@ msgstr ""
 "que se pueden instalar en el panel de GNOME."
 
 #: C/mousetweaks.xml:360(para)
-#, fuzzy
 #| msgid ""
 #| "By double clicking on the <guilabel>Pointer Capture</guilabel> item in "
 #| "the Add to Panel window, the pointer capture applet will be added to the "
@@ -760,10 +757,9 @@ msgid "Quitting The Simulated Secondary Click"
 msgstr "Salir de la pulsación secundaria simulada"
 
 #: C/mousetweaks.xml:376(para)
-#, fuzzy
 #| msgid "It is possible to quit the simulated secondary click in two ways:"
 msgid "It is possible to quit the Simulated Secondary Click in two ways:"
-msgstr "Se puede quitar la pulsación secundaria simulada de dos formas:"
+msgstr "Se puede salir la pulsación secundaria simulada de dos formas:"
 
 #: C/mousetweaks.xml:381(para) C/mousetweaks.xml:418(para)
 msgid ""
@@ -774,12 +770,11 @@ msgstr ""
 "de control de los <application>Ajustes finos del ratón</application>."
 
 #: C/mousetweaks.xml:391(para)
-#, fuzzy
 #| msgid "Picture of the checkbox to start the right click feature"
 msgid "Picture of the checkbox to start the simulated right click feature"
 msgstr ""
 "Imagen de la casilla de verificación para iniciar la característica de "
-"pulsación con el botón derecho"
+"pulsación simulada con el botón derecho"
 
 #: C/mousetweaks.xml:396(para)
 msgid ""
@@ -1466,10 +1461,6 @@ msgstr ""
 "como movimiento."
 
 #: C/mousetweaks.xml:897(para)
-#| msgid ""
-#| "The Motion Threshold setting does not only work for the dwell click, but "
-#| "also for the simulated secondary click, even if the dwell click is "
-#| "disabled."
 msgid ""
 "The Motion Threshold setting does not only work for the Dwell Click, but "
 "also for the Simulated Secondary Click, even if the Dwell Click is disabled."
@@ -1527,7 +1518,6 @@ msgstr ""
 "puntero</guilabel>:"
 
 #: C/mousetweaks.xml:955(para)
-#| msgid "Picture showing the preferences of the pointer capture applet"
 msgid "Picture showing the preferences of the Pointer Capture applet"
 msgstr ""
 "Imagen mostrando las preferencias de la miniaplicación Captura del puntero"
@@ -1589,13 +1579,6 @@ msgid "Authors and hosting site"
 msgstr "Autores y hospedaje de la página web"
 
 #: C/mousetweaks.xml:1001(para)
-#| msgid ""
-#| "<application>Mousetweaks</application> is based on a <ulink type=\"https"
-#| "\" url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks"
-#| "\">specification</ulink> hosted on Launchpad. It was implemented by Gerd "
-#| "Kohlberger ( <email>gerdk@svn.gnome.org</email> ), while I "
-#| "( <email>frfumanti@svn.gnome.org</email> ) helped with testing and "
-#| "logistics.."
 msgid ""
 "<application>Mousetweaks</application> is based on a <ulink type=\"https\" "
 "url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks"
@@ -1622,14 +1605,6 @@ msgstr ""
 "\">GNOME Live</ulink>."
 
 #: C/mousetweaks.xml:1018(para)
-#| msgid ""
-#| "To report a bug or make a suggestion regarding <application>the "
-#| "mousetweaks</application> module, its user interface or its manual, "
-#| "please use the facilities provided by the <ulink type=\"http\" url="
-#| "\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>. If it concerns "
-#| "the layout of the Accessibility tab of the Mouse control panel, please "
-#| "file it against the gnome-control-center module; for anything else "
-#| "regarding mousetweaks, please file it against the mousetweaks module."
 msgid ""
 "To report a bug or make a suggestion regarding <application>the mousetweaks</"
 "application> module, its user interface or its manual, please use the "
@@ -1669,13 +1644,6 @@ msgstr ""
 "COPYING.GPL incluido con el código fuente de este programa."
 
 #: C/mousetweaks.xml:1038(para)
-#| msgid ""
-#| "This manual is distributed under the terms of the The GNU Free "
-#| "Documentation License as published by the Free Software Foundation; "
-#| "either version 1.2 of the License, or (at your option) any later version. "
-#| "A copy of the license can be found at this <ulink type=\"http\" url="
-#| "\"http://www.gnu.org/licenses/fdl-1.2.txt\">link</ulink>, or in the file "
-#| "COPYING.FDL included with the source code of this program."
 msgid ""
 "This manual is distributed under the terms of the The GNU Free Documentation "
 "License as published by the Free Software Foundation; either version 1.3 of "

@@ -1,13 +1,13 @@
 # Bulgarian translation of mousetweaks po-file.
-# Copyright (C) 2008 Free Software Foundation, Inc.
-# Alexander Shopov <ash@contact.bg>, 2008.
+# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
+# Alexander Shopov <ash@contact.bg>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-12 10:05+0300\n"
-"PO-Revision-Date: 2008-09-12 10:05+0300\n"
+"POT-Creation-Date: 2009-02-10 07:07+0200\n"
+"PO-Revision-Date: 2009-02-10 07:02+0200\n"
 "Last-Translator: Alexander Shopov <ash@contact.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "MIME-Version: 1.0\n"
@@ -15,133 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../data/dwell-click-applet.glade.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Аплет за избор на различни натискания, чрез задържане.\n"
-"Част от Mousetweaks"
-
-#: ../data/dwell-click-applet.glade.h:3
-msgid "Click Type Window"
-msgstr "Прозорец за вида натискане"
-
-#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
-msgid "Double Click"
-msgstr "Двойно натискане"
-
-#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
-msgid "Drag Click"
-msgstr "Натискане с провлачване"
-
-#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:821
-msgid "Enable dwell click"
-msgstr "Включване на натискане чрез задържане"
-
-#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:112
-#: ../src/dwell-click-applet.c:642
-msgid "On"
-msgstr "Включено"
-
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:4
-msgid "Right Click"
-msgstr "Натискане с десния бутон"
-
-#: ../data/dwell-click-applet.glade.h:9 ../data/ctw.glade.h:8
-msgid "Single Click"
-msgstr "Единично натискане"
-
-#: ../data/pointer-capture-applet.glade.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr "<b>Прихващане на показалеца</b>"
-
-#: ../data/pointer-capture-applet.glade.h:2
-msgid "<b>Release Pointer</b>"
-msgstr "<b>Освобождаване на показалеца</b>"
-
-#: ../data/pointer-capture-applet.glade.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr "<b>Размер на зоната на прихващане</b>"
-
-#: ../data/pointer-capture-applet.glade.h:4
-msgid "A_lt"
-msgstr "A_lt"
-
-#: ../data/pointer-capture-applet.glade.h:5
-msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Зона, в която да се спре показалеца върху панела.\n"
-"Част от Mousetweaks"
-
-#: ../data/pointer-capture-applet.glade.h:7
-msgid "C_trl"
-msgstr "_Ctrl"
-
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Ct_rl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.glade.h:9
-msgid "Modifier:"
-msgstr "Модификатор:"
-
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "Mouse _button:"
-msgstr "_Бутон на мишката:"
-
-#: ../data/pointer-capture-applet.glade.h:11
-msgid "Mouse b_utton:"
-msgstr "Б_утон на мишката:"
-
-#: ../data/pointer-capture-applet.glade.h:12
-msgid "Pointer Capture Preferences"
-msgstr "Настройки на прихващането на показалеца"
-
-#: ../data/pointer-capture-applet.glade.h:13
-msgid "S_hift"
-msgstr "_Shift"
-
-#: ../data/pointer-capture-applet.glade.h:14
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Избирането на бутон 0 ще прихване показалеца веднага"
-
-#: ../data/pointer-capture-applet.glade.h:15
-msgid "Sh_ift"
-msgstr "S_hift"
-
-#: ../data/pointer-capture-applet.glade.h:16
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.glade.h:17
-msgid "_Width:"
-msgstr "_Широчина:"
-
-#: ../data/pointer-capture-applet.glade.h:18
-msgid "pixels"
-msgstr "пиксели"
-
-#: ../data/ctw.glade.h:3
-msgid "Dwell Click Type"
-msgstr "Вид натискане чрез задържане"
-
-#: ../data/ctw.glade.h:5
-msgid "Show Icons and Text"
-msgstr "Икони и текст"
-
-#: ../data/ctw.glade.h:6
-msgid "Show Icons only"
-msgstr "Само икони"
-
-#: ../data/ctw.glade.h:7
-msgid "Show Text only"
-msgstr "Само текст"
-
-#: ../data/DwellClick_Factory.server.in.in.h:1
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
 msgstr "Натискане чрез задържане"
 
@@ -154,6 +28,7 @@ msgid "Area to lock the pointer"
 msgstr "Област за заключване на показалеца"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
+#: ../src/pointer-capture-applet.c:549
 msgid "Pointer Capture"
 msgstr "Прихващане на показалеца"
 
@@ -234,11 +109,15 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Време за натискане чрез задържане"
 
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
+msgid "Enable dwell click"
+msgstr "Включване на натискане чрез задържане"
+
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Включване на второ натискане"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
 msgid "Enable simulated secondary click"
 msgstr "Включване на симулирано второ натискане"
 
@@ -266,7 +145,7 @@ msgstr "Праг за движение"
 msgid "Secondary click time"
 msgstr "Време за второто натискане"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
 msgid "Show click type window"
 msgstr "Показване на прозорец за вида натискане"
 
@@ -283,67 +162,132 @@ msgid "Time in seconds before a secondary click is triggered"
 msgstr "Време в секунди преди задействането на второто натискане"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture modifier"
-msgstr "Модификатор на прихващането"
+msgid "Capture pointer only if Alt is pressed"
+msgstr "Прихващане на показалеца само при натиснат Alt"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture modifier key (Alt)"
-msgstr "Модификатор на прихващането (Alt)"
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "Прихващане на показалеца само при натиснат Ctrl"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture modifier key (Ctrl)"
-msgstr "Модификатор на прихващането (Ctrl)"
+msgid "Capture pointer only if Shift is pressed"
+msgstr "Прихващане на показалеца само при натиснат Shift"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier key (Shift)"
-msgstr "Модификатор на прихващането (Shift)"
+msgid "Mouse button used to capture the pointer"
+msgstr "Бутон на мишката за прихващане на показалеца"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture mouse button"
-msgstr "Бутон за прихващането на мишката"
-
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-msgstr ""
-"Бутон на мишката за прихващане на показалеца („0“ — незабавно прихващане)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Mouse button to release the pointer"
+msgid "Mouse button used to release the pointer"
 msgstr "Бутон на мишката за освобождаване на показалеца"
 
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Release pointer only if Alt is pressed"
+msgstr "Освобождаване на показалеца само при натиснат Alt"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "Освобождаване на показалеца само при натиснат Ctrl"
+
 #: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release modifier"
-msgstr "Модификатор за освобождаването"
+msgid "Release pointer only if Shift is pressed"
+msgstr "Освобождаване на показалеца само при натиснат Shift"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier key (Alt)"
-msgstr "Модификатор за освобождаването (Alt)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Ctrl)"
-msgstr "Модификатор за освобождаването (Ctrl)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Shift)"
-msgstr "Модификатор за освобождаването (Shift)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release mouse button"
-msgstr "Бутон на мишката за освобождаване"
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
 msgstr "Размер на зоната за прихващане"
 
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
-msgstr "Широчина на зоната за прихващане"
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr ""
+"За освобождаване на показалеца от зоната за прихващане трябва да се натисне "
+"следния бутон. Възможни стойности са: „1“ (ляв бутон), „2“ (среден бутон), "
+"and „3“ (десен бутон)."
 
-#: ../src/mt-main.c:722
-msgid "Assistive Technology Support Is Not Enabled"
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr ""
+"За прихващането на показалеца, когато е над зоната за прихващане, трябва да "
+"се натисне следния бутон. Възможни стойности са: „1“ (ляв бутон), "
+"„2“ (среден бутон), and „3“ (десен бутон)."
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid ""
+"Whether if Alt must be pressed for the pointer to be captured while it's "
+"over the capture area. If this option is set as true, and a mouse button is "
+"set in the \"capture_button\" key, then the Alt key must be pressed while "
+"the mouse button is pressed."
+msgstr ""
+"Дали Alt трябва да бъде натиснат за прихващането на показалеца, когато е над "
+"зоната за прихващане. Ако стойността е „истина“, а в ключа „capture_button“ "
+"е зададен бутон на мишката, клавишът Alt трябва да бъде натиснат заедно с "
+"бутона на мишката."
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid ""
+"Whether if Ctrl must be pressed for the pointer to be captured while it's "
+"over the capture area. If this option is set as true, and a mouse button is "
+"set in the \"capture_button\" key, then the Ctrl key must be pressed while "
+"the mouse button is pressed."
+msgstr ""
+"Дали Ctrl трябва да бъде натиснат за прихващането на показалеца, когато е "
+"над зоната за прихващане. Ако стойността е „истина“, а в ключа "
+"„capture_button“ е зададен бутон на мишката, клавишът Ctrl трябва да бъде "
+"натиснат заедно с бутона на мишката."
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid ""
+"Whether if Shift must be pressed for the pointer to be captured while it's "
+"over the capture area. If this option is set as true, and a mouse button is "
+"set in the \"capture_button\" key, then the Shift key must be pressed while "
+"the mouse button is pressed."
+msgstr ""
+"Дали Shift трябва да бъде натиснат за прихващането на показалеца, когато е "
+"над зоната за прихващане. Ако стойността е „истина“, а в ключа "
+"„capture_button“ е зададен бутон на мишката, клавишът Shift трябва да бъде "
+"натиснат заедно с бутона на мишката."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid ""
+"Whether if the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Дали Alt трябва да бъде натиснат за освобождаването на показалеца от зоната "
+"за прихващане, когато в ключа „release_button“ е зададен бутон на мишката."
+
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid ""
+"Whether if the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Дали Ctrl трябва да бъде натиснат за освобождаването на показалеца от зоната "
+"за прихващане, когато в ключа „release_button“ е зададен бутон на мишката."
+
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid ""
+"Whether if the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Дали Shift трябва да бъде натиснат за освобождаването на показалеца от "
+"зоната за прихващане, когато в ключа „release_button“ е зададен бутон на "
+"мишката."
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+msgid "Width of the capture area in pixels."
+msgstr "Широчина на зоната за прихващане в пиксели."
+
+#: ../src/mt-main.c:720
+msgid "Assistive Technology Support is not Enabled"
 msgstr "Поддръжката на помощните технологии не е включена"
 
-#: ../src/mt-main.c:723
+#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -354,39 +298,39 @@ msgstr ""
 "\n"
 "За да ги включите и рестартирате сесията си, натиснете „Включване и изход“."
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:828
 msgid "Time to wait before a dwell click"
 msgstr "Време за изчакване за натискане чрез задържане"
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:830
 msgid "Time to wait before a simulated secondary click"
 msgstr "Време за изчакване за симулирано второ натискане"
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:832
 msgid "Dwell mode to use"
 msgstr "Режим за натискане чрез задържане"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:836
 msgid "Window x position"
 msgstr "Хоризонтална позиция на прозореца"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:838
 msgid "Window y position"
 msgstr "Вертикална позиция на прозореца"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:840
 msgid "Ignore small pointer movements"
 msgstr "Пренебрегване на малките движения на показалеца"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:842
 msgid "Show elapsed time as cursor overlay"
 msgstr "Показване на миналото време върху показалеца"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:844
 msgid "Shut down mousetweaks"
 msgstr "Спиране на програмата"
 
-#: ../src/mt-main.c:849
+#: ../src/mt-main.c:853
 msgid "- GNOME mousetweaks daemon"
 msgstr "— демон за допълнителните настройки на мишката на GNOME"
 
@@ -407,26 +351,14 @@ msgstr "Заключено"
 msgid "L"
 msgstr "З"
 
-#: ../src/pointer-capture-applet.c:542
-msgid "Pointer Capture Applet"
-msgstr "Аплет за прихващане на показалеца"
-
-#: ../src/pointer-capture-applet.c:614
+#: ../src/pointer-capture-applet.c:621
 msgid "Capture area"
 msgstr "Област на прихващане"
 
-#: ../src/pointer-capture-applet.c:615
+#: ../src/pointer-capture-applet.c:622
 msgid "Temporarily lock the mouse pointer"
 msgstr "Временно заключване на показалеца на мишката"
 
-#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
-msgid "Off"
-msgstr "Изключено"
-
-#: ../src/dwell-click-applet.c:335
+#: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Неуспех при стартирането на настройките на мишката"
-
-#: ../src/dwell-click-applet.c:565
-msgid "Dwell Click Applet"
-msgstr "Аплет за натискане чрез задържане"

@@ -1,3 +1,8 @@
+2009-02-10  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	* data/pointer-capture-applet.schemas.in: Change long key
+	descriptions according to bug #571133.
+
 2009-02-01 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* configure.ac:

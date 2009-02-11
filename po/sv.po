@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-12 03:32+0100\n"
-"PO-Revision-Date: 2009-01-12 03:40+0100\n"
+"POT-Creation-Date: 2009-02-11 13:08+0100\n"
+"PO-Revision-Date: 2009-02-11 13:12+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -93,7 +93,7 @@ msgid "Dwell click time"
 msgstr "Tid för uppehållsklick"
 
 #: ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:824
 msgid "Enable dwell click"
 msgstr "Aktivera uppehållsklick"
 
@@ -102,7 +102,7 @@ msgid "Enable secondary click"
 msgstr "Aktivera sekundärklick"
 
 #: ../data/mousetweaks.schemas.in.h:14
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:826
 msgid "Enable simulated secondary click"
 msgstr "Aktivera simulerat sekundärklick"
 
@@ -131,7 +131,7 @@ msgid "Secondary click time"
 msgstr "Tid för sekundärklick"
 
 #: ../data/mousetweaks.schemas.in.h:21
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:834
 msgid "Show click type window"
 msgstr "Visa klicktypsfönster"
 
@@ -192,38 +192,38 @@ msgid "This mouse button must be pressed while the pointer is over the capture a
 msgstr "Denna musknapp måste tryckas ned när muspekaren är över fångstområdet för att fånga muspekaren. Giltiga värden är \"0\" om ingen knapp behövs, \"1\" för vänsterknapp, \"2\" för mittenknapp och \"3\" för högerknapp."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Whether if Alt must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Alt key must be pressed while the mouse button is pressed."
-msgstr "Huruvida Alt måste tryckas ned för att muspekaren ska fångas när den är över fångstområdet. Om detta alternativ är inställt till sant, och en musknapp är inställd i nyckeln \"capture_button\", så måste Alt-tangenten tryckas ned samtidigt som musknappen är nedtryckt."
+msgid "Whether the Alt key must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Alt key must be pressed while the mouse button is pressed."
+msgstr "Huruvida Alt-tangenten måste tryckas ned för att muspekaren ska fångas när den är över fångstområdet. Om detta alternativ är inställt till sant, och en musknapp är inställd i nyckeln \"capture_button\", så måste Alt-tangenten tryckas ned samtidigt som musknappen trycks ned."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
-msgid "Whether if Ctrl must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Ctrl key must be pressed while the mouse button is pressed."
-msgstr "Huruvida Ctrl måste tryckas ned för att muspekaren ska fångas när den är över fångstområdet. Om detta alternativ är inställt till sant, och en musknapp är inställd i nyckeln \"capture_button\", så måste Ctrl-tangenten tryckas ned samtidigt som musknappen är nedtryckt."
-
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Whether if Shift must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Shift key must be pressed while the mouse button is pressed."
-msgstr "Huruvida Skift måste tryckas ned för att muspekaren ska fångas när den är över fångstområdet. Om detta alternativ är inställt till sant, och en musknapp är inställd i nyckeln \"capture_button\", så måste Skift-tangenten tryckas ned samtidigt som musknappen är nedtryckt."
-
-#: ../data/pointer-capture-applet.schemas.in.h:15
-msgid "Whether if the Alt key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+msgid "Whether the Alt key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
 msgstr "Huruvida Alt-tangenten måste tryckas ned med musknappen som är inställd i \"release_button\" för att muspekaren ska släppas från fångstområdet."
 
-#: ../data/pointer-capture-applet.schemas.in.h:16
-msgid "Whether if the Ctrl key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Whether the Ctrl key must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Ctrl key must be pressed while the mouse button is pressed."
+msgstr "Huruvida Ctrl-tangenten måste tryckas ned för att muspekaren ska fångas när den är över fångstområdet. Om detta alternativ är inställt till sant, och en musknapp är inställd i nyckeln \"capture_button\", så måste Ctrl-tangenten tryckas ned samtidigt som musknappen trycks ned."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid "Whether the Ctrl key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
 msgstr "Huruvida Ctrl-tangenten måste tryckas ned med musknappen som är inställd i \"release_button\" för att muspekaren ska släppas från fångstområdet."
 
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid "Whether the Shift key must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Shift key must be pressed while the mouse button is pressed."
+msgstr "Huruvida Skift-tangenten måste tryckas ned för att muspekaren ska fångas när den är över fångstområdet. Om detta alternativ är inställt till sant, och en musknapp är inställd i nyckeln \"capture_button\", så måste Skift-tangenten tryckas ned samtidigt som musknappen trycks ned."
+
 #: ../data/pointer-capture-applet.schemas.in.h:17
-msgid "Whether if the Shift key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+msgid "Whether the Shift key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
 msgstr "Huruvida Skift-tangenten måste tryckas ned med musknappen som är inställd i \"release_button\" för att muspekaren ska släppas från fångstområdet."
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
 msgid "Width of the capture area in pixels."
 msgstr "Bredd för fångstområde i bildpunkter."
 
-#: ../src/mt-main.c:719
+#: ../src/mt-main.c:720
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Stöd för hjälpmedelsteknik är inte aktiverat"
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -233,39 +233,39 @@ msgstr ""
 "\n"
 "Tryck på \"Aktivera och logga ut\" för att aktivera stöd för hjälpmedelstekniker och starta om din session."
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:828
 msgid "Time to wait before a dwell click"
 msgstr "Tid att vänta innan ett uppehållsklick"
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:830
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tid att vänta innan en simulerad sekundärklickning"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:832
 msgid "Dwell mode to use"
 msgstr "Läge för uppehållsklick att använda"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:836
 msgid "Window x position"
 msgstr "Fönstrets x-position"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:838
 msgid "Window y position"
 msgstr "Fönstrets y-position"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:840
 msgid "Ignore small pointer movements"
 msgstr "Ignorera mindre muspekarrörelser"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:842
 msgid "Show elapsed time as cursor overlay"
 msgstr "Visa åtgången tid som markörtext"
 
-#: ../src/mt-main.c:843
+#: ../src/mt-main.c:844
 msgid "Shut down mousetweaks"
 msgstr "Stäng av musjusteringar"
 
-#: ../src/mt-main.c:852
+#: ../src/mt-main.c:853
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME-musjusteringsdemon"
 

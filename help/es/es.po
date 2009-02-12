@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.help.HEAD\n"
-"POT-Creation-Date: 2009-02-06 19:38+0000\n"
-"PO-Revision-Date: 2009-02-08 13:32+0100\n"
+"POT-Creation-Date: 2009-02-08 12:35+0000\n"
+"PO-Revision-Date: 2009-02-12 23:49+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -507,15 +507,6 @@ msgid "Start From The Graphical User Interface"
 msgstr "Inicio desde la interfaz gráfica de usuario"
 
 #: C/mousetweaks.xml:184(para)
-#| msgid ""
-#| "The graphical user interface to start the simulated secondary click is "
-#| "located in the accessibility tab of the mouse control panel. To open it, "
-#| "choose the menu <menuchoice><guimenu>System</"
-#| "guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Control Center</"
-#| "guimenuitem></menuchoice> and the Control Center will open. By clicking "
-#| "on Mouse in the Control Center, the Mouse control panel will open and "
-#| "after clicking on the Accessibility tab, you will see the following "
-#| "settings:"
 msgid ""
 "The graphical user interface to start the simulated secondary click is "
 "located in the Accessibility tab of the Mouse control panel. To open it, "
@@ -598,14 +589,6 @@ msgid "Start From The Accessibility tab of the Mouse control panel"
 msgstr "Iniciar desde la solapa Accesibilidad en el panel de control del ratón"
 
 #: C/mousetweaks.xml:261(para)
-#| msgid ""
-#| "The graphical user interface to start the dwell click is located in the "
-#| "accessibility tab of the mouse control panel. To open it, choose the menu "
-#| "<menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</"
-#| "guisubmenu><guimenuitem>Control Center</guimenuitem></menuchoice> and the "
-#| "Control Center will open. By clicking on Mouse in the Control Center, the "
-#| "Mouse control panel will open and after clicking on the Accessibility "
-#| "tab, you will see the following settings:"
 msgid ""
 "The graphical user interface to start the dwell click is located in the "
 "Accessibility tab of the Mouse control panel. To open it, choose the menu "
@@ -726,11 +709,6 @@ msgstr ""
 "que se pueden instalar en el panel de GNOME."
 
 #: C/mousetweaks.xml:360(para)
-#| msgid ""
-#| "By double clicking on the <guilabel>Pointer Capture</guilabel> item in "
-#| "the Add to Panel window, the pointer capture applet will be added to the "
-#| "panel, and it will run until it is removed from the GNOME panel; even "
-#| "across."
 msgid ""
 "By double clicking on the <guilabel>Pointer Capture</guilabel> item in the "
 "Add to Panel window, the Pointer Capture applet will be added to the panel, "
@@ -757,7 +735,6 @@ msgid "Quitting The Simulated Secondary Click"
 msgstr "Salir de la pulsación secundaria simulada"
 
 #: C/mousetweaks.xml:376(para)
-#| msgid "It is possible to quit the simulated secondary click in two ways:"
 msgid "It is possible to quit the Simulated Secondary Click in two ways:"
 msgstr "Se puede salir la pulsación secundaria simulada de dos formas:"
 
@@ -770,7 +747,6 @@ msgstr ""
 "de control de los <application>Ajustes finos del ratón</application>."
 
 #: C/mousetweaks.xml:391(para)
-#| msgid "Picture of the checkbox to start the right click feature"
 msgid "Picture of the checkbox to start the simulated right click feature"
 msgstr ""
 "Imagen de la casilla de verificación para iniciar la característica de "
@@ -818,7 +794,6 @@ msgstr ""
 "casilla de verificación."
 
 #: C/mousetweaks.xml:446(para)
-#, fuzzy
 #| msgid ""
 #| "If the Dwell Click applet has been installed on the GNOME panel, the "
 #| "dwell click can be disabled by dwelling with the pointer on its On/Off "
@@ -836,7 +811,6 @@ msgid "Quitting The Pointer Capture Function"
 msgstr "Salir de la captura del puntero"
 
 #: C/mousetweaks.xml:468(para)
-#, fuzzy
 #| msgid ""
 #| "As the pointer capture function comes in the form of a panel applet, you "
 #| "have to quit it the same way that you do it with other applets: you have "
@@ -934,7 +908,6 @@ msgstr ""
 "determinado se activará la pulsación secundaria simulada."
 
 #: C/mousetweaks.xml:545(para)
-#, fuzzy
 #| msgid ""
 #| "While doing the simulated secondary click gesture, mousetweaks will fill "
 #| "the arrow of the pointer with another color to give feedback that it is "
@@ -945,10 +918,10 @@ msgid ""
 "to give feedback that it is counting down the time before issuing the "
 "simulated secondary click."
 msgstr ""
-"Mientras se realiza el gesto de la pulsación secundaria simulada, los "
-"ajustes finos del ratón rellenarán la flecha del puntero de otro color para "
-"dar contexto de que se está llevando a cabo una cuenta atrás antes de "
-"disparar la pulsación secundaria del ratón."
+"Mientras se está pulsando la <mousebutton>pulsación primaria del ratón</"
+"mousebutton>, los ajustes finos del ratón rellenarán la flecha del puntero "
+"de otro color para dar contexto de que se está llevando a cabo una cuenta "
+"atrás antes de disparar la pulsación secundaria del ratón."
 
 #: C/mousetweaks.xml:551(para)
 msgid ""
@@ -1088,7 +1061,6 @@ msgstr ""
 "ejemplo:"
 
 #: C/mousetweaks.xml:629(para)
-#, fuzzy
 #| msgid ""
 #| "When doing a motionless primary button click and hold on the arrow of a "
 #| "scrollbar, the scrollbar jumps to the bottom after some time. This is in "
@@ -1098,10 +1070,10 @@ msgid ""
 "scrollbar jumps to the bottom after some time. This is in fact the normal "
 "behaviour of a secondary click on an arrow of a scrollbar."
 msgstr ""
-"Cuando realice una pulsación sin movimiento del botón primario y mantenga la "
-"flecha de una barra de desplazamiento, la barra de desplazamiento saltará al "
-"final tras cierto tiempo. Esto es debido al comportamiento normal de una "
-"pulsación secundaria sobre la flecha de una barra de desplazamiento."
+"Mientras mantiene el botón primario pulsado sobre la flecha de una barra de "
+"desplazamiento, la barra de desplazamiento saltará al final tras cierto "
+"tiempo. Esto es debido al comportamiento normal de una pulsación secundaria "
+"sobre la flecha de una barra de desplazamiento."
 
 #: C/mousetweaks.xml:635(para)
 msgid ""
@@ -1139,7 +1111,6 @@ msgstr ""
 "pulsación de arrastre y pulsación secundaria."
 
 #: C/mousetweaks.xml:655(para)
-#, fuzzy
 #| msgid ""
 #| "When the buttonless click is active, the <mousebutton>mouse buttons</"
 #| "mousebutton> remain functional and it is still possible to click with the "
@@ -1149,8 +1120,9 @@ msgid ""
 "mousebutton> remain functional and it is still possible to click with the "
 "<mousebutton>mouse buttons</mousebutton>."
 msgstr ""
-"Cuando la pulsación sin botones está activada, los <mousebutton>botones del "
-"ratón</mousebutton> siguen funcionado y aún es posible pulsar con los ellos."
+"Cuando la pulsación sin botones (al posarse) está activada, los "
+"<mousebutton>botones del ratón</mousebutton> siguen funcionado y aún es "
+"posible pulsar con los <mousebutton>botones del ratón</mousebutton>."
 
 #: C/mousetweaks.xml:664(para)
 msgid ""

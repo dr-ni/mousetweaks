@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.help.HEAD\n"
 "POT-Creation-Date: 2009-02-08 12:35+0000\n"
-"PO-Revision-Date: 2009-02-12 23:49+0100\n"
+"PO-Revision-Date: 2009-02-13 17:12+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -988,7 +988,6 @@ msgid "Differences To The Normal Secondary Click"
 msgstr "Diferencias con la pulsación secundaria normal"
 
 #: C/mousetweaks.xml:591(para)
-#, fuzzy
 #| msgid ""
 #| "As the simulated secondary click is not able to discard the "
 #| "<mousebutton>mouse button down</mousebutton> gesture from the "
@@ -1009,10 +1008,10 @@ msgid ""
 "mousebutton>. For example:"
 msgstr ""
 "Ya que la pulsación secundaria simulada no está disponible para descartar el "
-"gesto <mousebutton>botón del ratón abajo</mousebutton> desde la "
-"<mousebutton>pulsación primaria del ratón</mousebutton> del usuario, invoca "
+"evento <mousebutton>botón del ratón abajo</mousebutton> desde la "
+"<mousebutton>pulsación primaria del ratón</mousebutton> del usuario invoca "
 "una pulsación primaria antes de lanzar la pulsación secundaria. En otras "
-"palabras, cada pulsación secundaria realizada por esta función es "
+"palabras, cada pulsación secundaria realizada por esta función está "
 "inmediatamente precedida por una pulsación primaria y esto hace que se "
 "comporte de una forma algo distinta a una pulsación secundaria normal "
 "realizada por el <mousebutton>botón secundario del ratón</mousebutton>. Por "
@@ -1090,7 +1089,6 @@ msgid "Dwell Click Description"
 msgstr "Descripción de la pulsación al posarse"
 
 #: C/mousetweaks.xml:648(para)
-#, fuzzy
 #| msgid ""
 #| "There are users that cannot use any hardware button. By activating the "
 #| "<guilabel>Dwell Click</guilabel>, they can have the mouse perform the "
@@ -1105,7 +1103,7 @@ msgid ""
 "secondary click."
 msgstr ""
 "Hay usuarios que no pueden pulsar ningún botón físico. Activando la "
-"<guilabel>pulsación al posarse</guilabel> pueden hacer que el ratón realice "
+"<guilabel>Pulsación al posarse</guilabel> pueden hacer que el ratón realice "
 "varias pulsaciones sin pulsar ningún botón del ratón. Los tipos de pulsación "
 "que se pueden realizar son: pulsación primaria simple, pulsación doble, "
 "pulsación de arrastre y pulsación secundaria."
@@ -1238,7 +1236,6 @@ msgstr ""
 "que tiene ciertas ventajas:"
 
 #: C/mousetweaks.xml:768(para)
-#, fuzzy
 #| msgid ""
 #| "The user does not need the <guilabel>Click Type Window</guilabel> that "
 #| "covers other windows on the desktop."
@@ -1247,7 +1244,7 @@ msgid ""
 "cover other windows on the desktop."
 msgstr ""
 "El usuario no necesita la ventana del <guilabel>Tipo de pulsación</guilabel> "
-"que cubra otras ventanas del escritorio."
+"que puede que cubra otras ventanas del escritorio."
 
 #: C/mousetweaks.xml:774(para)
 msgid ""
@@ -1299,7 +1296,6 @@ msgstr ""
 "Completado de pulsación y elección del tipo de pulsación por gesto del ratón"
 
 #: C/mousetweaks.xml:799(para)
-#, fuzzy
 #| msgid ""
 #| "This mode is active when the user selects <guilabel>Choose type of click "
 #| "with mouse gestures</guilabel>. In fact, after the mouse has been "
@@ -1316,8 +1312,8 @@ msgstr ""
 "Este modo está activo cuando el usuario selecciona <guilabel>Elegir el tipo "
 "de pulsación con gesto del ratón</guilabel>. De hecho, después de que el "
 "ratón haya estado sin movimiento por el <link linkend=\"mouse-a11y-dwell-"
-"delay\">retardo</link> predefinido anteriormente, la forma del puntero "
-"cambiará durante un pequeño periodo:"
+"delay\">retardo</link> definido anteriormente, la forma del puntero cambiará "
+"durante un pequeño periodo:"
 
 #: C/mousetweaks.xml:808(para)
 msgid ""
@@ -1336,7 +1332,6 @@ msgstr ""
 "puntero para dar contexto al usuario."
 
 #: C/mousetweaks.xml:818(para)
-#, fuzzy
 #| msgid ""
 #| "If the user keeps the pointer motionless until it returns to its normal "
 #| "shape, the user can move the mouse without a click being performed. The "

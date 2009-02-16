@@ -1,3 +1,33 @@
+Version 2.25.91
+---------------
+
+Misc improvements/fixes:
+
+    * #571133: Improve long descriptions in schemas.
+    * #569457: Also keep english gconf values in translations.
+
+New and updated translations:
+
+	- [bg] Alexander Shopov
+	- [da] Per Kongstad
+	- [es] Jorge González
+	- [eu] Iñaki Larrañaga Murgoitio
+	- [hu] Gabor Kelemen 
+	- [nl] Wouter Bolsterlee
+	- [pa] Amanpreet Singh Alam
+	- [pl] Tomasz Dominikowski 
+	- [ro] Adi Roiban
+	- [sv] Daniel Nylander
+	- [th] Theppitak Karoonboonyanan 
+	- [vi] Clytie Siddall
+	- [zh_HK] Chao-Hsiung Liao
+	- [zh_TW] Chao-Hsiung Liao
+
+New and updated manual translation:
+
+	- [es] Jorge González
+	- [it] Milo Casagrande
+
 Version 2.25.90
 ---------------
 

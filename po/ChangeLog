@@ -1,3 +1,7 @@
+2009-02-16  Wouter Bolsterlee  <wbolster@svn.gnome.org>
+
+	* nl.po: Updated Dutch translation by Wouter Bolsterlee.
+
 2009-02-15 Kenneth Nielsen <k.nielsen81@gmail.com>
 
 	* da.po: Updated Danish translation by Per Kongstad
@@ -12,8 +16,8 @@
 
 2009-02-14  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
 
-        * zh_HK.po: Updated Traditional Chinese translation(Hong Kong).
-        * zh_TW.po: Updated Traditional Chinese translation(Taiwan).
+	* zh_HK.po: Updated Traditional Chinese translation(Hong Kong).
+	* zh_TW.po: Updated Traditional Chinese translation(Taiwan).
 
 2009-02-13  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
@@ -40,9 +44,9 @@
 
 	* sv.po: Updated Swedish translation.
 
-2009-02-10  Jorge Gonzalez  <jorgegonz@svn.gnome.org> 
+2009-02-10  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
-	* es.po: Updated Spanish translation.   
+	* es.po: Updated Spanish translation.
 
 2009-02-10  Alexander Shopov  <ash@contact.bg>
 
@@ -116,7 +120,7 @@
 
 2008-11-08  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
-	* es.po: Updated Spanish translation.   
+	* es.po: Updated Spanish translation.
 
 2008-09-30  Priit Laes  <plaes at svn dot gnome dot org>
 
@@ -147,7 +151,7 @@
 
 	* zh_CN.po: Updated zh_CN translation.
 
-2008-09-19  Djihed Afifi <djihed@gmail.com> 
+2008-09-19  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Usama Akkad.
 
@@ -157,10 +161,10 @@
 
 2008-09-18  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
 
-        * zh_HK.po: Updated Traditional Chinese translation(Hong Kong).
-        * zh_TW.po: Updated Traditional Chinese translation(Taiwan).
+	* zh_HK.po: Updated Traditional Chinese translation(Hong Kong).
+	* zh_TW.po: Updated Traditional Chinese translation(Taiwan).
 
-2008-09-18  Djihed Afifi <djihed@gmail.com> 
+2008-09-18  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
@@ -172,7 +176,7 @@
 
 	* LINGUAS, sq.po: Added Albanian translation.
 
-2008-09-15  Djihed Afifi <djihed@gmail.com> 
+2008-09-15  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
@@ -220,7 +224,7 @@
 	* fr.po: Updated French translation by Bruno Brouard ('dwell click' ->
 	'clic par maintien').
 
-2008-09-10  Jorge Gonzalez  <jorgegonz@svn.gnome.org>   
+2008-09-10  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -270,7 +274,7 @@
 
 2008-09-06  Ignacio Casal Quinteiro  <nacho.resa@gmail.com>
 
-	 gl.po: Updated Galician translation
+	* gl.po: Updated Galician translation
 
 2008-09-06  Philip Withnall  <philip@tecnocode.co.uk>
 
@@ -326,17 +330,17 @@
 
 	* fi.po: Updated Finnish translation.
 
-2008-08-6  Djihed Afifi <djihed@gmail.com> 
+2008-08-6  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
-2008-07-29  Djihed Afifi <djihed@gmail.com> 
+2008-07-29  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
 2008-06-25  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
-	* es.po: Updated Spanish translation  
+	* es.po: Updated Spanish translation
 
 2008-07-22  Daniel Nylander <po@danielnylander.se>
 
@@ -356,7 +360,7 @@
 	Alexander Shopov <ash@contact.bg>
 	* LINGUAS: Added "bg" (Bulgarian)
 
-2008-06-11  Djihed Afifi <djihed@gmail.com> 
+2008-06-11  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
@@ -370,7 +374,7 @@
 
 2008-06-07  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
-	* es.po: Updated Spanish translation  
+	* es.po: Updated Spanish translation
 
 2008-06-03  Ignacio Casal Quinteiro  <nacho.resa@gmail.com>
 
@@ -393,11 +397,11 @@
 	* LINGUAS: Added Oriya (or) to the list of languages.
 	* or.po: Added and Updated Oriya translation by Manoj Giri.
 
-2008-05-22  Djihed Afifi <djihed@gmail.com> 
+2008-05-22  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
-2008-05-22  Jorge Gonzalez  <jorgegonz@svn.gnome.org>  
+2008-05-22  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -405,7 +409,7 @@
 
 	* gl.po: Updated Galician Translation.
 
-2008-05-19  Djihed Afifi <djihed@gmail.com> 
+2008-05-19  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
@@ -431,7 +435,7 @@
 	* nn.po: Added Norwegian Nynorsk translation
 
 2008-03-25  Hendrik Brandt  <heb@gnome-de.org>
-	
+
 	* de.po: Updated German translation.
 
 2008-03-10  Petr Kovar  <pknbe@volny.cz>
@@ -447,7 +451,7 @@
 
 2008-03-09 Maxim Dziumanenko <dziumanenko@gmail.com>
 
-        * uk.po: Add Ukrainian translation.
+	* uk.po: Add Ukrainian translation.
 	* LINGUAS: Add Ukrainian (uk)
 
 2008-03-09  Praveen Arimbrathodiyil <pravi.a@gmail.com>
@@ -464,7 +468,7 @@
 
 	* tr.po: Added Turkish translation from Emrah Unal
 	* LINGUAS: Added tr (turkish)
-	
+
 2008-03-09  I. Felix <ifelix@svn.gnome.org>
 
 	* ta.po:  Tamil Translation updated by Tirumurthi Vasudevan
@@ -473,8 +477,8 @@
 
 2008-03-09  Nickolay V. Shmyrev  <nshmyrev@yandex.ru>
 
-	* LINGUAS: 
-	* ru.po: Added Russian translation by 
+	* LINGUAS:
+	* ru.po: Added Russian translation by
 	Yuriy Penkin <yura.penkin@gmail.com>
 
 2008-03-09  Gintautas Miliauskas  <gintas@akl.lt>
@@ -543,7 +547,7 @@
 
 2008-02-18  Amanpreet Singh Alam <apreet.alam@gmail.com>
 
- 	* LINGUAS: Punjabi (pa) added to file
+	* LINGUAS: Punjabi (pa) added to file
 	* pa.po: Punjabi Translation added
 
 2008-02-18  Ilkka Tuohela <hile@iki.fi>
@@ -574,8 +578,8 @@
 2008-02-13  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
 
 	* LINGUAS: Add zh_HK zh_TW
-        * zh_HK.po: Added Traditional Chinese translation(Hong Kong).
-        * zh_TW.po: Added Traditional Chinese translation(Taiwan).
+	* zh_HK.po: Added Traditional Chinese translation(Hong Kong).
+	* zh_TW.po: Added Traditional Chinese translation(Taiwan).
 
 2008-02-13  Hendrik Brandt  <heb@gnome-de.org>
 
@@ -585,7 +589,7 @@
 
 	* fi.po: Added Finnish translation.
 
-2008-02-12  Djihed Afifi <djihed@gmail.com> 
+2008-02-12  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
@@ -602,7 +606,7 @@
 
 	* de.po: Updated German translation.
 
-2008-02-02  Yannig Marchegay  <yannig@marchegay.org>           
+2008-02-02  Yannig Marchegay  <yannig@marchegay.org>
 
 	* LINGUAS, oc/oc.po: New Occitan translation.
 
@@ -610,7 +614,7 @@
 
 	* LINGUAS, pt_BR.po: Brazilian Portuguese translation by Luiz Armesto
 
-2008-01-31  Djihed Afifi <djihed@gmail.com> 
+2008-01-31  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
@@ -647,18 +651,18 @@
 
 2008-01-21  Kjartan Maraas  <kmaraas@gnome.org>
 
-	* LINGUAS: Add nb. 
+	* LINGUAS: Add nb.
 	* nb.po: Add Norwegian bokmål translation.
 
 2008-01-21  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
-2008-01-20  Djihed Afifi <djihed@gmail.com> 
+2008-01-20  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
-2008-01-20  Djihed Afifi <djihed@gmail.com> 
+2008-01-20  Djihed Afifi <djihed@gmail.com>
 
 	* ar.po: Added Arabic Translation.
 	* LINGUAS: Added ar.
@@ -691,7 +695,7 @@
 
 2007-11-15 Francesco Fumanti <francesco.fumanti@gmx.net>
 	* Fix typo in de
-        * Update of copyright information in fr, it
+	* Update of copyright information in fr, it
 
 2007-11-13 Francesco Fumanti <francesco.fumanti@gmx.net>
 	* Update de, fr, it
@@ -699,7 +703,7 @@
 2007-11-13 Gerd Kohlberger <lowfi@chello.at>
 	* Merge with new template
 	* Update de
-	
+
 2007-11-09 Gerd Kohlberger <lowfi@chello.at>
 	* Update de
 	* Update it, fr (Francesco Fumanti)

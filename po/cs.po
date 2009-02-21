@@ -1,132 +1,24 @@
 # Czech translation of mousetweaks.
-# Copyright (C) 2008 the author(s) of mousetweaks.
+# Copyright (C) 2008, 2009 the author(s) of mousetweaks.
 # This file is distributed under the same license as the mousetweaks package.
 # Lucas Lommer <llommer@svn.gnome.org>, 2008.
-# Adrian Guniš <andygun@seznam.cz>, 2008.
+# Adrian Guniš <andygun@seznam.cz>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-09 21:13+0100\n"
-"PO-Revision-Date: 2008-11-08 21:14+0100\n"
+"POT-Creation-Date: 2009-02-21 23:13+0100\n"
+"PO-Revision-Date: 2009-02-15 12:34+0100\n"
 "Last-Translator: Adrian Guniš <andygun696@gmail.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-Language: Czech\n"
 
-#: ../data/dwell-click-applet.glade.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Applet pro výběr různých typů kliknutí počkáním.\n"
-"Součást Mousetweaks"
-
-#: ../data/dwell-click-applet.glade.h:3
-msgid "Click Type Window"
-msgstr "Okno typů kliknutí"
-
-#: ../data/dwell-click-applet.glade.h:4
-msgid "Double Click"
-msgstr "Dvojklik"
-
-#: ../data/dwell-click-applet.glade.h:5
-msgid "Drag Click"
-msgstr "Táhnutí"
-
-#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:823
-msgid "Enable dwell click"
-msgstr "Zapnout kliknutí počkáním"
-
-#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:111
-#: ../src/dwell-click-applet.c:649
-msgid "On"
-msgstr "Zapnuto"
-
-#: ../data/dwell-click-applet.glade.h:8
-msgid "Right Click"
-msgstr "Kliknutí pravým tlačítkem"
-
-#: ../data/dwell-click-applet.glade.h:9
-msgid "Single Click"
-msgstr "Kliknutí levým tlačítkem"
-
-#: ../data/pointer-capture-applet.glade.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr "<b>Zachycení kurzoru</b>"
-
-#: ../data/pointer-capture-applet.glade.h:2
-msgid "<b>Release Pointer</b>"
-msgstr "<b>Uvolnění kurzoru</b>"
-
-#: ../data/pointer-capture-applet.glade.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr "<b>Velikost oblasti zachycení</b>"
-
-#: ../data/pointer-capture-applet.glade.h:4
-msgid "A_lt"
-msgstr "A_lt"
-
-#: ../data/pointer-capture-applet.glade.h:5
-msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Oblast uzamčení kurzoru myši na panelu.\n"
-"Součást Mousetweaks"
-
-#: ../data/pointer-capture-applet.glade.h:7
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-#: ../data/pointer-capture-applet.glade.h:9
-msgid "Modifier:"
-msgstr "Modifikátor:"
-
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "Mouse _button:"
-msgstr "Tlačítko _myši:"
-
-#: ../data/pointer-capture-applet.glade.h:11
-msgid "Mouse b_utton:"
-msgstr "Tlačítko m_yši:"
-
-#: ../data/pointer-capture-applet.glade.h:12
-msgid "Pointer Capture Preferences"
-msgstr "Nastavení zachycení kurzoru"
-
-#: ../data/pointer-capture-applet.glade.h:13
-msgid "S_hift"
-msgstr "S_hift"
-
-#: ../data/pointer-capture-applet.glade.h:14
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Stisknutím tlačítka 0 se zachytí kurzor okamžitě"
-
-#: ../data/pointer-capture-applet.glade.h:15
-msgid "Sh_ift"
-msgstr "Sh_ift"
-
-#: ../data/pointer-capture-applet.glade.h:16
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.glade.h:17
-msgid "_Width:"
-msgstr "Šíř_ka:"
-
-#: ../data/pointer-capture-applet.glade.h:18
-msgid "pixels"
-msgstr "pixelů"
-
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:562
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
 msgstr "Kliknutí počkáním"
 
@@ -219,11 +111,15 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Čas nutný pro kliknutí počkáním"
 
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
+msgid "Enable dwell click"
+msgstr "Zapnout kliknutí počkáním"
+
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Zapnout kliknutí pravým tlačítkem"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:825
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
 msgid "Enable simulated secondary click"
 msgstr "Zapnout simulované kliknutí pravým tlačítkem"
 
@@ -251,7 +147,7 @@ msgstr "Práh pohybu"
 msgid "Secondary click time"
 msgstr "Čas nutný pro kliknutí pravým tlačítkem"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:833
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
 msgid "Show click type window"
 msgstr "Zobrazit okno typů kliknutí"
 
@@ -268,67 +164,132 @@ msgid "Time in seconds before a secondary click is triggered"
 msgstr "Čas v sekundách, než se provede kliknutí pravým tlačítkem"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture modifier"
-msgstr "Modifikátor pro zachycení"
+msgid "Capture pointer only if Alt is pressed"
+msgstr "Zachytit kurzor jen když je stisknut Alt"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture modifier key (Alt)"
-msgstr "Modifikační klávesa pro zachycení (Alt)"
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "Zachytit kurzor jen když je stisknuto Ctrl"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture modifier key (Ctrl)"
-msgstr "Modifikační klávesa pro zachycení (Ctrl)"
+msgid "Capture pointer only if Shift is pressed"
+msgstr "Zachytit kurzor jen když je stisknut Shift"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier key (Shift)"
-msgstr "Modifikační klávesa pro zachycení (Shift)"
+msgid "Mouse button used to capture the pointer"
+msgstr "Tlačítko myši použité k zachycení kurzoru"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture mouse button"
-msgstr "Tlačítko myši pro zachycení"
+msgid "Mouse button used to release the pointer"
+msgstr "Tlačítko myši použité k uvolnění kurzoru"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-msgstr "Tlačítko myši pro zachycení kurzoru (\"0\" = okamžité zachycení)"
+msgid "Release pointer only if Alt is pressed"
+msgstr "Uvolnit kurzor jen když je stisknut Alt"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Mouse button to release the pointer"
-msgstr "Tlačítko myši pro uvolnění kurzoru"
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "Uvolnit kurzor jen když je stisknuto Ctrl"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release modifier"
-msgstr "Modifikátor pro uvolnění"
+msgid "Release pointer only if Shift is pressed"
+msgstr "Uvolnit kurzor jen když je stisknut Shift"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier key (Alt)"
-msgstr "Modifikační klávesa pro uvolnění (Alt)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Ctrl)"
-msgstr "Modifikační klávesa pro uvolnění (Ctrl)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Shift)"
-msgstr "Modifikační klávesa pro uvolnění (Shift)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release mouse button"
-msgstr "Tlačítko myši pro uvolnění"
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
 msgstr "Velikost oblasti zachycení"
 
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
-msgstr "Šířka oblasti zachycení v pixelech"
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr ""
+"Toto tlačítko myši musí být stisknuto pro uvolnění ukazatele z oblasti "
+"zachycení. Platné hodnoty jsou \"1\" pro levé, \"2\" pro střední a \"3\" pro "
+"pravé tlačítko."
 
-#: ../src/mt-main.c:719
-#, fuzzy
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr ""
+"Toto tlačítko myši musí být stisknuto, pokud je kurzor nad oblastí zachycení "
+"k tomu, aby byl kurzor zachycen. Platné hodnoty jsou \"0\", takže není "
+"potřeba žádné tlačítko, \"1\" pro levé, \"2\" pro střední a \"3\" pro pravé "
+"tlačítko."
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Zda musí být stisknuta klávesa Alt pro zachycení kurzoru, když je nad "
+"oblastí zachycení. Pokud je tato volba nastavena na hodnotu PRAVDA a v klíči "
+"\"capture_button\" je nastaveno tlačítko myši, pak musí být spolu s "
+"tlačítkem myši stisknuta i klávesa Alt."
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Zda musí být stisknuta klávesa Alt spolu s tlačítkem myši nastaveným v klíči "
+"\"release_button\" k tomu, aby byl uvolněn kurzor z oblasti zachycení."
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Zda musí být stisknuta klávesa Ctrl pro zachycení kurzoru, když je nad "
+"oblastí zachycení. Pokud je tato volba nastavena na hodnotu PRAVDA a v klíči "
+"\"capture_button\" je nastaveno tlačítko myši, pak musí být spolu s "
+"tlačítkem myši stisknuta i klávesa Ctrl."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Zda musí být stisknuta klávesa Ctrl spolu s tlačítkem myši nastaveným v "
+"klíči \"release_button\" k tomu, aby byl uvolněn kurzor z oblasti zachycení."
+
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Zda musí být stisknuta klávesa Shift pro zachycení kurzoru, když je nad "
+"oblastí zachycení. Pokud je tato volba nastavena na hodnotu PRAVDA a v klíči "
+"\"capture_button\" je nastaveno tlačítko myši, pak musí být spolu s "
+"tlačítkem myši stisknuta i klávesa Shift."
+
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Zda musí být stisknuta klávesa Shift spolu s tlačítkem myši nastaveným v "
+"klíči \"release_button\" k tomu, aby byl uvolněn kurzor z oblasti zachycení."
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+msgid "Width of the capture area in pixels."
+msgstr "Šířka oblasti zachycení v pixelech."
+
+#: ../src/mt-main.c:720
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Není povolena podpora technologií usnadnění"
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -341,39 +302,39 @@ msgstr ""
 "K povolení podpory pro technologie usnadnění a restartování sezení stiskněte "
 "\"Povolit a odhlásit\"."
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:828
 msgid "Time to wait before a dwell click"
 msgstr "Doba čekání před kliknutím počkáním"
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:830
 msgid "Time to wait before a simulated secondary click"
 msgstr "Doba čekání před simulovaným kliknutím pravým tlačítkem"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:832
 msgid "Dwell mode to use"
 msgstr "Režim kliknutí počkáním, který se má použít"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:836
 msgid "Window x position"
 msgstr "Pozice x okna"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:838
 msgid "Window y position"
 msgstr "Pozice y okna"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:840
 msgid "Ignore small pointer movements"
 msgstr "Ignorovat nepatrné pohyby kurzoru"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:842
 msgid "Show elapsed time as cursor overlay"
 msgstr "Zobrazit uplynulý čas jako překrytí kurzoru"
 
-#: ../src/mt-main.c:843
+#: ../src/mt-main.c:844
 msgid "Shut down mousetweaks"
 msgstr "Vypnout mousetweaks"
 
-#: ../src/mt-main.c:851
+#: ../src/mt-main.c:853
 msgid "- GNOME mousetweaks daemon"
 msgstr "- Démon GNOME mousetweaks"
 
@@ -402,28 +363,6 @@ msgstr "Oblast zachycení"
 msgid "Temporarily lock the mouse pointer"
 msgstr "Dočasné uzamčení kurzoru myši"
 
-#: ../src/dwell-click-applet.c:111 ../src/dwell-click-applet.c:649
-msgid "Off"
-msgstr "Vypnuto"
-
-#: ../src/dwell-click-applet.c:335
+#: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Selhalo spuštění Nastavení myši"
-
-#~ msgid "Dwell Click Type"
-#~ msgstr "Typ kliknutí počkáním"
-
-#~ msgid "Show Icons and Text"
-#~ msgstr "Zobrazit ikony a text"
-
-#~ msgid "Show Icons only"
-#~ msgstr "Zobrazit jen ikony"
-
-#~ msgid "Show Text only"
-#~ msgstr "Zobrazit jen text"
-
-#~ msgid "Pointer Capture Applet"
-#~ msgstr "Applet zachycení kurzoru"
-
-#~ msgid "Dwell Click Applet"
-#~ msgstr "Applet kliknutí počkáním"

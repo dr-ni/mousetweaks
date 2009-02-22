@@ -1,150 +1,23 @@
-# Turkish translation of MouseTweak.
+# Turkish translation of MouseTweaks,
 # Copyright (C) 2008 THE MouseTweak'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the MouseTweak package.
+# This file is distributed under the same license as the MouseTweaks package.
 # Emrah Ünal <eunall@gmail.com>, 2008.
-# , fuzzy
 #
 #
-# Baris Cicek <baris@teamforce.name.tr>, 2008.
+# Baris Cicek <baris@teamforce.name.tr>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-13 05:55+0300\n"
-"PO-Revision-Date: 2008-09-10 22:53+0300\n"
+"POT-Creation-Date: 2009-02-22 22:49+0200\n"
+"PO-Revision-Date: 2009-02-22 22:56+0200\n"
 "Last-Translator: Baris Cicek <baris@teamforce.name.tr>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type:  text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/dwell-click-applet.glade.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Farklı durağan tıklama türlerini seçecek uygulamacık.\n"
-"MouseTweaks uygulamasının bir parçası"
-
-#: ../data/dwell-click-applet.glade.h:3
-msgid "Click Type Window"
-msgstr "Tıklama Türü Penceresi"
-
-#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
-msgid "Double Click"
-msgstr "Çift tıklama"
-
-#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
-msgid "Drag Click"
-msgstr "Sürüklemeli Tıklama"
-
-#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:821
-msgid "Enable dwell click"
-msgstr "Durağan tıklamayı etkinleştir"
-
-#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:112
-#: ../src/dwell-click-applet.c:642
-msgid "On"
-msgstr "Açık"
-
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:4
-msgid "Right Click"
-msgstr "Sağ Tıklama"
-
-#: ../data/dwell-click-applet.glade.h:9 ../data/ctw.glade.h:8
-msgid "Single Click"
-msgstr "Tek Tıklama"
-
-#: ../data/pointer-capture-applet.glade.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr "<b>İmleci Yakala</b>"
-
-#: ../data/pointer-capture-applet.glade.h:2
-msgid "<b>Release Pointer</b>"
-msgstr "<b>İmleci Bırak</b>"
-
-#: ../data/pointer-capture-applet.glade.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr "<b>Yakalama Alanının Büyüklüğü</b>"
-
-#: ../data/pointer-capture-applet.glade.h:4
-msgid "A_lt"
-msgstr "A_lt"
-
-#: ../data/pointer-capture-applet.glade.h:5
-msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Fare imlecinin panel üzerinde dondurulduğu alan.\n"
-"MouseTweaks uygulamasının parçası"
-
-#: ../data/pointer-capture-applet.glade.h:7
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-#: ../data/pointer-capture-applet.glade.h:9
-msgid "Modifier:"
-msgstr "Değiştirici:"
-
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "Mouse _button:"
-msgstr "Fare _düğmesi:"
-
-#: ../data/pointer-capture-applet.glade.h:11
-msgid "Mouse b_utton:"
-msgstr "Fare _düğmesi:"
-
-#: ../data/pointer-capture-applet.glade.h:12
-msgid "Pointer Capture Preferences"
-msgstr "İmleç Yakalama Tercihleri"
-
-#: ../data/pointer-capture-applet.glade.h:13
-msgid "S_hift"
-msgstr "S_hift"
-
-#: ../data/pointer-capture-applet.glade.h:14
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Düğme 0 seçildiğinde imleç hemen yakalanacaktır"
-
-#: ../data/pointer-capture-applet.glade.h:15
-msgid "Sh_ift"
-msgstr "Sh_ift"
-
-#: ../data/pointer-capture-applet.glade.h:16
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.glade.h:17
-msgid "_Width:"
-msgstr "_Genişlik"
-
-#: ../data/pointer-capture-applet.glade.h:18
-msgid "pixels"
-msgstr "piksel"
-
-#: ../data/ctw.glade.h:3
-msgid "Dwell Click Type"
-msgstr "Durağan Tıklama Türü"
-
-#: ../data/ctw.glade.h:5
-msgid "Show Icons and Text"
-msgstr "Simge ve Yazıları Göster"
-
-#: ../data/ctw.glade.h:6
-msgid "Show Icons only"
-msgstr "Yalnızca Simgeleri Göster"
-
-#: ../data/ctw.glade.h:7
-msgid "Show Text only"
-msgstr "Yalnızca Yazıyı göster"
-
-#: ../data/DwellClick_Factory.server.in.in.h:1
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
 msgstr "Durağan Tıklama"
 
@@ -157,6 +30,7 @@ msgid "Area to lock the pointer"
 msgstr "İmleci kilitleyecek alan"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
+#: ../src/pointer-capture-applet.c:549
 msgid "Pointer Capture"
 msgstr "İmleç Yakalama"
 
@@ -235,11 +109,15 @@ msgstr "Durağan tıklama kipi (\"0\" = Hareket kipi, \"1\" = Pencere kipi)"
 msgid "Dwell click time"
 msgstr "Durağan tıklama süresi"
 
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
+msgid "Enable dwell click"
+msgstr "Durağan tıklamayı etkinleştir"
+
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "İkincil tıklamayı etkinleştir"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
 msgid "Enable simulated secondary click"
 msgstr "Benzetimli ikincil tıklamayı etkinleştir"
 
@@ -267,7 +145,7 @@ msgstr "Hareket eşiği"
 msgid "Secondary click time"
 msgstr "İkincil tıklama süresi"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
 msgid "Show click type window"
 msgstr "Tıklama türü penceresini göster"
 
@@ -284,66 +162,128 @@ msgid "Time in seconds before a secondary click is triggered"
 msgstr "İkincil tıklama tetiklenmeden önceki saniye cinsinden süre"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture modifier"
-msgstr "Yakalama değiştirici"
+msgid "Capture pointer only if Alt is pressed"
+msgstr "Belirteci sadece Alt basılı iken yakala"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture modifier key (Alt)"
-msgstr "Yakalama değiştirici tuş (Alt)"
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "Belirteci sadece Ctrl basılı iken yakala"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture modifier key (Ctrl)"
-msgstr "Yakalama değiştirici tuş (Ctrl)"
+msgid "Capture pointer only if Shift is pressed"
+msgstr "Belirteci sadece Shift basılı iken yakala"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier key (Shift)"
-msgstr "Yakalama değiştirici tuş (Shift)"
+msgid "Mouse button used to capture the pointer"
+msgstr "Belirteci yakalamak için kullanılacak fare düğmesi"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture mouse button"
-msgstr "Fare düğmesini yakala"
+msgid "Mouse button used to release the pointer"
+msgstr "Berliteci bırakmak için kullanılacak fare düğmesi"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-msgstr "İmleci yakalayacak fare düğmesi (\"0\" = Hemen yakala)"
+msgid "Release pointer only if Alt is pressed"
+msgstr "Belirteci sadece Alt basılı iken bırak"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Mouse button to release the pointer"
-msgstr "İmleci serbest bırakacak fare düğmesi"
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "Belirteci sadece Ctrl basılı iken bırak"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release modifier"
-msgstr "Bırakma değiştirici"
+msgid "Release pointer only if Shift is pressed"
+msgstr "Belirteci sadece Shift basılı iken bırak"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier key (Alt)"
-msgstr "Bırakma değiştirici tuş (Alt)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Ctrl)"
-msgstr "Bırakma değiştirici tuş (Ctrl)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Shift)"
-msgstr "Bırakma değiştirici tuş (Shift)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release mouse button"
-msgstr "Fare düğmesini bırak"
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
 msgstr "Yakalama alanının büyüklüğü"
 
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
-msgstr "Yakalama alanının piksel cinsinden genişliği"
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr ""
+"Bu fare düğmesi yakalama alanından belirteci bırakmak için basılı olmalıdır. "
+"Geçerli değerler \"1\" sol düğme için, \"2\" orta düğme için, ve \"3\" sağ "
+"düğme için."
 
-#: ../src/mt-main.c:722
-msgid "Assistive Technology Support Is Not Enabled"
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr ""
+"Bu fare düğmesi yakalama alanında belirteci yakalamak için basılı olmalıdır. "
+"Geçerli değerler \"0\" düğme gerekmiyorsa, \"1\" sol düğme için, \"2\" orta "
+"düğme için, ve \"3\" sağ düğme için."
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Yakalama alanı üzerinde belirtecin takalanması için Alt tuşunun basılı "
+"olması. Eğer bu seçenek true ise ve bir \"custom_button\" anahtarında bir "
+"fare düğmesi atanmışsa, Alt tuşu fare düğmesi basılıyken basılı olmalıdır."
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Belirtecin yakalama alanından bırakılması için \"release_button\" içinde "
+"atanmış fare düğmesi ile Alt tuşunun basılması."
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Yakalama alanı üzerinde belirtecin takalanması için Ctrl tuşunun basılı "
+"olması. Eğer bu seçenek true ise ve bir \"custom_button\" anahtarında bir "
+"fare düğmesi atanmışsa, Ctrl tuşu fare düğmesi basılıyken basılı olmalıdır."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Belirtecin yakalama alanından bırakılması için \"release_button\" içinde "
+"atanmış fare düğmesi ile Ctrl tuşunun basılması."
+
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Yakalama alanı üzerinde belirtecin takalanması için Shift tuşunun basılı "
+"olması. Eğer bu seçenek true ise ve bir \"custom_button\" anahtarında bir "
+"fare düğmesi atanmışsa, Shift tuşu fare düğmesi basılıyken basılı olmalıdır."
+
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Belirtecin yakalama alanından bırakılması için \"release_button\" içinde "
+"atanmış fare düğmesi ile Shift tuşunun basılması."
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+msgid "Width of the capture area in pixels."
+msgstr "Yakalama alanının piksel cinsinden genişliği."
+
+#: ../src/mt-main.c:720
+msgid "Assistive Technology Support is not Enabled"
 msgstr "Yardımcı Teknoloji Desteği Etkin Değil"
 
-#: ../src/mt-main.c:723
+#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -355,39 +295,39 @@ msgstr ""
 "Yardımcı teknoloji desteğini etkinleştirmek ve oturumu yeniden başlatmak "
 "için \"Etkinleştir ve Çıkış Yap\"a basın."
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:828
 msgid "Time to wait before a dwell click"
 msgstr "Durak tıklama öncesi beklenecek süre"
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:830
 msgid "Time to wait before a simulated secondary click"
 msgstr "Benzetimli ikincil tıklamayı etkinleştirmek için beklenecek süre"
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:832
 msgid "Dwell mode to use"
 msgstr "Kullanılacak durağan tıklama kipi"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:836
 msgid "Window x position"
 msgstr "Pencere x konumu"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:838
 msgid "Window y position"
 msgstr "Pencere y konumu"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:840
 msgid "Ignore small pointer movements"
 msgstr "Ufak belirteç hareketlerini yoksay"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:842
 msgid "Show elapsed time as cursor overlay"
 msgstr "İmleç üzerindeyken geçen zamanı göster"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:844
 msgid "Shut down mousetweaks"
 msgstr "Fare Ayarlayıcısını kapat"
 
-#: ../src/mt-main.c:849
+#: ../src/mt-main.c:853
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME fare ayarlayıcı servisi"
 
@@ -408,29 +348,151 @@ msgstr "Kilitli"
 msgid "L"
 msgstr "K"
 
-#: ../src/pointer-capture-applet.c:542
-msgid "Pointer Capture Applet"
-msgstr "İmleç Yakalama Uygulamacığı"
-
-#: ../src/pointer-capture-applet.c:614
+#: ../src/pointer-capture-applet.c:621
 msgid "Capture area"
 msgstr "Yakalama alanı"
 
-#: ../src/pointer-capture-applet.c:615
+#: ../src/pointer-capture-applet.c:622
 msgid "Temporarily lock the mouse pointer"
 msgstr "İmleci geçici olarak kilitle"
 
-#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
-msgid "Off"
-msgstr "Kapalı"
-
-#: ../src/dwell-click-applet.c:335
+#: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Fare Tercihleri Başlatılırken Başarısız Olundu"
 
-#: ../src/dwell-click-applet.c:565
-msgid "Dwell Click Applet"
-msgstr "Durağan Tıklama Uygulamacığı"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Farklı durağan tıklama türlerini seçecek uygulamacık.\n"
+#~ "MouseTweaks uygulamasının bir parçası"
+
+#~ msgid "Click Type Window"
+#~ msgstr "Tıklama Türü Penceresi"
+
+#~ msgid "Double Click"
+#~ msgstr "Çift tıklama"
+
+#~ msgid "Drag Click"
+#~ msgstr "Sürüklemeli Tıklama"
+
+#~ msgid "On"
+#~ msgstr "Açık"
+
+#~ msgid "Right Click"
+#~ msgstr "Sağ Tıklama"
+
+#~ msgid "Single Click"
+#~ msgstr "Tek Tıklama"
+
+#~ msgid "<b>Capture Pointer</b>"
+#~ msgstr "<b>İmleci Yakala</b>"
+
+#~ msgid "<b>Release Pointer</b>"
+#~ msgstr "<b>İmleci Bırak</b>"
+
+#~ msgid "<b>Size of Capture Area</b>"
+#~ msgstr "<b>Yakalama Alanının Büyüklüğü</b>"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid ""
+#~ "Area to freeze the mouse pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Fare imlecinin panel üzerinde dondurulduğu alan.\n"
+#~ "MouseTweaks uygulamasının parçası"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Değiştirici:"
+
+#~ msgid "Mouse _button:"
+#~ msgstr "Fare _düğmesi:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "Fare _düğmesi:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "İmleç Yakalama Tercihleri"
+
+#~ msgid "S_hift"
+#~ msgstr "S_hift"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Düğme 0 seçildiğinde imleç hemen yakalanacaktır"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Width:"
+#~ msgstr "_Genişlik"
+
+#~ msgid "pixels"
+#~ msgstr "piksel"
+
+#~ msgid "Dwell Click Type"
+#~ msgstr "Durağan Tıklama Türü"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Simge ve Yazıları Göster"
+
+#~ msgid "Show Icons only"
+#~ msgstr "Yalnızca Simgeleri Göster"
+
+#~ msgid "Show Text only"
+#~ msgstr "Yalnızca Yazıyı göster"
+
+#~ msgid "Capture modifier"
+#~ msgstr "Yakalama değiştirici"
+
+#~ msgid "Capture modifier key (Alt)"
+#~ msgstr "Yakalama değiştirici tuş (Alt)"
+
+#~ msgid "Capture modifier key (Ctrl)"
+#~ msgstr "Yakalama değiştirici tuş (Ctrl)"
+
+#~ msgid "Capture modifier key (Shift)"
+#~ msgstr "Yakalama değiştirici tuş (Shift)"
+
+#~ msgid "Capture mouse button"
+#~ msgstr "Fare düğmesini yakala"
+
+#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+#~ msgstr "İmleci yakalayacak fare düğmesi (\"0\" = Hemen yakala)"
+
+#~ msgid "Release modifier"
+#~ msgstr "Bırakma değiştirici"
+
+#~ msgid "Release modifier key (Alt)"
+#~ msgstr "Bırakma değiştirici tuş (Alt)"
+
+#~ msgid "Release modifier key (Ctrl)"
+#~ msgstr "Bırakma değiştirici tuş (Ctrl)"
+
+#~ msgid "Release modifier key (Shift)"
+#~ msgstr "Bırakma değiştirici tuş (Shift)"
+
+#~ msgid "Release mouse button"
+#~ msgstr "Fare düğmesini bırak"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "İmleç Yakalama Uygulamacığı"
+
+#~ msgid "Off"
+#~ msgstr "Kapalı"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Durağan Tıklama Uygulamacığı"
 
 #~ msgid "B_utton:"
 #~ msgstr "_Düğme:"

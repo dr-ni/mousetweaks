@@ -2,142 +2,21 @@
 # Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the mousetweaks package.
 #
-# Philip Withnall <pwithnall@svn.gnome.org>
 #
+# Philip Withnall <pwithnall@svn.gnome.org>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 20:36+0100\n"
-"PO-Revision-Date: 2008-03-02 17:20+0000\n"
+"POT-Creation-Date: 2009-02-23 18:14+0000\n"
+"PO-Revision-Date: 2009-02-23 18:15+0000\n"
 "Last-Translator: Philip Withnall <pwithnall@svn.gnome.org>\n"
-"Language-Team: \n"
+"Language-Team:  <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/dwell-click-applet.glade.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-
-#: ../data/dwell-click-applet.glade.h:3
-msgid "Click Type Window"
-msgstr "Click Type Window"
-
-#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
-msgid "Double Click"
-msgstr "Double Click"
-
-#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
-msgid "Drag Click"
-msgstr "Drag Click"
-
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
-#: ../src/dwell-click-applet.c:642
-msgid "On"
-msgstr "On"
-
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
-msgid "Right Click"
-msgstr "Right Click"
-
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
-msgid "Single Click"
-msgstr "Single Click"
-
-#: ../data/pointer-capture-applet.glade.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr "<b>Capture Pointer</b>"
-
-#: ../data/pointer-capture-applet.glade.h:2
-msgid "<b>Release Pointer</b>"
-msgstr "<b>Release Pointer</b>"
-
-#: ../data/pointer-capture-applet.glade.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr "<b>Size of Capture Area</b>"
-
-#: ../data/pointer-capture-applet.glade.h:4
-msgid "A_lt"
-msgstr "A_lt"
-
-#: ../data/pointer-capture-applet.glade.h:5
-msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Area to freeze the mouse pointer on the panel.\n"
-"Part of Mousetweaks"
-
-#: ../data/pointer-capture-applet.glade.h:7
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-#: ../data/pointer-capture-applet.glade.h:9
-msgid "Modifier:"
-msgstr "Modifier:"
-
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "Mouse _button:"
-msgstr "Mouse _button:"
-
-#: ../data/pointer-capture-applet.glade.h:11
-msgid "Mouse b_utton:"
-msgstr "Mouse b_utton:"
-
-#: ../data/pointer-capture-applet.glade.h:12
-msgid "Pointer Capture Preferences"
-msgstr "Pointer Capture Preferences"
-
-#: ../data/pointer-capture-applet.glade.h:13
-msgid "S_hift"
-msgstr "S_hift"
-
-#: ../data/pointer-capture-applet.glade.h:14
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Selecting Button 0 will capture the pointer immediately"
-
-#: ../data/pointer-capture-applet.glade.h:15
-msgid "Sh_ift"
-msgstr "Sh_ift"
-
-#: ../data/pointer-capture-applet.glade.h:16
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.glade.h:17
-msgid "_Width:"
-msgstr "_Width:"
-
-#: ../data/pointer-capture-applet.glade.h:18
-msgid "pixels"
-msgstr "pixels"
-
-#: ../data/ctw.glade.h:3
-msgid "Dwell Click Type"
-msgstr "Dwell Click Type"
-
-#: ../data/ctw.glade.h:5
-msgid "Show Icons and Text"
-msgstr "Show Icons and Text"
-
-#: ../data/ctw.glade.h:6
-msgid "Show Icons only"
-msgstr "Show Icons only"
-
-#: ../data/ctw.glade.h:7
-msgid "Show Text only"
-msgstr "Show Text only"
-
-#: ../data/DwellClick_Factory.server.in.in.h:1
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
 msgstr "Dwell Click"
 
@@ -150,6 +29,7 @@ msgid "Area to lock the pointer"
 msgstr "Area to lock the pointer"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
+#: ../src/pointer-capture-applet.c:549
 msgid "Pointer Capture"
 msgstr "Pointer Capture"
 
@@ -227,7 +107,7 @@ msgstr "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
 msgid "Dwell click time"
 msgstr "Dwell click time"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
 msgid "Enable dwell click"
 msgstr "Enable dwell click"
 
@@ -235,7 +115,7 @@ msgstr "Enable dwell click"
 msgid "Enable secondary click"
 msgstr "Enable secondary click"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
 msgid "Enable simulated secondary click"
 msgstr "Enable simulated secondary click"
 
@@ -263,7 +143,7 @@ msgstr "Movement threshold"
 msgid "Secondary click time"
 msgstr "Secondary click time"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
 msgid "Show click type window"
 msgstr "Show click type window"
 
@@ -280,64 +160,130 @@ msgid "Time in seconds before a secondary click is triggered"
 msgstr "Time in seconds before a secondary click is triggered"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture modifier"
-msgstr "Capture modifier"
+msgid "Capture pointer only if Alt is pressed"
+msgstr "Capture pointer only if Alt is pressed"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture modifier key (Alt)"
-msgstr "Capture modifier key (Alt)"
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "Capture pointer only if Ctrl is pressed"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture modifier key (Ctrl)"
-msgstr "Capture modifier key (Ctrl)"
+msgid "Capture pointer only if Shift is pressed"
+msgstr "Capture pointer only if Shift is pressed"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier key (Shift)"
-msgstr "Capture modifier key (Shift)"
+msgid "Mouse button used to capture the pointer"
+msgstr "Mouse button used to capture the pointer"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture mouse button"
-msgstr "Capture mouse button"
+msgid "Mouse button used to release the pointer"
+msgstr "Mouse button used to release the pointer"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-msgstr "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+msgid "Release pointer only if Alt is pressed"
+msgstr "Release pointer only if Alt is pressed"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Mouse button to release the pointer"
-msgstr "Mouse button to release the pointer"
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "Release pointer only if Ctrl is pressed"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release modifier"
-msgstr "Release modifier"
+msgid "Release pointer only if Shift is pressed"
+msgstr "Release pointer only if Shift is pressed"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier key (Alt)"
-msgstr "Release modifier key (Alt)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Ctrl)"
-msgstr "Release modifier key (Ctrl)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Shift)"
-msgstr "Release modifier key (Shift)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release mouse button"
-msgstr "Release mouse button"
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
 msgstr "Size of capture area"
 
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+
 #: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
-msgstr "Width of the capture area in pixels"
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+msgid "Width of the capture area in pixels."
+msgstr "Width of the capture area in pixels."
 
 #: ../src/mt-main.c:720
-msgid "Assistive Technology Support Is Not Enabled"
-msgstr "Assistive Technology Support Is Not Enabled"
+msgid "Assistive Technology Support is not Enabled"
+msgstr "Assistive Technology Support is not Enabled"
 
 #: ../src/mt-main.c:721
 msgid ""
@@ -351,39 +297,39 @@ msgstr ""
 "To enable support for assistive technologies and restart your session, press "
 "\"Enable and Log Out\"."
 
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:828
 msgid "Time to wait before a dwell click"
 msgstr "Time to wait before a dwell click"
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:830
 msgid "Time to wait before a simulated secondary click"
 msgstr "Time to wait before a simulated secondary click"
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:832
 msgid "Dwell mode to use"
 msgstr "Dwell mode to use"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:836
 msgid "Window x position"
 msgstr "Window x position"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:838
 msgid "Window y position"
 msgstr "Window y position"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:840
 msgid "Ignore small pointer movements"
 msgstr "Ignore small pointer movements"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:842
 msgid "Show elapsed time as cursor overlay"
 msgstr "Show elapsed time as cursor overlay"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:844
 msgid "Shut down mousetweaks"
 msgstr "Shut down mousetweaks"
 
-#: ../src/mt-main.c:847
+#: ../src/mt-main.c:853
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME mousetweaks daemon"
 
@@ -404,29 +350,151 @@ msgstr "Locked"
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:542
-msgid "Pointer Capture Applet"
-msgstr "Pointer Capture Applet"
-
-#: ../src/pointer-capture-applet.c:614
+#: ../src/pointer-capture-applet.c:621
 msgid "Capture area"
 msgstr "Capture area"
 
-#: ../src/pointer-capture-applet.c:615
+#: ../src/pointer-capture-applet.c:622
 msgid "Temporarily lock the mouse pointer"
 msgstr "Temporarily lock the mouse pointer"
 
-#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
-msgid "Off"
-msgstr "Off"
-
-#: ../src/dwell-click-applet.c:335
+#: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Failed to Launch Mouse Preferences"
 
-#: ../src/dwell-click-applet.c:565
-msgid "Dwell Click Applet"
-msgstr "Dwell Click Applet"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+
+#~ msgid "Click Type Window"
+#~ msgstr "Click Type Window"
+
+#~ msgid "Double Click"
+#~ msgstr "Double Click"
+
+#~ msgid "Drag Click"
+#~ msgstr "Drag Click"
+
+#~ msgid "On"
+#~ msgstr "On"
+
+#~ msgid "Right Click"
+#~ msgstr "Right Click"
+
+#~ msgid "Single Click"
+#~ msgstr "Single Click"
+
+#~ msgid "<b>Capture Pointer</b>"
+#~ msgstr "<b>Capture Pointer</b>"
+
+#~ msgid "<b>Release Pointer</b>"
+#~ msgstr "<b>Release Pointer</b>"
+
+#~ msgid "<b>Size of Capture Area</b>"
+#~ msgstr "<b>Size of Capture Area</b>"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid ""
+#~ "Area to freeze the mouse pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Area to freeze the mouse pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Modifier:"
+
+#~ msgid "Mouse _button:"
+#~ msgstr "Mouse _button:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "Mouse b_utton:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Pointer Capture Preferences"
+
+#~ msgid "S_hift"
+#~ msgstr "S_hift"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Selecting Button 0 will capture the pointer immediately"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Width:"
+#~ msgstr "_Width:"
+
+#~ msgid "pixels"
+#~ msgstr "pixels"
+
+#~ msgid "Dwell Click Type"
+#~ msgstr "Dwell Click Type"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Show Icons and Text"
+
+#~ msgid "Show Icons only"
+#~ msgstr "Show Icons only"
+
+#~ msgid "Show Text only"
+#~ msgstr "Show Text only"
+
+#~ msgid "Capture modifier"
+#~ msgstr "Capture modifier"
+
+#~ msgid "Capture modifier key (Alt)"
+#~ msgstr "Capture modifier key (Alt)"
+
+#~ msgid "Capture modifier key (Ctrl)"
+#~ msgstr "Capture modifier key (Ctrl)"
+
+#~ msgid "Capture modifier key (Shift)"
+#~ msgstr "Capture modifier key (Shift)"
+
+#~ msgid "Capture mouse button"
+#~ msgstr "Capture mouse button"
+
+#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+#~ msgstr "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+
+#~ msgid "Release modifier"
+#~ msgstr "Release modifier"
+
+#~ msgid "Release modifier key (Alt)"
+#~ msgstr "Release modifier key (Alt)"
+
+#~ msgid "Release modifier key (Ctrl)"
+#~ msgstr "Release modifier key (Ctrl)"
+
+#~ msgid "Release modifier key (Shift)"
+#~ msgstr "Release modifier key (Shift)"
+
+#~ msgid "Release mouse button"
+#~ msgstr "Release mouse button"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Pointer Capture Applet"
+
+#~ msgid "Off"
+#~ msgstr "Off"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Dwell Click Applet"
 
 #~ msgid "B_utton:"
 #~ msgstr "B_utton:"

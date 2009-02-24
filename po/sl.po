@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-01-14 19:28+0000\n"
-"PO-Revision-Date: 2009-01-15 16:37+0100\n"
+"POT-Creation-Date: 2009-02-23 18:15+0000\n"
+"PO-Revision-Date: 2009-02-24 08:46+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -195,27 +195,27 @@ msgid "This mouse button must be pressed while the pointer is over the capture a
 msgstr "Za zajem kazalnika v območju zajema zahteva klik posameznega gumba miške. Veljavne vrednosti so \"0\", če ni treba uporabiti miške, \"1\" za levi gumb miške, \"2\" za srednji in \"3\" za desni gumb."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Whether if Alt must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Alt key must be pressed while the mouse button is pressed."
+msgid "Whether the Alt key must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Alt key must be pressed while the mouse button is pressed."
 msgstr "Možnost omogoča, da mora biti za zajem kazalnika v območju zajema pritisnjena tipka Alt. V primeru, da je možnost omogočena in je izbrana tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko Alt pritisniti medtem, ko je pritisnjena tudi tipka miške."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
-msgid "Whether if Ctrl must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Ctrl key must be pressed while the mouse button is pressed."
-msgstr "Možnost omogoča, da mora biti za zajem kazalnika v območju zajema pritisnjena tipka Ctrl. V primeru, da je možnost omogočena in je izbrana tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko Ctrl pritisniti medtem, ko je pritisnjena tudi tipka miške."
-
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Whether if Shift must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Shift key must be pressed while the mouse button is pressed."
-msgstr "Možnost omogoča, da mora biti za zajem kazalnika v območju zajema pritisnjena tipka Shift. V primeru, da je možnost omogočena in je izbrana tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko Shift pritisniti medtem, ko je pritisnjena tudi tipka miške."
-
-#: ../data/pointer-capture-applet.schemas.in.h:15
-msgid "Whether if the Alt key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+msgid "Whether the Alt key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
 msgstr "Možnost omogoča, da je treba za sprostitev kazalnika iz območja zajemanja pritisniti tipko Alt."
 
-#: ../data/pointer-capture-applet.schemas.in.h:16
-msgid "Whether if the Ctrl key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid "Whether the Ctrl key must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Ctrl key must be pressed while the mouse button is pressed."
+msgstr "Možnost omogoča, da mora biti za zajem kazalnika v območju zajema pritisnjena tipka Ctrl. V primeru, da je možnost omogočena in je izbrana tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko Ctrl pritisniti medtem, ko je pritisnjena tudi tipka miške."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid "Whether the Ctrl key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
 msgstr "Možnost omogoča, da je treba za sprostitev kazalnika iz območja zajemanja pritisniti tipko Ctrl."
 
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid "Whether the Shift key must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Shift key must be pressed while the mouse button is pressed."
+msgstr "Možnost omogoča, da mora biti za zajem kazalnika v območju zajema pritisnjena tipka Shift. V primeru, da je možnost omogočena in je izbrana tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko Shift pritisniti medtem, ko je pritisnjena tudi tipka miške."
+
 #: ../data/pointer-capture-applet.schemas.in.h:17
-msgid "Whether if the Shift key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
+msgid "Whether the Shift key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
 msgstr "Možnost omogoča, da je treba za sprostitev kazalnika iz območja zajemanja pritisniti tipko Shift."
 
 #: ../data/pointer-capture-applet.schemas.in.h:18

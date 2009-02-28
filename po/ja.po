@@ -1,119 +1,22 @@
 # mousetweaks ja.po.
-# Copyright (c) 2007,2008 Rosetta Contributors and Canonical Ltd 2007
+# Copyright (c) 2007-2009 Rosetta Contributors and Canonical Ltd 2007
 # This file is distributed under the same license as the mousetweaks package.
 # keblo <keblo1@gmail.com>, 2007, 2008.
-# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2008.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2008,2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-04 22:41+0900\n"
-"PO-Revision-Date: 2008-09-04 22:39+0900\n"
+"POT-Creation-Date: 2009-02-28 18:52+0900\n"
+"PO-Revision-Date: 2009-02-28 18:52+0900\n"
 "Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
 "Language-Team: Japanese <takeshi.aihana@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/dwell-click-applet.glade.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"自動クリックの種類を選択するアプレットです\n"
-"(MouseTweaks の一部です)。"
-
-#: ../data/dwell-click-applet.glade.h:3
-msgid "Click Type Window"
-msgstr "自動クリックの種類を選択するウィンドウ"
-
-#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
-msgid "Double Click"
-msgstr "ダブル・クリック"
-
-#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
-msgid "Drag Click"
-msgstr "ドラッグ"
-
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
-#: ../src/dwell-click-applet.c:642
-msgid "On"
-msgstr "オン"
-
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
-msgid "Right Click"
-msgstr "右クリック"
-
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
-msgid "Single Click"
-msgstr "シングル・クリック"
-
-#: ../data/pointer-capture-applet.glade.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr "<b>ポインタの捕獲</b>"
-
-#: ../data/pointer-capture-applet.glade.h:2
-msgid "<b>Release Pointer</b>"
-msgstr "<b>ポインタの解放</b>"
-
-#: ../data/pointer-capture-applet.glade.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr "<b>捕獲エリアの大きさ</b>"
-
-#: ../data/pointer-capture-applet.glade.h:4
-msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"マウスのポインタを捕獲してロックするエリアです\n"
-"(MouseTweaks の一部です)。"
-
-#: ../data/pointer-capture-applet.glade.h:6
-msgid "Modifier:"
-msgstr "修飾キー:"
-
-#: ../data/pointer-capture-applet.glade.h:7
-msgid "Mouse _button:"
-msgstr "使用するボタン(_B):"
-
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Mouse b_utton:"
-msgstr "使用するボタン(_U):"
-
-#: ../data/pointer-capture-applet.glade.h:9
-msgid "Pointer Capture Preferences"
-msgstr "ポインタ捕獲の設定"
-
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "ボタン０を選択すると直ちにポインタを捕獲してロックします"
-
-#: ../data/pointer-capture-applet.glade.h:11
-msgid "_Width:"
-msgstr "幅(_W):"
-
-#: ../data/pointer-capture-applet.glade.h:12
-msgid "pixels"
-msgstr "ピクセル"
-
-#: ../data/ctw.glade.h:3
-msgid "Dwell Click Type"
-msgstr "自動クリックの種類"
-
-#: ../data/ctw.glade.h:5
-msgid "Show Icons and Text"
-msgstr "アイコンとラベルを表示する"
-
-#: ../data/ctw.glade.h:6
-msgid "Show Icons only"
-msgstr "アイコンのみ表示する"
-
-#: ../data/ctw.glade.h:7
-msgid "Show Text only"
-msgstr "ラベルのみ表示する"
-
-#: ../data/DwellClick_Factory.server.in.in.h:1
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
 msgstr "自動クリック"
 
@@ -126,6 +29,7 @@ msgid "Area to lock the pointer"
 msgstr "ポインタをロックするエリアです"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
+#: ../src/pointer-capture-applet.c:549
 msgid "Pointer Capture"
 msgstr "ポインタの捕獲"
 
@@ -179,18 +83,18 @@ msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"第二ボタンをクリックしたとみなす時のジェスチャです。指定可能な値: \"0\" (ポイ"
-"ンタを左へ移動する)、\"1\" (ポインタを右へ移動する)、\"2\" (ポインタを上へ移"
-"動する)、\"3\" (ポインタを下へ移動する)"
+"２回目のクリックとみなす際のジェスチャです。指定可能な値: \"0\" (ポインタを左"
+"へ移動する)、\"1\" (ポインタを右へ移動する)、\"2\" (ポインタを上へ移動する)、"
+"\"3\" (ポインタを下へ移動する)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"シングル・クリックしたものとみなす時のジェスチャです。指定可能な値: \"0\" (ポ"
-"インタを左へ移動する)、\"1\" (ポインタを右へ移動する)、\"2\" (ポインタを上へ"
-"移動する)、\"3\" (ポインタを下へ移動する)"
+"１回目のクリックとみなす際のジェスチャです。指定可能な値: \"0\" (ポインタを左"
+"へ移動する)、\"1\" (ポインタを右へ移動する)、\"2\" (ポインタを上へ移動する)、"
+"\"3\" (ポインタを下へ移動する)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
@@ -211,17 +115,17 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "自動クリックとみなすまでの時間"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
 msgid "Enable dwell click"
 msgstr "自動クリックの機能を有効にするかどうか"
 
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
-msgstr "第二のクリックを有効にするかどうか"
+msgstr "２回目のクリックを検出するかどうか"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
 msgid "Enable simulated secondary click"
-msgstr "第二のクリックを模擬するかどうかです。"
+msgstr "２回目のクリックを検出するかどうか"
 
 #: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
@@ -233,7 +137,7 @@ msgstr "ドラッグを表すジェスチャ"
 
 #: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
-msgstr "第二のクリックを表すジェスチャ"
+msgstr "２回目のクリックを表すジェスチャ"
 
 #: ../data/mousetweaks.schemas.in.h:18
 msgid "Gesture single click"
@@ -245,9 +149,9 @@ msgstr "ポインタ移動のしきい値"
 
 #: ../data/mousetweaks.schemas.in.h:20
 msgid "Secondary click time"
-msgstr "第二のクリックとみなすまでの時間"
+msgstr "２回目のクリックとみなすまでの時間"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
 msgid "Show click type window"
 msgstr "自動クリックの種類を選択するウィンドウを表示するかどうか"
 
@@ -261,68 +165,131 @@ msgstr "クリックされたとみなすまでの時間 (秒単位) です。"
 
 #: ../data/mousetweaks.schemas.in.h:24
 msgid "Time in seconds before a secondary click is triggered"
-msgstr "第二のクリックとみなすまでの時間 (秒単位) です。"
+msgstr "２回目のクリックとみなすまでの時間 (秒単位) です。"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture modifier"
-msgstr "捕獲する際に使用する修飾キー"
+msgid "Capture pointer only if Alt is pressed"
+msgstr "[Alt] キーが押下されている場合にのみ捕獲するかどうか"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture modifier key (Alt)"
-msgstr "修飾キーを Alt にするかどうかです。"
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "[Ctrl] キーが押下されている場合にのみ捕獲するかどうか"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture modifier key (Ctrl)"
-msgstr "修飾キーを Ctrl にするかどうかです。"
+msgid "Capture pointer only if Shift is pressed"
+msgstr "[Shift] キーが押下されている場合にのみ捕獲するかどうか"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier key (Shift)"
-msgstr "修飾キーを Shift にするかどうかです。"
+msgid "Mouse button used to capture the pointer"
+msgstr "ポインタを捕獲する際に使用するマウスのボタン"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture mouse button"
-msgstr "捕獲する際に使用するボタン"
+msgid "Mouse button used to release the pointer"
+msgstr "捕獲してロックしてあるポインタを解除するボタン"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-msgstr ""
-"ポインタを捕獲してロックするためのボタンです。指定可能な値: \"0\" (直ちに捕獲"
-"する)"
+msgid "Release pointer only if Alt is pressed"
+msgstr "[Alt] キーが押下されている場合にのみ解放するかどうか"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Mouse button to release the pointer"
-msgstr "捕獲してロックしてあるポインタを解除するボタンです。"
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "[Ctrl] キーが押下されている場合にのみ解放するかどうか"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release modifier"
-msgstr "ロックを解放する際に使用する修飾キー"
+msgid "Release pointer only if Shift is pressed"
+msgstr "[Shift] キーが押下されている場合にのみ解放するかどうか"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier key (Alt)"
-msgstr "修飾キーを Alt にするかどうかです。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Ctrl)"
-msgstr "修飾キーを Ctl にするかどうかです。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Shift)"
-msgstr "修飾キーを Shift にするかどうかです。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release mouse button"
-msgstr "ロックを解放する際に使用するボタン"
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
 msgstr "捕獲エリアの大きさ"
 
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr ""
+"ロックしたポインタを捕獲エリアから解放する際に使用するマウスのボタンです。指"
+"定可能な値: \"1\" (左ボタン)、\"2\" (中ボタン)、\"3\" (右ボタン)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr ""
+"捕獲エリアに入ったポインタを捕獲してロックする際に使用するマウスのボタンで"
+"す。指定可能な値: \"1\" (左ボタン)、\"2\" (中ボタン)、\"3\" (右ボタン)"
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"捕獲エリアに入ったポインタを捕獲してロックする際に [Alt] キーを押下しておかな"
+"ければならないかどうかです。これを TRUE にし、かつ \"capture_button\" キーに"
+"指定したボタンを押下した場合、マウスのボタンを押下している間はずっと [Alt] "
+"キーも押下しなければポインタを捕獲できません。"
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"捕獲エリアでロックされているポインタを解放する際に \"release_button\" キーで"
+"指定したボタンを共に、 [Alt] キーも押下しておかなければならないかどうかです。"
+
 #: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"捕獲エリアに入ったポインタを捕獲してロックする際に [Ctrl] キーを押下しておか"
+"なければならないかどうかです。これを TRUE にし、かつ \"capture_button\" キー"
+"に指定したボタンを押下した場合、マウスのボタンを押下している間はずっと "
+"[Ctrl] キーも押下しなければポインタを捕獲できません。"
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"捕獲エリアでロックされているポインタを解放する際に \"release_button\" キーで"
+"指定したボタンを共に、 [Ctrl] キーも押下しておかなければならないかどうかで"
+"す。"
+
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"捕獲エリアに入ったポインタを捕獲してロックする際に [Shift] キーを押下しておか"
+"なければならないかどうかです。これを TRUE にし、かつ \"capture_button\" キー"
+"に指定したボタンを押下した場合、マウスのボタンを押下している間はずっと "
+"[Shift] キーも押下しなければポインタを捕獲できません。<"
+
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"捕獲エリアでロックされているポインタを解放する際に \"release_button\" キーで"
+"指定したボタンを共に、 [Shift] キーも押下しておかなければならないかどうかで"
+"す。"
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+msgid "Width of the capture area in pixels."
 msgstr "パネルに配置する捕獲エリアの幅 (ピクセル単位) です。"
 
 #: ../src/mt-main.c:720
-msgid "Assistive Technology Support Is Not Enabled"
+msgid "Assistive Technology Support is not Enabled"
 msgstr "支援技術が有効になっていません"
 
 #: ../src/mt-main.c:721
@@ -338,39 +305,39 @@ msgstr ""
 "支援技術を有効にしてセッションを再起動する場合は \"有効にしてログアウト\" ボ"
 "タンを押下して下さい。"
 
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:828
 msgid "Time to wait before a dwell click"
 msgstr "自動クリックするまでの時間を指定する"
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:830
 msgid "Time to wait before a simulated secondary click"
-msgstr "第二ボタンのクリックを模擬するまでの時間を指定する"
+msgstr "２回目のクリックとみなすまでの時間を指定する"
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:832
 msgid "Dwell mode to use"
 msgstr "自動クリックを決定する方法を指定する"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:836
 msgid "Window x position"
 msgstr "選択ウィンドウのＸ座標を指定する"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:838
 msgid "Window y position"
 msgstr "選択ウィンドウのＹ座標を指定する"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:840
 msgid "Ignore small pointer movements"
 msgstr "小規模なポインタの移動を無視する"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:842
 msgid "Show elapsed time as cursor overlay"
 msgstr "カーソルがオーバーレイしている時の経過時間を表示する"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:844
 msgid "Shut down mousetweaks"
 msgstr "MouseTweaks デーモンを終了する"
 
-#: ../src/mt-main.c:847
+#: ../src/mt-main.c:853
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME の MouseTweaks デーモン"
 
@@ -391,26 +358,14 @@ msgstr "ロック中"
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:542
-msgid "Pointer Capture Applet"
-msgstr "ポインタを捕獲するアプレット"
-
-#: ../src/pointer-capture-applet.c:614
+#: ../src/pointer-capture-applet.c:621
 msgid "Capture area"
 msgstr "捕獲エリア"
 
-#: ../src/pointer-capture-applet.c:615
+#: ../src/pointer-capture-applet.c:622
 msgid "Temporarily lock the mouse pointer"
 msgstr "マウスのポインタを捕獲して一時的にロックします"
 
-#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
-msgid "Off"
-msgstr "オフ"
-
-#: ../src/dwell-click-applet.c:335
+#: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "マウスの設定ダイアログを表示できませんでした"
-
-#: ../src/dwell-click-applet.c:565
-msgid "Dwell Click Applet"
-msgstr "自動クリックのアプレット"

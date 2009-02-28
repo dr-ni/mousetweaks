@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-01-09 22:20+0000\n"
+"POT-Creation-Date: 2009-02-10 12:51+0000\n"
 "PO-Revision-Date: 2008-06-07 14:39+0000\n"
 "Last-Translator: yairhr@gmail.com\n"
 "Language-Team: he\n"
@@ -107,7 +107,7 @@ msgstr "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
 msgid "Dwell click time"
 msgstr "Dwell click time"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:823
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
 msgid "Enable dwell click"
 msgstr "Enable dwell click"
 
@@ -115,7 +115,7 @@ msgstr "Enable dwell click"
 msgid "Enable secondary click"
 msgstr "Enable secondary click"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:825
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
 msgid "Enable simulated secondary click"
 msgstr "Enable simulated secondary click"
 
@@ -143,7 +143,7 @@ msgstr "Movement threshold"
 msgid "Secondary click time"
 msgstr "Secondary click time"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:833
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
 msgid "Show click type window"
 msgstr "Show click type window"
 
@@ -218,74 +218,98 @@ msgstr ""
 "button."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
+#| msgid ""
+#| "Whether if Alt must be pressed for the pointer to be captured while it's "
+#| "over the capture area. If this option is set as true, and a mouse button "
+#| "is set in the \"capture_button\" key, then the Alt key must be pressed "
+#| "while the mouse button is pressed."
 msgid ""
-"Whether if Alt must be pressed for the pointer to be captured while it's "
-"over the capture area. If this option is set as true, and a mouse button is "
-"set in the \"capture_button\" key, then the Alt key must be pressed while "
-"the mouse button is pressed."
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
 msgstr ""
-"Whether if Alt must be pressed for the pointer to be captured while it's "
-"over the capture area. If this option is set as true, and a mouse button is "
-"set in the \"capture_button\" key, then the Alt key must be pressed while "
-"the mouse button is pressed."
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
+#| msgid ""
+#| "Whether if the Alt key must be pressed with the mouse button set in "
+#| "\"release_button\" for the pointer to be released from the capture area."
 msgid ""
-"Whether if Ctrl must be pressed for the pointer to be captured while it's "
-"over the capture area. If this option is set as true, and a mouse button is "
-"set in the \"capture_button\" key, then the Ctrl key must be pressed while "
-"the mouse button is pressed."
-msgstr ""
-"Whether if Ctrl must be pressed for the pointer to be captured while it's "
-"over the capture area. If this option is set as true, and a mouse button is "
-"set in the \"capture_button\" key, then the Ctrl key must be pressed while "
-"the mouse button is pressed."
-
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid ""
-"Whether if Shift must be pressed for the pointer to be captured while it's "
-"over the capture area. If this option is set as true, and a mouse button is "
-"set in the \"capture_button\" key, then the Shift key must be pressed while "
-"the mouse button is pressed."
-msgstr ""
-"Whether if Shift must be pressed for the pointer to be captured while it's "
-"over the capture area. If this option is set as true, and a mouse button is "
-"set in the \"capture_button\" key, then the Shift key must be pressed while "
-"the mouse button is pressed."
-
-#: ../data/pointer-capture-applet.schemas.in.h:15
-msgid ""
-"Whether if the Alt key must be pressed with the mouse button set in "
+"Whether the Alt key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
-"Whether if the Alt key must be pressed with the mouse button set in "
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+#| msgid ""
+#| "Whether if Ctrl must be pressed for the pointer to be captured while it's "
+#| "over the capture area. If this option is set as true, and a mouse button "
+#| "is set in the \"capture_button\" key, then the Ctrl key must be pressed "
+#| "while the mouse button is pressed."
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+#| msgid ""
+#| "Whether if the Ctrl key must be pressed with the mouse button set in "
+#| "\"release_button\" for the pointer to be released from the capture area."
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 
 #: ../data/pointer-capture-applet.schemas.in.h:16
+#| msgid ""
+#| "Whether if Shift must be pressed for the pointer to be captured while "
+#| "it's over the capture area. If this option is set as true, and a mouse "
+#| "button is set in the \"capture_button\" key, then the Shift key must be "
+#| "pressed while the mouse button is pressed."
 msgid ""
-"Whether if the Ctrl key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
 msgstr ""
-"Whether if the Ctrl key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
+#| msgid ""
+#| "Whether if the Shift key must be pressed with the mouse button set in "
+#| "\"release_button\" for the pointer to be released from the capture area."
 msgid ""
-"Whether if the Shift key must be pressed with the mouse button set in "
+"Whether the Shift key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
-"Whether if the Shift key must be pressed with the mouse button set in "
+"Whether the Shift key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
 msgid "Width of the capture area in pixels."
 msgstr "Width of the capture area in pixels."
 
-#: ../src/mt-main.c:719
+#: ../src/mt-main.c:720
 msgid "Assistive Technology Support is not Enabled"
 msgstr "תמיכה בטכנולוגיות מסייעות אינה מופעלת"
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -297,39 +321,39 @@ msgstr ""
 "על מנת לאפשר תמיכה בטכנולוגיות מסייעות ולשתחול ההפעלה שלך, לחץ על \"אפשר "
 "והתנתק\". "
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:828
 msgid "Time to wait before a dwell click"
 msgstr "Time to wait before a dwell click"
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:830
 msgid "Time to wait before a simulated secondary click"
 msgstr "Time to wait before a simulated secondary click"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:832
 msgid "Dwell mode to use"
 msgstr "Dwell mode to use"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:836
 msgid "Window x position"
 msgstr "Window x position"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:838
 msgid "Window y position"
 msgstr "Window y position"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:840
 msgid "Ignore small pointer movements"
 msgstr "Ignore small pointer movements"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:842
 msgid "Show elapsed time as cursor overlay"
 msgstr "Show elapsed time as cursor overlay"
 
-#: ../src/mt-main.c:843
+#: ../src/mt-main.c:844
 msgid "Shut down mousetweaks"
 msgstr "Shut down mousetweaks"
 
-#: ../src/mt-main.c:852
+#: ../src/mt-main.c:853
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME mousetweaks daemon"
 

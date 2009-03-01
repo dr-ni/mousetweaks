@@ -1,18 +1,20 @@
 # Brazilian Portuguese translation of mousetweaks.
-# Copyright (C) 1999-2008 Free Software Foundation, Inc.
+# Copyright (C) 1999-2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
 # Luiz Armesto <luiz.armesto@gmail.com>, 2008.
 # Enrico Nicoletto <liverig@gmail.com>, 2008.
 # Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008, 2009.
+# André Gondim <andregondim@ubuntu.com>, 2009.
+# Fabrício Godoy <skarllot@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-28 10:15-0500\n"
-"PO-Revision-Date: 2008-09-13 12:06-0300\n"
-"Last-Translator: Leonardo Ferreira Fontenelle <leonardof@gnome.org>\n"
-"Language-Team: Brazilian Portuguese <gnome-l10n-br@listas.cipsga.org.br>\n"
+"POT-Creation-Date: 2009-03-01 17:43-0500\n"
+"PO-Revision-Date: 2009-03-01 18:17-0300\n"
+"Last-Translator: Fabrício Godoy <skarllot@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -167,15 +169,15 @@ msgstr "Tempo em segundos até que um clique secundário seja executado"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
 msgid "Capture pointer only if Alt is pressed"
-msgstr "Capturar o ponteiro apenas se Alt estiver pressionada"
+msgstr "Capturar o ponteiro apenas se a tecla Alt estiver pressionada"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Capture pointer only if Ctrl is pressed"
-msgstr "Capturar o ponteiro apenas se Ctrl estiver pressionada"
+msgstr "Capturar o ponteiro apenas se a tecla Ctrl estiver pressionada"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture pointer only if Shift is pressed"
-msgstr "Capturar o ponteiro apenas se Shift estiver pressionada"
+msgstr "Capturar o ponteiro apenas se a tecla Shift estiver pressionada"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Mouse button used to capture the pointer"
@@ -187,15 +189,16 @@ msgstr "Botão do mouse usado para liberar o ponteiro"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
 msgid "Release pointer only if Alt is pressed"
-msgstr "Liberar o ponteiro do mouse apenas se Alt estiver pressionada"
+msgstr "Liberar o ponteiro do mouse apenas se a tecla Alt estiver pressionada"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
 msgid "Release pointer only if Ctrl is pressed"
-msgstr "Liberar o ponteiro do mouse apenas se Ctrl estiver pressionada"
+msgstr "Liberar o ponteiro do mouse apenas se a tecla Ctrl estiver pressionada"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release pointer only if Shift is pressed"
-msgstr "Liberar o ponteiro do mouse apenas se Shift estiver pressionada"
+msgstr ""
+"Liberar o ponteiro do mouse apenas se a tecla Shift estiver pressionada"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Size of capture area"
@@ -224,20 +227,19 @@ msgstr ""
 "\" para o botão direito."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
-#, fuzzy
 msgid ""
 "Whether the Alt key must be pressed for the pointer to be captured while "
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Alt key must be "
 "pressed while the mouse button is pressed."
 msgstr ""
-"Se Alt precisa ser pressionada para o ponteiro ser capturado enquanto está "
-"sobre a área de captura. Se essa opção for definida como verdadeira, e um "
-"botão do mouse tiver sido definido na chave \"capture_button\", então a "
-"tecla Alt precisa estar pressionada enquanto o botão do mouse é pressionado."
+"Se a tecla Alt precisa ser pressionada para o ponteiro ser capturado "
+"enquanto está sobre a área de captura. Se essa opção for definida como "
+"verdadeira, e um botão do mouse tiver sido definido na chave \"capture_button"
+"\", então a tecla Alt precisa estar pressionada enquanto o botão do mouse é "
+"pressionado."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
-#, fuzzy
 msgid ""
 "Whether the Alt key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
@@ -246,20 +248,19 @@ msgstr ""
 "\"release_button\" para liberar o ponteiro da área de captura."
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
-#, fuzzy
 msgid ""
 "Whether the Ctrl key must be pressed for the pointer to be captured while "
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Ctrl key must be "
 "pressed while the mouse button is pressed."
 msgstr ""
-"Se Ctrl precisa ser pressionada para o ponteiro ser capturado enquanto está "
-"sobre a área de captura. Se essa opção for definida como verdadeira, e um "
-"botão do mouse tiver sido definido na chave \"capture_button\", então a "
-"tecla Ctrl precisa estar pressionada enquanto o botão do mouse é pressionado."
+"Se a tecla Ctrl precisa ser pressionada para o ponteiro ser capturado "
+"enquanto está sobre a área de captura. Se essa opção for definida como "
+"verdadeira, e um botão do mouse tiver sido definido na chave \"capture_button"
+"\", então a tecla Ctrl precisa estar pressionada enquanto o botão do mouse é "
+"pressionado."
 
 #: ../data/pointer-capture-applet.schemas.in.h:15
-#, fuzzy
 msgid ""
 "Whether the Ctrl key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
@@ -268,21 +269,19 @@ msgstr ""
 "\"release_button\" para liberar o ponteiro da área de captura."
 
 #: ../data/pointer-capture-applet.schemas.in.h:16
-#, fuzzy
 msgid ""
 "Whether the Shift key must be pressed for the pointer to be captured while "
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Shift key must be "
 "pressed while the mouse button is pressed."
 msgstr ""
-"Se Shift precisa ser pressionada para o ponteiro ser capturado enquanto está "
-"sobre a área de captura. Se essa opção for definida como verdadeira, e um "
-"botão do mouse tiver sido definido na chave \"capture_button\", então a "
-"tecla Shift precisa estar pressionada enquanto o botão do mouse é "
-"pressionado."
+"Se a tecla Shift precisa ser pressionada para o ponteiro ser capturado "
+"enquanto está sobre a área de captura. Se essa opção for definida como "
+"verdadeira, e um botão do mouse tiver sido definido na chave \"capture_button"
+"\", então a tecla Shift precisa estar pressionada enquanto o botão do mouse "
+"é pressionado."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
-#, fuzzy
 msgid ""
 "Whether the Shift key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."

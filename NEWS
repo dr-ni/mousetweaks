@@ -1,3 +1,30 @@
+Version 2.25.92
+---------------
+
+Misc improvements/fixes:
+
+    * LP #332084: Fix possible crash if accessible object is defunct.
+
+New and updated translations:
+
+    - [ca] Gil Forcada
+    - [cs] Adrian Guniš
+    - [de] Wolfgang Stoeggl
+    - [en_GB] Philip Withnall
+    - [fi] Ilkka Tuohela
+    - [fr] Bruno Brouard
+    - [he] Yair Hershkovitz
+    - [ja] Takeshi Aihana
+    - [ko] Changwoo Ryu
+    - [ml] Hari Vishnu
+    - [pt] Duarte Loreto
+    - [pt_BR] Fabrício Godoy
+    - [sl] Matej Urbančič
+    - [ta] Dr.T.Vasudevan
+    - [tr] Baris Cicek
+    - [zh_HK] Chao-Hsiung Liao
+    - [zh_TW] Chao-Hsiung Liao
+
 Version 2.25.91
 ---------------
 

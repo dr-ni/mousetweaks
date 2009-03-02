@@ -1,3 +1,10 @@
+2009-03-02  Gerd Kohlberger  <gerdk@svn.gnome.org>
+
+	Fix possible crash if an accessible object is defunct.
+ 
+	* src/mt.c: add null check
+	* src/mt-accessible.c: check if child is valid
+
 2009-02-16 Francesco Fumanti <frfumanti@svn.gnome.org>
 
 	* configure.ac:

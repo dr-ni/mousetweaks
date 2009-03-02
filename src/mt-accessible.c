@@ -17,9 +17,6 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <glib.h>
-#include <cspi/spi.h>
-
 #include "mt-accessible.h"
 
 #define MAX_SEARCHES 200
@@ -138,19 +135,25 @@ mt_accessible_search (Accessible  *accessible,
     Accessible *a;
     gboolean found;
     gint n_searches;
-    glong n, i;
+    glong i;
 
     g_return_val_if_fail (accessible != NULL, NULL);
 
     queue = g_queue_new ();
     g_queue_push_head (queue, accessible);
     Accessible_ref (accessible);
+
+    a = NULL;
     n_searches = 0;
+    found = FALSE;
 
     if (type == MT_SEARCH_TYPE_BREADTH) {
 	/* (reverse) breadth first search - queue FIFO */
 	while (!g_queue_is_empty (queue)) {
 	    a = g_queue_pop_tail (queue);
+
+	    if (!a)
+		continue;
 
 	    if ((found = (eval) (a, data)))
 		break;
@@ -158,12 +161,11 @@ mt_accessible_search (Accessible  *accessible,
 		Accessible_unref (a);
 		break;
 	    }
-	    if ((push) (a, data)) {
-		n = Accessible_getChildCount (a);
-		for (i = 0; i < n; ++i)
-		    g_queue_push_head (queue,
-				       Accessible_getChildAtIndex (a, i));
-	    }
+
+	    if ((push) (a, data))
+		for (i = 0; i < Accessible_getChildCount (a); ++i)
+		    g_queue_push_head (queue, Accessible_getChildAtIndex (a, i));
+
 	    Accessible_unref (a);
 	}
     }
@@ -172,29 +174,30 @@ mt_accessible_search (Accessible  *accessible,
 	while (!g_queue_is_empty (queue)) {
 	    a = g_queue_pop_head (queue);
 
+	    if (!a)
+		continue;
+
 	    if ((found = (eval) (a, data)))
 		break;
 	    else if (++n_searches >= MAX_SEARCHES) {
 		Accessible_unref (a);
 		break;
 	    }
-	    if ((push) (a, data)) {
-		n = Accessible_getChildCount (a);
-		for (i = 0; i < n; ++i)
-		    g_queue_push_head (queue,
-				       Accessible_getChildAtIndex (a, i));
-	    }
+
+	    if ((push) (a, data))
+		for (i = 0; i < Accessible_getChildCount (a); ++i)
+		    g_queue_push_head (queue, Accessible_getChildAtIndex (a, i));
+
 	    Accessible_unref (a);
 	}
     }
-    else {
+    else
 	g_warning ("Unknown search type.");
-	found = FALSE;
-    }
+
     g_queue_foreach (queue, (GFunc) Accessible_unref, NULL);
     g_queue_free (queue);
 
-    return found ? a : NULL; 
+    return found ? a : NULL;
 }
 
 Accessible *

@@ -329,17 +329,18 @@ dwell_timer_finished (MtTimer *timer, gpointer data)
 static gboolean
 eval_func (Accessible *a, gpointer data)
 {
-    gboolean found;
-    char *name;
+    gchar *name;
+    gboolean found = FALSE;
 
     name = Accessible_getName (a);
-    found = g_str_equal (name, "Window List");
-    SPI_freeString (name);
-
+    if (name) {
+	found = g_str_equal (name, "Window List");
+	SPI_freeString (name);
+    }
     return found;
 }
 
-static gboolean 
+static gboolean
 push_func (Accessible *a, gpointer data)
 {
     MTClosure *mt = data;

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-13 17:52+0300\n"
-"PO-Revision-Date: 2008-09-13 17:52+0300\n"
+"POT-Creation-Date: 2009-03-08 01:19+0200\n"
+"PO-Revision-Date: 2009-03-08 01:19+0200\n"
 "Last-Translator: Vytautas Liuolia <vytautas.liuolia@gmail.com>\n"
 "Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
 "MIME-Version: 1.0\n"
@@ -19,133 +19,7 @@ msgstr ""
 "100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../data/dwell-click-applet.glade.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Įtaisas lūkuriuojančio spustelėjimo tipui pasirinkti.\n"
-"Mousetweaks dalis"
-
-#: ../data/dwell-click-applet.glade.h:3
-msgid "Click Type Window"
-msgstr "Spustelėjimo tipo langas"
-
-#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
-msgid "Double Click"
-msgstr "Dvigubas spustelėjimas"
-
-#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
-msgid "Drag Click"
-msgstr "Vilkimas"
-
-#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:821
-msgid "Enable dwell click"
-msgstr "Įjungti lūkuriuojantį spustelėjimą"
-
-#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:112
-#: ../src/dwell-click-applet.c:642
-msgid "On"
-msgstr "Ant"
-
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:4
-msgid "Right Click"
-msgstr "Dešinysis spustelėjimas"
-
-#: ../data/dwell-click-applet.glade.h:9 ../data/ctw.glade.h:8
-msgid "Single Click"
-msgstr "Spustelėjimas"
-
-#: ../data/pointer-capture-applet.glade.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr "<b>Žymeklio pagava</b>"
-
-#: ../data/pointer-capture-applet.glade.h:2
-msgid "<b>Release Pointer</b>"
-msgstr "<b>Žymeklio išlaisvinimas</b>"
-
-#: ../data/pointer-capture-applet.glade.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr "<b>Pagavos srities dydis</b>"
-
-#: ../data/pointer-capture-applet.glade.h:4
-msgid "A_lt"
-msgstr "A_lt"
-
-#: ../data/pointer-capture-applet.glade.h:5
-msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Sritis pagauti pelės žymekliui skydelyje.\n"
-"Mousetweaks dalis"
-
-#: ../data/pointer-capture-applet.glade.h:7
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-#: ../data/pointer-capture-applet.glade.h:9
-msgid "Modifier:"
-msgstr "Modifikatorius:"
-
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "Mouse _button:"
-msgstr "Pagavos _mygtukas"
-
-#: ../data/pointer-capture-applet.glade.h:11
-msgid "Mouse b_utton:"
-msgstr "Pagavos m_ygtukas"
-
-#: ../data/pointer-capture-applet.glade.h:12
-msgid "Pointer Capture Preferences"
-msgstr "Žymeklio pagavos nustatymai"
-
-#: ../data/pointer-capture-applet.glade.h:13
-msgid "S_hift"
-msgstr "S_hift"
-
-#: ../data/pointer-capture-applet.glade.h:14
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Mygtuko 0 pasirinkimas pagaus žymeklį akimirksniu"
-
-#: ../data/pointer-capture-applet.glade.h:15
-msgid "Sh_ift"
-msgstr "Sh_ift"
-
-#: ../data/pointer-capture-applet.glade.h:16
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.glade.h:17
-msgid "_Width:"
-msgstr "_Plotis:"
-
-#: ../data/pointer-capture-applet.glade.h:18
-msgid "pixels"
-msgstr "pikseliai"
-
-#: ../data/ctw.glade.h:3
-msgid "Dwell Click Type"
-msgstr "Lūkuriuojančio spustelėjimo tipas"
-
-#: ../data/ctw.glade.h:5
-msgid "Show Icons and Text"
-msgstr "Rodyti piktogramas ir tekstą"
-
-#: ../data/ctw.glade.h:6
-msgid "Show Icons only"
-msgstr "Rodyti tik piktogramas"
-
-#: ../data/ctw.glade.h:7
-msgid "Show Text only"
-msgstr "Rodyti tik tekstą"
-
-#: ../data/DwellClick_Factory.server.in.in.h:1
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
 msgstr "Lūkuriuojantis spustelėjimas"
 
@@ -158,6 +32,7 @@ msgid "Area to lock the pointer"
 msgstr "Žymeklio ribojimo sritis"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
+#: ../src/pointer-capture-applet.c:549
 msgid "Pointer Capture"
 msgstr "Žymeklio pagava"
 
@@ -237,11 +112,15 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Lūkuriuojančio spustelėjimo trukmė"
 
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:825
+msgid "Enable dwell click"
+msgstr "Įjungti lūkuriuojantį spustelėjimą"
+
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Įjungti antrinį spustelėjimą"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:827
 msgid "Enable simulated secondary click"
 msgstr "Įjungti simuliuotą antrinį spustelėjimą"
 
@@ -269,7 +148,7 @@ msgstr "Judesio slenkstis"
 msgid "Secondary click time"
 msgstr "Antrinio spustelėjimo trukmė"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:835
 msgid "Show click type window"
 msgstr "Rodyti spustelėjimo tipo langą"
 
@@ -286,66 +165,131 @@ msgid "Time in seconds before a secondary click is triggered"
 msgstr "Antrinio spustelėjimo sukūrimo trukmė sekundėmis"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture modifier"
-msgstr "Pagavos modifikatorius"
+msgid "Capture pointer only if Alt is pressed"
+msgstr "Pagauti žymeklį tik jei nuspaustas Alt"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture modifier key (Alt)"
-msgstr "Pagavos modifikatorius (Alt)"
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "Pagauti žymeklį tik jei nuspaustas Vald (Ctrl)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture modifier key (Ctrl)"
-msgstr "Pagavos modifikatorius (Ctrl)"
+msgid "Capture pointer only if Shift is pressed"
+msgstr "Pagauti žymeklį tik jei nuspaustas Lyg2 (Shift)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier key (Shift)"
-msgstr "Pagavos modifikatorius (Shift)"
+msgid "Mouse button used to capture the pointer"
+msgstr "Žymeklio pagavos mygtukas"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture mouse button"
-msgstr "Pagavos pelės mygtukas"
-
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-msgstr "Žymeklio pagavos mygtukas (0 = pagauti iškart)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Mouse button to release the pointer"
+msgid "Mouse button used to release the pointer"
 msgstr "Žymeklio išlaisvinimo mygtukas"
 
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Release pointer only if Alt is pressed"
+msgstr "Išlaisvinti žymeklį tik jei nuspaustas Alt"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "Išlaisvinti žymeklį tik jei nuspaustas Vald (Ctrl)"
+
 #: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release modifier"
-msgstr "Išlaisvinimo modifikatorius"
+msgid "Release pointer only if Shift is pressed"
+msgstr "Išlaisvinti žymeklį tik jei nuspaustas Lyg2 (Shift)"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier key (Alt)"
-msgstr "Išlaisvinimo modifikatorius (Alt)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Ctrl)"
-msgstr "Išlaisvinimo modifikatorius (Ctrl)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Shift)"
-msgstr "Išlaisvinimo modifikatorius (Shift)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release mouse button"
-msgstr "Išlaisvinimo pelės mygtukas"
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
 msgstr "Pagavos srities dydis"
 
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr ""
+"Šis pelės mygtukas turi būti paspaustas, kad žymeklis būtų išlaisvintas iš "
+"gaudymo srities. Galimos reikšmės: „1“ – kairysis mygtukas, „2“ – vidurinis, "
+"„3“ – dešinysis."
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr ""
+"Šis pelės mygtukas turi būti paspaustas kai žymeklis virš gaudymo srities, "
+"kad jis būtų pagautas.Galimos reikšmės: „0“ – nereikia spausti jokio "
+"mygtuko, „1“ – kairysis mygtukas, „2“ – vidurinis, „3“ – dešinysis."
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Ar Alt klavišas turi būti paspaustas, kad žymeklis būtų pagautas, kai jis "
+"virš gaudymo srities. Jei pasirinkta ir „capture_button“ nustatytas pelės "
+"mygtukas, tada Alt klavišas turi būti nuspaustas, kai spaudžiamas pelės "
+"mygtukas."
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Ar Alt klavišas turi būti paspaustas su pelės mygtuku, nustatytu "
+"„release_button“, kad žymeklis būtų atlaisvintas iš gaudymo srities."
+
 #: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
-msgstr "Pagavos srities plotis pikseliais"
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Ar Vald (Ctrl) klavišas turi būti paspaustas, kad žymeklis būtų pagautas, "
+"kai jis virš gaudymo srities. Jei pasirinkta ir „capture_button“ nustatytas "
+"pelės mygtukas, tada Vald klavišas turi būti nuspaustas, kai spaudžiamas "
+"pelės mygtukas."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Ar Vald klavišas turi būti paspaustas su pelės mygtuku, nustatytu "
+"„release_button“, kad žymeklis būtų atlaisvintas iš gaudymo srities."
+
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Ar Lyg2 (Shift) klavišas turi būti paspaustas, kad žymeklis būtų pagautas, "
+"kai jis virš gaudymo srities. Jei pasirinkta ir „capture_button“ nustatytas "
+"pelės mygtukas, tada Lyg2 klavišas turi būti nuspaustas, kai spaudžiamas "
+"pelės mygtukas."
+
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Ar Lyg2 klavišas turi būti paspaustas su pelės mygtuku, nustatytu "
+"„release_button“, kad žymeklis būtų atlaisvintas iš gaudymo srities."
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+msgid "Width of the capture area in pixels."
+msgstr "Pagavos srities plotis pikseliais."
+
+#: ../src/mt-main.c:721
+msgid "Assistive Technology Support is not Enabled"
+msgstr "Pagalbinių technologijų palaikymas neįjungtas"
 
 #: ../src/mt-main.c:722
-msgid "Assistive Technology Support Is Not Enabled"
-msgstr "Pagalbinės technologijos neįjungtos"
-
-#: ../src/mt-main.c:723
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -357,39 +301,39 @@ msgstr ""
 "Jei norite įjungti pagalbines technologijas ir įkrauti iš naujo sesiją, "
 "spauskite „Įjungti ir atsijungti“."
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:829
 msgid "Time to wait before a dwell click"
 msgstr "Kiek laukti prieš lūkuriuojantį spustelėjimą"
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:831
 msgid "Time to wait before a simulated secondary click"
 msgstr "Kiek laukti prieš simuliuotą antrinį spustelėjimą"
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:833
 msgid "Dwell mode to use"
 msgstr "Lūkuriuojančio spustelėjimo veiksena"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:837
 msgid "Window x position"
 msgstr "Lango x pozicija"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:839
 msgid "Window y position"
 msgstr "Lango y pozicija"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:841
 msgid "Ignore small pointer movements"
 msgstr "Ignoruoti mažus rodyklės judesius"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:843
 msgid "Show elapsed time as cursor overlay"
 msgstr "Rodyti praėjusį laiką kaip kursoriaus perdangą"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:845
 msgid "Shut down mousetweaks"
 msgstr "Išjungti mousetweaks"
 
-#: ../src/mt-main.c:849
+#: ../src/mt-main.c:854
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME mousetweaks tarnyba"
 
@@ -410,29 +354,151 @@ msgstr "Užrakinta"
 msgid "L"
 msgstr "U"
 
-#: ../src/pointer-capture-applet.c:542
-msgid "Pointer Capture Applet"
-msgstr "Žymeklio pagavos įtaisas"
-
-#: ../src/pointer-capture-applet.c:614
+#: ../src/pointer-capture-applet.c:621
 msgid "Capture area"
 msgstr "Pagavos sritis"
 
-#: ../src/pointer-capture-applet.c:615
+#: ../src/pointer-capture-applet.c:622
 msgid "Temporarily lock the mouse pointer"
 msgstr "Laikinai užrakinti pelės žymeklį"
 
-#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
-msgid "Off"
-msgstr "Išjungta"
-
-#: ../src/dwell-click-applet.c:335
+#: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Nepavyko paleisti pelės nustatymų"
 
-#: ../src/dwell-click-applet.c:565
-msgid "Dwell Click Applet"
-msgstr "Lūkuriuojančio spustelėjimo įtaisas"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Įtaisas lūkuriuojančio spustelėjimo tipui pasirinkti.\n"
+#~ "Mousetweaks dalis"
+
+#~ msgid "Click Type Window"
+#~ msgstr "Spustelėjimo tipo langas"
+
+#~ msgid "Double Click"
+#~ msgstr "Dvigubas spustelėjimas"
+
+#~ msgid "Drag Click"
+#~ msgstr "Vilkimas"
+
+#~ msgid "On"
+#~ msgstr "Ant"
+
+#~ msgid "Right Click"
+#~ msgstr "Dešinysis spustelėjimas"
+
+#~ msgid "Single Click"
+#~ msgstr "Spustelėjimas"
+
+#~ msgid "<b>Capture Pointer</b>"
+#~ msgstr "<b>Žymeklio pagava</b>"
+
+#~ msgid "<b>Release Pointer</b>"
+#~ msgstr "<b>Žymeklio išlaisvinimas</b>"
+
+#~ msgid "<b>Size of Capture Area</b>"
+#~ msgstr "<b>Pagavos srities dydis</b>"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid ""
+#~ "Area to freeze the mouse pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Sritis pagauti pelės žymekliui skydelyje.\n"
+#~ "Mousetweaks dalis"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Modifikatorius:"
+
+#~ msgid "Mouse _button:"
+#~ msgstr "Pagavos _mygtukas"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "Pagavos m_ygtukas"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Žymeklio pagavos nustatymai"
+
+#~ msgid "S_hift"
+#~ msgstr "S_hift"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Mygtuko 0 pasirinkimas pagaus žymeklį akimirksniu"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Width:"
+#~ msgstr "_Plotis:"
+
+#~ msgid "pixels"
+#~ msgstr "pikseliai"
+
+#~ msgid "Dwell Click Type"
+#~ msgstr "Lūkuriuojančio spustelėjimo tipas"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Rodyti piktogramas ir tekstą"
+
+#~ msgid "Show Icons only"
+#~ msgstr "Rodyti tik piktogramas"
+
+#~ msgid "Show Text only"
+#~ msgstr "Rodyti tik tekstą"
+
+#~ msgid "Capture modifier"
+#~ msgstr "Pagavos modifikatorius"
+
+#~ msgid "Capture modifier key (Alt)"
+#~ msgstr "Pagavos modifikatorius (Alt)"
+
+#~ msgid "Capture modifier key (Ctrl)"
+#~ msgstr "Pagavos modifikatorius (Ctrl)"
+
+#~ msgid "Capture modifier key (Shift)"
+#~ msgstr "Pagavos modifikatorius (Shift)"
+
+#~ msgid "Capture mouse button"
+#~ msgstr "Pagavos pelės mygtukas"
+
+#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+#~ msgstr "Žymeklio pagavos mygtukas (0 = pagauti iškart)"
+
+#~ msgid "Release modifier"
+#~ msgstr "Išlaisvinimo modifikatorius"
+
+#~ msgid "Release modifier key (Alt)"
+#~ msgstr "Išlaisvinimo modifikatorius (Alt)"
+
+#~ msgid "Release modifier key (Ctrl)"
+#~ msgstr "Išlaisvinimo modifikatorius (Ctrl)"
+
+#~ msgid "Release modifier key (Shift)"
+#~ msgstr "Išlaisvinimo modifikatorius (Shift)"
+
+#~ msgid "Release mouse button"
+#~ msgstr "Išlaisvinimo pelės mygtukas"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Žymeklio pagavos įtaisas"
+
+#~ msgid "Off"
+#~ msgstr "Išjungta"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Lūkuriuojančio spustelėjimo įtaisas"
 
 #~ msgid "B_utton:"
 #~ msgstr "_Mygtukas:"

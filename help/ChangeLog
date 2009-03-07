@@ -1,3 +1,8 @@
+2009-03-07  Mario Blättermann  <mariobl@svn.gnome.org>
+
+	* de/figures/*: Added screenshots
+	* de/de.po: Updated German translation
+
 2009-03-05  Mario Blättermann  <mariobl@svn.gnome.org>
 
 	* Makefile.am: Added de to DOC_LINGUAS

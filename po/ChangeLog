@@ -1,3 +1,8 @@
+2009-03-11  Krishnababu K  <kkrothap@redhat.com>
+
+	* te.po: Updated Telugu Translation.
+	* LINGUAS: Added telugu [te] language.
+
 2009-03-08  Gintautas Miliauskas  <gintas@akl.lt>
 
 	* lt.po: Updated Lithuanian translation.

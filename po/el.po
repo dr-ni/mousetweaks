@@ -1,128 +1,40 @@
+# translation of mousetweaks.HEAD.po to Greek
 # Greek translation of mousetweaks.
 # Copyright (C) 2008 Greek GNOME Translation Team.
 # This file is distributed under the same license as the mousetweaks package.
+#
 # Γιάννης Κατσαμπίρης <giannis1_86@hotmail.com>, 2008.
 # Simos Xenitellis <simos@gnome.org>, 2008.
-# 
+# Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks 2.21.92\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-02-04 18:46+0000\n"
-"PO-Revision-Date: 2008-02-13 20:28+0200\n"
-"Last-Translator: Γιάννης Κατσαμπίρης <giannis1_86@hotmail.com>\n"
+"Project-Id-Version: mousetweaks.HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2009-02-10 12:51+0000\n"
+"PO-Revision-Date: 2009-03-01 13:05+0100\n"
+"Last-Translator: Jennie Petoumenou <epetoumenou@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
 
-#: ../data/dwell-click-applet.glade.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of MouseTweaks"
-msgstr ""
-"Μικροεφαρμογή για την επιλογή διαφορετικών τύπων για το \"κράτημα\" ενός πλήκτρου.\n"
-"Μέρος του MouseTweaks"
-
-#: ../data/dwell-click-applet.glade.h:3
-msgid "Click Type Window"
-msgstr "Παράθυρο επιλογής τύπου κλικ του ποντικιού σας"
-
-#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
-msgid "Double Click"
-msgstr "Διπλό κλικ"
-
-#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
-msgid "Drag Click"
-msgstr "Κλικ με μετακίνηση του ποντικιού"
-
-#: ../data/dwell-click-applet.glade.h:6 ../data/ctw.glade.h:4
-msgid "Right Click"
-msgstr "Δεξί κλικ του ποντικιού"
-
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:8
-msgid "Single Click"
-msgstr "Απλό κλικ του ποντικιού"
-
-#: ../data/pointer-capture-applet.glade.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr "<b>Σύλληψη δρομέα</b>"
-
-#: ../data/pointer-capture-applet.glade.h:2
-msgid "<b>Release Pointer</b>"
-msgstr "<b>Απελευθέρωση δρομέα</b>"
-
-#: ../data/pointer-capture-applet.glade.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr "<b>Μέγεθος της περιοχής καταγραφής</b>"
-
-#: ../data/pointer-capture-applet.glade.h:4
-msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
-"Part of MouseTweaks"
-msgstr ""
-"Περιοχή για το πάγωμα του δρομέα του ποντικιού στον πίνακα εφαρμογών.\n"
-"Μέρος του MouseTweaks"
-
-#: ../data/pointer-capture-applet.glade.h:6
-msgid "B_utton:"
-msgstr "_Κουμπί:"
-
-#: ../data/pointer-capture-applet.glade.h:7
-msgid "Modifier:"
-msgstr "Τροποποιητής:"
-
-#: ../data/pointer-capture-applet.glade.h:8
-msgid "Pointer Capture Preferences"
-msgstr "Προτιμήσεις σύλληψης του δρομέα"
-
-#: ../data/pointer-capture-applet.glade.h:9
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Επιλέγοντας το πλήκτρο 0 θα καταγραφεί άμεσα η θέση του δρομέα"
-
-#: ../data/pointer-capture-applet.glade.h:10
-msgid "_Button:"
-msgstr "Κ_ουμπί:"
-
-#: ../data/pointer-capture-applet.glade.h:11
-msgid "_Width:"
-msgstr "_Πλάτος:"
-
-#: ../data/pointer-capture-applet.glade.h:12
-msgid "pixels"
-msgstr "εικονοστοιχεία"
-
-#: ../data/ctw.glade.h:3
-msgid "Dwell Click Type"
-msgstr "Τύπος κρατήματος του κλικ του ποντικιού σας"
-
-#: ../data/ctw.glade.h:5
-msgid "Show Icons and Text"
-msgstr "Προβολή των εικονιδίων και του κειμένου"
-
-#: ../data/ctw.glade.h:6
-msgid "Show Icons only"
-msgstr "Προβολή των εικονιδίων μόνο"
-
-#: ../data/ctw.glade.h:7
-msgid "Show Text only"
-msgstr "Προβολή του κειμένου μόνο"
-
-#: ../data/DwellClick_Factory.server.in.in.h:1
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
 msgstr "Κράτημα κλικ"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr "Επιλογή του τύπου κρατήματος του κλικ στο ποντίκι σας"
+msgstr "Επιλογή του τύπου κρατήματος του κλικ"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
-msgstr "Περιοχή για το κλείδωμα του δρομέα"
+msgstr "Περιοχή κλειδώματος του δείκτη"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
+#: ../src/pointer-capture-applet.c:549
 msgid "Pointer Capture"
-msgstr "Καταγραφή της θέσης του δρομέα"
+msgstr "Καταγραφή της θέσης του δείκτη"
 
 #: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
 msgid "_About"
@@ -137,195 +49,308 @@ msgid "_Preferences"
 msgstr "Π_ροτιμήσεις"
 
 #: ../data/mousetweaks.schemas.in.h:1
+msgid "Animate cursor"
+msgstr "Εφέ δρομέα"
+
+#: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style"
 msgstr "Στυλ κουμπιού"
 
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
-msgstr "Το στυλ του κουμπιού στο παράθυρο του τύπου του κλικ που κάνετε με το ποντίκι σας (0=Κείμενο, 1=Εικονίδιο, 2=Και τα δύο)"
-
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "Κατεύθυνση για να πραγματοποιήσετε το διπλό κλικ (0=Αριστερά, 1=Δεξιά, 2=Πάνω, 3=Κάτω)"
+#| msgid "Button style in click type window (0=Text, 1=Icon, 2=Both)"
+msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgstr "Εμφάνιση των κουμπιών στο παράθυρο τύπων κλικ (0=Κείμενο, 1=Εικονίδιο, 2=Και τα δύο)"
 
 #: ../data/mousetweaks.schemas.in.h:4
-msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "Κατεύθυνση για να πραγματοποιήσετε το κράτημα του κλικ (0=Αριστερά, 1=Δεξιά, 2=Πάνω, 3=Κάτω)"
+#| msgid "Direction to perform a double click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgid ""
+"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Κατεύθυνση για διπλό κλικ (0=Αριστερά, 1=Δεξιά, "
+"2=Πάνω, 3=Κάτω)"
 
 #: ../data/mousetweaks.schemas.in.h:5
-msgid "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "Κατεύθυνση για να πραγματοποιήσετε ένα δευτερεύον κλικ (0=Αριστερά, 1=Δεξιά, 2=Πάνω, 3=Κάτω)"
+#| msgid "Direction to perform a drag click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgid ""
+"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+"\"3\" = Down)"
+msgstr ""
+"Κατεύθυνση για κλικ συρσίματος (0=Αριστερά, 1=Δεξιά, "
+"2=Πάνω, 3=Κάτω)"
 
 #: ../data/mousetweaks.schemas.in.h:6
-msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
-msgstr "Κατεύθυνση για να πραγματοποιήσετε ένα απλό κλικ (0=Αριστερά, 1=Δεξιά, 2=Πάνω, 3=Κάτω)"
+#| msgid ""
+#| "Direction to perform a secondary click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgid ""
+"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Κατεύθυνση για δευτερεύον κλικ (0=Αριστερά, 1=Δεξιά, "
+"2=Πάνω, 3=Κάτω)"
 
 #: ../data/mousetweaks.schemas.in.h:7
-msgid "Distance in pixels before movement will be recognized"
-msgstr "Απόσταση σε εικονοστοιχεία πριν να αναγνωριστεί η μετατόπιση"
+#| msgid "Direction to perform a single click (0=Left, 1=Right, 2=Up, 3=Down)"
+msgid ""
+"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Κατεύθυνση για απλό κλικ (0=Αριστερά, 1=Δεξιά, "
+"2=Πάνω, 3=Κάτω)"
 
 #: ../data/mousetweaks.schemas.in.h:8
-msgid "Dwell click mode"
-msgstr "Κατάσταση του κρατήματος του κλικ"
+msgid "Distance in pixels before movement will be recognized"
+msgstr "Απόσταση σε εικονοστοιχεία για να αναγνωριστεί ως κίνηση"
 
 #: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
-msgstr "Κατάσταση του κρατήματοσ του κλικ (0=Κατάσταση χειρονομίας, 1=Κατάσταση παραθύρου)"
+msgid "Dwell click mode"
+msgstr "Λειτουργία κρατήματος του κλικ"
 
 #: ../data/mousetweaks.schemas.in.h:10
+#| msgid "Dwell click mode (0=Gesture mode, 1=Window mode)"
+msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgstr "Λειτουργία κρατήματος του κλικ (0=Λειτουργία χειρονομιών, 1=Λειτουργία παραθύρου)"
+
+#: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "Χρόνος κρατήματος του κλικ"
 
-#: ../data/mousetweaks.schemas.in.h:11
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
 msgid "Enable dwell click"
-msgstr "Ενεργοποίηση του κρατήματος του κλικ"
-
-#: ../data/mousetweaks.schemas.in.h:12
-msgid "Enable secondary click"
-msgstr "Ενεργοποίηση του δευτερεύοντος κλικ"
+msgstr "Ενεργοποίηση κρατήματος του κλικ"
 
 #: ../data/mousetweaks.schemas.in.h:13
-msgid "Enable simulated secondary click"
-msgstr "Ενεργοποίηση του προσομοιωμένου δευτερεύοντος κλικ"
+msgid "Enable secondary click"
+msgstr "Ενεργοποίηση δευτερεύοντος κλικ"
 
-#: ../data/mousetweaks.schemas.in.h:14
-msgid "Gesture double click"
-msgstr "Χειρονομία με διπλό κλικ με το ποντίκι"
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+msgid "Enable simulated secondary click"
+msgstr "Ενεργοποίηση προσομοιωμένου δευτερεύοντος κλικ"
 
 #: ../data/mousetweaks.schemas.in.h:15
-msgid "Gesture drag click"
-msgstr "Χειρονομία με κλικ και σύρσιμο με το ποντίκι"
+msgid "Gesture double click"
+msgstr "Διπλό κλικ με χειρονομία"
 
 #: ../data/mousetweaks.schemas.in.h:16
-msgid "Gesture secondary click"
-msgstr "Χειρονομία με δευτερεύον κλικ"
+msgid "Gesture drag click"
+msgstr "Σύρσιμο με χειρονομία"
 
 #: ../data/mousetweaks.schemas.in.h:17
-msgid "Gesture single click"
-msgstr "Χειρονομία με απλό κλικ"
+msgid "Gesture secondary click"
+msgstr "Δευτερεύον κλικ με χειρονομία"
 
 #: ../data/mousetweaks.schemas.in.h:18
-msgid "Movement threshold"
-msgstr "Κατώφλι μετακίνησης"
+msgid "Gesture single click"
+msgstr "Απλό κλικ με χειρονομία"
 
 #: ../data/mousetweaks.schemas.in.h:19
+msgid "Movement threshold"
+msgstr "Κατώφλι κίνησης"
+
+#: ../data/mousetweaks.schemas.in.h:20
 msgid "Secondary click time"
-msgstr "Χρόνος του δευτερεύοντος κλικ"
+msgstr "Χρόνος δευτερεύοντος κλικ"
 
-#: ../data/mousetweaks.schemas.in.h:20 ../src/mt-main.c:421
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
 msgid "Show click type window"
-msgstr "Προβολή του παραθύρου με τους τύπους κλικ"
-
-#: ../data/mousetweaks.schemas.in.h:21
-msgid "Time in seconds before a click is triggered"
-msgstr "Χρόνος σε δευτερόλεπτα πριν την ενεργοποίηση του κλικ"
+msgstr "Προβολή του παραθύρου τύπων κλικ"
 
 #: ../data/mousetweaks.schemas.in.h:22
+msgid "Show elapsed time as cursor overlay."
+msgstr "Εμφάνιση του χρόνου που περνά με χρωματισμό του δρομέα"
+
+#: ../data/mousetweaks.schemas.in.h:23
+msgid "Time in seconds before a click is triggered"
+msgstr "Χρόνος σε δευτερόλεπτα πριν την πραγματοποίηση κλικ"
+
+#: ../data/mousetweaks.schemas.in.h:24
 msgid "Time in seconds before a secondary click is triggered"
-msgstr "Χρόνος σε δευτερόλεπτα πριν την ενεργοποίηση του δευτερεύοντος κλικ"
+msgstr "Χρόνος σε δευτερόλεπτα πριν την πραγματοποίηση δευτερεύοντος κλικ"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Button to capture the pointer (0=Capture immediately)"
-msgstr "Κουμπί για την καταγραφή της θέσης του δρομέα (0=Άμεση σύλληψη)"
+msgid "Capture pointer only if Alt is pressed"
+msgstr "Καταγραφή της θέσης του δείκτη μόνο αν είναι πατημένο το Alt"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Button to release the pointer"
-msgstr "Κουμπί για την απελευθέρωση του δρομέα"
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "Καταγραφή της θέσης του δείκτη μόνο αν είναι πατημένο το Ctrl"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture button"
-msgstr "Κουμπί καταγραφής της θέσης του δρομέα"
+msgid "Capture pointer only if Shift is pressed"
+msgstr "Καταγραφή της θέσης του δείκτη μόνο αν είναι πατημένο το Shift"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier"
-msgstr "Τροποποίηση της καταγραφής της θέσης του δρομέα"
+#| msgid "Button to release the pointer"
+msgid "Mouse button used to capture the pointer"
+msgstr "Καταγραφή της θέσης του δείκτη με το πάτημα του κουμπιού του ποντικιού"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture modifier key (Alt)"
-msgstr "Πλήκτρο για την τροποποίηση της καταγραφής της θέσης του δρομέα (Alt)"
+#| msgid "Button to release the pointer"
+msgid "Mouse button used to release the pointer"
+msgstr "Απελευθέρωση του δείκτη με το πάτημα του κουμπιού του ποντικιού"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Capture modifier key (Ctrl)"
-msgstr "Πλήκτρο για την τροποποίηση της καταγραφής της θέσης του δρομέα (Ctrl)"
+msgid "Release pointer only if Alt is pressed"
+msgstr "Απελευθέρωση του δείκτη μόνο αν είναι πατημένο το Alt"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Capture modifier key (Shift)"
-msgstr "Πλήκτρο για την τροποποίηση της καταγραφής της θέσης του δρομέα (Shift)"
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "Απελευθέρωση του δείκτη μόνο αν είναι πατημένο το Ctrl"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release button"
-msgstr "Απελευθέρωση κουμπιού"
+msgid "Release pointer only if Shift is pressed"
+msgstr "Απελευθέρωση του δείκτη μόνο αν είναι πατημένο το Shift"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier"
-msgstr "Τροποίηση απελευθέρωσης"
+msgid "Size of capture area"
+msgstr "Μέγεθος της περιοχής καταγραφής"
 
 #: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Alt)"
-msgstr "Πλήκτρο για την τροποποίηση της απελευθέρωσης (Alt)"
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr "Αυτό το κουμπί του ποντικιού πρέπει να πιεστεί για να απελευθερωθεί ο δείκτης από την περιοχή καταγραφής. Οι τιμές που επιτρέπονται είναι \"1\" για το αριστερό κουμπί, \"2\" για το μεσαίο κουμπί και \"3\" για το δεξί κουμπί."
 
 #: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Ctrl)"
-msgstr "Πλήκτρο για την τροποποίηση της απελευθέρωσης (Ctrl)"
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr "Αυτό το κουμπί του ποντικιού πρέπει να πιεστεί για να καταγραφεί η θέση του δείκτη, όταν αυτός βρίσκεται εντός της περιοχής καταγραφής. Οι τιμές που επιτρέπονται είναι \"0\" αν δεν απαιτείται η χρήση κουμπιού, \"1\" για το αριστερό κουμπί, \"2\" για το μεσαίο κουμπί και \"3\" για το δεξί κουμπί."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release modifier key (Shift)"
-msgstr "Πλήκτρο για την τροποποίηση της απελευθέρωσης (Shift)"
+msgid ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+msgstr "Αν πρέπει να πατηθεί το Alt για να καταγραφεί η θέση του δείκτη, όταν αυτός βρίσκεται εντός της περιοχής καταγραφής. Αν έχει οριστεί ως αληθές, και έχει οριστεί κουμπί του ποντικιού για την επιλογή \"capture_button\" (κουμπί καταγραφής), τότε το Alt θα πρέπει να πατηθεί παράλληλα με το κουμπί του ποντικιού."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
-msgid "Size of capture area"
-msgstr "Μέγεθος καταγραφής της θέσης του δρομέα"
+msgid ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr "Αν πρέπει να πατηθεί το Alt μαζί με το κουμπί του ποντικιού που έχει οριστεί για την επιλογή \"release_button\" (κουμπί απελευθέρωσης), για να απελευθερωθεί ο δείκτης από την περιοχή καταγραφής."
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
-msgstr "Πλάτος σε εικονοστοιχεία της καταγραφής της θέσης του δρομέα"
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr "Αν πρέπει να πατηθεί το Ctrl για να καταγραφεί η θέση του δείκτη, όταν αυτός βρίσκεται εντός της περιοχής καταγραφής. Αν έχει οριστεί ως αληθές, και έχει οριστεί κουμπί του ποντικιού για την επιλογή \"capture_button\" (κουμπί καταγραφής), τότε το Ctrl θα πρέπει να πατηθεί παράλληλα με το κουμπί του ποντικιού."
 
-#: ../src/mt-main.c:417
-msgid "Enable mousetweaks feature"
-msgstr "Ενεργοποίηση της δυνατότητας mousetweaks"
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr "Αν πρέπει να πατηθεί το Ctrl μαζί με το κουμπί του ποντικιού που έχει οριστεί για την επιλογή \"release_button\" (κουμπί απελευθέρωσης), για να απελευθερωθεί ο δείκτης από την περιοχή καταγραφής."
 
-#: ../src/mt-main.c:419
-msgid "Use dwell mode"
-msgstr "Χρήση της κατάστασης κρατήματος του κλικ"
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+msgstr "Αν πρέπει να πατηθεί το Shift για να καταγραφεί η θέση του δείκτη, όταν αυτός βρίσκεται εντός της περιοχής καταγραφής. Αν έχει οριστεί ως αληθές, και έχει οριστεί κουμπί του ποντικιού για την επιλογή \"capture_button\" (κουμπί καταγραφής), τότε το Shift θα πρέπει να πατηθεί παράλληλα με το κουμπί του ποντικιού."
 
-#: ../src/mt-main.c:423
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr "Αν πρέπει να πατηθεί το Shift μαζί με το κουμπί του ποντικιού που έχει οριστεί για την επιλογή \"release_button\" (κουμπί απελευθέρωσης), για να απελευθερωθεί ο δείκτης από την περιοχή καταγραφής."
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+#| msgid "Width of the capture area in pixels"
+msgid "Width of the capture area in pixels."
+msgstr "Πλάτος σε εικονοστοιχεία της περιοχής καταγραφής."
+
+#: ../src/mt-main.c:720
+#| msgid "Assistive Technologies not enabled"
+msgid "Assistive Technology Support is not Enabled"
+msgstr "Δεν είναι ενεργοποιημένη η υποστήριξη βοηθητικών τεχνολογιών "
+
+#: ../src/mt-main.c:721
+msgid ""
+"Mousetweaks requires assistive technologies to be enabled in your session.\n"
+"\n"
+"To enable support for assistive technologies and restart your session, press "
+"\"Enable and Log Out\"."
+msgstr ""
+"Το mousetweaks απαιτεί να είναι ενεργοποιημένες οι βοηθητικές τεχνολογίες στη συνεδρία σας.\n"
+"\n"
+"Για να ενεργοποιήσετε την υποστήριξη των βοηθητικών τεχνολογιών και να επανεκκινήσετε τη συνεδρία σας, πατήστε \"Ενεργοποίηση και αποσύνδεση\"."
+
+#: ../src/mt-main.c:828
+msgid "Time to wait before a dwell click"
+msgstr "Χρόνος αναμονής πριν γίνει κράτημα κλικ"
+
+#: ../src/mt-main.c:830
+#| msgid "Enable simulated secondary click"
+msgid "Time to wait before a simulated secondary click"
+msgstr "Χρόνος αναμονής πριν γίνει η προσομοίωση δευτερεύοντος κλικ"
+
+#: ../src/mt-main.c:832
+#| msgid "Dwell click mode"
+msgid "Dwell mode to use"
+msgstr "Λειτουργία κρατήματος του κλικ που θα χρησιμοποιηθεί"
+
+#: ../src/mt-main.c:836
 msgid "Window x position"
-msgstr "Θέση του πλάτους x του παραθύρου"
+msgstr "Θέση στον άξονα x του παραθύρου"
 
-#: ../src/mt-main.c:425
+#: ../src/mt-main.c:838
 msgid "Window y position"
-msgstr "Θέση του πλάτους y του παραθύρου"
+msgstr "Θέση στον άξονα y του παραθύρου"
 
-#: ../src/mt-main.c:427
-msgid "Shutdown mousetweaks"
-msgstr "Τερματισμός των mousetweaks"
+#: ../src/mt-main.c:840
+msgid "Ignore small pointer movements"
+msgstr "Αγνόηση μικρών μετακινήσεων του δείκτη"
 
-#: ../src/mt-main.c:484
-msgid "Assistive Technologies not enabled"
-msgstr "Μη ενεργές Βοηθητικές τεχνολογίες"
+#: ../src/mt-main.c:842
+msgid "Show elapsed time as cursor overlay"
+msgstr "Εμφάνιση του χρόνου που περνά με χρωματισμό του δρομέα"
 
-#: ../src/mt-main.c:485
-msgid "Mousetweaks requires Assistive Technologies."
-msgstr "Το mousetweaks απαιτεί Βοηθητικές τεχνολογίες."
+#: ../src/mt-main.c:844
+#| msgid "Shutdown mousetweaks"
+msgid "Shut down mousetweaks"
+msgstr "Τερματισμός του mousetweaks"
 
-#: ../src/pointer-capture-applet.c:76 ../src/dwell-click-applet.c:289
-msgid "Couldn't display help"
+#: ../src/mt-main.c:853
+#| msgid "Enable mousetweaks feature"
+msgid "- GNOME mousetweaks daemon"
+msgstr "- Δαίμονας GNOME mousetweaks"
+
+#: ../src/mt-common.c:30
+#, fuzzy
+#| msgid "Couldn't display help"
+msgid "Failed to Display Help"
 msgstr "Δεν είναι δυνατή η προβολή της βοήθειας"
 
-#: ../src/pointer-capture-applet.c:204
+#: ../src/mt-common.c:66
+msgid "Enable and Log Out"
+msgstr "Ενεργοποίηση και αποσύνδεση"
+
+#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "Κλειδωμένο"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:207
+#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "K"
 
-#: ../src/pointer-capture-applet.c:635
+#: ../src/pointer-capture-applet.c:621
 msgid "Capture area"
-msgstr "Περιοχή καταγραφής της θέσης του δρομέα"
+msgstr "Περιοχή καταγραφής"
 
-#: ../src/pointer-capture-applet.c:636
+#: ../src/pointer-capture-applet.c:622
 msgid "Temporarily lock the mouse pointer"
-msgstr "Προσωρινό κλείδωμα του δρομέα του ποντικιού"
+msgstr "Προσωρινό κλείδωμα του δείκτη του ποντικιού"
+
+#: ../src/dwell-click-applet.c:334
+msgid "Failed to Launch Mouse Preferences"
+msgstr "Απέτυχε η εκκίνηση των προτιμήσεων του ποντικιού"
 

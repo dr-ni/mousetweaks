@@ -3,19 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Sweta Kothari <swkothar@redhat.com>, 2008, 2009.
+# Ankit Patel <ankit@redhat.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD.gu\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-02-10 12:51+0000\n"
-"PO-Revision-Date: 2009-03-13 17:18+0530\n"
-"Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
-"Language-Team: Gujarati\n"
+"POT-Creation-Date: 2009-03-13 11:50+0000\n"
+"PO-Revision-Date: 2009-03-15 11:44+0530\n"
+"Last-Translator: Ankit Patel <ankit@redhat.com>\n"
+"Language-Team: Gujarati <fedora-trans-gu@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -63,32 +64,32 @@ msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"બે વાર ક્લિક કરવા માટે દિશા (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"બે વાર ક્લિક કરવા માટે દિશા (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = "
+"Down)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
 msgstr ""
-"ખેંચવા ક્લિક કરવા માટે દિશા(\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
+"ખેંચવા ક્લિક કરવા માટે દિશા(\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = "
+"Down)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"ગૌણ ક્લિક કરવા માટે દિશા (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"ગૌણ ક્લિક કરવા માટે દિશા (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = "
+"Down)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"એક જ ક્લિક કરવા માટે દિશા (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"એક જ ક્લિક કરવા માટે દિશા (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = "
+"Down)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
@@ -106,7 +107,7 @@ msgstr "Dwell ક્લિક સ્થિતિ (\"0\" = Gesture mode, \"1\" = 
 msgid "Dwell click time"
 msgstr "Dwell ક્લિક સમય"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
+#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:825
 msgid "Enable dwell click"
 msgstr "dwell ક્લિકને સક્રિય કરો"
 
@@ -114,7 +115,7 @@ msgstr "dwell ક્લિકને સક્રિય કરો"
 msgid "Enable secondary click"
 msgstr "ગૌણ ક્લિકને સક્રિય કરો"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:827
 msgid "Enable simulated secondary click"
 msgstr "બનાવટી ગૌમ ક્લિકને સક્રિય કરો"
 
@@ -142,7 +143,7 @@ msgstr "થ્રેશોલ્ડની હિલચાલ"
 msgid "Secondary click time"
 msgstr "ગૌણ ક્લિક સમય"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:835
 msgid "Show click type window"
 msgstr "ક્લિક વિન્ડો પ્રકાર બતાવો"
 
@@ -210,8 +211,9 @@ msgid ""
 "needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
 "button."
 msgstr ""
-"જ્યારે પોઇંટરને પકડવા માટે ક્રમમાં પકડેલ વિસ્તાર પર પોઇંટર હોય ત્યારે માઉસ બટન એ દબાયેલ હોવુ જ જોઇએ. "
-"યોગ્ય કિંમતો એ ડાબા બટન માટે \"1\", મધ્ય બટન માટે \"2\", અને જમણા બટન માટે \"3\" છે"
+"જ્યારે પોઇંટરને પકડવા માટે ક્રમમાં પકડેલ વિસ્તાર પર પોઇંટર હોય ત્યારે માઉસ બટન એ દબાયેલ "
+"હોવુ જ જોઇએ. યોગ્ય કિંમતો એ ડાબા બટન માટે \"1\", મધ્ય બટન માટે \"2\", અને જમણા બટન "
+"માટે \"3\" છે"
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid ""
@@ -220,17 +222,18 @@ msgid ""
 "button is set in the \"capture_button\" key, then the Alt key must be "
 "pressed while the mouse button is pressed."
 msgstr ""
-"જ્યારે તે ગ્રહણ કરેલ વિસ્તાર પર હોય ત્યારે ગ્રહણ થયેલ પોઇંટર માટે ક્યાંતો Alt કી ને દબાયેલ હોવી જ જોઇએ. "
-"જો આ વિકલ્પ એ true તરીકે સુયોજિત હોય તો, અને માઉસ બટન એ \"capture_button\" કી માં સુયોજિત હોય તો, "
-"પછી જ્યારે માઉસ બટન દબાયેલ હોય તો Alt કી ને દબાયેલ હોવુ જ જોઇએ."
+"જ્યારે તે ગ્રહણ કરેલ વિસ્તાર પર હોય ત્યારે ગ્રહણ થયેલ પોઇંટર માટે ક્યાંતો Alt કી ને દબાયેલ "
+"હોવી જ જોઇએ. જો આ વિકલ્પ એ true તરીકે સુયોજિત હોય તો, અને માઉસ બટન એ "
+"\"capture_button\" કી માં સુયોજિત હોય તો, પછી જ્યારે માઉસ બટન દબાયેલ હોય તો Alt "
+"કી ને દબાયેલ હોવુ જ જોઇએ."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid ""
 "Whether the Alt key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
-"ક્યાંતો ગ્રહણ કરેલ વિસ્તારમાંથી પ્રકાશિત કરેલ પોઇંટર માટે \"release_button\" માં માઉસ બટનને સુયોજિત કરવા સાથે "
-"Alt કી દબાયેલ હોવી જ જોઇએ."
+"ક્યાંતો ગ્રહણ કરેલ વિસ્તારમાંથી પ્રકાશિત કરેલ પોઇંટર માટે \"release_button\" માં માઉસ "
+"બટનને સુયોજિત કરવા સાથે Alt કી દબાયેલ હોવી જ જોઇએ."
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
 msgid ""
@@ -238,15 +241,15 @@ msgid ""
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Ctrl key must be "
 "pressed while the mouse button is pressed."
-msgstr ""
+msgstr "નિર્દેશક જ્યારે પકડવાના વિસ્તારની ઉપર હોય ત્યારે તેને પકડવા માટે શું Ctrl દબાયેલ હોવી જ જોઈએ. જો આ વિકલ્પ ખરા તરીકે સુયોજીત થયેલ હોય, અને માઉસ બટન એ \"capture_button\" કીમાં સુયોજીત થયેલ હોય, તો પછી જ્યારે માઉસ બટન દબાયેલ હોય ત્યારે Ctrl કી દબાયેલ હોવી જ જોઈએ."
 
 #: ../data/pointer-capture-applet.schemas.in.h:15
 msgid ""
 "Whether the Ctrl key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
-"ક્યાંતો ગ્રહણ કરેલ વિસ્તારમાંથી પોઇંટરને પ્રકાશિત કરવા માટે \"release_button\" માં માઉસ બટનને "
-"સુયોજિત કરવા સાથે Ctrl કી દબાયેલ હોવી જ જોઇએ."
+"ક્યાંતો ગ્રહણ કરેલ વિસ્તારમાંથી પોઇંટરને પ્રકાશિત કરવા માટે \"release_button\" માં માઉસ "
+"બટનને સુયોજિત કરવા સાથે Ctrl કી દબાયેલ હોવી જ જોઇએ."
 
 #: ../data/pointer-capture-applet.schemas.in.h:16
 msgid ""
@@ -254,25 +257,25 @@ msgid ""
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Shift key must be "
 "pressed while the mouse button is pressed."
-msgstr ""
+msgstr "નિર્દેશક જ્યારે પકડવાના વિસ્તારની ઉપર હોય ત્યારે તેને પકડવા માટે શું Shift દબાયેલ હોવી જ જોઈએ. જો આ વિકલ્પ ખરા તરીકે સુયોજીત થયેલ હોય, અને માઉસ બટન એ \"capture_button\" કીમાં સુયોજીત થયેલ હોય, તો પછી જ્યારે માઉસ બટન દબાયેલ હોય ત્યારે Shift કી દબાયેલ હોવી જ જોઈએ."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
 msgid ""
 "Whether the Shift key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
-"ક્યાંતો ગ્રહણ કરેલ વિસ્તારમાંથી પોઇંટરને પ્રકાશિત કરવા માટે \"release_button\" માં માઉસ બટનને "
-"સુયોજિત કરવા સાથે ક્યાંતો Shift કી દબાયેલ હોવી જ જોઇએ."
+"ક્યાંતો ગ્રહણ કરેલ વિસ્તારમાંથી પોઇંટરને પ્રકાશિત કરવા માટે \"release_button\" માં માઉસ "
+"બટનને સુયોજિત કરવા સાથે ક્યાંતો Shift કી દબાયેલ હોવી જ જોઇએ."
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
 msgid "Width of the capture area in pixels."
 msgstr "પિક્સેલોમાં પકડેલ વિસ્તારનીપહોળાઇ."
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:721
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Assistive Technology Support એ સક્રિય થયેલ નથી"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:722
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -281,42 +284,42 @@ msgid ""
 msgstr ""
 "Mousetweaks ને તમારા સત્ર માં સક્રિય થવા માટે assistive technologies ની જરૂર છે.\n"
 "\n"
-"assistive technologies માટે આધાર ને સક્રિય કરવા માટે અને તમારા સત્ર ને ફરી શરૂ કરવા માટે, "
-"\"Enable and Log Out\" ને દબાવો."
+"assistive technologies માટે આધાર ને સક્રિય કરવા માટે અને તમારા સત્ર ને ફરી શરૂ કરવા "
+"માટે, \"Enable and Log Out\" ને દબાવો."
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:829
 msgid "Time to wait before a dwell click"
 msgstr "dwell ક્લિક કરતા પહેલા રાહ જોવાનો સમય છે"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:831
 msgid "Time to wait before a simulated secondary click"
 msgstr "સિમ્યુલેટ થયેલ ગૌણ ક્લિક પહેલા રાહ જોવાનો સમય છે"
 
-#: ../src/mt-main.c:832
+#: ../src/mt-main.c:833
 msgid "Dwell mode to use"
 msgstr "વાપરવા માટે Dwell સ્થિતિ"
 
-#: ../src/mt-main.c:836
+#: ../src/mt-main.c:837
 msgid "Window x position"
 msgstr "વિન્ડો x જગ્યા"
 
-#: ../src/mt-main.c:838
+#: ../src/mt-main.c:839
 msgid "Window y position"
 msgstr "વિન્ડો y જગ્યા"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:841
 msgid "Ignore small pointer movements"
 msgstr "નાંના પોઇન્ટરની હિલચાલને અવગણો"
 
-#: ../src/mt-main.c:842
+#: ../src/mt-main.c:843
 msgid "Show elapsed time as cursor overlay"
 msgstr "કર્સર ઓવરલે તરીકે ચાલી ગયેલ સમય બતાવો"
 
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:845
 msgid "Shut down mousetweaks"
 msgstr "mousetweaks ને બંધ કરો"
 
-#: ../src/mt-main.c:853
+#: ../src/mt-main.c:854
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME mousetweaks daemon"
 

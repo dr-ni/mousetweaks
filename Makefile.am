@@ -28,6 +28,9 @@ MAINTAINERCLEANFILES =			\
 	$(srcdir)/intltool-merge.in	\
 	$(srcdir)/intltool-update.in
 
+maintainer-clean-local:
+	-rm -rf $(top_srcdir)/m4
+
 GITIGNOREFILES = m4
 
 -include $(top_srcdir)/git.mk

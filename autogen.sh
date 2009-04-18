@@ -11,6 +11,11 @@ PKG_NAME="mousetweaks"
     exit 1
 }
 
+# create marco directory
+if test ! -e $srcdir/m4; then
+    mkdir $srcdir/m4
+fi
+
 which gnome-autogen.sh || {
     echo "You need to install gnome-common from the GNOME SVN"
     exit 1

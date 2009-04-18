@@ -5,8 +5,10 @@
          xmlns="http://usefulinc.com/ns/doap#">
 
   <name xml:lang="en">mousetweaks</name>
-
   <shortdesc xml:lang="en">Mouse accessibility enhancements</shortdesc>
+  <download-page rdf:resource="http://download.gnome.org/sources/mousetweaks/" />
+  <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=mousetweaks" />
+  <category rdf:resource="http://api.gnome.org/doap-extensions#desktop" />
 
   <maintainer>
     <foaf:Person>

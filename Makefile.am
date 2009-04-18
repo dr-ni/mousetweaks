@@ -1,15 +1,33 @@
 SUBDIRS = src data pixmaps po help man
 
-ACLOCAL_AMFLAGS = -I m4
-
 DISTCHECK_CONFIGURE_FLAGS =		\
 	--disable-schemas-install	\
 	--disable-scrollkeeper
 
-EXTRA_DIST =			\
-	gnome-doc-utils.make	\
-	MAINTAINERS		\
-	COPYING.GPL		\
-	COPYING.FDL
+EXTRA_DIST =				\
+	$(srcdir)/m4/			\
+	$(srcdir)/MAINTAINERS		\
+	$(srcdir)/COPYING.GPL		\
+	$(srcdir)/COPYING.FDL
 
-DISTCLEANFILES = gnome-doc-utils.make
+MAINTAINERCLEANFILES =			\
+	$(srcdir)/INSTALL		\
+	$(srcdir)/aclocal.m4		\
+	$(srcdir)/compile		\
+	$(srcdir)/config.guess		\
+	$(srcdir)/config.h.in		\
+	$(srcdir)/config.sub		\
+	$(srcdir)/depcomp		\
+	$(srcdir)/install-sh		\
+	$(srcdir)/missing		\
+	$(srcdir)/mkinstalldirs		\
+	$(srcdir)/omf.make		\
+	$(srcdir)/xmldocs.make		\
+	$(srcdir)/gnome-doc-utils.make	\
+	$(srcdir)/intltool-extract.in	\
+	$(srcdir)/intltool-merge.in	\
+	$(srcdir)/intltool-update.in
+
+GITIGNOREFILES = m4
+
+-include $(top_srcdir)/git.mk

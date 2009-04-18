@@ -6,3 +6,5 @@ DOC_MODULE = mousetweaks
 DOC_ENTITIES = legal.xml
 DOC_INCLUDES =
 DOC_LINGUAS = de el en_GB es fr it oc sv
+
+-include $(top_srcdir)/git.mk

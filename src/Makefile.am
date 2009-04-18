@@ -73,3 +73,5 @@ mt-service-glue.h: mousetweaks-service.xml
 
 EXTRA_DIST = mousetweaks-service.xml
 CLEANFILES = $(BUILT_SOURCES)
+
+-include $(top_srcdir)/git.mk

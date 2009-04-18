@@ -6,3 +6,5 @@ pix_DATA =		 \
 	right-click.png
 
 EXTRA_DIST = $(pix_DATA)
+
+-include $(top_srcdir)/git.mk

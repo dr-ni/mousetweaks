@@ -66,3 +66,5 @@ DISTCLEANFILES =           \
 	$(server_DATA)     \
 	$(server_in_files) \
 	$(schemas_DATA)
+
+-include $(top_srcdir)/git.mk

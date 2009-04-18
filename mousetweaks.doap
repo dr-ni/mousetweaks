@@ -1,0 +1,26 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+
+  <name xml:lang="en">mousetweaks</name>
+
+  <shortdesc xml:lang="en">Mouse accessibility enhancements</shortdesc>
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Francesco Fumanti</foaf:name>
+      <foaf:mbox rdf:resource="frfumanti@src.gnome.org" />
+      <gnome:userid>frfumanti</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Gerd Kohlberger</foaf:name>
+      <foaf:mbox rdf:resource="gerdk@src.gnome.org" />
+      <gnome:userid>gerdk</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+
+</Project>

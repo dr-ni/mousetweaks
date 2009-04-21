@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
 "POT-Creation-Date: 2009-03-02 20:46+0000\n"
-"PO-Revision-Date: 2009-03-14 18:06+0530\n"
+"PO-Revision-Date: 2009-04-09 17:23+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: Kannada <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,20 +19,20 @@ msgstr ""
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
-msgstr ""
+msgstr "ಡ್ವೆಲ್‌ ಕ್ಲಿಕ್"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr ""
+msgstr "ಡ್ವೆಲಿಂಗ್ ಕ್ಲಿಕ್ ಬಗೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
-msgstr ""
+msgstr "ಸೂಚಕವನ್ನು ಲಾಕ್ ಮಾಡಬೇಕಿರುವ ಕ್ಷೇತ್ರ"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
 #: ../src/pointer-capture-applet.c:549
 msgid "Pointer Capture"
-msgstr ""
+msgstr "ಸೂಚಕವನ್ನು ಸರೆಹಿಡಿಯುವಿಕೆ"
 
 #: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
 msgid "_About"
@@ -48,143 +48,151 @@ msgstr "ಆದ್ಯತೆಗಳು(_P)"
 
 #: ../data/mousetweaks.schemas.in.h:1
 msgid "Animate cursor"
-msgstr ""
+msgstr "ತೆರೆಸೂಚಕವನ್ನು ಸಜೀವನಗೊಳಿಸು"
 
 #: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style"
-msgstr ""
+msgstr "ಗುಂಡಿಯ ಶೈಲಿ"
 
 #: ../data/mousetweaks.schemas.in.h:3
 msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
-msgstr ""
+msgstr "ಕ್ಲಿಕ್ ಬಗೆಯ ವಿಂಡೋದ ಗುಂಡಿಯ ಶೈಲಿ (\"0\" = ಪಠ್ಯ, \"1\" = ಚಿಹ್ನೆ, \"2\" = ಎರಡೂ)"
 
 #: ../data/mousetweaks.schemas.in.h:4
 msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
+"ಎರಡು ಬಾರಿ ಕ್ಲಿಕ್ಕಿಸುವುದನ್ನು ನಿರ್ವಹಿಸುವ ದಿಕ್ಕು (\"0\" = ಎಡ, \"1\" = ಬಲ, \"2\" = "
+"ಮೇಲೆ, \"3\" = ಕೆಳಗೆ)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
 msgstr ""
+"ಎಳೆದು ಕ್ಲಿಕ್ಕಿಸುವುದನ್ನು ನಿರ್ವಹಿಸುವ ದಿಕ್ಕು (\"0\" = ಎಡ, \"1\" = ಬಲ, \"2\" = "
+"ಮೇಲೆ, \"3\" = ಕೆಳಗೆ)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
+"ದ್ವಿತೀಯ(ಸೆಕೆಂಡರಿ) ಕ್ಲಿಕ್‌ ಅನ್ನು ನಿರ್ವಹಿಸುವ ದಿಕ್ಕು (\"0\" = ಎಡ, \"1\" = ಬಲ, \"2\" = "
+"ಮೇಲೆ, \"3\" = ಕೆಳಗೆ)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
+"ಒಂದು ಬಾರಿ ಕ್ಲಿಕ್ಕಿಸುವುದನ್ನು ನಿರ್ವಹಿಸುವ ದಿಕ್ಕು (\"0\" = ಎಡ, \"1\" = ಬಲ, \"2\" = "
+"ಮೇಲೆ, \"3\" = ಕೆಳಗೆ)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
-msgstr ""
+msgstr "ಚಲನೆಯನ್ನು ಪರಿಗಣಿಸಲು ಅಗತ್ಯವಿರುವ ಚಲಿಸಬೇಕಿರುವ ದೂರ"
 
 #: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
-msgstr ""
+msgstr "ಡ್ವೆಲ್‌ ಕ್ಲಿಕ್ ಸ್ಥಿತಿ"
 
 #: ../data/mousetweaks.schemas.in.h:10
 msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr ""
+msgstr "ಡ್ವೆಲ್‌ ಕ್ಲಿಕ್ ಸ್ಥಿತಿ (\"0\" = ಸೂಚನೆಯ ಸ್ಥಿತಿ, \"1\" = ವಿಂಡೋ ಸ್ಥಿತಿ)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
-msgstr ""
+msgstr "ಡ್ವೆಲ್‌ ಕ್ಲಿಕ್‌ನ ಸಮಯ"
 
 #: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:825
 msgid "Enable dwell click"
-msgstr ""
+msgstr "ಡ್ವೆಲ್‌ ಕ್ಲಿಕ್‌ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು"
 
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
-msgstr ""
+msgstr "ದ್ವಿತೀಯ(ಸೆಕೆಂಡರಿ) ಕ್ಲಿಕ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು"
 
 #: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:827
 msgid "Enable simulated secondary click"
-msgstr ""
+msgstr "ಸಿಮುಲೇಟ್ ಮಾಡಲಾದ ದ್ವಿತೀಯ(ಸೆಕೆಂಡರಿ) ಕ್ಲಿಕ್ ಅನ್ನು ಶಕ್ತಗೊಳಿಸು"
 
 #: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
-msgstr ""
+msgstr "ಎರಡು ಬಾರಿಯ ಕ್ಲಿಕ್‌ನ ಸೂಚನೆ"
 
 #: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture drag click"
-msgstr ""
+msgstr "ಎಳೆಯುವ ಕ್ಲಿಕ್‌ನ ಸೂಚನೆ"
 
 #: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
-msgstr ""
+msgstr "ದ್ವಿತೀಯ(ಸೆಕೆಂಡರಿ) ಕ್ಲಿಕ್‌ನ ಸೂಚನೆ"
 
 #: ../data/mousetweaks.schemas.in.h:18
 msgid "Gesture single click"
-msgstr ""
+msgstr "ಒಂದು ಕ್ಲಿಕ್‌ನ ಸೂಚನೆ"
 
 #: ../data/mousetweaks.schemas.in.h:19
 msgid "Movement threshold"
-msgstr ""
+msgstr "ಚಲನೆಯ ಮಿತಿ"
 
 #: ../data/mousetweaks.schemas.in.h:20
 msgid "Secondary click time"
-msgstr ""
+msgstr "ದ್ವಿತೀಯ ಕ್ಲಿಕ್ ಸಮಯ"
 
 #: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:835
 msgid "Show click type window"
-msgstr ""
+msgstr "ಕ್ಲಿಕ್ ಬಗೆ ವಿಂಡೋವನ್ನು ತೋರಿಸು"
 
 #: ../data/mousetweaks.schemas.in.h:22
 msgid "Show elapsed time as cursor overlay."
-msgstr ""
+msgstr "ತೆರೆ ಸೂಚಕವು ಓವರ್ಲೇ ಆದಾಗ ತೀರಿದ ಸಮಯವನ್ನು ತೋರಿಸು."
 
 #: ../data/mousetweaks.schemas.in.h:23
 msgid "Time in seconds before a click is triggered"
-msgstr ""
+msgstr "ಒಂದು ಕ್ಲಿಕ್‌ ಅನ್ನು ಆರಂಭಿಸುವ ಮುಂಚಿನ ಸಮಯ, ಸೆಕೆಂಡುಗಳಲ್ಲಿ"
 
 #: ../data/mousetweaks.schemas.in.h:24
 msgid "Time in seconds before a secondary click is triggered"
-msgstr ""
+msgstr "ದ್ವಿತೀಯ ಕ್ಲಿಕ್‌ ಅನ್ನು ಆರಂಭಿಸುವ ಮುಂಚಿನ ಸಮಯ, ಸೆಕೆಂಡುಗಳಲ್ಲಿ"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
 msgid "Capture pointer only if Alt is pressed"
-msgstr ""
+msgstr "Alt ಅನ್ನು ಒತ್ತಿದಾಗ ಮಾತ್ರ ಸೂಚಕವನ್ನು ಸೆರೆಹಿಡಿ"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Capture pointer only if Ctrl is pressed"
-msgstr ""
+msgstr "Ctrl ಅನ್ನು ಒತ್ತಿದಾಗ ಮಾತ್ರ ಸೂಚಕವನ್ನು ಸೆರೆಹಿಡಿ"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture pointer only if Shift is pressed"
-msgstr ""
+msgstr "Shift ಅನ್ನು ಒತ್ತಿದಾಗ ಮಾತ್ರ ಸೂಚಕವನ್ನು ಸೆರೆಹಿಡಿ"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
 msgid "Mouse button used to capture the pointer"
-msgstr ""
+msgstr "ಸೂಚಕವನ್ನು ಸೆರೆಹಿಡಿಯಲು ಬಳಸಲಾಗುವ ಮೌಸ್‌ ಗುಂಡಿ"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
 msgid "Mouse button used to release the pointer"
-msgstr ""
+msgstr "ಸೂಚಕವನ್ನು ಮುಕ್ತಗೊಳಿಸಲು ಬಳಸಲಾಗುವ ಮೌಸ್‌ ಗುಂಡಿ"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
 msgid "Release pointer only if Alt is pressed"
-msgstr ""
+msgstr "Alt ಅನ್ನು ಒತ್ತಿದಾಗ ಮಾತ್ರ ಸೂಚಕವನ್ನು ಮುಕ್ತಗೊಳಿಸು"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
 msgid "Release pointer only if Ctrl is pressed"
-msgstr ""
+msgstr "Ctrl ಅನ್ನು ಒತ್ತಿದಾಗ ಮಾತ್ರ ಸೂಚಕವನ್ನು ಮುಕ್ತಗೊಳಿಸು"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release pointer only if Shift is pressed"
-msgstr ""
+msgstr "Shift ಅನ್ನು ಒತ್ತಿದಾಗ ಮಾತ್ರ ಸೂಚಕವನ್ನು ಮುಕ್ತಗೊಳಿಸು"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Size of capture area"
-msgstr ""
+msgstr "ಸೆರೆ ಹಿಡಿಯುವ ಕ್ಷೇತ್ರದ ಗಾತ್ರ"
 
 #: ../data/pointer-capture-applet.schemas.in.h:10
 msgid ""
@@ -245,11 +253,11 @@ msgstr ""
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
 msgid "Width of the capture area in pixels."
-msgstr ""
+msgstr "ಸೆರೆ ಹಿಡಿಯುವ ಕ್ಷೇತ್ರದ ಅಗಲ, ಪಿಕ್ಸೆಲ್‌ಗಳಲ್ಲಿ."
 
 #: ../src/mt-main.c:721
 msgid "Assistive Technology Support is not Enabled"
-msgstr ""
+msgstr "ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನದ ಬೆಂಬಲವನ್ನು ಶಕ್ತಗೊಳಿಸಲಾಗಿಲ್ಲ"
 
 #: ../src/mt-main.c:722
 msgid ""
@@ -261,31 +269,31 @@ msgstr ""
 
 #: ../src/mt-main.c:829
 msgid "Time to wait before a dwell click"
-msgstr ""
+msgstr "ಡ್ವೆಲ್‌ ಕ್ಲಿಕ್‌ನ ಮೊದಲು ಕಾಯಬೇಕಿರುವ ಸಮಯ"
 
 #: ../src/mt-main.c:831
 msgid "Time to wait before a simulated secondary click"
-msgstr ""
+msgstr "ಸಿಮುಲೇಟ್ ಆದ ದ್ವಿತೀಯ ಕ್ಲಿಕ್‌ನ ಮೊದಲು ಕಾಯಬೇಕಿರುವ ಸಮಯ"
 
 #: ../src/mt-main.c:833
 msgid "Dwell mode to use"
-msgstr ""
+msgstr "ಬಳಸಲು ಬೇಕಾದ ಡ್ವೆಲ್ ಸ್ಥಿತಿ"
 
 #: ../src/mt-main.c:837
 msgid "Window x position"
-msgstr ""
+msgstr "ವಿಂಡೋದ x ಸ್ಥಾನ"
 
 #: ../src/mt-main.c:839
 msgid "Window y position"
-msgstr ""
+msgstr "ವಿಂಡೋದ y ಸ್ಥಾನ"
 
 #: ../src/mt-main.c:841
 msgid "Ignore small pointer movements"
-msgstr ""
+msgstr "ಸೂಚಕದ ಸಣ್ಣ ಪುಟ್ಟ ಚಲನೆಯನ್ನು ಆಲಕ್ಷಿಸು"
 
 #: ../src/mt-main.c:843
 msgid "Show elapsed time as cursor overlay"
-msgstr ""
+msgstr "ತೆರೆಸೂಚಕವು ಓವರ್ಲೇ ಆದಾಗ ತೀರಿದ ಸಮಯವನ್ನು ತೋರಿಸು"
 
 #: ../src/mt-main.c:845
 msgid "Shut down mousetweaks"
@@ -297,15 +305,15 @@ msgstr "- GNOME ಮೌಸ್‌ಟ್ವೀಕ್ಸ್‍ ಡೀಮನ್"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
-msgstr ""
+msgstr "ನೆರವನ್ನು ತೋರಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ"
 
 #: ../src/mt-common.c:66
 msgid "Enable and Log Out"
-msgstr ""
+msgstr "ಶಕ್ತಗೊಳಿಸು ಹಾಗು ನಿರ್ಗಮಿಸು"
 
 #: ../src/pointer-capture-applet.c:180
 msgid "Locked"
-msgstr ""
+msgstr "ಲಾಕ್‌ ಮಾಡಲಾದ"
 
 #. l10n: the first letter of 'Locked'
 #: ../src/pointer-capture-applet.c:183
@@ -314,13 +322,13 @@ msgstr "L"
 
 #: ../src/pointer-capture-applet.c:621
 msgid "Capture area"
-msgstr ""
+msgstr "ಸೆರೆಹಿಡಿಯುವ ಸ್ಥಳ"
 
 #: ../src/pointer-capture-applet.c:622
 msgid "Temporarily lock the mouse pointer"
-msgstr ""
+msgstr "ಮೌಸ್‌ ಸೂಚಕವನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ಲಾಕ್ ಮಾಡು"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
-msgstr ""
+msgstr "ಮೌಸ್‌ನ ಆದ್ಯತೆಗಳನ್ನು ಆರಂಭಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ"
 

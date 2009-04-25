@@ -40,10 +40,6 @@ struct _MtTimer {
 
 struct _MtTimerClass {
     GObjectClass parent;
-
-    void (*tick)     (MtTimer *timer,
-		      gdouble  time);
-    void (*finished) (MtTimer *timer);
 };
 
 GType mt_timer_get_type (void) G_GNUC_CONST;

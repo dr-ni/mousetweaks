@@ -57,8 +57,7 @@ mt_timer_class_init (MtTimerClass *klass)
 	g_signal_new (g_intern_static_string ("tick"),
 		      G_OBJECT_CLASS_TYPE (klass),
 		      G_SIGNAL_RUN_LAST,
-		      G_STRUCT_OFFSET (MtTimerClass, tick),
-		      NULL, NULL,
+		      0, NULL, NULL,
 		      g_cclosure_marshal_VOID__DOUBLE,
 		      G_TYPE_NONE, 1, G_TYPE_DOUBLE);
 
@@ -66,8 +65,7 @@ mt_timer_class_init (MtTimerClass *klass)
 	g_signal_new (g_intern_static_string ("finished"),
 		      G_OBJECT_CLASS_TYPE (klass),
 		      G_SIGNAL_RUN_LAST,
-		      G_STRUCT_OFFSET (MtTimerClass, finished),
-		      NULL, NULL,
+		      0, NULL, NULL,
 		      g_cclosure_marshal_VOID__VOID,
 		      G_TYPE_NONE, 0);
 

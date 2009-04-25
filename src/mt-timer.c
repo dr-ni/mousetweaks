@@ -21,10 +21,6 @@
 
 #include "mt-timer.h"
 
-#define MT_TIMER_GET_PRIVATE(o) \
-    (G_TYPE_INSTANCE_GET_PRIVATE ((o), MT_TYPE_TIMER, MtTimerPrivate))
-
-typedef struct _MtTimerPrivate MtTimerPrivate;
 struct _MtTimerPrivate {
     GTimer *timer;
     guint   tid;
@@ -42,16 +38,14 @@ static guint signals[LAST_SIGNAL] = { 0 };
 
 G_DEFINE_TYPE (MtTimer, mt_timer, G_TYPE_OBJECT)
 
-static void mt_timer_dispose  (GObject *object);
 static void mt_timer_finalize (GObject *object);
 
 static void
 mt_timer_class_init (MtTimerClass *klass)
 {
-    GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
+    GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
-    gobject_class->dispose  = mt_timer_dispose;
-    gobject_class->finalize = mt_timer_finalize;
+    object_class->finalize = mt_timer_finalize;
 
     signals[TICK] = 
 	g_signal_new (g_intern_static_string ("tick"),
@@ -75,36 +69,22 @@ mt_timer_class_init (MtTimerClass *klass)
 static void
 mt_timer_init (MtTimer *timer)
 {
-    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE (timer);
-
-    priv->timer   = g_timer_new ();
-    priv->tid     = 0;
-    priv->elapsed = 0.0;
-    priv->target  = 1.2;
-}
-
-static void
-mt_timer_dispose (GObject *object)
-{
-    MtTimer *timer = MT_TIMER (object);
-    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE (timer);
-
-    priv->elapsed = 0.0;
-
-    if (priv->tid != 0) {
-	g_source_remove (priv->tid);
-	priv->tid = 0;
-    }
-
-    G_OBJECT_CLASS (mt_timer_parent_class)->dispose (object);
+    timer->priv = G_TYPE_INSTANCE_GET_PRIVATE (timer,
+					       MT_TYPE_TIMER,
+					       MtTimerPrivate);
+    timer->priv->timer  = g_timer_new ();
+    timer->priv->target = 1.2;
 }
 
 static void
 mt_timer_finalize (GObject *object)
 {
-    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE (object);
+    MtTimer *timer = MT_TIMER (object);
 
-    g_timer_destroy (priv->timer);
+    if (timer->priv->tid)
+	g_source_remove (timer->priv->tid);
+
+    g_timer_destroy (timer->priv->timer);
 
     G_OBJECT_CLASS (mt_timer_parent_class)->finalize (object);
 }
@@ -112,8 +92,8 @@ mt_timer_finalize (GObject *object)
 static gboolean
 mt_timer_check_time (gpointer data)
 {
-    MtTimer *timer = (MtTimer *) data;
-    MtTimerPrivate *priv = MT_TIMER_GET_PRIVATE (timer);
+    MtTimer *timer = data;
+    MtTimerPrivate *priv = timer->priv;
 
     priv->elapsed = g_timer_elapsed (priv->timer, NULL);
     g_signal_emit (timer, signals[TICK], 0, priv->elapsed);
@@ -138,28 +118,22 @@ mt_timer_new (void)
 void
 mt_timer_start (MtTimer *timer)
 {
-    MtTimerPrivate *priv;
-
     g_return_if_fail (MT_IS_TIMER (timer));
 
-    priv = MT_TIMER_GET_PRIVATE (timer);
-    g_timer_start (priv->timer);
+    g_timer_start (timer->priv->timer);
 
-    if (priv->tid == 0)
-	priv->tid = g_timeout_add (100, mt_timer_check_time, timer);
+    if (timer->priv->tid == 0)
+	timer->priv->tid = g_timeout_add (100, mt_timer_check_time, timer);
 }
 
 void
 mt_timer_stop (MtTimer *timer)
 {
-    MtTimerPrivate *priv;
-
     g_return_if_fail (MT_IS_TIMER (timer));
-    priv = MT_TIMER_GET_PRIVATE (timer);
 
-    if (priv->tid != 0) {
-	g_source_remove (priv->tid);
-	priv->tid = 0;
+    if (timer->priv->tid) {
+	g_source_remove (timer->priv->tid);
+	timer->priv->tid = 0;
     }
 }
 
@@ -168,7 +142,7 @@ mt_timer_is_running (MtTimer *timer)
 {
     g_return_val_if_fail (MT_IS_TIMER (timer), FALSE);
 
-    return MT_TIMER_GET_PRIVATE (timer)->tid != 0;
+    return timer->priv->tid != 0;
 }
 
 gdouble
@@ -176,7 +150,7 @@ mt_timer_elapsed (MtTimer *timer)
 {
     g_return_val_if_fail (MT_IS_TIMER (timer), 0.0);
 
-    return MT_TIMER_GET_PRIVATE (timer)->elapsed;
+    return timer->priv->elapsed;
 }
 
 gdouble
@@ -184,7 +158,7 @@ mt_timer_get_target (MtTimer *timer)
 {
     g_return_val_if_fail (MT_IS_TIMER (timer), 0.0);
 
-    return MT_TIMER_GET_PRIVATE (timer)->target;
+    return timer->priv->target;
 }
 
 void
@@ -193,5 +167,5 @@ mt_timer_set_target (MtTimer *timer, gdouble time)
     g_return_if_fail (MT_IS_TIMER (timer));
     g_return_if_fail (time >= 0.0);
 
-    MT_TIMER_GET_PRIVATE (timer)->target = time;
+    timer->priv->target = time;
 }

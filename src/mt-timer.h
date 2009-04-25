@@ -24,26 +24,23 @@
 
 G_BEGIN_DECLS
 
-#define MT_TYPE_TIMER		 (mt_timer_get_type ())
-#define MT_TIMER(obj)		 (G_TYPE_CHECK_INSTANCE_CAST ((obj), MT_TYPE_TIMER, MtTimer))
-#define MT_TIMER_CLASS(klass)	 (G_TYPE_CHECK_CLASS_CAST ((klass), MT_TYPE_TIMER, MtTimerClass))
-#define MT_IS_TIMER(obj)	 (G_TYPE_CHECK_INSTANCE_TYPE ((obj), MT_TYPE_TIMER))
-#define MT_IS_TIMER_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), MT_TYPE_TIMER))
-#define MT_TIMER_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), MT_TYPE_TIMER, MtTimerClass))
+#define MT_TYPE_TIMER         (mt_timer_get_type ())
+#define MT_TIMER(o)           (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_TIMER, MtTimer))
+#define MT_TIMER_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST ((k), MT_TYPE_TIMER, MtTimerClass))
+#define MT_IS_TIMER(o)        (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_TIMER))
+#define MT_IS_TIMER_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), MT_TYPE_TIMER))
+#define MT_TIMER_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), MT_TYPE_TIMER, MtTimerClass))
 
-typedef struct _MtTimer MtTimer;
-typedef struct _MtTimerClass MtTimerClass;
+typedef GObjectClass           MtTimerClass;
+typedef struct _MtTimer        MtTimer;
+typedef struct _MtTimerPrivate MtTimerPrivate;
 
 struct _MtTimer {
-    GObject parent;
+    GObject         parent;
+    MtTimerPrivate *priv;
 };
 
-struct _MtTimerClass {
-    GObjectClass parent;
-};
-
-GType mt_timer_get_type (void) G_GNUC_CONST;
-
+GType     mt_timer_get_type   (void) G_GNUC_CONST;
 MtTimer * mt_timer_new        (void);
 void      mt_timer_start      (MtTimer *timer);
 void      mt_timer_stop       (MtTimer *timer);

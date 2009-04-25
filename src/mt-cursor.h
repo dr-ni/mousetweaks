@@ -24,26 +24,23 @@
 
 G_BEGIN_DECLS
 
-#define MT_TYPE_CURSOR		  (mt_cursor_get_type ())
-#define MT_CURSOR(obj)		  (G_TYPE_CHECK_INSTANCE_CAST ((obj), MT_TYPE_CURSOR, MtCursor))
-#define MT_CURSOR_CLASS(klass)	  (G_TYPE_CHECK_CLASS_CAST ((klass), MT_TYPE_CURSOR, MtCursorClass))
-#define MT_IS_CURSOR(obj)	  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), MT_TYPE_CURSOR))
-#define MT_IS_CURSOR_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), MT_TYPE_CURSOR))
-#define MT_CURSOR_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), MT_TYPE_CURSOR, MtCursorClass))
+#define MT_TYPE_CURSOR         (mt_cursor_get_type ())
+#define MT_CURSOR(o)           (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_CURSOR, MtCursor))
+#define MT_CURSOR_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST ((k), MT_TYPE_CURSOR, MtCursorClass))
+#define MT_IS_CURSOR(o)        (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_CURSOR))
+#define MT_IS_CURSOR_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), MT_TYPE_CURSOR))
+#define MT_CURSOR_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), MT_TYPE_CURSOR, MtCursorClass))
 
-typedef struct _MtCursor MtCursor;
-typedef struct _MtCursorClass MtCursorClass;
+typedef GObjectClass            MtCursorClass;
+typedef struct _MtCursor        MtCursor;
+typedef struct _MtCursorPrivate MtCursorPrivate;
 
 struct _MtCursor {
-    GObject parent;
+    GObject          parent;
+    MtCursorPrivate *priv;
 };
 
-struct _MtCursorClass {
-    GObjectClass parent;
-};
-
-GType mt_cursor_get_type (void) G_GNUC_CONST;
-
+GType          mt_cursor_get_type       (void) G_GNUC_CONST;
 MtCursor *     mt_cursor_new		(const gchar *name,
 					 guchar      *image,
 					 gushort      width,

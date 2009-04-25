@@ -22,10 +22,6 @@
 
 #include "mt-cursor.h"
 
-#define MT_CURSOR_GET_PRIVATE(o) \
-    (G_TYPE_INSTANCE_GET_PRIVATE ((o), MT_TYPE_CURSOR, MtCursorPrivate))
-
-typedef struct _MtCursorPrivate MtCursorPrivate;
 struct _MtCursorPrivate {
     gchar  *name;
     guchar *image;
@@ -50,26 +46,18 @@ mt_cursor_class_init (MtCursorClass *klass)
 static void
 mt_cursor_init (MtCursor *cursor)
 {
-    MtCursorPrivate *priv = MT_CURSOR_GET_PRIVATE (cursor);
-
-    priv->name   = NULL;
-    priv->image  = NULL;
-    priv->width  = 0;
-    priv->height = 0;
-    priv->xhot   = 0;
-    priv->yhot   = 0;
+    cursor->priv = G_TYPE_INSTANCE_GET_PRIVATE (cursor,
+					        MT_TYPE_CURSOR,
+					        MtCursorPrivate);
 }
 
 static void
 mt_cursor_finalize (GObject *object)
 {
-    MtCursorPrivate *priv = MT_CURSOR_GET_PRIVATE (object);
+    MtCursor *cursor = MT_CURSOR (object);
 
-    if (priv->name)
-	g_free (priv->name);
-
-    if (priv->image)
-	g_free (priv->image);
+    g_free (cursor->priv->name);
+    g_free (cursor->priv->image);
 
     G_OBJECT_CLASS (mt_cursor_parent_class)->finalize (object);
 }
@@ -116,8 +104,7 @@ mt_cursor_new (const gchar *name,
 	return NULL;
 
     cursor = g_object_new (MT_TYPE_CURSOR, NULL);
-    priv = MT_CURSOR_GET_PRIVATE (cursor);
-
+    priv = cursor->priv;
     priv->name   = g_strdup (name);
     priv->image  = copy;
     priv->width  = width;
@@ -133,7 +120,7 @@ mt_cursor_get_name (MtCursor *cursor)
 {
     g_return_val_if_fail (MT_IS_CURSOR (cursor), NULL);
 
-    return MT_CURSOR_GET_PRIVATE (cursor)->name;
+    return cursor->priv->name;
 }
 
 const guchar *
@@ -141,21 +128,17 @@ mt_cursor_get_image (MtCursor *cursor)
 {
     g_return_val_if_fail (MT_IS_CURSOR (cursor), NULL);
 
-    return MT_CURSOR_GET_PRIVATE (cursor)->image;
+    return cursor->priv->image;
 }
 
 guchar *
 mt_cursor_get_image_copy (MtCursor *cursor)
 {
-    MtCursorPrivate *priv;
-    guchar *image;
-
     g_return_val_if_fail (MT_IS_CURSOR (cursor), NULL);
 
-    priv = MT_CURSOR_GET_PRIVATE(cursor);
-    image = mt_cursor_copy_image (priv->image, priv->width, priv->height);
-
-    return image;
+    return mt_cursor_copy_image (cursor->priv->image,
+				 cursor->priv->width,
+				 cursor->priv->height);
 }
 
 void
@@ -163,17 +146,12 @@ mt_cursor_get_hotspot (MtCursor *cursor,
 		       gushort  *xhot,
 		       gushort  *yhot)
 {
-    MtCursorPrivate *priv;
-
     g_return_if_fail (MT_IS_CURSOR (cursor));
 
-    priv = MT_CURSOR_GET_PRIVATE (cursor);
-
-    if (xhot != NULL)
-	*xhot = priv->xhot;
-
-    if (yhot != NULL)
-	*yhot = priv->yhot;
+    if (xhot)
+	*xhot = cursor->priv->xhot;
+    if (yhot)
+	*yhot = cursor->priv->yhot;
 }
 
 void
@@ -181,15 +159,10 @@ mt_cursor_get_dimension (MtCursor *cursor,
 			 gushort  *width,
 			 gushort  *height)
 {
-    MtCursorPrivate *priv;
-
     g_return_if_fail (MT_IS_CURSOR (cursor));
 
-    priv = MT_CURSOR_GET_PRIVATE (cursor);
-
-    if (width != NULL)
-	*width = priv->width;
-
-    if (height != NULL)
-	*height = priv->height;
+    if (width)
+	*width = cursor->priv->width;
+    if (height)
+	*height = cursor->priv->height;
 }

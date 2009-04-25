@@ -24,26 +24,23 @@
 
 G_BEGIN_DECLS
 
-#define MT_TYPE_SERVICE            (mt_service_get_type ())
-#define MT_SERVICE(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), MT_TYPE_SERVICE, MtService))
-#define MT_SERVICE_CLASS(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), MT_TYPE_SERVICE, MtServiceClass))
-#define MT_IS_SERVICE(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), MT_TYPE_SERVICE))
-#define MT_IS_SERVICE_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), MT_TYPE_SERVICE))
-#define MT_SERVICE_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), MT_TYPE_SERVICE, MtServiceClass))
+#define MT_TYPE_SERVICE         (mt_service_get_type ())
+#define MT_SERVICE(o)           (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_SERVICE, MtService))
+#define MT_SERVICE_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST ((k), MT_TYPE_SERVICE, MtServiceClass))
+#define MT_IS_SERVICE(o)        (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_SERVICE))
+#define MT_IS_SERVICE_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), MT_TYPE_SERVICE))
+#define MT_SERVICE_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), MT_TYPE_SERVICE, MtServiceClass))
 
-typedef struct _MtService MtService;
-typedef struct _MtServiceClass MtServiceClass;
+typedef struct _MtService        MtService;
+typedef GObjectClass             MtServiceClass;
+typedef struct _MtServicePrivate MtServicePrivate;
 
 struct _MtService {
-    GObject parent;
+    GObject           parent;
+    MtServicePrivate *priv;
 };
 
-struct _MtServiceClass {
-    GObjectClass parent;
-};
-
-GType mt_service_get_type (void) G_GNUC_CONST;
-
+GType       mt_service_get_type      (void) G_GNUC_CONST;
 MtService * mt_service_get_default   (void);
 gboolean    mt_service_set_clicktype (MtService *service,
 				      guint      clicktype,

@@ -26,10 +26,6 @@
 #define MOUSETWEAKS_DBUS_SERVICE "org.gnome.Mousetweaks"
 #define MOUSETWEAKS_DBUS_PATH    "/org/gnome/Mousetweaks"
 
-#define MT_SERVICE_GET_PRIVATE(o) \
-    (G_TYPE_INSTANCE_GET_PRIVATE ((o), MT_TYPE_SERVICE, MtServicePrivate))
-
-typedef struct _MtServicePrivate MtServicePrivate;
 struct _MtServicePrivate {
     guint clicktype;
 };
@@ -44,14 +40,15 @@ static guint signals[LAST_SIGNAL] = { 0 };
 
 G_DEFINE_TYPE (MtService, mt_service, G_TYPE_OBJECT)
 
-static void mt_service_dispose (GObject *object);
+static void mt_service_dispose  (GObject   *object);
+static void mt_service_register (MtService *service);
 
 static void
 mt_service_class_init (MtServiceClass *klass)
 {
-    GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
+    GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
-    gobject_class->dispose = mt_service_dispose;
+    object_class->dispose = mt_service_dispose;
 
     signals[STATUS_CHANGED] =
 	g_signal_new (g_intern_static_string ("status_changed"),
@@ -77,12 +74,27 @@ mt_service_class_init (MtServiceClass *klass)
 static void
 mt_service_init (MtService *service)
 {
+    service->priv = G_TYPE_INSTANCE_GET_PRIVATE (service,
+						 MT_TYPE_SERVICE,
+						 MtServicePrivate);
+    mt_service_register (service);
+}
+
+static void
+mt_service_dispose (GObject *object)
+{
+    g_signal_emit (object, signals[STATUS_CHANGED], 0, FALSE);
+
+    G_OBJECT_CLASS (mt_service_parent_class)->dispose (object);
+}
+
+static void
+mt_service_register (MtService *service)
+{
     DBusGConnection *bus;
     DBusGProxy *proxy;
     GError *error = NULL;
     guint result;
-
-    MT_SERVICE_GET_PRIVATE (service)->clicktype = 0;
 
     bus = dbus_g_bus_get (DBUS_BUS_SESSION, &error);
     if (bus == NULL) {
@@ -108,33 +120,20 @@ mt_service_init (MtService *service)
 	return;
     }
 
-    if (result != DBUS_REQUEST_NAME_REPLY_PRIMARY_OWNER)
-	g_warning ("DBus: Not primary name owner.");
-
     g_object_unref (proxy);
 
-    dbus_g_connection_register_g_object (bus,
-					 MOUSETWEAKS_DBUS_PATH,
-					 G_OBJECT (service));
-}
-
-static void
-mt_service_dispose (GObject *object)
-{
-    g_signal_emit (object, signals[STATUS_CHANGED], 0, FALSE);
-
-    G_OBJECT_CLASS (mt_service_parent_class)->dispose (object);
+    if (result == DBUS_REQUEST_NAME_REPLY_PRIMARY_OWNER)
+	dbus_g_connection_register_g_object (bus,
+					     MOUSETWEAKS_DBUS_PATH,
+					     G_OBJECT (service));
+    else
+	g_warning ("DBus: Not primary name owner.");
 }
 
 static MtService *
 mt_service_new (void)
 {
-    MtService *service;
-
-    service = g_object_new (MT_TYPE_SERVICE, NULL);
-    g_signal_emit (service, signals[STATUS_CHANGED], 0, TRUE);
-
-    return service;
+    return g_object_new (MT_TYPE_SERVICE, NULL);
 }
 
 MtService *
@@ -142,8 +141,10 @@ mt_service_get_default (void)
 {
     static MtService *service = NULL;
 
-    if (service == NULL)
+    if (!service) {
 	service = mt_service_new ();
+	g_signal_emit (service, signals[STATUS_CHANGED], 0, TRUE);
+    }
 
     return service;
 }
@@ -153,12 +154,13 @@ mt_service_set_clicktype (MtService *service,
 			  guint      clicktype,
 			  GError   **error)
 {
-    MtServicePrivate *priv;
+    g_return_val_if_fail (MT_IS_SERVICE (service), FALSE);
 
-    priv = MT_SERVICE_GET_PRIVATE (service);
-    priv->clicktype = clicktype;
-    g_signal_emit (service, signals[CLICKTYPE_CHANGED], 0, priv->clicktype);
+    service->priv->clicktype = clicktype;
 
+    g_signal_emit (service,
+		   signals[CLICKTYPE_CHANGED],
+		   0, service->priv->clicktype);
     return TRUE;
 }
 
@@ -167,5 +169,5 @@ mt_service_get_clicktype (MtService *service)
 {
     g_return_val_if_fail (MT_IS_SERVICE (service), 0);
 
-    return MT_SERVICE_GET_PRIVATE (service)->clicktype;
+    return service->priv->clicktype;
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright © 2008 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2008-2009 Gerd Kohlberger <lowfi@chello.at>
  *
  * This file is part of Mousetweaks.
  *

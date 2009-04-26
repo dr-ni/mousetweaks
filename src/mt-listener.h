@@ -33,32 +33,30 @@ G_BEGIN_DECLS
 #define MT_IS_LISTENER_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), MT_TYPE_LISTENER))
 #define MT_LISTENER_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), MT_TYPE_LISTENER, MtListenerClass))
 
-typedef struct _MtListener MtListener;
-typedef struct _MtListenerClass MtListenerClass;
+typedef GObjectClass              MtListenerClass;
+typedef struct _MtListener        MtListener;
+typedef struct _MtListenerPrivate MtListenerPrivate;
 
 struct _MtListener {
-    GObject parent;
-};
-
-struct _MtListenerClass {
-    GObjectClass parent;
+    GObject            parent;
+    MtListenerPrivate *priv;
 };
 
 GType        mt_listener_get_type       (void) G_GNUC_CONST;
 MtListener * mt_listener_get_default    (void);
 Accessible * mt_listener_current_focus  (MtListener *listener);
 
-enum {
+typedef enum {
     EV_MOTION = 0,
     EV_BUTTON_PRESS,
     EV_BUTTON_RELEASE
-};
+} MtEventType;
 
 typedef struct _MtEvent MtEvent;
 struct _MtEvent {
-    gint type;
-    gint x;
-    gint y;
+    MtEventType type;
+    gint        x;
+    gint        y;
 };
 
 GType     mt_event_get_type (void) G_GNUC_CONST;

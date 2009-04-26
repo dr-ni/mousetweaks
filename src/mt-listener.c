@@ -18,20 +18,14 @@
  */
 
 #include <glib.h>
-#include <cspi/spi.h>
 
 #include "mt-listener.h"
 
-#define MT_LISTENER_GET_PRIVATE(o) \
-    (G_TYPE_INSTANCE_GET_PRIVATE ((o), MT_TYPE_LISTENER, MtListenerPrivate))
-
-typedef struct _MtListenerPrivate MtListenerPrivate;
 struct _MtListenerPrivate {
     AccessibleEventListener *motion;
     AccessibleEventListener *button;
     AccessibleEventListener *focus;
-
-    Accessible *current_focus;
+    Accessible              *current_focus;
 };
 
 enum {
@@ -56,9 +50,9 @@ G_DEFINE_TYPE (MtListener, mt_listener, G_TYPE_OBJECT)
 static void
 mt_listener_class_init (MtListenerClass *klass)
 {
-    GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
+    GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
-    gobject_class->dispose = mt_listener_dispose;
+    object_class->dispose = mt_listener_dispose;
 
     signals[MOTION_EVENT] = 
 	g_signal_new (g_intern_static_string ("motion_event"),
@@ -89,9 +83,11 @@ mt_listener_class_init (MtListenerClass *klass)
 static void
 mt_listener_init (MtListener *listener)
 {
-    MtListenerPrivate *priv = MT_LISTENER_GET_PRIVATE (listener);
+    MtListenerPrivate *priv;
 
-    priv->current_focus = NULL;
+    listener->priv = priv = G_TYPE_INSTANCE_GET_PRIVATE (listener,
+							 MT_TYPE_LISTENER,
+							 MtListenerPrivate);
 
     priv->motion = SPI_createAccessibleEventListener (mt_listener_motion_event,
 						      listener);
@@ -110,7 +106,7 @@ mt_listener_init (MtListener *listener)
 static void
 mt_listener_dispose (GObject *object)
 {
-    MtListenerPrivate *priv = MT_LISTENER_GET_PRIVATE (object);
+    MtListenerPrivate *priv = MT_LISTENER (object)->priv;
 
     if (priv->motion) {
 	SPI_deregisterGlobalEventListenerAll (priv->motion);
@@ -147,7 +143,6 @@ mt_event_get_type (void)
     return event;
 }
 
-/* do we need this? */
 MtEvent *
 mt_event_copy (const MtEvent *event)
 {
@@ -188,7 +183,7 @@ mt_listener_button_event (const AccessibleEvent *event, gpointer data)
 static void
 mt_listener_focus_event (const AccessibleEvent *event, gpointer data)
 {
-    MtListenerPrivate *priv = MT_LISTENER_GET_PRIVATE (data);
+    MtListenerPrivate *priv = MT_LISTENER (data)->priv;
 
     if (event->source) {
 	if (priv->current_focus)
@@ -217,5 +212,5 @@ mt_listener_current_focus (MtListener *listener)
 {
     g_return_val_if_fail (MT_IS_LISTENER (listener), NULL);
 
-    return MT_LISTENER_GET_PRIVATE (listener)->current_focus;
+    return listener->priv->current_focus;
 }

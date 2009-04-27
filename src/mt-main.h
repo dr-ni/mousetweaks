@@ -33,35 +33,33 @@ typedef struct _MTClosure MTClosure;
 struct _MTClosure {
     GConfClient *client;
     GtkBuilder  *ui;
-
     MtService   *service;
     MtTimer     *delay_timer;
     MtTimer     *dwell_timer;
     MtCursor    *cursor;
-
-    Display *xtst_display;
-    gint     n_screens;
-
-    gboolean dwell_drag_started;
-    gboolean dwell_gesture_started;
-    gboolean override_cursor;
-    gboolean move_release;
-
-    gint direction;
-    gint pointer_x;
-    gint pointer_y;
-    gint x_old;
-    gint y_old;
+    Display     *xtst_display;
+    gint         n_screens;
+    gint         direction;
+    gint         pointer_x;
+    gint         pointer_y;
+    gint         x_old;
+    gint         y_old;
 
     /* options */
-    gint     threshold;
-    gint     style;
-    gboolean delay_enabled;
-    gboolean dwell_enabled;
-    gboolean dwell_show_ctw;
-    gint     dwell_mode;
-    gint     dwell_dirs[4];
-    gboolean animate_cursor;
+    gint         threshold;
+    gint         style;
+    gint         dwell_mode;
+    gint         dwell_dirs[4];
+    guint        delay_enabled  : 1;
+    guint        dwell_enabled  : 1;
+    guint        dwell_show_ctw : 1;
+    guint        animate_cursor : 1;
+
+    /* state flags */
+    guint        dwell_drag_started    : 1;
+    guint        dwell_gesture_started : 1;
+    guint        override_cursor       : 1;
+    guint        move_release          : 1;
 };
 
 G_END_DECLS

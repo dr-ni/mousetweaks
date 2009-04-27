@@ -50,7 +50,7 @@ enum {
 };
 
 static GdkScreen *
-mt_main_current_screen (MTClosure *mt)
+mt_main_current_screen (MtData *mt)
 {
     GdkScreen *screen;
 
@@ -73,10 +73,10 @@ mt_main_generate_motion_event (GdkScreen *screen, gint x, gint y)
 }
 
 static void
-mt_main_generate_button_event (MTClosure *mt,
-			       guint      button,
-			       gint       type,
-			       gulong     delay)
+mt_main_generate_button_event (MtData *mt,
+			       guint   button,
+			       gint    type,
+			       gulong  delay)
 {
     gdk_error_trap_push ();
     switch (type) {
@@ -113,7 +113,7 @@ mt_main_generate_button_event (MTClosure *mt,
 }
 
 static void
-mt_main_set_cursor (MTClosure *mt, GdkCursorType type)
+mt_main_set_cursor (MtData *mt, GdkCursorType type)
 {
     GdkScreen *screen;
     GdkCursor *cursor;
@@ -128,7 +128,7 @@ mt_main_set_cursor (MTClosure *mt, GdkCursorType type)
 }
 
 static void
-dwell_restore_single_click (MTClosure *mt)
+dwell_restore_single_click (MtData *mt)
 {
     if (mt->dwell_mode == DWELL_MODE_CTW)
 	mt_ctw_set_clicktype (mt, DWELL_CLICK_TYPE_SINGLE);
@@ -137,7 +137,7 @@ dwell_restore_single_click (MTClosure *mt)
 }
 
 static void
-mt_main_do_dwell_click (MTClosure *mt)
+mt_main_do_dwell_click (MtData *mt)
 {
     guint clicktype;
 
@@ -179,7 +179,7 @@ mt_main_do_dwell_click (MTClosure *mt)
 }
 
 static inline gboolean
-below_threshold (MTClosure *mt, gint x, gint y)
+below_threshold (MtData *mt, gint x, gint y)
 {
     gint dx, dy;
 
@@ -190,7 +190,7 @@ below_threshold (MTClosure *mt, gint x, gint y)
 }
 
 static gboolean
-mt_main_analyze_gesture (MTClosure *mt)
+mt_main_analyze_gesture (MtData *mt)
 {
     gint x, y, gd, i, dx, dy;
 
@@ -239,7 +239,7 @@ mt_main_analyze_gesture (MTClosure *mt)
 }
 
 static void
-mt_main_draw_line (MTClosure *mt, gint x1, gint y1, gint x2, gint y2)
+mt_main_draw_line (MtData *mt, gint x1, gint y1, gint x2, gint y2)
 {
     GdkWindow *root;
     GdkGC *gc;
@@ -258,7 +258,7 @@ mt_main_draw_line (MTClosure *mt, gint x1, gint y1, gint x2, gint y2)
 }
 
 static void
-dwell_start_gesture (MTClosure *mt)
+dwell_start_gesture (MtData *mt)
 {
     GdkCursor *cursor;
     GdkWindow *root;
@@ -281,7 +281,7 @@ dwell_start_gesture (MTClosure *mt)
 }
 
 static void
-dwell_stop_gesture (MTClosure *mt)
+dwell_stop_gesture (MtData *mt)
 {
     if (mt->override_cursor)
 	gdk_pointer_ungrab (gtk_get_current_event_time ());
@@ -303,7 +303,7 @@ dwell_stop_gesture (MTClosure *mt)
 static void
 dwell_timer_finished (MtTimer *timer, gpointer data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
@@ -343,7 +343,7 @@ eval_func (Accessible *a, gpointer data)
 static gboolean
 push_func (Accessible *a, gpointer data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
     AccessibleRole role;
 
     role = Accessible_getRole (a);
@@ -360,7 +360,7 @@ push_func (Accessible *a, gpointer data)
 }
 
 static gboolean
-mt_main_use_move_release (MTClosure *mt)
+mt_main_use_move_release (MtData *mt)
 {
     Accessible *point, *search;
 
@@ -381,7 +381,7 @@ mt_main_use_move_release (MTClosure *mt)
 static gboolean
 right_click_timeout (gpointer data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     mt_main_generate_button_event (mt, 3, CLICK, CurrentTime);
 
@@ -391,7 +391,7 @@ right_click_timeout (gpointer data)
 static void
 delay_timer_finished (MtTimer *timer, gpointer data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
     GdkScreen *screen;
 
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
@@ -420,7 +420,7 @@ global_motion_event (MtListener *listener,
 		     MtEvent    *event,
 		     gpointer    data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     if (mt_timer_is_running (mt->delay_timer)) {
 	if (!below_threshold (mt, event->x, event->y)) {
@@ -457,7 +457,7 @@ global_button_event (MtListener *listener,
 		     MtEvent    *event,
 		     gpointer    data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     if (event->type == EV_BUTTON_PRESS) {
 	if (mt->delay_enabled) {
@@ -477,9 +477,10 @@ global_button_event (MtListener *listener,
 }
 
 static void
-global_focus_event (MtListener *listener, gpointer data)
+global_focus_event (MtListener *listener,
+		    gpointer    data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
     Accessible *accessible;
 
     if (mt->delay_enabled) {
@@ -492,12 +493,12 @@ global_focus_event (MtListener *listener, gpointer data)
 }
 
 static gboolean
-cursor_overlay_time (MTClosure *mt,
-		     guchar    *image,
-		     gint       width,
-		     gint       height,
-		     MtTimer   *timer,
-		     gdouble    time)
+cursor_overlay_time (MtData  *mt,
+		     guchar  *image,
+		     gint     width,
+		     gint     height,
+		     MtTimer *timer,
+		     gdouble  time)
 {
     GtkWidget *ctw;
     GdkColor c;
@@ -537,9 +538,9 @@ cursor_overlay_time (MTClosure *mt,
 }
 
 static void
-mt_main_update_cursor (MTClosure *mt,
-		       MtTimer   *timer,
-		       gdouble    time)
+mt_main_update_cursor (MtData  *mt,
+		       MtTimer *timer,
+		       gdouble  time)
 {
     guchar *image;
     gushort width, height;
@@ -571,7 +572,7 @@ mt_main_timer_tick (MtTimer *timer,
 		    gdouble  time,
 		    gpointer data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     if (mt->animate_cursor && mt->cursor)
 	mt_main_update_cursor (mt, timer, time);
@@ -581,7 +582,7 @@ static void
 cursor_cache_cleared (MtCursorManager *manager,
 		      gpointer         data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     mt->cursor = mt_cursor_manager_current_cursor (manager);
 }
@@ -591,7 +592,7 @@ cursor_changed (MtCursorManager *manager,
 		const gchar     *name,
 		gpointer         data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     if (!mt->dwell_gesture_started)
 	mt->override_cursor = !g_str_equal (name, "left_ptr");
@@ -611,7 +612,7 @@ gconf_value_changed (GConfClient *client,
 		     GConfValue  *value,
 		     gpointer     data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     if (g_str_equal (key, OPT_THRESHOLD) && value->type == GCONF_VALUE_INT)
 	mt->threshold = gconf_value_get_int (value);
@@ -660,7 +661,7 @@ gconf_value_changed (GConfClient *client,
 }
 
 static void
-get_gconf_options (MTClosure *mt)
+get_gconf_options (MtData *mt)
 {
     gdouble val;
 
@@ -688,7 +689,7 @@ get_gconf_options (MTClosure *mt)
 }
 
 static void
-mt_main_request_logout (MTClosure *mt)
+mt_main_request_logout (MtData *mt)
 {
     DBusGConnection *bus;
     DBusGProxy *proxy;
@@ -711,8 +712,8 @@ mt_main_request_logout (MTClosure *mt)
 }
 
 static gboolean
-accessibility_enabled (MTClosure *mt,
-		       gint       spi_status)
+accessibility_enabled (MtData *mt,
+		       gint    spi_status)
 {
     gint ret;
 
@@ -742,19 +743,19 @@ accessibility_enabled (MTClosure *mt,
     return TRUE;
 }
 
-static MTClosure *
-mt_closure_init (void)
+static MtData *
+mt_data_init (void)
 {
-    MTClosure *mt;
+    MtData *mt;
     gint ev_base, err_base, maj, min;
 
-    mt = g_slice_new0 (MTClosure);
+    mt = g_slice_new0 (MtData);
     mt->xtst_display = XOpenDisplay (NULL);
 
     if (!XTestQueryExtension (mt->xtst_display,
 			      &ev_base, &err_base, &maj, &min)) {
 	XCloseDisplay (mt->xtst_display);
-	g_slice_free (MTClosure, mt);
+	g_slice_free (MtData, mt);
 	g_critical ("No XTest extension found. Aborting..");
 	return NULL;
     }
@@ -789,7 +790,7 @@ mt_closure_init (void)
 }
 
 static void
-mt_closure_free (MTClosure *mt)
+mt_data_free (MtData *mt)
 {
     g_object_unref (mt->delay_timer);
     g_object_unref (mt->dwell_timer);
@@ -801,7 +802,7 @@ mt_closure_free (MTClosure *mt)
 	g_object_unref (mt->ui);
     }
 
-    g_slice_free (MTClosure, mt);
+    g_slice_free (MtData, mt);
 }
 
 int
@@ -882,7 +883,7 @@ main (int argc, char **argv)
     }
     else {
 	/* Child process */
-	MTClosure *mt;
+	MtData *mt;
 	MtCursorManager *manager;
 	MtListener *listener;
 	gint spi_status;
@@ -899,13 +900,13 @@ main (int argc, char **argv)
 	gtk_init (&argc, &argv);
 	g_set_application_name ("Mousetweaks");
 
-	mt = mt_closure_init ();
+	mt = mt_data_init ();
 	if (!mt)
 	    goto FINISH;
 
 	spi_status = SPI_init ();
 	if (!accessibility_enabled (mt, spi_status)) {
-	    mt_closure_free (mt);
+	    mt_data_free (mt);
 	    goto FINISH;
 	}
 
@@ -965,7 +966,7 @@ main (int argc, char **argv)
 
 	CLEANUP:
 	    spi_leaks = SPI_exit ();
-	    mt_closure_free (mt);
+	    mt_data_free (mt);
 	FINISH:
 	    mt_pidfile_remove ();
 

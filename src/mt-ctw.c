@@ -33,7 +33,7 @@ enum {
 };
 
 void
-mt_ctw_set_clicktype (MTClosure *mt, guint clicktype)
+mt_ctw_set_clicktype (MtData *mt, guint clicktype)
 {
     GSList *group;
     gpointer data;
@@ -45,7 +45,7 @@ mt_ctw_set_clicktype (MTClosure *mt, guint clicktype)
 }
 
 void
-mt_ctw_update_visibility (MTClosure *mt)
+mt_ctw_update_visibility (MtData *mt)
 {
     GtkWidget *ctw;
     GdkScreen *screen;
@@ -66,7 +66,7 @@ mt_ctw_update_visibility (MTClosure *mt)
 }
 
 void
-mt_ctw_update_sensitivity (MTClosure *mt)
+mt_ctw_update_sensitivity (MtData *mt)
 {
     gboolean sensitive;
 
@@ -75,7 +75,7 @@ mt_ctw_update_sensitivity (MTClosure *mt)
 }
 
 void
-mt_ctw_update_style (MTClosure *mt, gint style)
+mt_ctw_update_style (MtData *mt, gint style)
 {
     GtkWidget *icon, *label;
     const gchar *l[] = { "single_l", "double_l", "drag_l", "right_l" };
@@ -113,7 +113,7 @@ mt_ctw_update_style (MTClosure *mt, gint style)
 static void
 ctw_button_cb (GtkToggleButton *button, gpointer data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     if (gtk_toggle_button_get_active (button)) {
 	GSList *group;
@@ -128,7 +128,7 @@ ctw_button_cb (GtkToggleButton *button, gpointer data)
 static gboolean
 ctw_context_menu (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     if (bev->button == 3) {
 	gtk_menu_popup (GTK_MENU (WID ("popup")),
@@ -142,7 +142,7 @@ ctw_context_menu (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 static void
 ctw_menu_toggled (GtkCheckMenuItem *item, gpointer data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
     GSList *group;
     gint index;
 
@@ -157,7 +157,7 @@ ctw_menu_toggled (GtkCheckMenuItem *item, gpointer data)
 static gboolean
 ctw_delete_cb (GtkWidget *win, GdkEvent *ev, gpointer data)
 {
-    MTClosure *mt = data;
+    MtData *mt = data;
 
     gconf_client_set_bool (mt->client, OPT_CTW, FALSE, NULL);
 
@@ -165,13 +165,13 @@ ctw_delete_cb (GtkWidget *win, GdkEvent *ev, gpointer data)
 }
 
 GtkWidget *
-mt_ctw_get_window (MTClosure *mt)
+mt_ctw_get_window (MtData *mt)
 {
     return WID ("ctw");
 }
 
 gboolean
-mt_ctw_init (MTClosure *mt, gint x, gint y)
+mt_ctw_init (MtData *mt, gint x, gint y)
 {
     GtkWidget *ctw, *w;
     GError *error = NULL;

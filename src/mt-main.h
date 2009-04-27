@@ -29,8 +29,8 @@
 
 G_BEGIN_DECLS
 
-typedef struct _MTClosure MTClosure;
-struct _MTClosure {
+typedef struct _MtData MtData;
+struct _MtData {
     GConfClient *client;
     GtkBuilder  *ui;
     MtService   *service;

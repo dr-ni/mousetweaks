@@ -95,8 +95,7 @@ mt_listener_init (MtListener *listener)
 
     priv->button = SPI_createAccessibleEventListener (mt_listener_button_event,
 						      listener);
-    SPI_registerGlobalEventListener (priv->button, "mouse:button:1p");
-    SPI_registerGlobalEventListener (priv->button, "mouse:button:1r");
+    SPI_registerGlobalEventListener (priv->button, "mouse:button:");
 
     priv->focus = SPI_createAccessibleEventListener (mt_listener_focus_event,
 						     listener);
@@ -163,6 +162,7 @@ mt_listener_motion_event (const AccessibleEvent *event, gpointer data)
     ev.type = EV_MOTION;
     ev.x = (gint) event->detail1;
     ev.y = (gint) event->detail2;
+    ev.button = 0;
 
     g_signal_emit (data, signals[MOTION_EVENT], 0, &ev);
 }
@@ -172,10 +172,15 @@ mt_listener_button_event (const AccessibleEvent *event, gpointer data)
 {
     MtEvent ev;
 
-    ev.type = g_str_equal (event->type, "mouse:button:1p")
-	      ? EV_BUTTON_PRESS : EV_BUTTON_RELEASE;
+    /*
+     * This is obviously dangerous, but it should be
+     * guarantied that event-type strings will always
+     * be in the form of "mouse:button:[1,2,3][p,r]"
+     */
+    ev.type = event->type[14] == 'p' ? EV_BUTTON_PRESS : EV_BUTTON_RELEASE;
     ev.x = (gint) event->detail1;
     ev.y = (gint) event->detail2;
+    ev.button = event->type[13] == '1' ? 1 : (event->type[13] == '2' ? 2 : 3);
 
     g_signal_emit (data, signals[BUTTON_EVENT], 0, &ev);
 }

@@ -57,6 +57,7 @@ struct _MtEvent {
     MtEventType type;
     gint        x;
     gint        y;
+    gint        button;
 };
 
 GType     mt_event_get_type (void) G_GNUC_CONST;

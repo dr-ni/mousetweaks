@@ -414,6 +414,26 @@ delay_timer_finished (MtTimer *timer, gpointer data)
     g_timeout_add (100, right_click_timeout, data);
 }
 
+static void
+mt_dwell_click_cancel (MtData *mt)
+{
+    if (mt->dwell_gesture_started) {
+	dwell_stop_gesture (mt);
+	return;
+    }
+
+    mt_timer_stop (mt->dwell_timer);
+    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
+
+    if (mt->dwell_drag_started) {
+	g_print ("stop drag\n");
+	mt_main_set_cursor (mt, GDK_LEFT_PTR);
+	mt->dwell_drag_started = FALSE;
+    }
+
+    dwell_restore_single_click (mt);
+}
+
 /* at-spi listener callbacks */
 static void
 global_motion_event (MtListener *listener,
@@ -459,20 +479,24 @@ global_button_event (MtListener *listener,
 {
     MtData *mt = data;
 
-    if (event->type == EV_BUTTON_PRESS) {
-	if (mt->delay_enabled) {
+    if (mt->delay_enabled && event->button == 1) {
+	if (event->type == EV_BUTTON_PRESS) {
 	    mt->pointer_x = event->x;
 	    mt->pointer_y = event->y;
 	    mt_timer_start (mt->delay_timer);
 	}
-	if (mt->dwell_gesture_started)
-	    dwell_stop_gesture (mt);
-    }
-    else {
-	if (mt->delay_enabled) {
+	else {
 	    mt_timer_stop (mt->delay_timer);
 	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 	}
+    }
+    /*
+     * cancel a dwell-click in progress if a physical button
+     * is pressed - useful for mixed use-cases and testing
+     */
+    if ((event->type == EV_BUTTON_PRESS && mt_timer_is_running (mt->dwell_timer)) ||
+        (event->type == EV_BUTTON_RELEASE && mt->dwell_drag_started)) {
+	mt_dwell_click_cancel (mt);
     }
 }
 

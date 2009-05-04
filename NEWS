@@ -1,3 +1,35 @@
+Version 2.27.1
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Changes due to moving from svn to git
+    * Clean up AUTHORS file
+    * update copyright year
+    * remove the INSTALL file from repository
+    * Automatically generate ChangeLog file when creating a tarball
+    * Cancel dwell click if a hardware click occurs, RFE bgo #580174
+    * create m4 directory during autogen.sh, bgo #579397
+    * Rename MTClosure to MtData
+    * Use structure bit fields to save some memory
+    * Optimization to reduce usage of G_TYPE_INSTANCE_GET_PRIVATE
+    * remove unused virtual methods from MtTimerClass
+    * Fix FDL license version of the manual
+
+New and updated translations:
+
+    - [el] Fotis Tsamis
+    - [gl] Suso Baleato
+    - [kn] Shankar Prasad
+    - [or] Manoj Kumar Giri
+    - [pa] A S Alam
+    - [zh_CN] TeliuTe
+
+New and updated manual translation:
+
+    - [en_GB] Jen Ockwell
+    - [fr] Bruno Brouard and Claude Paroz
+
 Version 2.26.0
 --------------
 

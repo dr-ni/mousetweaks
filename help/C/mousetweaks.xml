@@ -39,6 +39,18 @@
 
     <revhistory>
       <revision>
+        <revnumber>Version 2.28</revnumber>
+
+        <date>September 2009</date>
+
+        <revdescription>
+          <para role="author">Adapt the manual to the changes done to
+          mousetweaks for GNOME 2.28.<email>Francesco Fumanti
+          &lt;frfumanti@svn.gnome.org&gt;</email></para>
+        </revdescription>
+      </revision>
+
+      <revision>
         <revnumber>version 2.25.90</revnumber>
 
         <date>February 2nd 2009</date>
@@ -103,7 +115,7 @@
     </revhistory>
 
     <releaseinfo>This manual describes the accessibility tools provided by
-    mousetweaks and its graphical user interfaces consisting of the
+    mousetweaks and their graphical user interfaces, which consist of the
     accessibility tab of the mouse control panel and two panel
     applets.</releaseinfo>
 
@@ -546,12 +558,6 @@
         being held pressed, mousetweaks will fill the arrow of the pointer
         with another color to give feedback that it is counting down the time
         before issuing the simulated secondary click.</para>
-
-        <note>
-          <para>Under some circumstances, it happens that the feedback on the
-          arrow of the pointer does not work. The Simulated Secondary Click is
-          issued nevertheless.</para>
-        </note>
       </sect3>
 
       <sect3>
@@ -652,10 +658,14 @@
       click and secondary click.</para>
 
       <note>
-        <para>When the buttonless (dwell) click is active, the
-        <mousebutton>mouse buttons</mousebutton> remain functional and it is
-        still possible to click with the <mousebutton>mouse
-        buttons</mousebutton>.</para>
+        <para>When the dwell click is active, the <mousebutton>mouse
+        buttons</mousebutton> remain functional and it is still possible to
+        click with the <mousebutton>mouse buttons</mousebutton>. Moreover, If
+        the user performs a click with a <mousebutton>mouse
+        button</mousebutton> while a dwell click is in progress, the dwell
+        click gets stopped and no dwell click is generated; to initiate a new
+        dwell click, the user has to move and stop moving the mouse as usual
+        for the dwell click.</para>
       </note>
 
       <sect3 id="mouse-a11y-dwell-usage">
@@ -665,12 +675,6 @@
         To give feedback to the user, mousetweaks will fill the arrow of the
         pointer with another color while it is counting down the time before
         the click completion kicks in.</para>
-
-        <note>
-          <para>Under some circumstances, it happens that the feedback on the
-          arrow of the pointer does not work; the dwell clicks are
-          nevertheless issued.</para>
-        </note>
 
         <para>How the click is completed and how the click type is chosen
         depends on what dwell mode the user has selected. The two available

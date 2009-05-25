@@ -1,3 +1,17 @@
+Version 2.27.2
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Fix dwell click for left-handed mouse orientation - bgo#582319
+    * Fix FDL license version of the manual
+    * Add comment to manual that hardware click interrupts dwell click
+
+New and updated manual translation:
+
+    - [el] Giannis Katsampirhs
+    - [es] Jorge González
+
 Version 2.27.1
 ---------------
 

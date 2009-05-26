@@ -12,7 +12,7 @@ PKG_NAME="mousetweaks"
 }
 
 # create marco directory
-if test ! -e $srcdir/m4; then
+if test ! -d $srcdir/m4; then
     mkdir $srcdir/m4
 fi
 

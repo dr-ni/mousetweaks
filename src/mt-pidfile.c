@@ -194,8 +194,9 @@ mt_pidfile_create (void)
     }
 
     snprintf (t, sizeof(t), "%lu\n", (unsigned long) getpid ());
+    l = strlen (t);
 
-    if (write (fd, t, l = strlen(t)) != l) {
+    if (write (fd, t, l) != l) {
 	int saved_errno = errno;
 	unlink (fn);
 	errno = saved_errno;

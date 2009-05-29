@@ -1,6 +1,6 @@
-data/dwell-click-applet.ui
-data/pointer-capture-applet.ui
-data/mousetweaks.ui
+[type: gettext/glade]data/dwell-click-applet.ui
+[type: gettext/glade]data/pointer-capture-applet.ui
+[type: gettext/glade]data/mousetweaks.ui
 data/DwellClick_Factory.server.in.in
 data/PointerCapture_Factory.server.in.in
 data/DwellClick.xml

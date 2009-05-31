@@ -13,13 +13,134 @@ msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-02-17 22:13+0000\n"
-"PO-Revision-Date: 2009-02-19 12:29+0100\n"
-"Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
+"POT-Creation-Date: 2009-05-31 08:44+0000\n"
+"PO-Revision-Date: 2009-05-31 22:33+0200\n"
+"Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Applet pour choisir les différents types de clics automatiques.\n"
+"Composant de MouseTweaks"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "Fenêtre de type de clic"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+msgid "Double Click"
+msgstr "Double-clic"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+msgid "Drag Click"
+msgstr "Clic glisser-déposer"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "Activer les clics par maintien"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "Clic droit"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+msgid "Single Click"
+msgstr "Clic simple"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "<b>Capture Pointer</b>"
+msgstr "<b>Capture du pointeur</b>"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid "<b>Release Pointer</b>"
+msgstr "<b>Libération du pointeur</b>"
+
+#: ../data/pointer-capture-applet.ui.h:3
+msgid "<b>Size of Capture Area</b>"
+msgstr "<b>Taille de la zone de capture</b>"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "A_lt"
+msgstr "Al_t"
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Zone pour geler le pointeur de la souris sur le tableau de bord.\n"
+"Composant de MouseTweaks"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "C_trl"
+msgstr "_Ctrl"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Modifier:"
+msgstr "Modificateur :"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "Mouse _button:"
+msgstr "_Bouton de la souris :"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Mouse b_utton:"
+msgstr "B_outon de la souris :"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "Pointer Capture Preferences"
+msgstr "Préférences de la capture du pointeur"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "S_hift"
+msgstr "_Majuscule"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "En choisissant le bouton 0, le pointeur est immédiatement capturé"
+
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Sh_ift"
+msgstr "Maj_uscule"
+
+#: ../data/pointer-capture-applet.ui.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "_Largeur :"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "pixels"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Dwell Click Type"
+msgstr "Type de clic par maintien"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "Afficher les icônes et le texte"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "Afficher seulement les icônes"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "Afficher seulement le texte"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -114,15 +235,11 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Délai du clic par maintien"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "Activer les clics par maintien"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Activer les clics secondaires"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "Activer les clics secondaires simulés"
 
@@ -150,7 +267,7 @@ msgstr "Seuil de détection du mouvement"
 msgid "Secondary click time"
 msgstr "Délai du clic secondaire"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "Afficher la fenêtre de type de clic"
 
@@ -234,8 +351,8 @@ msgstr ""
 "Indique si la touche Alt doit être enfoncée pour que le pointeur soit "
 "capturé lorsqu'il se trouve au-dessus de la zone de capture. Si cette option "
 "est vraie et qu'un bouton de souris est sélectionné pour la clé "
-"« capture_button », la touche Alt doit être enfoncée pendant que le "
-"bouton de la souris est enfoncé."
+"« capture_button », la touche Alt doit être enfoncée pendant que le bouton de "
+"la souris est enfoncé."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid ""
@@ -256,8 +373,8 @@ msgstr ""
 "Indique si la touche Ctrl doit être enfoncée pour que le pointeur soit "
 "capturé lorsqu'il se trouve au-dessus de la zone de capture. Si cette option "
 "est vraie et qu'un bouton de souris est défini dans la clé "
-"« capture_button », la touche Ctrl doit être enfoncée pendant que le "
-"bouton de la souris est enfoncé."
+"« capture_button », la touche Ctrl doit être enfoncée pendant que le bouton "
+"de la souris est enfoncé."
 
 #: ../data/pointer-capture-applet.schemas.in.h:15
 msgid ""
@@ -278,8 +395,8 @@ msgstr ""
 "Indique si la touche Maj doit être enfoncée pour que le pointeur soit "
 "capturé lorsqu'il se trouve au-dessus de la zone de capture. Si cette option "
 "est vraie et qu'un bouton de souris est déifni dans la clé "
-"« capture_button », la touche Maj doit être enfoncée pendant que le "
-"bouton de la souris est enfoncé."
+"« capture_button », la touche Maj doit être enfoncée pendant que le bouton de "
+"la souris est enfoncé."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
 msgid ""
@@ -294,11 +411,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Largeur de la zone de capture en pixels."
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
 msgstr "La prise en charge des outils d'accessibilité n'est pas activée"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -311,39 +428,39 @@ msgstr ""
 "Pour activer ces outils et redémarrer votre session, cliquez sur « Activer et "
 "se déconnecter »."
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "Délai avant un clic par maintien"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "Délai avant un clic secondaire simulé"
 
-#: ../src/mt-main.c:832
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "Mode de clic par maintien à utiliser"
 
-#: ../src/mt-main.c:836
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "Position horizontale x de la fenêtre"
 
-#: ../src/mt-main.c:838
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "Position verticale y de la fenêtre"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Ignore les petits mouvements du pointeur"
 
-#: ../src/mt-main.c:842
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "Affiche le temps écoulé en superposition du curseur"
 
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "Quitte Mousetweaks"
 
-#: ../src/mt-main.c:853
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "- Service Mousetweaks GNOME"
 

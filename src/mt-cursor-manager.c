@@ -102,30 +102,34 @@ static void
 mt_cursor_manager_set_xcursor (MtCursor *cursor)
 {
     XcursorImage *ximage;
-    const guchar *image;
     const gchar  *name;
     Cursor        xcursor;
     gushort       width, height;
     gushort       xhot, yhot;
 
-    mt_cursor_get_hotspot (cursor, &xhot, &yhot);
     mt_cursor_get_dimension (cursor, &width, &height);
-    image = mt_cursor_get_image (cursor);
-
     ximage = XcursorImageCreate (width, height);
-    ximage->xhot = xhot;
-    ximage->yhot = yhot;
-    ximage->delay = 0;
-    ximage->pixels = (XcursorPixel *) image;
+    xcursor = 0;
 
-    xcursor = XcursorImageLoadCursor (GDK_DISPLAY (), ximage);
-    XcursorImageDestroy (ximage);
+    if (ximage) {
+	mt_cursor_get_hotspot (cursor, &xhot, &yhot);
+
+	ximage->xhot = xhot;
+	ximage->yhot = yhot;
+	ximage->delay = 0;
+	ximage->pixels = (XcursorPixel *) mt_cursor_get_image (cursor);
+
+	xcursor = XcursorImageLoadCursor (GDK_DISPLAY (), ximage);
+	XcursorImageDestroy (ximage);
+    }
 
     if (xcursor) {
 	name = mt_cursor_get_name (cursor);
+
 	XFixesSetCursorName (GDK_DISPLAY (), xcursor, name);
 	XFixesChangeCursorByName (GDK_DISPLAY (), xcursor, name);
 	XFreeCursor (GDK_DISPLAY (), xcursor);
+
 	gdk_flush ();
     }
 }
@@ -144,8 +148,25 @@ mt_cursor_manager_add_cursor (MtCursorManager   *manager,
 {
     MtCursor *cursor;
     MtCursorManagerPrivate *priv;
+    guint32 *copy;
+    guchar *pixels;
+    guint i, n_pixels;
 
-    cursor = mt_cursor_new (image->name, (guchar *) image->pixels,
+    /* convert cursor image on x64 arch */
+    if (sizeof (unsigned long) != sizeof (guint32)) {
+	n_pixels = image->width * image->height;
+	copy = g_new (guint32, n_pixels);
+
+	for (i = 0; i < n_pixels; i++)
+	    copy[i] = image->pixels[i];
+
+	pixels = (guchar *) copy;
+    }
+    else
+	pixels = (guchar *) image->pixels;
+
+
+    cursor = mt_cursor_new (image->name, pixels,
 			    image->width, image->height,
 			    image->xhot, image->yhot);
 

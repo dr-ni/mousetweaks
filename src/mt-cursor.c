@@ -18,7 +18,6 @@
  */
 
 #include <glib.h>
-#include <string.h>
 
 #include "mt-cursor.h"
 
@@ -62,23 +61,6 @@ mt_cursor_finalize (GObject *object)
     G_OBJECT_CLASS (mt_cursor_parent_class)->finalize (object);
 }
 
-static guchar *
-mt_cursor_copy_image (guchar *image,
-		      gushort width,
-		      gushort height)
-{
-    guchar *copy;
-    gulong n_bytes;
-
-    n_bytes = width * height * 4;
-    copy = (guchar *) g_try_malloc (n_bytes);
-
-    if (copy)
-	memcpy (copy, image, n_bytes);
-
-    return copy;
-}
-
 MtCursor *
 mt_cursor_new (const gchar *name,
 	       guchar      *image,
@@ -89,7 +71,6 @@ mt_cursor_new (const gchar *name,
 {
     MtCursor *cursor;
     MtCursorPrivate *priv;
-    guchar *copy;
 
     g_return_val_if_fail (name != NULL, NULL);
     g_return_val_if_fail (image != NULL, NULL);
@@ -99,14 +80,10 @@ mt_cursor_new (const gchar *name,
     if (*name == 0)
 	return NULL;
 
-    copy = mt_cursor_copy_image (image, width, height);
-    if (!copy)
-	return NULL;
-
     cursor = g_object_new (MT_TYPE_CURSOR, NULL);
     priv = cursor->priv;
     priv->name   = g_strdup (name);
-    priv->image  = copy;
+    priv->image  = g_memdup (image, width * height * 4);
     priv->width  = width;
     priv->height = height;
     priv->xhot   = xhot;
@@ -134,11 +111,13 @@ mt_cursor_get_image (MtCursor *cursor)
 guchar *
 mt_cursor_get_image_copy (MtCursor *cursor)
 {
+    MtCursorPrivate *priv;
+
     g_return_val_if_fail (MT_IS_CURSOR (cursor), NULL);
 
-    return mt_cursor_copy_image (cursor->priv->image,
-				 cursor->priv->width,
-				 cursor->priv->height);
+    priv = cursor->priv;
+
+    return g_memdup (priv->image, priv->width * priv->height * 4);
 }
 
 void

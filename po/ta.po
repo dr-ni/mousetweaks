@@ -1,19 +1,19 @@
-# translation of mousetweaks.HEAD.po to Tamil
+# translation of mousetweak.ta.po to
 # translation of mousetweaks.HEAD.ta.po to
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Dr.T.Vasudevan <agnihot3@gmail.com>, 2008.
 # I. Felix <ifelix@redhat.com>, 2008.
-# Dr.T.vasudevan <agnihot3@gmail.com>, 2009.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-02-10 12:51+0000\n"
-"PO-Revision-Date: 2009-02-16 18:56+0530\n"
-"Last-Translator: Dr.T.vasudevan <agnihot3@gmail.com>\n"
-"Language-Team: Tamil <Ubuntu-l10n-tam@lists.ubuntu.com>\n"
+"Project-Id-Version: mousetweak.ta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-02 05:05+0530\n"
+"PO-Revision-Date: 2009-06-01 22:13+0530\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,6 +21,127 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"பல் வகை நிலை சொடுக்கை தேர்வு செய்ய குறுநிரல்.\n"
+"மவுஸ்ட்வீக்ஸ்  இன் பகுதி"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "சொடுக்கு வகை சாளரம்"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+msgid "Double Click"
+msgstr "இரட்டை சொடுக்கு"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+msgid "Drag Click"
+msgstr "சொடுக்கு இழுப்பு"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "நிலை சொடுக்கு செயல்படுத்து"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "வலது சொடுக்கு"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+msgid "Single Click"
+msgstr "ஒற்றை சொடுக்கு"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "(_l) ஆல்ட்"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"சொடுக்கியை பலகத்தில்  நிலை செய்ய இடம்\n"
+"மவுஸ்ட்வீக்ஸ்  இன் பகுதி"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "(_t) கண்ட்ரோல்"
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Capture Pointer"
+msgstr "பிடிப்பு சுட்டி"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "(_r) கண்ட்ரோல்"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "மாற்றி:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "(_b) சொடுக்கி பொத்தான்"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "(_b) சொடுக்கி பொத்தான்"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "Pointer Capture Preferences"
+msgstr "சுட்டி பிடிப்பு தேர்வுகள்"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "பிடிப்பு நீக்கல் சுட்டி"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "(_h) ஷிப்ட்"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "பொத்தான் 0 ஐ தேர்ந்தெடுத்தால் சுட்டி உடனே பிடிக்கப்படும் "
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "(_i) ஷிப்ட்"
+
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Size of Capture Area"
+msgstr "பிடிப்பு பரப்பின் அளவு "
+
+#: ../data/pointer-capture-applet.ui.h:16
+msgid "_Alt"
+msgstr "(_A) ஆல்ட்"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "(_W) அகலம்:"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "படதுணுக்குகள்"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Dwell Click Type"
+msgstr "நிலை சொடுக்கு வகை"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "சின்னங்கள் மற்றும் உரையை காட்டுக"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "சின்னங்கள் மட்டும் காட்டுக"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "உரை மட்டும் காட்டுக"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -111,15 +232,11 @@ msgstr "நிலை சொடுக்கு முறைமை (\"0\" = அச
 msgid "Dwell click time"
 msgstr "நிலை சொடுக்கு நேரம்"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "நிலை சொடுக்கு செயல்படுத்து"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "இரண்டாம் சொடுக்கு செயல்படுத்து"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "மெய்நிகர் இரண்டாம்  சொடுக்கு செயல்படுத்து"
 
@@ -147,7 +264,7 @@ msgstr "அசைவுக்கு குறைந்த பட்ச வரை
 msgid "Secondary click time"
 msgstr "இரண்டாம் சொடுக்கு நேரம்"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "சொடுக்கு வகை சாளரத்தை காட்டு "
 
@@ -176,12 +293,10 @@ msgid "Capture pointer only if Shift is pressed"
 msgstr "ஷிஃப்ட் விசையை அழுத்தினால் மட்டும் சுட்டியை பிடிக்கவும்"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-#| msgid "Mouse button to release the pointer"
 msgid "Mouse button used to capture the pointer"
 msgstr "சுட்டியை பிடிக்க பயன்பட்ட சொடுக்கி பொத்தான் "
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-#| msgid "Mouse button to release the pointer"
 msgid "Mouse button used to release the pointer"
 msgstr "சுட்டியை விட பயன்பட்ட சொடுக்கி பொத்தான் "
 
@@ -206,7 +321,10 @@ msgid ""
 "This mouse button must be pressed to release the pointer from the capture "
 "area. Valid values are \"1\" for left button, \"2\" for middle button, and "
 "\"3\" for right button."
-msgstr "பிடிப்பு பரப்பில் இருந்து சுட்டியை விட இந்த சொடுக்கி விசையை அழுத்த வேண்டும். செல்லுபடியாகும் மதிப்புகள்: \"1\" க்கு இடது பொத்தான், \"2\" க்கு நடு பொத்தான், மற்றும்  \"3\" க்கு இடது பொத்தான்."
+msgstr ""
+"பிடிப்பு பரப்பில் இருந்து சுட்டியை விட இந்த சொடுக்கி விசையை அழுத்த வேண்டும். "
+"செல்லுபடியாகும் மதிப்புகள்: \"1\" க்கு இடது பொத்தான், \"2\" க்கு நடு பொத்தான், மற்றும்  "
+"\"3\" க்கு இடது பொத்தான்."
 
 #: ../data/pointer-capture-applet.schemas.in.h:11
 msgid ""
@@ -214,7 +332,10 @@ msgid ""
 "in order to capture the pointer. Valid values are \"0\" if no button is "
 "needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
 "button."
-msgstr "பிடிப்பு பரப்பில் இருக்கும்போது சுட்டியை பிடிக்க இந்த சொடுக்கி விசையை அழுத்த வேண்டும். செல்லுபடியாகும் மதிப்புகள்:\"0\" எனில் ஒரு பொத்தானும் தேவையில்லை, \"1\" க்கு இடது பொத்தான், \"2\" க்கு நடு பொத்தான், மற்றும்  \"3\" க்கு இடது பொத்தான்."
+msgstr ""
+"பிடிப்பு பரப்பில் இருக்கும்போது சுட்டியை பிடிக்க இந்த சொடுக்கி விசையை அழுத்த வேண்டும். "
+"செல்லுபடியாகும் மதிப்புகள்:\"0\" எனில் ஒரு பொத்தானும் தேவையில்லை, \"1\" க்கு இடது "
+"பொத்தான், \"2\" க்கு நடு பொத்தான், மற்றும்  \"3\" க்கு இடது பொத்தான்."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid ""
@@ -222,13 +343,18 @@ msgid ""
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Alt key must be "
 "pressed while the mouse button is pressed."
-msgstr "பிடிப்பு பரப்பில் உள்ளபோது சுட்டியை பிடிக்க ஆல்ட் விசையை அழுத்த வேண்டுமா. இந்த தேர்வு உண்மை என அமைத்து, ஒரு சொடுக்கி பொத்தானையும் \"capture_button\" விசையில் அமைத்து இருந்தால் பின் ஆல்ட் விசையை சொடுக்கி விசையுடன் அழுத்த வேண்டும்."
+msgstr ""
+"பிடிப்பு பரப்பில் உள்ளபோது சுட்டியை பிடிக்க ஆல்ட் விசையை அழுத்த வேண்டுமா. இந்த தேர்வு "
+"உண்மை என அமைத்து, ஒரு சொடுக்கி பொத்தானையும் \"capture_button\" விசையில் அமைத்து "
+"இருந்தால் பின் ஆல்ட் விசையை சொடுக்கி விசையுடன் அழுத்த வேண்டும்."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid ""
 "Whether the Alt key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
-msgstr "பிடிப்பு பரப்பில் இருந்து சுட்டி விடுபட சொடுக்கி பொத்தான் \"release_button\" இல் உள்ளபோது ஆல்ட் விசையை அழுத்த வேண்டுமா."
+msgstr ""
+"பிடிப்பு பரப்பில் இருந்து சுட்டி விடுபட சொடுக்கி பொத்தான் \"release_button\" இல் "
+"உள்ளபோது ஆல்ட் விசையை அழுத்த வேண்டுமா."
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
 msgid ""
@@ -236,13 +362,18 @@ msgid ""
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Ctrl key must be "
 "pressed while the mouse button is pressed."
-msgstr "பிடிப்பு பரப்பில் உள்ளபோது சுட்டியை பிடிக்க கன்ட்ரோல் விசையை அழுத்த வேண்டுமா. இந்த தேர்வு உண்மை என அமைத்து, ஒரு சொடுக்கி பொத்தானையும் \"capture_button\" விசையில் அமைத்து இருந்தால் பின் கன்ட்ரோல் விசையை சொடுக்கி விசையுடன் அழுத்த வேண்டும்."
+msgstr ""
+"பிடிப்பு பரப்பில் உள்ளபோது சுட்டியை பிடிக்க கன்ட்ரோல் விசையை அழுத்த வேண்டுமா. இந்த தேர்வு "
+"உண்மை என அமைத்து, ஒரு சொடுக்கி பொத்தானையும் \"capture_button\" விசையில் அமைத்து "
+"இருந்தால் பின் கன்ட்ரோல் விசையை சொடுக்கி விசையுடன் அழுத்த வேண்டும்."
 
 #: ../data/pointer-capture-applet.schemas.in.h:15
 msgid ""
 "Whether the Ctrl key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
-msgstr "பிடிப்பு பரப்பில் இருந்து சுட்டி விடுபட சொடுக்கி பொத்தான் \"release_button\" இல் உள்ளபோது கன்ட்ரோல் விசையை அழுத்த வேண்டுமா."
+msgstr ""
+"பிடிப்பு பரப்பில் இருந்து சுட்டி விடுபட சொடுக்கி பொத்தான் \"release_button\" இல் "
+"உள்ளபோது கன்ட்ரோல் விசையை அழுத்த வேண்டுமா."
 
 #: ../data/pointer-capture-applet.schemas.in.h:16
 msgid ""
@@ -250,25 +381,28 @@ msgid ""
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Shift key must be "
 "pressed while the mouse button is pressed."
-msgstr "பிடிப்பு பரப்பில் உள்ளபோது சுட்டியை பிடிக்க ஷிப்ட் விசையை அழுத்த வேண்டுமா. இந்த தேர்வு உண்மை என அமைத்து, ஒரு சொடுக்கி பொத்தானையும் \"capture_button\" விசையில் அமைத்து இருந்தால் பின் ஷிப்ட் விசையை சொடுக்கி விசையுடன் அழுத்த வேண்டும்."
+msgstr ""
+"பிடிப்பு பரப்பில் உள்ளபோது சுட்டியை பிடிக்க ஷிப்ட் விசையை அழுத்த வேண்டுமா. இந்த தேர்வு "
+"உண்மை என அமைத்து, ஒரு சொடுக்கி பொத்தானையும் \"capture_button\" விசையில் அமைத்து "
+"இருந்தால் பின் ஷிப்ட் விசையை சொடுக்கி விசையுடன் அழுத்த வேண்டும்."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
 msgid ""
 "Whether the Shift key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
-msgstr "பிடிப்பு பரப்பில் இருந்து சுட்டி விடுபட சொடுக்கி பொத்தான் \"release_button\" இல் உள்ளபோது ஷிப்ட் விசையை அழுத்த வேண்டுமா."
+msgstr ""
+"பிடிப்பு பரப்பில் இருந்து சுட்டி விடுபட சொடுக்கி பொத்தான் \"release_button\" இல் "
+"உள்ளபோது ஷிப்ட் விசையை அழுத்த வேண்டுமா."
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
-#| msgid "Width of the capture area in pixels"
 msgid "Width of the capture area in pixels."
 msgstr "பிடிப்பு பரப்பின் அகலம் பிக்ஸல்களில்."
 
-#: ../src/mt-main.c:720
-#| msgid "Assistive Technology Support Is Not Enabled"
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
 msgstr "தொழில் நுட்ப ஆதரவு  செயலாக்கப்படவில்லை"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -280,39 +414,39 @@ msgstr ""
 "துணை தொழிற் நுட்பங்கள் செயற்படுத்தி கணினியை மீள்துவக்க இதை அழுத்தவும்\"செயற்படுத்தி "
 "வெளியேறு\"."
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "நிலை சொடுக்குக்கு காத்திருக்க வேண்டிய நேரம்"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "மெய்நிகர் இரண்டாம்  சொடுக்கு செயல்பட காத்திருக்க வேண்டிய நேரம்."
 
-#: ../src/mt-main.c:832
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "பயன்படுத்த நிலை சொடுக்கு முறைமை"
 
-#: ../src/mt-main.c:836
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "சாளரத்தின் x நிலை"
 
-#: ../src/mt-main.c:838
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "சாளரத்தின் y நிலை"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "சிறு சுட்டி நகர்வுகளை உதாசீனம் செய்க."
 
-#: ../src/mt-main.c:842
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "கடந்த நேரத்தை சுட்டியின் மீது காட்டுக."
 
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "மவுஸ்ட்வீக்ஸ் செயல்களை பணி நிறுத்தம் செய்க"
 
-#: ../src/mt-main.c:853
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "- க்னோம்  மவுஸ்ட்வீக்ஸ் கிங்கரன்"
 

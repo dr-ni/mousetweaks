@@ -3,6 +3,26 @@ Version 2.27.2
 
 Misc changes, improvements and fixes:
 
+    * Fix cursor drawing on 64bit platforms - closes bgo#584256
+    * Use 'test ! -d' in autogen.sh - closes bgo#583311
+    * Link directly to libX11 - closes bgo583471
+    * Fix sequence-point warning - bgo#583993
+    * Restore contextual menu in click-type window
+    * Fix POTFILES.in to make intltool extract strings from .ui files
+    * Get back lost translations from 2.24
+    * Remove markup from translatable strings
+
+New and updated manual translation:
+
+    - [es] Jorge González
+    - [fr] Claude Paroz
+    - [ta] drtvasudevan
+
+Version 2.27.2
+---------------
+
+Misc changes, improvements and fixes:
+
     * Fix dwell click for left-handed mouse orientation - bgo#582319
     * Fix FDL license version of the manual
     * Add comment to manual that hardware click interrupts dwell click

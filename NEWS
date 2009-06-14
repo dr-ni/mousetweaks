@@ -1,11 +1,11 @@
-Version 2.27.2
+Version 2.27.3
 ---------------
 
 Misc changes, improvements and fixes:
 
     * Fix cursor drawing on 64bit platforms - closes bgo#584256
     * Use 'test ! -d' in autogen.sh - closes bgo#583311
-    * Link directly to libX11 - closes bgo583471
+    * Link directly to libX11 - closes bgo#583471
     * Fix sequence-point warning - bgo#583993
     * Restore contextual menu in click-type window
     * Fix POTFILES.in to make intltool extract strings from .ui files

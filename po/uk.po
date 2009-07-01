@@ -2,21 +2,21 @@
 # Copyright (C) 2008 Free Software Foundation
 # This file is distributed under the same license as the mousetweaks package
 #
-# Maxim Dziumanenko <dziumanenko@gmail.com>, 2008.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2008-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-21 20:51+0000\n"
-"PO-Revision-Date: 2008-09-21 02:07+0300\n"
+"POT-Creation-Date: 2009-07-01 20:48+0300\n"
+"PO-Revision-Date: 2009-07-01 02:07+0300\n"
 "Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/dwell-click-applet.glade.h:1
+#: ../data/dwell-click-applet.ui.h:1
 msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of Mousetweaks"
@@ -24,53 +24,36 @@ msgstr ""
 "Аплет для вибору різних типів клацання при утриманні вказівника миші\n"
 "Є частиною Mousetweaks"
 
-#: ../data/dwell-click-applet.glade.h:3
+#: ../data/dwell-click-applet.ui.h:3
 msgid "Click Type Window"
 msgstr "Вікно налаштовування типу клацання"
 
-#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
 msgid "Double Click"
 msgstr "Подвійне клацання"
 
-#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
 msgid "Drag Click"
 msgstr "Клацання з переносом"
 
-#: ../data/dwell-click-applet.glade.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:821
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
 msgid "Enable dwell click"
 msgstr "Увімкнути клацання при утримуванні"
 
-#: ../data/dwell-click-applet.glade.h:7 ../src/dwell-click-applet.c:112
-#: ../src/dwell-click-applet.c:642
-msgid "On"
-msgstr "Увімкнути"
-
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:4
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
 msgid "Right Click"
 msgstr "Клацання правою кнопкою"
 
-#: ../data/dwell-click-applet.glade.h:9 ../data/ctw.glade.h:8
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
 msgid "Single Click"
 msgstr "Просте клацання"
 
-#: ../data/pointer-capture-applet.glade.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr "<b>Захоплення вказівника</b>"
-
-#: ../data/pointer-capture-applet.glade.h:2
-msgid "<b>Release Pointer</b>"
-msgstr "<b>Звільнення вказівника</b>"
-
-#: ../data/pointer-capture-applet.glade.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr "<b>Розмір області захоплення</b>"
-
-#: ../data/pointer-capture-applet.glade.h:4
+#: ../data/pointer-capture-applet.ui.h:1
 msgid "A_lt"
 msgstr "A_lt"
 
-#: ../data/pointer-capture-applet.glade.h:5
+#: ../data/pointer-capture-applet.ui.h:2
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -78,71 +61,83 @@ msgstr ""
 "Область для заморозки вказівника миші на панелі.\n"
 "Входить до складу MouseTweaks"
 
-#: ../data/pointer-capture-applet.glade.h:7
+#: ../data/pointer-capture-applet.ui.h:4
 msgid "C_trl"
 msgstr "C_trl"
 
-#: ../data/pointer-capture-applet.glade.h:8
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Capture Pointer"
+msgstr "Захоплення вказівника"
+
+#: ../data/pointer-capture-applet.ui.h:6
 msgid "Ct_rl"
 msgstr "Ct_rl"
 
-#: ../data/pointer-capture-applet.glade.h:9
+#: ../data/pointer-capture-applet.ui.h:7
 msgid "Modifier:"
 msgstr "Модифікатор:"
 
-#: ../data/pointer-capture-applet.glade.h:10
+#: ../data/pointer-capture-applet.ui.h:8
 msgid "Mouse _button:"
 msgstr "_Кнопка миші:"
 
-#: ../data/pointer-capture-applet.glade.h:11
+#: ../data/pointer-capture-applet.ui.h:9
 msgid "Mouse b_utton:"
 msgstr "К_нопка миші:"
 
-#: ../data/pointer-capture-applet.glade.h:12
+#: ../data/pointer-capture-applet.ui.h:10
 msgid "Pointer Capture Preferences"
 msgstr "Параметри області захоплення"
 
-#: ../data/pointer-capture-applet.glade.h:13
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "Звільнення вказівника"
+
+#: ../data/pointer-capture-applet.ui.h:12
 msgid "S_hift"
 msgstr "S_hift"
 
-#: ../data/pointer-capture-applet.glade.h:14
+#: ../data/pointer-capture-applet.ui.h:13
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "При виборі кнопки 0 вказівник буде захоплений одразу"
 
-#: ../data/pointer-capture-applet.glade.h:15
+#: ../data/pointer-capture-applet.ui.h:14
 msgid "Sh_ift"
 msgstr "Sh_ift"
 
-#: ../data/pointer-capture-applet.glade.h:16
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Size of Capture Area"
+msgstr "Розмір області захоплення"
+
+#: ../data/pointer-capture-applet.ui.h:16
 msgid "_Alt"
 msgstr "_Alt"
 
-#: ../data/pointer-capture-applet.glade.h:17
+#: ../data/pointer-capture-applet.ui.h:17
 msgid "_Width:"
 msgstr "_Ширина"
 
-#: ../data/pointer-capture-applet.glade.h:18
+#: ../data/pointer-capture-applet.ui.h:18
 msgid "pixels"
 msgstr "точка"
 
-#: ../data/ctw.glade.h:3
+#: ../data/mousetweaks.ui.h:3
 msgid "Dwell Click Type"
 msgstr "Тип клацання при утриманні"
 
-#: ../data/ctw.glade.h:5
+#: ../data/mousetweaks.ui.h:5
 msgid "Show Icons and Text"
 msgstr "Показувати значки та текст"
 
-#: ../data/ctw.glade.h:6
+#: ../data/mousetweaks.ui.h:6
 msgid "Show Icons only"
 msgstr "Показувати лише значки"
 
-#: ../data/ctw.glade.h:7
+#: ../data/mousetweaks.ui.h:7
 msgid "Show Text only"
 msgstr "Показувати лише текст"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
 msgstr "Клацання утриманням"
 
@@ -155,6 +150,7 @@ msgid "Area to lock the pointer"
 msgstr "Область для захоплення вказівника"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
+#: ../src/pointer-capture-applet.c:549
 msgid "Pointer Capture"
 msgstr "Захоплення вказівника"
 
@@ -233,7 +229,7 @@ msgstr "Час утримування"
 msgid "Enable secondary click"
 msgstr "Увімкнути вторинне клацання"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:823
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "Увімкнути підтримку клацання другою кнопкою"
 
@@ -261,7 +257,7 @@ msgstr "Поріг точності рухів"
 msgid "Secondary click time"
 msgstr "Час вторинного клацання"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:831
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "Показувати вікно з типами клацання"
 
@@ -278,66 +274,134 @@ msgid "Time in seconds before a secondary click is triggered"
 msgstr "Час у секундах до виконання вторинного клацання"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture modifier"
-msgstr "Натиснути клавішу модифікатора"
+msgid "Capture pointer only if Alt is pressed"
+msgstr "Захоплювати вказівник, лише якщо натиснута клавіша Alt"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture modifier key (Alt)"
-msgstr "Натиснути клавішу модифікатора (Alt)"
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "Захоплювати вказівник, лише якщо натиснута клавіша Ctrl"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture modifier key (Ctrl)"
-msgstr "Натиснути клавішу модифікатора (Ctrl)"
+msgid "Capture pointer only if Shift is pressed"
+msgstr "Захоплювати вказівник, лише якщо натиснута клавіша Shift"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier key (Shift)"
-msgstr "Натиснути клавішу модифікатора (Shift)"
+msgid "Mouse button used to capture the pointer"
+msgstr "Кнопка миші для захоплення вказівника"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture mouse button"
-msgstr "Захопити кнопку миші"
-
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-msgstr "Кнопка миші для захоплення вказівника (0=захопити одразу)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Mouse button to release the pointer"
+msgid "Mouse button used to release the pointer"
 msgstr "Кнопка миші для звільнення вказівника"
 
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Release pointer only if Alt is pressed"
+msgstr "Звільнювати вказівник, лише якщо натиснута клавіша Alt"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "Звільнювати вказівник, лише якщо натиснута клавіша Ctrl"
+
 #: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release modifier"
-msgstr "Відпустити модифікатор"
+msgid "Release pointer only if Shift is pressed"
+msgstr "Звільнювати вказівник, лише якщо натиснута клавіша Shift"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier key (Alt)"
-msgstr "Відпустити модифікатор (Alt)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Ctrl)"
-msgstr "Відпустити модифікатор (Ctrl)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Shift)"
-msgstr "Відпустити модифікатор (Shift)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release mouse button"
-msgstr "Відпустити кнопку миші"
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
 msgstr "Розмір області захоплення"
 
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
-msgstr "Ширина зони захоплення у точках"
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr ""
+"Цю кнопку миші треба натискати для звільнення вказівника з області "
+"захоплення. Можливі значення: \"1\" — ліва кнопка миші, \"2\" — середня "
+"кнопка миші та \"3\" — права кнопка миші."
 
-#: ../src/mt-main.c:722
-msgid "Assistive Technology Support Is Not Enabled"
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr ""
+"Цю кнопку миші треба натискати для захоплення вказівника в області захоплення. "
+"Можливі значення: \"1\" — ліва кнопка миші, \"2\" — середня кнопка миші та "
+"\"3\" — права кнопка миші."
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Чи треба натискати клавішу Alt, щоб вказівник був захоплений, "
+"коли він знаходиться у області захоплення. Якщо цей параметр встановлено та "
+"встановлено кнопку миші у параметрі \"capture_button\" для захоплення вказівника "
+"треба натиснути також Alt у той час, коли утримується ця кнопка миші."
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Чи треба натискати клавішу Alt одночасно з кнопкою миші "
+"\"release_button\" щоб вказівник було звільнено з області "
+"захоплення."
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Чи треба натискати клавішу Ctrl, щоб вказівник був захоплений, "
+"коли він знаходиться у області захоплення. Якщо цей параметр встановлено та "
+"встановлено кнопку миші у параметрі \"capture_button\" для захоплення вказівника "
+"треба натиснути також Ctrl у той час, коли утримується ця кнопка миші."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Чи потрібно затискати клавішу Ctrl одночасно з кнопкою миші "
+"\"release_button\" щоб вказівник було звільнено з області "
+"захоплення."
+
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Чи треба натискати клавішу Shift, щоб вказівник було захоплено, "
+"коли він знаходиться у області захоплення. Якщо цей параметр встановлено та "
+"встановлено кнопку миші у параметрі \"capture_button\" для захоплення вказівника "
+"треба натиснути також Shift одночасно з утриманням цієї кнопки миші."
+
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Чи потрібно затискати клавішу Shift одночасно з кнопкою миші "
+"\"release_button\" щоб вказівник було звільнено з області "
+"захоплення."
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+msgid "Width of the capture area in pixels."
+msgstr "Ширина зони захоплення у точках."
+
+#: ../src/mt-main.c:767
+msgid "Assistive Technology Support is not Enabled"
 msgstr "Технології доступності не увімкнені"
 
-#: ../src/mt-main.c:723
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -349,39 +413,39 @@ msgstr ""
 "Для вмикання технологій доступності та перезапуску сеансу, натисніть "
 "\"Увімкнути та вийти\"."
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "Час, що очікується перед затриманим клацанням"
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "Час, який очікується перед імітацією другого клацання"
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "Режим клацання при утримуванні"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "Позиція вікна по горизонталі"
 
-#: ../src/mt-main.c:835
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "Позиція вікна по вертикалі"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Ігнорувати невеликі рухи вказівника"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "Показувати ча, що минув з перекриття курсору"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "Вимкнути mousetweaks"
 
-#: ../src/mt-main.c:849
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "- служба GNOME mousetweaks"
 
@@ -402,26 +466,16 @@ msgstr "Заблокований"
 msgid "L"
 msgstr "Б"
 
-#: ../src/pointer-capture-applet.c:542
-msgid "Pointer Capture Applet"
-msgstr "Аплет захоплення вказівника"
-
-#: ../src/pointer-capture-applet.c:614
+#: ../src/pointer-capture-applet.c:621
 msgid "Capture area"
 msgstr "Область захоплення"
 
-#: ../src/pointer-capture-applet.c:615
+#: ../src/pointer-capture-applet.c:622
 msgid "Temporarily lock the mouse pointer"
 msgstr "Тимчасово заблокувати вказівник миші"
 
-#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
-msgid "Off"
-msgstr "Вимкнути"
-
-#: ../src/dwell-click-applet.c:335
+#: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Помилка при показі параметрів миші"
 
-#: ../src/dwell-click-applet.c:565
-msgid "Dwell Click Applet"
-msgstr "Аплет клацання при утриманні"
+

@@ -1,25 +1,25 @@
 # Hiiretuuningute eesti keele tõlge.
 # Estonian translation of Mousetweaks.
 #
-# Copyright (C) 2008 The GNOME Project.
+# Copyright (C) 2008, 2009 The GNOME Project.
 #
 # This file is distributed under the same license as the mousetweaks package.
 #
-# Ivar Smolin <okul@linux.ee>, 2008.
+# Ivar Smolin <okul@linux.ee>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-06 18:33+0000\n"
-"PO-Revision-Date: 2008-10-31 12:04+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2009-06-01 08:54+0000\n"
+"PO-Revision-Date: 2009-07-02 14:20+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/dwell-click-applet.glade.h:1
 msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of Mousetweaks"
@@ -27,311 +27,270 @@ msgstr ""
 "Ooteajaga klõpsu liikide vahel valimise rakend.\n"
 "See rakend kuulub Hiiretuuningute koosseisu."
 
-#: ../data/dwell-click-applet.glade.h:3
 msgid "Click Type Window"
 msgstr ""
 
-#: ../data/dwell-click-applet.glade.h:4 ../data/ctw.glade.h:1
 msgid "Double Click"
 msgstr "Topeltklõps"
 
-#: ../data/dwell-click-applet.glade.h:5 ../data/ctw.glade.h:2
 msgid "Drag Click"
 msgstr ""
 
-#: ../data/dwell-click-applet.glade.h:6 ../src/dwell-click-applet.c:112
-#: ../src/dwell-click-applet.c:642
-msgid "On"
-msgstr "Sees"
+msgid "Enable dwell click"
+msgstr "Ooteajaga klõpsu lubamine"
 
-#: ../data/dwell-click-applet.glade.h:7 ../data/ctw.glade.h:4
 msgid "Right Click"
 msgstr "Paremklõps"
 
-#: ../data/dwell-click-applet.glade.h:8 ../data/ctw.glade.h:8
 msgid "Single Click"
 msgstr "Üksikklõps"
 
-#: ../data/pointer-capture-applet.glade.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr ""
-
-#: ../data/pointer-capture-applet.glade.h:2
-msgid "<b>Release Pointer</b>"
-msgstr ""
-
-#: ../data/pointer-capture-applet.glade.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr ""
-
-#: ../data/pointer-capture-applet.glade.h:4
 msgid "A_lt"
 msgstr ""
 
-#: ../data/pointer-capture-applet.glade.h:5
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
 
-#: ../data/pointer-capture-applet.glade.h:7
 msgid "C_trl"
 msgstr "C_trl"
 
-#: ../data/pointer-capture-applet.glade.h:8
+msgid "Capture Pointer"
+msgstr ""
+
 msgid "Ct_rl"
 msgstr "Ct_rl"
 
-#: ../data/pointer-capture-applet.glade.h:9
 msgid "Modifier:"
 msgstr ""
 
-#: ../data/pointer-capture-applet.glade.h:10
 msgid "Mouse _button:"
 msgstr "Hiire _nupp:"
 
-#: ../data/pointer-capture-applet.glade.h:11
 msgid "Mouse b_utton:"
 msgstr "Hiire n_upp:"
 
-#: ../data/pointer-capture-applet.glade.h:12
 msgid "Pointer Capture Preferences"
 msgstr "Kursori hõivamise eelistused"
 
-#: ../data/pointer-capture-applet.glade.h:13
+msgid "Release Pointer"
+msgstr ""
+
 msgid "S_hift"
 msgstr "S_hift"
 
-#: ../data/pointer-capture-applet.glade.h:14
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr ""
 
-#: ../data/pointer-capture-applet.glade.h:15
 msgid "Sh_ift"
 msgstr "Sh_ift"
 
-#: ../data/pointer-capture-applet.glade.h:16
+msgid "Size of Capture Area"
+msgstr "Hõivamispiirkonna suurus"
+
 msgid "_Alt"
 msgstr "_Alt"
 
-#: ../data/pointer-capture-applet.glade.h:17
 msgid "_Width:"
 msgstr "_Laius:"
 
-#: ../data/pointer-capture-applet.glade.h:18
 msgid "pixels"
 msgstr "pikslit"
 
-#: ../data/ctw.glade.h:3
 msgid "Dwell Click Type"
 msgstr "Ooteajaga klõpsu liik"
 
-#: ../data/ctw.glade.h:5
 msgid "Show Icons and Text"
 msgstr "Ikoonide ja tekstide näitamine"
 
-#: ../data/ctw.glade.h:6
 msgid "Show Icons only"
 msgstr "Ainult ikoonide näitamine"
 
-#: ../data/ctw.glade.h:7
 msgid "Show Text only"
 msgstr "Ainult tekstide näitamine"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1
 msgid "Dwell Click"
 msgstr "Ooteajaga klõps"
 
-#: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
 msgstr "Ooteajaga klõpsu liigi valimine"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr ""
 
-#: ../data/PointerCapture_Factory.server.in.in.h:2
 msgid "Pointer Capture"
 msgstr "Kursori hõivamine"
 
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
 msgid "_About"
 msgstr "_Programmist lähemalt"
 
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
 msgid "_Help"
 msgstr "A_bi"
 
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
 msgid "_Preferences"
 msgstr "_Eelistused"
 
-#: ../data/mousetweaks.schemas.in.h:1
 msgid "Animate cursor"
 msgstr "Kursori animeerimine"
 
-#: ../data/mousetweaks.schemas.in.h:2
 msgid "Button style"
 msgstr "Nupu laad"
 
-#: ../data/mousetweaks.schemas.in.h:3
 msgid ""
 "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:4
 msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:5
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:6
 msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:7
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
 msgstr "Ooteajaga klõpsu režiim"
 
-#: ../data/mousetweaks.schemas.in.h:10
 msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "Ooteajaga klõpsu aeg"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:819
-msgid "Enable dwell click"
-msgstr "Ooteajaga klõpsu lubamine"
-
-#: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:821
 msgid "Enable simulated secondary click"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture drag click"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:18
 msgid "Gesture single click"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:19
 msgid "Movement threshold"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:20
 msgid "Secondary click time"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:829
 msgid "Show click type window"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:22
 msgid "Show elapsed time as cursor overlay."
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:23
 msgid "Time in seconds before a click is triggered"
 msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:24
 msgid "Time in seconds before a secondary click is triggered"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture modifier"
+msgid "Capture pointer only if Alt is pressed"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture modifier key (Alt)"
+msgid "Capture pointer only if Ctrl is pressed"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture modifier key (Ctrl)"
+msgid "Capture pointer only if Shift is pressed"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Capture modifier key (Shift)"
+msgid "Mouse button used to capture the pointer"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Capture mouse button"
+msgid "Mouse button used to release the pointer"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+msgid "Release pointer only if Alt is pressed"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Mouse button to release the pointer"
+msgid "Release pointer only if Ctrl is pressed"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release modifier"
+msgid "Release pointer only if Shift is pressed"
 msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:9
-msgid "Release modifier key (Alt)"
-msgstr ""
-
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "Release modifier key (Ctrl)"
-msgstr ""
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "Release modifier key (Shift)"
-msgstr ""
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Release mouse button"
-msgstr ""
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
 msgid "Size of capture area"
 msgstr "Hõivamispiirkonna suurus"
 
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Width of the capture area in pixels"
-msgstr "Hõivamispiirkonna laius pikslites"
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr ""
 
-#: ../src/mt-main.c:720
-msgid "Assistive Technology Support Is Not Enabled"
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr ""
+
+msgid ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+
+msgid ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+
+msgid ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+
+msgid ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+
+msgid "Width of the capture area in pixels."
+msgstr "Hõivamispiirkonna laius pikslites."
+
+msgid "Assistive Technology Support is not Enabled"
 msgstr "Abistava tehnika tugi pole lubatud"
 
-#: ../src/mt-main.c:721
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -344,79 +303,63 @@ msgstr ""
 "Abistava tehnika lubamiseks ja seansi uuestikäivitamiseks vajuta \"Luba ja "
 "logi välja\"."
 
-#: ../src/mt-main.c:823
 msgid "Time to wait before a dwell click"
 msgstr ""
 
-#: ../src/mt-main.c:825
 msgid "Time to wait before a simulated secondary click"
 msgstr ""
 
-#: ../src/mt-main.c:827
 msgid "Dwell mode to use"
 msgstr "Kasutatav ooterežiim"
 
-#: ../src/mt-main.c:831
 msgid "Window x position"
 msgstr "Akna asukoht X-teljel"
 
-#: ../src/mt-main.c:833
 msgid "Window y position"
 msgstr "Akna asukoht Y-teljel"
 
-#: ../src/mt-main.c:835
 msgid "Ignore small pointer movements"
 msgstr "Väikeste kursoriliigutuste eiramine"
 
-#: ../src/mt-main.c:837
 msgid "Show elapsed time as cursor overlay"
 msgstr ""
 
-#: ../src/mt-main.c:839
 msgid "Shut down mousetweaks"
 msgstr "Hiiretuuningute seiskamine"
 
-#: ../src/mt-main.c:847
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME hiiretuuningute deemon"
 
-#: ../src/mt-common.c:30
 msgid "Failed to Display Help"
 msgstr "Abiteabe kuvamisel tekkis viga"
 
-#: ../src/mt-common.c:66
 msgid "Enable and Log Out"
 msgstr "Luba ja logi välja"
 
-#: ../src/pointer-capture-applet.c:180
 msgid "Locked"
 msgstr "Lukustatud"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:542
-msgid "Pointer Capture Applet"
-msgstr "Kursori hõivamise rakend"
-
-#: ../src/pointer-capture-applet.c:614
 msgid "Capture area"
 msgstr "Hõivamise piirkond"
 
-#: ../src/pointer-capture-applet.c:615
 msgid "Temporarily lock the mouse pointer"
 msgstr "Hiirekursori ajutine lukustamine"
 
-#: ../src/dwell-click-applet.c:112 ../src/dwell-click-applet.c:642
-msgid "Off"
-msgstr "Väljas"
-
-#: ../src/dwell-click-applet.c:335
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Tõrge hiire-eelistuste käivitaminsel"
 
-#: ../src/dwell-click-applet.c:565
-msgid "Dwell Click Applet"
-msgstr "Ooteajaga klõpsu rakend"
+#~ msgid "On"
+#~ msgstr "Sees"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Kursori hõivamise rakend"
+
+#~ msgid "Off"
+#~ msgstr "Väljas"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Ooteajaga klõpsu rakend"

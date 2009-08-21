@@ -11,10 +11,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-05-31 08:44+0000\n"
-"PO-Revision-Date: 2009-05-31 22:33+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-22 00:23+0200\n"
+"PO-Revision-Date: 2009-08-22 00:24+0200\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -55,22 +54,10 @@ msgid "Single Click"
 msgstr "Clic simple"
 
 #: ../data/pointer-capture-applet.ui.h:1
-msgid "<b>Capture Pointer</b>"
-msgstr "<b>Capture du pointeur</b>"
-
-#: ../data/pointer-capture-applet.ui.h:2
-msgid "<b>Release Pointer</b>"
-msgstr "<b>Libération du pointeur</b>"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "<b>Size of Capture Area</b>"
-msgstr "<b>Taille de la zone de capture</b>"
-
-#: ../data/pointer-capture-applet.ui.h:4
 msgid "A_lt"
 msgstr "Al_t"
 
-#: ../data/pointer-capture-applet.ui.h:5
+#: ../data/pointer-capture-applet.ui.h:2
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -78,41 +65,53 @@ msgstr ""
 "Zone pour geler le pointeur de la souris sur le tableau de bord.\n"
 "Composant de MouseTweaks"
 
-#: ../data/pointer-capture-applet.ui.h:7
+#: ../data/pointer-capture-applet.ui.h:4
 msgid "C_trl"
 msgstr "_Ctrl"
 
-#: ../data/pointer-capture-applet.ui.h:8
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Capture Pointer"
+msgstr "Capture du pointeur"
+
+#: ../data/pointer-capture-applet.ui.h:6
 msgid "Ct_rl"
 msgstr "Ct_rl"
 
-#: ../data/pointer-capture-applet.ui.h:9
+#: ../data/pointer-capture-applet.ui.h:7
 msgid "Modifier:"
 msgstr "Modificateur :"
 
-#: ../data/pointer-capture-applet.ui.h:10
+#: ../data/pointer-capture-applet.ui.h:8
 msgid "Mouse _button:"
 msgstr "_Bouton de la souris :"
 
-#: ../data/pointer-capture-applet.ui.h:11
+#: ../data/pointer-capture-applet.ui.h:9
 msgid "Mouse b_utton:"
 msgstr "B_outon de la souris :"
 
-#: ../data/pointer-capture-applet.ui.h:12
+#: ../data/pointer-capture-applet.ui.h:10
 msgid "Pointer Capture Preferences"
 msgstr "Préférences de la capture du pointeur"
 
-#: ../data/pointer-capture-applet.ui.h:13
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "Libération du pointeur"
+
+#: ../data/pointer-capture-applet.ui.h:12
 msgid "S_hift"
 msgstr "_Majuscule"
 
-#: ../data/pointer-capture-applet.ui.h:14
+#: ../data/pointer-capture-applet.ui.h:13
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "En choisissant le bouton 0, le pointeur est immédiatement capturé"
 
-#: ../data/pointer-capture-applet.ui.h:15
+#: ../data/pointer-capture-applet.ui.h:14
 msgid "Sh_ift"
 msgstr "Maj_uscule"
+
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Size of Capture Area"
+msgstr "Taille de la zone de capture"
 
 #: ../data/pointer-capture-applet.ui.h:16
 msgid "_Alt"

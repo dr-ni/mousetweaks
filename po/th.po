@@ -6,14 +6,136 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-13 12:28+0700\n"
-"PO-Revision-Date: 2009-02-13 12:42+0700\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2009-06-01 08:54+0000\n"
+"PO-Revision-Date: 2009-08-23 15:53+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"แอพเพล็ตสำหรับเลือกชนิดต่างๆ ของการคลิกด้วยการวางแช่\n"
+"เป็นส่วนหนึ่งของ Mousetweaks"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "หน้าต่างชนิดการคลิก"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+msgid "Double Click"
+msgstr "ดับเบิลคลิก"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+msgid "Drag Click"
+msgstr "คลิกเพื่อลาก"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "เปิดใช้การคลิกด้วยการวางแช่"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "คลิกขวา"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+msgid "Single Click"
+msgstr "คลิกเดียว"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"พื้นที่กักตัวชี้เมาส์ไว้ในพาเนล\n"
+"เป็นส่วนหนึ่งของ Mousetweaks"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Capture Pointer"
+msgstr "กักตัวชี้"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "ปุ่มประกอบ"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "ปุ่มเ_มาส์:"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "ปุ่มเมา_ส์:"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "Pointer Capture Preferences"
+msgstr "ปรับแต่งการกักตัวชี้"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "ปล่อยคืนตัวชี้"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "ถ้าเลือกปุ่ม 0 จะกักตัวชี้ทันที"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Size of Capture Area"
+msgstr "ขนาดของพื้นที่กักตัวชี้"
+
+#: ../data/pointer-capture-applet.ui.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "ความ_กว้าง:"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "พิกเซล"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Dwell Click Type"
+msgstr "ชนิดของการคลิกด้วยการวางแช่"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "แสดงไอคอนและข้อความ"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "แสดงไอคอนอย่างเดียว"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "แสดงข้อความอย่างเดียว"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -99,15 +221,11 @@ msgstr "โหมดการคลิกด้วยการวางแช่
 msgid "Dwell click time"
 msgstr "ระยะเวลาการคลิกด้วยการวางแช่"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "เปิดใช้การคลิกด้วยการวางแช่"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "เปิดใช้คลิกที่สอง"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "เปิดใช้การจำลองคลิกที่สอง"
 
@@ -135,7 +253,7 @@ msgstr "ระยะเริ่มเคลื่อน"
 msgid "Secondary click time"
 msgstr "ระยะเวลาคลิกที่สอง"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "แสดงหน้าต่างชนิดของการคลิก"
 
@@ -264,11 +382,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "ความกว้างของพื้นที่กักตัวชี้ในหน่วยพิกเซล"
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
 msgstr "ไม่ได้เปิดใช้เทคโนโลยีสิ่งอำนวยความสะดวก"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -280,39 +398,39 @@ msgstr ""
 "หากต้องการเปิดใช้เทคโนโลยีสิ่งอำนวยความสะดวกแล้วเริ่มวาระใหม่ ก็ให้กดปุ่ม "
 "\"เปิดใช้และออกจากระบบ\""
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "ระยะเวลาที่จะรอในการคลิกด้วยการวางแช่"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "ระยะเวลาที่จะรอในการจำลองคลิกที่สอง"
 
-#: ../src/mt-main.c:832
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "โหมดการวางแช่ที่จะใช้"
 
-#: ../src/mt-main.c:836
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "ตำแหน่ง x ของหน้าต่าง"
 
-#: ../src/mt-main.c:838
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "ตำแหน่ง y ของหน้าต่าง"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "ไม่สนใจการขยับเมาส์เล็กๆ น้อยๆ"
 
-#: ../src/mt-main.c:842
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "แสดงเวลาที่ผ่านไปทับบนตัวชี้"
 
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "ปิด mousetweaks"
 
-#: ../src/mt-main.c:853
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "- ดีมอน mousetweaks ของ GNOME"
 
@@ -345,97 +463,11 @@ msgstr "ล็อคตัวชี้เมาส์ชั่วคราว"
 msgid "Failed to Launch Mouse Preferences"
 msgstr "ไม่สามารถเรียกใช้การปรับแต่งเมาส์"
 
-#~ msgid ""
-#~ "Applet to select different dwell-click types.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "แอพเพล็ตสำหรับเลือกชนิดต่างๆ ของการคลิกด้วยการวางแช่\n"
-#~ "เป็นส่วนหนึ่งของ Mousetweaks"
-
-#~ msgid "Click Type Window"
-#~ msgstr "หน้าต่างชนิดการคลิก"
-
-#~ msgid "Double Click"
-#~ msgstr "ดับเบิลคลิก"
-
-#~ msgid "Drag Click"
-#~ msgstr "คลิกเพื่อลาก"
-
 #~ msgid "On"
 #~ msgstr "เปิด"
 
-#~ msgid "Right Click"
-#~ msgstr "คลิกขวา"
-
-#~ msgid "Single Click"
-#~ msgstr "คลิกเดียว"
-
-#~ msgid "<b>Capture Pointer</b>"
-#~ msgstr "<b>กักตัวชี้</b>"
-
-#~ msgid "<b>Release Pointer</b>"
-#~ msgstr "<b>ปล่อยคืนตัวชี้</b>"
-
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>ขนาดของพื้นที่กักตัวชี้</b>"
-
-#~ msgid "A_lt"
-#~ msgstr "A_lt"
-
-#~ msgid ""
-#~ "Area to freeze the mouse pointer on the panel.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "พื้นที่กักตัวชี้เมาส์ไว้ในพาเนล\n"
-#~ "เป็นส่วนหนึ่งของ Mousetweaks"
-
-#~ msgid "C_trl"
-#~ msgstr "C_trl"
-
-#~ msgid "Ct_rl"
-#~ msgstr "Ct_rl"
-
-#~ msgid "Modifier:"
-#~ msgstr "ปุ่มประกอบ"
-
-#~ msgid "Mouse _button:"
-#~ msgstr "ปุ่มเ_มาส์:"
-
-#~ msgid "Mouse b_utton:"
-#~ msgstr "ปุ่มเมา_ส์:"
-
-#~ msgid "Pointer Capture Preferences"
-#~ msgstr "ปรับแต่งการกักตัวชี้"
-
-#~ msgid "S_hift"
-#~ msgstr "S_hift"
-
-#~ msgid "Selecting Button 0 will capture the pointer immediately"
-#~ msgstr "ถ้าเลือกปุ่ม 0 จะกักตัวชี้ทันที"
-
-#~ msgid "Sh_ift"
-#~ msgstr "Sh_ift"
-
-#~ msgid "_Alt"
-#~ msgstr "_Alt"
-
-#~ msgid "_Width:"
-#~ msgstr "ความ_กว้าง:"
-
-#~ msgid "pixels"
-#~ msgstr "พิกเซล"
-
-#~ msgid "Dwell Click Type"
-#~ msgstr "ชนิดของการคลิกด้วยการวางแช่"
-
-#~ msgid "Show Icons and Text"
-#~ msgstr "แสดงไอคอนและข้อความ"
-
-#~ msgid "Show Icons only"
-#~ msgstr "แสดงไอคอนอย่างเดียว"
-
-#~ msgid "Show Text only"
-#~ msgstr "แสดงข้อความอย่างเดียว"
 
 #~ msgid "Capture modifier"
 #~ msgstr "ปุ่มประกอบปุ่มเริ่มกัก"

@@ -1,3 +1,25 @@
+Version 2.27.91
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Use AM_SILENT_RULES if available
+
+New and updated translations:
+
+    [bg] Alexander Shopov
+    [cs] Adrian Gunis
+    [fr] Claude Paroz
+    [gl] Antón Méixome
+    [pt_BR] Leonardo Ferreira Fontenelle
+    [th] Theppitak Karoonboonyanan
+    [zh_HK] Chao-Hsiung Liao
+    [zh_TW] Chao-Hsiung Liao
+
+New and updated manual translation:
+
+    [de] Mario Blättermann (bgo #591916)
+
 Version 2.27.90
 ---------------
 

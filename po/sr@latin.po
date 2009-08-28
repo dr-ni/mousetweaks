@@ -1,0 +1,495 @@
+# Serbian translation of mousetweaks
+# Courtesy of Prevod.org team (http://www.prevod.org/) -- 2009.
+# This file is distributed under the same license as the mousetweak package.
+#
+# Maintainer: Milan Skocic <milan.skocic@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2009-08-27 15:22+0000\n"
+"PO-Revision-Date: 2009-05-11 21:47+0100\n"
+"Last-Translator: Milan SKOCIC <milan.skocic@gmail.com>\n"
+"Language-Team: Serbian (sr) <gnom@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Programče za izbor različitih vremenskih klikova.\n"
+"Deo programa za podešavanje miša"
+
+#: ../data/dwell-click-applet.ui.h:3
+#| msgid "Show click type window"
+msgid "Click Type Window"
+msgstr "Prozor za vrstu klika"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#| msgid "Dwell Click"
+msgid "Double Click"
+msgstr "Dupli klik"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#| msgid "Dwell Click"
+msgid "Drag Click"
+msgstr "Prevlačenje"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "Omogući klik sa zadržavanjem"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "Desni klik"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#| msgid "Gesture single click"
+msgid "Single Click"
+msgstr "Jednostruki klik"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Oblast za zamrzavanje pokazivača miša na panelu.\n"
+"Deo programa za podešavanje miša"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "_Kontrol"
+
+#: ../data/pointer-capture-applet.ui.h:5
+#| msgid "Capture area"
+msgid "Capture Pointer"
+msgstr "Hvatanje pokazivača"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "_Kontrol"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "Izmenjivački taster:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "_Dugme miša:"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "D_ugme miša:"
+
+#: ../data/pointer-capture-applet.ui.h:10
+#| msgid "Pointer Capture"
+msgid "Pointer Capture Preferences"
+msgstr "Postavke hvatanja pokazivača"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "Pusti pokazivač"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "_Šift"
+
+#: ../data/pointer-capture-applet.ui.h:13
+#| msgid "Mouse button used to capture the pointer"
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Biranje dugmeta 0 će odmah uhvatiti pokazivač"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "_Šift"
+
+#: ../data/pointer-capture-applet.ui.h:15
+#| msgid "Size of capture area"
+msgid "Size of Capture Area"
+msgstr "Veličina površine za hvatanje"
+
+#: ../data/pointer-capture-applet.ui.h:16
+#| msgid "_About"
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "Š_irina:"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "piksela"
+
+#: ../data/mousetweaks.ui.h:3
+#| msgid "Dwell Click"
+msgid "Dwell Click Type"
+msgstr "Vrsta vremenskog klika"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "Prikaži ikonice i tekst"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "Prikaži samo ikonice"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "Prikaži samo tekst"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+msgid "Dwell Click"
+msgstr "Vremenski klik"
+
+#: ../data/DwellClick_Factory.server.in.in.h:2
+msgid "Select dwelling click type"
+msgstr "Izaberi vrstu vremenskog klika"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Površina zaključavanja pokizavača"
+
+#: ../data/PointerCapture_Factory.server.in.in.h:2
+#: ../src/pointer-capture-applet.c:549
+msgid "Pointer Capture"
+msgstr "Hvatanje pokazivača"
+
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
+msgid "_About"
+msgstr "_O programu"
+
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
+msgid "_Help"
+msgstr "_Pomoć"
+
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
+msgid "_Preferences"
+msgstr "_Postavke"
+
+#: ../data/mousetweaks.schemas.in.h:1
+msgid "Animate cursor"
+msgstr "Animiraj kursor"
+
+#: ../data/mousetweaks.schemas.in.h:2
+msgid "Button style"
+msgstr "Stil dugmeta"
+
+#: ../data/mousetweaks.schemas.in.h:3
+msgid ""
+"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgstr ""
+"Stil dugmeta u prozoru za vrstu klika („0“ = Tekst, „1“ = Ikona, „2“ = Oboje)"
+
+#: ../data/mousetweaks.schemas.in.h:4
+msgid ""
+"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Smer da biste izvršili dvostruki klik („0“ = Levo, „1“ = Desno, „2“ = Gore, "
+"„3“ = Dole)"
+
+#: ../data/mousetweaks.schemas.in.h:5
+msgid ""
+"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+"\"3\" = Down)"
+msgstr ""
+"Smer da biste izvršili prevlačenje („0“ = Levo, „1“ = Desno, „2“ = Gore, „3“ "
+"= Dole)"
+
+#: ../data/mousetweaks.schemas.in.h:6
+msgid ""
+"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Smer da biste izvršili sekundarni klik („0“ = Levo, „1“ = Desno, „2“ = "
+"Gore, „3“ = Dole)"
+
+#: ../data/mousetweaks.schemas.in.h:7
+msgid ""
+"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Smer da biste izvršili jednostruki klik („0“ = Levo, „1“ = Desno, „2“ "
+"= Gore, „3“ = Dole)"
+
+#: ../data/mousetweaks.schemas.in.h:8
+msgid "Distance in pixels before movement will be recognized"
+msgstr "Udaljenost u pikselima pre prepoznavanja pokreta"
+
+#: ../data/mousetweaks.schemas.in.h:9
+msgid "Dwell click mode"
+msgstr "Režim vremenskog klika"
+
+#: ../data/mousetweaks.schemas.in.h:10
+msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgstr ""
+"Režim vremenskog klika („0“ = Režim sa potezom, „1“ = Režim sa "
+"prozorom)"
+
+#: ../data/mousetweaks.schemas.in.h:11
+msgid "Dwell click time"
+msgstr "Istek pre vremenskog klika"
+
+#: ../data/mousetweaks.schemas.in.h:13
+msgid "Enable secondary click"
+msgstr "Omogući sekundarni klik"
+
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+msgid "Enable simulated secondary click"
+msgstr "Omogući sekundarni simulirani klik"
+
+#: ../data/mousetweaks.schemas.in.h:15
+msgid "Gesture double click"
+msgstr "Potez dvostrukog klika"
+
+#: ../data/mousetweaks.schemas.in.h:16
+msgid "Gesture drag click"
+msgstr "Potez prevlačenja"
+
+#: ../data/mousetweaks.schemas.in.h:17
+msgid "Gesture secondary click"
+msgstr "Potez sekundarnog klika"
+
+#: ../data/mousetweaks.schemas.in.h:18
+msgid "Gesture single click"
+msgstr "Potez jednostrukog klika"
+
+#: ../data/mousetweaks.schemas.in.h:19
+msgid "Movement threshold"
+msgstr "Prag pokreta"
+
+#: ../data/mousetweaks.schemas.in.h:20
+msgid "Secondary click time"
+msgstr "Vremensko odlaganje sekundarnog klika"
+
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+msgid "Show click type window"
+msgstr "Prikaži prozor za tip klika"
+
+#: ../data/mousetweaks.schemas.in.h:22
+msgid "Show elapsed time as cursor overlay."
+msgstr "Prikaži proteklo vreme u režimu preklapanja kursora."
+
+#: ../data/mousetweaks.schemas.in.h:23
+msgid "Time in seconds before a click is triggered"
+msgstr "Vreme u sekundima pre klika"
+
+#: ../data/mousetweaks.schemas.in.h:24
+msgid "Time in seconds before a secondary click is triggered"
+msgstr "Vreme u sekundima pre sekundarnog klika"
+
+#: ../data/pointer-capture-applet.schemas.in.h:1
+msgid "Capture pointer only if Alt is pressed"
+msgstr "Uhvati pokazivač samo ako je Alt taster pritisnut"
+
+#: ../data/pointer-capture-applet.schemas.in.h:2
+msgid "Capture pointer only if Ctrl is pressed"
+msgstr "Uhvati pokazivač samo ako je Kontrol taster pritisnut"
+
+#: ../data/pointer-capture-applet.schemas.in.h:3
+msgid "Capture pointer only if Shift is pressed"
+msgstr "Uhvati pokazivač samo ako je Šift taster pritisnut"
+
+#: ../data/pointer-capture-applet.schemas.in.h:4
+msgid "Mouse button used to capture the pointer"
+msgstr "Taster miša za hvatanje pokazivača"
+
+#: ../data/pointer-capture-applet.schemas.in.h:5
+msgid "Mouse button used to release the pointer"
+msgstr "Taster miša za hvatanje pokazivača"
+
+#: ../data/pointer-capture-applet.schemas.in.h:6
+msgid "Release pointer only if Alt is pressed"
+msgstr "Oslobodi pokazivač samo ako je Alt taster pritisnut"
+
+#: ../data/pointer-capture-applet.schemas.in.h:7
+msgid "Release pointer only if Ctrl is pressed"
+msgstr "Oslobodi pokazivač samo ako je Kontrol taster pritisnut"
+
+#: ../data/pointer-capture-applet.schemas.in.h:8
+msgid "Release pointer only if Shift is pressed"
+msgstr "Oslobodi pokazivač samo ako je Šift taster pritisnut"
+
+#: ../data/pointer-capture-applet.schemas.in.h:9
+msgid "Size of capture area"
+msgstr "Veličina prihvatne površine"
+
+#: ../data/pointer-capture-applet.schemas.in.h:10
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr ""
+"Ovaj taster miša mora biti pritisnut da biste oslobili pokazivač iz privatne "
+"površine. Ispravne vrednosti su „1“ za levi taster, „2“ za srednji taster, "
+"i „3“ za desni taster."
+
+#: ../data/pointer-capture-applet.schemas.in.h:11
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr ""
+"Ovaj taster miša mora biti pritisnut dok je pokazivač iznad prihvatne površine "
+"da biste ga snimili. Ispravne vredosti su „0“ ako nijedan taster nije "
+"potreban, „1“ za levi taster, „2“ za srednji taster, i „3“ za desni "
+"taster."
+
+#: ../data/pointer-capture-applet.schemas.in.h:12
+msgid ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Da li Alt taster mora biti pritisnut za hvatanje pokazivača dok je iznad "
+"prihvatne površine. Ako je ova opcija aktivirana, i jedan taster miša "
+"postavljen kao „capture_button“ (taster za hvatanje), onda i Alt taster mora "
+"biti pritisnut dok je taster miša pritisnut."
+
+#: ../data/pointer-capture-applet.schemas.in.h:13
+msgid ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Da li Alt taster mora biti pritisnut sa tasterom miša postavljen za "
+"„release_button“ (taster puštanja) da bi pokazavač bio oslobođen "
+"iz površine snimanja."
+
+#: ../data/pointer-capture-applet.schemas.in.h:14
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Da li Kontrol taster mora biti pritisnut za hvatanje pokazivača dok je iznad "
+"prihvatne površine. Ako je ova opcija aktivirana, i jedan taster miša "
+"postavljen kao „capture_button“ (taster za hvatanje), onda i taster Kontrol "
+"mora biti pritisnut dok je taster miša pritisnut."
+
+#: ../data/pointer-capture-applet.schemas.in.h:15
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Da li taster Kontrol mora biti pritisnut sa tasterom miša postavljen za "
+"„release_button“ (taster puštanja) da bi pokazavač bio oslobođen "
+"iz površine snimanja."
+
+#: ../data/pointer-capture-applet.schemas.in.h:16
+msgid ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Da li Šift taster mora biti pritisnut za hvatanje pokazivača dok je iznad "
+"prihvatne površine. Ako je ova opcija aktivirana, i jedan taster miša "
+"postavljen kao „capture_button“ (taster za hvatanje), onda i taster Šift "
+"mora biti pritisnut dok je taster miša pritisnut."
+
+#: ../data/pointer-capture-applet.schemas.in.h:17
+msgid ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Da li taster Šift mora biti pritisnut sa tasterom miša postavljen za "
+"„release_button“ (taster puštanja) da bi pokazavač bio oslobođen "
+"iz površine snimanja."
+
+#: ../data/pointer-capture-applet.schemas.in.h:18
+msgid "Width of the capture area in pixels."
+msgstr "Širina prihvatne površine u pikselima."
+
+#: ../src/mt-main.c:767
+msgid "Assistive Technology Support is not Enabled"
+msgstr "Nije uključena tehnologija za ispomoć"
+
+#: ../src/mt-main.c:768
+msgid ""
+"Mousetweaks requires assistive technologies to be enabled in your session.\n"
+"\n"
+"To enable support for assistive technologies and restart your session, press "
+"\"Enable and Log Out\"."
+msgstr ""
+"Podešavanja miša zahtevaju tehnologije za ispomoć u sesiji.\n"
+"\n"
+"Da biste omogućili tehnologije za ispomoć i ponovo pokrenuli vašu sesiju, "
+"pristinite „Omogući i odjavi se“."
+
+#: ../src/mt-main.c:877
+msgid "Time to wait before a dwell click"
+msgstr "Istek vremena pre vremenskog klika"
+
+#: ../src/mt-main.c:879
+msgid "Time to wait before a simulated secondary click"
+msgstr "Istek vremena pre simuliranog sekundarnog klika"
+
+#: ../src/mt-main.c:881
+msgid "Dwell mode to use"
+msgstr "Režim vremenskog klika"
+
+#: ../src/mt-main.c:885
+msgid "Window x position"
+msgstr "Pozicija x prozora"
+
+#: ../src/mt-main.c:887
+msgid "Window y position"
+msgstr "Pozicija y prozora"
+
+#: ../src/mt-main.c:889
+msgid "Ignore small pointer movements"
+msgstr "Ignoriši male pokrete pokazivača"
+
+#: ../src/mt-main.c:891
+msgid "Show elapsed time as cursor overlay"
+msgstr "Prikaži proteklo vreme u režimu preklapanja kursora"
+
+#: ../src/mt-main.c:893
+msgid "Shut down mousetweaks"
+msgstr "Isključi podešavanja miša"
+
+#: ../src/mt-main.c:902
+msgid "- GNOME mousetweaks daemon"
+msgstr "- Gnomov upravljački program za podešavanje miša"
+
+#: ../src/mt-common.c:30
+msgid "Failed to Display Help"
+msgstr "Ne mogu da prikažem pomoć"
+
+#: ../src/mt-common.c:66
+msgid "Enable and Log Out"
+msgstr "Omogući i odjavi se"
+
+#: ../src/pointer-capture-applet.c:180
+msgid "Locked"
+msgstr "Zaključano"
+
+#. l10n: the first letter of 'Locked'
+#: ../src/pointer-capture-applet.c:183
+msgid "L"
+msgstr "Z"
+
+#: ../src/pointer-capture-applet.c:621
+msgid "Capture area"
+msgstr "Prihvatna površ"
+
+#: ../src/pointer-capture-applet.c:622
+msgid "Temporarily lock the mouse pointer"
+msgstr "Privremeno zaključaj pokazivač miša"
+
+#: ../src/dwell-click-applet.c:334
+msgid "Failed to Launch Mouse Preferences"
+msgstr "Ne mogu da pokrenem postavke miša"

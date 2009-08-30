@@ -1,19 +1,140 @@
 # Catalan translation of mousetweaks.
 # Copyright (C) 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
-# Gil Forcada <gforcada@guifi.net>, 2008.
+# Gil Forcada <gforcada@guifi.net>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-19 20:23+0100\n"
-"PO-Revision-Date: 2009-02-19 20:25+0100\n"
+"POT-Creation-Date: 2009-08-30 20:52+0200\n"
+"PO-Revision-Date: 2009-08-30 20:53+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Miniaplicació per a seleccionar diferents tipus de clics en pausa.\n"
+"Part del Mousetweaks"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "Finestra del tipus de clic"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+msgid "Double Click"
+msgstr "Doble clic"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+msgid "Drag Click"
+msgstr "Clic d'arrossegar"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "Habilita el clic en pausa"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "Clic secundari"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+msgid "Single Click"
+msgstr "Un sol clic"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Àrea on congelar el punter del ratolí en el quadre.\n"
+"Part del Mousetweaks"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Capture Pointer"
+msgstr "Captura el punter"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "Modificador:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "_Botó del ratolí:"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "B_otó del ratolí:"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "Pointer Capture Preferences"
+msgstr "Preferències de la captura del punter"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "Allibera el punter"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "_Maj"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Si seleccioneu el botó 0 es capturarà immediatament el punter"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "M_aj"
+
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Size of Capture Area"
+msgstr "Mida de l'àrea de captura"
+
+#: ../data/pointer-capture-applet.ui.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "_Amplada:"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "píxels"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Dwell Click Type"
+msgstr "Tipus de clic en pausa"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "Mostra les icones i el text"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "Només icones"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "Només text"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -107,15 +228,11 @@ msgstr "Mode de clic en pausa («0» = Mode de gest, «1» = Mode finestra)"
 msgid "Dwell click time"
 msgstr "Temps de clic en pausa"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "Habilita el clic en pausa"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Habilita el clic secundari"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "Habilita el clic secundari simulat"
 
@@ -143,7 +260,7 @@ msgstr "Llindar de moviment"
 msgid "Secondary click time"
 msgstr "Temps del clic secundari"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "Mostra la finestra de tipus de clic"
 
@@ -281,11 +398,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Amplada de l'àrea de captura en píxels."
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
 msgstr "La tecnologia assistiva no està habilitada"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -297,39 +414,39 @@ msgstr ""
 "\n"
 "Per habilitar-les i reiniciar la sessió, premeu «Habilita i surt»."
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "Temps d'espera abans d'un clic en pausa"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "Temps d'espera abans de simular un clic secundari"
 
-#: ../src/mt-main.c:832
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "Mode de clic en pausa a utilitzar"
 
-#: ../src/mt-main.c:836
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "Posició x de la finestra"
 
-#: ../src/mt-main.c:838
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "Posició y de la finestra"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Ignora els petits moviments del punter"
 
-#: ../src/mt-main.c:842
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "Mostra el temps transcorregut sobreposat al cursor"
 
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "Surt del Mousetweaks"
 
-#: ../src/mt-main.c:853
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "- Dimoni del Mousetweaks del GNOME"
 
@@ -362,97 +479,11 @@ msgstr "Bloqueja temporalment el punter del ratolí"
 msgid "Failed to Launch Mouse Preferences"
 msgstr "No s'han pogut obrir les Preferències del ratolí"
 
-#~ msgid ""
-#~ "Applet to select different dwell-click types.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "Miniaplicació per a seleccionar diferents tipus de clics en pausa.\n"
-#~ "Part del Mousetweaks"
-
-#~ msgid "Click Type Window"
-#~ msgstr "Finestra del tipus de clic"
-
-#~ msgid "Double Click"
-#~ msgstr "Doble clic"
-
-#~ msgid "Drag Click"
-#~ msgstr "Clic d'arrossegar"
-
 #~ msgid "On"
 #~ msgstr "Actiu"
 
-#~ msgid "Right Click"
-#~ msgstr "Clic secundari"
-
-#~ msgid "Single Click"
-#~ msgstr "Un sol clic"
-
-#~ msgid "<b>Capture Pointer</b>"
-#~ msgstr "<b>Captura el punter</b>"
-
-#~ msgid "<b>Release Pointer</b>"
-#~ msgstr "<b>Allibera el punter</b>"
-
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>Mida de l'àrea capturada</b>"
-
-#~ msgid "A_lt"
-#~ msgstr "A_lt"
-
-#~ msgid ""
-#~ "Area to freeze the mouse pointer on the panel.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "Àrea on congelar el punter del ratolí en el quadre.\n"
-#~ "Part del Mousetweaks"
-
-#~ msgid "C_trl"
-#~ msgstr "C_trl"
-
-#~ msgid "Ct_rl"
-#~ msgstr "Ct_rl"
-
-#~ msgid "Modifier:"
-#~ msgstr "Modificador:"
-
-#~ msgid "Mouse _button:"
-#~ msgstr "_Botó del ratolí:"
-
-#~ msgid "Mouse b_utton:"
-#~ msgstr "B_otó del ratolí:"
-
-#~ msgid "Pointer Capture Preferences"
-#~ msgstr "Preferències de la captura del punter"
-
-#~ msgid "S_hift"
-#~ msgstr "_Maj"
-
-#~ msgid "Selecting Button 0 will capture the pointer immediately"
-#~ msgstr "Si seleccioneu el botó 0 es capturarà immediatament el punter"
-
-#~ msgid "Sh_ift"
-#~ msgstr "M_aj"
-
-#~ msgid "_Alt"
-#~ msgstr "_Alt"
-
-#~ msgid "_Width:"
-#~ msgstr "_Amplada:"
-
-#~ msgid "pixels"
-#~ msgstr "píxels"
-
-#~ msgid "Dwell Click Type"
-#~ msgstr "Tipus de clic en pausa"
-
-#~ msgid "Show Icons and Text"
-#~ msgstr "Mostra les icones i el text"
-
-#~ msgid "Show Icons only"
-#~ msgstr "Només icones"
-
-#~ msgid "Show Text only"
-#~ msgstr "Només text"
 
 #~ msgid "Capture modifier"
 #~ msgstr "Captura la modificadora"

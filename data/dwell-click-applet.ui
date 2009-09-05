@@ -16,7 +16,7 @@
             <property name="receives_default">True</property>
             <property name="tooltip_text" translatable="yes">Enable dwell click</property>
             <child>
-              <object class="GtkImage" id="image1">
+              <object class="GtkImage" id="image123">
                 <property name="visible">True</property>
                 <property name="stock">gtk-yes</property>
                 <property name="icon-size">4</property>

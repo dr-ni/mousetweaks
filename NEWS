@@ -1,3 +1,29 @@
+Version 2.27.92
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Fix installation of dwell click applet on GNOME panel
+
+New and updated translations:
+
+    [ar] Khaled Hosny
+    [bn] Israt Jahan
+    [ca] Gil Forcada
+    [ca@valencia] Carles Ferrando Garcia
+    [de] Mario Blättermann
+    [eu] Iñaki Larrañaga Murgoitio
+    [nb] Kjartan Maraas
+    [pl] Tomasz Dominikowski
+    [pt] Duarte Loreto
+    [sr] Milan Skocic
+    [sr@latin] Milan Skocic
+    [te] Krishna Babu K
+
+New and updated manual translation:
+
+    [cs] Adrian Guniš
+
 Version 2.27.91
 ---------------
 

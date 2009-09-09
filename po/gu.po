@@ -1,4 +1,4 @@
-# translation of mousetweaks.HEAD.gu.po to Gujarati
+# translation of mousetweaks.master.gu.po to Gujarati
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
@@ -6,17 +6,149 @@
 # Ankit Patel <ankit@redhat.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks.HEAD.gu\n"
+"Project-Id-Version: mousetweaks.master.gu\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-03-13 11:50+0000\n"
-"PO-Revision-Date: 2009-03-15 11:44+0530\n"
-"Last-Translator: Ankit Patel <ankit@redhat.com>\n"
-"Language-Team: Gujarati <fedora-trans-gu@redhat.com>\n"
+"POT-Creation-Date: 2009-06-01 08:54+0000\n"
+"PO-Revision-Date: 2009-09-09 15:41+0530\n"
+"Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
+"Language-Team: Gujarati\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"વિવિધ dwell-ક્લિક પ્રકારોને પસંદ કરવા માટે એપલેટ.\n"
+"Mousetweaks નો ભાગ"
+
+#: ../data/dwell-click-applet.ui.h:3
+#| msgid "Show click type window"
+msgid "Click Type Window"
+msgstr "ક્લિક વિન્ડો પ્રકાર"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#| msgid "Dwell Click"
+msgid "Double Click"
+msgstr "બે વાર ક્લિક"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#| msgid "Dwell Click"
+msgid "Drag Click"
+msgstr "ડ્રેગ ક્લિક"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "dwell ક્લિકને સક્રિય કરો"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "જમણી ક્લિક"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#| msgid "Gesture single click"
+msgid "Single Click"
+msgstr "એક ક્લિક"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "Alt (_l)"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"પેનલ પર માઉસ નિર્દેશકને ફ્રીજ કરવા માટે વિસ્તાર.\n"
+"Mousetweaks નો ભાગ"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "Ctrl (_t)"
+
+#: ../data/pointer-capture-applet.ui.h:5
+#| msgid "Capture area"
+msgid "Capture Pointer"
+msgstr "નિર્દેશક ને પ્રાપ્ત કરો"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ctrl (_r)"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "બદલનાર:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "માઉસ બટન (_b):"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "માઉસ બટન (_u):"
+
+#: ../data/pointer-capture-applet.ui.h:10
+#| msgid "Pointer Capture"
+msgid "Pointer Capture Preferences"
+msgstr "Pointer Capture Preferences"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "નિર્દેશકને પ્રકાશિત કરો"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "Shift (_h)"
+
+#: ../data/pointer-capture-applet.ui.h:13
+#| msgid "Mouse button used to capture the pointer"
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "બટન ૦ ને પસંદ કરવાથી તરત જ નિર્દેશક ને પ્રાપ્ત કરશે"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "Shift (_i)"
+
+#: ../data/pointer-capture-applet.ui.h:15
+#| msgid "Size of capture area"
+msgid "Size of Capture Area"
+msgstr "ગ્રહણ કરેલ વિસ્તારનું માપ"
+
+#: ../data/pointer-capture-applet.ui.h:16
+#| msgid "_About"
+msgid "_Alt"
+msgstr "Alt (_A)"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "પહોળાઇ (_W):"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "પિક્સેલો"
+
+#: ../data/mousetweaks.ui.h:3
+#| msgid "Dwell Click"
+msgid "Dwell Click Type"
+msgstr "Dwell ક્લિક પ્રકાર"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "ચિહ્નો અને લખાણને બતાવો"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "ફક્ત ચિહ્નોને બતાવો"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "ફક્ત લખાણને બતાવો"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -107,15 +239,11 @@ msgstr "Dwell ક્લિક સ્થિતિ (\"0\" = Gesture mode, \"1\" = 
 msgid "Dwell click time"
 msgstr "Dwell ક્લિક સમય"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:825
-msgid "Enable dwell click"
-msgstr "dwell ક્લિકને સક્રિય કરો"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "ગૌણ ક્લિકને સક્રિય કરો"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:827
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "બનાવટી ગૌમ ક્લિકને સક્રિય કરો"
 
@@ -143,13 +271,13 @@ msgstr "થ્રેશોલ્ડની હિલચાલ"
 msgid "Secondary click time"
 msgstr "ગૌણ ક્લિક સમય"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:835
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "ક્લિક વિન્ડો પ્રકાર બતાવો"
 
 #: ../data/mousetweaks.schemas.in.h:22
 msgid "Show elapsed time as cursor overlay."
-msgstr "કર્સર ઓવરલે તરીકે ચાલ્યો ગયેલો સમય"
+msgstr "કર્સર ઓવરલે તરીકે ચાલ્યો ગયેલો સમય."
 
 #: ../data/mousetweaks.schemas.in.h:23
 msgid "Time in seconds before a click is triggered"
@@ -213,7 +341,7 @@ msgid ""
 msgstr ""
 "જ્યારે પોઇંટરને પકડવા માટે ક્રમમાં પકડેલ વિસ્તાર પર પોઇંટર હોય ત્યારે માઉસ બટન એ દબાયેલ "
 "હોવુ જ જોઇએ. યોગ્ય કિંમતો એ ડાબા બટન માટે \"1\", મધ્ય બટન માટે \"2\", અને જમણા બટન "
-"માટે \"3\" છે"
+"માટે \"3\" છે."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid ""
@@ -241,7 +369,11 @@ msgid ""
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Ctrl key must be "
 "pressed while the mouse button is pressed."
-msgstr "નિર્દેશક જ્યારે પકડવાના વિસ્તારની ઉપર હોય ત્યારે તેને પકડવા માટે શું Ctrl દબાયેલ હોવી જ જોઈએ. જો આ વિકલ્પ ખરા તરીકે સુયોજીત થયેલ હોય, અને માઉસ બટન એ \"capture_button\" કીમાં સુયોજીત થયેલ હોય, તો પછી જ્યારે માઉસ બટન દબાયેલ હોય ત્યારે Ctrl કી દબાયેલ હોવી જ જોઈએ."
+msgstr ""
+"નિર્દેશક જ્યારે પકડવાના વિસ્તારની ઉપર હોય ત્યારે તેને પકડવા માટે શું Ctrl દબાયેલ હોવી જ "
+"જોઈએ. જો આ વિકલ્પ ખરા તરીકે સુયોજીત થયેલ હોય, અને માઉસ બટન એ \"capture_button\" "
+"કીમાં સુયોજીત થયેલ હોય, તો પછી જ્યારે માઉસ બટન દબાયેલ હોય ત્યારે Ctrl કી દબાયેલ હોવી "
+"જ જોઈએ."
 
 #: ../data/pointer-capture-applet.schemas.in.h:15
 msgid ""
@@ -257,7 +389,11 @@ msgid ""
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Shift key must be "
 "pressed while the mouse button is pressed."
-msgstr "નિર્દેશક જ્યારે પકડવાના વિસ્તારની ઉપર હોય ત્યારે તેને પકડવા માટે શું Shift દબાયેલ હોવી જ જોઈએ. જો આ વિકલ્પ ખરા તરીકે સુયોજીત થયેલ હોય, અને માઉસ બટન એ \"capture_button\" કીમાં સુયોજીત થયેલ હોય, તો પછી જ્યારે માઉસ બટન દબાયેલ હોય ત્યારે Shift કી દબાયેલ હોવી જ જોઈએ."
+msgstr ""
+"નિર્દેશક જ્યારે પકડવાના વિસ્તારની ઉપર હોય ત્યારે તેને પકડવા માટે શું Shift દબાયેલ હોવી જ "
+"જોઈએ. જો આ વિકલ્પ ખરા તરીકે સુયોજીત થયેલ હોય, અને માઉસ બટન એ \"capture_button\" "
+"કીમાં સુયોજીત થયેલ હોય, તો પછી જ્યારે માઉસ બટન દબાયેલ હોય ત્યારે Shift કી દબાયેલ હોવી "
+"જ જોઈએ."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
 msgid ""
@@ -269,13 +405,13 @@ msgstr ""
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
 msgid "Width of the capture area in pixels."
-msgstr "પિક્સેલોમાં પકડેલ વિસ્તારનીપહોળાઇ."
+msgstr "પિક્સેલોમાં લીધેલ વિસ્તારનીપહોળાઇ."
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Assistive Technology Support એ સક્રિય થયેલ નથી"
 
-#: ../src/mt-main.c:722
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -287,39 +423,39 @@ msgstr ""
 "assistive technologies માટે આધાર ને સક્રિય કરવા માટે અને તમારા સત્ર ને ફરી શરૂ કરવા "
 "માટે, \"Enable and Log Out\" ને દબાવો."
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "dwell ક્લિક કરતા પહેલા રાહ જોવાનો સમય છે"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "સિમ્યુલેટ થયેલ ગૌણ ક્લિક પહેલા રાહ જોવાનો સમય છે"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "વાપરવા માટે Dwell સ્થિતિ"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "વિન્ડો x જગ્યા"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "વિન્ડો y જગ્યા"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "નાંના પોઇન્ટરની હિલચાલને અવગણો"
 
-#: ../src/mt-main.c:843
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "કર્સર ઓવરલે તરીકે ચાલી ગયેલ સમય બતાવો"
 
-#: ../src/mt-main.c:845
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "mousetweaks ને બંધ કરો"
 
-#: ../src/mt-main.c:854
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME mousetweaks daemon"
 
@@ -342,7 +478,7 @@ msgstr "L"
 
 #: ../src/pointer-capture-applet.c:621
 msgid "Capture area"
-msgstr "પ્રાપ્ત કરેલ વિસ્તાર"
+msgstr "લીધેલ વિસ્તાર"
 
 #: ../src/pointer-capture-applet.c:622
 msgid "Temporarily lock the mouse pointer"

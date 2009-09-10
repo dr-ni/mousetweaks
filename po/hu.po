@@ -2,21 +2,142 @@
 # Copyright (C) 2008, 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
 #
-# Balint Laza <laza@szentkoronaradio.com>, 2008.
-# Gabor Kelemen <kelemeng@gnome.hu>, 2008, 2009.
+# Balint Laza <laza at szentkoronaradio dot com>, 2008.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks.HEAD\n"
+"Project-Id-Version: mousetweaks master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-12 12:45+0100\n"
-"PO-Revision-Date: 2009-02-12 13:12+0100\n"
-"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
-"Language-Team: Hungarian <gnome@fsf.hu>\n"
+"POT-Creation-Date: 2009-09-10 02:01+0200\n"
+"PO-Revision-Date: 2009-09-10 01:56+0200\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Különböző elidőzési kattintások kiválasztása.\n"
+"A Mousetweaks része."
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "Kattintástípus ablak"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+msgid "Double Click"
+msgstr "Dupla kattintás"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+msgid "Drag Click"
+msgstr "Húzási kattintás"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "Elidőzési kattintás engedélyezése"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "Jobb kattintás"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+msgid "Single Click"
+msgstr "Egyszeres kattintás"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Terület az egérmutató megfagyasztásához a panelen.\n"
+"A Mousetweaks része."
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Capture Pointer"
+msgstr "Mutató elfogása"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "Módosító:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "_Egérgomb:"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "Egérg_omb:"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "Pointer Capture Preferences"
+msgstr "Mutató elfogásának beállításai"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "Mutató elengedése"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "A 0. gomb kiválasztása azonnal elfogja a mutatót"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Size of Capture Area"
+msgstr "Az elfogási terület mérete"
+
+#: ../data/pointer-capture-applet.ui.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "_Szélesség:"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "képpont"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Dwell Click Type"
+msgstr "Elidőzési kattintás típusa"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "Ikonok és szöveg megjelenítése"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "Csak ikonok megjelenítése"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "Csak szöveg megjelenítése"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -56,7 +177,8 @@ msgid "Button style"
 msgstr "Gombstílus"
 
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgid ""
+"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
 msgstr ""
 "Gombstílus a kattintás típusa ablakban („0” = Szöveg, „1” = Ikon, „2” = "
 "Mindkettő)"
@@ -65,13 +187,15 @@ msgstr ""
 msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
-msgstr "A dupla kattintás iránya („0” = balra, „1” = jobbra, „2” = fel, „3” = le)"
+msgstr ""
+"A dupla kattintás iránya („0” = balra, „1” = jobbra, „2” = fel, „3” = le)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
-msgstr "A húzási kattintás iránya („0” = balra, „1” = jobbra, „2” = fel, „3” = le)"
+msgstr ""
+"A húzási kattintás iránya („0” = balra, „1” = jobbra, „2” = fel, „3” = le)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid ""
@@ -105,15 +229,11 @@ msgstr "Elidőzési kattintás módja („0” = gesztus, „1” = ablak)"
 msgid "Dwell click time"
 msgstr "Elidőzési kattintás ideje"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "Elidőzési kattintás engedélyezése"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Másodlagos kattintás engedélyezése"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "Szimulált másodlagos kattintás engedélyezése"
 
@@ -141,7 +261,7 @@ msgstr "Mozgási küszöb"
 msgid "Secondary click time"
 msgstr "Másodlagos kattintás ideje"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "A Kattintástípus ablak megjelenítése"
 
@@ -219,13 +339,19 @@ msgid ""
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Alt key must be "
 "pressed while the mouse button is pressed."
-msgstr "Az Alt billentyű megnyomandó-e az elfogási területen tartózkodó mutató elfogásához. Ha ez igazra van állítva és a „capture_button” kulcsban be van állítva egy egérgomb, akkor az Alt billentyűt az egérgombbal együtt kell megnyomni."
+msgstr ""
+"Az Alt billentyű megnyomandó-e az elfogási területen tartózkodó mutató "
+"elfogásához. Ha ez igazra van állítva és a „capture_button” kulcsban be van "
+"állítva egy egérgomb, akkor az Alt billentyűt az egérgombbal együtt kell "
+"megnyomni."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid ""
 "Whether the Alt key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
-msgstr "Az Alt billentyű megnyomandó-e az elfogási területen tartózkodó mutató elengedéséhez a „release_button” kulcsban megadott egérgombbal együtt."
+msgstr ""
+"Az Alt billentyű megnyomandó-e az elfogási területen tartózkodó mutató "
+"elengedéséhez a „release_button” kulcsban megadott egérgombbal együtt."
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
 msgid ""
@@ -233,13 +359,19 @@ msgid ""
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Ctrl key must be "
 "pressed while the mouse button is pressed."
-msgstr "A Ctrl billentyű megnyomandó-e az elfogási területen tartózkodó mutató elfogásához. Ha ez igazra van állítva és a „capture_button” kulcsban be van állítva egy egérgomb, akkor a Ctrl billentyűt az egérgombbal együtt kell megnyomni."
+msgstr ""
+"A Ctrl billentyű megnyomandó-e az elfogási területen tartózkodó mutató "
+"elfogásához. Ha ez igazra van állítva és a „capture_button” kulcsban be van "
+"állítva egy egérgomb, akkor a Ctrl billentyűt az egérgombbal együtt kell "
+"megnyomni."
 
 #: ../data/pointer-capture-applet.schemas.in.h:15
 msgid ""
 "Whether the Ctrl key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
-msgstr "A Ctrl billentyű megnyomandó-e az elfogási területen tartózkodó mutató elengedéséhez a „release_button” kulcsban megadott egérgombbal együtt."
+msgstr ""
+"A Ctrl billentyű megnyomandó-e az elfogási területen tartózkodó mutató "
+"elengedéséhez a „release_button” kulcsban megadott egérgombbal együtt."
 
 #: ../data/pointer-capture-applet.schemas.in.h:16
 msgid ""
@@ -247,25 +379,29 @@ msgid ""
 "it's over the capture area. If this option is set as true, and a mouse "
 "button is set in the \"capture_button\" key, then the Shift key must be "
 "pressed while the mouse button is pressed."
-msgstr "A Shift billentyű megnyomandó-e az elfogási területen tartózkodó mutató elfogásához. Ha ez igazra van állítva és a „capture_button” kulcsban be van állítva egy egérgomb, akkor a Shift billentyűt az egérgombbal együtt kell megnyomni."
+msgstr ""
+"A Shift billentyű megnyomandó-e az elfogási területen tartózkodó mutató "
+"elfogásához. Ha ez igazra van állítva és a „capture_button” kulcsban be van "
+"állítva egy egérgomb, akkor a Shift billentyűt az egérgombbal együtt kell "
+"megnyomni."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
 msgid ""
 "Whether the Shift key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
-"A Shift billentyű megnyomandó-e az elfogási területen tartózkodó mutató elengedéséhez "
-"a „release_button” kulcsban megadott egérgombbal együtt."
+"A Shift billentyű megnyomandó-e az elfogási területen tartózkodó mutató "
+"elengedéséhez a „release_button” kulcsban megadott egérgombbal együtt."
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
 msgid "Width of the capture area in pixels."
 msgstr "Az elfogási terület szélessége képpontban."
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Az akadálymentesítés támogatása nincs engedélyezve"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -278,39 +414,39 @@ msgstr ""
 "Az akadálymentesítés engedélyezéséhez a munkamenetben és a munkamenet "
 "újraindításához nyomja meg a „Bekapcsolás és kijelentkezés” gombot."
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "Várakozás ideje elidőzési kattintás előtt"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "Várakozás ideje szimulált másodlagos kattintás előtt"
 
-#: ../src/mt-main.c:832
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "Használandó elidőzési mód"
 
-#: ../src/mt-main.c:836
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "Ablak x pozíciója"
 
-#: ../src/mt-main.c:838
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "Ablak y pozíciója"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Kis mutatómozgások figyelmen kívül hagyása"
 
-#: ../src/mt-main.c:842
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "Az eltelt idő megjelenítése a kurzor felett"
 
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "A Mousetweaks leállítása"
 
-#: ../src/mt-main.c:853
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "– GNOME Mousetweaks démon"
 
@@ -342,4 +478,3 @@ msgstr "Az egérmutató ideiglenes zárolása"
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Az Egér beállításai ablak indítása meghiúsult"
-

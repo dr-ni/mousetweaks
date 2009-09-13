@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-15 14:26+0100\n"
-"PO-Revision-Date: 2009-02-14 23:48+0100\n"
+"POT-Creation-Date: 2009-09-13 14:59+0200\n"
+"PO-Revision-Date: 2009-09-13 14:07+0200\n"
 "Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -18,6 +18,127 @@ msgstr ""
 "X-Poedit-Language: Danish\n"
 "X-Poedit-Country: DENMARK\n"
 "X-Poedit-SourceCharset: utf-8\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Panelprogram til at vælge forskellige typer hvileklik.\n"
+"Dette er en del af Mousetweaks"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "Kliktypevindue"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+msgid "Double Click"
+msgstr "Dobbeltklik"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+msgid "Drag Click"
+msgstr "Trækkeklik"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "Aktivér hvileklik"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "Højreklik"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+msgid "Single Click"
+msgstr "Enkeltklik"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Område hvori musemarkøren fastfryses til panelet.\n"
+"Dette er en del af Mousetweaks"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Capture Pointer"
+msgstr "Indfang markør"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "Modifikation:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "Muse_knap:"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "Musek_nap:"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "Pointer Capture Preferences"
+msgstr "Indstillinger for markørindfanging"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "Frigiv markør"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Vælges knap 0, vil markøren omgående indfanges"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Size of Capture Area"
+msgstr "Størrelse af indfangningsområde"
+
+#: ../data/pointer-capture-applet.ui.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "_Bredde:"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "pixler"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Dwell Click Type"
+msgstr "Hvileklik-type"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "Vis ikoner og tekst"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "Vis kun ikoner"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "Vis kun tekst"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -110,15 +231,11 @@ msgstr "Hvileklik-tilstand (\"0\" = Gestustilstand, \"1\" = Vinduestilstand)"
 msgid "Dwell click time"
 msgstr "Hvileklik-tid"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "Aktivér hvileklik"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Aktivér sekundært klik"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "Aktivér simuleret sekundært klik"
 
@@ -146,7 +263,7 @@ msgstr "Bevægelsestærskel"
 msgid "Secondary click time"
 msgstr "Tid for sekundært klik"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "Vis kliktype-vindue"
 
@@ -284,12 +401,12 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Bredde af indfangningsområdet i pixels."
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Understøttelse af tilgængelighedsteknologier er ikke aktiveret"
 
 # (knap-etiket er konsistent)
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -301,39 +418,39 @@ msgstr ""
 "Tryk \"Aktivér og log ud\" for at aktivere understøttelse af "
 "tilgængelighedsteknologier, og genstart sessionen."
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "Ventetid før hvileklik"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "Ventetid før et simuleret sekundært klik"
 
-#: ../src/mt-main.c:832
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "Anvendt hviletilstand"
 
-#: ../src/mt-main.c:836
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "Vinduesposition x"
 
-#: ../src/mt-main.c:838
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "Vinduesposition y"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Ignorér små markørbevægelser"
 
-#: ../src/mt-main.c:842
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "Vis forløbet tid ved markør"
 
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "Afslut mousetweaks"
 
-#: ../src/mt-main.c:853
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME mousetweaks-dæmon"
 
@@ -366,97 +483,11 @@ msgstr "Lås musemarkøren midlertidigt"
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Kunne ikke starte museindstillinger"
 
-#~ msgid ""
-#~ "Applet to select different dwell-click types.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "Panelprogram til at vælge forskellige typer hvileklik.\n"
-#~ "Dette er en del af Mousetweaks"
-
-#~ msgid "Click Type Window"
-#~ msgstr "Kliktypevindue"
-
-#~ msgid "Double Click"
-#~ msgstr "Dobbeltklik"
-
-#~ msgid "Drag Click"
-#~ msgstr "Trækkeklik"
-
 #~ msgid "On"
 #~ msgstr "På"
 
-#~ msgid "Right Click"
-#~ msgstr "Højreklik"
-
-#~ msgid "Single Click"
-#~ msgstr "Enkeltklik"
-
-#~ msgid "<b>Capture Pointer</b>"
-#~ msgstr "<b>Indfang markør</b>"
-
-#~ msgid "<b>Release Pointer</b>"
-#~ msgstr "<b>Frigiv markør</b>"
-
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>Størrelse af indfangningsområde</b>"
-
-#~ msgid "A_lt"
-#~ msgstr "A_lt"
-
-#~ msgid ""
-#~ "Area to freeze the mouse pointer on the panel.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "Område hvori musemarkøren fastfryses til panelet.\n"
-#~ "Dette er en del af Mousetweaks"
-
-#~ msgid "C_trl"
-#~ msgstr "C_trl"
-
-#~ msgid "Ct_rl"
-#~ msgstr "Ct_rl"
-
-#~ msgid "Modifier:"
-#~ msgstr "Modifikation:"
-
-#~ msgid "Mouse _button:"
-#~ msgstr "Muse_knap:"
-
-#~ msgid "Mouse b_utton:"
-#~ msgstr "Musek_nap:"
-
-#~ msgid "Pointer Capture Preferences"
-#~ msgstr "Indstillinger for markørindfanging"
-
-#~ msgid "S_hift"
-#~ msgstr "S_hift"
-
-#~ msgid "Selecting Button 0 will capture the pointer immediately"
-#~ msgstr "Vælges knap 0, vil markøren omgående indfanges"
-
-#~ msgid "Sh_ift"
-#~ msgstr "Sh_ift"
-
-#~ msgid "_Alt"
-#~ msgstr "_Alt"
-
-#~ msgid "_Width:"
-#~ msgstr "_Bredde:"
-
-#~ msgid "pixels"
-#~ msgstr "pixler"
-
-#~ msgid "Dwell Click Type"
-#~ msgstr "Hvileklik-type"
-
-#~ msgid "Show Icons and Text"
-#~ msgstr "Vis ikoner og tekst"
-
-#~ msgid "Show Icons only"
-#~ msgstr "Vis kun ikoner"
-
-#~ msgid "Show Text only"
-#~ msgstr "Vis kun tekst"
 
 #~ msgid "Capture modifier"
 #~ msgstr "Indfang modifikationstast"

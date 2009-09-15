@@ -1,3 +1,4 @@
+# translation of mousetweaks.master.ml.po to
 # Malayalam translation of mousetweaks.
 # Copyright (C) 2008 mousetweaks' COPYRIGHT HOLDER
 # This file is distributed under the same license as the mousetweaks package.
@@ -6,21 +7,143 @@
 # മണിലാല്‍ കെ.എം|Manilal K M <libregeek@gmail.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks trunk\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-02-22 20:57+0000\n"
-"PO-Revision-Date: 2008-09-27 02:47+0530\n"
-"Last-Translator: Hari Vishnu <harivishnu@gmail.com>\n"
-"Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ്  <smc-"
-"discuss@googlegroups.com>\n"
+"Project-Id-Version: mousetweaks.master.ml\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2009-06-01 08:54+0000\n"
+"PO-Revision-Date: 2009-09-15 12:57+0530\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.9.1\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: Malayalam\n"
 "X-Poedit-Country: INDIA\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"ഡ്വല്ല്  ഞെക്കു് രീതികള്‍ തെരഞ്ഞെടുക്കുന്നതിനുള്ള ലഘുപ്രയോഗം.\n"
+"മൌസ്‌ട്വീക്സിന്റെ ഭാഗം"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "ഞെക്കുന്ന രീതിയുടെ ജാലകം"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+msgid "Double Click"
+msgstr "ഇരട്ട ഞെക്കു്"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+msgid "Drag Click"
+msgstr "വലിച്ചിടുന്ന ഞെക്കു്"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "ഡ്വല്‍ ഞെക്കു് പ്രാവര്‍ത്തികമാക്കുക"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "വലതു് ഞെക്കു്"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+msgid "Single Click"
+msgstr "ഒറ്റ ഞെക്കു് "
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"പാളിയില്‍ മൌസ്‌ട്വീക്സിനെ മരവിപ്പിക്കാനുള്ള സ്ഥലം.\n"
+"മൌസ്‌ട്വീക്സിന്റെ ഭാഗം"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.ui.h:5
+#| msgid "<b>Capture Pointer</b>"
+msgid "Capture Pointer"
+msgstr "സൂചിക പിടിക്കുക"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "പരിഷ്കര്‍ത്താവ്:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "മൌസ് _ബട്ടണ്‍: "
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "മൌസ് ബ_ട്ടണ്‍: "
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "Pointer Capture Preferences"
+msgstr "സൂചികയെ പിടിച്ചെടുക്കുന്നതിനുള്ള മുന്‍ഗണനകള്‍"
+
+#: ../data/pointer-capture-applet.ui.h:11
+#| msgid "<b>Release Pointer</b>"
+msgid "Release Pointer"
+msgstr "സൂചിക വിടുക"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "ബട്ടണ്‍ 0 തെരഞ്ഞെടുത്താല്‍ സൂചിക  ഉടനടി പിടിച്ചെടുക്കപ്പെടും "
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.ui.h:15
+#| msgid "Size of capture area"
+msgid "Size of Capture Area"
+msgstr "പിടിച്ചെടുക്കേണ്ട ഭാഗത്തിന്റെ വലിപ്പം"
+
+#: ../data/pointer-capture-applet.ui.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "_വീതി:"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "പിക്സലുകള്‍"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Dwell Click Type"
+msgstr "ഡ്വല്ല്  ഞെക്കിന്റെ തരം"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "ചിഹ്നവും എഴുത്തും കാണിക്കുക"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "ചിഹ്നം  മാത്രം കാണിക്കുക"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "എഴുത്തു് മാത്രം കാണിക്കുക"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -60,8 +183,7 @@ msgid "Button style"
 msgstr "ബട്ടണിന്റെ ശൈലി "
 
 #: ../data/mousetweaks.schemas.in.h:3
-msgid ""
-"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
 msgstr ""
 "ഞെക്കിന്റെ തരത്തിനുള്ള ജാലകത്തിലെ ബട്ടണിന്റെ ശൈലി (\"0\"=എഴുത്തു്, \"1\"=ഐക്കണ്‍, \"2"
 "\"=രണ്ടും)"
@@ -70,8 +192,7 @@ msgstr ""
 msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
-msgstr ""
-"ഒരു ഇരട്ട ഞെക്കു് നടത്തേണ്ട ദിശ (\"0\"=ഇടതു്, \"1\"=വലത്,\" 2\"=മുകളില്‍, \"3\"=താഴെ) "
+msgstr "ഒരു ഇരട്ട ഞെക്കു് നടത്തേണ്ട ദിശ (\"0\"=ഇടതു്, \"1\"=വലത്,\" 2\"=മുകളില്‍, \"3\"=താഴെ) "
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
@@ -85,15 +206,13 @@ msgstr ""
 msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
-msgstr ""
-"രണ്ടാമതു ഞെക്കു് നടത്തേണ്ട ദിശ (\"0\"=ഇടതു്, \"1\"=വലത്, \"2\"=മുകളില്‍, \"3\"=താഴെ) "
+msgstr "രണ്ടാമതു ഞെക്കു് നടത്തേണ്ട ദിശ (\"0\"=ഇടതു്, \"1\"=വലത്, \"2\"=മുകളില്‍, \"3\"=താഴെ) "
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
-msgstr ""
-"ഒരു ഒറ്റ ഞെക്കു് നടത്തേണ്ട ദിശ (\"0\"=ഇടതു്, \"1\"=വലത്, \"2\"=മുകളില്‍, \"3\"=താഴെ) "
+msgstr "ഒരു ഒറ്റ ഞെക്കു് നടത്തേണ്ട ദിശ (\"0\"=ഇടതു്, \"1\"=വലത്, \"2\"=മുകളില്‍, \"3\"=താഴെ) "
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
@@ -111,15 +230,11 @@ msgstr "ഡ്വല്‍  ഞെക്കുന്ന രീതി(\"0\"=ആ�
 msgid "Dwell click time"
 msgstr "ഡ്വല്‍  ഞെക്കുന്ന സമയം"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "ഡ്വല്‍ ഞെക്കു് പ്രാവര്‍ത്തികമാക്കുക"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "രണ്ടാമത്  ഞെക്കു് പ്രാവര്‍ത്തികമാക്കുക"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "രണ്ടാമതു ഞെക്കു് അനുകരിക്കുന്നത് പ്രാവര്‍ത്തികമാക്കുക"
 
@@ -147,7 +262,7 @@ msgstr "നീക്കത്തിന്റെ തുടക്കം"
 msgid "Secondary click time"
 msgstr "രണ്ടാമതു ഞെക്കുന്ന സമയം"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "ഞെക്കുന്ന രീതിയുടെ ജാലകം കാണിക്കുക"
 
@@ -165,37 +280,35 @@ msgstr "രണ്ടാമതു ഞെക്കു് ആരംഭിക്ക�
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
 msgid "Capture pointer only if Alt is pressed"
-msgstr ""
+msgstr "Alt അമര്‍ത്തിയാല്‍ മാത്രം സൂചിക പിടിച്ചടക്കുക"
 
 #: ../data/pointer-capture-applet.schemas.in.h:2
 msgid "Capture pointer only if Ctrl is pressed"
-msgstr ""
+msgstr "Ctrl അമര്‍ത്തിയാല്‍ മാത്രം സൂചിക പിടിച്ചടക്കുക"
 
 #: ../data/pointer-capture-applet.schemas.in.h:3
 msgid "Capture pointer only if Shift is pressed"
-msgstr ""
+msgstr "Shift അമര്‍ത്തിയാല്‍ മാത്രം സൂചിക പിടിച്ചടക്കുക"
 
 #: ../data/pointer-capture-applet.schemas.in.h:4
-#, fuzzy
 msgid "Mouse button used to capture the pointer"
-msgstr "മൌസിന്റെ സൂചികയെ വിടുവിക്കുന്നതിനുള്ള ബട്ടണ്‍"
+msgstr "സൂചിക പിടിച്ചടക്കുന്നതിനുള്ള മൌസ് ബട്ടണ്‍"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
-#, fuzzy
 msgid "Mouse button used to release the pointer"
-msgstr "മൌസിന്റെ സൂചികയെ വിടുവിക്കുന്നതിനുള്ള ബട്ടണ്‍"
+msgstr "സൂചികയെ വിടുന്നതിനുള്ള മൌസ് ബട്ടണ്‍"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
 msgid "Release pointer only if Alt is pressed"
-msgstr ""
+msgstr "Alt അമര്‍ത്തിയാല്‍ മാത്രം സൂചിക വിടുക"
 
 #: ../data/pointer-capture-applet.schemas.in.h:7
 msgid "Release pointer only if Ctrl is pressed"
-msgstr ""
+msgstr "Ctrl അമര്‍ത്തിയാല്‍ മാത്രം സൂചിക വിടുക"
 
 #: ../data/pointer-capture-applet.schemas.in.h:8
 msgid "Release pointer only if Shift is pressed"
-msgstr ""
+msgstr "Shift അമര്‍ത്തിയാല്‍ മാത്രം സൂചിക വിടുക"
 
 #: ../data/pointer-capture-applet.schemas.in.h:9
 msgid "Size of capture area"
@@ -207,6 +320,9 @@ msgid ""
 "area. Valid values are \"1\" for left button, \"2\" for middle button, and "
 "\"3\" for right button."
 msgstr ""
+"പിടിച്ചെടുക്കേണ്ട സ്ഥലത്തു് നിന്നും സൂചിക വിടുന്നതിനായി ഈ മൌസ് ബട്ടണ്‍ "
+"അമര്‍ത്തുക. സാധ്യമായ മൂല്ല്യങ്ങള്‍: \"1\" - ഇടതു് ബട്ടണ്‍, \"2\" - നടു ബട്ടണ്‍, "
+"\"3\" - വലതു് ബട്ടണ്‍."
 
 #: ../data/pointer-capture-applet.schemas.in.h:11
 msgid ""
@@ -215,6 +331,9 @@ msgid ""
 "needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
 "button."
 msgstr ""
+"പിടിച്ചെടുക്കേണ്ട സ്ഥലത്തു് സൂചികയുള്ളപ്പോള്‍ അതു് പിടിച്ചെടുക്കുന്നതിനായി ഈ "
+"മൌസ് ബട്ടണ്‍ അമര്‍ത്തുക. സാധ്യമായ മൂല്ല്യങ്ങള്‍: \"0\" - ബട്ടണ്‍ ആവശ്യമല്ലെങ്കില്‍, "
+"\"1\" - ഇടതു് ബട്ടണ്‍, \"2\" - നടു ബട്ടണ്‍, \"3\" - വലതു് ബട്ടണ്‍."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid ""
@@ -223,12 +342,18 @@ msgid ""
 "button is set in the \"capture_button\" key, then the Alt key must be "
 "pressed while the mouse button is pressed."
 msgstr ""
+"പിടിച്ചടക്കുന്ന സ്ഥലത്തു് സൂചികയുള്ളപ്പോള്‍ അതു് പിടിച്ചടക്കുന്നതിനായി Alt "
+"കീ അമര്‍ത്തണമോയെന്നു്. ഇതു് true ആയി സജ്ജമെങ്കില്‍, \"capture_button\" "
+"കീയില്‍ ഒരു മൌസ് ബട്ടണ്‍ സജ്ജമാകുന്നു, പിന്നീടു് മൌസ് ബട്ടണ്‍ "
+"അമര്‍ത്തുമ്പോള്‍ Alt കീ അമര്‍ത്തേണ്ടതാണു്."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid ""
 "Whether the Alt key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
+"പിടിച്ചടക്കുന്ന സ്ഥലത്തു് നിന്നും സൂചിക വിടുവിക്കുന്നതിനായി \"release_button\"-ല്‍ "
+"സജ്ജമാക്കിയ മൌസ് ബട്ടണിനൊപ്പം Alt കീ അമര്‍ത്തണമോയെന്നു്."
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
 msgid ""
@@ -237,12 +362,18 @@ msgid ""
 "button is set in the \"capture_button\" key, then the Ctrl key must be "
 "pressed while the mouse button is pressed."
 msgstr ""
+"പിടിച്ചടക്കുന്ന സ്ഥലത്തു് സൂചികയുള്ളപ്പോള്‍ അതു് പിടിച്ചടക്കുന്നതിനായി Ctrl "
+"കീ അമര്‍ത്തണമോയെന്നു്. ഇതു് true ആയി സജ്ജമെങ്കില്‍, \"capture_button\" "
+"കീയില്‍ ഒരു മൌസ് ബട്ടണ്‍ സജ്ജമാകുന്നു, പിന്നീടു് മൌസ് ബട്ടണ്‍ "
+"അമര്‍ത്തുമ്പോള്‍ Ctrl കീ അമര്‍ത്തേണ്ടതാണു്."
 
 #: ../data/pointer-capture-applet.schemas.in.h:15
 msgid ""
 "Whether the Ctrl key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
+"പിടിച്ചടക്കുന്ന സ്ഥലത്തു് നിന്നും സൂചിക വിടുവിക്കുന്നതിനായി \"release_button\"-ല്‍ "
+"സജ്ജമാക്കിയ മൌസ് ബട്ടണിനൊപ്പം Ctrl കീ അമര്‍ത്തണമോയെന്നു്."
 
 #: ../data/pointer-capture-applet.schemas.in.h:16
 msgid ""
@@ -251,24 +382,28 @@ msgid ""
 "button is set in the \"capture_button\" key, then the Shift key must be "
 "pressed while the mouse button is pressed."
 msgstr ""
+"പിടിച്ചടക്കുന്ന സ്ഥലത്തു് സൂചികയുള്ളപ്പോള്‍ അതു് പിടിച്ചടക്കുന്നതിനായി Shift "
+"കീ അമര്‍ത്തണമോയെന്നു്. ഇതു് true ആയി സജ്ജമെങ്കില്‍, \"capture_button\" "
+"കീയില്‍ ഒരു മൌസ് ബട്ടണ്‍ സജ്ജമാകുന്നു, പിന്നീടു് മൌസ് ബട്ടണ്‍ "
+"അമര്‍ത്തുമ്പോള്‍ Shift കീ അമര്‍ത്തേണ്ടതാണു്."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
 msgid ""
 "Whether the Shift key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
+"പിടിച്ചടക്കുന്ന സ്ഥലത്തു് നിന്നും സൂചിക വിടുവിക്കുന്നതിനായി \"release_button\"-ല്‍ "
+"സജ്ജമാക്കിയ മൌസ് ബട്ടണിനൊപ്പം Shift കീ അമര്‍ത്തണമോയെന്നു്."
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
-#, fuzzy
 msgid "Width of the capture area in pixels."
-msgstr "പിടിച്ചെടുക്കുന്ന സ്ഥലത്തിന്റെ വീതി പിക്സലില്‍"
+msgstr "പിടിച്ചെടുക്കുന്ന സ്ഥലത്തിന്റെ വീതി പിക്സലില്‍."
 
-#: ../src/mt-main.c:720
-#, fuzzy
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
-msgstr "സഹായക സാങ്കേതികവിദ്യകള്‍ പ്രാവര്‍ത്തികമാക്കിയിട്ടില്ല"
+msgstr "സഹായക സാങ്കേതികവിദ്യയ്ക്കുള്ള പിന്തുണ പ്രവര്‍ത്തന സജ്ജമല്ല"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -281,39 +416,39 @@ msgstr ""
 "സഹായക സാങ്കേതികവിദ്യയ്ക്കു് പിന്തുണ പ്രാവര്‍ത്തികമാക്കിയിട്ട് പ്രവര്‍ത്തനവേള വീണ്ടും തുടങ്ങാന്‍, "
 "\"പ്രാവര്‍ത്തികമാക്കിയിട്ട് പുറത്തിറങ്ങുക\" എന്നതു് അമര്‍ത്തുക."
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "ഡ്വെല്‍ ക്ലിക്കിനു മുമ്പ് കാത്തിരിക്കേണ്ട സമയം"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "രണ്ടാമതു ഞെക്കു് അനുകരിക്കുന്നതിനു മുമ്പ് കാത്തിരിക്കേണ്ട സമയം"
 
-#: ../src/mt-main.c:832
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "ഉപയോഗിക്കേണ്ട ഡ്വെല്‍ ദശ"
 
-#: ../src/mt-main.c:836
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "ജാലകത്തിന്റെ എക്സ്  നില "
 
-#: ../src/mt-main.c:838
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "ജാലകത്തിന്റെ വൈ  നില "
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "ചെറിയ പൊയിന്റര്‍ അനക്കങ്ങള്‍ അവഗണിക്കുക"
 
-#: ../src/mt-main.c:842
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "കഴിഞ്ഞിരിക്കുന്ന സമയം കര്‍സര്‍ ഒവര്‍ലേ ആയി കാണിക്കുക"
 
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "മൌസ്‌ട്വീക്കുകള്‍ നിര്‍ത്തിവയ്ക്കുക"
 
-#: ../src/mt-main.c:853
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "ഗ്നോം മൌസ്‌ട്വീക്സ് ഡീമണ്‍"
 
@@ -346,151 +481,3 @@ msgstr "മൌസ് സൂചികയെ താത്കാലികമായ�
 msgid "Failed to Launch Mouse Preferences"
 msgstr "മൌസ് മുന്‍ഗണനകള്‍ തുടങ്ങാന്‍ കഴിഞ്ഞില്ല"
 
-#~ msgid ""
-#~ "Applet to select different dwell-click types.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "ഡ്വല്ല്  ഞെക്കു് രീതികള്‍ തെരഞ്ഞെടുക്കുന്നതിനുള്ള ലഘുപ്രയോഗം.\n"
-#~ "മൌസ്‌ട്വീക്സിന്റെ ഭാഗം"
-
-#~ msgid "Click Type Window"
-#~ msgstr "ഞെക്കുന്ന രീതിയുടെ ജാലകം"
-
-#~ msgid "Double Click"
-#~ msgstr "ഇരട്ട ഞെക്കു്"
-
-#~ msgid "Drag Click"
-#~ msgstr "വലിച്ചിടുന്ന ഞെക്കു്"
-
-#~ msgid "On"
-#~ msgstr "മുകളില്‍"
-
-#~ msgid "Right Click"
-#~ msgstr "വലതു് ഞെക്കു്"
-
-#~ msgid "Single Click"
-#~ msgstr "ഒറ്റ ഞെക്കു് "
-
-#~ msgid "<b>Capture Pointer</b>"
-#~ msgstr "<b>സൂചിക പിടിക്കുക</b>"
-
-#~ msgid "<b>Release Pointer</b>"
-#~ msgstr "<b>സൂചിക വിടുക </b>"
-
-#~ msgid "<b>Size of Capture Area</b>"
-#~ msgstr "<b>പിടിക്കേണ്ട സ്ഥലത്തിന്റെ വിസ്ത്രിതി </b>"
-
-#~ msgid "A_lt"
-#~ msgstr "A_lt"
-
-#~ msgid ""
-#~ "Area to freeze the mouse pointer on the panel.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "പാളിയില്‍ മൌസ്‌ട്വീക്സിനെ മരവിപ്പിക്കാനുള്ള സ്ഥലം.\n"
-#~ "മൌസ്‌ട്വീക്സിന്റെ ഭാഗം"
-
-#~ msgid "C_trl"
-#~ msgstr "C_trl"
-
-#~ msgid "Ct_rl"
-#~ msgstr "Ct_rl"
-
-#~ msgid "Modifier:"
-#~ msgstr "പരിഷ്കര്‍ത്താവ്:"
-
-#~ msgid "Mouse _button:"
-#~ msgstr "മൌസ് _ബട്ടണ്‍: "
-
-#~ msgid "Mouse b_utton:"
-#~ msgstr "മൌസ് ബ_ട്ടണ്‍: "
-
-#~ msgid "Pointer Capture Preferences"
-#~ msgstr "സൂചികയെ പിടിച്ചെടുക്കുന്നതിനുള്ള മുന്‍ഗണനകള്‍"
-
-#~ msgid "S_hift"
-#~ msgstr "S_hift"
-
-#~ msgid "Selecting Button 0 will capture the pointer immediately"
-#~ msgstr "ബട്ടണ്‍ 0 തെരഞ്ഞെടുത്താല്‍ സൂചിക  ഉടനടി പിടിച്ചെടുക്കപ്പെടും "
-
-#~ msgid "Sh_ift"
-#~ msgstr "Sh_ift"
-
-#~ msgid "_Alt"
-#~ msgstr "_Alt"
-
-#~ msgid "_Width:"
-#~ msgstr "_വീതി:"
-
-#~ msgid "pixels"
-#~ msgstr "പിക്സലുകള്‍"
-
-#~ msgid "Dwell Click Type"
-#~ msgstr "ഡ്വല്ല്  ഞെക്കിന്റെ തരം"
-
-#~ msgid "Show Icons and Text"
-#~ msgstr "ചിഹ്നവും എഴുത്തും കാണിക്കുക"
-
-#~ msgid "Show Icons only"
-#~ msgstr "ചിഹ്നം  മാത്രം കാണിക്കുക"
-
-#~ msgid "Show Text only"
-#~ msgstr "എഴുത്തു് മാത്രം കാണിക്കുക"
-
-#~ msgid "Capture modifier"
-#~ msgstr "കാപ്ചര്‍ (പിടിച്ചുവെക്കല്‍) മോഡിഫയര്‍"
-
-#~ msgid "Capture modifier key (Alt)"
-#~ msgstr "കാപ്ചര്‍ (പിടിച്ചുവെക്കല്‍) മോഡിഫയര്‍ കീ (Alt)"
-
-#~ msgid "Capture modifier key (Ctrl)"
-#~ msgstr "കാപ്ചര്‍ (പിടിച്ചുവെക്കല്‍) മോഡിഫയര്‍ കീ (Ctrl)"
-
-#~ msgid "Capture modifier key (Shift)"
-#~ msgstr "കാപ്ചര്‍ (പിടിച്ചുവെക്കല്‍) മോഡിഫയര്‍ കീ (Shift)"
-
-#~ msgid "Capture mouse button"
-#~ msgstr "മൌസ് ബട്ടണ്‍ പിടിച്ചെടുക്കുക"
-
-#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-#~ msgstr "മൌസിന്റെ സൂചികയെ പിടിച്ചെടുക്കുന്നതിനുള്ള ബട്ടണ്‍  (\"0\"=ഉടനടി പിടിച്ചെടുക്കുക)"
-
-#~ msgid "Release modifier"
-#~ msgstr "റിലീസ് (വിടാനുള്ള) മോഡിഫയര്‍ "
-
-#~ msgid "Release modifier key (Alt)"
-#~ msgstr "റിലീസ് (വിടാനുള്ള) മോഡിഫയര്‍ കീ (Alt)"
-
-#~ msgid "Release modifier key (Ctrl)"
-#~ msgstr "റിലീസ് (വിടാനുള്ള) മോഡിഫയര്‍ കീ (Ctrl)"
-
-#~ msgid "Release modifier key (Shift)"
-#~ msgstr "റിലീസ് (വിടാനുള്ള) മോഡിഫയര്‍ കീ (Shift)"
-
-#~ msgid "Release mouse button"
-#~ msgstr "മൌസ് ബട്ടണ്‍ വിടുക"
-
-#~ msgid "Pointer Capture Applet"
-#~ msgstr "സൂചികയെ പിടിച്ചെടുക്കുന്ന ലഘുപ്രയോഗം"
-
-#~ msgid "Off"
-#~ msgstr "ഓഫ്(നിര്‍ത്തിയിരിക്കുന്നു)"
-
-#~ msgid "Dwell Click Applet"
-#~ msgstr "ഡ്വല്ല്  ഞെക്ക് ലഘുപ്രയോഗം"
-
-#~ msgid "Couldn't display help"
-#~ msgstr "സഹായം കാണിക്കുവാന്‍ സാധിക്കുന്നില്ല "
-
-#~ msgid "B_utton:"
-#~ msgstr "‌‌_ബട്ടണ്‍:"
-
-#~ msgid "_Button:"
-#~ msgstr "‌‌_ബട്ടണ്:"
-
-#~ msgid "Use dwell mode"
-#~ msgstr "ഡ്വല്ല് രീതി ഉപയോഗിക്കുക"
-
-#~ msgid "Mousetweaks requires Assistive Technologies."
-#~ msgstr "മൌസ്ട്‌ട്വീക്കിന്  സഹായക സാങ്കേതികവിദ്യകള്‍ ആവശ്യമാണ് "

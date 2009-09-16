@@ -3,19 +3,146 @@
 # This file is distributed under the same license as the mousetweaks package.
 # Francesco Fumanti <francesco.fumanti@gmx.net>, 2007.
 # Luca Ferretti <elle.uca@libero.it>, 2008
-# Milo Casagrande <milo@ubuntu.com>, 2008-2009
 #
+# Milo Casagrande <milo@ubuntu.com>, 2008-2009, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-28 09:50-0500\n"
-"PO-Revision-Date: 2009-02-21 12:22+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2009-09-08 09:43+0000\n"
+"PO-Revision-Date: 2009-09-08 22:26+0200\n"
 "Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Applet per selezionare diversi tipi di clic automatici.\n"
+"Parte di Mousetweaks"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "Finestra per il tipo di clic"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+msgid "Double Click"
+msgstr "Doppio-clic"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+msgid "Drag Click"
+msgstr "Clic di trascinamento"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "Abilita il clic automatico"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "Clic destro"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+msgid "Single Click"
+msgstr "Clic singolo"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Area per bloccare il puntatore del mouse sul pannello.\n"
+"Parte di Mousetweaks."
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "C_trl"
+
+# (ndt) è un titolo di sezione
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Capture Pointer"
+msgstr "Cattura del puntatore"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "Modificatore:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "P_ulsante del mouse:"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "_Pulsante del mouse:"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "Pointer Capture Preferences"
+msgstr "Preferenze di cattura del puntatore"
+
+# (ndt) è un titolo di sezione
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "Rilascio del puntatore"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "M_aiusc"
+
+# (ndt) è un suggerimento in una spin box, impostando a zero il valore viene catturato il puntatore
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr ""
+"Selezionando il pulsante 0, il puntatore verrà catturato immediatamente"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "_Maiusc"
+
+# (ndt) titolo di sezione
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Size of Capture Area"
+msgstr "Dimensione dell'area di cattura"
+
+#: ../data/pointer-capture-applet.ui.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "Larg_hezza:"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "pixel"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Dwell Click Type"
+msgstr "Tipo di clic automatico"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "Icone e testo"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "Solo icone"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "Solo testo"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -99,9 +226,8 @@ msgstr "Distanza in pixel prima che il movimento venga riconosciuto"
 
 #: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
-msgstr "Modalità clic automatico"
+msgstr "Modalità del clic automatico"
 
-# GNOME 2.24
 #: ../data/mousetweaks.schemas.in.h:10
 msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
 msgstr ""
@@ -112,33 +238,29 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Tempo del clic automatico"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "Abilita clic automatico"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
-msgstr "Abilita clic secondario"
+msgstr "Abilita il clic secondario"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
-msgstr "Abilita clic secondario simulato"
+msgstr "Abilita il clic secondario simulato"
 
 #: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
-msgstr "Gesto per doppio clic"
+msgstr "Gesto per il doppio-clic"
 
 #: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture drag click"
-msgstr "Gesto per clic di trascinamento"
+msgstr "Gesto per il clic di trascinamento"
 
 #: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
-msgstr "Gesto per clic secondario"
+msgstr "Gesto per il clic secondario"
 
 #: ../data/mousetweaks.schemas.in.h:18
 msgid "Gesture single click"
-msgstr "Gesto per clic singolo"
+msgstr "Gesto per il clic singolo"
 
 #: ../data/mousetweaks.schemas.in.h:19
 msgid "Movement threshold"
@@ -148,7 +270,7 @@ msgstr "Soglia di movimento"
 msgid "Secondary click time"
 msgstr "Tempo del clic secondario"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "Mostra la finestra per il tipo di clic"
 
@@ -289,12 +411,12 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Larghezza dell'area di cattura in pixel."
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Supporto alle tecnologie assistive non abilitato"
 
 # (ndt) la traduzione del pulsante è in fondo al file
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -307,39 +429,39 @@ msgstr ""
 "Per abilitare il supporto alle tecnologie assistive e riavviare la sessione, "
 "fare clic su «Abilita e termina»."
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "Tempo di attesa prima di un clic automatico"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo di attesa prima di un clic secondario"
 
-#: ../src/mt-main.c:832
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "Modalità clic automatico da usare"
 
-#: ../src/mt-main.c:836
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "Posizione orizzontale della finestra"
 
-#: ../src/mt-main.c:838
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "Posizione verticale della finestra"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Ignora movimenti piccoli del puntatore"
 
-#: ../src/mt-main.c:842
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "Mostra tempo trascorso come sovrapposizione al cursore"
 
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "Arresta mousetweaks"
 
-#: ../src/mt-main.c:853
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "- Demone mousetweaks GNOME"
 

@@ -7,15 +7,146 @@ msgstr ""
 "Project-Id-Version: as\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-03-01 22:44+0000\n"
-"PO-Revision-Date: 2009-03-16 10:23+0530\n"
-"Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
-"Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
+"POT-Creation-Date: 2009-06-01 08:54+0000\n"
+"PO-Revision-Date: 2009-09-19 12:00+0530\n"
+"Last-Translator: \n"
+"Language-Team: Assamese <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 0.3\n"
+"X-Generator: Lokalize 0.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"বিভিন্ন ধৰনৰ dwell ক্লিক নিৰ্বাচনৰ এপ্লেট ।\n"
+"Mousetweaks ৰ অংশ"
+
+#: ../data/dwell-click-applet.ui.h:3
+#| msgid "Show click type window"
+msgid "Click Type Window"
+msgstr "ক্লিকৰ ধৰনৰ সংযোগক্ষেত্ৰ"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#| msgid "Dwell Click"
+msgid "Double Click"
+msgstr "দুবাৰ ক্লিক"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#| msgid "Dwell Click"
+msgid "Drag Click"
+msgstr "ড্ৰেগ ক্লিক"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "dwell ক্লিক সক্ৰিয় কৰক"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "সোঁফালৰ ক্লিক"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#| msgid "Gesture single click"
+msgid "Single Click"
+msgstr "এটা ক্লিক"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"পেনেলত মাউছ পইন্টাৰ আটক কৰাৰ ক্ষেত্ৰ ।\n"
+"Mousetweaks ৰ অংশ"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.ui.h:5
+#| msgid "Capture area"
+msgid "Capture Pointer"
+msgstr "পইন্টাৰ আটক"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "পৰিবৰ্তক:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "মাউছৰ বুটাম: (_b)"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "মাউছৰ বুটাম: (_u)"
+
+#: ../data/pointer-capture-applet.ui.h:10
+#| msgid "Pointer Capture"
+msgid "Pointer Capture Preferences"
+msgstr "পইন্টাৰ আটকৰ ব্যৱস্থা সংক্ৰান্ত পছন্দ"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "পইন্টাৰ মুক্ত কৰক"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.ui.h:13
+#| msgid "Mouse button used to capture the pointer"
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "বুটাম ০ নিৰ্বাচন কৰিলে শীঘ্ৰেই পইন্টাৰ আটক কৰা হ'ব"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.ui.h:15
+#| msgid "Size of capture area"
+msgid "Size of Capture Area"
+msgstr "আটক কৰাৰ বাবে চিহ্নিত ক্ষেত্ৰৰ মাপ"
+
+#: ../data/pointer-capture-applet.ui.h:16
+#| msgid "_About"
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "প্ৰস্থ: (_W)"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "পিক্সেল"
+
+#: ../data/mousetweaks.ui.h:3
+#| msgid "Dwell Click"
+msgid "Dwell Click Type"
+msgstr "Dwell ক্লিকৰ ধৰন"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "আইকন আৰু টেক্সট প্ৰদৰ্শন কৰা হ'ব"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "অকল আইকন প্ৰদৰ্শন কৰা হ'ব"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "অকল টেক্সট প্ৰদৰ্শন কৰা হ'ব"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -64,36 +195,32 @@ msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"ডাবুল ক্লিক কৰাৰ দিশ (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"ডাবুল ক্লিক কৰাৰ দিশ (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
 msgstr ""
-"ড্ৰেগ ক্লিক কৰাৰ দিশ (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
+"ড্ৰেগ ক্লিক কৰাৰ দিশ (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"ডাবুল ক্লিক কৰাৰ দিশ (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"ডাবুল ক্লিক কৰাৰ দিশ (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"চিঙ্গল ক্লিক কৰাৰ দিশ (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"চিঙ্গল ক্লিক কৰাৰ দিশ (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
-msgstr "ড্ৰ্যাগ আৰম্ভ হোৱাৰ আগৰ অবধি মধ্যবৰ্তী দূৰত্ব।"
+msgstr "ড্ৰেগ আৰম্ভ হোৱাৰ আগৰ অবধি মধ্যবৰ্তী দূৰত্ব ।"
 
 #: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
@@ -105,23 +232,19 @@ msgstr "Dwell ক্লিক ধৰণ (\"0\" = Gesture mode, \"1\" = Window mo
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
-msgstr "Dwell ক্লিকেৰ সময়"
-
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "dwell ক্লিক সক্ৰিয় কৰক"
+msgstr "Dwell ক্লিকৰ সময়"
 
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "দ্বিতীয় ক্লিক সক্ৰিয় কৰক"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "দ্বিতীয় ক্লিক সক্ৰিয় কৰক"
 
 #: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
-msgstr "দুইবাৰ ক্লিক"
+msgstr "দুবাৰ ক্লিক"
 
 #: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture drag click"
@@ -143,9 +266,9 @@ msgstr "গতি"
 msgid "Secondary click time"
 msgstr "দ্বিতীয় ক্লিক সক্ৰিয় কৰক"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
-msgstr "উইন্ডো প্ৰদৰ্শন কৰা হ'ব"
+msgstr "সংযোগক্ষেত্ৰ প্ৰদৰ্শন কৰা হ'ব"
 
 #: ../data/mousetweaks.schemas.in.h:22
 msgid "Show elapsed time as cursor overlay."
@@ -281,61 +404,61 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "মাৰ্জিনৰ প্ৰস্থ পিক্সেলত"
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Assistive Technology Support নিষ্ক্ৰিয়"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
 "To enable support for assistive technologies and restart your session, press "
 "\"Enable and Log Out\"."
 msgstr ""
-"Mousetweaks ক assistive technologies ৰ সক্ৰিয় হোৱাৰ প্ৰয়োজন ।\n"
+"Mousetweaks ক assistive technologies ৰ সক্ৰিয় হোৱাৰ প্ৰয়োজন  ।\n"
 "\n"
 "assistive technologies ৰ সমৰ্থন সক্ৰিয় কৰিবলৈ আৰু অধইবেশন পুনৰাৰম্ভ কৰিবলৈ, "
-"\"Enable and Log Out\" টিপক ।"
+"\"Enable and Log Out\" টিপক  ।"
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "Dwell ক্লিক"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "দ্বিতীয় ক্লিক সক্ৰিয় কৰক"
 
-#: ../src/mt-main.c:832
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "ব্যৱহাৰৰ বাবে Dwell মোড"
 
-#: ../src/mt-main.c:836
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "Window x position"
 
-#: ../src/mt-main.c:838
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "Window y position"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "চিহ্নক"
 
-#: ../src/mt-main.c:842
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "ব্যস্ত হিসাবে সময় প্ৰদৰ্শন কৰা হ'ব"
 
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "mousetweaks বন্ধ কৰক"
 
-#: ../src/mt-main.c:853
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "- GNOME mousetweaks daemon"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
-msgstr "সহায়িকা প্ৰদৰ্শনেৰ ব্যৰ্থ"
+msgstr "সহায়িকা প্ৰদৰ্শনৰ ব্যৰ্থ"
 
 #: ../src/mt-common.c:66
 msgid "Enable and Log Out"
@@ -360,5 +483,5 @@ msgstr "পইন্টাৰ আটক কৰাৰ অঞ্চল"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
-msgstr "মাউস সম্পৰ্কিত পছন্দ"
+msgstr "মাউছ সম্পৰ্কিত পছন্দ"
 

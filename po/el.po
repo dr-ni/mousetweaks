@@ -7,19 +7,160 @@
 # Simos Xenitellis <simos@gnome.org>, 2008.
 # Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
 # Fotis Tsamis <ftsamis@gmail.com>, 2009.
+# Tournaris Pavlos <p.tournaris@gmail.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-03-13 16:33+0000\n"
-"PO-Revision-Date: 2009-03-16 16:42+0200\n"
-"Last-Translator: Fotis Tsamis <ftsamis@gmail.com>\n"
-"Language-Team: Greek\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2009-09-21 20:31+0000\n"
+"PO-Revision-Date: 2009-10-17 10:14+0300\n"
+"Last-Translator: Tournaris Pavlos <p.tournaris@gmail.com>\n"
+"Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.0\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+
+#: ../data/dwell-click-applet.ui.h:3
+#, fuzzy
+#| msgid "Show click type window"
+msgid "Click Type Window"
+msgstr "Προβολή του παραθύρου τύπων κλικ"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#, fuzzy
+#| msgid "Dwell Click"
+msgid "Double Click"
+msgstr "Κράτημα κλικ"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#, fuzzy
+#| msgid "Dwell Click"
+msgid "Drag Click"
+msgstr "Κράτημα κλικ"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:873
+msgid "Enable dwell click"
+msgstr "Ενεργοποίηση κρατήματος του κλικ"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "Δεξί κλικ"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#, fuzzy
+#| msgid "Gesture single click"
+msgid "Single Click"
+msgstr "Απλό κλικ με χειρονομία"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Περιοχή για πάγωμα του δείκτη ποντικιού στον πίνακα.\n"
+"Μέρος του Mousetweaks"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.ui.h:5
+#, fuzzy
+#| msgid "Capture area"
+msgid "Capture Pointer"
+msgstr "Περιοχή καταγραφής"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "Τροποποιητής:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "Πλήκτρο _ποντικιού:"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr ""
+
+#: ../data/pointer-capture-applet.ui.h:10
+#, fuzzy
+#| msgid "Pointer Capture"
+msgid "Pointer Capture Preferences"
+msgstr "Καταγραφή της θέσης του δείκτη"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "Απελευθέρωση δείκτη"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.ui.h:13
+#, fuzzy
+#| msgid "Mouse button used to capture the pointer"
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Καταγραφή της θέσης του δείκτη με το πάτημα του κουμπιού του ποντικιού"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.ui.h:15
+#, fuzzy
+#| msgid "Size of capture area"
+msgid "Size of Capture Area"
+msgstr "Μέγεθος της περιοχής καταγραφής"
+
+#: ../data/pointer-capture-applet.ui.h:16
+#, fuzzy
+#| msgid "_About"
+msgid "_Alt"
+msgstr "_Περί"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "_Πλάτος:"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "pixels"
+
+#: ../data/mousetweaks.ui.h:3
+#, fuzzy
+#| msgid "Dwell Click"
+msgid "Dwell Click Type"
+msgstr "Κράτημα κλικ"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "Εμφάνιση εικονιδίων και κειμένου"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "Εμφάνιση εικονιδίων μόνο"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "Εμφάνιση κειμένου μόνο"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -59,7 +200,8 @@ msgid "Button style"
 msgstr "Στυλ κουμπιού"
 
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgid ""
+"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
 msgstr ""
 "Εμφάνιση των κουμπιών στο παράθυρο τύπων κλικ (0=Κείμενο, 1=Εικονίδιο, 2=Και "
 "τα δύο)"
@@ -106,15 +248,11 @@ msgstr ""
 msgid "Dwell click time"
 msgstr "Χρόνος κρατήματος του κλικ"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:825
-msgid "Enable dwell click"
-msgstr "Ενεργοποίηση κρατήματος του κλικ"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Ενεργοποίηση δευτερεύοντος κλικ"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:827
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
 msgid "Enable simulated secondary click"
 msgstr "Ενεργοποίηση προσομοιωμένου δευτερεύοντος κλικ"
 
@@ -142,7 +280,7 @@ msgstr "Κατώφλι κίνησης"
 msgid "Secondary click time"
 msgstr "Χρόνος δευτερεύοντος κλικ"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:835
+#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
 msgid "Show click type window"
 msgstr "Προβολή του παραθύρου τύπων κλικ"
 
@@ -287,11 +425,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Πλάτος σε εικονοστοιχεία της περιοχής καταγραφής."
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:767
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Δεν είναι ενεργοποιημένη η υποστήριξη βοηθητικών τεχνολογιών "
 
-#: ../src/mt-main.c:722
+#: ../src/mt-main.c:768
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -304,44 +442,43 @@ msgstr ""
 "Για να ενεργοποιήσετε την υποστήριξη των βοηθητικών τεχνολογιών και να "
 "επανεκκινήσετε τη συνεδρία σας, πατήστε \"Ενεργοποίηση και αποσύνδεση\"."
 
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:877
 msgid "Time to wait before a dwell click"
 msgstr "Χρόνος αναμονής πριν γίνει κράτημα κλικ"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:879
 msgid "Time to wait before a simulated secondary click"
 msgstr "Χρόνος αναμονής πριν γίνει η προσομοίωση δευτερεύοντος κλικ"
 
-#: ../src/mt-main.c:833
+#: ../src/mt-main.c:881
 msgid "Dwell mode to use"
 msgstr "Λειτουργία κρατήματος του κλικ που θα χρησιμοποιηθεί"
 
-#: ../src/mt-main.c:837
+#: ../src/mt-main.c:885
 msgid "Window x position"
 msgstr "Θέση στον άξονα x του παραθύρου"
 
-#: ../src/mt-main.c:839
+#: ../src/mt-main.c:887
 msgid "Window y position"
 msgstr "Θέση στον άξονα y του παραθύρου"
 
-#: ../src/mt-main.c:841
+#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Αγνόηση μικρών μετακινήσεων του δείκτη"
 
-#: ../src/mt-main.c:843
+#: ../src/mt-main.c:891
 msgid "Show elapsed time as cursor overlay"
 msgstr "Εμφάνιση του χρόνου που περνά με χρωματισμό του δρομέα"
 
-#: ../src/mt-main.c:845
+#: ../src/mt-main.c:893
 msgid "Shut down mousetweaks"
 msgstr "Τερματισμός του mousetweaks"
 
-#: ../src/mt-main.c:854
+#: ../src/mt-main.c:902
 msgid "- GNOME mousetweaks daemon"
 msgstr "- Υπηρεσία GNOME mousetweaks"
 
 #: ../src/mt-common.c:30
-#| msgid "Couldn't display help"
 msgid "Failed to Display Help"
 msgstr "Αποτυχία προβολής της βοήθειας"
 

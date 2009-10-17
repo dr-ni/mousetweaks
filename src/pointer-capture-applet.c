@@ -33,10 +33,13 @@ struct _CaptureData {
     GtkBuilder  *ui;
     GtkWidget   *area;
 
-    GdkCursor   *null_cursor;
+    GdkCursor   *blank;
+    GdkCursor   *root;
     gboolean     pointer_locked;
     gint         pointer_x;
     gint         pointer_y;
+    gint         center_x;
+    gint         center_y;
     gboolean     vertical;
 
     /* options */
@@ -83,39 +86,53 @@ static const BonoboUIVerb menu_verb[] = {
     BONOBO_UI_VERB_END
 };
 
-/* grab pointer and update lock state */
-static gboolean
-lock_pointer (CaptureData *cd, guint32 time)
+static void
+lock_pointer (CaptureData *cd)
 {
-    GdkGrabStatus stat;
+    GdkWindow *win;
+    gint x, y, w, h;
 
-    stat = gdk_pointer_grab (cd->area->window,
-			     FALSE,
-			     GDK_BUTTON_PRESS_MASK,
-			     cd->area->window,
-			     cd->null_cursor,
-			     time);
+    /* set invisible cursor */
+    win = gdk_screen_get_root_window (gtk_widget_get_screen (cd->area));
+    cd->root = gdk_window_get_cursor (win);
+    gdk_window_set_cursor (win, cd->blank);
 
-    if (stat != GDK_GRAB_SUCCESS)
-	return FALSE;
+    /* calculate center position */
+    win = gtk_widget_get_window (cd->area);
+    gdk_drawable_get_size (win, &w, &h);
+    gdk_window_get_origin (win, &x, &y);
+    cd->center_x = x + (w >> 1);
+    cd->center_y = y + (h >> 1);
 
+    /* update state */
     cd->pointer_locked = TRUE;
     gtk_widget_queue_draw (cd->area);
-
-    return TRUE;
 }
 
 static void
-unlock_pointer (CaptureData *cd, guint32 time)
+unlock_pointer (CaptureData *cd)
 {
+    GdkWindow *root;
+    GdkCursor *cursor;
+
     /* move pointer to the position where it was locked */
     gdk_display_warp_pointer (gdk_display_get_default (),
 			      gtk_widget_get_screen (cd->area),
 			      cd->pointer_x,
 			      cd->pointer_y);
 
-    gdk_pointer_ungrab (time);
+    /* restore cursor */
+    root = gdk_screen_get_root_window (gtk_widget_get_screen (cd->area));
+    if (cd->root) {
+	gdk_window_set_cursor (root, cd->root);
+    }
+    else {
+	cursor = gdk_cursor_new (GDK_LEFT_PTR);
+	gdk_window_set_cursor (root, cursor);
+	gdk_cursor_unref (cursor);
+    }
 
+    /* update state */
     cd->pointer_locked = FALSE;
     gtk_widget_queue_draw (cd->area);
 }
@@ -124,7 +141,7 @@ unlock_pointer (CaptureData *cd, guint32 time)
 static gboolean
 area_entered (GtkWidget *widget, GdkEventCrossing *cev, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     if (cev->mode != GDK_CROSSING_NORMAL)
 	return FALSE;
@@ -134,15 +151,31 @@ area_entered (GtkWidget *widget, GdkEventCrossing *cev, gpointer data)
 
     cd->pointer_x = cev->x_root;
     cd->pointer_y = cev->y_root;
+    lock_pointer (cd);
 
-    return lock_pointer (cd, cev->time);
+    return FALSE;
+}
+
+static gboolean
+area_left (GtkWidget *widget, GdkEventCrossing *cev, gpointer data)
+{
+    CaptureData *cd = data;
+
+    if (cd->pointer_locked) {
+	/* move pointer back to center */
+	gdk_display_warp_pointer (gdk_display_get_default (),
+				  gtk_widget_get_screen (widget),
+				  cd->center_x,
+				  cd->center_y);
+    }
+    return FALSE;
 }
 
 /* change lock states */
 static gboolean
 area_button_press (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     if (bev->button == cd->cap_button &&
 	(bev->state & cd->cap_mask) == cd->cap_mask &&
@@ -150,13 +183,13 @@ area_button_press (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 
 	cd->pointer_x = bev->x_root;
 	cd->pointer_y = bev->y_root;
-	lock_pointer (cd, bev->time);
+	lock_pointer (cd);
     }
     else if (bev->button == cd->rel_button &&
 	     (bev->state & cd->rel_mask) == cd->rel_mask &&
 	     cd->pointer_locked) {
 
-	unlock_pointer (cd, bev->time);
+	unlock_pointer (cd);
     }
     else if (!cd->pointer_locked && bev->button != 1) {
 	g_signal_stop_emission_by_name (widget, "button_press_event");
@@ -217,7 +250,7 @@ render_text (cairo_t *cr, CaptureData *cd)
 static gboolean
 area_exposed (GtkWidget *widget, GdkEventExpose *eev, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
     cairo_t *cr;
     gdouble w, h;
 
@@ -318,7 +351,7 @@ prefs_help (GtkButton *button, gpointer data)
 static void
 prefs_cap_button (GtkSpinButton *spin, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     cd->cap_button = gtk_spin_button_get_value_as_int (spin);
     panel_applet_gconf_set_int (cd->applet,
@@ -330,7 +363,7 @@ prefs_cap_button (GtkSpinButton *spin, gpointer data)
 static void
 prefs_cap_alt (GtkToggleButton *toggle, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     cd->cap_mask ^= GDK_MOD1_MASK;
     panel_applet_gconf_set_bool (cd->applet,
@@ -342,7 +375,7 @@ prefs_cap_alt (GtkToggleButton *toggle, gpointer data)
 static void
 prefs_cap_shift (GtkToggleButton *toggle, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     cd->cap_mask ^= GDK_SHIFT_MASK;
     panel_applet_gconf_set_bool (cd->applet,
@@ -354,7 +387,7 @@ prefs_cap_shift (GtkToggleButton *toggle, gpointer data)
 static void
 prefs_cap_ctrl (GtkToggleButton *toggle, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     cd->cap_mask ^= GDK_CONTROL_MASK;
     panel_applet_gconf_set_bool (cd->applet,
@@ -366,7 +399,7 @@ prefs_cap_ctrl (GtkToggleButton *toggle, gpointer data)
 static void
 prefs_rel_button (GtkSpinButton *spin, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     cd->rel_button = gtk_spin_button_get_value_as_int (spin);
     panel_applet_gconf_set_int (cd->applet,
@@ -378,7 +411,7 @@ prefs_rel_button (GtkSpinButton *spin, gpointer data)
 static void
 prefs_rel_alt (GtkToggleButton *toggle, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     cd->rel_mask ^= GDK_MOD1_MASK;
     panel_applet_gconf_set_bool (cd->applet,
@@ -390,7 +423,7 @@ prefs_rel_alt (GtkToggleButton *toggle, gpointer data)
 static void
 prefs_rel_shift (GtkToggleButton *toggle, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     cd->rel_mask ^= GDK_SHIFT_MASK;
     panel_applet_gconf_set_bool (cd->applet,
@@ -402,7 +435,7 @@ prefs_rel_shift (GtkToggleButton *toggle, gpointer data)
 static void
 prefs_rel_ctrl (GtkToggleButton *toggle, gpointer data)
 {
-    CaptureData *cd = (CaptureData *) data;
+    CaptureData *cd = data;
 
     cd->rel_mask ^= GDK_CONTROL_MASK;
     panel_applet_gconf_set_bool (cd->applet,
@@ -499,6 +532,7 @@ capture_data_init (PanelApplet *applet)
     cd->applet = applet;
     cd->size = 100;
     cd->rel_button = 1;
+    cd->blank = gdk_cursor_new (GDK_BLANK_CURSOR);
 
     return cd;
 }
@@ -506,8 +540,8 @@ capture_data_init (PanelApplet *applet)
 static void
 capture_data_free (CaptureData *cd)
 {
-    if (cd->null_cursor)
-	gdk_cursor_unref (cd->null_cursor);
+    if (cd->blank)
+	gdk_cursor_unref (cd->blank);
 
     if (cd->ui)
 	g_object_unref (cd->ui);
@@ -520,27 +554,7 @@ fill_applet (PanelApplet *applet)
 {
     CaptureData *cd;
     GtkWidget *about;
-    GdkPixmap *bmp0 = NULL;
-    gchar char0[] = { 0x0 };
-    GdkColor c0 = { 0, 0, 0, 0 };
     AtkObject *obj;
-
-    cd = capture_data_init (applet);
-
-    /* invisible cursor */
-    bmp0 = gdk_bitmap_create_from_data (NULL, char0, 1, 1);
-    if (!bmp0) {
-	capture_data_free (cd);
-	return FALSE;
-    }
-
-    cd->null_cursor = gdk_cursor_new_from_pixmap (bmp0, bmp0, &c0, &c0, 0, 0);
-    g_object_unref (bmp0);
-
-    if (!cd->null_cursor) {
-	capture_data_free (cd);
-	return FALSE;
-    }
 
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
@@ -548,6 +562,8 @@ fill_applet (PanelApplet *applet)
 
     g_set_application_name (_("Pointer Capture"));
     gtk_window_set_default_icon_name (MT_ICON_NAME);
+
+    cd = capture_data_init (applet);
 
     /* gconf settings */
     panel_applet_add_preferences (applet,
@@ -582,10 +598,13 @@ fill_applet (PanelApplet *applet)
     cd->area = gtk_drawing_area_new ();
     gtk_widget_add_events (cd->area,
 			   GDK_ENTER_NOTIFY_MASK |
+			   GDK_LEAVE_NOTIFY_MASK |
 			   GDK_BUTTON_PRESS_MASK);
 
     g_signal_connect (cd->area, "enter-notify-event",
 		      G_CALLBACK (area_entered), cd);
+    g_signal_connect (cd->area, "leave-notify-event",
+		      G_CALLBACK (area_left), cd);
     g_signal_connect (cd->area, "expose-event",
 		      G_CALLBACK (area_exposed), cd);
     g_signal_connect (cd->area, "button-press-event",
@@ -622,7 +641,6 @@ fill_applet (PanelApplet *applet)
     atk_object_set_description (obj, _("Temporarily lock the mouse pointer"));
 
     gtk_container_add (GTK_CONTAINER (applet), cd->area);
-    gtk_container_set_border_width (GTK_CONTAINER (applet), 1);
     gtk_widget_show (GTK_WIDGET (applet));
 
     return TRUE;

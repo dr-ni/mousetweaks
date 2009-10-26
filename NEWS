@@ -1,3 +1,22 @@
+Version 2.29.1
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Don't use a pointer grab to lock the cursor - closes bgo #598538
+
+New and updated translations:
+
+    [
+    [el] Tournaris Pavlos
+    [et] Ivar Smolin
+    [ro] Lucian Adrian Grijincu
+    [ru] Yuriy Penkin
+
+New and updated manual translation:
+
+    [cs] Adrian Guniš
+
 Version 2.28.0
 ---------------
 

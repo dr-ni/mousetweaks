@@ -13,8 +13,8 @@ mousetweaks \- Accessibility enhancements for the mouse
 [\-\-dwell\-time=FLOAT] [\-\-secondary\-time=FLOAT]
 [\-m|\-\-dwell\-mode=STRING] [\-c|\-\-show\-ctw]
 [\-x|\-\-ctw\-x=INT] [\-y|\-\-ctw\-y=INT]
-[\-t|\-\-threshold=INT] [\-a|\-\-animate\-cursor]
-[\-s|\-\-shutdown] [\-?|\-\-help]
+[\-t|\-\-threshold=INT] [\-s|\-\-shutdown]
+[\-\-disable\-animations] [\-\-daemonize] [\-?|\-\-help]
 .SH DESCRIPTION
 .B mousetweaks
 is a daemon that provides various mouse features for the GNOME desktop.
@@ -58,11 +58,15 @@ Y Position of the click\-type window on screen.
 .B \-t, \-\-threshold=INT
 Ignore small pointer movements. Range 0 - 30 pixels.
 .TP
-.B \-a, \-\-animate-cursor
-Show elapsed time as cursor overlay.
-.TP
 .B \-s, \-\-shutdown
 Stop the mousetweaks daemon.
+.TP
+.B \-\-disable-animation
+Disable cursor animations. The animation shows the timer progress
+for dwell clicks and secondary clicks as cursor overlay.
+.TP
+.B \-\-daemonize
+Starts mousetweaks in the background, ie. spawns a child process.
 .SH FILES
 .I ~/.mousetweaks.pid
 .RS
@@ -74,7 +78,7 @@ Report bugs to
 <http://bugzilla.gnome.org/>
 .UE
 .SH AUTHORS
-mousetweaks was written by Gerd Kohlberger <lowfi@chello.at>
+mousetweaks was written by Gerd Kohlberger
 .SH LICENSE
 Licenced under the GNU General Public License v3 or later.
 .SH SEE ALSO

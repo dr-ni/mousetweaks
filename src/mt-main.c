@@ -49,6 +49,21 @@ enum {
     DOUBLE_CLICK
 };
 
+typedef struct _MtCliArgs {
+    gdouble  delay_time;
+    gdouble  dwell_time;
+    gchar   *mode;
+    gint     pos_x;
+    gint     pos_y;
+    gint     threshold;
+    gboolean delay_click;
+    gboolean dwell_click;
+    gboolean shutdown;
+    gboolean daemonize;
+    gboolean ctw;
+    gboolean no_animation;
+} MtCliArgs;
+
 static GdkScreen *
 mt_main_current_screen (MtData *mt)
 {
@@ -440,7 +455,6 @@ mt_dwell_click_cancel (MtData *mt)
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
     if (mt->dwell_drag_started) {
-	g_print ("stop drag\n");
 	mt_main_set_cursor (mt, GDK_LEFT_PTR);
 	mt->dwell_drag_started = FALSE;
     }
@@ -852,59 +866,171 @@ mt_data_free (MtData *mt)
     g_slice_free (MtData, mt);
 }
 
+static MtCliArgs
+mt_parse_options (int *argc, char ***argv)
+{
+    MtCliArgs ca;
+    GOptionContext *context;
+    GOptionEntry entries[] = {
+	{"enable-dwell", 0, 0, G_OPTION_ARG_NONE, &ca.dwell_click,
+	    N_("Enable dwell click"), 0},
+	{"enable-secondary", 0, 0, G_OPTION_ARG_NONE, &ca.delay_click,
+	    N_("Enable simulated secondary click"), 0},
+	{"dwell-time", 0, 0, G_OPTION_ARG_DOUBLE, &ca.dwell_time,
+	    N_("Time to wait before a dwell click"), "[0.2-3.0]"},
+	{"secondary-time", 0, 0, G_OPTION_ARG_DOUBLE, &ca.delay_time,
+	    N_("Time to wait before a simulated secondary click"), "[0.5-3.0]"},
+	{"dwell-mode", 'm', 0, G_OPTION_ARG_STRING, &ca.mode,
+	    N_("Set the active dwell mode"), "[window|gesture]"},
+	{"show-ctw", 'c', 0, G_OPTION_ARG_NONE, &ca.ctw,
+	    N_("Show a click-type window"), 0},
+	{"ctw-x", 'x', 0, G_OPTION_ARG_INT, &ca.pos_x,
+	    N_("Click-type window X position"), 0},
+	{"ctw-y", 'y', 0, G_OPTION_ARG_INT, &ca.pos_y,
+	    N_("Click-type window Y position"), 0},
+	{"threshold", 't', 0, G_OPTION_ARG_INT, &ca.threshold,
+	    N_("Ignore small pointer movements"), "[0-30]"},
+	{"shutdown", 's', 0, G_OPTION_ARG_NONE, &ca.shutdown,
+	    N_("Shut down mousetweaks"), 0},
+	{"disable-animation", 0, 0, G_OPTION_ARG_NONE, &ca.no_animation,
+	    N_("Disable cursor animations"), 0},
+	{"daemonize", 0, 0, G_OPTION_ARG_NONE, &ca.daemonize,
+	    N_("Start mousetweaks as a daemon"), 0},
+	{ NULL }
+    };
+    /* init cli arguments */
+    ca.delay_time   = -1.;
+    ca.dwell_time   = -1.;
+    ca.mode         = NULL;
+    ca.pos_x        = -1;
+    ca.pos_y        = -1;
+    ca.threshold    = -1;
+    ca.delay_click  = FALSE;
+    ca.dwell_click  = FALSE;
+    ca.shutdown     = FALSE;
+    ca.daemonize    = FALSE;
+    ca.ctw          = FALSE;
+    ca.no_animation = FALSE;
+    /* parse */
+    context = g_option_context_new (_("- GNOME mouse accessibility daemon"));
+    g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
+    g_option_context_parse (context, argc, argv, NULL);
+    g_option_context_free (context);
+
+    return ca;
+}
+
+static void
+mt_main (int argc, char **argv, MtCliArgs cli_args)
+{
+    MtData *mt;
+    MtCursorManager *manager;
+    MtListener *listener;
+    gint spi_status;
+    gint spi_leaks = 0;
+
+    if (mt_pidfile_create () < 0) {
+	g_warning ("Couldn't create PID file.");
+	return;
+    }
+
+    signal (SIGINT, signal_handler);
+    signal (SIGTERM, signal_handler);
+    signal (SIGQUIT, signal_handler);
+    signal (SIGHUP, signal_handler);
+
+    gtk_init (&argc, &argv);
+
+    mt = mt_data_init ();
+    if (!mt)
+	goto FINISH;
+
+    spi_status = SPI_init ();
+    if (!accessibility_enabled (mt, spi_status)) {
+	mt_data_free (mt);
+	goto FINISH;
+    }
+
+    /* load gconf settings */
+    get_gconf_options (mt);
+
+    /* override with CLI arguments */
+    if (cli_args.dwell_click)
+	mt->dwell_enabled = cli_args.dwell_click;
+    if (cli_args.delay_click)
+	mt->delay_enabled = cli_args.delay_click;
+    if (cli_args.dwell_time >= .1 && cli_args.dwell_time <= 3.)
+	mt_timer_set_target (mt->dwell_timer, cli_args.dwell_time);
+    if (cli_args.delay_time >= .1 && cli_args.delay_time <= 3.)
+	mt_timer_set_target (mt->delay_timer, cli_args.delay_time);
+    if (cli_args.threshold >= 0 && cli_args.threshold <= 30)
+	mt->threshold = cli_args.threshold;
+    if (cli_args.ctw)
+	mt->dwell_show_ctw = cli_args.ctw;
+    if (cli_args.no_animation)
+	mt->animate_cursor = !cli_args.no_animation;
+    if (cli_args.mode) {
+	if (g_str_equal (cli_args.mode, "gesture"))
+	    mt->dwell_mode = DWELL_MODE_GESTURE;
+	else if (g_str_equal (cli_args.mode, "window"))
+	    mt->dwell_mode = DWELL_MODE_CTW;
+
+	g_free (cli_args.mode);
+    }
+
+    /* init click-type windoe */
+    if (!mt_ctw_init (mt, cli_args.pos_x, cli_args.pos_y))
+	goto CLEANUP;
+
+    /* init cursor animation */
+    manager = mt_cursor_manager_get_default ();
+    mt->cursor = mt_cursor_manager_current_cursor (manager);
+    g_signal_connect (manager, "cursor_changed",
+                      G_CALLBACK (cursor_changed), mt);
+    g_signal_connect (manager, "cache_cleared",
+                      G_CALLBACK (cursor_cache_cleared), mt);
+
+    /* init at-spi signals */
+    listener = mt_listener_get_default ();
+    g_signal_connect (listener, "motion_event",
+                      G_CALLBACK (global_motion_event), mt);
+    g_signal_connect (listener, "button_event",
+                      G_CALLBACK (global_button_event), mt);
+    g_signal_connect (listener, "focus_changed",
+                      G_CALLBACK (global_focus_event), mt);
+
+    gtk_main ();
+
+    mt_cursor_manager_restore_all (manager);
+    g_object_unref (manager);
+    g_object_unref (listener);
+
+CLEANUP:
+    spi_leaks = SPI_exit ();
+    mt_data_free (mt);
+FINISH:
+    mt_pidfile_remove ();
+
+    if (spi_leaks)
+	g_warning ("AT-SPI reported %i leak%s.",
+		   spi_leaks, spi_leaks != 1 ? "s" : "");
+}
+
 int
 main (int argc, char **argv)
 {
-    pid_t    pid;
-    gboolean delay_click = FALSE;
-    gboolean dwell_click = FALSE;
-    gdouble  delay_time  = -1.;
-    gdouble  dwell_time  = -1.;
-    gboolean shutdown    = FALSE;
-    gboolean ctw         = FALSE;
-    gboolean animate     = FALSE;
-    gchar   *mode        = NULL;
-    gint     pos_x       = -1;
-    gint     pos_y       = -1;
-    gint     threshold   = -1;
-    GOptionContext *context;
-    GOptionEntry entries[] = {
-	{"enable-dwell", 0, 0, G_OPTION_ARG_NONE, &dwell_click,
-	    N_("Enable dwell click"), 0},
-	{"enable-secondary", 0, 0, G_OPTION_ARG_NONE, &delay_click,
-	    N_("Enable simulated secondary click"), 0},
-	{"dwell-time", 0, 0, G_OPTION_ARG_DOUBLE, &dwell_time,
-	    N_("Time to wait before a dwell click"), "[0.2-3.0]"},
-	{"secondary-time", 0, 0, G_OPTION_ARG_DOUBLE, &delay_time,
-	    N_("Time to wait before a simulated secondary click"), "[0.5-3.0]"},
-	{"dwell-mode", 'm', 0, G_OPTION_ARG_STRING, &mode,
-	    N_("Dwell mode to use"), "[window|gesture]"},
-	{"show-ctw", 'c', 0, G_OPTION_ARG_NONE, &ctw,
-	    N_("Show click type window"), 0},
-	{"ctw-x", 'x', 0, G_OPTION_ARG_INT, &pos_x,
-	    N_("Window x position"), 0},
-	{"ctw-y", 'y', 0, G_OPTION_ARG_INT, &pos_y,
-	    N_("Window y position"), 0},
-	{"threshold", 't', 0, G_OPTION_ARG_INT, &threshold,
-	    N_("Ignore small pointer movements"), "[0-30]"},
-	{"animate-cursor", 'a', 0, G_OPTION_ARG_NONE, &animate,
-	    N_("Show elapsed time as cursor overlay"), 0},
-	{"shutdown", 's', 0, G_OPTION_ARG_NONE, &shutdown,
-	    N_("Shut down mousetweaks"), 0},
-	{ NULL }
-    };
+    MtCliArgs cli_args;
+    pid_t pid;
 
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
     setlocale (LC_ALL, "");
 
-    context = g_option_context_new (_("- GNOME mousetweaks daemon"));
-    g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
-    g_option_context_parse (context, &argc, &argv, NULL);
-    g_option_context_free (context);
+    g_set_application_name ("Mousetweaks");
+    cli_args = mt_parse_options (&argc, &argv);
 
-    if (shutdown) {
+    if (cli_args.shutdown) {
 	int ret;
 
 	if ((ret = mt_pidfile_kill_wait (SIGINT, 5)) < 0)
@@ -914,112 +1040,29 @@ main (int argc, char **argv)
 
 	return ret < 0 ? 1 : 0;
     }
-    if ((pid = mt_pidfile_is_running ()) >= 0) {
-	g_print ("Daemon is already running. (PID %u)\n", pid);
-	return 1;
-    }
-    g_print ("Starting daemon.\n");
 
-    if ((pid = fork ()) < 0) {
-	g_error ("fork() failed.");
+    if ((pid = mt_pidfile_is_running ()) >= 0) {
+	g_print ("Mousetweaks is already running. (PID %u)\n", pid);
 	return 1;
     }
-    else if (pid) {
-	/* Parent return */
-	return 0;
+
+    if (cli_args.daemonize) {
+	g_print ("Starting daemon.\n");
+	if ((pid = fork ()) < 0) {
+	    g_error ("fork() failed.");
+	    return 1;
+	}
+	else if (pid) {
+	    /* Parent return */
+	    return 0;
+	}
+	else {
+	    /* Child process */
+	    mt_main (argc, argv, cli_args);
+	}
     }
     else {
-	/* Child process */
-	MtData *mt;
-	MtCursorManager *manager;
-	MtListener *listener;
-	gint spi_status;
-	gint spi_leaks = 0;
-
-	if (mt_pidfile_create () < 0)
-	    return 1;
-
-	signal (SIGINT, signal_handler);
-	signal (SIGTERM, signal_handler);
-	signal (SIGQUIT, signal_handler);
-	signal (SIGHUP, signal_handler);
-
-	gtk_init (&argc, &argv);
-	g_set_application_name ("Mousetweaks");
-
-	mt = mt_data_init ();
-	if (!mt)
-	    goto FINISH;
-
-	spi_status = SPI_init ();
-	if (!accessibility_enabled (mt, spi_status)) {
-	    mt_data_free (mt);
-	    goto FINISH;
-	}
-
-	/* command-line options */
-	if (dwell_click)
-	    gconf_client_set_bool (mt->client, OPT_DWELL, TRUE, NULL);
-	if (delay_click)
-	    gconf_client_set_bool (mt->client, OPT_DELAY, TRUE, NULL);
-	if (delay_time >= .5 && delay_time <= 3.)
-	    gconf_client_set_float (mt->client, OPT_DELAY_T, delay_time, NULL);
-	if (dwell_time >= .2 && dwell_time <= 3.)
-	    gconf_client_set_float (mt->client, OPT_DWELL_T, dwell_time, NULL);
-	if (threshold >= 0 && threshold <= 30)
-	    gconf_client_set_int (mt->client, OPT_THRESHOLD, threshold, NULL);
-	if (ctw)
-	    gconf_client_set_bool (mt->client, OPT_CTW, TRUE, NULL);
-	if (animate)
-	    gconf_client_set_bool (mt->client, OPT_ANIMATE, TRUE, NULL);
-	if (mode) {
-	    if (g_str_equal (mode, "gesture"))
-		gconf_client_set_int (mt->client, OPT_MODE,
-				      DWELL_MODE_GESTURE, NULL);
-	    else if (g_str_equal (mode, "window"))
-		gconf_client_set_int (mt->client, OPT_MODE,
-				      DWELL_MODE_CTW, NULL);
-	    g_free (mode);
-	}
-
-	get_gconf_options (mt);
-
-	if (!mt_ctw_init (mt, pos_x, pos_y))
-	    goto CLEANUP;
-
-	/* init cursor animation */
-	manager = mt_cursor_manager_get_default ();
-	g_signal_connect (manager, "cursor_changed",
-			  G_CALLBACK (cursor_changed), mt);
-	g_signal_connect (manager, "cache_cleared",
-			  G_CALLBACK (cursor_cache_cleared), mt);
-
-	mt->cursor = mt_cursor_manager_current_cursor (manager);
-
-	/* init at-spi signals */
-	listener = mt_listener_get_default ();
-	g_signal_connect (listener, "motion_event",
-			  G_CALLBACK (global_motion_event), mt);
-	g_signal_connect (listener, "button_event",
-			  G_CALLBACK (global_button_event), mt);
-	g_signal_connect (listener, "focus_changed",
-			  G_CALLBACK (global_focus_event), mt);
-
-	gtk_main ();
-
-	mt_cursor_manager_restore_all (manager);
-	g_object_unref (manager);
-	g_object_unref (listener);
-
-	CLEANUP:
-	    spi_leaks = SPI_exit ();
-	    mt_data_free (mt);
-	FINISH:
-	    mt_pidfile_remove ();
-
-	if (spi_leaks)
-	    g_warning ("AT-SPI reported %i leak%s.",
-		       spi_leaks, spi_leaks != 1 ? "s" : "");
+	mt_main (argc, argv, cli_args);
     }
     return 0;
 }

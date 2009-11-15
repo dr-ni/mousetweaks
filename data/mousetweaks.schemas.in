@@ -105,10 +105,10 @@
 	<applyto>/desktop/gnome/accessibility/mouse/dwell_mode</applyto>
         <owner>mousetweaks</owner>
         <type>int</type>
-        <default>1</default>
+        <default>0</default>
         <locale name="C">
           <short>Dwell click mode</short>
-          <long>Dwell click mode ("0" = Gesture mode, "1" = Window mode)</long>
+          <long>Dwell click mode ("0" = Window mode, "1" = Gesture mode)</long>
         </locale>
       </schema>
       <schema>

@@ -1,3 +1,15 @@
+Version 2.29.2
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Fix the default dwell mode in the gconf schema file
+    * Do not daemonize by default and add the --daemonize cli option
+
+New and updated translations:
+
+    [es] Jorge González
+
 Version 2.29.1
 ---------------
 

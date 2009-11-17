@@ -5,6 +5,6 @@ dist-hook: doc-dist-hook
 DOC_MODULE = mousetweaks
 DOC_ENTITIES = legal.xml
 DOC_INCLUDES =
-DOC_LINGUAS = ca cs de el en_GB es fr it oc sv
+DOC_LINGUAS = ca cs de el en_GB es fr it oc sv zh_CN
 
 -include $(top_srcdir)/git.mk

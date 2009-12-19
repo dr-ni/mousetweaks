@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the mousetweaks package.
 # Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009
 # Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-10-05 11:15+0000\n"
-"PO-Revision-Date: 2009-10-11 18:02+0300\n"
+"POT-Creation-Date: 2009-11-18 06:08+0000\n"
+"PO-Revision-Date: 2009-11-18 20:31+0300\n"
 "Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
-"Language-Team: Gnome Romanian Team <gnomero-list@lists.sourceforge.net>\n"
+"Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
-"== 0) && (n != 0))) ? 2: 1));\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.4.0\n"
 
 #: ../data/dwell-click-applet.ui.h:1
 msgid ""
@@ -40,7 +41,7 @@ msgid "Drag Click"
 msgstr "Clic tragere"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:876
 msgid "Enable dwell click"
 msgstr "Activează clicul staționar"
 
@@ -153,7 +154,7 @@ msgid "Area to lock the pointer"
 msgstr "Zonă de blocare cursor maus"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Capturează cursorul mausului"
 
@@ -224,8 +225,8 @@ msgid "Dwell click mode"
 msgstr "Mod clic staționar"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Mod clic stațioar  („0” = Mod gesturi, „1” = Mod fereastră )"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "Mod clic staționar („0” = Mod fereastră, „1” = Mod gesturi)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -235,7 +236,7 @@ msgstr "Timp clic staționar"
 msgid "Enable secondary click"
 msgstr "Activează clicul secundar"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:878
 msgid "Enable simulated secondary click"
 msgstr "Activează clicul secundar simulat"
 
@@ -263,7 +264,7 @@ msgstr "Prag mișcare"
 msgid "Secondary click time"
 msgstr "Timp clic secundar"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Afișează fereastra tip clic"
 
@@ -402,13 +403,13 @@ msgstr ""
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
 msgid "Width of the capture area in pixels."
-msgstr "Lățimea în pixeli a zonei de captură"
+msgstr "Lățimea în pixeli a zonei de captură."
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:781
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Suportul pentru tehnologii asistative nu este activat"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:782
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -421,41 +422,50 @@ msgstr ""
 "Pentru a activa suportul pentru tehnologiile asistative și a reporni "
 "sesiunea, apăsați „Activează și închide sesiunea”."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:880
 msgid "Time to wait before a dwell click"
 msgstr "Timp de așteptare înainte de un clic staționar"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:882
 msgid "Time to wait before a simulated secondary click"
 msgstr "Timp de așteptare înainte de un clic secundar simulat"
 
-#: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Mode staționar folosit"
+#: ../src/mt-main.c:884
+msgid "Set the active dwell mode"
+msgstr "Definește modul clicului staționar activ"
 
-#: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Poziție x fereastră"
+#: ../src/mt-main.c:886
+msgid "Show a click-type window"
+msgstr "Afișează o fereastră tip clic"
 
-#: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Poziție y fereastră"
+#: ../src/mt-main.c:888
+msgid "Click-type window X position"
+msgstr "Coordonata X a ferestrei tip clic"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:890
+msgid "Click-type window Y position"
+msgstr "Coordonata Y a ferestrei tip clic"
+
+#: ../src/mt-main.c:892
 msgid "Ignore small pointer movements"
 msgstr "Ignoră mișcările minore ale cursorului"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Afișează timpul rămas ca suprapunere cursor"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:894
 msgid "Shut down mousetweaks"
 msgstr "Închide mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "- serviciu mousetweaks GNOME "
+#: ../src/mt-main.c:896
+msgid "Disable cursor animations"
+msgstr "Dezactivează animațiile cursorului"
+
+#: ../src/mt-main.c:898
+msgid "Start mousetweaks as a daemon"
+msgstr "Pornește mousetweaks ca un serviciu de fundal"
+
+#. parse
+#: ../src/mt-main.c:915
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- serviciul GNOME de accesibilitate a mausului"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -465,23 +475,32 @@ msgstr "Afișarea ajutorului a eșuat"
 msgid "Enable and Log Out"
 msgstr "Activează și închide sesiunea"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Blocat"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "B"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Zonă captură"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Blochează temporar cursorul mausului"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Lansarea preferințelor pentru mouse a eșuat"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Mode staționar folosit"
+
+#~ msgid "Window y position"
+#~ msgstr "Poziție y fereastră"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Afișează timpul rămas ca suprapunere cursor"

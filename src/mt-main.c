@@ -62,6 +62,7 @@ typedef struct _MtCliArgs {
     gboolean daemonize;
     gboolean ctw;
     gboolean no_animation;
+    gboolean login;
 } MtCliArgs;
 
 static GdkScreen *
@@ -896,6 +897,8 @@ mt_parse_options (int *argc, char ***argv)
 	    N_("Disable cursor animations"), 0},
 	{"daemonize", 0, 0, G_OPTION_ARG_NONE, &ca.daemonize,
 	    N_("Start mousetweaks as a daemon"), 0},
+	{"login", 0, 0, G_OPTION_ARG_NONE, &ca.login,
+	    N_("Start mousetweaks in login mode"), 0},
 	{ NULL }
     };
     /* init cli arguments */
@@ -911,6 +914,7 @@ mt_parse_options (int *argc, char ***argv)
     ca.daemonize    = FALSE;
     ca.ctw          = FALSE;
     ca.no_animation = FALSE;
+    ca.login        = FALSE;
     /* parse */
     context = g_option_context_new (_("- GNOME mouse accessibility daemon"));
     g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
@@ -946,9 +950,12 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
 	goto FINISH;
 
     spi_status = SPI_init ();
-    if (!accessibility_enabled (mt, spi_status)) {
-	mt_data_free (mt);
-	goto FINISH;
+    /* don't check a11y key in login mode */
+    if (!cli_args.login) {
+	if (!accessibility_enabled (mt, spi_status)) {
+	    mt_data_free (mt);
+	    goto FINISH;
+	}
     }
 
     /* load gconf settings */
@@ -1040,29 +1047,20 @@ main (int argc, char **argv)
 
 	return ret < 0 ? 1 : 0;
     }
-
     if ((pid = mt_pidfile_is_running ()) >= 0) {
 	g_print ("Mousetweaks is already running. (PID %u)\n", pid);
 	return 1;
     }
-
     if (cli_args.daemonize) {
 	g_print ("Starting daemon.\n");
 	if ((pid = fork ()) < 0) {
 	    g_error ("fork() failed.");
 	    return 1;
 	}
-	else if (pid) {
-	    /* Parent return */
+	else if (pid)
 	    return 0;
-	}
-	else {
-	    /* Child process */
-	    mt_main (argc, argv, cli_args);
-	}
     }
-    else {
-	mt_main (argc, argv, cli_args);
-    }
+    mt_main (argc, argv, cli_args);
+
     return 0;
 }

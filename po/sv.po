@@ -1,14 +1,14 @@
 # Swedish translation for mousetweaks.
 # Copyright (C) 2008, 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
-# Daniel Nylander <po@danielnylander.se>, 2008, 2009.
+# Daniel Nylander <po@danielnylander.se>, 2008, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-30 09:40+0100\n"
-"PO-Revision-Date: 2009-11-30 09:42+0100\n"
+"POT-Creation-Date: 2010-01-09 17:21+0100\n"
+"PO-Revision-Date: 2010-01-09 17:21+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "Dragklick"
 
 #: ../data/dwell-click-applet.ui.h:6
 #: ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:876
+#: ../src/mt-main.c:877
 msgid "Enable dwell click"
 msgstr "Aktivera uppehållsklick"
 
@@ -223,7 +223,7 @@ msgid "Enable secondary click"
 msgstr "Aktivera sekundärklick"
 
 #: ../data/mousetweaks.schemas.in.h:14
-#: ../src/mt-main.c:878
+#: ../src/mt-main.c:879
 msgid "Enable simulated secondary click"
 msgstr "Aktivera simulerat sekundärklick"
 
@@ -339,11 +339,11 @@ msgstr "Huruvida Skift-tangenten måste tryckas ned med musknappen som är inst�
 msgid "Width of the capture area in pixels."
 msgstr "Bredd för fångstområde i bildpunkter."
 
-#: ../src/mt-main.c:781
+#: ../src/mt-main.c:782
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Stöd för hjälpmedelsteknik är inte aktiverat"
 
-#: ../src/mt-main.c:782
+#: ../src/mt-main.c:783
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -353,48 +353,52 @@ msgstr ""
 "\n"
 "Tryck på \"Aktivera och logga ut\" för att aktivera stöd för hjälpmedelstekniker och starta om din session."
 
-#: ../src/mt-main.c:880
+#: ../src/mt-main.c:881
 msgid "Time to wait before a dwell click"
 msgstr "Tid att vänta innan ett uppehållsklick"
 
-#: ../src/mt-main.c:882
+#: ../src/mt-main.c:883
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tid att vänta innan en simulerad sekundärklickning"
 
-#: ../src/mt-main.c:884
+#: ../src/mt-main.c:885
 msgid "Set the active dwell mode"
 msgstr "Ställ in aktivt uppehållsläge"
 
-#: ../src/mt-main.c:886
+#: ../src/mt-main.c:887
 msgid "Show a click-type window"
 msgstr "Visa ett klicktypsfönster"
 
-#: ../src/mt-main.c:888
+#: ../src/mt-main.c:889
 msgid "Click-type window X position"
 msgstr "Klicktypsfönstrets x-position"
 
-#: ../src/mt-main.c:890
+#: ../src/mt-main.c:891
 msgid "Click-type window Y position"
 msgstr "Klicktypsfönstrets y-position"
 
-#: ../src/mt-main.c:892
+#: ../src/mt-main.c:893
 msgid "Ignore small pointer movements"
 msgstr "Ignorera mindre muspekarrörelser"
 
-#: ../src/mt-main.c:894
+#: ../src/mt-main.c:895
 msgid "Shut down mousetweaks"
 msgstr "Stäng av musjusteringar"
 
-#: ../src/mt-main.c:896
+#: ../src/mt-main.c:897
 msgid "Disable cursor animations"
 msgstr "Inaktivera pekaranimeringar"
 
-#: ../src/mt-main.c:898
+#: ../src/mt-main.c:899
 msgid "Start mousetweaks as a daemon"
 msgstr "Starta musjusteringar som en bakgrundsprocess"
 
+#: ../src/mt-main.c:901
+msgid "Start mousetweaks in login mode"
+msgstr "Starta musjusteringar i inloggningsläge"
+
 #. parse
-#: ../src/mt-main.c:915
+#: ../src/mt-main.c:919
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME-mustillgänglighetsdemon"
 

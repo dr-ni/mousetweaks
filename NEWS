@@ -1,3 +1,16 @@
+Version 2.29.5
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Add --login command-line option
+
+New and updated translations:
+
+    [es] Jorge González
+    [uk] Maxim Dziumanenko
+    [se] Daniel Nylander
+
 Version 2.29.4
 ---------------
 

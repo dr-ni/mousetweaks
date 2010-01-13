@@ -2,13 +2,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2009.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-27 17:24+0200\n"
-"PO-Revision-Date: 2009-08-27 17:29+0200\n"
+"POT-Creation-Date: 2010-01-13 19:00+0100\n"
+"PO-Revision-Date: 2010-01-13 19:16+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -38,7 +38,7 @@ msgid "Drag Click"
 msgstr "Arrastatzeko klik"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:877
 msgid "Enable dwell click"
 msgstr "Gaitu klik-tenporizatua"
 
@@ -151,7 +151,7 @@ msgid "Area to lock the pointer"
 msgstr "Area erakuslea blokeatzeko"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Erakuslearen kaptura"
 
@@ -220,8 +220,8 @@ msgid "Dwell click mode"
 msgstr "Klik-tenporizatuaren modua"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Klik-tenporizatuaren modua (\"0\"=keinu-modua, \"1\"=leiho-modua)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "Klik-tenporizatuaren modua (\"0\" = leiho-modua, \"1\" = keinu-modua)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -231,7 +231,7 @@ msgstr "Klik-tenporizatuaren denbora"
 msgid "Enable secondary click"
 msgstr "Gaitu 2. mailako klik-a"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:879
 msgid "Enable simulated secondary click"
 msgstr "Gaitu simulatutako 2. mailako klik-a"
 
@@ -259,7 +259,7 @@ msgstr "Mugimenduaren atalasea"
 msgid "Secondary click time"
 msgstr "2. mailako klik-aren denbora"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Erakutsi klik motaren leihoa"
 
@@ -397,11 +397,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Kaptura-arearen zabalera (pixeletan)"
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:782
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Laguntza-teknologia euskarria ez dago gaituta"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:783
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -413,41 +413,54 @@ msgstr ""
 "Laguntza-teknologiaren euskarria gaitzeko eta saioa berrabiarazteko, sakatu "
 "\"Gaitu eta amaitu saioa\"."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:881
 msgid "Time to wait before a dwell click"
 msgstr "Denbora klik-tenporizatua landu aurretik"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:883
 msgid "Time to wait before a simulated secondary click"
 msgstr "Denbora simulatutako 2. mailako klik-a landu aurretik"
 
-#: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Klik-tenporizatuaren modua"
-
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Leihoaren x posizioa"
+msgid "Set the active dwell mode"
+msgstr "Ezarri tenporizazioaren modu aktiboa"
 
 #: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Leihoaren y posizioa"
+msgid "Show a click-type window"
+msgstr "Erakutsi klik motaren leihoa"
 
 #: ../src/mt-main.c:889
+msgid "Click-type window X position"
+msgstr "Klik motaren leihoaren x posizioa"
+
+#: ../src/mt-main.c:891
+msgid "Click-type window Y position"
+msgstr "Klik motaren leihoaren x posizioa"
+
+#: ../src/mt-main.c:893
 msgid "Ignore small pointer movements"
 msgstr "Ez ikusi egin erakuslearen mugimendu txikiei"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Erakutsi atzerapena kurtsorearen gainean"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:895
 msgid "Shut down mousetweaks"
 msgstr "Itzali 'mousetweaks'"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "- GNOMEko 'mousetweaks' daemona"
+#: ../src/mt-main.c:897
+msgid "Disable cursor animations"
+msgstr "Desgaitu kurtsorearen animazioak"
+
+#: ../src/mt-main.c:899
+msgid "Start mousetweaks as a daemon"
+msgstr "Abiarazi mousetweaks daemon gisa"
+
+#: ../src/mt-main.c:901
+msgid "Start mousetweaks in login mode"
+msgstr "Abiarazi mousetweaks saio-hasierako moduan"
+
+#. parse
+#: ../src/mt-main.c:919
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOMEko saguaren erabilgarritasunaren daemona"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -457,20 +470,20 @@ msgstr "Huts egin du laguntza bistaratzean"
 msgid "Enable and Log Out"
 msgstr "Gaitu eta amaitu saioa"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Blokeatuta"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "B"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Kapturatu area"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Blokeatu saguaren erakuslea aldi baterako"
 

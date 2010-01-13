@@ -1,14 +1,14 @@
 # Norwegian translation of mousetweaks (bokmål dialect).
 # Copyright (C) 1999-2005 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@gnome.org>, 1999-2009.
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2010.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks 2.27.x\n"
+"Project-Id-Version: mousetweaks 2.29.x\n"
 "Report-Msgid-Bugs-To:\n"
-"POT-Creation-Date: 2009-09-01 14:15+0200\n"
-"PO-Revision-Date: 2009-09-01 14:17+0200\n"
+"POT-Creation-Date: 2010-01-13 22:35+0100\n"
+"PO-Revision-Date: 2010-01-13 22:37+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +37,7 @@ msgid "Drag Click"
 msgstr "Dra-og-klikk"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:877
 msgid "Enable dwell click"
 msgstr "Aktiver dwell-klikk"
 
@@ -150,7 +150,7 @@ msgid "Area to lock the pointer"
 msgstr "Område for låsing av pekeren"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Fangst av pekeren"
 
@@ -212,7 +212,7 @@ msgid "Dwell click mode"
 msgstr "Modus for dwell-klikk"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
 msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:11
@@ -223,7 +223,7 @@ msgstr "Tid for dwell-klikk"
 msgid "Enable secondary click"
 msgstr "Aktiver sekundært klikk"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:879
 msgid "Enable simulated secondary click"
 msgstr "Slå på simulert andreklikk"
 
@@ -251,7 +251,7 @@ msgstr "Bevegelsesterskel"
 msgid "Secondary click time"
 msgstr "Tid for sekundært klikk"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Vis vindu for type klikk"
 
@@ -364,11 +364,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Bredde på fangstområde i piksler."
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:782
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Støtte for hjelpeteknologi ikke aktivert"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:783
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -380,41 +380,56 @@ msgstr ""
 "Trykk «Slå på og logg ut» for å slå på støtte for hjelpeteknologier og starte "
 "sesjonen på nytt."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:881
 msgid "Time to wait before a dwell click"
 msgstr "Tidsavbrudd før dwell-klikk"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:883
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tidsavbrudd før et simulert andreklikk"
 
-#: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Dwell-modus som skal brukes"
-
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "X-posisjon for vindu"
+msgid "Set the active dwell mode"
+msgstr ""
 
 #: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Y-posisjon for vindu"
+msgid "Show a click-type window"
+msgstr "Vis vindu for type klikk"
 
 #: ../src/mt-main.c:889
+#, fuzzy
+msgid "Click-type window X position"
+msgstr "X-posisjon for vindu"
+
+#: ../src/mt-main.c:891
+#, fuzzy
+msgid "Click-type window Y position"
+msgstr "X-posisjon for vindu"
+
+#: ../src/mt-main.c:893
 msgid "Ignore small pointer movements"
 msgstr "Ignorer små pekerbevegelser"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Vis medgått tid markøroverlegg"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:895
 msgid "Shut down mousetweaks"
 msgstr "Slå av mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "- GNOME mousetweaks tjeneste"
+#: ../src/mt-main.c:897
+msgid "Disable cursor animations"
+msgstr "Slå av animering av markør"
+
+#: ../src/mt-main.c:899
+msgid "Start mousetweaks as a daemon"
+msgstr "Start mousetweaks som en tjeneste"
+
+#: ../src/mt-main.c:901
+msgid "Start mousetweaks in login mode"
+msgstr ""
+
+#. parse
+#: ../src/mt-main.c:919
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME tjeneste for tilgjengelighet for mus"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -424,23 +439,32 @@ msgstr "Kunne ikke vise hjelp"
 msgid "Enable and Log Out"
 msgstr "Aktiver og logg ut"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Låst"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Fangstområde"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Lås muspekeren midlertidig"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Klarte ikke å starte brukervalg for mus"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Dwell-modus som skal brukes"
+
+#~ msgid "Window y position"
+#~ msgstr "Y-posisjon for vindu"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Vis medgått tid markøroverlegg"

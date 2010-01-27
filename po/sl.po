@@ -1,13 +1,15 @@
-# This file is distributed under the same license as the program package.
+# Slovenian translation of mousetweaks.
+# Copyright (C) 2005-2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mousetweaks package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2008 - 2009.
+# Matej Urbančič <mateju@svn.gnome.org>, 2008 - 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-11-17 07:06+0000\n"
-"PO-Revision-Date: 2009-11-17 10:19+0100\n"
+"POT-Creation-Date: 2010-01-25 20:12+0000\n"
+"PO-Revision-Date: 2010-01-26 08:59+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +44,7 @@ msgstr "Klik s potegom"
 
 #: ../data/dwell-click-applet.ui.h:6
 #: ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:876
+#: ../src/mt-main.c:877
 msgid "Enable dwell click"
 msgstr "Omogoči zadržani klik"
 
@@ -94,7 +96,7 @@ msgstr "Gumb _miške:"
 
 #: ../data/pointer-capture-applet.ui.h:10
 msgid "Pointer Capture Preferences"
-msgstr "Lastnosti zajemanja kazalnika"
+msgstr "Možnosti zajemanja kazalnika"
 
 #: ../data/pointer-capture-applet.ui.h:11
 msgid "Release Pointer"
@@ -102,7 +104,7 @@ msgstr "Sprostitev kazalnika"
 
 #: ../data/pointer-capture-applet.ui.h:12
 msgid "S_hift"
-msgstr "S_hift"
+msgstr "_Dvigalka"
 
 #: ../data/pointer-capture-applet.ui.h:13
 msgid "Selecting Button 0 will capture the pointer immediately"
@@ -110,7 +112,7 @@ msgstr "Z izborom gumba 0 bo zajem kazalnika trenuten"
 
 #: ../data/pointer-capture-applet.ui.h:14
 msgid "Sh_ift"
-msgstr "Sh_ift"
+msgstr "_Dvigalka"
 
 #: ../data/pointer-capture-applet.ui.h:15
 msgid "Size of Capture Area"
@@ -134,15 +136,15 @@ msgstr "Vrsta zadržanega klika"
 
 #: ../data/mousetweaks.ui.h:5
 msgid "Show Icons and Text"
-msgstr "Prikaži ikone in besedilo"
+msgstr "Pokaži ikone in besedilo"
 
 #: ../data/mousetweaks.ui.h:6
 msgid "Show Icons only"
-msgstr "Prikaži le ikone"
+msgstr "Pokaži le ikone"
 
 #: ../data/mousetweaks.ui.h:7
 msgid "Show Text only"
-msgstr "Prikaži le besedilo"
+msgstr "Pokaži le besedilo"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1
 #: ../src/dwell-click-applet.c:561
@@ -175,7 +177,7 @@ msgstr "_Pomoč"
 #: ../data/DwellClick.xml.h:3
 #: ../data/PointerCapture.xml.h:3
 msgid "_Preferences"
-msgstr "_Lastnosti"
+msgstr "_Možnosti"
 
 #: ../data/mousetweaks.schemas.in.h:1
 msgid "Animate cursor"
@@ -226,7 +228,7 @@ msgid "Enable secondary click"
 msgstr "Omogoči drugi klik"
 
 #: ../data/mousetweaks.schemas.in.h:14
-#: ../src/mt-main.c:878
+#: ../src/mt-main.c:879
 msgid "Enable simulated secondary click"
 msgstr "Omogoči simulirani drugi klik"
 
@@ -256,7 +258,7 @@ msgstr "Čas drugega klika"
 
 #: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
-msgstr "Prikaži okno vrste klika"
+msgstr "Pokaži okno vrste klika"
 
 #: ../data/mousetweaks.schemas.in.h:22
 msgid "Show elapsed time as cursor overlay."
@@ -342,11 +344,11 @@ msgstr "Možnost omogoča, da je treba za sprostitev kazalnika iz območja zajem
 msgid "Width of the capture area in pixels."
 msgstr "Širina območja zajema v točkah."
 
-#: ../src/mt-main.c:781
+#: ../src/mt-main.c:782
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Pomožne tehnologije niso omogočene"
 
-#: ../src/mt-main.c:782
+#: ../src/mt-main.c:783
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -356,48 +358,52 @@ msgstr ""
 "\n"
 "V primeru, da jih želite omogočiti in ponovno zagnati sejo, pritisnite \"Omogoči in se odjavi\"."
 
-#: ../src/mt-main.c:880
+#: ../src/mt-main.c:881
 msgid "Time to wait before a dwell click"
 msgstr "Čas postanka pred zadržanim klikom"
 
-#: ../src/mt-main.c:882
+#: ../src/mt-main.c:883
 msgid "Time to wait before a simulated secondary click"
 msgstr "Čas postanka pred navideznim drugim klikom"
 
-#: ../src/mt-main.c:884
+#: ../src/mt-main.c:885
 msgid "Set the active dwell mode"
 msgstr "Določi dejavni način zadrževanja klika"
 
-#: ../src/mt-main.c:886
+#: ../src/mt-main.c:887
 msgid "Show a click-type window"
-msgstr "Prikaži okno vrste klika"
+msgstr "Pokaži okno vrste klika"
 
-#: ../src/mt-main.c:888
+#: ../src/mt-main.c:889
 msgid "Click-type window X position"
 msgstr "Klik X lege okna"
 
-#: ../src/mt-main.c:890
+#: ../src/mt-main.c:891
 msgid "Click-type window Y position"
 msgstr "Klik Y lege okna"
 
-#: ../src/mt-main.c:892
+#: ../src/mt-main.c:893
 msgid "Ignore small pointer movements"
 msgstr "Prezri drobne gibe kazalnika"
 
-#: ../src/mt-main.c:894
+#: ../src/mt-main.c:895
 msgid "Shut down mousetweaks"
 msgstr "Izklopi mousetweaks"
 
-#: ../src/mt-main.c:896
+#: ../src/mt-main.c:897
 msgid "Disable cursor animations"
 msgstr "Onemogoči animiranje kazalnika"
 
-#: ../src/mt-main.c:898
+#: ../src/mt-main.c:899
 msgid "Start mousetweaks as a daemon"
 msgstr "zagon mousetweaks kot ozadnji program"
 
+#: ../src/mt-main.c:901
+msgid "Start mousetweaks in login mode"
+msgstr "Zagon mousetweaks v prijavnem načinu"
+
 #. parse
-#: ../src/mt-main.c:915
+#: ../src/mt-main.c:919
 msgid "- GNOME mouse accessibility daemon"
 msgstr " - GNOME ozadnji program miške"
 
@@ -428,7 +434,7 @@ msgstr "Začasni zaklep kazalnika miške"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
-msgstr "Napaka med zaganjanjem lastnosti miške"
+msgstr "Napaka med zaganjanjem možnosti miške"
 
 #~ msgid "Dwell mode to use"
 #~ msgstr "Način zadržanega klika"

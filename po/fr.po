@@ -1,19 +1,20 @@
 # French translation of mousetweaks.
-# Copyright (C) 2007 Gerd Kohlberger <lowfi@chello.at>, Francesco Fumanti <francesco.fumanti@gmx.net>
+# Copyright (C) 2007 Listed translators
 #
 # This file is distributed under the same license as the mousetweaks package.
 #
 # Francesco Fumanti <francesco.fumanti@gmx.net>, 2007.
 # Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.
-# Claude Paroz <claude@2xlibre.net>, 2008-2009.
+# Claude Paroz <claude@2xlibre.net>, 2008-2010.
 # Bruno Brouard <annoa.b@gmail.com>, 2008-2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-22 00:23+0200\n"
-"PO-Revision-Date: 2009-08-22 00:24+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2010-01-08 17:50+0000\n"
+"PO-Revision-Date: 2010-01-27 22:29+0100\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +42,7 @@ msgid "Drag Click"
 msgstr "Clic glisser-déposer"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:877
 msgid "Enable dwell click"
 msgstr "Activer les clics par maintien"
 
@@ -154,7 +155,7 @@ msgid "Area to lock the pointer"
 msgstr "Zone de verrouillage du pointeur"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Capture du pointeur"
 
@@ -226,9 +227,9 @@ msgid "Dwell click mode"
 msgstr "Mode de clic par maintien"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
 msgstr ""
-"Mode de clic par maintien (« 0 » = mode par gestes, « 1 » = mode fenêtre)"
+"Mode de clic par maintien (« 0 » = mode fenêtre, « 1 » = mode par gestes)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -238,7 +239,7 @@ msgstr "Délai du clic par maintien"
 msgid "Enable secondary click"
 msgstr "Activer les clics secondaires"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:879
 msgid "Enable simulated secondary click"
 msgstr "Activer les clics secondaires simulés"
 
@@ -266,7 +267,7 @@ msgstr "Seuil de détection du mouvement"
 msgid "Secondary click time"
 msgstr "Délai du clic secondaire"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Afficher la fenêtre de type de clic"
 
@@ -410,11 +411,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Largeur de la zone de capture en pixels."
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:782
 msgid "Assistive Technology Support is not Enabled"
 msgstr "La prise en charge des outils d'accessibilité n'est pas activée"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:783
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -427,41 +428,54 @@ msgstr ""
 "Pour activer ces outils et redémarrer votre session, cliquez sur « Activer et "
 "se déconnecter »."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:881
 msgid "Time to wait before a dwell click"
 msgstr "Délai avant un clic par maintien"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:883
 msgid "Time to wait before a simulated secondary click"
 msgstr "Délai avant un clic secondaire simulé"
 
-#: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Mode de clic par maintien à utiliser"
-
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Position horizontale x de la fenêtre"
+msgid "Set the active dwell mode"
+msgstr "Définit le mode de maintien actif"
 
 #: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Position verticale y de la fenêtre"
+msgid "Show a click-type window"
+msgstr "Afficher une fenêtre de type de clic"
 
 #: ../src/mt-main.c:889
+msgid "Click-type window X position"
+msgstr "Position horizontale X de la fenêtre de type de clic"
+
+#: ../src/mt-main.c:891
+msgid "Click-type window Y position"
+msgstr "Position verticale Y de la fenêtre de type de clic"
+
+#: ../src/mt-main.c:893
 msgid "Ignore small pointer movements"
 msgstr "Ignore les petits mouvements du pointeur"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Affiche le temps écoulé en superposition du curseur"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:895
 msgid "Shut down mousetweaks"
 msgstr "Quitte Mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "- Service Mousetweaks GNOME"
+#: ../src/mt-main.c:897
+msgid "Disable cursor animations"
+msgstr "Désactive les animations du curseur"
+
+#: ../src/mt-main.c:899
+msgid "Start mousetweaks as a daemon"
+msgstr "Démarre mousetweaks en tant que service"
+
+#: ../src/mt-main.c:901
+msgid "Start mousetweaks in login mode"
+msgstr "Démarre mousetweaks en mode connexion"
+
+#. parse
+#: ../src/mt-main.c:919
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Service d'accessibilité de souris GNOME"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -471,23 +485,29 @@ msgstr "L'affichage de l'aide a échoué"
 msgid "Enable and Log Out"
 msgstr "Activer et se déconnecter"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Verrouillé"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "V"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Zone de capture"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Verrouille temporairement le pointeur de la souris"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Le lancement des préférences de la souris a échoué"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Mode de clic par maintien à utiliser"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Affiche le temps écoulé en superposition du curseur"

@@ -1,15 +1,15 @@
 # Thai translation of mousetweaks
-# Copyright (C) 2008-2009 Free Software Foundation, Inc.
+# Copyright (C) 2008-2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
-# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2008-2009.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2008-2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-06-01 08:54+0000\n"
-"PO-Revision-Date: 2009-08-23 15:53+0700\n"
+"POT-Creation-Date: 2010-01-08 17:50+0000\n"
+"PO-Revision-Date: 2010-02-07 20:45+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +37,7 @@ msgid "Drag Click"
 msgstr "คลิกเพื่อลาก"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:877
 msgid "Enable dwell click"
 msgstr "เปิดใช้การคลิกด้วยการวางแช่"
 
@@ -150,7 +150,7 @@ msgid "Area to lock the pointer"
 msgstr "พื้นที่กักตัวชี้"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "กักตัวชี้"
 
@@ -214,8 +214,8 @@ msgid "Dwell click mode"
 msgstr "โหมดการคลิกด้วยการวางแช่"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "โหมดการคลิกด้วยการวางแช่ (\"0\"=โหมดท่าขยับ, \"1\"=โหมดหน้าต่าง)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "โหมดการคลิกด้วยการวางแช่ (\"0\"=โหมดหน้าต่าง, \"1\"=โหมดท่าขยับ)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -225,7 +225,7 @@ msgstr "ระยะเวลาการคลิกด้วยการวา
 msgid "Enable secondary click"
 msgstr "เปิดใช้คลิกที่สอง"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:879
 msgid "Enable simulated secondary click"
 msgstr "เปิดใช้การจำลองคลิกที่สอง"
 
@@ -253,7 +253,7 @@ msgstr "ระยะเริ่มเคลื่อน"
 msgid "Secondary click time"
 msgstr "ระยะเวลาคลิกที่สอง"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "แสดงหน้าต่างชนิดของการคลิก"
 
@@ -382,11 +382,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "ความกว้างของพื้นที่กักตัวชี้ในหน่วยพิกเซล"
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:782
 msgid "Assistive Technology Support is not Enabled"
 msgstr "ไม่ได้เปิดใช้เทคโนโลยีสิ่งอำนวยความสะดวก"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:783
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -398,41 +398,54 @@ msgstr ""
 "หากต้องการเปิดใช้เทคโนโลยีสิ่งอำนวยความสะดวกแล้วเริ่มวาระใหม่ ก็ให้กดปุ่ม "
 "\"เปิดใช้และออกจากระบบ\""
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:881
 msgid "Time to wait before a dwell click"
 msgstr "ระยะเวลาที่จะรอในการคลิกด้วยการวางแช่"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:883
 msgid "Time to wait before a simulated secondary click"
 msgstr "ระยะเวลาที่จะรอในการจำลองคลิกที่สอง"
 
-#: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "โหมดการวางแช่ที่จะใช้"
-
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "ตำแหน่ง x ของหน้าต่าง"
+msgid "Set the active dwell mode"
+msgstr "กำหนดโหมดการวางแช่ที่จะใช้"
 
 #: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "ตำแหน่ง y ของหน้าต่าง"
+msgid "Show a click-type window"
+msgstr "แสดงหน้าต่างชนิดของการคลิก"
 
 #: ../src/mt-main.c:889
+msgid "Click-type window X position"
+msgstr "ตำแหน่ง X ของหน้าต่างชนิดของการคลิก"
+
+#: ../src/mt-main.c:891
+msgid "Click-type window Y position"
+msgstr "ตำแหน่ง Y ของหน้าต่างชนิดของการคลิก"
+
+#: ../src/mt-main.c:893
 msgid "Ignore small pointer movements"
 msgstr "ไม่สนใจการขยับเมาส์เล็กๆ น้อยๆ"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "แสดงเวลาที่ผ่านไปทับบนตัวชี้"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:895
 msgid "Shut down mousetweaks"
 msgstr "ปิด mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "- ดีมอน mousetweaks ของ GNOME"
+#: ../src/mt-main.c:897
+msgid "Disable cursor animations"
+msgstr "ปิดการทำเคอร์เซอร์เป็นภาพเคลื่อนไหว"
+
+#: ../src/mt-main.c:899
+msgid "Start mousetweaks as a daemon"
+msgstr "เรียก mousetweaks ทำงานในแบบดีมอน"
+
+#: ../src/mt-main.c:901
+msgid "Start mousetweaks in login mode"
+msgstr "เรียก mousetweaks ทำงานในโหมดเข้าระบบ"
+
+#. parse
+#: ../src/mt-main.c:919
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- ดีมอนจัดการเทคโนโลยีสิ่งอำนวยความสะดวกสำหรับเมาส์ของ GNOME"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -442,26 +455,35 @@ msgstr "ไม่สามารถแสดงคู่มือวิธีใ
 msgid "Enable and Log Out"
 msgstr "เปิดใช้และออกจากระบบ"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "ล็อค"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "ล"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "พื้นที่กักตัวชี้"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "ล็อคตัวชี้เมาส์ชั่วคราว"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "ไม่สามารถเรียกใช้การปรับแต่งเมาส์"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "โหมดการวางแช่ที่จะใช้"
+
+#~ msgid "Window y position"
+#~ msgstr "ตำแหน่ง y ของหน้าต่าง"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "แสดงเวลาที่ผ่านไปทับบนตัวชี้"
 
 #~ msgid "On"
 #~ msgstr "เปิด"
@@ -519,9 +541,6 @@ msgstr "ไม่สามารถเรียกใช้การปรับ
 
 #~ msgid "_Button:"
 #~ msgstr "_ปุ่ม:"
-
-#~ msgid "Use dwell mode"
-#~ msgstr "ใช้โหมดการวางแช่"
 
 #~ msgid "Mousetweaks requires Assistive Technologies."
 #~ msgstr "Mousetweaks ต้องทำงานโดยมีเทคโนโลยีสิ่งอำนวยความสะดวกด้วย"

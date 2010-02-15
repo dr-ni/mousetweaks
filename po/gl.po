@@ -1,4 +1,4 @@
-# translation of mousetweaks.master.po to Galician
+# translation of mousetweaks-master-po-gl-70471.po to Galician
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
@@ -7,19 +7,20 @@
 # Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
 # Meixome <meixome@mancomun.org>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
+# Fran Diéguez <frandieguez@ubuntu.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks.master\n"
+"Project-Id-Version: mousetweaks-master-po-gl-70471\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-17 13:15+0200\n"
-"PO-Revision-Date: 2009-08-17 12:16+0200\n"
-"Last-Translator: Antón Méixome <meixome@mancomun.org>\n"
-"Language-Team: Galician <gnome@mancomun.org>\n"
+"POT-Creation-Date: 2010-02-15 17:45+0100\n"
+"PO-Revision-Date: 2010-02-12 22:43+0100\n"
+"Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
+"Language-Team: Galician <proxecto@trasno.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: gl\n"
-"Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: ../data/dwell-click-applet.ui.h:1
@@ -27,7 +28,7 @@ msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of Mousetweaks"
 msgstr ""
-"Miniaplicativo para seleccionar os diferentes tipos de pulsación en pausa.\n"
+"Miniaplicativo para seleccionar os diferentes tipos de clic de espera.\n"
 "Parte do MouseTweaks"
 
 #: ../data/dwell-click-applet.ui.h:3
@@ -36,16 +37,16 @@ msgstr "Xanela de tipo de pulsación"
 
 #: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
 msgid "Double Click"
-msgstr "Duplo clic"
+msgstr "Dobre clic"
 
 #: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
 msgid "Drag Click"
 msgstr "Clic de arrastre"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:877
 msgid "Enable dwell click"
-msgstr "Activar clic en pausa"
+msgstr "Activar o clic de espera"
 
 #: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
 msgid "Right Click"
@@ -129,7 +130,7 @@ msgstr "píxeles"
 
 #: ../data/mousetweaks.ui.h:3
 msgid "Dwell Click Type"
-msgstr "Tipo de clic en pausa"
+msgstr "Tipo de clic automático"
 
 #: ../data/mousetweaks.ui.h:5
 msgid "Show Icons and Text"
@@ -145,18 +146,18 @@ msgstr "Mostrar só o texto"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
-msgstr "Clic en pausa"
+msgstr "Clic automático"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr "Seleccione o tipo de clic en pausa"
+msgstr "Seleccione o tipo de clic de espera"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr "Área na que bloquear o punteiro"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Captura do punteiro"
 
@@ -184,40 +185,40 @@ msgstr "Estilo de botón"
 msgid ""
 "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
 msgstr ""
-"Estilo do botón na xanela de tipo de clic (\"0\" = Text, \"1\" = Icon, \"2\" "
-"= Both)"
+"Estilo do botón na xanela de tipo de clic (\"0\" = Texto, \"1\" = Icona, \"2"
+"\" = Ambos)"
 
 #: ../data/mousetweaks.schemas.in.h:4
 msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Dirección para efectuar un duplo clic (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"Dirección para efectuar un dobre clic (\"0\" = Esquerda, \"1\" = Dereita, \"2"
+"\" = Arriba, \"3\" = Abaixo)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
 msgstr ""
-"Dirección para efectuar un clic de arrastre (\"0\" = Left, \"1\" = Right, \"2"
-"\" = Up, \"3\" = Down)"
+"Dirección para efectuar un clic de arrastre (\"0\" = Esquerda, \"1\" = "
+"Dereita, \"2\" = Arriba, \"3\" = Abaixo)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Dirección para efectuar un clic secundario (\"0\" = Left, \"1\" = Right, \"2"
-"\" = Up, \"3\" = Down)"
+"Dirección para efectuar un clic secundario (\"0\" = Esquerda, \"1\" = "
+"Dereita, \"2\" = Arriba, \"3\" = Abaixo)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Dirección para efectuar un clic único (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"Dirección para efectuar un clic único (\"0\" = Esquerda, \"1\" = Dereita, \"2"
+"\" = Arriba, \"3\" = Abaixo)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
@@ -225,27 +226,27 @@ msgstr "Distancia en píxeles antes de que se recoñeza o movemento"
 
 #: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
-msgstr "Modo de clic en pausa"
+msgstr "Modo de clic automático"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Modo de clic en pausa (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "Modo de clic automático (\"0\" = Modo xanela, \"1\" = Modo xesto)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
-msgstr "Tempo de clic en pausa"
+msgstr "Tempo de clic automático"
 
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
-msgstr "Activar clic secundario"
+msgstr "Activar o clic secundario"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:879
 msgid "Enable simulated secondary click"
-msgstr "Activar clic secundario simulado"
+msgstr "Activar o clic secundario simulado"
 
 #: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
-msgstr "Xesto de duplo clic"
+msgstr "Xesto de dobre clic"
 
 #: ../data/mousetweaks.schemas.in.h:16
 msgid "Gesture drag click"
@@ -267,7 +268,7 @@ msgstr "Límite de movemento"
 msgid "Secondary click time"
 msgstr "Tempo do clic secundario"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Mostrar a xanela de tipo de clic"
 
@@ -405,84 +406,97 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Largura da área de captura en píxeles."
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:782
 msgid "Assistive Technology Support is not Enabled"
 msgstr "O soporte de tecnoloxías adaptadas non está activado"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:783
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
 "To enable support for assistive technologies and restart your session, press "
 "\"Enable and Log Out\"."
 msgstr ""
-"O Mousetweaks require que as tecnoloxías adaptadas estean activadas na súa "
+"Mousetweaks require que as tecnoloxías adaptadas estean activadas na súa "
 "sesión.\n"
 "\n"
 "Para activar o soporte de tecnoloxías adaptadas e reiniciar a súa sesión, "
-"prema en \"Activar e terminar a sesión\"."
+"prema en \"Activar e saír da sesión\"."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:881
 msgid "Time to wait before a dwell click"
-msgstr "O tempo de espera antes dun clic en pausa"
+msgstr "O tempo de espera antes dun clic de espera"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:883
 msgid "Time to wait before a simulated secondary click"
 msgstr "O tempo de espera antes de simular un clic secundario"
 
-#: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "O modo de clic en pausa para usar"
-
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Posición x da xanela"
+msgid "Set the active dwell mode"
+msgstr "Estabelecer modo de espera como activo"
 
 #: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Posición y da xanela"
+msgid "Show a click-type window"
+msgstr "Mostrar a xanela de tipo de clic"
 
 #: ../src/mt-main.c:889
+msgid "Click-type window X position"
+msgstr "Posición x da xanela de tipo clic"
+
+#: ../src/mt-main.c:891
+msgid "Click-type window Y position"
+msgstr "Posición x da xanela de tipo clic"
+
+#: ../src/mt-main.c:893
 msgid "Ignore small pointer movements"
 msgstr "Ignorar os pequenos movementos do punteiro"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Mostrar o tempo transcorrido como sobreposición do cursor"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:895
 msgid "Shut down mousetweaks"
 msgstr "Pechar o Mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "- daemon Mousetweaks do Gnome"
+#: ../src/mt-main.c:897
+msgid "Disable cursor animations"
+msgstr "Desactivar a animación dos cursores"
+
+#: ../src/mt-main.c:899
+msgid "Start mousetweaks as a daemon"
+msgstr "Iniciar mousetweaks como demonio do sistema"
+
+#: ../src/mt-main.c:901
+msgid "Start mousetweaks in login mode"
+msgstr "Iniciar mousetweaks no modo de inicio de sesión"
+
+#. parse
+#: ../src/mt-main.c:919
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Daemon do sistema de Mousetweaks do GNOME"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
-msgstr "Fallo ao mostrar a axuda"
+msgstr "Produciuse un erro ao mostrar a axuda"
 
 #: ../src/mt-common.c:66
 msgid "Enable and Log Out"
-msgstr "Activar e terminar a sesión"
+msgstr "Activar e saír da sesión"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Bloqueado"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "B"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Capturar área"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Bloquear temporalmente o punteiro do rato"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
-msgstr "Fallou ao iniciar as preferencias do rato"
+msgstr "Produciuse un fallo ao iniciar as preferencias do rato"

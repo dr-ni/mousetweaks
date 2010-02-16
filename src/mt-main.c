@@ -985,7 +985,7 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
 	g_free (cli_args.mode);
     }
 
-    /* init click-type windoe */
+    /* init click-type window */
     if (!mt_ctw_init (mt, cli_args.pos_x, cli_args.pos_y))
 	goto CLEANUP;
 

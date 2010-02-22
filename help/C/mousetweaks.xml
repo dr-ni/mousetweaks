@@ -39,14 +39,26 @@
 
     <revhistory>
       <revision>
+        <revnumber>Version 2.30</revnumber>
+
+        <date>February 2010</date>
+
+        <revdescription>
+          <para role="author">Adapt the manual to the changes done to
+          mousetweaks for GNOME 2.30. Francesco Fumanti
+          <email>frfumanti@svn.gnome.org</email></para>
+        </revdescription>
+      </revision>
+
+      <revision>
         <revnumber>Version 2.28</revnumber>
 
         <date>September 2009</date>
 
         <revdescription>
           <para role="author">Adapt the manual to the changes done to
-          mousetweaks for GNOME 2.28.<email>Francesco Fumanti
-          &lt;frfumanti@svn.gnome.org&gt;</email></para>
+          mousetweaks for GNOME 2.28. Francesco Fumanti
+          <email>frfumanti@svn.gnome.org&gt;</email></para>
         </revdescription>
       </revision>
 
@@ -58,8 +70,8 @@
         <revdescription>
           <para role="author">The manual has been edited to match the changes
           done to mousetweaks for GNOME 2.26. Moreover, the license of the
-          manual has been raised to GFDL 1.3.<email>Francesco Fumanti
-          &lt;frfumanti@svn.gnome.org&gt;</email></para>
+          manual has been raised to GFDL 1.3. Francesco Fumanti
+          <email>frfumanti@svn.gnome.org</email></para>
         </revdescription>
       </revision>
 
@@ -70,9 +82,8 @@
 
         <revdescription>
           <para role="author">The contents of the manual have been upgraded to
-          integrate the improvements done to mousetweaks for GNOME
-          2.24.<email>Francesco Fumanti
-          &lt;frfumanti@svn.gnome.org&gt;</email></para>
+          integrate the improvements done to mousetweaks for GNOME 2.24.
+          Francesco Fumanti <email>frfumanti@svn.gnome.org</email></para>
         </revdescription>
       </revision>
 
@@ -321,6 +332,15 @@
 
         <para><command>mousetweaks <parameter>--enable-dwell
         --show-ctw</parameter></command></para>
+
+        <note>
+          <para>The starting parameters --login and --daemonize were added to
+          allow GDM to start and quit mousetweaks: the first disables the
+          check for the Assistive Technologies framework at the start of
+          mousetweaks; by not passing the second, mousetweaks will keep the
+          pid that it got when it started, allowing GDM to shut it down by
+          using the pid.</para>
+        </note>
       </sect3>
 
       <sect3 id="mouse-a11y-start-dwell-by-panel-applet">
@@ -328,11 +348,12 @@
         Applet</title>
 
         <para>It is possible to start the Dwell Click by simply resting
-        (dwelling) for a little delay with the pointer on the On/Off button of
-        the Dwell Click panel applet. The On/Off button provides feedback of
-        the passing dwell time by filling its frame with another colour. When
-        the frame is completely filled, the button displays its active state
-        and the dwell click gets started.</para>
+        (dwelling) for a little delay with the pointer on the mouse icon
+        displayed by the Dwell Click panel applet. In fact, this mouse icon is
+        a dwellable On/Off button that provides feedback of the passing dwell
+        time by filling its frame with another colour. When the frame is
+        completely filled, the button displays its active state and the dwell
+        click gets started.</para>
 
         <mediaobject>
           <imageobject>

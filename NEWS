@@ -1,3 +1,22 @@
+Version 2.29.91
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Use input-mouse icon for Enable button
+    * Add changes of this development cycle to manual
+    * Add --login option to manpage
+
+New and updated translations:
+
+    [cs] Adrian Guniš
+    [gl] Fran Diéguez
+    [pt_BR] Vladimir Melo
+    [ro] Lucian Adrian
+    [ta] Dr.T.Vasudevan
+    [zh_HK] Chao-Hsiung Liao
+    [zh_TW] Chao-Hsiung Liao
+
 Version 2.29.90
 ---------------
 

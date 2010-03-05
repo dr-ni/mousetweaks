@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks 2.29.x\n"
-"Report-Msgid-Bugs-To:\n"
-"POT-Creation-Date: 2010-01-13 22:35+0100\n"
-"PO-Revision-Date: 2010-01-13 22:37+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-05 17:50+0100\n"
+"PO-Revision-Date: 2010-03-05 17:51+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
@@ -390,7 +390,7 @@ msgstr "Tidsavbrudd før et simulert andreklikk"
 
 #: ../src/mt-main.c:885
 msgid "Set the active dwell mode"
-msgstr ""
+msgstr "Sett aktiv dwell-modus"
 
 #: ../src/mt-main.c:887
 msgid "Show a click-type window"
@@ -424,7 +424,7 @@ msgstr "Start mousetweaks som en tjeneste"
 
 #: ../src/mt-main.c:901
 msgid "Start mousetweaks in login mode"
-msgstr ""
+msgstr "Start mousetweaks i påloggingsmodus"
 
 #. parse
 #: ../src/mt-main.c:919
@@ -459,12 +459,3 @@ msgstr "Lås muspekeren midlertidig"
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Klarte ikke å starte brukervalg for mus"
-
-#~ msgid "Dwell mode to use"
-#~ msgstr "Dwell-modus som skal brukes"
-
-#~ msgid "Window y position"
-#~ msgstr "Y-posisjon for vindu"
-
-#~ msgid "Show elapsed time as cursor overlay"
-#~ msgstr "Vis medgått tid markøroverlegg"

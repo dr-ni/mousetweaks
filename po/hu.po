@@ -1,15 +1,15 @@
 # translation of mousetweaks to Hungarian
-# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
+# Copyright (C) 2008, 2009, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
 #
 # Balint Laza <laza at szentkoronaradio dot com>, 2008.
-# Gabor Kelemen <kelemeng at gnome dot hu>, 2008, 2009.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2008, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-10 02:01+0200\n"
-"PO-Revision-Date: 2009-09-10 01:56+0200\n"
+"POT-Creation-Date: 2010-03-05 22:17+0100\n"
+"PO-Revision-Date: 2010-03-05 22:01+0100\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgid "Drag Click"
 msgstr "Húzási kattintás"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:877
 msgid "Enable dwell click"
 msgstr "Elidőzési kattintás engedélyezése"
 
@@ -152,7 +152,7 @@ msgid "Area to lock the pointer"
 msgstr "Terület a mutató zárolására"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Mutató elfogása"
 
@@ -222,8 +222,8 @@ msgid "Dwell click mode"
 msgstr "Elidőzési kattintás módja"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Elidőzési kattintás módja („0” = gesztus, „1” = ablak)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "Elidőzési kattintás módja („0” = ablak, „1” = gesztus)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -233,7 +233,7 @@ msgstr "Elidőzési kattintás ideje"
 msgid "Enable secondary click"
 msgstr "Másodlagos kattintás engedélyezése"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:879
 msgid "Enable simulated secondary click"
 msgstr "Szimulált másodlagos kattintás engedélyezése"
 
@@ -261,7 +261,7 @@ msgstr "Mozgási küszöb"
 msgid "Secondary click time"
 msgstr "Másodlagos kattintás ideje"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "A Kattintástípus ablak megjelenítése"
 
@@ -397,11 +397,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Az elfogási terület szélessége képpontban."
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:782
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Az akadálymentesítés támogatása nincs engedélyezve"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:783
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -414,41 +414,54 @@ msgstr ""
 "Az akadálymentesítés engedélyezéséhez a munkamenetben és a munkamenet "
 "újraindításához nyomja meg a „Bekapcsolás és kijelentkezés” gombot."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:881
 msgid "Time to wait before a dwell click"
 msgstr "Várakozás ideje elidőzési kattintás előtt"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:883
 msgid "Time to wait before a simulated secondary click"
 msgstr "Várakozás ideje szimulált másodlagos kattintás előtt"
 
-#: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Használandó elidőzési mód"
-
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Ablak x pozíciója"
+msgid "Set the active dwell mode"
+msgstr "Az aktív elidőzési mód beállítása"
 
 #: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Ablak y pozíciója"
+msgid "Show a click-type window"
+msgstr "A Kattintástípus ablak megjelenítése"
 
 #: ../src/mt-main.c:889
+msgid "Click-type window X position"
+msgstr "Kattintástípus ablak X pozíciója"
+
+#: ../src/mt-main.c:891
+msgid "Click-type window Y position"
+msgstr "Kattintástípus ablak Y pozíciója"
+
+#: ../src/mt-main.c:893
 msgid "Ignore small pointer movements"
 msgstr "Kis mutatómozgások figyelmen kívül hagyása"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Az eltelt idő megjelenítése a kurzor felett"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:895
 msgid "Shut down mousetweaks"
 msgstr "A Mousetweaks leállítása"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "– GNOME Mousetweaks démon"
+#: ../src/mt-main.c:897
+msgid "Disable cursor animations"
+msgstr "Kurzoranimációk kikapcsolása"
+
+#: ../src/mt-main.c:899
+msgid "Start mousetweaks as a daemon"
+msgstr "A Mousetweaks indítása démonként"
+
+#: ../src/mt-main.c:901
+msgid "Start mousetweaks in login mode"
+msgstr "A Mousetweaks indítása bejelentkezési módban"
+
+#. parse
+#: ../src/mt-main.c:919
+msgid "- GNOME mouse accessibility daemon"
+msgstr "– GNOME egér-akadálymentesítési démon"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -458,20 +471,20 @@ msgstr "A súgó nem jeleníthető meg"
 msgid "Enable and Log Out"
 msgstr "Bekapcsolás és kijelentkezés"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Zárolva"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "Z"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Elfogási terület"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Az egérmutató ideiglenes zárolása"
 

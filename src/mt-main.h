@@ -61,6 +61,7 @@ struct _MtData {
     guint        dwell_gesture_started : 1;
     guint        override_cursor       : 1;
     guint        move_release          : 1;
+    guint        delay_finished        : 1;
 };
 
 G_END_DECLS

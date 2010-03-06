@@ -408,40 +408,23 @@ mt_main_use_move_release (MtData *mt)
     return FALSE;
 }
 
-static gboolean
-right_click_timeout (gpointer data)
+static void
+delay_timer_finished (MtTimer *timer, MtData *mt)
 {
-    MtData *mt = data;
+    /* set secondary-click flag */
+    mt->delay_finished = TRUE;
 
-    mt_main_generate_button_event (mt, 3, CLICK, CurrentTime);
-
-    return FALSE;
+    if (mt->move_release) {
+	mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
+	mt_main_generate_button_event (mt, 3, CLICK, CurrentTime);
+    }
 }
 
 static void
-delay_timer_finished (MtTimer *timer, gpointer data)
+mt_main_do_secondary_click (MtData *mt)
 {
-    MtData *mt = data;
-    GdkScreen *screen;
-
-    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
-
-    if (mt->move_release || mt_main_use_move_release (mt)) {
-	/* release the click outside of the focused object to
-	 * abort any action started by button-press.
-	 */
-	screen = mt_main_current_screen (mt);
-	mt_main_generate_motion_event (screen, 0, 0);
-	mt_main_generate_button_event (mt, 1, RELEASE, CurrentTime);
-	mt_main_generate_motion_event (screen, mt->pointer_x, mt->pointer_y);
-    }
-    else {
-	mt_main_generate_button_event (mt, 1, RELEASE, CurrentTime);
-    }
-    /* wait 100 msec before releasing the button again -
-     * gives apps some time to release active grabs, eg: gnome-panel 'move'
-     */
-    g_timeout_add (100, right_click_timeout, data);
+    mt->delay_finished = FALSE;
+    mt_main_generate_button_event (mt, 3, CLICK, CurrentTime);
 }
 
 static void
@@ -471,10 +454,15 @@ global_motion_event (MtListener *listener,
 {
     MtData *mt = data;
 
-    if (mt_timer_is_running (mt->delay_timer)) {
+    if (mt->delay_enabled) {
 	if (!below_threshold (mt, event->x, event->y)) {
-	    mt_timer_stop (mt->delay_timer);
 	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
+
+	    if (mt_timer_is_running (mt->delay_timer))
+		mt_timer_stop (mt->delay_timer);
+
+	    if (mt->delay_finished)
+		mt->delay_finished = FALSE;
 	}
     }
 
@@ -515,8 +503,12 @@ global_button_event (MtListener *listener,
 	    mt_timer_start (mt->delay_timer);
 	}
 	else {
-	    mt_timer_stop (mt->delay_timer);
 	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
+
+	    if (mt->delay_finished)
+		mt_main_do_secondary_click (mt);
+	    else
+		mt_timer_stop (mt->delay_timer);
 	}
     }
     /*

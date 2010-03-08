@@ -1,17 +1,17 @@
 # Italian language file for mousetweaks.
-# Copyright (C) 2007, 2008, 2009 The Free Software Foundation.
+# Copyright (C) 2007, 2008, 2009, 2010 The Free Software Foundation.
 # This file is distributed under the same license as the mousetweaks package.
 # Francesco Fumanti <francesco.fumanti@gmx.net>, 2007.
 # Luca Ferretti <elle.uca@libero.it>, 2008
 #
-# Milo Casagrande <milo@ubuntu.com>, 2008-2009, 2009.
+# Milo Casagrande <milo@ubuntu.com>, 2008-2009, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-09-08 09:43+0000\n"
-"PO-Revision-Date: 2009-09-08 22:26+0200\n"
+"POT-Creation-Date: 2010-03-08 19:17+0000\n"
+"PO-Revision-Date: 2010-03-08 21:01+0100\n"
 "Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgid "Drag Click"
 msgstr "Clic di trascinamento"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:869
 msgid "Enable dwell click"
 msgstr "Abilita il clic automatico"
 
@@ -157,7 +157,7 @@ msgid "Area to lock the pointer"
 msgstr "Area in cui bloccare il puntatore"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Cattura del puntatore"
 
@@ -229,10 +229,10 @@ msgid "Dwell click mode"
 msgstr "Modalità del clic automatico"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
 msgstr ""
-"Modalità del clic automatico (\"0\" = modalità gesto, \"1\" = modalità "
-"finestra)"
+"Modalità del clic automatico (\"0\" = modalità finestra, \"1\" = modalità "
+"gesto)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -242,7 +242,7 @@ msgstr "Tempo del clic automatico"
 msgid "Enable secondary click"
 msgstr "Abilita il clic secondario"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
 msgid "Enable simulated secondary click"
 msgstr "Abilita il clic secondario simulato"
 
@@ -270,7 +270,7 @@ msgstr "Soglia di movimento"
 msgid "Secondary click time"
 msgstr "Tempo del clic secondario"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Mostra la finestra per il tipo di clic"
 
@@ -411,12 +411,12 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Larghezza dell'area di cattura in pixel."
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:774
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Supporto alle tecnologie assistive non abilitato"
 
 # (ndt) la traduzione del pulsante è in fondo al file
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:775
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -429,45 +429,59 @@ msgstr ""
 "Per abilitare il supporto alle tecnologie assistive e riavviare la sessione, "
 "fare clic su «Abilita e termina»."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:873
 msgid "Time to wait before a dwell click"
 msgstr "Tempo di attesa prima di un clic automatico"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:875
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo di attesa prima di un clic secondario"
 
+#: ../src/mt-main.c:877
+msgid "Set the active dwell mode"
+msgstr "Imposta la modalità attiva del clic automatico"
+
+#: ../src/mt-main.c:879
+msgid "Show a click-type window"
+msgstr "Mostra la finestra per il tipo di clic"
+
 #: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Modalità clic automatico da usare"
+msgid "Click-type window X position"
+msgstr "Posizione orizzontale della finestra per il tipo di clic"
+
+#: ../src/mt-main.c:883
+msgid "Click-type window Y position"
+msgstr "Posizione verticale della finestra per il tipo di clic"
 
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Posizione orizzontale della finestra"
-
-#: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Posizione verticale della finestra"
-
-#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Ignora movimenti piccoli del puntatore"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Mostra tempo trascorso come sovrapposizione al cursore"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:887
 msgid "Shut down mousetweaks"
 msgstr "Arresta mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "- Demone mousetweaks GNOME"
+#: ../src/mt-main.c:889
+msgid "Disable cursor animations"
+msgstr "Disabilita l'animazione del cursore"
+
+#: ../src/mt-main.c:891
+msgid "Start mousetweaks as a daemon"
+msgstr "Avvia il programma come un demone"
+
+# (ndt) login o accesso?
+#: ../src/mt-main.c:893
+msgid "Start mousetweaks in login mode"
+msgstr "Avvia il programma in modalità login"
+
+#. parse
+#: ../src/mt-main.c:911
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Demone GNOME accessibilità mouse"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
-msgstr "Visualizzazione del manuale non riuscita"
+msgstr "Visualizzazione dell'aiuto non riuscita"
 
 # (ndt) pulsante, dovrebbe essere la stessa traduzione
 # di gnome-control-center o qualche altro pacchetto simile
@@ -475,20 +489,20 @@ msgstr "Visualizzazione del manuale non riuscita"
 msgid "Enable and Log Out"
 msgstr "Abilita e termina"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Bloccato"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "B"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Area di cattura"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Blocca temporaneamente il puntatore del mouse"
 

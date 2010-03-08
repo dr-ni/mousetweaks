@@ -1,3 +1,23 @@
+Version 2.29.92
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Fix secondary clicks - closes LP: #525735
+
+New and updated translations:
+
+    [de] Christian Kirbach
+    [en_GB] Bruce Cowan
+    [hu] Gabor Kelemen
+    [nb] Kjartan Maraas, Mario Blättermann
+    [pl] Piotr Drąg
+
+New and updated manual translation:
+
+	[de] Mario Blättermann
+	[es] Jorge González
+
 Version 2.29.91
 ---------------
 

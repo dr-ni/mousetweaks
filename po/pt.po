@@ -1,14 +1,14 @@
 # mousetweaks's Portuguese translation.
-# Copyright © 2008, 2009 mousetweaks
+# Copyright © 2008, 2009, 2010 mousetweaks
 # This file is distributed under the same license as the mousetweaks package.
-# Duarte Loreto <happyguy_pt@hotmail.com>, 2008, 2009.
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2008, 2009, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.28\n"
+"Project-Id-Version: 2.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-25 08:12+0100\n"
-"PO-Revision-Date: 2009-08-25 08:15+0000\n"
+"POT-Creation-Date: 2010-03-09 00:18+0000\n"
+"PO-Revision-Date: 2010-03-09 00:20+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,7 @@ msgid "Drag Click"
 msgstr "Clique e Arrastar"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:869
 msgid "Enable dwell click"
 msgstr "Activar o movimento-clique"
 
@@ -149,7 +149,7 @@ msgid "Area to lock the pointer"
 msgstr "Área onde bloquear o ponteiro"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Captura de Ponteiro"
 
@@ -221,8 +221,8 @@ msgid "Dwell click mode"
 msgstr "Modo de movimento-clique"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Modo de movimento-clique (\"0\" = Modo gesto, \"1\" = Modo janela)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "Modo de movimento-clique (\"0\" = Modo janela, \"1\" = Modo gesto)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -232,7 +232,7 @@ msgstr "Tempo de movimento-clique"
 msgid "Enable secondary click"
 msgstr "Activar o clique secundário"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
 msgid "Enable simulated secondary click"
 msgstr "Activar um clique secundário simulado"
 
@@ -260,7 +260,7 @@ msgstr "Tolerância de movimento"
 msgid "Secondary click time"
 msgstr "Tempo do clique secundário"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Apresentar a janela de tipo de clique"
 
@@ -398,11 +398,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Largura da área de captura em pixels."
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:774
 msgid "Assistive Technology Support is not Enabled"
 msgstr "O Suporte Para Tecnologias Assistivas Não Está Activo"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:775
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -415,41 +415,54 @@ msgstr ""
 "Para activar o suporte para tecnologias assistivas e reiniciar a sua sessão, "
 "prima \"Activar e Terminar Sessão\"."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:873
 msgid "Time to wait before a dwell click"
 msgstr "Tempo a aguardar antes de um movimento-clique"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:875
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo a aguardar antes de um clique secundário simulado"
 
+#: ../src/mt-main.c:877
+msgid "Set the active dwell mode"
+msgstr "Definir o modo de movimento-clique"
+
+#: ../src/mt-main.c:879
+msgid "Show a click-type window"
+msgstr "Apresentar a janela de tipo de clique"
+
 #: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Modo de movimento-clique a utilizar"
+msgid "Click-type window X position"
+msgstr "Posição X da janela de tipo de clique"
+
+#: ../src/mt-main.c:883
+msgid "Click-type window Y position"
+msgstr "Posição Y da janela de tipo de clique"
 
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Posição x da janela"
-
-#: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Posição y da janela"
-
-#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Ignorar movimentos pequenos do ponteiro"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Apresentar tempo decorrido sobreposto ao ponteiro"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:887
 msgid "Shut down mousetweaks"
 msgstr "Desligar o mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "- Daemon mousetweaks do GNOME"
+#: ../src/mt-main.c:889
+msgid "Disable cursor animations"
+msgstr "Desactivar as animações de cursor"
+
+#: ../src/mt-main.c:891
+msgid "Start mousetweaks as a daemon"
+msgstr "Iniciar o mousetweaks como um daemon"
+
+#: ../src/mt-main.c:893
+msgid "Start mousetweaks in login mode"
+msgstr "Iniciar o mousetweaks no modo de início de sessão"
+
+#. parse
+#: ../src/mt-main.c:911
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Daemon de acessibilidade do rato do GNOME"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -459,26 +472,35 @@ msgstr "Falha ao Apresentar a Ajuda"
 msgid "Enable and Log Out"
 msgstr "Activar e Terminar Sessão"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Trancado"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Área a capturar"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Trancar temporariamente o ponteiro do rato"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Falha ao Iniciar as Preferências do Rato"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Modo de movimento-clique a utilizar"
+
+#~ msgid "Window y position"
+#~ msgstr "Posição y da janela"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Apresentar tempo decorrido sobreposto ao ponteiro"
 
 #~ msgid "On"
 #~ msgstr "Activo"
@@ -537,9 +559,6 @@ msgstr "Falha ao Iniciar as Preferências do Rato"
 
 #~ msgid "_Button:"
 #~ msgstr "_Botão:"
-
-#~ msgid "Use dwell mode"
-#~ msgstr "Utilizar modo de movimentos"
 
 #~ msgid "Mousetweaks requires Assistive Technologies."
 #~ msgstr "O MouseTweaks necessita das Tecnologias Assistivas."

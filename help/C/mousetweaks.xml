@@ -41,7 +41,7 @@
       <revision>
         <revnumber>Version 2.30</revnumber>
 
-        <date>February 2010</date>
+        <date>March 2010</date>
 
         <revdescription>
           <para role="author">Adapt the manual to the changes done to
@@ -572,13 +572,44 @@
 
         <para>To perform a simulated secondary click, the user has to keep the
         <mousebutton>primary mouse button</mousebutton> pressed without moving
-        the pointer for a determined time. As soon as the determined time has
-        elapsed, the simulated secondary click is issued.</para>
+        the pointer for the time determined by the delay slider of the
+        Simulated Secondary Click feature. While the <mousebutton>primary
+        mouse button</mousebutton> is kept pressed, the arrow of the pointer
+        will be filled with a different color to give feedback about the
+        passing time.</para>
 
-        <para>While the <mousebutton>primary mouse button</mousebutton> is
-        being held pressed, mousetweaks will fill the arrow of the pointer
-        with another color to give feedback that it is counting down the time
-        before issuing the simulated secondary click.</para>
+        <para>If the user releases the <mousebutton>primary mouse
+        button</mousebutton> before the arrow of the pointer has been
+        completely filled with the new color, the system will only receive the
+        information of the <mousebutton>primary mouse button</mousebutton>
+        press and release.</para>
+
+        <para>If the user releases the <mousebutton>primary mouse
+        button</mousebutton> after the arrow of pointer has been completely
+        filled with the new color, the <mousebutton>primary mouse
+        button</mousebutton> events will be followed by a
+        <mousebutton>secondary mouse button</mousebutton> click. In fact,
+        mousetweaks creates this simulated <mousebutton>scondary mouse
+        button</mousebutton> click as soon as the user releases the the
+        <mousebutton>primary mouse button</mousebutton>.</para>
+
+        <note>
+          <para>On browser links, the simulated secondary click behaves
+          differently: it does not wait for the user to release the
+          <mousebutton>primary mouse button</mousebutton> before creating the
+          simulated secondary click; the secondary click is created as soon as
+          the time delay has elapsed. Previous versions of mousetweaks always
+          behaved like this; but this behaviour had to be modified because of
+          changes to the X server.</para>
+        </note>
+
+        <para>The explanations above assumed that the pointer did not move
+        between the <mousebutton>primary mouse button</mousebutton> press and
+        release. If the pointer gets moved before the <mousebutton>primary
+        mouse button</mousebutton> is released, no simulated secondary click
+        will be created. Consequently, to cancel an initiated secondary click,
+        the user only has to move the pointer before releasing the
+        <mousebutton>primary mouse button</mousebutton>.</para>
       </sect3>
 
       <sect3>
@@ -615,14 +646,13 @@
       <sect3 id="mouse-a11y-ssc-pecularities">
         <title>Differences To The Normal Secondary Click</title>
 
-        <para>As the Simulated Secondary Click is not able to discard the
-        <mousebutton>mouse button down</mousebutton> event from the
-        <mousebutton>primary button press</mousebutton> of the user, it issues
-        a primary click just before issuing the secondary click. In other
-        words, each secondary click performed by this function is immediately
-        preceded by a primary click, and this makes it behave a bit
-        differently to the normal secondary click performed by the
-        <mousebutton>secondary mouse button</mousebutton>. For example:</para>
+        <para>As the Simulated Secondary Click does not discard
+        the<mousebutton> primary mouse button</mousebutton> press and release,
+        the resulting primary click occurs just before the secondary click
+        created by mousetweaks. Consequently, the simulated secondary click
+        behaves a bit differently than the normal secondary click, because the
+        latter is usually not preceeded immediately by a <mousebutton>primary
+        mouse button</mousebutton> click. For example:</para>
 
         <itemizedlist>
           <listitem>
@@ -633,10 +663,10 @@
 
           <listitem>
             <para>When the simulated secondary click is performed on the trash
-            icon on the panel, not only does the contextual menu appear, but
-            the trash folder does also open. (The former is caused by the
+            icon in the panel, not only does the contextual menu appear, but
+            the trash folder also opens. (The former is caused by the
             secondary click, the latter by the primary click preceding the
-            right click.)</para>
+            secondary click.)</para>
           </listitem>
         </itemizedlist>
 
@@ -646,23 +676,23 @@
           receiving the secondary click preceded by a primary click.</para>
         </note>
 
-        <para>Some users may also be surprised by the consequences of the
-        following: it is not possible to perform a long motionless primary
-        button click and hold, without also triggering the secondary click.
-        For example:</para>
+        <para>Looking at it the other way, it is no possible to perform a long
+        motionless <mousebutton>primary mouse button</mousebutton> press,
+        without also triggering the secondary click. This may also have
+        unexpected consequences for some users. For example:</para>
 
         <itemizedlist>
           <listitem>
-            <para>When keeping the primary button pressed on the arrow of a
-            scrollbar, the scrollbar jumps to the bottom after some time. This
-            is in fact the normal behaviour of a secondary click on an arrow
-            of a scrollbar.</para>
+            <para>When releasing the primary button after keeping it pressed
+            on the arrow of a scrollbar for more than the delay time, the
+            scrollbar jumps to the bottom. This is in fact the normal
+            behaviour of a secondary click on an arrow of a scrollbar.</para>
 
             <tip>
-              <para>To work around this behaviour, simply move the pointer
-              immediately after pressing the <mousebutton>primary mouse
-              button</mousebutton>. This way the simulated secondary click is
-              not issued.</para>
+              <para>To avoid that the scrollbar jumps to the bottom, simply
+              move the pointer away from the arrow of the scrollbar before
+              releasing the primary button; this way, the initiated simulated
+              secondary click gets canceled.</para>
             </tip>
           </listitem>
         </itemizedlist>

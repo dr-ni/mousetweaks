@@ -2,162 +2,159 @@
 # Copyright (C) 2008 Free Software Foundation
 # This file is distributed under the same license as the mousetweaks package
 #
-# Yuriy Penkin <yura.penkin@gmail.com>, 2008.
 #
+# Yuriy Penkin <yura.penkin@gmail.com>, 2008.
+# Leonid Kanter <leon@asplinux.ru>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks trunk\n"
+"Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-05 13:59+0300\n"
-"PO-Revision-Date: 2009-03-15 17:33+0300\n"
-"Last-Translator: Yuriy Penkin <yuriy.penkin@gmail.com>\n"
-"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"POT-Creation-Date: 2010-03-11 12:30+0200\n"
+"PO-Revision-Date: 2010-03-12 11:50+0200\n"
+"Last-Translator: Leonid Kanter <leon@asplinux.ru>\n"
+"Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Russian\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../data/dwell-click-applet.ui.h:1
 msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of Mousetweaks"
 msgstr ""
+"Апплет для выбора разных типов щелчков при удержании указателя мыши.\n"
+"Явяется частью Mousetweaks"
 
 #: ../data/dwell-click-applet.ui.h:3
-#, fuzzy
 msgid "Click Type Window"
-msgstr "Показать окно с типами щелчков"
+msgstr "Окно настройки типов щелчков"
 
 #: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
-#, fuzzy
 msgid "Double Click"
-msgstr "Щелчок подёргиванием"
+msgstr "Двойной щелчок"
 
 #: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
-#, fuzzy
 msgid "Drag Click"
-msgstr "Щелчок подёргиванием"
+msgstr "Щелчок с переносом"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:869
 msgid "Enable dwell click"
-msgstr "Включить щелчок при подёргивании"
+msgstr "Включить щелчок при удерживании"
 
 #: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
 msgid "Right Click"
-msgstr ""
+msgstr "Щелчок правой кнопкой"
 
 #: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
-#, fuzzy
 msgid "Single Click"
-msgstr "Жест для обычного щелчка"
+msgstr "Одинарный щелчок"
 
 #: ../data/pointer-capture-applet.ui.h:1
 msgid "A_lt"
-msgstr ""
+msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
 msgid ""
 "Area to freeze the mouse pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
+"Область для «замораживания» указателя мыши на панели.\n"
+"Является частью Mousetweaks"
 
 #: ../data/pointer-capture-applet.ui.h:4
 msgid "C_trl"
-msgstr ""
+msgstr "C_trl"
 
 #: ../data/pointer-capture-applet.ui.h:5
-#, fuzzy
 msgid "Capture Pointer"
-msgstr "Область захвата"
+msgstr "Захват указателя"
 
 #: ../data/pointer-capture-applet.ui.h:6
 msgid "Ct_rl"
-msgstr ""
+msgstr "Ct_rl"
 
 #: ../data/pointer-capture-applet.ui.h:7
 msgid "Modifier:"
-msgstr ""
+msgstr "Модификатор:"
 
 #: ../data/pointer-capture-applet.ui.h:8
 msgid "Mouse _button:"
-msgstr ""
+msgstr "_Кнопка мыши:"
 
 #: ../data/pointer-capture-applet.ui.h:9
 msgid "Mouse b_utton:"
-msgstr ""
+msgstr "К_нопка мыши:"
 
 #: ../data/pointer-capture-applet.ui.h:10
-#, fuzzy
 msgid "Pointer Capture Preferences"
-msgstr "Захват указателя"
+msgstr "Параметры захвата указателя"
 
 #: ../data/pointer-capture-applet.ui.h:11
 msgid "Release Pointer"
-msgstr ""
+msgstr "Освобождение указателя"
 
 #: ../data/pointer-capture-applet.ui.h:12
 msgid "S_hift"
-msgstr ""
+msgstr "S_hift"
 
 #: ../data/pointer-capture-applet.ui.h:13
-#, fuzzy
 msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Кнопка мыши, используемая для захвата указателя"
+msgstr "Выбор кнопки 0 приведёт к немедленному захвату указателя"
 
 #: ../data/pointer-capture-applet.ui.h:14
 msgid "Sh_ift"
-msgstr ""
+msgstr "Sh_ift"
 
 #: ../data/pointer-capture-applet.ui.h:15
-#, fuzzy
 msgid "Size of Capture Area"
 msgstr "Размер области захвата"
 
 #: ../data/pointer-capture-applet.ui.h:16
-#, fuzzy
 msgid "_Alt"
-msgstr "_О программе"
+msgstr "_Alt"
 
 #: ../data/pointer-capture-applet.ui.h:17
 msgid "_Width:"
-msgstr ""
+msgstr "_Ширина:"
 
 #: ../data/pointer-capture-applet.ui.h:18
 msgid "pixels"
-msgstr ""
+msgstr "пикселов"
 
 #: ../data/mousetweaks.ui.h:3
-#, fuzzy
 msgid "Dwell Click Type"
-msgstr "Щелчок подёргиванием"
+msgstr "Тип щелчка при удерживании"
 
 #: ../data/mousetweaks.ui.h:5
 msgid "Show Icons and Text"
-msgstr ""
+msgstr "Показывать значки и текст"
 
 #: ../data/mousetweaks.ui.h:6
 msgid "Show Icons only"
-msgstr ""
+msgstr "Показывать только значки"
 
 #: ../data/mousetweaks.ui.h:7
 msgid "Show Text only"
-msgstr ""
+msgstr "Показывать только текст"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
-msgstr "Щелчок подёргиванием"
+msgstr "Щелчок с удерживанием"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr "Выберите щелчок при подёргивании"
+msgstr "Выберите тип щелчка при удерживании"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr "Область для захвата указателя"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Захват указателя"
 
@@ -182,8 +179,7 @@ msgid "Button style"
 msgstr "Стиль кнопок"
 
 #: ../data/mousetweaks.schemas.in.h:3
-msgid ""
-"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
 msgstr ""
 "Стиль кнопок в окне настройки типа щелчка (0=текст, 1=значки, 2=и то, и "
 "другое)"
@@ -218,21 +214,21 @@ msgstr "Расстояние в пикселах, распознаваемое �
 
 #: ../data/mousetweaks.schemas.in.h:9
 msgid "Dwell click mode"
-msgstr "Режим щелчка при подёргивании"
+msgstr "Режим щелчка при удерживании"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Режим щелчка при подёргивании (0=режим жестов, 1=режим окна)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "Режим щелчка при удерживании (0=режим жестов, 1=режим окна)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
-msgstr "Время подёргивания"
+msgstr "Время удерживания"
 
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Включить вторичный щелчок"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
 msgid "Enable simulated secondary click"
 msgstr "Включить поддержку вторичного щелчка"
 
@@ -260,7 +256,7 @@ msgstr "Порог точности движений"
 msgid "Secondary click time"
 msgstr "Время второго щелчка"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Показать окно с типами щелчков"
 
@@ -400,11 +396,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Ширина зоны захвата в точках растра."
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:774
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Вспомогательные технологии не включены"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:775
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -416,40 +412,53 @@ msgstr ""
 "Для того, чтобы задействовать вспомогательные технологиии, необходимо заново "
 "войти в сеанс, нажмите «Включить и завершить сеанс»."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:873
 msgid "Time to wait before a dwell click"
-msgstr "Задержка до щелчка подёргиванием"
+msgstr "Задержка до щелчка при удерживании"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:875
 msgid "Time to wait before a simulated secondary click"
 msgstr "Задержка до вторичного щелчка"
 
+#: ../src/mt-main.c:877
+msgid "Set the active dwell mode"
+msgstr "Установить активный режим удерживания"
+
+#: ../src/mt-main.c:879
+msgid "Show a click-type window"
+msgstr "Показать окно с типами щелчков"
+
 #: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Использовать режим щелчка при подёргивании"
+msgid "Click-type window X position"
+msgstr "Позиция окна с типами щелчков по X"
+
+#: ../src/mt-main.c:883
+msgid "Click-type window Y position"
+msgstr "Позиция окна с типами щелчков по Y"
 
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Позиция окна по горизонтали"
-
-#: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Позиция окна по вертикали"
-
-#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Игнорировать слабые перемещения указателя"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Показывать затраченное время перекрашиванием курсора"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:887
 msgid "Shut down mousetweaks"
 msgstr "Выключить mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
+#: ../src/mt-main.c:889
+msgid "Disable cursor animations"
+msgstr "Отключить анимации курсора"
+
+#: ../src/mt-main.c:891
+msgid "Start mousetweaks as a daemon"
+msgstr "Запускать mousetweaks как службу"
+
+#: ../src/mt-main.c:893
+msgid "Start mousetweaks in login mode"
+msgstr "Запустить mousetweaks в режиме входа в систему"
+
+#. parse
+#: ../src/mt-main.c:911
+msgid "- GNOME mouse accessibility daemon"
 msgstr "- Служба дополнительных возможностей мыши среды GNOME"
 
 #: ../src/mt-common.c:30
@@ -460,23 +469,24 @@ msgstr "Не удалось показать справку"
 msgid "Enable and Log Out"
 msgstr "Включить и завершить сеанс"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Заблокирован"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "Б"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Область захвата"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Временно заблокировать указатель мыши"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Не удалось отобразить параметры мыши"
+

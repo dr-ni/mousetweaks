@@ -1,3 +1,4 @@
+# translation of mousetweaks.master.ru.po to Russian
 # Russian translation of mousetweaks
 # Copyright (C) 2008 Free Software Foundation
 # This file is distributed under the same license as the mousetweaks package
@@ -5,20 +6,22 @@
 #
 # Yuriy Penkin <yura.penkin@gmail.com>, 2008.
 # Leonid Kanter <leon@asplinux.ru>, 2010.
+# Yuri Kozlov <yuray@komyakino.ru>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-11 12:30+0200\n"
-"PO-Revision-Date: 2010-03-12 11:50+0200\n"
-"Last-Translator: Leonid Kanter <leon@asplinux.ru>\n"
-"Language-Team: Russian <ru@li.org>\n"
+"POT-Creation-Date: 2010-03-20 12:12+0200\n"
+"PO-Revision-Date: 2010-03-17 20:46+0300\n"
+"Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
+"Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Russian\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../data/dwell-click-applet.ui.h:1
 msgid ""
@@ -26,7 +29,7 @@ msgid ""
 "Part of Mousetweaks"
 msgstr ""
 "Апплет для выбора разных типов щелчков при удержании указателя мыши.\n"
-"Явяется частью Mousetweaks"
+"Является частью Mousetweaks"
 
 #: ../data/dwell-click-applet.ui.h:3
 msgid "Click Type Window"
@@ -179,7 +182,8 @@ msgid "Button style"
 msgstr "Стиль кнопок"
 
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgid ""
+"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
 msgstr ""
 "Стиль кнопок в окне настройки типа щелчка (0=текст, 1=значки, 2=и то, и "
 "другое)"
@@ -409,7 +413,7 @@ msgid ""
 msgstr ""
 "Mousetweaks требует задействовать вспомогательные технологии.\n"
 "\n"
-"Для того, чтобы задействовать вспомогательные технологиии, необходимо заново "
+"Для того, чтобы задействовать вспомогательные технологии, необходимо заново "
 "войти в сеанс, нажмите «Включить и завершить сеанс»."
 
 #: ../src/mt-main.c:873
@@ -489,4 +493,3 @@ msgstr "Временно заблокировать указатель мыши"
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Не удалось отобразить параметры мыши"
-

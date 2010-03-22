@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-05 22:17+0100\n"
+"POT-Creation-Date: 2010-03-22 12:52+0100\n"
 "PO-Revision-Date: 2010-03-05 22:01+0100\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome at fsf dot hu>\n"
@@ -39,7 +39,7 @@ msgid "Drag Click"
 msgstr "Húzási kattintás"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:869
 msgid "Enable dwell click"
 msgstr "Elidőzési kattintás engedélyezése"
 
@@ -145,7 +145,7 @@ msgstr "Elidőzési kattintás"
 
 #: ../data/DwellClick_Factory.server.in.in.h:2
 msgid "Select dwelling click type"
-msgstr "Válassza ki az elidőzési kattintás típusát"
+msgstr "Az elidőzési kattintás típusának kiválasztása"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:1
 msgid "Area to lock the pointer"
@@ -233,7 +233,7 @@ msgstr "Elidőzési kattintás ideje"
 msgid "Enable secondary click"
 msgstr "Másodlagos kattintás engedélyezése"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:879
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
 msgid "Enable simulated secondary click"
 msgstr "Szimulált másodlagos kattintás engedélyezése"
 
@@ -397,11 +397,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Az elfogási terület szélessége képpontban."
 
-#: ../src/mt-main.c:782
+#: ../src/mt-main.c:774
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Az akadálymentesítés támogatása nincs engedélyezve"
 
-#: ../src/mt-main.c:783
+#: ../src/mt-main.c:775
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -414,52 +414,52 @@ msgstr ""
 "Az akadálymentesítés engedélyezéséhez a munkamenetben és a munkamenet "
 "újraindításához nyomja meg a „Bekapcsolás és kijelentkezés” gombot."
 
-#: ../src/mt-main.c:881
+#: ../src/mt-main.c:873
 msgid "Time to wait before a dwell click"
 msgstr "Várakozás ideje elidőzési kattintás előtt"
 
-#: ../src/mt-main.c:883
+#: ../src/mt-main.c:875
 msgid "Time to wait before a simulated secondary click"
 msgstr "Várakozás ideje szimulált másodlagos kattintás előtt"
 
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:877
 msgid "Set the active dwell mode"
 msgstr "Az aktív elidőzési mód beállítása"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:879
 msgid "Show a click-type window"
 msgstr "A Kattintástípus ablak megjelenítése"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:881
 msgid "Click-type window X position"
 msgstr "Kattintástípus ablak X pozíciója"
 
-#: ../src/mt-main.c:891
+#: ../src/mt-main.c:883
 msgid "Click-type window Y position"
 msgstr "Kattintástípus ablak Y pozíciója"
 
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:885
 msgid "Ignore small pointer movements"
 msgstr "Kis mutatómozgások figyelmen kívül hagyása"
 
-#: ../src/mt-main.c:895
+#: ../src/mt-main.c:887
 msgid "Shut down mousetweaks"
 msgstr "A Mousetweaks leállítása"
 
-#: ../src/mt-main.c:897
+#: ../src/mt-main.c:889
 msgid "Disable cursor animations"
 msgstr "Kurzoranimációk kikapcsolása"
 
-#: ../src/mt-main.c:899
+#: ../src/mt-main.c:891
 msgid "Start mousetweaks as a daemon"
 msgstr "A Mousetweaks indítása démonként"
 
-#: ../src/mt-main.c:901
+#: ../src/mt-main.c:893
 msgid "Start mousetweaks in login mode"
 msgstr "A Mousetweaks indítása bejelentkezési módban"
 
 #. parse
-#: ../src/mt-main.c:919
+#: ../src/mt-main.c:911
 msgid "- GNOME mouse accessibility daemon"
 msgstr "– GNOME egér-akadálymentesítési démon"
 

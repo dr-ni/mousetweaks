@@ -2,6 +2,7 @@
 # Copyright (C) 2008-2009 Free Software Foundation, Inc.
 # Ilkka Tuohela <hile@iki.fi> 2008-2009.
 # Timo Jyrinki <timo.jyrinki@iki.fi>, 2008.
+# Tommi Vainikainen <thv@iki.fi>, 2010.
 #
 # pysenäpsäytys -> pysenapsautus
 # nappi -> painike
@@ -10,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-13 06:57+0300\n"
-"PO-Revision-Date: 2009-09-13 07:15+0300\n"
-"Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
+"POT-Creation-Date: 2010-03-23 08:59+0200\n"
+"PO-Revision-Date: 2010-03-23 08:59+0200\n"
+"Last-Translator: Tommi Vainikainen <thv@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,7 +41,7 @@ msgid "Drag Click"
 msgstr "Raahausnapsautus"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:869
 msgid "Enable dwell click"
 msgstr "Ota pysenapsautus käyttöön"
 
@@ -153,7 +154,7 @@ msgid "Area to lock the pointer"
 msgstr "Alue, jolla hiiren kohdistin lukitaan"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Kohdistimen kaappaus"
 
@@ -181,39 +182,34 @@ msgstr "Napin tyyli"
 msgid ""
 "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
 msgstr ""
-"Napsautustyyppi-ikkunan nappien tyyli (\"0\" teksti, \"1\" kuvake, \"2\" "
-"molemmat)"
+"Napsautustyyppi-ikkunan nappien tyyli (”0” teksti, ”1” kuvake, ”2” molemmat)"
 
 #: ../data/mousetweaks.schemas.in.h:4
 msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Suunta kaksoisnapsautukselle (\"0\" vasen, \"1\" oikea, \"2\" ylös, \"3\" "
-"alas)"
+"Suunta kaksoisnapsautukselle (”0” vasen, ”1” oikea, ”2” ylös, ”3” alas)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
-msgstr ""
-"Suunta vetonapsautukselle (\"0\" vasen, \"1\" oikea, \"2\" ylös, \"3\" alas)"
+msgstr "Suunta vetonapsautukselle (”0” vasen, ”1” oikea, ”2” ylös, ”3” alas)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Suunta oikealle napsautukselle (\"0\" vasen, \"1\" oikea, \"2\" ylös, \"3\" "
-"alas)"
+"Suunta oikealle napsautukselle (”0” vasen, ”1” oikea, ”2” ylös, ”3” alas)"
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Suunta tavalliselle napsautukselle (\"0\" vasen, \"1\" oikea, \"2\" ylös, \"3"
-"\" alas)"
+"Suunta tavalliselle napsautukselle (”0” vasen, ”1” oikea, ”2” ylös, ”3” alas)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
@@ -224,8 +220,8 @@ msgid "Dwell click mode"
 msgstr "Pysenapsautustila"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Pysenapsautuksen tila (\"0\" hiirieletila, \"1\" ikkunatila)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "Pysenapsautuksen tila (”0” ikkunatila, ”1” hiirieletila)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -235,7 +231,7 @@ msgstr "Pysenapsautuksen aika"
 msgid "Enable secondary click"
 msgstr "Ota oikea napsautus käyttöön"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
 msgid "Enable simulated secondary click"
 msgstr "Ota oikean painikkeen pysenapsautus käyttöön"
 
@@ -263,7 +259,7 @@ msgstr "Liikkeen kynnysarvo"
 msgid "Secondary click time"
 msgstr "Oikean napsautuksen aika"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Näytä napsautustyyppi-ikkuna"
 
@@ -322,8 +318,8 @@ msgid ""
 "\"3\" for right button."
 msgstr ""
 "Tätä hiiren nappia täytyy painaa, kun haluat vapauttaa kohdistimen "
-"kaappausalueelta. Kelvolliset arvot ovat \"1\" (vasen nappi), \"2\" "
-"keskinappi) ja \"3\" (oikea nappi)."
+"kaappausalueelta. Kelvolliset arvot ovat ”1” (vasen nappi), ”2” keskinappi) "
+"ja ”3” (oikea nappi)."
 
 #: ../data/pointer-capture-applet.schemas.in.h:11
 msgid ""
@@ -333,8 +329,8 @@ msgid ""
 "button."
 msgstr ""
 "Tätä hiiren nappia täytyy painaa kohdistimen ollessa kaappausalueen päällä, "
-"kun haluat kaapata kohdistimen. Kelvolliset arvot ovat \"1\" (vasen nappi), "
-"\"2\" keskinappi) ja \"3\" (oikea nappi)."
+"kun haluat kaapata kohdistimen. Kelvolliset arvot ovat ”1” (vasen nappi), "
+"”2” keskinappi) ja ”3” (oikea nappi)."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid ""
@@ -345,7 +341,7 @@ msgid ""
 msgstr ""
 "Täytyykö Alt-näppäintä painaa kaappaamaan kohdistin kaappausaueelle "
 "kohdistimen ollessa kaappausalueen päällä. Jos tämä arvo on tosi ja hiiren "
-"nappi on asetettu \"capture_button\"-avaimessa, täytyy Alt-näppäintä painaa "
+"nappi on asetettu ”capture_button”-avaimessa, täytyy Alt-näppäintä painaa "
 "asetetun hiiren napin kanssa samanaikaisesti."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
@@ -353,7 +349,7 @@ msgid ""
 "Whether the Alt key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
-"Täytyykö Alt-näppäintä painaa yhdessä avaimessa \"release_button\" asetetun "
+"Täytyykö Alt-näppäintä painaa yhdessä avaimessa ”release_button” asetetun "
 "hiiren näppäimen kanssa, jotta kohdistin vapautetaan kaappausalueelta."
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
@@ -365,7 +361,7 @@ msgid ""
 msgstr ""
 "Täytyykö Ctrl-näppäintä painaa kaappaamaan kohdistin kaappausaueelle "
 "kohdistimen ollessa kaappausalueen päällä. Jos tämä arvo on tosi ja hiiren "
-"nappi on asetettu \"capture_button\"-avaimessa, täytyy Ctrl-näppäintä painaa "
+"nappi on asetettu ”capture_button”-avaimessa, täytyy Ctrl-näppäintä painaa "
 "asetetun hiiren napin kanssa samanaikaisesti."
 
 #: ../data/pointer-capture-applet.schemas.in.h:15
@@ -373,7 +369,7 @@ msgid ""
 "Whether the Ctrl key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
-"Täytyykö Ctrl-näppäintä painaa yhdessä avaimessa \"release_button\" asetetun "
+"Täytyykö Ctrl-näppäintä painaa yhdessä avaimessa ”release_button” asetetun "
 "hiiren näppäimen kanssa, jotta kohdistin vapautetaan kaappausalueelta."
 
 #: ../data/pointer-capture-applet.schemas.in.h:16
@@ -385,27 +381,26 @@ msgid ""
 msgstr ""
 "Täytyykö Shift-näppäintä painaa kaappaamaan kohdistin kaappausaueelle "
 "kohdistimen ollessa kaappausalueen päällä. Jos tämä arvo on tosi ja hiiren "
-"nappi on asetettu \"capture_button\"-avaimessa, täytyy Shift-näppäintä "
-"painaa asetetun hiiren napin kanssa samanaikaisesti."
+"nappi on asetettu ”capture_button”-avaimessa, täytyy Shift-näppäintä painaa "
+"asetetun hiiren napin kanssa samanaikaisesti."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
 msgid ""
 "Whether the Shift key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
-"Täytyykö Shift-näppäintä painaa yhdessä avaimessa \"release_button\" "
-"asetetun hiiren näppäimen kanssa, jotta kohdistin vapautetaan "
-"kaappausalueelta."
+"Täytyykö Shift-näppäintä painaa yhdessä avaimessa ”release_button” asetetun "
+"hiiren näppäimen kanssa, jotta kohdistin vapautetaan kaappausalueelta."
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
 msgid "Width of the capture area in pixels."
 msgstr "Kaappausalueen leveys pikseleinä."
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:774
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Esteettömyystekniikoiden tuki ei ole päällä"
 
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:775
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -415,43 +410,56 @@ msgstr ""
 "Mousetweaks vaatii esteettömyystekniikoiden tuen päälläolon istunnossasi.\n"
 "\n"
 "Jos haluat ottaa esteettömyystekniikoiden tuen käyttöön ja aloittaa istunnon "
-"uudestaan, napsauta \"Ota käyttöön ja kirjaudu ulos\"."
+"uudestaan, napsauta ”Ota käyttöön ja kirjaudu ulos”."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:873
 msgid "Time to wait before a dwell click"
 msgstr "Odotettava aika ennen pysenapsautusta"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:875
 msgid "Time to wait before a simulated secondary click"
 msgstr "Odotettava aika ennen simuloitua oikean painikkeen painallusta"
 
+#: ../src/mt-main.c:877
+msgid "Set the active dwell mode"
+msgstr "Aseta aktiivinen pysenapsautustila"
+
+#: ../src/mt-main.c:879
+msgid "Show a click-type window"
+msgstr "Näytä napsautustyyppi-ikkuna"
+
 #: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Käytettävä pysenapsautustila"
+msgid "Click-type window X position"
+msgstr "Napsautustyyppi-ikkunan x-sijainti"
+
+#: ../src/mt-main.c:883
+msgid "Click-type window Y position"
+msgstr "Napsautustyyppi-ikkunan y-sijainti"
 
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Ikkunan x-sijainti"
-
-#: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Ikkunan y-sijainti"
-
-#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Jätä vähäiset kohdistimen liikkeet huomiotta"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Näytä kulunut aika kohdistimen päällä"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:887
 msgid "Shut down mousetweaks"
 msgstr "Sammuta mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "Gnomen mousetweaks-palvelin"
+#: ../src/mt-main.c:889
+msgid "Disable cursor animations"
+msgstr "Poista kohdistimen animaatiot käytöstä"
+
+#: ../src/mt-main.c:891
+msgid "Start mousetweaks as a daemon"
+msgstr "Käynnistä mousetweaks-palvelin"
+
+#: ../src/mt-main.c:893
+msgid "Start mousetweaks in login mode"
+msgstr "Käynnistä mousetweaks sisäänkirjautumistilassa"
+
+#. parse
+#: ../src/mt-main.c:911
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Gnomen mousetweaks-esteettömyys-palvelin"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -461,23 +469,32 @@ msgstr "Ohjetta ei voitu näyttää"
 msgid "Enable and Log Out"
 msgstr "Ota käyttöön ja kirjaudu ulos"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Lukittu"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Kaappausalue"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Lukitse hiiren kohdistin väliaikaisesti"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Hiiriasetuksia ei voitu käynnistää"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Käytettävä pysenapsautustila"
+
+#~ msgid "Window y position"
+#~ msgstr "Ikkunan y-sijainti"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Näytä kulunut aika kohdistimen päällä"

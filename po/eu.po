@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-01-13 19:00+0100\n"
-"PO-Revision-Date: 2010-01-13 19:16+0100\n"
+"PO-Revision-Date: 2010-03-24 12:54+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -265,7 +265,7 @@ msgstr "Erakutsi klik motaren leihoa"
 
 #: ../data/mousetweaks.schemas.in.h:22
 msgid "Show elapsed time as cursor overlay."
-msgstr "Erakutsi aterapena kurtsorearen gainean."
+msgstr "Erakutsi atzerapena kurtsorearen gainean."
 
 #: ../data/mousetweaks.schemas.in.h:23
 msgid "Time in seconds before a click is triggered"
@@ -329,7 +329,7 @@ msgid ""
 "button."
 msgstr ""
 "Saguaren botoi hau sakatu behar da erakuslea kapturatzeko kapturaren "
-"areaaren gainean dagoenean. Balio erabilgarriak: \"0\" botoirik ez bada "
+"arearen gainean dagoenean. Balio erabilgarriak: \"0\" botoirik ez bada "
 "behar, \"1\" ezkerreko botoia, \"2\" erdiko botoia, eta \"3\" eskuineko "
 "botoia."
 

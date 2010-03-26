@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-05 12:46+0200\n"
+"POT-Creation-Date: 2010-03-26 16:03+0200\n"
 "PO-Revision-Date: 2010-01-05 02:07+0300\n"
 "Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
-"Language-Team: Ukrainian <uk@li.org>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +37,7 @@ msgid "Drag Click"
 msgstr "Клацання з переносом"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:876
+#: ../src/mt-main.c:869
 msgid "Enable dwell click"
 msgstr "Увімкнути клацання при утримуванні"
 
@@ -229,7 +229,7 @@ msgstr "Час утримування"
 msgid "Enable secondary click"
 msgstr "Увімкнути вторинне клацання"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:878
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
 msgid "Enable simulated secondary click"
 msgstr "Увімкнути підтримку клацання другою кнопкою"
 
@@ -397,11 +397,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Ширина зони захоплення у точках."
 
-#: ../src/mt-main.c:781
+#: ../src/mt-main.c:774
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Технології доступності не увімкнені"
 
-#: ../src/mt-main.c:782
+#: ../src/mt-main.c:775
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -413,48 +413,52 @@ msgstr ""
 "Для вмикання технологій доступності та перезапуску сеансу, натисніть "
 "\"Увімкнути та вийти\"."
 
-#: ../src/mt-main.c:880
+#: ../src/mt-main.c:873
 msgid "Time to wait before a dwell click"
 msgstr "Час, що очікується перед затриманим клацанням"
 
-#: ../src/mt-main.c:882
+#: ../src/mt-main.c:875
 msgid "Time to wait before a simulated secondary click"
 msgstr "Час, який очікується перед імітацією другого клацання"
 
-#: ../src/mt-main.c:884
+#: ../src/mt-main.c:877
 msgid "Set the active dwell mode"
 msgstr "Встановити активний режим клацання при утримування"
 
-#: ../src/mt-main.c:886
+#: ../src/mt-main.c:879
 msgid "Show a click-type window"
 msgstr "Показувати вікно з типами клацання"
 
-#: ../src/mt-main.c:888
+#: ../src/mt-main.c:881
 msgid "Click-type window X position"
 msgstr "Позиція вікна по горизонталі"
 
-#: ../src/mt-main.c:890
+#: ../src/mt-main.c:883
 msgid "Click-type window Y position"
 msgstr "Позиція вікна по горизонталі"
 
-#: ../src/mt-main.c:892
+#: ../src/mt-main.c:885
 msgid "Ignore small pointer movements"
 msgstr "Ігнорувати невеликі рухи вказівника"
 
-#: ../src/mt-main.c:894
+#: ../src/mt-main.c:887
 msgid "Shut down mousetweaks"
 msgstr "Вимкнути mousetweaks"
 
-#: ../src/mt-main.c:896
+#: ../src/mt-main.c:889
 msgid "Disable cursor animations"
 msgstr "Вимкнути анімацію курсору"
 
-#: ../src/mt-main.c:898
+#: ../src/mt-main.c:891
 msgid "Start mousetweaks as a daemon"
 msgstr "Запустити службу GNOME mousetweaks"
 
+#: ../src/mt-main.c:893
+msgid "Start mousetweaks in login mode"
+msgstr "Запустити mousetweaks у режимі входу у систему"
+
 #. parse
-#: ../src/mt-main.c:915
+#: ../src/mt-main.c:911
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- служба GNOME mousetweaks"
 
@@ -486,12 +490,3 @@ msgstr "Тимчасово заблокувати вказівник миші"
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Помилка при показі параметрів миші"
-
-#~ msgid "Dwell mode to use"
-#~ msgstr "Режим клацання при утримуванні"
-
-#~ msgid "Window y position"
-#~ msgstr "Позиція вікна по вертикалі"
-
-#~ msgid "Show elapsed time as cursor overlay"
-#~ msgstr "Показувати ча, що минув з перекриття курсору"

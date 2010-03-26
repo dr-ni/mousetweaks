@@ -1,3 +1,30 @@
+Version 2.30.0
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Adapt manual to new behaviour of the simulated secondary click
+
+New and updated translations:
+
+    [ast] Xandru Armesto
+    [ca] Gil Forcada
+    [eu] Iñaki Larrañaga Murgoitio
+    [fi] Tommi Vainikainen
+    [hu] Gabor Kelemen
+    [it] Milo Casagrande
+    [ko] Changwoo Ryu
+    [pt] Duarte Loreto
+    [ru] Leonid Kanter, Yuri Kozlov
+    [uk] Maxim Dziumanenko
+
+New and updated manual translation:
+
+    [cs] Adrian Guniš
+    [de] Mario Blättermann
+    [es] Jorge González
+    [fr] Claude Paroz
+
 Version 2.29.92
 ---------------
 

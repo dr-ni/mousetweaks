@@ -1,15 +1,15 @@
 # Danish translation of mousetweaks
-# Copyright (C) 2009, Free Software Foundation
+# Copyright (C) 2009, 2010, Free Software Foundation
 # This file is distributed under the same license as the mousetweaks package.
 #
-# Ask Hjorth Larsen <asklarsen@gmail.com>, 2008.
 # Per Kongstad <p_kongstad@op.pl>, 2009.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2008, 10.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-13 14:59+0200\n"
-"PO-Revision-Date: 2009-09-13 14:07+0200\n"
+"POT-Creation-Date: 2010-03-28 00:01+0100\n"
+"PO-Revision-Date: 2010-03-25 00:45+0100\n"
 "Last-Translator: Per Kongstad <p_kongstad@op.pl>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgid "Drag Click"
 msgstr "Trækkeklik"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:869
 msgid "Enable dwell click"
 msgstr "Aktivér hvileklik"
 
@@ -153,7 +153,7 @@ msgid "Area to lock the pointer"
 msgstr "Område hvortil markøren låses"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Markørindfangning"
 
@@ -224,8 +224,8 @@ msgid "Dwell click mode"
 msgstr "Hvileklik-tilstand"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Hvileklik-tilstand (\"0\" = Gestustilstand, \"1\" = Vinduestilstand)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "Hvileklik-tilstand (\"0\" = Vinduestilstand, \"1\" = Gestustilstand)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -235,7 +235,7 @@ msgstr "Hvileklik-tid"
 msgid "Enable secondary click"
 msgstr "Aktivér sekundært klik"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
 msgid "Enable simulated secondary click"
 msgstr "Aktivér simuleret sekundært klik"
 
@@ -263,7 +263,7 @@ msgstr "Bevægelsestærskel"
 msgid "Secondary click time"
 msgstr "Tid for sekundært klik"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Vis kliktype-vindue"
 
@@ -401,12 +401,12 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Bredde af indfangningsområdet i pixels."
 
-#: ../src/mt-main.c:767
+#: ../src/mt-main.c:774
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Understøttelse af tilgængelighedsteknologier er ikke aktiveret"
 
 # (knap-etiket er konsistent)
-#: ../src/mt-main.c:768
+#: ../src/mt-main.c:775
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -418,41 +418,54 @@ msgstr ""
 "Tryk \"Aktivér og log ud\" for at aktivere understøttelse af "
 "tilgængelighedsteknologier, og genstart sessionen."
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:873
 msgid "Time to wait before a dwell click"
 msgstr "Ventetid før hvileklik"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:875
 msgid "Time to wait before a simulated secondary click"
 msgstr "Ventetid før et simuleret sekundært klik"
 
+#: ../src/mt-main.c:877
+msgid "Set the active dwell mode"
+msgstr "Brug aktiv hviletilstand"
+
+#: ../src/mt-main.c:879
+msgid "Show a click-type window"
+msgstr "Vis et kliktype-vindue"
+
 #: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Anvendt hviletilstand"
+msgid "Click-type window X position"
+msgstr "X-position for kliktype-vindue"
+
+#: ../src/mt-main.c:883
+msgid "Click-type window Y position"
+msgstr "Y-position for kliktype-vindue"
 
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Vinduesposition x"
-
-#: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Vinduesposition y"
-
-#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "Ignorér små markørbevægelser"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Vis forløbet tid ved markør"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:887
 msgid "Shut down mousetweaks"
 msgstr "Afslut mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "- GNOME mousetweaks-dæmon"
+#: ../src/mt-main.c:889
+msgid "Disable cursor animations"
+msgstr "Deaktivér markøranimationer"
+
+#: ../src/mt-main.c:891
+msgid "Start mousetweaks as a daemon"
+msgstr "Start mousetweaks som dæmon"
+
+#: ../src/mt-main.c:893
+msgid "Start mousetweaks in login mode"
+msgstr "Start mousetweaks i logindtilstand"
+
+#. parse
+#: ../src/mt-main.c:911
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Musetilgængelighedsdæmon til GNOME"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -462,26 +475,35 @@ msgstr "Kunne ikke vise hjælp"
 msgid "Enable and Log Out"
 msgstr "Aktivér og log ud"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Låst"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "L"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Indfangningsområde"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "Lås musemarkøren midlertidigt"
 
 #: ../src/dwell-click-applet.c:334
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Kunne ikke starte museindstillinger"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Anvendt hviletilstand"
+
+#~ msgid "Window y position"
+#~ msgstr "Vinduesposition y"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Vis forløbet tid ved markør"
 
 #~ msgid "On"
 #~ msgstr "På"
@@ -536,9 +558,6 @@ msgstr "Kunne ikke starte museindstillinger"
 
 #~ msgid "_Button:"
 #~ msgstr "_Knap:"
-
-#~ msgid "Use dwell mode"
-#~ msgstr "Brug hviletilstand"
 
 #~ msgid "Mousetweaks requires Assistive Technologies."
 #~ msgstr "Mousetweaks kræver tiltængelighedsteknologier."

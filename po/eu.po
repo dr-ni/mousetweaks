@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-13 19:00+0100\n"
-"PO-Revision-Date: 2010-03-24 12:54+0100\n"
+"POT-Creation-Date: 2010-03-27 18:36+0100\n"
+"PO-Revision-Date: 2010-03-27 18:37+0100\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
@@ -38,7 +38,7 @@ msgid "Drag Click"
 msgstr "Arrastatzeko klik"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:869
 msgid "Enable dwell click"
 msgstr "Gaitu klik-tenporizatua"
 
@@ -231,7 +231,7 @@ msgstr "Klik-tenporizatuaren denbora"
 msgid "Enable secondary click"
 msgstr "Gaitu 2. mailako klik-a"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:879
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
 msgid "Enable simulated secondary click"
 msgstr "Gaitu simulatutako 2. mailako klik-a"
 
@@ -328,10 +328,9 @@ msgid ""
 "needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
 "button."
 msgstr ""
-"Saguaren botoi hau sakatu behar da erakuslea kapturatzeko kapturaren "
-"arearen gainean dagoenean. Balio erabilgarriak: \"0\" botoirik ez bada "
-"behar, \"1\" ezkerreko botoia, \"2\" erdiko botoia, eta \"3\" eskuineko "
-"botoia."
+"Saguaren botoi hau sakatu behar da erakuslea kapturatzeko kapturaren arearen "
+"gainean dagoenean. Balio erabilgarriak: \"0\" botoirik ez bada behar, \"1\" "
+"ezkerreko botoia, \"2\" erdiko botoia, eta \"3\" eskuineko botoia."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid ""
@@ -397,11 +396,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Kaptura-arearen zabalera (pixeletan)"
 
-#: ../src/mt-main.c:782
+#: ../src/mt-main.c:774
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Laguntza-teknologia euskarria ez dago gaituta"
 
-#: ../src/mt-main.c:783
+#: ../src/mt-main.c:775
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -413,54 +412,54 @@ msgstr ""
 "Laguntza-teknologiaren euskarria gaitzeko eta saioa berrabiarazteko, sakatu "
 "\"Gaitu eta amaitu saioa\"."
 
-#: ../src/mt-main.c:881
+#: ../src/mt-main.c:873
 msgid "Time to wait before a dwell click"
 msgstr "Denbora klik-tenporizatua landu aurretik"
 
-#: ../src/mt-main.c:883
+#: ../src/mt-main.c:875
 msgid "Time to wait before a simulated secondary click"
 msgstr "Denbora simulatutako 2. mailako klik-a landu aurretik"
 
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:877
 msgid "Set the active dwell mode"
 msgstr "Ezarri tenporizazioaren modu aktiboa"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:879
 msgid "Show a click-type window"
 msgstr "Erakutsi klik motaren leihoa"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:881
 msgid "Click-type window X position"
 msgstr "Klik motaren leihoaren x posizioa"
 
-#: ../src/mt-main.c:891
+#: ../src/mt-main.c:883
 msgid "Click-type window Y position"
 msgstr "Klik motaren leihoaren x posizioa"
 
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:885
 msgid "Ignore small pointer movements"
 msgstr "Ez ikusi egin erakuslearen mugimendu txikiei"
 
-#: ../src/mt-main.c:895
+#: ../src/mt-main.c:887
 msgid "Shut down mousetweaks"
 msgstr "Itzali 'mousetweaks'"
 
-#: ../src/mt-main.c:897
+#: ../src/mt-main.c:889
 msgid "Disable cursor animations"
 msgstr "Desgaitu kurtsorearen animazioak"
 
-#: ../src/mt-main.c:899
+#: ../src/mt-main.c:891
 msgid "Start mousetweaks as a daemon"
 msgstr "Abiarazi mousetweaks daemon gisa"
 
-#: ../src/mt-main.c:901
+#: ../src/mt-main.c:893
 msgid "Start mousetweaks in login mode"
 msgstr "Abiarazi mousetweaks saio-hasierako moduan"
 
 #. parse
-#: ../src/mt-main.c:919
+#: ../src/mt-main.c:911
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- GNOMEko saguaren erabilgarritasunaren daemona"
+msgstr "- GNOMEko saguaren erabilgarritasunaren daemon-a"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"

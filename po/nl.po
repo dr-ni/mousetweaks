@@ -3,20 +3,141 @@
 # This file is distributed under the same license as the mousetweaks package.
 #
 # Hendrik Maryns <hendrik.maryns@uni-tuebingen.de>, 2008
-# Wouter Bolsterlee <wbolster@gnome.org>, 2008
+# Wouter Bolsterlee <wbolster@gnome.org>, 2008–2010
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-16 13:13+0100\n"
-"PO-Revision-Date: 2008-09-08 16:58+0200\n"
+"POT-Creation-Date: 2010-03-31 19:12+0200\n"
+"PO-Revision-Date: 2010-03-31 19:16+0200\n"
 "Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@nl.gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Applet om verschillende types hangklikken te selecteren.\n"
+"Onderdeel van Mousetweaks"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "Kliktypevenster"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+msgid "Double Click"
+msgstr "Dubbelklik"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+msgid "Drag Click"
+msgstr "Sleepklik"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:869
+msgid "Enable dwell click"
+msgstr "Hangklikken aanzetten"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "Rechtermuisklik"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+msgid "Single Click"
+msgstr "Enkele klik"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "A_lt"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to freeze the mouse pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Gebied om de muisaanwijzer te bevriezen op het paneel.\n"
+"Onderdeel van Mousetweaks"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Capture Pointer"
+msgstr "Aanwijzer grijpen"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ct_rl"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "Controletoetsen:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "_Muisknop:"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "Muis_knop"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "Pointer Capture Preferences"
+msgstr "Aanwijzervangvoorkeuren"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "Aanwijzer loslaten"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Knop 0 selecteren zal de aanwijzer meteen vangen"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "Sh_ift"
+
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Size of Capture Area"
+msgstr "Grootte van vanggebied"
+
+#: ../data/pointer-capture-applet.ui.h:16
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "_Breedte:"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "pixels"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Dwell Click Type"
+msgstr "Hangkliktype"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "Pictogrammen en tekst tonen"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "Alleen pictogrammen"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "Alleen tekst"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
 msgid "Dwell Click"
@@ -31,7 +152,7 @@ msgid "Area to lock the pointer"
 msgstr "Gebied om de aanwijzer vast te zetten"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:563
 msgid "Pointer Capture"
 msgstr "Vangen van de aanwijzer"
 
@@ -102,22 +223,18 @@ msgid "Dwell click mode"
 msgstr "Hangklikmodus"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "Hangklikmodus (‘0’ = bewegingsmodus, ‘1’ = venstermodus)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "Hangklikmodus (‘0’ is venstermodus, ‘1’ is bewegingsmodus)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "Hangkliktijd"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "Hangklikken aanzetten"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
 msgstr "Secundair klikken aanzetten"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
 msgid "Enable simulated secondary click"
 msgstr "Gesimuleerd secundair klikken aanzetten"
 
@@ -145,7 +262,7 @@ msgstr "Bewegingsdrempel"
 msgid "Secondary click time"
 msgstr "Tijd voor secundaire klik"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Kliktypevenster tonen"
 
@@ -286,11 +403,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Breedte van het vanggebied in pixels."
 
-#: ../src/mt-main.c:720
+#: ../src/mt-main.c:774
 msgid "Assistive Technology Support is not Enabled"
 msgstr "Ondersteuning voor assisterende technologieën is niet ingeschakeld"
 
-#: ../src/mt-main.c:721
+#: ../src/mt-main.c:775
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -302,41 +419,54 @@ msgstr ""
 "Om assisterende technologie in te schakelen kiest u voor ‘Inschakelen en "
 "afmelden’."
 
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:873
 msgid "Time to wait before a dwell click"
 msgstr "Wachttijd voor een hangklik"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:875
 msgid "Time to wait before a simulated secondary click"
 msgstr "Wachttijd voor een gesimuleerde tweede klik"
 
-#: ../src/mt-main.c:832
-msgid "Dwell mode to use"
-msgstr "Te gebruiken hangklikmodus"
+#: ../src/mt-main.c:877
+msgid "Set the active dwell mode"
+msgstr "De actieve hangklikmodus instellen"
 
-#: ../src/mt-main.c:836
-msgid "Window x position"
-msgstr "x-positie van venster"
+#: ../src/mt-main.c:879
+msgid "Show a click-type window"
+msgstr "Een kliktypevenster tonen"
 
-#: ../src/mt-main.c:838
-msgid "Window y position"
-msgstr "y-positie van venster"
+#: ../src/mt-main.c:881
+msgid "Click-type window X position"
+msgstr "x-positie van kliktypevenster"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:883
+msgid "Click-type window Y position"
+msgstr "y-positie van kliktypevenster"
+
+#: ../src/mt-main.c:885
 msgid "Ignore small pointer movements"
 msgstr "Kleine bewegingen van de muisaanwijzer negeren"
 
-#: ../src/mt-main.c:842
-msgid "Show elapsed time as cursor overlay"
-msgstr "Verstreken tijd tonen bij muisaanwijzer"
-
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:887
 msgid "Shut down mousetweaks"
 msgstr "Mousetweaks afsluiten"
 
-#: ../src/mt-main.c:853
-msgid "- GNOME mousetweaks daemon"
-msgstr "— Mousetweaks-voorziening voor Gnome"
+#: ../src/mt-main.c:889
+msgid "Disable cursor animations"
+msgstr "Cursoranimaties uitschakelen"
+
+#: ../src/mt-main.c:891
+msgid "Start mousetweaks as a daemon"
+msgstr "Mousetweaks als daemon starten"
+
+#: ../src/mt-main.c:893
+msgid "Start mousetweaks in login mode"
+msgstr "Mousetweaks in loginmodus starten"
+
+#. parse
+#: ../src/mt-main.c:911
+msgid "- GNOME mouse accessibility daemon"
+msgstr "— Muistoegankelijkheidsvoorziening voor Gnome"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -346,20 +476,20 @@ msgstr "Kon hulp niet tonen"
 msgid "Enable and Log Out"
 msgstr "Inschakelen en afmelden"
 
-#: ../src/pointer-capture-applet.c:180
+#: ../src/pointer-capture-applet.c:213
 msgid "Locked"
 msgstr "Geblokkeerd"
 
 #. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
+#: ../src/pointer-capture-applet.c:216
 msgid "L"
 msgstr "G"
 
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:640
 msgid "Capture area"
 msgstr "Afvanggebied"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:641
 msgid "Temporarily lock the mouse pointer"
 msgstr "De muisaanwijzer tijdelijk blokkeren"
 
@@ -367,97 +497,20 @@ msgstr "De muisaanwijzer tijdelijk blokkeren"
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Kon muisvoorkeuren niet opstarten"
 
-#~ msgid ""
-#~ "Applet to select different dwell-click types.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "Applet om verschillende types hangklikken te selecteren.\n"
-#~ "Onderdeel van MouseTweaks"
+#~ msgid "Dwell mode to use"
+#~ msgstr "Te gebruiken hangklikmodus"
 
-#~ msgid "Click Type Window"
-#~ msgstr "Kliktypevenster"
+#~ msgid "Window y position"
+#~ msgstr "y-positie van venster"
 
-#~ msgid "Double Click"
-#~ msgstr "Dubbelklik"
-
-#~ msgid "Drag Click"
-#~ msgstr "Sleepklik"
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Verstreken tijd tonen bij muisaanwijzer"
 
 #~ msgid "On"
 #~ msgstr "Aan"
 
-#~ msgid "Right Click"
-#~ msgstr "Rechtermuisklik"
-
-#~ msgid "Single Click"
-#~ msgstr "Enkele klik"
-
-#~ msgid "<b>Capture Pointer</b>"
-#~ msgstr "<b>Grijpaanwijzer</b>"
-
-#~ msgid "<b>Release Pointer</b>"
-#~ msgstr "<b>Loslaataanwijzer</b>"
-
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>Grootte van vanggebied</b>"
-
-#~ msgid "A_lt"
-#~ msgstr "A_lt"
-
-#~ msgid ""
-#~ "Area to freeze the mouse pointer on the panel.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "Gebied om de muisaanwijzer te bevriezen op het paneel.\n"
-#~ "Ondereel van MouseTweaks"
-
-#~ msgid "C_trl"
-#~ msgstr "C_trl"
-
-#~ msgid "Ct_rl"
-#~ msgstr "Ct_rl"
-
-#~ msgid "Modifier:"
-#~ msgstr "Controletoetsen:"
-
-#~ msgid "Mouse _button:"
-#~ msgstr "_Muisknop:"
-
-#~ msgid "Mouse b_utton:"
-#~ msgstr "Muis_knop"
-
-#~ msgid "Pointer Capture Preferences"
-#~ msgstr "Aanwijzervangvoorkeuren"
-
-#~ msgid "S_hift"
-#~ msgstr "S_hift"
-
-#~ msgid "Selecting Button 0 will capture the pointer immediately"
-#~ msgstr "Knop 0 selecteren zal de aanwijzer meteen vangen"
-
-#~ msgid "Sh_ift"
-#~ msgstr "Sh_ift"
-
-#~ msgid "_Alt"
-#~ msgstr "_Alt"
-
-#~ msgid "_Width:"
-#~ msgstr "_Breedte:"
-
-#~ msgid "pixels"
-#~ msgstr "pixels"
-
-#~ msgid "Dwell Click Type"
-#~ msgstr "Hangkliktype"
-
-#~ msgid "Show Icons and Text"
-#~ msgstr "Pictogrammen en tekst tonen"
-
-#~ msgid "Show Icons only"
-#~ msgstr "Alleen pictogrammen"
-
-#~ msgid "Show Text only"
-#~ msgstr "Alleen tekst"
 
 #~ msgid "Capture modifier"
 #~ msgstr "Vangmodificator"
@@ -506,9 +559,6 @@ msgstr "Kon muisvoorkeuren niet opstarten"
 
 #~ msgid "_Button:"
 #~ msgstr "_Knop:"
-
-#~ msgid "Use dwell mode"
-#~ msgstr "Hangmodus gebruiken"
 
 #~ msgid "Mousetweaks requires Assistive Technologies."
 #~ msgstr "Mousetweaks vereist assisterende technologieën."

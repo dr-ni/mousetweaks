@@ -547,6 +547,7 @@ cursor_overlay_time (MtData  *mt,
 {
     GtkWidget *ctw;
     GdkColor c;
+    GtkStyle *style;
     cairo_surface_t *surface;
     cairo_t *cr;
     gdouble target;
@@ -565,7 +566,8 @@ cursor_overlay_time (MtData  *mt,
     }
 
     ctw = mt_ctw_get_window (mt);
-    c = ctw->style->bg[GTK_STATE_SELECTED];
+    style = gtk_widget_get_style (ctw);
+    c = style->bg[GTK_STATE_SELECTED];
     target = mt_timer_get_target (timer);
 
     cairo_set_operator (cr, CAIRO_OPERATOR_ATOP);

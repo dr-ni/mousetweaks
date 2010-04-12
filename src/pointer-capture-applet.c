@@ -251,13 +251,15 @@ static gboolean
 area_exposed (GtkWidget *widget, GdkEventExpose *eev, gpointer data)
 {
     CaptureData *cd = data;
+    GtkAllocation allocation;
     cairo_t *cr;
     gdouble w, h;
 
-    w = widget->allocation.width;
-    h = widget->allocation.height;
+    gtk_widget_get_allocation (widget, &allocation);
+    w = allocation.width;
+    h = allocation.height;
 
-    cr = gdk_cairo_create (widget->window);
+    cr = gdk_cairo_create (gtk_widget_get_window (widget));
     cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
     cairo_rectangle (cr, 0.0, 0.0, w, h);
 

@@ -171,18 +171,23 @@ enable_dwell_exposed (GtkWidget      *widget,
     GdkColor c;
     gdouble x, y, w, h;
     gint fwidth, fpad;
+    GtkAllocation allocation;
+    GtkStyle *style;
 
-    c = widget->style->bg[GTK_STATE_SELECTED];
+    style = gtk_widget_get_style (widget);
+    c = style->bg[GTK_STATE_SELECTED];
     gtk_widget_style_get (widget,
 			  "focus-line-width", &fwidth,
 			  "focus-padding", &fpad,
 			  NULL); 
-    x = widget->allocation.x + fwidth + fpad;
-    y = widget->allocation.y + fwidth + fpad;
-    w = widget->allocation.width - (fwidth + fpad) * 2;
-    h = widget->allocation.height - (fwidth + fpad) * 2;
 
-    cr = gdk_cairo_create (widget->window);
+    gtk_widget_get_allocation (widget, &allocation);
+    x = allocation.x + fwidth + fpad;
+    y = allocation.y + fwidth + fpad;
+    w = allocation.width - (fwidth + fpad) * 2;
+    h = allocation.height - (fwidth + fpad) * 2;
+
+    cr = gdk_cairo_create (gtk_widget_get_window (widget));
     cairo_set_source_rgba (cr,
 			   c.red   / 65535.,
 			   c.green / 65535.,
@@ -292,7 +297,7 @@ applet_orient_changed (PanelApplet *applet, guint orient, gpointer data)
 	break;
     }
 
-    if (dd->box->parent)
+    if (gtk_widget_get_parent (dd->box))
 	gtk_widget_reparent (dd->box, GTK_WIDGET (applet));
     else {
 	gtk_container_add (GTK_CONTAINER (applet), dd->box);

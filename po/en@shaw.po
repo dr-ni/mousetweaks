@@ -4,13 +4,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: metacity\n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2009-11-06 19:17+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2010-04-21 20:58+0000\n"
+"PO-Revision-Date: 2010-05-12 18:37 -0400\n"
 "Last-Translator: Thomas Thurman <tthurman@gnome.org>\n"
-"Language-Team: Shavian <ubuntu-l10n-en-shaw@lists.launchpad.net>\n"
+"Language-Team: Shavian <ubuntu-l10n-en-shaw@launchpad.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+
+#, fuzzy
+#: ../data/dwell-click-applet.ui.h:1
+msgid "Applet to select different dwell-click types.\nPart of Mousetweaks"
+msgstr "𐑨𐑐𐑤𐑩𐑑 𐑑 𐑕𐑩𐑤𐑧𐑒𐑑 𐑛𐑦𐑓𐑼𐑩𐑯𐑑 𐑛𐑢𐑧𐑤-𐑒𐑤𐑦𐑒 𐑑𐑲𐑐𐑕.\n𐑐𐑸𐑑 𐑝 Mousetweaks"
 
 #: ../data/dwell-click-applet.ui.h:3
 msgid "Click Type Window"
@@ -25,7 +32,7 @@ msgid "Drag Click"
 msgstr "𐑛𐑮𐑨𐑜 𐑒𐑤𐑦𐑒"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:871
 msgid "Enable dwell click"
 msgstr "𐑦𐑯𐑱𐑚𐑩𐑤 𐑛𐑢𐑧𐑤 𐑒𐑤𐑦𐑒"
 
@@ -40,6 +47,11 @@ msgstr "𐑕𐑦𐑙𐑜𐑩𐑤 𐑒𐑤𐑦𐑒"
 #: ../data/pointer-capture-applet.ui.h:1
 msgid "A_lt"
 msgstr "𐑩_𐑤𐑑"
+
+#, fuzzy
+#: ../data/pointer-capture-applet.ui.h:2
+msgid "Area to freeze the mouse pointer on the panel.\nPart of Mousetweaks"
+msgstr "𐑺𐑦𐑩 𐑑 𐑓𐑮𐑰𐑟 𐑞 𐑥𐑬𐑕 𐑐𐑶𐑯𐑑𐑼 𐑪𐑯 𐑞 𐑐𐑨𐑯𐑩𐑤.\n𐑐𐑸𐑑 𐑝 Mousetweaks"
 
 #: ../data/pointer-capture-applet.ui.h:4
 msgid "C_trl"
@@ -117,7 +129,7 @@ msgstr "𐑖𐑴 𐑲𐑒𐑪𐑯𐑟 𐑴𐑯𐑤𐑦"
 msgid "Show Text only"
 msgstr "𐑖𐑴 𐑑𐑧𐑒𐑕𐑑 𐑴𐑯𐑤𐑦"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:566
 msgid "Dwell Click"
 msgstr "𐑛𐑢𐑧𐑤 𐑒𐑤𐑦𐑒"
 
@@ -130,7 +142,7 @@ msgid "Area to lock the pointer"
 msgstr "𐑺𐑦𐑩 𐑑 𐑤𐑪𐑒 𐑞 𐑐𐑶𐑯𐑑𐑼"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
+#: ../src/pointer-capture-applet.c:565
 msgid "Pointer Capture"
 msgstr "𐑐𐑶𐑯𐑑𐑼 𐑒𐑨𐑐𐑗𐑻"
 
@@ -162,11 +174,11 @@ msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:4
 msgid ""
-"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+"\"3\" = Down)"
 msgstr ""
-"𐑛𐑦𐑮𐑧𐑒𐑖𐑩𐑯 𐑑 𐑐𐑼𐑓𐑹𐑥 𐑩 𐑛𐑳𐑚𐑩𐑤 𐑒𐑤𐑦𐑒 (\"0\" = 𐑤𐑧𐑓𐑑, \"1\" = 𐑮𐑲𐑑, \"2\" = 𐑳𐑐, \"3\" "
-"= 𐑛𐑬𐑯)"
+"𐑛𐑦𐑮𐑧𐑒𐑖𐑩𐑯 𐑑 𐑐𐑼𐑓𐑹𐑥 𐑩 𐑛𐑳𐑚𐑩𐑤 𐑒𐑤𐑦𐑒 (\"0\" = 𐑤𐑧𐑓𐑑, \"1\" = 𐑮𐑲𐑑, \"2\" = 𐑳𐑐, \"3\" = "
+"𐑛𐑬𐑯)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
@@ -186,8 +198,8 @@ msgstr ""
 
 #: ../data/mousetweaks.schemas.in.h:7
 msgid ""
-"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+"\"3\" = Down)"
 msgstr ""
 "𐑛𐑦𐑮𐑧𐑒𐑖𐑩𐑯 𐑑 𐑐𐑼𐑓𐑹𐑥 𐑩 𐑕𐑦𐑙𐑜𐑩𐑤 𐑒𐑤𐑦𐑒 (\"0\" = 𐑤𐑧𐑓𐑑, \"1\" = 𐑮𐑲𐑑, \"2\" = 𐑳𐑐, \"3\" "
 "= 𐑛𐑬𐑯)"
@@ -200,9 +212,10 @@ msgstr "𐑛𐑦𐑕𐑑𐑩𐑯𐑕 𐑦𐑯 𐑐𐑦𐑒𐑕𐑩𐑤𐑟 𐑚�
 msgid "Dwell click mode"
 msgstr "𐑛𐑢𐑧𐑤 𐑒𐑤𐑦𐑒 𐑥𐑴𐑛"
 
+#, fuzzy
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr "𐑛𐑢𐑧𐑤 𐑒𐑤𐑦𐑒 𐑥𐑴𐑛 (\"0\" = 𐑡𐑧𐑕𐑗𐑻 𐑥𐑴𐑛, \"1\" = 𐑢𐑦𐑯𐑛𐑴 𐑥𐑴𐑛)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+msgstr "𐑛𐑢𐑧𐑤 𐑒𐑤𐑦𐑒 𐑥𐑴𐑛 (\"0\" = 𐑢𐑦𐑯𐑛𐑴 𐑥𐑴𐑛, \"1\" = 𐑡𐑧𐑕𐑗𐑻 𐑥𐑴𐑛)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -212,7 +225,7 @@ msgstr "𐑛𐑢𐑧𐑤 𐑒𐑤𐑦𐑒 𐑑𐑲𐑥"
 msgid "Enable secondary click"
 msgstr "𐑦𐑯𐑱𐑚𐑩𐑤 𐑕𐑧𐑒𐑪𐑯𐑛𐑼𐑦 𐑒𐑤𐑦𐑒"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:873
 msgid "Enable simulated secondary click"
 msgstr "𐑦𐑯𐑱𐑚𐑩𐑤 𐑕𐑦𐑥𐑘𐑩𐑤𐑱𐑑𐑦𐑛 𐑕𐑧𐑒𐑪𐑯𐑛𐑼𐑦 𐑒𐑤𐑦𐑒"
 
@@ -240,7 +253,7 @@ msgstr "𐑥𐑵𐑝𐑥𐑩𐑯𐑑 𐑔𐑮𐑧𐑖𐑴𐑤𐑛"
 msgid "Secondary click time"
 msgstr "𐑕𐑧𐑒𐑪𐑯𐑛𐑼𐑦 𐑒𐑤𐑦𐑒 𐑑𐑲𐑥"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "𐑖𐑴 𐑒𐑤𐑦𐑒 𐑑𐑲𐑐 𐑢𐑦𐑯𐑛𐑴"
 
@@ -314,14 +327,14 @@ msgstr ""
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
 msgid ""
-"Whether the Alt key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Alt key must be "
-"pressed while the mouse button is pressed."
+"Whether the Alt key must be pressed for the pointer to be captured while it's "
+"over the capture area. If this option is set as true, and a mouse button is "
+"set in the \"capture_button\" key, then the Alt key must be pressed while the "
+"mouse button is pressed."
 msgstr ""
-"𐑢𐑧𐑞𐑼 𐑞 𐑷𐑤𐑑 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑓𐑹 𐑞 𐑐𐑶𐑯𐑑𐑼 𐑑 𐑚𐑰 𐑒𐑨𐑐𐑗𐑻𐑛 𐑢𐑲𐑤 𐑦𐑑'𐑕 𐑴𐑝𐑼 𐑞 𐑒𐑨𐑐𐑗𐑻 "
-"𐑺𐑦𐑩. 𐑦𐑓 𐑞𐑦𐑕 𐑪𐑐𐑖𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑨𐑟 𐑑𐑮𐑵, 𐑯 𐑩 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑦𐑯 𐑞 "
-"\"capture_button\" 𐑒𐑰, 𐑞𐑧𐑯 𐑞 𐑷𐑤𐑑 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑢𐑲𐑤 𐑞 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑐𐑮𐑧𐑕𐑑."
+"𐑢𐑧𐑞𐑼 𐑞 𐑷𐑤𐑑 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑓𐑹 𐑞 𐑐𐑶𐑯𐑑𐑼 𐑑 𐑚𐑰 𐑒𐑨𐑐𐑗𐑻𐑛 𐑢𐑲𐑤 𐑦𐑑'𐑕 𐑴𐑝𐑼 𐑞 𐑒𐑨𐑐𐑗𐑻 𐑺𐑦𐑩. "
+"𐑦𐑓 𐑞𐑦𐑕 𐑪𐑐𐑖𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑨𐑟 𐑑𐑮𐑵, 𐑯 𐑩 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑦𐑯 𐑞 \"capture_button\" 𐑒𐑰, "
+"𐑞𐑧𐑯 𐑞 𐑷𐑤𐑑 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑢𐑲𐑤 𐑞 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑐𐑮𐑧𐑕𐑑."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
 msgid ""
@@ -334,32 +347,32 @@ msgstr ""
 #: ../data/pointer-capture-applet.schemas.in.h:14
 msgid ""
 "Whether the Ctrl key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Ctrl key must be "
-"pressed while the mouse button is pressed."
+"it's over the capture area. If this option is set as true, and a mouse button "
+"is set in the \"capture_button\" key, then the Ctrl key must be pressed while "
+"the mouse button is pressed."
 msgstr ""
 "𐑢𐑧𐑞𐑼 𐑞 𐑒𐑪𐑯𐑑𐑮𐑴𐑤 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑓𐑹 𐑞 𐑐𐑶𐑯𐑑𐑼 𐑑 𐑚𐑰 𐑒𐑨𐑐𐑗𐑻𐑛 𐑢𐑲𐑤 𐑦𐑑'𐑕 𐑴𐑝𐑼 𐑞 𐑒𐑨𐑐𐑗𐑻 "
-"𐑺𐑦𐑩. 𐑦𐑓 𐑞𐑦𐑕 𐑪𐑐𐑖𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑨𐑟 𐑑𐑮𐑵, 𐑯 𐑩 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑦𐑯 𐑞 "
-"\"capture_button\" 𐑒𐑰, 𐑞𐑧𐑯 𐑞 𐑒𐑪𐑯𐑑𐑮𐑴𐑤 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑢𐑲𐑤 𐑞 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑐𐑮𐑧𐑕𐑑."
+"𐑺𐑦𐑩. 𐑦𐑓 𐑞𐑦𐑕 𐑪𐑐𐑖𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑨𐑟 𐑑𐑮𐑵, 𐑯 𐑩 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑦𐑯 𐑞 \"capture_button\" "
+"𐑒𐑰, 𐑞𐑧𐑯 𐑞 𐑒𐑪𐑯𐑑𐑮𐑴𐑤 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑢𐑲𐑤 𐑞 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑐𐑮𐑧𐑕𐑑."
 
 #: ../data/pointer-capture-applet.schemas.in.h:15
 msgid ""
 "Whether the Ctrl key must be pressed with the mouse button set in "
 "\"release_button\" for the pointer to be released from the capture area."
 msgstr ""
-"𐑢𐑧𐑞𐑼 𐑞 𐑒𐑪𐑯𐑑𐑮𐑴𐑤 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑢𐑦𐑞 𐑞 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑕𐑧𐑑 𐑦𐑯 \"release_button\" 𐑓𐑹 𐑞 "
-"𐑐𐑶𐑯𐑑𐑼 𐑑 𐑚𐑰 𐑮𐑦𐑤𐑰𐑕𐑑 𐑓𐑮𐑪𐑥 𐑞 𐑒𐑨𐑐𐑗𐑻 𐑺𐑦𐑩."
+"𐑢𐑧𐑞𐑼 𐑞 𐑒𐑪𐑯𐑑𐑮𐑴𐑤 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑢𐑦𐑞 𐑞 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑕𐑧𐑑 𐑦𐑯 \"release_button\" 𐑓𐑹 "
+"𐑞 𐑐𐑶𐑯𐑑𐑼 𐑑 𐑚𐑰 𐑮𐑦𐑤𐑰𐑕𐑑 𐑓𐑮𐑪𐑥 𐑞 𐑒𐑨𐑐𐑗𐑻 𐑺𐑦𐑩."
 
 #: ../data/pointer-capture-applet.schemas.in.h:16
 msgid ""
 "Whether the Shift key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Shift key must be "
-"pressed while the mouse button is pressed."
+"it's over the capture area. If this option is set as true, and a mouse button "
+"is set in the \"capture_button\" key, then the Shift key must be pressed "
+"while the mouse button is pressed."
 msgstr ""
-"𐑢𐑧𐑞𐑼 𐑞 𐑖𐑦𐑓𐑑 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑓𐑹 𐑞 𐑐𐑶𐑯𐑑𐑼 𐑑 𐑚𐑰 𐑒𐑨𐑐𐑗𐑻𐑛 𐑢𐑲𐑤 𐑦𐑑'𐑕 𐑴𐑝𐑼 𐑞 𐑒𐑨𐑐𐑗𐑻 "
-"𐑺𐑦𐑩. 𐑦𐑓 𐑞𐑦𐑕 𐑪𐑐𐑖𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑨𐑟 𐑑𐑮𐑵, 𐑯 𐑩 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑦𐑯 𐑞 "
-"\"capture_button\" 𐑒𐑰, 𐑞𐑧𐑯 𐑞 𐑖𐑦𐑓𐑑 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑢𐑲𐑤 𐑞 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑐𐑮𐑧𐑕𐑑."
+"𐑢𐑧𐑞𐑼 𐑞 𐑖𐑦𐑓𐑑 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑓𐑹 𐑞 𐑐𐑶𐑯𐑑𐑼 𐑑 𐑚𐑰 𐑒𐑨𐑐𐑗𐑻𐑛 𐑢𐑲𐑤 𐑦𐑑'𐑕 𐑴𐑝𐑼 𐑞 𐑒𐑨𐑐𐑗𐑻 𐑺𐑦𐑩. "
+"𐑦𐑓 𐑞𐑦𐑕 𐑪𐑐𐑖𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑨𐑟 𐑑𐑮𐑵, 𐑯 𐑩 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑕𐑧𐑑 𐑦𐑯 𐑞 \"capture_button\" 𐑒𐑰, "
+"𐑞𐑧𐑯 𐑞 𐑖𐑦𐑓𐑑 𐑒𐑰 𐑥𐑳𐑕𐑑 𐑚𐑰 𐑐𐑮𐑧𐑕𐑑 𐑢𐑲𐑤 𐑞 𐑥𐑬𐑕 𐑚𐑳𐑑𐑩𐑯 𐑦𐑟 𐑐𐑮𐑧𐑕𐑑."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
 msgid ""
@@ -373,33 +386,79 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "𐑢𐑦𐑛𐑔 𐑝 𐑞 𐑒𐑨𐑐𐑗𐑻 𐑺𐑦𐑩 𐑦𐑯 𐑐𐑦𐑒𐑕𐑩𐑤𐑟."
 
-#: ../src/mt-main.c:877
+#, fuzzy
+#: ../src/mt-main.c:776
+msgid "Assistive Technology Support is not Enabled"
+msgstr "Assistive 𐑑𐑧𐑒𐑯𐑭𐑤𐑩𐑡𐑰 𐑕𐑩𐑐𐑹𐑑 𐑦𐑟 𐑯𐑪𐑑 𐑦𐑯𐑱𐑚𐑩𐑤𐑛"
+
+#, fuzzy
+#: ../src/mt-main.c:777
+msgid ""
+"Mousetweaks requires assistive technologies to be enabled in your "
+"session.\n\nTo enable support for assistive technologies and restart your "
+"session, press \"Enable and Log Out\"."
+msgstr ""
+"Mousetweaks 𐑮𐑦𐑒𐑢𐑲𐑼𐑟 assistive 𐑑𐑧𐑒𐑯𐑭𐑤𐑩𐑡𐑰𐑟 𐑑 𐑚𐑰 𐑦𐑯𐑱𐑚𐑩𐑤𐑛 𐑦𐑯 𐑿𐑼 𐑕𐑧𐑖𐑩𐑯.\n\n𐑑 "
+"𐑦𐑯𐑱𐑚𐑩𐑤 𐑕𐑩𐑐𐑹𐑑 𐑓𐑹 assistive 𐑑𐑧𐑒𐑯𐑭𐑤𐑩𐑡𐑰𐑟 𐑯 𐑮𐑰𐑕𐑑𐑸𐑑 𐑿𐑼 𐑕𐑧𐑖𐑩𐑯, 𐑐𐑮𐑧𐑕 \"𐑦𐑯𐑱𐑚𐑩𐑤 𐑯 𐑤𐑪𐑜 "
+"𐑬𐑑\"."
+
+#: ../src/mt-main.c:875
 msgid "Time to wait before a dwell click"
 msgstr "𐑑𐑲𐑥 𐑑 𐑢𐑱𐑑 𐑚𐑦𐑓𐑹 𐑩 𐑛𐑢𐑧𐑤 𐑒𐑤𐑦𐑒"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:877
 msgid "Time to wait before a simulated secondary click"
 msgstr "𐑑𐑲𐑥 𐑑 𐑢𐑱𐑑 𐑚𐑦𐑓𐑹 𐑩 𐑕𐑦𐑥𐑘𐑩𐑤𐑱𐑑𐑦𐑛 𐑕𐑧𐑒𐑪𐑯𐑛𐑼𐑦 𐑒𐑤𐑦𐑒"
 
-#: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "𐑛𐑢𐑧𐑤 𐑥𐑴𐑛 𐑑 𐑿𐑕"
+#, fuzzy
+#: ../src/mt-main.c:879
+msgid "Set the active dwell mode"
+msgstr "𐑕𐑧𐑑 𐑞 𐑨𐑒𐑑𐑦𐑝 𐑛𐑢𐑧𐑤 𐑥𐑴𐑛"
 
+#, fuzzy
+#: ../src/mt-main.c:881
+msgid "Show a click-type window"
+msgstr "𐑖𐑴 𐑩 𐑒𐑤𐑦𐑒-𐑑𐑲𐑐 𐑢𐑦𐑯𐑛𐑴"
+
+#, fuzzy
+#: ../src/mt-main.c:883
+msgid "Click-type window X position"
+msgstr "𐑒𐑤𐑦𐑒-𐑑𐑲𐑐 𐑢𐑦𐑯𐑛𐑴 𐑧𐑒𐑕 𐑐𐑩𐑟𐑦𐑖𐑩𐑯"
+
+#, fuzzy
 #: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "𐑢𐑦𐑯𐑛𐑴 𐑧𐑒𐑕 𐑐𐑩𐑟𐑦𐑖𐑩𐑯"
+msgid "Click-type window Y position"
+msgstr "𐑒𐑤𐑦𐑒-𐑑𐑲𐑐 𐑢𐑦𐑯𐑛𐑴 𐑢𐑲 𐑐𐑩𐑟𐑦𐑖𐑩𐑯"
 
 #: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "𐑢𐑦𐑯𐑛𐑴 𐑢𐑲 𐑐𐑩𐑟𐑦𐑖𐑩𐑯"
-
-#: ../src/mt-main.c:889
 msgid "Ignore small pointer movements"
 msgstr "𐑦𐑜𐑯𐑹 𐑕𐑥𐑷𐑤 𐑐𐑶𐑯𐑑𐑼 𐑥𐑵𐑝𐑥𐑩𐑯𐑑𐑕"
 
+#, fuzzy
+#: ../src/mt-main.c:889
+msgid "Shut down mousetweaks"
+msgstr "𐑖𐑳𐑑 𐑛𐑬𐑯 mousetweaks"
+
+#, fuzzy
 #: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "𐑖𐑴 𐑦𐑤𐑨𐑐𐑕𐑑 𐑑𐑲𐑥 𐑨𐑟 𐑒𐑻𐑕𐑼 𐑴𐑝𐑼𐑤𐑱"
+msgid "Disable cursor animations"
+msgstr "𐑛𐑦𐑕𐑱𐑚𐑩𐑤 𐑒𐑻𐑕𐑼 𐑨𐑯𐑩𐑥𐑱𐑖𐑩𐑯𐑟"
+
+#, fuzzy
+#: ../src/mt-main.c:893
+msgid "Start mousetweaks as a daemon"
+msgstr "𐑕𐑑𐑸𐑑 mousetweaks 𐑨𐑟 𐑩 𐑛𐑰𐑥𐑩𐑯"
+
+#, fuzzy
+#: ../src/mt-main.c:895
+msgid "Start mousetweaks in login mode"
+msgstr "𐑕𐑑𐑸𐑑 mousetweaks 𐑦𐑯 𐑤𐑪𐑜𐑦𐑯 𐑥𐑴𐑛"
+
+#. parse
+#, fuzzy
+#: ../src/mt-main.c:913
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- 𐑯𐑴𐑥 𐑥𐑬𐑕 𐑨𐑒𐑕𐑧𐑕𐑩𐑚𐑦𐑤𐑦𐑑𐑰 𐑛𐑰𐑥𐑩𐑯"
 
 #: ../src/mt-common.c:30
 msgid "Failed to Display Help"
@@ -418,14 +477,15 @@ msgstr "𐑤𐑪𐑒𐑑"
 msgid "L"
 msgstr "𐑤"
 
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:642
 msgid "Capture area"
 msgstr "𐑒𐑨𐑐𐑗𐑻 𐑺𐑦𐑩"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:643
 msgid "Temporarily lock the mouse pointer"
 msgstr "𐑑𐑧𐑥𐑐𐑼𐑼𐑦𐑤𐑦 𐑤𐑪𐑒 𐑞 𐑥𐑬𐑕 𐑐𐑶𐑯𐑑𐑼"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/dwell-click-applet.c:339
 msgid "Failed to Launch Mouse Preferences"
 msgstr "𐑓𐑱𐑤𐑛 𐑑 𐑤𐑷𐑯𐑗 𐑥𐑬𐑕 𐑐𐑮𐑧𐑓𐑼𐑩𐑯𐑕𐑩𐑟"
+

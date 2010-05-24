@@ -1,3 +1,31 @@
+Version 2.31.2
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Compile with -DGSEAL_ENABLED; bumps gtk+ to 2.18 - closes bgo#612492
+
+New and updated translations:
+
+    [ca@valencia] Gil Forcada
+    [da] Ask H. Larsen
+    [el] Bakaoukas Nikolaos
+    [en@shaw] Thomas Thurman
+    [eu] Iñaki Larrañaga Murgoitio
+    [nl] Wouter Bolsterlee
+    [pa] A S Alam
+    [sr] Милош Поповић
+    [sr@latin] Miloš Popović
+
+New and updated manual translation:
+
+    [el] Marios Zindilis, Simos Xenitellis
+
+Version 2.31.1
+---------------
+
+Version 2.31.1 has been skipped
+
 Version 2.30.0
 ---------------
 

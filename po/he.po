@@ -6,10 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-11-17 07:06+0000\n"
-"PO-Revision-Date: 2009-07-05 22:51+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-27 15:58+0300\n"
+"PO-Revision-Date: 2010-05-27 16:01+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: he\n"
 "MIME-Version: 1.0\n"
@@ -38,7 +37,7 @@ msgid "Drag Click"
 msgstr "לחיצת גרירה"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:876
+#: ../src/mt-main.c:871
 msgid "Enable dwell click"
 msgstr "Enable dwell click"
 
@@ -138,7 +137,7 @@ msgstr "הצג איקונים בלבד"
 msgid "Show Text only"
 msgstr "הצג טקסט בלבד"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:566
 msgid "Dwell Click"
 msgstr "לחיצת שהייה"
 
@@ -151,7 +150,7 @@ msgid "Area to lock the pointer"
 msgstr "איזור לנעילת הסמן"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
+#: ../src/pointer-capture-applet.c:565
 msgid "Pointer Capture"
 msgstr "לכידת סמן"
 
@@ -222,7 +221,6 @@ msgid "Dwell click mode"
 msgstr "Dwell click mode"
 
 #: ../data/mousetweaks.schemas.in.h:10
-#| msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
 msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
 msgstr "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
 
@@ -234,7 +232,7 @@ msgstr "Dwell click time"
 msgid "Enable secondary click"
 msgstr "Enable secondary click"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:878
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:873
 msgid "Enable simulated secondary click"
 msgstr "Enable simulated secondary click"
 
@@ -400,11 +398,11 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Width of the capture area in pixels."
 
-#: ../src/mt-main.c:781
+#: ../src/mt-main.c:776
 msgid "Assistive Technology Support is not Enabled"
 msgstr "תמיכה בטכנולוגיות מסייעות אינה מופעלת"
 
-#: ../src/mt-main.c:782
+#: ../src/mt-main.c:777
 msgid ""
 "Mousetweaks requires assistive technologies to be enabled in your session.\n"
 "\n"
@@ -416,53 +414,52 @@ msgstr ""
 "על מנת לאפשר תמיכה בטכנולוגיות מסייעות ולשתחול ההפעלה שלך, לחץ על \"אפשר "
 "והתנתק\". "
 
-#: ../src/mt-main.c:880
+#: ../src/mt-main.c:875
 msgid "Time to wait before a dwell click"
 msgstr "Time to wait before a dwell click"
 
-#: ../src/mt-main.c:882
+#: ../src/mt-main.c:877
 msgid "Time to wait before a simulated secondary click"
 msgstr "Time to wait before a simulated secondary click"
 
-#: ../src/mt-main.c:884
+#: ../src/mt-main.c:879
 msgid "Set the active dwell mode"
 msgstr "Set the active dwell mode"
 
-#: ../src/mt-main.c:886
-#| msgid "Show click type window"
+#: ../src/mt-main.c:881
 msgid "Show a click-type window"
 msgstr "Show a click-type window"
 
-#: ../src/mt-main.c:888
-#| msgid "Window x position"
+#: ../src/mt-main.c:883
 msgid "Click-type window X position"
 msgstr "Click-type window X position"
 
-#: ../src/mt-main.c:890
-#| msgid "Window x position"
+#: ../src/mt-main.c:885
 msgid "Click-type window Y position"
 msgstr "Click-type window Y position"
 
-#: ../src/mt-main.c:892
+#: ../src/mt-main.c:887
 msgid "Ignore small pointer movements"
 msgstr "Ignore small pointer movements"
 
-#: ../src/mt-main.c:894
+#: ../src/mt-main.c:889
 msgid "Shut down mousetweaks"
 msgstr "Shut down mousetweaks"
 
-#: ../src/mt-main.c:896
+#: ../src/mt-main.c:891
 msgid "Disable cursor animations"
 msgstr "Disable cursor animations"
 
-#: ../src/mt-main.c:898
-#| msgid "- GNOME mousetweaks daemon"
+#: ../src/mt-main.c:893
 msgid "Start mousetweaks as a daemon"
 msgstr "Start mousetweaks as a daemon"
 
+#: ../src/mt-main.c:895
+msgid "Start mousetweaks in login mode"
+msgstr "Start mousetweaks in login mode"
+
 #. parse
-#: ../src/mt-main.c:915
-#| msgid "- GNOME mousetweaks daemon"
+#: ../src/mt-main.c:913
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME mouse accessibility daemon"
 
@@ -483,15 +480,15 @@ msgstr "נעול"
 msgid "L"
 msgstr "נ"
 
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:642
 msgid "Capture area"
 msgstr "איזור לכידה"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:643
 msgid "Temporarily lock the mouse pointer"
 msgstr "נעל את סמן העכבר באופן זמני"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/dwell-click-applet.c:339
 msgid "Failed to Launch Mouse Preferences"
 msgstr "נכשל בשיגור מאפייני העכבר"
 

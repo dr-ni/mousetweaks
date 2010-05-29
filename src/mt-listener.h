@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -21,48 +21,43 @@
 #define __MT_LISTENER_H__
 
 #include <glib-object.h>
-#include <cspi/spi.h>
 
 G_BEGIN_DECLS
 
-#define MT_TYPE_EVENT            (mt_event_get_type ())
-#define MT_TYPE_LISTENER         (mt_listener_get_type ())
-#define MT_LISTENER(o)           (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_LISTENER, MtListener))
-#define MT_LISTENER_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST ((k), MT_TYPE_LISTENER, MtListenerClass))
-#define MT_IS_LISTENER(o)        (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_LISTENER))
-#define MT_IS_LISTENER_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), MT_TYPE_LISTENER))
-#define MT_LISTENER_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), MT_TYPE_LISTENER, MtListenerClass))
+#define MT_TYPE_EVENT     (mt_event_get_type ())
+#define MT_TYPE_LISTENER  (mt_listener_get_type ())
+#define MT_LISTENER(o)    (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_LISTENER, MtListener))
+#define MT_IS_LISTENER(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_LISTENER))
 
 typedef GObjectClass              MtListenerClass;
 typedef struct _MtListener        MtListener;
 typedef struct _MtListenerPrivate MtListenerPrivate;
 
-struct _MtListener {
+struct _MtListener
+{
     GObject            parent;
     MtListenerPrivate *priv;
 };
 
-GType        mt_listener_get_type       (void) G_GNUC_CONST;
-MtListener * mt_listener_get_default    (void);
-Accessible * mt_listener_current_focus  (MtListener *listener);
-
-typedef enum {
-    EV_MOTION = 0,
-    EV_BUTTON_PRESS,
-    EV_BUTTON_RELEASE
+typedef enum
+{
+    MT_EVENT_MOTION = 0,
+    MT_EVENT_BUTTON_PRESS,
+    MT_EVENT_BUTTON_RELEASE
 } MtEventType;
 
 typedef struct _MtEvent MtEvent;
-struct _MtEvent {
+struct _MtEvent
+{
     MtEventType type;
     gint        x;
     gint        y;
     gint        button;
 };
 
-GType     mt_event_get_type (void) G_GNUC_CONST;
-MtEvent * mt_event_copy     (const MtEvent *event);
-void      mt_event_free     (MtEvent       *event);
+GType              mt_event_get_type          (void) G_GNUC_CONST;
+GType              mt_listener_get_type       (void) G_GNUC_CONST;
+MtListener *       mt_listener_get_default    (void);
 
 G_END_DECLS
 

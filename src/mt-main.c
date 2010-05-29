@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -497,7 +497,7 @@ global_button_event (MtListener *listener,
     MtData *mt = data;
 
     if (mt->delay_enabled && event->button == 1) {
-	if (event->type == EV_BUTTON_PRESS) {
+	if (event->type == MT_EVENT_BUTTON_PRESS) {
 	    mt->pointer_x = event->x;
 	    mt->pointer_y = event->y;
 	    mt_timer_start (mt->delay_timer);
@@ -515,25 +515,9 @@ global_button_event (MtListener *listener,
      * cancel a dwell-click in progress if a physical button
      * is pressed - useful for mixed use-cases and testing
      */
-    if ((event->type == EV_BUTTON_PRESS && mt_timer_is_running (mt->dwell_timer)) ||
-        (event->type == EV_BUTTON_RELEASE && mt->dwell_drag_started)) {
+    if ((event->type == MT_EVENT_BUTTON_PRESS && mt_timer_is_running (mt->dwell_timer)) ||
+        (event->type == MT_EVENT_BUTTON_RELEASE && mt->dwell_drag_started)) {
 	mt_dwell_click_cancel (mt);
-    }
-}
-
-static void
-global_focus_event (MtListener *listener,
-		    gpointer    data)
-{
-    MtData *mt = data;
-    Accessible *accessible;
-
-    if (mt->delay_enabled) {
-	accessible = mt_listener_current_focus (listener);
-	/* TODO: check for more objects and conditions.
-	 * Some links don't have jump actions, eg: text-mails in thunderbird.
-	 */
-	mt->move_release = mt_accessible_supports_action (accessible, "jump");
     }
 }
 
@@ -997,8 +981,6 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
                       G_CALLBACK (global_motion_event), mt);
     g_signal_connect (listener, "button_event",
                       G_CALLBACK (global_button_event), mt);
-    g_signal_connect (listener, "focus_changed",
-                      G_CALLBACK (global_focus_event), mt);
 
     gtk_main ();
 

@@ -41,7 +41,6 @@ PKG_CHECK_MODULES(DEPENDENCIES,
 	gtk+-2.0 >= 2.18
 	gconf-2.0 >= 2.16.0
 	dbus-glib-1 >= 0.7
-	cspi-1.0
 	x11
 	xcursor
 	xfixes

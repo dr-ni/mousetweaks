@@ -23,7 +23,6 @@
 
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>
-#include <cspi/spi.h>
 #include <dbus/dbus-glib.h>
 #include <X11/extensions/XTest.h>
 
@@ -36,11 +35,6 @@
 #include "mt-cursor.h"
 #include "mt-main.h"
 #include "mt-listener.h"
-#include "mt-accessible.h"
-
-#define GSM_DBUS_NAME      "org.gnome.SessionManager"
-#define GSM_DBUS_PATH      "/org/gnome/SessionManager"
-#define GSM_DBUS_INTERFACE "org.gnome.SessionManager"
 
 enum {
     PRESS = 0,
@@ -356,68 +350,10 @@ dwell_timer_finished (MtTimer *timer, gpointer data)
     }
 }
 
-static gboolean
-eval_func (Accessible *a, gpointer data)
-{
-    gchar *name;
-    gboolean found = FALSE;
-
-    name = Accessible_getName (a);
-    if (name) {
-	found = g_str_equal (name, "Window List");
-	SPI_freeString (name);
-    }
-    return found;
-}
-
-static gboolean
-push_func (Accessible *a, gpointer data)
-{
-    MtData *mt = data;
-    AccessibleRole role;
-
-    role = Accessible_getRole (a);
-    if (role != SPI_ROLE_PANEL && role != SPI_ROLE_EMBEDDED)
-	return FALSE;
-
-    if (!mt_accessible_is_visible (a))
-	return FALSE;
-
-    if (Accessible_isComponent (a))
-	return mt_accessible_in_extents (a, mt->pointer_x, mt->pointer_y);
-
-    return TRUE;
-}
-
-static gboolean
-mt_main_use_move_release (MtData *mt)
-{
-    Accessible *point, *search;
-
-    point = mt_accessible_at_point (mt->pointer_x, mt->pointer_y);
-    if (point) {
-	search = mt_accessible_search (point,
-				       MT_SEARCH_TYPE_BREADTH,
-				       eval_func, push_func, mt);
-	Accessible_unref (point);
-	if (search) {
-	    Accessible_unref (search);
-	    return TRUE;
-	}
-    }
-    return FALSE;
-}
-
 static void
 delay_timer_finished (MtTimer *timer, MtData *mt)
 {
-    /* set secondary-click flag */
     mt->delay_finished = TRUE;
-
-    if (mt->move_release) {
-	mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
-	mt_main_generate_button_event (mt, 3, CLICK, CurrentTime);
-    }
 }
 
 static void
@@ -446,7 +382,6 @@ mt_dwell_click_cancel (MtData *mt)
     dwell_restore_single_click (mt);
 }
 
-/* at-spi listener callbacks */
 static void
 global_motion_event (MtListener *listener,
 		     MtEvent    *event,
@@ -726,61 +661,6 @@ get_gconf_options (MtData *mt)
     mt->left_handed = gconf_client_get_bool (mt->client, GNOME_MOUSE_ORIENT, NULL);
 }
 
-static void
-mt_main_request_logout (MtData *mt)
-{
-    DBusGConnection *bus;
-    DBusGProxy *proxy;
-
-    bus = dbus_g_bus_get (DBUS_BUS_SESSION, NULL);
-    if (bus) {
-	proxy = dbus_g_proxy_new_for_name (bus,
-					   GSM_DBUS_NAME,
-					   GSM_DBUS_PATH,
-					   GSM_DBUS_INTERFACE);
-	/*
-	 * Call logout method of session manager:
-	 * mode: 0 = normal, 1 = no confirmation, 2 = force
-	 */
-	dbus_g_proxy_call (proxy, "Logout", NULL,
-			   G_TYPE_UINT, 1, G_TYPE_INVALID,
-			   G_TYPE_INVALID);
-	g_object_unref (proxy);
-    }
-}
-
-static gboolean
-accessibility_enabled (MtData *mt,
-		       gint    spi_status)
-{
-    gint ret;
-
-    if (spi_status != 0) {
-	ret = mt_common_show_dialog
-	    (_("Assistive Technology Support is not Enabled"),
-	     _("Mousetweaks requires assistive technologies to be enabled "
-	       "in your session."
-	       "\n\n"
-	       "To enable support for assistive technologies and restart "
-	       "your session, press \"Enable and Log Out\"."),
-	     MT_MESSAGE_LOGOUT);
-
-	if (ret == GTK_RESPONSE_ACCEPT) {
-	    gconf_client_set_bool (mt->client, GNOME_A11Y_KEY, TRUE, NULL);
-	    mt_main_request_logout (mt);
-	}
-	else {
-	    /* reset the selected option again */
-	    if (gconf_client_get_bool (mt->client, OPT_DELAY, NULL))
-		gconf_client_set_bool (mt->client, OPT_DELAY, FALSE, NULL);
-	    if (gconf_client_get_bool (mt->client, OPT_DWELL, NULL))
-		gconf_client_set_bool (mt->client, OPT_DWELL, FALSE, NULL);
-	}
-	return FALSE;
-    }
-    return TRUE;
-}
-
 static MtData *
 mt_data_init (void)
 {
@@ -908,8 +788,6 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     MtData *mt;
     MtCursorManager *manager;
     MtListener *listener;
-    gint spi_status;
-    gint spi_leaks = 0;
 
     if (mt_pidfile_create () < 0) {
 	g_warning ("Couldn't create PID file.");
@@ -926,15 +804,6 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     mt = mt_data_init ();
     if (!mt)
 	goto FINISH;
-
-    spi_status = SPI_init ();
-    /* don't check a11y key in login mode */
-    if (!cli_args.login) {
-	if (!accessibility_enabled (mt, spi_status)) {
-	    mt_data_free (mt);
-	    goto FINISH;
-	}
-    }
 
     /* load gconf settings */
     get_gconf_options (mt);
@@ -989,14 +858,10 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     g_object_unref (listener);
 
 CLEANUP:
-    spi_leaks = SPI_exit ();
     mt_data_free (mt);
+
 FINISH:
     mt_pidfile_remove ();
-
-    if (spi_leaks)
-	g_warning ("AT-SPI reported %i leak%s.",
-		   spi_leaks, spi_leaks != 1 ? "s" : "");
 }
 
 int

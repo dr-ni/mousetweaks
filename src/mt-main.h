@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -60,7 +60,6 @@ struct _MtData {
     guint        dwell_drag_started    : 1;
     guint        dwell_gesture_started : 1;
     guint        override_cursor       : 1;
-    guint        move_release          : 1;
     guint        delay_finished        : 1;
 };
 

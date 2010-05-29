@@ -9,8 +9,8 @@
 mousetweaks \- Accessibility enhancements for the mouse
 .SH SYNOPSIS
 .B mousetweaks
-[\-\-enable\-dwell] [\-\-enable\-secondary]
-[\-\-dwell\-time=FLOAT] [\-\-secondary\-time=FLOAT]
+[\-\-dwell] [\-\-ssc]
+[\-\-dwell\-time=FLOAT] [\-\-ssc\-time=FLOAT]
 [\-m|\-\-dwell\-mode=STRING] [\-c|\-\-show\-ctw]
 [\-x|\-\-ctw\-x=INT] [\-y|\-\-ctw\-y=INT]
 [\-t|\-\-threshold=INT] [\-s|\-\-shutdown]
@@ -21,10 +21,10 @@ is a daemon that provides various mouse features for the GNOME desktop.
 It depends on the Assistive Technology Service Provider Interface (AT-SPI).
 .SH OPTIONS
 .TP
-.B \-\-enable\-dwell
+.B \-\-dwell
 Automatically perform mouse clicks without using a physical button.
 .TP
-.B \-\-enable\-secondary
+.B \-\-ssc
 Trigger the secondary mouse button when the primary mouse button is held down
 for a specified amount of time.
 .TP
@@ -32,7 +32,7 @@ for a specified amount of time.
 Time to keep the pointer motionless before a dwell click is performed.
 Range: 0.2 - 3.0 seconds.
 .TP
-.B \-\-secondary\-time=FLOAT
+.B \-\-ssc\-time=FLOAT
 Time to hold the primary mouse button before a simulated secondary
 click is performed. Range: 0.5 - 3.0 seconds.
 .TP
@@ -69,8 +69,8 @@ for dwell clicks and secondary clicks as cursor overlay.
 Start mousetweaks in the background, ie. spawn a child process.
 .TP
 .B \-\-login
-Start mousetweaks in login mode. In login mode, mousetweaks does not check
-whether AT-SPI is running.
+Start mousetweaks in login mode. Login mode enables workarounds specific
+to GDM. Currently unused.
 .SH FILES
 .I ~/.mousetweaks.pid
 .RS
@@ -87,5 +87,4 @@ mousetweaks was written by Gerd Kohlberger
 Licenced under the GNU General Public License v3 or later.
 .SH SEE ALSO
 .BR "dwell\-click\-applet" (1),
-.BR "pointer\-capture\-applet" (1),
-Assistive Technology Service Provider Interface (AT\-SPI)
+.BR "pointer\-capture\-applet" (1)

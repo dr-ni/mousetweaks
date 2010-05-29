@@ -44,14 +44,14 @@ enum {
 };
 
 typedef struct _MtCliArgs {
-    gdouble  delay_time;
+    gdouble  ssc_time;
     gdouble  dwell_time;
     gchar   *mode;
     gint     pos_x;
     gint     pos_y;
     gint     threshold;
-    gboolean delay_click;
-    gboolean dwell_click;
+    gboolean ssc_enabled;
+    gboolean dwell_enabled;
     gboolean shutdown;
     gboolean daemonize;
     gboolean ctw;
@@ -352,15 +352,15 @@ dwell_timer_finished (MtTimer *timer, gpointer data)
 }
 
 static void
-delay_timer_finished (MtTimer *timer, MtData *mt)
+ssc_timer_finished (MtTimer *timer, MtData *mt)
 {
-    mt->delay_finished = TRUE;
+    mt->ssc_finished = TRUE;
 }
 
 static void
 mt_main_do_secondary_click (MtData *mt)
 {
-    mt->delay_finished = FALSE;
+    mt->ssc_finished = FALSE;
     mt_main_generate_button_event (mt, 3, CLICK, CurrentTime);
 }
 
@@ -390,15 +390,15 @@ global_motion_event (MtListener *listener,
 {
     MtData *mt = data;
 
-    if (mt->delay_enabled) {
+    if (mt->ssc_enabled) {
 	if (!below_threshold (mt, event->x, event->y)) {
 	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
-	    if (mt_timer_is_running (mt->delay_timer))
-		mt_timer_stop (mt->delay_timer);
+	    if (mt_timer_is_running (mt->ssc_timer))
+		mt_timer_stop (mt->ssc_timer);
 
-	    if (mt->delay_finished)
-		mt->delay_finished = FALSE;
+	    if (mt->ssc_finished)
+		mt->ssc_finished = FALSE;
 	}
     }
 
@@ -432,19 +432,19 @@ global_button_event (MtListener *listener,
 {
     MtData *mt = data;
 
-    if (mt->delay_enabled && event->button == 1) {
+    if (mt->ssc_enabled && event->button == 1) {
 	if (event->type == MT_EVENT_BUTTON_PRESS) {
 	    mt->pointer_x = event->x;
 	    mt->pointer_y = event->y;
-	    mt_timer_start (mt->delay_timer);
+	    mt_timer_start (mt->ssc_timer);
 	}
 	else {
 	    mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
-	    if (mt->delay_finished)
+	    if (mt->ssc_finished)
 		mt_main_do_secondary_click (mt);
 	    else
-		mt_timer_stop (mt->delay_timer);
+		mt_timer_stop (mt->ssc_timer);
 	}
     }
     /*
@@ -583,10 +583,10 @@ gconf_value_changed (GConfClient *client,
 
     if (g_str_equal (key, OPT_THRESHOLD) && value->type == GCONF_VALUE_INT)
 	mt->threshold = gconf_value_get_int (value);
-    else if (g_str_equal (key, OPT_DELAY) && value->type == GCONF_VALUE_BOOL)
-	mt->delay_enabled = gconf_value_get_bool (value);
-    else if (g_str_equal (key, OPT_DELAY_T) && value->type == GCONF_VALUE_FLOAT)
-	mt_timer_set_target (mt->delay_timer, gconf_value_get_float (value));
+    else if (g_str_equal (key, OPT_SSC) && value->type == GCONF_VALUE_BOOL)
+	mt->ssc_enabled = gconf_value_get_bool (value);
+    else if (g_str_equal (key, OPT_SSC_T) && value->type == GCONF_VALUE_FLOAT)
+	mt_timer_set_target (mt->ssc_timer, gconf_value_get_float (value));
     else if (g_str_equal (key, OPT_DWELL) && value->type == GCONF_VALUE_BOOL) {
 	mt->dwell_enabled = gconf_value_get_bool (value);
 	mt_ctw_update_sensitivity (mt);
@@ -637,15 +637,15 @@ get_gconf_options (MtData *mt)
     gdouble val;
 
     mt->threshold = gconf_client_get_int (mt->client, OPT_THRESHOLD, NULL);
-    mt->delay_enabled = gconf_client_get_bool (mt->client, OPT_DELAY, NULL);
+    mt->ssc_enabled = gconf_client_get_bool (mt->client, OPT_SSC, NULL);
     mt->dwell_enabled = gconf_client_get_bool (mt->client, OPT_DWELL, NULL);
     mt->dwell_show_ctw = gconf_client_get_bool (mt->client, OPT_CTW, NULL);
     mt->dwell_mode = gconf_client_get_int (mt->client, OPT_MODE, NULL);
     mt->style = gconf_client_get_int (mt->client, OPT_STYLE, NULL);
     mt->animate_cursor = gconf_client_get_bool (mt->client, OPT_ANIMATE, NULL);
 
-    val = gconf_client_get_float (mt->client, OPT_DELAY_T, NULL);
-    mt_timer_set_target (mt->delay_timer, val);
+    val = gconf_client_get_float (mt->client, OPT_SSC_T, NULL);
+    mt_timer_set_target (mt->ssc_timer, val);
     val = gconf_client_get_float (mt->client, OPT_DWELL_T, NULL);
     mt_timer_set_target (mt->dwell_timer, val);
 
@@ -688,10 +688,10 @@ mt_data_init (void)
     g_signal_connect (mt->client, "value_changed",
 		      G_CALLBACK (gconf_value_changed), mt);
 
-    mt->delay_timer = mt_timer_new ();
-    g_signal_connect (mt->delay_timer, "finished",
-		      G_CALLBACK (delay_timer_finished), mt);
-    g_signal_connect (mt->delay_timer, "tick",
+    mt->ssc_timer = mt_timer_new ();
+    g_signal_connect (mt->ssc_timer, "finished",
+		      G_CALLBACK (ssc_timer_finished), mt);
+    g_signal_connect (mt->ssc_timer, "tick",
 		      G_CALLBACK (mt_main_timer_tick), mt);
 
     mt->dwell_timer = mt_timer_new ();
@@ -714,7 +714,7 @@ mt_data_init (void)
 static void
 mt_data_free (MtData *mt)
 {
-    g_object_unref (mt->delay_timer);
+    g_object_unref (mt->ssc_timer);
     g_object_unref (mt->dwell_timer);
     g_object_unref (mt->service);
     g_object_unref (mt->client);
@@ -733,13 +733,13 @@ mt_parse_options (int *argc, char ***argv)
     MtCliArgs ca;
     GOptionContext *context;
     GOptionEntry entries[] = {
-	{"enable-dwell", 0, 0, G_OPTION_ARG_NONE, &ca.dwell_click,
+	{"dwell", 0, 0, G_OPTION_ARG_NONE, &ca.dwell_enabled,
 	    N_("Enable dwell click"), 0},
-	{"enable-secondary", 0, 0, G_OPTION_ARG_NONE, &ca.delay_click,
+	{"ssc", 0, 0, G_OPTION_ARG_NONE, &ca.ssc_enabled,
 	    N_("Enable simulated secondary click"), 0},
 	{"dwell-time", 0, 0, G_OPTION_ARG_DOUBLE, &ca.dwell_time,
 	    N_("Time to wait before a dwell click"), "[0.2-3.0]"},
-	{"secondary-time", 0, 0, G_OPTION_ARG_DOUBLE, &ca.delay_time,
+	{"ssc-time", 0, 0, G_OPTION_ARG_DOUBLE, &ca.ssc_time,
 	    N_("Time to wait before a simulated secondary click"), "[0.5-3.0]"},
 	{"dwell-mode", 'm', 0, G_OPTION_ARG_STRING, &ca.mode,
 	    N_("Set the active dwell mode"), "[window|gesture]"},
@@ -761,20 +761,22 @@ mt_parse_options (int *argc, char ***argv)
 	    N_("Start mousetweaks in login mode"), 0},
 	{ NULL }
     };
+
     /* init cli arguments */
-    ca.delay_time   = -1.;
-    ca.dwell_time   = -1.;
-    ca.mode         = NULL;
-    ca.pos_x        = -1;
-    ca.pos_y        = -1;
-    ca.threshold    = -1;
-    ca.delay_click  = FALSE;
-    ca.dwell_click  = FALSE;
-    ca.shutdown     = FALSE;
-    ca.daemonize    = FALSE;
-    ca.ctw          = FALSE;
-    ca.no_animation = FALSE;
-    ca.login        = FALSE;
+    ca.ssc_time      = -1.;
+    ca.dwell_time    = -1.;
+    ca.mode          = NULL;
+    ca.pos_x         = -1;
+    ca.pos_y         = -1;
+    ca.threshold     = -1;
+    ca.ssc_enabled   = FALSE;
+    ca.dwell_enabled = FALSE;
+    ca.shutdown      = FALSE;
+    ca.daemonize     = FALSE;
+    ca.ctw           = FALSE;
+    ca.no_animation  = FALSE;
+    ca.login         = FALSE;
+
     /* parse */
     context = g_option_context_new (_("- GNOME mouse accessibility daemon"));
     g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
@@ -811,14 +813,14 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     get_gconf_options (mt);
 
     /* override with CLI arguments */
-    if (cli_args.dwell_click)
-	mt->dwell_enabled = cli_args.dwell_click;
-    if (cli_args.delay_click)
-	mt->delay_enabled = cli_args.delay_click;
+    if (cli_args.dwell_enabled)
+	mt->dwell_enabled = cli_args.dwell_enabled;
+    if (cli_args.ssc_enabled)
+	mt->ssc_enabled = cli_args.ssc_enabled;
     if (cli_args.dwell_time >= .1 && cli_args.dwell_time <= 3.)
 	mt_timer_set_target (mt->dwell_timer, cli_args.dwell_time);
-    if (cli_args.delay_time >= .1 && cli_args.delay_time <= 3.)
-	mt_timer_set_target (mt->delay_timer, cli_args.delay_time);
+    if (cli_args.ssc_time >= .1 && cli_args.ssc_time <= 3.)
+	mt_timer_set_target (mt->ssc_timer, cli_args.ssc_time);
     if (cli_args.threshold >= 0 && cli_args.threshold <= 30)
 	mt->threshold = cli_args.threshold;
     if (cli_args.ctw)

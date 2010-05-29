@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -32,8 +32,8 @@ G_BEGIN_DECLS
 
 #define MT_GCONF_HOME "/desktop/gnome/accessibility/mouse"
 #define OPT_THRESHOLD MT_GCONF_HOME "/threshold"
-#define OPT_DELAY     MT_GCONF_HOME "/delay_enable"
-#define OPT_DELAY_T   MT_GCONF_HOME "/delay_time"
+#define OPT_SSC       MT_GCONF_HOME "/delay_enable"
+#define OPT_SSC_T     MT_GCONF_HOME "/delay_time"
 #define OPT_DWELL     MT_GCONF_HOME "/dwell_enable"
 #define OPT_DWELL_T   MT_GCONF_HOME "/dwell_time"
 #define OPT_CTW       MT_GCONF_HOME "/dwell_show_ctw"

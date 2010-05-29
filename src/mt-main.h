@@ -33,7 +33,7 @@ struct _MtData {
     GConfClient *client;
     GtkBuilder  *ui;
     MtService   *service;
-    MtTimer     *delay_timer;
+    MtTimer     *ssc_timer;
     MtTimer     *dwell_timer;
     MtCursor    *cursor;
     gint         n_screens;
@@ -48,7 +48,7 @@ struct _MtData {
     gint         style;
     gint         dwell_mode;
     gint         dwell_dirs[4];
-    guint        delay_enabled  : 1;
+    guint        ssc_enabled    : 1;
     guint        dwell_enabled  : 1;
     guint        dwell_show_ctw : 1;
     guint        animate_cursor : 1;
@@ -58,7 +58,7 @@ struct _MtData {
     guint        dwell_drag_started    : 1;
     guint        dwell_gesture_started : 1;
     guint        override_cursor       : 1;
-    guint        delay_finished        : 1;
+    guint        ssc_finished          : 1;
 };
 
 G_END_DECLS

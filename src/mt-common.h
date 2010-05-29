@@ -48,8 +48,6 @@ G_BEGIN_DECLS
 #define GNOME_MOUSE_DIR "/desktop/gnome/peripherals/mouse"
 #define GNOME_MOUSE_ORIENT GNOME_MOUSE_DIR "/left_handed"
 
-#define GNOME_A11Y_KEY "/desktop/gnome/interface/accessibility"
-
 enum {
     DWELL_MODE_CTW = 0,
     DWELL_MODE_GESTURE

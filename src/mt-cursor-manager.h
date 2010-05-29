@@ -1,5 +1,5 @@
 /*
- * Copyright © 2008-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2008-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -26,21 +26,25 @@
 
 G_BEGIN_DECLS
 
-#define MT_TYPE_CURSOR_MANAGER		  (mt_cursor_manager_get_type ())
-#define MT_CURSOR_MANAGER(obj)		  (G_TYPE_CHECK_INSTANCE_CAST ((obj), MT_TYPE_CURSOR_MANAGER, MtCursorManager))
-#define MT_CURSOR_MANAGER_CLASS(klass)	  (G_TYPE_CHECK_CLASS_CAST ((klass), MT_TYPE_CURSOR_MANAGER, MtCursorManagerClass))
-#define MT_IS_CURSOR_MANAGER(obj)	  (G_TYPE_CHECK_INSTANCE_TYPE ((obj), MT_TYPE_CURSOR_MANAGER))
-#define MT_IS_CURSOR_MANAGER_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), MT_TYPE_CURSOR_MANAGER))
-#define MT_CURSOR_MANAGER_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), MT_TYPE_CURSOR_MANAGER, MtCursorManagerClass))
+#define MT_TYPE_CURSOR_MANAGER         (mt_cursor_manager_get_type ())
+#define MT_CURSOR_MANAGER(o)           (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_CURSOR_MANAGER, MtCursorManager))
+#define MT_CURSOR_MANAGER_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST ((k), MT_TYPE_CURSOR_MANAGER, MtCursorManagerClass))
+#define MT_IS_CURSOR_MANAGER(o)        (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_CURSOR_MANAGER))
+#define MT_IS_CURSOR_MANAGER_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), MT_TYPE_CURSOR_MANAGER))
+#define MT_CURSOR_MANAGER_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), MT_TYPE_CURSOR_MANAGER, MtCursorManagerClass))
 
-typedef struct _MtCursorManager MtCursorManager;
-typedef struct _MtCursorManagerClass MtCursorManagerClass;
+typedef struct _MtCursorManager        MtCursorManager;
+typedef struct _MtCursorManagerClass   MtCursorManagerClass;
+typedef struct _MtCursorManagerPrivate MtCursorManagerPrivate;
 
-struct _MtCursorManager {
-    GObject parent;
+struct _MtCursorManager
+{
+    GObject                 parent;
+    MtCursorManagerPrivate *priv;
 };
 
-struct _MtCursorManagerClass {
+struct _MtCursorManagerClass
+{
     GObjectClass parent;
 };
 
@@ -48,9 +52,9 @@ GType             mt_cursor_manager_get_type       (void) G_GNUC_CONST;
 MtCursorManager * mt_cursor_manager_get_default    (void);
 MtCursor *        mt_cursor_manager_current_cursor (MtCursorManager *manager);
 MtCursor *        mt_cursor_manager_lookup_cursor  (MtCursorManager *manager,
-						    const gchar     *name);
+                                                    const gchar     *name);
 void              mt_cursor_manager_set_cursor     (MtCursorManager *manager,
-						    MtCursor        *cursor);
+                                                    MtCursor        *cursor);
 void              mt_cursor_manager_restore_all    (MtCursorManager *manager);
 
 G_END_DECLS

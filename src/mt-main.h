@@ -20,7 +20,6 @@
 #ifndef __MT_MAIN_H__
 #define __MT_MAIN_H__
 
-#include <gdk/gdkx.h>
 #include <gconf/gconf-client.h>
 
 #include "mt-timer.h"
@@ -37,7 +36,6 @@ struct _MtData {
     MtTimer     *delay_timer;
     MtTimer     *dwell_timer;
     MtCursor    *cursor;
-    Display     *xtst_display;
     gint         n_screens;
     gint         direction;
     gint         pointer_x;

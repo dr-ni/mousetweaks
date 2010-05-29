@@ -59,6 +59,12 @@ typedef struct _MtCliArgs {
     gboolean login;
 } MtCliArgs;
 
+static Display *
+mt_main_display (void)
+{
+    return GDK_DISPLAY ();
+}
+
 static GdkScreen *
 mt_main_current_screen (MtData *mt)
 {
@@ -96,43 +102,38 @@ mt_main_check_mouse_orientation (MtData *mt, guint button)
 
 static void
 mt_main_generate_button_event (MtData *mt,
-			       guint   button,
-			       gint    type,
-			       gulong  delay)
+                               guint   button,
+                               gint    type,
+                               gulong  delay)
 {
+    Display *dpy;
+
+    dpy = mt_main_display ();
     button = mt_main_check_mouse_orientation (mt, button);
 
     gdk_error_trap_push ();
     switch (type) {
-	case PRESS:
-	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, True, delay);
-	    break;
-	case RELEASE:
-	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, False, delay);
-	    break;
-	case CLICK:
-	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, True, CurrentTime);
-	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, False, delay);
-	    break;
-	case DOUBLE_CLICK:
-	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, True, CurrentTime);
-	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, False, delay);
-	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, True, delay);
-	    XTestFakeButtonEvent (mt->xtst_display,
-				  button, False, delay);
-	    break;
-	default:
-	    g_warning ("Unknown sequence.");
-	    break;
+        case PRESS:
+            XTestFakeButtonEvent (dpy, button, True, delay);
+            break;
+        case RELEASE:
+            XTestFakeButtonEvent (dpy, button, False, delay);
+            break;
+        case CLICK:
+            XTestFakeButtonEvent (dpy, button, True, CurrentTime);
+            XTestFakeButtonEvent (dpy, button, False, delay);
+            break;
+        case DOUBLE_CLICK:
+            XTestFakeButtonEvent (dpy, button, True, CurrentTime);
+            XTestFakeButtonEvent (dpy, button, False, delay);
+            XTestFakeButtonEvent (dpy, button, True, delay);
+            XTestFakeButtonEvent (dpy, button, False, delay);
+            break;
+        default:
+            g_warning ("Unknown button sequence.");
+            break;
     }
-    XFlush (mt->xtst_display);
+    gdk_flush ();
     gdk_error_trap_pop ();
 }
 
@@ -665,18 +666,19 @@ static MtData *
 mt_data_init (void)
 {
     MtData *mt;
-    gint ev_base, err_base, maj, min;
+    gint nil;
 
     mt = g_slice_new0 (MtData);
-    mt->xtst_display = XOpenDisplay (NULL);
 
-    if (!XTestQueryExtension (mt->xtst_display,
-			      &ev_base, &err_base, &maj, &min)) {
-	XCloseDisplay (mt->xtst_display);
-	g_slice_free (MtData, mt);
-	g_critical ("No XTest extension found. Aborting..");
-	return NULL;
+    if (!XTestQueryExtension (mt_main_display (), &nil, &nil, &nil, &nil))
+    {
+        g_slice_free (MtData, mt);
+        g_critical ("No XTest extension found. Aborting.");
+        return NULL;
     }
+
+    /* continue sending event requests inspite of other grabs */
+    XTestGrabControl (mt_main_display (), True);
 
     mt->client = gconf_client_get_default ();
     gconf_client_add_dir (mt->client, GNOME_MOUSE_DIR,

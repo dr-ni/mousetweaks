@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
-"POT-Creation-Date: 2010-03-09 00:06+0000\n"
-"PO-Revision-Date: 2010-03-09 15:52+0100\n"
+"POT-Creation-Date: 2010-03-26 21:42+0000\n"
+"PO-Revision-Date: 2010-05-05 21:32+0100\n"
 "Last-Translator: Adrian Guniš <andygun696@gmail.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,154 +17,101 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:222(None) C/mousetweaks.xml:299(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
-msgstr ""
-"@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
+#: C/mousetweaks.xml:222(None)
+#: C/mousetweaks.xml:299(None)
+msgid "@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
+msgstr "@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:239(None) C/mousetweaks.xml:420(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-ssc-checkbox.png'; "
-"md5=3f19228551e955ba0afda595b4bfd9bb"
-msgstr ""
-"@@image: 'figures/mouse-a11y-ssc-checkbox.png'; "
-"md5=3f19228551e955ba0afda595b4bfd9bb"
+#: C/mousetweaks.xml:239(None)
+#: C/mousetweaks.xml:420(None)
+msgid "@@image: 'figures/mouse-a11y-ssc-checkbox.png'; md5=3f19228551e955ba0afda595b4bfd9bb"
+msgstr "@@image: 'figures/mouse-a11y-ssc-checkbox.png'; md5=3f19228551e955ba0afda595b4bfd9bb"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:316(None) C/mousetweaks.xml:457(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
-"md5=690dde37df60c6953b4c7e9b256c7a43"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
-"md5=690dde37df60c6953b4c7e9b256c7a43"
+#: C/mousetweaks.xml:316(None)
+#: C/mousetweaks.xml:457(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-checkbox.png'; md5=690dde37df60c6953b4c7e9b256c7a43"
+msgstr "@@image: 'figures/mouse-a11y-dwell-checkbox.png'; md5=690dde37df60c6953b4c7e9b256c7a43"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:361(None) C/mousetweaks.xml:486(None)
-#: C/mousetweaks.xml:781(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-"md5=8a8c96ae1353f93e286c9fca09c9b8ce"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-"md5=e6eaa0d03499db4e26a56eb1ae57fe8b"
+#: C/mousetweaks.xml:361(None)
+#: C/mousetweaks.xml:486(None)
+#: C/mousetweaks.xml:811(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; md5=8a8c96ae1353f93e286c9fca09c9b8ce"
+msgstr "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; md5=e6eaa0d03499db4e26a56eb1ae57fe8b"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:510(None) C/mousetweaks.xml:949(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; "
-"md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
-msgstr ""
-"@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; "
-"md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
+#: C/mousetweaks.xml:510(None)
+#: C/mousetweaks.xml:979(None)
+msgid "@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
+msgstr "@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/mousetweaks.xml:558(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; "
-"md5=c09db81cacad7d507a28b568d238da79"
-msgstr ""
-"@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; "
-"md5=c09db81cacad7d507a28b568d238da79"
+msgid "@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; md5=c09db81cacad7d507a28b568d238da79"
+msgstr "@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; md5=c09db81cacad7d507a28b568d238da79"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:717(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; "
-"md5=eff4b5afa3ebc4287f244b72924e1fbf"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; "
-"md5=eff4b5afa3ebc4287f244b72924e1fbf"
+#: C/mousetweaks.xml:747(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; md5=eff4b5afa3ebc4287f244b72924e1fbf"
+msgstr "@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; md5=eff4b5afa3ebc4287f244b72924e1fbf"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:743(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; "
-"md5=251686214f1a9b6e6cf4cc22a66b4b23"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; "
-"md5=251686214f1a9b6e6cf4cc22a66b4b23"
+#: C/mousetweaks.xml:773(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; md5=251686214f1a9b6e6cf4cc22a66b4b23"
+msgstr "@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; md5=251686214f1a9b6e6cf4cc22a66b4b23"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:759(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; "
-"md5=ede77b0adbc7ac3d1ae1187096c8a51f"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; "
-"md5=ede77b0adbc7ac3d1ae1187096c8a51f"
+#: C/mousetweaks.xml:789(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; md5=ede77b0adbc7ac3d1ae1187096c8a51f"
+msgstr "@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; md5=ede77b0adbc7ac3d1ae1187096c8a51f"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:857(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; "
-"md5=e939b50cdd7f6ee7937f9fc311f31e58"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; "
-"md5=e939b50cdd7f6ee7937f9fc311f31e58"
+#: C/mousetweaks.xml:887(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; md5=e939b50cdd7f6ee7937f9fc311f31e58"
+msgstr "@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; md5=e939b50cdd7f6ee7937f9fc311f31e58"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:884(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
-"md5=8d87a631347995c6a770bab22af9b65a"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
-"md5=8d87a631347995c6a770bab22af9b65a"
+#: C/mousetweaks.xml:914(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; md5=8d87a631347995c6a770bab22af9b65a"
+msgstr "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; md5=8d87a631347995c6a770bab22af9b65a"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:907(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; "
-"md5=da1313e8d5588a82dfb8321fc0b65eaa"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; "
-"md5=da1313e8d5588a82dfb8321fc0b65eaa"
+#: C/mousetweaks.xml:937(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; md5=da1313e8d5588a82dfb8321fc0b65eaa"
+msgstr "@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; md5=da1313e8d5588a82dfb8321fc0b65eaa"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:959(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; "
-"md5=87295c217ba3b41a685bffbcedf92fb6"
-msgstr ""
-"@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; "
-"md5=87295c217ba3b41a685bffbcedf92fb6"
+#: C/mousetweaks.xml:989(None)
+msgid "@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; md5=87295c217ba3b41a685bffbcedf92fb6"
+msgstr "@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; md5=87295c217ba3b41a685bffbcedf92fb6"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:976(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; "
-"md5=a90ff1216071e8c2187be2464cf099ba"
-msgstr ""
-"@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; "
-"md5=a90ff1216071e8c2187be2464cf099ba"
+#: C/mousetweaks.xml:1006(None)
+msgid "@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; md5=a90ff1216071e8c2187be2464cf099ba"
+msgstr "@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; md5=a90ff1216071e8c2187be2464cf099ba"
 
 #: C/mousetweaks.xml:13(title)
 msgid "Mousetweaks Manual"
 msgstr "Příručka Mousetweaks"
 
 #: C/mousetweaks.xml:16(para)
-msgid ""
-"<application>Mousetweaks</application> provides mouse accessibility "
-"enhancements for the GNOME Desktop."
-msgstr ""
-"<application>Mousetweaks</application> usnadňuje práci s myší v pracovním "
-"prostředí GNOME."
+msgid "<application>Mousetweaks</application> provides mouse accessibility enhancements for the GNOME Desktop."
+msgstr "<application>Mousetweaks</application> usnadňuje práci s myší v pracovním prostředí GNOME."
 
 #: C/mousetweaks.xml:21(year)
 msgid "2007 - 2009"
@@ -175,105 +122,28 @@ msgid "Francesco Fumanti"
 msgstr "Francesco Fumanti"
 
 #: C/mousetweaks.xml:3(para)
-msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.3 or any "
-"later version published by the Free Software Foundation; with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/"
-"fdl-1.3.txt\">link</ulink> or in the the top-level directory of the "
-"Mousetweaks source package."
-msgstr ""
-"Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU "
-"Free Documentation License (GFDL), verze 1.3 nebo jakékoli další verze "
-"vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů "
-"předních desek a bez textů zadních desek. Kopii licence GFDL naleznete pod "
-"tímto <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt"
-"\">odkazem</ulink> nebo v nejvyšší úrovni adresáře zdrojového balíku "
-"Mousetweaks."
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt\">link</ulink> or in the the top-level directory of the Mousetweaks source package."
+msgstr "Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License (GFDL), verze 1.3 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopii licence GFDL naleznete pod tímto <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt\">odkazem</ulink> nebo v nejvyšší úrovni adresáře zdrojového balíku Mousetweaks."
 
 #: C/mousetweaks.xml:11(para)
-msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
-"GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in "
-"section 6 of the license."
-msgstr ""
-"Tato příručka je součástí sbírky příruček GNOME šířených za podmínek licence "
-"GNU FDL. Pokud chcete tento dokument šířit odděleně od sbírky, musíte "
-"přiložit kopii licence dle popisu v oddílu 6 dané licence."
+msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
+msgstr "Tato příručka je součástí sbírky příruček GNOME šířených za podmínek licence GNU FDL. Pokud chcete tento dokument šířit odděleně od sbírky, musíte přiložit kopii licence dle popisu v oddílu 6 dané licence."
 
 #: C/mousetweaks.xml:16(para)
-msgid ""
-"Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
-"aware of those trademarks, then the names are in capital letters or initial "
-"capital letters."
-msgstr ""
-"Mnoho užívaných jmen určených ke zviditelnění produktů nebo služeb jsou "
-"ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a "
-"členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se "
-"jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s "
-"velkým písmenem na začátku."
+msgid "Many of the names used by companies to distinguish their products and services are claimed as trademarks. Where those names appear in any GNOME documentation, and the members of the GNOME Documentation Project are made aware of those trademarks, then the names are in capital letters or initial capital letters."
+msgstr "Mnoho užívaných jmen určených ke zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku."
 
 #: C/mousetweaks.xml:26(para)
-msgid ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
-msgstr ""
-"DOKUMENT JE POSKYTOVÁN V PODOBĚ \"JAK JE\", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, "
-"NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ "
-"VERZE, JE BEZCHYBNÝ, NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL, "
-"NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ "
-"DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, NESETE VY. POKUD JE TENTO DOKUMENT NEBO "
-"JEHO UPRAVENÁ VERZE VADNÁ V JAKÉMKOLIV SMYSLU, VY (NIKOLIV PŮVODCE, AUTOR "
-"NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE ODPOVĚDNOST ZA JAKÉKOLIV NÁKLADY NA "
-"NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE "
-"ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ PODLE TÉTO DOHODY "
-"POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE"
+msgid "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr "DOKUMENT JE POSKYTOVÁN V PODOBĚ \"JAK JE\", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ, NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL, NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, NESETE VY. POKUD JE TENTO DOKUMENT NEBO JEHO UPRAVENÁ VERZE VADNÁ V JAKÉMKOLIV SMYSLU, VY (NIKOLIV PŮVODCE, AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE ODPOVĚDNOST ZA JAKÉKOLIV NÁKLADY NA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ PODLE TÉTO DOHODY POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE"
 
 #: C/mousetweaks.xml:41(para)
-msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
-msgstr ""
-"ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN "
-"(VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, "
-"KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO "
-"UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN "
-"ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ "
-"ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY "
-"DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO "
-"JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE "
-"K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY "
-"TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ."
+msgid "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES."
+msgstr "ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ."
 
 #: C/mousetweaks.xml:22(para)
-msgid ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
-msgstr ""
-"DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU "
-"FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <placeholder-1/>"
+msgid "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: <placeholder-1/>"
+msgstr "DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <placeholder-1/>"
 
 #: C/mousetweaks.xml:30(firstname)
 msgid "Francesco"
@@ -292,16 +162,13 @@ msgid "Version 2.30"
 msgstr "Verze 2.30"
 
 #: C/mousetweaks.xml:44(date)
-msgid "February 2010"
-msgstr "Únor 2010"
+#| msgid "February 2010"
+msgid "March 2010"
+msgstr "Březen 2010"
 
 #: C/mousetweaks.xml:47(para)
-msgid ""
-"Adapt the manual to the changes done to mousetweaks for GNOME 2.30. "
-"Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
-msgstr ""
-"Příručka byla přizpůsobena změnám provedeným v mousetweaks pro GNOME 2.30. "
-"Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgid "Adapt the manual to the changes done to mousetweaks for GNOME 2.30. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgstr "Příručka byla přizpůsobena změnám provedeným v mousetweaks pro GNOME 2.30. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 
 #: C/mousetweaks.xml:54(revnumber)
 msgid "Version 2.28"
@@ -312,12 +179,8 @@ msgid "September 2009"
 msgstr "Září 2009"
 
 #: C/mousetweaks.xml:59(para)
-msgid ""
-"Adapt the manual to the changes done to mousetweaks for GNOME 2.28. "
-"Francesco Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
-msgstr ""
-"Příručka byla přizpůsobena změnám provedeným v mousetweaks pro GNOME 2.28. "
-"Francesco Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
+msgid "Adapt the manual to the changes done to mousetweaks for GNOME 2.28. Francesco Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
+msgstr "Příručka byla přizpůsobena změnám provedeným v mousetweaks pro GNOME 2.28. Francesco Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
 
 #: C/mousetweaks.xml:66(revnumber)
 msgid "version 2.25.90"
@@ -328,14 +191,8 @@ msgid "February 2nd 2009"
 msgstr "2. únor 2009"
 
 #: C/mousetweaks.xml:71(para)
-msgid ""
-"The manual has been edited to match the changes done to mousetweaks for "
-"GNOME 2.26. Moreover, the license of the manual has been raised to GFDL 1.3. "
-"Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
-msgstr ""
-"Příručka byla přizpůsobena změnám provedeným v mousetweaks pro GNOME 2.26. "
-"Kromě toho byla licence příručky převedena na GFDL 1.3. Francesco Fumanti "
-"<email>frfumanti@svn.gnome.org</email>"
+msgid "The manual has been edited to match the changes done to mousetweaks for GNOME 2.26. Moreover, the license of the manual has been raised to GFDL 1.3. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgstr "Příručka byla přizpůsobena změnám provedeným v mousetweaks pro GNOME 2.26. Kromě toho byla licence příručky převedena na GFDL 1.3. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 
 #: C/mousetweaks.xml:79(revnumber)
 msgid "version 2.24"
@@ -346,13 +203,8 @@ msgid "July 2008"
 msgstr "Červenec 2008"
 
 #: C/mousetweaks.xml:84(para)
-msgid ""
-"The contents of the manual have been upgraded to integrate the improvements "
-"done to mousetweaks for GNOME 2.24. Francesco Fumanti <email>frfumanti@svn."
-"gnome.org</email>"
-msgstr ""
-"Obsah příručky byl přizpůsoben změnám provedeným v mousetweaks pro GNOME "
-"2.24. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgid "The contents of the manual have been upgraded to integrate the improvements done to mousetweaks for GNOME 2.24. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgstr "Obsah příručky byl přizpůsoben změnám provedeným v mousetweaks pro GNOME 2.24. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 
 #: C/mousetweaks.xml:91(revnumber)
 msgid "version 2.21.5"
@@ -363,13 +215,8 @@ msgid "January 2008"
 msgstr "Leden 2008"
 
 #: C/mousetweaks.xml:96(para)
-msgid ""
-"The contents of the manual have been adapted to the changes applied to "
-"mousetweaks for its integration into GNOME 2.22. Francesco Fumanti "
-"<email>frfumanti@svn.gnome.org</email>"
-msgstr ""
-"Obsah příručky byl přizpůsoben změnám provedeným v mousetweaks pro GNOME "
-"2.22. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgid "The contents of the manual have been adapted to the changes applied to mousetweaks for its integration into GNOME 2.22. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgstr "Obsah příručky byl přizpůsoben změnám provedeným v mousetweaks pro GNOME 2.22. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 
 #: C/mousetweaks.xml:104(revnumber)
 msgid "version 0.2"
@@ -380,14 +227,8 @@ msgid "November 2007"
 msgstr "Listopad 2007"
 
 #: C/mousetweaks.xml:109(para)
-msgid ""
-"The contents of the manual have been adapted to the default theme of GNOME, "
-"called Clearlooks. This version is included with the release 0.2.6 of "
-"Mousetweaks. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
-msgstr ""
-"Obsah příručky byl přizpůsoben výchozímu motivu GNOME - Clearlooks. Tato "
-"verze je zahrnuta v Mousetweaks vydání 0.2.6. Francesco Fumanti "
-"<email>francesco.fumanti@gmx.net</email>"
+msgid "The contents of the manual have been adapted to the default theme of GNOME, called Clearlooks. This version is included with the release 0.2.6 of Mousetweaks. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
+msgstr "Obsah příručky byl přizpůsoben výchozímu motivu GNOME - Clearlooks. Tato verze je zahrnuta v Mousetweaks vydání 0.2.6. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
 
 #: C/mousetweaks.xml:117(revnumber)
 msgid "version 0.1"
@@ -398,52 +239,32 @@ msgid "October 2007"
 msgstr "Říjen 2007"
 
 #: C/mousetweaks.xml:122(para)
-msgid ""
-"First draft of the manual. Francesco Fumanti <email>francesco.fumanti@gmx."
-"net</email>"
-msgstr ""
-"První vydání příručky. Francesco Fumanti <email>francesco.fumanti@gmx.net</"
-"email>"
+msgid "First draft of the manual. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
+msgstr "První vydání příručky. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
 
 #: C/mousetweaks.xml:128(releaseinfo)
-msgid ""
-"This manual describes the accessibility tools provided by mousetweaks and "
-"their graphical user interfaces, which consist of the accessibility tab of "
-"the mouse control panel and two panel applets."
-msgstr ""
-"Tato příručka popisuje nástroje pro zpřístupnění pomocí mousetweaks a jeho "
-"grafických uživatelských rozhraní, které se skládají z karty Zpřístupnění v "
-"ovládacím panelu Předvolby myši a dvou appletů na panel."
+msgid "This manual describes the accessibility tools provided by mousetweaks and their graphical user interfaces, which consist of the accessibility tab of the mouse control panel and two panel applets."
+msgstr "Tato příručka popisuje nástroje pro zpřístupnění pomocí mousetweaks a jeho grafických uživatelských rozhraní, které se skládají z karty Zpřístupnění v ovládacím panelu Předvolby myši a dvou appletů na panel."
 
 #: C/mousetweaks.xml:133(contrib)
-msgid ""
-"To report a bug or make a suggestion regarding the Mousetweaks application "
-"or this manual, please go to GNOME's Bugzilla."
-msgstr ""
-"Chcete-li podat oznámení o chybě nebo návrh co se týče aplikace Mousetweaks "
-"nebo této příručky, navštivte stránku GNOME Bugzilla."
+msgid "To report a bug or make a suggestion regarding the Mousetweaks application or this manual, please go to GNOME's Bugzilla."
+msgstr "Chcete-li podat oznámení o chybě nebo návrh co se týče aplikace Mousetweaks nebo této příručky, navštivte stránku GNOME Bugzilla."
 
-#: C/mousetweaks.xml:137(title) C/mousetweaks.xml:1041(title)
+#: C/mousetweaks.xml:137(title)
+#: C/mousetweaks.xml:1071(title)
 msgid "Feedback"
 msgstr "Ohlasy"
 
 #: C/mousetweaks.xml:139(para)
-msgid ""
-"To report a bug or make a suggestion regarding <application>the mousetweaks "
-"module</application> (i.e.: mouse accessibility), its user interface or its "
-"manual, please use the facilities provided by <ulink type=\"http\" url="
-"\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>."
-msgstr ""
-"Chcete-li podat oznámení o chybě nebo návrh co se týče <application>modulu "
-"mousetweaks</application> (tj.: zpřístupnění myši), jeho uživatelského "
-"rozhraní nebo příručky, navštivte stránku <ulink type=\"http\" url=\"http://"
-"bugzilla.gnome.org/\">GNOME Bugzilla</ulink>."
+msgid "To report a bug or make a suggestion regarding <application>the mousetweaks module</application> (i.e.: mouse accessibility), its user interface or its manual, please use the facilities provided by <ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>."
+msgstr "Chcete-li podat oznámení o chybě nebo návrh co se týče <application>modulu mousetweaks</application> (tj.: zpřístupnění myši), jeho uživatelského rozhraní nebo příručky, navštivte stránku <ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">GNOME Bugzilla</ulink>."
 
 #: C/mousetweaks.xml:148(primary)
 msgid "Mousetweaks"
 msgstr "Mousetweaks"
 
-#: C/mousetweaks.xml:152(primary) C/mousetweaks.xml:438(command)
+#: C/mousetweaks.xml:152(primary)
+#: C/mousetweaks.xml:438(command)
 #: C/mousetweaks.xml:474(command)
 msgid "mousetweaks"
 msgstr "mousetweaks"
@@ -453,54 +274,28 @@ msgid "Introduction"
 msgstr "Úvod"
 
 #: C/mousetweaks.xml:158(para)
-msgid ""
-"<application>Mousetweaks</application> provides mouse accessibility "
-"enhancements for the GNOME Desktop. Indeed, it offers the following "
-"functions to the user:"
-msgstr ""
-"<application>Mousetweaks</application> usnadňuje práci s myší v pracovním "
-"prostředí GNOME. Nabízí uživateli následující funkce:"
+msgid "<application>Mousetweaks</application> provides mouse accessibility enhancements for the GNOME Desktop. Indeed, it offers the following functions to the user:"
+msgstr "<application>Mousetweaks</application> usnadňuje práci s myší v pracovním prostředí GNOME. Nabízí uživateli následující funkce:"
 
 #: C/mousetweaks.xml:164(para)
-msgid ""
-"Simulated secondary click: it allows the user to perform a secondary click "
-"(menu click) by holding down the primary mouse button while keeping the "
-"pointer motionless."
-msgstr ""
-"Simulované podružné kliknutí: umožňuje uživateli provést podružné kliknutí "
-"(otevření nabídky) podržením hlavního tlačítka při nehybnosti kurzoru myši."
+msgid "Simulated secondary click: it allows the user to perform a secondary click (menu click) by holding down the primary mouse button while keeping the pointer motionless."
+msgstr "Simulované podružné kliknutí: umožňuje uživateli provést podružné kliknutí (otevření nabídky) podržením hlavního tlačítka při nehybnosti kurzoru myši."
 
 #: C/mousetweaks.xml:170(para)
-msgid ""
-"Dwell click: it allows the user to perform the various clicks without "
-"pressing any <hardware>hardware button</hardware>."
-msgstr ""
-"Kliknutí počkáním: umožňuje uživateli provádět různé druhy kliknutí bez "
-"stisknutí jakéhokoli <hardware>hardwarového tlačítka</hardware>."
+msgid "Dwell click: it allows the user to perform the various clicks without pressing any <hardware>hardware button</hardware>."
+msgstr "Kliknutí počkáním: umožňuje uživateli provádět různé druhy kliknutí bez stisknutí jakéhokoli <hardware>hardwarového tlačítka</hardware>."
 
 #: C/mousetweaks.xml:175(para)
-msgid ""
-"Pointer capture: it allows the user to lock the pointer in a determined area "
-"of the panel until the user releases it by a predefined keystroke or mouse "
-"button."
-msgstr ""
-"Zachycení kurzoru: umožňuje uživateli uzamknout kurzor v předurčené oblasti "
-"panelu, dokud jej uživatel neuvolní předdefinovaným stisknutím kláves nebo "
-"tlačítkem myši."
+msgid "Pointer capture: it allows the user to lock the pointer in a determined area of the panel until the user releases it by a predefined keystroke or mouse button."
+msgstr "Zachycení kurzoru: umožňuje uživateli uzamknout kurzor v předurčené oblasti panelu, dokud jej uživatel neuvolní předdefinovaným stisknutím kláves nebo tlačítkem myši."
 
 #: C/mousetweaks.xml:183(title)
 msgid "How To Start The Functions"
 msgstr "Jak spustit funkce"
 
 #: C/mousetweaks.xml:185(para)
-msgid ""
-"The simulated secondary click and the dwell click depend on the mousetweaks "
-"process; however the pointer capture applet depends on the GNOME panel. "
-"Consequently, also the methods to start them vary."
-msgstr ""
-"Simulované podružné kliknutí a Kliknutí počkáním závisí na běhu mousetweaks, "
-"ale applet Zachycení kurzoru závisí na panelu GNOME. Tudíž se také liší "
-"způsoby, jak je spustit."
+msgid "The simulated secondary click and the dwell click depend on the mousetweaks process; however the pointer capture applet depends on the GNOME panel. Consequently, also the methods to start them vary."
+msgstr "Simulované podružné kliknutí a Kliknutí počkáním závisí na běhu mousetweaks, ale applet Zachycení kurzoru závisí na panelu GNOME. Tudíž se také liší způsoby, jak je spustit."
 
 #: C/mousetweaks.xml:190(title)
 msgid "Starting The Simulated Secondary Click Function"
@@ -514,7 +309,8 @@ msgstr "Funkci Simulované podružné kliknutí můžete spustit dvěma způsoby
 msgid "from the graphical user interface"
 msgstr "z grafického uživatelského rozhraní"
 
-#: C/mousetweaks.xml:200(para) C/mousetweaks.xml:272(para)
+#: C/mousetweaks.xml:200(para)
+#: C/mousetweaks.xml:272(para)
 msgid "from the command line"
 msgstr "z příkazové řádky"
 
@@ -523,34 +319,17 @@ msgid "Start From The Graphical User Interface"
 msgstr "Spuštění z grafického uživatelského rozhraní"
 
 #: C/mousetweaks.xml:207(para)
-msgid ""
-"The graphical user interface to start the simulated secondary click is "
-"located in the Accessibility tab of the Mouse control panel. To open it, "
-"choose the menu <menuchoice><guimenu>System</"
-"guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Control Center</"
-"guimenuitem></menuchoice> and the Control Center will open. By clicking on "
-"Mouse in the Control Center, the Mouse control panel will open and after "
-"clicking on the Accessibility tab, you will see the following settings:"
-msgstr ""
-"Grafické uživatelské rozhraní pro spuštění simulovaného podružného kliknutí "
-"je umístěno na kartě Zpřístupnění v ovládacím panelu Předvolby myši. Pro "
-"jeho otevření zvolte nabídku <menuchoice><guimenu>Systém</"
-"guimenu><guisubmenu>Volby</guisubmenu><guimenuitem>Ovládací centrum</"
-"guimenuitem></menuchoice>. Po kliknutí na tlačítko Myš v Ovládacím centru se "
-"otevře ovládací panel Předvolby myši a po kliknutí na kartu Zpřístupnění "
-"uvidíte následující nastavení:"
+msgid "The graphical user interface to start the simulated secondary click is located in the Accessibility tab of the Mouse control panel. To open it, choose the menu <menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Control Center</guimenuitem></menuchoice> and the Control Center will open. By clicking on Mouse in the Control Center, the Mouse control panel will open and after clicking on the Accessibility tab, you will see the following settings:"
+msgstr "Grafické uživatelské rozhraní pro spuštění simulovaného podružného kliknutí je umístěno na kartě Zpřístupnění v ovládacím panelu Předvolby myši. Pro jeho otevření zvolte nabídku <menuchoice><guimenu>Systém</guimenu><guisubmenu>Volby</guisubmenu><guimenuitem>Ovládací centrum</guimenuitem></menuchoice>. Po kliknutí na tlačítko Myš v Ovládacím centru se otevře ovládací panel Předvolby myši a po kliknutí na kartu Zpřístupnění uvidíte následující nastavení:"
 
-#: C/mousetweaks.xml:226(para) C/mousetweaks.xml:303(para)
+#: C/mousetweaks.xml:226(para)
+#: C/mousetweaks.xml:303(para)
 msgid "Picture of the Mouse control panel"
 msgstr "Obrázek ovládacího panelu Předvolby myši"
 
 #: C/mousetweaks.xml:230(para)
-msgid ""
-"To start the simulated secondary click function, put a checkmark into the "
-"checkbox that says:"
-msgstr ""
-"Pro spuštění funkce Simulované podružné kliknutí zaškrtněte zaškrtávací pole "
-"s textem:"
+msgid "To start the simulated secondary click function, put a checkmark into the checkbox that says:"
+msgstr "Pro spuštění funkce Simulované podružné kliknutí zaškrtněte zaškrtávací pole s textem:"
 
 #: C/mousetweaks.xml:233(quote)
 msgid "Trigger secondary click by holding down the primary button"
@@ -558,26 +337,23 @@ msgstr "Spustit podružné kliknutí podržením hlavního tlačítka"
 
 #: C/mousetweaks.xml:243(para)
 msgid "Picture of the checkbox to start the simulated secondary click"
-msgstr ""
-"Obrázek zaškrtávacího pole pro spuštění simulovaného podružného kliknutí"
+msgstr "Obrázek zaškrtávacího pole pro spuštění simulovaného podružného kliknutí"
 
-#: C/mousetweaks.xml:250(title) C/mousetweaks.xml:327(title)
+#: C/mousetweaks.xml:250(title)
+#: C/mousetweaks.xml:327(title)
 msgid "Start From The Command Line"
 msgstr "Spuštění z příkazové řádky"
 
 #: C/mousetweaks.xml:252(para)
-msgid ""
-"To start the simulated secondary click from the command line, open the "
-"<application>Terminal</application> and type the following:"
-msgstr ""
-"Pro spuštění funkce Simulované podružné kliknutí z příkazové řádky otevřete "
-"<application>Terminál</application> a napište následující:"
+msgid "To start the simulated secondary click from the command line, open the <application>Terminal</application> and type the following:"
+msgstr "Pro spuštění funkce Simulované podružné kliknutí z příkazové řádky otevřete <application>Terminál</application> a napište následující:"
 
 #: C/mousetweaks.xml:257(parameter)
 msgid "--enable-secondary"
 msgstr "--enable-secondary"
 
-#: C/mousetweaks.xml:256(command) C/mousetweaks.xml:333(command)
+#: C/mousetweaks.xml:256(command)
+#: C/mousetweaks.xml:333(command)
 msgid "mousetweaks <placeholder-1/>"
 msgstr "mousetweaks <placeholder-1/>"
 
@@ -602,29 +378,12 @@ msgid "Start From The Accessibility tab of the Mouse control panel"
 msgstr "Spuštění z karty Zpřístupnění v ovládacím panelu Předvolby myši"
 
 #: C/mousetweaks.xml:284(para)
-msgid ""
-"The graphical user interface to start the dwell click is located in the "
-"Accessibility tab of the Mouse control panel. To open it, choose the menu "
-"<menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</"
-"guisubmenu><guimenuitem>Control Center</guimenuitem></menuchoice> and the "
-"Control Center will open. By clicking on Mouse in the Control Center, the "
-"Mouse control panel will open and after clicking on the Accessibility tab, "
-"you will see the following settings:"
-msgstr ""
-"Grafické uživatelské rozhraní pro spuštění kliknutí počkáním je umístěno na "
-"kartě Zpřístupnění v ovládacím panelu Předvolby myši. Pro jeho otevření "
-"zvolte nabídku <menuchoice><guimenu>Systém</guimenu><guisubmenu>Volby</"
-"guisubmenu><guimenuitem>Ovládací centrum</guimenuitem></menuchoice>. Po "
-"kliknutí na tlačítko Myš v Ovládacím centru se otevře ovládací panel "
-"Předvolby myši a po kliknutí na kartu Zpřístupnění uvidíte následující "
-"nastavení:"
+msgid "The graphical user interface to start the dwell click is located in the Accessibility tab of the Mouse control panel. To open it, choose the menu <menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Control Center</guimenuitem></menuchoice> and the Control Center will open. By clicking on Mouse in the Control Center, the Mouse control panel will open and after clicking on the Accessibility tab, you will see the following settings:"
+msgstr "Grafické uživatelské rozhraní pro spuštění kliknutí počkáním je umístěno na kartě Zpřístupnění v ovládacím panelu Předvolby myši. Pro jeho otevření zvolte nabídku <menuchoice><guimenu>Systém</guimenu><guisubmenu>Volby</guisubmenu><guimenuitem>Ovládací centrum</guimenuitem></menuchoice>. Po kliknutí na tlačítko Myš v Ovládacím centru se otevře ovládací panel Předvolby myši a po kliknutí na kartu Zpřístupnění uvidíte následující nastavení:"
 
 #: C/mousetweaks.xml:307(para)
-msgid ""
-"To start the dwell click function, put a checkmark into the checkbox that "
-"says:"
-msgstr ""
-"Pro spuštění funkce Kliknutí počkáním zaškrtněte zaškrtávací pole s textem:"
+msgid "To start the dwell click function, put a checkmark into the checkbox that says:"
+msgstr "Pro spuštění funkce Kliknutí počkáním zaškrtněte zaškrtávací pole s textem:"
 
 #: C/mousetweaks.xml:310(quote)
 msgid "Initiate click when stopping pointer movement"
@@ -635,120 +394,60 @@ msgid "Picture of the checkbox to start the dwell click function"
 msgstr "Obrázek zaškrtávacího pole pro spuštění funkce Kliknutí počkáním"
 
 #: C/mousetweaks.xml:329(para)
-msgid ""
-"To start the dwell click function and show the click type window from the "
-"command line, open the <application>Terminal</application> and type the "
-"following:"
-msgstr ""
-"Pro spuštění funkce Kliknutí počkáním a zobrazení okna typu kliknutí z "
-"příkazové řádky otevřete <application>Terminál</application> a napište "
-"následující:"
+msgid "To start the dwell click function and show the click type window from the command line, open the <application>Terminal</application> and type the following:"
+msgstr "Pro spuštění funkce Kliknutí počkáním a zobrazení okna typu kliknutí z příkazové řádky otevřete <application>Terminál</application> a napište následující:"
 
 #: C/mousetweaks.xml:333(parameter)
 msgid "--enable-dwell --show-ctw"
 msgstr "--enable-dwell --show-ctw"
 
 #: C/mousetweaks.xml:337(para)
-msgid ""
-"The starting parameters --login and --daemonize were added to allow GDM to "
-"start and quit mousetweaks: the first disables the check for the Assistive "
-"Technologies framework at the start of mousetweaks; by not passing the "
-"second, mousetweaks will keep the pid that it got when it started, allowing "
-"GDM to shut it down by using the pid."
-msgstr ""
-"Spouštěcí parametry --login a --daemonize byly přidány proto, aby správce "
-"přihlášení GDM mohl mousetweaks spustit a ukončit: první vypne kontrolu "
-"funkce Technologie usnadnění při spuštění mousetweaks; pokud se tak nestane, "
-"je zde druhý parametr: mousetweaks uchovává pid získaný při spuštění a "
-"pomocí něj jej může GDM ukončit."
+msgid "The starting parameters --login and --daemonize were added to allow GDM to start and quit mousetweaks: the first disables the check for the Assistive Technologies framework at the start of mousetweaks; by not passing the second, mousetweaks will keep the pid that it got when it started, allowing GDM to shut it down by using the pid."
+msgstr "Spouštěcí parametry --login a --daemonize byly přidány proto, aby správce přihlášení GDM mohl mousetweaks spustit a ukončit: první vypne kontrolu funkce Technologie usnadnění při spuštění mousetweaks; pokud se tak nestane, je zde druhý parametr: mousetweaks uchovává pid získaný při spuštění a pomocí něj jej může GDM ukončit."
 
 #: C/mousetweaks.xml:347(title)
 msgid "Start From The On/Off button On The Dwell Click Panel Applet"
 msgstr "Spuštění přes tlačítko Zapnout/Vypnout na appletu Kliknutí počkáním"
 
 #: C/mousetweaks.xml:350(para)
-msgid ""
-"It is possible to start the Dwell Click by simply resting (dwelling) for a "
-"little delay with the pointer on the mouse icon displayed by the Dwell Click "
-"panel applet. In fact, this mouse icon is a dwellable On/Off button that "
-"provides feedback of the passing dwell time by filling its frame with "
-"another colour. When the frame is completely filled, the button displays its "
-"active state and the dwell click gets started."
-msgstr ""
-"Kliknutí počkáním je možné jednoduše spustit podržením kurzoru na krátkou "
-"chvíli na ikoně myši zobrazené na appletu Kliknutí počkáním. Ve skutečnosti "
-"je tato ikona myši tlačítkem pro zapnutí/vypnutí této funkce, které "
-"poskytuje odezvu vzhledem k uplynulé době tím, že se rámeček začne vyplňovat "
-"jinou barvou. Jakmile je rámeček zcela vyplněný, tlačítko ukazuje jeho "
-"aktivní stav a kliknutí počkáním je spuštěno."
+msgid "It is possible to start the Dwell Click by simply resting (dwelling) for a little delay with the pointer on the mouse icon displayed by the Dwell Click panel applet. In fact, this mouse icon is a dwellable On/Off button that provides feedback of the passing dwell time by filling its frame with another colour. When the frame is completely filled, the button displays its active state and the dwell click gets started."
+msgstr "Kliknutí počkáním je možné jednoduše spustit podržením kurzoru na krátkou chvíli na ikoně myši zobrazené na appletu Kliknutí počkáním. Ve skutečnosti je tato ikona myši tlačítkem pro zapnutí/vypnutí této funkce, které poskytuje odezvu vzhledem k uplynulé době tím, že se rámeček začne vyplňovat jinou barvou. Jakmile je rámeček zcela vyplněný, tlačítko ukazuje jeho aktivní stav a kliknutí počkáním je spuštěno."
 
-#: C/mousetweaks.xml:365(para) C/mousetweaks.xml:490(para)
-#: C/mousetweaks.xml:785(para)
+#: C/mousetweaks.xml:365(para)
+#: C/mousetweaks.xml:490(para)
+#: C/mousetweaks.xml:815(para)
 msgid "Picture showing the click type applet at the right of the GNOME menus"
 msgstr "Obrázek zobrazující applet Kliknutí počkáním vpravo od nabídek GNOME"
 
-#: C/mousetweaks.xml:372(link) C/mousetweaks.xml:380(title)
-#: C/mousetweaks.xml:942(link)
+#: C/mousetweaks.xml:372(link)
+#: C/mousetweaks.xml:380(title)
+#: C/mousetweaks.xml:972(link)
 msgid "Starting The Pointer Capture Function"
 msgstr "Spuštění funkce Zachycení kurzoru"
 
 #: C/mousetweaks.xml:370(remark)
-msgid ""
-"For instructions about how to install the Dwell Click applet on the GNOME "
-"panel, please have a look at <placeholder-1/> where you can see how it is "
-"done for the Pointer Capture panel applet. The procedure for the Dwell Click "
-"panel applet is similar."
-msgstr ""
-"Chcete-li zjistit informace o instalaci appletu Kliknutí počkáním na panel "
-"GNOME, podívejte se do <placeholder-1/>, kde se dočtete, jak nainstalovat "
-"applet Zachycení kurzoru. Postup pro applet Kliknutí počkáním je podobný."
+msgid "For instructions about how to install the Dwell Click applet on the GNOME panel, please have a look at <placeholder-1/> where you can see how it is done for the Pointer Capture panel applet. The procedure for the Dwell Click panel applet is similar."
+msgstr "Chcete-li zjistit informace o instalaci appletu Kliknutí počkáním na panel GNOME, podívejte se do <placeholder-1/>, kde se dočtete, jak nainstalovat applet Zachycení kurzoru. Postup pro applet Kliknutí počkáním je podobný."
 
 #: C/mousetweaks.xml:382(para)
-msgid ""
-"As the Pointer Capture applet comes in the from of a panel applet, its "
-"starting method has to follow the rules dictated by the GNOME panel. Thus, "
-"to start the Pointer Capture function, you only have to install it on the "
-"panel and it will automatically run."
-msgstr ""
-"Protože funkce Zachycení kurzoru běží jako applet na panelu, jeho spuštění "
-"se musí provést podle pravidel určených pro panel GNOME. Takže pro spuštění "
-"funkce Zachycení kurzoru musíte pouze přidat applet na panel a ten bude "
-"automaticky běžet."
+msgid "As the Pointer Capture applet comes in the from of a panel applet, its starting method has to follow the rules dictated by the GNOME panel. Thus, to start the Pointer Capture function, you only have to install it on the panel and it will automatically run."
+msgstr "Protože funkce Zachycení kurzoru běží jako applet na panelu, jeho spuštění se musí provést podle pravidel určených pro panel GNOME. Takže pro spuštění funkce Zachycení kurzoru musíte pouze přidat applet na panel a ten bude automaticky běžet."
 
 #: C/mousetweaks.xml:387(para)
-msgid ""
-"In order to add it to the panel, proceed as you do with any panel applet: "
-"perform a secondary click on the panel to open its contextual menu, choose "
-"<guimenuitem>Add to Panel</guimenuitem>, and you will get the window showing "
-"all the applets that can be installed on the GNOME panel."
-msgstr ""
-"Abyste jej mohli přidat na panel, postupujte stejně jako v případě "
-"jakéhokoli jiného appletu: pro otevření kontextové nabídky klikněte pravým "
-"tlačítkem myši na panel, zvolte  <guimenuitem>Přidat na panel</guimenuitem> "
-"a zobrazí se okno se seznamem všech appletů, které je možné nainstalovat na "
-"panel GNOME."
+msgid "In order to add it to the panel, proceed as you do with any panel applet: perform a secondary click on the panel to open its contextual menu, choose <guimenuitem>Add to Panel</guimenuitem>, and you will get the window showing all the applets that can be installed on the GNOME panel."
+msgstr "Abyste jej mohli přidat na panel, postupujte stejně jako v případě jakéhokoli jiného appletu: pro otevření kontextové nabídky klikněte pravým tlačítkem myši na panel, zvolte  <guimenuitem>Přidat na panel</guimenuitem> a zobrazí se okno se seznamem všech appletů, které je možné nainstalovat na panel GNOME."
 
 #: C/mousetweaks.xml:393(para)
-msgid ""
-"By double clicking on the <guilabel>Pointer Capture</guilabel> item in the "
-"Add to Panel window, the Pointer Capture applet will be added to the panel, "
-"and it will run until it is removed from the GNOME panel."
-msgstr ""
-"Dvojitým kliknutím na položku <guilabel>Zachycení kurzoru</guilabel> v okně "
-"Přidat na panel se applet přidá na panel a bude běžet tak dlouho, dokud "
-"nebude z panelu GNOME odstraněn."
+msgid "By double clicking on the <guilabel>Pointer Capture</guilabel> item in the Add to Panel window, the Pointer Capture applet will be added to the panel, and it will run until it is removed from the GNOME panel."
+msgstr "Dvojitým kliknutím na položku <guilabel>Zachycení kurzoru</guilabel> v okně Přidat na panel se applet přidá na panel a bude běžet tak dlouho, dokud nebude z panelu GNOME odstraněn."
 
 #: C/mousetweaks.xml:401(title)
 msgid "How To Quit The Functions"
 msgstr "Jak ukončit funkce"
 
 #: C/mousetweaks.xml:403(para)
-msgid ""
-"Similar to the starting of the functions, their quitting also depends on the "
-"feature that you want to quit."
-msgstr ""
-"Podobně jako spuštění funkcí, tak i jejich ukončení závisí na tom, kterou "
-"funkci chcete ukončit."
+msgid "Similar to the starting of the functions, their quitting also depends on the feature that you want to quit."
+msgstr "Podobně jako spuštění funkcí, tak i jejich ukončení závisí na tom, kterou funkci chcete ukončit."
 
 #: C/mousetweaks.xml:407(title)
 msgid "Quitting The Simulated Secondary Click"
@@ -758,34 +457,26 @@ msgstr "Ukončení funkce Simulované podružné kliknutí"
 msgid "It is possible to quit the Simulated Secondary Click in two ways:"
 msgstr "Simulované podružné kliknutí je možné ukončit dvěma způsoby:"
 
-#: C/mousetweaks.xml:414(para) C/mousetweaks.xml:451(para)
-msgid ""
-"By removing the mark from the corresponding checkbox in the control panel of "
-"<application>Mousetweaks</application>."
-msgstr ""
-"Odstraněním háčku z odpovídajícího zaškrtávacího pole v ovládacím panelu "
-"<application>Mousetweaks</application>."
+#: C/mousetweaks.xml:414(para)
+#: C/mousetweaks.xml:451(para)
+msgid "By removing the mark from the corresponding checkbox in the control panel of <application>Mousetweaks</application>."
+msgstr "Odstraněním háčku z odpovídajícího zaškrtávacího pole v ovládacím panelu <application>Mousetweaks</application>."
 
 #: C/mousetweaks.xml:424(para)
 msgid "Picture of the checkbox to start the simulated right click feature"
-msgstr ""
-"Obrázek zaškrtávacího pole pro spuštění funkce Simulované podružné kliknutí"
+msgstr "Obrázek zaškrtávacího pole pro spuštění funkce Simulované podružné kliknutí"
 
 #: C/mousetweaks.xml:429(para)
-msgid ""
-"Please refer to <link linkend=\"mouse-a11y-start-ssc-by-gui\">Start The "
-"Simulated Secondary Click From The Graphical User Interface</link> to locate "
-"the checkbox."
-msgstr ""
-"Pro nalezení zaškrtávacího pole se podívejte do sekce <link linkend=\"mouse-"
-"a11y-start-ssc-by-gui\">Spuštění funkce Simulované podružné kliknutí z "
-"grafického uživatelského rozhraní</link>."
+msgid "Please refer to <link linkend=\"mouse-a11y-start-ssc-by-gui\">Start The Simulated Secondary Click From The Graphical User Interface</link> to locate the checkbox."
+msgstr "Pro nalezení zaškrtávacího pole se podívejte do sekce <link linkend=\"mouse-a11y-start-ssc-by-gui\">Spuštění funkce Simulované podružné kliknutí z grafického uživatelského rozhraní</link>."
 
-#: C/mousetweaks.xml:436(para) C/mousetweaks.xml:472(para)
+#: C/mousetweaks.xml:436(para)
+#: C/mousetweaks.xml:472(para)
 msgid "By typing the following command at the command line:"
 msgstr "Napsáním následujícího příkazu do příkazové řádky:"
 
-#: C/mousetweaks.xml:439(parameter) C/mousetweaks.xml:475(parameter)
+#: C/mousetweaks.xml:439(parameter)
+#: C/mousetweaks.xml:475(parameter)
 msgid "--shutdown"
 msgstr "--shutdown"
 
@@ -802,743 +493,404 @@ msgid "Picture of the checkbox to start the buttonless click feature"
 msgstr "Obrázek zaškrtávacího pole pro spuštění funkce Kliknutí počkáním"
 
 #: C/mousetweaks.xml:466(para)
-msgid ""
-"Please refer to <link linkend=\"mouse-a11y-start-dwell-by-gui\">Start The "
-"Dwell Click From The Graphical User Interface</link> to locate the checkbox."
-msgstr ""
-"Pro nalezení zaškrtávacího pole se podívejte do sekce <link linkend=\"mouse-"
-"a11y-start-dwell-by-gui\">Spuštění funkce Kliknutí počkáním z grafického "
-"uživatelského rozhraní</link>."
+msgid "Please refer to <link linkend=\"mouse-a11y-start-dwell-by-gui\">Start The Dwell Click From The Graphical User Interface</link> to locate the checkbox."
+msgstr "Pro nalezení zaškrtávacího pole se podívejte do sekce <link linkend=\"mouse-a11y-start-dwell-by-gui\">Spuštění funkce Kliknutí počkáním z grafického uživatelského rozhraní</link>."
 
 #: C/mousetweaks.xml:479(para)
-msgid ""
-"If the Dwell Click applet has been installed on the GNOME panel, the Dwell "
-"Click can be disabled by dwelling with the pointer on its On/Off button."
-msgstr ""
-"Pokud byl applet Kliknutí počkáním přidán na panel GNOME, lze jej vypnout "
-"podržením kurzoru na tlačítku Zapnout/Vypnout."
+msgid "If the Dwell Click applet has been installed on the GNOME panel, the Dwell Click can be disabled by dwelling with the pointer on its On/Off button."
+msgstr "Pokud byl applet Kliknutí počkáním přidán na panel GNOME, lze jej vypnout podržením kurzoru na tlačítku Zapnout/Vypnout."
 
 #: C/mousetweaks.xml:499(title)
 msgid "Quitting The Pointer Capture Function"
 msgstr "Ukončení funkce Zachycení kurzoru"
 
 #: C/mousetweaks.xml:501(para)
-msgid ""
-"As the Pointer Capture function comes in the form of a panel applet, you "
-"have to quit it the same way that you do it with other applets: you have to "
-"remove it from the GNOME panel. To do it, perform a right click on the "
-"handle of the applet and choose <guimenuitem>Remove From Panel</guimenuitem> "
-"from its contextual menu."
-msgstr ""
-"Protože funkce Zachycení kurzoru běží jako applet na panelu, musíte jej "
-"ukončit stejným způsobem jako v případě jakéhokoli jiného appletu: je nutné "
-"jej odstranit z panelu GNOME. Takže klikněte pravým tlačítkem myši na "
-"držátko appletu a z kontextové nabídky zvolte <guimenuitem>Odstranit z "
-"panelu</guimenuitem>."
+msgid "As the Pointer Capture function comes in the form of a panel applet, you have to quit it the same way that you do it with other applets: you have to remove it from the GNOME panel. To do it, perform a right click on the handle of the applet and choose <guimenuitem>Remove From Panel</guimenuitem> from its contextual menu."
+msgstr "Protože funkce Zachycení kurzoru běží jako applet na panelu, musíte jej ukončit stejným způsobem jako v případě jakéhokoli jiného appletu: je nutné jej odstranit z panelu GNOME. Takže klikněte pravým tlačítkem myši na držátko appletu a z kontextové nabídky zvolte <guimenuitem>Odstranit z panelu</guimenuitem>."
 
-#: C/mousetweaks.xml:514(para) C/mousetweaks.xml:953(para)
-msgid ""
-"Picture showing the pointer capture area (green) with its contextual menu"
-msgstr ""
-"Obrázek ukazující oblast zachycení kurzoru (zelená) s kontextovou nabídkou"
+#: C/mousetweaks.xml:514(para)
+#: C/mousetweaks.xml:983(para)
+msgid "Picture showing the pointer capture area (green) with its contextual menu"
+msgstr "Obrázek ukazující oblast zachycení kurzoru (zelená) s kontextovou nabídkou"
 
 #: C/mousetweaks.xml:520(para)
-msgid ""
-"When using the default GNOME theme, the handle of the Pointer Capture applet "
-"are the two vertical dotted lines at the left of the pointer capture area."
-msgstr ""
-"Pokud máte nastaven výchozí motiv GNOME, držátko appletu Zachycení kurzoru "
-"vypadá jako dvě svislé tečkované čáry v levé části oblasti zachycení kurzoru."
+msgid "When using the default GNOME theme, the handle of the Pointer Capture applet are the two vertical dotted lines at the left of the pointer capture area."
+msgstr "Pokud máte nastaven výchozí motiv GNOME, držátko appletu Zachycení kurzoru vypadá jako dvě svislé tečkované čáry v levé části oblasti zachycení kurzoru."
 
 #: C/mousetweaks.xml:528(title)
 msgid "Description Of The Functions"
 msgstr "Popis funkcí"
 
 #: C/mousetweaks.xml:530(para)
-msgid ""
-"Mousetweaks offers three pointer accessibility functions to the user. In "
-"this section you will find the description of the three functions: "
-"<placeholder-1/>"
-msgstr ""
-"Mousetweaks nabízí uživateli tři funkce zpřístupnění kurzoru. V této sekci "
-"najdete jejich popis: <placeholder-1/>"
+msgid "Mousetweaks offers three pointer accessibility functions to the user. In this section you will find the description of the three functions: <placeholder-1/>"
+msgstr "Mousetweaks nabízí uživateli tři funkce zpřístupnění kurzoru. V této sekci najdete jejich popis: <placeholder-1/>"
 
 #: C/mousetweaks.xml:548(title)
 msgid "Simulated Secondary Click Description"
 msgstr "Popis funkce Simulované podružné kliknutí"
 
 #: C/mousetweaks.xml:550(para)
-msgid ""
-"When the user activates this feature, he will be able to perform secondary "
-"clicks by using the <mousebutton>primary mouse button</mousebutton>. This is "
-"especially useful for users that have only one <mousebutton>mouse button</"
-"mousebutton> at their disposal."
-msgstr ""
-"Když uživatel aktivuje tuto funkci, bude schopen provádět podružné kliknutí "
-"pomocí <mousebutton>hlavního tlačítka myši</mousebutton>. Toto je obzvlášť "
-"užitečné pro uživatele, kteří mají k dispozici jen jedno "
-"<mousebutton>tlačítko myši</mousebutton>."
+msgid "When the user activates this feature, he will be able to perform secondary clicks by using the <mousebutton>primary mouse button</mousebutton>. This is especially useful for users that have only one <mousebutton>mouse button</mousebutton> at their disposal."
+msgstr "Když uživatel aktivuje tuto funkci, bude schopen provádět podružné kliknutí pomocí <mousebutton>hlavního tlačítka myši</mousebutton>. Toto je obzvlášť užitečné pro uživatele, kteří mají k dispozici jen jedno <mousebutton>tlačítko myši</mousebutton>."
 
 #: C/mousetweaks.xml:562(para)
-msgid ""
-"Picture showing the settings belonging to the Simulated Secondary Click."
-msgstr ""
-"Obrázek ukazující nastavení související s funkcí Simulované podružné "
-"kliknutí."
+msgid "Picture showing the settings belonging to the Simulated Secondary Click."
+msgstr "Obrázek ukazující nastavení související s funkcí Simulované podružné kliknutí."
 
-#: C/mousetweaks.xml:568(title) C/mousetweaks.xml:693(title)
+#: C/mousetweaks.xml:568(title)
+#: C/mousetweaks.xml:723(title)
 msgid "How Does It Work?"
 msgstr "Jak to funguje?"
 
 #: C/mousetweaks.xml:570(para)
-msgid ""
-"Let us assume that the user has enabled the Simulated Secondary Click "
-"feature."
-msgstr ""
-"Předpokládejme, že uživatel má zapnutou funkci Simulované podružné kliknutí."
+msgid "Let us assume that the user has enabled the Simulated Secondary Click feature."
+msgstr "Předpokládejme, že uživatel má zapnutou funkci Simulované podružné kliknutí."
 
 #: C/mousetweaks.xml:573(para)
-msgid ""
-"To perform a simulated secondary click, the user has to keep the "
-"<mousebutton>primary mouse button</mousebutton> pressed without moving the "
-"pointer for a determined time. As soon as the determined time has elapsed, "
-"the simulated secondary click is issued."
-msgstr ""
-"K provedení simulovaného podružného kliknutí musí uživatel podržet "
-"<mousebutton>hlavní tlačítko myši</mousebutton> stisknuté tak, aby se kurzor "
-"po předurčený čas nehýbal. Jakmile tento čas uplyne, provede se simulované "
-"podružné kliknutí."
+#| msgid ""
+#| "To perform a simulated secondary click, the user has to keep the "
+#| "<mousebutton>primary mouse button</mousebutton> pressed without moving "
+#| "the pointer for a determined time. As soon as the determined time has "
+#| "elapsed, the simulated secondary click is issued."
+msgid "To perform a simulated secondary click, the user has to keep the <mousebutton>primary mouse button</mousebutton> pressed without moving the pointer for the time determined by the delay slider of the Simulated Secondary Click feature. While the <mousebutton>primary mouse button</mousebutton> is kept pressed, the arrow of the pointer will be filled with a different color to give feedback about the passing time."
+msgstr "K provedení simulovaného podružného kliknutí musí uživatel podržet <mousebutton>hlavní tlačítko myši</mousebutton> stisknuté tak, aby se kurzor nehýbal po dobu nastavenou pomocí táhla Zpoždění ve funkci Simulované podružné kliknutí. Zatímco je <mousebutton>hlavní tlačítko myši</mousebutton> stisknuto, začne se šipka kurzoru vyplňovat jinou barvou jakožto poskytnutí odezvy o uplynulém času."
 
-#: C/mousetweaks.xml:578(para)
-msgid ""
-"While the <mousebutton>primary mouse button</mousebutton> is being held "
-"pressed, mousetweaks will fill the arrow of the pointer with another color "
-"to give feedback that it is counting down the time before issuing the "
-"simulated secondary click."
-msgstr ""
-"Zatímco je <mousebutton>hlavní tlačítko myši</mousebutton> stisknuto, "
-"mousetweaks začne vyplňovat šipku kurzoru jinou barvou jakožto poskytnutí "
-"odezvy, což znamená, že odpočítává čas před provedením simulovaného "
-"podružného kliknutí."
+#: C/mousetweaks.xml:581(para)
+msgid "If the user releases the <mousebutton>primary mouse button</mousebutton> before the arrow of the pointer has been completely filled with the new color, the system will only receive the information of the <mousebutton>primary mouse button</mousebutton> press and release."
+msgstr "Pokud uživatel uvolní <mousebutton>hlavní tlačítko myši</mousebutton> dříve, než se šipka kurzoru zcela vyplní novou barvou, systém přijme pouze informaci o stisknutí a uvolnění <mousebutton>hlavního tlačítka myši</mousebutton>."
 
-#: C/mousetweaks.xml:585(title)
+#: C/mousetweaks.xml:587(para)
+msgid "If the user releases the <mousebutton>primary mouse button</mousebutton> after the arrow of pointer has been completely filled with the new color, the <mousebutton>primary mouse button</mousebutton> events will be followed by a <mousebutton>secondary mouse button</mousebutton> click. In fact, mousetweaks creates this simulated <mousebutton>scondary mouse button</mousebutton> click as soon as the user releases the the <mousebutton>primary mouse button</mousebutton>."
+msgstr "Pokud uživatel uvolní <mousebutton>hlavní tlačítko myši</mousebutton> po úplném vyplnění šipky kurzoru novou barvou, uskuteční se <mousebutton>simulované podružné kliknutí</mousebutton>. Ve skutečnosti mousetweaks provede toto <mousebutton>simulované podružné kliknutí</mousebutton> až po uvolnění <mousebutton>hlavního tlačítka myši</mousebutton> uživatelem."
+
+#: C/mousetweaks.xml:597(para)
+msgid "On browser links, the simulated secondary click behaves differently: it does not wait for the user to release the <mousebutton>primary mouse button</mousebutton> before creating the simulated secondary click; the secondary click is created as soon as the time delay has elapsed. Previous versions of mousetweaks always behaved like this; but this behaviour had to be modified because of changes to the X server."
+msgstr "V případě odkazů v prohlížeči se simulované podružné kliknutí chová jinak: před provedením simulovaného podružného kliknutí se nečeká na to, než uživatel uvolní <mousebutton>hlavní tlačítko myši</mousebutton>, ale toto kliknutí se vykoná ihned po uplynutí prodlevy. Předchozí verze mousetweaks vždy fungovaly takto, ale toto chování muselo být upraveno kvůli změnám v serveru X."
+
+#: C/mousetweaks.xml:606(para)
+msgid "The explanations above assumed that the pointer did not move between the <mousebutton>primary mouse button</mousebutton> press and release. If the pointer gets moved before the <mousebutton>primary mouse button</mousebutton> is released, no simulated secondary click will be created. Consequently, to cancel an initiated secondary click, the user only has to move the pointer before releasing the <mousebutton>primary mouse button</mousebutton>."
+msgstr "Výše uvedený popis předpokládá, že kurzor se v době mezi stisknutím a uvolněním <mousebutton>hlavního tlačítka myši</mousebutton> nepohnul. Pokud se kurzor před uvolněním <mousebutton>hlavního tlačítka myši</mousebutton> pohne, neprovede se žádné simulované podružné kliknutí. Takže pro zrušení zahájeného podružného kliknutí je nutné, aby uživatel pohnul kurzorem před uvolněním <mousebutton>hlavního tlačítka myši</mousebutton>."
+
+#: C/mousetweaks.xml:616(title)
 msgid "The Delay Slider"
 msgstr "Táhlo zpoždění"
 
-#: C/mousetweaks.xml:587(para)
-msgid ""
-"How long the user has to hold the <mousebutton>primary mouse button</"
-"mousebutton> pressed, is determined by the <guilabel>Delay</guilabel> slider "
-"located under the activation checkbox. By using this slider, the user can "
-"choose the delay most appropriate to him."
-msgstr ""
-"Jak dlouho musí uživatel držet stisknuté <mousebutton>hlavní tlačítko myši</"
-"mousebutton>, se dá nastavit pomocí táhla <guilabel>Zpoždění</guilabel> "
-"umístěného pod zaškrtávacím polem. Pomocí tohoto táhla si může uživatel "
-"zvolit zpoždění, které mu bude nejvíce vyhovovat."
+#: C/mousetweaks.xml:618(para)
+msgid "How long the user has to hold the <mousebutton>primary mouse button</mousebutton> pressed, is determined by the <guilabel>Delay</guilabel> slider located under the activation checkbox. By using this slider, the user can choose the delay most appropriate to him."
+msgstr "Jak dlouho musí uživatel držet stisknuté <mousebutton>hlavní tlačítko myši</mousebutton>, se dá nastavit pomocí táhla <guilabel>Zpoždění</guilabel> umístěného pod zaškrtávacím polem. Pomocí tohoto táhla si může uživatel zvolit zpoždění, které mu bude nejvíce vyhovovat."
 
-#: C/mousetweaks.xml:595(title)
+#: C/mousetweaks.xml:626(title)
 msgid "Motion Threshold"
 msgstr "Práh pohybu"
 
-#: C/mousetweaks.xml:597(para)
-msgid ""
-"People that have trouble to keep the pointer completely motionless can use "
-"the Motion Threshold slider of the Dwell Click feature. This setting makes "
-"mousetweaks ignore little mouse movements, so that the simulated secondary "
-"click is issued even if the pointer is not completely motionless. Please "
-"have a look at the section of the <link linkend=\"mouse-a11y-dwell-motion-"
-"treshold\">Motion Threshold slider of the Dwell Click feature</link> for "
-"more information about it."
-msgstr ""
-"Lidé, kteří mají problém udržet kurzor zcela nehybně, mohou použít táhlo "
-"Práh pohybu umístěné pod funkcí Kliknutí počkáním. Toto nastavení přiměje "
-"mousetweaks ignorovat nepatrné pohyby myši, takže simulované podružné "
-"kliknutí se provede, i když není kurzor zcela nehybný. Chcete-li o tomto "
-"zjistit více informací, podívejte se do sekce <link linkend=\"mouse-a11y-"
-"dwell-motion-treshold\">Táhlo Práh pohybu z funkce Kliknutí počkáním</link>."
+#: C/mousetweaks.xml:628(para)
+msgid "People that have trouble to keep the pointer completely motionless can use the Motion Threshold slider of the Dwell Click feature. This setting makes mousetweaks ignore little mouse movements, so that the simulated secondary click is issued even if the pointer is not completely motionless. Please have a look at the section of the <link linkend=\"mouse-a11y-dwell-motion-treshold\">Motion Threshold slider of the Dwell Click feature</link> for more information about it."
+msgstr "Lidé, kteří mají problém udržet kurzor zcela nehybně, mohou použít táhlo Práh pohybu umístěné pod funkcí Kliknutí počkáním. Toto nastavení přiměje mousetweaks ignorovat nepatrné pohyby myši, takže simulované podružné kliknutí se provede, i když není kurzor zcela nehybný. Chcete-li o tomto zjistit více informací, podívejte se do sekce <link linkend=\"mouse-a11y-dwell-motion-treshold\">Táhlo Práh pohybu z funkce Kliknutí počkáním</link>."
 
-#: C/mousetweaks.xml:607(para)
-msgid ""
-"The <guilabel>Motion Threshold</guilabel> slider that is located under the "
-"<guilabel>Dwell Click</guilabel> feature is also effective for the "
-"<guilabel>Simulated Secondary Click</guilabel> feature, even if the "
-"<guilabel>Dwell Click</guilabel> feature is disabled."
-msgstr ""
-"Táhlo <guilabel>Práh pohybu</guilabel>, které je umístěno pod funkcí "
-"<guilabel>Kliknutí počkáním</guilabel>, je účinné také pro funkci "
-"<guilabel>Simulované podružné kliknutí</guilabel>, i když je funkce "
-"<guilabel>Kliknutí počkáním</guilabel> vypnuta."
+#: C/mousetweaks.xml:638(para)
+msgid "The <guilabel>Motion Threshold</guilabel> slider that is located under the <guilabel>Dwell Click</guilabel> feature is also effective for the <guilabel>Simulated Secondary Click</guilabel> feature, even if the <guilabel>Dwell Click</guilabel> feature is disabled."
+msgstr "Táhlo <guilabel>Práh pohybu</guilabel>, které je umístěno pod funkcí <guilabel>Kliknutí počkáním</guilabel>, je účinné také pro funkci <guilabel>Simulované podružné kliknutí</guilabel>, i když je funkce <guilabel>Kliknutí počkáním</guilabel> vypnuta."
 
-#: C/mousetweaks.xml:616(title)
+#: C/mousetweaks.xml:647(title)
 msgid "Differences To The Normal Secondary Click"
 msgstr "Rozdíly oproti normálnímu podružnému kliknutí"
 
-#: C/mousetweaks.xml:618(para)
-msgid ""
-"As the Simulated Secondary Click is not able to discard the "
-"<mousebutton>mouse button down</mousebutton> event from the "
-"<mousebutton>primary button press</mousebutton> of the user, it issues a "
-"primary click just before issuing the secondary click. In other words, each "
-"secondary click performed by this function is immediately preceded by a "
-"primary click, and this makes it behave a bit differently to the normal "
-"secondary click performed by the <mousebutton>secondary mouse button</"
-"mousebutton>. For example:"
-msgstr ""
-"Protože Simulované podružné kliknutí není schopné zrušit "
-"<mousebutton>podržení tlačítka myši</mousebutton> po <mousebutton>stisknutí "
-"hlavního tlačítka</mousebutton> uživatelem, provede se hlavní kliknutí těsně "
-"před podružným kliknutím. Jinými slovy, každému podružnému kliknutí "
-"provedenému touto funkcí ihned předchází hlavní kliknutí a toto chování je "
-"trochu odlišné oproti normálnímu podružnému kliknutí provedené "
-"<mousebutton>pravým tlačítkem myši</mousebutton>. Například:"
-
-#: C/mousetweaks.xml:629(para)
-msgid ""
-"It is not possible to perform a secondary click on multiple items because "
-"the primary click issued before the secondary click deselects the items."
-msgstr ""
-"Na vícenásobných položkách není možné provádět podružné kliknutí, protože "
-"hlavní kliknutí provedené před podružným kliknutím zruší výběr položek."
-
-#: C/mousetweaks.xml:635(para)
-msgid ""
-"When the simulated secondary click is performed on the trash icon on the "
-"panel, not only does the contextual menu appear, but the trash folder does "
-"also open. (The former is caused by the secondary click, the latter by the "
-"primary click preceding the right click.)"
-msgstr ""
-"Když se provede simulované podružné kliknutí na ikonu koše na panelu, "
-"nezobrazí se jen kontextová nabídka, ale otevře se i složka koše. (Dřívější "
-"úkon je způsoben podružným kliknutím, pozdější zas hlavním kliknutím "
-"provedeným před kliknutím pravým tlačítkem.)"
-
-#: C/mousetweaks.xml:644(para)
-msgid ""
-"It is not possible to provide a list of all diverging behaviours, because it "
-"depends on the reaction of the application receiving the secondary click "
-"preceded by a primary click."
-msgstr ""
-"Není možné poskytnout seznam všech nestandardních chování, protože to závisí "
-"na reakci aplikace přijímající podružné kliknutí provedené po hlavním "
-"kliknutí."
-
 #: C/mousetweaks.xml:649(para)
-msgid ""
-"Some users may also be surprised by the consequences of the following: it is "
-"not possible to perform a long motionless primary button click and hold, "
-"without also triggering the secondary click. For example:"
-msgstr ""
-"Někteří uživatelé mohou být překvapeni následujícím chováním: není možné "
-"provést déletrvající nehybné kliknutí a držení hlavního tlačítka bez toho, "
-"aniž by se tím nespustilo podružné kliknutí. Například:"
+#| msgid ""
+#| "As the Simulated Secondary Click is not able to discard the "
+#| "<mousebutton>mouse button down</mousebutton> event from the "
+#| "<mousebutton>primary button press</mousebutton> of the user, it issues a "
+#| "primary click just before issuing the secondary click. In other words, "
+#| "each secondary click performed by this function is immediately preceded "
+#| "by a primary click, and this makes it behave a bit differently to the "
+#| "normal secondary click performed by the <mousebutton>secondary mouse "
+#| "button</mousebutton>. For example:"
+msgid "As the Simulated Secondary Click does not discard the<mousebutton> primary mouse button</mousebutton> press and release, the resulting primary click occurs just before the secondary click created by mousetweaks. Consequently, the simulated secondary click behaves a bit differently than the normal secondary click, because the latter is usually not preceeded immediately by a <mousebutton>primary mouse button</mousebutton> click. For example:"
+msgstr "Jelikož simulované podružné kliknutí nezruší stisknutí a uvolnění <mousebutton>hlavního tlačítka myši</mousebutton>, vykoná se těsně před podružným kliknutím provedeným pomocí mousetweaks taktéž hlavní kliknutí. Následkem toho se simulované podružné kliknutí chová trochu jinak než normální podružné kliknutí, protože tomu obvykle ihned nepředchází kliknutí <mousebutton>hlavním tlačítkem myši</mousebutton>. Například:"
 
-#: C/mousetweaks.xml:656(para)
-msgid ""
-"When keeping the primary button pressed on the arrow of a scrollbar, the "
-"scrollbar jumps to the bottom after some time. This is in fact the normal "
-"behaviour of a secondary click on an arrow of a scrollbar."
-msgstr ""
-"Když se ponechá hlavní tlačítko stisknuté na šipce posuvníku, ten pak po "
-"chvíli skočí do dolní části okna. Toto je ve skutečnosti normální chování "
-"podružného kliknutí na šipku posuvníku."
+#: C/mousetweaks.xml:659(para)
+msgid "It is not possible to perform a secondary click on multiple items because the primary click issued before the secondary click deselects the items."
+msgstr "Na vícenásobných položkách není možné provádět podružné kliknutí, protože hlavní kliknutí provedené před podružným kliknutím zruší výběr položek."
 
-#: C/mousetweaks.xml:662(para)
-msgid ""
-"To work around this behaviour, simply move the pointer immediately after "
-"pressing the <mousebutton>primary mouse button</mousebutton>. This way the "
-"simulated secondary click is not issued."
-msgstr ""
-"Pro obejití tohoto chování jednoduše pohněte kurzorem ihned po stisknutí "
-"<mousebutton>hlavního tlačítka myši</mousebutton>. Tímto způsobem se "
-"simulované podružné kliknutí neprovede."
+#: C/mousetweaks.xml:665(para)
+#| msgid ""
+#| "When the simulated secondary click is performed on the trash icon on the "
+#| "panel, not only does the contextual menu appear, but the trash folder "
+#| "does also open. (The former is caused by the secondary click, the latter "
+#| "by the primary click preceding the right click.)"
+msgid "When the simulated secondary click is performed on the trash icon in the panel, not only does the contextual menu appear, but the trash folder also opens. (The former is caused by the secondary click, the latter by the primary click preceding the secondary click.)"
+msgstr "Když se provede simulované podružné kliknutí na ikonu koše na panelu, nezobrazí se jen kontextová nabídka, ale otevře se i složka koše. (Dřívější úkon je způsoben podružným kliknutím, pozdější zas hlavním kliknutím provedeným před podružným.)"
 
-#: C/mousetweaks.xml:673(title)
+#: C/mousetweaks.xml:674(para)
+msgid "It is not possible to provide a list of all diverging behaviours, because it depends on the reaction of the application receiving the secondary click preceded by a primary click."
+msgstr "Není možné poskytnout seznam všech nestandardních chování, protože to závisí na reakci aplikace přijímající podružné kliknutí provedené po hlavním kliknutí."
+
+#: C/mousetweaks.xml:679(para)
+#| msgid ""
+#| "Some users may also be surprised by the consequences of the following: it "
+#| "is not possible to perform a long motionless primary button click and "
+#| "hold, without also triggering the secondary click. For example:"
+msgid "Looking at it the other way, it is no possible to perform a long motionless <mousebutton>primary mouse button</mousebutton> press, without also triggering the secondary click. This may also have unexpected consequences for some users. For example:"
+msgstr "Při pohledu z jiného úhlu nelze také provádět déletrvající nehybné stisknutí <mousebutton>hlavního tlačítka myši</mousebutton> bez toho, aniž by se tím nespustilo podružné kliknutí. Toto může mít pro některé uživatele nečekané následky. Například:"
+
+#: C/mousetweaks.xml:686(para)
+#| msgid ""
+#| "When keeping the primary button pressed on the arrow of a scrollbar, the "
+#| "scrollbar jumps to the bottom after some time. This is in fact the normal "
+#| "behaviour of a secondary click on an arrow of a scrollbar."
+msgid "When releasing the primary button after keeping it pressed on the arrow of a scrollbar for more than the delay time, the scrollbar jumps to the bottom. This is in fact the normal behaviour of a secondary click on an arrow of a scrollbar."
+msgstr "Když se uvolní hlavní tlačítko po jeho držení na šipce posuvníku po uplynutí prodlevy, posuvník skočí do dolní části okna. Toto je ve skutečnosti normální chování podružného kliknutí na šipku posuvníku."
+
+#: C/mousetweaks.xml:692(para)
+#| msgid ""
+#| "To work around this behaviour, simply move the pointer immediately after "
+#| "pressing the <mousebutton>primary mouse button</mousebutton>. This way "
+#| "the simulated secondary click is not issued."
+msgid "To avoid that the scrollbar jumps to the bottom, simply move the pointer away from the arrow of the scrollbar before releasing the primary button; this way, the initiated simulated secondary click gets canceled."
+msgstr "Abyste předešli tomu, že posuvník skočí do dolní části okna, jednoduše pohněte kurzorem pryč ze šipky posuvníku před uvolněním hlavního tlačítka. Tímto způsobem dojde ke zrušení zahájeného simulovaného podružného kliknutí."
+
+#: C/mousetweaks.xml:703(title)
 msgid "Dwell Click Description"
 msgstr "Popis funkce Kliknutí počkáním"
 
-#: C/mousetweaks.xml:675(para)
-msgid ""
-"There are users that cannot use any hardware button. By activating the "
-"<guilabel>Dwell Click</guilabel>, they can have the mouse perform the "
-"various clicks without pressing any mouse button. The click types that can "
-"be performed are: single primary click, double click, drag click and "
-"secondary click."
-msgstr ""
-"Jsou uživatelé, kteří nemohou používat některé hardwarové tlačítko. "
-"Aktivováním funkce <guilabel>Kliknutí počkáním</guilabel> získají myš "
-"umožňující provádět různé kliknutí bez stisknutí jakéhokoli tlačítka myši. "
-"Je možné provádět následující typy kliknutí: kliknutí levým tlačítkem, "
-"dvojité kliknutí, táhnutí a kliknutí pravým tlačítkem."
+#: C/mousetweaks.xml:705(para)
+msgid "There are users that cannot use any hardware button. By activating the <guilabel>Dwell Click</guilabel>, they can have the mouse perform the various clicks without pressing any mouse button. The click types that can be performed are: single primary click, double click, drag click and secondary click."
+msgstr "Jsou uživatelé, kteří nemohou používat některé hardwarové tlačítko. Aktivováním funkce <guilabel>Kliknutí počkáním</guilabel> získají myš umožňující provádět různé kliknutí bez stisknutí jakéhokoli tlačítka myši. Je možné provádět následující typy kliknutí: kliknutí levým tlačítkem, dvojité kliknutí, táhnutí a kliknutí pravým tlačítkem."
 
-#: C/mousetweaks.xml:682(para)
-msgid ""
-"When the dwell click is active, the <mousebutton>mouse buttons</mousebutton> "
-"remain functional and it is still possible to click with the "
-"<mousebutton>mouse buttons</mousebutton>. Moreover, If the user performs a "
-"click with a <mousebutton>mouse button</mousebutton> while a dwell click is "
-"in progress, the dwell click gets stopped and no dwell click is generated; "
-"to initiate a new dwell click, the user has to move and stop moving the "
-"mouse as usual for the dwell click."
-msgstr ""
-"Když je Kliknutí počkáním aktivní, zůstávají <mousebutton>tlačítka myši</"
-"mousebutton> funkční a je stále možné klikat s hardwarovými "
-"<mousebutton>tlačítky myši</mousebutton>. Kromě toho, pokud uživatel provede "
-"kliknutí s <mousebutton>tlačítkem myši</mousebutton> ve chvíli, kdy běží "
-"kliknutí počkáním, funkce kliknutí počkáním se zastaví a neprovede se žádné "
-"kliknutí počkáním; pro spuštění nového kliknutí počkáním musí uživatel "
-"pohnout a zastavit myš, jak je pro tuto funkci obvyklé."
+#: C/mousetweaks.xml:712(para)
+msgid "When the dwell click is active, the <mousebutton>mouse buttons</mousebutton> remain functional and it is still possible to click with the <mousebutton>mouse buttons</mousebutton>. Moreover, If the user performs a click with a <mousebutton>mouse button</mousebutton> while a dwell click is in progress, the dwell click gets stopped and no dwell click is generated; to initiate a new dwell click, the user has to move and stop moving the mouse as usual for the dwell click."
+msgstr "Když je Kliknutí počkáním aktivní, zůstávají <mousebutton>tlačítka myši</mousebutton> funkční a je stále možné klikat s hardwarovými <mousebutton>tlačítky myši</mousebutton>. Kromě toho, pokud uživatel provede kliknutí s <mousebutton>tlačítkem myši</mousebutton> ve chvíli, kdy běží kliknutí počkáním, funkce kliknutí počkáním se zastaví a neprovede se žádné kliknutí počkáním; pro spuštění nového kliknutí počkáním musí uživatel pohnout a zastavit myš, jak je pro tuto funkci obvyklé."
 
-#: C/mousetweaks.xml:695(para)
-msgid ""
-"Each time the pointer stops moving, a dwell click is initiated. To give "
-"feedback to the user, mousetweaks will fill the arrow of the pointer with "
-"another color while it is counting down the time before the click completion "
-"kicks in."
-msgstr ""
-"Pokaždé, když se kurzor zastaví, spustí se kliknutí počkáním. Aby uživatel "
-"obdržel odezvu, mousetweaks začne vyplňovat šipku kurzoru jinou barvou, což "
-"znamená, že odpočítává čas před provedením kliknutí."
+#: C/mousetweaks.xml:725(para)
+msgid "Each time the pointer stops moving, a dwell click is initiated. To give feedback to the user, mousetweaks will fill the arrow of the pointer with another color while it is counting down the time before the click completion kicks in."
+msgstr "Pokaždé, když se kurzor zastaví, spustí se kliknutí počkáním. Aby uživatel obdržel odezvu, mousetweaks začne vyplňovat šipku kurzoru jinou barvou, což znamená, že odpočítává čas před provedením kliknutí."
 
-#: C/mousetweaks.xml:700(para)
-msgid ""
-"How the click is completed and how the click type is chosen depends on what "
-"dwell mode the user has selected. The two available modes are:"
-msgstr ""
-"Jaké kliknutí je dokončeno a jaký typ kliknutí je vybrán, závisí na tom, "
-"jaký režim kliknutí počkáním uživatel zvolil. K dispozici jsou dva režimy:"
+#: C/mousetweaks.xml:730(para)
+msgid "How the click is completed and how the click type is chosen depends on what dwell mode the user has selected. The two available modes are:"
+msgstr "Jaké kliknutí je dokončeno a jaký typ kliknutí je vybrán, závisí na tom, jaký režim kliknutí počkáním uživatel zvolil. K dispozici jsou dva režimy:"
 
-#: C/mousetweaks.xml:706(para)
+#: C/mousetweaks.xml:736(para)
 msgid "Choose type of click beforehand"
 msgstr "Vybrat typ kliknutí předem"
 
-#: C/mousetweaks.xml:710(para)
+#: C/mousetweaks.xml:740(para)
 msgid "Choose type of click with mouse gestures"
 msgstr "Vybrat typ kliknutí pohyby myší"
 
-#: C/mousetweaks.xml:721(para)
+#: C/mousetweaks.xml:751(para)
 msgid "Picture showing the radio buttons to select dwell mode"
 msgstr "Obrázek ukazující přepínače pro výběr režimu kliknutí"
 
-#: C/mousetweaks.xml:726(para)
-msgid ""
-"To select the mode, the user only has to click on the radio button that "
-"corresponds to his choice."
-msgstr ""
-"Pro výběr režimu musí uživatel pouze kliknout na přepínač, který odpovídá "
-"jeho volbě."
+#: C/mousetweaks.xml:756(para)
+msgid "To select the mode, the user only has to click on the radio button that corresponds to his choice."
+msgstr "Pro výběr režimu musí uživatel pouze kliknout na přepínač, který odpovídá jeho volbě."
 
-#: C/mousetweaks.xml:730(title)
+#: C/mousetweaks.xml:760(title)
 msgid "Automatic Click Completion With Click Type Choice Beforehand"
 msgstr "Automatické provedení kliknutí s předurčeným výběrem typu kliknutí "
 
-#: C/mousetweaks.xml:733(para)
-msgid ""
-"This mode is active when the user selects <guilabel>Choose type of click "
-"beforehand</guilabel>. In fact, after the mouse has been motionless for the "
-"time defined by the <guilabel>Delay</guilabel> slider, the system will "
-"automatically perform the click type that is selected in the Click Type "
-"Window shown here:"
-msgstr ""
-"Tento režim je aktivní, když uživatel zvolí <guilabel>Vybrat typ kliknutí "
-"předem</guilabel>. Takže, jakmile je myš nehybná po dobu předem nastavenou "
-"pomocí táhla <guilabel>Zpoždění</guilabel>, systém automaticky provede typ "
-"kliknutí, který je vybrán v okně Typ kliknutí zobrazeném zde:"
+#: C/mousetweaks.xml:763(para)
+msgid "This mode is active when the user selects <guilabel>Choose type of click beforehand</guilabel>. In fact, after the mouse has been motionless for the time defined by the <guilabel>Delay</guilabel> slider, the system will automatically perform the click type that is selected in the Click Type Window shown here:"
+msgstr "Tento režim je aktivní, když uživatel zvolí <guilabel>Vybrat typ kliknutí předem</guilabel>. Takže, jakmile je myš nehybná po dobu předem nastavenou pomocí táhla <guilabel>Zpoždění</guilabel>, systém automaticky provede typ kliknutí, který je vybrán v okně Typ kliknutí zobrazeném zde:"
 
-#: C/mousetweaks.xml:747(para)
+#: C/mousetweaks.xml:777(para)
 msgid "Picture showing the click type window"
 msgstr "Obrázek ukazující okno typu kliknutí"
 
-#: C/mousetweaks.xml:751(para)
-msgid ""
-"To display the <guimenu>Click Type Window</guimenu> on the screen, the user "
-"has to put a checkmark <application>in the checkbox named "
-"<quote><guilabel>Show click type window</guilabel></quote>:</application>"
-msgstr ""
-"Pro zobrazení <guimenu>okna typu kliknutí</guimenu> na obrazovce musí "
-"uživatel zaškrtnout <application>zaškrtávací pole s textem "
-"<quote><guilabel>Zobrazit okno typu kliknutí</guilabel></quote>:</"
-"application>"
+#: C/mousetweaks.xml:781(para)
+msgid "To display the <guimenu>Click Type Window</guimenu> on the screen, the user has to put a checkmark <application>in the checkbox named <quote><guilabel>Show click type window</guilabel></quote>:</application>"
+msgstr "Pro zobrazení <guimenu>okna typu kliknutí</guimenu> na obrazovce musí uživatel zaškrtnout <application>zaškrtávací pole s textem <quote><guilabel>Zobrazit okno typu kliknutí</guilabel></quote>:</application>"
 
-#: C/mousetweaks.xml:763(para)
+#: C/mousetweaks.xml:793(para)
 msgid "Picture with the checkbox to display the click type window"
 msgstr "Obrázek ukazující zaškrtávací pole pro zobrazení okna typu kliknutí"
 
-#: C/mousetweaks.xml:768(para)
-msgid ""
-"After the click has occurred, the single click type will be automatically "
-"restored. In order to choose another click type, the user has to perform an "
-"automatic click on the <guibutton>button</guibutton> in the <guilabel>Click "
-"Type Window</guilabel> that corresponds to his click type choice."
-msgstr ""
-"Po provedení kliknutí se automaticky obnoví kliknutí levým tlačítkem. Aby "
-"bylo možné zvolit jiný typ kliknutí, musí uživatel automaticky kliknout na "
-"<guibutton>tlačítko</guibutton> v <guilabel>okně typu kliknutí</guilabel>, "
-"které odpovídá jeho volbě typu kliknutí."
+#: C/mousetweaks.xml:798(para)
+msgid "After the click has occurred, the single click type will be automatically restored. In order to choose another click type, the user has to perform an automatic click on the <guibutton>button</guibutton> in the <guilabel>Click Type Window</guilabel> that corresponds to his click type choice."
+msgstr "Po provedení kliknutí se automaticky obnoví kliknutí levým tlačítkem. Aby bylo možné zvolit jiný typ kliknutí, musí uživatel automaticky kliknout na <guibutton>tlačítko</guibutton> v <guilabel>okně typu kliknutí</guilabel>, které odpovídá jeho volbě typu kliknutí."
 
-#: C/mousetweaks.xml:774(para)
-msgid ""
-"Instead of the Click Type Window some users might prefer to use the "
-"<guilabel>Dwell Click</guilabel> panel applet, that has some advantages:."
-msgstr ""
-"Místo okna typu kliknutí mohou někteří uživatelé upřednostňovat applet "
-"panelu <guilabel>Kliknutí počkáním</guilabel>, který má jisté výhody:"
+#: C/mousetweaks.xml:804(para)
+msgid "Instead of the Click Type Window some users might prefer to use the <guilabel>Dwell Click</guilabel> panel applet, that has some advantages:."
+msgstr "Místo okna typu kliknutí mohou někteří uživatelé upřednostňovat applet panelu <guilabel>Kliknutí počkáním</guilabel>, který má jisté výhody:"
 
-#: C/mousetweaks.xml:793(para)
-msgid ""
-"The user does not need the <guilabel>Click Type Window</guilabel> that might "
-"cover other windows on the desktop."
-msgstr ""
-"Uživatel nepotřebuje <guilabel>okno typu kliknutí</guilabel>, které může být "
-"zakryto jinými okny na ploše."
+#: C/mousetweaks.xml:823(para)
+msgid "The user does not need the <guilabel>Click Type Window</guilabel> that might cover other windows on the desktop."
+msgstr "Uživatel nepotřebuje <guilabel>okno typu kliknutí</guilabel>, které může být zakryto jinými okny na ploše."
 
-#: C/mousetweaks.xml:799(para)
-msgid ""
-"The user has a direct way to start and stop the dwell click by using the "
-"<guilabel>On/Off</guilabel> button of the <guilabel>Dwell Click</guilabel> "
-"applet. This is especially useful when he wants to disable dwelling for a "
-"little while to read some text without the interference of a dwell click."
-msgstr ""
-"Uživatel má přímou cestu, jak spustit a zastavit kliknutí počkáním pomocí "
-"tlačítka <guilabel>Zapnout/Vypnout</guilabel> na appletu <guilabel>Kliknutí "
-"počkáním</guilabel>. Toto je obzvlášť užitečné pro krátkodobé vypnutí této "
-"funkce v případě, že si chcete přečíst nějaký text bez rušení funkcí "
-"kliknutí počkáním."
+#: C/mousetweaks.xml:829(para)
+msgid "The user has a direct way to start and stop the dwell click by using the <guilabel>On/Off</guilabel> button of the <guilabel>Dwell Click</guilabel> applet. This is especially useful when he wants to disable dwelling for a little while to read some text without the interference of a dwell click."
+msgstr "Uživatel má přímou cestu, jak spustit a zastavit kliknutí počkáním pomocí tlačítka <guilabel>Zapnout/Vypnout</guilabel> na appletu <guilabel>Kliknutí počkáním</guilabel>. Toto je obzvlášť užitečné pro krátkodobé vypnutí této funkce v případě, že si chcete přečíst nějaký text bez rušení funkcí kliknutí počkáním."
 
-#: C/mousetweaks.xml:790(para)
-msgid ""
-"Indeed, by using the <guilabel>Dwell Click</guilabel> panel applet: "
-"<placeholder-1/>"
-msgstr ""
-"Použitím appletu <guilabel>Kliknutí počkáním</guilabel>: <placeholder-1/>"
+#: C/mousetweaks.xml:820(para)
+msgid "Indeed, by using the <guilabel>Dwell Click</guilabel> panel applet: <placeholder-1/>"
+msgstr "Použitím appletu <guilabel>Kliknutí počkáním</guilabel>: <placeholder-1/>"
 
-#: C/mousetweaks.xml:808(para)
-msgid ""
-"To display the <guilabel>Dwell Click</guilabel> applet on the GNOME panel, "
-"the user has to follow the usual procedure to add applets to the GNOME "
-"panel. An example about how to do it can be found in the section <link "
-"linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture "
-"Function</link>."
-msgstr ""
-"Pro zobrazení appletu <guilabel>Kliknutí počkáním</guilabel> na panelu GNOME "
-"musí uživatel postupovat způsobem obvyklým pro přidávání appletů na panel "
-"GNOME. Postup, jak na to, najdete v sekci <link linkend=\"mouse-a11y-start-"
-"pointer-capture\">Spuštění funkce Zachycení kurzoru</link>."
+#: C/mousetweaks.xml:838(para)
+msgid "To display the <guilabel>Dwell Click</guilabel> applet on the GNOME panel, the user has to follow the usual procedure to add applets to the GNOME panel. An example about how to do it can be found in the section <link linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture Function</link>."
+msgstr "Pro zobrazení appletu <guilabel>Kliknutí počkáním</guilabel> na panelu GNOME musí uživatel postupovat způsobem obvyklým pro přidávání appletů na panel GNOME. Postup, jak na to, najdete v sekci <link linkend=\"mouse-a11y-start-pointer-capture\">Spuštění funkce Zachycení kurzoru</link>."
 
-#: C/mousetweaks.xml:815(para)
-msgid ""
-"The <guilabel>Click Type Window</guilabel> and the <guilabel>Dwell Click</"
-"guilabel> applet can be used simultaneously or each on its own."
-msgstr ""
-"Applety <guilabel>okno typu kliknutí</guilabel> a <guilabel>Kliknutí "
-"počkáním</guilabel> lze použít současně nebo každý samostatně."
+#: C/mousetweaks.xml:845(para)
+msgid "The <guilabel>Click Type Window</guilabel> and the <guilabel>Dwell Click</guilabel> applet can be used simultaneously or each on its own."
+msgstr "Applety <guilabel>okno typu kliknutí</guilabel> a <guilabel>Kliknutí počkáním</guilabel> lze použít současně nebo každý samostatně."
 
-#: C/mousetweaks.xml:821(title)
+#: C/mousetweaks.xml:851(title)
 msgid "Click Completion And Click Type Choice By Mouse Gesture"
 msgstr "Provedení kliknutí a výběr typu kliknutí pohyby myší"
 
-#: C/mousetweaks.xml:824(para)
-msgid ""
-"This mode is active when the user selects <guilabel>Choose type of click "
-"with mouse gestures</guilabel>. In fact, after the mouse has been motionless "
-"for the delay defined by the <link linkend=\"mouse-a11y-dwell-delay\">Delay "
-"slider</link>, the shape of the pointer will change for a little time lapse; "
-"let's call this shape the gesture shape:"
-msgstr ""
-"Tento režim je aktivní, když uživatel zvolí <guilabel>Vybrat typ kliknutí "
-"pohyby myší</guilabel>. Takže jakmile je myš nehybná po dobu předem "
-"nastavenou pomocí <link linkend=\"mouse-a11y-dwell-delay\">táhla Zpoždění</"
-"link>, změní se na chvíli tvar kurzoru; můžeme jej nazývat tvar pohybu:"
+#: C/mousetweaks.xml:854(para)
+msgid "This mode is active when the user selects <guilabel>Choose type of click with mouse gestures</guilabel>. In fact, after the mouse has been motionless for the delay defined by the <link linkend=\"mouse-a11y-dwell-delay\">Delay slider</link>, the shape of the pointer will change for a little time lapse; let's call this shape the gesture shape:"
+msgstr "Tento režim je aktivní, když uživatel zvolí <guilabel>Vybrat typ kliknutí pohyby myší</guilabel>. Takže jakmile je myš nehybná po dobu předem nastavenou pomocí <link linkend=\"mouse-a11y-dwell-delay\">táhla Zpoždění</link>, změní se na chvíli tvar kurzoru; můžeme jej nazývat tvar pohybu:"
 
-#: C/mousetweaks.xml:833(para)
-msgid ""
-"If the user moves the pointer while it is showing the gesture shape, a click "
-"is performed at the location where the pointer was last motionless; finally "
-"the pointer returns to its normal shape. The type of click performed depends "
-"on the direction of the movement of the mouse. During the movement of the "
-"pointer, a line is drawn following the movement of the pointer to give "
-"feedback to the user."
-msgstr ""
-"Pokud uživatel pohne kurzorem při zobrazování tvaru pohybu, provede se "
-"kliknutí v místě, kde byl kurzor naposledy nehybný; nakonec se kurzor vrátí "
-"do jeho normálního tvaru. Typ provedeného kliknutí závisí na směru pohybu "
-"myši. Při pohybu kurzoru se kreslí čára sledující pohyb kurzoru, aby obdržel "
-"uživatel odezvu."
+#: C/mousetweaks.xml:863(para)
+msgid "If the user moves the pointer while it is showing the gesture shape, a click is performed at the location where the pointer was last motionless; finally the pointer returns to its normal shape. The type of click performed depends on the direction of the movement of the mouse. During the movement of the pointer, a line is drawn following the movement of the pointer to give feedback to the user."
+msgstr "Pokud uživatel pohne kurzorem při zobrazování tvaru pohybu, provede se kliknutí v místě, kde byl kurzor naposledy nehybný; nakonec se kurzor vrátí do jeho normálního tvaru. Typ provedeného kliknutí závisí na směru pohybu myši. Při pohybu kurzoru se kreslí čára sledující pohyb kurzoru, aby obdržel uživatel odezvu."
 
-#: C/mousetweaks.xml:843(para)
-msgid ""
-"If the user keeps the pointer motionless until it returns to its normal "
-"shape, the user can move the mouse without a click being performed. The next "
-"dwell click can be performed at the next pointer stop."
-msgstr ""
-"Pokud uživatel ponechá kurzor nehybný, až se vrátí do jeho normálního tvaru, "
-"může uživatel hýbat myší bez provedení kliknutí. Další kliknutí počkáním lze "
-"provést při dalším zastavení kurzoru."
+#: C/mousetweaks.xml:873(para)
+msgid "If the user keeps the pointer motionless until it returns to its normal shape, the user can move the mouse without a click being performed. The next dwell click can be performed at the next pointer stop."
+msgstr "Pokud uživatel ponechá kurzor nehybný, až se vrátí do jeho normálního tvaru, může uživatel hýbat myší bez provedení kliknutí. Další kliknutí počkáním lze provést při dalším zastavení kurzoru."
 
-#: C/mousetweaks.xml:850(para)
-msgid ""
-"The user also has the possibility to match click type with movement "
-"direction by using the 4 <guimenu>popups</guimenu> available:"
-msgstr ""
-"Uživatel má také možnost nastavit pro typ kliknutí směr pohybu použitím 4 "
-"<guimenu>rozbalovacích seznamů</guimenu>:"
+#: C/mousetweaks.xml:880(para)
+msgid "The user also has the possibility to match click type with movement direction by using the 4 <guimenu>popups</guimenu> available:"
+msgstr "Uživatel má také možnost nastavit pro typ kliknutí směr pohybu použitím 4 <guimenu>rozbalovacích seznamů</guimenu>:"
 
-#: C/mousetweaks.xml:861(para)
-msgid ""
-"Picture showing the configuration options to map click type to movement "
-"direction"
-msgstr ""
-"Obrázek ukazující konfigurační možnosti nastavení směru pohybu pro typ "
-"kliknutí"
+#: C/mousetweaks.xml:891(para)
+msgid "Picture showing the configuration options to map click type to movement direction"
+msgstr "Obrázek ukazující konfigurační možnosti nastavení směru pohybu pro typ kliknutí"
 
-#: C/mousetweaks.xml:866(para)
-msgid ""
-"There is also a <guimenuitem>Disabled</guimenuitem> menu item in each "
-"<guimenu>popup</guimenu>. The user can select it if he does not want some "
-"click types to be performed automatically. This is especially interesting "
-"for users that have problems with only certain click types."
-msgstr ""
-"V každém <guimenu>rozbalovacím seznamu</guimenu> je také k dispozici položka "
-"<guimenuitem>Vypnuto</guimenuitem>. Uživatel jej může zvolit, pokud nechce, "
-"aby se některé typy kliknutí prováděly automaticky. Toto je obzvlášť "
-"zajímavé pro uživatele, kteří mají problémy jen s určitými typy kliknutí."
+#: C/mousetweaks.xml:896(para)
+msgid "There is also a <guimenuitem>Disabled</guimenuitem> menu item in each <guimenu>popup</guimenu>. The user can select it if he does not want some click types to be performed automatically. This is especially interesting for users that have problems with only certain click types."
+msgstr "V každém <guimenu>rozbalovacím seznamu</guimenu> je také k dispozici položka <guimenuitem>Vypnuto</guimenuitem>. Uživatel jej může zvolit, pokud nechce, aby se některé typy kliknutí prováděly automaticky. Toto je obzvlášť zajímavé pro uživatele, kteří mají problémy jen s určitými typy kliknutí."
 
-#: C/mousetweaks.xml:875(title)
+#: C/mousetweaks.xml:905(title)
 msgid "Dwell Delay Setting"
 msgstr "Nastavení zpoždění kliknutí"
 
-#: C/mousetweaks.xml:877(para)
-msgid ""
-"With the <guilabel>Delay</guilabel> slider, the user can configure how long "
-"the pointer has to be motionless for the click to be initiated."
-msgstr ""
-"Pomocí táhla <guilabel>Zpoždění</guilabel> může uživatel nastavit, jak "
-"dlouho musí zůstat kurzor nehybný, než se provede kliknutí."
+#: C/mousetweaks.xml:907(para)
+msgid "With the <guilabel>Delay</guilabel> slider, the user can configure how long the pointer has to be motionless for the click to be initiated."
+msgstr "Pomocí táhla <guilabel>Zpoždění</guilabel> může uživatel nastavit, jak dlouho musí zůstat kurzor nehybný, než se provede kliknutí."
 
-#: C/mousetweaks.xml:888(para)
+#: C/mousetweaks.xml:918(para)
 msgid "Picture showing the delay slider of the dwell click"
 msgstr "Obrázek ukazující táhlo zpoždění pro kliknutí počkáním"
 
-#: C/mousetweaks.xml:893(para)
+#: C/mousetweaks.xml:923(para)
 msgid "The dwell delay only works in the context of the dwell click."
-msgstr ""
-"Nastavení zpoždění kliknutí funguje pouze v souvislosti s funkcí kliknutí "
-"počkáním."
+msgstr "Nastavení zpoždění kliknutí funguje pouze v souvislosti s funkcí kliknutí počkáním."
 
-#: C/mousetweaks.xml:899(title)
+#: C/mousetweaks.xml:929(title)
 msgid "Motion Threshold Setting"
 msgstr "Nastavení prahu pohybu"
 
-#: C/mousetweaks.xml:901(para)
-msgid ""
-"For people that have trouble to keep the mouse motionless, there is the "
-"<guilabel>Motion Threshold</guilabel> slider."
-msgstr ""
-"Pro lidi, kteří mají problém udržet myš bez hnutí, je k dispozici táhlo "
-"<guilabel>Práh pohybu</guilabel>."
+#: C/mousetweaks.xml:931(para)
+msgid "For people that have trouble to keep the mouse motionless, there is the <guilabel>Motion Threshold</guilabel> slider."
+msgstr "Pro lidi, kteří mají problém udržet myš bez hnutí, je k dispozici táhlo <guilabel>Práh pohybu</guilabel>."
 
-#: C/mousetweaks.xml:911(para)
+#: C/mousetweaks.xml:941(para)
 msgid "Picture showing the motion threshold slider of the dwell click"
 msgstr "Obrázek ukazující táhlo prahu pohybu pro kliknutí počkáním"
 
-#: C/mousetweaks.xml:916(para)
-msgid ""
-"When the slider is set towards low, even little mouse movements are "
-"considered; however, by setting a higher threshold, the pointer has to "
-"travel a bigger distance before it is considered as moving."
-msgstr ""
-"Když je táhlo nastaveno blíže k hodnotě \"Malý\", jsou zachyceny i nepatrné "
-"pohyby myši; avšak při nastavení blíže k hodnotě \"Velký\" musí kurzor "
-"urazit větší dálku, než je zachycen jako pohyb."
+#: C/mousetweaks.xml:946(para)
+msgid "When the slider is set towards low, even little mouse movements are considered; however, by setting a higher threshold, the pointer has to travel a bigger distance before it is considered as moving."
+msgstr "Když je táhlo nastaveno blíže k hodnotě \"Malý\", jsou zachyceny i nepatrné pohyby myši; avšak při nastavení blíže k hodnotě \"Velký\" musí kurzor urazit větší dálku, než je zachycen jako pohyb."
 
-#: C/mousetweaks.xml:922(para)
-msgid ""
-"The Motion Threshold setting does not only work for the Dwell Click, but "
-"also for the Simulated Secondary Click, even if the Dwell Click is disabled."
-msgstr ""
-"Nastavení prahu pohybu nefunguje jen pro Kliknutí počkáním, ale i pro "
-"Simulované podružné kliknutí, i když je Kliknutí počkáním vypnuto."
+#: C/mousetweaks.xml:952(para)
+msgid "The Motion Threshold setting does not only work for the Dwell Click, but also for the Simulated Secondary Click, even if the Dwell Click is disabled."
+msgstr "Nastavení prahu pohybu nefunguje jen pro Kliknutí počkáním, ale i pro Simulované podružné kliknutí, i když je Kliknutí počkáním vypnuto."
 
-#: C/mousetweaks.xml:930(title)
+#: C/mousetweaks.xml:960(title)
 msgid "Locking The Pointer Description"
 msgstr "Popis funkce Zachycení kurzoru"
 
-#: C/mousetweaks.xml:932(para)
-msgid ""
-"There are people that have to use their pointing device not only for the "
-"computer. These people would welcome a way to lock the pointer into an area "
-"of the screen, so that they can use their pointing device for other tasks."
-msgstr ""
-"Jsou lidé, kteří používají ukazovací zařízení nejen pro počítač. Tito lidé "
-"by uvítali způsob uzamčení kurzoru do oblasti obrazovky tak, aby mohli "
-"používat jejich ukazovací zařízení pro jiné úkoly."
+#: C/mousetweaks.xml:962(para)
+msgid "There are people that have to use their pointing device not only for the computer. These people would welcome a way to lock the pointer into an area of the screen, so that they can use their pointing device for other tasks."
+msgstr "Jsou lidé, kteří používají ukazovací zařízení nejen pro počítač. Tito lidé by uvítali způsob uzamčení kurzoru do oblasti obrazovky tak, aby mohli používat jejich ukazovací zařízení pro jiné úkoly."
 
-#: C/mousetweaks.xml:937(para)
-msgid ""
-"In fact, the Pointer Capture panel applet creates an area on the panel, into "
-"which the user can lock the pointer until he releases it in a determined way."
-msgstr ""
-"Takže applet Zachycení kurzoru vytvoří na panelu oblast, do které může "
-"uživatel zamknout kurzor, dokud jej neuvolní přednastaveným způsobem."
+#: C/mousetweaks.xml:967(para)
+msgid "In fact, the Pointer Capture panel applet creates an area on the panel, into which the user can lock the pointer until he releases it in a determined way."
+msgstr "Takže applet Zachycení kurzoru vytvoří na panelu oblast, do které může uživatel zamknout kurzor, dokud jej neuvolní přednastaveným způsobem."
 
-#: C/mousetweaks.xml:941(remark)
-msgid ""
-"Have a look at <placeholder-1/> for instructions about how to install the "
-"pointer capture applet on the GNOME panel."
-msgstr ""
-"Chcete-li zjistit informace o instalaci appletu Zachycení kurzoru na panel "
-"GNOME, podívejte se do <placeholder-1/>."
+#: C/mousetweaks.xml:971(remark)
+msgid "Have a look at <placeholder-1/> for instructions about how to install the pointer capture applet on the GNOME panel."
+msgstr "Chcete-li zjistit informace o instalaci appletu Zachycení kurzoru na panel GNOME, podívejte se do <placeholder-1/>."
 
-#: C/mousetweaks.xml:963(para)
+#: C/mousetweaks.xml:993(para)
 msgid "Picture of the pointer capture area when the pointer has been captured"
 msgstr "Obrázek oblasti zachycení kurzoru ve stavu uzamčení kurzoru"
 
-#: C/mousetweaks.xml:968(para)
-msgid ""
-"By choosing <guimenu>Preferences</guimenu> in the contextual menu of the "
-"<guilabel>Pointer Capture</guilabel> applet, the user gets a window with the "
-"options of the <guilabel>Pointer Capture</guilabel> applet:"
-msgstr ""
-"Zvolením <guimenu>Předvolby</guimenu> z kontextové nabídky appletu "
-"<guilabel>Zachycení kurzoru</guilabel> otevře uživatel okno s možnostmi "
-"appletu <guilabel>Zachycení kurzoru</guilabel>:"
+#: C/mousetweaks.xml:998(para)
+msgid "By choosing <guimenu>Preferences</guimenu> in the contextual menu of the <guilabel>Pointer Capture</guilabel> applet, the user gets a window with the options of the <guilabel>Pointer Capture</guilabel> applet:"
+msgstr "Zvolením <guimenu>Předvolby</guimenu> z kontextové nabídky appletu <guilabel>Zachycení kurzoru</guilabel> otevře uživatel okno s možnostmi appletu <guilabel>Zachycení kurzoru</guilabel>:"
 
-#: C/mousetweaks.xml:980(para)
+#: C/mousetweaks.xml:1010(para)
 msgid "Picture showing the preferences of the Pointer Capture applet"
 msgstr "Obrázek ukazující předvolby appletu Zachycení kurzoru"
 
-#: C/mousetweaks.xml:985(para)
-msgid ""
-"The <guilabel>Preferences</guilabel> window of the <guilabel>Pointer "
-"Capture</guilabel> applet has three sections:"
-msgstr ""
-"V okně <guilabel>Předvolby</guilabel> appletu <guilabel>Zachycení kurzoru</"
-"guilabel> se nacházejí tři sekce:"
+#: C/mousetweaks.xml:1015(para)
+msgid "The <guilabel>Preferences</guilabel> window of the <guilabel>Pointer Capture</guilabel> applet has three sections:"
+msgstr "V okně <guilabel>Předvolby</guilabel> appletu <guilabel>Zachycení kurzoru</guilabel> se nacházejí tři sekce:"
 
-#: C/mousetweaks.xml:990(para)
-msgid ""
-"In the <guilabel>Capture Pointer</guilabel> section, the user can specify "
-"under what circumstances the pointer gets captured when it moves into the "
-"capture area. For example: if the control modifier is checked, the pointer "
-"gets captured when it is over the capture area and the user presses the "
-"Control modifier key. If no modifier is checked and the mouse button is set "
-"to 0, the pointer only has to move into the capture area to get locked."
-msgstr ""
-"V sekci <guilabel>Zachycení kurzoru</guilabel> může uživatel stanovit, za "
-"jakých okolností se kurzor zachytí, když se umístí do oblasti zachycení. "
-"Například: pokud je zaškrtnutý modifikátor Ctrl, kurzor se zachytí, když je "
-"nad oblastí zachycení a uživatel stiskne modifikační klávesu Ctrl. Pokud "
-"není zaškrtnutý žádný modifikátor a tlačítko myši je nastaveno na 0, stačí "
-"pro uzamčení  přesunout kurzor do oblasti zachycení."
+#: C/mousetweaks.xml:1020(para)
+msgid "In the <guilabel>Capture Pointer</guilabel> section, the user can specify under what circumstances the pointer gets captured when it moves into the capture area. For example: if the control modifier is checked, the pointer gets captured when it is over the capture area and the user presses the Control modifier key. If no modifier is checked and the mouse button is set to 0, the pointer only has to move into the capture area to get locked."
+msgstr "V sekci <guilabel>Zachycení kurzoru</guilabel> může uživatel stanovit, za jakých okolností se kurzor zachytí, když se umístí do oblasti zachycení. Například: pokud je zaškrtnutý modifikátor Ctrl, kurzor se zachytí, když je nad oblastí zachycení a uživatel stiskne modifikační klávesu Ctrl. Pokud není zaškrtnutý žádný modifikátor a tlačítko myši je nastaveno na 0, stačí pro uzamčení  přesunout kurzor do oblasti zachycení."
 
-#: C/mousetweaks.xml:998(para) C/mousetweaks.xml:1007(para)
-msgid ""
-"It is also possible to specify a combination of modifiers and mouse button."
+#: C/mousetweaks.xml:1028(para)
+#: C/mousetweaks.xml:1037(para)
+msgid "It is also possible to specify a combination of modifiers and mouse button."
 msgstr "Je také možné stanovit kombinaci modifikátorů a tlačítka myši."
 
-#: C/mousetweaks.xml:1003(para)
-msgid ""
-"In the <guilabel>Release Pointer</guilabel> section, the user can specify "
-"what modifier or mouse button releases the pointer."
-msgstr ""
-"V sekci <guilabel>Uvolnění kurzoru</guilabel> může uživatel stanovit, jaký "
-"modifikátor nebo tlačítko myši uvolní kurzor."
+#: C/mousetweaks.xml:1033(para)
+msgid "In the <guilabel>Release Pointer</guilabel> section, the user can specify what modifier or mouse button releases the pointer."
+msgstr "V sekci <guilabel>Uvolnění kurzoru</guilabel> může uživatel stanovit, jaký modifikátor nebo tlačítko myši uvolní kurzor."
 
-#: C/mousetweaks.xml:1012(para)
-msgid ""
-"In the <guilabel>Size of Capture Area</guilabel> section, the user can "
-"specify the width of the capture area on the GNOME panel."
-msgstr ""
-"V sekci <guilabel>Velikost oblasti zachycení</guilabel> může uživatel "
-"stanovit šířku oblasti zachycení na panelu GNOME."
+#: C/mousetweaks.xml:1042(para)
+msgid "In the <guilabel>Size of Capture Area</guilabel> section, the user can specify the width of the capture area on the GNOME panel."
+msgstr "V sekci <guilabel>Velikost oblasti zachycení</guilabel> může uživatel stanovit šířku oblasti zachycení na panelu GNOME."
 
-#: C/mousetweaks.xml:1021(title)
+#: C/mousetweaks.xml:1051(title)
 msgid "About <application>Mousetweaks</application>"
 msgstr "O appletu <application>Mousetweaks</application>"
 
-#: C/mousetweaks.xml:1024(title)
+#: C/mousetweaks.xml:1054(title)
 msgid "Authors and hosting site"
 msgstr "Autoři a hostitelské stránky"
 
-#: C/mousetweaks.xml:1026(para)
-msgid ""
-"<application>Mousetweaks</application> is based on a <ulink type=\"https\" "
-"url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks"
-"\">specification</ulink> hosted on Launchpad. It was implemented by Gerd "
-"Kohlberger ( <email>gerdk@svn.gnome.org</email> ), and I "
-"( <email>frfumanti@svn.gnome.org</email> ) helped with testing and logistics."
-msgstr ""
-"<application>Mousetweaks</application> je založeno na <ulink type=\"https\" "
-"url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks\">specifikaci</"
-"ulink> uvedené na Launchpadu. Na realizaci se podílel Gerd Kohlberger "
-"( <email>gerdk@svn.gnome.org</email> ) a já ( <email>frfumanti@svn.gnome."
-"org</email> ) jsem pomohl s testováním a organizací."
+#: C/mousetweaks.xml:1056(para)
+msgid "<application>Mousetweaks</application> is based on a <ulink type=\"https\" url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks\">specification</ulink> hosted on Launchpad. It was implemented by Gerd Kohlberger ( <email>gerdk@svn.gnome.org</email> ), and I ( <email>frfumanti@svn.gnome.org</email> ) helped with testing and logistics."
+msgstr "<application>Mousetweaks</application> je založeno na <ulink type=\"https\" url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks\">specifikaci</ulink> uvedené na Launchpadu. Na realizaci se podílel Gerd Kohlberger ( <email>gerdk@svn.gnome.org</email> ) a já ( <email>frfumanti@svn.gnome.org</email> ) jsem pomohl s testováním a organizací."
 
-#: C/mousetweaks.xml:1034(para)
-msgid ""
-"You can find more informations about Mousetweaks on <ulink type=\"https\" "
-"url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> and on <ulink "
-"url=\"http://live.gnome.org//Mousetweaks/Home\">GNOME Live</ulink>."
-msgstr ""
-"Více informací o Mousetweaks můžete najít na stránkách <ulink type=\"https\" "
-"url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> a <ulink url="
-"\"http://live.gnome.org//Mousetweaks/Home\">GNOME Live</ulink>."
+#: C/mousetweaks.xml:1064(para)
+msgid "You can find more informations about Mousetweaks on <ulink type=\"https\" url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> and on <ulink url=\"http://live.gnome.org//Mousetweaks/Home\">GNOME Live</ulink>."
+msgstr "Více informací o Mousetweaks můžete najít na stránkách <ulink type=\"https\" url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> a <ulink url=\"http://live.gnome.org//Mousetweaks/Home\">GNOME Live</ulink>."
 
-#: C/mousetweaks.xml:1043(para)
-msgid ""
-"To report a bug or make a suggestion regarding <application>the mousetweaks</"
-"application> module, its user interface or its manual, please use the "
-"facilities provided by <ulink type=\"http\" url=\"http://bugzilla.gnome.org/"
-"\">GNOME's Bugzilla</ulink>. If it concerns the layout of the Accessibility "
-"tab of the Mouse control panel, please file it against the gnome-control-"
-"center module; for anything else regarding mousetweaks, please file it "
-"against the mousetweaks module."
-msgstr ""
-"Chcete-li podat oznámení o chybě nebo návrh co se týče modulu "
-"<application>mousetweaks</application>, jeho uživatelského rozhraní nebo "
-"příručky, navštivte stránku <ulink type=\"http\" url=\"http://bugzilla.gnome."
-"org/\">GNOME Bugzilla</ulink>. Co se týče rozvržení karty Zpřístupnění v "
-"ovládacím panelu Předvolby myši, odvolejte se prosím na modul gnome-control-"
-"center; cokoli jiného ohledně mousetweaks směřujte na modul mousetweaks."
+#: C/mousetweaks.xml:1073(para)
+msgid "To report a bug or make a suggestion regarding <application>the mousetweaks</application> module, its user interface or its manual, please use the facilities provided by <ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>. If it concerns the layout of the Accessibility tab of the Mouse control panel, please file it against the gnome-control-center module; for anything else regarding mousetweaks, please file it against the mousetweaks module."
+msgstr "Chcete-li podat oznámení o chybě nebo návrh co se týče modulu <application>mousetweaks</application>, jeho uživatelského rozhraní nebo příručky, navštivte stránku <ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">GNOME Bugzilla</ulink>. Co se týče rozvržení karty Zpřístupnění v ovládacím panelu Předvolby myši, odvolejte se prosím na modul gnome-control-center; cokoli jiného ohledně mousetweaks směřujte na modul mousetweaks."
 
-#: C/mousetweaks.xml:1054(title)
+#: C/mousetweaks.xml:1084(title)
 msgid "License"
 msgstr "Licence"
 
-#: C/mousetweaks.xml:1056(para)
-msgid ""
-"Mousetweaks is distributed under the terms of the GNU General Public License "
-"as published by the Free Software Foundation; either version 3 of the "
-"License, or (at your option) any later version. A copy of the license can be "
-"found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/gpl-3.0."
-"txt\">link</ulink>, or in the file COPYING.GPL included with the source code "
-"of this program."
-msgstr ""
-"Mousetweaks je šířen za podmínek licence GNU General Public License vydané "
-"nadací Free Software Foundation, buď verze 3 této licence nebo (dle "
-"vlastního uvážení) kterékoliv pozdější verze. Kopii licence naleznete pod "
-"tímto <ulink type=\"http\" url=\"http://www.gnu.org/licenses/gpl-3.0.txt"
-"\">odkazem</ulink> nebo v souboru COPYING.GPL obsaženém ve zdrojovém kódu "
-"tohoto programu."
+#: C/mousetweaks.xml:1086(para)
+msgid "Mousetweaks is distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A copy of the license can be found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/gpl-3.0.txt\">link</ulink>, or in the file COPYING.GPL included with the source code of this program."
+msgstr "Mousetweaks je šířen za podmínek licence GNU General Public License vydané nadací Free Software Foundation, buď verze 3 této licence nebo (dle vlastního uvážení) kterékoliv pozdější verze. Kopii licence naleznete pod tímto <ulink type=\"http\" url=\"http://www.gnu.org/licenses/gpl-3.0.txt\">odkazem</ulink> nebo v souboru COPYING.GPL obsaženém ve zdrojovém kódu tohoto programu."
 
-#: C/mousetweaks.xml:1063(para)
-msgid ""
-"This manual is distributed under the terms of the The GNU Free Documentation "
-"License as published by the Free Software Foundation; either version 1.3 of "
-"the License, or (at your option) any later version. A copy of the license "
-"can be found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/"
-"fdl-1.3.txt\">link</ulink>, or in the file COPYING.FDL included with the "
-"source code of this program."
-msgstr ""
-"Tato příručka je šířena za podmínek licence GNU Free Documentation License "
-"vydané nadací Free Software Foundation, buď verze 1.3 této licence nebo (dle "
-"vlastního uvážení) kterékoliv pozdější verze. Kopii licence naleznete pod "
-"tímto <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt"
-"\">odkazem</ulink> nebo v souboru COPYING.FDL obsaženém ve zdrojovém kódu "
-"tohoto programu."
+#: C/mousetweaks.xml:1093(para)
+msgid "This manual is distributed under the terms of the The GNU Free Documentation License as published by the Free Software Foundation; either version 1.3 of the License, or (at your option) any later version. A copy of the license can be found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt\">link</ulink>, or in the file COPYING.FDL included with the source code of this program."
+msgstr "Tato příručka je šířena za podmínek licence GNU Free Documentation License vydané nadací Free Software Foundation, buď verze 1.3 této licence nebo (dle vlastního uvážení) kterékoliv pozdější verze. Kopii licence naleznete pod tímto <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt\">odkazem</ulink> nebo v souboru COPYING.FDL obsaženém ve zdrojovém kódu tohoto programu."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/mousetweaks.xml:0(None)
 msgid "translator-credits"
 msgstr "Adrian Guniš <andygun696@gmail.com>, 2009, 2010"
+
+#~ msgid ""
+#~ "While the <mousebutton>primary mouse button</mousebutton> is being held "
+#~ "pressed, mousetweaks will fill the arrow of the pointer with another "
+#~ "color to give feedback that it is counting down the time before issuing "
+#~ "the simulated secondary click."
+#~ msgstr ""
+#~ "Zatímco je <mousebutton>hlavní tlačítko myši</mousebutton> stisknuto, "
+#~ "mousetweaks začne vyplňovat šipku kurzoru jinou barvou jakožto poskytnutí "
+#~ "odezvy, což znamená, že odpočítává čas před provedením simulovaného "
+#~ "podružného kliknutí."
 

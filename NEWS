@@ -1,3 +1,27 @@
+Version 2.31.3
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Drop the use of AT-SPI to get global mouse events
+    * Remove dependency from the AT-SPI framework
+    * Remove a11y gconf key
+    * Don't use a separate X connection for XTest
+    * Add private variable to cursor-manager and clean up
+    * Rename some variables and function names
+    * Remove unused variable
+    * Update man page
+
+New and updated translations:
+
+    [et] Adrian Guniš
+    [he] Yaron Shahrabani
+    [nb] Kjartan Maraas
+
+New and updated manual translation:
+
+    [cs] Adrian Guniš
+
 Version 2.31.2
 ---------------
 

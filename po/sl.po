@@ -6,10 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks\n"
+"Project-Id-Version: mousetweaks master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
 "POT-Creation-Date: 2010-01-25 20:12+0000\n"
-"PO-Revision-Date: 2010-01-26 08:59+0100\n"
+"PO-Revision-Date: 2010-06-17 09:18+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -172,7 +172,7 @@ msgstr "_O Programu"
 #: ../data/DwellClick.xml.h:2
 #: ../data/PointerCapture.xml.h:2
 msgid "_Help"
-msgstr "_Pomoč"
+msgstr "Pomo_č"
 
 #: ../data/DwellClick.xml.h:3
 #: ../data/PointerCapture.xml.h:3
@@ -217,7 +217,7 @@ msgstr "Način zadržanega klika"
 
 #: ../data/mousetweaks.schemas.in.h:10
 msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr "Način zadržanega klika (\"0\"=način okna, \"1\"=način giba)"
+msgstr "Način zadržanega klika (\"0\"=način okna, \"1\"=način poteze)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -242,7 +242,7 @@ msgstr "Poteza klika s potegom"
 
 #: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
-msgstr "Premik miške za drugi klik"
+msgstr "Poteza miške za drugi klik"
 
 #: ../data/mousetweaks.schemas.in.h:18
 msgid "Gesture single click"
@@ -439,7 +439,7 @@ msgstr "Napaka med zaganjanjem možnosti miške"
 #~ msgid "Dwell mode to use"
 #~ msgstr "Način zadržanega klika"
 #~ msgid "Window y position"
-#~ msgstr "Y Lega okna"
+#~ msgstr "Y položaj okna"
 #~ msgid "Show elapsed time as cursor overlay"
 #~ msgstr "Pokaži pretečen čas s prekrivanjem kazalnika."
 #~ msgid "Capture modifier"
@@ -471,11 +471,11 @@ msgstr "Napaka med zaganjanjem možnosti miške"
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>Velikost območja zajemanja</b>"
 #~ msgid "Pointer Capture Applet"
-#~ msgstr "Aplet zajem kazalnika"
+#~ msgstr "Aplet zajema kazalnika"
 #~ msgid "Dwell Click Applet"
 #~ msgstr "Aplet zadržanega klika"
 #~ msgid "Couldn't display help"
-#~ msgstr "Ni bilo mogoče prikazati pomoč"
+#~ msgstr "Ni mogoče prikazati pomoči"
 #~ msgid "Enable simualted secondary click"
 #~ msgstr "Omogoči navidezni drugi klik"
 #~ msgid "Simualted secondary click time"

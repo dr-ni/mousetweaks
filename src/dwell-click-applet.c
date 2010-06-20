@@ -37,7 +37,7 @@ struct _DwellData {
     GdkPixbuf   *click[4];
     gint         button_width;
     gint         button_height;
-    gint         cct;
+    MtClickType  cct;
     gboolean     active;
     GTimer      *timer;
     guint        tid;

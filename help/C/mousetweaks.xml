@@ -259,7 +259,7 @@
         following:</para>
 
         <para><command>mousetweaks
-        <parameter>--enable-secondary</parameter></command></para>
+        <parameter>--ssc</parameter></command></para>
       </sect3>
     </sect2>
 
@@ -335,7 +335,7 @@
         from the command line, open the <application>Terminal</application>
         and type the following:</para>
 
-        <para><command>mousetweaks <parameter>--enable-dwell
+        <para><command>mousetweaks <parameter>--dwell
         --show-ctw</parameter></command></para>
 
         <note>

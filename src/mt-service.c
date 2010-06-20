@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -17,123 +17,237 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <dbus/dbus-glib.h>
-#include <dbus/dbus-glib-bindings.h>
+#include <gio/gio.h>
 
 #include "mt-service.h"
-#include "mt-service-glue.h"
 
-#define MOUSETWEAKS_DBUS_SERVICE "org.gnome.Mousetweaks"
-#define MOUSETWEAKS_DBUS_PATH    "/org/gnome/Mousetweaks"
+struct _MtServicePrivate
+{
+    guint          owner_id;
+    GDBusNodeInfo *ispec;
 
-struct _MtServicePrivate {
-    guint clicktype;
+    guint          click_type;
 };
 
-enum {
-    STATUS_CHANGED,
-    CLICKTYPE_CHANGED,
-    LAST_SIGNAL
+enum
+{
+    PROP_0,
+    PROP_CLICK_TYPE
 };
 
-static guint signals[LAST_SIGNAL] = { 0 };
+static const gchar introspection_xml[] =
+    "<node>"
+    "  <interface name='" MOUSETWEAKS_DBUS_IFACE "'>"
+    "    <property type='i' name='ClickType' access='readwrite'/>"
+    "  </interface>"
+    "</node>";
+
+static void mt_service_bus_acquired (GDBusConnection *connection,
+                                     const gchar     *name,
+                                     gpointer         data);
 
 G_DEFINE_TYPE (MtService, mt_service, G_TYPE_OBJECT)
 
-static void mt_service_dispose  (GObject   *object);
-static void mt_service_register (MtService *service);
+static void
+mt_service_init (MtService *service)
+{
+    MtServicePrivate *priv;
+    GError *error = NULL;
+
+    service->priv = priv = G_TYPE_INSTANCE_GET_PRIVATE (service,
+                                                        MT_TYPE_SERVICE,
+                                                        MtServicePrivate);
+
+    priv->click_type = DWELL_CLICK_TYPE_SINGLE;
+    priv->owner_id = g_bus_own_name (G_BUS_TYPE_SESSION,
+                                     MOUSETWEAKS_DBUS_NAME,
+                                     G_BUS_NAME_OWNER_FLAGS_NONE,
+                                     mt_service_bus_acquired,
+                                     NULL, NULL,
+                                     service, NULL);
+    priv->ispec = g_dbus_node_info_new_for_xml (introspection_xml, &error);
+    if (error)
+    {
+        g_warning ("%s\n", error->message);
+        g_error_free (error);
+    }
+}
+
+static void
+mt_service_set_property (GObject      *object,
+                         guint         prop_id,
+                         const GValue *value,
+                         GParamSpec   *pspec)
+{
+    MtService *service = MT_SERVICE (object);
+
+    switch (prop_id)
+    {
+        case PROP_CLICK_TYPE:
+            service->priv->click_type = g_value_get_int (value);
+            break;
+        default:
+            G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+    }
+}
+
+static void
+mt_service_get_property (GObject    *object,
+                         guint       prop_id,
+                         GValue     *value,
+                         GParamSpec *pspec)
+{
+    MtService *service = MT_SERVICE (object);
+
+    switch (prop_id)
+    {
+        case PROP_CLICK_TYPE:
+            g_value_set_int (value, service->priv->click_type);
+            break;
+        default:
+            G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+    }
+}
+
+static void
+mt_service_dispose (GObject *object)
+{
+    MtServicePrivate *priv = MT_SERVICE (object)->priv;
+
+    if (priv->owner_id)
+    {
+        g_bus_unown_name (priv->owner_id);
+        priv->owner_id = 0;
+    }
+
+    if (priv->ispec)
+    {
+        g_dbus_node_info_unref (priv->ispec);
+        priv->ispec = NULL;
+    }
+
+    G_OBJECT_CLASS (mt_service_parent_class)->dispose (object);
+}
 
 static void
 mt_service_class_init (MtServiceClass *klass)
 {
     GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
+    object_class->get_property = mt_service_get_property;
+    object_class->set_property = mt_service_set_property;
     object_class->dispose = mt_service_dispose;
 
-    signals[STATUS_CHANGED] =
-	g_signal_new (g_intern_static_string ("status_changed"),
-		      G_OBJECT_CLASS_TYPE (klass),
-		      G_SIGNAL_RUN_LAST,
-		      0, NULL, NULL,
-		      g_cclosure_marshal_VOID__BOOLEAN,
-		      G_TYPE_NONE, 1, G_TYPE_BOOLEAN);
-    signals[CLICKTYPE_CHANGED] =
-	g_signal_new (g_intern_static_string ("clicktype_changed"),
-		      G_OBJECT_CLASS_TYPE (klass),
-		      G_SIGNAL_RUN_LAST,
-		      0, NULL, NULL,
-		      g_cclosure_marshal_VOID__UINT,
-		      G_TYPE_NONE, 1, G_TYPE_UINT);
+    g_object_class_install_property (object_class, PROP_CLICK_TYPE,
+        g_param_spec_int ("click-type", "Click type",
+                          "The currently active click type",
+                          0, 3, DWELL_CLICK_TYPE_SINGLE,
+                          G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS));
 
     g_type_class_add_private (klass, sizeof (MtServicePrivate));
-
-    dbus_g_object_type_install_info (MT_TYPE_SERVICE,
-				     &dbus_glib_mt_service_object_info);
 }
 
-static void
-mt_service_init (MtService *service)
+static GVariant *
+handle_get_property (GDBusConnection *connection,
+                     const gchar     *sender,
+                     const gchar     *path,
+                     const gchar     *interface,
+                     const gchar     *property,
+                     GError         **error,
+                     MtService       *service)
 {
-    service->priv = G_TYPE_INSTANCE_GET_PRIVATE (service,
-						 MT_TYPE_SERVICE,
-						 MtServicePrivate);
-    mt_service_register (service);
+    GVariant *ret = NULL;
+
+    if (g_strcmp0 (property, "ClickType") == 0)
+    {
+        ret = g_variant_new_int32 (service->priv->click_type);
+    }
+    return ret;
 }
 
-static void
-mt_service_dispose (GObject *object)
+static gboolean
+handle_set_property (GDBusConnection *connection,
+                     const gchar     *sender,
+                     const gchar     *path,
+                     const gchar     *interface,
+                     const gchar     *property,
+                     GVariant        *value,
+                     GError         **error,
+                     MtService       *service)
 {
-    g_signal_emit (object, signals[STATUS_CHANGED], 0, FALSE);
-
-    G_OBJECT_CLASS (mt_service_parent_class)->dispose (object);
+    if (g_strcmp0 (property, "ClickType") == 0)
+    {
+        mt_service_set_click_type (service, g_variant_get_int32 (value));
+    }
+    return TRUE;
 }
 
-static void
-mt_service_register (MtService *service)
+static const GDBusInterfaceVTable interface_vtable =
 {
-    DBusGConnection *bus;
-    DBusGProxy *proxy;
+    (GDBusInterfaceMethodCallFunc) NULL,
+    (GDBusInterfaceGetPropertyFunc) handle_get_property,
+    (GDBusInterfaceSetPropertyFunc) handle_set_property
+};
+
+static void
+emit_property_changed (GObject         *object,
+                       GParamSpec      *pspec,
+                       GDBusConnection *connection)
+{
+    MtService *service = MT_SERVICE (object);
     GError *error = NULL;
-    guint result;
+    GVariantBuilder builder, inv_builder;
+    GVariant *prop_v;
 
-    bus = dbus_g_bus_get (DBUS_BUS_SESSION, &error);
-    if (bus == NULL) {
-	g_warning ("Unable to connect to session bus: %s", error->message);
-	g_error_free (error);
-	return;
+    g_variant_builder_init (&builder, G_VARIANT_TYPE_ARRAY);
+    g_variant_builder_init (&inv_builder, G_VARIANT_TYPE ("as"));
+
+    if (g_strcmp0 (pspec->name, "click-type") == 0)
+    {
+        g_variant_builder_add (&builder, "{sv}", "ClickType",
+                               g_variant_new_int32 (service->priv->click_type));
     }
 
-    proxy = dbus_g_proxy_new_for_name (bus,
-				       DBUS_SERVICE_DBUS,
-				       DBUS_PATH_DBUS,
-				       DBUS_INTERFACE_DBUS);
+    prop_v = g_variant_new ("(sa{sv}as)",
+                            MOUSETWEAKS_DBUS_IFACE,
+                            &builder, &inv_builder);
 
-    if (!dbus_g_proxy_call (proxy, "RequestName", &error,
-			    G_TYPE_STRING, MOUSETWEAKS_DBUS_SERVICE,
-			    G_TYPE_UINT, DBUS_NAME_FLAG_DO_NOT_QUEUE,
-			    G_TYPE_INVALID,
-			    G_TYPE_UINT, &result,
-			    G_TYPE_INVALID)) {
-	g_warning ("Unable to acquire name: %s", error->message);
-	g_error_free (error);
-	g_object_unref (proxy);
-	return;
+    if (!g_dbus_connection_emit_signal (connection, NULL,
+                                        MOUSETWEAKS_DBUS_PATH,
+                                        "org.freedesktop.DBus.Properties",
+                                        "PropertiesChanged",
+                                        prop_v, &error))
+    {
+        g_warning ("%s\n", error->message);
+        g_error_free (error);
     }
-
-    g_object_unref (proxy);
-
-    if (result == DBUS_REQUEST_NAME_REPLY_PRIMARY_OWNER)
-	dbus_g_connection_register_g_object (bus,
-					     MOUSETWEAKS_DBUS_PATH,
-					     G_OBJECT (service));
-    else
-	g_warning ("DBus: Not primary name owner.");
 }
 
-static MtService *
-mt_service_new (void)
+static void
+mt_service_bus_acquired (GDBusConnection *connection,
+                         const gchar     *name,
+                         gpointer         data)
 {
-    return g_object_new (MT_TYPE_SERVICE, NULL);
+    MtService *service = data;
+
+    if (service->priv->ispec)
+    {
+        GError *error = NULL;
+
+        g_dbus_connection_register_object (connection,
+                                           MOUSETWEAKS_DBUS_PATH,
+                                           service->priv->ispec->interfaces[0],
+                                           &interface_vtable,
+                                           service, NULL, &error);
+        if (error)
+        {
+            g_warning ("%s", error->message);
+            g_error_free (error);
+        }
+
+        g_signal_connect (service, "notify",
+                          G_CALLBACK (emit_property_changed), connection);
+    }
 }
 
 MtService *
@@ -141,33 +255,26 @@ mt_service_get_default (void)
 {
     static MtService *service = NULL;
 
-    if (!service) {
-	service = mt_service_new ();
-	g_signal_emit (service, signals[STATUS_CHANGED], 0, TRUE);
-    }
+    if (!service)
+        service = g_object_new (MT_TYPE_SERVICE, NULL);
 
     return service;
 }
 
-gboolean
-mt_service_set_clicktype (MtService *service,
-			  guint      clicktype,
-			  GError   **error)
+void
+mt_service_set_click_type (MtService  *service,
+                           MtClickType type)
 {
-    g_return_val_if_fail (MT_IS_SERVICE (service), FALSE);
+    g_return_if_fail (MT_IS_SERVICE (service));
 
-    service->priv->clicktype = clicktype;
-
-    g_signal_emit (service,
-		   signals[CLICKTYPE_CHANGED],
-		   0, service->priv->clicktype);
-    return TRUE;
+    service->priv->click_type = type;
+    g_object_notify (G_OBJECT (service), "click-type");
 }
 
-guint
-mt_service_get_clicktype (MtService *service)
+MtClickType
+mt_service_get_click_type (MtService *service)
 {
-    g_return_val_if_fail (MT_IS_SERVICE (service), 0);
+    g_return_val_if_fail (MT_IS_SERVICE (service), -1);
 
-    return service->priv->clicktype;
+    return service->priv->click_type;
 }

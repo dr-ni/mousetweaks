@@ -156,23 +156,24 @@ static void
 dwell_restore_single_click (MtData *mt)
 {
     if (mt->dwell_mode == DWELL_MODE_CTW)
-	mt_ctw_set_clicktype (mt, DWELL_CLICK_TYPE_SINGLE);
+        mt_ctw_set_clicktype (mt, DWELL_CLICK_TYPE_SINGLE);
 
-    mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);
+    mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
 }
 
 static void
 mt_main_do_dwell_click (MtData *mt)
 {
-    guint clicktype;
+    MtClickType click_type;
 
-    clicktype = mt_service_get_clicktype (mt->service);
+    click_type = mt_service_get_click_type (mt->service);
 
     if (mt->dwell_mode == DWELL_MODE_GESTURE && !mt->dwell_drag_started)
 	mt_main_generate_motion_event (mt_main_current_screen (mt),
 				       mt->pointer_x, mt->pointer_y);
 
-    switch (clicktype) {
+    switch (click_type)
+    {
 	case DWELL_CLICK_TYPE_SINGLE:
 	    mt_main_generate_button_event (mt, 1, CLICK, 60);
 	    break;
@@ -219,7 +220,7 @@ mt_main_analyze_gesture (MtData *mt)
 {
     gint x, y, gd, i, dx, dy;
 
-    if (mt_service_get_clicktype (mt->service) == DWELL_CLICK_TYPE_DRAG)
+    if (mt_service_get_click_type (mt->service) == DWELL_CLICK_TYPE_DRAG)
 	return TRUE;
 
     gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
@@ -256,7 +257,7 @@ mt_main_analyze_gesture (MtData *mt)
     /* get click type for direction */
     for (i = 0; i < N_CLICK_TYPES; i++) {
 	if (mt->dwell_dirs[i] == gd) {
-	    mt_service_set_clicktype (mt->service, i, NULL);
+	    mt_service_set_click_type (mt->service, i);
 	    return TRUE;
 	}
     }
@@ -701,8 +702,6 @@ mt_data_init (void)
 		      G_CALLBACK (mt_main_timer_tick), mt);
 
     mt->service = mt_service_get_default ();
-    mt_service_set_clicktype (mt->service, DWELL_CLICK_TYPE_SINGLE, NULL);
-
     mt->n_screens = gdk_display_get_n_screens (gdk_display_get_default ());
 
     mt->x_old = -1;

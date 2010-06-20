@@ -25,10 +25,15 @@
 #endif
 
 #include <glib/gi18n.h>
+#include <gdk/gdk.h>
 
 G_BEGIN_DECLS
 
 #define MT_ICON_NAME  "input-mouse"
+
+#define MOUSETWEAKS_DBUS_NAME  "org.gnome.Mousetweaks"
+#define MOUSETWEAKS_DBUS_IFACE "org.gnome.Mousetweaks"
+#define MOUSETWEAKS_DBUS_PATH  "/org/gnome/Mousetweaks"
 
 #define MT_GCONF_HOME "/desktop/gnome/accessibility/mouse"
 #define OPT_THRESHOLD MT_GCONF_HOME "/threshold"
@@ -53,13 +58,14 @@ enum {
     DWELL_MODE_GESTURE
 };
 
-enum {
+typedef enum
+{
     DWELL_CLICK_TYPE_RIGHT = 0,
     DWELL_CLICK_TYPE_DRAG,
     DWELL_CLICK_TYPE_DOUBLE,
     DWELL_CLICK_TYPE_SINGLE,
     N_CLICK_TYPES
-};
+} MtClickType;
 
 enum {
     DIRECTION_LEFT = 0,

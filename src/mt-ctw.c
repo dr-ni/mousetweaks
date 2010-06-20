@@ -119,9 +119,7 @@ ctw_button_cb (GtkToggleButton *button, gpointer data)
 	GSList *group;
 
 	group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (button));
-	mt_service_set_clicktype (mt->service, 
-				  g_slist_index (group, button),
-				  NULL);
+    mt_service_set_click_type (mt->service, g_slist_index (group, button));
     }
 }
 

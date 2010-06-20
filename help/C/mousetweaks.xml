@@ -18,7 +18,7 @@
     </abstract>
 
     <copyright>
-      <year>2007 - 2009</year>
+      <year>2007 - 2010</year>
 
       <holder>Francesco Fumanti</holder>
     </copyright>
@@ -177,6 +177,11 @@
         predefined keystroke or mouse button.</para>
       </listitem>
     </itemizedlist>
+
+    <note>
+      <para>Since version 2.31.3, mousetweaks does not depend anymore on the
+      AT-SPI accessibility framework.</para>
+    </note>
   </sect1>
 
   <sect1 id="mouse-a11y-how-to-start-features">
@@ -367,12 +372,14 @@
           </textobject>
         </mediaobject>
 
-        <remark>For instructions about how to install the Dwell Click applet
-        on the GNOME panel, please have a look at <link
-        linkend="mouse-a11y-start-pointer-capture">Starting The Pointer
-        Capture Function</link> where you can see how it is done for the
-        Pointer Capture panel applet. The procedure for the Dwell Click panel
-        applet is similar.</remark>
+        <note>
+          <para>For instructions about how to install the Dwell Click applet
+          on the GNOME panel, please have a look at <link
+          linkend="mouse-a11y-start-pointer-capture">Starting The Pointer
+          Capture Function</link> where you can see how it is done for the
+          Pointer Capture panel applet. The procedure for the Dwell Click
+          panel applet is similar.</para>
+        </note>
       </sect3>
     </sect2>
 
@@ -593,16 +600,6 @@
         button</mousebutton> click as soon as the user releases the the
         <mousebutton>primary mouse button</mousebutton>.</para>
 
-        <note>
-          <para>On browser links, the simulated secondary click behaves
-          differently: it does not wait for the user to release the
-          <mousebutton>primary mouse button</mousebutton> before creating the
-          simulated secondary click; the secondary click is created as soon as
-          the time delay has elapsed. Previous versions of mousetweaks always
-          behaved like this; but this behaviour had to be modified because of
-          changes to the X server.</para>
-        </note>
-
         <para>The explanations above assumed that the pointer did not move
         between the <mousebutton>primary mouse button</mousebutton> press and
         release. If the pointer gets moved before the <mousebutton>primary
@@ -610,6 +607,14 @@
         will be created. Consequently, to cancel an initiated secondary click,
         the user only has to move the pointer before releasing the
         <mousebutton>primary mouse button</mousebutton>.</para>
+
+        <para>Moreover, the fact that the simulated secondary click is
+        immediately preceded by a left click makes it behave differently than
+        expected when the preceding left click has an incidence on the object
+        that is to receive the simulated secondary click. Please, have a look
+        at the section about the <link
+        linkend="mouse-a11y-ssc-pecularities">Differences To The Normal
+        Secondary Click</link> for more details.</para>
       </sect3>
 
       <sect3>
@@ -651,7 +656,7 @@
         the resulting primary click occurs just before the secondary click
         created by mousetweaks. Consequently, the simulated secondary click
         behaves a bit differently than the normal secondary click, because the
-        latter is usually not preceeded immediately by a <mousebutton>primary
+        latter is usually not preceded immediately by a <mousebutton>primary
         mouse button</mousebutton> click. For example:</para>
 
         <itemizedlist>
@@ -659,6 +664,29 @@
             <para>It is not possible to perform a secondary click on multiple
             items because the primary click issued before the secondary click
             deselects the items.</para>
+          </listitem>
+
+          <listitem>
+            <para>When performing a simulated secondary click on a link in a
+            web page, the primary click, that preceds the simulated secondary
+            click, opens the referenced page before the simulated secondary
+            click has a chance to open the contextual menu of the link.</para>
+
+            <tip>
+              <para>The contextual menu of a link in a web page can be opened
+              by performing a simulated secondary click while keeping the Ctrl
+              modifier pressed. This works because the referenced page opens
+              in a new tab when the link receives a primary click in
+              conjunction with a pressed Ctrl modifier; which is also what
+              happens as a side effect when opening the contextual menu of a
+              link by using the simulated secondary click in conjunction with
+              the Ctrl modifier.</para>
+
+              <para>However the browser has to be configured to not
+              automatically switch to the new tab when it opens; otherwise the
+              page with the link disappears as the new tab becomes visible and
+              the contextual menu does not appear.</para>
+            </tip>
           </listitem>
 
           <listitem>
@@ -677,9 +705,11 @@
         </note>
 
         <para>Looking at it the other way, it is no possible to perform a long
-        motionless <mousebutton>primary mouse button</mousebutton> press,
-        without also triggering the secondary click. This may also have
-        unexpected consequences for some users. For example:</para>
+        motionless <mousebutton>primary mouse button</mousebutton> press
+        without also triggering the secondary click, unless the pointer is
+        moved before the <mousebutton>primary mouse button</mousebutton>
+        release. This may also have unexpected consequences for some users.
+        For example:</para>
 
         <itemizedlist>
           <listitem>
@@ -968,10 +998,12 @@
       panel, into which the user can lock the pointer until he releases it in
       a determined way.</para>
 
-      <remark>Have a look at <link
-      linkend="mouse-a11y-start-pointer-capture">Starting The Pointer Capture
-      Function</link> for instructions about how to install the pointer
-      capture applet on the GNOME panel.</remark>
+      <note>
+        <para>Have a look at <link
+        linkend="mouse-a11y-start-pointer-capture">Starting The Pointer
+        Capture Function</link> for instructions about how to install the
+        pointer capture applet on the GNOME panel.</para>
+      </note>
 
       <mediaobject>
         <imageobject>

@@ -64,12 +64,4 @@ pointer_capture_applet_LDADD =	\
 	$(PANELAPPLET_LIBS)	\
 	$(DEPENDENCIES_LIBS)
 
-BUILT_SOURCES = mt-service-glue.h
-
-mt-service-glue.h: mousetweaks-service.xml
-	-dbus-binding-tool --prefix=mt_service --mode=glib-server $<> $@
-
-EXTRA_DIST = mousetweaks-service.xml
-CLEANFILES = $(BUILT_SOURCES)
-
 -include $(top_srcdir)/git.mk

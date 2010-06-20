@@ -18,6 +18,8 @@ AC_HEADER_STDC
 AC_C_CONST
 AM_PROG_CC_C_O
 
+dnl *** GNOME macros ***
+
 GNOME_COMMON_INIT
 GNOME_COMPILE_WARNINGS([maximum])
 GNOME_MAINTAINER_MODE_DEFINES
@@ -37,10 +39,12 @@ GNOME_DOC_INIT
 
 dnl *** dependencies ***
 
+GIO_REQUIRED=2.25.9
+
 PKG_CHECK_MODULES(DEPENDENCIES,
+    gio-2.0 >= $GIO_REQUIRED
 	gtk+-2.0 >= 2.18
 	gconf-2.0 >= 2.16.0
-	dbus-glib-1 >= 0.7
 	x11
 	xcursor
 	xfixes

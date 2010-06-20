@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,10 +15,11 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include <stdlib.h>
+#include <gio/gio.h>
 #include <gtk/gtk.h>
 #include <panel-applet.h>
 #include <gconf/gconf-client.h>
-#include <dbus/dbus-glib.h>
 
 #include "mt-common.h"
 
@@ -27,7 +28,7 @@
 typedef struct _DwellData DwellData;
 struct _DwellData {
     GConfClient *client;
-    DBusGProxy  *proxy;
+    GDBusProxy  *proxy;
     GtkBuilder  *ui;
     GtkWidget   *box;
     GtkWidget   *ct_box;
@@ -75,6 +76,8 @@ static const BonoboUIVerb menu_verb[] = {
     BONOBO_UI_VERB_END
 };
 
+static void button_cb (GtkToggleButton *button, DwellData *dd);
+
 static void
 update_sensitivity (DwellData *dd)
 {
@@ -85,6 +88,117 @@ update_sensitivity (DwellData *dd)
     mode = gconf_client_get_int (dd->client, OPT_MODE, NULL);
     sensitive = dd->active && dwell && mode == DWELL_MODE_CTW;
     gtk_widget_set_sensitive (dd->ct_box, sensitive);
+}
+
+static gboolean
+mt_proxy_has_owner (GDBusProxy *proxy)
+{
+    gchar *owner;
+
+    owner = g_dbus_proxy_get_name_owner (proxy);
+    if (owner)
+    {
+        g_free (owner);
+        return TRUE;
+    }
+    return FALSE;
+}
+
+static void
+mt_proxy_owner_notify (GObject    *object,
+                       GParamSpec *pspec,
+                       DwellData  *dd)
+{
+    dd->active = mt_proxy_has_owner (G_DBUS_PROXY (object));
+    update_sensitivity (dd);
+}
+
+static void
+handle_click_type_changed (DwellData  *dd,
+                           MtClickType click_type)
+{
+    GtkToggleButton *button;
+    GSList *group;
+
+    if (click_type != dd->cct)
+    {
+        dd->cct = click_type;
+        group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dd->button));
+        button = GTK_TOGGLE_BUTTON (g_slist_nth_data (group, dd->cct));
+
+        g_signal_handlers_block_by_func (button, button_cb, dd);
+        gtk_toggle_button_set_active (button, TRUE);
+        g_signal_handlers_unblock_by_func (button, button_cb, dd);
+    }
+}
+
+static void
+mt_proxy_prop_changed (GDBusProxy          *proxy,
+                       GVariant            *changed,
+                       const gchar* const  *invalidated,
+                       DwellData           *dd)
+{
+    GVariantIter iter;
+    gchar *key;
+    GVariant *value;
+
+    if (g_variant_n_children (changed) < 1)
+        return;
+
+    g_variant_iter_init (&iter, changed);
+    while (g_variant_iter_loop (&iter, "{sv}", &key, &value))
+    {
+        if (g_strcmp0 (key, "ClickType") == 0)
+        {
+            handle_click_type_changed (dd, g_variant_get_int32 (value));
+        }
+    }
+}
+
+static void
+mt_proxy_init (DwellData *dd)
+{
+    GError *error = NULL;
+
+    dd->proxy = g_dbus_proxy_new_for_bus_sync (G_BUS_TYPE_SESSION,
+                                               G_DBUS_PROXY_FLAGS_NONE, NULL,
+                                               MOUSETWEAKS_DBUS_NAME,
+                                               MOUSETWEAKS_DBUS_PATH,
+                                               MOUSETWEAKS_DBUS_IFACE,
+                                               NULL, &error);
+    if (error)
+    {
+        g_warning ("%s\n", error->message);
+        g_error_free (error);
+        return;
+    }
+
+    dd->active = mt_proxy_has_owner (dd->proxy);
+
+    g_signal_connect (dd->proxy, "notify::g-name-owner",
+                      G_CALLBACK (mt_proxy_owner_notify), dd);
+    g_signal_connect (dd->proxy, "g-properties-changed",
+                      G_CALLBACK (mt_proxy_prop_changed), dd);
+}
+
+static void
+mt_proxy_set_click_type (GDBusProxy *proxy,
+                         MtClickType click_type)
+{
+    GVariant *ct;
+
+    g_return_if_fail (proxy != NULL);
+
+    ct = g_variant_new_int32 (click_type);
+
+    g_dbus_proxy_call (proxy,
+                       "org.freedesktop.DBus.Properties.Set",
+                       g_variant_new ("(ssv)",
+                                      MOUSETWEAKS_DBUS_IFACE,
+                                      "ClickType", ct),
+                       G_DBUS_CALL_FLAGS_NONE,
+                       -1, NULL, NULL, NULL);
+    g_variant_unref (ct);
 }
 
 static gboolean
@@ -201,18 +315,15 @@ enable_dwell_exposed (GtkWidget      *widget,
 }
 
 static void
-button_cb (GtkToggleButton *button, gpointer data)
+button_cb (GtkToggleButton *button, DwellData *dd)
 {
-    DwellData *dd = data;
+    if (gtk_toggle_button_get_active (button))
+    {
+        GSList *group;
 
-    if (gtk_toggle_button_get_active (button)) {
-	GSList *group;
-
-	group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (button));
-	dd->cct = g_slist_index (group, button);
-	dbus_g_proxy_call_no_reply (dd->proxy, "SetClicktype",
-				    G_TYPE_UINT, dd->cct,
-				    G_TYPE_INVALID);
+        group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (button));
+        dd->cct = g_slist_index (group, button);
+        mt_proxy_set_click_type (dd->proxy, dd->cct);
     }
 }
 
@@ -447,92 +558,6 @@ setup_box (DwellData *dd)
 }
 
 static void
-clicktype_changed (DBusGProxy *proxy,
-		   guint       clicktype,
-		   gpointer    data)
-{
-    DwellData *dd = data;
-    GtkToggleButton *button;
-    GSList *group;
-
-    if (clicktype >= N_CLICK_TYPES)
-	return;
-
-    dd->cct = clicktype;
-    group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (dd->button));
-    button = GTK_TOGGLE_BUTTON (g_slist_nth_data (group, clicktype));
-
-    g_signal_handlers_block_by_func (button, button_cb, dd);
-    gtk_toggle_button_set_active (button, TRUE);
-    g_signal_handlers_unblock_by_func (button, button_cb, dd);
-}
-
-static void
-status_changed (DBusGProxy *proxy,
-		gboolean    status,
-		gpointer    data)
-{
-    DwellData *dd = data;
-
-    dd->active = status;
-    update_sensitivity (dd);
-}
-
-static gboolean
-setup_dbus_proxy (DwellData *dd)
-{
-    DBusGConnection *bus;
-    GError *error = NULL;
-
-    bus = dbus_g_bus_get (DBUS_BUS_SESSION, &error);
-    if (error != NULL) {
-	g_print ("Unable to connect to session bus: %s\n", error->message);
-	g_error_free (error);
-	return FALSE;
-    }
-
-    dd->proxy = dbus_g_proxy_new_for_name (bus,
-					   "org.gnome.Mousetweaks",
-					   "/org/gnome/Mousetweaks",
-					   "org.gnome.Mousetweaks");
-
-    dbus_g_proxy_add_signal (dd->proxy, "ClicktypeChanged",
-			     G_TYPE_UINT, G_TYPE_INVALID);
-    dbus_g_proxy_connect_signal (dd->proxy, "ClicktypeChanged",
-				 G_CALLBACK (clicktype_changed), dd, NULL);
-
-    dbus_g_proxy_add_signal (dd->proxy, "StatusChanged",
-			     G_TYPE_BOOLEAN, G_TYPE_INVALID);
-    dbus_g_proxy_connect_signal (dd->proxy, "StatusChanged",
-				 G_CALLBACK (status_changed), dd, NULL);
-
-    return TRUE;
-}
-
-static gboolean
-mousetweaks_is_active (void)
-{
-    DBusGConnection *bus;
-    DBusGProxy *proxy;
-    gboolean result = FALSE;
-
-    bus = dbus_g_bus_get (DBUS_BUS_SESSION, NULL);
-    if (bus) {
-	proxy = dbus_g_proxy_new_for_name (bus,
-					   DBUS_SERVICE_DBUS,
-					   DBUS_PATH_DBUS,
-					   DBUS_INTERFACE_DBUS);
-	dbus_g_proxy_call (proxy, "NameHasOwner", NULL,
-			   G_TYPE_STRING, "org.gnome.Mousetweaks",
-			   G_TYPE_INVALID,
-			   G_TYPE_BOOLEAN, &result,
-			   G_TYPE_INVALID);
-	g_object_unref (proxy);
-    }
-    return result;
-}
-
-static void
 gconf_value_changed (GConfClient *client,
 		     const gchar *key,
 		     GConfValue  *value,
@@ -582,14 +607,8 @@ fill_applet (PanelApplet *applet)
     }
 
     /* dbus */
-    if (!setup_dbus_proxy (dd)) {
-	g_object_unref (dd->ui);
-	g_slice_free (DwellData, dd);
+    mt_proxy_init (dd);
 
-	return FALSE;
-    }
-
-    dd->active = mousetweaks_is_active ();
     dd->cct = DWELL_CLICK_TYPE_SINGLE;
     dd->timer = g_timer_new ();
 

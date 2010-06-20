@@ -848,7 +848,7 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     g_signal_connect (manager, "cache_cleared",
                       G_CALLBACK (cursor_cache_cleared), mt);
 
-    /* init at-spi signals */
+    /* init mouse listener */
     listener = mt_listener_get_default ();
     g_signal_connect (listener, "motion_event",
                       G_CALLBACK (global_motion_event), mt);

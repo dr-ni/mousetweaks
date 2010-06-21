@@ -1,12 +1,6 @@
-.\" Macros
-.\" define indentation for suboptions
-.nr SS 5
-.de IPs
-.IP "\\$1" \n(SS
-..
 .TH "mousetweaks" 1
 .SH NAME
-mousetweaks \- Accessibility enhancements for the mouse
+mousetweaks \- Accessibility enhancements for pointing devices
 .SH SYNOPSIS
 .B mousetweaks
 [\-\-dwell] [\-\-ssc]
@@ -17,8 +11,8 @@ mousetweaks \- Accessibility enhancements for the mouse
 [\-\-disable\-animations] [\-\-daemonize] [\-?|\-\-help]
 .SH DESCRIPTION
 .B mousetweaks
-is a daemon that provides various mouse features for the GNOME desktop.
-It depends on the Assistive Technology Service Provider Interface (AT-SPI).
+is a collection of accessibility enhancements for pointing devices. This
+manual page describes the mousetweaks daemon.
 .SH OPTIONS
 .TP
 .B \-\-dwell
@@ -30,33 +24,30 @@ for a specified amount of time.
 .TP
 .B \-\-dwell\-time=FLOAT
 Time to keep the pointer motionless before a dwell click is performed.
-Range: 0.2 - 3.0 seconds.
+Range: 0.2 \- 3.0 seconds.
 .TP
 .B \-\-ssc\-time=FLOAT
 Time to hold the primary mouse button before a simulated secondary
-click is performed. Range: 0.5 - 3.0 seconds.
+click is performed. Range: 0.5 \- 3.0 seconds.
 .TP
 .B \-m, \-\-dwell\-mode=STRING
-Select a dwelling mode. Available arguments are: window, gesture
-.RS
-.IPs WINDOW
-Select the active click type from a window or a panel applet.
-.IPs GESTURE
-Perform clicks by moving in different directions after the cursor changes
-its shape.
-.RE
+Select a dwell mode. Available options:
+.B window
+\- Select the click type from a window or a panel applet.
+.B gesture
+\- Perform different clicks by moving in different directions.
 .TP
 .B \-c, \-\-show\-ctw
-Show the click\-type window. Only useful in combination with dwell\-mode=window.
+Show the click\-type window. Only useful in combination with \-\-dwell\-mode=window.
 .TP
 .B \-x, \-\-ctw\-x=INT
-X Position of the click\-type window on screen.
+x\-position of the click\-type window on screen.
 .TP
 .B \-y, \-\-ctw\-y=INT
-Y Position of the click\-type window on screen.
+y\-position of the click\-type window on screen.
 .TP
 .B \-t, \-\-threshold=INT
-Ignore small pointer movements. Range 0 - 30 pixels.
+Ignore small pointer movements. Range: 0 \- 30 pixels.
 .TP
 .B \-s, \-\-shutdown
 Stop the mousetweaks daemon.
@@ -82,7 +73,8 @@ Report bugs to
 <http://bugzilla.gnome.org/>
 .UE
 .SH AUTHORS
-mousetweaks was written by Gerd Kohlberger
+mousetweaks was written by Gerd Kohlberger. This manual page was written
+by Francesco Fumanti.
 .SH LICENSE
 Licenced under the GNU General Public License v3 or later.
 .SH SEE ALSO

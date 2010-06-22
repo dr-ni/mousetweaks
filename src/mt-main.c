@@ -23,7 +23,6 @@
 
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>
-#include <dbus/dbus-glib.h>
 #include <X11/extensions/XTest.h>
 
 #include "mt-common.h"

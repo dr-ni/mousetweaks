@@ -21,6 +21,8 @@
 
 #include "mt-timer.h"
 
+#define DEFAULT_TARGET_TIME 1.2f
+
 struct _MtTimerPrivate
 {
     GTimer *timer;
@@ -36,6 +38,12 @@ enum
     LAST_SIGNAL
 };
 
+enum
+{
+    PROP_0,
+    PROP_TARGET_TIME
+};
+
 static guint signals[LAST_SIGNAL] = { 0, };
 
 G_DEFINE_TYPE (MtTimer, mt_timer, G_TYPE_OBJECT)
@@ -47,7 +55,43 @@ mt_timer_init (MtTimer *timer)
                                                MT_TYPE_TIMER,
                                                MtTimerPrivate);
     timer->priv->timer  = g_timer_new ();
-    timer->priv->target = 1.2;
+    timer->priv->target = DEFAULT_TARGET_TIME;
+}
+
+static void
+mt_timer_get_property (GObject    *object,
+                       guint       prop_id,
+                       GValue     *value,
+                       GParamSpec *pspec)
+{
+    MtTimer *timer = MT_TIMER (object);
+
+    switch (prop_id)
+    {
+        case PROP_TARGET_TIME:
+            g_value_set_double (value, timer->priv->target);
+            break;
+        default:
+            G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+    }
+}
+
+static void
+mt_timer_set_property (GObject      *object,
+                       guint         prop_id,
+                       const GValue *value,
+                       GParamSpec   *pspec)
+{
+    MtTimer *timer = MT_TIMER (object);
+
+    switch (prop_id)
+    {
+        case PROP_TARGET_TIME:
+            timer->priv->target = g_value_get_double (value);
+            break;
+        default:
+            G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+    }
 }
 
 static void
@@ -68,6 +112,8 @@ mt_timer_class_init (MtTimerClass *klass)
 {
     GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
+    object_class->get_property = mt_timer_get_property;
+    object_class->set_property = mt_timer_set_property;
     object_class->finalize = mt_timer_finalize;
 
     signals[TICK] =
@@ -85,6 +131,12 @@ mt_timer_class_init (MtTimerClass *klass)
                       0, NULL, NULL,
                       g_cclosure_marshal_VOID__VOID,
                       G_TYPE_NONE, 0);
+
+    g_object_class_install_property (object_class, PROP_TARGET_TIME,
+            g_param_spec_double ("target-time", "Target time",
+                                 "Target time of the timer",
+                                 0.1, 3.0, DEFAULT_TARGET_TIME,
+                                 G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS));
 
     g_type_class_add_private (klass, sizeof (MtTimerPrivate));
 }
@@ -167,7 +219,8 @@ void
 mt_timer_set_target (MtTimer *timer, gdouble target)
 {
     g_return_if_fail (MT_IS_TIMER (timer));
-    g_return_if_fail (target > 0.0);
+    g_return_if_fail (target >= 0.1);
 
     timer->priv->target = target;
+    g_object_notify (G_OBJECT (timer), "target-time");
 }

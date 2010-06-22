@@ -253,8 +253,10 @@ mt_cursor_manager_get_default (void)
     static MtCursorManager *manager = NULL;
 
     if (!manager)
+    {
         manager = g_object_new (MT_TYPE_CURSOR_MANAGER, NULL);
-
+        g_object_add_weak_pointer (G_OBJECT (manager), (gpointer *) &manager);
+    }
     return manager;
 }
 

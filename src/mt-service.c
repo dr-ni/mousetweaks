@@ -256,8 +256,10 @@ mt_service_get_default (void)
     static MtService *service = NULL;
 
     if (!service)
+    {
         service = g_object_new (MT_TYPE_SERVICE, NULL);
-
+        g_object_add_weak_pointer (G_OBJECT (service), (gpointer *) &service);
+    }
     return service;
 }
 

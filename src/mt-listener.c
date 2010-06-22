@@ -386,7 +386,9 @@ mt_listener_get_default (void)
     static MtListener *listener = NULL;
 
     if (!listener)
+    {
         listener = g_object_new (MT_TYPE_LISTENER, NULL);
-
+        g_object_add_weak_pointer (G_OBJECT (listener), (gpointer *) &listener);
+    }
     return listener;
 }

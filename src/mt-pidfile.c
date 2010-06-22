@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -49,7 +49,7 @@ mt_pidfile_proc (void)
 {
     static char fn[512];
 
-    snprintf (fn, sizeof(fn), "%s/.mousetweaks.pid", g_get_home_dir ());
+    snprintf (fn, sizeof (fn), "%s/.mousetweaks.pid", g_get_home_dir ());
     return fn;
 }
 
@@ -65,7 +65,7 @@ lock_file (int fd, int enable)
     f.l_len = 0;
 
     if (fcntl(fd, F_SETLKW, &f) < 0)
-	return -1;
+        return -1;
 
     return 0;
 }
@@ -81,20 +81,22 @@ mt_pidfile_is_running (void)
     long lpid;
     char *e = NULL;
 
-    if (!(fn = mt_pidfile_proc ())) {
-	errno = EINVAL;
-	goto FINISH;
+    if (!(fn = mt_pidfile_proc ()))
+    {
+        errno = EINVAL;
+        goto FINISH;
     }
 
     if ((fd = open (fn, O_RDWR, 0644)) < 0)
-	goto FINISH;
+        goto FINISH;
 
     if ((locked = lock_file (fd, 1)) < 0)
-	goto FINISH;
+        goto FINISH;
 
-    if ((l = read (fd, txt, sizeof(txt) - 1)) < 0) {
-	unlink(fn);
-	goto FINISH;
+    if ((l = read (fd, txt, sizeof(txt) - 1)) < 0)
+    {
+        unlink(fn);
+        goto FINISH;
     }
 
     txt[l] = 0;
@@ -104,28 +106,33 @@ mt_pidfile_is_running (void)
     lpid = strtol(txt, &e, 10);
     pid = (pid_t) lpid;
 
-    if (errno != 0 || !e || *e || (long) pid != lpid) {
-	unlink (fn);
-	errno = EINVAL;
-	goto FINISH;
+    if (errno != 0 || !e || *e || (long) pid != lpid)
+    {
+        unlink (fn);
+        errno = EINVAL;
+        goto FINISH;
     }
 
-    if (kill (pid, 0) != 0 && errno != EPERM) {
-	int saved_errno = errno;
-	unlink (fn);
-	errno = saved_errno;
-	goto FINISH;
+    if (kill (pid, 0) != 0 && errno != EPERM)
+    {
+        int saved_errno = errno;
+        unlink (fn);
+        errno = saved_errno;
+        goto FINISH;
     }
 
     ret = pid;
 
 FINISH:
-    if (fd >= 0) {
-	int saved_errno = errno;
-	if (locked >= 0)
-	    lock_file (fd, 0);
-	errno = saved_errno;
-	close (fd);
+    if (fd >= 0)
+    {
+        int saved_errno = errno;
+
+        if (locked >= 0)
+            lock_file (fd, 0);
+
+        errno = saved_errno;
+        close (fd);
     }
 
     return ret;
@@ -138,30 +145,31 @@ mt_pidfile_kill_wait (int signal, int sec)
     time_t t;
 
     if ((pid = mt_pidfile_is_running ()) < 0)
-	return -1;
+        return -1;
 
     if (kill (pid, signal) < 0)
-	return -1;
+        return -1;
 
     t = time (NULL) + sec;
+    for (;;)
+    {
+        int r;
+        struct timeval tv = { 0, 100000 };
 
-    for (;;) {
-	int r;
-	struct timeval tv = { 0, 100000 };
+        if (time (NULL) > t)
+        {
+            errno = ETIME;
+            return -1;
+        }
 
-	if (time (NULL) > t) {
-	    errno = ETIME;
-	    return -1;
-	}
+        if ((r = kill (pid, 0)) < 0 && errno != ESRCH)
+            return -1;
 
-	if ((r = kill (pid, 0)) < 0 && errno != ESRCH)
-	    return -1;
+        if (r)
+            return 0;
 
-	if (r)
-	    return 0;
-
-	if (select (0, NULL, NULL, NULL, &tv) < 0)
-	    return -1;
+        if (select (0, NULL, NULL, NULL, &tv) < 0)
+            return -1;
     }
 }
 
@@ -178,42 +186,46 @@ mt_pidfile_create (void)
 
     u = umask(022);
 
-    if (!(fn = mt_pidfile_proc ())) {
-	errno = EINVAL;
-	goto FINISH;
+    if (!(fn = mt_pidfile_proc ()))
+    {
+        errno = EINVAL;
+        goto FINISH;
     }
 
     if ((fd = open (fn, O_CREAT|O_RDWR|O_EXCL, 0644)) < 0)
-	goto FINISH;
+        goto FINISH;
 
-    if ((locked = lock_file (fd, 1)) < 0) {
-	int saved_errno = errno;
-	unlink (fn);
-	errno = saved_errno;
-	goto FINISH;
+    if ((locked = lock_file (fd, 1)) < 0)
+    {
+        int saved_errno = errno;
+        unlink (fn);
+        errno = saved_errno;
+        goto FINISH;
     }
 
     snprintf (t, sizeof(t), "%lu\n", (unsigned long) getpid ());
     l = strlen (t);
 
-    if (write (fd, t, l) != l) {
-	int saved_errno = errno;
-	unlink (fn);
-	errno = saved_errno;
-	goto FINISH;
+    if (write (fd, t, l) != l)
+    {
+        int saved_errno = errno;
+        unlink (fn);
+        errno = saved_errno;
+        goto FINISH;
     }
 
     ret = 0;
 
 FINISH:
-    if (fd >= 0) {
-	int saved_errno = errno;
+    if (fd >= 0)
+    {
+        int saved_errno = errno;
 
-	if (locked >= 0)
-	    lock_file (fd, 0);
+        if (locked >= 0)
+            lock_file (fd, 0);
 
-	close (fd);
-	errno = saved_errno;
+        close (fd);
+        errno = saved_errno;
     }
 
     umask(u);
@@ -226,13 +238,14 @@ mt_pidfile_remove (void)
 {
     const char *fn;
 
-    if (!(fn = mt_pidfile_proc ())) {
-	errno = EINVAL;
-	return -1;
+    if (!(fn = mt_pidfile_proc ()))
+    {
+        errno = EINVAL;
+        return -1;
     }
 
     if (unlink (fn) < 0)
-	return -1;
+        return -1;
 
     return 0;
 }

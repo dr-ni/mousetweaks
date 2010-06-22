@@ -53,7 +53,8 @@ G_BEGIN_DECLS
 #define GNOME_MOUSE_DIR "/desktop/gnome/peripherals/mouse"
 #define GNOME_MOUSE_ORIENT GNOME_MOUSE_DIR "/left_handed"
 
-enum {
+enum
+{
     DWELL_MODE_CTW = 0,
     DWELL_MODE_GESTURE
 };
@@ -67,7 +68,8 @@ typedef enum
     N_CLICK_TYPES
 } MtClickType;
 
-enum {
+enum
+{
     DIRECTION_LEFT = 0,
     DIRECTION_RIGHT,
     DIRECTION_UP,
@@ -75,18 +77,19 @@ enum {
     DIRECTION_DISABLE
 };
 
-typedef enum {
+typedef enum
+{
     MT_MESSAGE_ERROR = 0,
     MT_MESSAGE_WARNING,
     MT_MESSAGE_QUESTION,
     MT_MESSAGE_LOGOUT
 } MtMessageType;
 
-void mt_common_show_help   (GdkScreen     *screen,
-			    guint32        timestamp);
-gint mt_common_show_dialog (const gchar   *primary,
-			    const gchar   *secondary,
-			    MtMessageType  type);
+void         mt_common_show_help         (GdkScreen     *screen,
+                                          guint32        timestamp);
+gint         mt_common_show_dialog       (const gchar   *primary,
+                                          const gchar   *secondary,
+                                          MtMessageType  type);
 
 G_END_DECLS
 

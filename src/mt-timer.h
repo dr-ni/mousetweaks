@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -24,31 +24,32 @@
 
 G_BEGIN_DECLS
 
-#define MT_TYPE_TIMER         (mt_timer_get_type ())
-#define MT_TIMER(o)           (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_TIMER, MtTimer))
-#define MT_TIMER_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST ((k), MT_TYPE_TIMER, MtTimerClass))
-#define MT_IS_TIMER(o)        (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_TIMER))
-#define MT_IS_TIMER_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), MT_TYPE_TIMER))
-#define MT_TIMER_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), MT_TYPE_TIMER, MtTimerClass))
+#define MT_TYPE_TIMER  (mt_timer_get_type ())
+#define MT_TIMER(o)    (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_TIMER, MtTimer))
+#define MT_IS_TIMER(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_TIMER))
 
 typedef GObjectClass           MtTimerClass;
 typedef struct _MtTimer        MtTimer;
 typedef struct _MtTimerPrivate MtTimerPrivate;
 
-struct _MtTimer {
+struct _MtTimer
+{
     GObject         parent;
     MtTimerPrivate *priv;
 };
 
-GType     mt_timer_get_type   (void) G_GNUC_CONST;
-MtTimer * mt_timer_new        (void);
-void      mt_timer_start      (MtTimer *timer);
-void      mt_timer_stop       (MtTimer *timer);
-gboolean  mt_timer_is_running (MtTimer *timer);
-gdouble   mt_timer_elapsed    (MtTimer *timer);
-gdouble   mt_timer_get_target (MtTimer *timer);
-void      mt_timer_set_target (MtTimer *timer,
-			       gdouble  time);
+GType        mt_timer_get_type        (void) G_GNUC_CONST;
+
+MtTimer *    mt_timer_new             (void);
+
+void         mt_timer_start           (MtTimer *timer);
+void         mt_timer_stop            (MtTimer *timer);
+gboolean     mt_timer_is_running      (MtTimer *timer);
+
+gdouble      mt_timer_elapsed         (MtTimer *timer);
+gdouble      mt_timer_get_target      (MtTimer *timer);
+void         mt_timer_set_target      (MtTimer *timer,
+                                       gdouble  target);
 
 G_END_DECLS
 

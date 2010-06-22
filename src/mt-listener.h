@@ -57,6 +57,7 @@ struct _MtEvent
 
 GType              mt_event_get_type          (void) G_GNUC_CONST;
 GType              mt_listener_get_type       (void) G_GNUC_CONST;
+
 MtListener *       mt_listener_get_default    (void);
 
 G_END_DECLS

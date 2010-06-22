@@ -30,8 +30,8 @@ G_BEGIN_DECLS
 #define MT_SERVICE(o)    (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_SERVICE, MtService))
 #define MT_IS_SERVICE(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_SERVICE))
 
-typedef struct _MtService        MtService;
 typedef GObjectClass             MtServiceClass;
+typedef struct _MtService        MtService;
 typedef struct _MtServicePrivate MtServicePrivate;
 
 struct _MtService

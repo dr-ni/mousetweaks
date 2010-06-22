@@ -1,5 +1,5 @@
 /*
- * Copyright © 2008-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2008-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -24,38 +24,38 @@
 
 G_BEGIN_DECLS
 
-#define MT_TYPE_CURSOR         (mt_cursor_get_type ())
-#define MT_CURSOR(o)           (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_CURSOR, MtCursor))
-#define MT_CURSOR_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST ((k), MT_TYPE_CURSOR, MtCursorClass))
-#define MT_IS_CURSOR(o)        (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_CURSOR))
-#define MT_IS_CURSOR_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE ((k), MT_TYPE_CURSOR))
-#define MT_CURSOR_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS ((o), MT_TYPE_CURSOR, MtCursorClass))
+#define MT_TYPE_CURSOR  (mt_cursor_get_type ())
+#define MT_CURSOR(o)    (G_TYPE_CHECK_INSTANCE_CAST ((o), MT_TYPE_CURSOR, MtCursor))
+#define MT_IS_CURSOR(o) (G_TYPE_CHECK_INSTANCE_TYPE ((o), MT_TYPE_CURSOR))
 
 typedef GObjectClass            MtCursorClass;
 typedef struct _MtCursor        MtCursor;
 typedef struct _MtCursorPrivate MtCursorPrivate;
 
-struct _MtCursor {
+struct _MtCursor
+{
     GObject          parent;
     MtCursorPrivate *priv;
 };
 
 GType          mt_cursor_get_type       (void) G_GNUC_CONST;
-MtCursor *     mt_cursor_new		(const gchar *name,
-					 guchar      *image,
-					 gushort      width,
-					 gushort      height,
-					 gushort      xhot,
-					 gushort      yhot);
+
+MtCursor *     mt_cursor_new            (const gchar *name,
+                                         guchar      *image,
+                                         gushort      width,
+                                         gushort      height,
+                                         gushort      xhot,
+                                         gushort      yhot);
+
 const gchar *  mt_cursor_get_name       (MtCursor    *cursor);
 const guchar * mt_cursor_get_image      (MtCursor    *cursor);
 guchar *       mt_cursor_get_image_copy (MtCursor    *cursor);
 void           mt_cursor_get_hotspot    (MtCursor    *cursor,
-					 gushort     *xhot,
-					 gushort     *yhot);
+                                         gushort     *xhot,
+                                         gushort     *yhot);
 void           mt_cursor_get_dimension  (MtCursor    *cursor,
-					 gushort     *width,
-					 gushort     *height);
+                                         gushort     *width,
+                                         gushort     *height);
 
 G_END_DECLS
 

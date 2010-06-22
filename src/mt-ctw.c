@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -26,7 +26,8 @@
 
 #define WID(n) (GTK_WIDGET (gtk_builder_get_object (mt->ui, n)))
 
-enum {
+enum
+{
     BUTTON_STYLE_TEXT = 0,
     BUTTON_STYLE_ICON,
     BUTTON_STYLE_BOTH
@@ -52,16 +53,19 @@ mt_ctw_update_visibility (MtData *mt)
 
     ctw = mt_ctw_get_window (mt);
 
-    if (mt->dwell_enabled && mt->dwell_show_ctw) {
-	if (mt->n_screens > 1) {
-	    gdk_display_get_pointer (gdk_display_get_default (),
-				     &screen, NULL, NULL, NULL);
-	    gtk_window_set_screen (GTK_WINDOW (ctw), screen);
-	}
-	gtk_widget_show (ctw);
+    if (mt->dwell_enabled && mt->dwell_show_ctw)
+    {
+        if (mt->n_screens > 1)
+        {
+            gdk_display_get_pointer (gdk_display_get_default (),
+                                     &screen, NULL, NULL, NULL);
+            gtk_window_set_screen (GTK_WINDOW (ctw), screen);
+        }
+        gtk_widget_show (ctw);
     }
-    else {
-	gtk_widget_hide (ctw);
+    else
+    {
+        gtk_widget_hide (ctw);
     }
 }
 
@@ -82,31 +86,33 @@ mt_ctw_update_style (MtData *mt, gint style)
     const gchar *img[] = { "single_i", "double_i", "drag_i", "right_i" };
     gint i;
 
-    for (i = 0; i < N_CLICK_TYPES; i++) {
-	label = WID (l[i]);
-	icon = WID (img[i]);
+    for (i = 0; i < N_CLICK_TYPES; i++)
+    {
+        label = WID (l[i]);
+        icon = WID (img[i]);
 
-	switch (style) {
-	case BUTTON_STYLE_BOTH:
-	    g_object_set (icon, "yalign", 1.0, NULL);
-	    gtk_widget_show (icon);
-	    g_object_set (label, "yalign", 0.0, NULL);
-	    gtk_widget_show (label);
-	    break;
-	case BUTTON_STYLE_TEXT:
-	    gtk_widget_hide (icon);
-	    g_object_set (icon, "yalign", 0.5, NULL);
-	    gtk_widget_show (label);
-	    g_object_set (label, "yalign", 0.5, NULL);
-	    break;
-	case BUTTON_STYLE_ICON:
-	    gtk_widget_show (icon);
-	    g_object_set (icon, "yalign", 0.5, NULL);
-	    gtk_widget_hide (label);
-	    g_object_set (label, "yalign", 0.5, NULL);
-	default:
-	    break;
-	}
+        switch (style)
+        {
+            case BUTTON_STYLE_BOTH:
+                g_object_set (icon, "yalign", 1.0, NULL);
+                gtk_widget_show (icon);
+                g_object_set (label, "yalign", 0.0, NULL);
+                gtk_widget_show (label);
+                break;
+            case BUTTON_STYLE_TEXT:
+                gtk_widget_hide (icon);
+                g_object_set (icon, "yalign", 0.5, NULL);
+                gtk_widget_show (label);
+                g_object_set (label, "yalign", 0.5, NULL);
+                break;
+            case BUTTON_STYLE_ICON:
+                gtk_widget_show (icon);
+                g_object_set (icon, "yalign", 0.5, NULL);
+                gtk_widget_hide (label);
+                g_object_set (label, "yalign", 0.5, NULL);
+            default:
+                break;
+        }
     }
 }
 
@@ -115,11 +121,12 @@ ctw_button_cb (GtkToggleButton *button, gpointer data)
 {
     MtData *mt = data;
 
-    if (gtk_toggle_button_get_active (button)) {
-	GSList *group;
+    if (gtk_toggle_button_get_active (button))
+    {
+        GSList *group;
 
-	group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (button));
-    mt_service_set_click_type (mt->service, g_slist_index (group, button));
+        group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (button));
+        mt_service_set_click_type (mt->service, g_slist_index (group, button));
     }
 }
 
@@ -128,12 +135,12 @@ ctw_context_menu (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 {
     MtData *mt = data;
 
-    if (bev->button == 3) {
-	gtk_menu_popup (GTK_MENU (WID ("popup")),
-			0, 0, 0, 0, bev->button, bev->time);
-	return TRUE;
+    if (bev->button == 3)
+    {
+        gtk_menu_popup (GTK_MENU (WID ("popup")),
+                        0, 0, 0, 0, bev->button, bev->time);
+        return TRUE;
     }
-
     return FALSE;
 }
 
@@ -145,7 +152,7 @@ ctw_menu_toggled (GtkCheckMenuItem *item, gpointer data)
     gint index;
 
     if (!gtk_check_menu_item_get_active (item))
-	return;
+        return;
 
     group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (item));
     index = g_slist_index (group, item);
@@ -180,14 +187,15 @@ mt_ctw_init (MtData *mt, gint x, gint y)
 
     mt->ui = gtk_builder_new ();
     gtk_builder_add_from_file (mt->ui, DATADIR "/mousetweaks.ui", &error);
-    if (error) {
-	g_print ("%s\n", error->message);
-	g_error_free (error);
+    if (error)
+    {
+        g_print ("%s\n", error->message);
+        g_error_free (error);
 
-	g_object_unref (mt->ui);
-	mt->ui = NULL;
+        g_object_unref (mt->ui);
+        mt->ui = NULL;
 
-	return FALSE;
+        return FALSE;
     }
 
     ctw = mt_ctw_get_window (mt);
@@ -195,21 +203,22 @@ mt_ctw_init (MtData *mt, gint x, gint y)
     gtk_window_set_keep_above (GTK_WINDOW (ctw), TRUE);
     g_signal_connect (ctw, "delete-event", G_CALLBACK (ctw_delete_cb), mt);
 
-    for (i = 0; i < N_CLICK_TYPES; i++) {
-	w = WID (b[i]);
-	gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (w), FALSE);
-	g_signal_connect (w, "toggled", G_CALLBACK (ctw_button_cb), mt);
-	g_signal_connect (w, "button-press-event",
-			  G_CALLBACK (ctw_context_menu), mt);
+    for (i = 0; i < N_CLICK_TYPES; i++)
+    {
+        w = WID (b[i]);
+        gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (w), FALSE);
+        g_signal_connect (w, "toggled", G_CALLBACK (ctw_button_cb), mt);
+        g_signal_connect (w, "button-press-event",
+                          G_CALLBACK (ctw_context_menu), mt);
     }
 
     g_signal_connect (WID ("text"), "toggled", 
-		      G_CALLBACK (ctw_menu_toggled), mt);
+                      G_CALLBACK (ctw_menu_toggled), mt);
     g_signal_connect (WID ("icon"), "toggled", 
-		      G_CALLBACK (ctw_menu_toggled), mt);
+                      G_CALLBACK (ctw_menu_toggled), mt);
     w = WID ("both");
     g_signal_connect (w, "toggled", 
-		      G_CALLBACK (ctw_menu_toggled), mt);
+                      G_CALLBACK (ctw_menu_toggled), mt);
     group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (w));
     data = g_slist_nth_data (group, mt->style);
     gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (data), TRUE);
@@ -220,7 +229,7 @@ mt_ctw_init (MtData *mt, gint x, gint y)
     mt_ctw_update_visibility (mt);
 
     if (x != -1 && y != -1)
-	gtk_window_move (GTK_WINDOW (ctw), x, y);
+        gtk_window_move (GTK_WINDOW (ctw), x, y);
 
     return TRUE;
 }

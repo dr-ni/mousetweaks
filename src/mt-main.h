@@ -29,7 +29,8 @@
 G_BEGIN_DECLS
 
 typedef struct _MtData MtData;
-struct _MtData {
+struct _MtData
+{
     GConfClient *client;
     GtkBuilder  *ui;
     MtService   *service;

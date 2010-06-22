@@ -1,5 +1,5 @@
 /*
- * Copyright © 2008-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2008-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -21,33 +21,24 @@
 
 #include "mt-cursor.h"
 
-struct _MtCursorPrivate {
-    gchar  *name;
-    guchar *image;
-    gushort width;
-    gushort height;
-    gushort xhot;
-    gushort yhot;
+struct _MtCursorPrivate
+{
+    gchar    *name;
+    guchar   *image;
+    gushort   width;
+    gushort   height;
+    gushort   xhot;
+    gushort   yhot;
 };
 
 G_DEFINE_TYPE (MtCursor, mt_cursor, G_TYPE_OBJECT)
-
-static void mt_cursor_finalize (GObject *object);
-
-static void
-mt_cursor_class_init (MtCursorClass *klass)
-{
-    G_OBJECT_CLASS (klass)->finalize = mt_cursor_finalize;
-
-    g_type_class_add_private (klass, sizeof (MtCursorPrivate));
-}
 
 static void
 mt_cursor_init (MtCursor *cursor)
 {
     cursor->priv = G_TYPE_INSTANCE_GET_PRIVATE (cursor,
-					        MT_TYPE_CURSOR,
-					        MtCursorPrivate);
+                                                MT_TYPE_CURSOR,
+                                                MtCursorPrivate);
 }
 
 static void
@@ -61,13 +52,21 @@ mt_cursor_finalize (GObject *object)
     G_OBJECT_CLASS (mt_cursor_parent_class)->finalize (object);
 }
 
+static void
+mt_cursor_class_init (MtCursorClass *klass)
+{
+    G_OBJECT_CLASS (klass)->finalize = mt_cursor_finalize;
+
+    g_type_class_add_private (klass, sizeof (MtCursorPrivate));
+}
+
 MtCursor *
 mt_cursor_new (const gchar *name,
-	       guchar      *image,
-	       gushort      width,
-	       gushort      height,
-	       gushort      xhot,
-	       gushort      yhot)
+               guchar      *image,
+               gushort      width,
+               gushort      height,
+               gushort      xhot,
+               gushort      yhot)
 {
     MtCursor *cursor;
     MtCursorPrivate *priv;
@@ -78,7 +77,7 @@ mt_cursor_new (const gchar *name,
     g_return_val_if_fail (xhot <= width && yhot <= height, NULL);
 
     if (*name == 0)
-	return NULL;
+        return NULL;
 
     cursor = g_object_new (MT_TYPE_CURSOR, NULL);
     priv = cursor->priv;
@@ -122,26 +121,26 @@ mt_cursor_get_image_copy (MtCursor *cursor)
 
 void
 mt_cursor_get_hotspot (MtCursor *cursor,
-		       gushort  *xhot,
-		       gushort  *yhot)
+                       gushort  *xhot,
+                       gushort  *yhot)
 {
     g_return_if_fail (MT_IS_CURSOR (cursor));
 
     if (xhot)
-	*xhot = cursor->priv->xhot;
+        *xhot = cursor->priv->xhot;
     if (yhot)
-	*yhot = cursor->priv->yhot;
+        *yhot = cursor->priv->yhot;
 }
 
 void
 mt_cursor_get_dimension (MtCursor *cursor,
-			 gushort  *width,
-			 gushort  *height)
+                         gushort  *width,
+                         gushort  *height)
 {
     g_return_if_fail (MT_IS_CURSOR (cursor));
 
     if (width)
-	*width = cursor->priv->width;
+        *width = cursor->priv->width;
     if (height)
-	*height = cursor->priv->height;
+        *height = cursor->priv->height;
 }

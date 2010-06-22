@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -25,15 +25,15 @@
 G_BEGIN_DECLS
 
 gboolean    mt_ctw_init               (MtData *mt,
-				       gint    x,
-				       gint    y);
+                                       gint    x,
+                                       gint    y);
 GtkWidget * mt_ctw_get_window         (MtData *mt);
 void        mt_ctw_set_clicktype      (MtData *mt,
-				       guint   ct);
+                                       guint   ct);
 void        mt_ctw_update_sensitivity (MtData *mt);
 void        mt_ctw_update_visibility  (MtData *mt);
 void        mt_ctw_update_style       (MtData *mt,
-				       gint    style);
+                                       gint    style);
 
 G_END_DECLS
 

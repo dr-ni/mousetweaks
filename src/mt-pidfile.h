@@ -1,5 +1,5 @@
 /*
- * Copyright © 2007-2009 Gerd Kohlberger <lowfi@chello.at>
+ * Copyright © 2007-2010 Gerd Kohlberger <gerdko gmail com>
  *
  * This file is part of Mousetweaks.
  *
@@ -22,11 +22,10 @@
 
 G_BEGIN_DECLS
 
-int   mt_pidfile_create     (void);
-pid_t mt_pidfile_is_running (void);
-int   mt_pidfile_kill_wait  (int signal,
-			     int sec);
-int   mt_pidfile_remove     (void);
+int       mt_pidfile_create       (void);
+pid_t     mt_pidfile_is_running   (void);
+int       mt_pidfile_kill_wait    (int signal, int sec);
+int       mt_pidfile_remove       (void);
 
 G_END_DECLS
 

@@ -34,6 +34,7 @@
 #include "mt-cursor.h"
 #include "mt-main.h"
 #include "mt-listener.h"
+#include "mt-sig-handler.h"
 
 enum
 {
@@ -606,9 +607,17 @@ cursor_changed (MtCursorManager *manager,
 }
 
 static void
-signal_handler (int sig)
+signal_handler (int signal_id)
 {
     gtk_main_quit ();
+}
+
+static void
+mt_main_sig_handler (MtSigHandler *sigh,
+                     gint          signal_id,
+                     gpointer      data)
+{
+    signal_handler (signal_id);
 }
 
 static void
@@ -853,6 +862,7 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     MtData *mt;
     MtCursorManager *manager;
     MtListener *listener;
+    MtSigHandler *sigh;
 
     if (mt_pidfile_create () < 0)
     {
@@ -860,12 +870,28 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
         return;
     }
 
-    signal (SIGINT, signal_handler);
-    signal (SIGTERM, signal_handler);
-    signal (SIGQUIT, signal_handler);
-    signal (SIGHUP, signal_handler);
-
     gtk_init (&argc, &argv);
+
+    sigh = mt_sig_handler_get_default ();
+    if (mt_sig_handler_setup_pipe (sigh))
+    {
+        mt_sig_handler_catch (sigh, SIGINT);
+        mt_sig_handler_catch (sigh, SIGTERM);
+        mt_sig_handler_catch (sigh, SIGQUIT);
+        mt_sig_handler_catch (sigh, SIGHUP);
+
+        g_signal_connect (sigh, "signal",
+                          G_CALLBACK (mt_main_sig_handler), NULL);
+    }
+    else
+    {
+        g_warning ("Couldn't create pipe for signal handling. Using fallback.");
+
+        signal (SIGINT, signal_handler);
+        signal (SIGTERM, signal_handler);
+        signal (SIGQUIT, signal_handler);
+        signal (SIGHUP, signal_handler);
+    }
 
     mt = mt_data_init ();
     if (!mt)
@@ -923,6 +949,7 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     mt_cursor_manager_restore_all (manager);
     g_object_unref (manager);
     g_object_unref (listener);
+    g_object_unref (sigh);
 
 CLEANUP:
     mt_data_free (mt);

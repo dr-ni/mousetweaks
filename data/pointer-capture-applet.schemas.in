@@ -5,7 +5,7 @@
         <key>/schemas/apps/pointer-capture/size</key>
         <owner>pointer-capture</owner>
         <type>int</type>
-        <default>100</default>
+        <default>70</default>
         <locale name="C">
           <short>Size of capture area</short>
           <long>Width of the capture area in pixels.</long>

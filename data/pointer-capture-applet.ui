@@ -31,10 +31,10 @@
     <property name="icon_name">input-mouse</property>
     <property name="type_hint">dialog</property>
     <property name="has_separator">False</property>
-    <property name="copyright">Copyright 2007-2008 &#xA9; Gerd Kohlberger</property>
-    <property name="comments" translatable="yes">Area to freeze the mouse pointer on the panel.
+    <property name="copyright">Copyright 2007-2010 &#xA9; Gerd Kohlberger</property>
+    <property name="comments" translatable="yes">Area to lock the pointer on the panel.
 Part of Mousetweaks</property>
-    <property name="authors">Gerd Kohlberger &lt;lowfi@chello.at&gt;</property>
+    <property name="authors">Gerd Kohlberger &lt;gerdko@gmail.com&gt;</property>
     <property name="documenters">Francesco Fumanti &lt;francesco.fumanti@gmx.net&gt;</property>
     <property name="translator_credits">GNOME Translation Team</property>
     <property name="logo_icon_name">input-mouse</property>
@@ -61,12 +61,12 @@ Part of Mousetweaks</property>
       </object>
     </child>
   </object>
-  <object class="GtkWindow" id="capture_preferences">
+  <object class="GtkWindow" id="preferences">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
     <property name="border_width">12</property>
     <property name="title" translatable="yes">Pointer Capture Preferences</property>
     <property name="resizable">False</property>
-    <property name="icon_name">gnome-dev-mouse-optical</property>
+    <property name="icon_name">input-mouse</property>
     <property name="type_hint">dialog</property>
     <child>
       <object class="GtkVBox" id="vbox2">
@@ -228,7 +228,7 @@ Part of Mousetweaks</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
                     <property name="label" translatable="yes">Capture Pointer</property>
                     <attributes>
-                        <attribute name="weight" value="bold"/>
+                      <attribute name="weight" value="bold"/>
                     </attributes>
                   </object>
                 </child>
@@ -387,7 +387,7 @@ Part of Mousetweaks</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
                     <property name="label" translatable="yes">Release Pointer</property>
                     <attributes>
-                        <attribute name="weight" value="bold"/>
+                      <attribute name="weight" value="bold"/>
                     </attributes>
                   </object>
                 </child>
@@ -413,7 +413,7 @@ Part of Mousetweaks</property>
                       <object class="GtkHBox" id="hbox5">
                         <property name="visible">True</property>
                         <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                        <property name="spacing">24</property>
+                        <property name="spacing">12</property>
                         <child>
                           <object class="GtkLabel" id="label3">
                             <property name="visible">True</property>
@@ -473,9 +473,9 @@ Part of Mousetweaks</property>
                   <object class="GtkLabel" id="label1">
                     <property name="visible">True</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                    <property name="label" translatable="yes">Size of Capture Area</property>
+                    <property name="label" translatable="yes">Size of the Capture Area</property>
                     <attributes>
-                        <attribute name="weight" value="bold"/>
+                      <attribute name="weight" value="bold"/>
                     </attributes>
                   </object>
                 </child>
@@ -506,6 +506,8 @@ Part of Mousetweaks</property>
                 <property name="use_stock">True</property>
               </object>
               <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
                 <property name="position">0</property>
               </packing>
             </child>
@@ -514,11 +516,14 @@ Part of Mousetweaks</property>
                 <property name="label">gtk-close</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
+                <property name="has_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
                 <property name="use_stock">True</property>
               </object>
               <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
                 <property name="position">1</property>
               </packing>
             </child>
@@ -530,5 +535,11 @@ Part of Mousetweaks</property>
         </child>
       </object>
     </child>
+  </object>
+  <object class="GtkSizeGroup" id="sizegroup">
+    <widgets>
+      <widget name="label10"/>
+      <widget name="label3"/>
+    </widgets>
   </object>
 </interface>

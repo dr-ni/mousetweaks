@@ -1,3 +1,25 @@
+Version 2.31.4
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Migrate daemon and dwell click to GDBus
+    * Remove dbus-glib dependency
+    * Unify code style
+    * Make singleton classes reusable
+    * Integrate unix signals into the main loop
+    * Rework pointer-capture applet
+    * Update man pages
+    * Update manual about modified cli commands
+    * Update manual about drop of AT-SPI dependency
+
+New and updated translations:
+
+    [es] Jorge González
+    [gl] Fran Diéguez
+    [he] Yaron Shahrabani
+    [sl] Matej Urbančič
+
 Version 2.31.3
 ---------------
 

@@ -12,15 +12,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks-master-po-gl-70471\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-20 01:11+0200\n"
-"PO-Revision-Date: 2010-06-20 01:13+0200\n"
+"POT-Creation-Date: 2010-06-29 23:57+0200\n"
+"PO-Revision-Date: 2010-06-29 23:57+0200\n"
 "Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
-"Language-Team: Galician <gnome@g11.net>\n"
+"Language-Team: Galician <gnome@g11n.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: gl\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\\\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: ../data/dwell-click-applet.ui.h:1
@@ -44,7 +44,7 @@ msgid "Drag Click"
 msgstr "Clic de arrastre"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:737
+#: ../src/mt-main.c:807
 msgid "Enable dwell click"
 msgstr "Activar o clic de espera"
 
@@ -62,11 +62,11 @@ msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
-"Área na que conxelar o punteiro do rato no panel.\n"
-"Parte do MouseTweaks"
+"Área na que bloquear ao punteiro do rato no panel.\n"
+"Parte do Axustes finos do rato"
 
 #: ../data/pointer-capture-applet.ui.h:4
 msgid "C_trl"
@@ -113,7 +113,7 @@ msgid "Sh_ift"
 msgstr "Ma_iús"
 
 #: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
+msgid "Size of the Capture Area"
 msgstr "Tamaño da área de captura"
 
 #: ../data/pointer-capture-applet.ui.h:16
@@ -144,7 +144,7 @@ msgstr "Mostrar só as iconas"
 msgid "Show Text only"
 msgstr "Mostrar só o texto"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:566
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "Clic automático"
 
@@ -157,7 +157,7 @@ msgid "Area to lock the pointer"
 msgstr "Área na que bloquear o punteiro"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:565
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "Captura do punteiro"
 
@@ -240,7 +240,7 @@ msgstr "Tempo de clic de espera"
 msgid "Enable secondary click"
 msgstr "Activar o clic secundario"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:739
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
 msgstr "Activar o clic secundario simulado"
 
@@ -406,83 +406,81 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Largura da área de captura en píxeles."
 
-#: ../src/mt-main.c:741
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "O tempo de espera antes dun clic de espera"
 
-#: ../src/mt-main.c:743
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
 msgstr "O tempo de espera antes de simular un clic secundario"
 
-#: ../src/mt-main.c:745
+#: ../src/mt-main.c:815
 msgid "Set the active dwell mode"
 msgstr "Estabelecer modo de espera como activo"
 
-#: ../src/mt-main.c:747
+#: ../src/mt-main.c:817
 msgid "Show a click-type window"
 msgstr "Mostrar a xanela de tipo de clic"
 
-#: ../src/mt-main.c:749
+#: ../src/mt-main.c:819
 msgid "Click-type window X position"
 msgstr "Posición x da xanela de tipo clic"
 
-#: ../src/mt-main.c:751
+#: ../src/mt-main.c:821
 msgid "Click-type window Y position"
 msgstr "Posición x da xanela de tipo clic"
 
-#: ../src/mt-main.c:753
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "Ignorar os pequenos movementos do punteiro"
 
-#: ../src/mt-main.c:755
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "Pechar o Mousetweaks"
 
-#: ../src/mt-main.c:757
+#: ../src/mt-main.c:827
 msgid "Disable cursor animations"
 msgstr "Desactivar a animación dos cursores"
 
-#: ../src/mt-main.c:759
+#: ../src/mt-main.c:829
 msgid "Start mousetweaks as a daemon"
 msgstr "Iniciar mousetweaks como daemon do sistema"
 
-#: ../src/mt-main.c:761
+#: ../src/mt-main.c:831
 msgid "Start mousetweaks in login mode"
 msgstr "Iniciar mousetweaks no modo de inicio de sesión"
 
 #. parse
-#: ../src/mt-main.c:781
+#: ../src/mt-main.c:851
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Daemon do sistema de Mousetweaks do GNOME"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "Produciuse un erro ao mostrar a axuda"
 
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "Activar e saír da sesión"
 
-#: ../src/pointer-capture-applet.c:213
-msgid "Locked"
-msgstr "Bloqueado"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:216
-msgid "L"
-msgstr "B"
-
-#: ../src/pointer-capture-applet.c:642
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "Capturar área"
 
-#: ../src/pointer-capture-applet.c:643
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "Bloquear temporalmente o punteiro do rato"
 
-#: ../src/dwell-click-applet.c:339
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "Bloqueado"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Produciuse un fallo ao iniciar as preferencias do rato"
+
+#~ msgid "L"
+#~ msgstr "B"
 
 #~ msgid "Assistive Technology Support is not Enabled"
 #~ msgstr "O soporte de tecnoloxías adaptadas non está activado"

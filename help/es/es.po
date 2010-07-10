@@ -1,12 +1,12 @@
-# translation of mousetweaks.help.HEAD.po to Español
+# translation of mousetweaks.help.master.po to Español
 # Jorge Gonzalez <jorge.gonzalez@artica.es>, 2008.
 # Jorge González <jorgegonz@svn.gnome.org>, 200, 2009, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks.help.HEAD\n"
-"POT-Creation-Date: 2010-06-20 18:39+0000\n"
-"PO-Revision-Date: 2010-06-28 21:03+0200\n"
+"Project-Id-Version: mousetweaks.help.master\n"
+"POT-Creation-Date: 2010-06-28 19:20+0000\n"
+"PO-Revision-Date: 2010-07-10 11:40+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -167,7 +167,6 @@ msgstr ""
 "de accesibilidad para el ratón en el Escritorio GNOME."
 
 #: C/mousetweaks.xml:21(year)
-#| msgid "2007 - 2009"
 msgid "2007 - 2010"
 msgstr "2007 - 2010"
 
@@ -679,7 +678,6 @@ msgstr ""
 "application> y escriba lo siguiente:"
 
 #: C/mousetweaks.xml:338(parameter)
-#| msgid "--enable-dwell --show-ctw"
 msgid "--dwell --show-ctw"
 msgstr "--dwell --show-ctw"
 
@@ -728,7 +726,6 @@ msgstr ""
 "los menús de GNOME"
 
 #: C/mousetweaks.xml:376(para)
-#, fuzzy
 #| msgid ""
 #| "For instructions about how to install the Dwell Click applet on the GNOME "
 #| "panel, please have a look at <placeholder-1/> where you can see how it is "
@@ -742,9 +739,10 @@ msgid ""
 "panel applet is similar."
 msgstr ""
 "Para obtener información acerca de cómo instalar la miniaplicación Pulsación "
-"al posarse en el panel de GNOME, consulte <placeholder-1/> donde puede ver "
-"cómo se hace para la miniaplicación del panel Captura del puntero. El "
-"procedimiento para la miniaplicación Pulsación al posarse es similar."
+"al posarse en el panel de GNOME, consulte <link linkend=\"mouse-a11y-start-"
+"pointer-capture\">Inicio de la función de captura del puntero</link> donde "
+"puede ver cómo se hace para la miniaplicación del panel Captura del puntero. "
+"El procedimiento para la miniaplicación Pulsación al posarse es similar."
 
 #: C/mousetweaks.xml:387(title)
 msgid "Starting The Pointer Capture Function"
@@ -1026,6 +1024,13 @@ msgid ""
 "<link linkend=\"mouse-a11y-ssc-pecularities\">Differences To The Normal "
 "Secondary Click</link> for more details."
 msgstr ""
+"Más aún, el hecho de que la pulsación secundaria simulada está "
+"inmediatamente precedida por una pulsación izquierda hace que se comporte de "
+"una forma diferente a la esperada cuando la pulsación izquierda precedente "
+"tiene una incidencia en el objeto que está a punto de recibir la pulsación "
+"secundaria simulada. Para obtener más detalles, consulte la sección acerca "
+"de <link linkend=\"mouse-a11y-ssc-pecularities\">Diferencias con la "
+"pulsación secundaria normal</link>."
 
 #: C/mousetweaks.xml:621(title)
 msgid "The Delay Slider"
@@ -1084,7 +1089,6 @@ msgid "Differences To The Normal Secondary Click"
 msgstr "Diferencias con la pulsación secundaria normal"
 
 #: C/mousetweaks.xml:654(para)
-#, fuzzy
 #| msgid ""
 #| "As the Simulated Secondary Click does not discard the<mousebutton> "
 #| "primary mouse button</mousebutton> press and release, the resulting "
@@ -1126,6 +1130,10 @@ msgid ""
 "referenced page before the simulated secondary click has a chance to open "
 "the contextual menu of the link."
 msgstr ""
+"Al realizar una pulsación secundaria simulada sobre un enlace de una página "
+"web, la pulsación primaria que precede la pulsación secundaria similada abre "
+"la página referenciada antes de la pulsación secundaria simulada haya tenido "
+"tiempo de abirr el menú contextual del enlace."
 
 #: C/mousetweaks.xml:676(para)
 msgid ""
@@ -1136,6 +1144,13 @@ msgid ""
 "what happens as a side effect when opening the contextual menu of a link by "
 "using the simulated secondary click in conjunction with the Ctrl modifier."
 msgstr ""
+"El menú contextual de un enlace en una página web se puede abrir realizando "
+"una pulsación secundaria simulada mientras se mantiene pulsado el "
+"modificador Ctrl. Esto funciona porque la página referenciada se abre en una "
+"solapa nueva cuando el enlace recibe una pulsación primaria junto con una "
+"pulsación del modificador Ctrl; lo que también sucede como efecto secundario "
+"al abrir el menú contextual de un enlace usando la pulsación secundaria "
+"simulada junto con el modificador Ctrl."
 
 #: C/mousetweaks.xml:685(para)
 msgid ""
@@ -1143,6 +1158,10 @@ msgid ""
 "new tab when it opens; otherwise the page with the link disappears as the "
 "new tab becomes visible and the contextual menu does not appear."
 msgstr ""
+"No obstante el navegador tiene que estar configurado para que no cambie "
+"automáticamente a la solapa nueva al abrirse; de otra forma la página con el "
+"enlace desaparece ya que la solapa nueva se hace visible y el menú "
+"contextual no aparece."
 
 #: C/mousetweaks.xml:693(para)
 msgid ""
@@ -1167,7 +1186,6 @@ msgstr ""
 "pulsación secundaria precedida por una pulsación primaria."
 
 #: C/mousetweaks.xml:707(para)
-#, fuzzy
 #| msgid ""
 #| "Looking at it the other way, it is no possible to perform a long "
 #| "motionless <mousebutton>primary mouse button</mousebutton> press, without "
@@ -1182,8 +1200,10 @@ msgid ""
 msgstr ""
 "Mirándolo de otra manera, no es posible realizar una pulsación larga sin "
 "movimiento y mantenida con el <mousebutton>botón primario del ratón</"
-"mousebutton> sin disparar también el botón secundario del ratón. Esto puede "
-"tener consecuencias inesperadas para algunos usuarios. Por ejemplo:"
+"mousebutton> sin disparar también el botón secundario del ratón, a no ser "
+"que el puntero se mueva antes de levantar el <mousebutton>botón primario del "
+"ratón</mousebutton>. Esto puede tener consecuencias inesperadas para algunos "
+"usuarios. Por ejemplo:"
 
 #: C/mousetweaks.xml:716(para)
 msgid ""
@@ -1564,7 +1584,6 @@ msgstr ""
 "una determinada forma."
 
 #: C/mousetweaks.xml:1002(para)
-#, fuzzy
 #| msgid ""
 #| "Have a look at <placeholder-1/> for instructions about how to install the "
 #| "pointer capture applet on the GNOME panel."
@@ -1573,8 +1592,10 @@ msgid ""
 "The Pointer Capture Function</link> for instructions about how to install "
 "the pointer capture applet on the GNOME panel."
 msgstr ""
-"Eche un vistazo a <placeholder-1/> para obtener instrucciones acerca de cómo "
-"instalar la miniaplicación Captura del puntero en el panel de GNOME."
+"Eche un vistazo a <link linkend=\"mouse-a11y-start-pointer-capture\">Inicio "
+"de la función de captura del puntero</link> para obtener instrucciones "
+"acerca de cómo instalar la miniaplicación Captura del puntero en el panel de "
+"GNOME."
 
 #: C/mousetweaks.xml:1025(para)
 msgid "Picture of the pointer capture area when the pointer has been captured"

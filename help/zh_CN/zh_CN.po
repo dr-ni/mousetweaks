@@ -1,19 +1,23 @@
+# Chinese (simplified) translation of mousetweaks help
+# Copyright (C) 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mousetweaks package.
+# TeliuTe <teliute@163.com>, 2010.
+# YunQiang Su <wzssyqa@gmail.com>, 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks-help.gnome-2-26\n"
-"POT-Creation-Date: 2009-11-16 15:00+0000\n"
-"PO-Revision-Date: 2009-03-31 21:28+0600\n"
-"Last-Translator: TeliuTe <teliute@163.com>\n"
-"Language-Team: Chinese (simplified) <translation-team-zh-cn@lists."
-"sourceforge.net>\n"
+"Project-Id-Version: mousetweaks master\n"
+"POT-Creation-Date: 2010-07-13 16:52+0000\n"
+"PO-Revision-Date: 2010-07-19 00:31+0800\n"
+"Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Country: CHINA\n"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:211(None) C/mousetweaks.xml:288(None)
+#: C/mousetweaks.xml:227(None) C/mousetweaks.xml:304(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
 msgstr ""
@@ -21,7 +25,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:228(None) C/mousetweaks.xml:399(None)
+#: C/mousetweaks.xml:244(None) C/mousetweaks.xml:427(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-ssc-checkbox.png'; "
 "md5=3f19228551e955ba0afda595b4bfd9bb"
@@ -31,7 +35,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:305(None) C/mousetweaks.xml:436(None)
+#: C/mousetweaks.xml:321(None) C/mousetweaks.xml:464(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
 "md5=690dde37df60c6953b4c7e9b256c7a43"
@@ -41,18 +45,18 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:340(None) C/mousetweaks.xml:465(None)
-#: C/mousetweaks.xml:760(None)
+#: C/mousetweaks.xml:366(None) C/mousetweaks.xml:493(None)
+#: C/mousetweaks.xml:841(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-"md5=e6eaa0d03499db4e26a56eb1ae57fe8b"
+"md5=8a8c96ae1353f93e286c9fca09c9b8ce"
 msgstr ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-"md5=e6eaa0d03499db4e26a56eb1ae57fe8b"
+"md5=8a8c96ae1353f93e286c9fca09c9b8ce"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:489(None) C/mousetweaks.xml:928(None)
+#: C/mousetweaks.xml:517(None) C/mousetweaks.xml:1011(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; "
 "md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
@@ -62,7 +66,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:537(None)
+#: C/mousetweaks.xml:565(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; "
 "md5=c09db81cacad7d507a28b568d238da79"
@@ -72,7 +76,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:696(None)
+#: C/mousetweaks.xml:777(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; "
 "md5=eff4b5afa3ebc4287f244b72924e1fbf"
@@ -82,7 +86,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:722(None)
+#: C/mousetweaks.xml:803(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; "
 "md5=251686214f1a9b6e6cf4cc22a66b4b23"
@@ -92,7 +96,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:738(None)
+#: C/mousetweaks.xml:819(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; "
 "md5=ede77b0adbc7ac3d1ae1187096c8a51f"
@@ -102,7 +106,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:836(None)
+#: C/mousetweaks.xml:917(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; "
 "md5=e939b50cdd7f6ee7937f9fc311f31e58"
@@ -112,7 +116,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:863(None)
+#: C/mousetweaks.xml:944(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
 "md5=8d87a631347995c6a770bab22af9b65a"
@@ -122,7 +126,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:886(None)
+#: C/mousetweaks.xml:967(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; "
 "md5=da1313e8d5588a82dfb8321fc0b65eaa"
@@ -132,7 +136,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:938(None)
+#: C/mousetweaks.xml:1021(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; "
 "md5=87295c217ba3b41a685bffbcedf92fb6"
@@ -142,7 +146,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:955(None)
+#: C/mousetweaks.xml:1038(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; "
 "md5=a90ff1216071e8c2187be2464cf099ba"
@@ -162,8 +166,8 @@ msgstr ""
 "<application>Mousetweaks</application> 为 GNOME 桌面提供增强的鼠标辅助功能。"
 
 #: C/mousetweaks.xml:21(year)
-msgid "2007 - 2009"
-msgstr "2007 - 2009"
+msgid "2007 - 2010"
+msgstr "2007 - 2010"
 
 #: C/mousetweaks.xml:23(holder)
 msgid "Francesco Fumanti"
@@ -270,68 +274,81 @@ msgid "frfumanti@svn.gnome.org"
 msgstr "frfumanti@svn.gnome.org"
 
 #: C/mousetweaks.xml:42(revnumber)
-#, fuzzy
-msgid "Version 2.28"
-msgstr "版本 2.24"
+msgid "Version 2.30"
+msgstr "版本 2.30"
 
 #: C/mousetweaks.xml:44(date)
-#, fuzzy
-msgid "September 2009"
-msgstr "2007年11月"
+msgid "March 2010"
+msgstr "2010年3月"
 
 #: C/mousetweaks.xml:47(para)
-#, fuzzy
 msgid ""
-"Adapt the manual to the changes done to mousetweaks for GNOME 2.28."
-"<email>Francesco Fumanti &lt;frfumanti@svn.gnome.org&gt;</email>"
+"Adapt the manual to the changes done to mousetweaks for GNOME 2.30. "
+"Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 msgstr ""
-"本手册内容已根据 GNOME 2.24 中 mousetweaks 的改进进行了更新。"
+"本手册内容已根据 GNOME 2.30 中 mousetweaks 的改进进行了更新。"
 "<email>Francesco Fumanti &lt;frfumanti@svn.gnome.org&gt;</email>"
 
 #: C/mousetweaks.xml:54(revnumber)
-msgid "version 2.25.90"
-msgstr "版本 2.25.90"
+msgid "Version 2.28"
+msgstr "版本 2.28"
 
 #: C/mousetweaks.xml:56(date)
-msgid "February 2nd 2009"
-msgstr "2009年2月2日"
+msgid "September 2009"
+msgstr "2009年9月"
 
 #: C/mousetweaks.xml:59(para)
 msgid ""
-"The manual has been edited to match the changes done to mousetweaks for "
-"GNOME 2.26. Moreover, the license of the manual has been raised to GFDL 1.3."
+"Adapt the manual to the changes done to mousetweaks for GNOME 2.28. "
+"Francesco Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
+msgstr ""
+"本手册内容已根据 GNOME 2.28 中 mousetweaks 的改进进行了更新。"
 "<email>Francesco Fumanti &lt;frfumanti@svn.gnome.org&gt;</email>"
+
+#: C/mousetweaks.xml:66(revnumber)
+msgid "version 2.25.90"
+msgstr "版本 2.25.90"
+
+#: C/mousetweaks.xml:68(date)
+msgid "February 2nd 2009"
+msgstr "2009年2月2日"
+
+#: C/mousetweaks.xml:71(para)
+msgid ""
+"The manual has been edited to match the changes done to mousetweaks for "
+"GNOME 2.26. Moreover, the license of the manual has been raised to GFDL 1.3. "
+"Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 msgstr ""
 "本手册根据 GNOME 2.26 中 mousetweaks 的更改进行了修订。此外，本手册的许可协议"
 "升至 GFDL 1.3 版。<email>Francesco Fumanti &lt;frfumanti@svn.gnome.org&gt;</"
 "email>"
 
-#: C/mousetweaks.xml:67(revnumber)
+#: C/mousetweaks.xml:79(revnumber)
 msgid "version 2.24"
 msgstr "版本 2.24"
 
-#: C/mousetweaks.xml:69(date)
+#: C/mousetweaks.xml:81(date)
 msgid "July 2008"
 msgstr "2008年7月"
 
-#: C/mousetweaks.xml:72(para)
+#: C/mousetweaks.xml:84(para)
 msgid ""
 "The contents of the manual have been upgraded to integrate the improvements "
-"done to mousetweaks for GNOME 2.24.<email>Francesco Fumanti &lt;"
-"frfumanti@svn.gnome.org&gt;</email>"
+"done to mousetweaks for GNOME 2.24. Francesco Fumanti <email>frfumanti@svn."
+"gnome.org</email>"
 msgstr ""
 "本手册内容已根据 GNOME 2.24 中 mousetweaks 的改进进行了更新。"
 "<email>Francesco Fumanti &lt;frfumanti@svn.gnome.org&gt;</email>"
 
-#: C/mousetweaks.xml:80(revnumber)
+#: C/mousetweaks.xml:91(revnumber)
 msgid "version 2.21.5"
 msgstr "版本 2.21.5"
 
-#: C/mousetweaks.xml:82(date)
+#: C/mousetweaks.xml:93(date)
 msgid "January 2008"
 msgstr "2008年1月"
 
-#: C/mousetweaks.xml:85(para)
+#: C/mousetweaks.xml:96(para)
 msgid ""
 "The contents of the manual have been adapted to the changes applied to "
 "mousetweaks for its integration into GNOME 2.22. Francesco Fumanti "
@@ -340,50 +357,49 @@ msgstr ""
 "本手册内容已根据 GNOME 2.22 中 mousetweaks 的改进进行了更新。Francesco "
 "Fumanti <email>frfumanti@svn.gnome.org</email>"
 
-#: C/mousetweaks.xml:93(revnumber)
+#: C/mousetweaks.xml:104(revnumber)
 msgid "version 0.2"
 msgstr "版本 0.2"
 
-#: C/mousetweaks.xml:95(date)
+#: C/mousetweaks.xml:106(date)
 msgid "November 2007"
 msgstr "2007年11月"
 
-#: C/mousetweaks.xml:98(para)
+#: C/mousetweaks.xml:109(para)
 msgid ""
 "The contents of the manual have been adapted to the default theme of GNOME, "
 "called Clearlooks. This version is included with the release 0.2.6 of "
 "Mousetweaks. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
 msgstr ""
-"手册内容已经适应 GNOME 默认主题 Clearlooks 主题。这一版包含在 Mousetweaks "
+"手册内容已经调整到 GNOME 默认的 Clearlooks 主题。这一版包含在 Mousetweaks "
 "0.2.6 鼠标增强工具包中。Francesco Fumanti <email>francesco.fumanti@gmx.net</"
 "email> "
 
-#: C/mousetweaks.xml:106(revnumber)
+#: C/mousetweaks.xml:117(revnumber)
 msgid "version 0.1"
 msgstr "版本 0.1"
 
-#: C/mousetweaks.xml:108(date)
+#: C/mousetweaks.xml:119(date)
 msgid "October 2007"
 msgstr "2007年10月"
 
-#: C/mousetweaks.xml:111(para)
+#: C/mousetweaks.xml:122(para)
 msgid ""
 "First draft of the manual. Francesco Fumanti <email>francesco.fumanti@gmx."
 "net</email>"
 msgstr ""
 "手册的第一稿。Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
 
-#: C/mousetweaks.xml:117(releaseinfo)
-#, fuzzy
+#: C/mousetweaks.xml:128(releaseinfo)
 msgid ""
 "This manual describes the accessibility tools provided by mousetweaks and "
 "their graphical user interfaces, which consist of the accessibility tab of "
 "the mouse control panel and two panel applets."
 msgstr ""
-"本手册讲述了由 Mousetweak 鼠标增强工具包提供的辅助工具，以及由鼠标首选项面板"
-"和辅助功能面板组成的图形用户界面。"
+"本手册讲述了由 Mousetweak 提供的鼠标辅助工具，它们由鼠标首选项面板的辅助功能"
+"面板和两个面板小程序组成的图形用户界面。"
 
-#: C/mousetweaks.xml:122(contrib)
+#: C/mousetweaks.xml:133(contrib)
 msgid ""
 "To report a bug or make a suggestion regarding the Mousetweaks application "
 "or this manual, please go to GNOME's Bugzilla."
@@ -391,35 +407,35 @@ msgstr ""
 "要报告一个 Mousetweaks 鼠标增强工具包或本手册的缺陷或提出建议，请访问 "
 "GNOME's Bugzilla。"
 
-#: C/mousetweaks.xml:126(title) C/mousetweaks.xml:1020(title)
+#: C/mousetweaks.xml:137(title) C/mousetweaks.xml:1103(title)
 msgid "Feedback"
 msgstr "反馈"
 
-#: C/mousetweaks.xml:128(para)
+#: C/mousetweaks.xml:139(para)
 msgid ""
 "To report a bug or make a suggestion regarding <application>the mousetweaks "
 "module</application> (i.e.: mouse accessibility), its user interface or its "
 "manual, please use the facilities provided by <ulink type=\"http\" url="
 "\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>."
 msgstr ""
-"要报告关于<application>鼠标增强工具模块</application>(例如: 鼠标辅助功能)、用"
+"要报告关于<application>mousetweaks 模块</application>(例如: 鼠标辅助功能)、用"
 "户界面或使用手册中的缺陷，或者提出建议，请使用 <ulink type=\"http\" url="
 "\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink> 提供的方法。"
 
-#: C/mousetweaks.xml:137(primary)
+#: C/mousetweaks.xml:148(primary)
 msgid "Mousetweaks"
 msgstr "Mousetweaks"
 
-#: C/mousetweaks.xml:141(primary) C/mousetweaks.xml:417(command)
-#: C/mousetweaks.xml:453(command)
+#: C/mousetweaks.xml:152(primary) C/mousetweaks.xml:445(command)
+#: C/mousetweaks.xml:481(command)
 msgid "mousetweaks"
-msgstr "鼠标增强工具"
+msgstr "mousetweaks"
 
-#: C/mousetweaks.xml:145(title)
+#: C/mousetweaks.xml:156(title)
 msgid "Introduction"
 msgstr "介绍"
 
-#: C/mousetweaks.xml:147(para)
+#: C/mousetweaks.xml:158(para)
 msgid ""
 "<application>Mousetweaks</application> provides mouse accessibility "
 "enhancements for the GNOME Desktop. Indeed, it offers the following "
@@ -428,16 +444,15 @@ msgstr ""
 "<application>Mousetweaks</application> 鼠标增强工具，为 GNOME 桌面提供了鼠标"
 "辅助功能。实际上，它提供了下列功能："
 
-#: C/mousetweaks.xml:153(para)
+#: C/mousetweaks.xml:164(para)
 msgid ""
 "Simulated secondary click: it allows the user to perform a secondary click "
 "(menu click) by holding down the primary mouse button while keeping the "
 "pointer motionless."
 msgstr ""
-"模拟次要按钮(右键)点击：允许用户通过按住主要按钮一段时间，就可以执行次要按钮"
-"点击。"
+"模拟右键(次要按钮)点击：允许用户通过按住左键一段时间，就可以执行右键点击。"
 
-#: C/mousetweaks.xml:159(para)
+#: C/mousetweaks.xml:170(para)
 msgid ""
 "Dwell click: it allows the user to perform the various clicks without "
 "pressing any <hardware>hardware button</hardware>."
@@ -445,7 +460,7 @@ msgstr ""
 "悬停点击：允许用户不需要按下任何<hardware>鼠标按钮</hardware>，就可以执行各种"
 "点击操作。"
 
-#: C/mousetweaks.xml:164(para)
+#: C/mousetweaks.xml:175(para)
 msgid ""
 "Pointer capture: it allows the user to lock the pointer in a determined area "
 "of the panel until the user releases it by a predefined keystroke or mouse "
@@ -454,40 +469,46 @@ msgstr ""
 "指针锁定：允许用户把指针锁定在面板的一个区域中，直到用户按下一个预设的按键或"
 "鼠标按钮来释放它。"
 
-#: C/mousetweaks.xml:172(title)
+#: C/mousetweaks.xml:182(para)
+msgid ""
+"Since version 2.31.3, mousetweaks does not depend anymore on the AT-SPI "
+"accessibility framework."
+msgstr "从 2.31.3 版开始，mousetweaks 不再依赖 AT-SPI 辅助功能框架。"
+
+#: C/mousetweaks.xml:188(title)
 msgid "How To Start The Functions"
 msgstr "如何使用这些功能"
 
-#: C/mousetweaks.xml:174(para)
+#: C/mousetweaks.xml:190(para)
 msgid ""
 "The simulated secondary click and the dwell click depend on the mousetweaks "
 "process; however the pointer capture applet depends on the GNOME panel. "
 "Consequently, also the methods to start them vary."
 msgstr ""
-"模拟次要按钮(右键)点击和悬停点击依赖于 mousetweaks 进程；而指针锁定小程序依赖"
+"模拟右键(次要按钮)点击和悬停点击依赖于 mousetweaks 进程；而指针锁定小程序依赖"
 "于 GNOME 面板。所以，使用这些功能的方法也不尽相同。"
 
-#: C/mousetweaks.xml:179(title)
+#: C/mousetweaks.xml:195(title)
 msgid "Starting The Simulated Secondary Click Function"
-msgstr "启动模拟次要按钮(右键)点击功能"
+msgstr "启动模拟右键(次要按钮)点击功能"
 
-#: C/mousetweaks.xml:181(para)
+#: C/mousetweaks.xml:197(para)
 msgid "You can start the Simulated Secondary Click in two ways:"
-msgstr "你可以用两种方法启动次要按钮(右键)点击功能："
+msgstr "你可以用两种方法启动右键(次要按钮)点击功能："
 
-#: C/mousetweaks.xml:185(para)
+#: C/mousetweaks.xml:201(para)
 msgid "from the graphical user interface"
 msgstr "从图形界面启动"
 
-#: C/mousetweaks.xml:189(para) C/mousetweaks.xml:261(para)
+#: C/mousetweaks.xml:205(para) C/mousetweaks.xml:277(para)
 msgid "from the command line"
 msgstr "从命令行启动"
 
-#: C/mousetweaks.xml:194(title)
+#: C/mousetweaks.xml:210(title)
 msgid "Start From The Graphical User Interface"
 msgstr "从图形界面启动"
 
-#: C/mousetweaks.xml:196(para)
+#: C/mousetweaks.xml:212(para)
 msgid ""
 "The graphical user interface to start the simulated secondary click is "
 "located in the Accessibility tab of the Mouse control panel. To open it, "
@@ -497,70 +518,70 @@ msgid ""
 "Mouse in the Control Center, the Mouse control panel will open and after "
 "clicking on the Accessibility tab, you will see the following settings:"
 msgstr ""
-"要从图形界面中启动模拟次要按钮点击功能，需要使用鼠标首选项面板的辅助工具。要"
-"打开它，请点击菜单<menuchoice><guimenu>系统</guimenu><guisubmenu>首选项</"
+"要从图形界面中启动模拟右键点击功能，需要使用鼠标首选项面板的辅助工具。要打开"
+"它，请点击菜单<menuchoice><guimenu>系统</guimenu><guisubmenu>首选项</"
 "guisubmenu><guimenuitem>控制中心</guimenuitem></menuchoice>，打开控制中心面"
 "板。在里面找到鼠标首选项打开，再打开辅助工具标签，可以看到下面的选项："
 
-#: C/mousetweaks.xml:215(para) C/mousetweaks.xml:292(para)
+#: C/mousetweaks.xml:231(para) C/mousetweaks.xml:308(para)
 msgid "Picture of the Mouse control panel"
 msgstr "鼠标首选项面板图示"
 
-#: C/mousetweaks.xml:219(para)
+#: C/mousetweaks.xml:235(para)
 msgid ""
 "To start the simulated secondary click function, put a checkmark into the "
 "checkbox that says:"
-msgstr "要启用模拟次要按钮(右键)点击功能，打勾选中这个复选框："
+msgstr "要启用模拟右键(次要按钮)点击功能，打勾选中这个复选框："
 
-#: C/mousetweaks.xml:222(quote)
+#: C/mousetweaks.xml:238(quote)
 msgid "Trigger secondary click by holding down the primary button"
-msgstr "按住主要按钮(左键)来触发次要按钮(右键)的点击"
+msgstr "按住左键(主要按钮)来触发右键(次要按钮)的点击"
 
-#: C/mousetweaks.xml:232(para)
+#: C/mousetweaks.xml:248(para)
 msgid "Picture of the checkbox to start the simulated secondary click"
-msgstr "启用模拟次要按钮点击复选框的图示"
+msgstr "启用模拟右键(次要按钮)点击复选框的图示"
 
-#: C/mousetweaks.xml:239(title) C/mousetweaks.xml:316(title)
+#: C/mousetweaks.xml:255(title) C/mousetweaks.xml:332(title)
 msgid "Start From The Command Line"
 msgstr "从命令行启动"
 
-#: C/mousetweaks.xml:241(para)
+#: C/mousetweaks.xml:257(para)
 msgid ""
 "To start the simulated secondary click from the command line, open the "
 "<application>Terminal</application> and type the following:"
 msgstr ""
-"要从命令行启动模拟次要按钮点击，打开<application>终端</application>并输入下面"
-"的命令："
+"要从命令行启动模拟右键点击，打开<application>终端</application>并输入下面的命"
+"令："
 
-#: C/mousetweaks.xml:246(parameter)
-msgid "--enable-secondary"
-msgstr "--enable-secondary"
+#: C/mousetweaks.xml:262(parameter)
+msgid "--ssc"
+msgstr "--ssc"
 
-#: C/mousetweaks.xml:245(command) C/mousetweaks.xml:322(command)
+#: C/mousetweaks.xml:261(command) C/mousetweaks.xml:338(command)
 msgid "mousetweaks <placeholder-1/>"
 msgstr "mousetweaks <placeholder-1/>"
 
-#: C/mousetweaks.xml:251(title)
+#: C/mousetweaks.xml:267(title)
 msgid "Starting The Dwell Click Function"
 msgstr "启动悬停点击功能"
 
-#: C/mousetweaks.xml:253(para)
+#: C/mousetweaks.xml:269(para)
 msgid "You can start the dwell click function in three ways:"
 msgstr "你可以有三种方法来启动悬停点击功能："
 
-#: C/mousetweaks.xml:257(para)
+#: C/mousetweaks.xml:273(para)
 msgid "from the Accessibility tab of the Mouse control panel"
-msgstr "从鼠标首选项面板的辅助工具选项卡中启用"
+msgstr "从鼠标首选项面板的辅助工具标签中启用"
 
-#: C/mousetweaks.xml:265(para)
+#: C/mousetweaks.xml:281(para)
 msgid "from the On/Off button on the Dwell Click panel applet"
 msgstr "从悬停点击面板小程序上的开/关按钮上启用"
 
-#: C/mousetweaks.xml:270(title)
+#: C/mousetweaks.xml:286(title)
 msgid "Start From The Accessibility tab of the Mouse control panel"
-msgstr "从鼠标首选项面板的辅助工具选项卡中启用"
+msgstr "从鼠标首选项面板的辅助工具标签中启用"
 
-#: C/mousetweaks.xml:273(para)
+#: C/mousetweaks.xml:289(para)
 msgid ""
 "The graphical user interface to start the dwell click is located in the "
 "Accessibility tab of the Mouse control panel. To open it, choose the menu "
@@ -570,26 +591,26 @@ msgid ""
 "Mouse control panel will open and after clicking on the Accessibility tab, "
 "you will see the following settings:"
 msgstr ""
-"要从图形界面中启动模拟次要按钮点击功能，需要使用鼠标首选项面板的辅助工具。要"
-"打开它，请点击菜单<menuchoice><guimenu>系统</guimenu><guisubmenu>首选项</"
+"要从图形界面中启动模拟右键点击功能，需要使用鼠标首选项面板的辅助工具。要打开"
+"它，请点击菜单<menuchoice><guimenu>系统</guimenu><guisubmenu>首选项</"
 "guisubmenu><guimenuitem>控制中心</guimenuitem></menuchoice>，在里面找到并打开"
 "鼠标首选项，再点击辅助工具标签，你将会看到下面的设置："
 
-#: C/mousetweaks.xml:296(para)
+#: C/mousetweaks.xml:312(para)
 msgid ""
 "To start the dwell click function, put a checkmark into the checkbox that "
 "says:"
 msgstr "要启用悬停点击功能，打勾选中这个复选框："
 
-#: C/mousetweaks.xml:299(quote)
+#: C/mousetweaks.xml:315(quote)
 msgid "Initiate click when stopping pointer movement"
 msgstr "当指针停止移动时，初始化点击"
 
-#: C/mousetweaks.xml:309(para)
+#: C/mousetweaks.xml:325(para)
 msgid "Picture of the checkbox to start the dwell click function"
 msgstr "启用悬停点击复选框的图示"
 
-#: C/mousetweaks.xml:318(para)
+#: C/mousetweaks.xml:334(para)
 msgid ""
 "To start the dwell click function and show the click type window from the "
 "command line, open the <application>Terminal</application> and type the "
@@ -598,47 +619,61 @@ msgstr ""
 "要从命令行启动悬停点击并显示点击类型窗口，打开<application>终端</application>"
 "并输入下面的命令："
 
-#: C/mousetweaks.xml:322(parameter)
-msgid "--enable-dwell --show-ctw"
-msgstr "--enable-dwell --show-ctw"
+#: C/mousetweaks.xml:338(parameter)
+msgid "--dwell --show-ctw"
+msgstr "--dwell --show-ctw"
 
-#: C/mousetweaks.xml:327(title)
+#: C/mousetweaks.xml:342(para)
+msgid ""
+"The starting parameters --login and --daemonize were added to allow GDM to "
+"start and quit mousetweaks: the first disables the check for the Assistive "
+"Technologies framework at the start of mousetweaks; by not passing the "
+"second, mousetweaks will keep the pid that it got when it started, allowing "
+"GDM to shut it down by using the pid."
+msgstr ""
+"启动参数 --login 和 --daemonize 是添加允许 GDM 启动和退出 mousetweaks：第一个"
+"是启动时不检查辅助技术框架；不忽略第二个，mousetweaks 运行后将保留进程号，以"
+"便 GDM 可以通过进程号来关闭它。"
+
+#: C/mousetweaks.xml:352(title)
 msgid "Start From The On/Off button On The Dwell Click Panel Applet"
 msgstr "从悬停点击面板小程序的开/关按钮来启用"
 
-#: C/mousetweaks.xml:330(para)
+#: C/mousetweaks.xml:355(para)
 msgid ""
 "It is possible to start the Dwell Click by simply resting (dwelling) for a "
-"little delay with the pointer on the On/Off button of the Dwell Click panel "
-"applet. The On/Off button provides feedback of the passing dwell time by "
-"filling its frame with another colour. When the frame is completely filled, "
-"the button displays its active state and the dwell click gets started."
+"little delay with the pointer on the mouse icon displayed by the Dwell Click "
+"panel applet. In fact, this mouse icon is a dwellable On/Off button that "
+"provides feedback of the passing dwell time by filling its frame with "
+"another colour. When the frame is completely filled, the button displays its "
+"active state and the dwell click gets started."
 msgstr ""
 "您还可以将鼠标指针指向悬停点击面板小程序上的开关按钮，只需停留一会儿就可以启"
-"用悬停点击功能。开/关按钮用颜色的填满程度来显示悬停的时间。当颜色填充满格子，"
-"按钮显示激活状态，悬停点击启动。"
+"用悬停点击功能。事实上，这个鼠标样的图标是一个可悬停点击的开/关按钮，用颜色的"
+"填满程度来显示悬停的时间。当颜色填充满格子，按钮显示激活状态，悬停点击启动。"
 
-#: C/mousetweaks.xml:344(para) C/mousetweaks.xml:469(para)
-#: C/mousetweaks.xml:764(para)
+#: C/mousetweaks.xml:370(para) C/mousetweaks.xml:497(para)
+#: C/mousetweaks.xml:845(para)
 msgid "Picture showing the click type applet at the right of the GNOME menus"
 msgstr "GNOME 菜单右边显示的点击类型小程序图示"
 
-#: C/mousetweaks.xml:351(link) C/mousetweaks.xml:359(title)
-#: C/mousetweaks.xml:921(link)
-msgid "Starting The Pointer Capture Function"
-msgstr "启动指针锁定功能"
-
-#: C/mousetweaks.xml:349(remark)
+#: C/mousetweaks.xml:376(para)
 msgid ""
 "For instructions about how to install the Dwell Click applet on the GNOME "
-"panel, please have a look at <placeholder-1/> where you can see how it is "
+"panel, please have a look at <link linkend=\"mouse-a11y-start-pointer-capture"
+"\">Starting The Pointer Capture Function</link> where you can see how it is "
 "done for the Pointer Capture panel applet. The procedure for the Dwell Click "
 "panel applet is similar."
 msgstr ""
-"要获得关于如何在 GNOME 面板上添加悬停点击小程序的介绍，请参阅<placeholder-1/"
-">，那里讲解了怎样添加指针锁定小程序。操作步骤跟悬停点击是相似的。"
+"要获得关于如何在 GNOME 面板上添加悬停点击小程序的介绍，请参阅 <link linkend="
+"\"mouse-a11y-start-pointer-capture\">启动指针锁定功能</link>，那里讲解了怎样"
+"添加指针锁定小程序。操作步骤跟悬停点击是相似的。"
 
-#: C/mousetweaks.xml:361(para)
+#: C/mousetweaks.xml:387(title)
+msgid "Starting The Pointer Capture Function"
+msgstr "启动指针锁定功能"
+
+#: C/mousetweaks.xml:389(para)
 msgid ""
 "As the Pointer Capture applet comes in the from of a panel applet, its "
 "starting method has to follow the rules dictated by the GNOME panel. Thus, "
@@ -648,7 +683,7 @@ msgstr ""
 "因为指针锁定是一个面板小程序，它的启动跟随 GNOME 面板。因此，要启用指针锁定功"
 "能，您必须要在面板上添加相应的小程序，然后它就可以自动运行了。"
 
-#: C/mousetweaks.xml:366(para)
+#: C/mousetweaks.xml:394(para)
 msgid ""
 "In order to add it to the panel, proceed as you do with any panel applet: "
 "perform a secondary click on the panel to open its contextual menu, choose "
@@ -656,9 +691,9 @@ msgid ""
 "all the applets that can be installed on the GNOME panel."
 msgstr ""
 "要添加它到面板上，操作跟其他小程序相同：在面板上点右键，打开快捷菜单，选择"
-"<guimenuitem>添加到面板</guimenuitem>，出来一个面板小程序列表。"
+"<guimenuitem>添加到面板</guimenuitem>，出现一个面板小程序列表。"
 
-#: C/mousetweaks.xml:372(para)
+#: C/mousetweaks.xml:400(para)
 msgid ""
 "By double clicking on the <guilabel>Pointer Capture</guilabel> item in the "
 "Add to Panel window, the Pointer Capture applet will be added to the panel, "
@@ -667,73 +702,73 @@ msgstr ""
 "在添加到面板窗口中双击<guilabel>指针锁定</guilabel>项，指针锁定小程序就会添加"
 "到面板。它会一直运行，除非您从面板上删除它。"
 
-#: C/mousetweaks.xml:380(title)
+#: C/mousetweaks.xml:408(title)
 msgid "How To Quit The Functions"
 msgstr "如何退出这个功能"
 
-#: C/mousetweaks.xml:382(para)
+#: C/mousetweaks.xml:410(para)
 msgid ""
 "Similar to the starting of the functions, their quitting also depends on the "
 "feature that you want to quit."
-msgstr "类似启动这个功能，它们的退出也依赖于您是否想退出。"
+msgstr "类似启动这个功能，它们的退出也依赖于您想退出的功能。"
 
-#: C/mousetweaks.xml:386(title)
+#: C/mousetweaks.xml:414(title)
 msgid "Quitting The Simulated Secondary Click"
-msgstr "退出模拟次要按钮点击"
+msgstr "退出模拟右键点击"
 
-#: C/mousetweaks.xml:388(para)
+#: C/mousetweaks.xml:416(para)
 msgid "It is possible to quit the Simulated Secondary Click in two ways:"
-msgstr "退出次要按钮点击可以有两种方法："
+msgstr "退出右键点击可以有两种方法："
 
-#: C/mousetweaks.xml:393(para) C/mousetweaks.xml:430(para)
+#: C/mousetweaks.xml:421(para) C/mousetweaks.xml:458(para)
 msgid ""
 "By removing the mark from the corresponding checkbox in the control panel of "
 "<application>Mousetweaks</application>."
 msgstr ""
 "不选中 <application>Mousetweaks</application> 首选项面板上对应的复选框。"
 
-#: C/mousetweaks.xml:403(para)
+#: C/mousetweaks.xml:431(para)
 msgid "Picture of the checkbox to start the simulated right click feature"
 msgstr "启用模拟右键点击特性的复选框图示"
 
-#: C/mousetweaks.xml:408(para)
+#: C/mousetweaks.xml:436(para)
 msgid ""
 "Please refer to <link linkend=\"mouse-a11y-start-ssc-by-gui\">Start The "
 "Simulated Secondary Click From The Graphical User Interface</link> to locate "
 "the checkbox."
 msgstr ""
-"请访问<link linkend=\"mouse-a11y-start-ssc-by-gui\">从图形界面启用模拟次要(右"
-"键)点击功能</link>，来找到这个复选框的位置。"
+"请访问<link linkend=\"mouse-a11y-start-ssc-by-gui\">从图形界面启用模拟右键点"
+"击功能</link>，来找到这个复选框的位置。"
 
-#: C/mousetweaks.xml:415(para) C/mousetweaks.xml:451(para)
+#: C/mousetweaks.xml:443(para) C/mousetweaks.xml:479(para)
 msgid "By typing the following command at the command line:"
 msgstr "通过在命令行中输入下面的命令："
 
-#: C/mousetweaks.xml:418(parameter) C/mousetweaks.xml:454(parameter)
+#: C/mousetweaks.xml:446(parameter) C/mousetweaks.xml:482(parameter)
 msgid "--shutdown"
 msgstr "--shutdown"
 
-#: C/mousetweaks.xml:424(title)
+#: C/mousetweaks.xml:452(title)
 msgid "Quitting The Dwell Click"
 msgstr "退出悬停点击"
 
-#: C/mousetweaks.xml:426(para)
+#: C/mousetweaks.xml:454(para)
 msgid "It is possible to quit the dwell click in three ways:"
 msgstr "退出悬停悬停点击的方法可以有三种："
 
-#: C/mousetweaks.xml:440(para)
+#: C/mousetweaks.xml:468(para)
 msgid "Picture of the checkbox to start the buttonless click feature"
 msgstr "启用无按钮点击特性的复选框图示"
 
-#: C/mousetweaks.xml:445(para)
+#: C/mousetweaks.xml:473(para)
 msgid ""
 "Please refer to <link linkend=\"mouse-a11y-start-dwell-by-gui\">Start The "
 "Dwell Click From The Graphical User Interface</link> to locate the checkbox."
 msgstr ""
-"请访问<link linkend=\"mouse-a11y-start-dwell-by-gui\">从图形界面启动悬停点击"
+"请参考<link linkend=\"mouse-a11y-start-dwell-by-gui\">从图形界面启动悬停点击"
 "</link>，找到这个复选框的位置。"
 
-#: C/mousetweaks.xml:458(para)
+#: C/mousetweaks.xml:486(para)
 msgid ""
 "If the Dwell Click applet has been installed on the GNOME panel, the Dwell "
 "Click can be disabled by dwelling with the pointer on its On/Off button."
@@ -741,11 +776,11 @@ msgstr ""
 "如果悬停点击小程序已经添加到 GNOME 面板，可以把指针悬停在开/关按钮上来禁用此"
 "功能。"
 
-#: C/mousetweaks.xml:478(title)
+#: C/mousetweaks.xml:506(title)
 msgid "Quitting The Pointer Capture Function"
 msgstr "退出指针锁定功能"
 
-#: C/mousetweaks.xml:480(para)
+#: C/mousetweaks.xml:508(para)
 msgid ""
 "As the Pointer Capture function comes in the form of a panel applet, you "
 "have to quit it the same way that you do it with other applets: you have to "
@@ -757,12 +792,12 @@ msgstr ""
 "它。要做到这一点，在小程序的竖线手柄上点右键，然后在出来的快捷菜单中选择"
 "<guimenuitem>从面板上删除</guimenuitem>命令。"
 
-#: C/mousetweaks.xml:493(para) C/mousetweaks.xml:932(para)
+#: C/mousetweaks.xml:521(para) C/mousetweaks.xml:1015(para)
 msgid ""
 "Picture showing the pointer capture area (green) with its contextual menu"
 msgstr "指针捕获区域(绿色)及其快捷菜单图示"
 
-#: C/mousetweaks.xml:499(para)
+#: C/mousetweaks.xml:527(para)
 msgid ""
 "When using the default GNOME theme, the handle of the Pointer Capture applet "
 "are the two vertical dotted lines at the left of the pointer capture area."
@@ -770,11 +805,11 @@ msgstr ""
 "当使用默认的 GNOME 主题时，指针锁定小程序的手柄就是捕获区域左边的两条垂直竖"
 "线。"
 
-#: C/mousetweaks.xml:507(title)
+#: C/mousetweaks.xml:535(title)
 msgid "Description Of The Functions"
 msgstr "功能介绍"
 
-#: C/mousetweaks.xml:509(para)
+#: C/mousetweaks.xml:537(para)
 msgid ""
 "Mousetweaks offers three pointer accessibility functions to the user. In "
 "this section you will find the description of the three functions: "
@@ -783,61 +818,106 @@ msgstr ""
 "Mousetweaks 鼠标增强工具提供了三项辅助功能。在这一节里你将看到三个功能的描"
 "述：<placeholder-1/>"
 
-#: C/mousetweaks.xml:527(title)
+#: C/mousetweaks.xml:555(title)
 msgid "Simulated Secondary Click Description"
-msgstr "模拟次要按钮(右键)点击描述"
+msgstr "模拟右键(次要按钮)点击描述"
 
-#: C/mousetweaks.xml:529(para)
+#: C/mousetweaks.xml:557(para)
 msgid ""
 "When the user activates this feature, he will be able to perform secondary "
 "clicks by using the <mousebutton>primary mouse button</mousebutton>. This is "
 "especially useful for users that have only one <mousebutton>mouse button</"
 "mousebutton> at their disposal."
 msgstr ""
-"用户激活这一特性后，可以通过按住<mousebutton>鼠标主要按钮</mousebutton>来执行"
-"次要按钮(右键)点击动作。这对那些只能使用一个<mousebutton>鼠标按钮</"
+"用户激活这一特性后，可以通过按住<mousebutton>鼠标左键(主要按钮)</mousebutton>"
+"来执行右键(次要按钮)点击动作。这对那些只能使用一个<mousebutton>鼠标按钮</"
 "mousebutton> 的用户非常有用。"
 
-#: C/mousetweaks.xml:541(para)
+#: C/mousetweaks.xml:569(para)
 msgid ""
 "Picture showing the settings belonging to the Simulated Secondary Click."
-msgstr "图示次要按钮点击的设置选项。"
+msgstr "图示右键点击的设置选项。"
 
-#: C/mousetweaks.xml:547(title) C/mousetweaks.xml:672(title)
+#: C/mousetweaks.xml:575(title) C/mousetweaks.xml:753(title)
 msgid "How Does It Work?"
 msgstr "它是怎样工作的？"
 
-#: C/mousetweaks.xml:549(para)
+#: C/mousetweaks.xml:577(para)
 msgid ""
 "Let us assume that the user has enabled the Simulated Secondary Click "
 "feature."
-msgstr "假定已经启用了模拟次要按钮点击特性。"
+msgstr "假定已经启用了模拟右键点击特性。"
 
-#: C/mousetweaks.xml:552(para)
+#: C/mousetweaks.xml:580(para)
 msgid ""
 "To perform a simulated secondary click, the user has to keep the "
 "<mousebutton>primary mouse button</mousebutton> pressed without moving the "
-"pointer for a determined time. As soon as the determined time has elapsed, "
-"the simulated secondary click is issued."
+"pointer for the time determined by the delay slider of the Simulated "
+"Secondary Click feature. While the <mousebutton>primary mouse button</"
+"mousebutton> is kept pressed, the arrow of the pointer will be filled with a "
+"different color to give feedback about the passing time."
 msgstr ""
-"要执行次要按钮(右键)的点击动作，需要按住<mousebutton>主要按钮(左键)</"
-"mousebutton>保持一定的时间，就可以触发一个次要按钮点击的动作。"
+"要执行右键(次要按钮)的点击动作，需要按住<mousebutton>左键(主要按钮)</"
+"mousebutton>一段时间，这个时间的长度是由模拟右键(次要按钮)功能的延时滑块确定"
+"的。按住左键(主要按钮)时，指针的箭头将使用不同的颜色进行填充，以反映经过的时"
+"间。"
 
-#: C/mousetweaks.xml:557(para)
+#: C/mousetweaks.xml:588(para)
 msgid ""
-"While the <mousebutton>primary mouse button</mousebutton> is being held "
-"pressed, mousetweaks will fill the arrow of the pointer with another color "
-"to give feedback that it is counting down the time before issuing the "
-"simulated secondary click."
+"If the user releases the <mousebutton>primary mouse button</mousebutton> "
+"before the arrow of the pointer has been completely filled with the new "
+"color, the system will only receive the information of the "
+"<mousebutton>primary mouse button</mousebutton> press and release."
 msgstr ""
-"当<mousebutton>主要按钮</mousebutton>按下时，按钮指针将会显示一个不断填充的颜"
-"色，来反馈是否达到触发次要按钮点击动作的时间。"
+"如果在指针的颜色还没有填充满前，用户就松开了<mousebutton>左键(主要按钮)</"
+"mousebutton>，系统将只产生<mousebutton>左键</mousebutton>按下和释放的消息。"
 
-#: C/mousetweaks.xml:564(title)
+#: C/mousetweaks.xml:594(para)
+msgid ""
+"If the user releases the <mousebutton>primary mouse button</mousebutton> "
+"after the arrow of pointer has been completely filled with the new color, "
+"the <mousebutton>primary mouse button</mousebutton> events will be followed "
+"by a <mousebutton>secondary mouse button</mousebutton> click. In fact, "
+"mousetweaks creates this simulated <mousebutton>scondary mouse button</"
+"mousebutton> click as soon as the user releases the the <mousebutton>primary "
+"mouse button</mousebutton>."
+msgstr ""
+"如果用户松开<mousebutton>左键</mousebutton>时，指针的颜色已经填充满，在产生"
+"<mousebutton>左键</mousebutton>点击事件后，将会接着产生一个<mousebutton>右键"
+"</mousebutton>点击事件。事实上，用户一松开<mousebutton>左键(主要按钮)</"
+"mousebutton> mousetweaks 就会创建模拟<mousebutton>右键(次要按钮)</"
+"mousebutton>点击事件。"
+
+#: C/mousetweaks.xml:603(para)
+msgid ""
+"The explanations above assumed that the pointer did not move between the "
+"<mousebutton>primary mouse button</mousebutton> press and release. If the "
+"pointer gets moved before the <mousebutton>primary mouse button</"
+"mousebutton> is released, no simulated secondary click will be created. "
+"Consequently, to cancel an initiated secondary click, the user only has to "
+"move the pointer before releasing the <mousebutton>primary mouse button</"
+"mousebutton>."
+msgstr ""
+"上面的解释是假定<mousebutton>鼠标左键</mousebutton>在按住和松开之间的时间，指"
+"针没有移动，如果在<mousebutton>鼠标左键</mousebutton>松开前，指针发生了移动，"
+"将不会产生模拟右键点击动作。因此，要取消模拟点击，用户只需在松开<mousebutton>"
+"鼠标左键</mousebutton>前移动一下鼠标指针即可。"
+
+#: C/mousetweaks.xml:611(para)
+msgid ""
+"Moreover, the fact that the simulated secondary click is immediately "
+"preceded by a left click makes it behave differently than expected when the "
+"preceding left click has an incidence on the object that is to receive the "
+"simulated secondary click. Please, have a look at the section about the "
+"<link linkend=\"mouse-a11y-ssc-pecularities\">Differences To The Normal "
+"Secondary Click</link> for more details."
+msgstr ""
+
+#: C/mousetweaks.xml:621(title)
 msgid "The Delay Slider"
 msgstr "延时滑块"
 
-#: C/mousetweaks.xml:566(para)
+#: C/mousetweaks.xml:623(para)
 msgid ""
 "How long the user has to hold the <mousebutton>primary mouse button</"
 "mousebutton> pressed, is determined by the <guilabel>Delay</guilabel> slider "
@@ -845,14 +925,14 @@ msgid ""
 "choose the delay most appropriate to him."
 msgstr ""
 "在启用复选框的下面，有一个<guilabel>延时</guilabel>滑块，指定用户需要按住"
-"<mousebutton>主要按钮</mousebutton>多久，才能触发动作。拖动滑块，用户可以设定"
-"合适的时间。"
+"<mousebutton>左键</mousebutton>多久，才能触发动作。拖动滑块，用户可以设定合适"
+"的时间。"
 
-#: C/mousetweaks.xml:574(title)
+#: C/mousetweaks.xml:631(title)
 msgid "Motion Threshold"
 msgstr "运动阈值"
 
-#: C/mousetweaks.xml:576(para)
+#: C/mousetweaks.xml:633(para)
 msgid ""
 "People that have trouble to keep the pointer completely motionless can use "
 "the Motion Threshold slider of the Dwell Click feature. This setting makes "
@@ -863,11 +943,11 @@ msgid ""
 "more information about it."
 msgstr ""
 "对于很难保证按住指针不动的用户，可以设定“运动阈值”特性。这个选项可以让 "
-"Mousetweaks 忽略指针轻微的移动，即使指针有少量的移动，仍然可以保证次要按钮点"
-"击特性的实现。您可以在<link linkend=\"mouse-a11y-dwell-motion-treshold\">悬停"
-"点击的运动阈值特性</link>里，找到更多相关信息。"
+"Mousetweaks 忽略指针轻微的移动，即使指针有少量的移动，仍然可以保证右键点击特"
+"性的实现。您可以在<link linkend=\"mouse-a11y-dwell-motion-treshold\">悬停点击"
+"的运动阈值特性</link>里，找到更多相关信息。"
 
-#: C/mousetweaks.xml:586(para)
+#: C/mousetweaks.xml:643(para)
 msgid ""
 "The <guilabel>Motion Threshold</guilabel> slider that is located under the "
 "<guilabel>Dwell Click</guilabel> feature is also effective for the "
@@ -875,89 +955,117 @@ msgid ""
 "<guilabel>Dwell Click</guilabel> feature is disabled."
 msgstr ""
 "<guilabel>悬停点击</guilabel>下面的<guilabel>运动阈值</guilabel> 选项也会影响"
-"到<guilabel>模拟次要按钮点击</guilabel>特性，甚至在没有启用<guilabel>悬停点击"
-"</guilabel>的情况下。"
+"到<guilabel>模拟右键点击</guilabel>特性，甚至在没有启用<guilabel>悬停点击</"
+"guilabel>的情况下。"
 
-#: C/mousetweaks.xml:595(title)
+#: C/mousetweaks.xml:652(title)
 msgid "Differences To The Normal Secondary Click"
-msgstr "与普通两次单击的不同点"
+msgstr "与普通的右键(次要按钮)点击的不同点"
 
-#: C/mousetweaks.xml:597(para)
+#: C/mousetweaks.xml:654(para)
+#, fuzzy
 msgid ""
-"As the Simulated Secondary Click is not able to discard the "
-"<mousebutton>mouse button down</mousebutton> event from the "
-"<mousebutton>primary button press</mousebutton> of the user, it issues a "
-"primary click just before issuing the secondary click. In other words, each "
-"secondary click performed by this function is immediately preceded by a "
-"primary click, and this makes it behave a bit differently to the normal "
-"secondary click performed by the <mousebutton>secondary mouse button</"
-"mousebutton>. For example:"
+"As the Simulated Secondary Click does not discard the<mousebutton> primary "
+"mouse button</mousebutton> press and release, the resulting primary click "
+"occurs just before the secondary click created by mousetweaks. Consequently, "
+"the simulated secondary click behaves a bit differently than the normal "
+"secondary click, because the latter is usually not preceded immediately by a "
+"<mousebutton>primary mouse button</mousebutton> click. For example:"
 msgstr ""
-"因为模拟次要按钮点击无法忽略<mousebutton>按下主按钮</mousebutton>的"
-"<mousebutton>鼠标点击</mousebutton>事件，所以在发出次要按钮点击前会先发出一个"
-"主要按钮点击。换句话说，这一功能产生的次要按钮点击将会在前面自动追加一个主要"
-"按钮点击，这和普通的<mousebutton>次要按钮点击</mousebutton>有一点不同。例如："
+"因为模拟右键点击无法忽略<mousebutton>左键(主要按钮)</mousebutton>的按下和松开"
+"事件，所以在产生右键点击前会先发出一个左键点击。换句话说，这一功能产生的右键"
+"点击将会在前面自动追加一个左键的点击，这和普通的<mousebutton>右键点击</"
+"mousebutton>有一点不同。例如："
 
-#: C/mousetweaks.xml:608(para)
+#: C/mousetweaks.xml:664(para)
 msgid ""
 "It is not possible to perform a secondary click on multiple items because "
 "the primary click issued before the secondary click deselects the items."
 msgstr ""
-"选中多个项时不能执行次要按钮点击动作，因为次要按钮点击前的那次主要按钮点击将"
-"会取消选择。"
+"选中多个项时不能执行右键点击动作，因为右键点击前的那次左键点击将会取消选择。"
 
-#: C/mousetweaks.xml:614(para)
+#: C/mousetweaks.xml:670(para)
 msgid ""
-"When the simulated secondary click is performed on the trash icon on the "
-"panel, not only does the contextual menu appear, but the trash folder does "
-"also open. (The former is caused by the secondary click, the latter by the "
-"primary click preceding the right click.)"
+"When performing a simulated secondary click on a link in a web page, the "
+"primary click, that preceds the simulated secondary click, opens the "
+"referenced page before the simulated secondary click has a chance to open "
+"the contextual menu of the link."
 msgstr ""
-"在面板上的回收站图标上执行模拟次要按钮时，不仅会出现快捷菜单，而且回收站文件"
-"夹也会打开。(出现快捷菜单是由于次要按钮点击，打开回收站文件夹是因为次要按钮点"
-"击前的那次主要按钮点击。)"
+"在网页链接上执行模拟右键点击时，执行模拟右键点击的左键将在模拟右键打开链接的"
+"快捷菜单之前打开链接到的网页。"
 
-#: C/mousetweaks.xml:623(para)
+#: C/mousetweaks.xml:676(para)
+msgid ""
+"The contextual menu of a link in a web page can be opened by performing a "
+"simulated secondary click while keeping the Ctrl modifier pressed. This "
+"works because the referenced page opens in a new tab when the link receives "
+"a primary click in conjunction with a pressed Ctrl modifier; which is also "
+"what happens as a side effect when opening the contextual menu of a link by "
+"using the simulated secondary click in conjunction with the Ctrl modifier."
+msgstr ""
+
+#: C/mousetweaks.xml:685(para)
+msgid ""
+"However the browser has to be configured to not automatically switch to the "
+"new tab when it opens; otherwise the page with the link disappears as the "
+"new tab becomes visible and the contextual menu does not appear."
+msgstr ""
+
+#: C/mousetweaks.xml:693(para)
+msgid ""
+"When the simulated secondary click is performed on the trash icon in the "
+"panel, not only does the contextual menu appear, but the trash folder also "
+"opens. (The former is caused by the secondary click, the latter by the "
+"primary click preceding the secondary click.)"
+msgstr ""
+"在面板上的回收站图标上执行模拟右键时，不仅会出现快捷菜单，而且回收站文件夹也"
+"会打开。(出现快捷菜单是由于右键点击，打开回收站文件夹是因为右键点击前的那次左"
+"键点击。)"
+
+#: C/mousetweaks.xml:702(para)
 msgid ""
 "It is not possible to provide a list of all diverging behaviours, because it "
 "depends on the reaction of the application receiving the secondary click "
 "preceded by a primary click."
 msgstr ""
-"列出所有的歧义行为不大可能，因为这依赖于应用程序对主按钮产生的二次点击的反"
+"列出所有的歧义行为不大可能，因为这要依赖于应用程序对由左键产生的右键点击的反"
 "应。"
 
-#: C/mousetweaks.xml:628(para)
+#: C/mousetweaks.xml:707(para)
+#, fuzzy
 msgid ""
-"Some users may also be surprised by the consequences of the following: it is "
-"not possible to perform a long motionless primary button click and hold, "
-"without also triggering the secondary click. For example:"
+"Looking at it the other way, it is no possible to perform a long motionless "
+"<mousebutton>primary mouse button</mousebutton> press without also "
+"triggering the secondary click, unless the pointer is moved before the "
+"<mousebutton>primary mouse button</mousebutton> release. This may also have "
+"unexpected consequences for some users. For example:"
 msgstr ""
-"某些用户可能对下面的结果很吃惊：按住主按钮很长时间也没有出现次要按钮点击，例"
-"如："
+"某些用户可能对下面的结果很吃惊：按住左键很长时间也没有出现右键点击，例如："
 
-#: C/mousetweaks.xml:635(para)
+#: C/mousetweaks.xml:716(para)
 msgid ""
-"When keeping the primary button pressed on the arrow of a scrollbar, the "
-"scrollbar jumps to the bottom after some time. This is in fact the normal "
-"behaviour of a secondary click on an arrow of a scrollbar."
+"When releasing the primary button after keeping it pressed on the arrow of a "
+"scrollbar for more than the delay time, the scrollbar jumps to the bottom. "
+"This is in fact the normal behaviour of a secondary click on an arrow of a "
+"scrollbar."
 msgstr ""
-"当在滚动条的按钮的箭头上按住主按钮，滚动条会跳至底部。这实际上是在滚动条按钮"
-"上点击次要按钮的正常行为。"
+"当在滚动条的按钮的箭头上按住左键，滚动条会跳至底部。这实际上是在滚动条按钮上"
+"点击右键的正常行为。"
 
-#: C/mousetweaks.xml:641(para)
+#: C/mousetweaks.xml:722(para)
 msgid ""
-"To work around this behaviour, simply move the pointer immediately after "
-"pressing the <mousebutton>primary mouse button</mousebutton>. This way the "
-"simulated secondary click is not issued."
+"To avoid that the scrollbar jumps to the bottom, simply move the pointer "
+"away from the arrow of the scrollbar before releasing the primary button; "
+"this way, the initiated simulated secondary click gets canceled."
 msgstr ""
-"要解决这个问题，在按住<mousebutton>主按钮</mousebutton>后，立即移动鼠标。这种"
-"方法将不会触发模拟次要按钮的点击。"
+"要避免滚动条跳到底部，只需要在释放左键(注意按钮)之前将指针移动到滚动条的箭头"
+"之外。这种方法将不会触发模拟右键点击。"
 
-#: C/mousetweaks.xml:652(title)
+#: C/mousetweaks.xml:733(title)
 msgid "Dwell Click Description"
 msgstr "悬停点击描述"
 
-#: C/mousetweaks.xml:654(para)
+#: C/mousetweaks.xml:735(para)
 msgid ""
 "There are users that cannot use any hardware button. By activating the "
 "<guilabel>Dwell Click</guilabel>, they can have the mouse perform the "
@@ -965,11 +1073,11 @@ msgid ""
 "be performed are: single primary click, double click, drag click and "
 "secondary click."
 msgstr ""
-"一些用户不能使用鼠标按钮，通过启用<guilabel>悬停点击</guilabel>，他们可以使用"
-"鼠标执行各种点击，而不需要按下按钮。可以执行的点击类型有：单击、双击、拖动和"
-"次要按钮(右键)点击。"
+"一些用户不能使用任何鼠标按钮，通过启用<guilabel>悬停点击</guilabel>，他们可以"
+"使用鼠标执行各种点击，而不需要按下按钮。可以执行的点击类型有：单击、双击、拖"
+"动和右键(次要按钮)点击。"
 
-#: C/mousetweaks.xml:661(para)
+#: C/mousetweaks.xml:742(para)
 msgid ""
 "When the dwell click is active, the <mousebutton>mouse buttons</mousebutton> "
 "remain functional and it is still possible to click with the "
@@ -979,45 +1087,51 @@ msgid ""
 "to initiate a new dwell click, the user has to move and stop moving the "
 "mouse as usual for the dwell click."
 msgstr ""
+"当悬停点击激活以后，<mousebutton>鼠标按钮</mousebutton>继续保持正常的点击功"
+"能，而且，当悬停点击运行时，如果用<mousebutton>鼠标按钮</mousebutton>执行了一"
+"次点击，悬停点击将会停止，不会有模拟产生；要开始一次新的悬停点击，用户得重新"
+"进行移动和停止鼠标的动作。"
 
-#: C/mousetweaks.xml:674(para)
+#: C/mousetweaks.xml:755(para)
 msgid ""
 "Each time the pointer stops moving, a dwell click is initiated. To give "
 "feedback to the user, mousetweaks will fill the arrow of the pointer with "
 "another color while it is counting down the time before the click completion "
 "kicks in."
-msgstr "每次指针停下来的时候，都会有颜色填充指针，进行点击前的倒计时。"
+msgstr ""
+"每次指针停下来的时候，就开始悬停点击。为了给用户反馈，在进行点击前的倒计时，"
+"mousetweaks 将使用其它颜色填充指针箭头。"
 
-#: C/mousetweaks.xml:679(para)
+#: C/mousetweaks.xml:760(para)
 msgid ""
 "How the click is completed and how the click type is chosen depends on what "
 "dwell mode the user has selected. The two available modes are:"
 msgstr ""
 "点击如何完成，以及选择什么点击类型，依赖于用户选择的模式。可用的模式有："
 
-#: C/mousetweaks.xml:685(para)
+#: C/mousetweaks.xml:766(para)
 msgid "Choose type of click beforehand"
 msgstr "选择预设的点击类型"
 
-#: C/mousetweaks.xml:689(para)
+#: C/mousetweaks.xml:770(para)
 msgid "Choose type of click with mouse gestures"
 msgstr "用鼠标手势决定点击类型"
 
-#: C/mousetweaks.xml:700(para)
+#: C/mousetweaks.xml:781(para)
 msgid "Picture showing the radio buttons to select dwell mode"
 msgstr "悬停模式的单选按钮图示"
 
-#: C/mousetweaks.xml:705(para)
+#: C/mousetweaks.xml:786(para)
 msgid ""
 "To select the mode, the user only has to click on the radio button that "
 "corresponds to his choice."
 msgstr "要选择悬停模式，用户需要根据自己需要选择一个单选按钮。"
 
-#: C/mousetweaks.xml:709(title)
+#: C/mousetweaks.xml:790(title)
 msgid "Automatic Click Completion With Click Type Choice Beforehand"
 msgstr "使用预设的点击类型自动完成点击。"
 
-#: C/mousetweaks.xml:712(para)
+#: C/mousetweaks.xml:793(para)
 msgid ""
 "This mode is active when the user selects <guilabel>Choose type of click "
 "beforehand</guilabel>. In fact, after the mouse has been motionless for the "
@@ -1026,14 +1140,14 @@ msgid ""
 "Window shown here:"
 msgstr ""
 "当用户选择<guilabel>选择预设的点击类型</guilabel>时激活这种模式。事实上，当鼠"
-"标停止运动到<guilabel>延时</guilabel>滑块指定的时间，系统就会自动执行点击类型"
+"标停止运动了<guilabel>延时</guilabel>滑块指定的时间，系统就会自动执行点击类型"
 "窗口所选的点击类型，如下："
 
-#: C/mousetweaks.xml:726(para)
+#: C/mousetweaks.xml:807(para)
 msgid "Picture showing the click type window"
 msgstr "点击类型窗口图示"
 
-#: C/mousetweaks.xml:730(para)
+#: C/mousetweaks.xml:811(para)
 msgid ""
 "To display the <guimenu>Click Type Window</guimenu> on the screen, the user "
 "has to put a checkmark <application>in the checkbox named "
@@ -1043,11 +1157,11 @@ msgstr ""
 "<application><quote><guilabel>显示点击类型窗口</guilabel></quote>复选框：</"
 "application>"
 
-#: C/mousetweaks.xml:742(para)
+#: C/mousetweaks.xml:823(para)
 msgid "Picture with the checkbox to display the click type window"
 msgstr "显示点击类型窗口的复选框图示"
 
-#: C/mousetweaks.xml:747(para)
+#: C/mousetweaks.xml:828(para)
 msgid ""
 "After the click has occurred, the single click type will be automatically "
 "restored. In order to choose another click type, the user has to perform an "
@@ -1055,9 +1169,9 @@ msgid ""
 "Type Window</guilabel> that corresponds to his click type choice."
 msgstr ""
 "完成点击后，自动回到单击类型。为了选择其他点击类型，用户需要到<guilabel>点击"
-"类型窗口</guilabel>里执行一次<guibutton>按钮</guibutton>自动点击。"
+"类型窗口</guilabel>里再执行一次启用<guibutton>按钮</guibutton>自动点击。"
 
-#: C/mousetweaks.xml:753(para)
+#: C/mousetweaks.xml:834(para)
 msgid ""
 "Instead of the Click Type Window some users might prefer to use the "
 "<guilabel>Dwell Click</guilabel> panel applet, that has some advantages:."
@@ -1065,7 +1179,7 @@ msgstr ""
 "与点击类型窗口不同，一些用户可能更喜欢在面板上的<guilabel>悬停点击</guilabel>"
 "小程序，其方便之处在于："
 
-#: C/mousetweaks.xml:772(para)
+#: C/mousetweaks.xml:853(para)
 msgid ""
 "The user does not need the <guilabel>Click Type Window</guilabel> that might "
 "cover other windows on the desktop."
@@ -1073,7 +1187,7 @@ msgstr ""
 "用户不需要使用<guilabel>点击类型窗口</guilabel>，它可能会挡住桌面上其他的窗"
 "口。"
 
-#: C/mousetweaks.xml:778(para)
+#: C/mousetweaks.xml:859(para)
 msgid ""
 "The user has a direct way to start and stop the dwell click by using the "
 "<guilabel>On/Off</guilabel> button of the <guilabel>Dwell Click</guilabel> "
@@ -1084,14 +1198,14 @@ msgstr ""
 "guilabel>按钮来启用或停止此项功能。这对于想暂时禁用悬停点击来阅读一些文本来说"
 "非常有用。"
 
-#: C/mousetweaks.xml:769(para)
+#: C/mousetweaks.xml:850(para)
 msgid ""
 "Indeed, by using the <guilabel>Dwell Click</guilabel> panel applet: "
 "<placeholder-1/>"
 msgstr ""
 "实际上，使用<guilabel>悬停点击</guilabel>面板小程序可以：<placeholder-1/>"
 
-#: C/mousetweaks.xml:787(para)
+#: C/mousetweaks.xml:868(para)
 msgid ""
 "To display the <guilabel>Dwell Click</guilabel> applet on the GNOME panel, "
 "the user has to follow the usual procedure to add applets to the GNOME "
@@ -1103,7 +1217,7 @@ msgstr ""
 "来添加。您可以在这一节里找到添加方法：<link linkend=\"mouse-a11y-start-"
 "pointer-capture\">启用指针锁定功能</link>。"
 
-#: C/mousetweaks.xml:794(para)
+#: C/mousetweaks.xml:875(para)
 msgid ""
 "The <guilabel>Click Type Window</guilabel> and the <guilabel>Dwell Click</"
 "guilabel> applet can be used simultaneously or each on its own."
@@ -1111,11 +1225,11 @@ msgstr ""
 "<guilabel>点击类型窗口</guilabel>和<guilabel>悬停点击</guilabel>小程序可以同"
 "时使用，也可以分别单独使用。"
 
-#: C/mousetweaks.xml:800(title)
+#: C/mousetweaks.xml:881(title)
 msgid "Click Completion And Click Type Choice By Mouse Gesture"
 msgstr "使用鼠标手势来完成点击和选择点击类型"
 
-#: C/mousetweaks.xml:803(para)
+#: C/mousetweaks.xml:884(para)
 msgid ""
 "This mode is active when the user selects <guilabel>Choose type of click "
 "with mouse gestures</guilabel>. In fact, after the mouse has been motionless "
@@ -1128,7 +1242,7 @@ msgstr ""
 "delay\">延时</link>中指定)，指针的形状会有一个短时间的改变；我们把这个形状叫"
 "手势指针："
 
-#: C/mousetweaks.xml:812(para)
+#: C/mousetweaks.xml:893(para)
 msgid ""
 "If the user moves the pointer while it is showing the gesture shape, a click "
 "is performed at the location where the pointer was last motionless; finally "
@@ -1137,11 +1251,11 @@ msgid ""
 "pointer, a line is drawn following the movement of the pointer to give "
 "feedback to the user."
 msgstr ""
-"当鼠标显示手势指针时，移动鼠标就可以在当前位置上产生一个点击动作，然后指针恢"
-"复到正常形状。点击的类型由移动方向来决定。指针移动时会有一条线跟随指针，可以"
-"给用户提供反馈。"
+"当鼠标显示手势指针时，移动鼠标就可以在最后停止的位置产生一个点击动作，然后指"
+"针恢复到正常形状。点击的类型由移动方向来决定。指针移动时会有一条线跟随指针，"
+"可以给用户提供视觉反馈。"
 
-#: C/mousetweaks.xml:822(para)
+#: C/mousetweaks.xml:903(para)
 msgid ""
 "If the user keeps the pointer motionless until it returns to its normal "
 "shape, the user can move the mouse without a click being performed. The next "
@@ -1150,20 +1264,20 @@ msgstr ""
 "如果用户在移动鼠标前，指针已经恢复到普通形态，这时候的移动就不会产生点击动"
 "作。下次停止移动时重新开始悬停功能。"
 
-#: C/mousetweaks.xml:829(para)
+#: C/mousetweaks.xml:910(para)
 msgid ""
 "The user also has the possibility to match click type with movement "
 "direction by using the 4 <guimenu>popups</guimenu> available:"
 msgstr ""
 "用户也可以设定指针匹配移动方向，通过四个可用的<guimenu>下拉列表</guimenu>："
 
-#: C/mousetweaks.xml:840(para)
+#: C/mousetweaks.xml:921(para)
 msgid ""
 "Picture showing the configuration options to map click type to movement "
 "direction"
 msgstr "移动方向对应点击类型的配置选项图示"
 
-#: C/mousetweaks.xml:845(para)
+#: C/mousetweaks.xml:926(para)
 msgid ""
 "There is also a <guimenuitem>Disabled</guimenuitem> menu item in each "
 "<guimenu>popup</guimenu>. The user can select it if he does not want some "
@@ -1171,44 +1285,44 @@ msgid ""
 "for users that have problems with only certain click types."
 msgstr ""
 "在每个<guimenu>下拉列表</guimenu>里还有一项<guimenuitem>禁用</guimenuitem>"
-"项。如果不想使用某些点击类型，可以禁用相应的选项。这对那些仅仅某一项点击困难"
-"的用户有很大帮助。"
+"项。如果不想自动执行某些点击类型，可以禁用相应的选项。这对那些仅仅某一项点击"
+"困难的用户有很大帮助。"
 
-#: C/mousetweaks.xml:854(title)
+#: C/mousetweaks.xml:935(title)
 msgid "Dwell Delay Setting"
 msgstr "悬停延时设置"
 
-#: C/mousetweaks.xml:856(para)
+#: C/mousetweaks.xml:937(para)
 msgid ""
 "With the <guilabel>Delay</guilabel> slider, the user can configure how long "
 "the pointer has to be motionless for the click to be initiated."
 msgstr ""
 "拖动<guilabel>延时</guilabel>滑块，用户可以配置鼠标停止多久后开始悬停点击。"
 
-#: C/mousetweaks.xml:867(para)
+#: C/mousetweaks.xml:948(para)
 msgid "Picture showing the delay slider of the dwell click"
 msgstr "悬停点击的延时设置图示"
 
-#: C/mousetweaks.xml:872(para)
+#: C/mousetweaks.xml:953(para)
 msgid "The dwell delay only works in the context of the dwell click."
 msgstr "悬停延时设置仅仅与悬停点击有关。"
 
-#: C/mousetweaks.xml:878(title)
+#: C/mousetweaks.xml:959(title)
 msgid "Motion Threshold Setting"
 msgstr "运动阈值设置"
 
-#: C/mousetweaks.xml:880(para)
+#: C/mousetweaks.xml:961(para)
 msgid ""
 "For people that have trouble to keep the mouse motionless, there is the "
 "<guilabel>Motion Threshold</guilabel> slider."
 msgstr ""
 "对于保持鼠标静止有困难的用户，这个<guilabel>运动阈值</guilabel>项很有用处。"
 
-#: C/mousetweaks.xml:890(para)
+#: C/mousetweaks.xml:971(para)
 msgid "Picture showing the motion threshold slider of the dwell click"
 msgstr "悬停点击的运动阈值设定图示"
 
-#: C/mousetweaks.xml:895(para)
+#: C/mousetweaks.xml:976(para)
 msgid ""
 "When the slider is set towards low, even little mouse movements are "
 "considered; however, by setting a higher threshold, the pointer has to "
@@ -1217,19 +1331,19 @@ msgstr ""
 "当设置滑块为低时，很小的移动也会被注意到；而设到高阈值时，鼠标移动很多时才作"
 "为运动。"
 
-#: C/mousetweaks.xml:901(para)
+#: C/mousetweaks.xml:982(para)
 msgid ""
 "The Motion Threshold setting does not only work for the Dwell Click, but "
 "also for the Simulated Secondary Click, even if the Dwell Click is disabled."
 msgstr ""
-"运动阈值的设置不仅关系到悬停点击，也会影响到模拟次要按钮点击，而这与悬停点击"
-"是否被禁用无关。"
+"运动阈值的设置不仅关系到悬停点击，也会影响到模拟右键点击，而这与悬停点击是否"
+"被禁用无关。"
 
-#: C/mousetweaks.xml:909(title)
+#: C/mousetweaks.xml:990(title)
 msgid "Locking The Pointer Description"
 msgstr "锁定指针描述"
 
-#: C/mousetweaks.xml:911(para)
+#: C/mousetweaks.xml:992(para)
 msgid ""
 "There are people that have to use their pointing device not only for the "
 "computer. These people would welcome a way to lock the pointer into an area "
@@ -1238,7 +1352,7 @@ msgstr ""
 "一些用户不仅仅是在电脑上使用指点设备。他们想把指针锁定在屏幕的一块区域里，以"
 "便可以让指点设备执行其它任务。"
 
-#: C/mousetweaks.xml:916(para)
+#: C/mousetweaks.xml:997(para)
 msgid ""
 "In fact, the Pointer Capture panel applet creates an area on the panel, into "
 "which the user can lock the pointer until he releases it in a determined way."
@@ -1246,30 +1360,33 @@ msgstr ""
 "实际上，指针锁定小程序会在面板上创建一块区域，用户可以把指针锁定在这里，直到"
 "用预设的方法来释放指针。"
 
-#: C/mousetweaks.xml:920(remark)
+#: C/mousetweaks.xml:1002(para)
 msgid ""
-"Have a look at <placeholder-1/> for instructions about how to install the "
-"pointer capture applet on the GNOME panel."
-msgstr "看一下<placeholder-1/>可以了解怎样在 GNOME 面板上添加指针锁定小程序。"
+"Have a look at <link linkend=\"mouse-a11y-start-pointer-capture\">Starting "
+"The Pointer Capture Function</link> for instructions about how to install "
+"the pointer capture applet on the GNOME panel."
+msgstr ""
+"看一下<link linkend=\"mouse-a11y-start-pointer-capture\">启动指针锁定功能</"
+"link>可以了解怎样在 GNOME 面板上添加指针锁定小程序。"
 
-#: C/mousetweaks.xml:942(para)
+#: C/mousetweaks.xml:1025(para)
 msgid "Picture of the pointer capture area when the pointer has been captured"
 msgstr "指针被锁定时的捕获区域图示"
 
-#: C/mousetweaks.xml:947(para)
+#: C/mousetweaks.xml:1030(para)
 msgid ""
 "By choosing <guimenu>Preferences</guimenu> in the contextual menu of the "
 "<guilabel>Pointer Capture</guilabel> applet, the user gets a window with the "
 "options of the <guilabel>Pointer Capture</guilabel> applet:"
 msgstr ""
 "在<guilabel>指针锁定</guilabel>小程序上点右键，选择<guimenu>首选项</guimenu>"
-"菜单，可以设置<guilabel>指针</guilabel>小程序的选项。"
+"菜单，可以设置<guilabel>指针锁定</guilabel>小程序的选项。"
 
-#: C/mousetweaks.xml:959(para)
+#: C/mousetweaks.xml:1042(para)
 msgid "Picture showing the preferences of the Pointer Capture applet"
 msgstr "指针锁定小程序的首选项图示"
 
-#: C/mousetweaks.xml:964(para)
+#: C/mousetweaks.xml:1047(para)
 msgid ""
 "The <guilabel>Preferences</guilabel> window of the <guilabel>Pointer "
 "Capture</guilabel> applet has three sections:"
@@ -1277,7 +1394,7 @@ msgstr ""
 "<guilabel>指针锁定</guilabel>小程序的<guilabel>首选项</guilabel>窗口包含三个"
 "小节： "
 
-#: C/mousetweaks.xml:969(para)
+#: C/mousetweaks.xml:1052(para)
 msgid ""
 "In the <guilabel>Capture Pointer</guilabel> section, the user can specify "
 "under what circumstances the pointer gets captured when it moves into the "
@@ -1291,12 +1408,12 @@ msgstr ""
 "针。如果没有设定修饰键，鼠标按钮设定的是 0，当指针进入捕获区域时，将会被自动"
 "锁定。"
 
-#: C/mousetweaks.xml:977(para) C/mousetweaks.xml:986(para)
+#: C/mousetweaks.xml:1060(para) C/mousetweaks.xml:1069(para)
 msgid ""
 "It is also possible to specify a combination of modifiers and mouse button."
 msgstr "您也可以指定修饰键和鼠标按钮组合使用。"
 
-#: C/mousetweaks.xml:982(para)
+#: C/mousetweaks.xml:1065(para)
 msgid ""
 "In the <guilabel>Release Pointer</guilabel> section, the user can specify "
 "what modifier or mouse button releases the pointer."
@@ -1304,7 +1421,7 @@ msgstr ""
 "<guilabel>释放指针</guilabel>小节里，可以指定哪一个修饰键或鼠标按钮来释放指"
 "针。"
 
-#: C/mousetweaks.xml:991(para)
+#: C/mousetweaks.xml:1074(para)
 msgid ""
 "In the <guilabel>Size of Capture Area</guilabel> section, the user can "
 "specify the width of the capture area on the GNOME panel."
@@ -1312,15 +1429,15 @@ msgstr ""
 "<guilabel>捕获区域的范围</guilabel>小节里，可以设定捕获区域在 GNOME 面板上的"
 "宽度。"
 
-#: C/mousetweaks.xml:1000(title)
+#: C/mousetweaks.xml:1083(title)
 msgid "About <application>Mousetweaks</application>"
 msgstr "关于 <application>Mousetweaks</application>"
 
-#: C/mousetweaks.xml:1003(title)
+#: C/mousetweaks.xml:1086(title)
 msgid "Authors and hosting site"
 msgstr "作者和主页"
 
-#: C/mousetweaks.xml:1005(para)
+#: C/mousetweaks.xml:1088(para)
 msgid ""
 "<application>Mousetweaks</application> is based on a <ulink type=\"https\" "
 "url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks"
@@ -1328,12 +1445,12 @@ msgid ""
 "Kohlberger ( <email>gerdk@svn.gnome.org</email> ), and I "
 "( <email>frfumanti@svn.gnome.org</email> ) helped with testing and logistics."
 msgstr ""
-"<application>Mousetweaks</application> 基于 Launchpad 伺服的一项<ulink type="
+"<application>Mousetweaks</application> 是基于 Launchpad 平台<ulink type="
 "\"https\" url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks\">规"
 "范</ulink>。目前由 Gerd Kohlberger (<email>gerdk@svn.gnome.org</email>)负责，"
 "和本文作者(<email>frfumanti@svn.gnome.org</email>)帮助测试和服务。"
 
-#: C/mousetweaks.xml:1013(para)
+#: C/mousetweaks.xml:1096(para)
 msgid ""
 "You can find more informations about Mousetweaks on <ulink type=\"https\" "
 "url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> and on <ulink "
@@ -1343,7 +1460,7 @@ msgstr ""
 "\">Launchpad</ulink> 和 <ulink url=\"http://live.gnome.org//Mousetweaks/Home"
 "\">GNOME Live</ulink> 上找到更多相关信息。"
 
-#: C/mousetweaks.xml:1022(para)
+#: C/mousetweaks.xml:1105(para)
 msgid ""
 "To report a bug or make a suggestion regarding <application>the mousetweaks</"
 "application> module, its user interface or its manual, please use the "
@@ -1359,11 +1476,11 @@ msgstr ""
 "局，请归类到 gnome-control-center 模块；其他 Mousetweaks 相关请归类到 "
 "Mousetweaks 模块。"
 
-#: C/mousetweaks.xml:1033(title)
+#: C/mousetweaks.xml:1116(title)
 msgid "License"
 msgstr "版权"
 
-#: C/mousetweaks.xml:1035(para)
+#: C/mousetweaks.xml:1118(para)
 msgid ""
 "Mousetweaks is distributed under the terms of the GNU General Public License "
 "as published by the Free Software Foundation; either version 3 of the "
@@ -1377,7 +1494,7 @@ msgstr ""
 "gpl-3.0.txt\">链接</ulink> 里找到，或者在这个程序的源代码里找到 COPYING.GPL "
 "这个文件。"
 
-#: C/mousetweaks.xml:1042(para)
+#: C/mousetweaks.xml:1125(para)
 msgid ""
 "This manual is distributed under the terms of the The GNU Free Documentation "
 "License as published by the Free Software Foundation; either version 1.3 of "
@@ -1394,7 +1511,32 @@ msgstr ""
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/mousetweaks.xml:0(None)
 msgid "translator-credits"
-msgstr "TeliuTe <teliute@163.com>, 2009."
+msgstr "TeliuTe <teliute@163.com>, 2009, 2010"
+
+#~ msgid "--enable-secondary"
+#~ msgstr "--enable-secondary"
+
+#~ msgid ""
+#~ "On browser links, the simulated secondary click behaves differently: it "
+#~ "does not wait for the user to release the <mousebutton>primary mouse "
+#~ "button</mousebutton> before creating the simulated secondary click; the "
+#~ "secondary click is created as soon as the time delay has elapsed. "
+#~ "Previous versions of mousetweaks always behaved like this; but this "
+#~ "behaviour had to be modified because of changes to the X server."
+#~ msgstr ""
+#~ "在浏览器的链接上，模拟右键的行为有所不同：它不等待用户松开<mousebutton>左"
+#~ "键</mousebutton>，就创建了模拟右键点击；当时间一到，它就会创建右键点击。"
+#~ "mousetweaks 之前的版本总是这样，但这个行为由于 X 服务器的改变而不得不进行"
+#~ "修改。"
+
+#~ msgid ""
+#~ "While the <mousebutton>primary mouse button</mousebutton> is being held "
+#~ "pressed, mousetweaks will fill the arrow of the pointer with another "
+#~ "color to give feedback that it is counting down the time before issuing "
+#~ "the simulated secondary click."
+#~ msgstr ""
+#~ "当<mousebutton>主要按钮</mousebutton>按下时，按钮指针将会显示一个不断填充"
+#~ "的颜色，来反馈是否达到触发次要按钮点击动作的时间。"
 
 #~ msgid ""
 #~ "Under some circumstances, it happens that the feedback on the arrow of "

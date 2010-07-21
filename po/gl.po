@@ -1,6 +1,6 @@
 # translation of mousetweaks-master-po-gl-70471.po to Galician
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C)  2010 Fran Diéguez
+# This file is distributed under the same license as the mousetweaks package.
 #
 # Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2008.
 # Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
@@ -12,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks-master-po-gl-70471\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-29 23:57+0200\n"
-"PO-Revision-Date: 2010-06-29 23:57+0200\n"
+"POT-Creation-Date: 2010-07-21 14:11+0200\n"
+"PO-Revision-Date: 2010-07-21 14:33+0200\n"
 "Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
-"Language-Team: Galician <gnome@g11n.net>\n"
+"Language-Team: Galician <gnome-gl-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +29,7 @@ msgid ""
 "Part of Mousetweaks"
 msgstr ""
 "Miniaplicativo para seleccionar os diferentes tipos de clic de espera.\n"
-"Parte do MouseTweaks"
+"Parte dos Axustes finos do rato"
 
 #: ../data/dwell-click-applet.ui.h:3
 msgid "Click Type Window"
@@ -436,7 +436,7 @@ msgstr "Ignorar os pequenos movementos do punteiro"
 
 #: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
-msgstr "Pechar o Mousetweaks"
+msgstr "Pechar os Axustes finos do rato"
 
 #: ../src/mt-main.c:827
 msgid "Disable cursor animations"
@@ -444,16 +444,16 @@ msgstr "Desactivar a animación dos cursores"
 
 #: ../src/mt-main.c:829
 msgid "Start mousetweaks as a daemon"
-msgstr "Iniciar mousetweaks como daemon do sistema"
+msgstr "Iniciar Axustes finos do rato como daemon do sistema"
 
 #: ../src/mt-main.c:831
 msgid "Start mousetweaks in login mode"
-msgstr "Iniciar mousetweaks no modo de inicio de sesión"
+msgstr "Iniciar Axustes finos do rato no modo de inicio de sesión"
 
 #. parse
 #: ../src/mt-main.c:851
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- Daemon do sistema de Mousetweaks do GNOME"
+msgstr "- Daemon do sistema de Axustes finos do rato do GNOME"
 
 #: ../src/mt-common.c:31
 msgid "Failed to Display Help"
@@ -478,22 +478,3 @@ msgstr "Bloqueado"
 #: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Produciuse un fallo ao iniciar as preferencias do rato"
-
-#~ msgid "L"
-#~ msgstr "B"
-
-#~ msgid "Assistive Technology Support is not Enabled"
-#~ msgstr "O soporte de tecnoloxías adaptadas non está activado"
-
-#~ msgid ""
-#~ "Mousetweaks requires assistive technologies to be enabled in your "
-#~ "session.\n"
-#~ "\n"
-#~ "To enable support for assistive technologies and restart your session, "
-#~ "press \"Enable and Log Out\"."
-#~ msgstr ""
-#~ "Mousetweaks require que as tecnoloxías adaptadas estean activadas na súa "
-#~ "sesión.\n"
-#~ "\n"
-#~ "Para activar o soporte de tecnoloxías adaptadas e reiniciar a súa sesión, "
-#~ "prema en \"Activar e saír da sesión\"."

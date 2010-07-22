@@ -56,15 +56,15 @@ if BUILD_PCA
 endif
 endif
 
-EXTRA_DIST =		      \
-	$(ui_DATA)	      \
-	$(schemas_in_files)   \
-	$(server_in_in_files) \
-	$(menu_DATA)
+EXTRA_DIST =                \
+    $(schemas_in_files)     \
+    $(server_in_in_files)   \
+    $(menu_DATA)            \
+    $(ui_DATA)
 
-DISTCLEANFILES =           \
-	$(server_DATA)     \
-	$(server_in_files) \
-	$(schemas_DATA)
+DISTCLEANFILES =            \
+    $(server_DATA)          \
+    $(server_in_files)      \
+    $(schemas_DATA)
 
 -include $(top_srcdir)/git.mk

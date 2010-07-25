@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-09 17:21+0100\n"
-"PO-Revision-Date: 2010-01-09 17:21+0100\n"
+"POT-Creation-Date: 2010-07-25 18:28+0200\n"
+"PO-Revision-Date: 2010-07-25 19:09+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "Dragklick"
 
 #: ../data/dwell-click-applet.ui.h:6
 #: ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:807
 msgid "Enable dwell click"
 msgstr "Aktivera uppehållsklick"
 
@@ -59,10 +59,10 @@ msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
-"Område att frysa muspekaren på panelen.\n"
+"Område att låsa muspekaren på panelen.\n"
 "Del av Musjusteringar"
 
 #: ../data/pointer-capture-applet.ui.h:4
@@ -110,8 +110,8 @@ msgid "Sh_ift"
 msgstr "Sk_ift"
 
 #: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
-msgstr "Storlek på fångstområde"
+msgid "Size of the Capture Area"
+msgstr "Storlek på fångstområdet"
 
 #: ../data/pointer-capture-applet.ui.h:16
 msgid "_Alt"
@@ -142,7 +142,7 @@ msgid "Show Text only"
 msgstr "Visa endast text"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1
-#: ../src/dwell-click-applet.c:561
+#: ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "Uppehållsklick"
 
@@ -155,7 +155,7 @@ msgid "Area to lock the pointer"
 msgstr "Område att låsa muspekaren"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "Muspekarfångst"
 
@@ -223,7 +223,7 @@ msgid "Enable secondary click"
 msgstr "Aktivera sekundärklick"
 
 #: ../data/mousetweaks.schemas.in.h:14
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
 msgstr "Aktivera simulerat sekundärklick"
 
@@ -339,98 +339,95 @@ msgstr "Huruvida Skift-tangenten måste tryckas ned med musknappen som är inst�
 msgid "Width of the capture area in pixels."
 msgstr "Bredd för fångstområde i bildpunkter."
 
-#: ../src/mt-main.c:782
-msgid "Assistive Technology Support is not Enabled"
-msgstr "Stöd för hjälpmedelsteknik är inte aktiverat"
-
-#: ../src/mt-main.c:783
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press \"Enable and Log Out\"."
-msgstr ""
-"Musjusteringar kräver att hjälpmedelstekniker är aktiverade i din session.\n"
-"\n"
-"Tryck på \"Aktivera och logga ut\" för att aktivera stöd för hjälpmedelstekniker och starta om din session."
-
-#: ../src/mt-main.c:881
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "Tid att vänta innan ett uppehållsklick"
 
-#: ../src/mt-main.c:883
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tid att vänta innan en simulerad sekundärklickning"
 
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:815
 msgid "Set the active dwell mode"
 msgstr "Ställ in aktivt uppehållsläge"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:817
 msgid "Show a click-type window"
 msgstr "Visa ett klicktypsfönster"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:819
 msgid "Click-type window X position"
 msgstr "Klicktypsfönstrets x-position"
 
-#: ../src/mt-main.c:891
+#: ../src/mt-main.c:821
 msgid "Click-type window Y position"
 msgstr "Klicktypsfönstrets y-position"
 
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "Ignorera mindre muspekarrörelser"
 
-#: ../src/mt-main.c:895
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "Stäng av musjusteringar"
 
-#: ../src/mt-main.c:897
+#: ../src/mt-main.c:827
 msgid "Disable cursor animations"
 msgstr "Inaktivera pekaranimeringar"
 
-#: ../src/mt-main.c:899
+#: ../src/mt-main.c:829
 msgid "Start mousetweaks as a daemon"
 msgstr "Starta musjusteringar som en bakgrundsprocess"
 
-#: ../src/mt-main.c:901
+#: ../src/mt-main.c:831
 msgid "Start mousetweaks in login mode"
 msgstr "Starta musjusteringar i inloggningsläge"
 
 #. parse
-#: ../src/mt-main.c:919
+#: ../src/mt-main.c:851
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME-mustillgänglighetsdemon"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "Kunde inte visa hjälp"
 
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "Aktivera och logga ut"
 
-#: ../src/pointer-capture-applet.c:213
-msgid "Locked"
-msgstr "Låst"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:216
-msgid "L"
-msgstr "L"
-
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "Fångstområde"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "Lås muspekaren temporärt"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "Låst"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Misslyckades med att starta musinställningar"
 
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "Stöd för hjälpmedelsteknik är inte aktiverat"
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Musjusteringar kräver att hjälpmedelstekniker är aktiverade i din "
+#~ "session.\n"
+#~ "\n"
+#~ "Tryck på \"Aktivera och logga ut\" för att aktivera stöd för "
+#~ "hjälpmedelstekniker och starta om din session."
+#~ msgid "L"
+#~ msgstr "L"
 #~ msgid "Dwell mode to use"
 #~ msgstr "Läge för uppehållsklick att använda"
 #~ msgid "Window y position"

@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2010-03-12 07:36+0000\n"
-"PO-Revision-Date: 2010-03-13 01:27+0100\n"
+"POT-Creation-Date: 2010-06-27 16:34+0000\n"
+"PO-Revision-Date: 2010-06-27 20:21+0100\n"
 "Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,14 +16,14 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:222(None) C/mousetweaks.xml:299(None)
+#: C/mousetweaks.xml:227(None) C/mousetweaks.xml:304(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
 msgstr "translated"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:239(None) C/mousetweaks.xml:420(None)
+#: C/mousetweaks.xml:244(None) C/mousetweaks.xml:427(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-ssc-checkbox.png'; "
 "md5=3f19228551e955ba0afda595b4bfd9bb"
@@ -31,7 +31,7 @@ msgstr "translated"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:316(None) C/mousetweaks.xml:457(None)
+#: C/mousetweaks.xml:321(None) C/mousetweaks.xml:464(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
 "md5=690dde37df60c6953b4c7e9b256c7a43"
@@ -39,8 +39,8 @@ msgstr "translated"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:361(None) C/mousetweaks.xml:486(None)
-#: C/mousetweaks.xml:811(None)
+#: C/mousetweaks.xml:366(None) C/mousetweaks.xml:493(None)
+#: C/mousetweaks.xml:841(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
 "md5=8a8c96ae1353f93e286c9fca09c9b8ce"
@@ -48,7 +48,7 @@ msgstr "translated"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:510(None) C/mousetweaks.xml:979(None)
+#: C/mousetweaks.xml:517(None) C/mousetweaks.xml:1011(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; "
 "md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
@@ -56,7 +56,7 @@ msgstr "translated"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:558(None)
+#: C/mousetweaks.xml:565(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; "
 "md5=c09db81cacad7d507a28b568d238da79"
@@ -64,7 +64,7 @@ msgstr "translated"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:747(None)
+#: C/mousetweaks.xml:777(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; "
 "md5=eff4b5afa3ebc4287f244b72924e1fbf"
@@ -72,7 +72,7 @@ msgstr "wird im Hilfetext nicht angezeigt"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:773(None)
+#: C/mousetweaks.xml:803(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; "
 "md5=251686214f1a9b6e6cf4cc22a66b4b23"
@@ -80,7 +80,7 @@ msgstr "translated"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:789(None)
+#: C/mousetweaks.xml:819(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; "
 "md5=ede77b0adbc7ac3d1ae1187096c8a51f"
@@ -88,7 +88,7 @@ msgstr "wird im Hilfetext nicht angezeigt"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:887(None)
+#: C/mousetweaks.xml:917(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; "
 "md5=e939b50cdd7f6ee7937f9fc311f31e58"
@@ -96,7 +96,7 @@ msgstr "translated"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:914(None)
+#: C/mousetweaks.xml:944(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
 "md5=8d87a631347995c6a770bab22af9b65a"
@@ -104,7 +104,7 @@ msgstr "wird im Hilfetext nicht angezeigt"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:937(None)
+#: C/mousetweaks.xml:967(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; "
 "md5=da1313e8d5588a82dfb8321fc0b65eaa"
@@ -112,7 +112,7 @@ msgstr "translated"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:989(None)
+#: C/mousetweaks.xml:1021(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; "
 "md5=87295c217ba3b41a685bffbcedf92fb6"
@@ -120,7 +120,7 @@ msgstr "wird im Hilfetext nicht angezeigt"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:1006(None)
+#: C/mousetweaks.xml:1038(None)
 msgid ""
 "@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; "
 "md5=a90ff1216071e8c2187be2464cf099ba"
@@ -139,8 +139,8 @@ msgstr ""
 "Barrierefreiheit der Maus auf dem GNOME-Desktop bereit."
 
 #: C/mousetweaks.xml:21(year)
-msgid "2007 - 2009"
-msgstr "2007 - 2009"
+msgid "2007 - 2010"
+msgstr "2007 - 2010"
 
 #: C/mousetweaks.xml:23(holder)
 msgid "Francesco Fumanti"
@@ -197,14 +197,14 @@ msgid ""
 "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
 "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
 "THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK "
-"AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED "
-"VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION "
-"PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY "
-"CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR "
-"CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS "
-"LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS "
-"AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
 msgstr ""
 "DIESES DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE GARANTIEN IRGENDEINER "
 "ART, SOWOHL AUSDRÜCKLICH GENANNTE ALS AUCH ANGEDEUTETE. DIES BEZIEHT SICH "
@@ -213,8 +213,8 @@ msgstr ""
 "ZWECK GEEIGNET IST ODER DASS ES KEINE RECHTE DRITTER VERLETZT. DAS VOLLE "
 "RISIKO WAS QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER VERÄNDERTE "
 "FASSUNGEN DES DOKUMENTS LIEGT BEI IHNEN. SOLLTE EIN DOKUMENT ODER EINE "
-"VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE (NICHT "
-"DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR "
+"VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE "
+"(NICHT DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR "
 "NOTWENDIGE DIENSTLEISTUNGEN, REPARATUREN ODER FEHLERKORREKTUREN. DIESER "
 "HAFTUNGSAUSSCHLUSS IST EIN ESSENZIELLER TEIL DIESER LIZENZ. DIE VERWENDUNG "
 "EINES DOKUMENTS ODER EINER VERÄNDERTEN VERSION DES DOKUMENTS IST NICHT "
@@ -225,11 +225,11 @@ msgid ""
 "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
 "NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR "
-"ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY "
-"CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK "
-"STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR "
-"LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
 "VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
 "POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
@@ -238,13 +238,13 @@ msgstr ""
 "ANDERWEITIG KANN DER AUTOR, URSPRUNGSAUTOR, EIN MITWIRKENDER ODER EIN "
 "VERTRIEBSPARTNER DIESES DOKUMENTS ODER EINER VERÄNDERTEN FASSUNG DES "
 "DOKUMENTS ODER EIN ZULIEFERER EINER DIESER PARTEIEN, HAFTBAR GEMACHT WERDEN "
-"FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN JEGLICHER "
-"ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST VON "
-"KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN ODER "
-"ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT DER "
-"VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS ERGEBEN, "
-"AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER SCHÄDEN "
-"INFORMIERT WAREN."
+"FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN "
+"JEGLICHER ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST "
+"VON KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN "
+"ODER ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT "
+"DER VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS "
+"ERGEBEN, AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER "
+"SCHÄDEN INFORMIERT WAREN."
 
 #: C/mousetweaks.xml:22(para)
 msgid ""
@@ -253,8 +253,8 @@ msgid ""
 "<placeholder-1/>"
 msgstr ""
 "DAS DOKUMENT UND VERÄNDERTE FASSUNGEN DES DOKUMENTS WERDEN UNTER DEN "
-"BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT DEM "
-"WEITERGEHENDEN VERSTÄNDNIS, DASS: <placeholder-1/>"
+"BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT "
+"DEM WEITERGEHENDEN VERSTÄNDNIS, DASS: <placeholder-1/>"
 
 #: C/mousetweaks.xml:30(firstname)
 msgid "Francesco"
@@ -273,14 +273,13 @@ msgid "Version 2.30"
 msgstr "Version 2.30"
 
 #: C/mousetweaks.xml:44(date)
-#| msgid "February 2010"
 msgid "March 2010"
 msgstr "März 2010"
 
 #: C/mousetweaks.xml:47(para)
 msgid ""
-"Adapt the manual to the changes done to mousetweaks for GNOME 2.30. Francesco "
-"Fumanti <email>frfumanti@svn.gnome.org</email>"
+"Adapt the manual to the changes done to mousetweaks for GNOME 2.30. "
+"Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 msgstr ""
 "Der Inhalt des Handbuchs wurde an die Änderungen in Mousetweaks für GNOME "
 "2.30 angepasst. <email>Francesco Fumanti frfumanti@svn.gnome.org</email>"
@@ -295,8 +294,8 @@ msgstr "September 2009"
 
 #: C/mousetweaks.xml:59(para)
 msgid ""
-"Adapt the manual to the changes done to mousetweaks for GNOME 2.28. Francesco "
-"Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
+"Adapt the manual to the changes done to mousetweaks for GNOME 2.28. "
+"Francesco Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
 msgstr ""
 "Der Inhalt des Handbuchs wurde an die Änderungen in Mousetweaks für GNOME "
 "2.28 angepasst. <email>Francesco Fumanti frfumanti@svn.gnome.org</email>"
@@ -311,13 +310,13 @@ msgstr "2. Februar 2009"
 
 #: C/mousetweaks.xml:71(para)
 msgid ""
-"The manual has been edited to match the changes done to mousetweaks for GNOME "
-"2.26. Moreover, the license of the manual has been raised to GFDL 1.3. "
+"The manual has been edited to match the changes done to mousetweaks for "
+"GNOME 2.26. Moreover, the license of the manual has been raised to GFDL 1.3. "
 "Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 msgstr ""
 "Dieses Handbuch wurde überarbeitet, um die Änderungen in Mousetweaks für "
-"GNOME 2.26 zu berücksichtigen. Weiterhin wurde die Lizenz dieses Handbuchs in "
-"die GFDL 1.3 geändert. <email>Francesco Fumanti frfumanti@svn.gnome.org</"
+"GNOME 2.26 zu berücksichtigen. Weiterhin wurde die Lizenz dieses Handbuchs "
+"in die GFDL 1.3 geändert. <email>Francesco Fumanti frfumanti@svn.gnome.org</"
 "email>"
 
 #: C/mousetweaks.xml:79(revnumber)
@@ -403,14 +402,14 @@ msgstr ""
 
 #: C/mousetweaks.xml:133(contrib)
 msgid ""
-"To report a bug or make a suggestion regarding the Mousetweaks application or "
-"this manual, please go to GNOME's Bugzilla."
+"To report a bug or make a suggestion regarding the Mousetweaks application "
+"or this manual, please go to GNOME's Bugzilla."
 msgstr ""
-"Um einen Fehler zu melden oder einen Vorschlag zur Mousetweaks-Anwendung oder "
-"zu diesem Handbuch zu machen, benutzen Sie bitte das Bugzilla-"
+"Um einen Fehler zu melden oder einen Vorschlag zur Mousetweaks-Anwendung "
+"oder zu diesem Handbuch zu machen, benutzen Sie bitte das Bugzilla-"
 "Fehlererfassungssystem von GNOME."
 
-#: C/mousetweaks.xml:137(title) C/mousetweaks.xml:1071(title)
+#: C/mousetweaks.xml:137(title) C/mousetweaks.xml:1103(title)
 msgid "Feedback"
 msgstr "Rückmeldungen"
 
@@ -423,16 +422,16 @@ msgid ""
 msgstr ""
 "Um einen Fehler zu melden oder einen Vorschlag zum <application>Mousetweaks-"
 "Modul</application> (d.h. zur Barrierefreiheit der Maus), dessen "
-"Benutzeroberfläche oder zu dessen Handbuch zu machen, benutzen Sie bitte  das "
-"<ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">Bugzilla-"
+"Benutzeroberfläche oder zu dessen Handbuch zu machen, benutzen Sie bitte  "
+"das <ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">Bugzilla-"
 "Fehlererfassungssystem</ulink> von GNOME."
 
 #: C/mousetweaks.xml:148(primary)
 msgid "Mousetweaks"
 msgstr "Mousetweaks"
 
-#: C/mousetweaks.xml:152(primary) C/mousetweaks.xml:438(command)
-#: C/mousetweaks.xml:474(command)
+#: C/mousetweaks.xml:152(primary) C/mousetweaks.xml:445(command)
+#: C/mousetweaks.xml:481(command)
 msgid "mousetweaks"
 msgstr "mousetweaks"
 
@@ -443,8 +442,8 @@ msgstr "Einführung"
 #: C/mousetweaks.xml:158(para)
 msgid ""
 "<application>Mousetweaks</application> provides mouse accessibility "
-"enhancements for the GNOME Desktop. Indeed, it offers the following functions "
-"to the user:"
+"enhancements for the GNOME Desktop. Indeed, it offers the following "
+"functions to the user:"
 msgstr ""
 "<application>Mousetweaks</application> stellt Verbesserungen der "
 "Barrierefreiheit der Maus auf dem GNOME-Desktop bereit. Im Einzelnen stehen "
@@ -479,11 +478,19 @@ msgstr ""
 "ein vorher festgelegtes Tastenkürzel oder eine Bedienung einer Maustaste "
 "entsperrt."
 
-#: C/mousetweaks.xml:183(title)
+#: C/mousetweaks.xml:182(para)
+msgid ""
+"Since version 2.31.3, mousetweaks does not depend anymore on the AT-SPI "
+"accessibility framework."
+msgstr ""
+"Seit Version 2.31.3 ist Mousetweaks nicht mehr vom Barrierefeiheits-"
+"Framework AT-SPI abhängig."
+
+#: C/mousetweaks.xml:188(title)
 msgid "How To Start The Functions"
 msgstr "Starten der Funktionen"
 
-#: C/mousetweaks.xml:185(para)
+#: C/mousetweaks.xml:190(para)
 msgid ""
 "The simulated secondary click and the dwell click depend on the mousetweaks "
 "process; however the pointer capture applet depends on the GNOME panel. "
@@ -493,51 +500,51 @@ msgstr ""
 "Prozess abhängig. Das Applet zum Einfangen des Mauszeigers hängt vom GNOME-"
 "Panel ab. Daher gibt es auch verschiedene Wege, diese zu starten."
 
-#: C/mousetweaks.xml:190(title)
+#: C/mousetweaks.xml:195(title)
 msgid "Starting The Simulated Secondary Click Function"
 msgstr "Starten der Funktion des simulierten Kontextklicks"
 
-#: C/mousetweaks.xml:192(para)
+#: C/mousetweaks.xml:197(para)
 msgid "You can start the Simulated Secondary Click in two ways:"
 msgstr ""
 "Sie können den simulierten Kontextklick auf zwei verschiedene Arten starten:"
 
-#: C/mousetweaks.xml:196(para)
+#: C/mousetweaks.xml:201(para)
 msgid "from the graphical user interface"
 msgstr "in der grafischen Oberfläche"
 
-#: C/mousetweaks.xml:200(para) C/mousetweaks.xml:272(para)
+#: C/mousetweaks.xml:205(para) C/mousetweaks.xml:277(para)
 msgid "from the command line"
 msgstr "über die Befehlszeile"
 
-#: C/mousetweaks.xml:205(title)
+#: C/mousetweaks.xml:210(title)
 msgid "Start From The Graphical User Interface"
 msgstr "Start über die grafische Oberfläche"
 
-#: C/mousetweaks.xml:207(para)
+#: C/mousetweaks.xml:212(para)
 msgid ""
 "The graphical user interface to start the simulated secondary click is "
 "located in the Accessibility tab of the Mouse control panel. To open it, "
-"choose the menu <menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</"
-"guisubmenu><guimenuitem>Control Center</guimenuitem></menuchoice> and the "
-"Control Center will open. By clicking on Mouse in the Control Center, the "
-"Mouse control panel will open and after clicking on the Accessibility tab, "
-"you will see the following settings:"
+"choose the menu <menuchoice><guimenu>System</"
+"guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Control Center</"
+"guimenuitem></menuchoice> and the Control Center will open. By clicking on "
+"Mouse in the Control Center, the Mouse control panel will open and after "
+"clicking on the Accessibility tab, you will see the following settings:"
 msgstr ""
 "Die grafische Benutzeroberfläche zum Starten des simulierten Kontextklicks "
 "finden Sie im Reiter »Barrierefreiheit« des Maus-Einstellungswerkzeugs. Um "
 "dieses zu öffnen, wählen Sie das Menü  <menuchoice><guimenu>System</"
 "guimenu><guisubmenu>Einstellungen</guisubmenu><guimenuitem>Kontrollzentrum</"
-"guimenuitem></menuchoice>, woraufhin das GNOME-Kontrollzentrum geöffnet wird. "
-"Klicken Sie im Kontrollzentrum auf »Maus«. Das Maus-Einstellungswerkzeug wird "
-"geöffnet, in dessen Reiter »Barrierefreiheit« folgende Einstellungen möglich "
-"sind:"
+"guimenuitem></menuchoice>, woraufhin das GNOME-Kontrollzentrum geöffnet "
+"wird. Klicken Sie im Kontrollzentrum auf »Maus«. Das Maus-"
+"Einstellungswerkzeug wird geöffnet, in dessen Reiter »Barrierefreiheit« "
+"folgende Einstellungen möglich sind:"
 
-#: C/mousetweaks.xml:226(para) C/mousetweaks.xml:303(para)
+#: C/mousetweaks.xml:231(para) C/mousetweaks.xml:308(para)
 msgid "Picture of the Mouse control panel"
 msgstr "Das Maus-Einstellungswerkzeug"
 
-#: C/mousetweaks.xml:230(para)
+#: C/mousetweaks.xml:235(para)
 msgid ""
 "To start the simulated secondary click function, put a checkmark into the "
 "checkbox that says:"
@@ -545,19 +552,19 @@ msgstr ""
 "Um die Funktion des simulierten Kontextklicks zu starten, aktivieren Sie das "
 "folgende Ankreuzfeld:"
 
-#: C/mousetweaks.xml:233(quote)
+#: C/mousetweaks.xml:238(quote)
 msgid "Trigger secondary click by holding down the primary button"
 msgstr "Kontextklick durch Gedrückthalten der ersten Taste auslösen"
 
-#: C/mousetweaks.xml:243(para)
+#: C/mousetweaks.xml:248(para)
 msgid "Picture of the checkbox to start the simulated secondary click"
 msgstr "Das Ankreuzfeld des simulierten Kontextklicks"
 
-#: C/mousetweaks.xml:250(title) C/mousetweaks.xml:327(title)
+#: C/mousetweaks.xml:255(title) C/mousetweaks.xml:332(title)
 msgid "Start From The Command Line"
 msgstr "Start über die Befehlszeile"
 
-#: C/mousetweaks.xml:252(para)
+#: C/mousetweaks.xml:257(para)
 msgid ""
 "To start the simulated secondary click from the command line, open the "
 "<application>Terminal</application> and type the following:"
@@ -565,38 +572,38 @@ msgstr ""
 "Um den simulierten Kontextklick in einer Befehlszeile zu starten, öffnen Sie "
 "ein <application>Terminal</application> und geben Sie Folgendes ein:"
 
-#: C/mousetweaks.xml:257(parameter)
-msgid "--enable-secondary"
-msgstr "--enable-secondary"
+#: C/mousetweaks.xml:262(parameter)
+msgid "--ssc"
+msgstr "--ssc"
 
-#: C/mousetweaks.xml:256(command) C/mousetweaks.xml:333(command)
+#: C/mousetweaks.xml:261(command) C/mousetweaks.xml:338(command)
 msgid "mousetweaks <placeholder-1/>"
 msgstr "mousetweaks <placeholder-1/>"
 
-#: C/mousetweaks.xml:262(title)
+#: C/mousetweaks.xml:267(title)
 msgid "Starting The Dwell Click Function"
 msgstr "Starten der Funktion des verzögerten Klicks"
 
-#: C/mousetweaks.xml:264(para)
+#: C/mousetweaks.xml:269(para)
 msgid "You can start the dwell click function in three ways:"
 msgstr ""
 "Sie können die Funktion des verzögerten Klicks auf drei verschiedene Arten "
 "starten:"
 
-#: C/mousetweaks.xml:268(para)
+#: C/mousetweaks.xml:273(para)
 msgid "from the Accessibility tab of the Mouse control panel"
 msgstr "im Reiter »Barrierefreiheit« des Einstellungsdialogs für die Maus"
 
-#: C/mousetweaks.xml:276(para)
+#: C/mousetweaks.xml:281(para)
 msgid "from the On/Off button on the Dwell Click panel applet"
 msgstr ""
 "mit dem Knopf »Aktivieren/Deaktivieren« im Panel-Applet »Verzögerter Klick«"
 
-#: C/mousetweaks.xml:281(title)
+#: C/mousetweaks.xml:286(title)
 msgid "Start From The Accessibility tab of the Mouse control panel"
 msgstr "Starten im Reiter »Barrierefreiheit« des Maus-Einstellungswerkzeugs"
 
-#: C/mousetweaks.xml:284(para)
+#: C/mousetweaks.xml:289(para)
 msgid ""
 "The graphical user interface to start the dwell click is located in the "
 "Accessibility tab of the Mouse control panel. To open it, choose the menu "
@@ -610,12 +617,12 @@ msgstr ""
 "Sie im Reiter »Barrierefreiheit« des Maus-Einstellungswerkzeugs. Um dieses zu "
 "öffnen, wählen Sie das Menü  <menuchoice><guimenu>System</"
 "guimenu><guisubmenu>Einstellungen</guisubmenu><guimenuitem>Kontrollzentrum</"
-"guimenuitem></menuchoice>, woraufhin das GNOME-Kontrollzentrum geöffnet wird. "
-"Klicken Sie im Kontrollzentrum auf »Maus«. Das Maus-Einstellungswerkzeug wird "
-"geöffnet, in dessen Reiter »Barrierefreiheit« folgende Einstellungen möglich "
-"sind:"
+"guimenuitem></menuchoice>, woraufhin das GNOME-Kontrollzentrum geöffnet "
+"wird. Klicken Sie im Kontrollzentrum auf »Maus«. Das Maus-"
+"Einstellungswerkzeug wird geöffnet, in dessen Reiter »Barrierefreiheit« "
+"folgende Einstellungen möglich sind:"
 
-#: C/mousetweaks.xml:307(para)
+#: C/mousetweaks.xml:312(para)
 msgid ""
 "To start the dwell click function, put a checkmark into the checkbox that "
 "says:"
@@ -623,15 +630,15 @@ msgstr ""
 "Um die Funktion des verzögerten Klicks zu starten, aktivieren Sie folgendes "
 "Ankreuzfeld:"
 
-#: C/mousetweaks.xml:310(quote)
+#: C/mousetweaks.xml:315(quote)
 msgid "Initiate click when stopping pointer movement"
 msgstr "Klick ausführen, wenn sich der Mauszeiger nicht mehr bewegt"
 
-#: C/mousetweaks.xml:320(para)
+#: C/mousetweaks.xml:325(para)
 msgid "Picture of the checkbox to start the dwell click function"
 msgstr "Das Ankreuzfeld zum Starten des verzögerten Klicks"
 
-#: C/mousetweaks.xml:329(para)
+#: C/mousetweaks.xml:334(para)
 msgid ""
 "To start the dwell click function and show the click type window from the "
 "command line, open the <application>Terminal</application> and type the "
@@ -641,11 +648,11 @@ msgstr ""
 "das Klick-Typ-Fenster anzuzeigen, öffnen Sie ein <application>Terminal</"
 "application> und geben Sie Folgendes ein:"
 
-#: C/mousetweaks.xml:333(parameter)
-msgid "--enable-dwell --show-ctw"
-msgstr "--enable-dwell --show-ctw"
+#: C/mousetweaks.xml:338(parameter)
+msgid "--dwell --show-ctw"
+msgstr "--dwell --show-ctw"
 
-#: C/mousetweaks.xml:337(para)
+#: C/mousetweaks.xml:342(para)
 msgid ""
 "The starting parameters --login and --daemonize were added to allow GDM to "
 "start and quit mousetweaks: the first disables the check for the Assistive "
@@ -655,68 +662,70 @@ msgid ""
 msgstr ""
 "Die Startparameter --login und --daemonize wurden hinzugefügt, um GDM zu "
 "ermöglichen, Mousetweaks zu starten und zu beenden. Der erstgenannte "
-"Parameter deaktiviert die Überprüfung auf das Hilfstechnologie-Framework beim "
-"Start von Mousetweaks. Wenn der zweite Parameter nicht übergeben wird, dann "
-"behält Mousetweaks die beim Starten erhaltene Prozesskennung. Dadurch erhält "
-"GDM die Möglichkeit, Mousetweaks anhand dieser Prozesskennung zu beenden."
+"Parameter deaktiviert die Überprüfung auf das Hilfstechnologie-Framework "
+"beim Start von Mousetweaks. Wenn der zweite Parameter nicht übergeben wird, "
+"dann behält Mousetweaks die beim Starten erhaltene Prozesskennung. Dadurch "
+"erhält GDM die Möglichkeit, Mousetweaks anhand dieser Prozesskennung zu "
+"beenden."
 
-#: C/mousetweaks.xml:347(title)
+#: C/mousetweaks.xml:352(title)
 msgid "Start From The On/Off button On The Dwell Click Panel Applet"
 msgstr ""
 "Start mit dem Knopf Aktivieren/Deaktivieren des Panel-Applets »Verzögerter "
 "Klick«"
 
-#: C/mousetweaks.xml:350(para)
+#: C/mousetweaks.xml:355(para)
 msgid ""
 "It is possible to start the Dwell Click by simply resting (dwelling) for a "
 "little delay with the pointer on the mouse icon displayed by the Dwell Click "
 "panel applet. In fact, this mouse icon is a dwellable On/Off button that "
-"provides feedback of the passing dwell time by filling its frame with another "
-"colour. When the frame is completely filled, the button displays its active "
-"state and the dwell click gets started."
+"provides feedback of the passing dwell time by filling its frame with "
+"another colour. When the frame is completely filled, the button displays its "
+"active state and the dwell click gets started."
 msgstr ""
 "Es ist möglich, den verzögerten Klick durch einfaches Verweilen mit dem "
 "Mauszeiger auf dem Maus-Symbol des Panel-Applets »Verzögerter Klick« zu "
 "starten. Dieses Maus-Symbol stellt die Verzögerungszeit dar, indem sich der "
 "Rahmen mit einer anderen Farbe füllt. Wenn der Rahmen vollständig gefüllt "
-"ist, dann zeigt der Knopf den aktiven Status an und der verzögerte Klick wird "
-"gestartet."
+"ist, dann zeigt der Knopf den aktiven Status an und der verzögerte Klick "
+"wird gestartet."
 
-#: C/mousetweaks.xml:365(para) C/mousetweaks.xml:490(para)
-#: C/mousetweaks.xml:815(para)
+#: C/mousetweaks.xml:370(para) C/mousetweaks.xml:497(para)
+#: C/mousetweaks.xml:845(para)
 msgid "Picture showing the click type applet at the right of the GNOME menus"
 msgstr "Das Klicktyp-Applet rechts neben den GNOME-Menüs"
 
-#: C/mousetweaks.xml:372(link) C/mousetweaks.xml:380(title)
-#: C/mousetweaks.xml:972(link)
-msgid "Starting The Pointer Capture Function"
-msgstr "Starten der Funktion zum Einfangen des Mauszeigers"
-
-#: C/mousetweaks.xml:370(remark)
+#: C/mousetweaks.xml:376(para)
 msgid ""
 "For instructions about how to install the Dwell Click applet on the GNOME "
-"panel, please have a look at <placeholder-1/> where you can see how it is "
+"panel, please have a look at <link linkend=\"mouse-a11y-start-pointer-capture"
+"\">Starting The Pointer Capture Function</link> where you can see how it is "
 "done for the Pointer Capture panel applet. The procedure for the Dwell Click "
 "panel applet is similar."
 msgstr ""
 "Anweisungen zur Installation des Applets »Verzögerter Klick« auf dem GNOME-"
-"Panel finden Sie in <placeholder-1/>, wo Sie eine Anleitung zum Hinzufügen "
-"des Applets zum Einfangen des Mauszeigers finden. Die Vorgehensweise zum "
-"Hinzufügen Applets »Verzögerter Klick« ist ähnlich."
+"Panel finden Sie in <link linkend=\"mouse-a11y-start-pointer-capture"
+"\">Starten der Funktion zum Einfangen des Mauszeigers</link>, wo Sie eine "
+"Anleitung zum Hinzufügen des Applets zum Einfangen des Mauszeigers finden. "
+"Die Vorgehensweise zum Hinzufügen des Applets »Verzögerter Klick« ist ähnlich."
 
-#: C/mousetweaks.xml:382(para)
+#: C/mousetweaks.xml:387(title)
+msgid "Starting The Pointer Capture Function"
+msgstr "Starten der Funktion zum Einfangen des Mauszeigers"
+
+#: C/mousetweaks.xml:389(para)
 msgid ""
 "As the Pointer Capture applet comes in the from of a panel applet, its "
-"starting method has to follow the rules dictated by the GNOME panel. Thus, to "
-"start the Pointer Capture function, you only have to install it on the panel "
-"and it will automatically run."
+"starting method has to follow the rules dictated by the GNOME panel. Thus, "
+"to start the Pointer Capture function, you only have to install it on the "
+"panel and it will automatically run."
 msgstr ""
 "Das Applet zum Einfangen des Mauszeiger ist ein Panel-Applet, daher folgt "
 "seine Startmethode den vom GNOME-Panel vorgegebenen Regeln. Um die Funktion "
-"zum Einfangen des Mauszeigers zu starten, müssen Sie das Applet lediglich zum "
-"Panel hinzufügen, und es wird automatisch gestartet."
+"zum Einfangen des Mauszeigers zu starten, müssen Sie das Applet lediglich "
+"zum Panel hinzufügen, und es wird automatisch gestartet."
 
-#: C/mousetweaks.xml:387(para)
+#: C/mousetweaks.xml:394(para)
 msgid ""
 "In order to add it to the panel, proceed as you do with any panel applet: "
 "perform a secondary click on the panel to open its contextual menu, choose "
@@ -726,10 +735,10 @@ msgstr ""
 "Um es zum Panel hinzuzufügen, gehen Sie genauso vor wie mit jedem anderen "
 "Panel-Applet: Führen Sie einen Kontextklick auf einer freien Stelle des "
 "Panels aus, um das Kontextmenü zu öffnen und wählen Sie <guimenuitem>Zum "
-"Panel hinzufügen</guimenuitem>. Daraufhin wird ein Fenster geöffnet, das alle "
-"auf dem GNOME-Panel installierbaren Applets anzeigt."
+"Panel hinzufügen</guimenuitem>. Daraufhin wird ein Fenster geöffnet, das "
+"alle auf dem GNOME-Panel installierbaren Applets anzeigt."
 
-#: C/mousetweaks.xml:393(para)
+#: C/mousetweaks.xml:400(para)
 msgid ""
 "By double clicking on the <guilabel>Pointer Capture</guilabel> item in the "
 "Add to Panel window, the Pointer Capture applet will be added to the panel, "
@@ -739,11 +748,11 @@ msgstr ""
 "guilabel> im Fenster »Zum Panel hinzufügen« wird dieses Applet zum Panel "
 "hinzugefügt. Es ist aktiv, bis es wieder aus dem GNOME-Panel entfernt wird."
 
-#: C/mousetweaks.xml:401(title)
+#: C/mousetweaks.xml:408(title)
 msgid "How To Quit The Functions"
 msgstr "Beenden der Funktionen"
 
-#: C/mousetweaks.xml:403(para)
+#: C/mousetweaks.xml:410(para)
 msgid ""
 "Similar to the starting of the functions, their quitting also depends on the "
 "feature that you want to quit."
@@ -751,17 +760,17 @@ msgstr ""
 "Analog zum Starten der Funktionen hängt das Beenden der Funktionen vom "
 "Funktionsmerkmal ab, das Sie beenden wollen."
 
-#: C/mousetweaks.xml:407(title)
+#: C/mousetweaks.xml:414(title)
 msgid "Quitting The Simulated Secondary Click"
 msgstr "Beenden des simulierten Kontextklicks"
 
-#: C/mousetweaks.xml:409(para)
+#: C/mousetweaks.xml:416(para)
 msgid "It is possible to quit the Simulated Secondary Click in two ways:"
 msgstr ""
 "Sie haben zwei verschiedene Möglichkeiten, den simulierten Kontextklick zu "
 "beenden:"
 
-#: C/mousetweaks.xml:414(para) C/mousetweaks.xml:451(para)
+#: C/mousetweaks.xml:421(para) C/mousetweaks.xml:458(para)
 msgid ""
 "By removing the mark from the corresponding checkbox in the control panel of "
 "<application>Mousetweaks</application>."
@@ -769,139 +778,138 @@ msgstr ""
 "Durch Entfernen der Markierung aus dem entsprechenden Ankreuzfeld im "
 "Einstellungswerkzeug von <application>Mousetweaks</application>."
 
-#: C/mousetweaks.xml:424(para)
+#: C/mousetweaks.xml:431(para)
 msgid "Picture of the checkbox to start the simulated right click feature"
 msgstr "Ankreuzfeld zum Starten des simulierten Kontextklicks"
 
-#: C/mousetweaks.xml:429(para)
+#: C/mousetweaks.xml:436(para)
 msgid ""
 "Please refer to <link linkend=\"mouse-a11y-start-ssc-by-gui\">Start The "
 "Simulated Secondary Click From The Graphical User Interface</link> to locate "
 "the checkbox."
 msgstr ""
 "Um den Ort dieses Ankreuzfeldes zu finden,  ziehen Sie <link linkend=\"mouse-"
-"a11y-start-ssc-by-gui\">Start des simulierten Kontextklicks in der grafischen "
-"Oberfläche</link> zu Rate."
+"a11y-start-ssc-by-gui\">Start des simulierten Kontextklicks in der "
+"grafischen Oberfläche</link> zu Rate."
 
-#: C/mousetweaks.xml:436(para) C/mousetweaks.xml:472(para)
+#: C/mousetweaks.xml:443(para) C/mousetweaks.xml:479(para)
 msgid "By typing the following command at the command line:"
 msgstr "Durch Eingabe des folgenden Befehls in einer Befehlszeile:"
 
-#: C/mousetweaks.xml:439(parameter) C/mousetweaks.xml:475(parameter)
+#: C/mousetweaks.xml:446(parameter) C/mousetweaks.xml:482(parameter)
 msgid "--shutdown"
 msgstr "--shutdown"
 
-#: C/mousetweaks.xml:445(title)
+#: C/mousetweaks.xml:452(title)
 msgid "Quitting The Dwell Click"
 msgstr "Beenden des verzögerten Mausklicks"
 
-#: C/mousetweaks.xml:447(para)
+#: C/mousetweaks.xml:454(para)
 msgid "It is possible to quit the dwell click in three ways:"
 msgstr ""
 "Sie haben drei verschiedene Möglichkeiten, den verzögerten Klick zu beenden:"
 
-#: C/mousetweaks.xml:461(para)
+#: C/mousetweaks.xml:468(para)
 msgid "Picture of the checkbox to start the buttonless click feature"
 msgstr "Ankreuzfeld zum Starten des »tastenlosen Klicks«"
 
-#: C/mousetweaks.xml:466(para)
+#: C/mousetweaks.xml:473(para)
 msgid ""
 "Please refer to <link linkend=\"mouse-a11y-start-dwell-by-gui\">Start The "
 "Dwell Click From The Graphical User Interface</link> to locate the checkbox."
 msgstr ""
-"Um den Ort des Ankreuzfeldes zu finden, ziehen Sie <link linkend=\"mouse-a11y-"
-"start-dwell-by-gui\">Starten des verzögerten Klicks über die grafische "
+"Um den Ort des Ankreuzfeldes zu finden, ziehen Sie <link linkend=\"mouse-"
+"a11y-start-dwell-by-gui\">Starten des verzögerten Klicks über die grafische "
 "Oberfläche</link> zu Rate."
 
-#: C/mousetweaks.xml:479(para)
+#: C/mousetweaks.xml:486(para)
 msgid ""
 "If the Dwell Click applet has been installed on the GNOME panel, the Dwell "
 "Click can be disabled by dwelling with the pointer on its On/Off button."
 msgstr ""
-"Falls das Applet »Verzögerter Klick« auf dem GNOME-Panel installiert ist, kann "
-"der verzögerte Klick durch Verschieben des Mauszeigers über den Knopf "
+"Falls das Applet »Verzögerter Klick« auf dem GNOME-Panel installiert ist, "
+"kann der verzögerte Klick durch Verschieben des Mauszeigers über den Knopf "
 "»Aktivieren/Deaktivieren« abgeschaltet werden."
 
-#: C/mousetweaks.xml:499(title)
+#: C/mousetweaks.xml:506(title)
 msgid "Quitting The Pointer Capture Function"
 msgstr "Beenden der Funktion zum Einfangen des Mauszeigers"
 
-#: C/mousetweaks.xml:501(para)
+#: C/mousetweaks.xml:508(para)
 msgid ""
-"As the Pointer Capture function comes in the form of a panel applet, you have "
-"to quit it the same way that you do it with other applets: you have to remove "
-"it from the GNOME panel. To do it, perform a right click on the handle of the "
-"applet and choose <guimenuitem>Remove From Panel</guimenuitem> from its "
-"contextual menu."
+"As the Pointer Capture function comes in the form of a panel applet, you "
+"have to quit it the same way that you do it with other applets: you have to "
+"remove it from the GNOME panel. To do it, perform a right click on the "
+"handle of the applet and choose <guimenuitem>Remove From Panel</guimenuitem> "
+"from its contextual menu."
 msgstr ""
 "Die Funktion zum Einfangen des Mauszeigers ist ein Panel-Applet. Um es zu "
-"beenden, müssen Sie es in der gleichen Art und Weise aus dem Panel entfernen, "
-"wie Sie es von anderen Applets her kennen. Klicken Sie mit der rechten "
-"Maustaste auf den Anfasser des Applets und wählen Sie <guimenuitem>Aus dem "
-"Panel entfernen</guimenuitem> im Kontextmenü."
+"beenden, müssen Sie es in der gleichen Art und Weise aus dem Panel "
+"entfernen, wie Sie es von anderen Applets her kennen. Klicken Sie mit der "
+"rechten Maustaste auf den Anfasser des Applets und wählen Sie "
+"<guimenuitem>Aus dem Panel entfernen</guimenuitem> im Kontextmenü."
 
-#: C/mousetweaks.xml:514(para) C/mousetweaks.xml:983(para)
+#: C/mousetweaks.xml:521(para) C/mousetweaks.xml:1015(para)
 msgid ""
 "Picture showing the pointer capture area (green) with its contextual menu"
 msgstr "Der Mauszeiger-Einfangbereich (grün) mit seinem Kontextmenü"
 
-#: C/mousetweaks.xml:520(para)
+#: C/mousetweaks.xml:527(para)
 msgid ""
 "When using the default GNOME theme, the handle of the Pointer Capture applet "
 "are the two vertical dotted lines at the left of the pointer capture area."
 msgstr ""
 "Wenn Sie das voreingestellte GNOME-Thema verwenden, wird der Anfasser des "
-"Applets zum Einfangen des Mauszeigers durch zwei senkrechte punktierte Linien "
-"links vom Applet dargestellt."
+"Applets zum Einfangen des Mauszeigers durch zwei senkrechte punktierte "
+"Linien links vom Applet dargestellt."
 
-#: C/mousetweaks.xml:528(title)
+#: C/mousetweaks.xml:535(title)
 msgid "Description Of The Functions"
 msgstr "Beschreibung der Funktionen"
 
-#: C/mousetweaks.xml:530(para)
+#: C/mousetweaks.xml:537(para)
 msgid ""
-"Mousetweaks offers three pointer accessibility functions to the user. In this "
-"section you will find the description of the three functions: <placeholder-1/>"
+"Mousetweaks offers three pointer accessibility functions to the user. In "
+"this section you will find the description of the three functions: "
+"<placeholder-1/>"
 msgstr ""
 "Mousetweaks bietet dem Benutzer drei Funktionen bezüglich der "
 "Barrierefreiheit der Maus. In diesem Abschnitt finden Sie die Beschreibung "
 "der drei Funktionen: <placeholder-1/>"
 
-#: C/mousetweaks.xml:548(title)
+#: C/mousetweaks.xml:555(title)
 msgid "Simulated Secondary Click Description"
 msgstr "Beschreibung des simulierten Kontextklicks"
 
-#: C/mousetweaks.xml:550(para)
+#: C/mousetweaks.xml:557(para)
 msgid ""
 "When the user activates this feature, he will be able to perform secondary "
 "clicks by using the <mousebutton>primary mouse button</mousebutton>. This is "
 "especially useful for users that have only one <mousebutton>mouse button</"
 "mousebutton> at their disposal."
 msgstr ""
-"Wenn der Benutzer diese Funktion aktiviert, ist er in der Lage, Kontextklicks "
-"mit der <mousebutton>primären Maustaste</mousebutton> auszuführen. Dies ist "
-"insbesondere für Benutzer nützlich, deren Gerät nur über eine einzige "
-"<mousebutton>Maustaste</mousebutton> verfügt."
+"Wenn der Benutzer diese Funktion aktiviert, ist er in der Lage, "
+"Kontextklicks mit der <mousebutton>primären Maustaste</mousebutton> "
+"auszuführen. Dies ist insbesondere für Benutzer nützlich, deren Gerät nur "
+"über eine einzige <mousebutton>Maustaste</mousebutton> verfügt."
 
-#: C/mousetweaks.xml:562(para)
-msgid "Picture showing the settings belonging to the Simulated Secondary Click."
+#: C/mousetweaks.xml:569(para)
+msgid ""
+"Picture showing the settings belonging to the Simulated Secondary Click."
 msgstr "Einstellungen bezüglich des simulierten Kontextklicks"
 
-#: C/mousetweaks.xml:568(title) C/mousetweaks.xml:723(title)
+#: C/mousetweaks.xml:575(title) C/mousetweaks.xml:753(title)
 msgid "How Does It Work?"
 msgstr "Wie funktioniert es?"
 
-#: C/mousetweaks.xml:570(para)
+#: C/mousetweaks.xml:577(para)
 msgid ""
-"Let us assume that the user has enabled the Simulated Secondary Click feature."
-msgstr "Nehmen wir an, der Benutzer hat den simulierten Kontextklick aktiviert."
+"Let us assume that the user has enabled the Simulated Secondary Click "
+"feature."
+msgstr ""
+"Nehmen wir an, der Benutzer hat den simulierten Kontextklick aktiviert."
 
-#: C/mousetweaks.xml:573(para)
-#| msgid ""
-#| "To perform a simulated secondary click, the user has to keep the "
-#| "<mousebutton>primary mouse button</mousebutton> pressed without moving the "
-#| "pointer for a determined time. As soon as the determined time has elapsed, "
-#| "the simulated secondary click is issued."
+#: C/mousetweaks.xml:580(para)
 msgid ""
 "To perform a simulated secondary click, the user has to keep the "
 "<mousebutton>primary mouse button</mousebutton> pressed without moving the "
@@ -914,79 +922,80 @@ msgstr ""
 "<mousebutton>primäre Maustaste</mousebutton> gedrückt halten, ohne die Maus "
 "für eine bestimmte Zeitspanne zu bewegen. Diese Zeitspanne wird mit dem "
 "Schieberegler für die Verzögerung des simulierten Kontextklicks festgelegt. "
-"Während Sie die <mousebutton>primäre Maustaste</mousebutton> gedrückt halten, "
-"wird der Mauszeiger in einer anderen Farbe dargestellt, um den Benutzer über "
-"die verstreichende Zeit zu informieren."
+"Während Sie die <mousebutton>primäre Maustaste</mousebutton> gedrückt "
+"halten, wird der Mauszeiger in einer anderen Farbe dargestellt, um den "
+"Benutzer über die verstreichende Zeit zu informieren."
 
-#: C/mousetweaks.xml:581(para)
+#: C/mousetweaks.xml:588(para)
 msgid ""
 "If the user releases the <mousebutton>primary mouse button</mousebutton> "
 "before the arrow of the pointer has been completely filled with the new "
 "color, the system will only receive the information of the "
 "<mousebutton>primary mouse button</mousebutton> press and release."
 msgstr ""
-"Falls der Benutzer die <mousebutton>primäre Maustaste</mousebutton> loslässt, "
-"bevor der Mauszeiger vollständig die Farbe gewechselt hat, empfängt das "
-"System lediglich die Meldung, dass die <mousebutton>primäre Maustaste</"
-"mousebutton> gedrückt und wieder losgelassen wurde."
+"Falls der Benutzer die <mousebutton>primäre Maustaste</mousebutton> "
+"loslässt, bevor der Mauszeiger vollständig die Farbe gewechselt hat, "
+"empfängt das System lediglich die Meldung, dass die <mousebutton>primäre "
+"Maustaste</mousebutton> gedrückt und wieder losgelassen wurde."
 
-#: C/mousetweaks.xml:587(para)
+#: C/mousetweaks.xml:594(para)
 msgid ""
 "If the user releases the <mousebutton>primary mouse button</mousebutton> "
-"after the arrow of pointer has been completely filled with the new color, the "
-"<mousebutton>primary mouse button</mousebutton> events will be followed by a "
-"<mousebutton>secondary mouse button</mousebutton> click. In fact, mousetweaks "
-"creates this simulated <mousebutton>scondary mouse button</mousebutton> click "
-"as soon as the user releases the the <mousebutton>primary mouse button</"
-"mousebutton>."
+"after the arrow of pointer has been completely filled with the new color, "
+"the <mousebutton>primary mouse button</mousebutton> events will be followed "
+"by a <mousebutton>secondary mouse button</mousebutton> click. In fact, "
+"mousetweaks creates this simulated <mousebutton>scondary mouse button</"
+"mousebutton> click as soon as the user releases the the <mousebutton>primary "
+"mouse button</mousebutton>."
 msgstr ""
-"Falls der Benutzer die <mousebutton>primäre Maustaste</mousebutton> loslässt, "
-"nachdem der Mauszeiger vollständig die Farbe gewechselt hat, folgt den "
-"Ereignissen der <mousebutton>primären Maustaste</mousebutton> ein Klick der "
-"<mousebutton>sekundären Maustaste</mousebutton>. Faktisch löst "
+"Falls der Benutzer die <mousebutton>primäre Maustaste</mousebutton> "
+"loslässt, nachdem der Mauszeiger vollständig die Farbe gewechselt hat, folgt "
+"den Ereignissen der <mousebutton>primären Maustaste</mousebutton> ein Klick "
+"der <mousebutton>sekundären Maustaste</mousebutton>. Faktisch löst "
 "<application>Mousetweaks</application> diesen simulierten Klick der "
 "<mousebutton>sekundären Maustaste</mousebutton> aus, sobald der Benutzer die "
 "<mousebutton>primäre Maustaste</mousebutton> loslässt."
 
-#: C/mousetweaks.xml:597(para)
-msgid ""
-"On browser links, the simulated secondary click behaves differently: it does "
-"not wait for the user to release the <mousebutton>primary mouse button</"
-"mousebutton> before creating the simulated secondary click; the secondary "
-"click is created as soon as the time delay has elapsed. Previous versions of "
-"mousetweaks always behaved like this; but this behaviour had to be modified "
-"because of changes to the X server."
-msgstr ""
-"Im Browser <application>Links</application> verhält sich der simulierte "
-"Kontextklick etwas anders: Es wird mit dem Auslösen des simulierten "
-"Kontextklick nicht gewartet, bis der Benutzer die <mousebutton>primäre "
-"Maustaste</mousebutton> loslässt. Der simulierte Kontextklick wird ausgelöst, "
-"sobald die Zeit verstrichen ist. Frühere Versionen von "
-"<application>Mousetweaks</application> verhielten sich generell so, aber "
-"dieses Verhalten wurde wegen Änderungen des X-Servers angepasst."
-
-#: C/mousetweaks.xml:606(para)
+#: C/mousetweaks.xml:603(para)
 msgid ""
 "The explanations above assumed that the pointer did not move between the "
 "<mousebutton>primary mouse button</mousebutton> press and release. If the "
-"pointer gets moved before the <mousebutton>primary mouse button</mousebutton> "
-"is released, no simulated secondary click will be created. Consequently, to "
-"cancel an initiated secondary click, the user only has to move the pointer "
-"before releasing the <mousebutton>primary mouse button</mousebutton>."
+"pointer gets moved before the <mousebutton>primary mouse button</"
+"mousebutton> is released, no simulated secondary click will be created. "
+"Consequently, to cancel an initiated secondary click, the user only has to "
+"move the pointer before releasing the <mousebutton>primary mouse button</"
+"mousebutton>."
 msgstr ""
-"Die vorangegengenen Beschreibungen gehen davon aus, dass zwischen dem Drücken "
-"und Loslassen der <mousebutton>primären Maustaste</mousebutton> der "
+"Die vorangegengenen Beschreibungen gehen davon aus, dass zwischen dem "
+"Drücken und Loslassen der <mousebutton>primären Maustaste</mousebutton> der "
 "Mauszeiger nicht bewegt wird. Falls der Zeiger doch bewegt wird, bevor die "
-"<mousebutton>primäre Maustaste</mousebutton> losgelassen wird, dann wird kein "
-"simulierter Kontextklick ausgelöst. Daher muss der Benutzer nur die Maus "
-"bewegen, bevor er die <mousebutton>primäre Maustaste</mousebutton> loslässt, "
-"um den eingeleiteten Kontextklick abzubrechen."
+"<mousebutton>primäre Maustaste</mousebutton> losgelassen wird, dann wird "
+"kein simulierter Kontextklick ausgelöst. Daher muss der Benutzer nur die "
+"Maus bewegen, bevor er die <mousebutton>primäre Maustaste</mousebutton> "
+"loslässt, um den eingeleiteten Kontextklick abzubrechen."
 
-#: C/mousetweaks.xml:616(title)
+# Bitte noch mal syntaktisch und grammatisch prüfen.
+#: C/mousetweaks.xml:611(para)
+msgid ""
+"Moreover, the fact that the simulated secondary click is immediately "
+"preceded by a left click makes it behave differently than expected when the "
+"preceding left click has an incidence on the object that is to receive the "
+"simulated secondary click. Please, have a look at the section about the "
+"<link linkend=\"mouse-a11y-ssc-pecularities\">Differences To The Normal "
+"Secondary Click</link> for more details."
+msgstr ""
+"Weiterhin verhält es sich durch die Tatsache, dass dem simulierten "
+"Kontextklick unmittelbar ein primärer Klick vorausgeht, etwas anders als "
+"erwartet, wenn der vorausgehende Klick einen Einfluss auf das Objekt hat, "
+"das den simulierten Kontextklick empfangen soll. Bitte werfen Sie einen "
+"Blick in den Abschnitt zu den <link linkend=\"mouse-a11y-ssc-pecularities"
+"\">Unterschieden zum normalen Kontextklick</link> für weitere Details."
+
+#: C/mousetweaks.xml:621(title)
 msgid "The Delay Slider"
 msgstr "Der Schieberegler für die Verzögerung"
 
-#: C/mousetweaks.xml:618(para)
+#: C/mousetweaks.xml:623(para)
 msgid ""
 "How long the user has to hold the <mousebutton>primary mouse button</"
 "mousebutton> pressed, is determined by the <guilabel>Delay</guilabel> slider "
@@ -998,19 +1007,19 @@ msgstr ""
 "guilabel> unterhalb des Ankreuzfeldes zur Aktivierung festgelegt. Durch "
 "Verschieben des Reglers können Sie die gewünschte Verzögerung bestimmen."
 
-#: C/mousetweaks.xml:626(title)
+#: C/mousetweaks.xml:631(title)
 msgid "Motion Threshold"
 msgstr "Bewegungsschwellwert"
 
-#: C/mousetweaks.xml:628(para)
+#: C/mousetweaks.xml:633(para)
 msgid ""
 "People that have trouble to keep the pointer completely motionless can use "
 "the Motion Threshold slider of the Dwell Click feature. This setting makes "
 "mousetweaks ignore little mouse movements, so that the simulated secondary "
-"click is issued even if the pointer is not completely motionless. Please have "
-"a look at the section of the <link linkend=\"mouse-a11y-dwell-motion-treshold"
-"\">Motion Threshold slider of the Dwell Click feature</link> for more "
-"information about it."
+"click is issued even if the pointer is not completely motionless. Please "
+"have a look at the section of the <link linkend=\"mouse-a11y-dwell-motion-"
+"treshold\">Motion Threshold slider of the Dwell Click feature</link> for "
+"more information about it."
 msgstr ""
 "Benutzer, denen es schwerfällt, den Mauszeiger ruhig zu halten, können des "
 "Schieberegler »Schwellenwert der Bewegung« des verzögerten Klicks verwenden. "
@@ -1020,7 +1029,7 @@ msgstr ""
 "<link linkend=\"mouse-a11y-dwell-motion-treshold\">Bewegungsschwellwert-"
 "Schieberegler des verzögerten Klicks</link> für weitere Informationen."
 
-#: C/mousetweaks.xml:638(para)
+#: C/mousetweaks.xml:643(para)
 msgid ""
 "The <guilabel>Motion Threshold</guilabel> slider that is located under the "
 "<guilabel>Dwell Click</guilabel> feature is also effective for the "
@@ -1029,29 +1038,20 @@ msgid ""
 msgstr ""
 "Der unter der Funktion <guilabel>Verzögerter Klick</guilabel> angezeigte "
 "Schieberegler beeinflusst auch den <guilabel>Simulierten Kontextklick</"
-"guilabel>, und zwar auch dann, wenn der <guilabel>Verzögerte Klick</guilabel> "
-"nicht aktiviert ist."
+"guilabel>, und zwar auch dann, wenn der <guilabel>Verzögerte Klick</"
+"guilabel> nicht aktiviert ist."
 
-#: C/mousetweaks.xml:647(title)
+#: C/mousetweaks.xml:652(title)
 msgid "Differences To The Normal Secondary Click"
 msgstr "Unterschiede zum normalen Kontextklick"
 
-#: C/mousetweaks.xml:649(para)
-#| msgid ""
-#| "As the Simulated Secondary Click is not able to discard the "
-#| "<mousebutton>mouse button down</mousebutton> event from the "
-#| "<mousebutton>primary button press</mousebutton> of the user, it issues a "
-#| "primary click just before issuing the secondary click. In other words, "
-#| "each secondary click performed by this function is immediately preceded by "
-#| "a primary click, and this makes it behave a bit differently to the normal "
-#| "secondary click performed by the <mousebutton>secondary mouse button</"
-#| "mousebutton>. For example:"
+#: C/mousetweaks.xml:654(para)
 msgid ""
 "As the Simulated Secondary Click does not discard the<mousebutton> primary "
 "mouse button</mousebutton> press and release, the resulting primary click "
 "occurs just before the secondary click created by mousetweaks. Consequently, "
 "the simulated secondary click behaves a bit differently than the normal "
-"secondary click, because the latter is usually not preceeded immediately by a "
+"secondary click, because the latter is usually not preceded immediately by a "
 "<mousebutton>primary mouse button</mousebutton> click. For example:"
 msgstr ""
 "Weil der simulierte Kontextklick nicht in der Lage ist, das Mausereignis "
@@ -1059,25 +1059,60 @@ msgstr ""
 "<mousebutton>primäre Taste gedrückt</mousebutton> des Benutzers zu "
 "unterscheiden, wird der primäre Klick vor dem von <application>Mousetweaks</"
 "application> ausgelösten Kontextklick ausgeführt. Daher verhält sich der "
-"simulierte Kontextklick etwas anders als ein gewöhnlicher Kontextklick, wobei "
-"letzterem normalerweise nicht unmittelbar ein Klick der <mousebutton>primären "
-"Maustaste</mousebutton> vorausgeht. Zum Beispiel:"
+"simulierte Kontextklick etwas anders als ein gewöhnlicher Kontextklick, "
+"wobei letzterem normalerweise nicht unmittelbar ein Klick der "
+"<mousebutton>primären Maustaste</mousebutton> vorausgeht. Zum Beispiel:"
 
-#: C/mousetweaks.xml:659(para)
+#: C/mousetweaks.xml:664(para)
 msgid ""
-"It is not possible to perform a secondary click on multiple items because the "
-"primary click issued before the secondary click deselects the items."
+"It is not possible to perform a secondary click on multiple items because "
+"the primary click issued before the secondary click deselects the items."
 msgstr ""
 "Es ist nicht möglich, einen Kontextklick für mehrere Objekte auszuführen, "
 "weil der primäre Klick geschieht, bevor der Kontextklick die Auswahl der "
 "Objekte umkehrt."
 
-#: C/mousetweaks.xml:665(para)
-#| msgid ""
-#| "When the simulated secondary click is performed on the trash icon on the "
-#| "panel, not only does the contextual menu appear, but the trash folder does "
-#| "also open. (The former is caused by the secondary click, the latter by the "
-#| "primary click preceding the right click.)"
+#: C/mousetweaks.xml:670(para)
+msgid ""
+"When performing a simulated secondary click on a link in a web page, the "
+"primary click, that preceds the simulated secondary click, opens the "
+"referenced page before the simulated secondary click has a chance to open "
+"the contextual menu of the link."
+msgstr ""
+"Beim Ausführen eines simulierten Kontextklicks auf einer Webseite öffnet der "
+"primäre Klick, welcher dem simulierten Kontextklick vorausgeht, bereits die "
+"verknüpfte Webseite, bevor der simulierte Kontextklick eine reale Chance "
+"hat, das Kontextmenü des Verweises zu öffnen."
+
+#: C/mousetweaks.xml:676(para)
+msgid ""
+"The contextual menu of a link in a web page can be opened by performing a "
+"simulated secondary click while keeping the Ctrl modifier pressed. This "
+"works because the referenced page opens in a new tab when the link receives "
+"a primary click in conjunction with a pressed Ctrl modifier; which is also "
+"what happens as a side effect when opening the contextual menu of a link by "
+"using the simulated secondary click in conjunction with the Ctrl modifier."
+msgstr ""
+"Das Kontextmenü eines Verweises auf einer Webseite kann dadurch geöffnet "
+"werden, dass Sie einen simulierten Kontextklick ausführen, während Sie die "
+"Strg-Taste gedrückt halten. Dies funktioniert, weil die verknüpfte Webseite "
+"in einem neuen Reiter geöffnet wird, wenn die Verknüpfung einen primären "
+"Klick in Verbindung mit einer gedrückten Strg-Taste empfängt. Dies passiert "
+"als Nebeneffekt ebenfalls, wenn Sie das Kontextmenü eines Verweises durch "
+"den simulierten Kontextklick in Verbindung mit gedrückter Strg-Taste öffnen."
+
+#: C/mousetweaks.xml:685(para)
+msgid ""
+"However the browser has to be configured to not automatically switch to the "
+"new tab when it opens; otherwise the page with the link disappears as the "
+"new tab becomes visible and the contextual menu does not appear."
+msgstr ""
+"In jedem Fall muss der Browser so eingestellt werden, dass beim Öffnen eines "
+"neuen Reiters nicht automatisch in diesen Reiter gewechselt wird. Ansonsten "
+"würde die Seite mit dem Verweis verschwinden, wenn der neue Reiter sichtbar "
+"wird, und mit ihr das aufgerufene Kontexmenü."
+
+#: C/mousetweaks.xml:693(para)
 msgid ""
 "When the simulated secondary click is performed on the trash icon in the "
 "panel, not only does the contextual menu appear, but the trash folder also "
@@ -1089,7 +1124,7 @@ msgstr ""
 "Ordner geöffnet. Ersteres wird durch den Kontextklick selbst hervorgerufen, "
 "das letztere durch den primären Klick vor dem Kontextklick."
 
-#: C/mousetweaks.xml:674(para)
+#: C/mousetweaks.xml:702(para)
 msgid ""
 "It is not possible to provide a list of all diverging behaviours, because it "
 "depends on the reaction of the application receiving the secondary click "
@@ -1099,27 +1134,20 @@ msgstr ""
 "aufzustellen, weil dies von der Reaktion der Anwendung beim Empfang des nach "
 "dem primären Klicks ausgeführten Kontextklicks abhängt."
 
-#: C/mousetweaks.xml:679(para)
-#| msgid ""
-#| "Some users may also be surprised by the consequences of the following: it "
-#| "is not possible to perform a long motionless primary button click and "
-#| "hold, without also triggering the secondary click. For example:"
+#: C/mousetweaks.xml:707(para)
 msgid ""
 "Looking at it the other way, it is no possible to perform a long motionless "
-"<mousebutton>primary mouse button</mousebutton> press, without also "
-"triggering the secondary click. This may also have unexpected consequences "
-"for some users. For example:"
+"<mousebutton>primary mouse button</mousebutton> press without also "
+"triggering the secondary click, unless the pointer is moved before the "
+"<mousebutton>primary mouse button</mousebutton> release. This may also have "
+"unexpected consequences for some users. For example:"
 msgstr ""
 "Andererseits ist es nicht möglich, die <mousebutton>primäre Maustaste</"
 "mousebutton> längere Zeit ohne weitere Aktion gedrückt zu halten, ohne dass "
 "der Kontextklick ausgelöst wird. Das könnte für einige Benutzer unerwartete "
 "Folgen haben. Zum Beispiel:"
 
-#: C/mousetweaks.xml:686(para)
-#| msgid ""
-#| "When keeping the primary button pressed on the arrow of a scrollbar, the "
-#| "scrollbar jumps to the bottom after some time. This is in fact the normal "
-#| "behaviour of a secondary click on an arrow of a scrollbar."
+#: C/mousetweaks.xml:716(para)
 msgid ""
 "When releasing the primary button after keeping it pressed on the arrow of a "
 "scrollbar for more than the delay time, the scrollbar jumps to the bottom. "
@@ -1131,48 +1159,44 @@ msgstr ""
 "nach unten. Dabei handelt es sich um das normale Verhalten bei einem "
 "Kontextklick auf den Pfeil eines Rollbalkens."
 
-#: C/mousetweaks.xml:692(para)
-#| msgid ""
-#| "To work around this behaviour, simply move the pointer immediately after "
-#| "pressing the <mousebutton>primary mouse button</mousebutton>. This way the "
-#| "simulated secondary click is not issued."
+#: C/mousetweaks.xml:722(para)
 msgid ""
-"To avoid that the scrollbar jumps to the bottom, simply move the pointer away "
-"from the arrow of the scrollbar before releasing the primary button; this "
-"way, the initiated simulated secondary click gets canceled."
+"To avoid that the scrollbar jumps to the bottom, simply move the pointer "
+"away from the arrow of the scrollbar before releasing the primary button; "
+"this way, the initiated simulated secondary click gets canceled."
 msgstr ""
-"Um zu verhindern, dass der Rollbalken nach unten springt, bewegen Sie einfach "
-"den Mauszeiger ein wenig weg vom Pfeil des Rollbalkens, bevor Sie die "
-"<mousebutton>primäre Maustaste</mousebutton> loslassen. Durch dieses "
+"Um zu verhindern, dass der Rollbalken nach unten springt, bewegen Sie "
+"einfach den Mauszeiger ein wenig weg vom Pfeil des Rollbalkens, bevor Sie "
+"die <mousebutton>primäre Maustaste</mousebutton> loslassen. Durch dieses "
 "Verfahren wird der eingeleitete Kontextklick abgebrochen."
 
-#: C/mousetweaks.xml:703(title)
+#: C/mousetweaks.xml:733(title)
 msgid "Dwell Click Description"
 msgstr "Beschreibung des verzögerten Mausklicks"
 
-#: C/mousetweaks.xml:705(para)
+#: C/mousetweaks.xml:735(para)
 msgid ""
 "There are users that cannot use any hardware button. By activating the "
-"<guilabel>Dwell Click</guilabel>, they can have the mouse perform the various "
-"clicks without pressing any mouse button. The click types that can be "
-"performed are: single primary click, double click, drag click and secondary "
-"click."
+"<guilabel>Dwell Click</guilabel>, they can have the mouse perform the "
+"various clicks without pressing any mouse button. The click types that can "
+"be performed are: single primary click, double click, drag click and "
+"secondary click."
 msgstr ""
 "Es gibt Benutzer, die nicht imstande sind, eine Hardware-Taste zu drücken. "
 "Durch Aktivieren des <guilabel>Verzögerten Klicks</guilabel> können sie die "
 "verschiedenen Bedienungen der Maustaste ausführen, ohne irgendeine Maustaste "
-"zu drücken. Die möglichen Klicks sind: einfacher primärer Klick, Doppelklick, "
-"Klick zum Ziehen und Ablegen und Kontextklick."
+"zu drücken. Die möglichen Klicks sind: einfacher primärer Klick, "
+"Doppelklick, Klick zum Ziehen und Ablegen und Kontextklick."
 
-#: C/mousetweaks.xml:712(para)
+#: C/mousetweaks.xml:742(para)
 msgid ""
 "When the dwell click is active, the <mousebutton>mouse buttons</mousebutton> "
 "remain functional and it is still possible to click with the "
 "<mousebutton>mouse buttons</mousebutton>. Moreover, If the user performs a "
 "click with a <mousebutton>mouse button</mousebutton> while a dwell click is "
-"in progress, the dwell click gets stopped and no dwell click is generated; to "
-"initiate a new dwell click, the user has to move and stop moving the mouse as "
-"usual for the dwell click."
+"in progress, the dwell click gets stopped and no dwell click is generated; "
+"to initiate a new dwell click, the user has to move and stop moving the "
+"mouse as usual for the dwell click."
 msgstr ""
 "Wenn der verzögerte Klick aktiviert ist, sind die <mousebutton>Maustasten</"
 "mousebutton> weiterhin benutzbar. Es ist möglich, mit den "
@@ -1183,7 +1207,7 @@ msgstr ""
 "auszuführen, muss der Benutzer wiederum die Maus bewegen und anhalten, wie "
 "für einen verzögerten Klick üblich."
 
-#: C/mousetweaks.xml:725(para)
+#: C/mousetweaks.xml:755(para)
 msgid ""
 "Each time the pointer stops moving, a dwell click is initiated. To give "
 "feedback to the user, mousetweaks will fill the arrow of the pointer with "
@@ -1195,7 +1219,7 @@ msgstr ""
 "den Mauszeiger in einer anderen Farbe dar, wobei die Zeitspanne abzulaufen "
 "beginnt, bevor die Klick-Vervollständigung geschieht."
 
-#: C/mousetweaks.xml:730(para)
+#: C/mousetweaks.xml:760(para)
 msgid ""
 "How the click is completed and how the click type is chosen depends on what "
 "dwell mode the user has selected. The two available modes are:"
@@ -1204,19 +1228,19 @@ msgstr ""
 "hängt von dem vom Benutzer ausgewählten Verzögerungsmodus ab. Die zwei "
 "möglichen Modi sind:"
 
-#: C/mousetweaks.xml:736(para)
+#: C/mousetweaks.xml:766(para)
 msgid "Choose type of click beforehand"
 msgstr "Klicktyp im Voraus auswählen"
 
-#: C/mousetweaks.xml:740(para)
+#: C/mousetweaks.xml:770(para)
 msgid "Choose type of click with mouse gestures"
 msgstr "Klicktyp mit Mausgesten auswählen"
 
-#: C/mousetweaks.xml:751(para)
+#: C/mousetweaks.xml:781(para)
 msgid "Picture showing the radio buttons to select dwell mode"
 msgstr "Radioknöpfe zur Auswahl des Modus des verzögerten Klicks"
 
-#: C/mousetweaks.xml:756(para)
+#: C/mousetweaks.xml:786(para)
 msgid ""
 "To select the mode, the user only has to click on the radio button that "
 "corresponds to his choice."
@@ -1224,12 +1248,12 @@ msgstr ""
 "Um den Modus auszuwählen, muss der Benutzer den entsprechenden Radioknopf "
 "anklicken."
 
-#: C/mousetweaks.xml:760(title)
+#: C/mousetweaks.xml:790(title)
 msgid "Automatic Click Completion With Click Type Choice Beforehand"
 msgstr ""
 "Automatische Vervollständigung des Klicks bei im Voraus ausgewählten Klicktyp"
 
-#: C/mousetweaks.xml:763(para)
+#: C/mousetweaks.xml:793(para)
 msgid ""
 "This mode is active when the user selects <guilabel>Choose type of click "
 "beforehand</guilabel>. In fact, after the mouse has been motionless for the "
@@ -1238,30 +1262,30 @@ msgid ""
 "Window shown here:"
 msgstr ""
 "Dieser Modus ist aktiv, wenn der Benutzer <guilabel>Klicktyp im Voraus "
-"auswählen</guilabel> auswählt. Nachdem die Maus für die mit dem Schieberegler "
-"<guilabel>Verzögerung</guilabel> Zeitspanne nicht bewegt wurde. Das System "
-"führt automatisch den im hier angezeigten Klicktyp-Fenster ausgewählten "
-"Klicktyp aus:"
+"auswählen</guilabel> auswählt. Nachdem die Maus für die mit dem "
+"Schieberegler <guilabel>Verzögerung</guilabel> Zeitspanne nicht bewegt "
+"wurde. Das System führt automatisch den im hier angezeigten Klicktyp-Fenster "
+"ausgewählten Klicktyp aus:"
 
-#: C/mousetweaks.xml:777(para)
+#: C/mousetweaks.xml:807(para)
 msgid "Picture showing the click type window"
 msgstr "Das Fenster des Klick-Typs"
 
-#: C/mousetweaks.xml:781(para)
+#: C/mousetweaks.xml:811(para)
 msgid ""
 "To display the <guimenu>Click Type Window</guimenu> on the screen, the user "
 "has to put a checkmark <application>in the checkbox named "
 "<quote><guilabel>Show click type window</guilabel></quote>:</application>"
 msgstr ""
-"Um das <guimenu>Klickyp-Fenster</guimenu> auf dem Bildschirm anzuzeigen, muss "
-"der Benutzer das Ankreuzfeld <guilabel>Klicktyp-Fenster anzeigen</guilabel> "
-"aktivieren:"
+"Um das <guimenu>Klickyp-Fenster</guimenu> auf dem Bildschirm anzuzeigen, "
+"muss der Benutzer das Ankreuzfeld <guilabel>Klicktyp-Fenster anzeigen</"
+"guilabel> aktivieren:"
 
-#: C/mousetweaks.xml:793(para)
+#: C/mousetweaks.xml:823(para)
 msgid "Picture with the checkbox to display the click type window"
 msgstr "Ankreuzfeld zum Anzeigen des Klicktyp-Fensters"
 
-#: C/mousetweaks.xml:798(para)
+#: C/mousetweaks.xml:828(para)
 msgid ""
 "After the click has occurred, the single click type will be automatically "
 "restored. In order to choose another click type, the user has to perform an "
@@ -1271,10 +1295,10 @@ msgstr ""
 "Wenn der Klick ausgeführt wurde, wird der einfache Klicktyp "
 "wiederhergestellt. Um einen anderen Klicktyp zu wählen, muss der Benutzer "
 "einen automatischen Klick auf den <guibutton>Knopf</guibutton> im "
-"<guilabel>Klicktyp-Fenster</guilabel> ausführen, der sich auf den gewünschten "
-"Klicktyp bezieht."
+"<guilabel>Klicktyp-Fenster</guilabel> ausführen, der sich auf den "
+"gewünschten Klicktyp bezieht."
 
-#: C/mousetweaks.xml:804(para)
+#: C/mousetweaks.xml:834(para)
 msgid ""
 "Instead of the Click Type Window some users might prefer to use the "
 "<guilabel>Dwell Click</guilabel> panel applet, that has some advantages:."
@@ -1283,7 +1307,7 @@ msgstr ""
 "Applet <guilabel>Verzögerter Klick</guilabel> bevorzugen, das einige Vorzüge "
 "bietet:"
 
-#: C/mousetweaks.xml:823(para)
+#: C/mousetweaks.xml:853(para)
 msgid ""
 "The user does not need the <guilabel>Click Type Window</guilabel> that might "
 "cover other windows on the desktop."
@@ -1291,7 +1315,7 @@ msgstr ""
 "Der Benutzer benötigt das <guilabel>Klickyp-Fenster</guilabel> nicht, das "
 "vielleicht andere Fenster auf dem Desktop verdecken könnte."
 
-#: C/mousetweaks.xml:829(para)
+#: C/mousetweaks.xml:859(para)
 msgid ""
 "The user has a direct way to start and stop the dwell click by using the "
 "<guilabel>On/Off</guilabel> button of the <guilabel>Dwell Click</guilabel> "
@@ -1304,7 +1328,7 @@ msgstr ""
 "nützlich, wenn die Verzögerung für kurze Zeit abgeschaltet werden soll, um "
 "einen Text zu lesen, ohne dass der verzögerte Klick in Aktion tritt."
 
-#: C/mousetweaks.xml:820(para)
+#: C/mousetweaks.xml:850(para)
 msgid ""
 "Indeed, by using the <guilabel>Dwell Click</guilabel> panel applet: "
 "<placeholder-1/>"
@@ -1312,13 +1336,13 @@ msgstr ""
 "Bei der Verwendung des Applets <guilabel>Verzögerter Klick</guilabel>: "
 "<placeholder-1/>"
 
-#: C/mousetweaks.xml:838(para)
+#: C/mousetweaks.xml:868(para)
 msgid ""
 "To display the <guilabel>Dwell Click</guilabel> applet on the GNOME panel, "
-"the user has to follow the usual procedure to add applets to the GNOME panel. "
-"An example about how to do it can be found in the section <link linkend="
-"\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture Function</"
-"link>."
+"the user has to follow the usual procedure to add applets to the GNOME "
+"panel. An example about how to do it can be found in the section <link "
+"linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture "
+"Function</link>."
 msgstr ""
 "Um das Applet <guilabel>Verzögerter Klick</guilabel> zum GNOME-Panel "
 "hinzuzufügen, folgen Sie der üblichen Vorgehensweise zum Hinzufügen von "
@@ -1326,7 +1350,7 @@ msgstr ""
 "a11y-start-pointer-capture\">Starten der Funktion zum Einfangen des "
 "Mauszeigers</link>."
 
-#: C/mousetweaks.xml:845(para)
+#: C/mousetweaks.xml:875(para)
 msgid ""
 "The <guilabel>Click Type Window</guilabel> and the <guilabel>Dwell Click</"
 "guilabel> applet can be used simultaneously or each on its own."
@@ -1335,15 +1359,16 @@ msgstr ""
 "<guilabel>Verzögerter Klick</guilabel> können gleichzeitig oder auch "
 "unabhängig voneinander verwendet werden."
 
-#: C/mousetweaks.xml:851(title)
+#: C/mousetweaks.xml:881(title)
 msgid "Click Completion And Click Type Choice By Mouse Gesture"
-msgstr "Vervollständigung des Klicks und Auswahl des Klicktyps durch Mausgesten"
+msgstr ""
+"Vervollständigung des Klicks und Auswahl des Klicktyps durch Mausgesten"
 
-#: C/mousetweaks.xml:854(para)
+#: C/mousetweaks.xml:884(para)
 msgid ""
-"This mode is active when the user selects <guilabel>Choose type of click with "
-"mouse gestures</guilabel>. In fact, after the mouse has been motionless for "
-"the delay defined by the <link linkend=\"mouse-a11y-dwell-delay\">Delay "
+"This mode is active when the user selects <guilabel>Choose type of click "
+"with mouse gestures</guilabel>. In fact, after the mouse has been motionless "
+"for the delay defined by the <link linkend=\"mouse-a11y-dwell-delay\">Delay "
 "slider</link>, the shape of the pointer will change for a little time lapse; "
 "let's call this shape the gesture shape:"
 msgstr ""
@@ -1353,7 +1378,7 @@ msgstr ""
 "eingestellte Zeitspanne bewegungslos ist, wird die Form des Mauszeigers für "
 "kurze Zeit verändert, nennen wir diese Form die Gesten-Form: "
 
-#: C/mousetweaks.xml:863(para)
+#: C/mousetweaks.xml:893(para)
 msgid ""
 "If the user moves the pointer while it is showing the gesture shape, a click "
 "is performed at the location where the pointer was last motionless; finally "
@@ -1363,13 +1388,14 @@ msgid ""
 "feedback to the user."
 msgstr ""
 "Wenn der Benutzer den Mauszeiger bewegt, während dieser die Gesten-Form "
-"anzeigt, wird ein Klick auf die Stelle ausgeführt, wo der Zeiger sich zuletzt "
-"bewegungslos befand. Letzendlich kehrt der Mauszeiger zu seiner normalen Form "
-"zurück. Der ausgeführte Klicktyp hängt von der Bewegungsrichtung der Maus ab. "
-"Während der Bewegung des Mauszeigers wird eine Linie gezeichnet, die der "
-"Bewegung folgt, um dies dem Benutzer zu verdeutlichen."
+"anzeigt, wird ein Klick auf die Stelle ausgeführt, wo der Zeiger sich "
+"zuletzt bewegungslos befand. Letzendlich kehrt der Mauszeiger zu seiner "
+"normalen Form zurück. Der ausgeführte Klicktyp hängt von der "
+"Bewegungsrichtung der Maus ab. Während der Bewegung des Mauszeigers wird "
+"eine Linie gezeichnet, die der Bewegung folgt, um dies dem Benutzer zu "
+"verdeutlichen."
 
-#: C/mousetweaks.xml:873(para)
+#: C/mousetweaks.xml:903(para)
 msgid ""
 "If the user keeps the pointer motionless until it returns to its normal "
 "shape, the user can move the mouse without a click being performed. The next "
@@ -1380,27 +1406,27 @@ msgstr ""
 "Klick ausgeführt wird. Der nächste verzögerte Klick kann an der nächsten "
 "Stelle ausgeführt werden, an der der Mauszeiger stehenbleibt."
 
-#: C/mousetweaks.xml:880(para)
+#: C/mousetweaks.xml:910(para)
 msgid ""
-"The user also has the possibility to match click type with movement direction "
-"by using the 4 <guimenu>popups</guimenu> available:"
+"The user also has the possibility to match click type with movement "
+"direction by using the 4 <guimenu>popups</guimenu> available:"
 msgstr ""
 "Es ist möglich, den Klicktyp durch die Bewegungsrichtung zu bestimmen, und "
 "zwar durch eines der vier verfügbaren <guimenu>Kontextmenüs</guimenu>:"
 
-#: C/mousetweaks.xml:891(para)
+#: C/mousetweaks.xml:921(para)
 msgid ""
 "Picture showing the configuration options to map click type to movement "
 "direction"
 msgstr ""
 "Konfigurationsoptionen zur Zuordnung des Klicktyps zur Bewegungsrichtung"
 
-#: C/mousetweaks.xml:896(para)
+#: C/mousetweaks.xml:926(para)
 msgid ""
 "There is also a <guimenuitem>Disabled</guimenuitem> menu item in each "
 "<guimenu>popup</guimenu>. The user can select it if he does not want some "
-"click types to be performed automatically. This is especially interesting for "
-"users that have problems with only certain click types."
+"click types to be performed automatically. This is especially interesting "
+"for users that have problems with only certain click types."
 msgstr ""
 "In jedem der <guimenu>Kontextmenüs</guimenu> gibt es auch einen Eintrag "
 "namens <guimenuitem>Deaktiviert</guimenuitem>. Der Benutzer kann dies "
@@ -1408,11 +1434,11 @@ msgstr ""
 "ist insbesondere dann interessant, wenn ein Benutzer nur Schwierigkeiten mit "
 "bestimmten Klicktypen hat."
 
-#: C/mousetweaks.xml:905(title)
+#: C/mousetweaks.xml:935(title)
 msgid "Dwell Delay Setting"
 msgstr "Einstellen der Zeit für den verzögerten Klick"
 
-#: C/mousetweaks.xml:907(para)
+#: C/mousetweaks.xml:937(para)
 msgid ""
 "With the <guilabel>Delay</guilabel> slider, the user can configure how long "
 "the pointer has to be motionless for the click to be initiated."
@@ -1421,21 +1447,21 @@ msgstr ""
 "einstellen, wie lange der Mauszeiger bewegungslos bleiben muss, bevor der "
 "Klick eingeleitet wird."
 
-#: C/mousetweaks.xml:918(para)
+#: C/mousetweaks.xml:948(para)
 msgid "Picture showing the delay slider of the dwell click"
 msgstr "Verzögerungs-Schieberegler des verzögerten Klicks"
 
-#: C/mousetweaks.xml:923(para)
+#: C/mousetweaks.xml:953(para)
 msgid "The dwell delay only works in the context of the dwell click."
 msgstr ""
 "Die Verzögerungszeit ist nur wirksam im Zusammenhang mit dem verzögerten "
 "Klick."
 
-#: C/mousetweaks.xml:929(title)
+#: C/mousetweaks.xml:959(title)
 msgid "Motion Threshold Setting"
 msgstr "Einstellen des Bewegungsschwellwerts"
 
-#: C/mousetweaks.xml:931(para)
+#: C/mousetweaks.xml:961(para)
 msgid ""
 "For people that have trouble to keep the mouse motionless, there is the "
 "<guilabel>Motion Threshold</guilabel> slider."
@@ -1443,34 +1469,34 @@ msgstr ""
 "Für Benutzer, die den Mauszeiger nur schwer ruhig halten können, ist der "
 "Schieberegler <guilabel>Bewegungstoleranz</guilabel> gedacht."
 
-#: C/mousetweaks.xml:941(para)
+#: C/mousetweaks.xml:971(para)
 msgid "Picture showing the motion threshold slider of the dwell click"
 msgstr "Schieberegler für die Bewegungstoleranz des verzögerten Klicks"
 
-#: C/mousetweaks.xml:946(para)
+#: C/mousetweaks.xml:976(para)
 msgid ""
 "When the slider is set towards low, even little mouse movements are "
-"considered; however, by setting a higher threshold, the pointer has to travel "
-"a bigger distance before it is considered as moving."
+"considered; however, by setting a higher threshold, the pointer has to "
+"travel a bigger distance before it is considered as moving."
 msgstr ""
 "Wenn der Schieberegler auf einen niedrigen Wert eingestellt ist, werden auch "
 "geringfügige Mausbewegungen berücksichtigt. Bei einem höheren Wert muss der "
 "Zeiger einen längeren Weg zurücklegen, bevor dies als Bewegung erkannt wird."
 
-#: C/mousetweaks.xml:952(para)
+#: C/mousetweaks.xml:982(para)
 msgid ""
-"The Motion Threshold setting does not only work for the Dwell Click, but also "
-"for the Simulated Secondary Click, even if the Dwell Click is disabled."
+"The Motion Threshold setting does not only work for the Dwell Click, but "
+"also for the Simulated Secondary Click, even if the Dwell Click is disabled."
 msgstr ""
 "Die Einstellung der Bewegungstoleranz beeinflusst auch den "
 "<guilabel>Simulierten Kontextklick</guilabel>, und zwar auch dann, wenn der "
 "<guilabel>Verzögerte Klick</guilabel> nicht aktiviert ist."
 
-#: C/mousetweaks.xml:960(title)
+#: C/mousetweaks.xml:990(title)
 msgid "Locking The Pointer Description"
 msgstr "Sperren des Mauszeigers"
 
-#: C/mousetweaks.xml:962(para)
+#: C/mousetweaks.xml:992(para)
 msgid ""
 "There are people that have to use their pointing device not only for the "
 "computer. These people would welcome a way to lock the pointer into an area "
@@ -1478,10 +1504,10 @@ msgid ""
 msgstr ""
 "Es gibt Benutzer, die ihr Zeigegerät nicht nur für den Rechner verwenden. "
 "Diese Benutzer würden es begrüßen, wenn es einen Weg gäbe, den Mauszeiger in "
-"einem bestimmten Bereich des Bildschirms festzusetzen, so dass das Zeigegerät "
-"für andere Aufgaben zur Verfügung steht."
+"einem bestimmten Bereich des Bildschirms festzusetzen, so dass das "
+"Zeigegerät für andere Aufgaben zur Verfügung steht."
 
-#: C/mousetweaks.xml:967(para)
+#: C/mousetweaks.xml:997(para)
 msgid ""
 "In fact, the Pointer Capture panel applet creates an area on the panel, into "
 "which the user can lock the pointer until he releases it in a determined way."
@@ -1490,42 +1516,45 @@ msgstr ""
 "auf dem Panel, in dem der Benutzer den Mauszeiger sperren kann, bis er durch "
 "eine bestimmte Aktion wieder entsperrt wird."
 
-#: C/mousetweaks.xml:971(remark)
+#: C/mousetweaks.xml:1002(para)
 msgid ""
-"Have a look at <placeholder-1/> for instructions about how to install the "
-"pointer capture applet on the GNOME panel."
+"Have a look at <link linkend=\"mouse-a11y-start-pointer-capture\">Starting "
+"The Pointer Capture Function</link> for instructions about how to install "
+"the pointer capture applet on the GNOME panel."
 msgstr ""
-"In <placeholder-1/> finden Sie Anweisungen, wie Sie das Applet "
-"<guilabel>Mauszeiger einfangen</guilabel> zum GNOME-Panel hinzufügen können."
+"In <link linkend=\"mouse-a11y-start-pointer-capture\">Starten der Funktion "
+"zum Einfangen des Mauszeigers</link> finden Sie Anweisungen, wie Sie das "
+"Applet <guilabel>Mauszeiger einfangen</guilabel> zum GNOME-Panel hinzufügen "
+"können."
 
-#: C/mousetweaks.xml:993(para)
+#: C/mousetweaks.xml:1025(para)
 msgid "Picture of the pointer capture area when the pointer has been captured"
 msgstr "Der Einfangbereich, während der Mauszeiger eingefangen ist"
 
-#: C/mousetweaks.xml:998(para)
+#: C/mousetweaks.xml:1030(para)
 msgid ""
 "By choosing <guimenu>Preferences</guimenu> in the contextual menu of the "
 "<guilabel>Pointer Capture</guilabel> applet, the user gets a window with the "
 "options of the <guilabel>Pointer Capture</guilabel> applet:"
 msgstr ""
-"Wenn Sie im Kontextmenü des Applets <guilabel>Mauszeiger einfangen</guilabel> "
-"den Eintrag <guimenu>Einstellungen</guimenu> wählen, wird das Fenster mit den "
-"verfügbaren Optionen des Applets <guilabel>Mauszeiger einfangen</guilabel> "
-"angezeigt:"
+"Wenn Sie im Kontextmenü des Applets <guilabel>Mauszeiger einfangen</"
+"guilabel> den Eintrag <guimenu>Einstellungen</guimenu> wählen, wird das "
+"Fenster mit den verfügbaren Optionen des Applets <guilabel>Mauszeiger "
+"einfangen</guilabel> angezeigt:"
 
-#: C/mousetweaks.xml:1010(para)
+#: C/mousetweaks.xml:1042(para)
 msgid "Picture showing the preferences of the Pointer Capture applet"
 msgstr "Einstellungen des Applets »Mauszeiger einfangen«"
 
-#: C/mousetweaks.xml:1015(para)
+#: C/mousetweaks.xml:1047(para)
 msgid ""
-"The <guilabel>Preferences</guilabel> window of the <guilabel>Pointer Capture</"
-"guilabel> applet has three sections:"
+"The <guilabel>Preferences</guilabel> window of the <guilabel>Pointer "
+"Capture</guilabel> applet has three sections:"
 msgstr ""
-"Das <guilabel>Einstellungsfenster</guilabel> des Applets <guilabel>Mauszeiger "
-"einfangen</guilabel> besteht aus drei Abschnitten:"
+"Das <guilabel>Einstellungsfenster</guilabel> des Applets "
+"<guilabel>Mauszeiger einfangen</guilabel> besteht aus drei Abschnitten:"
 
-#: C/mousetweaks.xml:1020(para)
+#: C/mousetweaks.xml:1052(para)
 msgid ""
 "In the <guilabel>Capture Pointer</guilabel> section, the user can specify "
 "under what circumstances the pointer gets captured when it moves into the "
@@ -1534,22 +1563,22 @@ msgid ""
 "Control modifier key. If no modifier is checked and the mouse button is set "
 "to 0, the pointer only has to move into the capture area to get locked."
 msgstr ""
-"Im Abschnitt <guilabel>Mauszeiger einfangen</guilabel> kann Benutzer angeben, "
-"unter welchen Umständen der Mauszeiger eingefangen wird, wenn er in den "
-"Einfangbereich verschoben wird. Beispiel: Wenn die Strg-Taste hier aktiviert "
-"ist, dann wird der Mauszeiger eingefangen, sobald er in den Einfangbereich "
-"gerät und der Benutzer die Strg-Taste drückt. Wenn keine Auslösetaste "
-"angegeben und die Maustaste auf 0 gesetzt wird, muss der Zeiger nur in den "
-"Einfangbereich verschoben werden, um ihn zu sperren."
+"Im Abschnitt <guilabel>Mauszeiger einfangen</guilabel> kann Benutzer "
+"angeben, unter welchen Umständen der Mauszeiger eingefangen wird, wenn er in "
+"den Einfangbereich verschoben wird. Beispiel: Wenn die Strg-Taste hier "
+"aktiviert ist, dann wird der Mauszeiger eingefangen, sobald er in den "
+"Einfangbereich gerät und der Benutzer die Strg-Taste drückt. Wenn keine "
+"Auslösetaste angegeben und die Maustaste auf 0 gesetzt wird, muss der Zeiger "
+"nur in den Einfangbereich verschoben werden, um ihn zu sperren."
 
-#: C/mousetweaks.xml:1028(para) C/mousetweaks.xml:1037(para)
+#: C/mousetweaks.xml:1060(para) C/mousetweaks.xml:1069(para)
 msgid ""
 "It is also possible to specify a combination of modifiers and mouse button."
 msgstr ""
 "Es ist auch möglich, eine Kombination aus Auslösetasten und Maustasten "
 "festzulegen."
 
-#: C/mousetweaks.xml:1033(para)
+#: C/mousetweaks.xml:1065(para)
 msgid ""
 "In the <guilabel>Release Pointer</guilabel> section, the user can specify "
 "what modifier or mouse button releases the pointer."
@@ -1558,7 +1587,7 @@ msgstr ""
 "festlegen, welche Auslösetaste oder welche Maustaste den Zeiger wieder "
 "freigibt."
 
-#: C/mousetweaks.xml:1042(para)
+#: C/mousetweaks.xml:1074(para)
 msgid ""
 "In the <guilabel>Size of Capture Area</guilabel> section, the user can "
 "specify the width of the capture area on the GNOME panel."
@@ -1566,15 +1595,15 @@ msgstr ""
 "Im Abschnitt <guilabel>Größe des Einfangbereiches</guilabel> kann der "
 "Benutzer die Breite des Einfangbereiches im Panel festlegen."
 
-#: C/mousetweaks.xml:1051(title)
+#: C/mousetweaks.xml:1083(title)
 msgid "About <application>Mousetweaks</application>"
 msgstr "Über <application>Mousetweaks</application>"
 
-#: C/mousetweaks.xml:1054(title)
+#: C/mousetweaks.xml:1086(title)
 msgid "Authors and hosting site"
 msgstr "Autoren und Webseite"
 
-#: C/mousetweaks.xml:1056(para)
+#: C/mousetweaks.xml:1088(para)
 msgid ""
 "<application>Mousetweaks</application> is based on a <ulink type=\"https\" "
 "url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks"
@@ -1589,17 +1618,17 @@ msgstr ""
 "Fumanti ( <email>frfumanti@svn.gnome.org</email> ) half bei Tests und "
 "Logistik."
 
-#: C/mousetweaks.xml:1064(para)
+#: C/mousetweaks.xml:1096(para)
 msgid ""
-"You can find more informations about Mousetweaks on <ulink type=\"https\" url="
-"\"https://launchpad.net/mousetweaks\">Launchpad</ulink> and on <ulink url="
-"\"http://live.gnome.org//Mousetweaks/Home\">GNOME Live</ulink>."
+"You can find more informations about Mousetweaks on <ulink type=\"https\" "
+"url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> and on <ulink "
+"url=\"http://live.gnome.org//Mousetweaks/Home\">GNOME Live</ulink>."
 msgstr ""
 "Weitere Informationen über Mousetweaks finden Sie bei <ulink type=\"https\" "
 "url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> und <ulink url="
 "\"http://live.gnome.org//Mousetweaks/Home\">GNOME Live</ulink>."
 
-#: C/mousetweaks.xml:1073(para)
+#: C/mousetweaks.xml:1105(para)
 msgid ""
 "To report a bug or make a suggestion regarding <application>the mousetweaks</"
 "application> module, its user interface or its manual, please use the "
@@ -1613,15 +1642,15 @@ msgstr ""
 "Modul</application>, dessen Benutzeroberfläche oder zu dessen Handbuch zu "
 "machen, benutzen Sie bitte  das <ulink type=\"http\" url=\"http://bugzilla."
 "gnome.org/\">Bugzilla-Fehlererfassungssystem</ulink> von GNOME. Falls es "
-"dabei sich um die grafische Oberfläche des Reiters »Barrierefreiheit« des Maus-"
-"Einstellungswerkzeugs handelt, melden Sie den Fehler im Modul gnome-control-"
-"center, ansonsten im Mousetweaks-Modul."
+"dabei sich um die grafische Oberfläche des Reiters »Barrierefreiheit« des "
+"Maus-Einstellungswerkzeugs handelt, melden Sie den Fehler im Modul gnome-"
+"control-center, ansonsten im Mousetweaks-Modul."
 
-#: C/mousetweaks.xml:1084(title)
+#: C/mousetweaks.xml:1116(title)
 msgid "License"
 msgstr "Lizenz"
 
-#: C/mousetweaks.xml:1086(para)
+#: C/mousetweaks.xml:1118(para)
 msgid ""
 "Mousetweaks is distributed under the terms of the GNU General Public License "
 "as published by the Free Software Foundation; either version 3 of the "
@@ -1639,14 +1668,14 @@ msgstr ""
 "oder in der Datei COPYING.GPL, die mit dem Quellcode dieses Programms "
 "geliefert wird."
 
-#: C/mousetweaks.xml:1093(para)
+#: C/mousetweaks.xml:1125(para)
 msgid ""
 "This manual is distributed under the terms of the The GNU Free Documentation "
 "License as published by the Free Software Foundation; either version 1.3 of "
-"the License, or (at your option) any later version. A copy of the license can "
-"be found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-"
-"1.3.txt\">link</ulink>, or in the file COPYING.FDL included with the source "
-"code of this program."
+"the License, or (at your option) any later version. A copy of the license "
+"can be found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/"
+"fdl-1.3.txt\">link</ulink>, or in the file COPYING.FDL included with the "
+"source code of this program."
 msgstr ""
 "Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free "
 "Documentation License (GFDL), Version 1.3 oder jeder späteren, von der Free "
@@ -1662,20 +1691,39 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Mario Blättermann <mariobl@gnome.org>, 2009, 2010"
 
-#~ msgid ""
-#~ "While the <mousebutton>primary mouse button</mousebutton> is being held "
-#~ "pressed, mousetweaks will fill the arrow of the pointer with another color "
-#~ "to give feedback that it is counting down the time before issuing the "
-#~ "simulated secondary click."
-#~ msgstr ""
-#~ "Während die <mousebutton>primäre Maustaste</mousebutton> gedrückt gehalten "
-#~ "wird, stellt Mousetweaks den Mauszeiger in einer anderen Farbe dar, wobei "
-#~ "die Zeitspanne abzulaufen beginnt, bevor der simulierte Kontextklick "
-#~ "wirksam wird."
+#~ msgid "--enable-secondary"
+#~ msgstr "--enable-secondary"
 
 #~ msgid ""
-#~ "Under some circumstances, it happens that the feedback on the arrow of the "
-#~ "pointer does not work. The Simulated Secondary Click is issued "
+#~ "On browser links, the simulated secondary click behaves differently: it "
+#~ "does not wait for the user to release the <mousebutton>primary mouse "
+#~ "button</mousebutton> before creating the simulated secondary click; the "
+#~ "secondary click is created as soon as the time delay has elapsed. "
+#~ "Previous versions of mousetweaks always behaved like this; but this "
+#~ "behaviour had to be modified because of changes to the X server."
+#~ msgstr ""
+#~ "Im Browser <application>Links</application> verhält sich der simulierte "
+#~ "Kontextklick etwas anders: Es wird mit dem Auslösen des simulierten "
+#~ "Kontextklick nicht gewartet, bis der Benutzer die <mousebutton>primäre "
+#~ "Maustaste</mousebutton> loslässt. Der simulierte Kontextklick wird "
+#~ "ausgelöst, sobald die Zeit verstrichen ist. Frühere Versionen von "
+#~ "<application>Mousetweaks</application> verhielten sich generell so, aber "
+#~ "dieses Verhalten wurde wegen Änderungen des X-Servers angepasst."
+
+#~ msgid ""
+#~ "While the <mousebutton>primary mouse button</mousebutton> is being held "
+#~ "pressed, mousetweaks will fill the arrow of the pointer with another "
+#~ "color to give feedback that it is counting down the time before issuing "
+#~ "the simulated secondary click."
+#~ msgstr ""
+#~ "Während die <mousebutton>primäre Maustaste</mousebutton> gedrückt "
+#~ "gehalten wird, stellt Mousetweaks den Mauszeiger in einer anderen Farbe "
+#~ "dar, wobei die Zeitspanne abzulaufen beginnt, bevor der simulierte "
+#~ "Kontextklick wirksam wird."
+
+#~ msgid ""
+#~ "Under some circumstances, it happens that the feedback on the arrow of "
+#~ "the pointer does not work. The Simulated Secondary Click is issued "
 #~ "nevertheless."
 #~ msgstr ""
 #~ "Unter gewissen Umständen kann es passieren, dass die Rückmeldung am "
@@ -1693,9 +1741,9 @@ msgstr "Mario Blättermann <mariobl@gnome.org>, 2009, 2010"
 #~ "auszuführen. "
 
 #~ msgid ""
-#~ "Under some circumstances, it happens that the feedback on the arrow of the "
-#~ "pointer does not work; the dwell clicks are nevertheless issued."
+#~ "Under some circumstances, it happens that the feedback on the arrow of "
+#~ "the pointer does not work; the dwell clicks are nevertheless issued."
 #~ msgstr ""
 #~ "Unter gewissen Umständen kann es passieren, dass die Rückmeldung am "
-#~ "Mauszeiger nicht funktioniert. Die verzögerten Klicks werden aber trotzdem "
-#~ "ausgeführt."
+#~ "Mauszeiger nicht funktioniert. Die verzögerten Klicks werden aber "
+#~ "trotzdem ausgeführt."

@@ -179,7 +179,7 @@
     </itemizedlist>
 
     <note>
-      <para>Since version 2.31.3, mousetweaks does not depend anymore on the
+      <para>Since version 2.31.3, mousetweaks does not depend any more on the
       AT-SPI accessibility framework.</para>
     </note>
   </sect1>
@@ -596,7 +596,7 @@
         filled with the new color, the <mousebutton>primary mouse
         button</mousebutton> events will be followed by a
         <mousebutton>secondary mouse button</mousebutton> click. In fact,
-        mousetweaks creates this simulated <mousebutton>scondary mouse
+        mousetweaks creates this simulated <mousebutton>secondary mouse
         button</mousebutton> click as soon as the user releases the the
         <mousebutton>primary mouse button</mousebutton>.</para>
 
@@ -668,7 +668,7 @@
 
           <listitem>
             <para>When performing a simulated secondary click on a link in a
-            web page, the primary click, that preceds the simulated secondary
+            web page, the primary click, that precedes the simulated secondary
             click, opens the referenced page before the simulated secondary
             click has a chance to open the contextual menu of the link.</para>
 
@@ -704,7 +704,7 @@
           receiving the secondary click preceded by a primary click.</para>
         </note>
 
-        <para>Looking at it the other way, it is no possible to perform a long
+        <para>Looking at it the other way, it is not possible to perform a long
         motionless <mousebutton>primary mouse button</mousebutton> press
         without also triggering the secondary click, unless the pointer is
         moved before the <mousebutton>primary mouse button</mousebutton>
@@ -722,7 +722,7 @@
               <para>To avoid that the scrollbar jumps to the bottom, simply
               move the pointer away from the arrow of the scrollbar before
               releasing the primary button; this way, the initiated simulated
-              secondary click gets canceled.</para>
+              secondary click gets cancelled.</para>
             </tip>
           </listitem>
         </itemizedlist>

@@ -1,3 +1,28 @@
+Version 2.31.6
+---------------
+
+Misc changes, improvements and fixes:
+
+    * Clean up indentations in Makefiles
+    * Fix spelling mistakes in the manual, by Christian Kirbach - bgo #625770
+    * Update version of manual to 2.32
+
+New and updated translations:
+
+    [de] Mario Blättermann
+    [es] Jorge González
+    [gl] Fran Diéguez
+    [nb] Kjartan Maraas
+    [sk] Roman Mátyus
+    [sv] Daniel Nylander
+    [ta] drtv
+    [zh_CN] YunQiang Su
+
+New and updated manual translation:
+
+    [de] Mario Blättermann
+    [zh_CN] Teliute, YunQiang Su
+
 Version 2.31.5
 ---------------
 

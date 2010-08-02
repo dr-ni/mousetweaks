@@ -39,6 +39,18 @@
 
     <revhistory>
       <revision>
+        <revnumber>Version 2.32</revnumber>
+
+        <date>August 2010</date>
+
+        <revdescription>
+          <para role="author">Adapt the manual to the changes done to
+          mousetweaks for GNOME 2.32. Francesco Fumanti
+          <email>frfumanti@svn.gnome.org</email></para>
+        </revdescription>
+      </revision>
+
+      <revision>
         <revnumber>Version 2.30</revnumber>
 
         <date>March 2010</date>
@@ -704,8 +716,8 @@
           receiving the secondary click preceded by a primary click.</para>
         </note>
 
-        <para>Looking at it the other way, it is not possible to perform a long
-        motionless <mousebutton>primary mouse button</mousebutton> press
+        <para>Looking at it the other way, it is not possible to perform a
+        long motionless <mousebutton>primary mouse button</mousebutton> press
         without also triggering the secondary click, unless the pointer is
         moved before the <mousebutton>primary mouse button</mousebutton>
         release. This may also have unexpected consequences for some users.

@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
 "cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-03-26 21:42+0000\n"
-"PO-Revision-Date: 2010-03-27 08:25+0530\n"
+"POT-Creation-Date: 2010-06-27 16:33+0000\n"
+"PO-Revision-Date: 2010-08-04 15:17+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
-"Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
+"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,7 +40,7 @@ msgid "Drag Click"
 msgstr "ਡਰੈਗ ਕਲਿੱਕ"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:869
+#: ../src/mt-main.c:807
 msgid "Enable dwell click"
 msgstr "ਡੀਵਿਲ ਦਬਾਉ ਚਾਲੂ"
 
@@ -57,11 +57,14 @@ msgid "A_lt"
 msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
+#| msgid ""
+#| "Area to freeze the mouse pointer on the panel.\n"
+#| "Part of Mousetweaks"
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
-"ਪੈਨਲ ਉੱਤੇ ਮਾਊਂਸ ਪੁਆਇੰਟਰ ਨੂੰ ਰੋਕਣ ਦਾ ਖੇਤਰ ਹੈ।\n"
+"ਪੈਨਲ ਉੱਤੇ ਪੁਆਇੰਟਰ ਨੂੰ ਲਾਕ ਕਰਨ ਦਾ ਖੇਤਰ ਹੈ।\n"
 "ਮਾਊਸ-ਸੋਧਾਂ ਦਾ ਭਾਗ ਹੈ"
 
 #: ../data/pointer-capture-applet.ui.h:4
@@ -109,7 +112,8 @@ msgid "Sh_ift"
 msgstr "Sh_ift"
 
 #: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
+#| msgid "Size of Capture Area"
+msgid "Size of the Capture Area"
 msgstr "ਕੈਪਚਰ ਖੇਤਰ ਦਾ ਸਾਈਜ਼"
 
 #: ../data/pointer-capture-applet.ui.h:16
@@ -140,7 +144,7 @@ msgstr "ਕੇਵਲ ਆਈਕਾਨ ਵੇਖੋ"
 msgid "Show Text only"
 msgstr "ਕੇਵਲ ਟੈਕਸਟ ਵੇਖੋ"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "ਡੀਵਿਲ ਕਲਿੱਕ"
 
@@ -153,7 +157,7 @@ msgid "Area to lock the pointer"
 msgstr "ਪੁਆਇੰਟਰ ਨੂੰ ਲਾਕ ਕਰਨ ਲਈ ਖੇਤਰ"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "ਪੁਆਇੰਟਰ ਕੈਪਚਰ"
 
@@ -216,7 +220,6 @@ msgid "Dwell click mode"
 msgstr "ਡੀਵਿਲ ਕਲਿੱਕ ਮੋਡ"
 
 #: ../data/mousetweaks.schemas.in.h:10
-#| msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
 msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
 msgstr "ਡੀਵਿਲ ਕਲਿੱਕ ਮੋਡ (\"0\" = Window mode, \"1\" = Gesture mode)"
 
@@ -228,7 +231,7 @@ msgstr "ਡੀਵਿਲ ਕਲਿੱਕ ਸਮਾਂ"
 msgid "Enable secondary click"
 msgstr "ਸੈਕੰਡਰੀ ਕਲਿੱਕ ਚਾਲੂ"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
 msgstr "ਸੈਕੰਡਰੀ ਕਲਿੱਕ ਦੀ ਨਕਲ ਚਾਲੂ"
 
@@ -386,103 +389,95 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "ਪਕੜ ਖੇਤਰ ਦੀ ਚੌੜਾਈ ਪਿਕਸਲ ਵਿੱਚ।"
 
-#: ../src/mt-main.c:774
-msgid "Assistive Technology Support is not Enabled"
-msgstr "ਸਹਾਇਕ ਤਕਨਾਲੋਜੀ ਸਹਿਯੋਗ ਚਾਲੂ ਨਹੀਂ ਹੈ"
-
-#: ../src/mt-main.c:775
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"ਮਾਊਂਸ-ਸੋਧ ਲਈ ਸਹਾਇਕ ਤਕਨਾਲੋਜੀ ਨੂੰ ਤੁਹਾਡੇ ਸ਼ੈਸ਼ਨ ਵਿੱਚ ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।\n"
-"\n"
-"ਸਹਾਇਕ ਤਕਨਾਲੋਨਜੀ ਨੂੰ ਚਾਲੂ ਕਰਨ ਅਤੇ ਆਪਣਾ ਸ਼ੈਸ਼ਨ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਲਈ \"ਚਾਲੂ ਅਤੇ ਲਾਗ-ਆਉਟ\" ਵਰਤੋਂ।"
-
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "ਇੱਕ ਡੀਵਿਲ ਕਲਿੱਕ ਤੋਂ ਪਹਿਲਾਂ ਉਡੀਕ ਦਾ ਸਮਾਂ"
 
-#: ../src/mt-main.c:875
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
 msgstr "ਇੱਕ ਸੈਕੰਡਰੀ ਕਲਿੱਕ ਦੀ ਨਕਲ ਤੋਂ ਪਹਿਲਾਂ ਉਡੀਕ ਦਾ ਸਮਾਂ"
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:815
 msgid "Set the active dwell mode"
 msgstr "ਐਕਟਿਵ ਡੀਵਿਲ ਮੋਡ ਸੈੱਟ ਕਰੋ"
 
-#: ../src/mt-main.c:879
-#| msgid "Show click type window"
+#: ../src/mt-main.c:817
 msgid "Show a click-type window"
 msgstr "ਕਲਿੱਕ ਟਾਈਪ ਵਿੰਡੋ ਵੇਖੋ"
 
-#: ../src/mt-main.c:881
-#| msgid "Window x position"
+#: ../src/mt-main.c:819
 msgid "Click-type window X position"
 msgstr "ਕਲਿੱਕ ਟਾਈਪ ਵਿੰਡੋ X ਸਥਿਤੀ"
 
-#: ../src/mt-main.c:883
-#| msgid "Window x position"
+#: ../src/mt-main.c:821
 msgid "Click-type window Y position"
 msgstr "ਕਲਿੱਕ ਟਾਈਪ ਵਿੰਡੋ Y ਸਥਿਤੀ"
 
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "ਛੋਟੀਆਂ ਪੁਆਇੰਟਰ ਚਾਲਾਂ ਅਣਡਿੱਠੀਆਂ"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "ਮਾਊਸ-ਸੋਧਾਂ ਬੰਦ ਕਰੋ"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:827
 msgid "Disable cursor animations"
 msgstr "ਕਰਸਰ ਐਨੀਮੇਸ਼ਨ ਬੰਦ ਕਰੋ"
 
-#: ../src/mt-main.c:891
-#| msgid "- GNOME mousetweaks daemon"
+#: ../src/mt-main.c:829
 msgid "Start mousetweaks as a daemon"
 msgstr "ਮਾਊਸਟਵਿਕਸ ਨੂੰ ਡੈਮਨ ਵਜੋਂ ਚਲਾਓ"
 
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:831
 msgid "Start mousetweaks in login mode"
 msgstr "ਮਾਊਸਟਵਿਕਸ ਨੂੰ ਲਾਗਇਨ ਮੋਡ ਵਿੱਚ ਸ਼ੁਰੂ ਕਰੋ"
 
 #. parse
-#: ../src/mt-main.c:911
-#| msgid "- GNOME mousetweaks daemon"
+#: ../src/mt-main.c:851
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- ਗਨੋਮ ਮਾਊਸ ਸਹੂਲਤ ਡੈਮਨ"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "ਮੱਦਦ ਲੱਭਣ ਲਈ ਅਸਮਰੱਥ"
 
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "ਚਾਲੂ ਅਤੇ ਲਾਗ-ਆਉਟ"
 
-#: ../src/pointer-capture-applet.c:213
-msgid "Locked"
-msgstr "ਲਾਕ ਕੀਤਾ"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:216
-msgid "L"
-msgstr "L"
-
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "ਕੈਪਚਰ ਖੇਤਰ"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "ਮਾਊਸ ਪੁਆਇੰਟਰ ਆਰਜ਼ੀ ਤੌਰ ਉੱਤੇ ਤਾਲਾਬੰਦ ਕਰੋ"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "ਲਾਕ ਕੀਤਾ"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "ਮਾਊਸ ਪਸੰਦ ਚਲਾਉਣ ਲਈ ਅਸਫ਼ਲ"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "ਸਹਾਇਕ ਤਕਨਾਲੋਜੀ ਸਹਿਯੋਗ ਚਾਲੂ ਨਹੀਂ ਹੈ"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "ਮਾਊਂਸ-ਸੋਧ ਲਈ ਸਹਾਇਕ ਤਕਨਾਲੋਜੀ ਨੂੰ ਤੁਹਾਡੇ ਸ਼ੈਸ਼ਨ ਵਿੱਚ ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।\n"
+#~ "\n"
+#~ "ਸਹਾਇਕ ਤਕਨਾਲੋਨਜੀ ਨੂੰ ਚਾਲੂ ਕਰਨ ਅਤੇ ਆਪਣਾ ਸ਼ੈਸ਼ਨ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਲਈ \"ਚਾਲੂ ਅਤੇ ਲਾਗ-ਆਉਟ\" ਵਰਤੋਂ।"
+
+#~ msgid "L"
+#~ msgstr "L"
 
 #~ msgid "Dwell mode to use"
 #~ msgstr "ਵਰਤਣ ਲਈ ਡੀਵਿਲ ਮੋਡ"

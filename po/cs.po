@@ -2,14 +2,15 @@
 # Copyright (C) 2008, 2009 the author(s) of mousetweaks.
 # This file is distributed under the same license as the mousetweaks package.
 # Lucas Lommer <llommer@svn.gnome.org>, 2008.
-# Adrian Guniš <andygun@seznam.cz>, 2008, 2009.
+# Adrian Guniš <andygun@seznam.cz>, 2008, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-11 22:27+0100\n"
-"PO-Revision-Date: 2010-02-11 19:14+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2010-08-09 12:14+0000\n"
+"PO-Revision-Date: 2010-07-13 21:38+0100\n"
 "Last-Translator: Adrian Guniš <andygun696@gmail.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +40,7 @@ msgid "Drag Click"
 msgstr "Táhnutí"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:807
 msgid "Enable dwell click"
 msgstr "Zapnout kliknutí počkáním"
 
@@ -57,10 +58,10 @@ msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
-"Oblast uzamčení kurzoru myši na panelu.\n"
+"Oblast uzamčení kurzoru na panelu.\n"
 "Součást Mousetweaks"
 
 #: ../data/pointer-capture-applet.ui.h:4
@@ -108,7 +109,7 @@ msgid "Sh_ift"
 msgstr "Sh_ift"
 
 #: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
+msgid "Size of the Capture Area"
 msgstr "Velikost oblasti zachycení"
 
 #: ../data/pointer-capture-applet.ui.h:16
@@ -139,7 +140,7 @@ msgstr "Zobrazit pouze ikony"
 msgid "Show Text only"
 msgstr "Zobrazit pouze text"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "Kliknutí počkáním"
 
@@ -152,7 +153,7 @@ msgid "Area to lock the pointer"
 msgstr "Oblast uzamčení kurzoru"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "Zachycení kurzoru"
 
@@ -236,7 +237,7 @@ msgstr "Čas nutný pro kliknutí počkáním"
 msgid "Enable secondary click"
 msgstr "Zapnout kliknutí pravým tlačítkem"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:879
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
 msgstr "Zapnout simulované kliknutí pravým tlačítkem"
 
@@ -402,106 +403,76 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Šířka oblasti zachycení v pixelech."
 
-#: ../src/mt-main.c:782
-msgid "Assistive Technology Support is not Enabled"
-msgstr "Není povolena podpora technologií usnadnění"
-
-#: ../src/mt-main.c:783
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"Mousetweaks vyžaduje, aby byly ve vašem sezení povoleny technologie "
-"usnadnění.\n"
-"\n"
-"K povolení podpory pro technologie usnadnění a restartování sezení stiskněte "
-"\"Povolit a odhlásit\"."
-
-#: ../src/mt-main.c:881
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "Doba čekání před kliknutím počkáním"
 
-#: ../src/mt-main.c:883
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
 msgstr "Doba čekání před simulovaným kliknutím pravým tlačítkem"
 
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:815
 msgid "Set the active dwell mode"
 msgstr "Nastavit aktivní režim kliknutí počkáním"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:817
 msgid "Show a click-type window"
 msgstr "Zobrazit okno typů kliknutí"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:819
 msgid "Click-type window X position"
 msgstr "Pozice X okna typů kliknutí"
 
-#: ../src/mt-main.c:891
+#: ../src/mt-main.c:821
 msgid "Click-type window Y position"
 msgstr "Pozice Y okna typů kliknutí"
 
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "Ignorovat nepatrné pohyby kurzoru"
 
-#: ../src/mt-main.c:895
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "Vypnout mousetweaks"
 
-#: ../src/mt-main.c:897
+#: ../src/mt-main.c:827
 msgid "Disable cursor animations"
 msgstr "Vypnout animace kurzoru"
 
-#: ../src/mt-main.c:899
+#: ../src/mt-main.c:829
 msgid "Start mousetweaks as a daemon"
 msgstr "Spustit mousetweaks jako démon"
 
-#: ../src/mt-main.c:901
+#: ../src/mt-main.c:831
 msgid "Start mousetweaks in login mode"
 msgstr "Spustit mousetweaks v režimu přihlášení"
 
 #. parse
-#: ../src/mt-main.c:919
+#: ../src/mt-main.c:851
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Démon pro zpřístupnění myši v GNOME"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "Selhalo zobrazení nápovědy"
 
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "Povolit a odhlásit"
 
-#: ../src/pointer-capture-applet.c:213
-msgid "Locked"
-msgstr "Uzamčeno"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:216
-msgid "L"
-msgstr "U"
-
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "Oblast zachycení"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "Dočasné uzamčení kurzoru myši"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "Uzamčeno"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Nepodařilo se spustit Předvolby myši"
 
-#~ msgid "Dwell mode to use"
-#~ msgstr "Režim kliknutí počkáním, který se má použít"
-
-#~ msgid "Window y position"
-#~ msgstr "Pozice y okna"
-
-#~ msgid "Show elapsed time as cursor overlay"
-#~ msgstr "Zobrazit uplynulý čas jako překrytí kurzoru"

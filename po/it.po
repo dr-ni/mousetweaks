@@ -8,10 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-03-08 19:17+0000\n"
-"PO-Revision-Date: 2010-03-08 21:01+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-15 22:30+0200\n"
+"PO-Revision-Date: 2010-08-15 22:30+0200\n"
 "Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +38,7 @@ msgid "Drag Click"
 msgstr "Clic di trascinamento"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:869
+#: ../src/mt-main.c:807
 msgid "Enable dwell click"
 msgstr "Abilita il clic automatico"
 
@@ -57,11 +56,11 @@ msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
 "Area per bloccare il puntatore del mouse sul pannello.\n"
-"Parte di Mousetweaks."
+"Parte di Mousetweaks"
 
 #: ../data/pointer-capture-applet.ui.h:4
 msgid "C_trl"
@@ -113,7 +112,7 @@ msgstr "_Maiusc"
 
 # (ndt) titolo di sezione
 #: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
+msgid "Size of the Capture Area"
 msgstr "Dimensione dell'area di cattura"
 
 #: ../data/pointer-capture-applet.ui.h:16
@@ -144,7 +143,7 @@ msgstr "Solo icone"
 msgid "Show Text only"
 msgstr "Solo testo"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "Clic automatico"
 
@@ -157,7 +156,7 @@ msgid "Area to lock the pointer"
 msgstr "Area in cui bloccare il puntatore"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "Cattura del puntatore"
 
@@ -242,7 +241,7 @@ msgstr "Tempo del clic automatico"
 msgid "Enable secondary click"
 msgstr "Abilita il clic secondario"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
 msgstr "Abilita il clic secondario simulato"
 
@@ -411,101 +410,78 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Larghezza dell'area di cattura in pixel."
 
-#: ../src/mt-main.c:774
-msgid "Assistive Technology Support is not Enabled"
-msgstr "Supporto alle tecnologie assistive non abilitato"
-
-# (ndt) la traduzione del pulsante è in fondo al file
-#: ../src/mt-main.c:775
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"È necessario che le tecnologie assistive siano abilitate durante la "
-"sessione.\n"
-"\n"
-"Per abilitare il supporto alle tecnologie assistive e riavviare la sessione, "
-"fare clic su «Abilita e termina»."
-
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "Tempo di attesa prima di un clic automatico"
 
-#: ../src/mt-main.c:875
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo di attesa prima di un clic secondario"
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:815
 msgid "Set the active dwell mode"
 msgstr "Imposta la modalità attiva del clic automatico"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:817
 msgid "Show a click-type window"
 msgstr "Mostra la finestra per il tipo di clic"
 
-#: ../src/mt-main.c:881
+#: ../src/mt-main.c:819
 msgid "Click-type window X position"
 msgstr "Posizione orizzontale della finestra per il tipo di clic"
 
-#: ../src/mt-main.c:883
+#: ../src/mt-main.c:821
 msgid "Click-type window Y position"
 msgstr "Posizione verticale della finestra per il tipo di clic"
 
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "Ignora movimenti piccoli del puntatore"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "Arresta mousetweaks"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:827
 msgid "Disable cursor animations"
 msgstr "Disabilita l'animazione del cursore"
 
-#: ../src/mt-main.c:891
+#: ../src/mt-main.c:829
 msgid "Start mousetweaks as a daemon"
 msgstr "Avvia il programma come un demone"
 
 # (ndt) login o accesso?
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:831
 msgid "Start mousetweaks in login mode"
 msgstr "Avvia il programma in modalità login"
 
 #. parse
-#: ../src/mt-main.c:911
+#: ../src/mt-main.c:851
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Demone GNOME accessibilità mouse"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "Visualizzazione dell'aiuto non riuscita"
 
 # (ndt) pulsante, dovrebbe essere la stessa traduzione
 # di gnome-control-center o qualche altro pacchetto simile
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "Abilita e termina"
 
-#: ../src/pointer-capture-applet.c:213
-msgid "Locked"
-msgstr "Bloccato"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:216
-msgid "L"
-msgstr "B"
-
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "Area di cattura"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "Blocca temporaneamente il puntatore del mouse"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "Bloccato"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Avvio di «Preferenze del mouse» non riuscito"

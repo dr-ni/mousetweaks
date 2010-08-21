@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweak 2.29.91\n"
+"Project-Id-Version: mousetweak 2.31.91\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-16 19:13+0800\n"
-"PO-Revision-Date: 2010-02-16 14:07+0800\n"
+"POT-Creation-Date: 2010-08-21 20:59+0800\n"
+"PO-Revision-Date: 2010-08-20 19:10+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (Taiwan) <zh-l10n@lists.linux.org.tw>\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgid "Drag Click"
 msgstr "拖拉點擊"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:807
 msgid "Enable dwell click"
 msgstr "啟動替代點擊"
 
@@ -53,11 +53,11 @@ msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
 "在面版上停止滑鼠指標移動的範圍。\n"
-"Mousetweaks 的一部份"
+"Mousetweaks 的一部分"
 
 #: ../data/pointer-capture-applet.ui.h:4
 msgid "C_trl"
@@ -104,7 +104,7 @@ msgid "Sh_ift"
 msgstr "Sh_ift"
 
 #: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
+msgid "Size of the Capture Area"
 msgstr "捕捉範圍的大小"
 
 #: ../data/pointer-capture-applet.ui.h:16
@@ -135,7 +135,7 @@ msgstr "只顯示圖示"
 msgid "Show Text only"
 msgstr "只顯示文字"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "替代點擊"
 
@@ -148,7 +148,7 @@ msgid "Area to lock the pointer"
 msgstr "鎖定指標的範圍"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "鎖定指標"
 
@@ -221,7 +221,7 @@ msgstr "替代點擊時間"
 msgid "Enable secondary click"
 msgstr "啟動次要點擊"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:879
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
 msgstr "啟動模擬次要點擊"
 
@@ -381,98 +381,95 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "捕捉區域的寬度，以像素計。"
 
-#: ../src/mt-main.c:782
-msgid "Assistive Technology Support is not Enabled"
-msgstr "輔助科技支援尚未啟用"
-
-#: ../src/mt-main.c:783
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"Mousetweaks 要求在作業階段中啟用輔助科技。\n"
-"\n"
-"要啟用輔助科技的支援並重新啟動您的作業階段，請按「啟用並登出」。"
-
-#: ../src/mt-main.c:881
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "在替代點擊之前等待的時間"
 
-#: ../src/mt-main.c:883
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
 msgstr "模擬次要點擊之前等待的時間"
 
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:815
 msgid "Set the active dwell mode"
 msgstr "設定要使用的替代點擊模式"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:817
 msgid "Show a click-type window"
 msgstr "顯示點擊類型視窗"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:819
 msgid "Click-type window X position"
 msgstr "點擊類型視窗 X 位置"
 
-#: ../src/mt-main.c:891
+#: ../src/mt-main.c:821
 msgid "Click-type window Y position"
 msgstr "點擊類型視窗 Y 位置"
 
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "忽略微小的指標移動"
 
-#: ../src/mt-main.c:895
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "關閉 Mousetweaks"
 
-#: ../src/mt-main.c:897
+#: ../src/mt-main.c:827
 msgid "Disable cursor animations"
 msgstr "停用遊標動畫"
 
-#: ../src/mt-main.c:899
+#: ../src/mt-main.c:829
 msgid "Start mousetweaks as a daemon"
 msgstr "以伺服程式形式啟動 mousetweaks "
 
-#: ../src/mt-main.c:901
+#: ../src/mt-main.c:831
 msgid "Start mousetweaks in login mode"
 msgstr "以登入模式啟動 mousetweaks"
 
 #. parse
-#: ../src/mt-main.c:919
+#: ../src/mt-main.c:851
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME 滑鼠無障礙功能伺服程式"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "無法顯示說明文件"
 
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "啟用並登出"
 
-#: ../src/pointer-capture-applet.c:213
-msgid "Locked"
-msgstr "已鎖定"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:216
-msgid "L"
-msgstr "L"
-
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "捕捉範圍"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "暫時鎖定滑鼠指標"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "已鎖定"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "執行滑鼠偏好設定失敗"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "輔助科技支援尚未啟用"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Mousetweaks 要求在作業階段中啟用輔助科技。\n"
+#~ "\n"
+#~ "要啟用輔助科技的支援並重新啟動您的作業階段，請按「啟用並登出」。"
+
+#~ msgid "L"
+#~ msgstr "L"
 
 #~ msgid "Dwell mode to use"
 #~ msgstr "要使用的替代點擊模式"

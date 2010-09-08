@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: mousetweaks MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-09-21 05:30+0000\n"
-"PO-Revision-Date: 2010-05-31 16:41+0300\n"
+"POT-Creation-Date: 2010-06-27 16:33+0000\n"
+"PO-Revision-Date: 2010-09-07 22:12+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -27,21 +27,14 @@ msgstr ""
 "Ooteajaga klõpsu liikide vahel valimise rakend.\n"
 "See rakend kuulub Hiiretuuningute koosseisu"
 
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks."
-msgstr ""
-"Ooteajaga klõpsu liikide vahel valimise rakend.\n"
-"See rakend kuulub Hiiretuuningute koosseisu."
-
 msgid "Click Type Window"
-msgstr ""
+msgstr "Klõpsu liigi aken"
 
 msgid "Double Click"
 msgstr "Topeltklõps"
 
 msgid "Drag Click"
-msgstr ""
+msgstr "Lohistamisklõps"
 
 msgid "Enable dwell click"
 msgstr "Ooteajaga klõpsu lubamine"
@@ -56,9 +49,11 @@ msgid "A_lt"
 msgstr "A_lt"
 
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
+"Kursori paneelile lukustamise piirkond.\n"
+"See rakend kuulub Hiiretuuningute koosseisu"
 
 msgid "C_trl"
 msgstr "C_trl"
@@ -93,7 +88,7 @@ msgstr "Nupu 0 valimine hõivab kursori koheselt"
 msgid "Sh_ift"
 msgstr "Sh_ift"
 
-msgid "Size of Capture Area"
+msgid "Size of the Capture Area"
 msgstr "Hõivamispiirkonna suurus"
 
 msgid "_Alt"
@@ -174,7 +169,7 @@ msgstr ""
 msgid "Dwell click mode"
 msgstr "Ooteajaga klõpsu režiim"
 
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
 msgstr ""
 
 msgid "Dwell click time"
@@ -184,7 +179,7 @@ msgid "Enable secondary click"
 msgstr ""
 
 msgid "Enable simulated secondary click"
-msgstr ""
+msgstr "Simuleeritud teisese klõpsu lubamine"
 
 msgid "Gesture double click"
 msgstr ""
@@ -295,47 +290,42 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Hõivamispiirkonna laius pikslites."
 
-msgid "Assistive Technology Support is not Enabled"
-msgstr "Abistava tehnika tugi pole lubatud"
-
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"Hiiretuuningute kasutamiseks peab seansil olema abistava tehnika tugi "
-"lubatud.\n"
-"\n"
-"Abistava tehnika lubamiseks ja seansi uuestikäivitamiseks vajuta \"Luba ja "
-"logi välja\"."
-
 msgid "Time to wait before a dwell click"
-msgstr ""
+msgstr "Ooteajaga klõpsu ooteaja kestus"
 
 msgid "Time to wait before a simulated secondary click"
-msgstr ""
+msgstr "Simuleeritud teisese klõpsu ooteaja kestus"
 
-msgid "Dwell mode to use"
-msgstr "Kasutatav ooterežiim"
+msgid "Set the active dwell mode"
+msgstr "Ooteaja aktiivse režiimi määramine"
 
-msgid "Window x position"
-msgstr "Akna asukoht X-teljel"
+msgid "Show a click-type window"
+msgstr "Klõpsu liigi akna näitamine"
 
-msgid "Window y position"
-msgstr "Akna asukoht Y-teljel"
+msgid "Click-type window X position"
+msgstr "Klõpsu liigi akna asukoht X-teljel"
+
+msgid "Click-type window Y position"
+msgstr "Klõpsu liigi akna asukoht Y-teljel"
 
 msgid "Ignore small pointer movements"
 msgstr "Väikeste kursoriliigutuste eiramine"
 
-msgid "Show elapsed time as cursor overlay"
-msgstr ""
-
 msgid "Shut down mousetweaks"
 msgstr "Hiiretuuningute seiskamine"
 
-msgid "- GNOME mousetweaks daemon"
-msgstr "- GNOME hiiretuuningute deemon"
+msgid "Disable cursor animations"
+msgstr "Kursorianimatsiooni keelamine"
+
+msgid "Start mousetweaks as a daemon"
+msgstr "Hiiretuuningute käivitamine deemonina"
+
+msgid "Start mousetweaks in login mode"
+msgstr "Hiiretuuningute käivitamine sisselogimisrežiimis"
+
+#. parse
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME hiirehõlbustuste deemon"
 
 msgid "Failed to Display Help"
 msgstr "Abiteabe kuvamisel tekkis viga"
@@ -343,30 +333,14 @@ msgstr "Abiteabe kuvamisel tekkis viga"
 msgid "Enable and Log Out"
 msgstr "Luba ja logi välja"
 
-msgid "Locked"
-msgstr "Lukustatud"
-
-#. l10n: the first letter of 'Locked'
-msgid "L"
-msgstr "L"
-
 msgid "Capture area"
 msgstr "Hõivamise piirkond"
 
 msgid "Temporarily lock the mouse pointer"
 msgstr "Hiirekursori ajutine lukustamine"
 
+msgid "Locked"
+msgstr "Lukustatud"
+
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Tõrge hiire-eelistuste käivitaminsel"
-
-#~ msgid "On"
-#~ msgstr "Sees"
-
-#~ msgid "Pointer Capture Applet"
-#~ msgstr "Kursori hõivamise rakend"
-
-#~ msgid "Off"
-#~ msgstr "Väljas"
-
-#~ msgid "Dwell Click Applet"
-#~ msgstr "Ooteajaga klõpsu rakend"

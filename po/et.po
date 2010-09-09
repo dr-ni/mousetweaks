@@ -13,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
 "POT-Creation-Date: 2010-06-27 16:33+0000\n"
-"PO-Revision-Date: 2010-09-07 22:12+0300\n"
+"PO-Revision-Date: 2010-09-09 13:20+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -170,28 +170,28 @@ msgid "Dwell click mode"
 msgstr "Ooteajaga klõpsu režiim"
 
 msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr ""
+msgstr "Oooteajaga klõpsu režiim (\"0\" = Aknarežiim, \"1\" = Žestirežiim)"
 
 msgid "Dwell click time"
 msgstr "Ooteajaga klõpsu aeg"
 
 msgid "Enable secondary click"
-msgstr ""
+msgstr "Teisese klõpsu lubamine"
 
 msgid "Enable simulated secondary click"
 msgstr "Simuleeritud teisese klõpsu lubamine"
 
 msgid "Gesture double click"
-msgstr ""
+msgstr "Žestiga topeltklõps"
 
 msgid "Gesture drag click"
-msgstr ""
+msgstr "Žestiga lohistamisklõps"
 
 msgid "Gesture secondary click"
-msgstr ""
+msgstr "Žestiga teisene klõps"
 
 msgid "Gesture single click"
-msgstr ""
+msgstr "Žestiga üksikklõps"
 
 msgid "Movement threshold"
 msgstr ""

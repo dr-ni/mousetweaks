@@ -37,8 +37,7 @@ mousetweaks_SOURCES =       \
     mt-sig-handler.h
 
 mousetweaks_CFLAGS =        \
-    $(AM_CFLAGS)            \
-    $(DISABLE_DEPRECATED)
+    $(AM_CFLAGS)
 
 mousetweaks_LDADD =         \
     $(DEPENDENCIES_LIBS)

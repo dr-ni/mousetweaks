@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-28 00:16+0100\n"
-"PO-Revision-Date: 2010-03-27 18:43+0100\n"
+"POT-Creation-Date: 2010-09-16 23:52+0200\n"
+"PO-Revision-Date: 2010-09-16 23:41+0200\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgid "Drag Click"
 msgstr "Trækkeklik"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:869
+#: ../src/mt-main.c:807
 msgid "Enable dwell click"
 msgstr "Aktivér hvileklik"
 
@@ -58,10 +58,10 @@ msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
-"Område hvori musemarkøren fastfryses til panelet.\n"
+"Område hvori markøren låses til panelet.\n"
 "Dette er en del af Mousetweaks"
 
 #: ../data/pointer-capture-applet.ui.h:4
@@ -109,8 +109,8 @@ msgid "Sh_ift"
 msgstr "Sh_ift"
 
 #: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
-msgstr "Størrelse af indfangningsområde"
+msgid "Size of the Capture Area"
+msgstr "Størrelse af indfangningsområdet"
 
 #: ../data/pointer-capture-applet.ui.h:16
 msgid "_Alt"
@@ -140,7 +140,7 @@ msgstr "Vis kun ikoner"
 msgid "Show Text only"
 msgstr "Vis kun tekst"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "Hvileklik"
 
@@ -153,7 +153,7 @@ msgid "Area to lock the pointer"
 msgstr "Område hvortil markøren låses"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "Markørindfangning"
 
@@ -235,7 +235,7 @@ msgstr "Hvileklik-tid"
 msgid "Enable secondary click"
 msgstr "Aktivér sekundært klik"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
 msgstr "Aktivér simuleret sekundært klik"
 
@@ -401,100 +401,98 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Bredde af indfangningsområdet i pixels."
 
-#: ../src/mt-main.c:774
-msgid "Assistive Technology Support is not Enabled"
-msgstr "Understøttelse af tilgængelighedsteknologier er ikke aktiveret"
-
-# (knap-etiket er konsistent)
-#: ../src/mt-main.c:775
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"Mousetweaks kræver at tilgængelighedsteknologi er aktiveret i din session.\n"
-"\n"
-"Tryk \"Aktivér og log ud\" for at aktivere understøttelse af "
-"tilgængelighedsteknologier, og genstart sessionen."
-
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "Ventetid før hvileklik"
 
-#: ../src/mt-main.c:875
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
 msgstr "Ventetid før et simuleret sekundært klik"
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:815
 msgid "Set the active dwell mode"
 msgstr "Brug aktiv hviletilstand"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:817
 msgid "Show a click-type window"
 msgstr "Vis et kliktypevindue"
 
-#: ../src/mt-main.c:881
+#: ../src/mt-main.c:819
 msgid "Click-type window X position"
 msgstr "Kliktypevindues x-position"
 
-#: ../src/mt-main.c:883
+#: ../src/mt-main.c:821
 msgid "Click-type window Y position"
 msgstr "Kliktypevindues y-position"
 
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "Ignorér små markørbevægelser"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "Afslut mousetweaks"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:827
 msgid "Disable cursor animations"
 msgstr "Deaktivér markøranimationer"
 
-#: ../src/mt-main.c:891
+#: ../src/mt-main.c:829
 msgid "Start mousetweaks as a daemon"
 msgstr "Start mousetweaks som dæmon"
 
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:831
 msgid "Start mousetweaks in login mode"
 msgstr "Start mousetweaks i logind-tilstand"
 
 #. parse
-#: ../src/mt-main.c:911
+#: ../src/mt-main.c:851
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Musetilgængelighedsdæmon til GNOME"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "Kunne ikke vise hjælp"
 
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "Aktivér og log ud"
 
-#: ../src/pointer-capture-applet.c:213
-msgid "Locked"
-msgstr "Låst"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:216
-msgid "L"
-msgstr "L"
-
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "Indfangningsområde"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "Lås musemarkøren midlertidigt"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "Låst"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Kunne ikke starte museindstillinger"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "Understøttelse af tilgængelighedsteknologier er ikke aktiveret"
+
+# (knap-etiket er konsistent)
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Mousetweaks kræver at tilgængelighedsteknologi er aktiveret i din "
+#~ "session.\n"
+#~ "\n"
+#~ "Tryk \"Aktivér og log ud\" for at aktivere understøttelse af "
+#~ "tilgængelighedsteknologier, og genstart sessionen."
+
+#~ msgid "L"
+#~ msgstr "L"
 
 #~ msgid "Dwell mode to use"
 #~ msgstr "Anvendt hviletilstand"

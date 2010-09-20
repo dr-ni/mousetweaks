@@ -1,22 +1,145 @@
 # mousetweaks ja.po.
-# Copyright (c) 2007-2009 Rosetta Contributors and Canonical Ltd 2007
+# Copyright (c) 2007-2010 Rosetta Contributors and Canonical Ltd 2007
 # This file is distributed under the same license as the mousetweaks package.
 # keblo <keblo1@gmail.com>, 2007, 2008.
-# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2008,2009.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2008, 2009.
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks trunk\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-28 18:52+0900\n"
-"PO-Revision-Date: 2009-02-28 18:52+0900\n"
-"Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
+"Project-Id-Version: mousetweaks master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2010-09-19 18:34+0000\n"
+"PO-Revision-Date: 2010-09-20 16:13+0900\n"
+"Last-Translator: Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>\n"
 "Language-Team: Japanese <takeshi.aihana@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"さまざまな自動クリックの種類を選択するアプレットです。\n"
+"Mousetweaks の一部です"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "クリックの種類ウィンドウ"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+msgid "Double Click"
+msgstr "ダブルクリック"
+
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+msgid "Drag Click"
+msgstr "ドラッグクリック"
+
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:807
+msgid "Enable dwell click"
+msgstr "自動クリックの機能を有効にするかどうか"
+
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+msgid "Right Click"
+msgstr "右クリック"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+msgid "Single Click"
+msgstr "シングル・クリック"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid "A_lt"
+msgstr "Alt(_L)"
+
+#: ../data/pointer-capture-applet.ui.h:2
+msgid ""
+"Area to lock the pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"パネル上のポインタをロックする領域。\n"
+"Mousetweaks の一部"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "C_trl"
+msgstr "Ctrl(_T)"
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Capture Pointer"
+msgstr "捕獲ポインタ"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Ct_rl"
+msgstr "Ctrl(_R)"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Modifier:"
+msgstr "モディファイア:"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Mouse _button:"
+msgstr "マウスのボタン(_B):"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "Mouse b_utton:"
+msgstr "マウスのボタン(_U):"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "Pointer Capture Preferences"
+msgstr "ポインタの捕獲の設定"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "Release Pointer"
+msgstr "ポインタの解放"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "S_hift"
+msgstr "Shift(_H)"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "ボタン0を選択するとポインタをすぐに捕獲します"
+
+#: ../data/pointer-capture-applet.ui.h:14
+msgid "Sh_ift"
+msgstr "Shift(_I)"
+
+#: ../data/pointer-capture-applet.ui.h:15
+msgid "Size of the Capture Area"
+msgstr "捕獲エリアの大きさ"
+
+#: ../data/pointer-capture-applet.ui.h:16
+msgid "_Alt"
+msgstr "Alt(_A)"
+
+#: ../data/pointer-capture-applet.ui.h:17
+msgid "_Width:"
+msgstr "幅(_W):"
+
+#: ../data/pointer-capture-applet.ui.h:18
+msgid "pixels"
+msgstr "ピクセル"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Dwell Click Type"
+msgstr "自動クリックの種類"
+
+#: ../data/mousetweaks.ui.h:5
+msgid "Show Icons and Text"
+msgstr "アイコンとテキストを表示"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Show Icons only"
+msgstr "アイコンのみ表示"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Show Text only"
+msgstr "テキストのみ表示"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "自動クリック"
 
@@ -29,7 +152,7 @@ msgid "Area to lock the pointer"
 msgstr "ポインタをロックするエリアです"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "ポインタの捕獲"
 
@@ -83,7 +206,7 @@ msgid ""
 "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"２回目のクリックとみなす際のジェスチャです。指定可能な値: \"0\" (ポインタを左"
+"2回目のクリックとみなす際のジェスチャです。指定可能な値: \"0\" (ポインタを左"
 "へ移動する)、\"1\" (ポインタを右へ移動する)、\"2\" (ポインタを上へ移動する)、"
 "\"3\" (ポインタを下へ移動する)"
 
@@ -92,7 +215,7 @@ msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"１回目のクリックとみなす際のジェスチャです。指定可能な値: \"0\" (ポインタを左"
+"1回目のクリックとみなす際のジェスチャです。指定可能な値: \"0\" (ポインタを左"
 "へ移動する)、\"1\" (ポインタを右へ移動する)、\"2\" (ポインタを上へ移動する)、"
 "\"3\" (ポインタを下へ移動する)"
 
@@ -106,26 +229,22 @@ msgid "Dwell click mode"
 msgstr "自動クリックを決定するモード"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
 msgstr ""
-"自動クリックを決定する方法です。指定可能な値: \"0\" (ジェスチャで選択する)、"
-"\"1\" (ウィンドウから選択する)"
+"自動クリックを決定する方法です。\"0\" (ウィンドウから選択する)、\"1\" (ジェス"
+"チャで選択する)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
 msgstr "自動クリックとみなすまでの時間"
 
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
-msgid "Enable dwell click"
-msgstr "自動クリックの機能を有効にするかどうか"
-
 #: ../data/mousetweaks.schemas.in.h:13
 msgid "Enable secondary click"
-msgstr "２回目のクリックを検出するかどうか"
+msgstr "2回目のクリックを検出するかどうか"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
-msgstr "２回目のクリックを検出するかどうか"
+msgstr "2回目のクリックを検出するかどうか"
 
 #: ../data/mousetweaks.schemas.in.h:15
 msgid "Gesture double click"
@@ -137,7 +256,7 @@ msgstr "ドラッグを表すジェスチャ"
 
 #: ../data/mousetweaks.schemas.in.h:17
 msgid "Gesture secondary click"
-msgstr "２回目のクリックを表すジェスチャ"
+msgstr "2回目のクリックを表すジェスチャ"
 
 #: ../data/mousetweaks.schemas.in.h:18
 msgid "Gesture single click"
@@ -149,9 +268,9 @@ msgstr "ポインタ移動のしきい値"
 
 #: ../data/mousetweaks.schemas.in.h:20
 msgid "Secondary click time"
-msgstr "２回目のクリックとみなすまでの時間"
+msgstr "2回目のクリックとみなすまでの時間"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "自動クリックの種類を選択するウィンドウを表示するかどうか"
 
@@ -165,7 +284,7 @@ msgstr "クリックされたとみなすまでの時間 (秒単位) です。"
 
 #: ../data/mousetweaks.schemas.in.h:24
 msgid "Time in seconds before a secondary click is triggered"
-msgstr "２回目のクリックとみなすまでの時間 (秒単位) です。"
+msgstr "2回目のクリックとみなすまでの時間 (秒単位) です。"
 
 #: ../data/pointer-capture-applet.schemas.in.h:1
 msgid "Capture pointer only if Alt is pressed"
@@ -185,7 +304,7 @@ msgstr "ポインタを捕獲する際に使用するマウスのボタン"
 
 #: ../data/pointer-capture-applet.schemas.in.h:5
 msgid "Mouse button used to release the pointer"
-msgstr "捕獲してロックしてあるポインタを解除するボタン"
+msgstr "ポインタを解放するマウスのボタン"
 
 #: ../data/pointer-capture-applet.schemas.in.h:6
 msgid "Release pointer only if Alt is pressed"
@@ -288,84 +407,103 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "パネルに配置する捕獲エリアの幅 (ピクセル単位) です。"
 
-#: ../src/mt-main.c:720
-msgid "Assistive Technology Support is not Enabled"
-msgstr "支援技術が有効になっていません"
-
-#: ../src/mt-main.c:721
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"Mousetweaks を利用するにはお使いのセッションで支援技術が有効になっていなけれ"
-"ばなりません。\n"
-"\n"
-"支援技術を有効にしてセッションを再起動する場合は \"有効にしてログアウト\" ボ"
-"タンを押下して下さい。"
-
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "自動クリックするまでの時間を指定する"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
-msgstr "２回目のクリックとみなすまでの時間を指定する"
+msgstr "2回目のクリックとみなすまでの時間を指定する"
 
-#: ../src/mt-main.c:832
-msgid "Dwell mode to use"
-msgstr "自動クリックを決定する方法を指定する"
+#: ../src/mt-main.c:815
+msgid "Set the active dwell mode"
+msgstr "アクティブな自動クリックモードを設定"
 
-#: ../src/mt-main.c:836
-msgid "Window x position"
-msgstr "選択ウィンドウのＸ座標を指定する"
+#: ../src/mt-main.c:817
+msgid "Show a click-type window"
+msgstr "クリックの種類のウィンドウを表示する"
 
-#: ../src/mt-main.c:838
-msgid "Window y position"
-msgstr "選択ウィンドウのＹ座標を指定する"
+#: ../src/mt-main.c:819
+msgid "Click-type window X position"
+msgstr "クリックの種類ウィンドウのX座標"
 
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:821
+msgid "Click-type window Y position"
+msgstr "クリックの種類ウィンドウのY座標"
+
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "小規模なポインタの移動を無視する"
 
-#: ../src/mt-main.c:842
-msgid "Show elapsed time as cursor overlay"
-msgstr "カーソルがオーバーレイしている時の経過時間を表示する"
-
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "MouseTweaks デーモンを終了する"
 
-#: ../src/mt-main.c:853
-msgid "- GNOME mousetweaks daemon"
-msgstr "- GNOME の MouseTweaks デーモン"
+#: ../src/mt-main.c:827
+msgid "Disable cursor animations"
+msgstr "カーソルのアニメーションを無効にする"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-main.c:829
+msgid "Start mousetweaks as a daemon"
+msgstr "MouseTweaks をデーモンとして起動"
+
+#: ../src/mt-main.c:831
+msgid "Start mousetweaks in login mode"
+msgstr "mousetweaks をログインモードで起動"
+
+#. parse
+#: ../src/mt-main.c:851
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME の マウスアクセシビリティデーモン"
+
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "ヘルプを表示できませんでした"
 
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "有効にしてログアウト"
 
-#: ../src/pointer-capture-applet.c:180
-msgid "Locked"
-msgstr "ロック中"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
-msgid "L"
-msgstr "L"
-
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "捕獲エリア"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "マウスのポインタを捕獲して一時的にロックします"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "ロック中"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "マウスの設定ダイアログを表示できませんでした"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "支援技術が有効になっていません"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Mousetweaks を利用するにはお使いのセッションで支援技術が有効になっていなけ"
+#~ "ればなりません。\n"
+#~ "\n"
+#~ "支援技術を有効にしてセッションを再起動する場合は \"有効にしてログアウト\" "
+#~ "ボタンを押下してください。"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "自動クリックを決定する方法を指定する"
+
+#~ msgid "Window y position"
+#~ msgstr "選択ウィンドウのY座標を指定する"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "カーソルがオーバーレイしている時の経過時間を表示する"
+
+#~ msgid "L"
+#~ msgstr "L"

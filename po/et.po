@@ -13,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
 "POT-Creation-Date: 2010-06-27 16:33+0000\n"
-"PO-Revision-Date: 2010-09-22 21:01+0300\n"
+"PO-Revision-Date: 2010-09-24 14:40+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "MIME-Version: 1.0\n"
@@ -59,13 +59,13 @@ msgid "C_trl"
 msgstr "C_trl"
 
 msgid "Capture Pointer"
-msgstr ""
+msgstr "Kursori hõivamine"
 
 msgid "Ct_rl"
 msgstr "Ct_rl"
 
 msgid "Modifier:"
-msgstr ""
+msgstr "Muuteklahv:"
 
 msgid "Mouse _button:"
 msgstr "Hiire _nupp:"
@@ -95,7 +95,7 @@ msgid "_Alt"
 msgstr "_Alt"
 
 msgid "_Width:"
-msgstr "_Laius:"
+msgstr "Laiu_s:"
 
 msgid "pixels"
 msgstr "pikslit"
@@ -119,7 +119,7 @@ msgid "Select dwelling click type"
 msgstr "Ooteajaga klõpsu liigi valimine"
 
 msgid "Area to lock the pointer"
-msgstr ""
+msgstr "Kursori lukustamise ala"
 
 msgid "Pointer Capture"
 msgstr "Kursori hõivamine"
@@ -207,19 +207,19 @@ msgid "Movement threshold"
 msgstr ""
 
 msgid "Secondary click time"
-msgstr ""
+msgstr "Teisese klõpsu aeg"
 
 msgid "Show click type window"
-msgstr ""
+msgstr "Klõpsu liigi akna näitamine"
 
 msgid "Show elapsed time as cursor overlay."
 msgstr ""
 
 msgid "Time in seconds before a click is triggered"
-msgstr ""
+msgstr "Klõpsamise ooteaja kestus"
 
 msgid "Time in seconds before a secondary click is triggered"
-msgstr ""
+msgstr "Teisese klõpsamise ooteaja kestus sekundites"
 
 msgid "Capture pointer only if Alt is pressed"
 msgstr "Kursori hõivamine ainult Alt klahvi vajutamisel"
@@ -231,10 +231,10 @@ msgid "Capture pointer only if Shift is pressed"
 msgstr "Kursori hõivamine ainult Shift klahvi vajutamisel"
 
 msgid "Mouse button used to capture the pointer"
-msgstr ""
+msgstr "Kursori hõivamiseks kasutatav hiirenupp"
 
 msgid "Mouse button used to release the pointer"
-msgstr ""
+msgstr "Kursori vabastamiseks kasutatav hiirenupp"
 
 msgid "Release pointer only if Alt is pressed"
 msgstr "Kursori vabastamine ainult Alt klahvi vajutamisel"
@@ -350,7 +350,7 @@ msgid "Temporarily lock the mouse pointer"
 msgstr "Hiirekursori ajutine lukustamine"
 
 msgid "Locked"
-msgstr "Lukustatud"
+msgstr "Lukus"
 
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Tõrge hiire-eelistuste käivitaminsel"

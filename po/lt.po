@@ -1,23 +1,24 @@
-# translation of mousetweaks.HEAD.lt.po to Lithuanian
 # Lithuanian translation of mousetweaks package.
+# Copyright © 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
-#
 # Gintautas Miliauskas <gintas@akl.lt>, 2008.
 # Vytautas Liuolia <vytautas.liuolia@gmail.com>, 2008.
+# Žygimantas Beručka <zygis@gnome.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks HEAD\n"
+"Project-Id-Version: mousetweaks gnome-2-32\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-16 21:04+0300\n"
-"PO-Revision-Date: 2009-09-16 21:04+0300\n"
-"Last-Translator: Gintautas Miliauskas <gintautas@miliauskas.lt>\n"
+"POT-Creation-Date: 2010-10-02 20:31+0200\n"
+"PO-Revision-Date: 2010-10-02 20:38+0200\n"
+"Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
 "Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
 "100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Virtaal 0.6.1\n"
 
 #: ../data/dwell-click-applet.ui.h:1
 msgid ""
@@ -40,7 +41,7 @@ msgid "Drag Click"
 msgstr "Vilkimas"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:807
 msgid "Enable dwell click"
 msgstr "Įjungti lūkuriuojantį spustelėjimą"
 
@@ -58,10 +59,10 @@ msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
-"Sritis pagauti pelės žymekliui skydelyje.\n"
+"Sritis užrakinti pelės žymekliui skydelyje.\n"
 "Mousetweaks dalis"
 
 #: ../data/pointer-capture-applet.ui.h:4
@@ -82,11 +83,11 @@ msgstr "Modifikatorius:"
 
 #: ../data/pointer-capture-applet.ui.h:8
 msgid "Mouse _button:"
-msgstr "Pagavos _mygtukas"
+msgstr "Pelės _mygtukas"
 
 #: ../data/pointer-capture-applet.ui.h:9
 msgid "Mouse b_utton:"
-msgstr "Pagavos m_ygtukas"
+msgstr "Pelės m_ygtukas"
 
 #: ../data/pointer-capture-applet.ui.h:10
 msgid "Pointer Capture Preferences"
@@ -109,7 +110,7 @@ msgid "Sh_ift"
 msgstr "Sh_ift"
 
 #: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
+msgid "Size of the Capture Area"
 msgstr "Pagavos srities dydis"
 
 #: ../data/pointer-capture-applet.ui.h:16
@@ -140,7 +141,7 @@ msgstr "Rodyti tik piktogramas"
 msgid "Show Text only"
 msgstr "Rodyti tik tekstą"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "Lūkuriuojantis spustelėjimas"
 
@@ -153,7 +154,7 @@ msgid "Area to lock the pointer"
 msgstr "Žymeklio ribojimo sritis"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "Žymeklio pagava"
 
@@ -225,9 +226,10 @@ msgid "Dwell click mode"
 msgstr "Lūkuriuojančio spustelėjimo veiksena"
 
 #: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
 msgstr ""
-"Lūkuriuojančio spustelėjimo veiksena (0 = gestų veiksena, 1 = lango veiksena)"
+"Lūkuriuojančio spustelėjimo veiksena („0“ = lango veiksena, „1“ = gestų "
+"veiksena)"
 
 #: ../data/mousetweaks.schemas.in.h:11
 msgid "Dwell click time"
@@ -237,7 +239,7 @@ msgstr "Lūkuriuojančio spustelėjimo trukmė"
 msgid "Enable secondary click"
 msgstr "Įjungti antrinį spustelėjimą"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:875
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
 msgstr "Įjungti simuliuotą antrinį spustelėjimą"
 
@@ -265,7 +267,7 @@ msgstr "Judesio slenkstis"
 msgid "Secondary click time"
 msgstr "Antrinio spustelėjimo trukmė"
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:883
+#: ../data/mousetweaks.schemas.in.h:21
 msgid "Show click type window"
 msgstr "Rodyti spustelėjimo tipo langą"
 
@@ -402,86 +404,105 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Pagavos srities plotis pikseliais."
 
-#: ../src/mt-main.c:767
-msgid "Assistive Technology Support is not Enabled"
-msgstr "Pagalbinių technologijų palaikymas neįjungtas"
-
-#: ../src/mt-main.c:768
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"Mousetweaks reikia, kad sesijoje būtų įjungtos pagalbinės technologijos.\n"
-"\n"
-"Jei norite įjungti pagalbines technologijas ir įkrauti iš naujo sesiją, "
-"spauskite „Įjungti ir atsijungti“."
-
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "Kiek laukti prieš lūkuriuojantį spustelėjimą"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
-msgstr "Kiek laukti prieš simuliuotą antrinį spustelėjimą"
+msgstr "Kiek laukti prieš imituotą antrinį spustelėjimą"
 
-#: ../src/mt-main.c:881
-msgid "Dwell mode to use"
-msgstr "Lūkuriuojančio spustelėjimo veiksena"
+#: ../src/mt-main.c:815
+msgid "Set the active dwell mode"
+msgstr "Nustatyti suaktyvintąją lūkuriuojančią veikseną"
 
-#: ../src/mt-main.c:885
-msgid "Window x position"
-msgstr "Lango x pozicija"
+#: ../src/mt-main.c:817
+msgid "Show a click-type window"
+msgstr "Rodyti spustelėjimo tipo langą"
 
-#: ../src/mt-main.c:887
-msgid "Window y position"
-msgstr "Lango y pozicija"
+#: ../src/mt-main.c:819
+msgid "Click-type window X position"
+msgstr "Spustelėjimo tipo lango x pozicija"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:821
+msgid "Click-type window Y position"
+msgstr "Spustelėjimo tipo lango y pozicija"
+
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "Ignoruoti mažus rodyklės judesius"
 
-#: ../src/mt-main.c:891
-msgid "Show elapsed time as cursor overlay"
-msgstr "Rodyti praėjusį laiką kaip kursoriaus perdangą"
-
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "Išjungti mousetweaks"
 
-#: ../src/mt-main.c:902
-msgid "- GNOME mousetweaks daemon"
-msgstr "- GNOME mousetweaks tarnyba"
+#: ../src/mt-main.c:827
+msgid "Disable cursor animations"
+msgstr "Išjungti žymeklio animaciją"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-main.c:829
+msgid "Start mousetweaks as a daemon"
+msgstr "Paleisti mousetweaks kaip tarnybą"
+
+#: ../src/mt-main.c:831
+msgid "Start mousetweaks in login mode"
+msgstr "Paleisti mousetweaks prisijungimo veiksenoje"
+
+#. parse
+#: ../src/mt-main.c:851
+msgid "- GNOME mouse accessibility daemon"
+msgstr "– GNOME pelės pritaikymo neįgaliesiems tarnyba"
+
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "Nepavyko parodyti žinyno"
 
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "Įjungti ir atsijungti"
 
-#: ../src/pointer-capture-applet.c:180
-msgid "Locked"
-msgstr "Užrakinta"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
-msgid "L"
-msgstr "U"
-
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "Pagavos sritis"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "Laikinai užrakinti pelės žymeklį"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "Užrakinta"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Nepavyko paleisti pelės nustatymų"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "Pagalbinių technologijų palaikymas neįjungtas"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Mousetweaks reikia, kad sesijoje būtų įjungtos pagalbinės technologijos.\n"
+#~ "\n"
+#~ "Jei norite įjungti pagalbines technologijas ir įkrauti iš naujo sesiją, "
+#~ "spauskite „Įjungti ir atsijungti“."
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Lūkuriuojančio spustelėjimo veiksena"
+
+#~ msgid "Window y position"
+#~ msgstr "Lango y pozicija"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Rodyti praėjusį laiką kaip kursoriaus perdangą"
+
+#~ msgid "L"
+#~ msgstr "U"
 
 #~ msgid "On"
 #~ msgstr "Ant"
@@ -536,9 +557,6 @@ msgstr "Nepavyko paleisti pelės nustatymų"
 
 #~ msgid "_Button:"
 #~ msgstr "_Mygtukas:"
-
-#~ msgid "Use dwell mode"
-#~ msgstr "Naudoti lūkuriuojančią veikseną"
 
 #~ msgid "Mousetweaks requires Assistive Technologies."
 #~ msgstr "Mousetweaks veikimui reikia pagalbinių technologijų."

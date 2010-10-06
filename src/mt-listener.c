@@ -160,7 +160,7 @@ mt_listener_emit_motion_event (MtListener *listener,
 static Display *
 mt_listener_display (void)
 {
-    return GDK_DISPLAY ();
+    return GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
 }
 
 static gboolean

@@ -64,7 +64,7 @@ typedef struct _MtCliArgs
 static Display *
 mt_main_display (void)
 {
-    return GDK_DISPLAY ();
+    return GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
 }
 
 static GdkScreen *

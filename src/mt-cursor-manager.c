@@ -54,7 +54,7 @@ G_DEFINE_TYPE (MtCursorManager, mt_cursor_manager, G_TYPE_OBJECT)
 static Display *
 mt_cursor_manager_display (void)
 {
-    return GDK_DISPLAY ();
+    return GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
 }
 
 static void

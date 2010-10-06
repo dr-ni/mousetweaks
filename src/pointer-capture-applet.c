@@ -111,9 +111,9 @@ pc_applet_change_orient (PanelApplet      *applet,
 }
 
 static void
-pc_applet_destroy (GtkObject *object)
+pc_applet_destroy (GtkWidget *widget)
 {
-    PcApplet *pc = PC_APPLET (object);
+    PcApplet *pc = PC_APPLET (widget);
 
     if (pc->blank)
     {
@@ -133,11 +133,11 @@ pc_applet_destroy (GtkObject *object)
 static void
 pc_applet_class_init (PcAppletClass *klass)
 {
-    GtkObjectClass *object_class;
+    GtkWidgetClass *widget_class;
     PanelAppletClass *applet_class;
 
-    object_class = GTK_OBJECT_CLASS (klass);
-    object_class->destroy = pc_applet_destroy;
+    widget_class = GTK_WIDGET_CLASS (klass);
+    widget_class->destroy = pc_applet_destroy;
 
     applet_class = PANEL_APPLET_CLASS (klass);
     applet_class->change_orient = pc_applet_change_orient;

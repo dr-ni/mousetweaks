@@ -43,7 +43,7 @@ GIO_REQUIRED=2.25.9
 
 PKG_CHECK_MODULES(DEPENDENCIES,
     gio-2.0 >= $GIO_REQUIRED
-	gtk+-2.0 >= 2.18
+	gtk+-3.0 >= 2.91.0
 	gconf-2.0 >= 2.16.0
 	x11
 	xcursor

@@ -40,11 +40,13 @@ GNOME_DOC_INIT
 dnl *** dependencies ***
 
 GIO_REQUIRED=2.25.9
+GTK_REQUIRED=2.91.0
+GCONF_REQUIRED=2.16.0
 
 PKG_CHECK_MODULES(DEPENDENCIES,
     gio-2.0 >= $GIO_REQUIRED
-	gtk+-3.0 >= 2.91.0
-	gconf-2.0 >= 2.16.0
+    gtk+-3.0 >= $GTK_REQUIRED
+	gconf-2.0 >= $GCONF_REQUIRED
 	x11
 	xcursor
 	xfixes
@@ -56,8 +58,8 @@ AC_SUBST(DEPENDENCIES_LIBS)
 dnl *** arguments ***
 
 AC_ARG_ENABLE(pointer-capture,
-  [  --disable-pointer-capture     Disable pointer-capture applet],
-  [build_pca=$enableval], [build_pca=yes])
+  [  --enable-pointer-capture     Enable pointer-capture applet],
+  [build_pca=$enableval], [build_pca=no])
 
 AM_CONDITIONAL(BUILD_PCA, test "x$build_pca" = "xyes")
 if test "$build_pca" = yes; then
@@ -65,8 +67,8 @@ if test "$build_pca" = yes; then
 fi
 
 AC_ARG_ENABLE(dwell-click,
-  [  --disable-dwell-click         Disable dwell-click applet],
-  [build_dca=$enableval], [build_dca=yes])
+  [  --enable-dwell-click         Enable dwell-click applet],
+  [build_dca=$enableval], [build_dca=no])
 
 AM_CONDITIONAL(BUILD_DCA, test "x$build_dca" = "xyes")
 if test "$build_dca" = yes; then

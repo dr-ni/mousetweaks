@@ -1,5 +1,4 @@
-AM_CFLAGS =                                 \
-    $(DEPENDENCIES_CFLAGS)                  \
+AM_CPPFLAGS =                               \
     $(WARN_CFLAGS)                          \
     -DDATADIR=\"$(datadir)/mousetweaks\"    \
     -DLOCALEDIR=\"$(datadir)/locale\"
@@ -37,7 +36,8 @@ mousetweaks_SOURCES =       \
     mt-sig-handler.h
 
 mousetweaks_CFLAGS =        \
-    $(AM_CFLAGS)
+    $(AM_CPPFLAGS)          \
+    $(DEPENDENCIES_CFLAGS)
 
 mousetweaks_LDADD =         \
     $(DEPENDENCIES_LIBS)
@@ -48,12 +48,11 @@ dwell_click_applet_SOURCES =    \
     mt-common.h
 
 dwell_click_applet_CFLAGS =     \
-    $(PANELAPPLET_CFLAGS)       \
-    $(AM_CFLAGS)
+    $(AM_CPPFLAGS)              \
+    $(PANELAPPLET_CFLAGS)
 
 dwell_click_applet_LDADD =      \
-    $(PANELAPPLET_LIBS)         \
-    $(DEPENDENCIES_LIBS)
+    $(PANELAPPLET_LIBS)
 
 pointer_capture_applet_SOURCES =    \
     pointer-capture-applet.c        \
@@ -61,11 +60,10 @@ pointer_capture_applet_SOURCES =    \
     mt-common.h
 
 pointer_capture_applet_CFLAGS =     \
-    $(PANELAPPLET_CFLAGS)           \
-    $(AM_CFLAGS)
+    $(AM_CPPFLAGS)                  \
+    $(PANELAPPLET_CFLAGS)
 
 pointer_capture_applet_LDADD =      \
-    $(PANELAPPLET_LIBS)             \
-    $(DEPENDENCIES_LIBS)
+    $(PANELAPPLET_LIBS)
 
 -include $(top_srcdir)/git.mk

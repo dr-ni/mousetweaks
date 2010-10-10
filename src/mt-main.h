@@ -41,8 +41,6 @@ struct _MtData
     gint         direction;
     gint         pointer_x;
     gint         pointer_y;
-    gint         x_old;
-    gint         y_old;
 
     /* options */
     gint         threshold;

@@ -280,25 +280,6 @@ mt_main_analyze_gesture (MtData *mt)
 }
 
 static void
-mt_main_draw_line (MtData *mt, gint x1, gint y1, gint x2, gint y2)
-{
-    GdkWindow *root;
-    GdkGC *gc;
-
-    root = gdk_screen_get_root_window (mt_main_current_screen (mt));
-    gc = gdk_gc_new (root);
-    gdk_gc_set_subwindow (gc, GDK_INCLUDE_INFERIORS);
-    gdk_gc_set_function (gc, GDK_INVERT);
-    gdk_gc_set_line_attributes (gc, 1,
-                                GDK_LINE_SOLID,
-                                GDK_CAP_ROUND,
-                                GDK_JOIN_ROUND);
-    gdk_draw_arc (root, gc, TRUE, x1 - 4, y1 - 4, 8, 8, 0, 23040);
-    gdk_draw_line (root, gc, x1, y1, x2, y2);
-    g_object_unref (gc);
-}
-
-static void
 dwell_start_gesture (MtData *mt)
 {
     GdkCursor *cursor;
@@ -330,15 +311,6 @@ dwell_stop_gesture (MtData *mt)
         gdk_pointer_ungrab (gtk_get_current_event_time ());
     else
         mt_main_set_cursor (mt, GDK_LEFT_PTR);
-
-    if (mt->x_old > -1 && mt->y_old > -1)
-    {
-        mt_main_draw_line (mt,
-                           mt->pointer_x, mt->pointer_y,
-                           mt->x_old, mt->y_old);
-        mt->x_old = -1;
-        mt->y_old = -1;
-    }
 
     mt->dwell_gesture_started = FALSE;
     mt_timer_stop (mt->dwell_timer);
@@ -439,21 +411,6 @@ global_motion_event (MtListener *listener,
             mt->pointer_x = event->x;
             mt->pointer_y = event->y;
             mt_timer_start (mt->dwell_timer);
-        }
-
-        if (mt->dwell_gesture_started)
-        {
-            if (mt->x_old > -1 && mt->y_old > -1)
-            {
-                mt_main_draw_line (mt,
-                                   mt->pointer_x, mt->pointer_y,
-                                   mt->x_old, mt->y_old);
-            }
-            mt_main_draw_line (mt,
-                               mt->pointer_x, mt->pointer_y,
-                               event->x, event->y);
-            mt->x_old = event->x;
-            mt->y_old = event->y;
         }
     }
 }
@@ -772,9 +729,6 @@ mt_data_init (void)
 
     mt->service = mt_service_get_default ();
     mt->n_screens = gdk_display_get_n_screens (gdk_display_get_default ());
-
-    mt->x_old = -1;
-    mt->y_old = -1;
 
     return mt;
 }

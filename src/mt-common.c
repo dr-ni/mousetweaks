@@ -17,9 +17,13 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <gtk/gtk.h>
-
 #include "mt-common.h"
+
+Display *
+mt_common_get_xdisplay (void)
+{
+    return GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
+}
 
 void
 mt_common_show_help (GdkScreen *screen, guint32 timestamp)

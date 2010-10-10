@@ -17,13 +17,12 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <gtk/gtk.h>
-#include <gdk/gdkx.h>
 #include <X11/Xcursor/Xcursor.h>
 #include <X11/extensions/Xfixes.h>
 
-#include "mt-cursor.h"
 #include "mt-cursor-manager.h"
+#include "mt-cursor.h"
+#include "mt-common.h"
 
 static int xfixes_event = 0;
 static int xfixes_error = 0;
@@ -51,16 +50,11 @@ static GdkFilterReturn mt_cursor_manager_event_filter (GdkXEvent       *gdk_xeve
 
 G_DEFINE_TYPE (MtCursorManager, mt_cursor_manager, G_TYPE_OBJECT)
 
-static Display *
-mt_cursor_manager_display (void)
-{
-    return GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
-}
-
 static void
 mt_cursor_manager_init (MtCursorManager *manager)
 {
     GtkSettings *gs;
+    Display *dpy;
 
     manager->priv = G_TYPE_INSTANCE_GET_PRIVATE (manager,
                                                  MT_TYPE_CURSOR_MANAGER,
@@ -71,12 +65,12 @@ mt_cursor_manager_init (MtCursorManager *manager)
                                                   g_free,
                                                   g_object_unref);
 
+    dpy = mt_common_get_xdisplay ();
+
     /* init XFixes extension */
-    if (XFixesQueryExtension (mt_cursor_manager_display (),
-                              &xfixes_event, &xfixes_error))
+    if (XFixesQueryExtension (dpy, &xfixes_event, &xfixes_error))
     {
-        XFixesSelectCursorInput (mt_cursor_manager_display (),
-                                 GDK_ROOT_WINDOW (),
+        XFixesSelectCursorInput (dpy, GDK_ROOT_WINDOW (),
                                  XFixesDisplayCursorNotifyMask);
     }
 
@@ -137,7 +131,7 @@ mt_cursor_manager_set_xcursor (MtCursor *cursor)
     gushort width, height;
     gushort xhot, yhot;
 
-    dpy = mt_cursor_manager_display ();
+    dpy = mt_common_get_xdisplay ();
     mt_cursor_get_dimension (cursor, &width, &height);
     ximage = XcursorImageCreate (width, height);
     xcursor = 0;
@@ -268,7 +262,7 @@ mt_cursor_manager_current_cursor (MtCursorManager *manager)
 
     g_return_val_if_fail (MT_IS_CURSOR_MANAGER (manager), NULL);
 
-    image = XFixesGetCursorImage (mt_cursor_manager_display ());
+    image = XFixesGetCursorImage (mt_common_get_xdisplay ());
     cursor = NULL;
 
     if (image->name && image->name[0] != '\0')

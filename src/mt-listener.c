@@ -17,9 +17,8 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <gdk/gdkx.h>
-
 #include "mt-listener.h"
+#include "mt-common.h"
 
 #define XBUTTON_MASK (Button1Mask | Button2Mask | Button3Mask | \
                       Button4Mask | Button5Mask)
@@ -157,12 +156,6 @@ mt_listener_emit_motion_event (MtListener *listener,
     g_signal_emit (listener, signals[MOTION_EVENT], 0, &ev);
 }
 
-static Display *
-mt_listener_display (void)
-{
-    return GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
-}
-
 static gboolean
 mt_listener_maybe_emit (MtListener *listener, guint mask)
 {
@@ -254,7 +247,7 @@ mt_listener_mouse_moved (MtListener *listener)
     gint x, y, win_x_return, win_y_return;
     guint mask_return;
 
-    dpy = mt_listener_display ();
+    dpy = mt_common_get_xdisplay ();
 
     gdk_error_trap_push ();
     XQueryPointer (dpy, DefaultRootWindow (dpy),
@@ -301,11 +294,13 @@ mt_listener_mouse_idle (gpointer data)
 static void
 mt_listener_grab_buttons (void)
 {
-    Display *dpy = mt_listener_display ();
+    Display *dpy;
+
+    dpy = mt_common_get_xdisplay ();
 
     gdk_error_trap_push ();
     XGrabButton (dpy, AnyButton, AnyModifier,
-                 gdk_x11_get_default_root_xwindow (),
+                 XDefaultRootWindow (dpy),
                  True, ButtonPressMask | ButtonReleaseMask,
                  GrabModeSync, GrabModeAsync, None, None);
     XSync (dpy, False);
@@ -315,7 +310,9 @@ mt_listener_grab_buttons (void)
 static void
 mt_listener_ungrab_buttons (void)
 {
-    Display *dpy = mt_listener_display ();
+    Display *dpy;
+
+    dpy = mt_common_get_xdisplay ();
 
     gdk_error_trap_push ();
     XUngrabButton (dpy, AnyButton, AnyModifier, XDefaultRootWindow (dpy));

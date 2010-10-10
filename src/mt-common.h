@@ -25,7 +25,8 @@
 #endif
 
 #include <glib/gi18n.h>
-#include <gdk/gdk.h>
+#include <gtk/gtk.h>
+#include <gdk/gdkx.h>
 
 G_BEGIN_DECLS
 
@@ -85,8 +86,11 @@ typedef enum
     MT_MESSAGE_LOGOUT
 } MtMessageType;
 
+Display *    mt_common_get_xdisplay      (void);
+
 void         mt_common_show_help         (GdkScreen     *screen,
                                           guint32        timestamp);
+
 gint         mt_common_show_dialog       (const gchar   *primary,
                                           const gchar   *secondary,
                                           MtMessageType  type);

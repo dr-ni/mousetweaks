@@ -61,12 +61,6 @@ typedef struct _MtCliArgs
     gboolean login;
 } MtCliArgs;
 
-static Display *
-mt_main_display (void)
-{
-    return GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
-}
-
 static GdkScreen *
 mt_main_current_screen (MtData *mt)
 {
@@ -111,7 +105,7 @@ mt_main_generate_button_event (MtData *mt,
 {
     Display *dpy;
 
-    dpy = mt_main_display ();
+    dpy = mt_common_get_xdisplay ();
     button = mt_main_check_mouse_orientation (mt, button);
 
     gdk_error_trap_push ();
@@ -692,12 +686,14 @@ get_gconf_options (MtData *mt)
 static MtData *
 mt_data_init (void)
 {
+    Display *dpy;
     MtData *mt;
     gint nil;
 
     mt = g_slice_new0 (MtData);
+    dpy = mt_common_get_xdisplay ();
 
-    if (!XTestQueryExtension (mt_main_display (), &nil, &nil, &nil, &nil))
+    if (!XTestQueryExtension (dpy, &nil, &nil, &nil, &nil))
     {
         g_slice_free (MtData, mt);
         g_critical ("No XTest extension found. Aborting.");
@@ -705,7 +701,7 @@ mt_data_init (void)
     }
 
     /* continue sending event requests inspite of other grabs */
-    XTestGrabControl (mt_main_display (), True);
+    XTestGrabControl (dpy, True);
 
     mt->client = gconf_client_get_default ();
     gconf_client_add_dir (mt->client, GNOME_MOUSE_DIR,

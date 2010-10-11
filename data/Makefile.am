@@ -56,11 +56,15 @@ if BUILD_PCA
 endif
 endif
 
+@GSETTINGS_RULES@
+gsettings_SCHEMAS = org.gnome.mousetweaks.gschema.xml
+
 EXTRA_DIST =                \
     $(schemas_in_files)     \
     $(server_in_in_files)   \
     $(menu_DATA)            \
-    $(ui_DATA)
+    $(ui_DATA)              \
+    $(gsettings_SCHEMA)
 
 DISTCLEANFILES =            \
     $(server_DATA)          \

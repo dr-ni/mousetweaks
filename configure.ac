@@ -33,17 +33,23 @@ AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Gettext Package])
 AM_GLIB_GNU_GETTEXT
 
+dnl *** gsettings ***
+
+GLIB_GSETTINGS
+
 dnl *** documentation ***
 
 GNOME_DOC_INIT
 
 dnl *** dependencies ***
 
+GLIB_REQUIRED=2.25.3
 GIO_REQUIRED=2.25.9
 GTK_REQUIRED=2.91.0
-GCONF_REQUIRED=2.16.0
+GCONF_REQUIRED=2.31.1
 
 PKG_CHECK_MODULES(DEPENDENCIES,
+    glib-2.0 >= $GLIB_REQUIRED
     gio-2.0 >= $GIO_REQUIRED
     gtk+-3.0 >= $GTK_REQUIRED
 	gconf-2.0 >= $GCONF_REQUIRED
@@ -94,17 +100,21 @@ AM_GCONF_SOURCE_2
 
 dnl *** output ***
 
-AC_OUTPUT([Makefile
-	   src/Makefile
-	   data/Makefile
-	   pixmaps/Makefile
-	   po/Makefile.in
-	   help/Makefile
-	   man/Makefile])
+AC_CONFIG_FILES([
+    Makefile
+	src/Makefile
+    data/Makefile
+    pixmaps/Makefile
+    po/Makefile.in
+    help/Makefile
+    man/Makefile
+])
 
-echo ""
-echo "Building panel applets:"
-echo "-----------------------"
-echo "  pointer-capture: $build_pca"
-echo "  dwell-click:     $build_dca"
-echo ""
+AC_OUTPUT
+
+echo "
+Building panel applets:
+-----------------------
+  pointer-capture: $build_pca
+  dwell-click:     $build_dca
+"

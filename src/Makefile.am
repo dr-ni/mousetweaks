@@ -33,7 +33,9 @@ mousetweaks_SOURCES =       \
     mt-listener.c           \
     mt-listener.h           \
     mt-sig-handler.c        \
-    mt-sig-handler.h
+    mt-sig-handler.h        \
+    mt-settings.c           \
+    mt-settings.h
 
 mousetweaks_CFLAGS =        \
     $(AM_CPPFLAGS)          \

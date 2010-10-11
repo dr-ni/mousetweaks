@@ -26,6 +26,7 @@
 #include <X11/extensions/XTest.h>
 
 #include "mt-common.h"
+#include "mt-settings.h"
 #include "mt-service.h"
 #include "mt-pidfile.h"
 #include "mt-ctw.h"
@@ -123,22 +124,15 @@ mt_main_set_cursor (MtData *mt, GdkCursorType type)
 }
 
 static void
-dwell_restore_single_click (MtData *mt)
-{
-    if (mt->dwell_mode == DWELL_MODE_CTW)
-        mt_ctw_set_clicktype (mt, DWELL_CLICK_TYPE_SINGLE);
-
-    mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
-}
-
-static void
 mt_main_do_dwell_click (MtData *mt)
 {
     MtClickType click_type;
+    MtSettings *ms;
 
+    ms = mt_settings_get_default ();
     click_type = mt_service_get_click_type (mt->service);
 
-    if (mt->dwell_mode == DWELL_MODE_GESTURE && !mt->dwell_drag_started)
+    if (ms->dwell_mode == DWELL_MODE_GESTURE && !mt->dwell_drag_started)
     {
         mt_main_generate_motion_event (mt_common_get_screen (),
                                        mt->pointer_x,
@@ -152,7 +146,7 @@ mt_main_do_dwell_click (MtData *mt)
             break;
         case DWELL_CLICK_TYPE_DOUBLE:
             mt_main_generate_button_event (mt, 1, DOUBLE_CLICK, 10);
-            dwell_restore_single_click (mt);
+            mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
             break;
         case DWELL_CLICK_TYPE_DRAG:
             if (!mt->dwell_drag_started)
@@ -166,12 +160,13 @@ mt_main_do_dwell_click (MtData *mt)
                 mt_main_generate_button_event (mt, 1, RELEASE, CurrentTime);
                 mt_main_set_cursor (mt, GDK_LEFT_PTR);
                 mt->dwell_drag_started = FALSE;
-                dwell_restore_single_click (mt);
+
+                mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
             }
             break;
         case DWELL_CLICK_TYPE_RIGHT:
             mt_main_generate_button_event (mt, 3, CLICK, 10);
-            dwell_restore_single_click (mt);
+            mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
             break;
         default:
             g_warning ("Unknown click-type.");
@@ -182,66 +177,75 @@ mt_main_do_dwell_click (MtData *mt)
 static inline gboolean
 below_threshold (MtData *mt, gint x, gint y)
 {
+    MtSettings *ms;
     gint dx, dy;
 
+    ms = mt_settings_get_default ();
     dx = x - mt->pointer_x;
     dy = y - mt->pointer_y;
 
-    return (dx * dx + dy * dy) < (mt->threshold * mt->threshold);
+    return (dx * dx + dy * dy) < (ms->dwell_threshold * ms->dwell_threshold);
+}
+
+static gint
+mt_main_get_direction (MtData *mt, gint x, gint y)
+{
+    gint dx, dy;
+
+    dx = ABS (mt->pointer_x - x);
+    dy = ABS (mt->pointer_y - y);
+    if (mt->pointer_x < x)
+    {
+        if (dx > dy)
+            return DIRECTION_LEFT;
+    }
+    else
+    {
+        if (dx > dy)
+            return DIRECTION_RIGHT;
+    }
+    return mt->pointer_y < y ? DIRECTION_UP : DIRECTION_DOWN;
 }
 
 static gboolean
 mt_main_analyze_gesture (MtData *mt)
 {
-    gint x, y, gd, i, dx, dy;
+    MtSettings *ms;
+    gint direction, x, y;
 
     if (mt_service_get_click_type (mt->service) == DWELL_CLICK_TYPE_DRAG)
         return TRUE;
 
     gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
+
     if (below_threshold (mt, x, y))
         return FALSE;
 
-    dx = ABS (x - mt->pointer_x);
-    dy = ABS (y - mt->pointer_y);
+    direction = mt_main_get_direction (mt, x, y);
+    ms = mt_settings_get_default ();
 
-    /* find direction */
-    if (x < mt->pointer_x)
+    if (direction == ms->dwell_gesture_single)
     {
-        if (y < mt->pointer_y)
-            if (dx < dy)
-                gd = DIRECTION_UP;
-            else
-                gd = DIRECTION_LEFT;
-        else
-            if (dx < dy)
-                gd = DIRECTION_DOWN;
-            else
-                gd = DIRECTION_LEFT;
+        mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
+    }
+    else if (direction == ms->dwell_gesture_double)
+    {
+        mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_DOUBLE);
+    }
+    else if (direction == ms->dwell_gesture_drag)
+    {
+        mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_DRAG);
+    }
+    else if (direction == ms->dwell_gesture_secondary)
+    {
+        mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_RIGHT);
     }
     else
     {
-        if (y < mt->pointer_y)
-            if (dx < dy)
-                gd = DIRECTION_UP;
-            else
-                gd = DIRECTION_RIGHT;
-        else
-            if (dx < dy)
-                gd = DIRECTION_DOWN;
-            else
-                gd = DIRECTION_RIGHT;
+        return FALSE;
     }
-    /* get click type for direction */
-    for (i = 0; i < N_CLICK_TYPES; i++)
-    {
-        if (mt->dwell_dirs[i] == gd)
-        {
-            mt_service_set_click_type (mt->service, i);
-            return TRUE;
-        }
-    }
-    return FALSE;
+
+    return TRUE;
 }
 
 static void
@@ -282,13 +286,14 @@ dwell_stop_gesture (MtData *mt)
 }
 
 static void
-dwell_timer_finished (MtTimer *timer, gpointer data)
+dwell_timer_finished (MtTimer *timer, MtData *mt)
 {
-    MtData *mt = data;
+    MtSettings *ms;
 
+    ms = mt_settings_get_default ();
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
-    if (mt->dwell_mode == DWELL_MODE_CTW)
+    if (ms->dwell_mode == DWELL_MODE_CTW)
     {
         mt_main_do_dwell_click (mt);
     }
@@ -301,9 +306,9 @@ dwell_timer_finished (MtTimer *timer, gpointer data)
             if (mt_main_analyze_gesture (mt))
                 mt_main_do_dwell_click (mt);
         }
-        /* if a drag action is in progress stop it */
         else if (mt->dwell_drag_started)
         {
+            /* if a drag action is in progress stop it */
             mt_main_do_dwell_click (mt);
         }
         else
@@ -344,50 +349,48 @@ mt_dwell_click_cancel (MtData *mt)
         mt->dwell_drag_started = FALSE;
     }
 
-    dwell_restore_single_click (mt);
+    mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
 }
 
 static void
 global_motion_event (MtListener *listener,
                      MtEvent    *event,
-                     gpointer    data)
+                     MtData     *mt)
 {
-    MtData *mt = data;
+    MtSettings *ms;
 
-    if (mt->ssc_enabled)
+    ms = mt_settings_get_default ();
+
+    if (ms->ssc_enabled && !below_threshold (mt, event->x, event->y))
     {
-        if (!below_threshold (mt, event->x, event->y))
-        {
-            mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
+        mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
-            if (mt_timer_is_running (mt->ssc_timer))
-                mt_timer_stop (mt->ssc_timer);
+        if (mt_timer_is_running (mt->ssc_timer))
+            mt_timer_stop (mt->ssc_timer);
 
-            if (mt->ssc_finished)
-                mt->ssc_finished = FALSE;
-        }
+        if (mt->ssc_finished)
+            mt->ssc_finished = FALSE;
     }
 
-    if (mt->dwell_enabled)
+    if (ms->dwell_enabled && !below_threshold (mt, event->x, event->y) &&
+        !mt->dwell_gesture_started)
     {
-        if (!below_threshold (mt, event->x, event->y) &&
-            !mt->dwell_gesture_started)
-        {
-            mt->pointer_x = event->x;
-            mt->pointer_y = event->y;
-            mt_timer_start (mt->dwell_timer);
-        }
+        mt->pointer_x = event->x;
+        mt->pointer_y = event->y;
+        mt_timer_start (mt->dwell_timer);
     }
 }
 
 static void
 global_button_event (MtListener *listener,
                      MtEvent    *event,
-                     gpointer    data)
+                     MtData     *mt)
 {
-    MtData *mt = data;
+    MtSettings *ms;
 
-    if (mt->ssc_enabled && event->button == 1)
+    ms = mt_settings_get_default ();
+
+    if (ms->ssc_enabled && event->button == 1)
     {
         if (event->type == MT_EVENT_BUTTON_PRESS)
         {
@@ -416,7 +419,7 @@ global_button_event (MtListener *listener,
     }
 }
 
-static gboolean
+static void
 cursor_overlay_time (MtData  *mt,
                      guchar  *image,
                      gint     width,
@@ -424,7 +427,6 @@ cursor_overlay_time (MtData  *mt,
                      MtTimer *timer,
                      gdouble  time)
 {
-    GtkWidget *ctw;
     GdkColor c;
     GtkStyle *style;
     cairo_surface_t *surface;
@@ -435,18 +437,9 @@ cursor_overlay_time (MtData  *mt,
                                                    CAIRO_FORMAT_ARGB32,
                                                    width, height,
                                                    width * 4);
-    if (cairo_surface_status (surface) != CAIRO_STATUS_SUCCESS)
-        return FALSE;
-
     cr = cairo_create (surface);
-    if (cairo_status (cr) != CAIRO_STATUS_SUCCESS)
-    {
-        cairo_surface_destroy (surface);
-        return FALSE;
-    }
 
-    ctw = mt_ctw_get_window (mt);
-    style = gtk_widget_get_style (ctw);
+    style = gtk_widget_get_style (mt_ctw_get_window ());
     c = style->bg[GTK_STATE_SELECTED];
     target = mt_timer_get_target (timer);
 
@@ -460,8 +453,6 @@ cursor_overlay_time (MtData  *mt,
     cairo_fill (cr);
     cairo_destroy (cr);
     cairo_surface_destroy (surface);
-
-    return TRUE;
 }
 
 static void
@@ -469,62 +460,57 @@ mt_main_update_cursor (MtData  *mt,
                        MtTimer *timer,
                        gdouble  time)
 {
+    MtCursor *new_cursor;
+    const gchar *name;
+    gushort xhot, yhot;
     guchar *image;
     gushort width, height;
 
     image = mt_cursor_get_image_copy (mt->cursor);
-    if (!image)
-        return;
-
-    mt_cursor_get_dimension (mt->cursor, &width, &height);
-
-    if (cursor_overlay_time (mt, image, width, height, timer, time))
+    if (image)
     {
-        MtCursorManager *manager;
-        MtCursor *new_cursor;
-        const gchar *name;
-        gushort xhot, yhot;
+        mt_cursor_get_dimension (mt->cursor, &width, &height);
+        cursor_overlay_time (mt, image, width, height, timer, time);
 
         name = mt_cursor_get_name (mt->cursor);
         mt_cursor_get_hotspot (mt->cursor, &xhot, &yhot);
         new_cursor = mt_cursor_new (name, image, width, height, xhot, yhot);
-        manager = mt_cursor_manager_get_default ();
-        mt_cursor_manager_set_cursor (manager, new_cursor);
+        mt_cursor_manager_set_cursor (mt_cursor_manager_get_default (), new_cursor);
+
         g_object_unref (new_cursor);
+        g_free (image);
     }
-    g_free (image);
 }
 
 static void
 mt_main_timer_tick (MtTimer *timer,
                     gdouble  time,
-                    gpointer data)
+                    MtData  *mt)
 {
-    MtData *mt = data;
+    MtSettings *ms;
 
-    if (mt->animate_cursor && mt->cursor)
+    ms = mt_settings_get_default ();
+    if (ms->animate_cursor && mt->cursor)
+    {
         mt_main_update_cursor (mt, timer, time);
+    }
 }
 
 static void
-cursor_cache_cleared (MtCursorManager *manager,
-                      gpointer         data)
+cursor_cache_cleared (MtCursorManager *manager, MtData *mt)
 {
-    MtData *mt = data;
-
     mt->cursor = mt_cursor_manager_current_cursor (manager);
 }
 
 static void
 cursor_changed (MtCursorManager *manager,
                 const gchar     *name,
-                gpointer         data)
+                MtData          *mt)
 {
-    MtData *mt = data;
-
     if (!mt->dwell_gesture_started)
+    {
         mt->override_cursor = !g_str_equal (name, "left_ptr");
-
+    }
     mt->cursor = mt_cursor_manager_lookup_cursor (manager, name);
 }
 
@@ -542,66 +528,14 @@ mt_main_sig_handler (MtSigHandler *sigh,
     signal_handler (signal_id);
 }
 
-static void
-gconf_value_changed (GConfClient *client,
-                     const gchar *key,
-                     GConfValue  *value,
-                     gpointer     data)
-{
-    MtData *mt = data;
-
-    if (g_str_equal (key, OPT_THRESHOLD) && value->type == GCONF_VALUE_INT)
-    {
-        mt->threshold = gconf_value_get_int (value);
-    }
-    else if (g_str_equal (key, OPT_SSC) && value->type == GCONF_VALUE_BOOL)
-    {
-        mt->ssc_enabled = gconf_value_get_bool (value);
-    }
-    else if (g_str_equal (key, OPT_SSC_T) && value->type == GCONF_VALUE_FLOAT)
+/*
+    if (g_str_equal (key, OPT_SSC_T) && value->type == GCONF_VALUE_FLOAT)
     {
         mt_timer_set_target (mt->ssc_timer, gconf_value_get_float (value));
-    }
-    else if (g_str_equal (key, OPT_DWELL) && value->type == GCONF_VALUE_BOOL)
-    {
-        mt->dwell_enabled = gconf_value_get_bool (value);
-        mt_ctw_update_sensitivity (mt);
-        mt_ctw_update_visibility (mt);
     }
     else if (g_str_equal (key, OPT_DWELL_T) && value->type == GCONF_VALUE_FLOAT)
     {
         mt_timer_set_target (mt->dwell_timer, gconf_value_get_float (value));
-    }
-    else if (g_str_equal (key, OPT_CTW) && value->type == GCONF_VALUE_BOOL)
-    {
-        mt->dwell_show_ctw = gconf_value_get_bool (value);
-        mt_ctw_update_visibility (mt);
-    }
-    else if (g_str_equal (key, OPT_MODE) && value->type == GCONF_VALUE_INT)
-    {
-        mt->dwell_mode = gconf_value_get_int (value);
-        mt_ctw_update_sensitivity (mt);
-    }
-    else if (g_str_equal (key, OPT_STYLE) && value->type == GCONF_VALUE_INT)
-    {
-        mt->style = gconf_value_get_int (value);
-        mt_ctw_update_style (mt, mt->style);
-    }
-    else if (g_str_equal (key, OPT_G_SINGLE) && value->type == GCONF_VALUE_INT)
-    {
-        mt->dwell_dirs[DWELL_CLICK_TYPE_SINGLE] = gconf_value_get_int (value);
-    }
-    else if (g_str_equal (key, OPT_G_DOUBLE) && value->type == GCONF_VALUE_INT)
-    {
-        mt->dwell_dirs[DWELL_CLICK_TYPE_DOUBLE] = gconf_value_get_int (value);
-    }
-    else if (g_str_equal (key, OPT_G_DRAG) && value->type == GCONF_VALUE_INT)
-    {
-        mt->dwell_dirs[DWELL_CLICK_TYPE_DRAG] = gconf_value_get_int (value);
-    }
-    else if (g_str_equal (key, OPT_G_RIGHT) && value->type == GCONF_VALUE_INT)
-    {
-        mt->dwell_dirs[DWELL_CLICK_TYPE_RIGHT] = gconf_value_get_int (value);
     }
     else if (g_str_equal (key, OPT_ANIMATE) && value->type == GCONF_VALUE_BOOL)
     {
@@ -615,35 +549,7 @@ gconf_value_changed (GConfClient *client,
         else
             mt_cursor_manager_restore_all (manager);
     }
-}
-
-static void
-get_gconf_options (MtData *mt)
-{
-    gdouble val;
-
-    mt->threshold = gconf_client_get_int (mt->client, OPT_THRESHOLD, NULL);
-    mt->ssc_enabled = gconf_client_get_bool (mt->client, OPT_SSC, NULL);
-    mt->dwell_enabled = gconf_client_get_bool (mt->client, OPT_DWELL, NULL);
-    mt->dwell_show_ctw = gconf_client_get_bool (mt->client, OPT_CTW, NULL);
-    mt->dwell_mode = gconf_client_get_int (mt->client, OPT_MODE, NULL);
-    mt->style = gconf_client_get_int (mt->client, OPT_STYLE, NULL);
-    mt->animate_cursor = gconf_client_get_bool (mt->client, OPT_ANIMATE, NULL);
-
-    val = gconf_client_get_float (mt->client, OPT_SSC_T, NULL);
-    mt_timer_set_target (mt->ssc_timer, val);
-    val = gconf_client_get_float (mt->client, OPT_DWELL_T, NULL);
-    mt_timer_set_target (mt->dwell_timer, val);
-
-    mt->dwell_dirs[DWELL_CLICK_TYPE_SINGLE] =
-        gconf_client_get_int (mt->client, OPT_G_SINGLE, NULL);
-    mt->dwell_dirs[DWELL_CLICK_TYPE_DOUBLE] =
-        gconf_client_get_int (mt->client, OPT_G_DOUBLE, NULL);
-    mt->dwell_dirs[DWELL_CLICK_TYPE_DRAG] =
-        gconf_client_get_int (mt->client, OPT_G_DRAG, NULL);
-    mt->dwell_dirs[DWELL_CLICK_TYPE_RIGHT] =
-        gconf_client_get_int (mt->client, OPT_G_RIGHT, NULL);
-}
+*/
 
 static MtData *
 mt_data_init (void)
@@ -664,12 +570,6 @@ mt_data_init (void)
 
     /* continue sending event requests inspite of other grabs */
     XTestGrabControl (dpy, True);
-
-    mt->client = gconf_client_get_default ();
-    gconf_client_add_dir (mt->client, MT_GCONF_HOME,
-                          GCONF_CLIENT_PRELOAD_ONELEVEL, NULL);
-    g_signal_connect (mt->client, "value_changed",
-                      G_CALLBACK (gconf_value_changed), mt);
 
     mt->ssc_timer = mt_timer_new ();
     g_signal_connect (mt->ssc_timer, "finished",
@@ -694,14 +594,6 @@ mt_data_free (MtData *mt)
     g_object_unref (mt->ssc_timer);
     g_object_unref (mt->dwell_timer);
     g_object_unref (mt->service);
-    g_object_unref (mt->client);
-
-    if (mt->ui)
-    {
-        gtk_widget_destroy (mt_ctw_get_window (mt));
-        g_object_unref (mt->ui);
-    }
-
     g_slice_free (MtData, mt);
 }
 
@@ -770,6 +662,7 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
 {
     MtData *mt;
     MtCursorManager *manager;
+    MtSettings *ms;
     MtListener *listener;
     MtSigHandler *sigh;
 
@@ -806,36 +699,36 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     if (!mt)
         goto FINISH;
 
-    /* load gconf settings */
-    get_gconf_options (mt);
+    /* load settings */
+    ms = mt_settings_get_default ();
 
     /* override with CLI arguments */
     if (cli_args.dwell_enabled)
-        mt->dwell_enabled = cli_args.dwell_enabled;
+        ms->dwell_enabled = cli_args.dwell_enabled;
     if (cli_args.ssc_enabled)
-        mt->ssc_enabled = cli_args.ssc_enabled;
+        ms->ssc_enabled = cli_args.ssc_enabled;
     if (cli_args.dwell_time >= .1 && cli_args.dwell_time <= 3.)
         mt_timer_set_target (mt->dwell_timer, cli_args.dwell_time);
     if (cli_args.ssc_time >= .1 && cli_args.ssc_time <= 3.)
         mt_timer_set_target (mt->ssc_timer, cli_args.ssc_time);
     if (cli_args.threshold >= 0 && cli_args.threshold <= 30)
-        mt->threshold = cli_args.threshold;
+        ms->dwell_threshold = cli_args.threshold;
     if (cli_args.ctw)
-        mt->dwell_show_ctw = cli_args.ctw;
+        ms->ctw_visible = cli_args.ctw;
     if (cli_args.no_animation)
-        mt->animate_cursor = !cli_args.no_animation;
+        ms->animate_cursor = !cli_args.no_animation;
     if (cli_args.mode)
     {
         if (g_str_equal (cli_args.mode, "gesture"))
-            mt->dwell_mode = DWELL_MODE_GESTURE;
+            ms->dwell_mode = DWELL_MODE_GESTURE;
         else if (g_str_equal (cli_args.mode, "window"))
-            mt->dwell_mode = DWELL_MODE_CTW;
+            ms->dwell_mode = DWELL_MODE_CTW;
 
         g_free (cli_args.mode);
     }
 
     /* init click-type window */
-    if (!mt_ctw_init (mt, cli_args.pos_x, cli_args.pos_y))
+    if (!mt_ctw_init (cli_args.pos_x, cli_args.pos_y))
         goto CLEANUP;
 
     /* init cursor animation */
@@ -855,12 +748,14 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
 
     gtk_main ();
 
+    mt_ctw_fini ();
     mt_cursor_manager_restore_all (manager);
     g_object_unref (manager);
     g_object_unref (listener);
     g_object_unref (sigh);
 
 CLEANUP:
+    g_object_unref (ms);
     mt_data_free (mt);
 
 FINISH:

@@ -20,20 +20,13 @@
 #ifndef __MT_CTW_H__
 #define __MT_CTW_H__
 
-#include "mt-main.h"
-
 G_BEGIN_DECLS
 
-gboolean    mt_ctw_init               (MtData *mt,
-                                       gint    x,
-                                       gint    y);
-GtkWidget * mt_ctw_get_window         (MtData *mt);
-void        mt_ctw_set_clicktype      (MtData *mt,
-                                       guint   ct);
-void        mt_ctw_update_sensitivity (MtData *mt);
-void        mt_ctw_update_visibility  (MtData *mt);
-void        mt_ctw_update_style       (MtData *mt,
-                                       gint    style);
+gboolean        mt_ctw_init               (gint x, gint y);
+
+void            mt_ctw_fini               (void);
+
+GtkWidget *     mt_ctw_get_window         (void);
 
 G_END_DECLS
 

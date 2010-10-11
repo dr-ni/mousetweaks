@@ -20,8 +20,6 @@
 #ifndef __MT_MAIN_H__
 #define __MT_MAIN_H__
 
-#include <gconf/gconf-client.h>
-
 #include "mt-timer.h"
 #include "mt-service.h"
 #include "mt-cursor.h"
@@ -31,8 +29,6 @@ G_BEGIN_DECLS
 typedef struct _MtData MtData;
 struct _MtData
 {
-    GConfClient *client;
-    GtkBuilder  *ui;
     MtService   *service;
     MtTimer     *ssc_timer;
     MtTimer     *dwell_timer;
@@ -40,16 +36,6 @@ struct _MtData
     gint         direction;
     gint         pointer_x;
     gint         pointer_y;
-
-    /* options */
-    gint         threshold;
-    gint         style;
-    gint         dwell_mode;
-    gint         dwell_dirs[4];
-    guint        ssc_enabled    : 1;
-    guint        dwell_enabled  : 1;
-    guint        dwell_show_ctw : 1;
-    guint        animate_cursor : 1;
 
     /* state flags */
     guint        dwell_drag_started    : 1;

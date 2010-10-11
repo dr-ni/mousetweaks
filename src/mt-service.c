@@ -269,8 +269,11 @@ mt_service_set_click_type (MtService  *service,
 {
     g_return_if_fail (MT_IS_SERVICE (service));
 
-    service->priv->click_type = type;
-    g_object_notify (G_OBJECT (service), "click-type");
+    if (type != service->priv->click_type)
+    {
+        service->priv->click_type = type;
+        g_object_notify (G_OBJECT (service), "click-type");
+    }
 }
 
 MtClickType

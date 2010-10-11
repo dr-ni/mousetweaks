@@ -19,12 +19,15 @@
 
 #include <gtk/gtk.h>
 
-#include "mt-main.h"
-#include "mt-service.h"
-#include "mt-common.h"
 #include "mt-ctw.h"
+#include "mt-service.h"
+#include "mt-settings.h"
+#include "mt-common.h"
 
-#define WID(n) (GTK_WIDGET (gtk_builder_get_object (mt->ui, n)))
+#define O(n) (gtk_builder_get_object (builder, (n)))
+#define W(n) (GTK_WIDGET (O(n)))
+
+static GtkBuilder *builder;
 
 enum
 {
@@ -33,38 +36,34 @@ enum
     BUTTON_STYLE_BOTH
 };
 
-void
-mt_ctw_set_clicktype (MtData *mt, guint clicktype)
+static void
+service_click_type_changed (MtService *service, GParamSpec *pspec)
 {
     GSList *group;
-    gpointer data;
+    GtkWidget *button;
 
-    group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (WID ("single")));
-    data = g_slist_nth_data (group, clicktype);
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (data), TRUE);
-    gtk_widget_grab_focus (GTK_WIDGET (data));
+    group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (O ("single")));
+    button = g_slist_nth_data (group, mt_service_get_click_type (service));
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (button), TRUE);
+    gtk_widget_grab_focus (button);
 }
 
-void
-mt_ctw_update_visibility (MtData *mt)
+static void
+ctw_visibility_changed (MtSettings *ms, GParamSpec *pspec)
 {
-    g_object_set (mt_ctw_get_window (mt),
-                  "visible", mt->dwell_enabled && mt->dwell_show_ctw,
-                  "screen", mt_common_get_screen (),
-                  NULL);
+    gtk_widget_set_visible (mt_ctw_get_window (),
+                            ms->dwell_enabled && ms->ctw_visible);
 }
 
-void
-mt_ctw_update_sensitivity (MtData *mt)
+static void
+ctw_sensitivity_changed (MtSettings *ms, GParamSpec *pspec)
 {
-    gboolean sensitive;
-
-    sensitive = mt->dwell_enabled && mt->dwell_mode == DWELL_MODE_CTW;
-    gtk_widget_set_sensitive (WID ("box"), sensitive);
+    gtk_widget_set_sensitive (mt_ctw_get_window (),
+                              ms->dwell_mode == DWELL_MODE_CTW);
 }
 
-void
-mt_ctw_update_style (MtData *mt, gint style)
+static void
+ctw_style_changed (MtSettings *ms, GParamSpec *pspec)
 {
     GtkWidget *icon, *label;
     const gchar *l[] = { "single_l", "double_l", "drag_l", "right_l" };
@@ -73,10 +72,10 @@ mt_ctw_update_style (MtData *mt, gint style)
 
     for (i = 0; i < N_CLICK_TYPES; i++)
     {
-        label = WID (l[i]);
-        icon = WID (img[i]);
+        label = W (l[i]);
+        icon = W (img[i]);
 
-        switch (style)
+        switch (ms->ctw_style)
         {
             case BUTTON_STYLE_BOTH:
                 g_object_set (icon, "yalign", 1.0, NULL);
@@ -104,26 +103,22 @@ mt_ctw_update_style (MtData *mt, gint style)
 static void
 ctw_button_cb (GtkToggleButton *button, gpointer data)
 {
-    MtData *mt = data;
+    GSList *group;
 
     if (gtk_toggle_button_get_active (button))
     {
-        GSList *group;
-
         group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (button));
-        mt_service_set_click_type (mt->service, g_slist_index (group, button));
+        mt_service_set_click_type (mt_service_get_default (),
+                                   g_slist_index (group, button));
     }
 }
 
 static gboolean
 ctw_context_menu (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 {
-    MtData *mt = data;
-
     if (bev->button == 3)
     {
-        gtk_menu_popup (GTK_MENU (WID ("popup")),
-                        0, 0, 0, 0, bev->button, bev->time);
+        gtk_menu_popup (GTK_MENU (O ("popup")), 0, 0, 0, 0, bev->button, bev->time);
         return TRUE;
     }
     return FALSE;
@@ -132,89 +127,116 @@ ctw_context_menu (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 static void
 ctw_menu_toggled (GtkCheckMenuItem *item, gpointer data)
 {
-    MtData *mt = data;
     GSList *group;
-    gint index;
 
-    if (!gtk_check_menu_item_get_active (item))
-        return;
-
-    group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (item));
-    index = g_slist_index (group, item);
-    gconf_client_set_int (mt->client, OPT_STYLE, index, NULL);
+    if (gtk_check_menu_item_get_active (item))
+    {
+        group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (item));
+        g_object_set (mt_settings_get_default (),
+                      "ctw-style", g_slist_index (group, item),
+                      NULL);
+    }
 }
 
 static gboolean
 ctw_delete_cb (GtkWidget *win, GdkEvent *ev, gpointer data)
 {
-    MtData *mt = data;
-
-    gconf_client_set_bool (mt->client, OPT_CTW, FALSE, NULL);
-
+    g_object_set (mt_settings_get_default (), "ctw-visible", FALSE, NULL);
     return TRUE;
 }
 
-GtkWidget *
-mt_ctw_get_window (MtData *mt)
-{
-    return WID ("ctw");
-}
-
 gboolean
-mt_ctw_init (MtData *mt, gint x, gint y)
+mt_ctw_init (gint x, gint y)
 {
-    GtkWidget *ctw, *w;
+    MtSettings *ms;
+    MtService *service;
+    GtkWidget *ctw;
+    GObject *obj;
     GError *error = NULL;
     const gchar *b[] = { "single", "double", "drag", "right" };
     GSList *group;
     gpointer data;
     gint i;
 
-    mt->ui = gtk_builder_new ();
-    gtk_builder_add_from_file (mt->ui, DATADIR "/mousetweaks.ui", &error);
+    /* load UI */
+    builder = gtk_builder_new ();
+    gtk_builder_add_from_file (builder, DATADIR "/mousetweaks.ui", &error);
     if (error)
     {
         g_print ("%s\n", error->message);
         g_error_free (error);
-
-        g_object_unref (mt->ui);
-        mt->ui = NULL;
-
+        g_object_unref (builder);
         return FALSE;
     }
 
-    ctw = mt_ctw_get_window (mt);
+    /* init window */
+    ctw = mt_ctw_get_window ();
     gtk_window_stick (GTK_WINDOW (ctw));
     gtk_window_set_keep_above (GTK_WINDOW (ctw), TRUE);
-    g_signal_connect (ctw, "delete-event", G_CALLBACK (ctw_delete_cb), mt);
+    g_signal_connect (ctw, "delete-event", G_CALLBACK (ctw_delete_cb), NULL);
 
+    /* init buttons */
     for (i = 0; i < N_CLICK_TYPES; i++)
     {
-        w = WID (b[i]);
-        gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (w), FALSE);
-        g_signal_connect (w, "toggled", G_CALLBACK (ctw_button_cb), mt);
-        g_signal_connect (w, "button-press-event",
-                          G_CALLBACK (ctw_context_menu), mt);
+        obj = O (b[i]);
+        gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (obj), FALSE);
+        g_signal_connect (obj, "toggled", G_CALLBACK (ctw_button_cb), NULL);
+        g_signal_connect (obj, "button-press-event", G_CALLBACK (ctw_context_menu), NULL);
     }
 
-    g_signal_connect (WID ("text"), "toggled", 
-                      G_CALLBACK (ctw_menu_toggled), mt);
-    g_signal_connect (WID ("icon"), "toggled", 
-                      G_CALLBACK (ctw_menu_toggled), mt);
-    w = WID ("both");
-    g_signal_connect (w, "toggled", 
-                      G_CALLBACK (ctw_menu_toggled), mt);
-    group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (w));
-    data = g_slist_nth_data (group, mt->style);
+    /* service */
+    service = mt_service_get_default ();
+    g_signal_connect (service, "notify::click-type",
+                      G_CALLBACK (service_click_type_changed), NULL);
+
+    service_click_type_changed (service, NULL);
+
+    /* settings */
+    ms = mt_settings_get_default ();
+    g_signal_connect (ms, "notify::ctw-visible",
+                      G_CALLBACK (ctw_visibility_changed), NULL);
+    g_signal_connect (ms, "notify::dwell-enabled",
+                      G_CALLBACK (ctw_visibility_changed), NULL);
+    g_signal_connect (ms, "notify::dwell-mode",
+                      G_CALLBACK (ctw_sensitivity_changed), NULL);
+    g_signal_connect (ms, "notify::ctw-mode",
+                      G_CALLBACK (ctw_style_changed), NULL);
+
+    ctw_visibility_changed (ms, NULL);
+    ctw_sensitivity_changed (ms, NULL);
+
+    /* init context menu */
+    obj = O ("both");
+    g_signal_connect (obj, "toggled", G_CALLBACK (ctw_menu_toggled), NULL);
+    g_signal_connect (O ("text"), "toggled",  G_CALLBACK (ctw_menu_toggled), NULL);
+    g_signal_connect (O ("icon"), "toggled",  G_CALLBACK (ctw_menu_toggled), NULL);
+
+    group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (obj));
+    data = g_slist_nth_data (group, ms->ctw_style);
     gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (data), TRUE);
 
-    gtk_widget_realize (ctw);
-    mt_ctw_update_style (mt, mt->style);
-    mt_ctw_update_sensitivity (mt);
-    mt_ctw_update_visibility (mt);
-
+    /* XXX: remember window position */
     if (x != -1 && y != -1)
+    {
+        gtk_widget_realize (ctw);
         gtk_window_move (GTK_WINDOW (ctw), x, y);
+    }
 
     return TRUE;
+}
+
+void
+mt_ctw_fini (void)
+{
+    if (builder)
+    {
+        gtk_widget_destroy (mt_ctw_get_window ());
+        g_object_unref (builder);
+    }
+}
+
+GtkWidget *
+mt_ctw_get_window (void)
+{
+    return W ("ctw");
 }

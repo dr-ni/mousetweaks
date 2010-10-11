@@ -16,10 +16,10 @@
  */
 
 #include <stdlib.h>
+
 #include <gio/gio.h>
 #include <gtk/gtk.h>
 #include <panel-applet.h>
-#include <gconf/gconf-client.h>
 
 #include "mt-common.h"
 
@@ -28,7 +28,7 @@
 typedef struct _DwellData DwellData;
 struct _DwellData
 {
-    GConfClient *client;
+    GSettings   *settings;
     GDBusProxy  *proxy;
     GtkBuilder  *ui;
     GtkWidget   *box;
@@ -89,7 +89,7 @@ update_sensitivity (DwellData *dd)
     gint mode;
 
     dwell = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dd->enable));
-    mode = gconf_client_get_int (dd->client, OPT_MODE, NULL);
+    mode = g_settings_get_int (dd->settings, KEY_DWELL_MODE);
     sensitive = dd->active && dwell && mode == DWELL_MODE_CTW;
     gtk_widget_set_sensitive (dd->ct_box, sensitive);
 }
@@ -215,49 +215,34 @@ do_not_eat (GtkWidget *widget, GdkEventButton *bev, gpointer user)
 }
 
 static void
-enable_dwell_changed (GtkToggleButton *button, gpointer data)
+enable_dwell_changed (GtkToggleButton *button, DwellData *dd)
 {
-    DwellData *dd = data;
-
-    /* disable click-type window if it's active */
-    gconf_client_set_bool (dd->client, OPT_CTW, FALSE, NULL);
-
-    gconf_client_set_bool (dd->client,
-                           OPT_DWELL,
-                           gtk_toggle_button_get_active (button),
-                           NULL);
+    g_settings_set_boolean (dd->settings,
+                            KEY_DWELL_ENABLED,
+                            gtk_toggle_button_get_active (button));
 }
 
 static gboolean
-activation_timeout (gpointer data)
+activation_timeout (DwellData *dd)
 {
-    DwellData *dd = data;
-    gboolean stop;
-
-    if ((dd->elapsed = g_timer_elapsed (dd->timer, NULL)) < dd->delay)
-    {
-        stop = TRUE;
-    }
-    else
+    dd->elapsed = g_timer_elapsed (dd->timer, NULL);
+    if (dd->elapsed >= dd->delay)
     {
         gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), TRUE);
         dd->tid = 0;
         dd->elapsed = 0.0;
-        stop = FALSE;
+        return FALSE;
     }
     gtk_widget_queue_draw (dd->enable);
 
-    return stop;
+    return TRUE;
 }
 
 static gboolean
 enable_dwell_crossing (GtkWidget        *widget,
                        GdkEventCrossing *event,
-                       gpointer          data)
+                       DwellData        *dd)
 {
-    DwellData *dd = data;
-    GError *error = NULL;
-
     if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dd->enable)))
         return FALSE;
 
@@ -265,14 +250,8 @@ enable_dwell_crossing (GtkWidget        *widget,
     {
         if (!dd->tid)
         {
-            dd->delay = gconf_client_get_float (dd->client, OPT_DWELL_T, &error);
-            if (error)
-            {
-                g_error_free (error);
-                dd->delay = 1.2;
-            }
             g_timer_start (dd->timer);
-            dd->tid = g_timeout_add (100, activation_timeout, dd);
+            dd->tid = g_timeout_add (100, (GSourceFunc) activation_timeout, dd);
         }
     }
     else
@@ -290,9 +269,8 @@ enable_dwell_crossing (GtkWidget        *widget,
 static gboolean
 enable_dwell_exposed (GtkWidget      *widget,
                       GdkEventExpose *event,
-                      gpointer        data)
+                      DwellData      *dd)
 {
-    DwellData *dd = data;
     cairo_t *cr;
     GdkColor c;
     gdouble x, y, w, h;
@@ -342,9 +320,8 @@ button_cb (GtkToggleButton *button, DwellData *dd)
 static void
 button_size_allocate (GtkWidget     *widget,
                       GtkAllocation *alloc,
-                      gpointer       data)
+                      DwellData     *dd)
 {
-    DwellData *dd = data;
     GtkWidget *w;
     GdkPixbuf *tmp;
     gint i;
@@ -403,9 +380,10 @@ button_size_allocate (GtkWidget     *widget,
 
 /* applet callbacks */
 static void
-applet_orient_changed (PanelApplet *applet, guint orient, gpointer data)
+applet_orient_changed (PanelApplet *applet,
+                       guint        orient,
+                       DwellData   *dd)
 {
-    DwellData *dd = data;
     gboolean dwell;
 
     gtk_container_remove (GTK_CONTAINER (applet), g_object_ref (dd->box));
@@ -439,15 +417,14 @@ applet_orient_changed (PanelApplet *applet, guint orient, gpointer data)
         g_object_unref (dd->box);
     }
 
-    dwell = gconf_client_get_bool (dd->client, OPT_DWELL, NULL);
+    dwell = g_settings_get_boolean (dd->settings, KEY_DWELL_ENABLED);
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), dwell);
     update_sensitivity (dd);
 }
 
 static void
-applet_unrealized (GtkWidget *widget, gpointer data)
+applet_unrealized (GtkWidget *widget, DwellData *dd)
 {
-    DwellData *dd = data;
     gint i;
 
     for (i = 0; i < N_CLICK_TYPES; i++)
@@ -455,7 +432,7 @@ applet_unrealized (GtkWidget *widget, gpointer data)
             g_object_unref (dd->click[i]);
 
     g_object_unref (dd->ui);
-    g_object_unref (dd->client);
+    g_object_unref (dd->settings);
     g_object_unref (dd->proxy);
     g_timer_destroy (dd->timer);
 
@@ -469,6 +446,7 @@ preferences_dialog (BonoboUIComponent *component,
 {
     GError *error = NULL;
 
+    /* FIXME: changed to A11Y panel */
     if (!g_spawn_command_line_async ("gnome-mouse-properties -p accessibility",
                                      &error))
     {
@@ -481,30 +459,24 @@ preferences_dialog (BonoboUIComponent *component,
 
 static void
 help_dialog (BonoboUIComponent *component,
-             gpointer           data,
+             DwellData         *dd,
              const char        *cname)
 {
-    DwellData *dd = data;
-
     mt_common_show_help (gtk_widget_get_screen (dd->box),
                          gtk_get_current_event_time ());
 }
 
 static void
 about_dialog (BonoboUIComponent *component,
-              gpointer           data,
+              DwellData         *dd,
               const char        *cname)
 {
-    DwellData *dd = data;
-
     gtk_window_present (GTK_WINDOW (WID ("about")));
 }
 
 static void
-about_response (GtkWidget *about, gint response, gpointer data)
+about_response (GtkWidget *about, gint response, DwellData *dd)
 {
-    DwellData *dd = data;
-
     gtk_widget_hide (WID ("about"));
 }
 
@@ -584,23 +556,23 @@ setup_box (DwellData *dd)
 }
 
 static void
-gconf_value_changed (GConfClient *client,
-                     const gchar *key,
-                     GConfValue  *value,
-                     gpointer     data)
+dwell_enabled_changed (GSettings *settings, gchar *key, DwellData *dd)
 {
-    DwellData *dd = data;
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable),
+                                  g_settings_get_boolean (settings, key));
+    update_sensitivity (dd);
+}
 
-    if (g_str_equal (key, OPT_MODE))
-    {
-        update_sensitivity (dd);
-    }
-    else if (g_str_equal (key, OPT_DWELL) && value->type == GCONF_VALUE_BOOL)
-    {
-        gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable),
-                                      gconf_value_get_bool (value));
-        update_sensitivity (dd);
-    }
+static void
+dwell_mode_changed (GSettings *settings, gchar *key, DwellData *dd)
+{
+    update_sensitivity (dd);
+}
+
+static void
+dwell_time_changed (GSettings *settings, gchar *key, DwellData *dd)
+{
+    dd->delay = g_settings_get_double (settings, key);
 }
 
 static gboolean
@@ -649,12 +621,14 @@ fill_applet (PanelApplet *applet)
     g_signal_connect (about, "response",
                       G_CALLBACK (about_response), dd);
 
-    /* gconf */
-    dd->client = gconf_client_get_default ();
-    gconf_client_add_dir (dd->client, MT_GCONF_HOME,
-                          GCONF_CLIENT_PRELOAD_ONELEVEL, NULL);
-    g_signal_connect (dd->client, "value_changed",
-                      G_CALLBACK (gconf_value_changed), dd);
+    /* gsettings */
+    dd->settings = g_settings_new (MT_SCHEMA_ID);
+    g_signal_connect (dd->settings, "value::" KEY_DWELL_ENABLED,
+                      G_CALLBACK (dwell_enabled_changed), dd);
+    g_signal_connect (dd->settings, "value::" KEY_DWELL_MODE,
+                      G_CALLBACK (dwell_mode_changed), dd);
+    g_signal_connect (dd->settings, "value::" KEY_DWELL_TIME,
+                      G_CALLBACK (dwell_time_changed), dd);
 
     /* icons */
     dd->click[DWELL_CLICK_TYPE_SINGLE] =
@@ -698,7 +672,9 @@ fill_applet (PanelApplet *applet)
         dd->button = WID ("single_click_v");
     }
 
-    dwell = gconf_client_get_bool (dd->client, OPT_DWELL, NULL);
+    dd->delay = g_settings_get_double (dd->settings, KEY_DWELL_TIME);
+
+    dwell = g_settings_get_boolean (dd->settings, KEY_DWELL_ENABLED);
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), dwell);
 
     setup_box (dd);

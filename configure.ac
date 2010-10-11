@@ -52,11 +52,11 @@ PKG_CHECK_MODULES(DEPENDENCIES,
     glib-2.0 >= $GLIB_REQUIRED
     gio-2.0 >= $GIO_REQUIRED
     gtk+-3.0 >= $GTK_REQUIRED
-	gconf-2.0 >= $GCONF_REQUIRED
-	x11
-	xcursor
-	xfixes
-	xtst)
+    gconf-2.0 >= $GCONF_REQUIRED
+    x11
+    xcursor
+    xfixes
+    xtst)
 
 AC_SUBST(DEPENDENCIES_CFLAGS)
 AC_SUBST(DEPENDENCIES_LIBS)
@@ -102,7 +102,7 @@ dnl *** output ***
 
 AC_CONFIG_FILES([
     Makefile
-	src/Makefile
+    src/Makefile
     data/Makefile
     pixmaps/Makefile
     po/Makefile.in

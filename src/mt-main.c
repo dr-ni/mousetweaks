@@ -676,8 +676,6 @@ mt_data_init (void)
     XTestGrabControl (dpy, True);
 
     mt->client = gconf_client_get_default ();
-    gconf_client_add_dir (mt->client, GNOME_MOUSE_DIR,
-                          GCONF_CLIENT_PRELOAD_NONE, NULL);
     gconf_client_add_dir (mt->client, MT_GCONF_HOME,
                           GCONF_CLIENT_PRELOAD_ONELEVEL, NULL);
     g_signal_connect (mt->client, "value_changed",

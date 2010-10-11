@@ -26,6 +26,24 @@ mt_common_get_xdisplay (void)
 }
 
 void
+mt_common_xtrap_push (void)
+{
+    gdk_error_trap_push ();
+}
+
+void
+mt_common_xtrap_pop (void)
+{
+    gint xerror;
+
+    gdk_flush ();
+    if ((xerror = gdk_error_trap_pop ()))
+    {
+        g_warning ("Trapped X Error code %i.", xerror);
+    }
+}
+
+void
 mt_common_show_help (GdkScreen *screen, guint32 timestamp)
 {
     GError *error = NULL;

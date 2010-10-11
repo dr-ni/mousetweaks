@@ -249,11 +249,11 @@ mt_listener_mouse_moved (MtListener *listener)
 
     dpy = mt_common_get_xdisplay ();
 
-    gdk_error_trap_push ();
-    XQueryPointer (dpy, DefaultRootWindow (dpy),
+    mt_common_xtrap_push ();
+    XQueryPointer (dpy, XDefaultRootWindow (dpy),
                    &root_return, &child_return, &x, &y,
                    &win_x_return, &win_y_return, &mask_return);
-    gdk_error_trap_pop ();
+    mt_common_xtrap_pop ();
 
     while (mt_listener_maybe_emit (listener, mask_return));
 
@@ -297,14 +297,13 @@ mt_listener_grab_buttons (void)
     Display *dpy;
 
     dpy = mt_common_get_xdisplay ();
-
-    gdk_error_trap_push ();
+    mt_common_xtrap_push ();
     XGrabButton (dpy, AnyButton, AnyModifier,
                  XDefaultRootWindow (dpy),
                  True, ButtonPressMask | ButtonReleaseMask,
                  GrabModeSync, GrabModeAsync, None, None);
     XSync (dpy, False);
-    gdk_error_trap_pop ();
+    mt_common_xtrap_pop ();
 }
 
 static void
@@ -313,10 +312,9 @@ mt_listener_ungrab_buttons (void)
     Display *dpy;
 
     dpy = mt_common_get_xdisplay ();
-
-    gdk_error_trap_push ();
+    mt_common_xtrap_push ();
     XUngrabButton (dpy, AnyButton, AnyModifier, XDefaultRootWindow (dpy));
-    gdk_error_trap_pop ();
+    mt_common_xtrap_pop ();
 }
 
 static void

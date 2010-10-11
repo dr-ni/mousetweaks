@@ -85,6 +85,9 @@ typedef enum
 
 Display *    mt_common_get_xdisplay      (void);
 
+void         mt_common_xtrap_push        (void);
+void         mt_common_xtrap_pop         (void);
+
 void         mt_common_show_help         (GdkScreen     *screen,
                                           guint32        timestamp);
 

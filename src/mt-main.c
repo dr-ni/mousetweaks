@@ -78,10 +78,7 @@ mt_main_current_screen (MtData *mt)
 static void
 mt_main_generate_motion_event (GdkScreen *screen, gint x, gint y)
 {
-    gdk_error_trap_push ();
     gdk_display_warp_pointer (gdk_display_get_default (), screen, x, y);
-    gdk_flush ();
-    gdk_error_trap_pop ();
 }
 
 static void
@@ -93,8 +90,7 @@ mt_main_generate_button_event (MtData *mt,
     Display *dpy;
 
     dpy = mt_common_get_xdisplay ();
-
-    gdk_error_trap_push ();
+    mt_common_xtrap_push ();
     switch (type)
     {
         case PRESS:
@@ -117,8 +113,7 @@ mt_main_generate_button_event (MtData *mt,
             g_warning ("Unknown button sequence.");
             break;
     }
-    gdk_flush ();
-    gdk_error_trap_pop ();
+    mt_common_xtrap_pop ();
 }
 
 static void

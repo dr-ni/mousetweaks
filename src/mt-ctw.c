@@ -48,25 +48,10 @@ mt_ctw_set_clicktype (MtData *mt, guint clicktype)
 void
 mt_ctw_update_visibility (MtData *mt)
 {
-    GtkWidget *ctw;
-    GdkScreen *screen;
-
-    ctw = mt_ctw_get_window (mt);
-
-    if (mt->dwell_enabled && mt->dwell_show_ctw)
-    {
-        if (mt->n_screens > 1)
-        {
-            gdk_display_get_pointer (gdk_display_get_default (),
-                                     &screen, NULL, NULL, NULL);
-            gtk_window_set_screen (GTK_WINDOW (ctw), screen);
-        }
-        gtk_widget_show (ctw);
-    }
-    else
-    {
-        gtk_widget_hide (ctw);
-    }
+    g_object_set (mt_ctw_get_window (mt),
+                  "visible", mt->dwell_enabled && mt->dwell_show_ctw,
+                  "screen", mt_common_get_screen (),
+                  NULL);
 }
 
 void

@@ -43,6 +43,27 @@ mt_common_xtrap_pop (void)
     }
 }
 
+GdkScreen *
+mt_common_get_screen (void)
+{
+    GdkDisplay *gdk_dpy;
+    GdkScreen *screen;
+    gint n_screens;
+
+    gdk_dpy = gdk_display_get_default ();
+    n_screens = gdk_display_get_n_screens (gdk_dpy);
+
+    if (n_screens > 1)
+    {
+        gdk_display_get_pointer (gdk_dpy, &screen, NULL, NULL, NULL);
+    }
+    else
+    {
+        screen = gdk_screen_get_default ();
+    }
+    return screen;
+}
+
 void
 mt_common_show_help (GdkScreen *screen, guint32 timestamp)
 {

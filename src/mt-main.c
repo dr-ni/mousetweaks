@@ -61,20 +61,6 @@ typedef struct _MtCliArgs
     gboolean login;
 } MtCliArgs;
 
-static GdkScreen *
-mt_main_current_screen (MtData *mt)
-{
-    GdkScreen *screen;
-
-    if (mt->n_screens > 1)
-        gdk_display_get_pointer (gdk_display_get_default (),
-                                 &screen, NULL, NULL, NULL);
-    else
-        screen = gdk_screen_get_default ();
-
-    return screen;
-}
-
 static void
 mt_main_generate_motion_event (GdkScreen *screen, gint x, gint y)
 {
@@ -119,14 +105,18 @@ mt_main_generate_button_event (MtData *mt,
 static void
 mt_main_set_cursor (MtData *mt, GdkCursorType type)
 {
+    GdkDisplay *gdk_dpy;
     GdkScreen *screen;
     GdkCursor *cursor;
-    gint i;
+    gint n_screens, i;
+
+    gdk_dpy = gdk_display_get_default ();
+    n_screens = gdk_display_get_n_screens (gdk_dpy);
 
     cursor = gdk_cursor_new (type);
-    for (i = 0; i < mt->n_screens; ++i)
+    for (i = 0; i < n_screens; ++i)
     {
-        screen = gdk_display_get_screen (gdk_display_get_default (), i);
+        screen = gdk_display_get_screen (gdk_dpy, i);
         gdk_window_set_cursor (gdk_screen_get_root_window (screen), cursor);
     }
     gdk_cursor_unref (cursor);
@@ -150,7 +140,7 @@ mt_main_do_dwell_click (MtData *mt)
 
     if (mt->dwell_mode == DWELL_MODE_GESTURE && !mt->dwell_drag_started)
     {
-        mt_main_generate_motion_event (mt_main_current_screen (mt),
+        mt_main_generate_motion_event (mt_common_get_screen (),
                                        mt->pointer_x,
                                        mt->pointer_y);
     }
@@ -263,7 +253,7 @@ dwell_start_gesture (MtData *mt)
     if (mt->override_cursor)
     {
         cursor = gdk_cursor_new (GDK_CROSS);
-        root = gdk_screen_get_root_window (mt_main_current_screen (mt));
+        root = gdk_screen_get_root_window (mt_common_get_screen ());
         gdk_pointer_grab (root, FALSE,
                           GDK_POINTER_MOTION_MASK,
                           NULL, cursor,
@@ -694,7 +684,6 @@ mt_data_init (void)
                       G_CALLBACK (mt_main_timer_tick), mt);
 
     mt->service = mt_service_get_default ();
-    mt->n_screens = gdk_display_get_n_screens (gdk_display_get_default ());
 
     return mt;
 }

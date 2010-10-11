@@ -37,7 +37,6 @@ struct _MtData
     MtTimer     *ssc_timer;
     MtTimer     *dwell_timer;
     MtCursor    *cursor;
-    gint         n_screens;
     gint         direction;
     gint         pointer_x;
     gint         pointer_y;

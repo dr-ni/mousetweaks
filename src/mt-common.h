@@ -51,9 +51,6 @@ G_BEGIN_DECLS
 #define OPT_STYLE     MT_GCONF_HOME "/button_layout"
 #define OPT_ANIMATE   MT_GCONF_HOME "/animate_cursor"
 
-#define GNOME_MOUSE_DIR "/desktop/gnome/peripherals/mouse"
-#define GNOME_MOUSE_ORIENT GNOME_MOUSE_DIR "/left_handed"
-
 enum
 {
     DWELL_MODE_CTW = 0,

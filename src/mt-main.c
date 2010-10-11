@@ -84,19 +84,6 @@ mt_main_generate_motion_event (GdkScreen *screen, gint x, gint y)
     gdk_error_trap_pop ();
 }
 
-static guint
-mt_main_check_mouse_orientation (MtData *mt, guint button)
-{
-    if (mt->left_handed)
-    {
-        if (button == 1)
-            return 3;
-        else if (button == 3)
-            return 1;
-    }
-    return button;
-}
-
 static void
 mt_main_generate_button_event (MtData *mt,
                                guint   button,
@@ -106,7 +93,6 @@ mt_main_generate_button_event (MtData *mt,
     Display *dpy;
 
     dpy = mt_common_get_xdisplay ();
-    button = mt_main_check_mouse_orientation (mt, button);
 
     gdk_error_trap_push ();
     switch (type)
@@ -644,10 +630,6 @@ gconf_value_changed (GConfClient *client,
         else
             mt_cursor_manager_restore_all (manager);
     }
-    else if (g_str_equal (key, GNOME_MOUSE_ORIENT) && value->type == GCONF_VALUE_BOOL)
-    {
-        mt->left_handed = gconf_value_get_bool (value);
-    }
 }
 
 static void
@@ -676,11 +658,6 @@ get_gconf_options (MtData *mt)
         gconf_client_get_int (mt->client, OPT_G_DRAG, NULL);
     mt->dwell_dirs[DWELL_CLICK_TYPE_RIGHT] =
         gconf_client_get_int (mt->client, OPT_G_RIGHT, NULL);
-
-    /* mouse orientation */
-    mt->left_handed = gconf_client_get_bool (mt->client,
-                                             GNOME_MOUSE_ORIENT,
-                                             NULL);
 }
 
 static MtData *

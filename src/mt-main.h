@@ -53,7 +53,6 @@ struct _MtData
     guint        animate_cursor : 1;
 
     /* state flags */
-    guint        left_handed           : 1;
     guint        dwell_drag_started    : 1;
     guint        dwell_gesture_started : 1;
     guint        override_cursor       : 1;

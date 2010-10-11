@@ -528,29 +528,6 @@ mt_main_sig_handler (MtSigHandler *sigh,
     signal_handler (signal_id);
 }
 
-/*
-    if (g_str_equal (key, OPT_SSC_T) && value->type == GCONF_VALUE_FLOAT)
-    {
-        mt_timer_set_target (mt->ssc_timer, gconf_value_get_float (value));
-    }
-    else if (g_str_equal (key, OPT_DWELL_T) && value->type == GCONF_VALUE_FLOAT)
-    {
-        mt_timer_set_target (mt->dwell_timer, gconf_value_get_float (value));
-    }
-    else if (g_str_equal (key, OPT_ANIMATE) && value->type == GCONF_VALUE_BOOL)
-    {
-        MtCursorManager *manager;
-
-        manager = mt_cursor_manager_get_default ();
-        mt->animate_cursor = gconf_value_get_bool (value);
-
-        if (mt->animate_cursor)
-            mt->cursor = mt_cursor_manager_current_cursor (manager);
-        else
-            mt_cursor_manager_restore_all (manager);
-    }
-*/
-
 static MtData *
 mt_data_init (void)
 {
@@ -701,6 +678,15 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
 
     /* load settings */
     ms = mt_settings_get_default ();
+
+    /* bind timers */
+    g_settings_bind (ms->settings, KEY_SSC_TIME,
+                     mt->ssc_timer, "target-time",
+                     G_SETTINGS_BIND_DEFAULT | G_SETTINGS_BIND_NO_SENSITIVITY);
+
+    g_settings_bind (ms->settings, KEY_DWELL_TIME,
+                     mt->dwell_timer, "target-time",
+                     G_SETTINGS_BIND_DEFAULT | G_SETTINGS_BIND_NO_SENSITIVITY);
 
     /* override with CLI arguments */
     if (cli_args.dwell_enabled)

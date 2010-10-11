@@ -37,8 +37,6 @@ struct _MtSettings
 
     GSettings *settings;
 
-    gdouble    dwell_time;
-    gdouble    ssc_time;
     gint       dwell_threshold;
     gint       dwell_mode;
     gint       dwell_gesture_single;

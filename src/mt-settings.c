@@ -29,7 +29,6 @@ enum
 {
     PROP_0,
     PROP_DWELL_ENABLED,
-    PROP_DWELL_TIME,
     PROP_DWELL_THRESHOLD,
     PROP_DWELL_MODE,
     PROP_DWELL_GESTURE_SINGLE,
@@ -37,7 +36,6 @@ enum
     PROP_DWELL_GESTURE_DRAG,
     PROP_DWELL_GESTURE_SECONDARY,
     PROP_SSC_ENABLED,
-    PROP_SSC_TIME,
     PROP_CTW_VISIBLE,
     PROP_CTW_STYLE,
     PROP_ANIMATE_CURSOR,
@@ -51,7 +49,6 @@ mt_settings_init (MtSettings *ms)
     ms->settings = g_settings_new (MT_SCHEMA_ID);
 
     BIND_PROP ("dwell-enabled", KEY_DWELL_ENABLED);
-    BIND_PROP ("dwell-time", KEY_DWELL_TIME);
     BIND_PROP ("dwell-threshold", KEY_DWELL_THRESHOLD);
     BIND_PROP ("dwell-mode", KEY_DWELL_MODE);
     BIND_PROP ("dwell-gesture-single", KEY_DWELL_GESTURE_SINGLE);
@@ -59,7 +56,6 @@ mt_settings_init (MtSettings *ms)
     BIND_PROP ("dwell-gesture-drag", KEY_DWELL_GESTURE_DRAG);
     BIND_PROP ("dwell-gesture-secondary", KEY_DWELL_GESTURE_SECONDARY);
     BIND_PROP ("ssc-enabled", KEY_SSC_ENABLED);
-    BIND_PROP ("ssc-time", KEY_SSC_TIME);
     BIND_PROP ("ctw-visible", KEY_CTW_VISIBLE);
     BIND_PROP ("ctw-style", KEY_CTW_STYLE);
     BIND_PROP ("animate-cursor", KEY_ANIMATE_CURSOR);
@@ -92,9 +88,6 @@ mt_settings_set_property (GObject      *object,
         case PROP_DWELL_ENABLED:
             ms->dwell_enabled = g_value_get_boolean (value);
             break;
-        case PROP_DWELL_TIME:
-            ms->dwell_time = g_value_get_double (value);
-            break;
         case PROP_DWELL_THRESHOLD:
             ms->dwell_threshold = g_value_get_int (value);
             break;
@@ -115,9 +108,6 @@ mt_settings_set_property (GObject      *object,
             break;
         case PROP_SSC_ENABLED:
             ms->ssc_enabled = g_value_get_boolean (value);
-            break;
-        case PROP_SSC_TIME:
-            ms->ssc_time = g_value_get_double (value);
             break;
         case PROP_CTW_VISIBLE:
             ms->ctw_visible = g_value_get_boolean (value);
@@ -146,9 +136,6 @@ mt_settings_get_property (GObject    *object,
         case PROP_DWELL_ENABLED:
             g_value_set_boolean (value, ms->dwell_enabled);
             break;
-        case PROP_DWELL_TIME:
-            g_value_set_double (value, ms->dwell_time);
-            break;
         case PROP_DWELL_THRESHOLD:
             g_value_set_int (value, ms->dwell_threshold);
             break;
@@ -169,9 +156,6 @@ mt_settings_get_property (GObject    *object,
             break;
         case PROP_SSC_ENABLED:
             g_value_set_boolean (value, ms->ssc_enabled);
-            break;
-        case PROP_SSC_TIME:
-            g_value_set_double (value, ms->ssc_time);
             break;
         case PROP_CTW_VISIBLE:
             g_value_set_boolean (value, ms->ctw_visible);
@@ -203,12 +187,6 @@ mt_settings_class_init (MtSettingsClass *klass)
                                                            "Dwell enabled",
                                                            "Enable dwell clicks",
                                                            FALSE, PFLAGS));
-    g_object_class_install_property (object_class,
-                                     PROP_DWELL_TIME,
-                                     g_param_spec_double ("dwell-time",
-                                                          "Dwell time",
-                                                          "Dwell click time",
-                                                          0.1, 3.0, 1.2, PFLAGS));
     g_object_class_install_property (object_class,
                                      PROP_DWELL_THRESHOLD,
                                      g_param_spec_int ("dwell-threshold",
@@ -251,11 +229,6 @@ mt_settings_class_init (MtSettingsClass *klass)
                                                            "SSC enabled",
                                                            "Enable simulated secondary clicks",
                                                            FALSE, PFLAGS));
-    g_object_class_install_property (object_class,
-                                     PROP_SSC_TIME,
-                                     g_param_spec_double ("ssc-time", "SSC time",
-                                                          "Simulated secondary click time",
-                                                          0.1, 3.0, 1.2, PFLAGS));
     g_object_class_install_property (object_class,
                                      PROP_CTW_VISIBLE,
                                      g_param_spec_boolean ("ctw-visible",

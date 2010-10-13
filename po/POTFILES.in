@@ -5,7 +5,7 @@ data/DwellClick_Factory.server.in.in
 data/PointerCapture_Factory.server.in.in
 data/DwellClick.xml
 data/PointerCapture.xml
-data/mousetweaks.schemas.in
+data/org.gnome.mousetweaks.gschema.xml.in
 data/pointer-capture-applet.schemas.in
 src/mt-main.c
 src/mt-ctw.c

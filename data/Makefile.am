@@ -49,19 +49,22 @@ uninstall-local:
 endif
 endif
 
+gsettings_in_files = org.gnome.mousetweaks.gschema.xml.in
+gsettings_SCHEMAS = $(gsettings_in_files:.xml.in=.xml)
+@INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@
-gsettings_SCHEMAS = org.gnome.mousetweaks.gschema.xml
 
 EXTRA_DIST =                \
     $(schemas_in_files)     \
     $(server_in_in_files)   \
     $(menu_DATA)            \
     $(ui_DATA)              \
-    $(gsettings_SCHEMA)
+    $(gsettings_in_files)
 
 DISTCLEANFILES =            \
     $(server_DATA)          \
     $(server_in_files)      \
-    $(schemas_DATA)
+    $(schemas_DATA)         \
+    $(gsettings_SCHEMA)
 
 -include $(top_srcdir)/git.mk

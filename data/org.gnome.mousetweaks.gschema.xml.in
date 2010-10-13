@@ -1,0 +1,69 @@
+<schemalist>
+  <schema id="org.gnome.mousetweaks" path="/desktop/gnome/accessibility/mouse/" gettext-domain="mousetweaks">
+    <key name="dwell-enabled" type="b">
+      <default>false</default>
+      <_summary>Enable dwell click</_summary>
+      <_description>Enable dwell click.</_description>
+    </key>
+    <key name="dwell-time" type="d">
+      <default>1.20</default>
+      <_summary>Dwell click time</_summary>
+      <_description>Time in seconds before a click is triggered.</_description>
+    </key>
+    <key name="dwell-threshold" type="i">
+      <default>10</default>
+      <_summary>Movement threshold</_summary>
+      <_description>Distance in pixels before movement will be recognized.</_description>
+    </key>
+    <key name="dwell-gesture-single" type="i">
+      <default>0</default>
+      <_summary>Gesture single click</_summary>
+      <_description>Direction to perform a single click. ("0" = Left, "1" = Right, "2" = Up, "3" = Down)</_description>
+    </key>
+    <key name="dwell-gesture-double" type="i">
+      <default>2</default>
+      <_summary>Gesture double click</_summary>
+      <_description>Direction to perform a double click. ("0" = Left, "1" = Right, "2" = Up, "3" = Down)</_description>
+    </key>
+    <key name="dwell-gesture-drag" type="i">
+      <default>3</default>
+      <_summary>Gesture drag click</_summary>
+      <_description>Direction to perform dragging. ("0" = Left, "1" = Right, "2" = Up, "3" = Down)</_description>
+    </key>
+    <key name="dwell-gesture-secondary" type="i">
+      <default>1</default>
+      <_summary>Gesture secondary click</_summary>
+      <_description>Direction to perform a secondary click. ("0" = Left, "1" = Right, "2" = Up, "3" = Down)</_description>
+    </key>
+    <key name="dwell-mode" type="i">
+      <default>0</default>
+      <_summary>Dwell click mode</_summary>
+      <_description>The active dwell click mode. ("0" = Window mode, "1" = Gesture mode)</_description>
+    </key>
+    <key name="ctw-visible" type="b">
+      <default>true</default>
+      <_summary>Show click type window</_summary>
+      <_description>Show click type window.</_description>
+    </key>
+    <key name="ctw-style" type="i">
+      <default>2</default>
+      <_summary>Click type window style</_summary>
+      <_description>Button style in the click type window. ("0" = Text, "1" = Icon, "2" = Both)</_description>
+    </key>
+    <key name="ssc-enabled" type="b">
+      <default>false</default>
+      <_summary>Enable secondary click</_summary>
+      <_description>Enable simulated secondary click.</_description>
+    </key>
+    <key name="ssc-time" type="d">
+      <default>1.20</default>
+      <_summary>Secondary click time</_summary>
+      <_description>Time in seconds before a simulated secondary click is triggered.</_description>
+    </key>
+    <key name="animate-cursor" type="b">
+      <default>true</default>
+      <_summary>Animate cursor</_summary>
+      <_description>Show elapsed time as a cursor overlay.</_description>
+    </key>
+  </schema>
+</schemalist>

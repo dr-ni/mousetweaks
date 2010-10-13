@@ -66,10 +66,10 @@ static void preferences_dialog (BonoboUIComponent *component,
                                 gpointer           data,
                                 const char        *cname);
 static void help_dialog        (BonoboUIComponent *component,
-                                gpointer           data,
+                                DwellData         *dd,
                                 const char        *cname);
 static void about_dialog       (BonoboUIComponent *component,
-                                gpointer           data,
+                                DwellData         *dd,
                                 const char        *cname);
 
 static const BonoboUIVerb menu_verb[] =

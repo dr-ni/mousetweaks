@@ -36,21 +36,6 @@ G_BEGIN_DECLS
 #define MOUSETWEAKS_DBUS_IFACE "org.gnome.Mousetweaks"
 #define MOUSETWEAKS_DBUS_PATH  "/org/gnome/Mousetweaks"
 
-#define MT_GCONF_HOME "/desktop/gnome/accessibility/mouse"
-#define OPT_THRESHOLD MT_GCONF_HOME "/threshold"
-#define OPT_SSC       MT_GCONF_HOME "/delay_enable"
-#define OPT_SSC_T     MT_GCONF_HOME "/delay_time"
-#define OPT_DWELL     MT_GCONF_HOME "/dwell_enable"
-#define OPT_DWELL_T   MT_GCONF_HOME "/dwell_time"
-#define OPT_CTW       MT_GCONF_HOME "/dwell_show_ctw"
-#define OPT_MODE      MT_GCONF_HOME "/dwell_mode"
-#define OPT_G_SINGLE  MT_GCONF_HOME "/dwell_gesture_single"
-#define OPT_G_DOUBLE  MT_GCONF_HOME "/dwell_gesture_double"
-#define OPT_G_DRAG    MT_GCONF_HOME "/dwell_gesture_drag"
-#define OPT_G_RIGHT   MT_GCONF_HOME "/dwell_gesture_secondary"
-#define OPT_STYLE     MT_GCONF_HOME "/button_layout"
-#define OPT_ANIMATE   MT_GCONF_HOME "/animate_cursor"
-
 /* GSettings */
 #define MT_SCHEMA_ID "org.gnome.mousetweaks"
 

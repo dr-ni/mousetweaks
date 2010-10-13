@@ -46,6 +46,8 @@ mousetweaks_LDADD =         \
 
 dwell_click_applet_SOURCES =    \
     dwell-click-applet.c        \
+    mt-timer.c                  \
+    mt-timer.h                  \
     mt-common.c                 \
     mt-common.h
 

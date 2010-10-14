@@ -37,9 +37,8 @@ G_BEGIN_DECLS
 #define MOUSETWEAKS_DBUS_PATH  "/org/gnome/Mousetweaks"
 
 /* GSettings */
-#define MT_SCHEMA_ID "org.gnome.mousetweaks"
+#define MT_SCHEMA_ID                "org.gnome.mousetweaks"
 
-#define KEY_DWELL_ENABLED           "dwell-enabled"
 #define KEY_DWELL_TIME              "dwell-time"
 #define KEY_DWELL_THRESHOLD         "dwell-threshold"
 #define KEY_DWELL_MODE              "dwell-mode"
@@ -47,11 +46,15 @@ G_BEGIN_DECLS
 #define KEY_DWELL_GESTURE_DOUBLE    "dwell-gesture-double"
 #define KEY_DWELL_GESTURE_DRAG      "dwell-gesture-drag"
 #define KEY_DWELL_GESTURE_SECONDARY "dwell-gesture-secondary"
-#define KEY_SSC_ENABLED             "ssc-enabled"
 #define KEY_SSC_TIME                "ssc-time"
 #define KEY_CTW_VISIBLE             "ctw-visible"
 #define KEY_CTW_STYLE               "ctw-style"
 #define KEY_ANIMATE_CURSOR          "animate-cursor"
+
+#define GSD_MOUSE_SCHEMA_ID         "org.gnome.settings-daemon.peripherals.mouse"
+
+#define KEY_DWELL_ENABLED           "dwell-click-enabled"
+#define KEY_SSC_ENABLED             "secondary-click-enabled"
 
 enum
 {

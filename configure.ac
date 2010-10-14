@@ -47,12 +47,14 @@ GLIB_REQUIRED=2.25.3
 GIO_REQUIRED=2.25.9
 GTK_REQUIRED=2.91.0
 GCONF_REQUIRED=2.31.1
+GSD_REQUIRED=2.91.0
 
 PKG_CHECK_MODULES(DEPENDENCIES,
     glib-2.0 >= $GLIB_REQUIRED
     gio-2.0 >= $GIO_REQUIRED
     gtk+-3.0 >= $GTK_REQUIRED
     gconf-2.0 >= $GCONF_REQUIRED
+    gnome-settings-daemon >= $GSD_REQUIRED
     x11
     xcursor
     xfixes

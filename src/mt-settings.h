@@ -35,7 +35,8 @@ struct _MtSettings
 {
     GObject    parent;
 
-    GSettings *settings;
+    GSettings *mt_settings;
+    GSettings *gsd_settings;
 
     gint       dwell_threshold;
     gint       dwell_mode;

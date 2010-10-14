@@ -22,8 +22,8 @@
 
 #define PFLAGS (G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS)
 
-#define BIND_PROP(p,k) (g_settings_bind (ms->settings, (k), ms, (p), \
-                        G_SETTINGS_BIND_DEFAULT | G_SETTINGS_BIND_NO_SENSITIVITY))
+#define BIND_PROP(s,p,k) (g_settings_bind ((s), (k), ms, (p), \
+                          G_SETTINGS_BIND_DEFAULT | G_SETTINGS_BIND_NO_SENSITIVITY))
 
 enum
 {
@@ -46,19 +46,22 @@ G_DEFINE_TYPE (MtSettings, mt_settings, G_TYPE_OBJECT)
 static void
 mt_settings_init (MtSettings *ms)
 {
-    ms->settings = g_settings_new (MT_SCHEMA_ID);
+    ms->mt_settings = g_settings_new (MT_SCHEMA_ID);
 
-    BIND_PROP ("dwell-enabled", KEY_DWELL_ENABLED);
-    BIND_PROP ("dwell-threshold", KEY_DWELL_THRESHOLD);
-    BIND_PROP ("dwell-mode", KEY_DWELL_MODE);
-    BIND_PROP ("dwell-gesture-single", KEY_DWELL_GESTURE_SINGLE);
-    BIND_PROP ("dwell-gesture-double", KEY_DWELL_GESTURE_DOUBLE);
-    BIND_PROP ("dwell-gesture-drag", KEY_DWELL_GESTURE_DRAG);
-    BIND_PROP ("dwell-gesture-secondary", KEY_DWELL_GESTURE_SECONDARY);
-    BIND_PROP ("ssc-enabled", KEY_SSC_ENABLED);
-    BIND_PROP ("ctw-visible", KEY_CTW_VISIBLE);
-    BIND_PROP ("ctw-style", KEY_CTW_STYLE);
-    BIND_PROP ("animate-cursor", KEY_ANIMATE_CURSOR);
+    BIND_PROP (ms->mt_settings, "dwell-threshold", KEY_DWELL_THRESHOLD);
+    BIND_PROP (ms->mt_settings, "dwell-mode", KEY_DWELL_MODE);
+    BIND_PROP (ms->mt_settings, "dwell-gesture-single", KEY_DWELL_GESTURE_SINGLE);
+    BIND_PROP (ms->mt_settings, "dwell-gesture-double", KEY_DWELL_GESTURE_DOUBLE);
+    BIND_PROP (ms->mt_settings, "dwell-gesture-drag", KEY_DWELL_GESTURE_DRAG);
+    BIND_PROP (ms->mt_settings, "dwell-gesture-secondary", KEY_DWELL_GESTURE_SECONDARY);
+    BIND_PROP (ms->mt_settings, "ctw-visible", KEY_CTW_VISIBLE);
+    BIND_PROP (ms->mt_settings, "ctw-style", KEY_CTW_STYLE);
+    BIND_PROP (ms->mt_settings, "animate-cursor", KEY_ANIMATE_CURSOR);
+
+    ms->gsd_settings = g_settings_new (GSD_MOUSE_SCHEMA_ID);
+
+    BIND_PROP (ms->gsd_settings, "dwell-enabled", KEY_DWELL_ENABLED);
+    BIND_PROP (ms->gsd_settings, "ssc-enabled", KEY_SSC_ENABLED);
 }
 
 static void
@@ -66,10 +69,16 @@ mt_settings_dispose (GObject *object)
 {
     MtSettings *ms = MT_SETTINGS (object);
 
-    if (ms->settings)
+    if (ms->mt_settings)
     {
-        g_object_unref (ms->settings);
-        ms->settings = NULL;
+        g_object_unref (ms->mt_settings);
+        ms->mt_settings = NULL;
+    }
+
+    if (ms->gsd_settings)
+    {
+        g_object_unref (ms->gsd_settings);
+        ms->gsd_settings = NULL;
     }
 
     G_OBJECT_CLASS (mt_settings_parent_class)->dispose (object);

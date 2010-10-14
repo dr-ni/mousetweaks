@@ -28,7 +28,8 @@
 typedef struct _DwellData DwellData;
 struct _DwellData
 {
-    GSettings   *settings;
+    GSettings   *mt_settings;
+    GSettings   *gsd_settings;
     GDBusProxy  *proxy;
     GtkBuilder  *ui;
     GtkWidget   *box;
@@ -89,7 +90,7 @@ update_sensitivity (DwellData *dd)
     gint mode;
 
     dwell = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (dd->enable));
-    mode = g_settings_get_int (dd->settings, KEY_DWELL_MODE);
+    mode = g_settings_get_int (dd->mt_settings, KEY_DWELL_MODE);
     sensitive = dd->active && dwell && mode == DWELL_MODE_CTW;
     gtk_widget_set_sensitive (dd->ct_box, sensitive);
 }
@@ -217,7 +218,7 @@ do_not_eat (GtkWidget *widget, GdkEventButton *bev, gpointer user)
 static void
 enable_dwell_changed (GtkToggleButton *button, DwellData *dd)
 {
-    g_settings_set_boolean (dd->settings,
+    g_settings_set_boolean (dd->gsd_settings,
                             KEY_DWELL_ENABLED,
                             gtk_toggle_button_get_active (button));
 }
@@ -417,7 +418,7 @@ applet_orient_changed (PanelApplet *applet,
         g_object_unref (dd->box);
     }
 
-    dwell = g_settings_get_boolean (dd->settings, KEY_DWELL_ENABLED);
+    dwell = g_settings_get_boolean (dd->gsd_settings, KEY_DWELL_ENABLED);
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), dwell);
     update_sensitivity (dd);
 }
@@ -432,7 +433,8 @@ applet_unrealized (GtkWidget *widget, DwellData *dd)
             g_object_unref (dd->click[i]);
 
     g_object_unref (dd->ui);
-    g_object_unref (dd->settings);
+    g_object_unref (dd->mt_settings);
+    g_object_unref (dd->gsd_settings);
     g_object_unref (dd->proxy);
     g_timer_destroy (dd->timer);
 
@@ -582,7 +584,6 @@ fill_applet (PanelApplet *applet)
     GError *error = NULL;
     GtkWidget *about;
     PanelAppletOrient orient;
-    gboolean dwell;
 
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
@@ -622,13 +623,15 @@ fill_applet (PanelApplet *applet)
                       G_CALLBACK (about_response), dd);
 
     /* gsettings */
-    dd->settings = g_settings_new (MT_SCHEMA_ID);
-    g_signal_connect (dd->settings, "value::" KEY_DWELL_ENABLED,
-                      G_CALLBACK (dwell_enabled_changed), dd);
-    g_signal_connect (dd->settings, "value::" KEY_DWELL_MODE,
+    dd->mt_settings = g_settings_new (MT_SCHEMA_ID);
+    g_signal_connect (dd->mt_settings, "value::" KEY_DWELL_MODE,
                       G_CALLBACK (dwell_mode_changed), dd);
-    g_signal_connect (dd->settings, "value::" KEY_DWELL_TIME,
+    g_signal_connect (dd->mt_settings, "value::" KEY_DWELL_TIME,
                       G_CALLBACK (dwell_time_changed), dd);
+
+    dd->gsd_settings = g_settings_new (GSD_MOUSE_SCHEMA_ID);
+    g_signal_connect (dd->gsd_settings, "value::" KEY_DWELL_ENABLED,
+                      G_CALLBACK (dwell_enabled_changed), dd);
 
     /* icons */
     dd->click[DWELL_CLICK_TYPE_SINGLE] =
@@ -672,10 +675,10 @@ fill_applet (PanelApplet *applet)
         dd->button = WID ("single_click_v");
     }
 
-    dd->delay = g_settings_get_double (dd->settings, KEY_DWELL_TIME);
-
-    dwell = g_settings_get_boolean (dd->settings, KEY_DWELL_ENABLED);
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), dwell);
+    dd->delay = g_settings_get_double (dd->mt_settings, KEY_DWELL_TIME);
+    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (dd->enable), 
+                                  g_settings_get_boolean (dd->gsd_settings,
+                                                          KEY_DWELL_ENABLED));
 
     setup_box (dd);
     gtk_widget_reparent (dd->box, GTK_WIDGET (applet));

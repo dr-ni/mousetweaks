@@ -1,10 +1,5 @@
 <schemalist>
   <schema id="org.gnome.mousetweaks" path="/desktop/gnome/accessibility/mouse/" gettext-domain="mousetweaks">
-    <key name="dwell-enabled" type="b">
-      <default>false</default>
-      <_summary>Enable dwell click</_summary>
-      <_description>Enable dwell click.</_description>
-    </key>
     <key name="dwell-time" type="d">
       <default>1.20</default>
       <_summary>Dwell click time</_summary>
@@ -49,11 +44,6 @@
       <default>2</default>
       <_summary>Click type window style</_summary>
       <_description>Button style in the click type window. ("0" = Text, "1" = Icon, "2" = Both)</_description>
-    </key>
-    <key name="ssc-enabled" type="b">
-      <default>false</default>
-      <_summary>Enable secondary click</_summary>
-      <_description>Enable simulated secondary click.</_description>
     </key>
     <key name="ssc-time" type="d">
       <default>1.20</default>

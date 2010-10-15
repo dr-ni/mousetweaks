@@ -448,11 +448,9 @@ preferences_dialog (BonoboUIComponent *component,
 {
     GError *error = NULL;
 
-    /* FIXME: changed to A11Y panel */
-    if (!g_spawn_command_line_async ("gnome-mouse-properties -p accessibility",
-                                     &error))
+    if (!g_spawn_command_line_async ("gnome-control-center universal-access", &error))
     {
-         mt_common_show_dialog (_("Failed to Launch Mouse Preferences"),
+         mt_common_show_dialog (_("Failed to Open the Univeral Access Panel"),
                                 error->message,
                                 MT_MESSAGE_WARNING);
          g_error_free (error);

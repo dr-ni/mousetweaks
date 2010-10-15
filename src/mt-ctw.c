@@ -193,13 +193,13 @@ mt_ctw_init (gint x, gint y)
 
     /* settings */
     ms = mt_settings_get_default ();
-    g_signal_connect (ms, "notify::" KEY_CTW_VISIBLE,
+    g_signal_connect (ms, "notify::ctw-visible",
                       G_CALLBACK (ctw_visibility_changed), NULL);
-    g_signal_connect (ms, "notify::" KEY_DWELL_ENABLED,
+    g_signal_connect (ms, "notify::dwell-enabled",
                       G_CALLBACK (ctw_visibility_changed), NULL);
-    g_signal_connect (ms, "notify::" KEY_DWELL_MODE,
+    g_signal_connect (ms, "notify::dwell-mode",
                       G_CALLBACK (ctw_sensitivity_changed), NULL);
-    g_signal_connect (ms, "notify::" KEY_CTW_STYLE,
+    g_signal_connect (ms, "notify::ctw-mode",
                       G_CALLBACK (ctw_style_changed), NULL);
 
     ctw_visibility_changed (ms, NULL);

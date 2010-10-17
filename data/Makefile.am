@@ -1,4 +1,5 @@
 if BUILD_PCA
+pca_schema  = org.gnome.pointer-capture.gschema.xml.in
 pca_ui      = pointer-capture-applet.ui
 pca_server  = PointerCapture_Factory.server.in
 pca_menu    = PointerCapture.xml
@@ -32,24 +33,7 @@ ui_DATA = mousetweaks.ui $(pca_ui) $(dca_ui)
 menudir = $(datadir)/mousetweaks
 menu_DATA = $(pca_menu) $(dca_menu)
 
-if BUILD_PCA
-@INTLTOOL_SCHEMAS_RULE@
-schemasdir = @GCONF_SCHEMA_FILE_DIR@
-schemas_in_files = pointer-capture-applet.schemas.in
-schemas_DATA = $(schemas_in_files:.schemas.in=.schemas)
-
-if GCONF_SCHEMAS_INSTALL
-install-data-local:
-	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
-	$(GCONFTOOL) --makefile-install-rule pointer-capture-applet.schemas
-
-uninstall-local:
-	-GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) \
-	$(GCONFTOOL) --makefile-uninstall-rule pointer-capture-applet.schemas
-endif
-endif
-
-gsettings_in_files = org.gnome.mousetweaks.gschema.xml.in
+gsettings_in_files = org.gnome.mousetweaks.gschema.xml.in $(pca_schema)
 gsettings_SCHEMAS = $(gsettings_in_files:.xml.in=.xml)
 @INTLTOOL_XML_NOMERGE_RULE@
 @GSETTINGS_RULES@

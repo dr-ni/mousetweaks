@@ -18,7 +18,6 @@
 #include <stdlib.h>
 #include <gtk/gtk.h>
 #include <panel-applet.h>
-#include <panel-applet-gconf.h>
 
 #include "mt-common.h"
 
@@ -28,29 +27,33 @@
 
 #define WID(n) (GTK_WIDGET (gtk_builder_get_object (pc->ui, (n))))
 
+#define PC_MOD_MASK (GDK_SHIFT_MASK | GDK_CONTROL_MASK | GDK_MOD1_MASK)
+
 typedef PanelAppletClass PcAppletClass;
 typedef struct _PcApplet
 {
     PanelApplet  parent;
 
+    GSettings   *settings;
     GtkBuilder  *ui;
     GtkWidget   *area;
     GtkWidget   *box;
     GtkWidget   *label;
     GtkWidget   *icon;
-    GdkCursor   *blank;
 
+    GdkCursor   *blank;
     gboolean     pointer_locked;
     gint         pointer_x;
     gint         pointer_y;
     gint         center_x;
     gint         center_y;
+    gboolean     horizontal;
 
-    gint         size;
-    gint         cap_button;
-    guint        cap_mask;
-    gint         rel_button;
-    guint        rel_mask;
+    GtkSpinButton   *size;
+    GtkSpinButton   *mouse_button;
+    GtkToggleButton *modifier_shift;
+    GtkToggleButton *modifier_alt;
+    GtkToggleButton *modifier_control;
 } PcApplet;
 
 GType pc_applet_get_type (void) G_GNUC_CONST;
@@ -69,23 +72,13 @@ pc_applet_init (PcApplet *pc)
         atk_object_set_description (atk, _("Temporarily lock the mouse pointer"));
     }
 
-    pc->ui = NULL;
-    pc->area = NULL;
-    pc->box = NULL;
-    pc->label = NULL;
-    pc->icon = NULL;
+    pc->settings = g_settings_new ("org.gnome.pointer-capture");
     pc->blank = gdk_cursor_new (GDK_BLANK_CURSOR);
     pc->pointer_locked = FALSE;
     pc->pointer_x = 0;
     pc->pointer_y = 0;
     pc->center_x = 0;
     pc->center_y = 0;
-
-    pc->size = 70;
-    pc->cap_button = 1;
-    pc->cap_mask = 0;
-    pc->rel_button = 1;
-    pc->rel_mask = 0;
 }
 
 static void
@@ -93,27 +86,32 @@ pc_applet_change_orient (PanelApplet      *applet,
                          PanelAppletOrient orient)
 {
     PcApplet *pc = PC_APPLET (applet);
+    gint size;
+
+    pc->horizontal = orient == PANEL_APPLET_ORIENT_UP ||
+                     orient == PANEL_APPLET_ORIENT_DOWN;
 
     if (pc->area || pc->label)
     {
-        if (orient == PANEL_APPLET_ORIENT_UP ||
-            orient == PANEL_APPLET_ORIENT_DOWN)
+        size = gtk_spin_button_get_value_as_int (pc->size);
+
+        if (pc->horizontal)
         {
-            gtk_widget_set_size_request (pc->area, pc->size, -1);
+            gtk_widget_set_size_request (pc->area, size, -1);
             gtk_label_set_angle (GTK_LABEL (pc->label), 0);
         }
         else
         {
-            gtk_widget_set_size_request (pc->area, -1, pc->size);
+            gtk_widget_set_size_request (pc->area, -1, size);
             gtk_label_set_angle (GTK_LABEL (pc->label), 90);
         }
     }
 }
 
 static void
-pc_applet_destroy (GtkWidget *widget)
+pc_applet_destroy (GtkObject *object)
 {
-    PcApplet *pc = PC_APPLET (widget);
+    PcApplet *pc = PC_APPLET (object);
 
     if (pc->blank)
     {
@@ -128,16 +126,18 @@ pc_applet_destroy (GtkWidget *widget)
         g_object_unref (pc->ui);
         pc->ui = NULL;
     }
+
+    if (pc->settings)
+    {
+        g_object_unref (pc->settings);
+        pc->settings = NULL;
+    }
 }
 
 static void
 pc_applet_class_init (PcAppletClass *klass)
 {
-    GtkWidgetClass *widget_class;
     PanelAppletClass *applet_class;
-
-    widget_class = GTK_WIDGET_CLASS (klass);
-    widget_class->destroy = pc_applet_destroy;
 
     applet_class = PANEL_APPLET_CLASS (klass);
     applet_class->change_orient = pc_applet_change_orient;
@@ -224,21 +224,6 @@ unlock_pointer (PcApplet *pc)
 }
 
 static gboolean
-pc_applet_enter_notify (GtkWidget        *widget,
-                        GdkEventCrossing *event,
-                        PcApplet         *pc)
-{
-    /* lock the pointer immediately if we have no button */
-    if (!pc->cap_button && event->mode == GDK_CROSSING_NORMAL)
-    {
-        pc->pointer_x = event->x_root;
-        pc->pointer_y = event->y_root;
-        lock_pointer (pc);
-    }
-    return FALSE;
-}
-
-static gboolean
 pc_applet_leave_notify (GtkWidget        *widget,
                         GdkEventCrossing *event,
                         PcApplet         *pc)
@@ -260,23 +245,34 @@ pc_applet_button_press (GtkWidget      *widget,
                         GdkEventButton *event,
                         PcApplet       *pc)
 {
-    if (event->button == pc->cap_button &&
-        (event->state & pc->cap_mask) == pc->cap_mask &&
-        !pc->pointer_locked)
+    gint button;
+    guint mask = 0;
+
+    button = gtk_spin_button_get_value_as_int (pc->mouse_button);
+
+    if (gtk_toggle_button_get_active (pc->modifier_shift))
+        mask |= GDK_SHIFT_MASK;
+    if (gtk_toggle_button_get_active (pc->modifier_control))
+        mask |= GDK_CONTROL_MASK;
+    if (gtk_toggle_button_get_active (pc->modifier_alt))
+        mask |= GDK_MOD1_MASK;
+
+    if (event->button == button && (event->state & PC_MOD_MASK) == mask)
     {
-        pc->pointer_x = event->x_root;
-        pc->pointer_y = event->y_root;
-        lock_pointer (pc);
+        if (pc->pointer_locked)
+        {
+            unlock_pointer (pc);
+        }
+        else
+        {
+            pc->pointer_x = event->x_root;
+            pc->pointer_y = event->y_root;
+            lock_pointer (pc);
+        }
         return TRUE;
     }
-    else if (event->button == pc->rel_button &&
-             (event->state & pc->rel_mask) == pc->rel_mask &&
-             pc->pointer_locked)
-    {
-        unlock_pointer (pc);
-        return TRUE;
-    }
-    return FALSE;
+
+    return pc->pointer_locked;
 }
 
 static gboolean
@@ -342,12 +338,18 @@ about_response (GtkButton *button, gint response, PcApplet *pc)
 static void
 prefs_size_changed (GtkSpinButton *spin, PcApplet *pc)
 {
-    PanelApplet *applet = PANEL_APPLET (pc);
+    gint size;
 
-    pc->size = gtk_spin_button_get_value_as_int (spin);
-    panel_applet_gconf_set_int (applet, "size", pc->size, NULL);
+    size = gtk_spin_button_get_value_as_int (pc->size);
 
-    pc_applet_change_orient (applet, panel_applet_get_orient (applet));
+    if (pc->horizontal)
+    {
+        gtk_widget_set_size_request (pc->area, size, -1);
+    }
+    else
+    {
+        gtk_widget_set_size_request (pc->area, -1, size);
+    }
 }
 
 static void
@@ -363,90 +365,9 @@ prefs_help (GtkButton *button, gpointer data)
                          gtk_get_current_event_time ());
 }
 
-static void
-prefs_cap_button (GtkSpinButton *spin, PcApplet *pc)
-{
-    pc->cap_button = gtk_spin_button_get_value_as_int (spin);
-    panel_applet_gconf_set_int (PANEL_APPLET (pc),
-                                "capture_button",
-                                pc->cap_button,
-                                NULL);
-}
-
-static void
-prefs_cap_alt (GtkToggleButton *toggle, PcApplet *pc)
-{
-    pc->cap_mask ^= GDK_MOD1_MASK;
-    panel_applet_gconf_set_bool (PANEL_APPLET (pc),
-                                 "capture_mod_alt",
-                                 gtk_toggle_button_get_active (toggle),
-                                 NULL);
-}
-
-static void
-prefs_cap_shift (GtkToggleButton *toggle, PcApplet *pc)
-{
-    pc->cap_mask ^= GDK_SHIFT_MASK;
-    panel_applet_gconf_set_bool (PANEL_APPLET (pc),
-                                 "capture_mod_shift",
-                                 gtk_toggle_button_get_active (toggle),
-                                 NULL);
-}
-
-static void
-prefs_cap_ctrl (GtkToggleButton *toggle, PcApplet *pc)
-{
-    pc->cap_mask ^= GDK_CONTROL_MASK;
-    panel_applet_gconf_set_bool (PANEL_APPLET (pc),
-                                 "capture_mod_ctrl",
-                                 gtk_toggle_button_get_active (toggle),
-                                 NULL);
-}
-
-static void
-prefs_rel_button (GtkSpinButton *spin, PcApplet *pc)
-{
-    pc->rel_button = gtk_spin_button_get_value_as_int (spin);
-    panel_applet_gconf_set_int (PANEL_APPLET (pc),
-                                "release_button",
-                                pc->rel_button,
-                                NULL);
-}
-
-static void
-prefs_rel_alt (GtkToggleButton *toggle, PcApplet *pc)
-{
-    pc->rel_mask ^= GDK_MOD1_MASK;
-    panel_applet_gconf_set_bool (PANEL_APPLET (pc),
-                                 "release_mod_alt",
-                                 gtk_toggle_button_get_active (toggle),
-                                 NULL);
-}
-
-static void
-prefs_rel_shift (GtkToggleButton *toggle, PcApplet *pc)
-{
-    pc->rel_mask ^= GDK_SHIFT_MASK;
-    panel_applet_gconf_set_bool (PANEL_APPLET (pc),
-                                 "release_mod_shift",
-                                 gtk_toggle_button_get_active (toggle),
-                                 NULL);
-}
-
-static void
-prefs_rel_ctrl (GtkToggleButton *toggle, PcApplet *pc)
-{
-    pc->rel_mask ^= GDK_CONTROL_MASK;
-    panel_applet_gconf_set_bool (PANEL_APPLET (pc),
-                                 "release_mod_ctrl",
-                                 gtk_toggle_button_get_active (toggle),
-                                 NULL);
-}
-
 static gboolean
 init_preferences (PcApplet *pc)
 {
-    GtkWidget *w;
     GError *error = NULL;
 
     pc->ui = gtk_builder_new ();
@@ -467,51 +388,34 @@ init_preferences (PcApplet *pc)
     g_signal_connect (WID ("help"), "clicked",
                       G_CALLBACK (prefs_help), NULL);
 
-    /* size */
-    w = WID ("size");
-    gtk_spin_button_set_value (GTK_SPIN_BUTTON (w), pc->size);
-    g_signal_connect (w, "value_changed",
+    /* settings */
+    pc->size = GTK_SPIN_BUTTON (WID ("size"));
+    g_settings_bind (pc->settings, "size",
+                     pc->size, "value",
+                     G_SETTINGS_BIND_DEFAULT);
+
+    pc->mouse_button = GTK_SPIN_BUTTON (WID ("mouse_button"));
+    g_settings_bind (pc->settings, "mouse-button",
+                     pc->mouse_button, "value",
+                     G_SETTINGS_BIND_DEFAULT);
+
+    pc->modifier_shift = GTK_TOGGLE_BUTTON (WID ("modifier_shift"));
+    g_settings_bind (pc->settings, "modifier-shift",
+                     pc->modifier_shift, "active",
+                     G_SETTINGS_BIND_DEFAULT);
+
+    pc->modifier_alt = GTK_TOGGLE_BUTTON (WID ("modifier_alt"));
+    g_settings_bind (pc->settings, "modifier-alt",
+                     pc->modifier_alt, "active",
+                     G_SETTINGS_BIND_DEFAULT);
+
+    pc->modifier_control = GTK_TOGGLE_BUTTON (WID ("modifier_control"));
+    g_settings_bind (pc->settings, "modifier-control",
+                     pc->modifier_control, "active",
+                     G_SETTINGS_BIND_DEFAULT);
+
+    g_signal_connect (pc->size, "value_changed",
                       G_CALLBACK (prefs_size_changed), pc);
-
-    /* capture modifier */
-    w = WID ("cap_button");
-    gtk_spin_button_set_value (GTK_SPIN_BUTTON (w), pc->cap_button);
-    g_signal_connect (w, "value_changed", G_CALLBACK (prefs_cap_button), pc);
-
-    w = WID ("cap_alt");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
-                                  pc->cap_mask & GDK_MOD1_MASK);
-    g_signal_connect (w, "toggled", G_CALLBACK (prefs_cap_alt), pc);
-
-    w = WID ("cap_shift");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
-                                  pc->cap_mask & GDK_SHIFT_MASK);
-    g_signal_connect (w, "toggled", G_CALLBACK (prefs_cap_shift), pc);
-
-    w = WID ("cap_ctrl");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
-                                  pc->cap_mask & GDK_CONTROL_MASK);
-    g_signal_connect (w, "toggled", G_CALLBACK (prefs_cap_ctrl), pc);
-
-    /* release modifier */
-    w = WID ("rel_button");
-    gtk_spin_button_set_value (GTK_SPIN_BUTTON (w), pc->rel_button);
-    g_signal_connect (w, "value_changed", G_CALLBACK (prefs_rel_button), pc);
-
-    w = WID ("rel_alt");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
-                                  pc->rel_mask & GDK_MOD1_MASK);
-    g_signal_connect (w, "toggled", G_CALLBACK (prefs_rel_alt), pc);
-
-    w = WID ("rel_shift");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
-                                  pc->rel_mask & GDK_SHIFT_MASK);
-    g_signal_connect (w, "toggled", G_CALLBACK (prefs_rel_shift), pc);
-
-    w = WID ("rel_ctrl");
-    gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
-                                  pc->rel_mask & GDK_CONTROL_MASK);
-    g_signal_connect (w, "toggled", G_CALLBACK (prefs_rel_ctrl), pc);
 
     return TRUE;
 }
@@ -527,28 +431,8 @@ fill_applet (PanelApplet *applet)
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
 
-    g_set_application_name (_("Pointer Capture"));
+    g_set_application_name (_("Pointer Capture Applet"));
     gtk_window_set_default_icon_name (MT_ICON_NAME);
-
-    /* gconf settings */
-    panel_applet_add_preferences (applet, "/schemas/apps/pointer-capture", NULL);
-
-    pc->size = panel_applet_gconf_get_int (applet, "size", NULL);
-    pc->cap_button = panel_applet_gconf_get_int (applet, "capture_button", NULL);
-    pc->rel_button = panel_applet_gconf_get_int (applet, "release_button", NULL);
-
-    if (panel_applet_gconf_get_bool (applet, "capture_mod_shift", NULL))
-        pc->cap_mask |= GDK_SHIFT_MASK;
-    if (panel_applet_gconf_get_bool (applet, "capture_mod_ctrl", NULL))
-        pc->cap_mask |= GDK_CONTROL_MASK;
-    if (panel_applet_gconf_get_bool (applet, "capture_mod_alt", NULL))
-        pc->cap_mask |= GDK_MOD1_MASK;
-    if (panel_applet_gconf_get_bool (applet, "release_mod_shift", NULL))
-        pc->rel_mask |= GDK_SHIFT_MASK;
-    if (panel_applet_gconf_get_bool (applet, "release_mod_ctrl", NULL))
-        pc->rel_mask |= GDK_CONTROL_MASK;
-    if (panel_applet_gconf_get_bool (applet, "release_mod_alt", NULL))
-        pc->rel_mask |= GDK_MOD1_MASK;
 
     /* preferences dialog */
     if (!init_preferences (pc))
@@ -568,8 +452,8 @@ fill_applet (PanelApplet *applet)
     panel_applet_setup_menu_from_file (applet, DATADIR, "PointerCapture.xml",
                                        NULL, menu_verb, pc);
 
-    g_signal_connect (pc, "enter-notify-event",
-                      G_CALLBACK (pc_applet_enter_notify), pc);
+    g_signal_connect (pc, "destroy",
+                      G_CALLBACK (pc_applet_destroy), NULL);
     g_signal_connect (pc, "leave-notify-event",
                       G_CALLBACK (pc_applet_leave_notify), pc);
     g_signal_connect (pc, "button-press-event",

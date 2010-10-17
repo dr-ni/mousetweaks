@@ -1,0 +1,26 @@
+<schemalist>
+  <schema id="org.gnome.pointer-capture" path="/apps/pointer-capture/" gettext-domain="mousetweaks">
+    <key name="size" type="i">
+      <default>70</default>
+      <_summary>Size of capture area</_summary>
+      <_description>Width of the capture area in pixels.</_description>
+    </key>
+    <key name="mouse-button" type="i">
+      <default>1</default>
+      <_summary>Mouse button</_summary>
+      <_description>Mouse button used to capture or release the pointer.</_description>
+    </key>
+    <key name="modifier-shift" type="b">
+      <default>false</default>
+      <_summary>"Shift" keyboard modifier</_summary>
+    </key>
+    <key name="modifier-alt" type="b">
+      <default>false</default>
+      <_summary>"Alt" keyboard modifier</_summary>
+    </key>
+    <key name="modifier-control" type="b">
+      <default>false</default>
+      <_summary>"Control" keyboard modifier</_summary>
+    </key>
+  </schema>
+</schemalist>

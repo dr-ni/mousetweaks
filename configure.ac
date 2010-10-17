@@ -46,22 +46,17 @@ dnl *** dependencies ***
 GLIB_REQUIRED=2.25.3
 GIO_REQUIRED=2.25.9
 GTK_REQUIRED=2.91.0
-GCONF_REQUIRED=2.31.1
 GSD_REQUIRED=2.91.0
 
 PKG_CHECK_MODULES(DEPENDENCIES,
     glib-2.0 >= $GLIB_REQUIRED
     gio-2.0 >= $GIO_REQUIRED
     gtk+-3.0 >= $GTK_REQUIRED
-    gconf-2.0 >= $GCONF_REQUIRED
     gnome-settings-daemon >= $GSD_REQUIRED
     x11
     xcursor
     xfixes
     xtst)
-
-AC_SUBST(DEPENDENCIES_CFLAGS)
-AC_SUBST(DEPENDENCIES_LIBS)
 
 dnl *** arguments ***
 
@@ -83,22 +78,11 @@ if test "$build_dca" = yes; then
   AC_DEFINE(BUILD_DCA, 1, [Build dwell-click applet])
 fi
 
-dnl *** libpanelapplet ***
+dnl *** libpanelapplet (OPTIONAL) ***
 
 if test "$build_dca" = yes -o "$build_pca" = yes; then
 	PKG_CHECK_MODULES(PANELAPPLET, libpanelapplet-2.0)
-	AC_SUBST(PANELAPPLET_CFLAGS)
-	AC_SUBST(PANELAPPLET_LIBS)
 fi
-
-dnl *** gconf ***
-
-AC_PATH_PROG(GCONFTOOL, gconftool-2, no)
-if test x"$GCONFTOOL" = xno; then
-	AC_MSG_ERROR([gconftool-2 executable not found in your path])
-fi
-
-AM_GCONF_SOURCE_2
 
 dnl *** output ***
 

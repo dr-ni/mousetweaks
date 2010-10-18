@@ -39,7 +39,6 @@ gsettings_SCHEMAS = $(gsettings_in_files:.xml.in=.xml)
 @GSETTINGS_RULES@
 
 EXTRA_DIST =                \
-    $(schemas_in_files)     \
     $(server_in_in_files)   \
     $(menu_DATA)            \
     $(ui_DATA)              \
@@ -48,7 +47,6 @@ EXTRA_DIST =                \
 DISTCLEANFILES =            \
     $(server_DATA)          \
     $(server_in_files)      \
-    $(schemas_DATA)         \
-    $(gsettings_SCHEMA)
+    $(gsettings_SCHEMAS)
 
 -include $(top_srcdir)/git.mk

@@ -1,3 +1,33 @@
+Version 2.91.1
+--------------
+
+Misc changes, improvements and fixes:
+
+    - Disable panel applets by default for GNOME 3
+    - Use gdk_display_get_default instead of GDK_DISPLAY (Javier Jardón)
+    - Remove GdkGc based drawing code
+    - Use a common X Display accessor
+    - Remove mouse orientation checks
+    - Only install man pages if the applets are built
+    - Sync with GSettings changes in gnome-settings-daemon
+    - Launch UA panel instead of the mouse capplet
+
+Bug fixes:
+
+    #631533: Adapt to GtkObject removal in GTK3 (Javier Jardón)
+    #620171: Migrate to GSettings
+
+New and updated translations:
+
+    [el] Simos Xenitellis
+    [es] Jorge González
+    [et] Ivar Smolin
+    [he] Yaron Shahrabani
+    [ko] Changwoo Ryu
+    [lt] Žygimantas Beručka
+    [sl] Matej Urbančič
+
+
 Version 2.32.0
 --------------
 

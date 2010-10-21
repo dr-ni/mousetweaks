@@ -37,6 +37,7 @@ struct _MtSettings
 
     GSettings *mt_settings;
     GSettings *gsd_settings;
+    GSettings *a11y_settings;
 
     gint       dwell_threshold;
     gint       dwell_mode;

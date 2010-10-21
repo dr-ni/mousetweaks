@@ -48,15 +48,18 @@ mt_settings_init (MtSettings *ms)
 {
     ms->mt_settings = g_settings_new (MT_SCHEMA_ID);
 
-    BIND_PROP (ms->mt_settings, "dwell-threshold", KEY_DWELL_THRESHOLD);
-    BIND_PROP (ms->mt_settings, "dwell-mode", KEY_DWELL_MODE);
-    BIND_PROP (ms->mt_settings, "dwell-gesture-single", KEY_DWELL_GESTURE_SINGLE);
-    BIND_PROP (ms->mt_settings, "dwell-gesture-double", KEY_DWELL_GESTURE_DOUBLE);
-    BIND_PROP (ms->mt_settings, "dwell-gesture-drag", KEY_DWELL_GESTURE_DRAG);
-    BIND_PROP (ms->mt_settings, "dwell-gesture-secondary", KEY_DWELL_GESTURE_SECONDARY);
-    BIND_PROP (ms->mt_settings, "ctw-visible", KEY_CTW_VISIBLE);
     BIND_PROP (ms->mt_settings, "ctw-style", KEY_CTW_STYLE);
     BIND_PROP (ms->mt_settings, "animate-cursor", KEY_ANIMATE_CURSOR);
+
+    ms->a11y_settings = g_settings_new (A11Y_MOUSE_SCHEMA_ID);
+
+    BIND_PROP (ms->a11y_settings, "dwell-threshold", KEY_DWELL_THRESHOLD);
+    BIND_PROP (ms->a11y_settings, "dwell-mode", KEY_DWELL_MODE);
+    BIND_PROP (ms->a11y_settings, "dwell-gesture-single", KEY_DWELL_GESTURE_SINGLE);
+    BIND_PROP (ms->a11y_settings, "dwell-gesture-double", KEY_DWELL_GESTURE_DOUBLE);
+    BIND_PROP (ms->a11y_settings, "dwell-gesture-drag", KEY_DWELL_GESTURE_DRAG);
+    BIND_PROP (ms->a11y_settings, "dwell-gesture-secondary", KEY_DWELL_GESTURE_SECONDARY);
+    BIND_PROP (ms->a11y_settings, "ctw-visible", KEY_CTW_VISIBLE);
 
     ms->gsd_settings = g_settings_new (GSD_MOUSE_SCHEMA_ID);
 
@@ -79,6 +82,12 @@ mt_settings_dispose (GObject *object)
     {
         g_object_unref (ms->gsd_settings);
         ms->gsd_settings = NULL;
+    }
+
+    if (ms->a11y_settings)
+    {
+        g_object_unref (ms->a11y_settings);
+        ms->a11y_settings = NULL;
     }
 
     G_OBJECT_CLASS (mt_settings_parent_class)->dispose (object);

@@ -38,7 +38,10 @@ G_BEGIN_DECLS
 
 /* GSettings */
 #define MT_SCHEMA_ID                "org.gnome.mousetweaks"
+#define KEY_CTW_STYLE               "ctw-style"
+#define KEY_ANIMATE_CURSOR          "animate-cursor"
 
+#define A11Y_MOUSE_SCHEMA_ID        "org.gnome.desktop.a11y.mouse"
 #define KEY_DWELL_TIME              "dwell-time"
 #define KEY_DWELL_THRESHOLD         "dwell-threshold"
 #define KEY_DWELL_MODE              "dwell-mode"
@@ -48,11 +51,8 @@ G_BEGIN_DECLS
 #define KEY_DWELL_GESTURE_SECONDARY "dwell-gesture-secondary"
 #define KEY_SSC_TIME                "ssc-time"
 #define KEY_CTW_VISIBLE             "ctw-visible"
-#define KEY_CTW_STYLE               "ctw-style"
-#define KEY_ANIMATE_CURSOR          "animate-cursor"
 
 #define GSD_MOUSE_SCHEMA_ID         "org.gnome.settings-daemon.peripherals.mouse"
-
 #define KEY_DWELL_ENABLED           "dwell-click-enabled"
 #define KEY_SSC_ENABLED             "secondary-click-enabled"
 

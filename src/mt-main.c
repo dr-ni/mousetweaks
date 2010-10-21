@@ -680,11 +680,11 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     ms = mt_settings_get_default ();
 
     /* bind timers */
-    g_settings_bind (ms->mt_settings, KEY_SSC_TIME,
+    g_settings_bind (ms->a11y_settings, KEY_SSC_TIME,
                      mt->ssc_timer, "target-time",
                      G_SETTINGS_BIND_DEFAULT | G_SETTINGS_BIND_NO_SENSITIVITY);
 
-    g_settings_bind (ms->mt_settings, KEY_DWELL_TIME,
+    g_settings_bind (ms->a11y_settings, KEY_DWELL_TIME,
                      mt->dwell_timer, "target-time",
                      G_SETTINGS_BIND_DEFAULT | G_SETTINGS_BIND_NO_SENSITIVITY);
 

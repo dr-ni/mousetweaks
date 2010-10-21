@@ -33,6 +33,9 @@ ui_DATA = mousetweaks.ui $(pca_ui) $(dca_ui)
 menudir = $(datadir)/mousetweaks
 menu_DATA = $(pca_menu) $(dca_menu)
 
+convertdir = $(datadir)/GConf/gsettings
+convert_DATA = mousetweaks.convert
+
 gsettings_in_files = org.gnome.mousetweaks.gschema.xml.in $(pca_schema)
 gsettings_SCHEMAS = $(gsettings_in_files:.xml.in=.xml)
 @INTLTOOL_XML_NOMERGE_RULE@
@@ -42,7 +45,8 @@ EXTRA_DIST =                \
     $(server_in_in_files)   \
     $(menu_DATA)            \
     $(ui_DATA)              \
-    $(gsettings_in_files)
+    $(gsettings_in_files)   \
+    $(convert_DATA)
 
 DISTCLEANFILES =            \
     $(server_DATA)          \

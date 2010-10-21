@@ -1,0 +1,12 @@
+[org.gnome.mousetweaks]
+dwell-time = /desktop/gnome/accessibility/mouse/dwell_time
+dwell-threshold = /desktop/gnome/accessibility/mouse/threshold
+dwell-gesture-single = /desktop/gnome/accessibility/mouse/dwell_gesture_single
+dwell-gesture-double = /desktop/gnome/accessibility/mouse/dwell_gesture_double
+dwell-gesture-drag = /desktop/gnome/accessibility/mouse/dwell_gesture_drag
+dwell-gesture-secondary = /desktop/gnome/accessibility/mouse/dwell_gesture_secondary
+dwell-mode = /desktop/gnome/accessibility/mouse/dwell_mode
+ctw-visible = /desktop/gnome/accessibility/mouse/dwell_show_ctw
+ctw-style = /desktop/gnome/accessibility/mouse/button_layout
+ssc-time = /desktop/gnome/accessibility/mouse/delay_time
+animate-cursor = /desktop/gnome/accessibility/mouse/animate_cursor

@@ -19,6 +19,46 @@
 
 #include "mt-common.h"
 
+GType
+g_desktop_mouse_dwell_mode_get_type (void)
+{
+    static volatile gsize type_id__volatile = 0;
+
+    if (g_once_init_enter (&type_id__volatile))
+    {
+        static const GEnumValue values[] =
+        {
+            { G_DESKTOP_MOUSE_DWELL_MODE_WINDOW, "G_DESKTOP_MOUSE_DWELL_MODE_WINDOW", "window" },
+            { G_DESKTOP_MOUSE_DWELL_MODE_GESTURE, "G_DESKTOP_MOUSE_DWELL_MODE_GESTURE", "gesture" },
+            { 0, NULL, NULL }
+        };
+        GType type_id = g_enum_register_static (g_intern_static_string ("GDesktopMouseDwellMode"), values);
+        g_once_init_leave (&type_id__volatile, type_id);
+    }
+    return type_id__volatile;
+}
+
+GType
+g_desktop_mouse_dwell_direction_get_type (void)
+{
+    static volatile gsize type_id__volatile = 0;
+
+    if (g_once_init_enter (&type_id__volatile))
+    {
+        static const GEnumValue values[] =
+        {
+            { G_DESKTOP_MOUSE_DWELL_DIRECTION_LEFT, "G_DESKTOP_MOUSE_DWELL_DIRECTION_LEFT", "left" },
+            { G_DESKTOP_MOUSE_DWELL_DIRECTION_RIGHT, "G_DESKTOP_MOUSE_DWELL_DIRECTION_RIGHT", "right" },
+            { G_DESKTOP_MOUSE_DWELL_DIRECTION_UP, "G_DESKTOP_MOUSE_DWELL_DIRECTION_UP", "up" },
+            { G_DESKTOP_MOUSE_DWELL_DIRECTION_DOWN, "G_DESKTOP_MOUSE_DWELL_DIRECTION_DOWN", "down" },
+            { 0, NULL, NULL }
+        };
+        GType type_id = g_enum_register_static (g_intern_static_string ("GDesktopMouseDwellDirection"), values);
+        g_once_init_leave (&type_id__volatile, type_id);
+    }
+    return type_id__volatile;
+}
+
 Display *
 mt_common_get_xdisplay (void)
 {

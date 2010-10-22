@@ -22,6 +22,8 @@
 
 #include <gio/gio.h>
 
+#include "mt-common.h"
+
 G_BEGIN_DECLS
 
 #define MT_TYPE_SETTINGS  (mt_settings_get_type ())
@@ -33,23 +35,22 @@ typedef struct _MtSettings MtSettings;
 
 struct _MtSettings
 {
-    GObject    parent;
+    GObject                     parent;
 
-    GSettings *mt_settings;
-    GSettings *gsd_settings;
-    GSettings *a11y_settings;
+    GSettings                  *mt_settings;
+    GSettings                  *a11y_settings;
 
-    gint       dwell_threshold;
-    gint       dwell_mode;
-    gint       dwell_gesture_single;
-    gint       dwell_gesture_double;
-    gint       dwell_gesture_drag;
-    gint       dwell_gesture_secondary;
-    gint       ctw_style;
-    guint      dwell_enabled  : 1;
-    guint      ssc_enabled    : 1;
-    guint      ctw_visible    : 1;
-    guint      animate_cursor : 1;
+    GDesktopMouseDwellMode      dwell_mode;
+    GDesktopMouseDwellDirection dwell_gesture_single;
+    GDesktopMouseDwellDirection dwell_gesture_double;
+    GDesktopMouseDwellDirection dwell_gesture_drag;
+    GDesktopMouseDwellDirection dwell_gesture_secondary;
+    gint                        dwell_threshold;
+    gint                        ctw_style;
+    guint                       dwell_enabled  : 1;
+    guint                       ssc_enabled    : 1;
+    guint                       ctw_visible    : 1;
+    guint                       animate_cursor : 1;
 };
 
 GType             mt_settings_get_type              (void) G_GNUC_CONST;

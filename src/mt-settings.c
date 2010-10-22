@@ -18,7 +18,6 @@
  */
 
 #include "mt-settings.h"
-#include "mt-common.h"
 
 #define PFLAGS (G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS)
 
@@ -46,25 +45,22 @@ G_DEFINE_TYPE (MtSettings, mt_settings, G_TYPE_OBJECT)
 static void
 mt_settings_init (MtSettings *ms)
 {
-    ms->mt_settings = g_settings_new (MT_SCHEMA_ID);
+    ms->mt_settings = g_settings_new (MOUSETWEAKS_SCHEMA_ID);
 
     BIND_PROP (ms->mt_settings, "ctw-style", KEY_CTW_STYLE);
     BIND_PROP (ms->mt_settings, "animate-cursor", KEY_ANIMATE_CURSOR);
 
     ms->a11y_settings = g_settings_new (A11Y_MOUSE_SCHEMA_ID);
 
+    BIND_PROP (ms->a11y_settings, "dwell-enabled", KEY_DWELL_ENABLED);
     BIND_PROP (ms->a11y_settings, "dwell-threshold", KEY_DWELL_THRESHOLD);
     BIND_PROP (ms->a11y_settings, "dwell-mode", KEY_DWELL_MODE);
     BIND_PROP (ms->a11y_settings, "dwell-gesture-single", KEY_DWELL_GESTURE_SINGLE);
     BIND_PROP (ms->a11y_settings, "dwell-gesture-double", KEY_DWELL_GESTURE_DOUBLE);
     BIND_PROP (ms->a11y_settings, "dwell-gesture-drag", KEY_DWELL_GESTURE_DRAG);
     BIND_PROP (ms->a11y_settings, "dwell-gesture-secondary", KEY_DWELL_GESTURE_SECONDARY);
+    BIND_PROP (ms->a11y_settings, "ssc-enabled", KEY_SSC_ENABLED);
     BIND_PROP (ms->a11y_settings, "ctw-visible", KEY_CTW_VISIBLE);
-
-    ms->gsd_settings = g_settings_new (GSD_MOUSE_SCHEMA_ID);
-
-    BIND_PROP (ms->gsd_settings, "dwell-enabled", KEY_DWELL_ENABLED);
-    BIND_PROP (ms->gsd_settings, "ssc-enabled", KEY_SSC_ENABLED);
 }
 
 static void
@@ -76,12 +72,6 @@ mt_settings_dispose (GObject *object)
     {
         g_object_unref (ms->mt_settings);
         ms->mt_settings = NULL;
-    }
-
-    if (ms->gsd_settings)
-    {
-        g_object_unref (ms->gsd_settings);
-        ms->gsd_settings = NULL;
     }
 
     if (ms->a11y_settings)
@@ -110,19 +100,19 @@ mt_settings_set_property (GObject      *object,
             ms->dwell_threshold = g_value_get_int (value);
             break;
         case PROP_DWELL_MODE:
-            ms->dwell_mode = g_value_get_int (value);
+            ms->dwell_mode = g_value_get_enum (value);
             break;
         case PROP_DWELL_GESTURE_SINGLE:
-            ms->dwell_gesture_single = g_value_get_int (value);
+            ms->dwell_gesture_single = g_value_get_enum (value);
             break;
         case PROP_DWELL_GESTURE_DOUBLE:
-            ms->dwell_gesture_double = g_value_get_int (value);
+            ms->dwell_gesture_double = g_value_get_enum (value);
             break;
         case PROP_DWELL_GESTURE_DRAG:
-            ms->dwell_gesture_drag = g_value_get_int (value);
+            ms->dwell_gesture_drag = g_value_get_enum (value);
             break;
         case PROP_DWELL_GESTURE_SECONDARY:
-            ms->dwell_gesture_secondary = g_value_get_int (value);
+            ms->dwell_gesture_secondary = g_value_get_enum (value);
             break;
         case PROP_SSC_ENABLED:
             ms->ssc_enabled = g_value_get_boolean (value);
@@ -158,19 +148,19 @@ mt_settings_get_property (GObject    *object,
             g_value_set_int (value, ms->dwell_threshold);
             break;
         case PROP_DWELL_MODE:
-            g_value_set_int (value, ms->dwell_mode);
+            g_value_set_enum (value, ms->dwell_mode);
             break;
         case PROP_DWELL_GESTURE_SINGLE:
-            g_value_set_int (value, ms->dwell_gesture_single);
+            g_value_set_enum (value, ms->dwell_gesture_single);
             break;
         case PROP_DWELL_GESTURE_DOUBLE:
-            g_value_set_int (value, ms->dwell_gesture_double);
+            g_value_set_enum (value, ms->dwell_gesture_double);
             break;
         case PROP_DWELL_GESTURE_DRAG:
-            g_value_set_int (value, ms->dwell_gesture_drag);
+            g_value_set_enum (value, ms->dwell_gesture_drag);
             break;
         case PROP_DWELL_GESTURE_SECONDARY:
-            g_value_set_int (value, ms->dwell_gesture_secondary);
+            g_value_set_enum (value, ms->dwell_gesture_secondary);
             break;
         case PROP_SSC_ENABLED:
             g_value_set_boolean (value, ms->ssc_enabled);
@@ -213,34 +203,44 @@ mt_settings_class_init (MtSettingsClass *klass)
                                                        0, 30, 0, PFLAGS));
     g_object_class_install_property (object_class,
                                      PROP_DWELL_MODE,
-                                     g_param_spec_int ("dwell-mode",
-                                                       "Dwell mode",
-                                                       "Dwell click mode",
-                                                       0, 1, 0, PFLAGS));
+                                     g_param_spec_enum ("dwell-mode",
+                                                        "Dwell mode",
+                                                        "Dwell click mode",
+                                                        G_DESKTOP_TYPE_MOUSE_DWELL_MODE,
+                                                        G_DESKTOP_MOUSE_DWELL_MODE_WINDOW,
+                                                        PFLAGS));
     g_object_class_install_property (object_class,
                                      PROP_DWELL_GESTURE_SINGLE,
-                                     g_param_spec_int ("dwell-gesture-single",
-                                                       "Dwell gesture single",
-                                                       "Gesture for single click",
-                                                       0, 3, 0, PFLAGS));
+                                     g_param_spec_enum ("dwell-gesture-single",
+                                                        "Dwell gesture single",
+                                                        "Gesture for single click",
+                                                        G_DESKTOP_TYPE_MOUSE_DWELL_DIRECTION,
+                                                        G_DESKTOP_MOUSE_DWELL_DIRECTION_LEFT,
+                                                        PFLAGS));
     g_object_class_install_property (object_class,
                                      PROP_DWELL_GESTURE_DOUBLE,
-                                     g_param_spec_int ("dwell-gesture-double",
-                                                       "Dwell gesture double",
-                                                       "Gesture for double click",
-                                                       0, 3, 0, PFLAGS));
+                                     g_param_spec_enum ("dwell-gesture-double",
+                                                        "Dwell gesture double",
+                                                        "Gesture for double click",
+                                                        G_DESKTOP_TYPE_MOUSE_DWELL_DIRECTION,
+                                                        G_DESKTOP_MOUSE_DWELL_DIRECTION_UP,
+                                                        PFLAGS));
     g_object_class_install_property (object_class,
                                      PROP_DWELL_GESTURE_DRAG,
-                                     g_param_spec_int ("dwell-gesture-drag",
-                                                       "Dwell gesture drag",
-                                                       "Gesture for drag action",
-                                                       0, 3, 0, PFLAGS));
+                                     g_param_spec_enum ("dwell-gesture-drag",
+                                                        "Dwell gesture drag",
+                                                        "Gesture for drag action",
+                                                        G_DESKTOP_TYPE_MOUSE_DWELL_DIRECTION,
+                                                        G_DESKTOP_MOUSE_DWELL_DIRECTION_DOWN,
+                                                        PFLAGS));
     g_object_class_install_property (object_class,
                                      PROP_DWELL_GESTURE_SECONDARY,
-                                     g_param_spec_int ("dwell-gesture-secondary",
-                                                       "Dwell gesture secondary",
-                                                       "Gesture for secondary click",
-                                                       0, 3, 0, PFLAGS));
+                                     g_param_spec_enum ("dwell-gesture-secondary",
+                                                        "Dwell gesture secondary",
+                                                        "Gesture for secondary click",
+                                                        G_DESKTOP_TYPE_MOUSE_DWELL_DIRECTION,
+                                                        G_DESKTOP_MOUSE_DWELL_DIRECTION_RIGHT,
+                                                        PFLAGS));
     g_object_class_install_property (object_class,
                                      PROP_SSC_ENABLED,
                                      g_param_spec_boolean ("ssc-enabled",
@@ -252,7 +252,7 @@ mt_settings_class_init (MtSettingsClass *klass)
                                      g_param_spec_boolean ("ctw-visible",
                                                            "CTW visible",
                                                            "Show click-type window",
-                                                           FALSE, PFLAGS));
+                                                           TRUE, PFLAGS));
     g_object_class_install_property (object_class,
                                      PROP_CTW_STYLE,
                                      g_param_spec_int ("ctw-style",

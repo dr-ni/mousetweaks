@@ -1,6 +1,6 @@
 <schemalist>
   <schema id="org.gnome.mousetweaks" path="/desktop/gnome/a11y/mouse/" gettext-domain="mousetweaks">
-    <key name="ctw-style" type="i">
+    <key name="click-type-window-style" type="i">
       <default>2</default>
       <_summary>Click type window style</_summary>
       <_description>Button style in the click type window. ("0" = Text, "1" = Icon, "2" = Both)</_description>

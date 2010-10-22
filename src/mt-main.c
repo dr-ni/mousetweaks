@@ -132,7 +132,8 @@ mt_main_do_dwell_click (MtData *mt)
     ms = mt_settings_get_default ();
     click_type = mt_service_get_click_type (mt->service);
 
-    if (ms->dwell_mode == DWELL_MODE_GESTURE && !mt->dwell_drag_started)
+    if (ms->dwell_mode == G_DESKTOP_MOUSE_DWELL_MODE_GESTURE &&
+        !mt->dwell_drag_started)
     {
         mt_main_generate_motion_event (mt_common_get_screen (),
                                        mt->pointer_x,
@@ -187,31 +188,35 @@ below_threshold (MtData *mt, gint x, gint y)
     return (dx * dx + dy * dy) < (ms->dwell_threshold * ms->dwell_threshold);
 }
 
-static gint
+static GDesktopMouseDwellDirection
 mt_main_get_direction (MtData *mt, gint x, gint y)
 {
     gint dx, dy;
 
     dx = ABS (mt->pointer_x - x);
     dy = ABS (mt->pointer_y - y);
+
     if (mt->pointer_x < x)
     {
         if (dx > dy)
-            return DIRECTION_LEFT;
+            return G_DESKTOP_MOUSE_DWELL_DIRECTION_LEFT;
     }
     else
     {
         if (dx > dy)
-            return DIRECTION_RIGHT;
+            return G_DESKTOP_MOUSE_DWELL_DIRECTION_RIGHT;
     }
-    return mt->pointer_y < y ? DIRECTION_UP : DIRECTION_DOWN;
+
+    return mt->pointer_y < y ? G_DESKTOP_MOUSE_DWELL_DIRECTION_UP :
+                               G_DESKTOP_MOUSE_DWELL_DIRECTION_DOWN;
 }
 
 static gboolean
 mt_main_analyze_gesture (MtData *mt)
 {
     MtSettings *ms;
-    gint direction, x, y;
+    GDesktopMouseDwellDirection direction;
+    gint x, y;
 
     if (mt_service_get_click_type (mt->service) == DWELL_CLICK_TYPE_DRAG)
         return TRUE;
@@ -293,7 +298,7 @@ dwell_timer_finished (MtTimer *timer, MtData *mt)
     ms = mt_settings_get_default ();
     mt_cursor_manager_restore_all (mt_cursor_manager_get_default ());
 
-    if (ms->dwell_mode == DWELL_MODE_CTW)
+    if (ms->dwell_mode == G_DESKTOP_MOUSE_DWELL_MODE_WINDOW)
     {
         mt_main_do_dwell_click (mt);
     }
@@ -706,9 +711,9 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     if (cli_args.mode)
     {
         if (g_str_equal (cli_args.mode, "gesture"))
-            ms->dwell_mode = DWELL_MODE_GESTURE;
+            ms->dwell_mode = G_DESKTOP_MOUSE_DWELL_MODE_GESTURE;
         else if (g_str_equal (cli_args.mode, "window"))
-            ms->dwell_mode = DWELL_MODE_CTW;
+            ms->dwell_mode = G_DESKTOP_MOUSE_DWELL_MODE_WINDOW;
 
         g_free (cli_args.mode);
     }

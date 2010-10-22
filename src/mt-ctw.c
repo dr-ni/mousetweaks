@@ -59,7 +59,7 @@ static void
 ctw_sensitivity_changed (MtSettings *ms, GParamSpec *pspec)
 {
     gtk_widget_set_sensitive (mt_ctw_get_window (),
-                              ms->dwell_mode == DWELL_MODE_CTW);
+                              ms->dwell_mode == G_DESKTOP_MOUSE_DWELL_MODE_WINDOW);
 }
 
 static void

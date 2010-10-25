@@ -1,7 +1,6 @@
 # Slovak translation for mousetweaks.
 # Copyright (C) 2009, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
-# Pavol Klačanský <pavol@klacansky.com>, 2009, 2010.
 # Roman Mátyus <romanmatyus@gmail.com>, 2009, 2010.
 #
 msgid ""
@@ -9,8 +8,8 @@ msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-07-18 16:32+0000\n"
-"PO-Revision-Date: 2010-07-19 22:38+0200\n"
+"POT-Creation-Date: 2010-10-22 18:51+0000\n"
+"PO-Revision-Date: 2010-09-07 20:36+0200\n"
 "Last-Translator: Roman Mátyus <romanmatyus@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -38,8 +37,7 @@ msgstr "Dvojkik"
 msgid "Drag Click"
 msgstr "Ťahanie"
 
-#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:807
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:590
 msgid "Enable dwell click"
 msgstr "Povoliť kliknutie zotrvaním"
 
@@ -52,10 +50,6 @@ msgid "Single Click"
 msgstr "Kliknutie ľavým tlačidlom"
 
 #: ../data/pointer-capture-applet.ui.h:1
-msgid "A_lt"
-msgstr "A_lt"
-
-#: ../data/pointer-capture-applet.ui.h:2
 msgid ""
 "Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -63,64 +57,51 @@ msgstr ""
 "Oblasť uzamknutia kurzora na paneli.\n"
 "Šúčasť Mousetweaks"
 
-#: ../data/pointer-capture-applet.ui.h:4
+#: ../data/pointer-capture-applet.ui.h:3
 msgid "C_trl"
 msgstr "C_trl"
 
-# roman: kurzora -> kurzora (podla jednej učiteľky SJ)
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "Capture and Release Controls"
+msgstr ""
+
 #: ../data/pointer-capture-applet.ui.h:5
-msgid "Capture Pointer"
-msgstr "Zachytenie kurzora"
+msgid "Keyboard modifier:"
+msgstr ""
 
 #: ../data/pointer-capture-applet.ui.h:6
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Modifier:"
-msgstr "Modifikátor:"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Mouse _button:"
-msgstr "_Tlačidlo myši:"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "Mouse b_utton:"
-msgstr "T_lačidlo myši:"
-
-#: ../data/pointer-capture-applet.ui.h:10
 msgid "Pointer Capture Preferences"
 msgstr "Predvoľby zachytenia kurzora"
 
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "Release Pointer"
-msgstr "Uvoľnenie kurzora"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "S_hift"
-msgstr "S_hift"
-
-#: ../data/pointer-capture-applet.ui.h:13
+#: ../data/pointer-capture-applet.ui.h:7
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Vybraním tlačidla 0 dôjde ihneď k zachyteniu kurzora"
 
-#: ../data/pointer-capture-applet.ui.h:14
-msgid "Sh_ift"
-msgstr "Sh_ift"
-
-#: ../data/pointer-capture-applet.ui.h:15
+#: ../data/pointer-capture-applet.ui.h:8
 msgid "Size of the Capture Area"
 msgstr "Veľkosť oblasti zachytenia"
 
-#: ../data/pointer-capture-applet.ui.h:16
+#: ../data/pointer-capture-applet.ui.h:9
 msgid "_Alt"
 msgstr "_Alt"
 
-#: ../data/pointer-capture-applet.ui.h:17
+#: ../data/pointer-capture-applet.ui.h:10
+#, fuzzy
+#| msgid "Mouse _button:"
+msgid "_Mouse button:"
+msgstr "_Tlačidlo myši:"
+
+#: ../data/pointer-capture-applet.ui.h:11
+#, fuzzy
+#| msgid "S_hift"
+msgid "_Shift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.ui.h:12
 msgid "_Width:"
 msgstr "Šír_ka:"
 
-#: ../data/pointer-capture-applet.ui.h:18
+#: ../data/pointer-capture-applet.ui.h:13
 msgid "pixels"
 msgstr "pixelov"
 
@@ -140,7 +121,7 @@ msgstr "Zobraziť iba ikony"
 msgid "Show Text only"
 msgstr "Zobraziť iba text"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:586
 msgid "Dwell Click"
 msgstr "Kliknutie zotrvaním"
 
@@ -153,7 +134,6 @@ msgid "Area to lock the pointer"
 msgstr "Oblasť uzamknutia kurzora"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "Zachytenie kurzora"
 
@@ -169,334 +149,350 @@ msgstr "_Pomocník"
 msgid "_Preferences"
 msgstr "Nas_tavenia"
 
-#: ../data/mousetweaks.schemas.in.h:1
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Animate cursor"
 msgstr "Animovať kurzor"
-
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style"
-msgstr "Štýl tlačidla"
 
 # korektor:kostrbaté
 # Nenapadol mi lepší preklad.
 # ani mne
-#: ../data/mousetweaks.schemas.in.h:3
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#, fuzzy
+#| msgid ""
+#| "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#| "Both)"
 msgid ""
-"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+"Button style in the click type window. (\"0\" = Text, \"1\" = Icon, \"2\" = "
+"Both)"
 msgstr ""
 "Štýl tlačidla v okne typov kliknutí (\"0\" = text, \"1\" = ikona, \"2\" = "
 "oboje)"
 
-#: ../data/mousetweaks.schemas.in.h:4
-msgid ""
-"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Smer pohybu k prevedeniu dvojkliku (\"0\" = vľavo, \"1\" = vpravo, \"2\" = "
-"hore, \"3\" = dolu)"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#, fuzzy
+#| msgid "Click Type Window"
+msgid "Click type window style"
+msgstr "Okno typov kliknutí"
 
-#: ../data/mousetweaks.schemas.in.h:5
-msgid ""
-"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
-msgstr ""
-"Smer pohybu k prevedeniu ťahania (\"0\" = vľavo, \"1\" = vpravo, \"2\" = "
-"hore, \"3\" = dolu)"
-
-#: ../data/mousetweaks.schemas.in.h:6
-msgid ""
-"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Smer pohybu k prevedeniu kliknutia pravým tlačidlom (\"0\" = vľavo, \"1\" = "
-"vpravo, \"2\" = hore, \"3\" = dolu)"
-
-#: ../data/mousetweaks.schemas.in.h:7
-msgid ""
-"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Smer pohybu k prevedeniu kliknutia ľavým tlačidlom (\"0\" = vľavo, \"1\" = "
-"vpravo, \"2\" = hore, \"3\" = dolu)"
-
-#: ../data/mousetweaks.schemas.in.h:8
-msgid "Distance in pixels before movement will be recognized"
-msgstr "Vzdialenosť v pixeloch potrebná na detekciu pohybu"
-
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode"
-msgstr "Režim kliknutia zotrvaním"
-
-#: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr ""
-"Režim kliknutia držaním (\"0\" = okenný režim, \"1\" = režim pohybu myšou)"
-
-#: ../data/mousetweaks.schemas.in.h:11
-msgid "Dwell click time"
-msgstr "Čas nutný pre kliknutie zotrvaním"
-
-#: ../data/mousetweaks.schemas.in.h:13
-msgid "Enable secondary click"
-msgstr "Povoliť kliknutie pravým tlačidlom"
-
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
-msgid "Enable simulated secondary click"
-msgstr "Povoliť simulované kliknutie pravým tlačidlom"
-
-#: ../data/mousetweaks.schemas.in.h:15
-msgid "Gesture double click"
-msgstr "Dvojklik pohybom myši"
-
-#: ../data/mousetweaks.schemas.in.h:16
-msgid "Gesture drag click"
-msgstr "Ťahanie pohybom myši"
-
-#: ../data/mousetweaks.schemas.in.h:17
-msgid "Gesture secondary click"
-msgstr "Kliknutie pravým tlačidlom pohybom myši"
-
-#: ../data/mousetweaks.schemas.in.h:18
-msgid "Gesture single click"
-msgstr "Kliknutie ľavým tlačidlom pohybom myši"
-
-#: ../data/mousetweaks.schemas.in.h:19
-msgid "Movement threshold"
-msgstr "Prah pohybu"
-
-#: ../data/mousetweaks.schemas.in.h:20
-msgid "Secondary click time"
-msgstr "Čas nutný pre kliknutie pravým tlačidlom"
-
-# korektor:kostrbaté
-# Nenapadol mi lepší preklad.
-# ani mne
-#: ../data/mousetweaks.schemas.in.h:21
-msgid "Show click type window"
-msgstr "Zobraziť okno typov kliknutí"
-
-#: ../data/mousetweaks.schemas.in.h:22
-msgid "Show elapsed time as cursor overlay."
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#, fuzzy
+#| msgid "Show elapsed time as cursor overlay."
+msgid "Show elapsed time as a cursor overlay."
 msgstr "Zobraziť uplynulý čas ako prekrytie kurzora."
 
-#: ../data/mousetweaks.schemas.in.h:23
-msgid "Time in seconds before a click is triggered"
-msgstr "Čas v sekundách pred kliknutím"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
+msgid "\"Alt\" keyboard modifier"
+msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:24
-msgid "Time in seconds before a secondary click is triggered"
-msgstr "Čas v sekundách pred kliknutím pravým tlačidlom"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
+msgid "\"Control\" keyboard modifier"
+msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture pointer only if Alt is pressed"
-msgstr "Zachytiť kurzor iba ak je stlačený Alt"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
+msgid "\"Shift\" keyboard modifier"
+msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture pointer only if Ctrl is pressed"
-msgstr "Zachytiť kurzor iba ak je stlačený Ctrl"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
+#, fuzzy
+#| msgid "Mouse _button:"
+msgid "Mouse button"
+msgstr "_Tlačidlo myši:"
 
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture pointer only if Shift is pressed"
-msgstr "Zachytiť kurzor iba ak je stlačený Shift"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Mouse button used to capture the pointer"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
+#, fuzzy
+#| msgid "Mouse button used to capture the pointer"
+msgid "Mouse button used to capture or release the pointer."
 msgstr "Tlačidlo myši použité k zachyteniu kurzora"
 
-#: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Mouse button used to release the pointer"
-msgstr "Tlačidlo myši použité k uvoľneniu kurzora"
-
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Release pointer only if Alt is pressed"
-msgstr "Uvoľniť kurzor ak je stlačený Alt"
-
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Release pointer only if Ctrl is pressed"
-msgstr "Uvoľniť kurzor ak je stlačený Ctrl"
-
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release pointer only if Shift is pressed"
-msgstr "Uvoľniť kurzor ak je stlačený Shift"
-
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
 msgstr "Veľkosť oblasti zachytenia"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid ""
-"This mouse button must be pressed to release the pointer from the capture "
-"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
-"\"3\" for right button."
-msgstr ""
-"Toto tlačidlo myši musí byť stlačené pre uvoľnenie kurzora z oblasti "
-"zachytenia. Platné hodnoty sú \"1\" pre ľavé, \"2\" pre stredné, \"3\" pre "
-"pravé tlačidlo."
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid ""
-"This mouse button must be pressed while the pointer is over the capture area "
-"in order to capture the pointer. Valid values are \"0\" if no button is "
-"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
-"button."
-msgstr ""
-"Toto tlačidlo myši musí byť stlačené nad oblasťou zachytenia na to, aby bolo "
-"tlačidlo zachytené. Platné hodnoty sú \"0\" ak nie je potrebné žiadne "
-"tlačidlo, \"1\" pre ľavé, \"2\" pre stredné a \"3\" pre pravé tlačidlo."
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid ""
-"Whether the Alt key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Alt key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Či musí byť kláves Alt stlačený pre zachytenie kurzora, keď je nad oblasťou "
-"zachytenia. Ak je táto voľba nastavená na hodnotu true a v kľúči "
-"\"capture_button\" je nastavené tlačidlo myši, musí byť Alt a tlačidlo myši "
-"stlačené naraz."
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
-msgid ""
-"Whether the Alt key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Či musí byť kláves Alt stlačený spolu s tlačidlom myši nastavenom v "
-"\"relase_button\" pre uvoľnenie kurzora z oblasti zachytenia."
-
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid ""
-"Whether the Ctrl key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Ctrl key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Či musí byť kláves Ctrl stlačený pre zachytenie kurzora, ak je nad oblasťou "
-"zachytenia. Ak je táto voľba nastavená na true a v kľúči \"capture_button\" "
-"je nastavené tlačidlo myši, musí byť tlačidlo Ctrl a tlačidlo myši stlačené "
-"naraz."
-
-#: ../data/pointer-capture-applet.schemas.in.h:15
-msgid ""
-"Whether the Ctrl key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Či musí byť kláves Ctrl stlačený spolu s tlačidlom myši nastavenom v "
-"\"relase_button\" pre uvoľnenie kurzora z oblasti zachytenia."
-
-#: ../data/pointer-capture-applet.schemas.in.h:16
-msgid ""
-"Whether the Shift key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Shift key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Či musí byť kláves Shift stlačený pre zachytenie kurzora, ak je nad oblasťou "
-"zachytenia. Ak je táto voľba nastavená na true a v kľúči \"capture_button\" "
-"je nastavené tlačidlo myši, musí byť tlačidlo Shift a tlačidlo myši stlačené "
-"naraz."
-
-#: ../data/pointer-capture-applet.schemas.in.h:17
-msgid ""
-"Whether the Shift key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Či musí byť kláves Shift stlačený spolu s tlačidlom myši nastavenom v "
-"\"relase_button\" pre uvoľnenie kurzora z oblasti zachytenia."
-
-#: ../data/pointer-capture-applet.schemas.in.h:18
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
 msgid "Width of the capture area in pixels."
 msgstr "Šírka oblasti zachytenia v pixeloch."
 
-#: ../src/mt-main.c:811
+#: ../src/mt-main.c:592
+msgid "Enable simulated secondary click"
+msgstr "Povoliť simulované kliknutie pravým tlačidlom"
+
+#: ../src/mt-main.c:594
 msgid "Time to wait before a dwell click"
 msgstr "Doba čakania pred kliknutím zotrvaním"
 
-#: ../src/mt-main.c:813
+#: ../src/mt-main.c:596
 msgid "Time to wait before a simulated secondary click"
 msgstr "Doba čakania pred simulovaným kliknutím pravým tlačidlom"
 
-#: ../src/mt-main.c:815
+#: ../src/mt-main.c:598
 msgid "Set the active dwell mode"
 msgstr "Nastaviť aktívny režim kliknutia zotrvaním"
 
 # korektor:kostrbaté
 # Nenapadol mi lepší preklad.
 # ani mne
-#: ../src/mt-main.c:817
+#: ../src/mt-main.c:600
 msgid "Show a click-type window"
 msgstr "Zobraziť okno typov kliknutí"
 
-# korektor: znie to zavádzajúco, skôr "Pozícia x okna"
-# roman: OK - nebolo by lepšie "Horizontálna pozícia okna"?
-# korektor: asi aj bolo, ale neviem v akom význame je to použité
-# roman: Chcel som to otestovať, ale stále mi zamrzol PC. Mám to ponechať alebo zmeniť?
-# korektor: zmenil som, uvidime co na to Marcel
-#: ../src/mt-main.c:819
+#: ../src/mt-main.c:602
 msgid "Click-type window X position"
 msgstr "Horizontálna pozícia okna typov kliknutí"
 
-# korektor: znie to zavádzajúco, skôr "Pozícia x okna"
-# roman: OK - nebolo by lepšie "Horizontálna pozícia okna"?
-# korektor: asi aj bolo, ale neviem v akom význame je to použité
-# roman: Chcel som to otestovať, ale stále mi zamrzol PC. Mám to ponechať alebo zmeniť?
-# korektor: zmenil som, uvidime co na to Marcel
-#: ../src/mt-main.c:821
+#: ../src/mt-main.c:604
 msgid "Click-type window Y position"
-msgstr "Horizontálna pozícia okna typov kliknutí"
+msgstr "Vertikálna pozícia okna typov kliknutí"
 
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Ignorovať nepatrné pohyby kurzora"
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:608
 msgid "Shut down mousetweaks"
 msgstr "Vypnúť mousetweaks"
 
-#: ../src/mt-main.c:827
+#: ../src/mt-main.c:610
 msgid "Disable cursor animations"
 msgstr "Zakázať animácie kurzora"
 
-#: ../src/mt-main.c:829
-#, fuzzy
-#| msgid "- GNOME mousetweaks daemon"
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
-msgstr "- Démon GNOME mousetweaks"
+msgstr "Spustiť mousetweaks ako démona"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
-msgstr ""
+msgstr "Spustiť mousetweaks v prihlasovacom režime"
 
 #. parse
-#: ../src/mt-main.c:851
-#, fuzzy
-#| msgid "- GNOME mousetweaks daemon"
+#: ../src/mt-main.c:634
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- Démon GNOME mousetweaks"
+msgstr "- GNOME démon prístupnosti myši"
 
-#: ../src/mt-common.c:31
+#: ../src/mt-common.c:114
 msgid "Failed to Display Help"
 msgstr "Zlyhalo zobrazenie Pomocníka"
 
-#: ../src/mt-common.c:70
+#: ../src/mt-common.c:153
 msgid "Enable and Log Out"
 msgstr "Povoliť a odhlásiť"
 
-#: ../src/pointer-capture-applet.c:68
+#: ../src/pointer-capture-applet.c:71
 msgid "Capture area"
 msgstr "Oblasť zachytenia"
 
-#: ../src/pointer-capture-applet.c:69
+#: ../src/pointer-capture-applet.c:72
 msgid "Temporarily lock the mouse pointer"
 msgstr "Dočasné zachytenie kurzora myši"
 
-#: ../src/pointer-capture-applet.c:596
+#: ../src/pointer-capture-applet.c:434
+#, fuzzy
+#| msgid "Pointer Capture"
+msgid "Pointer Capture Applet"
+msgstr "Zachytenie kurzora"
+
+#: ../src/pointer-capture-applet.c:480
 msgid "Locked"
 msgstr "Uzamknuté"
 
-#: ../src/dwell-click-applet.c:475
-msgid "Failed to Launch Mouse Preferences"
-msgstr "Zlyhalo spustenie Predvolieb myši"
+#: ../src/dwell-click-applet.c:449
+msgid "Failed to Open the Univeral Access Panel"
+msgstr ""
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "Zachytenie kurzora"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Modifikátor:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "T_lačidlo myši:"
+
+#~ msgid "Release Pointer"
+#~ msgstr "Uvoľnenie kurzora"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Button style"
+#~ msgstr "Štýl tlačidla"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Smer pohybu k prevedeniu dvojkliku (\"0\" = vľavo, \"1\" = vpravo, \"2\" "
+#~ "= hore, \"3\" = dolu)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Smer pohybu k prevedeniu ťahania (\"0\" = vľavo, \"1\" = vpravo, \"2\" = "
+#~ "hore, \"3\" = dolu)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Smer pohybu k prevedeniu kliknutia pravým tlačidlom (\"0\" = vľavo, \"1\" "
+#~ "= vpravo, \"2\" = hore, \"3\" = dolu)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Smer pohybu k prevedeniu kliknutia ľavým tlačidlom (\"0\" = vľavo, \"1\" "
+#~ "= vpravo, \"2\" = hore, \"3\" = dolu)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "Vzdialenosť v pixeloch potrebná na detekciu pohybu"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Režim kliknutia zotrvaním"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr ""
+#~ "Režim kliknutia držaním (\"0\" = okenný režim, \"1\" = režim pohybu myšou)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Čas nutný pre kliknutie zotrvaním"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "Povoliť kliknutie pravým tlačidlom"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Dvojklik pohybom myši"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Ťahanie pohybom myši"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Kliknutie pravým tlačidlom pohybom myši"
+
+#~ msgid "Gesture single click"
+#~ msgstr "Kliknutie ľavým tlačidlom pohybom myši"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Prah pohybu"
+
+#~ msgid "Secondary click time"
+#~ msgstr "Čas nutný pre kliknutie pravým tlačidlom"
+
+# korektor:kostrbaté
+# Nenapadol mi lepší preklad.
+# ani mne
+#~ msgid "Show click type window"
+#~ msgstr "Zobraziť okno typov kliknutí"
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "Čas v sekundách pred kliknutím"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "Čas v sekundách pred kliknutím pravým tlačidlom"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Zachytiť kurzor iba ak je stlačený Alt"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Zachytiť kurzor iba ak je stlačený Ctrl"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Zachytiť kurzor iba ak je stlačený Shift"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "Tlačidlo myši použité k uvoľneniu kurzora"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Uvoľniť kurzor ak je stlačený Alt"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Uvoľniť kurzor ak je stlačený Ctrl"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Uvoľniť kurzor ak je stlačený Shift"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "Toto tlačidlo myši musí byť stlačené pre uvoľnenie kurzora z oblasti "
+#~ "zachytenia. Platné hodnoty sú \"1\" pre ľavé, \"2\" pre stredné, \"3\" "
+#~ "pre pravé tlačidlo."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "Toto tlačidlo myši musí byť stlačené nad oblasťou zachytenia na to, aby "
+#~ "bolo tlačidlo zachytené. Platné hodnoty sú \"0\" ak nie je potrebné "
+#~ "žiadne tlačidlo, \"1\" pre ľavé, \"2\" pre stredné a \"3\" pre pravé "
+#~ "tlačidlo."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Či musí byť kláves Alt stlačený pre zachytenie kurzora, keď je nad "
+#~ "oblasťou zachytenia. Ak je táto voľba nastavená na hodnotu true a v kľúči "
+#~ "\"capture_button\" je nastavené tlačidlo myši, musí byť Alt a tlačidlo "
+#~ "myši stlačené naraz."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Či musí byť kláves Alt stlačený spolu s tlačidlom myši nastavenom v "
+#~ "\"relase_button\" pre uvoľnenie kurzora z oblasti zachytenia."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Či musí byť kláves Ctrl stlačený pre zachytenie kurzora, ak je nad "
+#~ "oblasťou zachytenia. Ak je táto voľba nastavená na true a v kľúči "
+#~ "\"capture_button\" je nastavené tlačidlo myši, musí byť tlačidlo Ctrl a "
+#~ "tlačidlo myši stlačené naraz."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Či musí byť kláves Ctrl stlačený spolu s tlačidlom myši nastavenom v "
+#~ "\"relase_button\" pre uvoľnenie kurzora z oblasti zachytenia."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Či musí byť kláves Shift stlačený pre zachytenie kurzora, ak je nad "
+#~ "oblasťou zachytenia. Ak je táto voľba nastavená na true a v kľúči "
+#~ "\"capture_button\" je nastavené tlačidlo myši, musí byť tlačidlo Shift a "
+#~ "tlačidlo myši stlačené naraz."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Či musí byť kláves Shift stlačený spolu s tlačidlom myši nastavenom v "
+#~ "\"relase_button\" pre uvoľnenie kurzora z oblasti zachytenia."
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "Zlyhalo spustenie Predvolieb myši"
 
 #~ msgid "Assistive Technology Support is not Enabled"
 #~ msgstr "Nie je povolená asistenčná technológia"
@@ -515,17 +511,3 @@ msgstr "Zlyhalo spustenie Predvolieb myši"
 
 #~ msgid "Dwell mode to use"
 #~ msgstr "Režim kliknutia držaním, ktorý sa má použiť"
-
-# korektor: znie to zavádzajúco, skôr "Pozícia y okna"
-# roman: OK - nebolo by lepšie "Vertikálna pozícia okna"?
-# korektor: asi aj bolo, ale neviem v akom význame je to použité
-# roman: Chcel som to otestovať, ale stále mi zamrzol PC. Mám to ponechať alebo zmeniť?
-# korektor: zmenil som, uvidime co na to Marcel
-#~ msgid "Window y position"
-#~ msgstr "Vertikálna pozícia okna"
-
-#~ msgid "Show elapsed time as cursor overlay"
-#~ msgstr "Zobraziť uplynulý čas ako prekrytie kurzora"
-
-#~ msgid "L"
-#~ msgstr "U"

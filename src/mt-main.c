@@ -33,7 +33,6 @@
 #include "mt-timer.h"
 #include "mt-cursor-manager.h"
 #include "mt-cursor.h"
-#include "mt-main.h"
 #include "mt-listener.h"
 #include "mt-sig-handler.h"
 
@@ -61,6 +60,23 @@ typedef struct _MtCliArgs
     gboolean no_animation;
     gboolean login;
 } MtCliArgs;
+
+typedef struct _MtData
+{
+    MtService   *service;
+    MtTimer     *ssc_timer;
+    MtTimer     *dwell_timer;
+    MtCursor    *cursor;
+    gint         direction;
+    gint         pointer_x;
+    gint         pointer_y;
+
+    /* state flags */
+    guint        dwell_drag_started    : 1;
+    guint        dwell_gesture_started : 1;
+    guint        override_cursor       : 1;
+    guint        ssc_finished          : 1;
+} MtData;
 
 static void
 mt_main_generate_motion_event (GdkScreen *screen, gint x, gint y)

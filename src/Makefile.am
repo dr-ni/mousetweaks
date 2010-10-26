@@ -15,7 +15,6 @@ bin_PROGRAMS = mousetweaks $(pca_bin) $(dca_bin)
 
 mousetweaks_SOURCES =       \
     mt-main.c               \
-    mt-main.h               \
     mt-common.c             \
     mt-common.h             \
     mt-pidfile.c            \

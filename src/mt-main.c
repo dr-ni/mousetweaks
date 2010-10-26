@@ -57,7 +57,6 @@ typedef struct _MtCliArgs
     gboolean shutdown;
     gboolean daemonize;
     gboolean ctw;
-    gboolean no_animation;
     gboolean login;
 } MtCliArgs;
 
@@ -508,10 +507,7 @@ mt_main_timer_tick (MtTimer *timer,
                     gdouble  time,
                     MtData  *mt)
 {
-    MtSettings *ms;
-
-    ms = mt_settings_get_default ();
-    if (ms->animate_cursor && mt->cursor)
+    if (mt->cursor)
     {
         mt_main_update_cursor (mt, timer, time);
     }
@@ -622,8 +618,6 @@ mt_parse_options (int *argc, char ***argv)
             N_("Ignore small pointer movements"), "[0-30]"},
         {"shutdown", 's', 0, G_OPTION_ARG_NONE, &ca.shutdown,
             N_("Shut down mousetweaks"), 0},
-        {"disable-animation", 0, 0, G_OPTION_ARG_NONE, &ca.no_animation,
-            N_("Disable cursor animations"), 0},
         {"daemonize", 0, 0, G_OPTION_ARG_NONE, &ca.daemonize,
             N_("Start mousetweaks as a daemon"), 0},
         {"login", 0, 0, G_OPTION_ARG_NONE, &ca.login,
@@ -643,7 +637,6 @@ mt_parse_options (int *argc, char ***argv)
     ca.shutdown      = FALSE;
     ca.daemonize     = FALSE;
     ca.ctw           = FALSE;
-    ca.no_animation  = FALSE;
     ca.login         = FALSE;
 
     /* parse */
@@ -722,8 +715,6 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
         ms->dwell_threshold = cli_args.threshold;
     if (cli_args.ctw)
         ms->ctw_visible = cli_args.ctw;
-    if (cli_args.no_animation)
-        ms->animate_cursor = !cli_args.no_animation;
     if (cli_args.mode)
     {
         if (g_str_equal (cli_args.mode, "gesture"))

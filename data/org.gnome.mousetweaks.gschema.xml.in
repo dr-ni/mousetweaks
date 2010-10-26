@@ -5,10 +5,5 @@
       <_summary>Click type window style</_summary>
       <_description>Button style in the click type window. ("0" = Text, "1" = Icon, "2" = Both)</_description>
     </key>
-    <key name="animate-cursor" type="b">
-      <default>true</default>
-      <_summary>Animate cursor</_summary>
-      <_description>Show elapsed time as a cursor overlay.</_description>
-    </key>
   </schema>
 </schemalist>

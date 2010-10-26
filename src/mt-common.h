@@ -40,7 +40,6 @@ G_BEGIN_DECLS
 /* GSettings */
 #define MOUSETWEAKS_SCHEMA_ID       "org.gnome.mousetweaks"
 #define KEY_CTW_STYLE               "click-type-window-style"
-#define KEY_ANIMATE_CURSOR          "animate-cursor"
 
 #define A11Y_MOUSE_SCHEMA_ID        "org.gnome.desktop.a11y.mouse"
 #define KEY_DWELL_ENABLED           "dwell-click-enabled"

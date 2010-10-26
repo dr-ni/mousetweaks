@@ -36,8 +36,7 @@ enum
     PROP_DWELL_GESTURE_SECONDARY,
     PROP_SSC_ENABLED,
     PROP_CTW_VISIBLE,
-    PROP_CTW_STYLE,
-    PROP_ANIMATE_CURSOR,
+    PROP_CTW_STYLE
 };
 
 G_DEFINE_TYPE (MtSettings, mt_settings, G_TYPE_OBJECT)
@@ -48,7 +47,6 @@ mt_settings_init (MtSettings *ms)
     ms->mt_settings = g_settings_new (MOUSETWEAKS_SCHEMA_ID);
 
     BIND_PROP (ms->mt_settings, "ctw-style", KEY_CTW_STYLE);
-    BIND_PROP (ms->mt_settings, "animate-cursor", KEY_ANIMATE_CURSOR);
 
     ms->a11y_settings = g_settings_new (A11Y_MOUSE_SCHEMA_ID);
 
@@ -123,9 +121,6 @@ mt_settings_set_property (GObject      *object,
         case PROP_CTW_STYLE:
             ms->ctw_style = g_value_get_int (value);
             break;
-        case PROP_ANIMATE_CURSOR:
-            ms->animate_cursor = g_value_get_boolean (value);
-            break;
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
     }
@@ -170,9 +165,6 @@ mt_settings_get_property (GObject    *object,
             break;
         case PROP_CTW_STYLE:
             g_value_set_int (value, ms->ctw_style);
-            break;
-        case PROP_ANIMATE_CURSOR:
-            g_value_set_boolean (value, ms->animate_cursor);
             break;
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -259,12 +251,6 @@ mt_settings_class_init (MtSettingsClass *klass)
                                                        "CTW style",
                                                        "Button style in click-type window",
                                                        0, 2, 0, PFLAGS));
-    g_object_class_install_property (object_class,
-                                     PROP_ANIMATE_CURSOR,
-                                     g_param_spec_boolean ("animate-cursor",
-                                                           "Animate cursor",
-                                                           "Draw cursor animation",
-                                                           TRUE, PFLAGS));
 }
 
 MtSettings *

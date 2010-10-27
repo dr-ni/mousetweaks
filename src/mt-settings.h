@@ -35,21 +35,24 @@ typedef struct _MtSettings MtSettings;
 
 struct _MtSettings
 {
-    GObject                     parent;
+    GObject                         parent;
 
-    GSettings                  *mt_settings;
-    GSettings                  *a11y_settings;
+    GSettings                      *mt_settings;
+    GSettings                      *a11y_settings;
 
-    GDesktopMouseDwellMode      dwell_mode;
-    GDesktopMouseDwellDirection dwell_gesture_single;
-    GDesktopMouseDwellDirection dwell_gesture_double;
-    GDesktopMouseDwellDirection dwell_gesture_drag;
-    GDesktopMouseDwellDirection dwell_gesture_secondary;
-    gint                        dwell_threshold;
-    gint                        ctw_style;
-    guint                       dwell_enabled  : 1;
-    guint                       ssc_enabled    : 1;
-    guint                       ctw_visible    : 1;
+    gint                            dwell_threshold;
+    GDesktopMouseDwellMode          dwell_mode;
+    GDesktopMouseDwellDirection     dwell_gesture_single;
+    GDesktopMouseDwellDirection     dwell_gesture_double;
+    GDesktopMouseDwellDirection     dwell_gesture_drag;
+    GDesktopMouseDwellDirection     dwell_gesture_secondary;
+
+    MtClickTypeWindowStyle          ctw_style;
+    MtClickTypeWindowOrientation    ctw_orientation;
+
+    guint                           dwell_enabled  : 1;
+    guint                           ssc_enabled    : 1;
+    guint                           ctw_visible    : 1;
 };
 
 GType             mt_settings_get_type              (void) G_GNUC_CONST;

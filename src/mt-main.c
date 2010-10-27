@@ -141,7 +141,7 @@ mt_main_set_cursor (MtData *mt, GdkCursorType type)
 static void
 mt_main_do_dwell_click (MtData *mt)
 {
-    MtClickType click_type;
+    MtDwellClickType click_type;
     MtSettings *ms;
 
     ms = mt_settings_get_default ();
@@ -157,14 +157,14 @@ mt_main_do_dwell_click (MtData *mt)
 
     switch (click_type)
     {
-        case DWELL_CLICK_TYPE_SINGLE:
+        case MT_DWELL_CLICK_TYPE_SINGLE:
             mt_main_generate_button_event (mt, 1, CLICK, 60);
             break;
-        case DWELL_CLICK_TYPE_DOUBLE:
+        case MT_DWELL_CLICK_TYPE_DOUBLE:
             mt_main_generate_button_event (mt, 1, DOUBLE_CLICK, 10);
-            mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
+            mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_SINGLE);
             break;
-        case DWELL_CLICK_TYPE_DRAG:
+        case MT_DWELL_CLICK_TYPE_DRAG:
             if (!mt->dwell_drag_started)
             {
                 mt_main_generate_button_event (mt, 1, PRESS, CurrentTime);
@@ -177,12 +177,12 @@ mt_main_do_dwell_click (MtData *mt)
                 mt_main_set_cursor (mt, GDK_LEFT_PTR);
                 mt->dwell_drag_started = FALSE;
 
-                mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
+                mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_SINGLE);
             }
             break;
-        case DWELL_CLICK_TYPE_RIGHT:
+        case MT_DWELL_CLICK_TYPE_RIGHT:
             mt_main_generate_button_event (mt, 3, CLICK, 10);
-            mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
+            mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_SINGLE);
             break;
         default:
             g_warning ("Unknown click-type.");
@@ -233,7 +233,7 @@ mt_main_analyze_gesture (MtData *mt)
     GDesktopMouseDwellDirection direction;
     gint x, y;
 
-    if (mt_service_get_click_type (mt->service) == DWELL_CLICK_TYPE_DRAG)
+    if (mt_service_get_click_type (mt->service) == MT_DWELL_CLICK_TYPE_DRAG)
         return TRUE;
 
     gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
@@ -246,19 +246,19 @@ mt_main_analyze_gesture (MtData *mt)
 
     if (direction == ms->dwell_gesture_single)
     {
-        mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
+        mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_SINGLE);
     }
     else if (direction == ms->dwell_gesture_double)
     {
-        mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_DOUBLE);
+        mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_DOUBLE);
     }
     else if (direction == ms->dwell_gesture_drag)
     {
-        mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_DRAG);
+        mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_DRAG);
     }
     else if (direction == ms->dwell_gesture_secondary)
     {
-        mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_RIGHT);
+        mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_RIGHT);
     }
     else
     {
@@ -369,7 +369,7 @@ mt_dwell_click_cancel (MtData *mt)
         mt->dwell_drag_started = FALSE;
     }
 
-    mt_service_set_click_type (mt->service, DWELL_CLICK_TYPE_SINGLE);
+    mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_SINGLE);
 }
 
 static void

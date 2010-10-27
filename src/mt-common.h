@@ -29,6 +29,8 @@
 #include <gdk/gdkx.h>
 #include <gsettings-desktop-schemas/gdesktop-enums.h>
 
+#include "mt-enum-types.h"
+
 G_BEGIN_DECLS
 
 #define MT_ICON_NAME                "input-mouse"
@@ -40,6 +42,7 @@ G_BEGIN_DECLS
 /* GSettings */
 #define MOUSETWEAKS_SCHEMA_ID       "org.gnome.mousetweaks"
 #define KEY_CTW_STYLE               "click-type-window-style"
+#define KEY_CTW_ORIENTATION         "click-type-window-orientation"
 
 #define A11Y_MOUSE_SCHEMA_ID        "org.gnome.desktop.a11y.mouse"
 #define KEY_DWELL_ENABLED           "dwell-click-enabled"
@@ -54,27 +57,33 @@ G_BEGIN_DECLS
 #define KEY_SSC_TIME                "secondary-click-time"
 #define KEY_CTW_VISIBLE             "click-type-window-visible"
 
-#define G_DESKTOP_TYPE_MOUSE_DWELL_MODE      (g_desktop_mouse_dwell_mode_get_type())
-#define G_DESKTOP_TYPE_MOUSE_DWELL_DIRECTION (g_desktop_mouse_dwell_direction_get_type())
-
-GType   g_desktop_mouse_dwell_mode_get_type      (void) G_GNUC_CONST;
-GType   g_desktop_mouse_dwell_direction_get_type (void) G_GNUC_CONST;
+#define N_CLICK_TYPES 4
 
 typedef enum
 {
-    DWELL_CLICK_TYPE_RIGHT = 0,
-    DWELL_CLICK_TYPE_DRAG,
-    DWELL_CLICK_TYPE_DOUBLE,
-    DWELL_CLICK_TYPE_SINGLE,
-    N_CLICK_TYPES
-} MtClickType;
+    MT_DWELL_CLICK_TYPE_RIGHT,
+    MT_DWELL_CLICK_TYPE_DRAG,
+    MT_DWELL_CLICK_TYPE_DOUBLE,
+    MT_DWELL_CLICK_TYPE_SINGLE
+} MtDwellClickType;
 
 typedef enum
 {
-    MT_MESSAGE_ERROR = 0,
-    MT_MESSAGE_WARNING,
-    MT_MESSAGE_QUESTION,
-    MT_MESSAGE_LOGOUT
+    MT_CLICK_TYPE_WINDOW_STYLE_TEXT,
+    MT_CLICK_TYPE_WINDOW_STYLE_ICON,
+    MT_CLICK_TYPE_WINDOW_STYLE_BOTH
+} MtClickTypeWindowStyle;
+
+typedef enum
+{
+    MT_CLICK_TYPE_WINDOW_ORIENTATION_HORIZONTAL,
+    MT_CLICK_TYPE_WINDOW_ORIENTATION_VERTICAL
+} MtClickTypeWindowOrientation;
+
+typedef enum /*< skip >*/
+{
+    MT_MESSAGE_TYPE_ERROR,
+    MT_MESSAGE_TYPE_WARNING,
 } MtMessageType;
 
 Display *    mt_common_get_xdisplay      (void);
@@ -87,7 +96,7 @@ GdkScreen *  mt_common_get_screen        (void);
 void         mt_common_show_help         (GdkScreen     *screen,
                                           guint32        timestamp);
 
-gint         mt_common_show_dialog       (const gchar   *primary,
+void         mt_common_show_dialog       (const gchar   *primary,
                                           const gchar   *secondary,
                                           MtMessageType  type);
 

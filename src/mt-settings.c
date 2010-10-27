@@ -36,7 +36,8 @@ enum
     PROP_DWELL_GESTURE_SECONDARY,
     PROP_SSC_ENABLED,
     PROP_CTW_VISIBLE,
-    PROP_CTW_STYLE
+    PROP_CTW_STYLE,
+    PROP_CTW_ORIENTATION
 };
 
 G_DEFINE_TYPE (MtSettings, mt_settings, G_TYPE_OBJECT)
@@ -47,6 +48,7 @@ mt_settings_init (MtSettings *ms)
     ms->mt_settings = g_settings_new (MOUSETWEAKS_SCHEMA_ID);
 
     BIND_PROP (ms->mt_settings, "ctw-style", KEY_CTW_STYLE);
+    BIND_PROP (ms->mt_settings, "ctw-orientation", KEY_CTW_ORIENTATION);
 
     ms->a11y_settings = g_settings_new (A11Y_MOUSE_SCHEMA_ID);
 
@@ -119,7 +121,10 @@ mt_settings_set_property (GObject      *object,
             ms->ctw_visible = g_value_get_boolean (value);
             break;
         case PROP_CTW_STYLE:
-            ms->ctw_style = g_value_get_int (value);
+            ms->ctw_style = g_value_get_enum (value);
+            break;
+        case PROP_CTW_ORIENTATION:
+            ms->ctw_orientation = g_value_get_enum (value);
             break;
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -164,7 +169,10 @@ mt_settings_get_property (GObject    *object,
             g_value_set_boolean (value, ms->ctw_visible);
             break;
         case PROP_CTW_STYLE:
-            g_value_set_int (value, ms->ctw_style);
+            g_value_set_enum (value, ms->ctw_style);
+            break;
+        case PROP_CTW_ORIENTATION:
+            g_value_set_enum (value, ms->ctw_orientation);
             break;
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -242,15 +250,25 @@ mt_settings_class_init (MtSettingsClass *klass)
     g_object_class_install_property (object_class,
                                      PROP_CTW_VISIBLE,
                                      g_param_spec_boolean ("ctw-visible",
-                                                           "CTW visible",
-                                                           "Show click-type window",
+                                                           "Click-type window visibility",
+                                                           "Click-type window visibility",
                                                            TRUE, PFLAGS));
     g_object_class_install_property (object_class,
                                      PROP_CTW_STYLE,
-                                     g_param_spec_int ("ctw-style",
-                                                       "CTW style",
-                                                       "Button style in click-type window",
-                                                       0, 2, 0, PFLAGS));
+                                     g_param_spec_enum ("ctw-style",
+                                                        "Click-type window style",
+                                                        "Button style of the click-type window",
+                                                        MT_TYPE_CLICK_TYPE_WINDOW_STYLE,
+                                                        MT_CLICK_TYPE_WINDOW_STYLE_BOTH,
+                                                        PFLAGS));
+    g_object_class_install_property (object_class,
+                                     PROP_CTW_ORIENTATION,
+                                     g_param_spec_enum ("ctw-orientation",
+                                                        "Click-type window orientation",
+                                                        "Orientation of the click-type window",
+                                                        MT_TYPE_CLICK_TYPE_WINDOW_ORIENTATION,
+                                                        MT_CLICK_TYPE_WINDOW_ORIENTATION_HORIZONTAL,
+                                                        PFLAGS));
 }
 
 MtSettings *

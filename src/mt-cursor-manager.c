@@ -46,7 +46,7 @@ static void            mt_cursor_manager_clear_cache  (GObject         *settings
                                                        MtCursorManager *manager);
 static GdkFilterReturn mt_cursor_manager_event_filter (GdkXEvent       *gdk_xevent,
                                                        GdkEvent        *gdk_event,
-                                                       gpointer         data);
+                                                       MtCursorManager *manager);
 
 G_DEFINE_TYPE (MtCursorManager, mt_cursor_manager, G_TYPE_OBJECT)
 
@@ -74,7 +74,7 @@ mt_cursor_manager_init (MtCursorManager *manager)
                                  XFixesDisplayCursorNotifyMask);
     }
 
-    gdk_window_add_filter (NULL, mt_cursor_manager_event_filter, manager);
+    gdk_window_add_filter (NULL, (GdkFilterFunc) mt_cursor_manager_event_filter, manager);
 
     /* listen for cursor theme changes */
     gs = gtk_settings_get_default ();
@@ -89,7 +89,7 @@ mt_cursor_manager_finalize (GObject *object)
 {
     MtCursorManagerPrivate *priv = MT_CURSOR_MANAGER (object)->priv;
 
-    gdk_window_remove_filter (NULL, mt_cursor_manager_event_filter, object);
+    gdk_window_remove_filter (NULL, (GdkFilterFunc) mt_cursor_manager_event_filter, object);
     g_hash_table_destroy (priv->cache);
 
     G_OBJECT_CLASS (mt_cursor_manager_parent_class)->finalize (object);
@@ -206,9 +206,9 @@ mt_cursor_manager_add_cursor (MtCursorManager   *manager,
 }
 
 static GdkFilterReturn
-mt_cursor_manager_event_filter (GdkXEvent *gdk_xevent,
-                                GdkEvent  *gdk_event,
-                                gpointer   data)
+mt_cursor_manager_event_filter (GdkXEvent       *gdk_xevent,
+                                GdkEvent        *gdk_event,
+                                MtCursorManager *manager)
 {
     XEvent *xev = gdk_xevent;
 
@@ -218,15 +218,18 @@ mt_cursor_manager_event_filter (GdkXEvent *gdk_xevent,
 
         if (cn->cursor_name != None)
         {
-            MtCursorManager *manager = data;
             XFixesCursorImage *image;
 
             image = XFixesGetCursorImage (cn->display);
-            if (!mt_cursor_manager_lookup_cursor (manager, image->name))
-                mt_cursor_manager_add_cursor (manager, image);
+            if (image)
+            {
+                if (!mt_cursor_manager_lookup_cursor (manager, image->name))
+                    mt_cursor_manager_add_cursor (manager, image);
 
-            g_signal_emit (manager, signals[CURSOR_CHANGED], 0, image->name);
-            XFree (image);
+                g_signal_emit (manager, signals[CURSOR_CHANGED], 0, image->name);
+
+                XFree (image);
+            }
         }
     }
     return GDK_FILTER_CONTINUE;

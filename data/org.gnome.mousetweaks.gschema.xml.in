@@ -1,9 +1,14 @@
 <schemalist>
   <schema id="org.gnome.mousetweaks" path="/desktop/gnome/a11y/mouse/" gettext-domain="mousetweaks">
-    <key name="click-type-window-style" type="i">
-      <default>2</default>
-      <_summary>Click type window style</_summary>
-      <_description>Button style in the click type window. ("0" = Text, "1" = Icon, "2" = Both)</_description>
+    <key name="click-type-window-style" enum="org.gnome.mousetweaks.MtClickTypeWindowStyle">
+      <default>'both'</default>
+      <_summary>Click-type window style</_summary>
+      <_description>Button style of the click-type window.</_description>
+    </key>
+    <key name="click-type-window-orientation" enum="org.gnome.mousetweaks.MtClickTypeWindowOrientation">
+      <default>'horizontal'</default>
+      <_summary>Click-type window orientation</_summary>
+      <_description>Orientation of the click-type window.</_description>
     </key>
   </schema>
 </schemalist>

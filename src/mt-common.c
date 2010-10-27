@@ -19,46 +19,6 @@
 
 #include "mt-common.h"
 
-GType
-g_desktop_mouse_dwell_mode_get_type (void)
-{
-    static volatile gsize type_id__volatile = 0;
-
-    if (g_once_init_enter (&type_id__volatile))
-    {
-        static const GEnumValue values[] =
-        {
-            { G_DESKTOP_MOUSE_DWELL_MODE_WINDOW, "G_DESKTOP_MOUSE_DWELL_MODE_WINDOW", "window" },
-            { G_DESKTOP_MOUSE_DWELL_MODE_GESTURE, "G_DESKTOP_MOUSE_DWELL_MODE_GESTURE", "gesture" },
-            { 0, NULL, NULL }
-        };
-        GType type_id = g_enum_register_static (g_intern_static_string ("GDesktopMouseDwellMode"), values);
-        g_once_init_leave (&type_id__volatile, type_id);
-    }
-    return type_id__volatile;
-}
-
-GType
-g_desktop_mouse_dwell_direction_get_type (void)
-{
-    static volatile gsize type_id__volatile = 0;
-
-    if (g_once_init_enter (&type_id__volatile))
-    {
-        static const GEnumValue values[] =
-        {
-            { G_DESKTOP_MOUSE_DWELL_DIRECTION_LEFT, "G_DESKTOP_MOUSE_DWELL_DIRECTION_LEFT", "left" },
-            { G_DESKTOP_MOUSE_DWELL_DIRECTION_RIGHT, "G_DESKTOP_MOUSE_DWELL_DIRECTION_RIGHT", "right" },
-            { G_DESKTOP_MOUSE_DWELL_DIRECTION_UP, "G_DESKTOP_MOUSE_DWELL_DIRECTION_UP", "up" },
-            { G_DESKTOP_MOUSE_DWELL_DIRECTION_DOWN, "G_DESKTOP_MOUSE_DWELL_DIRECTION_DOWN", "down" },
-            { 0, NULL, NULL }
-        };
-        GType type_id = g_enum_register_static (g_intern_static_string ("GDesktopMouseDwellDirection"), values);
-        g_once_init_leave (&type_id__volatile, type_id);
-    }
-    return type_id__volatile;
-}
-
 Display *
 mt_common_get_xdisplay (void)
 {
@@ -112,21 +72,23 @@ mt_common_show_help (GdkScreen *screen, guint32 timestamp)
     if (!gtk_show_uri (screen, "ghelp:mousetweaks", timestamp, &error))
     {
         mt_common_show_dialog (_("Failed to Display Help"),
-                               error->message, MT_MESSAGE_WARNING);
+                               error->message,
+                               MT_MESSAGE_TYPE_WARNING);
         g_error_free (error);
     }
 }
 
-gint
+void
 mt_common_show_dialog (const gchar  *primary,
                        const gchar  *secondary,
                        MtMessageType type)
 {
     GtkWidget *dialog;
-    gint ret;
 
-    dialog = gtk_message_dialog_new (NULL, 0, GTK_MESSAGE_ERROR,
-                                     GTK_BUTTONS_NONE, "%s", primary);
+    dialog = gtk_message_dialog_new (NULL, 0,
+                                     GTK_MESSAGE_ERROR,
+                                     GTK_BUTTONS_NONE,
+                                     "%s", primary);
 
     gtk_window_set_title (GTK_WINDOW (dialog), g_get_application_name ());
     gtk_window_set_icon_name (GTK_WINDOW (dialog), MT_ICON_NAME);
@@ -136,34 +98,17 @@ mt_common_show_dialog (const gchar  *primary,
 
     switch (type)
     {
-        case MT_MESSAGE_QUESTION:
-            g_object_set (dialog, "message-type", GTK_MESSAGE_QUESTION, NULL);
-            gtk_dialog_add_buttons (GTK_DIALOG (dialog),
-                                    GTK_STOCK_YES, GTK_RESPONSE_YES,
-                                    GTK_STOCK_NO, GTK_RESPONSE_NO,
-                                    NULL);
-            break;
-        case MT_MESSAGE_WARNING:
+        case MT_MESSAGE_TYPE_WARNING:
             g_object_set (dialog, "message-type", GTK_MESSAGE_WARNING, NULL);
             gtk_dialog_add_button (GTK_DIALOG (dialog),
                                    GTK_STOCK_OK, GTK_RESPONSE_OK);
             break;
-        case MT_MESSAGE_LOGOUT:
-            gtk_dialog_add_buttons (GTK_DIALOG (dialog),
-                                    _("Enable and Log Out"), GTK_RESPONSE_ACCEPT,
-                                    GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
-                                    NULL);
-            gtk_dialog_set_default_response (GTK_DIALOG (dialog),
-                                             GTK_RESPONSE_ACCEPT);
-            break;
-        case MT_MESSAGE_ERROR:
+        case MT_MESSAGE_TYPE_ERROR:
         default:
             gtk_dialog_add_button (GTK_DIALOG (dialog),
                                    GTK_STOCK_OK, GTK_RESPONSE_OK);
     }
 
-    ret = gtk_dialog_run (GTK_DIALOG (dialog));
+    gtk_dialog_run (GTK_DIALOG (dialog));
     gtk_widget_destroy (dialog);
-
-    return ret;
 }

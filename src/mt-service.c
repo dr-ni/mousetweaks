@@ -58,7 +58,7 @@ mt_service_init (MtService *service)
                                                         MT_TYPE_SERVICE,
                                                         MtServicePrivate);
 
-    priv->click_type = DWELL_CLICK_TYPE_SINGLE;
+    priv->click_type = MT_DWELL_CLICK_TYPE_SINGLE;
     priv->owner_id = g_bus_own_name (G_BUS_TYPE_SESSION,
                                      MOUSETWEAKS_DBUS_NAME,
                                      G_BUS_NAME_OWNER_FLAGS_NONE,
@@ -84,7 +84,7 @@ mt_service_set_property (GObject      *object,
     switch (prop_id)
     {
         case PROP_CLICK_TYPE:
-            service->priv->click_type = g_value_get_int (value);
+            service->priv->click_type = g_value_get_enum (value);
             break;
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -102,7 +102,7 @@ mt_service_get_property (GObject    *object,
     switch (prop_id)
     {
         case PROP_CLICK_TYPE:
-            g_value_set_int (value, service->priv->click_type);
+            g_value_set_enum (value, service->priv->click_type);
             break;
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -138,11 +138,15 @@ mt_service_class_init (MtServiceClass *klass)
     object_class->set_property = mt_service_set_property;
     object_class->dispose = mt_service_dispose;
 
-    g_object_class_install_property (object_class, PROP_CLICK_TYPE,
-        g_param_spec_int ("click-type", "Click type",
-                          "The currently active click type",
-                          0, 3, DWELL_CLICK_TYPE_SINGLE,
-                          G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS));
+    g_object_class_install_property (object_class,
+                                     PROP_CLICK_TYPE,
+                                     g_param_spec_enum ("click-type",
+                                                        "Click type",
+                                                        "The currently active click type",
+                                                        MT_TYPE_DWELL_CLICK_TYPE,
+                                                        MT_DWELL_CLICK_TYPE_SINGLE,
+                                                        G_PARAM_READWRITE |
+                                                        G_PARAM_STATIC_STRINGS));
 
     g_type_class_add_private (klass, sizeof (MtServicePrivate));
 }
@@ -264,8 +268,8 @@ mt_service_get_default (void)
 }
 
 void
-mt_service_set_click_type (MtService  *service,
-                           MtClickType type)
+mt_service_set_click_type (MtService       *service,
+                           MtDwellClickType type)
 {
     g_return_if_fail (MT_IS_SERVICE (service));
 
@@ -276,7 +280,7 @@ mt_service_set_click_type (MtService  *service,
     }
 }
 
-MtClickType
+MtDwellClickType
 mt_service_get_click_type (MtService *service)
 {
     g_return_val_if_fail (MT_IS_SERVICE (service), -1);

@@ -28,22 +28,22 @@
 typedef struct _DwellData DwellData;
 struct _DwellData
 {
-    GSettings   *settings;
-    GDBusProxy  *proxy;
-    GtkBuilder  *ui;
-    GtkWidget   *box;
-    GtkWidget   *ct_box;
-    GtkWidget   *enable;
-    GtkWidget   *button;
-    GdkPixbuf   *click[4];
-    gint         button_width;
-    gint         button_height;
-    MtClickType  cct;
-    gboolean     active;
-    GTimer      *timer;
-    guint        tid;
-    gdouble      delay;
-    gdouble      elapsed;
+    GSettings          *settings;
+    GDBusProxy         *proxy;
+    GtkBuilder         *ui;
+    GtkWidget          *box;
+    GtkWidget          *ct_box;
+    GtkWidget          *enable;
+    GtkWidget          *button;
+    GdkPixbuf          *click[4];
+    gint                button_width;
+    gint                button_height;
+    MtDwellClickType    cct;
+    gboolean            active;
+    GTimer             *timer;
+    guint               tid;
+    gdouble             delay;
+    gdouble             elapsed;
 };
 
 static const gchar *img_widgets[] =
@@ -118,8 +118,8 @@ mt_proxy_owner_notify (GObject    *object,
 }
 
 static void
-handle_click_type_changed (DwellData  *dd,
-                           MtClickType click_type)
+handle_click_type_changed (DwellData       *dd,
+                           MtDwellClickType click_type)
 {
     GtkToggleButton *button;
     GSList *group;
@@ -186,8 +186,8 @@ mt_proxy_init (DwellData *dd)
 }
 
 static void
-mt_proxy_set_click_type (GDBusProxy *proxy,
-                         MtClickType click_type)
+mt_proxy_set_click_type (GDBusProxy      *proxy,
+                         MtDwellClickType click_type)
 {
     GVariant *ct;
 
@@ -448,7 +448,7 @@ preferences_dialog (BonoboUIComponent *component,
     {
          mt_common_show_dialog (_("Failed to Open the Univeral Access Panel"),
                                 error->message,
-                                MT_MESSAGE_WARNING);
+                                MT_MESSAGE_TYPE_WARNING);
          g_error_free (error);
     }
 }
@@ -605,7 +605,7 @@ fill_applet (PanelApplet *applet)
     /* dbus */
     mt_proxy_init (dd);
 
-    dd->cct = DWELL_CLICK_TYPE_SINGLE;
+    dd->cct = MT_DWELL_CLICK_TYPE_SINGLE;
     dd->timer = g_timer_new ();
 
     /* about dialog */
@@ -626,13 +626,13 @@ fill_applet (PanelApplet *applet)
                       G_CALLBACK (dwell_time_changed), dd);
 
     /* icons */
-    dd->click[DWELL_CLICK_TYPE_SINGLE] =
+    dd->click[MT_DWELL_CLICK_TYPE_SINGLE] =
         gdk_pixbuf_new_from_file (DATADIR "/single-click.png", NULL);
-    dd->click[DWELL_CLICK_TYPE_DOUBLE] =
+    dd->click[MT_DWELL_CLICK_TYPE_DOUBLE] =
         gdk_pixbuf_new_from_file (DATADIR "/double-click.png", NULL);
-    dd->click[DWELL_CLICK_TYPE_DRAG] =
+    dd->click[MT_DWELL_CLICK_TYPE_DRAG] =
         gdk_pixbuf_new_from_file (DATADIR "/drag-click.png", NULL);
-    dd->click[DWELL_CLICK_TYPE_RIGHT] =
+    dd->click[MT_DWELL_CLICK_TYPE_RIGHT] =
         gdk_pixbuf_new_from_file (DATADIR "/right-click.png", NULL);
 
     /* applet initialization */

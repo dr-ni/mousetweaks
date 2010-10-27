@@ -36,6 +36,9 @@ menu_DATA = $(pca_menu) $(dca_menu)
 convertdir = $(datadir)/GConf/gsettings
 convert_DATA = mousetweaks.convert
 
+gsettings_ENUM_NAMESPACE = org.gnome.mousetweaks
+gsettings_ENUM_FILES = $(top_srcdir)/src/mt-common.h
+
 gsettings_in_files = org.gnome.mousetweaks.gschema.xml.in $(pca_schema)
 gsettings_SCHEMAS = $(gsettings_in_files:.xml.in=.xml)
 @INTLTOOL_XML_NOMERGE_RULE@
@@ -46,6 +49,7 @@ EXTRA_DIST =                \
     $(menu_DATA)            \
     $(ui_DATA)              \
     $(gsettings_in_files)   \
+    $(gsettings_ENUM_FILES) \
     $(convert_DATA)
 
 DISTCLEANFILES =            \

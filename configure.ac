@@ -1,4 +1,4 @@
-AC_PREREQ(2.57)
+AC_PREREQ(2.63)
 AC_INIT([mousetweaks],
 	[2.91.2],
 	[http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks])
@@ -8,9 +8,9 @@ AC_CONFIG_HEADER([config.h])
 AC_CONFIG_MACRO_DIR([m4])
 AC_PREFIX_DEFAULT([/usr])
 
-AM_INIT_AUTOMAKE([1.9])
-AM_MAINTAINER_MODE
-m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
+AM_INIT_AUTOMAKE([1.11 -Wno-portability])
+AM_SILENT_RULES([yes])
+AM_MAINTAINER_MODE([enable])
 
 AC_PROG_CC
 AC_PROG_INSTALL
@@ -84,6 +84,11 @@ if test "$build_dca" = yes -o "$build_pca" = yes; then
 	PKG_CHECK_MODULES(PANELAPPLET, libpanelapplet-2.0)
 fi
 
+dnl *** GLib tools ***
+
+GLIB_MKENUMS="$($PKG_CONFIG --variable=glib_mkenums glib-2.0)"
+AC_SUBST([GLIB_MKENUMS])
+
 dnl *** output ***
 
 AC_CONFIG_FILES([
@@ -98,9 +103,9 @@ AC_CONFIG_FILES([
 
 AC_OUTPUT
 
-echo "
+AC_MSG_RESULT([
 Building panel applets:
 -----------------------
   pointer-capture: $build_pca
   dwell-click:     $build_dca
-"
+])

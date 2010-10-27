@@ -14,6 +14,7 @@ endif
 bin_PROGRAMS = mousetweaks $(pca_bin) $(dca_bin)
 
 mousetweaks_SOURCES =       \
+    $(BUILT_SOURCES)        \
     mt-main.c               \
     mt-common.c             \
     mt-common.h             \
@@ -44,6 +45,7 @@ mousetweaks_LDADD =         \
     $(DEPENDENCIES_LIBS)
 
 dwell_click_applet_SOURCES =    \
+    $(BUILT_SOURCES)            \
     dwell-click-applet.c        \
     mt-common.c                 \
     mt-common.h
@@ -66,5 +68,32 @@ pointer_capture_applet_CFLAGS =     \
 
 pointer_capture_applet_LDADD =      \
     $(PANELAPPLET_LIBS)
+
+BUILT_SOURCES =                     \
+    mt-enum-types.c                 \
+    mt-enum-types.h
+
+EXTRA_DIST =                        \
+    mt-enum-types.c.template        \
+    mt-enum-types.h.template
+
+CLEANFILES =                        \
+    stamp-mt-enum-types.h           \
+    $(BUILT_SOURCES)
+
+# GLib mkenum
+mt-enum-types.h: stamp-mt-enum-types.h
+	@true
+
+stamp-mt-enum-types.h: mt-enum-types.h.template mt-common.h
+	$(AM_V_GEN) $(GLIB_MKENUMS) --template $< $(filter-out $<,$^) > xgen-gtbh \
+	&& (cmp -s xgen-gtbh mt-enum-types.h || cp xgen-gtbh mt-enum-types.h) \
+	&& rm -f xgen-gtbh \
+	&& echo timestamp > $(@F)
+
+mt-enum-types.c: mt-enum-types.c.template mt-common.h
+	$(AM_V_GEN) $(GLIB_MKENUMS) --template $< $(filter-out $<,$^) > xgen-gtbc \
+	&& (cmp -s xgen-gtbc mt-enum-types.c || cp xgen-gtbc mt-enum-types.c) \
+	&& rm -f xgen-gtbc
 
 -include $(top_srcdir)/git.mk

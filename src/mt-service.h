@@ -44,9 +44,9 @@ GType             mt_service_get_type          (void) G_GNUC_CONST;
 
 MtService *       mt_service_get_default       (void);
 
-MtClickType       mt_service_get_click_type    (MtService  *service);
-void              mt_service_set_click_type    (MtService  *service,
-                                                MtClickType type);
+MtDwellClickType  mt_service_get_click_type    (MtService       *service);
+void              mt_service_set_click_type    (MtService       *service,
+                                                MtDwellClickType type);
 
 G_END_DECLS
 

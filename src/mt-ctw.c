@@ -29,13 +29,6 @@
 
 static GtkBuilder *builder;
 
-enum
-{
-    BUTTON_STYLE_TEXT = 0,
-    BUTTON_STYLE_ICON,
-    BUTTON_STYLE_BOTH
-};
-
 static void
 service_click_type_changed (MtService *service, GParamSpec *pspec)
 {
@@ -77,31 +70,45 @@ ctw_style_changed (MtSettings *ms, GParamSpec *pspec)
 
         switch (ms->ctw_style)
         {
-            case BUTTON_STYLE_BOTH:
+            case MT_CLICK_TYPE_WINDOW_STYLE_BOTH:
                 g_object_set (icon, "yalign", 1.0, NULL);
                 gtk_widget_show (icon);
                 g_object_set (label, "yalign", 0.0, NULL);
                 gtk_widget_show (label);
                 break;
-            case BUTTON_STYLE_TEXT:
+            case MT_CLICK_TYPE_WINDOW_STYLE_TEXT:
                 gtk_widget_hide (icon);
                 g_object_set (icon, "yalign", 0.5, NULL);
                 gtk_widget_show (label);
                 g_object_set (label, "yalign", 0.5, NULL);
                 break;
-            case BUTTON_STYLE_ICON:
+            case MT_CLICK_TYPE_WINDOW_STYLE_ICON:
                 gtk_widget_show (icon);
                 g_object_set (icon, "yalign", 0.5, NULL);
                 gtk_widget_hide (label);
                 g_object_set (label, "yalign", 0.5, NULL);
-            default:
                 break;
         }
     }
 }
 
 static void
-ctw_button_cb (GtkToggleButton *button, gpointer data)
+ctw_orientation_changed (MtSettings *ms, GParamSpec *pspec)
+{
+    if (ms->ctw_orientation == MT_CLICK_TYPE_WINDOW_ORIENTATION_HORIZONTAL)
+    {
+        gtk_orientable_set_orientation (GTK_ORIENTABLE (O ("box")),
+                                        GTK_ORIENTATION_HORIZONTAL);
+    }
+    else
+    {
+        gtk_orientable_set_orientation (GTK_ORIENTABLE (O ("box")),
+                                        GTK_ORIENTATION_VERTICAL);
+    }
+}
+
+static void
+ctw_button_toggled (GtkToggleButton *button, gpointer data)
 {
     GSList *group;
 
@@ -118,28 +125,82 @@ ctw_context_menu (GtkWidget *widget, GdkEventButton *bev, gpointer data)
 {
     if (bev->button == 3)
     {
-        gtk_menu_popup (GTK_MENU (O ("popup")), 0, 0, 0, 0, bev->button, bev->time);
+        gtk_menu_popup (GTK_MENU (O ("popup")),
+                        0, 0, 0, 0,
+                        bev->button, bev->time);
         return TRUE;
     }
     return FALSE;
 }
 
 static void
-ctw_menu_toggled (GtkCheckMenuItem *item, gpointer data)
+ctw_button_style_icon_toggled (GtkCheckMenuItem *item, gpointer data)
 {
-    GSList *group;
-
     if (gtk_check_menu_item_get_active (item))
     {
-        group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (item));
-        g_object_set (mt_settings_get_default (),
-                      "ctw-style", g_slist_index (group, item),
-                      NULL);
+        g_object_set (mt_settings_get_default (), "ctw-style",
+                      MT_CLICK_TYPE_WINDOW_STYLE_ICON, NULL);
     }
 }
 
+static void
+ctw_button_style_text_toggled (GtkCheckMenuItem *item, gpointer data)
+{
+    if (gtk_check_menu_item_get_active (item))
+    {
+        g_object_set (mt_settings_get_default (), "ctw-style",
+                      MT_CLICK_TYPE_WINDOW_STYLE_TEXT, NULL);
+    }
+}
+
+static void
+ctw_button_style_both_toggled (GtkCheckMenuItem *item, gpointer data)
+{
+    if (gtk_check_menu_item_get_active (item))
+    {
+        g_object_set (mt_settings_get_default (), "ctw-style",
+                      MT_CLICK_TYPE_WINDOW_STYLE_BOTH, NULL);
+    }
+}
+
+static void
+ctw_orientation_horizontal_toggled (GtkCheckMenuItem *item, gpointer data)
+{
+    if (gtk_check_menu_item_get_active (item))
+    {
+        g_object_set (mt_settings_get_default (), "ctw-orientation",
+                      MT_CLICK_TYPE_WINDOW_ORIENTATION_HORIZONTAL, NULL);
+    }
+}
+
+static void
+ctw_orientation_vertical_toggled (GtkCheckMenuItem *item, gpointer data)
+{
+    if (gtk_check_menu_item_get_active (item))
+    {
+        g_object_set (mt_settings_get_default (), "ctw-orientation",
+                      MT_CLICK_TYPE_WINDOW_ORIENTATION_VERTICAL, NULL);
+    }
+}
+
+static void
+ctw_menu_label_set_bold (GtkWidget *item)
+{
+    GtkWidget *label;
+    PangoAttrList *list;
+    PangoAttribute *attr;
+
+    list = pango_attr_list_new ();
+    attr = pango_attr_weight_new (PANGO_WEIGHT_BOLD);
+    pango_attr_list_insert (list, attr);
+
+    label = gtk_bin_get_child (GTK_BIN (item));
+    gtk_label_set_attributes (GTK_LABEL (label), list);
+    pango_attr_list_unref (list);
+}
+
 static gboolean
-ctw_delete_cb (GtkWidget *win, GdkEvent *ev, gpointer data)
+ctw_window_delete (GtkWidget *widget, GdkEvent *event, gpointer data)
 {
     g_object_set (mt_settings_get_default (), "ctw-visible", FALSE, NULL);
     return TRUE;
@@ -153,9 +214,7 @@ mt_ctw_init (gint x, gint y)
     GtkWidget *ctw;
     GObject *obj;
     GError *error = NULL;
-    const gchar *b[] = { "single", "double", "drag", "right" };
-    GSList *group;
-    gpointer data;
+    const gchar *button_names[] = { "single", "double", "drag", "right" };
     gint i;
 
     /* load UI */
@@ -173,15 +232,18 @@ mt_ctw_init (gint x, gint y)
     ctw = mt_ctw_get_window ();
     gtk_window_stick (GTK_WINDOW (ctw));
     gtk_window_set_keep_above (GTK_WINDOW (ctw), TRUE);
-    g_signal_connect (ctw, "delete-event", G_CALLBACK (ctw_delete_cb), NULL);
+    g_signal_connect (ctw, "delete-event",
+                      G_CALLBACK (ctw_window_delete), NULL);
 
     /* init buttons */
     for (i = 0; i < N_CLICK_TYPES; i++)
     {
-        obj = O (b[i]);
+        obj = O (button_names[i]);
         gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (obj), FALSE);
-        g_signal_connect (obj, "toggled", G_CALLBACK (ctw_button_cb), NULL);
-        g_signal_connect (obj, "button-press-event", G_CALLBACK (ctw_context_menu), NULL);
+        g_object_connect (obj,
+                          "signal::toggled", G_CALLBACK (ctw_button_toggled), NULL,
+                          "signal::button-press-event", G_CALLBACK (ctw_context_menu), NULL,
+                          NULL);
     }
 
     /* service */
@@ -193,27 +255,59 @@ mt_ctw_init (gint x, gint y)
 
     /* settings */
     ms = mt_settings_get_default ();
-    g_signal_connect (ms, "notify::ctw-visible",
-                      G_CALLBACK (ctw_visibility_changed), NULL);
-    g_signal_connect (ms, "notify::dwell-enabled",
-                      G_CALLBACK (ctw_visibility_changed), NULL);
-    g_signal_connect (ms, "notify::dwell-mode",
-                      G_CALLBACK (ctw_sensitivity_changed), NULL);
-    g_signal_connect (ms, "notify::ctw-mode",
-                      G_CALLBACK (ctw_style_changed), NULL);
+    g_object_connect (ms,
+                      "signal::notify::ctw-visible", G_CALLBACK (ctw_visibility_changed), NULL,
+                      "signal::notify::ctw-style", G_CALLBACK (ctw_style_changed), NULL,
+                      "signal::notify::ctw-orientation", G_CALLBACK (ctw_orientation_changed), NULL,
+                      "signal::notify::dwell-enabled", G_CALLBACK (ctw_visibility_changed), NULL,
+                      "signal::notify::dwell-mode", G_CALLBACK (ctw_sensitivity_changed), NULL,
+                      NULL);
 
     ctw_visibility_changed (ms, NULL);
     ctw_sensitivity_changed (ms, NULL);
 
-    /* init context menu */
-    obj = O ("both");
-    g_signal_connect (obj, "toggled", G_CALLBACK (ctw_menu_toggled), NULL);
-    g_signal_connect (O ("text"), "toggled",  G_CALLBACK (ctw_menu_toggled), NULL);
-    g_signal_connect (O ("icon"), "toggled",  G_CALLBACK (ctw_menu_toggled), NULL);
+    /* context menu: button style */
+    switch (ms->ctw_style)
+    {
+        case MT_CLICK_TYPE_WINDOW_STYLE_BOTH:
+            gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (O ("menu_both")), TRUE);
+            break;
+        case MT_CLICK_TYPE_WINDOW_STYLE_TEXT:
+            gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (O ("menu_text")), TRUE);
+            break;
+        case MT_CLICK_TYPE_WINDOW_STYLE_ICON:
+            gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (O ("menu_icon")), TRUE);
+            break;
+    }
 
-    group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (obj));
-    data = g_slist_nth_data (group, ms->ctw_style);
-    gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (data), TRUE);
+    g_signal_connect (O ("menu_both"), "toggled",
+                      G_CALLBACK (ctw_button_style_both_toggled), NULL);
+    g_signal_connect (O ("menu_text"), "toggled",
+                      G_CALLBACK (ctw_button_style_text_toggled), NULL);
+    g_signal_connect (O ("menu_icon"), "toggled",
+                      G_CALLBACK (ctw_button_style_icon_toggled), NULL);
+
+    ctw_style_changed (ms, NULL);
+    ctw_menu_label_set_bold (W ("menu_orientation"));
+
+    /* context menu: orientation */
+    switch (ms->ctw_orientation)
+    {
+        case MT_CLICK_TYPE_WINDOW_ORIENTATION_HORIZONTAL:
+            gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (O ("menu_horizontal")), TRUE);
+            break;
+        case MT_CLICK_TYPE_WINDOW_ORIENTATION_VERTICAL:
+            gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (O ("menu_vertical")), TRUE);
+            break;
+    }
+
+    g_signal_connect (O ("menu_horizontal"), "toggled",
+                      G_CALLBACK (ctw_orientation_horizontal_toggled), NULL);
+    g_signal_connect (O ("menu_vertical"), "toggled",
+                      G_CALLBACK (ctw_orientation_vertical_toggled), NULL);
+
+    ctw_orientation_changed (ms, NULL);
+    ctw_menu_label_set_bold (W ("menu_button_style"));
 
     /* XXX: remember window position */
     if (x != -1 && y != -1)

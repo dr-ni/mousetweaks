@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-21 01:02+0200\n"
-"PO-Revision-Date: 2010-10-21 01:05+0200\n"
+"POT-Creation-Date: 2010-10-28 09:00+0200\n"
+"PO-Revision-Date: 2010-10-28 09:01+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: he\n"
 "MIME-Version: 1.0\n"
@@ -28,23 +28,23 @@ msgstr ""
 msgid "Click Type Window"
 msgstr "חלון סוג לחיצה"
 
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
 msgid "Double Click"
 msgstr "לחיצה כפולה"
 
-#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:3
 msgid "Drag Click"
 msgstr "לחיצת גרירה"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:585
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:602
 msgid "Enable dwell click"
 msgstr "Enable dwell click"
 
-#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:8
 msgid "Right Click"
 msgstr "לחיצה ימנית"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:9
 msgid "Single Click"
 msgstr "לחיצה בודדת"
 
@@ -100,23 +100,39 @@ msgstr "_רוחב:"
 msgid "pixels"
 msgstr "פיקסלים"
 
-#: ../data/mousetweaks.ui.h:3
+#: ../data/mousetweaks.ui.h:1
+msgid "Button Style"
+msgstr "סגנון הלחצנים"
+
+#: ../data/mousetweaks.ui.h:4
 msgid "Dwell Click Type"
 msgstr "סוג לחיצת השהיה"
 
 #: ../data/mousetweaks.ui.h:5
-msgid "Show Icons and Text"
-msgstr "הצגת סמלים וטקסט"
+msgid "Horizontal"
+msgstr "אופקי"
 
 #: ../data/mousetweaks.ui.h:6
-msgid "Show Icons only"
-msgstr "הצגת סמלים בלבד"
+msgid "Icons only"
+msgstr "סמלים בלבד"
 
 #: ../data/mousetweaks.ui.h:7
-msgid "Show Text only"
-msgstr "הצגת טקסט בלבד"
+msgid "Orientation"
+msgstr "כיווניות"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:590
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "טקסט וסמלים"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Text only"
+msgstr "טקסט בלבד"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Vertical"
+msgstr "אנכי"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:586
 msgid "Dwell Click"
 msgstr "לחיצת השהיה"
 
@@ -145,114 +161,20 @@ msgid "_Preferences"
 msgstr "ה_עדפות"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-msgid "Animate cursor"
-msgstr "Animate cursor"
+msgid "Button style of the click-type window."
+msgstr "Button style of the click-type window."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
-msgid ""
-"Button style in the click type window. (\"0\" = Text, \"1\" = Icon, \"2\" = "
-"Both)"
-msgstr ""
-"Button style in the click type window. (\"0\" = Text, \"1\" = Icon, \"2\" = "
-"Both)"
+msgid "Click-type window orientation"
+msgstr "Click-type window orientation"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-msgid "Click type window style"
-msgstr "Click type window style"
+msgid "Click-type window style"
+msgstr "Click-type window style"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-msgid ""
-"Direction to perform a double click. (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Direction to perform a double click. (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-msgid ""
-"Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, \"2\" "
-"= Up, \"3\" = Down)"
-msgstr ""
-"Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, \"2\" "
-"= Up, \"3\" = Down)"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
-msgid ""
-"Direction to perform a single click. (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Direction to perform a single click. (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:7
-msgid ""
-"Direction to perform dragging. (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3"
-"\" = Down)"
-msgstr ""
-"Direction to perform dragging. (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3"
-"\" = Down)"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:8
-msgid "Distance in pixels before movement will be recognized."
-msgstr "Distance in pixels before movement will be recognized."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:9
-msgid "Dwell click mode"
-msgstr "Dwell click mode"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:10
-msgid "Dwell click time"
-msgstr "Dwell click time"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:11
-msgid "Gesture double click"
-msgstr "Gesture double click"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:12
-msgid "Gesture drag click"
-msgstr "Gesture drag click"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:13
-msgid "Gesture secondary click"
-msgstr "Gesture secondary click"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:14
-msgid "Gesture single click"
-msgstr "Gesture single click"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:15
-msgid "Movement threshold"
-msgstr "Movement threshold"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:16
-msgid "Secondary click time"
-msgstr "Secondary click time"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:17
-msgid "Show click type window"
-msgstr "Show click type window"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:18
-msgid "Show click type window."
-msgstr "Show click type window."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:19
-msgid "Show elapsed time as a cursor overlay."
-msgstr "Show elapsed time as a cursor overlay."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:20
-msgid ""
-"The active dwell click mode. (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr ""
-"The active dwell click mode. (\"0\" = Window mode, \"1\" = Gesture mode)"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:21
-msgid "Time in seconds before a click is triggered."
-msgstr "Time in seconds before a click is triggered."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:22
-msgid "Time in seconds before a simulated secondary click is triggered."
-msgstr "Time in seconds before a simulated secondary click is triggered."
+msgid "Orientation of the click-type window."
+msgstr "Orientation of the click-type window."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
@@ -282,66 +204,58 @@ msgstr "Size of capture area"
 msgid "Width of the capture area in pixels."
 msgstr "Width of the capture area in pixels."
 
-#: ../src/mt-main.c:587
+#: ../src/mt-main.c:604
 msgid "Enable simulated secondary click"
 msgstr "Enable simulated secondary click"
 
-#: ../src/mt-main.c:589
+#: ../src/mt-main.c:606
 msgid "Time to wait before a dwell click"
 msgstr "Time to wait before a dwell click"
 
-#: ../src/mt-main.c:591
+#: ../src/mt-main.c:608
 msgid "Time to wait before a simulated secondary click"
 msgstr "Time to wait before a simulated secondary click"
 
-#: ../src/mt-main.c:593
+#: ../src/mt-main.c:610
 msgid "Set the active dwell mode"
 msgstr "Set the active dwell mode"
 
-#: ../src/mt-main.c:595
+#: ../src/mt-main.c:612
 msgid "Show a click-type window"
 msgstr "Show a click-type window"
 
-#: ../src/mt-main.c:597
+#: ../src/mt-main.c:614
 msgid "Click-type window X position"
 msgstr "Click-type window X position"
 
-#: ../src/mt-main.c:599
+#: ../src/mt-main.c:616
 msgid "Click-type window Y position"
 msgstr "Click-type window Y position"
 
-#: ../src/mt-main.c:601
+#: ../src/mt-main.c:618
 msgid "Ignore small pointer movements"
 msgstr "Ignore small pointer movements"
 
-#: ../src/mt-main.c:603
+#: ../src/mt-main.c:620
 msgid "Shut down mousetweaks"
 msgstr "Shut down mousetweaks"
 
-#: ../src/mt-main.c:605
-msgid "Disable cursor animations"
-msgstr "Disable cursor animations"
-
-#: ../src/mt-main.c:607
+#: ../src/mt-main.c:622
 msgid "Start mousetweaks as a daemon"
 msgstr "Start mousetweaks as a daemon"
 
-#: ../src/mt-main.c:609
+#: ../src/mt-main.c:624
 msgid "Start mousetweaks in login mode"
 msgstr "Start mousetweaks in login mode"
 
 #. parse
-#: ../src/mt-main.c:629
+#: ../src/mt-main.c:643
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME mouse accessibility daemon"
 
 #: ../src/mt-common.c:74
 msgid "Failed to Display Help"
 msgstr "אירע כשל בהצגת העזרה"
-
-#: ../src/mt-common.c:113
-msgid "Enable and Log Out"
-msgstr "הפעלה ויציאה"
 
 #: ../src/pointer-capture-applet.c:71
 msgid "Capture area"
@@ -359,9 +273,103 @@ msgstr "יישומון לכידת סמן"
 msgid "Locked"
 msgstr "נעול"
 
-#: ../src/dwell-click-applet.c:453
+#: ../src/dwell-click-applet.c:449
 msgid "Failed to Open the Univeral Access Panel"
 msgstr "אירע כשל בפתיחת לוח הגישה האוניברסלית"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "הצגת סמלים וטקסט"
+
+#~ msgid "Animate cursor"
+#~ msgstr "Animate cursor"
+
+#~ msgid ""
+#~ "Button style in the click type window. (\"0\" = Text, \"1\" = Icon, \"2\" "
+#~ "= Both)"
+#~ msgstr ""
+#~ "Button style in the click type window. (\"0\" = Text, \"1\" = Icon, \"2\" "
+#~ "= Both)"
+
+#~ msgid ""
+#~ "Direction to perform a double click. (\"0\" = Left, \"1\" = Right, \"2\" "
+#~ "= Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direction to perform a double click. (\"0\" = Left, \"1\" = Right, \"2\" "
+#~ "= Up, \"3\" = Down)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
+
+#~ msgid ""
+#~ "Direction to perform a single click. (\"0\" = Left, \"1\" = Right, \"2\" "
+#~ "= Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direction to perform a single click. (\"0\" = Left, \"1\" = Right, \"2\" "
+#~ "= Up, \"3\" = Down)"
+
+#~ msgid ""
+#~ "Direction to perform dragging. (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+#~ "\"3\" = Down)"
+#~ msgstr ""
+#~ "Direction to perform dragging. (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+#~ "\"3\" = Down)"
+
+#~ msgid "Distance in pixels before movement will be recognized."
+#~ msgstr "Distance in pixels before movement will be recognized."
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Dwell click mode"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Dwell click time"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Gesture double click"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Gesture drag click"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Gesture secondary click"
+
+#~ msgid "Gesture single click"
+#~ msgstr "Gesture single click"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Movement threshold"
+
+#~ msgid "Secondary click time"
+#~ msgstr "Secondary click time"
+
+#~ msgid "Show click type window"
+#~ msgstr "Show click type window"
+
+#~ msgid "Show click type window."
+#~ msgstr "Show click type window."
+
+#~ msgid "Show elapsed time as a cursor overlay."
+#~ msgstr "Show elapsed time as a cursor overlay."
+
+#~ msgid ""
+#~ "The active dwell click mode. (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr ""
+#~ "The active dwell click mode. (\"0\" = Window mode, \"1\" = Gesture mode)"
+
+#~ msgid "Time in seconds before a click is triggered."
+#~ msgstr "Time in seconds before a click is triggered."
+
+#~ msgid "Time in seconds before a simulated secondary click is triggered."
+#~ msgstr "Time in seconds before a simulated secondary click is triggered."
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "Disable cursor animations"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "הפעלה ויציאה"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"
@@ -481,9 +489,6 @@ msgstr "אירע כשל בפתיחת לוח הגישה האוניברסלית"
 
 #~ msgid "Failed to Launch Mouse Preferences"
 #~ msgstr "אירע כשל בהפעלת מאפייני העכבר"
-
-#~ msgid "Button style"
-#~ msgstr "Button style"
 
 #~ msgid "Enable secondary click"
 #~ msgstr "Enable secondary click"

@@ -49,8 +49,7 @@ typedef struct _MtCliArgs
     gdouble  ssc_time;
     gdouble  dwell_time;
     gchar   *mode;
-    gint     pos_x;
-    gint     pos_y;
+    gchar   *geometry;
     gint     threshold;
     gboolean ssc_enabled;
     gboolean dwell_enabled;
@@ -542,6 +541,7 @@ mt_main_sig_handler (MtSigHandler *sigh,
                      gint          signal_id,
                      gpointer      data)
 {
+    mt_ctw_save_geometry ();
     signal_handler (signal_id);
 }
 
@@ -599,9 +599,9 @@ mt_parse_options (int *argc, char ***argv)
     GOptionEntry entries[] =
     {
         {"dwell", 0, 0, G_OPTION_ARG_NONE, &ca.dwell_enabled,
-            N_("Enable dwell click"), 0},
+            N_("Enable dwell click"), NULL},
         {"ssc", 0, 0, G_OPTION_ARG_NONE, &ca.ssc_enabled,
-            N_("Enable simulated secondary click"), 0},
+            N_("Enable simulated secondary click"), NULL},
         {"dwell-time", 0, 0, G_OPTION_ARG_DOUBLE, &ca.dwell_time,
             N_("Time to wait before a dwell click"), "[0.2-3.0]"},
         {"ssc-time", 0, 0, G_OPTION_ARG_DOUBLE, &ca.ssc_time,
@@ -609,19 +609,17 @@ mt_parse_options (int *argc, char ***argv)
         {"dwell-mode", 'm', 0, G_OPTION_ARG_STRING, &ca.mode,
             N_("Set the active dwell mode"), "[window|gesture]"},
         {"show-ctw", 'c', 0, G_OPTION_ARG_NONE, &ca.ctw,
-            N_("Show a click-type window"), 0},
-        {"ctw-x", 'x', 0, G_OPTION_ARG_INT, &ca.pos_x,
-            N_("Click-type window X position"), 0},
-        {"ctw-y", 'y', 0, G_OPTION_ARG_INT, &ca.pos_y,
-            N_("Click-type window Y position"), 0},
+            N_("Show a click-type window"), NULL},
         {"threshold", 't', 0, G_OPTION_ARG_INT, &ca.threshold,
             N_("Ignore small pointer movements"), "[0-30]"},
+        {"geometry", 'g', 0, G_OPTION_ARG_STRING, &ca.geometry,
+            N_("Click-type window geometry"), "WIDTHxHEIGHT+X+Y"},
         {"shutdown", 's', 0, G_OPTION_ARG_NONE, &ca.shutdown,
-            N_("Shut down mousetweaks"), 0},
+            N_("Shut down mousetweaks"), NULL},
         {"daemonize", 0, 0, G_OPTION_ARG_NONE, &ca.daemonize,
-            N_("Start mousetweaks as a daemon"), 0},
+            N_("Start mousetweaks as a daemon"), NULL},
         {"login", 0, 0, G_OPTION_ARG_NONE, &ca.login,
-            N_("Start mousetweaks in login mode"), 0},
+            N_("Start mousetweaks in login mode"), NULL},
         { NULL }
     };
 
@@ -629,8 +627,7 @@ mt_parse_options (int *argc, char ***argv)
     ca.ssc_time      = -1.;
     ca.dwell_time    = -1.;
     ca.mode          = NULL;
-    ca.pos_x         = -1;
-    ca.pos_y         = -1;
+    ca.geometry      = NULL;
     ca.threshold     = -1;
     ca.ssc_enabled   = FALSE;
     ca.dwell_enabled = FALSE;
@@ -724,9 +721,14 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
 
         g_free (cli_args.mode);
     }
+    if (cli_args.geometry)
+    {
+        g_free (ms->ctw_geometry);
+        ms->ctw_geometry = cli_args.geometry;
+    }
 
     /* init click-type window */
-    if (!mt_ctw_init (cli_args.pos_x, cli_args.pos_y))
+    if (!mt_ctw_init ())
         goto CLEANUP;
 
     /* init cursor animation */

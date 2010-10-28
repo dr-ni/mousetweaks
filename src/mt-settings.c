@@ -37,7 +37,8 @@ enum
     PROP_SSC_ENABLED,
     PROP_CTW_VISIBLE,
     PROP_CTW_STYLE,
-    PROP_CTW_ORIENTATION
+    PROP_CTW_ORIENTATION,
+    PROP_CTW_GEOMETRY
 };
 
 G_DEFINE_TYPE (MtSettings, mt_settings, G_TYPE_OBJECT)
@@ -46,9 +47,11 @@ static void
 mt_settings_init (MtSettings *ms)
 {
     ms->mt_settings = g_settings_new (MOUSETWEAKS_SCHEMA_ID);
+    ms->ctw_geometry = NULL;
 
     BIND_PROP (ms->mt_settings, "ctw-style", KEY_CTW_STYLE);
     BIND_PROP (ms->mt_settings, "ctw-orientation", KEY_CTW_ORIENTATION);
+    BIND_PROP (ms->mt_settings, "ctw-geometry", KEY_CTW_GEOMETRY);
 
     ms->a11y_settings = g_settings_new (A11Y_MOUSE_SCHEMA_ID);
 
@@ -81,6 +84,16 @@ mt_settings_dispose (GObject *object)
     }
 
     G_OBJECT_CLASS (mt_settings_parent_class)->dispose (object);
+}
+
+static void
+mt_settings_finalize (GObject *object)
+{
+    MtSettings *ms = MT_SETTINGS (object);
+
+    g_free (ms->ctw_geometry);
+
+    G_OBJECT_CLASS (mt_settings_parent_class)->finalize (object);
 }
 
 static void
@@ -125,6 +138,10 @@ mt_settings_set_property (GObject      *object,
             break;
         case PROP_CTW_ORIENTATION:
             ms->ctw_orientation = g_value_get_enum (value);
+            break;
+        case PROP_CTW_GEOMETRY:
+            g_free (ms->ctw_geometry);
+            ms->ctw_geometry = g_value_dup_string (value);
             break;
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
@@ -174,6 +191,9 @@ mt_settings_get_property (GObject    *object,
         case PROP_CTW_ORIENTATION:
             g_value_set_enum (value, ms->ctw_orientation);
             break;
+        case PROP_CTW_GEOMETRY:
+            g_value_set_string (value, ms->ctw_geometry);
+            break;
         default:
             G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
     }
@@ -188,6 +208,7 @@ mt_settings_class_init (MtSettingsClass *klass)
     object_class->set_property = mt_settings_set_property;
     object_class->get_property = mt_settings_get_property;
     object_class->dispose = mt_settings_dispose;
+    object_class->finalize = mt_settings_finalize;
 
     g_object_class_install_property (object_class,
                                      PROP_DWELL_ENABLED,
@@ -269,6 +290,12 @@ mt_settings_class_init (MtSettingsClass *klass)
                                                         MT_TYPE_CLICK_TYPE_WINDOW_ORIENTATION,
                                                         MT_CLICK_TYPE_WINDOW_ORIENTATION_HORIZONTAL,
                                                         PFLAGS));
+    g_object_class_install_property (object_class,
+                                     PROP_CTW_GEOMETRY,
+                                     g_param_spec_string ("ctw-geometry",
+                                                          "Click-type window geometry",
+                                                          "Size and position of the click-type window",
+                                                          NULL, PFLAGS));
 }
 
 MtSettings *

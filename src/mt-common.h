@@ -43,6 +43,7 @@ G_BEGIN_DECLS
 #define MOUSETWEAKS_SCHEMA_ID       "org.gnome.mousetweaks"
 #define KEY_CTW_STYLE               "click-type-window-style"
 #define KEY_CTW_ORIENTATION         "click-type-window-orientation"
+#define KEY_CTW_GEOMETRY            "click-type-window-geometry"
 
 #define A11Y_MOUSE_SCHEMA_ID        "org.gnome.desktop.a11y.mouse"
 #define KEY_DWELL_ENABLED           "dwell-click-enabled"

@@ -10,5 +10,10 @@
       <_summary>Click-type window orientation</_summary>
       <_description>Orientation of the click-type window.</_description>
     </key>
+    <key name="click-type-window-geometry" type="s">
+      <default>''</default>
+      <_summary>Click-type window geometry</_summary>
+      <_description>Size and position of the click-type window. The format is a standard X Window System geometry string.</_description>
+    </key>
   </schema>
 </schemalist>

@@ -6,8 +6,8 @@ mousetweaks \- Accessibility enhancements for pointing devices
 [\-\-dwell] [\-\-ssc]
 [\-\-dwell\-time=FLOAT] [\-\-ssc\-time=FLOAT]
 [\-m|\-\-dwell\-mode=STRING] [\-c|\-\-show\-ctw]
-[\-x|\-\-ctw\-x=INT] [\-y|\-\-ctw\-y=INT]
-[\-t|\-\-threshold=INT] [\-s|\-\-shutdown]
+[\-t|\-\-threshold=INT] [\-g|\-\-geometry]
+[\-s|\-\-shutdown]
 [\-\-daemonize] [\-?|\-\-help]
 .SH DESCRIPTION
 .B mousetweaks
@@ -40,14 +40,12 @@ Select a dwell mode. Available options:
 .B \-c, \-\-show\-ctw
 Show the click\-type window. Only useful in combination with \-\-dwell\-mode=window.
 .TP
-.B \-x, \-\-ctw\-x=INT
-x\-position of the click\-type window on screen.
-.TP
-.B \-y, \-\-ctw\-y=INT
-y\-position of the click\-type window on screen.
-.TP
 .B \-t, \-\-threshold=INT
 Ignore small pointer movements. Range: 0 \- 30 pixels.
+.TP
+.B \-g, \-\-geometry
+Size and position of the click-type window. Expects a standard X Window System
+geometry string. ie. WIDTHxHEIGHT+X+Y
 .TP
 .B \-s, \-\-shutdown
 Stop the mousetweaks daemon.

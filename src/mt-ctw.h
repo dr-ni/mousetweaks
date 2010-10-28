@@ -20,13 +20,17 @@
 #ifndef __MT_CTW_H__
 #define __MT_CTW_H__
 
+#include <gtk/gtk.h>
+
 G_BEGIN_DECLS
 
-gboolean        mt_ctw_init               (gint x, gint y);
+gboolean        mt_ctw_init               (void);
 
 void            mt_ctw_fini               (void);
 
 GtkWidget *     mt_ctw_get_window         (void);
+
+void            mt_ctw_save_geometry      (void);
 
 G_END_DECLS
 

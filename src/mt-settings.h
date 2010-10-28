@@ -49,10 +49,11 @@ struct _MtSettings
 
     MtClickTypeWindowStyle          ctw_style;
     MtClickTypeWindowOrientation    ctw_orientation;
+    gchar                          *ctw_geometry;
 
+    guint                           ctw_visible    : 1;
     guint                           dwell_enabled  : 1;
     guint                           ssc_enabled    : 1;
-    guint                           ctw_visible    : 1;
 };
 
 GType             mt_settings_get_type              (void) G_GNUC_CONST;

@@ -17,8 +17,6 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <gtk/gtk.h>
-
 #include "mt-ctw.h"
 #include "mt-service.h"
 #include "mt-settings.h"
@@ -59,14 +57,14 @@ static void
 ctw_style_changed (MtSettings *ms, GParamSpec *pspec)
 {
     GtkWidget *icon, *label;
-    const gchar *l[] = { "single_l", "double_l", "drag_l", "right_l" };
-    const gchar *img[] = { "single_i", "double_i", "drag_i", "right_i" };
+    const gchar *label_names[] = { "single_l", "double_l", "drag_l", "right_l" };
+    const gchar *icon_names[] = { "single_i", "double_i", "drag_i", "right_i" };
     gint i;
 
     for (i = 0; i < N_CLICK_TYPES; i++)
     {
-        label = W (l[i]);
-        icon = W (img[i]);
+        label = W (label_names[i]);
+        icon = W (icon_names[i]);
 
         switch (ms->ctw_style)
         {
@@ -207,7 +205,7 @@ ctw_window_delete (GtkWidget *widget, GdkEvent *event, gpointer data)
 }
 
 gboolean
-mt_ctw_init (gint x, gint y)
+mt_ctw_init (void)
 {
     MtSettings *ms;
     MtService *service;
@@ -263,9 +261,6 @@ mt_ctw_init (gint x, gint y)
                       "signal::notify::dwell-mode", G_CALLBACK (ctw_sensitivity_changed), NULL,
                       NULL);
 
-    ctw_visibility_changed (ms, NULL);
-    ctw_sensitivity_changed (ms, NULL);
-
     /* context menu: button style */
     switch (ms->ctw_style)
     {
@@ -309,12 +304,12 @@ mt_ctw_init (gint x, gint y)
     ctw_orientation_changed (ms, NULL);
     ctw_menu_label_set_bold (W ("menu_button_style"));
 
-    /* XXX: remember window position */
-    if (x != -1 && y != -1)
-    {
-        gtk_widget_realize (ctw);
-        gtk_window_move (GTK_WINDOW (ctw), x, y);
-    }
+    /* window geometry */
+    gtk_widget_show (W ("box"));
+    gtk_window_parse_geometry (GTK_WINDOW (ctw), ms->ctw_geometry);
+
+    ctw_visibility_changed (ms, NULL);
+    ctw_sensitivity_changed (ms, NULL);
 
     return TRUE;
 }
@@ -333,4 +328,25 @@ GtkWidget *
 mt_ctw_get_window (void)
 {
     return W ("ctw");
+}
+
+void
+mt_ctw_save_geometry (void)
+{
+    GtkWidget *ctw;
+    gchar *geometry;
+    gint x, y, width, height;
+
+    ctw = mt_ctw_get_window ();
+
+    if (gtk_widget_get_visible (ctw))
+    {
+        gtk_window_get_size (GTK_WINDOW (ctw), &width, &height);
+        gtk_window_get_position (GTK_WINDOW (ctw), &x, &y);
+
+        /* X geometry string */
+        geometry = g_strdup_printf ("%ix%i+%i+%i", width, height, x, y);
+        g_object_set (mt_settings_get_default (), "ctw-geometry", geometry, NULL);
+        g_free (geometry);
+    }
 }

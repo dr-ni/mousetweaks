@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-21 22:58+0200\n"
-"PO-Revision-Date: 2010-03-23 23:15+0100\n"
+"POT-Creation-Date: 2010-10-29 21:36+0100\n"
+"PO-Revision-Date: 2010-08-22 10:06+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,7 +37,7 @@ msgid "Drag Click"
 msgstr "Clic d'arrossegament"
 
 #: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:869
+#: ../src/mt-main.c:807
 msgid "Enable dwell click"
 msgstr "Habilita el clic en pausa"
 
@@ -54,7 +55,7 @@ msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
 "Àrea on congelar el punter del ratolí en el quadre.\n"
@@ -105,7 +106,7 @@ msgid "Sh_ift"
 msgstr "M_aj"
 
 #: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
+msgid "Size of the Capture Area"
 msgstr "Mida de l'àrea de captura"
 
 #: ../data/pointer-capture-applet.ui.h:16
@@ -136,7 +137,7 @@ msgstr "Només icones"
 msgid "Show Text only"
 msgstr "Només text"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "Clic en pausa"
 
@@ -149,7 +150,7 @@ msgid "Area to lock the pointer"
 msgstr "Àrea on bloquejar el punter"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "Captura del punter"
 
@@ -185,16 +186,16 @@ msgid ""
 "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Direcció en la qual es realitzarà un doble clic («0» = esquerra, «1» = dreta, "
-"«2» = amunt, «3» = avall)"
+"Direcció en la qual es realitzarà un doble clic («0» = esquerra, «1» = "
+"dreta, «2» = amunt, «3» = avall)"
 
 #: ../data/mousetweaks.schemas.in.h:5
 msgid ""
 "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 "\"3\" = Down)"
 msgstr ""
-"Direcció en la qual es realitzarà un clic d'arrossegament («0» = esquerra, «1» "
-"= dreta, «2» = amunt, «3» = avall)"
+"Direcció en la qual es realitzarà un clic d'arrossegament («0» = esquerra, "
+"«1» = dreta, «2» = amunt, «3» = avall)"
 
 #: ../data/mousetweaks.schemas.in.h:6
 msgid ""
@@ -209,8 +210,8 @@ msgid ""
 "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 "Up, \"3\" = Down)"
 msgstr ""
-"Direcció en la qual es realitzarà un sol clic («0» = esquerra, «1» = dreta, «2» "
-"= amunt, «3» = avall)"
+"Direcció en la qual es realitzarà un sol clic («0» = esquerra, «1» = dreta, "
+"«2» = amunt, «3» = avall)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
@@ -232,7 +233,7 @@ msgstr "Temps de clic en pausa"
 msgid "Enable secondary click"
 msgstr "Habilita el clic secundari"
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
 msgstr "Habilita el clic secundari simulat"
 
@@ -319,8 +320,8 @@ msgid ""
 "\"3\" for right button."
 msgstr ""
 "S'ha de prémer este botó del ratolí per alliberar el punter de l'àrea de "
-"captura. Els valors vàlids són: «1» per al botó de l'esquerra, «2» per al botó "
-"del mig i «3» per al botó de la dreta."
+"captura. Els valors vàlids són: «1» per al botó de l'esquerra, «2» per al "
+"botó del mig i «3» per al botó de la dreta."
 
 #: ../data/pointer-capture-applet.schemas.in.h:11
 msgid ""
@@ -398,99 +399,96 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr "Amplada de l'àrea de captura en píxels."
 
-#: ../src/mt-main.c:774
-msgid "Assistive Technology Support is not Enabled"
-msgstr "La tecnologia assistiva no està habilitada"
-
-#: ../src/mt-main.c:775
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"El Mousetweaks necessita que les tecnologies assistives estiguen habilitades "
-"a la sessió.\n"
-"\n"
-"Per habilitar-les i reiniciar la sessió, premeu «Habilita i ix»."
-
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "Temps d'espera abans d'un clic en pausa"
 
-#: ../src/mt-main.c:875
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
 msgstr "Temps d'espera abans de simular un clic secundari"
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:815
 msgid "Set the active dwell mode"
 msgstr "Establiu el mode en pausa actiu"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:817
 msgid "Show a click-type window"
 msgstr "Mostra una finestra de tipus de clic"
 
-#: ../src/mt-main.c:881
+#: ../src/mt-main.c:819
 msgid "Click-type window X position"
 msgstr "La posició x de la finestra de tipus de clic"
 
-#: ../src/mt-main.c:883
+#: ../src/mt-main.c:821
 msgid "Click-type window Y position"
 msgstr "La posició y de la finestra de tipus de clic"
 
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "Ignora els petits moviments del punter"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "Atura el Mousetweaks"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:827
 msgid "Disable cursor animations"
 msgstr "Inhabilita les animacions del cursor"
 
-#: ../src/mt-main.c:891
+#: ../src/mt-main.c:829
 msgid "Start mousetweaks as a daemon"
 msgstr "Inicia el Mousetweaks com a dimoni"
 
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:831
 msgid "Start mousetweaks in login mode"
 msgstr "Inicia el Mousetweaks en mode d'entrada"
 
 #. parse
-#: ../src/mt-main.c:911
+#: ../src/mt-main.c:851
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Dimoni d'accessibilitat del ratolí del GNOME"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "No s'ha pogut mostrar l'ajuda"
 
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "Habilita i ix"
 
-#: ../src/pointer-capture-applet.c:213
-msgid "Locked"
-msgstr "Bloquejat"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:216
-msgid "L"
-msgstr "B"
-
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "Àrea de captura"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "Bloqueja temporalment el punter del ratolí"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "Bloquejat"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "No s'han pogut obrir les Preferències del ratolí"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "La tecnologia assistiva no està habilitada"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "El Mousetweaks necessita que les tecnologies assistives estiguin "
+#~ "habilitades a la sessió.\n"
+#~ "\n"
+#~ "Per habilitar-les i reiniciar la sessió, premeu «Habilita i surt»."
+
+#~ msgid "L"
+#~ msgstr "B"
 
 #~ msgid "Dwell mode to use"
 #~ msgstr "Mode de clic en pausa a utilitzar"

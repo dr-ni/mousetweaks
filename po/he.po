@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-28 09:00+0200\n"
-"PO-Revision-Date: 2010-10-28 09:01+0200\n"
+"POT-Creation-Date: 2010-10-29 07:43+0200\n"
+"PO-Revision-Date: 2010-10-29 07:44+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: he\n"
 "MIME-Version: 1.0\n"
@@ -32,7 +32,7 @@ msgstr "חלון סוג לחיצה"
 msgid "Double Click"
 msgstr "לחיצה כפולה"
 
-#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:3
+#: ../data/dwell-click-applet.ui.h:5
 msgid "Drag Click"
 msgstr "לחיצת גרירה"
 
@@ -40,11 +40,11 @@ msgstr "לחיצת גרירה"
 msgid "Enable dwell click"
 msgstr "Enable dwell click"
 
-#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:8
+#: ../data/dwell-click-applet.ui.h:7
 msgid "Right Click"
 msgstr "לחיצה ימנית"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:9
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:10
 msgid "Single Click"
 msgstr "לחיצה בודדת"
 
@@ -104,31 +104,40 @@ msgstr "פיקסלים"
 msgid "Button Style"
 msgstr "סגנון הלחצנים"
 
+#. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
-msgid "Dwell Click Type"
-msgstr "סוג לחיצת השהיה"
+msgid "Drag"
+msgstr "גרירה"
 
 #: ../data/mousetweaks.ui.h:5
+msgid "Dwell Click-Type"
+msgstr "סוג לחיצת ההשהיה"
+
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "אופקי"
 
-#: ../data/mousetweaks.ui.h:6
+#: ../data/mousetweaks.ui.h:7
 msgid "Icons only"
 msgstr "סמלים בלבד"
 
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:8
 msgid "Orientation"
 msgstr "כיווניות"
 
-#: ../data/mousetweaks.ui.h:10
+#: ../data/mousetweaks.ui.h:9
+msgid "Secondary Click"
+msgstr "לחיצה משנית"
+
+#: ../data/mousetweaks.ui.h:11
 msgid "Text and Icons"
 msgstr "טקסט וסמלים"
 
-#: ../data/mousetweaks.ui.h:11
+#: ../data/mousetweaks.ui.h:12
 msgid "Text only"
 msgstr "טקסט בלבד"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:13
 msgid "Vertical"
 msgstr "אנכי"
 
@@ -164,17 +173,29 @@ msgstr "ה_עדפות"
 msgid "Button style of the click-type window."
 msgstr "Button style of the click-type window."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:616
+msgid "Click-type window geometry"
+msgstr "Click-type window geometry"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
 msgstr "Click-type window orientation"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
 msgid "Click-type window style"
 msgstr "Click-type window style"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
 msgid "Orientation of the click-type window."
 msgstr "Orientation of the click-type window."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
@@ -225,31 +246,23 @@ msgid "Show a click-type window"
 msgstr "Show a click-type window"
 
 #: ../src/mt-main.c:614
-msgid "Click-type window X position"
-msgstr "Click-type window X position"
-
-#: ../src/mt-main.c:616
-msgid "Click-type window Y position"
-msgstr "Click-type window Y position"
-
-#: ../src/mt-main.c:618
 msgid "Ignore small pointer movements"
 msgstr "Ignore small pointer movements"
 
-#: ../src/mt-main.c:620
+#: ../src/mt-main.c:618
 msgid "Shut down mousetweaks"
 msgstr "Shut down mousetweaks"
 
-#: ../src/mt-main.c:622
+#: ../src/mt-main.c:620
 msgid "Start mousetweaks as a daemon"
 msgstr "Start mousetweaks as a daemon"
 
-#: ../src/mt-main.c:624
+#: ../src/mt-main.c:622
 msgid "Start mousetweaks in login mode"
 msgstr "Start mousetweaks in login mode"
 
 #. parse
-#: ../src/mt-main.c:643
+#: ../src/mt-main.c:640
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME mouse accessibility daemon"
 
@@ -276,6 +289,12 @@ msgstr "נעול"
 #: ../src/dwell-click-applet.c:449
 msgid "Failed to Open the Univeral Access Panel"
 msgstr "אירע כשל בפתיחת לוח הגישה האוניברסלית"
+
+#~ msgid "Click-type window X position"
+#~ msgstr "Click-type window X position"
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "Click-type window Y position"
 
 #~ msgid "Show Icons and Text"
 #~ msgstr "הצגת סמלים וטקסט"
@@ -341,9 +360,6 @@ msgstr "אירע כשל בפתיחת לוח הגישה האוניברסלית"
 
 #~ msgid "Movement threshold"
 #~ msgstr "Movement threshold"
-
-#~ msgid "Secondary click time"
-#~ msgstr "Secondary click time"
 
 #~ msgid "Show click type window"
 #~ msgstr "Show click type window"

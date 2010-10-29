@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: mousetweaks.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-10-27 21:35+0000\n"
-"PO-Revision-Date: 2010-10-28 01:45+0200\n"
+"POT-Creation-Date: 2010-10-28 18:12+0000\n"
+"PO-Revision-Date: 2010-10-29 10:00+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr "Ventana de tipo de pulsación"
 msgid "Double Click"
 msgstr "Pulsación doble"
 
-#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:3
+#: ../data/dwell-click-applet.ui.h:5
 msgid "Drag Click"
 msgstr "Pulsación de arrastre"
 
@@ -43,11 +43,11 @@ msgstr "Pulsación de arrastre"
 msgid "Enable dwell click"
 msgstr "Activar la pulsación al posarse"
 
-#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:8
+#: ../data/dwell-click-applet.ui.h:7
 msgid "Right Click"
 msgstr "Pulsación derecha"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:9
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:10
 msgid "Single Click"
 msgstr "Pulsación sencilla"
 
@@ -104,37 +104,45 @@ msgid "pixels"
 msgstr "píxeles"
 
 #: ../data/mousetweaks.ui.h:1
-#| msgid "Button style"
 msgid "Button Style"
 msgstr "Estilo de botón"
 
+#. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
-msgid "Dwell Click Type"
-msgstr "Tipo de pulsación al posarse"
+msgid "Drag"
+msgstr "Arrastrar"
 
 #: ../data/mousetweaks.ui.h:5
+#| msgid "Dwell Click Type"
+msgid "Dwell Click-Type"
+msgstr "Tipo de pulsación al posarse"
+
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "Horizontal"
 
-#: ../data/mousetweaks.ui.h:6
-#| msgid "Show Icons only"
+#: ../data/mousetweaks.ui.h:7
 msgid "Icons only"
 msgstr "Sólo iconos"
 
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:8
 msgid "Orientation"
 msgstr "Orientación"
 
-#: ../data/mousetweaks.ui.h:10
+#: ../data/mousetweaks.ui.h:9
+#| msgid "Secondary click time"
+msgid "Secondary Click"
+msgstr "Pulsación secundaria"
+
+#: ../data/mousetweaks.ui.h:11
 msgid "Text and Icons"
 msgstr "Iconos y texto"
 
-#: ../data/mousetweaks.ui.h:11
-#| msgid "Show Text only"
+#: ../data/mousetweaks.ui.h:12
 msgid "Text only"
 msgstr "Sólo texto"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:13
 msgid "Vertical"
 msgstr "Vertical"
 
@@ -167,24 +175,33 @@ msgid "_Preferences"
 msgstr "Prefere_ncias"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-#| msgid "Show a click-type window"
 msgid "Button style of the click-type window."
 msgstr "Estilo del botón de la ventana del tipo de pulsación."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
-#| msgid "Click-type window X position"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:616
+#| msgid "Click-type window style"
+msgid "Click-type window geometry"
+msgstr "Geometría de la ventana del tipo de pulsación"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
 msgstr "Orientación de la ventana del tipo de pulsación"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-#| msgid "Click type window style"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
 msgid "Click-type window style"
 msgstr "Estilo de la ventana del tipo de pulsación"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-#| msgid "Show a click-type window"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
 msgid "Orientation of the click-type window."
 msgstr "Orientación de la ventana del tipo de botón."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Tamaño y posición de la ventana del tipo de pulsación. El formato es una "
+"cadena de geometría estándar del sistema X Window."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
@@ -235,31 +252,23 @@ msgid "Show a click-type window"
 msgstr "Mostrar una ventana de tipo de pulsación"
 
 #: ../src/mt-main.c:614
-msgid "Click-type window X position"
-msgstr "Posición X de la ventana de tipo pulsación"
-
-#: ../src/mt-main.c:616
-msgid "Click-type window Y position"
-msgstr "Posición Y de la ventana de tipo pulsación"
-
-#: ../src/mt-main.c:618
 msgid "Ignore small pointer movements"
 msgstr "Ignorar los movimientos pequeños del puntero"
 
-#: ../src/mt-main.c:620
+#: ../src/mt-main.c:618
 msgid "Shut down mousetweaks"
 msgstr "Apagar los ajustes finos del ratón"
 
-#: ../src/mt-main.c:622
+#: ../src/mt-main.c:620
 msgid "Start mousetweaks as a daemon"
 msgstr "Iniciar los ajustes finos del ratón como un demonio"
 
-#: ../src/mt-main.c:624
+#: ../src/mt-main.c:622
 msgid "Start mousetweaks in login mode"
 msgstr "Iniciar los ajustes finos del ratón en modo inicio de sesión"
 
 #. parse
-#: ../src/mt-main.c:643
+#: ../src/mt-main.c:640
 msgid "- GNOME mouse accessibility daemon"
 msgstr " - Demonio de accesibilidad del ratón de GNOME"
 
@@ -286,6 +295,12 @@ msgstr "Bloqueado"
 #: ../src/dwell-click-applet.c:449
 msgid "Failed to Open the Univeral Access Panel"
 msgstr "Falló al abrir el Panel de acceso universal"
+
+#~ msgid "Click-type window X position"
+#~ msgstr "Posición X de la ventana de tipo pulsación"
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "Posición Y de la ventana de tipo pulsación"
 
 #~ msgid "Show Icons and Text"
 #~ msgstr "Mostrar iconos y texto"
@@ -351,9 +366,6 @@ msgstr "Falló al abrir el Panel de acceso universal"
 
 #~ msgid "Movement threshold"
 #~ msgstr "Umbral de movimiento"
-
-#~ msgid "Secondary click time"
-#~ msgstr "Tiempo de la pulsación secundaria"
 
 #~ msgid "Show click type window"
 #~ msgstr "Mostrar la ventana de tipo de pulsación"

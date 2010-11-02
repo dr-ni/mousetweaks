@@ -446,7 +446,7 @@ preferences_dialog (BonoboUIComponent *component,
 
     if (!g_spawn_command_line_async ("gnome-control-center universal-access", &error))
     {
-         mt_common_show_dialog (_("Failed to Open the Univeral Access Panel"),
+         mt_common_show_dialog (_("Failed to Open the Universal Access Panel"),
                                 error->message,
                                 MT_MESSAGE_TYPE_WARNING);
          g_error_free (error);

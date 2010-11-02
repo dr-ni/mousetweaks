@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks-master-po-gl-70471\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-20 14:02+0200\n"
-"PO-Revision-Date: 2010-10-20 14:47+0200\n"
+"POT-Creation-Date: 2010-11-03 00:06+0100\n"
+"PO-Revision-Date: 2010-11-03 00:09+0100\n"
 "Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
 "Language-Team: Galician <gnome-gl-list@gnome.org>\n"
 "Language: gl\n"
@@ -35,23 +35,23 @@ msgstr ""
 msgid "Click Type Window"
 msgstr "Xanela de tipo de pulsación"
 
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
 msgid "Double Click"
 msgstr "Dobre clic"
 
-#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#: ../data/dwell-click-applet.ui.h:5
 msgid "Drag Click"
 msgstr "Clic de arrastre"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:585
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:602
 msgid "Enable dwell click"
 msgstr "Activar o clic de espera"
 
-#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+#: ../data/dwell-click-applet.ui.h:7
 msgid "Right Click"
 msgstr "Clic dereito"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:10
 msgid "Single Click"
 msgstr "Clic único"
 
@@ -107,23 +107,48 @@ msgstr "_Largura:"
 msgid "pixels"
 msgstr "píxeles"
 
-#: ../data/mousetweaks.ui.h:3
-msgid "Dwell Click Type"
-msgstr "Tipo de clic de espera"
+#: ../data/mousetweaks.ui.h:1
+msgid "Button Style"
+msgstr "Estilo de botón"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:4
+msgid "Drag"
+msgstr "Arrastrar"
 
 #: ../data/mousetweaks.ui.h:5
-msgid "Show Icons and Text"
-msgstr "Mostrar iconas e texto"
+msgid "Dwell Click-Type"
+msgstr "Tipo de pulsación ao pousarse"
 
 #: ../data/mousetweaks.ui.h:6
-msgid "Show Icons only"
-msgstr "Mostrar só as iconas"
+msgid "Horizontal"
+msgstr "Horizontal"
 
 #: ../data/mousetweaks.ui.h:7
-msgid "Show Text only"
-msgstr "Mostrar só o texto"
+msgid "Icons only"
+msgstr "Só iconas"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:590
+#: ../data/mousetweaks.ui.h:8
+msgid "Orientation"
+msgstr "Orientación"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Secondary Click"
+msgstr "Pulsación secundaria"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Text and Icons"
+msgstr "Iconas e texto"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Text only"
+msgstr "Só texto"
+
+#: ../data/mousetweaks.ui.h:13
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:586
 msgid "Dwell Click"
 msgstr "Clic automático"
 
@@ -152,113 +177,32 @@ msgid "_Preferences"
 msgstr "_Preferencias"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-msgid "Animate cursor"
-msgstr "Animar o cursor"
+msgid "Button style of the click-type window."
+msgstr "Estilo do botón da xanela do tipo de pulsación."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
-msgid ""
-"Button style in the click type window. (\"0\" = Text, \"1\" = Icon, \"2\" = "
-"Both)"
-msgstr ""
-"Estilo do botón na tipo de xanela de pulsación («0» = Texto, «1» = Icona, "
-"«2» = Ambos)"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:616
+msgid "Click-type window geometry"
+msgstr "Xeometría da xanela do tipo de pulsación"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-msgid "Click type window style"
-msgstr "Estilo da xanela do tipo de pulsación"
+msgid "Click-type window orientation"
+msgstr "Orientación da xanela do tipo de pulsación"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-msgid ""
-"Direction to perform a double click. (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Dirección para efectuar un dobre clic («0» = Esquerda, «1» = Dereita, «2» = "
-"Arriba, «3» = Abaixo)"
+msgid "Click-type window style"
+msgstr "Estilo da xanela do tipo de pulsación"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-msgid ""
-"Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, \"2\" "
-"= Up, \"3\" = Down)"
-msgstr ""
-"Dirección para efectuar unha pulsación secundaria. («0» = Esquerda, «1» = "
-"Dereita, «2» = Arriba, «3» = Abaixo)"
+msgid "Orientation of the click-type window."
+msgstr "Orientación da xanela do tipo de botón."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
-"Direction to perform a single click. (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
 msgstr ""
-"Dirección para efectuar unha pulsación sinxela. («0» = Esquerda, «1» = "
-"Dereita, «2» = Arriba, «3» = Abaixo)"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:7
-msgid ""
-"Direction to perform dragging. (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
-msgstr ""
-"Dirección para realizar unha pulsación de arrastre («0» = Esquerda, «1» = "
-"Dereita, «2» = Arriba, «3» = Abaixo)"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:8
-msgid "Distance in pixels before movement will be recognized."
-msgstr "Distancia en píxeles antes de que se recoñeza o movemento."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:9
-msgid "Dwell click mode"
-msgstr "Modo de clic de espera"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:10
-msgid "Dwell click time"
-msgstr "Tempo de clic de espera"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:11
-msgid "Gesture double click"
-msgstr "Xesto de dobre clic"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:12
-msgid "Gesture drag click"
-msgstr "Xesto de clic de arrastre"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:13
-msgid "Gesture secondary click"
-msgstr "Xesto de clic secundario"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:14
-msgid "Gesture single click"
-msgstr "Xesto de clic único"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:15
-msgid "Movement threshold"
-msgstr "Límite de movemento"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:16
-msgid "Secondary click time"
-msgstr "Tempo do clic secundario"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:17
-msgid "Show click type window"
-msgstr "Mostrar a xanela de tipo de clic"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:18
-msgid "Show click type window."
-msgstr "Mostrar a xanela de tipo de pulsación."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:19
-msgid "Show elapsed time as a cursor overlay."
-msgstr "Mostrar o tempo transcorrido superposto ao cursor."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:20
-msgid ""
-"The active dwell click mode. (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr "Modo de clic de espera. («0» = Modo xanela, «1» = Modo xesto)"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:21
-msgid "Time in seconds before a click is triggered."
-msgstr "Tempo en segundos antes de que o clic se active."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:22
-msgid "Time in seconds before a simulated secondary click is triggered."
-msgstr "Tempo en segundos antes de que o clic secundario se active."
+"Tamaño e posición da xanela do tipo de pulsación. O formato é unha cadea de "
+"xeometría estándar do sistema X Window."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
@@ -288,66 +232,50 @@ msgstr "Tamaño da área de captura"
 msgid "Width of the capture area in pixels."
 msgstr "Largura da área de captura en píxeles."
 
-#: ../src/mt-main.c:587
+#: ../src/mt-main.c:604
 msgid "Enable simulated secondary click"
 msgstr "Activar o clic secundario simulado"
 
-#: ../src/mt-main.c:589
+#: ../src/mt-main.c:606
 msgid "Time to wait before a dwell click"
 msgstr "O tempo de espera antes dun clic de espera"
 
-#: ../src/mt-main.c:591
+#: ../src/mt-main.c:608
 msgid "Time to wait before a simulated secondary click"
 msgstr "O tempo de espera antes de simular un clic secundario"
 
-#: ../src/mt-main.c:593
+#: ../src/mt-main.c:610
 msgid "Set the active dwell mode"
 msgstr "Estabelecer modo de espera como activo"
 
-#: ../src/mt-main.c:595
+#: ../src/mt-main.c:612
 msgid "Show a click-type window"
 msgstr "Mostrar a xanela de tipo de clic"
 
-#: ../src/mt-main.c:597
-msgid "Click-type window X position"
-msgstr "Posición x da xanela de tipo clic"
-
-#: ../src/mt-main.c:599
-msgid "Click-type window Y position"
-msgstr "Posición x da xanela de tipo clic"
-
-#: ../src/mt-main.c:601
+#: ../src/mt-main.c:614
 msgid "Ignore small pointer movements"
 msgstr "Ignorar os pequenos movementos do punteiro"
 
-#: ../src/mt-main.c:603
+#: ../src/mt-main.c:618
 msgid "Shut down mousetweaks"
 msgstr "Pechar os Axustes finos do rato"
 
-#: ../src/mt-main.c:605
-msgid "Disable cursor animations"
-msgstr "Desactivar a animación dos cursores"
-
-#: ../src/mt-main.c:607
+#: ../src/mt-main.c:620
 msgid "Start mousetweaks as a daemon"
 msgstr "Iniciar Axustes finos do rato como daemon do sistema"
 
-#: ../src/mt-main.c:609
+#: ../src/mt-main.c:622
 msgid "Start mousetweaks in login mode"
 msgstr "Iniciar Axustes finos do rato no modo de inicio de sesión"
 
 #. parse
-#: ../src/mt-main.c:629
+#: ../src/mt-main.c:640
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- «Daemon» de accesibilidade do rato do GNOME"
 
 #: ../src/mt-common.c:74
 msgid "Failed to Display Help"
 msgstr "Produciuse un erro ao mostrar a axuda"
-
-#: ../src/mt-common.c:113
-msgid "Enable and Log Out"
-msgstr "Activar e saír da sesión"
 
 #: ../src/pointer-capture-applet.c:71
 msgid "Capture area"
@@ -365,9 +293,102 @@ msgstr "Miniaplicatipo Captura do punteiro"
 msgid "Locked"
 msgstr "Bloqueado"
 
-#: ../src/dwell-click-applet.c:453
-msgid "Failed to Open the Univeral Access Panel"
-msgstr "Produciuse un fallo ao abrir o Panel de acceso universal"
+#: ../src/dwell-click-applet.c:449
+msgid "Failed to Open the Universal Access Panel"
+msgstr "Produciuse un fallo ao abrir o Panel de Acceso Universal"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Mostrar iconas e texto"
+
+#~ msgid "Animate cursor"
+#~ msgstr "Animar o cursor"
+
+#~ msgid ""
+#~ "Button style in the click type window. (\"0\" = Text, \"1\" = Icon, \"2\" "
+#~ "= Both)"
+#~ msgstr ""
+#~ "Estilo do botón na tipo de xanela de pulsación («0» = Texto, «1» = Icona, "
+#~ "«2» = Ambos)"
+
+#~ msgid ""
+#~ "Direction to perform a double click. (\"0\" = Left, \"1\" = Right, \"2\" "
+#~ "= Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Dirección para efectuar un dobre clic («0» = Esquerda, «1» = Dereita, «2» "
+#~ "= Arriba, «3» = Abaixo)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Dirección para efectuar unha pulsación secundaria. («0» = Esquerda, «1» = "
+#~ "Dereita, «2» = Arriba, «3» = Abaixo)"
+
+#~ msgid ""
+#~ "Direction to perform a single click. (\"0\" = Left, \"1\" = Right, \"2\" "
+#~ "= Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Dirección para efectuar unha pulsación sinxela. («0» = Esquerda, «1» = "
+#~ "Dereita, «2» = Arriba, «3» = Abaixo)"
+
+#~ msgid ""
+#~ "Direction to perform dragging. (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+#~ "\"3\" = Down)"
+#~ msgstr ""
+#~ "Dirección para realizar unha pulsación de arrastre («0» = Esquerda, «1» = "
+#~ "Dereita, «2» = Arriba, «3» = Abaixo)"
+
+#~ msgid "Distance in pixels before movement will be recognized."
+#~ msgstr "Distancia en píxeles antes de que se recoñeza o movemento."
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Modo de clic de espera"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Tempo de clic de espera"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Xesto de dobre clic"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Xesto de clic de arrastre"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Xesto de clic secundario"
+
+#~ msgid "Gesture single click"
+#~ msgstr "Xesto de clic único"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Límite de movemento"
+
+#~ msgid "Show click type window"
+#~ msgstr "Mostrar a xanela de tipo de clic"
+
+#~ msgid "Show click type window."
+#~ msgstr "Mostrar a xanela de tipo de pulsación."
+
+#~ msgid "Show elapsed time as a cursor overlay."
+#~ msgstr "Mostrar o tempo transcorrido superposto ao cursor."
+
+#~ msgid ""
+#~ "The active dwell click mode. (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "Modo de clic de espera. («0» = Modo xanela, «1» = Modo xesto)"
+
+#~ msgid "Time in seconds before a click is triggered."
+#~ msgstr "Tempo en segundos antes de que o clic se active."
+
+#~ msgid "Time in seconds before a simulated secondary click is triggered."
+#~ msgstr "Tempo en segundos antes de que o clic secundario se active."
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "Posición x da xanela de tipo clic"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "Desactivar a animación dos cursores"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "Activar e saír da sesión"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"
@@ -389,9 +410,6 @@ msgstr "Produciuse un fallo ao abrir o Panel de acceso universal"
 
 #~ msgid "Sh_ift"
 #~ msgstr "Ma_iús"
-
-#~ msgid "Button style"
-#~ msgstr "Estilo de botón"
 
 #~ msgid "Enable secondary click"
 #~ msgstr "Activar o clic secundario"

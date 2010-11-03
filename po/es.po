@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: mousetweaks.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-10-28 18:12+0000\n"
-"PO-Revision-Date: 2010-10-29 10:00+0200\n"
+"POT-Creation-Date: 2010-11-02 19:07+0000\n"
+"PO-Revision-Date: 2010-11-03 12:59+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -113,7 +113,6 @@ msgid "Drag"
 msgstr "Arrastrar"
 
 #: ../data/mousetweaks.ui.h:5
-#| msgid "Dwell Click Type"
 msgid "Dwell Click-Type"
 msgstr "Tipo de pulsación al posarse"
 
@@ -130,7 +129,6 @@ msgid "Orientation"
 msgstr "Orientación"
 
 #: ../data/mousetweaks.ui.h:9
-#| msgid "Secondary click time"
 msgid "Secondary Click"
 msgstr "Pulsación secundaria"
 
@@ -179,7 +177,6 @@ msgid "Button style of the click-type window."
 msgstr "Estilo del botón de la ventana del tipo de pulsación."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:616
-#| msgid "Click-type window style"
 msgid "Click-type window geometry"
 msgstr "Geometría de la ventana del tipo de pulsación"
 
@@ -293,7 +290,8 @@ msgid "Locked"
 msgstr "Bloqueado"
 
 #: ../src/dwell-click-applet.c:449
-msgid "Failed to Open the Univeral Access Panel"
+#| msgid "Failed to Open the Univeral Access Panel"
+msgid "Failed to Open the Universal Access Panel"
 msgstr "Falló al abrir el Panel de acceso universal"
 
 #~ msgid "Click-type window X position"

@@ -64,7 +64,6 @@ typedef struct _MtData
     MtService   *service;
     MtTimer     *ssc_timer;
     MtTimer     *dwell_timer;
-    MtCursor    *cursor;
     gint         direction;
     gint         pointer_x;
     gint         pointer_y;
@@ -439,35 +438,31 @@ global_button_event (MtListener *listener,
 }
 
 static void
-cursor_overlay_time (MtData  *mt,
-                     guchar  *image,
-                     gint     width,
-                     gint     height,
-                     MtTimer *timer,
-                     gdouble  time)
+cursor_overlay_time (guchar *image,
+                     gint    width,
+                     gint    height,
+                     gdouble target,
+                     gdouble elapsed)
 {
-    GdkColor c;
+    GdkColor color;
     GtkStyle *style;
     cairo_surface_t *surface;
     cairo_t *cr;
-    gdouble target;
+
+    style = gtk_widget_get_style (mt_ctw_get_window ());
+    color = style->bg[GTK_STATE_SELECTED];
 
     surface = cairo_image_surface_create_for_data (image,
                                                    CAIRO_FORMAT_ARGB32,
                                                    width, height,
                                                    width * 4);
     cr = cairo_create (surface);
-
-    style = gtk_widget_get_style (mt_ctw_get_window ());
-    c = style->bg[GTK_STATE_SELECTED];
-    target = mt_timer_get_target (timer);
-
     cairo_set_operator (cr, CAIRO_OPERATOR_ATOP);
-    cairo_rectangle (cr, 0, 0, width, height / (target / time));
+    cairo_rectangle (cr, 0, 0, width, (height * elapsed) / target);
     cairo_set_source_rgba (cr,
-                           c.red   / 65535.,
-                           c.green / 65535.,
-                           c.blue  / 65535.,
+                           color.red   / 65535.,
+                           color.green / 65535.,
+                           color.blue  / 65535.,
                            0.60);
     cairo_fill (cr);
     cairo_destroy (cr);
@@ -475,58 +470,54 @@ cursor_overlay_time (MtData  *mt,
 }
 
 static void
-mt_main_update_cursor (MtData  *mt,
-                       MtTimer *timer,
-                       gdouble  time)
+mt_main_timer_tick (MtTimer *timer, gdouble elapsed, gpointer data)
 {
-    MtCursor *new_cursor;
-    const gchar *name;
-    gushort xhot, yhot;
-    guchar *image;
-    gushort width, height;
+    MtCursorManager *manager;
+    MtCursor *current_cursor, *new_cursor;
 
-    image = mt_cursor_get_image_copy (mt->cursor);
-    if (image)
+    manager = mt_cursor_manager_get_default ();
+    current_cursor = mt_cursor_manager_get_current_cursor (manager);
+
+    if (current_cursor)
     {
-        mt_cursor_get_dimension (mt->cursor, &width, &height);
-        cursor_overlay_time (mt, image, width, height, timer, time);
+        const gchar *name;
+        gushort width, height, xhot, yhot;
+        gdouble target;
+        guchar *image;
 
-        name = mt_cursor_get_name (mt->cursor);
-        mt_cursor_get_hotspot (mt->cursor, &xhot, &yhot);
+        /* get cursor info */
+        name = mt_cursor_get_name (current_cursor);
+        image = mt_cursor_get_image_copy (current_cursor);
+        mt_cursor_get_dimension (current_cursor, &width, &height);
+        mt_cursor_get_hotspot (current_cursor, &xhot, &yhot);
+
+        g_object_unref (current_cursor);
+
+        target = mt_timer_get_target (timer);
+
+        /* paint overlay */
+        cursor_overlay_time (image, width, height, target, elapsed);
+
+        /* create and set new cursor */
         new_cursor = mt_cursor_new (name, image, width, height, xhot, yhot);
-        mt_cursor_manager_set_cursor (mt_cursor_manager_get_default (), new_cursor);
-
-        g_object_unref (new_cursor);
+        if (new_cursor)
+        {
+            mt_cursor_manager_set_cursor (manager, new_cursor);
+            g_object_unref (new_cursor);
+        }
     }
 }
 
 static void
-mt_main_timer_tick (MtTimer *timer,
-                    gdouble  time,
-                    MtData  *mt)
-{
-    if (mt->cursor)
-    {
-        mt_main_update_cursor (mt, timer, time);
-    }
-}
-
-static void
-cursor_cache_cleared (MtCursorManager *manager, MtData *mt)
-{
-    mt->cursor = mt_cursor_manager_current_cursor (manager);
-}
-
-static void
-cursor_changed (MtCursorManager *manager,
-                const gchar     *name,
-                MtData          *mt)
+mt_main_cursor_changed (MtCursorManager *manager,
+                        const gchar     *name,
+                        MtData          *mt)
 {
     if (!mt->dwell_gesture_started)
     {
+        /* Remove me, I'm weird */
         mt->override_cursor = !g_str_equal (name, "left_ptr");
     }
-    mt->cursor = mt_cursor_manager_lookup_cursor (manager, name);
 }
 
 static void
@@ -732,11 +723,8 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
 
     /* init cursor animation */
     manager = mt_cursor_manager_get_default ();
-    mt->cursor = mt_cursor_manager_current_cursor (manager);
     g_signal_connect (manager, "cursor_changed",
-                      G_CALLBACK (cursor_changed), mt);
-    g_signal_connect (manager, "cache_cleared",
-                      G_CALLBACK (cursor_cache_cleared), mt);
+                      G_CALLBACK (mt_main_cursor_changed), mt);
 
     /* init mouse listener */
     listener = mt_listener_get_default ();

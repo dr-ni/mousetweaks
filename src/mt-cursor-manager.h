@@ -40,15 +40,15 @@ struct _MtCursorManager
     MtCursorManagerPrivate *priv;
 };
 
-GType             mt_cursor_manager_get_type       (void) G_GNUC_CONST;
+GType             mt_cursor_manager_get_type           (void) G_GNUC_CONST;
 
-MtCursorManager * mt_cursor_manager_get_default    (void);
-MtCursor *        mt_cursor_manager_current_cursor (MtCursorManager *manager);
-MtCursor *        mt_cursor_manager_lookup_cursor  (MtCursorManager *manager,
-                                                    const gchar     *name);
-void              mt_cursor_manager_set_cursor     (MtCursorManager *manager,
-                                                    MtCursor        *cursor);
-void              mt_cursor_manager_restore_all    (MtCursorManager *manager);
+MtCursorManager * mt_cursor_manager_get_default        (void);
+MtCursor *        mt_cursor_manager_get_current_cursor (MtCursorManager *manager);
+MtCursor *        mt_cursor_manager_lookup_cursor      (MtCursorManager *manager,
+                                                        const gchar     *name);
+void              mt_cursor_manager_set_cursor         (MtCursorManager *manager,
+                                                        MtCursor        *cursor);
+void              mt_cursor_manager_restore_all        (MtCursorManager *manager);
 
 G_END_DECLS
 

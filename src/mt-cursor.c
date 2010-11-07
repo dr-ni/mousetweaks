@@ -76,13 +76,13 @@ mt_cursor_new (const gchar *name,
     g_return_val_if_fail (width > 0 && height > 0, NULL);
     g_return_val_if_fail (xhot <= width && yhot <= height, NULL);
 
-    if (*name == 0)
+    if (name[0] == '\0')
         return NULL;
 
     cursor = g_object_new (MT_TYPE_CURSOR, NULL);
     priv = cursor->priv;
     priv->name   = g_strdup (name);
-    priv->image  = g_memdup (image, width * height * 4);
+    priv->image  = image;
     priv->width  = width;
     priv->height = height;
     priv->xhot   = xhot;

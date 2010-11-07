@@ -497,7 +497,6 @@ mt_main_update_cursor (MtData  *mt,
         mt_cursor_manager_set_cursor (mt_cursor_manager_get_default (), new_cursor);
 
         g_object_unref (new_cursor);
-        g_free (image);
     }
 }
 

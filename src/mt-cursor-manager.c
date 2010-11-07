@@ -191,7 +191,7 @@ mt_cursor_manager_add_cursor (MtCursorManager   *manager,
     }
     else
     {
-        pixels = (guchar *) image->pixels;
+        pixels = g_memdup (image->pixels, image->width * image->height * 4);
     }
 
     cursor = mt_cursor_new (image->name, pixels,

@@ -1,6 +1,6 @@
 AC_PREREQ(2.63)
 AC_INIT([mousetweaks],
-	[2.91.2],
+	[2.91.3],
 	[http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks])
 
 AC_CONFIG_SRCDIR([src])

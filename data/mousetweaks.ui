@@ -238,7 +238,7 @@
     <child>
       <object class="GtkRadioMenuItem" id="menu_horizontal">
         <property name="visible">True</property>
-        <property name="label" translatable="yes">Horizontal</property>
+        <property name="label" translatable="yes" comments="Buttons are arranged from left to right in the layout">Horizontal</property>
         <property name="active">True</property>
         <property name="draw_as_radio">True</property>
       </object>
@@ -246,7 +246,7 @@
     <child>
       <object class="GtkRadioMenuItem" id="menu_vertical">
         <property name="visible">True</property>
-        <property name="label" translatable="yes">Vertical</property>
+        <property name="label" translatable="yes" comments="Buttons are arranged from top to bottom in the layout">Vertical</property>
         <property name="draw_as_radio">True</property>
         <property name="group">menu_horizontal</property>
       </object>

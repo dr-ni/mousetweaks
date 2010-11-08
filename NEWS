@@ -1,3 +1,35 @@
+Version 2.91.2
+--------------
+
+Misc changes, improvements and fixes:
+
+    - Add gsettings convert data
+    - Add "geometry" option to set size and position of the click-type window
+    - Add new "orientation" option to the click-type window
+    - Remove "animate-cursor" option
+    - Update git.mk
+    - Sync with changes in gsettings-desktop-schemas
+    - Fix mem leak and reduce nr. of cursor image copies
+    - Don't emit cursor_changed signals if we have set the cursor
+    - Bump gsettings-desktop-schemas dependency to 0.1.0
+    - Remove mt-main header file
+
+Bug fixes:
+
+    #633844: L10N: Fix a typo
+    #633932: L10N: Add translation comments for button orientation
+
+New and updated translations:
+
+    [ca] Carles Ferrando
+    [es] Jorge González
+    [gl] Fran Diéguez
+    [he] Yaron Shahrabani
+    [ja] Takayuki KUSANO
+    [sk] Pavol Šimo
+    [sl] Matej Urbančič
+
+
 Version 2.91.1
 --------------
 

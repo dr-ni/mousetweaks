@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the mousetweaks package.
 # Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009
 # Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2010.
+# Daniel Șerbănescu <cyber19rider@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-11-02 19:07+0000\n"
-"PO-Revision-Date: 2010-09-24 02:37+0300\n"
-"Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
+"POT-Creation-Date: 2010-11-08 15:03+0000\n"
+"PO-Revision-Date: 2010-10-28 23:00+0200\n"
+"Last-Translator: Daniel Șerbănescu <cyber19rider@gmail.com>\n"
 "Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,6 +19,7 @@ msgstr ""
 "Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.6.1\n"
 
 #: ../data/dwell-click-applet.ui.h:1
 msgid ""
@@ -39,7 +41,7 @@ msgstr "Clic dublu"
 msgid "Drag Click"
 msgstr "Clic tragere"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:602
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
 msgid "Enable dwell click"
 msgstr "Activează clicul staționar"
 
@@ -47,7 +49,7 @@ msgstr "Activează clicul staționar"
 msgid "Right Click"
 msgstr "Clic dreapta"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:10
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
 msgid "Single Click"
 msgstr "Clic simplu"
 
@@ -65,11 +67,11 @@ msgstr "C_trl"
 
 #: ../data/pointer-capture-applet.ui.h:4
 msgid "Capture and Release Controls"
-msgstr ""
+msgstr "Controale de capturare și eliberare"
 
 #: ../data/pointer-capture-applet.ui.h:5
 msgid "Keyboard modifier:"
-msgstr ""
+msgstr "Modificator de tastatură:"
 
 #: ../data/pointer-capture-applet.ui.h:6
 msgid "Pointer Capture Preferences"
@@ -88,16 +90,12 @@ msgid "_Alt"
 msgstr "_Alt"
 
 #: ../data/pointer-capture-applet.ui.h:10
-#, fuzzy
-#| msgid "Mouse _button:"
 msgid "_Mouse button:"
-msgstr "_Buton de maus:"
+msgstr "Buton _maus:"
 
 #: ../data/pointer-capture-applet.ui.h:11
-#, fuzzy
-#| msgid "S_hift"
 msgid "_Shift"
-msgstr "S_hift"
+msgstr "_Shift"
 
 #: ../data/pointer-capture-applet.ui.h:12
 msgid "_Width:"
@@ -108,55 +106,47 @@ msgid "pixels"
 msgstr "pixeli"
 
 #: ../data/mousetweaks.ui.h:1
-#, fuzzy
-#| msgid "Button style"
 msgid "Button Style"
 msgstr "Stil buton"
 
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
 msgid "Drag"
-msgstr ""
+msgstr "Trage"
 
 #: ../data/mousetweaks.ui.h:5
-#, fuzzy
-#| msgid "Dwell Click Type"
 msgid "Dwell Click-Type"
 msgstr "Tip clic staționar"
 
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr ""
-
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:7
-#, fuzzy
-#| msgid "Show Icons only"
-msgid "Icons only"
-msgstr "Afișează doar iconițe"
+msgid "Horizontal"
+msgstr "Orizontală"
 
 #: ../data/mousetweaks.ui.h:8
-msgid "Orientation"
-msgstr ""
+msgid "Icons only"
+msgstr "Doar iconițe"
 
 #: ../data/mousetweaks.ui.h:9
-#, fuzzy
-#| msgid "Secondary click time"
-msgid "Secondary Click"
-msgstr "Timp clic secundar"
+msgid "Orientation"
+msgstr "Orientare"
 
-#: ../data/mousetweaks.ui.h:11
-msgid "Text and Icons"
-msgstr ""
+#: ../data/mousetweaks.ui.h:10
+msgid "Secondary Click"
+msgstr "Clic secundar"
 
 #: ../data/mousetweaks.ui.h:12
-#, fuzzy
-#| msgid "Show Text only"
-msgid "Text only"
-msgstr "Afișează doar text"
+msgid "Text and Icons"
+msgstr "Text și iconițe"
 
 #: ../data/mousetweaks.ui.h:13
+msgid "Text only"
+msgstr "Doar text"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
-msgstr ""
+msgstr "Verticală"
 
 #: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:586
 msgid "Dwell Click"
@@ -187,111 +177,99 @@ msgid "_Preferences"
 msgstr "_Preferințe"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-#, fuzzy
-#| msgid "Show a click-type window"
 msgid "Button style of the click-type window."
-msgstr "Afișează o fereastră tip clic"
+msgstr "Stilul butoanelor ferestrei de tip clic."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:616
-#, fuzzy
-#| msgid "Click-type window X position"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
 msgid "Click-type window geometry"
-msgstr "Coordonata X a ferestrei tip clic"
+msgstr "Geometria ferestrei de tip clic"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-#, fuzzy
-#| msgid "Click-type window X position"
 msgid "Click-type window orientation"
-msgstr "Coordonata X a ferestrei tip clic"
+msgstr "Orientarea ferestrei de tip clic"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-#, fuzzy
-#| msgid "Click-type window X position"
 msgid "Click-type window style"
-msgstr "Coordonata X a ferestrei tip clic"
+msgstr "Stilul ferestrei de tip clic"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-#, fuzzy
-#| msgid "Show a click-type window"
 msgid "Orientation of the click-type window."
-msgstr "Afișează o fereastră tip clic"
+msgstr "Orientarea ferestrei de tip clic."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
+"Dimensiunea și poziția ferestrei de tip clic. Formatul este un șir de "
+"geometrie standard al Sistemului de ferestre X."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
-msgstr ""
+msgstr "modificatorul de tastatură „Alt”"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
 msgid "\"Control\" keyboard modifier"
-msgstr ""
+msgstr "modificatorul de tastatură „Control”"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
 msgid "\"Shift\" keyboard modifier"
-msgstr ""
+msgstr "modificatorul de tastatură „Shift”"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-#, fuzzy
-#| msgid "Mouse _button:"
 msgid "Mouse button"
-msgstr "_Buton de maus:"
+msgstr "Buton maus"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-#, fuzzy
-#| msgid "Mouse button used to capture the pointer"
 msgid "Mouse button used to capture or release the pointer."
-msgstr "Buton de maus folosit pentru capturarea indicatorului"
+msgstr "Buton maus folosit pentru capturarea sau eliberarea indicatorului."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
-msgstr "Dimensiunea zonei de capturare"
+msgstr "Dimensiunea zonei de captură"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
 msgid "Width of the capture area in pixels."
 msgstr "Lățimea în pixeli a zonei de captură."
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:594
 msgid "Enable simulated secondary click"
 msgstr "Activează clicul secundar simulat"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:596
 msgid "Time to wait before a dwell click"
 msgstr "Timp de așteptare înainte de un clic staționar"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:598
 msgid "Time to wait before a simulated secondary click"
 msgstr "Timp de așteptare înainte de un clic secundar simulat"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:600
 msgid "Set the active dwell mode"
 msgstr "Definește modul clicului staționar activ"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:602
 msgid "Show a click-type window"
-msgstr "Afișează o fereastră tip clic"
+msgstr "Afișează o fereastră de tip clic"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:604
 msgid "Ignore small pointer movements"
 msgstr "Ignoră mișcările minore ale indicatorului"
 
-#: ../src/mt-main.c:618
+#: ../src/mt-main.c:608
 msgid "Shut down mousetweaks"
 msgstr "Închide mousetweaks"
 
-#: ../src/mt-main.c:620
+#: ../src/mt-main.c:610
 msgid "Start mousetweaks as a daemon"
 msgstr "Pornește mousetweaks ca un serviciu de fundal"
 
-#: ../src/mt-main.c:622
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks in login mode"
 msgstr "Pornește mousetweaks în mod autentificare"
 
 #. parse
-#: ../src/mt-main.c:640
+#: ../src/mt-main.c:630
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- serviciul GNOME de accesibilitate a mausului"
 
@@ -301,25 +279,25 @@ msgstr "Afișarea ajutorului a eșuat"
 
 #: ../src/pointer-capture-applet.c:71
 msgid "Capture area"
-msgstr "Zonă captură"
+msgstr "Zona de captură"
 
 #: ../src/pointer-capture-applet.c:72
 msgid "Temporarily lock the mouse pointer"
 msgstr "Blochează temporar indicatorul mausului"
 
 #: ../src/pointer-capture-applet.c:434
-#, fuzzy
-#| msgid "Pointer Capture"
 msgid "Pointer Capture Applet"
-msgstr "Capturează indicatorul"
+msgstr "Miniaplicația de capturare a indicatorului mausului"
 
 #: ../src/pointer-capture-applet.c:480
 msgid "Locked"
 msgstr "Blocat"
 
 #: ../src/dwell-click-applet.c:449
+#, fuzzy
+#| msgid "Failed to Open the Univeral Access Panel"
 msgid "Failed to Open the Universal Access Panel"
-msgstr ""
+msgstr "Deschiderea panoului Acces universal a eșuat"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"
@@ -334,7 +312,7 @@ msgstr ""
 #~ msgstr "Modificator:"
 
 #~ msgid "Mouse b_utton:"
-#~ msgstr "B_uton de maus:"
+#~ msgstr "B_uton maus:"
 
 #~ msgid "Release Pointer"
 #~ msgstr "Eliberează indicatorul"
@@ -434,7 +412,7 @@ msgstr ""
 #~ msgstr "Capturează indicatorul doar dacă tasta Shift este apăsată"
 
 #~ msgid "Mouse button used to release the pointer"
-#~ msgstr "Buton de maus folosit pentru eliberarea indicatorului"
+#~ msgstr "Buton maus folosit pentru eliberarea indicatorului"
 
 #~ msgid "Release pointer only if Alt is pressed"
 #~ msgstr "Eliberează indicatorul doar dacă tasta Alt este apăsată"
@@ -450,7 +428,7 @@ msgstr ""
 #~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
 #~ "and \"3\" for right button."
 #~ msgstr ""
-#~ "Acest buton de maus trebuie să fie apăsat pentru a elibera indicatorul "
+#~ "Acest buton maus trebuie să fie apăsat pentru a elibera indicatorul "
 #~ "din zona de captură. Valorile valide sunt „1” pentru butonul stânga, „2” "
 #~ "pentru butonul din mijloc, „3” pentru butonul din dreapta"
 
@@ -475,13 +453,13 @@ msgstr ""
 #~ "timp ce se află deasupra zonei de capturare. Dacă această opțiune este "
 #~ "definită ca „true” și un buton al mausului este definit în cheia "
 #~ "„capture_buton”, atunci tasta Alt trebuie să fie apăsată în momentul "
-#~ "apăsării butonului de maus."
+#~ "apăsării butonului maus."
 
 #~ msgid ""
 #~ "Whether the Alt key must be pressed with the mouse button set in "
 #~ "\"release_button\" for the pointer to be released from the capture area."
 #~ msgstr ""
-#~ "Dacă tasta Alt trebuie să fie apăsată împreună cu butonul de maus definit "
+#~ "Dacă tasta Alt trebuie să fie apăsată împreună cu butonul maus definit "
 #~ "în „release_butoon” pentru eliberarea indicatorului din zone de captură."
 
 #~ msgid ""
@@ -494,13 +472,13 @@ msgstr ""
 #~ "timp ce se află deasupra zonei de capturare. Dacă această opțiune este "
 #~ "definită ca „true” și un buton al mausului este definit în cheia "
 #~ "„capture_buton”, atunci tasta Ctrl trebuie să fie apăsată în momentul "
-#~ "apăsării butonului de maus."
+#~ "apăsării butonului maus."
 
 #~ msgid ""
 #~ "Whether the Ctrl key must be pressed with the mouse button set in "
 #~ "\"release_button\" for the pointer to be released from the capture area."
 #~ msgstr ""
-#~ "Dacă tasta Ctrl trebuie să fie apăsată împreună cu butonul de maus "
+#~ "Dacă tasta Ctrl trebuie să fie apăsată împreună cu butonul maus "
 #~ "definit în „release_butoon” pentru eliberarea indicatorului din zone de "
 #~ "captură."
 
@@ -514,13 +492,13 @@ msgstr ""
 #~ "în timp ce se află deasupra zonei de capturare. Dacă această opțiune este "
 #~ "definită ca „true” și un buton al mausului este definit în cheia "
 #~ "„capture_buton”, atunci tasta Shift trebuie să fie apăsată în momentul "
-#~ "apăsării butonului de maus."
+#~ "apăsării butonului maus."
 
 #~ msgid ""
 #~ "Whether the Shift key must be pressed with the mouse button set in "
 #~ "\"release_button\" for the pointer to be released from the capture area."
 #~ msgstr ""
-#~ "Dacă tasta Shift trebuie să fie apăsată împreună cu butonul de maus "
+#~ "Dacă tasta Shift trebuie să fie apăsată împreună cu butonul maus "
 #~ "definit în „release_butoon” pentru eliberarea indicatorului din zone de "
 #~ "captură."
 

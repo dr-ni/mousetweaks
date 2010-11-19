@@ -56,6 +56,14 @@ typedef struct _PcApplet
     GtkToggleButton *modifier_control;
 } PcApplet;
 
+static const gchar menu_xml[] =
+{
+    "<menuitem name=\"item1\" action=\"Preferences\" />"
+    "<separator/>"
+    "<menuitem name=\"item2\" action=\"Help\" />"
+    "<menuitem name=\"item3\" action=\"About\" />"
+};
+
 GType pc_applet_get_type (void) G_GNUC_CONST;
 
 G_DEFINE_TYPE (PcApplet, pc_applet, PANEL_TYPE_APPLET)
@@ -144,36 +152,32 @@ pc_applet_class_init (PcAppletClass *klass)
 }
 
 static void
-capture_preferences (BonoboUIComponent *component,
-                     PcApplet          *pc,
-                     const gchar       *cname)
+capture_preferences (GtkAction *action, PcApplet *pc)
 {
     gtk_window_present (GTK_WINDOW (WID ("preferences")));
 }
 
 static void
-capture_help (BonoboUIComponent *component,
-              PcApplet          *pc,
-              const gchar       *cname)
+capture_help (GtkAction *action, PcApplet *pc)
 {
     mt_common_show_help (gtk_widget_get_screen (pc->area),
                          gtk_get_current_event_time ());
 }
 
 static void
-capture_about (BonoboUIComponent *component,
-               PcApplet          *pc,
-               const gchar       *cname)
+capture_about (GtkAction *action, PcApplet *pc)
 {
     gtk_window_present (GTK_WINDOW (WID ("about")));
 }
 
-static const BonoboUIVerb menu_verb[] =
+static const GtkActionEntry menu_actions[] =
 {
-    BONOBO_UI_UNSAFE_VERB ("PropertiesVerb", capture_preferences),
-    BONOBO_UI_UNSAFE_VERB ("HelpVerb", capture_help),
-    BONOBO_UI_UNSAFE_VERB ("AboutVerb", capture_about),
-    BONOBO_UI_VERB_END
+    { "Preferences", GTK_STOCK_PREFERENCES, N_("_Preferences"), NULL, NULL,
+      G_CALLBACK (capture_preferences) },
+    { "Help", GTK_STOCK_HELP, N_("_Help"), NULL, NULL,
+      G_CALLBACK (capture_help) },
+    { "About", GTK_STOCK_ABOUT, N_("_About"), NULL, NULL,
+      G_CALLBACK (capture_about) }
 };
 
 static void
@@ -426,6 +430,7 @@ fill_applet (PanelApplet *applet)
     PcApplet *pc = PC_APPLET (applet);
     GtkIconTheme *theme;
     GtkWidget *about;
+    GtkActionGroup *group;
 
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
@@ -449,8 +454,6 @@ fill_applet (PanelApplet *applet)
     panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
     panel_applet_set_flags (applet, PANEL_APPLET_EXPAND_MINOR |
                                     PANEL_APPLET_HAS_HANDLE);
-    panel_applet_setup_menu_from_file (applet, DATADIR, "PointerCapture.xml",
-                                       NULL, menu_verb, pc);
 
     g_signal_connect (pc, "destroy",
                       G_CALLBACK (pc_applet_destroy), NULL);
@@ -460,6 +463,13 @@ fill_applet (PanelApplet *applet)
                       G_CALLBACK (pc_applet_button_press), pc);
     g_signal_connect (pc, "visibility_notify_event",
                       G_CALLBACK (pc_applet_visibility_notify), pc);
+
+    /* context menu */
+    group = gtk_action_group_new ("actions");
+    gtk_action_group_set_translation_domain (group, GETTEXT_PACKAGE);
+    gtk_action_group_add_actions (group, menu_actions, 3, pc);
+    panel_applet_setup_menu (applet, menu_xml, group);
+    g_object_unref (group);
 
     /* icon theme */
     theme = gtk_icon_theme_get_default ();
@@ -494,15 +504,14 @@ fill_applet (PanelApplet *applet)
 static gboolean
 applet_factory (PanelApplet *applet, const gchar *iid, gpointer data)
 {
-    if (!g_str_equal (iid, "OAFIID:PointerCaptureApplet"))
+    if (!g_str_equal (iid, "PointerCaptureApplet"))
         return FALSE;
 
     return fill_applet (applet);
 }
 
-PANEL_APPLET_BONOBO_FACTORY ("OAFIID:PointerCaptureApplet_Factory",
-                             PC_TYPE_APPLET,
-                             "Pointer Capture Factory",
-                             VERSION,
-                             applet_factory,
-                             NULL);
+PANEL_APPLET_OUT_PROCESS_FACTORY ("PointerCaptureAppletFactory",
+                                  PC_TYPE_APPLET,
+                                  "Pointer Capture Applet",
+                                  applet_factory,
+                                  NULL)

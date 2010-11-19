@@ -62,25 +62,28 @@ static const gchar *img_widgets_v[] =
     "single_click_img_v"
 };
 
-static void preferences_dialog (BonoboUIComponent *component,
-                                gpointer           data,
-                                const char        *cname);
-static void help_dialog        (BonoboUIComponent *component,
-                                DwellData         *dd,
-                                const char        *cname);
-static void about_dialog       (BonoboUIComponent *component,
-                                DwellData         *dd,
-                                const char        *cname);
-
-static const BonoboUIVerb menu_verb[] =
+static const gchar menu_xml[] =
 {
-    BONOBO_UI_UNSAFE_VERB ("PropertiesVerb", preferences_dialog),
-    BONOBO_UI_UNSAFE_VERB ("HelpVerb", help_dialog),
-    BONOBO_UI_UNSAFE_VERB ("AboutVerb", about_dialog),
-    BONOBO_UI_VERB_END
+    "<menuitem name=\"item1\" action=\"Preferences\" />"
+    "<separator/>"
+    "<menuitem name=\"item2\" action=\"Help\" />"
+    "<menuitem name=\"item3\" action=\"About\" />"
 };
 
-static void button_cb (GtkToggleButton *button, DwellData *dd);
+static void button_cb          (GtkToggleButton *button, DwellData *dd);
+static void preferences_dialog (GtkAction *action, DwellData *dd);
+static void help_dialog        (GtkAction *action, DwellData *dd);
+static void about_dialog       (GtkAction *action, DwellData *dd);
+
+static const GtkActionEntry menu_actions[] =
+{
+    { "Preferences", GTK_STOCK_PREFERENCES, N_("_Preferences"), NULL, NULL,
+      G_CALLBACK (preferences_dialog) },
+    { "Help", GTK_STOCK_HELP, N_("_Help"), NULL, NULL,
+      G_CALLBACK (help_dialog) },
+    { "About", GTK_STOCK_ABOUT, N_("_About"), NULL, NULL,
+      G_CALLBACK (about_dialog) }
+};
 
 static void
 update_sensitivity (DwellData *dd)
@@ -438,9 +441,7 @@ applet_unrealized (GtkWidget *widget, DwellData *dd)
 }
 
 static void
-preferences_dialog (BonoboUIComponent *component,
-                    gpointer           data,
-                    const char        *cname)
+preferences_dialog (GtkAction *action, DwellData *dd)
 {
     GError *error = NULL;
 
@@ -454,18 +455,14 @@ preferences_dialog (BonoboUIComponent *component,
 }
 
 static void
-help_dialog (BonoboUIComponent *component,
-             DwellData         *dd,
-             const char        *cname)
+help_dialog (GtkAction *action, DwellData *dd)
 {
     mt_common_show_help (gtk_widget_get_screen (dd->box),
                          gtk_get_current_event_time ());
 }
 
 static void
-about_dialog (BonoboUIComponent *component,
-              DwellData         *dd,
-              const char        *cname)
+about_dialog (GtkAction *action, DwellData *dd)
 {
     gtk_window_present (GTK_WINDOW (WID ("about")));
 }
@@ -577,13 +574,14 @@ fill_applet (PanelApplet *applet)
     DwellData *dd;
     GError *error = NULL;
     GtkWidget *about;
+    GtkActionGroup *group;
     PanelAppletOrient orient;
 
     bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
 
-    g_set_application_name (_("Dwell Click"));
+    g_set_application_name (_("Dwell Click Applet"));
     gtk_window_set_default_icon_name (MT_ICON_NAME);
 
     dd = g_slice_new0 (DwellData);
@@ -617,12 +615,12 @@ fill_applet (PanelApplet *applet)
                       G_CALLBACK (about_response), dd);
 
     /* gsettings */
-    dd->settings = g_settings_new (MOUSETWEAKS_SCHEMA_ID);
-    g_signal_connect (dd->settings, "value::" KEY_DWELL_ENABLED,
+    dd->settings = g_settings_new (A11Y_MOUSE_SCHEMA_ID);
+    g_signal_connect (dd->settings, "changed::" KEY_DWELL_ENABLED,
                       G_CALLBACK (dwell_enabled_changed), dd);
-    g_signal_connect (dd->settings, "value::" KEY_DWELL_MODE,
+    g_signal_connect (dd->settings, "changed::" KEY_DWELL_MODE,
                       G_CALLBACK (dwell_mode_changed), dd);
-    g_signal_connect (dd->settings, "value::" KEY_DWELL_TIME,
+    g_signal_connect (dd->settings, "changed::" KEY_DWELL_TIME,
                       G_CALLBACK (dwell_time_changed), dd);
 
     /* icons */
@@ -640,14 +638,18 @@ fill_applet (PanelApplet *applet)
                             PANEL_APPLET_EXPAND_MINOR |
                             PANEL_APPLET_HAS_HANDLE);
     panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
-    panel_applet_setup_menu_from_file (applet,
-                                       DATADIR, "DwellClick.xml",
-                                       NULL, menu_verb, dd);
 
     g_signal_connect (applet, "change-orient",
                       G_CALLBACK (applet_orient_changed), dd);
     g_signal_connect (applet, "unrealize",
                       G_CALLBACK (applet_unrealized), dd);
+
+    /* context menu */
+    group = gtk_action_group_new ("actions");
+    gtk_action_group_set_translation_domain (group, GETTEXT_PACKAGE);
+    gtk_action_group_add_actions (group, menu_actions, 3, dd);
+    panel_applet_setup_menu (applet, menu_xml, group);
+    g_object_unref (group);
 
     /* check initial orientation */
     orient = panel_applet_get_orient (applet);
@@ -683,15 +685,14 @@ fill_applet (PanelApplet *applet)
 static gboolean
 applet_factory (PanelApplet *applet, const gchar *iid, gpointer data)
 {
-    if (!g_str_equal (iid, "OAFIID:DwellClickApplet"))
+    if (!g_str_equal (iid, "DwellClickApplet"))
         return FALSE;
 
     return fill_applet (applet);
 }
 
-PANEL_APPLET_BONOBO_FACTORY ("OAFIID:DwellClickApplet_Factory",
-                             PANEL_TYPE_APPLET,
-                             "Dwell Click Factory",
-                             VERSION,
-                             applet_factory,
-                             NULL);
+PANEL_APPLET_OUT_PROCESS_FACTORY ("DwellClickAppletFactory",
+                                  PANEL_TYPE_APPLET,
+                                  "Dwell Click Applet",
+                                  applet_factory,
+                                  NULL)

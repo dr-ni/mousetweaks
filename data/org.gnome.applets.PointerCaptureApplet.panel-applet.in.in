@@ -1,0 +1,16 @@
+[Applet Factory]
+Id=PointerCaptureAppletFactory
+Location=@BINDIR@/pointer-capture-applet
+Name=Pointer Capture Applet Factory
+Description=Pointer Capture Applet Factory
+
+[PointerCaptureApplet]
+_Name=Pointer Capture Applet
+_Description=Area to lock the pointer
+Icon=input-mouse
+BonoboId=OAFIID:PointerCaptureApplet
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=mousetweaks
+X-GNOME-Bugzilla-Component=pointer-capture applet
+X-GNOME-Bugzilla-Version=@VERSION@
+

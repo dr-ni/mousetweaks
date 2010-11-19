@@ -1,0 +1,16 @@
+[Applet Factory]
+Id=DwellClickAppletFactory
+Location=@BINDIR@/dwell-click-applet
+Name=Dwell Click Applet Factory
+Description=Dwell Click Applet Factory
+
+[DwellClickApplet]
+_Name=Dwell Click Applet
+_Description=Control your desktop without using mouse buttons
+Icon=input-mouse
+BonoboId=OAFIID:DwellClickApplet
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=mousetweaks
+X-GNOME-Bugzilla-Component=dwell-click applet
+X-GNOME-Bugzilla-Version=@VERSION@
+

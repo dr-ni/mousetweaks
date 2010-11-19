@@ -81,7 +81,7 @@ fi
 dnl *** libpanelapplet (OPTIONAL) ***
 
 if test "$build_dca" = yes -o "$build_pca" = yes; then
-	PKG_CHECK_MODULES(PANELAPPLET, libpanelapplet-2.0)
+	PKG_CHECK_MODULES(PANELAPPLET, libpanelapplet-3.0)
 fi
 
 dnl *** GLib tools ***

@@ -1,37 +1,43 @@
 if BUILD_PCA
 pca_schema  = org.gnome.pointer-capture.gschema.xml.in
 pca_ui      = pointer-capture-applet.ui
-pca_server  = PointerCapture_Factory.server.in
-pca_menu    = PointerCapture.xml
+pca_service = org.gnome.panel.applet.PointerCaptureAppletFactory.service.in
+pca_applet  = org.gnome.applets.PointerCaptureApplet.panel-applet.in
+
+org.gnome.panel.applet.PointerCaptureAppletFactory.service: $(pca_service)
+	$(AM_V_GEN) sed -e "s|\@BINDIR\@|$(bindir)|" $< > $@
+
+$(pca_applet): $(pca_applet).in Makefile
+	$(AM_V_GEN) sed -e "s|\@BINDIR\@|$(bindir)|" -e "s|\@VERSION\@|$(VERSION)|" $< > $@
 endif
 
 if BUILD_DCA
-dca_ui     = dwell-click-applet.ui
-dca_server = DwellClick_Factory.server.in
-dca_menu   = DwellClick.xml
+dca_ui      = dwell-click-applet.ui
+dca_service = org.gnome.panel.applet.DwellClickAppletFactory.service.in
+dca_applet  = org.gnome.applets.DwellClickApplet.panel-applet.in
+
+org.gnome.panel.applet.DwellClickAppletFactory.service: $(dca_service)
+	$(AM_V_GEN) sed -e "s|\@BINDIR\@|$(bindir)|" $< > $@
+
+$(dca_applet): $(dca_applet).in Makefile
+	$(AM_V_GEN) sed -e "s|\@BINDIR\@|$(bindir)|" -e "s|\@VERSION\@|$(VERSION)|" $< > $@
 endif
 
-@INTLTOOL_SERVER_RULE@
-serverdir = $(libdir)/bonobo/servers
-server_in_files = $(pca_server)	$(dca_server)
-server_in_in_files = $(server_in_files:.server.in=.server.in.in)
-server_DATA = $(server_in_files:.server.in=.server)
+appletdir = $(datadir)/gnome-panel/applets
+applet_in_in_files = $(applet_in_files:.panel-applet.in=.panel-applet.in.in)
+applet_in_files = $(pca_applet) $(dca_applet)
+applet_DATA = $(applet_in_files:.panel-applet.in=.panel-applet)
 
-if BUILD_PCA
-$(pca_server): $(pca_server).in Makefile
-	sed -e "s|\@bindir\@|$(bindir)|g" < $< > $@
-endif
+%.panel-applet: %.panel-applet.in \
+	$(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*po);
+	LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache
 
-if BUILD_DCA
-$(dca_server): $(dca_server).in Makefile
-	sed -e "s|\@bindir\@|$(bindir)|g" < $< > $@
-endif
+servicedir = $(datadir)/dbus-1/services
+service_in_files = $(pca_service) $(dca_service)
+service_DATA = $(service_in_files:.service.in=.service)
 
 uidir = $(datadir)/mousetweaks
 ui_DATA = mousetweaks.ui $(pca_ui) $(dca_ui)
-
-menudir = $(datadir)/mousetweaks
-menu_DATA = $(pca_menu) $(dca_menu)
 
 convertdir = $(datadir)/GConf/gsettings
 convert_DATA = mousetweaks.convert
@@ -45,16 +51,17 @@ gsettings_SCHEMAS = $(gsettings_in_files:.xml.in=.xml)
 @GSETTINGS_RULES@
 
 EXTRA_DIST =                \
-    $(server_in_in_files)   \
-    $(menu_DATA)            \
+    $(service_in_files)     \
+    $(applet_in_in_files)   \
     $(ui_DATA)              \
     $(gsettings_in_files)   \
     $(gsettings_ENUM_FILES) \
     $(convert_DATA)
 
 DISTCLEANFILES =            \
-    $(server_DATA)          \
-    $(server_in_files)      \
+    $(service_DATA)         \
+    $(applet_in_files)      \
+    $(applet_DATA)          \
     $(gsettings_SCHEMAS)
 
 -include $(top_srcdir)/git.mk

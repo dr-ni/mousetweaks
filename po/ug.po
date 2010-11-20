@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-11-08 16:31+0000\n"
+"POT-Creation-Date: 2010-11-13 23:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Gheyret Kenji<gheyret@yahoo.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../data/pointer-capture-applet.ui.h:3
 msgid "C_trl"
-msgstr ""
+msgstr "C_trl"
 
 #: ../data/pointer-capture-applet.ui.h:4
 msgid "Capture and Release Controls"
@@ -99,7 +99,7 @@ msgstr "چېكىت"
 
 #: ../data/mousetweaks.ui.h:1
 msgid "Button Style"
-msgstr ""
+msgstr "توپچا ئۇسلۇبى"
 
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4

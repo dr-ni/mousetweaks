@@ -1,3 +1,18 @@
+Version 2.91.3
+--------------
+
+Misc changes, improvements and fixes:
+
+    - Port applets to libpanelapplet-3
+
+New and updated translations:
+
+    [he] Yaron Shahrabani
+    [gl] Fran Diéguez
+    [ro] Lucian Adrian Grijincu, Daniel Șerbănescu
+    [sl] Matej Urbančič
+    [ug] Gheyret T. Kenji
+
 Version 2.91.2
 --------------
 

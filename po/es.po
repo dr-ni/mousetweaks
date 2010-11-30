@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: mousetweaks.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-11-02 19:07+0000\n"
-"PO-Revision-Date: 2010-11-03 12:59+0100\n"
+"POT-Creation-Date: 2010-11-19 13:15+0000\n"
+"PO-Revision-Date: 2010-11-30 23:42+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "Pulsación doble"
 msgid "Drag Click"
 msgstr "Pulsación de arrastre"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:602
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
 msgid "Enable dwell click"
 msgstr "Activar la pulsación al posarse"
 
@@ -47,7 +47,7 @@ msgstr "Activar la pulsación al posarse"
 msgid "Right Click"
 msgstr "Pulsación derecha"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:10
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
 msgid "Single Click"
 msgstr "Pulsación sencilla"
 
@@ -116,67 +116,59 @@ msgstr "Arrastrar"
 msgid "Dwell Click-Type"
 msgstr "Tipo de pulsación al posarse"
 
-#: ../data/mousetweaks.ui.h:6
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:7
 msgid "Horizontal"
 msgstr "Horizontal"
 
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
 msgstr "Sólo iconos"
 
-#: ../data/mousetweaks.ui.h:8
+#: ../data/mousetweaks.ui.h:9
 msgid "Orientation"
 msgstr "Orientación"
 
-#: ../data/mousetweaks.ui.h:9
+#: ../data/mousetweaks.ui.h:10
 msgid "Secondary Click"
 msgstr "Pulsación secundaria"
 
-#: ../data/mousetweaks.ui.h:11
+#: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
 msgstr "Iconos y texto"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:13
 msgid "Text only"
 msgstr "Sólo texto"
 
-#: ../data/mousetweaks.ui.h:13
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
 msgstr "Vertical"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:586
-msgid "Dwell Click"
-msgstr "Pulsación al posarse"
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr "Controlar su escritorio sin usar los botones del ratón"
 
-#: ../data/DwellClick_Factory.server.in.in.h:2
-msgid "Select dwelling click type"
-msgstr "Seleccione el tipo de pulsación al posarse"
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+msgid "Dwell Click Applet"
+msgstr "Miniaplicación Pulsación al posarse"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr "Área en la que bloquear el puntero"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:2
-msgid "Pointer Capture"
-msgstr "Captura del puntero"
-
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
-msgid "_About"
-msgstr "Acerca _de"
-
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
-msgid "_Help"
-msgstr "Ay_uda"
-
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
-msgid "_Preferences"
-msgstr "Prefere_ncias"
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+msgid "Pointer Capture Applet"
+msgstr "Miniaplicación Captura del puntero"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
 msgstr "Estilo del botón de la ventana del tipo de pulsación."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:616
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
 msgid "Click-type window geometry"
 msgstr "Geometría de la ventana del tipo de pulsación"
 
@@ -228,44 +220,44 @@ msgstr "Tamaño del área de captura"
 msgid "Width of the capture area in pixels."
 msgstr "Ancho del área de captura en píxeles."
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:594
 msgid "Enable simulated secondary click"
 msgstr "Activar la pulsación secundaria simulada"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:596
 msgid "Time to wait before a dwell click"
 msgstr "Tiempo que esperar antes de una pulsación al posarse"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:598
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tiempo que esperar antes de una pulsación secundaria simulada"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:600
 msgid "Set the active dwell mode"
 msgstr "Establecer el modo de posado activo"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:602
 msgid "Show a click-type window"
 msgstr "Mostrar una ventana de tipo de pulsación"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:604
 msgid "Ignore small pointer movements"
 msgstr "Ignorar los movimientos pequeños del puntero"
 
-#: ../src/mt-main.c:618
+#: ../src/mt-main.c:608
 msgid "Shut down mousetweaks"
 msgstr "Apagar los ajustes finos del ratón"
 
-#: ../src/mt-main.c:620
+#: ../src/mt-main.c:610
 msgid "Start mousetweaks as a daemon"
 msgstr "Iniciar los ajustes finos del ratón como un demonio"
 
-#: ../src/mt-main.c:622
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks in login mode"
 msgstr "Iniciar los ajustes finos del ratón en modo inicio de sesión"
 
 #. parse
-#: ../src/mt-main.c:640
+#: ../src/mt-main.c:630
 msgid "- GNOME mouse accessibility daemon"
 msgstr " - Demonio de accesibilidad del ratón de GNOME"
 
@@ -273,26 +265,42 @@ msgstr " - Demonio de accesibilidad del ratón de GNOME"
 msgid "Failed to Display Help"
 msgstr "Falló al mostrar la ayuda"
 
-#: ../src/pointer-capture-applet.c:71
+#: ../src/pointer-capture-applet.c:79
 msgid "Capture area"
 msgstr "Capturar área"
 
-#: ../src/pointer-capture-applet.c:72
+#: ../src/pointer-capture-applet.c:80
 msgid "Temporarily lock the mouse pointer"
 msgstr "Bloquear temporalmente el puntero del ratón"
 
-#: ../src/pointer-capture-applet.c:434
-msgid "Pointer Capture Applet"
-msgstr "Miniaplicación Captura del puntero"
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "Prefere_ncias"
 
-#: ../src/pointer-capture-applet.c:480
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "Ay_uda"
+
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "Acerca _de"
+
+#: ../src/pointer-capture-applet.c:490
 msgid "Locked"
 msgstr "Bloqueado"
 
-#: ../src/dwell-click-applet.c:449
-#| msgid "Failed to Open the Univeral Access Panel"
+#: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
 msgstr "Falló al abrir el Panel de acceso universal"
+
+#~ msgid "Dwell Click"
+#~ msgstr "Pulsación al posarse"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Seleccione el tipo de pulsación al posarse"
+
+#~ msgid "Pointer Capture"
+#~ msgstr "Captura del puntero"
 
 #~ msgid "Click-type window X position"
 #~ msgstr "Posición X de la ventana de tipo pulsación"
@@ -604,9 +612,6 @@ msgstr "Falló al abrir el Panel de acceso universal"
 
 #~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
 #~ msgstr "Botón para capturar el puntero (\"0\" = captura inmediata)"
-
-#~ msgid "Dwell Click Applet"
-#~ msgstr "Miniaplicación Pulsación al posarse"
 
 #~ msgid "Couldn't display help"
 #~ msgstr "No se pudo mostrar la ayuda"

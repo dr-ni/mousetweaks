@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-11-13 23:06+0000\n"
-"PO-Revision-Date: 2010-11-14 12:19+0100\n"
+"POT-Creation-Date: 2010-12-03 14:07+0000\n"
+"PO-Revision-Date: 2010-12-03 20:18+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: \n"
@@ -151,37 +151,23 @@ msgstr "Le besedilo"
 msgid "Vertical"
 msgstr "Navpično"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1
-#: ../src/dwell-click-applet.c:586
-msgid "Dwell Click"
-msgstr "Zadržani klik"
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr "Nadzor namizja brez uporabe gumbov miške"
 
-#: ../data/DwellClick_Factory.server.in.in.h:2
-msgid "Select dwelling click type"
-msgstr "Izbor vrste zadržanega klika"
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+msgid "Dwell Click Applet"
+msgstr "Aplet zadržanega klika"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr "Območje za zaklepanje kazalnika"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:2
-msgid "Pointer Capture"
-msgstr "Zajem kazalnika"
-
-#: ../data/DwellClick.xml.h:1
-#: ../data/PointerCapture.xml.h:1
-msgid "_About"
-msgstr "_O Programu"
-
-#: ../data/DwellClick.xml.h:2
-#: ../data/PointerCapture.xml.h:2
-msgid "_Help"
-msgstr "Pomo_č"
-
-#: ../data/DwellClick.xml.h:3
-#: ../data/PointerCapture.xml.h:3
-msgid "_Preferences"
-msgstr "_Možnosti"
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+msgid "Pointer Capture Applet"
+msgstr "Aplet zajema kazalnika"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
@@ -281,26 +267,43 @@ msgstr " - GNOME ozadnji program miške"
 msgid "Failed to Display Help"
 msgstr "Napaka med prikazovanjem pomoči"
 
-#: ../src/pointer-capture-applet.c:71
+#: ../src/pointer-capture-applet.c:79
 msgid "Capture area"
 msgstr "Območje zajemanja"
 
-#: ../src/pointer-capture-applet.c:72
+#: ../src/pointer-capture-applet.c:80
 msgid "Temporarily lock the mouse pointer"
 msgstr "Začasni zaklep kazalnika miške"
 
-#: ../src/pointer-capture-applet.c:434
-msgid "Pointer Capture Applet"
-msgstr "Aplet zajema kazalnika"
+#: ../src/pointer-capture-applet.c:175
+#: ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "_Možnosti"
 
-#: ../src/pointer-capture-applet.c:480
+#: ../src/pointer-capture-applet.c:177
+#: ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "Pomo_č"
+
+#: ../src/pointer-capture-applet.c:179
+#: ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "_O Programu"
+
+#: ../src/pointer-capture-applet.c:490
 msgid "Locked"
 msgstr "Zaklenjeno"
 
-#: ../src/dwell-click-applet.c:449
+#: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
 msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 
+#~ msgid "Dwell Click"
+#~ msgstr "Zadržani klik"
+#~ msgid "Select dwelling click type"
+#~ msgstr "Izbor vrste zadržanega klika"
+#~ msgid "Pointer Capture"
+#~ msgstr "Zajem kazalnika"
 #~ msgid "Show Icons and Text"
 #~ msgstr "Pokaži ikone in besedilo"
 #~ msgid ""
@@ -533,8 +536,6 @@ msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 #~ msgstr "Izključeno"
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>Velikost območja zajemanja</b>"
-#~ msgid "Dwell Click Applet"
-#~ msgstr "Aplet zadržanega klika"
 #~ msgid "Couldn't display help"
 #~ msgstr "Ni mogoče prikazati pomoči"
 #~ msgid "Enable simualted secondary click"

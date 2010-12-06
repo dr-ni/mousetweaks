@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: mousetweak master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-07-13 16:52+0000\n"
-"PO-Revision-Date: 2010-07-19 00:25+0800\n"
+"POT-Creation-Date: 2010-11-20 00:27+0000\n"
+"PO-Revision-Date: 2010-11-20 12:46+0800\n"
 "Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -23,39 +23,34 @@ msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of Mousetweaks"
 msgstr ""
-"用于选择不同增强型点击方式的小程序。\n"
+"用于选择各种悬停点击类型的小程序。\n"
 "Mousetweaks 的一部分"
 
 #: ../data/dwell-click-applet.ui.h:3
 msgid "Click Type Window"
 msgstr "点击方式窗口"
 
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
 msgid "Double Click"
 msgstr "双击"
 
-#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#: ../data/dwell-click-applet.ui.h:5
 msgid "Drag Click"
 msgstr "拖动"
 
-#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:807
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
 msgid "Enable dwell click"
 msgstr "启用悬停点击"
 
-#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+#: ../data/dwell-click-applet.ui.h:7
 msgid "Right Click"
 msgstr "右击"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
 msgid "Single Click"
 msgstr "单击"
 
 #: ../data/pointer-capture-applet.ui.h:1
-msgid "A_lt"
-msgstr "A_lt"
-
-#: ../data/pointer-capture-applet.ui.h:2
 msgid ""
 "Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -63,394 +58,438 @@ msgstr ""
 "鼠标指针锁在面板上的区域。\n"
 "Mousetweaks 的一部分"
 
-#: ../data/pointer-capture-applet.ui.h:4
+#: ../data/pointer-capture-applet.ui.h:3
 msgid "C_trl"
 msgstr "C_trl"
 
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "Capture and Release Controls"
+msgstr "捕获和释放控制"
+
 #: ../data/pointer-capture-applet.ui.h:5
-msgid "Capture Pointer"
-msgstr "锁定鼠标指针"
+msgid "Keyboard modifier:"
+msgstr "键盘修饰键："
 
 #: ../data/pointer-capture-applet.ui.h:6
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Modifier:"
-msgstr "组合键："
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Mouse _button:"
-msgstr "鼠标按键(_B)："
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "Mouse b_utton:"
-msgstr "鼠标按键(_U)："
-
-#: ../data/pointer-capture-applet.ui.h:10
 msgid "Pointer Capture Preferences"
 msgstr "指针锁定选项"
 
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "Release Pointer"
-msgstr "释放指针"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "S_hift"
-msgstr "S_hift"
-
-#: ../data/pointer-capture-applet.ui.h:13
+#: ../data/pointer-capture-applet.ui.h:7
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "选中热键 0 将立即锁定指针"
 
-#: ../data/pointer-capture-applet.ui.h:14
-msgid "Sh_ift"
-msgstr "Sh_ift"
-
-#: ../data/pointer-capture-applet.ui.h:15
+#: ../data/pointer-capture-applet.ui.h:8
 msgid "Size of the Capture Area"
 msgstr "锁定区域的大小"
 
-#: ../data/pointer-capture-applet.ui.h:16
+#: ../data/pointer-capture-applet.ui.h:9
 msgid "_Alt"
 msgstr "_Alt"
 
-#: ../data/pointer-capture-applet.ui.h:17
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "_Mouse button:"
+msgstr "鼠标按键(_M)："
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "_Shift"
+msgstr "_Shift"
+
+#: ../data/pointer-capture-applet.ui.h:12
 msgid "_Width:"
 msgstr "宽度(_W)："
 
-#: ../data/pointer-capture-applet.ui.h:18
+#: ../data/pointer-capture-applet.ui.h:13
 msgid "pixels"
 msgstr "像素"
 
-#: ../data/mousetweaks.ui.h:3
-msgid "Dwell Click Type"
-msgstr "悬停点击类型"
+#: ../data/mousetweaks.ui.h:1
+msgid "Button Style"
+msgstr "按钮样式"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:4
+msgid "Drag"
+msgstr "拖动"
 
 #: ../data/mousetweaks.ui.h:5
-msgid "Show Icons and Text"
-msgstr "显示图标和文字"
+msgid "Dwell Click-Type"
+msgstr "悬停点击类型"
 
-#: ../data/mousetweaks.ui.h:6
-msgid "Show Icons only"
-msgstr "仅显示图标"
-
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:7
-msgid "Show Text only"
-msgstr "仅显示文字"
+msgid "Horizontal"
+msgstr "水平"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
-msgid "Dwell Click"
-msgstr "悬停点击"
+#: ../data/mousetweaks.ui.h:8
+msgid "Icons only"
+msgstr "仅图标"
 
-#: ../data/DwellClick_Factory.server.in.in.h:2
-msgid "Select dwelling click type"
-msgstr "选择悬停点击类型"
+#: ../data/mousetweaks.ui.h:9
+msgid "Orientation"
+msgstr "方向"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
+#: ../data/mousetweaks.ui.h:10
+msgid "Secondary Click"
+msgstr "次要点击"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Text and Icons"
+msgstr "文本和图标"
+
+#: ../data/mousetweaks.ui.h:13
+msgid "Text only"
+msgstr "仅文字"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "竖直"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr "不使用鼠标按键即可控制您的桌面"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+msgid "Dwell Click Applet"
+msgstr "增强型点击小程序"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr "用于锁住指针的范围"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:530
-msgid "Pointer Capture"
-msgstr "锁定指针"
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+msgid "Pointer Capture Applet"
+msgstr "指针锁定小程序"
 
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
-msgid "_About"
-msgstr "关于(_A)"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Button style of the click-type window."
+msgstr "点击类型窗口的按钮样式。"
 
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
-msgid "_Help"
-msgstr "帮助(_H)"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+msgid "Click-type window geometry"
+msgstr "点击类型窗口的几何尺寸"
 
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
-msgid "_Preferences"
-msgstr "选项(_P)"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "点击类型窗口的方向"
 
-#: ../data/mousetweaks.schemas.in.h:1
-msgid "Animate cursor"
-msgstr "动画指针"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Click-type window style"
+msgstr "点击类型窗口的样式"
 
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style"
-msgstr "按钮样式"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+msgid "Orientation of the click-type window."
+msgstr "点击类型窗口的方向。"
 
-#: ../data/mousetweaks.schemas.in.h:3
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
-"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
-msgstr "点击类型窗口中的按钮样式 (“0”=文本，“1”=图标，“2”=两者都有)"
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr "点击类型窗口的大小和位置。格式为标准的 X 窗口系统几何尺寸字符串。"
 
-#: ../data/mousetweaks.schemas.in.h:4
-msgid ""
-"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr "执行双击操作的方向 (“0”=左，“1”=右，“2”=上，“3”=下)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
+msgid "\"Alt\" keyboard modifier"
+msgstr "“Alt”键盘修饰键"
 
-#: ../data/mousetweaks.schemas.in.h:5
-msgid ""
-"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
-msgstr "执行拖动操作的方向 (“0”=左，“1”=右，“2”=上，“3”=下)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
+msgid "\"Control\" keyboard modifier"
+msgstr "“Control”键盘修饰键"
 
-#: ../data/mousetweaks.schemas.in.h:6
-msgid ""
-"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr "执行次要按钮(右键)点击的方向 (“0”=左，“1”=右，“2”=上，“3”=下)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
+msgid "\"Shift\" keyboard modifier"
+msgstr "“Shift”键盘修饰键"
 
-#: ../data/mousetweaks.schemas.in.h:7
-msgid ""
-"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr "执行单击操作的方向 (“0”=左，“1”=右，“2”=上，“3”=下)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
+msgid "Mouse button"
+msgstr "鼠标按键"
 
-#: ../data/mousetweaks.schemas.in.h:8
-msgid "Distance in pixels before movement will be recognized"
-msgstr "作为移动操作所需移动的距离(像素)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
+msgid "Mouse button used to capture or release the pointer."
+msgstr "用于捕获或释放指针的鼠标按键"
 
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode"
-msgstr "悬停点击模式"
-
-#: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr "悬停点击模式 (“0”=窗口模式，“1”=鼠标手势模式)"
-
-#: ../data/mousetweaks.schemas.in.h:11
-msgid "Dwell click time"
-msgstr "悬停点击时间"
-
-#: ../data/mousetweaks.schemas.in.h:13
-msgid "Enable secondary click"
-msgstr "启用次要按钮(右键)点击"
-
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
-msgid "Enable simulated secondary click"
-msgstr "启用模拟次要按钮(右键)点击"
-
-#: ../data/mousetweaks.schemas.in.h:15
-msgid "Gesture double click"
-msgstr "双击手势"
-
-#: ../data/mousetweaks.schemas.in.h:16
-msgid "Gesture drag click"
-msgstr "拖动手势"
-
-#: ../data/mousetweaks.schemas.in.h:17
-msgid "Gesture secondary click"
-msgstr "次要按钮(右键)点击手势"
-
-#: ../data/mousetweaks.schemas.in.h:18
-msgid "Gesture single click"
-msgstr "单击手势"
-
-#: ../data/mousetweaks.schemas.in.h:19
-msgid "Movement threshold"
-msgstr "移动阀值"
-
-#: ../data/mousetweaks.schemas.in.h:20
-msgid "Secondary click time"
-msgstr "次要按钮(右键)点击的时间"
-
-#: ../data/mousetweaks.schemas.in.h:21
-msgid "Show click type window"
-msgstr "显示点击类型窗口"
-
-#: ../data/mousetweaks.schemas.in.h:22
-msgid "Show elapsed time as cursor overlay."
-msgstr "显示光标停留时间。"
-
-#: ../data/mousetweaks.schemas.in.h:23
-msgid "Time in seconds before a click is triggered"
-msgstr "触发点击的时间(秒)"
-
-#: ../data/mousetweaks.schemas.in.h:24
-msgid "Time in seconds before a secondary click is triggered"
-msgstr "触发次要按钮(右键)点击的时间(秒)"
-
-#: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture pointer only if Alt is pressed"
-msgstr "仅在 Alt 键按住时锁定指针"
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture pointer only if Ctrl is pressed"
-msgstr "仅在 Ctrl 键按住时锁定指针"
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture pointer only if Shift is pressed"
-msgstr "仅在 Shift 键按住时锁定指针"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Mouse button used to capture the pointer"
-msgstr "释放指针的鼠标按钮"
-
-#: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Mouse button used to release the pointer"
-msgstr "释放指针的鼠标按钮"
-
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Release pointer only if Alt is pressed"
-msgstr "仅在 Alt 键按住时释放指针"
-
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Release pointer only if Ctrl is pressed"
-msgstr "仅在 Ctrl 键按住时释放指针"
-
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release pointer only if Shift is pressed"
-msgstr "仅在 Shift 键按住时释放指针"
-
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
 msgstr "捕获区域的大小"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid ""
-"This mouse button must be pressed to release the pointer from the capture "
-"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
-"\"3\" for right button."
-msgstr ""
-"这个鼠标按钮必须在捕获区域里点击(按住到释放)。对应的值是“1”代表点左键，“2”代"
-"表点中键，“3”代表点右键。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid ""
-"This mouse button must be pressed while the pointer is over the capture area "
-"in order to capture the pointer. Valid values are \"0\" if no button is "
-"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
-"button."
-msgstr ""
-"要想锁定指针，这个按钮必须在捕获区域里点击。如果不需要点击就锁定请选"
-"择“0”。“1”代表点左键，“2”代表点中键，“3”代表点右键。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid ""
-"Whether the Alt key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Alt key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"当指针移到捕获区域时，是否需要同时按住 Alt 键来锁定指针。如果选中了此项，并且"
-"指定了一个“锁定按钮”，当点击“锁定按钮”想要锁定指针时，必须按住同时 Alt 键。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
-msgid ""
-"Whether the Alt key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr "要想从捕获区域释放指针时，是否需要同时按住 Alt 键配合点击“释放按钮”。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid ""
-"Whether the Ctrl key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Ctrl key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"当指针移到捕获区域时，是否需要同时按住 Ctrl 键来锁定指针。如果选中了此项，并"
-"且指定了一个“锁定按钮”，当点击“锁定按钮”想要锁定指针时，必须按住同时 Ctrl "
-"键。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:15
-msgid ""
-"Whether the Ctrl key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr "要想从捕获区域释放指针时，是否需要同时按住 Ctrl 键配合点击“释放按钮”。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:16
-msgid ""
-"Whether the Shift key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Shift key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"当指针移到捕获区域时，是否需要同时按住 Shift 键来锁定指针。如果选中了此项，并"
-"且指定了一个“锁定按钮”，当点击“锁定按钮”想要锁定指针时，必须按住同时 Shift "
-"键。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:17
-msgid ""
-"Whether the Shift key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"要想从捕获区域释放指针时，是否需要同时按住 Shift 键配合点击“释放按钮”。"
-
-#: ../data/pointer-capture-applet.schemas.in.h:18
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
 msgid "Width of the capture area in pixels."
 msgstr "捕获区域的宽度(像素)"
 
-#: ../src/mt-main.c:811
+#: ../src/mt-main.c:594
+msgid "Enable simulated secondary click"
+msgstr "启用模拟次要按键钮(右键)点击"
+
+#: ../src/mt-main.c:596
 msgid "Time to wait before a dwell click"
 msgstr "悬停点击前等候的时间"
 
-#: ../src/mt-main.c:813
+#: ../src/mt-main.c:598
 msgid "Time to wait before a simulated secondary click"
-msgstr "模拟次要按钮(右键)点击前等待的时间"
+msgstr "模拟次要按键(右键)点击前等待的时间"
 
-#: ../src/mt-main.c:815
+#: ../src/mt-main.c:600
 msgid "Set the active dwell mode"
 msgstr "设置活动悬停模式"
 
-#: ../src/mt-main.c:817
+#: ../src/mt-main.c:602
 msgid "Show a click-type window"
 msgstr "显示点击类型窗口"
 
-#: ../src/mt-main.c:819
-msgid "Click-type window X position"
-msgstr "点击类型窗口的 X 坐标"
-
-#: ../src/mt-main.c:821
-msgid "Click-type window Y position"
-msgstr "点击类型窗口的 Y 坐标"
-
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:604
 msgid "Ignore small pointer movements"
 msgstr "忽略鼠标指针轻微的移动"
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:608
 msgid "Shut down mousetweaks"
 msgstr "关闭 mousetweaks"
 
-#: ../src/mt-main.c:827
-msgid "Disable cursor animations"
-msgstr "禁用鼠标动画"
-
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:610
 msgid "Start mousetweaks as a daemon"
 msgstr "作为守护进程启动 mousetweaks"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks in login mode"
 msgstr "以登录模式启动 mousetweaks"
 
 #. parse
-#: ../src/mt-main.c:851
+#: ../src/mt-main.c:630
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME 鼠标辅助功能守护程序"
 
-#: ../src/mt-common.c:31
+#: ../src/mt-common.c:74
 msgid "Failed to Display Help"
 msgstr "打开帮助失败"
 
-#: ../src/mt-common.c:70
-msgid "Enable and Log Out"
-msgstr "启用并注销"
-
-#: ../src/pointer-capture-applet.c:68
+#: ../src/pointer-capture-applet.c:79
 msgid "Capture area"
 msgstr "捕获区域"
 
-#: ../src/pointer-capture-applet.c:69
+#: ../src/pointer-capture-applet.c:80
 msgid "Temporarily lock the mouse pointer"
 msgstr "临时锁住鼠标指针"
 
-#: ../src/pointer-capture-applet.c:596
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "选项(_P)"
+
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "帮助(_H)"
+
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "关于(_A)"
+
+#: ../src/pointer-capture-applet.c:490
 msgid "Locked"
 msgstr "已锁定"
 
-#: ../src/dwell-click-applet.c:475
-msgid "Failed to Launch Mouse Preferences"
-msgstr "打开鼠标首选项失败"
+#: ../src/dwell-click-applet.c:450
+msgid "Failed to Open the Universal Access Panel"
+msgstr "无法打开通用访问面板"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "锁定鼠标指针"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "组合键："
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "鼠标按键(_U)："
+
+#~ msgid "Release Pointer"
+#~ msgstr "释放指针"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "显示图标和文字"
+
+#~ msgid "Dwell Click"
+#~ msgstr "悬停点击"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "选择悬停点击类型"
+
+#~ msgid "Pointer Capture"
+#~ msgstr "锁定指针"
+
+#~ msgid "Animate cursor"
+#~ msgstr "动画指针"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr "点击类型窗口中的按钮样式 (“0”=文本，“1”=图标，“2”=两者都有)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr "执行双击操作的方向 (“0”=左，“1”=右，“2”=上，“3”=下)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr "执行拖动操作的方向 (“0”=左，“1”=右，“2”=上，“3”=下)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
+#~ msgstr "执行次要按钮(右键)点击的方向 (“0”=左，“1”=右，“2”=上，“3”=下)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr "执行单击操作的方向 (“0”=左，“1”=右，“2”=上，“3”=下)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "作为移动操作所需移动的距离(像素)"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "悬停点击模式"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "悬停点击模式 (“0”=窗口模式，“1”=鼠标手势模式)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "悬停点击时间"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "启用次要按钮(右键)点击"
+
+#~ msgid "Gesture double click"
+#~ msgstr "双击手势"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "拖动手势"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "次要按钮(右键)点击手势"
+
+#~ msgid "Gesture single click"
+#~ msgstr "单击手势"
+
+#~ msgid "Movement threshold"
+#~ msgstr "移动阀值"
+
+#~ msgid "Show click type window"
+#~ msgstr "显示点击类型窗口"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "显示光标停留时间。"
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "触发点击的时间(秒)"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "触发次要按钮(右键)点击的时间(秒)"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "仅在 Alt 键按住时锁定指针"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "仅在 Ctrl 键按住时锁定指针"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "仅在 Shift 键按住时锁定指针"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "释放指针的鼠标按钮"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "仅在 Alt 键按住时释放指针"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "仅在 Ctrl 键按住时释放指针"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "仅在 Shift 键按住时释放指针"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "这个鼠标按钮必须在捕获区域里点击(按住到释放)。对应的值是“1”代表点左"
+#~ "键，“2”代表点中键，“3”代表点右键。"
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "要想锁定指针，这个按钮必须在捕获区域里点击。如果不需要点击就锁定请选"
+#~ "择“0”。“1”代表点左键，“2”代表点中键，“3”代表点右键。"
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "当指针移到捕获区域时，是否需要同时按住 Alt 键来锁定指针。如果选中了此项，"
+#~ "并且指定了一个“锁定按钮”，当点击“锁定按钮”想要锁定指针时，必须按住同时 "
+#~ "Alt 键。"
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "要想从捕获区域释放指针时，是否需要同时按住 Alt 键配合点击“释放按钮”。"
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "当指针移到捕获区域时，是否需要同时按住 Ctrl 键来锁定指针。如果选中了此项，"
+#~ "并且指定了一个“锁定按钮”，当点击“锁定按钮”想要锁定指针时，必须按住同时 "
+#~ "Ctrl 键。"
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "要想从捕获区域释放指针时，是否需要同时按住 Ctrl 键配合点击“释放按钮”。"
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "当指针移到捕获区域时，是否需要同时按住 Shift 键来锁定指针。如果选中了此"
+#~ "项，并且指定了一个“锁定按钮”，当点击“锁定按钮”想要锁定指针时，必须按住同"
+#~ "时 Shift 键。"
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "要想从捕获区域释放指针时，是否需要同时按住 Shift 键配合点击“释放按钮”。"
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "点击类型窗口的 Y 坐标"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "禁用鼠标动画"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "启用并注销"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "打开鼠标首选项失败"
 
 #~ msgid "Assistive Technology Support is not Enabled"
 #~ msgstr "未启用辅助技术支持"
@@ -484,9 +523,6 @@ msgstr "打开鼠标首选项失败"
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>锁定区域的范围</b>"
 
-#~ msgid "Capture modifier"
-#~ msgstr "锁定组合键(modifier)"
-
 #~ msgid "Capture modifier key (Alt)"
 #~ msgstr "锁定组合键 (Alt)"
 
@@ -502,9 +538,6 @@ msgstr "打开鼠标首选项失败"
 #~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
 #~ msgstr "锁定指针的热键 (“0”=立即锁定)"
 
-#~ msgid "Release modifier"
-#~ msgstr "释放组合键"
-
 #~ msgid "Release modifier key (Alt)"
 #~ msgstr "释放组合键 (Alt)"
 
@@ -517,11 +550,5 @@ msgstr "打开鼠标首选项失败"
 #~ msgid "Release mouse button"
 #~ msgstr "释放鼠标按键"
 
-#~ msgid "Pointer Capture Applet"
-#~ msgstr "指针锁定小程序"
-
 #~ msgid "Off"
 #~ msgstr "关"
-
-#~ msgid "Dwell Click Applet"
-#~ msgstr "增强型点击小程序"

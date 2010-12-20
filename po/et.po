@@ -12,10 +12,11 @@ msgstr ""
 "Project-Id-Version: mousetweaks MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-06-27 16:33+0000\n"
-"PO-Revision-Date: 2010-10-08 18:27+0300\n"
+"POT-Creation-Date: 2010-12-06 12:26+0000\n"
+"PO-Revision-Date: 2010-12-19 11:41+0200\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
+"Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,9 +46,6 @@ msgstr "Paremklõps"
 msgid "Single Click"
 msgstr "Üksikklõps"
 
-msgid "A_lt"
-msgstr "A_lt"
-
 msgid ""
 "Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -58,35 +56,17 @@ msgstr ""
 msgid "C_trl"
 msgstr "C_trl"
 
-msgid "Capture Pointer"
-msgstr "Kursori hõivamine"
+msgid "Capture and Release Controls"
+msgstr ""
 
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-msgid "Modifier:"
-msgstr "Muuteklahv:"
-
-msgid "Mouse _button:"
-msgstr "Hiire _nupp:"
-
-msgid "Mouse b_utton:"
-msgstr "Hiire n_upp:"
+msgid "Keyboard modifier:"
+msgstr ""
 
 msgid "Pointer Capture Preferences"
 msgstr "Kursori hõivamise eelistused"
 
-msgid "Release Pointer"
-msgstr "Kursori vabastamine"
-
-msgid "S_hift"
-msgstr "S_hift"
-
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Nupu 0 valimine hõivab kursori koheselt"
-
-msgid "Sh_ift"
-msgstr "Sh_ift"
 
 msgid "Size of the Capture Area"
 msgstr "Hõivamispiirkonna suurus"
@@ -94,232 +74,106 @@ msgstr "Hõivamispiirkonna suurus"
 msgid "_Alt"
 msgstr "_Alt"
 
+msgid "_Mouse button:"
+msgstr "Hiire_nupp:"
+
+msgid "_Shift"
+msgstr "S_hift"
+
 msgid "_Width:"
 msgstr "Laiu_s:"
 
 msgid "pixels"
 msgstr "pikslit"
 
-msgid "Dwell Click Type"
+msgid "Button Style"
+msgstr "Nupu laad"
+
+#. 'Drag' like in a Drag and Drop operation
+msgid "Drag"
+msgstr ""
+
+msgid "Dwell Click-Type"
 msgstr "Ooteajaga klõpsu liik"
 
-msgid "Show Icons and Text"
-msgstr "Ikoonide ja tekstide näitamine"
+#. Buttons are arranged from left to right in the layout
+msgid "Horizontal"
+msgstr "Rõhtne"
 
-msgid "Show Icons only"
-msgstr "Ainult ikoonide näitamine"
+msgid "Icons only"
+msgstr "Ainult ikoonid"
 
-msgid "Show Text only"
-msgstr "Ainult tekstide näitamine"
+msgid "Orientation"
+msgstr "Asend"
 
-msgid "Dwell Click"
-msgstr "Ooteajaga klõps"
+msgid "Secondary Click"
+msgstr "Teisene klõps"
 
-msgid "Select dwelling click type"
-msgstr "Ooteajaga klõpsu liigi valimine"
+msgid "Text and Icons"
+msgstr "Tekst ja ikoonid"
+
+msgid "Text only"
+msgstr "Ainult tekst"
+
+#. Buttons are arranged from top to bottom in the layout
+msgid "Vertical"
+msgstr "Püstine"
+
+msgid "Control your desktop without using mouse buttons"
+msgstr ""
+
+msgid "Dwell Click Applet"
+msgstr "Ooteajaga klõpsu rakend"
 
 msgid "Area to lock the pointer"
 msgstr "Kursori lukustamise ala"
 
-msgid "Pointer Capture"
-msgstr "Kursori hõivamine"
+msgid "Pointer Capture Applet"
+msgstr "Kursori hõivamise rakend"
 
-msgid "_About"
-msgstr "_Programmist lähemalt"
+msgid "Button style of the click-type window."
+msgstr "Klõpsu liigi akna nupu laad."
 
-msgid "_Help"
-msgstr "A_bi"
+msgid "Click-type window geometry"
+msgstr "Klõpsu liigi akna geomeetria"
 
-msgid "_Preferences"
-msgstr "_Eelistused"
+msgid "Click-type window orientation"
+msgstr "Klõpsu liigi akna asend"
 
-msgid "Animate cursor"
-msgstr "Kursori animeerimine"
+msgid "Click-type window style"
+msgstr "Klõpsu liigi akna laad"
 
-msgid "Button style"
-msgstr "Nupu laad"
-
-msgid ""
-"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
-msgstr ""
-"Klõpsu liigi aknas kuvatavate nuppude laad (\"0\" = tekst, \"1\" = ikoon, "
-"\"2\" = mõlemad)"
+msgid "Orientation of the click-type window."
+msgstr "Klõpsu liigi akna asend."
 
 msgid ""
-"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
 msgstr ""
-"Topeltklõpsu jaoks tehtava liigutuse suund (\"0\" = vasakule, \"1\" = "
-"paremale, \"2\" = üles, \"3\" = alla)"
 
-msgid ""
-"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
+msgid "\"Alt\" keyboard modifier"
 msgstr ""
-"Lohistamisklõpsu jaoks tehtava liigutuse suund (\"0\" = vasakule, \"1\" = "
-"paremale, \"2\" = üles, \"3\" = alla)"
 
-msgid ""
-"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+msgid "\"Control\" keyboard modifier"
 msgstr ""
-"Teisese klõpsu jaoks tehtava liigutuse suund (\"0\" = vasakule, \"1\" = "
-"paremale, \"2\" = üles, \"3\" = alla)"
 
-msgid ""
-"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+msgid "\"Shift\" keyboard modifier"
 msgstr ""
-"Üksiku klõpsu jaoks tehtava liigutuse suund (\"0\" = vasakule, \"1\" = "
-"paremale, \"2\" = üles, \"3\" = alla)"
 
-msgid "Distance in pixels before movement will be recognized"
-msgstr ""
-"Liikumise pikkus pikslites alates millest hakatakse liigutusi tuvastama"
+msgid "Mouse button"
+msgstr "Hiirenupp"
 
-msgid "Dwell click mode"
-msgstr "Ooteajaga klõpsu režiim"
-
-msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr "Ooteajaga klõpsu režiim (\"0\" = Aknarežiim, \"1\" = Žestirežiim)"
-
-msgid "Dwell click time"
-msgstr "Ooteajaga klõpsu aeg"
-
-msgid "Enable secondary click"
-msgstr "Teisese klõpsu lubamine"
-
-msgid "Enable simulated secondary click"
-msgstr "Simuleeritud teisese klõpsu lubamine"
-
-msgid "Gesture double click"
-msgstr "Žestiga topeltklõps"
-
-msgid "Gesture drag click"
-msgstr "Žestiga lohistamisklõps"
-
-msgid "Gesture secondary click"
-msgstr "Žestiga teisene klõps"
-
-msgid "Gesture single click"
-msgstr "Žestiga üksikklõps"
-
-msgid "Movement threshold"
-msgstr "Liigutamise lävi"
-
-msgid "Secondary click time"
-msgstr "Teisese klõpsu aeg"
-
-msgid "Show click type window"
-msgstr "Klõpsu liigi akna näitamine"
-
-msgid "Show elapsed time as cursor overlay."
-msgstr "Kulunud aja näitamine kursori kohal."
-
-msgid "Time in seconds before a click is triggered"
-msgstr "Klõpsamise ooteaja kestus"
-
-msgid "Time in seconds before a secondary click is triggered"
-msgstr "Teisese klõpsamise ooteaja kestus sekundites"
-
-msgid "Capture pointer only if Alt is pressed"
-msgstr "Kursori hõivamine ainult Alt-klahvi vajutamisel"
-
-msgid "Capture pointer only if Ctrl is pressed"
-msgstr "Kursori hõivamine ainult Ctrl-klahvi vajutamisel"
-
-msgid "Capture pointer only if Shift is pressed"
-msgstr "Kursori hõivamine ainult Shift-klahvi vajutamisel"
-
-msgid "Mouse button used to capture the pointer"
-msgstr "Kursori hõivamiseks kasutatav hiirenupp"
-
-msgid "Mouse button used to release the pointer"
-msgstr "Kursori vabastamiseks kasutatav hiirenupp"
-
-msgid "Release pointer only if Alt is pressed"
-msgstr "Kursori vabastamine ainult Alt-klahvi vajutamisel"
-
-msgid "Release pointer only if Ctrl is pressed"
-msgstr "Kursori vabastamine ainult Ctrl-klahvi vajutamisel"
-
-msgid "Release pointer only if Shift is pressed"
-msgstr "Kursori vabastamine ainult Shift-klahvi vajutamisel"
+msgid "Mouse button used to capture or release the pointer."
+msgstr "Kursori hõivamiseks ja vabastamiseks kasutatav hiirenupp"
 
 msgid "Size of capture area"
 msgstr "Hõivamispiirkonna suurus"
 
-msgid ""
-"This mouse button must be pressed to release the pointer from the capture "
-"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
-"\"3\" for right button."
-msgstr ""
-"Seda hiirenuppu vajutatakse hõivamispiirkonnas lukustatud hiirekursori "
-"vabastamiseks. Võimalikud väärtused on \"1\" vasaku nupu jaoks, \"2\" "
-"keskmise nupu jaoks ja \"3\" parema nupu jaoks."
-
-msgid ""
-"This mouse button must be pressed while the pointer is over the capture area "
-"in order to capture the pointer. Valid values are \"0\" if no button is "
-"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
-"button."
-msgstr ""
-"Seda hiirenuppu vajutatakse hõivamispiirkonnas oleva hiirekursori "
-"lukustamiseks. Võimalikud väärtused on \"0\" juhuks, kui nupuvajutust pole "
-"tarvis, \"1\" vasaku nupu jaoks, \"2\" keskmise nupu jaoks ja \"3\" parema "
-"nupu jaoks."
-
-msgid ""
-"Whether the Alt key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Alt key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Kas hõivamispiirkonnas oleva hiirekursori lukustamiseks peab lisaks võtmega "
-"\"capture_button\" määratud hiirenupule veel ka Alt-klahvi vajutama."
-
-msgid ""
-"Whether the Alt key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Kas hõivamispiirkonnas lukustatud hiirekursori vabastamiseks peab lisaks "
-"võtmega \"release_button\" määratud hiirenupule veel ka Alt-klahvi vajutama."
-
-msgid ""
-"Whether the Ctrl key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Ctrl key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Kas hõivamispiirkonnas oleva hiirekursori lukustamiseks peab lisaks võtmega "
-"\"capture_button\" määratud hiirenupule veel ka Ctrl-klahvi vajutama."
-
-msgid ""
-"Whether the Ctrl key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Kas hõivamispiirkonnas lukustatud hiirekursori vabastamiseks peab lisaks "
-"võtmega \"release_button\" määratud hiirenupule veel ka Ctrl-klahvi vajutama."
-
-msgid ""
-"Whether the Shift key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Shift key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Kas hõivamispiirkonnas oleva hiirekursori lukustamiseks peab lisaks võtmega "
-"\"capture_button\" määratud hiirenupule veel ka Shift-klahvi vajutama."
-
-msgid ""
-"Whether the Shift key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Kas hõivamispiirkonnas lukustatud hiirekursori vabastamiseks peab lisaks "
-"võtmega \"release_button\" määratud hiirenupule veel ka Shift-klahvi "
-"vajutama."
-
 msgid "Width of the capture area in pixels."
 msgstr "Hõivamispiirkonna laius pikslites."
+
+msgid "Enable simulated secondary click"
+msgstr "Simuleeritud teisese klõpsu lubamine"
 
 msgid "Time to wait before a dwell click"
 msgstr "Ooteajaga klõpsu ooteaja kestus"
@@ -333,20 +187,11 @@ msgstr "Ooteaja aktiivse režiimi määramine"
 msgid "Show a click-type window"
 msgstr "Klõpsu liigi akna näitamine"
 
-msgid "Click-type window X position"
-msgstr "Klõpsu liigi akna asukoht X-teljel"
-
-msgid "Click-type window Y position"
-msgstr "Klõpsu liigi akna asukoht Y-teljel"
-
 msgid "Ignore small pointer movements"
 msgstr "Väikeste kursoriliigutuste eiramine"
 
 msgid "Shut down mousetweaks"
 msgstr "Hiiretuuningute seiskamine"
-
-msgid "Disable cursor animations"
-msgstr "Kursorianimatsiooni keelamine"
 
 msgid "Start mousetweaks as a daemon"
 msgstr "Hiiretuuningute käivitamine deemonina"
@@ -361,17 +206,241 @@ msgstr "- GNOME hiirehõlbustuste deemon"
 msgid "Failed to Display Help"
 msgstr "Abiteabe kuvamisel tekkis viga"
 
-msgid "Enable and Log Out"
-msgstr "Luba ja logi välja"
-
 msgid "Capture area"
 msgstr "Hõivamise piirkond"
 
 msgid "Temporarily lock the mouse pointer"
 msgstr "Hiirekursori ajutine lukustamine"
 
+msgid "_Preferences"
+msgstr "_Eelistused"
+
+msgid "_Help"
+msgstr "A_bi"
+
+msgid "_About"
+msgstr "_Programmist lähemalt"
+
 msgid "Locked"
 msgstr "Lukus"
 
-msgid "Failed to Launch Mouse Preferences"
-msgstr "Tõrge hiire-eelistuste käivitaminsel"
+msgid "Failed to Open the Universal Access Panel"
+msgstr ""
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "Kursori hõivamine"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Muuteklahv:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "Hiire n_upp:"
+
+#~ msgid "Release Pointer"
+#~ msgstr "Kursori vabastamine"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Ikoonide ja tekstide näitamine"
+
+#~ msgid "Dwell Click"
+#~ msgstr "Ooteajaga klõps"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Ooteajaga klõpsu liigi valimine"
+
+#~ msgid "Animate cursor"
+#~ msgstr "Kursori animeerimine"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr ""
+#~ "Klõpsu liigi aknas kuvatavate nuppude laad (\"0\" = tekst, \"1\" = ikoon, "
+#~ "\"2\" = mõlemad)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Topeltklõpsu jaoks tehtava liigutuse suund (\"0\" = vasakule, \"1\" = "
+#~ "paremale, \"2\" = üles, \"3\" = alla)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Lohistamisklõpsu jaoks tehtava liigutuse suund (\"0\" = vasakule, \"1\" = "
+#~ "paremale, \"2\" = üles, \"3\" = alla)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Teisese klõpsu jaoks tehtava liigutuse suund (\"0\" = vasakule, \"1\" = "
+#~ "paremale, \"2\" = üles, \"3\" = alla)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Üksiku klõpsu jaoks tehtava liigutuse suund (\"0\" = vasakule, \"1\" = "
+#~ "paremale, \"2\" = üles, \"3\" = alla)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr ""
+#~ "Liikumise pikkus pikslites alates millest hakatakse liigutusi tuvastama"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Ooteajaga klõpsu režiim"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "Ooteajaga klõpsu režiim (\"0\" = Aknarežiim, \"1\" = Žestirežiim)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Ooteajaga klõpsu aeg"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "Teisese klõpsu lubamine"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Žestiga topeltklõps"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Žestiga lohistamisklõps"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Žestiga teisene klõps"
+
+#~ msgid "Gesture single click"
+#~ msgstr "Žestiga üksikklõps"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Liigutamise lävi"
+
+#~ msgid "Show click type window"
+#~ msgstr "Klõpsu liigi akna näitamine"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "Kulunud aja näitamine kursori kohal."
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "Klõpsamise ooteaja kestus"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "Teisese klõpsamise ooteaja kestus sekundites"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Kursori hõivamine ainult Alt-klahvi vajutamisel"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Kursori hõivamine ainult Ctrl-klahvi vajutamisel"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Kursori hõivamine ainult Shift-klahvi vajutamisel"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "Kursori vabastamiseks kasutatav hiirenupp"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Kursori vabastamine ainult Alt-klahvi vajutamisel"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Kursori vabastamine ainult Ctrl-klahvi vajutamisel"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Kursori vabastamine ainult Shift-klahvi vajutamisel"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "Seda hiirenuppu vajutatakse hõivamispiirkonnas lukustatud hiirekursori "
+#~ "vabastamiseks. Võimalikud väärtused on \"1\" vasaku nupu jaoks, \"2\" "
+#~ "keskmise nupu jaoks ja \"3\" parema nupu jaoks."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "Seda hiirenuppu vajutatakse hõivamispiirkonnas oleva hiirekursori "
+#~ "lukustamiseks. Võimalikud väärtused on \"0\" juhuks, kui nupuvajutust "
+#~ "pole tarvis, \"1\" vasaku nupu jaoks, \"2\" keskmise nupu jaoks ja \"3\" "
+#~ "parema nupu jaoks."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Kas hõivamispiirkonnas oleva hiirekursori lukustamiseks peab lisaks "
+#~ "võtmega \"capture_button\" määratud hiirenupule veel ka Alt-klahvi "
+#~ "vajutama."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Kas hõivamispiirkonnas lukustatud hiirekursori vabastamiseks peab lisaks "
+#~ "võtmega \"release_button\" määratud hiirenupule veel ka Alt-klahvi "
+#~ "vajutama."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Kas hõivamispiirkonnas oleva hiirekursori lukustamiseks peab lisaks "
+#~ "võtmega \"capture_button\" määratud hiirenupule veel ka Ctrl-klahvi "
+#~ "vajutama."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Kas hõivamispiirkonnas lukustatud hiirekursori vabastamiseks peab lisaks "
+#~ "võtmega \"release_button\" määratud hiirenupule veel ka Ctrl-klahvi "
+#~ "vajutama."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Kas hõivamispiirkonnas oleva hiirekursori lukustamiseks peab lisaks "
+#~ "võtmega \"capture_button\" määratud hiirenupule veel ka Shift-klahvi "
+#~ "vajutama."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Kas hõivamispiirkonnas lukustatud hiirekursori vabastamiseks peab lisaks "
+#~ "võtmega \"release_button\" määratud hiirenupule veel ka Shift-klahvi "
+#~ "vajutama."
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "Klõpsu liigi akna asukoht Y-teljel"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "Kursorianimatsiooni keelamine"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "Luba ja logi välja"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "Tõrge hiire-eelistuste käivitaminsel"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-11-13 23:06+0000\n"
+"POT-Creation-Date: 2010-12-20 12:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Gheyret Kenji<gheyret@yahoo.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
 msgid "Single Click"
-msgstr "بىرلا چېكىش"
+msgstr "تاق چەك"
 
 #: ../data/pointer-capture-applet.ui.h:1
 msgid ""
@@ -104,7 +104,7 @@ msgstr "توپچا ئۇسلۇبى"
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
 msgid "Drag"
-msgstr ""
+msgstr "سۆرە"
 
 #: ../data/mousetweaks.ui.h:5
 msgid "Dwell Click-Type"
@@ -140,33 +140,24 @@ msgstr "تېكىستلا"
 msgid "Vertical"
 msgstr "بويىغا"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:586
-msgid "Dwell Click"
-msgstr "لەيلىتىپ چەك"
-
-#: ../data/DwellClick_Factory.server.in.in.h:2
-msgid "Select dwelling click type"
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
 msgstr ""
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+#| msgid "Dwell Click"
+msgid "Dwell Click Applet"
+msgstr ""
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr ""
 
-#: ../data/PointerCapture_Factory.server.in.in.h:2
-msgid "Pointer Capture"
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+msgid "Pointer Capture Applet"
 msgstr ""
-
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
-msgid "_About"
-msgstr "ھەققىدە(_A)"
-
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
-msgid "_Help"
-msgstr "ياردەم(_H)"
-
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
-msgid "_Preferences"
-msgstr "مايىللىق(_P)"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
@@ -208,7 +199,7 @@ msgstr "\"Shift\" ھەرپتاختا ئېنىقلىغۇچىسى"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
 msgid "Mouse button"
-msgstr ""
+msgstr "چاشقىنەك توپچىسى"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
 msgid "Mouse button used to capture or release the pointer."
@@ -265,24 +256,32 @@ msgstr ""
 
 #: ../src/mt-common.c:74
 msgid "Failed to Display Help"
-msgstr ""
+msgstr "ياردەم كۆرسىتىش مەغلۇپ بولدى"
 
-#: ../src/pointer-capture-applet.c:71
+#: ../src/pointer-capture-applet.c:79
 msgid "Capture area"
 msgstr ""
 
-#: ../src/pointer-capture-applet.c:72
+#: ../src/pointer-capture-applet.c:80
 msgid "Temporarily lock the mouse pointer"
 msgstr ""
 
-#: ../src/pointer-capture-applet.c:434
-msgid "Pointer Capture Applet"
-msgstr ""
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "مايىللىق(_P)"
 
-#: ../src/pointer-capture-applet.c:480
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "ياردەم(_H)"
+
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "ھەققىدە(_A)"
+
+#: ../src/pointer-capture-applet.c:490
 msgid "Locked"
 msgstr "قۇلۇپلانغان"
 
-#: ../src/dwell-click-applet.c:449
+#: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
-msgstr ""
+msgstr "Universal Access Panel نى ئېچىش مەغلۇپ بولدى"

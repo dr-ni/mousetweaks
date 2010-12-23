@@ -13,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
 "POT-Creation-Date: 2010-12-06 12:26+0000\n"
-"PO-Revision-Date: 2010-12-19 11:41+0200\n"
+"PO-Revision-Date: 2010-12-23 10:22+0200\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
 "Language: et\n"
@@ -57,10 +57,10 @@ msgid "C_trl"
 msgstr "C_trl"
 
 msgid "Capture and Release Controls"
-msgstr ""
+msgstr "Hõivamise ja vabastamise juhtimine"
 
 msgid "Keyboard modifier:"
-msgstr ""
+msgstr "Muuteklahv:"
 
 msgid "Pointer Capture Preferences"
 msgstr "Kursori hõivamise eelistused"
@@ -91,7 +91,7 @@ msgstr "Nupu laad"
 
 #. 'Drag' like in a Drag and Drop operation
 msgid "Drag"
-msgstr ""
+msgstr "Lohistamine"
 
 msgid "Dwell Click-Type"
 msgstr "Ooteajaga klõpsu liik"
@@ -120,7 +120,7 @@ msgid "Vertical"
 msgstr "Püstine"
 
 msgid "Control your desktop without using mouse buttons"
-msgstr ""
+msgstr "Töölaua juhtimine ilma hiirenuppe kasutamata"
 
 msgid "Dwell Click Applet"
 msgstr "Ooteajaga klõpsu rakend"
@@ -150,15 +150,17 @@ msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
+"Klõpsu liigi akna suurus ja asukoht, mis on kirjeldatud X Window Systemi "
+"standardse geomeetriastringina."
 
 msgid "\"Alt\" keyboard modifier"
-msgstr ""
+msgstr "muuteklahv \"Alt\""
 
 msgid "\"Control\" keyboard modifier"
-msgstr ""
+msgstr "muuteklahv \"Control\""
 
 msgid "\"Shift\" keyboard modifier"
-msgstr ""
+msgstr "muuteklahv \"Shift\""
 
 msgid "Mouse button"
 msgstr "Hiirenupp"
@@ -225,7 +227,7 @@ msgid "Locked"
 msgstr "Lukus"
 
 msgid "Failed to Open the Universal Access Panel"
-msgstr ""
+msgstr "Tõrge universaalse ligipääsu paneeli avamisel"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"

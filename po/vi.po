@@ -1,6 +1,7 @@
 # Vietnamese translation for MouseTweaks.
 # Copyright © 2009 GNOME i18n Project for Vietnamese.
 # Clytie Siddall <clytie@riverland.net.au>, 2008-2009.
+# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2010.
 #
 msgid ""
 msgstr ""
@@ -8,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
 "POT-Creation-Date: 2010-11-19 13:15+0000\n"
-"PO-Revision-Date: 2009-02-11 23:29+1030\n"
+"PO-Revision-Date: 2010-12-30 08:50+0700\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -22,24 +23,23 @@ msgid ""
 "Applet to select different dwell-click types.\n"
 "Part of Mousetweaks"
 msgstr ""
+"Tiểu dụng để chọn các kiểu nhấn khác nhau.\n"
+"Một phần của Mousetweaks."
 
 #: ../data/dwell-click-applet.ui.h:3
-#, fuzzy
 #| msgid "Show click type window"
 msgid "Click Type Window"
-msgstr "Hiện cửa sổ kiểu nhấn"
+msgstr "Cửa sổ kiểu nhấn"
 
 #: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-#, fuzzy
 #| msgid "Dwell Click"
 msgid "Double Click"
-msgstr "Nhấn giữ"
+msgstr "Nhấn đúp"
 
 #: ../data/dwell-click-applet.ui.h:5
-#, fuzzy
 #| msgid "Dwell Click"
 msgid "Drag Click"
-msgstr "Nhấn giữ"
+msgstr "Nhấn kéo"
 
 #: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
 msgid "Enable dwell click"
@@ -47,74 +47,70 @@ msgstr "Bật nhấn giữ"
 
 #: ../data/dwell-click-applet.ui.h:7
 msgid "Right Click"
-msgstr ""
+msgstr "Nhấn phải"
 
 #: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-#, fuzzy
 #| msgid "Gesture single click"
 msgid "Single Click"
-msgstr "Nhấn đơn động tác"
+msgstr "Nhấn đơn"
 
 #: ../data/pointer-capture-applet.ui.h:1
 msgid ""
 "Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
+"Vùng khoá con trỏ trên khung điều khiển.\n"
+"Một phần của Mousetweaks"
 
 #: ../data/pointer-capture-applet.ui.h:3
 msgid "C_trl"
-msgstr ""
+msgstr "C_trl"
 
 #: ../data/pointer-capture-applet.ui.h:4
 msgid "Capture and Release Controls"
-msgstr ""
+msgstr "Điều khiển bắt và thả"
 
 #: ../data/pointer-capture-applet.ui.h:5
 msgid "Keyboard modifier:"
-msgstr ""
+msgstr "Phím bổ trợ:"
 
 #: ../data/pointer-capture-applet.ui.h:6
-#, fuzzy
 #| msgid "Pointer Capture"
 msgid "Pointer Capture Preferences"
-msgstr "Bắt con trỏ"
+msgstr "Tuỳ thích bắt con trỏ"
 
 #: ../data/pointer-capture-applet.ui.h:7
-#, fuzzy
 #| msgid "Mouse button used to capture the pointer"
 msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Nút chuột dùng để bắt con trỏ"
+msgstr "Chọn nút không để bắt con trỏ tức thì"
 
 #: ../data/pointer-capture-applet.ui.h:8
-#, fuzzy
 #| msgid "Size of capture area"
 msgid "Size of the Capture Area"
 msgstr "Kích cỡ vùng bắt"
 
 #: ../data/pointer-capture-applet.ui.h:9
-#, fuzzy
 #| msgid "_About"
 msgid "_Alt"
-msgstr "_Giới thiệu"
+msgstr "_Alt"
 
 #: ../data/pointer-capture-applet.ui.h:10
 msgid "_Mouse button:"
-msgstr ""
+msgstr "_Nút chuột:"
 
 #: ../data/pointer-capture-applet.ui.h:11
 msgid "_Shift"
-msgstr ""
+msgstr "_Shift"
 
 #: ../data/pointer-capture-applet.ui.h:12
 msgid "_Width:"
-msgstr ""
+msgstr "_Rộng:"
 
 #: ../data/pointer-capture-applet.ui.h:13
 msgid "pixels"
-msgstr ""
+msgstr "điểm"
 
 #: ../data/mousetweaks.ui.h:1
-#, fuzzy
 #| msgid "Button style"
 msgid "Button Style"
 msgstr "Kiểu nút"
@@ -122,56 +118,53 @@ msgstr "Kiểu nút"
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
 msgid "Drag"
-msgstr ""
+msgstr "Kéo"
 
 #: ../data/mousetweaks.ui.h:5
-#, fuzzy
 #| msgid "Dwell Click"
 msgid "Dwell Click-Type"
-msgstr "Nhấn giữ"
+msgstr "Kiểu nhấn giữ"
 
 #. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:7
 msgid "Horizontal"
-msgstr ""
+msgstr "Ngang"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
-msgstr ""
+msgstr "Chỉ hình"
 
 #: ../data/mousetweaks.ui.h:9
 msgid "Orientation"
-msgstr ""
+msgstr "Hướng"
 
 #: ../data/mousetweaks.ui.h:10
-#, fuzzy
 #| msgid "Secondary click time"
 msgid "Secondary Click"
-msgstr "Thời gian nhấn phụ"
+msgstr "Nhấn phụ"
 
 #: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
-msgstr ""
+msgstr "Hình và chữ"
 
 #: ../data/mousetweaks.ui.h:13
 msgid "Text only"
-msgstr ""
+msgstr "Chỉ chữ"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
-msgstr ""
+msgstr "Dọc"
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
 msgid "Control your desktop without using mouse buttons"
-msgstr ""
+msgstr "Điều khiển máy tính không cần dùng nút chuột"
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
 #: ../src/dwell-click-applet.c:584
-#, fuzzy
 #| msgid "Dwell Click"
 msgid "Dwell Click Applet"
-msgstr "Nhấn giữ"
+msgstr "Tiểu dụng Nhấn giữ"
 
 #: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
@@ -179,66 +172,60 @@ msgstr "Vùng trong đó cần khoá con trỏ"
 
 #: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
 #: ../src/pointer-capture-applet.c:439
-#, fuzzy
 #| msgid "Pointer Capture"
 msgid "Pointer Capture Applet"
-msgstr "Bắt con trỏ"
+msgstr "Tiểu dụng Bắt con trỏ"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-#, fuzzy
 #| msgid "Show click type window"
 msgid "Button style of the click-type window."
 msgstr "Hiện cửa sổ kiểu nhấn"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
-#, fuzzy
 #| msgid "Show click type window"
 msgid "Click-type window geometry"
-msgstr "Hiện cửa sổ kiểu nhấn"
+msgstr "Vị trí cửa sổ kiểu nhấn"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
-msgstr ""
+msgstr "Hướng cửa sổ kiểu nhấn"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-#, fuzzy
 #| msgid "Show click type window"
 msgid "Click-type window style"
-msgstr "Hiện cửa sổ kiểu nhấn"
+msgstr "Kiểu cửa sổ kiểu nhấn"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-#, fuzzy
 #| msgid "Show click type window"
 msgid "Orientation of the click-type window."
-msgstr "Hiện cửa sổ kiểu nhấn"
+msgstr "Hướng cửa sổ kiểu nhấn."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
-msgstr ""
+msgstr "Kích thước và vị trí của cửa sổ kiểu nhấn, theo định dạng chuỗi toạ độ chuẩn của X."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
-msgstr ""
+msgstr "Phím bổ trợ \"Alt\""
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
 msgid "\"Control\" keyboard modifier"
-msgstr ""
+msgstr "Phím bổ trợ \"Control\""
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
 msgid "\"Shift\" keyboard modifier"
-msgstr ""
+msgstr "Phím bổ trợ \"Shift\""
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
 msgid "Mouse button"
-msgstr ""
+msgstr "Nút chuột"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-#, fuzzy
 #| msgid "Mouse button used to capture the pointer"
 msgid "Mouse button used to capture or release the pointer."
-msgstr "Nút chuột dùng để bắt con trỏ"
+msgstr "Nút chuột dùng để bắt và thả con trỏ."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
@@ -265,7 +252,6 @@ msgid "Set the active dwell mode"
 msgstr ""
 
 #: ../src/mt-main.c:602
-#, fuzzy
 #| msgid "Show click type window"
 msgid "Show a click-type window"
 msgstr "Hiện cửa sổ kiểu nhấn"
@@ -279,21 +265,19 @@ msgid "Shut down mousetweaks"
 msgstr "Tắt mousetweaks"
 
 #: ../src/mt-main.c:610
-#, fuzzy
 #| msgid "- GNOME mousetweaks daemon"
 msgid "Start mousetweaks as a daemon"
-msgstr "— trình nền mousetweaks GNOME"
+msgstr "Khởi chạy mousetweaks dạng trình nền"
 
 #: ../src/mt-main.c:612
 msgid "Start mousetweaks in login mode"
-msgstr ""
+msgstr "Khởi chạy mousetweaks lúc đăng nhập"
 
 #. parse
 #: ../src/mt-main.c:630
-#, fuzzy
 #| msgid "- GNOME mousetweaks daemon"
 msgid "- GNOME mouse accessibility daemon"
-msgstr "— trình nền mousetweaks GNOME"
+msgstr "- Trình nền truy cập chuột GNOME"
 
 #: ../src/mt-common.c:74
 msgid "Failed to Display Help"
@@ -325,7 +309,7 @@ msgstr "Bị khoá"
 
 #: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
-msgstr ""
+msgstr "Lỗi mở Khung hỗ trợ truy cập"
 
 #~ msgid "Select dwelling click type"
 #~ msgstr "Chọn cách nhấn giữ"

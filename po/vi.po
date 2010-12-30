@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: mousetweaks TRUNK\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2009-02-10 12:51+0000\n"
+"POT-Creation-Date: 2010-11-19 13:15+0000\n"
 "PO-Revision-Date: 2009-02-11 23:29+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -17,395 +17,566 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.8\n"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
-msgid "Dwell Click"
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+
+#: ../data/dwell-click-applet.ui.h:3
+#, fuzzy
+#| msgid "Show click type window"
+msgid "Click Type Window"
+msgstr "Hiện cửa sổ kiểu nhấn"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
+#, fuzzy
+#| msgid "Dwell Click"
+msgid "Double Click"
 msgstr "Nhấn giữ"
 
-#: ../data/DwellClick_Factory.server.in.in.h:2
-msgid "Select dwelling click type"
-msgstr "Chọn cách nhấn giữ"
+#: ../data/dwell-click-applet.ui.h:5
+#, fuzzy
+#| msgid "Dwell Click"
+msgid "Drag Click"
+msgstr "Nhấn giữ"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "Vùng trong đó cần khoá con trỏ"
-
-#: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:549
-msgid "Pointer Capture"
-msgstr "Bắt con trỏ"
-
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
-msgid "_About"
-msgstr "_Giới thiệu"
-
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
-msgid "_Help"
-msgstr "Trợ g_iúp"
-
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
-msgid "_Preferences"
-msgstr "Tù_y thích"
-
-#: ../data/mousetweaks.schemas.in.h:1
-msgid "Animate cursor"
-msgstr "Hoạt ảnh con trỏ"
-
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style"
-msgstr "Kiểu nút"
-
-#: ../data/mousetweaks.schemas.in.h:3
-msgid ""
-"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
-msgstr ""
-"Kiểu dáng nút trong cửa sổ kiểu nhấn vào :\n"
-" 0\tnhãn\n"
-" 1\thình\n"
-" 2\tcả hai"
-
-#: ../data/mousetweaks.schemas.in.h:4
-msgid ""
-"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Hướng theo đó cần nhấn đúp:\n"
-" 0\tsang trái\n"
-" 1\tsang phải\n"
-" 2\tlên\n"
-" 3\txuống"
-
-#: ../data/mousetweaks.schemas.in.h:5
-msgid ""
-"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
-msgstr ""
-"Hướng theo đó cần nhấn kéo:\n"
-" 0\tsang trái\n"
-" 1\tsang phải\n"
-" 2\tlên\n"
-" 3\txuống"
-
-#: ../data/mousetweaks.schemas.in.h:6
-msgid ""
-"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Hướng theo đó cần nhấn phụ:\n"
-" 0\tsang trái\n"
-" 1\tsang phải\n"
-" 2\tlên\n"
-" 3\txuống"
-
-#: ../data/mousetweaks.schemas.in.h:7
-msgid ""
-"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Hướng theo đó cần nhấn đơn:\n"
-" 0\tsang trái\n"
-" 1\tsang phải\n"
-" 2\tlên\n"
-" 3\txuống"
-
-#: ../data/mousetweaks.schemas.in.h:8
-msgid "Distance in pixels before movement will be recognized"
-msgstr "Khoảng cách theo điểm ảnh trước khi nhận ra con trỏ đang di chuyển"
-
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode"
-msgstr "Chế độ nhấn giữ"
-
-#: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-msgstr ""
-"Chế độ nhấn giữ :\n"
-" 0\tchế độ động tác\n"
-" 1\tchế độ cửa sổ"
-
-#: ../data/mousetweaks.schemas.in.h:11
-msgid "Dwell click time"
-msgstr "Thời gian nhấn giữ"
-
-#: ../data/mousetweaks.schemas.in.h:12 ../src/mt-main.c:824
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
 msgid "Enable dwell click"
 msgstr "Bật nhấn giữ"
 
-#: ../data/mousetweaks.schemas.in.h:13
-msgid "Enable secondary click"
-msgstr "Bật nhấn phụ"
+#: ../data/dwell-click-applet.ui.h:7
+msgid "Right Click"
+msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:826
-msgid "Enable simulated secondary click"
-msgstr "Hiệu lực cú nhấn phụ mô phỏng"
-
-#: ../data/mousetweaks.schemas.in.h:15
-msgid "Gesture double click"
-msgstr "Nhấn đúp động tác"
-
-#: ../data/mousetweaks.schemas.in.h:16
-msgid "Gesture drag click"
-msgstr "Nhấn kéo động tác"
-
-#: ../data/mousetweaks.schemas.in.h:17
-msgid "Gesture secondary click"
-msgstr "Nhấn phụ động tác"
-
-#: ../data/mousetweaks.schemas.in.h:18
-msgid "Gesture single click"
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
+#, fuzzy
+#| msgid "Gesture single click"
+msgid "Single Click"
 msgstr "Nhấn đơn động tác"
 
-#: ../data/mousetweaks.schemas.in.h:19
-msgid "Movement threshold"
-msgstr "Ngưỡng di chuyển"
+#: ../data/pointer-capture-applet.ui.h:1
+msgid ""
+"Area to lock the pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:20
-msgid "Secondary click time"
-msgstr "Thời gian nhấn phụ"
+#: ../data/pointer-capture-applet.ui.h:3
+msgid "C_trl"
+msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:21 ../src/mt-main.c:834
-msgid "Show click type window"
-msgstr "Hiện cửa sổ kiểu nhấn"
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "Capture and Release Controls"
+msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:22
-msgid "Show elapsed time as cursor overlay."
-msgstr "Hiện thời gian đã qua dưới dạng lớp phủ con trỏ"
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Keyboard modifier:"
+msgstr ""
 
-#: ../data/mousetweaks.schemas.in.h:23
-msgid "Time in seconds before a click is triggered"
-msgstr "Thời gian nghỉ theo giây trước khi gây ra cú nhấn"
+#: ../data/pointer-capture-applet.ui.h:6
+#, fuzzy
+#| msgid "Pointer Capture"
+msgid "Pointer Capture Preferences"
+msgstr "Bắt con trỏ"
 
-#: ../data/mousetweaks.schemas.in.h:24
-msgid "Time in seconds before a secondary click is triggered"
-msgstr "Thời gian nghỉ theo giây trước khi gây ra cú nhấn phụ"
-
-#: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture pointer only if Alt is pressed"
-msgstr "Bắt con trỏ chỉ nếu phím Alt được bấm"
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture pointer only if Ctrl is pressed"
-msgstr "Bắt con trỏ chỉ nếu phím Ctrl được bấm"
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture pointer only if Shift is pressed"
-msgstr "Bắt con trỏ chỉ nếu phím Shift được bấm"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Mouse button used to capture the pointer"
+#: ../data/pointer-capture-applet.ui.h:7
+#, fuzzy
+#| msgid "Mouse button used to capture the pointer"
+msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Nút chuột dùng để bắt con trỏ"
 
-#: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Mouse button used to release the pointer"
-msgstr "Nút chuột dùng để nhả con trỏ"
+#: ../data/pointer-capture-applet.ui.h:8
+#, fuzzy
+#| msgid "Size of capture area"
+msgid "Size of the Capture Area"
+msgstr "Kích cỡ vùng bắt"
 
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Release pointer only if Alt is pressed"
-msgstr "Nhả con trỏ chỉ nếu phím Alt được bấm"
+#: ../data/pointer-capture-applet.ui.h:9
+#, fuzzy
+#| msgid "_About"
+msgid "_Alt"
+msgstr "_Giới thiệu"
 
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Release pointer only if Ctrl is pressed"
-msgstr "Nhả con trỏ chỉ nếu phím Ctrl được bấm"
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "_Mouse button:"
+msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release pointer only if Shift is pressed"
-msgstr "Nhả con trỏ chỉ nếu phím Shift được bấm"
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "_Shift"
+msgstr ""
 
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "_Width:"
+msgstr ""
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "pixels"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:1
+#, fuzzy
+#| msgid "Button style"
+msgid "Button Style"
+msgstr "Kiểu nút"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:4
+msgid "Drag"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:5
+#, fuzzy
+#| msgid "Dwell Click"
+msgid "Dwell Click-Type"
+msgstr "Nhấn giữ"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:7
+msgid "Horizontal"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Icons only"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Orientation"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:10
+#, fuzzy
+#| msgid "Secondary click time"
+msgid "Secondary Click"
+msgstr "Thời gian nhấn phụ"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Text and Icons"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:13
+msgid "Text only"
+msgstr ""
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr ""
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr ""
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+#, fuzzy
+#| msgid "Dwell Click"
+msgid "Dwell Click Applet"
+msgstr "Nhấn giữ"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Vùng trong đó cần khoá con trỏ"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+#, fuzzy
+#| msgid "Pointer Capture"
+msgid "Pointer Capture Applet"
+msgstr "Bắt con trỏ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#, fuzzy
+#| msgid "Show click type window"
+msgid "Button style of the click-type window."
+msgstr "Hiện cửa sổ kiểu nhấn"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+#, fuzzy
+#| msgid "Show click type window"
+msgid "Click-type window geometry"
+msgstr "Hiện cửa sổ kiểu nhấn"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#, fuzzy
+#| msgid "Show click type window"
+msgid "Click-type window style"
+msgstr "Hiện cửa sổ kiểu nhấn"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+#, fuzzy
+#| msgid "Show click type window"
+msgid "Orientation of the click-type window."
+msgstr "Hiện cửa sổ kiểu nhấn"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
+msgid "\"Alt\" keyboard modifier"
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
+msgid "\"Control\" keyboard modifier"
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
+msgid "\"Shift\" keyboard modifier"
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
+msgid "Mouse button"
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
+#, fuzzy
+#| msgid "Mouse button used to capture the pointer"
+msgid "Mouse button used to capture or release the pointer."
+msgstr "Nút chuột dùng để bắt con trỏ"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
 msgstr "Kích cỡ vùng bắt"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid ""
-"This mouse button must be pressed to release the pointer from the capture "
-"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
-"\"3\" for right button."
-msgstr ""
-"Cái nút trên con chuột phải được bấm để nhả con trỏ khỏi vùng bắt. Giá trị "
-"hợp lệ:\n"
-" • 1\tnút bên trái\n"
-" • 2\tnút ở giữa\n"
-" • 3\tnút bên phải."
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid ""
-"This mouse button must be pressed while the pointer is over the capture area "
-"in order to capture the pointer. Valid values are \"0\" if no button is "
-"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
-"button."
-msgstr ""
-"Cái nút trên con chuột phải được bấm trong khi con trỏ nằm trên vùng bắt, để "
-"bắt con trỏ. Giá trị hợp lệ:\n"
-" • 0\tkhông cần nút\n"
-" • 1\tnút bên trái\n"
-" • 2\tnút ở giữa\n"
-" • 3\tnút bên phải."
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-#| msgid ""
-#| "Whether if Alt must be pressed for the pointer to be captured while it's "
-#| "over the capture area. If this option is set as true, and a mouse button "
-#| "is set in the \"capture_button\" key, then the Alt key must be pressed "
-#| "while the mouse button is pressed."
-msgid ""
-"Whether the Alt key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Alt key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Nếu phím Alt phải được bấm để bắt con trỏ trong khi nó nằm trên vùng bắt, "
-"hay không. Đặt tuỳ chọn này là Đúng, và một cái nút con chuột được đặt trong "
-"khoá « capture_button » (bắt cái nút) thì phím Alt phải được bấm trong khi "
-"cái nút con chuột được bấm."
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
-#| msgid ""
-#| "Whether if the Alt key must be pressed with the mouse button set in "
-#| "\"release_button\" for the pointer to be released from the capture area."
-msgid ""
-"Whether the Alt key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Nếu phím Alt phải được bấm cùng với cái nút con chuột được đặt trong khoá « "
-"release_button » để nhả con trỏ khỏi vùng bắt, hay không."
-
-#: ../data/pointer-capture-applet.schemas.in.h:14
-#| msgid ""
-#| "Whether if Ctrl must be pressed for the pointer to be captured while it's "
-#| "over the capture area. If this option is set as true, and a mouse button "
-#| "is set in the \"capture_button\" key, then the Ctrl key must be pressed "
-#| "while the mouse button is pressed."
-msgid ""
-"Whether the Ctrl key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Ctrl key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Nếu phím Ctrl phải được bấm để bắt con trỏ trong khi nó nằm trên vùng bắt, "
-"hay không. Đặt tuỳ chọn này là Đúng, và một cái nút con chuột được đặt trong "
-"khoá « capture_button » (bắt cái nút) thì phím Ctrl phải được bấm trong khi "
-"cái nút con chuột được bấm."
-
-#: ../data/pointer-capture-applet.schemas.in.h:15
-#| msgid ""
-#| "Whether if the Ctrl key must be pressed with the mouse button set in "
-#| "\"release_button\" for the pointer to be released from the capture area."
-msgid ""
-"Whether the Ctrl key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Nếu phím Ctrl phải được bấm cùng với cái nút con chuột được đặt trong khoá « "
-"release_button » để nhả con trỏ khỏi vùng bắt, hay không."
-
-#: ../data/pointer-capture-applet.schemas.in.h:16
-#| msgid ""
-#| "Whether if Shift must be pressed for the pointer to be captured while "
-#| "it's over the capture area. If this option is set as true, and a mouse "
-#| "button is set in the \"capture_button\" key, then the Shift key must be "
-#| "pressed while the mouse button is pressed."
-msgid ""
-"Whether the Shift key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Shift key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Nếu phím Shift phải được bấm để bắt con trỏ trong khi nó nằm trên vùng bắt, "
-"hay không. Đặt tuỳ chọn này là Đúng, và một cái nút con chuột được đặt trong "
-"khoá « capture_button » (bắt cái nút) thì phím Shift phải được bấm trong khi "
-"cái nút con chuột được bấm."
-
-#: ../data/pointer-capture-applet.schemas.in.h:17
-#| msgid ""
-#| "Whether if the Shift key must be pressed with the mouse button set in "
-#| "\"release_button\" for the pointer to be released from the capture area."
-msgid ""
-"Whether the Shift key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Nếu phím Shift phải được bấm cùng với cái nút con chuột được đặt trong khoá « "
-"release_button » để nhả con trỏ khỏi vùng bắt, hay không."
-
-#: ../data/pointer-capture-applet.schemas.in.h:18
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
 msgid "Width of the capture area in pixels."
 msgstr "Chiều rộng của vùng bắt (theo điểm ảnh)."
 
-#: ../src/mt-main.c:720
-msgid "Assistive Technology Support is not Enabled"
-msgstr "Hỗ trợ Công nghệ Trợ giúp không được Hiệu lực"
+#: ../src/mt-main.c:594
+msgid "Enable simulated secondary click"
+msgstr "Hiệu lực cú nhấn phụ mô phỏng"
 
-#: ../src/mt-main.c:721
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"Mousetweaks yêu cầu công nghệ trợ giúp được hiệu lực trong buổi hợp đăng "
-"nhập.\n"
-"\n"
-"Để hiệu lực hỗ trợ cho công nghệ trợ giúp và khởi chạy lại buổi hợp,\n"
-"bấm nút « Bật và Đăng xuất »."
-
-#: ../src/mt-main.c:828
+#: ../src/mt-main.c:596
 msgid "Time to wait before a dwell click"
 msgstr "Thời gian đợi cú nhấn giữ"
 
-#: ../src/mt-main.c:830
+#: ../src/mt-main.c:598
 msgid "Time to wait before a simulated secondary click"
 msgstr "Khoảng thời gian cần đợi trước một cú nhấn phụ mô phỏng."
 
-#: ../src/mt-main.c:832
-msgid "Dwell mode to use"
-msgstr "Chế độ ấn giữ cần dùng"
+#: ../src/mt-main.c:600
+msgid "Set the active dwell mode"
+msgstr ""
 
-#: ../src/mt-main.c:836
-msgid "Window x position"
-msgstr "Vị trí X cửa sổ"
+#: ../src/mt-main.c:602
+#, fuzzy
+#| msgid "Show click type window"
+msgid "Show a click-type window"
+msgstr "Hiện cửa sổ kiểu nhấn"
 
-#: ../src/mt-main.c:838
-msgid "Window y position"
-msgstr "Vị trí Y cửa sổ"
-
-#: ../src/mt-main.c:840
+#: ../src/mt-main.c:604
 msgid "Ignore small pointer movements"
 msgstr "Bỏ qua sự chuyển động nhỏ của con trỏ "
 
-#: ../src/mt-main.c:842
-msgid "Show elapsed time as cursor overlay"
-msgstr "Hiện thời gian đã qua dưới dạng lớp phủ con trỏ"
-
-#: ../src/mt-main.c:844
+#: ../src/mt-main.c:608
 msgid "Shut down mousetweaks"
 msgstr "Tắt mousetweaks"
 
-#: ../src/mt-main.c:853
-msgid "- GNOME mousetweaks daemon"
+#: ../src/mt-main.c:610
+#, fuzzy
+#| msgid "- GNOME mousetweaks daemon"
+msgid "Start mousetweaks as a daemon"
 msgstr "— trình nền mousetweaks GNOME"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-main.c:612
+msgid "Start mousetweaks in login mode"
+msgstr ""
+
+#. parse
+#: ../src/mt-main.c:630
+#, fuzzy
+#| msgid "- GNOME mousetweaks daemon"
+msgid "- GNOME mouse accessibility daemon"
+msgstr "— trình nền mousetweaks GNOME"
+
+#: ../src/mt-common.c:74
 msgid "Failed to Display Help"
 msgstr "Lỗi hiển thị Trợ giúp"
 
-#: ../src/mt-common.c:66
-msgid "Enable and Log Out"
-msgstr "Bật và đăng xuất"
-
-#: ../src/pointer-capture-applet.c:180
-msgid "Locked"
-msgstr "Bị khoá"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:183
-msgid "L"
-msgstr "K"
-
-#: ../src/pointer-capture-applet.c:621
+#: ../src/pointer-capture-applet.c:79
 msgid "Capture area"
 msgstr "Vùng bắt"
 
-#: ../src/pointer-capture-applet.c:622
+#: ../src/pointer-capture-applet.c:80
 msgid "Temporarily lock the mouse pointer"
 msgstr "Khoá tạm thời con trỏ chuột"
 
-#: ../src/dwell-click-applet.c:334
-msgid "Failed to Launch Mouse Preferences"
-msgstr "Lỗi khởi chạy Tùy thích Chuột"
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "Tù_y thích"
+
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "Trợ g_iúp"
+
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "_Giới thiệu"
+
+#: ../src/pointer-capture-applet.c:490
+msgid "Locked"
+msgstr "Bị khoá"
+
+#: ../src/dwell-click-applet.c:450
+msgid "Failed to Open the Universal Access Panel"
+msgstr ""
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Chọn cách nhấn giữ"
+
+#~ msgid "Animate cursor"
+#~ msgstr "Hoạt ảnh con trỏ"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr ""
+#~ "Kiểu dáng nút trong cửa sổ kiểu nhấn vào :\n"
+#~ " 0\tnhãn\n"
+#~ " 1\thình\n"
+#~ " 2\tcả hai"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Hướng theo đó cần nhấn đúp:\n"
+#~ " 0\tsang trái\n"
+#~ " 1\tsang phải\n"
+#~ " 2\tlên\n"
+#~ " 3\txuống"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Hướng theo đó cần nhấn kéo:\n"
+#~ " 0\tsang trái\n"
+#~ " 1\tsang phải\n"
+#~ " 2\tlên\n"
+#~ " 3\txuống"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Hướng theo đó cần nhấn phụ:\n"
+#~ " 0\tsang trái\n"
+#~ " 1\tsang phải\n"
+#~ " 2\tlên\n"
+#~ " 3\txuống"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Hướng theo đó cần nhấn đơn:\n"
+#~ " 0\tsang trái\n"
+#~ " 1\tsang phải\n"
+#~ " 2\tlên\n"
+#~ " 3\txuống"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "Khoảng cách theo điểm ảnh trước khi nhận ra con trỏ đang di chuyển"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Chế độ nhấn giữ"
+
+#~ msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+#~ msgstr ""
+#~ "Chế độ nhấn giữ :\n"
+#~ " 0\tchế độ động tác\n"
+#~ " 1\tchế độ cửa sổ"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Thời gian nhấn giữ"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "Bật nhấn phụ"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Nhấn đúp động tác"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Nhấn kéo động tác"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Nhấn phụ động tác"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Ngưỡng di chuyển"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "Hiện thời gian đã qua dưới dạng lớp phủ con trỏ"
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "Thời gian nghỉ theo giây trước khi gây ra cú nhấn"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "Thời gian nghỉ theo giây trước khi gây ra cú nhấn phụ"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Bắt con trỏ chỉ nếu phím Alt được bấm"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Bắt con trỏ chỉ nếu phím Ctrl được bấm"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Bắt con trỏ chỉ nếu phím Shift được bấm"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "Nút chuột dùng để nhả con trỏ"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Nhả con trỏ chỉ nếu phím Alt được bấm"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Nhả con trỏ chỉ nếu phím Ctrl được bấm"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Nhả con trỏ chỉ nếu phím Shift được bấm"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "Cái nút trên con chuột phải được bấm để nhả con trỏ khỏi vùng bắt. Giá "
+#~ "trị hợp lệ:\n"
+#~ " • 1\tnút bên trái\n"
+#~ " • 2\tnút ở giữa\n"
+#~ " • 3\tnút bên phải."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "Cái nút trên con chuột phải được bấm trong khi con trỏ nằm trên vùng bắt, "
+#~ "để bắt con trỏ. Giá trị hợp lệ:\n"
+#~ " • 0\tkhông cần nút\n"
+#~ " • 1\tnút bên trái\n"
+#~ " • 2\tnút ở giữa\n"
+#~ " • 3\tnút bên phải."
+
+#~| msgid ""
+#~| "Whether if Alt must be pressed for the pointer to be captured while it's "
+#~| "over the capture area. If this option is set as true, and a mouse button "
+#~| "is set in the \"capture_button\" key, then the Alt key must be pressed "
+#~| "while the mouse button is pressed."
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Nếu phím Alt phải được bấm để bắt con trỏ trong khi nó nằm trên vùng bắt, "
+#~ "hay không. Đặt tuỳ chọn này là Đúng, và một cái nút con chuột được đặt "
+#~ "trong khoá « capture_button » (bắt cái nút) thì phím Alt phải được bấm "
+#~ "trong khi cái nút con chuột được bấm."
+
+#~| msgid ""
+#~| "Whether if the Alt key must be pressed with the mouse button set in "
+#~| "\"release_button\" for the pointer to be released from the capture area."
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Nếu phím Alt phải được bấm cùng với cái nút con chuột được đặt trong khoá "
+#~ "« release_button » để nhả con trỏ khỏi vùng bắt, hay không."
+
+#~| msgid ""
+#~| "Whether if Ctrl must be pressed for the pointer to be captured while "
+#~| "it's over the capture area. If this option is set as true, and a mouse "
+#~| "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~| "pressed while the mouse button is pressed."
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Nếu phím Ctrl phải được bấm để bắt con trỏ trong khi nó nằm trên vùng "
+#~ "bắt, hay không. Đặt tuỳ chọn này là Đúng, và một cái nút con chuột được "
+#~ "đặt trong khoá « capture_button » (bắt cái nút) thì phím Ctrl phải được "
+#~ "bấm trong khi cái nút con chuột được bấm."
+
+#~| msgid ""
+#~| "Whether if the Ctrl key must be pressed with the mouse button set in "
+#~| "\"release_button\" for the pointer to be released from the capture area."
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Nếu phím Ctrl phải được bấm cùng với cái nút con chuột được đặt trong "
+#~ "khoá « release_button » để nhả con trỏ khỏi vùng bắt, hay không."
+
+#~| msgid ""
+#~| "Whether if Shift must be pressed for the pointer to be captured while "
+#~| "it's over the capture area. If this option is set as true, and a mouse "
+#~| "button is set in the \"capture_button\" key, then the Shift key must be "
+#~| "pressed while the mouse button is pressed."
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Nếu phím Shift phải được bấm để bắt con trỏ trong khi nó nằm trên vùng "
+#~ "bắt, hay không. Đặt tuỳ chọn này là Đúng, và một cái nút con chuột được "
+#~ "đặt trong khoá « capture_button » (bắt cái nút) thì phím Shift phải được "
+#~ "bấm trong khi cái nút con chuột được bấm."
+
+#~| msgid ""
+#~| "Whether if the Shift key must be pressed with the mouse button set in "
+#~| "\"release_button\" for the pointer to be released from the capture area."
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Nếu phím Shift phải được bấm cùng với cái nút con chuột được đặt trong "
+#~ "khoá « release_button » để nhả con trỏ khỏi vùng bắt, hay không."
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "Hỗ trợ Công nghệ Trợ giúp không được Hiệu lực"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Mousetweaks yêu cầu công nghệ trợ giúp được hiệu lực trong buổi hợp đăng "
+#~ "nhập.\n"
+#~ "\n"
+#~ "Để hiệu lực hỗ trợ cho công nghệ trợ giúp và khởi chạy lại buổi hợp,\n"
+#~ "bấm nút « Bật và Đăng xuất »."
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Chế độ ấn giữ cần dùng"
+
+#~ msgid "Window x position"
+#~ msgstr "Vị trí X cửa sổ"
+
+#~ msgid "Window y position"
+#~ msgstr "Vị trí Y cửa sổ"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Hiện thời gian đã qua dưới dạng lớp phủ con trỏ"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "Bật và đăng xuất"
+
+#~ msgid "L"
+#~ msgstr "K"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "Lỗi khởi chạy Tùy thích Chuột"

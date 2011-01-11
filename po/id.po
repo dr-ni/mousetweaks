@@ -2,14 +2,14 @@
 # Copyright (C) 2010 mousetweaks's COPYRIGHT HOLDER
 # This file is distributed under the same license as the mousetweaks package.
 # sandra <sandra.yuwana@gmail.com>, 2010.
+# Andika Triwidada <andika@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-08-04 04:19+0000\n"
-"PO-Revision-Date: 2010-08-09 19:11+0700\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2010-12-20 12:14+0000\n"
+"PO-Revision-Date: 2011-01-11 14:16+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: GNOME Indonesian Translation Team <gnome@i15n.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,32 +30,30 @@ msgstr ""
 msgid "Click Type Window"
 msgstr "Jendela Jenis Klik"
 
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#: ../data/dwell-click-applet.ui.h:4
+#: ../data/mousetweaks.ui.h:2
 msgid "Double Click"
 msgstr "Klik Ganda"
 
-#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#: ../data/dwell-click-applet.ui.h:5
 msgid "Drag Click"
 msgstr "Klik Seret"
 
-#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:807
+#: ../data/dwell-click-applet.ui.h:6
+#: ../src/mt-main.c:592
 msgid "Enable dwell click"
 msgstr "Mengaktifkan klik-menetap"
 
-#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+#: ../data/dwell-click-applet.ui.h:7
 msgid "Right Click"
 msgstr "Klik Kanan"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#: ../data/dwell-click-applet.ui.h:8
+#: ../data/mousetweaks.ui.h:11
 msgid "Single Click"
 msgstr "Klik Tunggal "
 
 #: ../data/pointer-capture-applet.ui.h:1
-msgid "A_lt"
-msgstr "A_lt"
-
-#: ../data/pointer-capture-applet.ui.h:2
 msgid ""
 "Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -63,413 +61,469 @@ msgstr ""
 "Area untuk mengunci penunjuk pada panel. \n"
 "Bagian dari Mousetweaks"
 
-#: ../data/pointer-capture-applet.ui.h:4
+#: ../data/pointer-capture-applet.ui.h:3
 msgid "C_trl"
 msgstr "C_trl"
 
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "Capture and Release Controls"
+msgstr "Kendali Tangkap dan Lepas"
+
 #: ../data/pointer-capture-applet.ui.h:5
-msgid "Capture Pointer"
-msgstr "Menangkap Pointer"
+msgid "Keyboard modifier:"
+msgstr "Modifier papan tik:"
 
 #: ../data/pointer-capture-applet.ui.h:6
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Modifier:"
-msgstr "Pengubah:"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Mouse _button:"
-msgstr "Tombol _tetikus:"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "Mouse b_utton:"
-msgstr "Tombol t_etikus"
-
-#: ../data/pointer-capture-applet.ui.h:10
 msgid "Pointer Capture Preferences"
 msgstr "Preferensi Menangkap Pointer"
 
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "Release Pointer"
-msgstr "Melepaskan Pointer"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "S_hift"
-msgstr "S_hift"
-
-#: ../data/pointer-capture-applet.ui.h:13
+#: ../data/pointer-capture-applet.ui.h:7
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Memilih Tombol 0 akan segera menangkap pointer"
 
-#: ../data/pointer-capture-applet.ui.h:14
-msgid "Sh_ift"
-msgstr "Sh_ift"
-
-#: ../data/pointer-capture-applet.ui.h:15
+#: ../data/pointer-capture-applet.ui.h:8
 msgid "Size of the Capture Area"
 msgstr "Ukuran Area yang Ditangkap"
 
-#: ../data/pointer-capture-applet.ui.h:16
+#: ../data/pointer-capture-applet.ui.h:9
 msgid "_Alt"
 msgstr "_Alt"
 
-#: ../data/pointer-capture-applet.ui.h:17
+#: ../data/pointer-capture-applet.ui.h:10
+#| msgid "Mouse _button:"
+msgid "_Mouse button:"
+msgstr "To_mbol tetikus:"
+
+#: ../data/pointer-capture-applet.ui.h:11
+#| msgid "S_hift"
+msgid "_Shift"
+msgstr "_Shift"
+
+#: ../data/pointer-capture-applet.ui.h:12
 msgid "_Width:"
 msgstr "_Width:"
 
-#: ../data/pointer-capture-applet.ui.h:18
+#: ../data/pointer-capture-applet.ui.h:13
 msgid "pixels"
 msgstr "piksel"
 
-#: ../data/mousetweaks.ui.h:3
-msgid "Dwell Click Type"
-msgstr "Jenis Klik-Menetap"
+#: ../data/mousetweaks.ui.h:1
+#| msgid "Button style"
+msgid "Button Style"
+msgstr "Gaya Tombol"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:4
+msgid "Drag"
+msgstr "Seret"
 
 #: ../data/mousetweaks.ui.h:5
-msgid "Show Icons and Text"
-msgstr "Tampilkan Ikon dan Teks"
+#| msgid "Dwell Click Type"
+msgid "Dwell Click-Type"
+msgstr "Jenis Klik Menetap"
 
-#: ../data/mousetweaks.ui.h:6
-msgid "Show Icons only"
-msgstr "Tampilkan hanya Ikon"
-
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:7
-msgid "Show Text only"
-msgstr "Tampilkan hanya Teks"
+msgid "Horizontal"
+msgstr "Horisontal"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
-msgid "Dwell Click"
-msgstr "Klik Menetap"
+#: ../data/mousetweaks.ui.h:8
+#| msgid "Show Icons only"
+msgid "Icons only"
+msgstr "Hanya ikon"
 
-#: ../data/DwellClick_Factory.server.in.in.h:2
-msgid "Select dwelling click type"
-msgstr "Pilih jenis klik-menetap"
+#: ../data/mousetweaks.ui.h:9
+msgid "Orientation"
+msgstr "Orientasi"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
+#: ../data/mousetweaks.ui.h:10
+#| msgid "Secondary click time"
+msgid "Secondary Click"
+msgstr "Klik Sekunder"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Text and Icons"
+msgstr "Teks dan Ikon"
+
+#: ../data/mousetweaks.ui.h:13
+#| msgid "Show Text only"
+msgid "Text only"
+msgstr "Hanya teks"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertikal"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr "Kendalikan desktop Anda tanpa memakai tombol tetikus"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+#| msgid "Dwell Click Type"
+msgid "Dwell Click Applet"
+msgstr "Aplet Klik Menetap"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr "Area untuk mengunci pointer"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:530
-msgid "Pointer Capture"
-msgstr "Menangkap Pointer"
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+#| msgid "Pointer Capture"
+msgid "Pointer Capture Applet"
+msgstr "Aplet Menangkap Pointer"
 
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
-msgid "_About"
-msgstr "Tent_ang"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#| msgid "Show a click-type window"
+msgid "Button style of the click-type window."
+msgstr "Gaya tombol dari jendela jenis klik."
 
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
-msgid "_Help"
-msgstr "_Bantuan"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: ../src/mt-main.c:606
+#| msgid "Click-type window X position"
+msgid "Click-type window geometry"
+msgstr "Geometri jendela jenis klik"
 
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
-msgid "_Preferences"
-msgstr "_Preferensi"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#| msgid "Click-type window X position"
+msgid "Click-type window orientation"
+msgstr "Orientasi jendela jenis klik"
 
-#: ../data/mousetweaks.schemas.in.h:1
-msgid "Animate cursor"
-msgstr "Kursor bernyawa"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#| msgid "Click-type window X position"
+msgid "Click-type window style"
+msgstr "Gaya jendela jenis klik"
 
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style"
-msgstr "Gaya tombol"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+#| msgid "Show a click-type window"
+msgid "Orientation of the click-type window."
+msgstr "Orientasi dari jendela jenis klik."
 
-#: ../data/mousetweaks.schemas.in.h:3
-msgid ""
-"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
-msgstr ""
-"Gaya tombol di jendela jenis klik (\"0\" = Teks, \"1\" = Ikon, \"2\" = "
-"Keduanya)"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid "Size and position of the click-type window. The format is a standard X Window System geometry string."
+msgstr "Ukuran dan posisi jendela jenis klik. Format adalah string geometri starndar Sistem X Window."
 
-#: ../data/mousetweaks.schemas.in.h:4
-msgid ""
-"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Arah untuk melakukan klik ganda (\"0\" = Kiri, \"1\" =, Kanan \"2\" = Naik, "
-"\"3\" = Turun)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
+msgid "\"Alt\" keyboard modifier"
+msgstr "Modifier papan tik \"Alt\""
 
-#: ../data/mousetweaks.schemas.in.h:5
-msgid ""
-"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
-msgstr ""
-"Arah untuk melakukan klik seret (\"0\" = Kiri, \"1\" =, Kanan \"2\" = Naik, "
-"\"3\" = Turun)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
+msgid "\"Control\" keyboard modifier"
+msgstr "Modifier papan tik \"Control\""
 
-#: ../data/mousetweaks.schemas.in.h:6
-msgid ""
-"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Arah untuk melakukan klik sekunder (\"0\" = Kiri, \"1\" =, Kanan \"2\" = "
-"Naik, \"3\" = Turun)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
+msgid "\"Shift\" keyboard modifier"
+msgstr "Modifier papan tik \"Shift\""
 
-#: ../data/mousetweaks.schemas.in.h:7
-msgid ""
-"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Arah untuk melakukan klik tunggal (\"0\" = Kiri, \"1\" =, Kanan \"2\" = "
-"Naik, \"3\" = Turun)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
+#| msgid "Mouse _button:"
+msgid "Mouse button"
+msgstr "Tombol tetikus"
 
-#: ../data/mousetweaks.schemas.in.h:8
-msgid "Distance in pixels before movement will be recognized"
-msgstr "Jarak dalam piksel sebelum gerakan akan dikenali"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
+#| msgid "Mouse button used to capture the pointer"
+msgid "Mouse button used to capture or release the pointer."
+msgstr "Tombol tetikus yang digunakan untuk menangkap atau melepas pointer."
 
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode"
-msgstr "Mode klik-menetap"
-
-#: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr "Mode klik-menetap (\"0\" = Mode jendela, \"1\" = Mode sikap)"
-
-#: ../data/mousetweaks.schemas.in.h:11
-msgid "Dwell click time"
-msgstr "Waktu klik menetap"
-
-#: ../data/mousetweaks.schemas.in.h:13
-msgid "Enable secondary click"
-msgstr "Mengaktifkan klik sekunder"
-
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
-msgid "Enable simulated secondary click"
-msgstr "Mengaktifkan klik sekunder yang disimulasikan"
-
-#: ../data/mousetweaks.schemas.in.h:15
-msgid "Gesture double click"
-msgstr "Sikap klik ganda"
-
-#: ../data/mousetweaks.schemas.in.h:16
-msgid "Gesture drag click"
-msgstr "Sikap klik seret"
-
-#: ../data/mousetweaks.schemas.in.h:17
-msgid "Gesture secondary click"
-msgstr "Sikap klik sekunder"
-
-#: ../data/mousetweaks.schemas.in.h:18
-msgid "Gesture single click"
-msgstr "Sikap klik tunggal"
-
-#: ../data/mousetweaks.schemas.in.h:19
-msgid "Movement threshold"
-msgstr "Ambang gerakan ambang"
-
-#: ../data/mousetweaks.schemas.in.h:20
-msgid "Secondary click time"
-msgstr "Waktu klik sekunder"
-
-#: ../data/mousetweaks.schemas.in.h:21
-msgid "Show click type window"
-msgstr "Tampilkan jendela jenis klik"
-
-#: ../data/mousetweaks.schemas.in.h:22
-msgid "Show elapsed time as cursor overlay."
-msgstr "Tampilkan waktu berlalu sebagai overlay kursor."
-
-#: ../data/mousetweaks.schemas.in.h:23
-msgid "Time in seconds before a click is triggered"
-msgstr "Waktu dalam detik sebelum klik dipicu"
-
-#: ../data/mousetweaks.schemas.in.h:24
-msgid "Time in seconds before a secondary click is triggered"
-msgstr "Waktu dalam detik sebelum klik sekunder dipicu"
-
-#: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture pointer only if Alt is pressed"
-msgstr "Menangkap pointer hanya jika Alt ditekan"
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture pointer only if Ctrl is pressed"
-msgstr "Menangkap pointer hanya jika Ctrl ditekan"
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture pointer only if Shift is pressed"
-msgstr "Menangkap pointer hanya jika Shift ditekan"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Mouse button used to capture the pointer"
-msgstr "Tombol tetikus yang digunakan untuk menangkap pointer"
-
-#: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Mouse button used to release the pointer"
-msgstr "Tombol tetikus yang digunakan untuk melepaskan pointer"
-
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Release pointer only if Alt is pressed"
-msgstr "Melepaskan pointer hanya jika Alt ditekan"
-
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Release pointer only if Ctrl is pressed"
-msgstr "Melepaskan pointer hanya jika Ctrl ditekan"
-
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release pointer only if Shift is pressed"
-msgstr "Melepaskan pointer hanya jika Shift ditekan"
-
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
 msgstr "Ukuran area penangkapan"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid ""
-"This mouse button must be pressed to release the pointer from the capture "
-"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
-"\"3\" for right button."
-msgstr ""
-"Tombol tetikus ini harus ditekan untuk melepaskan pointer dari area "
-"penangkapan. Nilai valid adalah \"1\" untuk tombol kiri, \"2\" untuk tombol "
-"tengah, dan \"3\" untuk tombol kanan."
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid ""
-"This mouse button must be pressed while the pointer is over the capture area "
-"in order to capture the pointer. Valid values are \"0\" if no button is "
-"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
-"button."
-msgstr ""
-"Tombol tetikus ini harus ditekan saat pointer melewati area penangkapan, "
-"untuk menangkap pointer. Nilai valid adalah \"0\" jika tombol tidak "
-"diperlukan, \"1\" untuk tombol kiri, \"2\" untuk tombol tengah, dan \"3\" "
-"untuk tombol kanan."
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid ""
-"Whether the Alt key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Alt key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Apakah tombol Alt harus ditekan agar ponter ditangkap saat melewati area "
-"ambil. Jika opsi ini ditetapkan sebagai benar, dan tombol tetikus ditetapkan "
-"dalam kunci \"capture_button\", maka tombol Alt harus ditekan saat tombol "
-"tetikus ditekan."
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
-msgid ""
-"Whether the Alt key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Apakah tombol Alt harus ditekan dengan tombol tetikus ditetapkan dalam "
-"\"release_tombol\" agar pointer dilepaskan dari area penangkapan."
-
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid ""
-"Whether the Ctrl key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Ctrl key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Apakah tombol Ctrl harus ditekan agar ponter ditangkap saat melewati area "
-"ambil. Jika opsi ini ditetapkan sebagai benar, dan tombol tetikus ditetapkan "
-"dalam kunci \"capture_button\", maka tombol Ctrl harus ditekan saat tombol "
-"tetikus ditekan."
-
-#: ../data/pointer-capture-applet.schemas.in.h:15
-msgid ""
-"Whether the Ctrl key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Apakah tombol Ctrl harus ditekan dengan tombol tetikus ditetapkan dalam "
-"\"release_button\" agar pointer dilepaskan dari area penangkapan."
-
-#: ../data/pointer-capture-applet.schemas.in.h:16
-msgid ""
-"Whether the Shift key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Shift key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Apakah tombol Shift harus ditekan agar ponter ditangkap saat melewati area "
-"ambil. Jika opsi ini ditetapkan sebagai benar, dan tombol tetikus ditetapkan "
-"dalam kunci \"capture_buttonl\", maka tombol Shift harus ditekan saat tombol "
-"tetikus ditekan."
-
-#: ../data/pointer-capture-applet.schemas.in.h:17
-msgid ""
-"Whether the Shift key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Apakah tombol Shift harus ditekan dengan tombol tetikus ditetapkan dalam "
-"\"release_button\" agar pointer dilepaskan dari area penangkapan."
-
-#: ../data/pointer-capture-applet.schemas.in.h:18
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
 msgid "Width of the capture area in pixels."
 msgstr "Lebar area penangkapan dalam piksel."
 
-#: ../src/mt-main.c:811
+#: ../src/mt-main.c:594
+msgid "Enable simulated secondary click"
+msgstr "Mengaktifkan klik sekunder yang disimulasikan"
+
+#: ../src/mt-main.c:596
 msgid "Time to wait before a dwell click"
 msgstr "Waktu untuk menunggu sebelum klik-menetap"
 
-#: ../src/mt-main.c:813
+#: ../src/mt-main.c:598
 msgid "Time to wait before a simulated secondary click"
 msgstr "Waktu untuk menunggu sebelum klik sekunder disimulasikan"
 
-#: ../src/mt-main.c:815
+#: ../src/mt-main.c:600
 msgid "Set the active dwell mode"
 msgstr "Mengatur modus menetap yang aktif"
 
-#: ../src/mt-main.c:817
+#: ../src/mt-main.c:602
 msgid "Show a click-type window"
 msgstr "Tampilkan jendela jenis klik"
 
-#: ../src/mt-main.c:819
-msgid "Click-type window X position"
-msgstr "Posisi X jendela jenis klik"
-
-#: ../src/mt-main.c:821
-msgid "Click-type window Y position"
-msgstr "Posisi Y jendela jenis klik"
-
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:604
 msgid "Ignore small pointer movements"
 msgstr "Abaikan gerakan kecil pointer"
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:608
 msgid "Shut down mousetweaks"
 msgstr "Matikan mousetweaks"
 
-#: ../src/mt-main.c:827
-msgid "Disable cursor animations"
-msgstr "Nonaktifkan animasi kursor"
-
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:610
 msgid "Start mousetweaks as a daemon"
 msgstr "Mulai mousetweaks sebagai daemon"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks in login mode"
 msgstr "Mulai mousetweaks di modus login"
 
 #. parse
-#: ../src/mt-main.c:851
+#: ../src/mt-main.c:630
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME daemon aksesibilitas tetikus"
 
-#: ../src/mt-common.c:31
+#: ../src/mt-common.c:74
 msgid "Failed to Display Help"
 msgstr "Gagal Menampilkan Bantuan"
 
-#: ../src/mt-common.c:70
-msgid "Enable and Log Out"
-msgstr "Aktifkan dan Keluar Log"
-
-#: ../src/pointer-capture-applet.c:68
+#: ../src/pointer-capture-applet.c:79
 msgid "Capture area"
 msgstr "Area penangkapan"
 
-#: ../src/pointer-capture-applet.c:69
+#: ../src/pointer-capture-applet.c:80
 msgid "Temporarily lock the mouse pointer"
 msgstr "Sementara mengunci pointer tetikus"
 
-#: ../src/pointer-capture-applet.c:596
+#: ../src/pointer-capture-applet.c:175
+#: ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "_Preferensi"
+
+#: ../src/pointer-capture-applet.c:177
+#: ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "_Bantuan"
+
+#: ../src/pointer-capture-applet.c:179
+#: ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "Tent_ang"
+
+#: ../src/pointer-capture-applet.c:490
 msgid "Locked"
 msgstr "Terkunci"
 
-#: ../src/dwell-click-applet.c:475
-msgid "Failed to Launch Mouse Preferences"
-msgstr "Gagal Meluncurkan Preferensi Tetikus"
+#: ../src/dwell-click-applet.c:450
+msgid "Failed to Open the Universal Access Panel"
+msgstr "Gagal Membuka Panel Akses Universal"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "Menangkap Pointer"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Pengubah:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "Tombol t_etikus"
+
+#~ msgid "Release Pointer"
+#~ msgstr "Melepaskan Pointer"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Tampilkan Ikon dan Teks"
+
+#~ msgid "Dwell Click"
+#~ msgstr "Klik Menetap"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Pilih jenis klik-menetap"
+
+#~ msgid "Animate cursor"
+#~ msgstr "Kursor bernyawa"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr ""
+#~ "Gaya tombol di jendela jenis klik (\"0\" = Teks, \"1\" = Ikon, \"2\" = "
+#~ "Keduanya)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Arah untuk melakukan klik ganda (\"0\" = Kiri, \"1\" =, Kanan \"2\" = "
+#~ "Naik, \"3\" = Turun)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Arah untuk melakukan klik seret (\"0\" = Kiri, \"1\" =, Kanan \"2\" = "
+#~ "Naik, \"3\" = Turun)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Arah untuk melakukan klik sekunder (\"0\" = Kiri, \"1\" =, Kanan \"2\" = "
+#~ "Naik, \"3\" = Turun)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Arah untuk melakukan klik tunggal (\"0\" = Kiri, \"1\" =, Kanan \"2\" = "
+#~ "Naik, \"3\" = Turun)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "Jarak dalam piksel sebelum gerakan akan dikenali"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Mode klik-menetap"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "Mode klik-menetap (\"0\" = Mode jendela, \"1\" = Mode sikap)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Waktu klik menetap"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "Mengaktifkan klik sekunder"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Sikap klik ganda"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Sikap klik seret"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Sikap klik sekunder"
+
+#~ msgid "Gesture single click"
+#~ msgstr "Sikap klik tunggal"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Ambang gerakan ambang"
+
+#~ msgid "Show click type window"
+#~ msgstr "Tampilkan jendela jenis klik"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "Tampilkan waktu berlalu sebagai overlay kursor."
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "Waktu dalam detik sebelum klik dipicu"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "Waktu dalam detik sebelum klik sekunder dipicu"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Menangkap pointer hanya jika Alt ditekan"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Menangkap pointer hanya jika Ctrl ditekan"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Menangkap pointer hanya jika Shift ditekan"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "Tombol tetikus yang digunakan untuk melepaskan pointer"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Melepaskan pointer hanya jika Alt ditekan"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Melepaskan pointer hanya jika Ctrl ditekan"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Melepaskan pointer hanya jika Shift ditekan"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "Tombol tetikus ini harus ditekan untuk melepaskan pointer dari area "
+#~ "penangkapan. Nilai valid adalah \"1\" untuk tombol kiri, \"2\" untuk "
+#~ "tombol tengah, dan \"3\" untuk tombol kanan."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "Tombol tetikus ini harus ditekan saat pointer melewati area penangkapan, "
+#~ "untuk menangkap pointer. Nilai valid adalah \"0\" jika tombol tidak "
+#~ "diperlukan, \"1\" untuk tombol kiri, \"2\" untuk tombol tengah, dan \"3\" "
+#~ "untuk tombol kanan."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Apakah tombol Alt harus ditekan agar ponter ditangkap saat melewati area "
+#~ "ambil. Jika opsi ini ditetapkan sebagai benar, dan tombol tetikus "
+#~ "ditetapkan dalam kunci \"capture_button\", maka tombol Alt harus ditekan "
+#~ "saat tombol tetikus ditekan."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Apakah tombol Alt harus ditekan dengan tombol tetikus ditetapkan dalam "
+#~ "\"release_tombol\" agar pointer dilepaskan dari area penangkapan."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Apakah tombol Ctrl harus ditekan agar ponter ditangkap saat melewati area "
+#~ "ambil. Jika opsi ini ditetapkan sebagai benar, dan tombol tetikus "
+#~ "ditetapkan dalam kunci \"capture_button\", maka tombol Ctrl harus ditekan "
+#~ "saat tombol tetikus ditekan."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Apakah tombol Ctrl harus ditekan dengan tombol tetikus ditetapkan dalam "
+#~ "\"release_button\" agar pointer dilepaskan dari area penangkapan."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Apakah tombol Shift harus ditekan agar ponter ditangkap saat melewati "
+#~ "area ambil. Jika opsi ini ditetapkan sebagai benar, dan tombol tetikus "
+#~ "ditetapkan dalam kunci \"capture_buttonl\", maka tombol Shift harus "
+#~ "ditekan saat tombol tetikus ditekan."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Apakah tombol Shift harus ditekan dengan tombol tetikus ditetapkan dalam "
+#~ "\"release_button\" agar pointer dilepaskan dari area penangkapan."
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "Posisi Y jendela jenis klik"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "Nonaktifkan animasi kursor"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "Aktifkan dan Keluar Log"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "Gagal Meluncurkan Preferensi Tetikus"

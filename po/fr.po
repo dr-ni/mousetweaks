@@ -6,14 +6,15 @@
 # Francesco Fumanti <francesco.fumanti@gmx.net>, 2007.
 # Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.
 # Claude Paroz <claude@2xlibre.net>, 2008-2010.
-# Bruno Brouard <annoa.b@gmail.com>, 2008-2009.
-#
+# Bruno Brouard <annoa.b@gmail.com>, 2008-2009,2011.
+# Cyril Arnaud <cyril dot arnaud at gmail dot com>, 2010
+
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-06-27 16:33+0000\n"
+"POT-Creation-Date: 2010-11-21 11:03+0000\n"
 "PO-Revision-Date: 2010-01-27 22:29+0100\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -33,32 +34,27 @@ msgstr ""
 msgid "Click Type Window"
 msgstr "Fenêtre de type de clic"
 
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
 msgid "Double Click"
 msgstr "Double-clic"
 
-#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#: ../data/dwell-click-applet.ui.h:5
 msgid "Drag Click"
 msgstr "Clic glisser-déposer"
 
-#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:807
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
 msgid "Enable dwell click"
 msgstr "Activer les clics par maintien"
 
-#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+#: ../data/dwell-click-applet.ui.h:7
 msgid "Right Click"
 msgstr "Clic droit"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
 msgid "Single Click"
 msgstr "Clic simple"
 
 #: ../data/pointer-capture-applet.ui.h:1
-msgid "A_lt"
-msgstr "Al_t"
-
-#: ../data/pointer-capture-applet.ui.h:2
 msgid ""
 "Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -66,445 +62,238 @@ msgstr ""
 "Zone pour bloquer le pointeur de la souris sur le tableau de bord.\n"
 "Composant de Mousetweaks"
 
-#: ../data/pointer-capture-applet.ui.h:4
+#: ../data/pointer-capture-applet.ui.h:3
 msgid "C_trl"
 msgstr "_Ctrl"
 
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "Capture and Release Controls"
+msgstr "Contrôles de capture et de libération"
+
 #: ../data/pointer-capture-applet.ui.h:5
-msgid "Capture Pointer"
-msgstr "Capture du pointeur"
+msgid "Keyboard modifier:"
+msgstr "Modificateur de clavier :"
 
 #: ../data/pointer-capture-applet.ui.h:6
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Modifier:"
-msgstr "Modificateur :"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Mouse _button:"
-msgstr "_Bouton de la souris :"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "Mouse b_utton:"
-msgstr "B_outon de la souris :"
-
-#: ../data/pointer-capture-applet.ui.h:10
 msgid "Pointer Capture Preferences"
 msgstr "Préférences de la capture du pointeur"
 
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "Release Pointer"
-msgstr "Libération du pointeur"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "S_hift"
-msgstr "_Majuscule"
-
-#: ../data/pointer-capture-applet.ui.h:13
+#: ../data/pointer-capture-applet.ui.h:7
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "En choisissant le bouton 0, le pointeur est immédiatement capturé"
 
-#: ../data/pointer-capture-applet.ui.h:14
-msgid "Sh_ift"
-msgstr "Maj_uscule"
-
-#: ../data/pointer-capture-applet.ui.h:15
+#: ../data/pointer-capture-applet.ui.h:8
 msgid "Size of the Capture Area"
 msgstr "Taille de la zone de capture"
 
-#: ../data/pointer-capture-applet.ui.h:16
+#: ../data/pointer-capture-applet.ui.h:9
 msgid "_Alt"
 msgstr "_Alt"
 
-#: ../data/pointer-capture-applet.ui.h:17
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "_Mouse button:"
+msgstr "_Bouton de la souris :"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "_Shift"
+msgstr "_Majuscule"
+
+#: ../data/pointer-capture-applet.ui.h:12
 msgid "_Width:"
 msgstr "_Largeur :"
 
-#: ../data/pointer-capture-applet.ui.h:18
+#: ../data/pointer-capture-applet.ui.h:13
 msgid "pixels"
 msgstr "pixels"
 
-#: ../data/mousetweaks.ui.h:3
-msgid "Dwell Click Type"
-msgstr "Type de clic par maintien"
+#: ../data/mousetweaks.ui.h:1
+msgid "Button Style"
+msgstr "Style de bouton"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:4
+msgid "Drag"
+msgstr "Glisser"
 
 #: ../data/mousetweaks.ui.h:5
-msgid "Show Icons and Text"
-msgstr "Afficher les icônes et le texte"
+msgid "Dwell Click-Type"
+msgstr "Type de clic par maintien"
 
-#: ../data/mousetweaks.ui.h:6
-msgid "Show Icons only"
-msgstr "Afficher seulement les icônes"
-
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:7
-msgid "Show Text only"
-msgstr "Afficher seulement le texte"
+msgid "Horizontal"
+msgstr "Horizontal"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
-msgid "Dwell Click"
-msgstr "Clic par maintien"
+#: ../data/mousetweaks.ui.h:8
+msgid "Icons only"
+msgstr "Icônes seules"
 
-#: ../data/DwellClick_Factory.server.in.in.h:2
-msgid "Select dwelling click type"
-msgstr "Sélectionnez le type de clic par maintien"
+#: ../data/mousetweaks.ui.h:9
+msgid "Orientation"
+msgstr "Orientation"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
+#: ../data/mousetweaks.ui.h:10
+msgid "Secondary Click"
+msgstr "Clic secondaire"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Text and Icons"
+msgstr "Texte et icônes"
+
+#: ../data/mousetweaks.ui.h:13
+msgid "Text only"
+msgstr "Texte seul"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr "Contrôler votre bureau sans utiliser les boutons de la souris"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+msgid "Dwell Click Applet"
+msgstr "Applet de clic par maintien"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr "Zone de verrouillage du pointeur"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:530
-msgid "Pointer Capture"
-msgstr "Capture du pointeur"
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+msgid "Pointer Capture Applet"
+msgstr "Applet de capture du pointeur"
 
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
-msgid "_About"
-msgstr "À _propos"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Button style of the click-type window."
+msgstr "Style de bouton de la fenêtre de type de clic."
 
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
-msgid "_Help"
-msgstr "Aid_e"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+msgid "Click-type window geometry"
+msgstr "Géométrie de la fenêtre de type de clic"
 
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
-msgid "_Preferences"
-msgstr "_Préférences"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Orientation de la fenêtre de type de clic"
 
-#: ../data/mousetweaks.schemas.in.h:1
-msgid "Animate cursor"
-msgstr "Animer le curseur"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Click-type window style"
+msgstr "Style de la fenêtre de type de clic"
 
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style"
-msgstr "Style de bouton"
+# BUG : same message as "Click-type window orientation" without the dot.
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+msgid "Orientation of the click-type window."
+msgstr "Orientation de la fenêtre de type de clic."
 
-#: ../data/mousetweaks.schemas.in.h:3
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
-"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
 msgstr ""
-"Style de bouton dans la fenêtre de type de clic (« 0 » = texte, « 1 » = icône, "
-"« 2 » = les deux)"
+"Dimension et position de la fenêtre de type de clic. Le format est une chaîne "
+"de géométrie standard du système X Window."
 
-#: ../data/mousetweaks.schemas.in.h:4
-msgid ""
-"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Direction pour effectuer un double-clic (« 0 » = gauche, « 1 » = droite, "
-"« 2 » = haut, « 3 » = bas)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
+msgid "\"Alt\" keyboard modifier"
+msgstr "Modificateur de clavier « Alt »"
 
-#: ../data/mousetweaks.schemas.in.h:5
-msgid ""
-"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
-msgstr ""
-"Direction pour effectuer un clic glisser-déposer (« 0 » = gauche, "
-"« 1 » = droite, « 2 » = haut, « 3 » = bas)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
+msgid "\"Control\" keyboard modifier"
+msgstr "Modificateur de clavier « Ctrl »"
 
-#: ../data/mousetweaks.schemas.in.h:6
-msgid ""
-"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Direction pour effectuer un clic secondaire (« 0 » = gauche, « 1 » = droite, "
-"« 2 » = haut, « 3 » = bas)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
+msgid "\"Shift\" keyboard modifier"
+msgstr "Modificateur de clavier « Maj »"
 
-#: ../data/mousetweaks.schemas.in.h:7
-msgid ""
-"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Direction pour effectuer un clic simple (« 0 » = gauche, « 1 » = droite, "
-"« 2 » = haut, « 3 » = bas)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
+msgid "Mouse button"
+msgstr "Bouton de la souris"
 
-#: ../data/mousetweaks.schemas.in.h:8
-msgid "Distance in pixels before movement will be recognized"
-msgstr "Distance en pixels avant que le mouvement soit reconnu"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
+msgid "Mouse button used to capture or release the pointer."
+msgstr "Bouton de la souris utilisé pour la capture et la libération du pointeur."
 
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode"
-msgstr "Mode de clic par maintien"
-
-#: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr ""
-"Mode de clic par maintien (« 0 » = mode fenêtre, « 1 » = mode par gestes)"
-
-#: ../data/mousetweaks.schemas.in.h:11
-msgid "Dwell click time"
-msgstr "Délai du clic par maintien"
-
-#: ../data/mousetweaks.schemas.in.h:13
-msgid "Enable secondary click"
-msgstr "Activer les clics secondaires"
-
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
-msgid "Enable simulated secondary click"
-msgstr "Activer les clics secondaires simulés"
-
-#: ../data/mousetweaks.schemas.in.h:15
-msgid "Gesture double click"
-msgstr "Mouvement pour le double-clic"
-
-#: ../data/mousetweaks.schemas.in.h:16
-msgid "Gesture drag click"
-msgstr "Mouvement pour le clic glisser-déposer"
-
-#: ../data/mousetweaks.schemas.in.h:17
-msgid "Gesture secondary click"
-msgstr "Mouvement pour le clic secondaire"
-
-#: ../data/mousetweaks.schemas.in.h:18
-msgid "Gesture single click"
-msgstr "Mouvement pour le clic simple"
-
-#: ../data/mousetweaks.schemas.in.h:19
-msgid "Movement threshold"
-msgstr "Seuil de détection du mouvement"
-
-#: ../data/mousetweaks.schemas.in.h:20
-msgid "Secondary click time"
-msgstr "Délai du clic secondaire"
-
-#: ../data/mousetweaks.schemas.in.h:21
-msgid "Show click type window"
-msgstr "Afficher la fenêtre de type de clic"
-
-#: ../data/mousetweaks.schemas.in.h:22
-msgid "Show elapsed time as cursor overlay."
-msgstr "Afficher le temps écoulé en superposition du curseur."
-
-#: ../data/mousetweaks.schemas.in.h:23
-msgid "Time in seconds before a click is triggered"
-msgstr "Délai en secondes avant qu'un clic soit déclenché"
-
-#: ../data/mousetweaks.schemas.in.h:24
-msgid "Time in seconds before a secondary click is triggered"
-msgstr "Délai en secondes avant qu'un clic secondaire soit déclenché"
-
-#: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture pointer only if Alt is pressed"
-msgstr "Capturer le pointeur seulement si Alt est enfoncée"
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture pointer only if Ctrl is pressed"
-msgstr "Capturer le pointeur seulement si Ctrl est enfoncée"
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture pointer only if Shift is pressed"
-msgstr "Capturer le pointeur seulement si Maj est enfoncée"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Mouse button used to capture the pointer"
-msgstr "Bouton de la souris utilisé pour la capture du pointeur"
-
-#: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Mouse button used to release the pointer"
-msgstr "Bouton de la souris utilisé pour la libération du pointeur"
-
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Release pointer only if Alt is pressed"
-msgstr "Libérer le pointeur seulement si Alt est enfoncée"
-
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Release pointer only if Ctrl is pressed"
-msgstr "Libérer le pointeur seulement si Ctrl est enfoncée"
-
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release pointer only if Shift is pressed"
-msgstr "Libérer le pointeur seulement si Maj est enfoncée"
-
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
 msgstr "Taille de la zone de capture"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid ""
-"This mouse button must be pressed to release the pointer from the capture "
-"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
-"\"3\" for right button."
-msgstr ""
-"Ce bouton de souris doit être enfoncé pour libérer le pointeur de la zone de "
-"capture. Les valeurs permises sont « 1 » pour le bouton gauche, « 2 » pour le "
-"bouton du milieu et « 3 » pour le bouton droit."
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid ""
-"This mouse button must be pressed while the pointer is over the capture area "
-"in order to capture the pointer. Valid values are \"0\" if no button is "
-"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
-"button."
-msgstr ""
-"Ce bouton de souris doit être enfoncé lorsque le pointeur est au-dessus de "
-"la zone de capture pour capturer le pointeur. Les valeurs permises sont « 0 » "
-"si aucun bouton n'est nécessaire, « 1 » pour le bouton gauche, « 2 » pour le "
-"bouton du milieu et « 3 » pour le bouton droit."
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid ""
-"Whether the Alt key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Alt key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Indique si la touche Alt doit être enfoncée pour que le pointeur soit "
-"capturé lorsqu'il se trouve au-dessus de la zone de capture. Si cette option "
-"est vraie et qu'un bouton de souris est sélectionné pour la clé "
-"« capture_button », la touche Alt doit être enfoncée pendant que le bouton de "
-"la souris est enfoncé."
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
-msgid ""
-"Whether the Alt key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Indique si la touche Alt doit être enfoncée en même temps que le bouton de "
-"la souris défini dans la clé « release_button » afin que le pointeur soit "
-"libéré de la zone de capture."
-
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid ""
-"Whether the Ctrl key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Ctrl key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Indique si la touche Ctrl doit être enfoncée pour que le pointeur soit "
-"capturé lorsqu'il se trouve au-dessus de la zone de capture. Si cette option "
-"est vraie et qu'un bouton de souris est défini dans la clé "
-"« capture_button », la touche Ctrl doit être enfoncée pendant que le bouton "
-"de la souris est enfoncé."
-
-#: ../data/pointer-capture-applet.schemas.in.h:15
-msgid ""
-"Whether the Ctrl key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Indique si la touche Ctrl doit être enfoncée en même temps que le bouton de "
-"la souris défini dans la clé « release_button » afin que le pointeur soit "
-"libéré de la zone de capture."
-
-#: ../data/pointer-capture-applet.schemas.in.h:16
-msgid ""
-"Whether the Shift key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Shift key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Indique si la touche Maj doit être enfoncée pour que le pointeur soit "
-"capturé lorsqu'il se trouve au-dessus de la zone de capture. Si cette option "
-"est vraie et qu'un bouton de souris est défini dans la clé "
-"« capture_button », la touche Maj doit être enfoncée pendant que le bouton de "
-"la souris est enfoncé."
-
-#: ../data/pointer-capture-applet.schemas.in.h:17
-msgid ""
-"Whether the Shift key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Indique si la touche Maj doit être enfoncée en même temps que le bouton de "
-"la souris défini dans la clé « release_button » afin que le pointeur soit "
-"libéré de la zone de capture."
-
-#: ../data/pointer-capture-applet.schemas.in.h:18
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
 msgid "Width of the capture area in pixels."
 msgstr "Largeur de la zone de capture en pixels."
 
-#: ../src/mt-main.c:811
+#: ../src/mt-main.c:594
+msgid "Enable simulated secondary click"
+msgstr "Activer les clics secondaires simulés"
+
+#: ../src/mt-main.c:596
 msgid "Time to wait before a dwell click"
 msgstr "Délai avant un clic par maintien"
 
-#: ../src/mt-main.c:813
+#: ../src/mt-main.c:598
 msgid "Time to wait before a simulated secondary click"
 msgstr "Délai avant un clic secondaire simulé"
 
-#: ../src/mt-main.c:815
+#: ../src/mt-main.c:600
 msgid "Set the active dwell mode"
 msgstr "Définit le mode de maintien actif"
 
-#: ../src/mt-main.c:817
+#: ../src/mt-main.c:602
 msgid "Show a click-type window"
 msgstr "Afficher une fenêtre de type de clic"
 
-#: ../src/mt-main.c:819
-msgid "Click-type window X position"
-msgstr "Position horizontale X de la fenêtre de type de clic"
-
-#: ../src/mt-main.c:821
-msgid "Click-type window Y position"
-msgstr "Position verticale Y de la fenêtre de type de clic"
-
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:604
 msgid "Ignore small pointer movements"
 msgstr "Ignore les petits mouvements du pointeur"
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:608
 msgid "Shut down mousetweaks"
 msgstr "Quitte Mousetweaks"
 
-#: ../src/mt-main.c:827
-msgid "Disable cursor animations"
-msgstr "Désactive les animations du curseur"
-
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:610
 msgid "Start mousetweaks as a daemon"
 msgstr "Démarre Mousetweaks en tant que service"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks in login mode"
 msgstr "Démarre Mousetweaks en mode connexion"
 
 #. parse
-#: ../src/mt-main.c:851
+#: ../src/mt-main.c:630
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Service d'accessibilité de souris GNOME"
 
-#: ../src/mt-common.c:31
+#: ../src/mt-common.c:74
 msgid "Failed to Display Help"
 msgstr "L'affichage de l'aide a échoué"
 
-#: ../src/mt-common.c:70
-msgid "Enable and Log Out"
-msgstr "Activer et se déconnecter"
-
-#: ../src/pointer-capture-applet.c:68
+#: ../src/pointer-capture-applet.c:79
 msgid "Capture area"
 msgstr "Zone de capture"
 
-#: ../src/pointer-capture-applet.c:69
+#: ../src/pointer-capture-applet.c:80
 msgid "Temporarily lock the mouse pointer"
 msgstr "Verrouille temporairement le pointeur de la souris"
 
-#: ../src/pointer-capture-applet.c:596
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "_Préférences"
+
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "Aid_e"
+
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "À _propos"
+
+#: ../src/pointer-capture-applet.c:490
 msgid "Locked"
 msgstr "Verrouillé"
 
-#: ../src/dwell-click-applet.c:475
-msgid "Failed to Launch Mouse Preferences"
-msgstr "Le lancement des préférences de la souris a échoué"
+#: ../src/dwell-click-applet.c:450
+msgid "Failed to Open the Universal Access Panel"
+msgstr "Impossible d'ouvrir le panneau d'accès universel"
 
-#~ msgid "Assistive Technology Support is not Enabled"
-#~ msgstr "La prise en charge des outils d'accessibilité n'est pas activée"
-
-#~ msgid ""
-#~ "Mousetweaks requires assistive technologies to be enabled in your "
-#~ "session.\n"
-#~ "\n"
-#~ "To enable support for assistive technologies and restart your session, "
-#~ "press \"Enable and Log Out\"."
-#~ msgstr ""
-#~ "Mousetweaks nécessite l'activation des outils d'accessibilité dans votre "
-#~ "session.\n"
-#~ "\n"
-#~ "Pour activer ces outils et redémarrer votre session, cliquez sur « Activer "
-#~ "et se déconnecter »."
-
-#~ msgid "L"
-#~ msgstr "V"
-
-#~ msgid "Dwell mode to use"
-#~ msgstr "Mode de clic par maintien à utiliser"
-
-#~ msgid "Show elapsed time as cursor overlay"
-#~ msgstr "Affiche le temps écoulé en superposition du curseur"

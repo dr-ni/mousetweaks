@@ -279,7 +279,10 @@ mt_cursor_manager_get_current_cursor (MtCursorManager *manager)
 {
     g_return_val_if_fail (MT_IS_CURSOR_MANAGER (manager), NULL);
 
-    return g_object_ref (manager->priv->current);
+    if (manager->priv->current)
+        return g_object_ref (manager->priv->current);
+
+    return NULL;
 }
 
 MtCursor *

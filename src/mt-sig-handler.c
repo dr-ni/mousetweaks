@@ -136,7 +136,7 @@ mt_sig_handler_io_watch (GIOChannel   *read_chan,
         for (i = 0; i < bytes_read; i++)
         {
             sig_id = buf[i];
-            g_signal_emit (sigh, signals[SIGNAL], 0, &sig_id);
+            g_signal_emit (sigh, signals[SIGNAL], 0, sig_id);
         }
     }
 

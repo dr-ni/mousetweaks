@@ -1,13 +1,14 @@
 # translation of mousetweaks.help.master.po to Español
 # Jorge Gonzalez <jorge.gonzalez@artica.es>, 2008.
 # Jorge González <jorgegonz@svn.gnome.org>, 200, 2009, 2010.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.help.master\n"
-"POT-Creation-Date: 2010-08-02 17:08+0000\n"
-"PO-Revision-Date: 2010-08-03 07:08+0200\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"POT-Creation-Date: 2010-12-20 12:14+0000\n"
+"PO-Revision-Date: 2011-02-21 15:40+0100\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -295,7 +296,6 @@ msgid "frfumanti@svn.gnome.org"
 msgstr "frfumanti@svn.gnome.org"
 
 #: C/mousetweaks.xml:42(revnumber)
-#| msgid "Version 2.30"
 msgid "Version 2.32"
 msgstr "Versión 2.32"
 
@@ -304,9 +304,6 @@ msgid "August 2010"
 msgstr "Agosto de 2010"
 
 #: C/mousetweaks.xml:47(para)
-#| msgid ""
-#| "Adapt the manual to the changes done to mousetweaks for GNOME 2.30. "
-#| "Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 msgid ""
 "Adapt the manual to the changes done to mousetweaks for GNOME 2.32. "
 "Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
@@ -447,7 +444,7 @@ msgid ""
 msgstr ""
 "Este manual describe las herramientas de accesibilidad proporcionadas por "
 "los Ajustes finos del ratón y su interfaz gráfica de usuario que consiste en "
-"la solapa de accesibilidad del panel del control del ratón y dos "
+"la pestaña de accesibilidad del panel del control del ratón y dos "
 "miniaplicaciones del panel."
 
 #: C/mousetweaks.xml:145(contrib)
@@ -528,9 +525,6 @@ msgstr ""
 "tecla predeterminada o un botón del ratón."
 
 #: C/mousetweaks.xml:194(para)
-#| msgid ""
-#| "Since version 2.31.3, mousetweaks does not depend anymore on the AT-SPI "
-#| "accessibility framework."
 msgid ""
 "Since version 2.31.3, mousetweaks does not depend any more on the AT-SPI "
 "accessibility framework."
@@ -584,12 +578,12 @@ msgid ""
 "clicking on the Accessibility tab, you will see the following settings:"
 msgstr ""
 "La interfaz gráfica de usuario para iniciar la pulsación secundaria simulada "
-"está ubicada en la solapa de Accesibilidad del panel de control del ratón. "
+"está ubicada en la pestaña de Accesibilidad del panel de control del ratón. "
 "Para abrirla elija el menú <menuchoice><guimenu>Sistema</"
 "guimenu><guisubmenu>Preferencias</guisubmenu><guimenuitem>Centro de control</"
-"guimenuitem></menuchoice>, ésto abrirá el Centro de control. Pulsando en "
+"guimenuitem></menuchoice>, esto abrirá el Centro de control. Pulsando en "
 "Ratón en el Centro de control se abrirá el panel de control, después pulse "
-"en la solapa Accesibilidad verá los siguientes ajustes:"
+"en la pestaña Accesibilidad verá los siguientes ajustes:"
 
 #: C/mousetweaks.xml:243(para) C/mousetweaks.xml:320(para)
 msgid "Picture of the Mouse control panel"
@@ -643,7 +637,7 @@ msgstr "Puede iniciar la función de pulsación al posarse de tres formas:"
 
 #: C/mousetweaks.xml:285(para)
 msgid "from the Accessibility tab of the Mouse control panel"
-msgstr "desde la solapa Accesibilidad del panel de control del ratón"
+msgstr "desde la pestaña Accesibilidad del panel de control del ratón"
 
 #: C/mousetweaks.xml:293(para)
 msgid "from the On/Off button on the Dwell Click panel applet"
@@ -653,7 +647,8 @@ msgstr ""
 
 #: C/mousetweaks.xml:298(title)
 msgid "Start From The Accessibility tab of the Mouse control panel"
-msgstr "Iniciar desde la solapa Accesibilidad en el panel de control del ratón"
+msgstr ""
+"Iniciar desde la pestaña Accesibilidad en el panel de control del ratón"
 
 #: C/mousetweaks.xml:301(para)
 msgid ""
@@ -666,12 +661,12 @@ msgid ""
 "you will see the following settings:"
 msgstr ""
 "La interfaz gráfica de usuario para iniciar la pulsación al posarse está "
-"ubicada en la solapa de accesibilidad del panel de control del ratón. Para "
+"ubicada en la pestaña de accesibilidad del panel de control del ratón. Para "
 "abrirla, elija el menú <menuchoice><guimenu>Sistema</"
 "guimenu><guisubmenu>Preferencias</guisubmenu><guimenuitem>Centro de control</"
-"guimenuitem></menuchoice> ésto abrirá el Centro de control. Pulsando en "
+"guimenuitem></menuchoice> esto abrirá el Centro de control. Pulsando en "
 "Ratón en el Centro de control se abrirá el panel de control del ratón y "
-"después de pulsar en la solapa Accesibilidad verá los siguientes ajustes:"
+"después de pulsar en la pestaña Accesibilidad verá los siguientes ajustes:"
 
 #: C/mousetweaks.xml:324(para)
 msgid ""
@@ -998,14 +993,6 @@ msgstr ""
 "liberación del <mousebutton>botón primario del ratón</mousebutton>."
 
 #: C/mousetweaks.xml:606(para)
-#| msgid ""
-#| "If the user releases the <mousebutton>primary mouse button</mousebutton> "
-#| "after the arrow of pointer has been completely filled with the new color, "
-#| "the <mousebutton>primary mouse button</mousebutton> events will be "
-#| "followed by a <mousebutton>secondary mouse button</mousebutton> click. In "
-#| "fact, mousetweaks creates this simulated <mousebutton>scondary mouse "
-#| "button</mousebutton> click as soon as the user releases the the "
-#| "<mousebutton>primary mouse button</mousebutton>."
 msgid ""
 "If the user releases the <mousebutton>primary mouse button</mousebutton> "
 "after the arrow of pointer has been completely filled with the new color, "
@@ -1143,11 +1130,6 @@ msgstr ""
 "delesecciona los elementos."
 
 #: C/mousetweaks.xml:682(para)
-#| msgid ""
-#| "When performing a simulated secondary click on a link in a web page, the "
-#| "primary click, that preceds the simulated secondary click, opens the "
-#| "referenced page before the simulated secondary click has a chance to open "
-#| "the contextual menu of the link."
 msgid ""
 "When performing a simulated secondary click on a link in a web page, the "
 "primary click, that precedes the simulated secondary click, opens the "
@@ -1171,7 +1153,7 @@ msgstr ""
 "El menú contextual de un enlace en una página web se puede abrir realizando "
 "una pulsación secundaria simulada mientras se mantiene pulsado el "
 "modificador Ctrl. Esto funciona porque la página referenciada se abre en una "
-"solapa nueva cuando el enlace recibe una pulsación primaria junto con una "
+"pestaña nueva cuando el enlace recibe una pulsación primaria junto con una "
 "pulsación del modificador Ctrl; lo que también sucede como efecto secundario "
 "al abrir el menú contextual de un enlace usando la pulsación secundaria "
 "simulada junto con el modificador Ctrl."
@@ -1183,8 +1165,8 @@ msgid ""
 "new tab becomes visible and the contextual menu does not appear."
 msgstr ""
 "No obstante el navegador tiene que estar configurado para que no cambie "
-"automáticamente a la solapa nueva al abrirse; de otra forma la página con el "
-"enlace desaparece ya que la solapa nueva se hace visible y el menú "
+"automáticamente a la pestaña nueva al abrirse; de otra forma la página con "
+"el enlace desaparece ya que la pestaña nueva se hace visible y el menú "
 "contextual no aparece."
 
 #: C/mousetweaks.xml:705(para)
@@ -1210,12 +1192,6 @@ msgstr ""
 "pulsación secundaria precedida por una pulsación primaria."
 
 #: C/mousetweaks.xml:719(para)
-#| msgid ""
-#| "Looking at it the other way, it is no possible to perform a long "
-#| "motionless <mousebutton>primary mouse button</mousebutton> press without "
-#| "also triggering the secondary click, unless the pointer is moved before "
-#| "the <mousebutton>primary mouse button</mousebutton> release. This may "
-#| "also have unexpected consequences for some users. For example:"
 msgid ""
 "Looking at it the other way, it is not possible to perform a long motionless "
 "<mousebutton>primary mouse button</mousebutton> press without also "
@@ -1244,10 +1220,6 @@ msgstr ""
 "barra de desplazamiento."
 
 #: C/mousetweaks.xml:734(para)
-#| msgid ""
-#| "To avoid that the scrollbar jumps to the bottom, simply move the pointer "
-#| "away from the arrow of the scrollbar before releasing the primary button; "
-#| "this way, the initiated simulated secondary click gets canceled."
 msgid ""
 "To avoid that the scrollbar jumps to the bottom, simply move the pointer "
 "away from the arrow of the scrollbar before releasing the primary button; "
@@ -1740,7 +1712,7 @@ msgstr ""
 "<application>Ajustes finos del ratón</application>, su interfaz de usuario o "
 "este manual, vaya a <ulink type=\"http\" url=\"http://bugzilla.gnome.org/"
 "\">la página de seguimiento de errores de GNOME</ulink>. Si es concerniente "
-"a la disposición de la solapa Accesibilidad del panel de control del ratón, "
+"a la disposición de la pestaña Accesibilidad del panel de control del ratón, "
 "informe del error en el módulo gnome-control-center; para cualquier otra "
 "cosa concerniente a los Ajustes finos del ratón, informe en el módulo "
 "mousetweaks."

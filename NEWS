@@ -1,3 +1,11 @@
+Version 2.91.90
+---------------
+
+Misc changes, improvements and fixes:
+
+    - Fix signal number argument in callback
+    - Do a NULL check before referencing a cursor
+
 Version 2.91.6
 --------------
 

@@ -1,14 +1,14 @@
 # Swedish translation for mousetweaks.
-# Copyright (C) 2008, 2009 Free Software Foundation, Inc.
+# Copyright (C) 2008-2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
-# Daniel Nylander <po@danielnylander.se>, 2008, 2009, 2010.
+# Daniel Nylander <po@danielnylander.se>, 2008, 2009, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-30 10:07+0100\n"
-"PO-Revision-Date: 2010-12-30 10:09+0100\n"
+"POT-Creation-Date: 2011-03-06 22:40+0100\n"
+"PO-Revision-Date: 2011-03-06 22:43+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -65,7 +65,7 @@ msgstr "C_trl"
 
 #: ../data/pointer-capture-applet.ui.h:4
 msgid "Capture and Release Controls"
-msgstr ""
+msgstr "Kontroller för fånga och släpp"
 
 #: ../data/pointer-capture-applet.ui.h:5
 msgid "Keyboard modifier:"
@@ -165,48 +165,41 @@ msgid "Pointer Capture Applet"
 msgstr "Panelprogram för muspekarfångst"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-#, fuzzy
 msgid "Button style of the click-type window."
-msgstr "Visa ett klicktypsfönster"
+msgstr "Knappstil för klicktypsfönstret."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 #: ../src/mt-main.c:606
-#, fuzzy
 msgid "Click-type window geometry"
-msgstr "Klicktypsfönstrets x-position"
+msgstr "Klicktypsfönstrets geometri"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-#, fuzzy
 msgid "Click-type window orientation"
-msgstr "Klicktypsfönstrets x-position"
+msgstr "Klicktypsfönstrets orientering"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-#, fuzzy
 msgid "Click-type window style"
-msgstr "Klicktypsfönstrets x-position"
+msgstr "Klicktypsfönstrets stil"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-#, fuzzy
 msgid "Orientation of the click-type window."
-msgstr "Visa ett klicktypsfönster"
+msgstr "Orientering för klicktypsfönstret."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid "Size and position of the click-type window. The format is a standard X Window System geometry string."
-msgstr ""
+msgstr "Storlek och position för klicktypsfönstret. Formatet är en standardsträng för X Window System-geometri."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-#, fuzzy
 msgid "\"Alt\" keyboard modifier"
-msgstr "Släppmodifierare"
+msgstr "\"Alt\"-tangentbordsmodifierare"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-#, fuzzy
 msgid "\"Control\" keyboard modifier"
-msgstr "Fångstmodifierare"
+msgstr "\"Control\"-tangentbordsmodifierare"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
 msgid "\"Shift\" keyboard modifier"
-msgstr ""
+msgstr "\"Skift\"-tangentbordsmodifierare"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
 msgid "Mouse button"
@@ -298,7 +291,7 @@ msgstr "Låst"
 
 #: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
-msgstr ""
+msgstr "Misslyckades med att öppna panelen för allmän åtkomst"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"

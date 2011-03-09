@@ -89,7 +89,7 @@ static void
 signal_handler (int signal_id)
 {
     unsigned char sid;
-    int whtevr;
+    int G_GNUC_UNUSED whtevr;
 
     sid = (unsigned char) signal_id;
     whtevr = write (_write_fd, &sid, 1);

@@ -17,6 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include <stdlib.h>
 #include <signal.h>
 #include <unistd.h>
 #include <locale.h>
@@ -585,6 +586,7 @@ static MtCliArgs
 mt_parse_options (int *argc, char ***argv)
 {
     MtCliArgs ca;
+    GError *error = NULL;
     GOptionContext *context;
     GOptionEntry entries[] =
     {
@@ -629,7 +631,14 @@ mt_parse_options (int *argc, char ***argv)
     /* parse */
     context = g_option_context_new (_("- GNOME mouse accessibility daemon"));
     g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
-    g_option_context_parse (context, argc, argv, NULL);
+    g_option_context_add_group (context, gtk_get_option_group (TRUE));
+    if (!g_option_context_parse (context, argc, argv, &error))
+    {
+        g_print ("%s\n", error->message);
+        g_error_free (error);
+        g_option_context_free (context);
+        exit (1);
+    }
     g_option_context_free (context);
 
     return ca;

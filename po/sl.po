@@ -2,20 +2,20 @@
 # Copyright (C) 2005-2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2008 - 2010.
+# Matej Urbančič <mateju@svn.gnome.org>, 2008 - 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-12-03 14:07+0000\n"
-"PO-Revision-Date: 2010-12-03 20:18+0100\n"
+"POT-Creation-Date: 2011-03-09 17:58+0000\n"
+"PO-Revision-Date: 2011-03-10 14:58+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
 "X-Poedit-Language: Slovenian\n"
 "X-Poedit-Country: SLOVENIA\n"
@@ -43,7 +43,7 @@ msgid "Drag Click"
 msgstr "Klik s potegom"
 
 #: ../data/dwell-click-applet.ui.h:6
-#: ../src/mt-main.c:592
+#: ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "Omogoči zadržani klik"
 
@@ -117,14 +117,14 @@ msgstr "Slog gumbov"
 msgid "Drag"
 msgstr "Povleci"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Dwell Click-Type"
-msgstr "Vrsta zadržanega klika"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "Vodoravno"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "Lebdeči klik"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
@@ -174,7 +174,7 @@ msgid "Button style of the click-type window."
 msgstr "Slog gumbov klikljive vrste okna."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "Geometrija klikljive vrste okna."
 
@@ -222,44 +222,44 @@ msgstr "Velikost območja zajemanja"
 msgid "Width of the capture area in pixels."
 msgstr "Širina območja zajema v točkah."
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "Omogoči simulirani drugi klik"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "Čas postanka pred zadržanim klikom"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "Čas postanka pred simuliranim drugim klikom"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Določi dejavni način zadrževanja klika"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Pokaži klikljivo vrsto okna."
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Prezri drobne gibe kazalnika"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Izklopi mousetweaks"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "zagon mousetweaks kot ozadnji program"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Zagon mousetweaks v prijavnem načinu"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr " - GNOME ozadnji program miške"
 
@@ -298,38 +298,55 @@ msgstr "Zaklenjeno"
 msgid "Failed to Open the Universal Access Panel"
 msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 
+#~ msgid "Dwell Click-Type"
+#~ msgstr "Vrsta zadržanega klika"
+
 #~ msgid "Dwell Click"
 #~ msgstr "Zadržani klik"
+
 #~ msgid "Select dwelling click type"
 #~ msgstr "Izbor vrste zadržanega klika"
+
 #~ msgid "Pointer Capture"
 #~ msgstr "Zajem kazalnika"
+
 #~ msgid "Show Icons and Text"
 #~ msgstr "Pokaži ikone in besedilo"
+
 #~ msgid ""
 #~ "Button style in the click type window. (\"0\" = Text, \"1\" = Icon, \"2\" "
 #~ "= Both)"
 #~ msgstr ""
 #~ "Slog gumbov v kljikljivem oknu (\"0\" = besedilo, \"1\" = ikona, \"2\" = "
 #~ "oboje)."
+
 #~ msgid "Click-type window Y position"
 #~ msgstr "Klik Y lege okna"
+
 #~ msgid "Enable and Log Out"
 #~ msgstr "Omogoči in se odjavi"
+
 #~ msgid "A_lt"
 #~ msgstr "A_lt"
+
 #~ msgid "Capture Pointer"
 #~ msgstr "Zajem kazalnika"
+
 #~ msgid "Ct_rl"
 #~ msgstr "Ct_rl"
+
 #~ msgid "Modifier:"
 #~ msgstr "Spremenilnik:"
+
 #~ msgid "Mouse b_utton:"
 #~ msgstr "Gumb _miške:"
+
 #~ msgid "Release Pointer"
 #~ msgstr "Sprostitev kazalnika"
+
 #~ msgid "Sh_ift"
 #~ msgstr "_Dvigalka"
+
 #~ msgid "Animate cursor"
 #~ msgstr "Animiraj kazalko"
 
@@ -338,50 +355,58 @@ msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 #~ "Direction to perform a double click. (\"0\" = Left, \"1\" = Right, \"2\" "
 #~ "= Up, \"3\" = Down)"
 #~ msgstr ""
-#~ "Smer izvajanja dvojnega klika (\"0\"=levo, \"1\"=desno, \"2\"=navzgor, "
-#~ "\"3\"=navzdol)"
+#~ "Smer izvajanja dvojnega klika (\"0\"=levo, \"1\"=desno, \"2\"=navzgor, \"3"
+#~ "\"=navzdol)"
 
 #, fuzzy
 #~ msgid ""
-#~ "Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, "
-#~ "\"2\" = Up, \"3\" = Down)"
+#~ "Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
 #~ msgstr ""
-#~ "Smer v katero se izvede drugi klik (\"0\"=levo, \"1\"=desno, "
-#~ "\"2\"=navzgor, \"3\"=navzdol)"
+#~ "Smer v katero se izvede drugi klik (\"0\"=levo, \"1\"=desno, \"2"
+#~ "\"=navzgor, \"3\"=navzdol)"
 
 #, fuzzy
 #~ msgid ""
 #~ "Direction to perform a single click. (\"0\" = Left, \"1\" = Right, \"2\" "
 #~ "= Up, \"3\" = Down)"
 #~ msgstr ""
-#~ "Smer izvajanja enojnega klika (\"0\"=levo, \"1\"=desno, \"2\"=navzgor, "
-#~ "\"3\"=navzdol)"
+#~ "Smer izvajanja enojnega klika (\"0\"=levo, \"1\"=desno, \"2\"=navzgor, \"3"
+#~ "\"=navzdol)"
 
 #, fuzzy
 #~ msgid ""
 #~ "Direction to perform dragging. (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
 #~ "\"3\" = Down)"
 #~ msgstr ""
-#~ "Smer izvajanja dvojnega klika (\"0\"=levo, \"1\"=desno, \"2\"=navzgor, "
-#~ "\"3\"=navzdol)"
+#~ "Smer izvajanja dvojnega klika (\"0\"=levo, \"1\"=desno, \"2\"=navzgor, \"3"
+#~ "\"=navzdol)"
 
 #, fuzzy
 #~ msgid "Distance in pixels before movement will be recognized."
 #~ msgstr "Razdalja v točkah preden je zaznano gibanje"
+
 #~ msgid "Dwell click mode"
 #~ msgstr "Način zadržanega klika"
+
 #~ msgid "Dwell click time"
 #~ msgstr "Čas zadržanega klika"
+
 #~ msgid "Gesture double click"
 #~ msgstr "Poteza dvojnega klika"
+
 #~ msgid "Gesture drag click"
 #~ msgstr "Poteza klika s potegom"
+
 #~ msgid "Gesture secondary click"
 #~ msgstr "Poteza miške za drugi klik"
+
 #~ msgid "Gesture single click"
 #~ msgstr "Poteza enojnega klika"
+
 #~ msgid "Movement threshold"
 #~ msgstr "Prag gibanja"
+
 #~ msgid "Show click type window"
 #~ msgstr "Pokaži okno vrste klika"
 
@@ -405,20 +430,28 @@ msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 #, fuzzy
 #~ msgid "Time in seconds before a simulated secondary click is triggered."
 #~ msgstr "Čas v sekundah pred drugim klikom"
+
 #~ msgid "Capture pointer only if Alt is pressed"
 #~ msgstr "Zajem kazalnika se izvede le, kadar je pritisnjena tipka Alt."
+
 #~ msgid "Capture pointer only if Ctrl is pressed"
 #~ msgstr "Zajem kazalnika se izvede le, kadar je pritisnjena tipka Ctrl."
+
 #~ msgid "Capture pointer only if Shift is pressed"
 #~ msgstr "Zajem kazalnika se izvede le, kadar je pritisnjena tipka Shift."
+
 #~ msgid "Mouse button used to release the pointer"
 #~ msgstr "Gumb miške za sprostitev kazalnika"
+
 #~ msgid "Release pointer only if Alt is pressed"
 #~ msgstr "Zajem kazalnika se sprosti le, kadar je pritisnjena tipka Alt."
+
 #~ msgid "Release pointer only if Ctrl is pressed"
 #~ msgstr "Zajem kazalnika se sprosti le, kadar je pritisnjena tipka Ctrl."
+
 #~ msgid "Release pointer only if Shift is pressed"
 #~ msgstr "Zajem kazalnika se sprosti le, kadar je pritisnjena tipka Shift."
+
 #~ msgid ""
 #~ "This mouse button must be pressed to release the pointer from the capture "
 #~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
@@ -427,6 +460,7 @@ msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 #~ "Za sprostitev kazalnika iz območja zajema zahteva klik posameznega gumba "
 #~ "miške. Veljavne vrednosti so \"1\" za levi gumb miške, \"2\" za srednji "
 #~ "in \"3\" za desni gumb."
+
 #~ msgid ""
 #~ "This mouse button must be pressed while the pointer is over the capture "
 #~ "area in order to capture the pointer. Valid values are \"0\" if no button "
@@ -436,6 +470,7 @@ msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 #~ "Za zajem kazalnika v območju zajema zahteva klik posameznega gumba miške. "
 #~ "Veljavne vrednosti so \"0\", kadar ni treba uporabiti miške, \"1\" za "
 #~ "levi gumb miške, \"2\" za srednji in \"3\" za desni gumb."
+
 #~ msgid ""
 #~ "Whether the Alt key must be pressed for the pointer to be captured while "
 #~ "it's over the capture area. If this option is set as true, and a mouse "
@@ -446,12 +481,14 @@ msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 #~ "pritisnjena tipka Alt. V primeru, da je možnost omogočena in je izbrana "
 #~ "tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko "
 #~ "Alt pritisniti medtem, ko je pritisnjena tudi tipka miške."
+
 #~ msgid ""
 #~ "Whether the Alt key must be pressed with the mouse button set in "
 #~ "\"release_button\" for the pointer to be released from the capture area."
 #~ msgstr ""
 #~ "Možnost omogoča, da je treba za sprostitev kazalnika iz območja zajemanja "
 #~ "pritisniti tipko Alt."
+
 #~ msgid ""
 #~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
 #~ "it's over the capture area. If this option is set as true, and a mouse "
@@ -462,12 +499,14 @@ msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 #~ "pritisnjena tipka Ctrl. V primeru, da je možnost omogočena in je izbrana "
 #~ "tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko "
 #~ "Ctrl pritisniti medtem, ko je pritisnjena tudi tipka miške."
+
 #~ msgid ""
 #~ "Whether the Ctrl key must be pressed with the mouse button set in "
 #~ "\"release_button\" for the pointer to be released from the capture area."
 #~ msgstr ""
 #~ "Možnost omogoča, da je treba za sprostitev kazalnika iz območja zajemanja "
 #~ "pritisniti tipko Ctrl."
+
 #~ msgid ""
 #~ "Whether the Shift key must be pressed for the pointer to be captured "
 #~ "while it's over the capture area. If this option is set as true, and a "
@@ -478,20 +517,26 @@ msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 #~ "pritisnjena tipka Shift. V primeru, da je možnost omogočena in je izbrana "
 #~ "tudi možnost med nastavitvami \"gumba_zajemanja\", potem je treba tipko "
 #~ "Shift pritisniti medtem, ko je pritisnjena tudi tipka miške."
+
 #~ msgid ""
 #~ "Whether the Shift key must be pressed with the mouse button set in "
 #~ "\"release_button\" for the pointer to be released from the capture area."
 #~ msgstr ""
 #~ "Možnost omogoča, da je treba za sprostitev kazalnika iz območja zajemanja "
 #~ "pritisniti tipko Shift."
+
 #~ msgid "Disable cursor animations"
 #~ msgstr "Onemogoči animiranje kazalke"
+
 #~ msgid "Enable secondary click"
 #~ msgstr "Omogoči drugi klik"
+
 #~ msgid "Failed to Launch Mouse Preferences"
 #~ msgstr "Napaka med zaganjanjem možnosti miške"
+
 #~ msgid "Assistive Technology Support is not Enabled"
 #~ msgstr "Pomožne tehnologije niso omogočene"
+
 #~ msgid ""
 #~ "Mousetweaks requires assistive technologies to be enabled in your "
 #~ "session.\n"
@@ -504,46 +549,66 @@ msgstr "Odpiranje pladnja za splošni dostop je spodletelo"
 #~ "\n"
 #~ "V primeru, da jih želite omogočiti in ponovno zagnati sejo, pritisnite "
 #~ "\"Omogoči in se odjavi\"."
+
 #~ msgid "L"
 #~ msgstr "L"
+
 #~ msgid "Dwell mode to use"
 #~ msgstr "Način zadržanega klika"
+
 #~ msgid "Window y position"
 #~ msgstr "Y položaj okna"
+
 #~ msgid "Show elapsed time as cursor overlay"
 #~ msgstr "Pokaži pretečen čas s prekrivanjem kazalke."
+
 #~ msgid "Capture modifier key (Alt)"
 #~ msgstr "Tipka prilagoditve zajemanja (Alt)"
+
 #~ msgid "Capture modifier key (Ctrl)"
 #~ msgstr "Tipka prilagoditve zajemanja (Ctrl)"
+
 #~ msgid "Capture modifier key (Shift)"
 #~ msgstr "Tipka prilagoditve zajemanja (Shift)"
+
 #~ msgid "Capture mouse button"
 #~ msgstr "Gumb miške za zajemanje"
+
 #~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
 #~ msgstr "Gumb miške za zajem kazalnika (\"0\" = takojšnji zajem)"
+
 #~ msgid "Release modifier key (Alt)"
 #~ msgstr "Tipka prilagoditve sproščanja (Alt)"
+
 #~ msgid "Release modifier key (Ctrl)"
 #~ msgstr "Tipka prilagoditve sproščanja (Ctrl)"
+
 #~ msgid "Release modifier key (Shift)"
 #~ msgstr "Tipka prilagoditve sproščanja (Shift)"
+
 #~ msgid "Release mouse button"
 #~ msgstr "Sprostitev gumba miške"
+
 #~ msgid "On"
 #~ msgstr "Vključeno"
+
 #~ msgid "Off"
 #~ msgstr "Izključeno"
+
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>Velikost območja zajemanja</b>"
+
 #~ msgid "Couldn't display help"
 #~ msgstr "Ni mogoče prikazati pomoči"
+
 #~ msgid "Enable simualted secondary click"
 #~ msgstr "Omogoči navidezni drugi klik"
+
 #~ msgid "Simualted secondary click time"
 #~ msgstr "Čas navideznega drugega klika"
+
 #~ msgid "Enable mousetweaks feature"
 #~ msgstr "Omogoči možnosti mousetweaks"
+
 #~ msgid "Mousetweaks requires Assistive Technologies."
 #~ msgstr "Mousetweaks zahteva uporabo pomožnih tehnologij."
-

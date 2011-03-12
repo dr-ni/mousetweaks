@@ -21,9 +21,10 @@
 
 #define PFLAGS (G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS)
 
-#define BIND_PROP(s,p,k) (g_settings_bind ((s), (k), ms, (p), \
-                          G_SETTINGS_BIND_DEFAULT | G_SETTINGS_BIND_NO_SENSITIVITY))
-
+#define BIND_PROP_RW(s,p,k) (g_settings_bind ((s), (k), ms, (p), \
+                             G_SETTINGS_BIND_DEFAULT | G_SETTINGS_BIND_NO_SENSITIVITY))
+#define BIND_PROP(s,p,k)    (g_settings_bind ((s), (k), ms, (p), \
+                             G_SETTINGS_BIND_GET | G_SETTINGS_BIND_NO_SENSITIVITY))
 enum
 {
     PROP_0,
@@ -49,9 +50,9 @@ mt_settings_init (MtSettings *ms)
     ms->mt_settings = g_settings_new (MOUSETWEAKS_SCHEMA_ID);
     ms->ctw_geometry = NULL;
 
-    BIND_PROP (ms->mt_settings, "ctw-style", KEY_CTW_STYLE);
-    BIND_PROP (ms->mt_settings, "ctw-orientation", KEY_CTW_ORIENTATION);
-    BIND_PROP (ms->mt_settings, "ctw-geometry", KEY_CTW_GEOMETRY);
+    BIND_PROP_RW (ms->mt_settings, "ctw-style", KEY_CTW_STYLE);
+    BIND_PROP_RW (ms->mt_settings, "ctw-orientation", KEY_CTW_ORIENTATION);
+    BIND_PROP_RW (ms->mt_settings, "ctw-geometry", KEY_CTW_GEOMETRY);
 
     ms->a11y_settings = g_settings_new (A11Y_MOUSE_SCHEMA_ID);
 

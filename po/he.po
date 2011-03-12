@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-21 13:01+0200\n"
-"PO-Revision-Date: 2010-11-21 13:01+0200\n"
+"POT-Creation-Date: 2011-03-12 12:58+0200\n"
+"PO-Revision-Date: 2011-03-12 12:59+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: he\n"
 "MIME-Version: 1.0\n"
@@ -36,9 +36,9 @@ msgstr "לחיצה כפולה"
 msgid "Drag Click"
 msgstr "לחיצת גרירה"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
-msgstr "Enable dwell click"
+msgstr "הפעלת לחיצת השהיה"
 
 #: ../data/dwell-click-applet.ui.h:7
 msgid "Right Click"
@@ -109,14 +109,14 @@ msgstr "סגנון הלחצנים"
 msgid "Drag"
 msgstr "גרירה"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Dwell Click-Type"
-msgstr "סוג לחיצת ההשהיה"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "אופקי"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "לחיצה במעבר מעל"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
@@ -165,7 +165,7 @@ msgstr "יישומון לכידת סמן"
 msgid "Button style of the click-type window."
 msgstr "Button style of the click-type window."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "Click-type window geometry"
 
@@ -217,44 +217,44 @@ msgstr "Size of capture area"
 msgid "Width of the capture area in pixels."
 msgstr "Width of the capture area in pixels."
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "Enable simulated secondary click"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "Time to wait before a dwell click"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "Time to wait before a simulated secondary click"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Set the active dwell mode"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Show a click-type window"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Ignore small pointer movements"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Shut down mousetweaks"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "Start mousetweaks as a daemon"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Start mousetweaks in login mode"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME mouse accessibility daemon"
 
@@ -289,6 +289,9 @@ msgstr "נעול"
 #: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
 msgstr "אירע כשל בפתיחת לוח הגישה האוניברסלית"
+
+#~ msgid "Dwell Click-Type"
+#~ msgstr "סוג לחיצת ההשהיה"
 
 #~ msgid "Dwell Click"
 #~ msgstr "לחיצת השהיה"

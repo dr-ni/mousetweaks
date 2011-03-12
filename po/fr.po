@@ -1,21 +1,19 @@
 # French translation of mousetweaks.
-# Copyright (C) 2007 Listed translators
-#
+# Copyright (C) 2007-2011 Listed translators
 # This file is distributed under the same license as the mousetweaks package.
 #
-# Francesco Fumanti <francesco.fumanti@gmx.net>, 2007.
-# Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.
-# Claude Paroz <claude@2xlibre.net>, 2008-2010.
-# Bruno Brouard <annoa.b@gmail.com>, 2008-2009,2011.
+# Francesco Fumanti <francesco.fumanti@gmx.net>, 2007
+# Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008
+# Claude Paroz <claude@2xlibre.net>, 2008-2011
+# Bruno Brouard <annoa.b@gmail.com>, 2008-2009,2011
 # Cyril Arnaud <cyril dot arnaud at gmail dot com>, 2010
-
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-11-21 11:03+0000\n"
-"PO-Revision-Date: 2010-01-27 22:29+0100\n"
+"POT-Creation-Date: 2011-03-09 17:58+0000\n"
+"PO-Revision-Date: 2011-03-12 20:29+0100\n"
 "Last-Translator: Claude Paroz <claude@2xlibre.net>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +40,7 @@ msgstr "Double-clic"
 msgid "Drag Click"
 msgstr "Clic glisser-déposer"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "Activer les clics par maintien"
 
@@ -115,14 +113,14 @@ msgstr "Style de bouton"
 msgid "Drag"
 msgstr "Glisser"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Dwell Click-Type"
-msgstr "Type de clic par maintien"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "Horizontal"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "Clic de survol"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
@@ -171,7 +169,7 @@ msgstr "Applet de capture du pointeur"
 msgid "Button style of the click-type window."
 msgstr "Style de bouton de la fenêtre de type de clic."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "Géométrie de la fenêtre de type de clic"
 
@@ -193,8 +191,8 @@ msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
-"Dimension et position de la fenêtre de type de clic. Le format est une chaîne "
-"de géométrie standard du système X Window."
+"Dimension et position de la fenêtre de type de clic. Le format est une "
+"chaîne de géométrie standard du système X Window."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
@@ -214,7 +212,8 @@ msgstr "Bouton de la souris"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
 msgid "Mouse button used to capture or release the pointer."
-msgstr "Bouton de la souris utilisé pour la capture et la libération du pointeur."
+msgstr ""
+"Bouton de la souris utilisé pour la capture et la libération du pointeur."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
@@ -224,44 +223,44 @@ msgstr "Taille de la zone de capture"
 msgid "Width of the capture area in pixels."
 msgstr "Largeur de la zone de capture en pixels."
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "Activer les clics secondaires simulés"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "Délai avant un clic par maintien"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "Délai avant un clic secondaire simulé"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Définit le mode de maintien actif"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Afficher une fenêtre de type de clic"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Ignore les petits mouvements du pointeur"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Quitte Mousetweaks"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "Démarre Mousetweaks en tant que service"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Démarre Mousetweaks en mode connexion"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Service d'accessibilité de souris GNOME"
 
@@ -297,3 +296,5 @@ msgstr "Verrouillé"
 msgid "Failed to Open the Universal Access Panel"
 msgstr "Impossible d'ouvrir le panneau d'accès universel"
 
+#~ msgid "Dwell Click-Type"
+#~ msgstr "Type de clic par maintien"

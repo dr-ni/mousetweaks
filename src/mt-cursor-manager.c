@@ -162,7 +162,16 @@ mt_cursor_manager_restore_cursor (gpointer key,
                                   gpointer value,
                                   gpointer data)
 {
-    mt_cursor_manager_set_xcursor (value);
+    Display *dpy;
+    Cursor xcursor;
+
+    dpy = mt_common_get_xdisplay ();
+    xcursor = XcursorLibraryLoadCursor (dpy, key);
+    if (xcursor)
+    {
+        XFixesChangeCursorByName (dpy, xcursor, key);
+        XFreeCursor (dpy, xcursor);
+    }
 }
 
 static MtCursor *

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-06 22:40+0100\n"
-"PO-Revision-Date: 2011-03-06 22:43+0100\n"
+"POT-Creation-Date: 2011-03-13 09:26+0100\n"
+"PO-Revision-Date: 2011-03-13 09:30+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -38,7 +38,7 @@ msgid "Drag Click"
 msgstr "Dragklick"
 
 #: ../data/dwell-click-applet.ui.h:6
-#: ../src/mt-main.c:592
+#: ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "Aktivera uppehållsklick"
 
@@ -112,14 +112,14 @@ msgstr "Knappstil"
 msgid "Drag"
 msgstr "Dra"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Dwell Click-Type"
-msgstr "Typ av uppehållsklick"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "Horisontellt"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "Uppehållsklick"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
@@ -169,7 +169,7 @@ msgid "Button style of the click-type window."
 msgstr "Knappstil för klicktypsfönstret."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "Klicktypsfönstrets geometri"
 
@@ -217,44 +217,44 @@ msgstr "Storlek på fångstområde"
 msgid "Width of the capture area in pixels."
 msgstr "Bredd för fångstområde i bildpunkter."
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "Aktivera simulerat sekundärklick"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "Tid att vänta innan ett uppehållsklick"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tid att vänta innan en simulerad sekundärklickning"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Ställ in aktivt uppehållsläge"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Visa ett klicktypsfönster"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Ignorera mindre muspekarrörelser"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Stäng av musjusteringar"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "Starta musjusteringar som en bakgrundsprocess"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Starta musjusteringar i inloggningsläge"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME-mustillgänglighetsdemon"
 
@@ -293,6 +293,8 @@ msgstr "Låst"
 msgid "Failed to Open the Universal Access Panel"
 msgstr "Misslyckades med att öppna panelen för allmän åtkomst"
 
+#~ msgid "Dwell Click-Type"
+#~ msgstr "Typ av uppehållsklick"
 #~ msgid "A_lt"
 #~ msgstr "A_lt"
 #~ msgid "Capture Pointer"

@@ -1,16 +1,17 @@
 # mousetweaks's Portuguese translation.
-# Copyright © 2008, 2009, 2010 mousetweaks
+# Copyright © 2008, 2009, 2010, 2011 mousetweaks
 # This file is distributed under the same license as the mousetweaks package.
-# Duarte Loreto <happyguy_pt@hotmail.com>, 2008, 2009, 2010.
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2008, 2009, 2010, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.32\n"
+"Project-Id-Version: 3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-04 22:46+0100\n"
-"PO-Revision-Date: 2010-09-04 22:50+0000\n"
+"POT-Creation-Date: 2011-03-14 23:38+0000\n"
+"PO-Revision-Date: 2011-03-14 23:45+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,32 +28,27 @@ msgstr ""
 msgid "Click Type Window"
 msgstr "Janela de Tipo de Clique"
 
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
 msgid "Double Click"
 msgstr "Clique Duplo"
 
-#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#: ../data/dwell-click-applet.ui.h:5
 msgid "Drag Click"
 msgstr "Clique e Arrastar"
 
-#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:807
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "Activar o movimento-clique"
 
-#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+#: ../data/dwell-click-applet.ui.h:7
 msgid "Right Click"
 msgstr "Clique com o Botão Direito"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
 msgid "Single Click"
 msgstr "Clique Único"
 
 #: ../data/pointer-capture-applet.ui.h:1
-msgid "A_lt"
-msgstr "A_lt"
-
-#: ../data/pointer-capture-applet.ui.h:2
 msgid ""
 "Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -60,416 +56,464 @@ msgstr ""
 "Área onde prender o ponteiro no painel.\n"
 "Parte integrante do Mousetweaks"
 
-#: ../data/pointer-capture-applet.ui.h:4
+#: ../data/pointer-capture-applet.ui.h:3
 msgid "C_trl"
 msgstr "C_trl"
 
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "Capture and Release Controls"
+msgstr "Controlos de Captura e Largar"
+
 #: ../data/pointer-capture-applet.ui.h:5
-msgid "Capture Pointer"
-msgstr "Capturar o Ponteiro"
+msgid "Keyboard modifier:"
+msgstr "Modificador de teclado:"
 
 #: ../data/pointer-capture-applet.ui.h:6
-msgid "Ct_rl"
-msgstr "Ct_rl"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Modifier:"
-msgstr "Modificador:"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Mouse _button:"
-msgstr "_Botão do rato:"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "Mouse b_utton:"
-msgstr "B_otão do rato:"
-
-#: ../data/pointer-capture-applet.ui.h:10
 msgid "Pointer Capture Preferences"
 msgstr "Preferências da Captura de Ponteiro"
 
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "Release Pointer"
-msgstr "Soltar o Ponteiro"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "S_hift"
-msgstr "S_hift"
-
-#: ../data/pointer-capture-applet.ui.h:13
+#: ../data/pointer-capture-applet.ui.h:7
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Seleccionar o Botão 0 irá capturar o ponteiro imediatamente"
 
-#: ../data/pointer-capture-applet.ui.h:14
-msgid "Sh_ift"
-msgstr "Sh_ift"
-
-#: ../data/pointer-capture-applet.ui.h:15
+#: ../data/pointer-capture-applet.ui.h:8
 msgid "Size of the Capture Area"
 msgstr "Tamanho da Área de Captura"
 
-#: ../data/pointer-capture-applet.ui.h:16
+#: ../data/pointer-capture-applet.ui.h:9
 msgid "_Alt"
 msgstr "_Alt"
 
-#: ../data/pointer-capture-applet.ui.h:17
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "_Mouse button:"
+msgstr "_Botão do rato:"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "_Shift"
+msgstr "S_hift"
+
+#: ../data/pointer-capture-applet.ui.h:12
 msgid "_Width:"
 msgstr "_Largura:"
 
-#: ../data/pointer-capture-applet.ui.h:18
+#: ../data/pointer-capture-applet.ui.h:13
 msgid "pixels"
 msgstr "pixels"
 
-#: ../data/mousetweaks.ui.h:3
-msgid "Dwell Click Type"
-msgstr "Tipo de Movimento-Clique"
+#: ../data/mousetweaks.ui.h:1
+msgid "Button Style"
+msgstr "Estilo do Botão"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Show Icons and Text"
-msgstr "Apresentar Ícones e Texto"
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:4
+msgid "Drag"
+msgstr "Arrastar"
 
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:6
-msgid "Show Icons only"
-msgstr "Apresentar apenas Ícones"
+msgid "Horizontal"
+msgstr "Horizontal"
 
 #: ../data/mousetweaks.ui.h:7
-msgid "Show Text only"
-msgstr "Apresentar apenas Texto"
+msgid "Hover Click"
+msgstr "Clique ao Sobrevoar"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
-msgid "Dwell Click"
-msgstr "Movimento-Clique"
+#: ../data/mousetweaks.ui.h:8
+msgid "Icons only"
+msgstr "Apenas ícones"
 
-#: ../data/DwellClick_Factory.server.in.in.h:2
-msgid "Select dwelling click type"
-msgstr "Seleccione o tipo de movimento-clique"
+#: ../data/mousetweaks.ui.h:9
+msgid "Orientation"
+msgstr "Orientação"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
+#: ../data/mousetweaks.ui.h:10
+msgid "Secondary Click"
+msgstr "Clique Secundário"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Text and Icons"
+msgstr "Texto e Ícones"
+
+#: ../data/mousetweaks.ui.h:13
+msgid "Text only"
+msgstr "Apenas texto"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr "Controle o seu ambiente de trabalho sem utilizar os botões do rato"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+msgid "Dwell Click Applet"
+msgstr "Applet de Movimento-Clique"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr "Área onde bloquear o ponteiro"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:530
-msgid "Pointer Capture"
-msgstr "Captura de Ponteiro"
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+msgid "Pointer Capture Applet"
+msgstr "Applet de Captura de Ponteiro"
 
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
-msgid "_About"
-msgstr "_Sobre"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Button style of the click-type window."
+msgstr "Estilo do botão da janela de tipo de clique."
 
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
-msgid "_Help"
-msgstr "_Ajuda"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+msgid "Click-type window geometry"
+msgstr "Geometria da janela de tipo de clique"
 
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
-msgid "_Preferences"
-msgstr "_Preferências"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Orientação da janela de tipo de clique"
 
-#: ../data/mousetweaks.schemas.in.h:1
-msgid "Animate cursor"
-msgstr "Animar o cursor"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Click-type window style"
+msgstr "Estilo da janela de tipo de clique"
 
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style"
-msgstr "Estilo do botão"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+msgid "Orientation of the click-type window."
+msgstr "Orientação da janela de tipo de clique."
 
-#: ../data/mousetweaks.schemas.in.h:3
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
-"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
 msgstr ""
-"Estilo do botão na janela de tipo de clique (\"0\" = Texto, \"1\" = Ícone, "
-"\"2\" = Ambos)"
+"Tamanho e posição da janela de tipo de clique. O formato é uma expressão "
+"padrão de geometria do Sistema de Janelas X."
 
-#: ../data/mousetweaks.schemas.in.h:4
-msgid ""
-"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Direcção para realizar um clique-duplo (\"0\" = Esquerda, \"1\" = Direita, "
-"\"2\" = Acima, \"3\" = Abaixo)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
+msgid "\"Alt\" keyboard modifier"
+msgstr "Tecla modificadora \"Alt\""
 
-#: ../data/mousetweaks.schemas.in.h:5
-msgid ""
-"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
-msgstr ""
-"Direcção para realizar um clique-arrastar (\"0\" = Esquerda, \"1\" = "
-"Direita, \"2\" = Acima, \"3\" = Abaixo)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
+msgid "\"Control\" keyboard modifier"
+msgstr "Tecla modificadora \"Control\""
 
-#: ../data/mousetweaks.schemas.in.h:6
-msgid ""
-"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Direcção para realizar um clique secundário (\"0\" = Esquerda, \"1\" = "
-"Direita, \"2\" = Acima, \"3\" = Abaixo)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
+msgid "\"Shift\" keyboard modifier"
+msgstr "Tecla modificadora \"Shift\""
 
-#: ../data/mousetweaks.schemas.in.h:7
-msgid ""
-"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Direcção para realizar um clique único (\"0\" = Esquerda, \"1\" = Direita, "
-"\"2\" = Acima, \"3\" = Abaixo)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
+msgid "Mouse button"
+msgstr "Botão do rato"
 
-#: ../data/mousetweaks.schemas.in.h:8
-msgid "Distance in pixels before movement will be recognized"
-msgstr "Distância em pixels até que o movimento seja reconhecido"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
+msgid "Mouse button used to capture or release the pointer."
+msgstr "Botão do rato utilizado para capturar ou largar o ponteiro."
 
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode"
-msgstr "Modo de movimento-clique"
-
-#: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr "Modo de movimento-clique (\"0\" = Modo janela, \"1\" = Modo gesto)"
-
-#: ../data/mousetweaks.schemas.in.h:11
-msgid "Dwell click time"
-msgstr "Tempo de movimento-clique"
-
-#: ../data/mousetweaks.schemas.in.h:13
-msgid "Enable secondary click"
-msgstr "Activar o clique secundário"
-
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
-msgid "Enable simulated secondary click"
-msgstr "Activar um clique secundário simulado"
-
-#: ../data/mousetweaks.schemas.in.h:15
-msgid "Gesture double click"
-msgstr "Gesto de clique-duplo"
-
-#: ../data/mousetweaks.schemas.in.h:16
-msgid "Gesture drag click"
-msgstr "Gesto de clique-arrastar"
-
-#: ../data/mousetweaks.schemas.in.h:17
-msgid "Gesture secondary click"
-msgstr "Gesto de clique secundário"
-
-#: ../data/mousetweaks.schemas.in.h:18
-msgid "Gesture single click"
-msgstr "Gesto de clique único"
-
-#: ../data/mousetweaks.schemas.in.h:19
-msgid "Movement threshold"
-msgstr "Tolerância de movimento"
-
-#: ../data/mousetweaks.schemas.in.h:20
-msgid "Secondary click time"
-msgstr "Tempo do clique secundário"
-
-#: ../data/mousetweaks.schemas.in.h:21
-msgid "Show click type window"
-msgstr "Apresentar a janela de tipo de clique"
-
-#: ../data/mousetweaks.schemas.in.h:22
-msgid "Show elapsed time as cursor overlay."
-msgstr "Apresentar tempo decorrido sobreposto ao ponteiro."
-
-#: ../data/mousetweaks.schemas.in.h:23
-msgid "Time in seconds before a click is triggered"
-msgstr "Tempo em segundos até que o clique seja executado"
-
-#: ../data/mousetweaks.schemas.in.h:24
-msgid "Time in seconds before a secondary click is triggered"
-msgstr "Tempo em segundos até que um clique secundário seja executado"
-
-#: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture pointer only if Alt is pressed"
-msgstr "Capturar o ponteiro apenas se o Alt estiver premido"
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture pointer only if Ctrl is pressed"
-msgstr "Capturar o ponteiro apenas se o Ctrl estiver premido"
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture pointer only if Shift is pressed"
-msgstr "Capturar o ponteiro apenas se o Shift estiver premido"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Mouse button used to capture the pointer"
-msgstr "Botão do rato utilizado para capturar o ponteiro"
-
-#: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Mouse button used to release the pointer"
-msgstr "Botão do rato utilizado para soltar o ponteiro"
-
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Release pointer only if Alt is pressed"
-msgstr "Soltar o ponteiro apenas se o Alt estiver premido"
-
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Release pointer only if Ctrl is pressed"
-msgstr "Soltar o ponteiro apenas se o Ctrl estiver premido"
-
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release pointer only if Shift is pressed"
-msgstr "Soltar o ponteiro apenas se o Shift estiver premido"
-
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
 msgstr "Tamanho da área de captura"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid ""
-"This mouse button must be pressed to release the pointer from the capture "
-"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
-"\"3\" for right button."
-msgstr ""
-"Este botão do rato tem de ser premido para soltar o ponteiro da área de "
-"captura. Valores válidos são \"1\" para o botão esquerdo, \"2\" para o botão "
-"do meio e \"3\" para o botão direito."
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid ""
-"This mouse button must be pressed while the pointer is over the capture area "
-"in order to capture the pointer. Valid values are \"0\" if no button is "
-"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
-"button."
-msgstr ""
-"Este botão do rato tem de ser premido quando o ponteiro está sobre a área de "
-"captura de forma a capturar o ponteiro. Valores válidos são \"0\" se não for "
-"preciso nenhum botão, \"1\" para o botão esquerdo, \"2\" para o botão do "
-"meio e \"3\" para o botão direito."
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid ""
-"Whether the Alt key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Alt key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Se a tecla Alt tem de ser premida para o ponteiro do rato ser capturado "
-"quando está sobre a área de captura. Se esta opção estiver definida como "
-"verdadeira, e estiver definido um botão de rato na chave \"capture_button\", "
-"então a tecla Alt tem de estar premida ao se premir o botão do rato."
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
-msgid ""
-"Whether the Alt key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Se a tecla Alt tem de ser premida juntamente com o botão do rato definido em "
-"\"release_button\" para que o ponteiro seja solto da área de captura."
-
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid ""
-"Whether the Ctrl key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Ctrl key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Se a tecla Ctrl tem de ser premida para o ponteiro do rato ser capturado "
-"quando está sobre a área de captura. Se esta opção estiver definida como "
-"verdadeira, e estiver definido um botão de rato na chave \"capture_button\", "
-"então a tecla Ctrl tem de estar premida ao se premir o botão do rato."
-
-#: ../data/pointer-capture-applet.schemas.in.h:15
-msgid ""
-"Whether the Ctrl key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Se a tecla Ctrl tem de ser premida juntamente com o botão do rato definido "
-"em \"release_button\" para que o ponteiro seja solto da área de captura."
-
-#: ../data/pointer-capture-applet.schemas.in.h:16
-msgid ""
-"Whether the Shift key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Shift key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Se a tecla Shift tem de ser premida para o ponteiro do rato ser capturado "
-"quando está sobre a área de captura. Se esta opção estiver definida como "
-"verdadeira, e estiver definido um botão de rato na chave \"capture_button\", "
-"então a tecla Shift tem de estar premida ao se premir o botão do rato."
-
-#: ../data/pointer-capture-applet.schemas.in.h:17
-msgid ""
-"Whether the Shift key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Se a tecla Shift tem de ser premida juntamente com o botão do rato definido "
-"em \"release_button\" para que o ponteiro seja solto da área de captura."
-
-#: ../data/pointer-capture-applet.schemas.in.h:18
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
 msgid "Width of the capture area in pixels."
 msgstr "Largura da área de captura em pixels."
 
-#: ../src/mt-main.c:811
+#: ../src/mt-main.c:596
+msgid "Enable simulated secondary click"
+msgstr "Activar um clique secundário simulado"
+
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "Tempo a aguardar antes de um movimento-clique"
 
-#: ../src/mt-main.c:813
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo a aguardar antes de um clique secundário simulado"
 
-#: ../src/mt-main.c:815
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Definir o modo de movimento-clique"
 
-#: ../src/mt-main.c:817
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Apresentar a janela de tipo de clique"
 
-#: ../src/mt-main.c:819
-msgid "Click-type window X position"
-msgstr "Posição X da janela de tipo de clique"
-
-#: ../src/mt-main.c:821
-msgid "Click-type window Y position"
-msgstr "Posição Y da janela de tipo de clique"
-
-#: ../src/mt-main.c:823
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Ignorar movimentos pequenos do ponteiro"
 
-#: ../src/mt-main.c:825
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Desligar o mousetweaks"
 
-#: ../src/mt-main.c:827
-msgid "Disable cursor animations"
-msgstr "Desactivar as animações de cursor"
-
-#: ../src/mt-main.c:829
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "Iniciar o mousetweaks como um daemon"
 
-#: ../src/mt-main.c:831
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Iniciar o mousetweaks no modo de início de sessão"
 
 #. parse
-#: ../src/mt-main.c:851
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Daemon de acessibilidade do rato do GNOME"
 
-#: ../src/mt-common.c:31
+#: ../src/mt-common.c:74
 msgid "Failed to Display Help"
 msgstr "Falha ao Apresentar a Ajuda"
 
-#: ../src/mt-common.c:70
-msgid "Enable and Log Out"
-msgstr "Activar e Terminar Sessão"
-
-#: ../src/pointer-capture-applet.c:68
+#: ../src/pointer-capture-applet.c:79
 msgid "Capture area"
 msgstr "Área a capturar"
 
-#: ../src/pointer-capture-applet.c:69
+#: ../src/pointer-capture-applet.c:80
 msgid "Temporarily lock the mouse pointer"
 msgstr "Trancar temporariamente o ponteiro do rato"
 
-#: ../src/pointer-capture-applet.c:596
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "_Preferências"
+
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "_Sobre"
+
+#: ../src/pointer-capture-applet.c:490
 msgid "Locked"
 msgstr "Trancado"
 
-#: ../src/dwell-click-applet.c:475
-msgid "Failed to Launch Mouse Preferences"
-msgstr "Falha ao Iniciar as Preferências do Rato"
+#: ../src/dwell-click-applet.c:450
+msgid "Failed to Open the Universal Access Panel"
+msgstr "Falha ao Abrir o Painel de Acesso Universal"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "Capturar o Ponteiro"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Modificador:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "B_otão do rato:"
+
+#~ msgid "Release Pointer"
+#~ msgstr "Soltar o Ponteiro"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Dwell Click Type"
+#~ msgstr "Tipo de Movimento-Clique"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Apresentar Ícones e Texto"
+
+#~ msgid "Dwell Click"
+#~ msgstr "Movimento-Clique"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Seleccione o tipo de movimento-clique"
+
+#~ msgid "Pointer Capture"
+#~ msgstr "Captura de Ponteiro"
+
+#~ msgid "Animate cursor"
+#~ msgstr "Animar o cursor"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr ""
+#~ "Estilo do botão na janela de tipo de clique (\"0\" = Texto, \"1\" = "
+#~ "Ícone, \"2\" = Ambos)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direcção para realizar um clique-duplo (\"0\" = Esquerda, \"1\" = "
+#~ "Direita, \"2\" = Acima, \"3\" = Abaixo)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direcção para realizar um clique-arrastar (\"0\" = Esquerda, \"1\" = "
+#~ "Direita, \"2\" = Acima, \"3\" = Abaixo)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direcção para realizar um clique secundário (\"0\" = Esquerda, \"1\" = "
+#~ "Direita, \"2\" = Acima, \"3\" = Abaixo)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direcção para realizar um clique único (\"0\" = Esquerda, \"1\" = "
+#~ "Direita, \"2\" = Acima, \"3\" = Abaixo)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "Distância em pixels até que o movimento seja reconhecido"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Modo de movimento-clique"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "Modo de movimento-clique (\"0\" = Modo janela, \"1\" = Modo gesto)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Tempo de movimento-clique"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "Activar o clique secundário"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Gesto de clique-duplo"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Gesto de clique-arrastar"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Gesto de clique secundário"
+
+#~ msgid "Gesture single click"
+#~ msgstr "Gesto de clique único"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Tolerância de movimento"
+
+#~ msgid "Show click type window"
+#~ msgstr "Apresentar a janela de tipo de clique"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "Apresentar tempo decorrido sobreposto ao ponteiro."
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "Tempo em segundos até que o clique seja executado"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "Tempo em segundos até que um clique secundário seja executado"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Capturar o ponteiro apenas se o Alt estiver premido"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Capturar o ponteiro apenas se o Ctrl estiver premido"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Capturar o ponteiro apenas se o Shift estiver premido"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "Botão do rato utilizado para soltar o ponteiro"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Soltar o ponteiro apenas se o Alt estiver premido"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Soltar o ponteiro apenas se o Ctrl estiver premido"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Soltar o ponteiro apenas se o Shift estiver premido"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "Este botão do rato tem de ser premido para soltar o ponteiro da área de "
+#~ "captura. Valores válidos são \"1\" para o botão esquerdo, \"2\" para o "
+#~ "botão do meio e \"3\" para o botão direito."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "Este botão do rato tem de ser premido quando o ponteiro está sobre a área "
+#~ "de captura de forma a capturar o ponteiro. Valores válidos são \"0\" se "
+#~ "não for preciso nenhum botão, \"1\" para o botão esquerdo, \"2\" para o "
+#~ "botão do meio e \"3\" para o botão direito."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Se a tecla Alt tem de ser premida para o ponteiro do rato ser capturado "
+#~ "quando está sobre a área de captura. Se esta opção estiver definida como "
+#~ "verdadeira, e estiver definido um botão de rato na chave \"capture_button"
+#~ "\", então a tecla Alt tem de estar premida ao se premir o botão do rato."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Se a tecla Alt tem de ser premida juntamente com o botão do rato definido "
+#~ "em \"release_button\" para que o ponteiro seja solto da área de captura."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Se a tecla Ctrl tem de ser premida para o ponteiro do rato ser capturado "
+#~ "quando está sobre a área de captura. Se esta opção estiver definida como "
+#~ "verdadeira, e estiver definido um botão de rato na chave \"capture_button"
+#~ "\", então a tecla Ctrl tem de estar premida ao se premir o botão do rato."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Se a tecla Ctrl tem de ser premida juntamente com o botão do rato "
+#~ "definido em \"release_button\" para que o ponteiro seja solto da área de "
+#~ "captura."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Se a tecla Shift tem de ser premida para o ponteiro do rato ser capturado "
+#~ "quando está sobre a área de captura. Se esta opção estiver definida como "
+#~ "verdadeira, e estiver definido um botão de rato na chave \"capture_button"
+#~ "\", então a tecla Shift tem de estar premida ao se premir o botão do rato."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Se a tecla Shift tem de ser premida juntamente com o botão do rato "
+#~ "definido em \"release_button\" para que o ponteiro seja solto da área de "
+#~ "captura."
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "Posição Y da janela de tipo de clique"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "Desactivar as animações de cursor"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "Activar e Terminar Sessão"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "Falha ao Iniciar as Preferências do Rato"
 
 #~ msgid "Assistive Technology Support is not Enabled"
 #~ msgstr "O Suporte Para Tecnologias Assistivas Não Está Activo"
@@ -505,9 +549,6 @@ msgstr "Falha ao Iniciar as Preferências do Rato"
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>Tamanho da Área de Captura</b>"
 
-#~ msgid "Capture modifier"
-#~ msgstr "Modificador de captura"
-
 #~ msgid "Capture modifier key (Alt)"
 #~ msgstr "Tecla de modificador de captura (Alt)"
 
@@ -524,9 +565,6 @@ msgstr "Falha ao Iniciar as Preferências do Rato"
 #~ msgstr ""
 #~ "Botão do rato para capturar o ponteiro (\"0\" = Capturar imediatamente)"
 
-#~ msgid "Release modifier"
-#~ msgstr "Modificador de soltar"
-
 #~ msgid "Release modifier key (Alt)"
 #~ msgstr "Tecla de modificador de soltar (Alt)"
 
@@ -539,14 +577,8 @@ msgstr "Falha ao Iniciar as Preferências do Rato"
 #~ msgid "Release mouse button"
 #~ msgstr "Botão do rato de soltar"
 
-#~ msgid "Pointer Capture Applet"
-#~ msgstr "Applet de Captura de Ponteiro"
-
 #~ msgid "Off"
 #~ msgstr "Inactivo"
-
-#~ msgid "Dwell Click Applet"
-#~ msgstr "Applet de Movimento-Clique"
 
 #~ msgid "Couldn't display help"
 #~ msgstr "Incapaz de apresentar a ajuda"

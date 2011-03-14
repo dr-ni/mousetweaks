@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the mousetweaks package.
 #
 # Lucas Lommer <llommer@svn.gnome.org>, 2008.
-# Adrian Guniš <andygun696@gmail.com>, 2008 – 2010.
+# Adrian Guniš <andygun696@gmail.com>, 2008, 2009, 2010.
 # Marek Černocký <marek@manet.cz>, 2011.
 #
 msgid ""
@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-12-20 12:14+0000\n"
-"PO-Revision-Date: 2011-01-20 11:30+0100\n"
+"POT-Creation-Date: 2011-03-09 17:58+0000\n"
+"PO-Revision-Date: 2011-03-14 22:15+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +41,7 @@ msgstr "Dvojklik"
 msgid "Drag Click"
 msgstr "Táhnutí"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "Zapnout kliknutí posečkáním"
 
@@ -90,12 +90,10 @@ msgid "_Alt"
 msgstr "_Alt"
 
 #: ../data/pointer-capture-applet.ui.h:10
-#| msgid "Mouse _button:"
 msgid "_Mouse button:"
 msgstr "Tlačítko _myši:"
 
 #: ../data/pointer-capture-applet.ui.h:11
-#| msgid "S_hift"
 msgid "_Shift"
 msgstr "_Shift"
 
@@ -108,7 +106,6 @@ msgid "pixels"
 msgstr "pixelů"
 
 #: ../data/mousetweaks.ui.h:1
-#| msgid "Button style"
 msgid "Button Style"
 msgstr "Styl tlačítka"
 
@@ -117,18 +114,17 @@ msgstr "Styl tlačítka"
 msgid "Drag"
 msgstr "Táhnutí"
 
-#: ../data/mousetweaks.ui.h:5
-#| msgid "Dwell Click Type"
-msgid "Dwell Click-Type"
-msgstr "Typ kliknutí posečkáním"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "Vodorovně"
 
+#: ../data/mousetweaks.ui.h:7
+#| msgid "Double Click"
+msgid "Hover Click"
+msgstr "Kliknutí posečkáním"
+
 #: ../data/mousetweaks.ui.h:8
-#| msgid "Show Icons only"
 msgid "Icons only"
 msgstr "Pouze ikony"
 
@@ -137,7 +133,6 @@ msgid "Orientation"
 msgstr "Orientace"
 
 #: ../data/mousetweaks.ui.h:10
-#| msgid "Secondary click time"
 msgid "Secondary Click"
 msgstr "Druhé kliknutí"
 
@@ -146,7 +141,6 @@ msgid "Text and Icons"
 msgstr "Text a ikony"
 
 #: ../data/mousetweaks.ui.h:13
-#| msgid "Show Text only"
 msgid "Text only"
 msgstr "Pouze text"
 
@@ -161,7 +155,6 @@ msgstr "Ovládání vašeho pracovního prostředí bez použití tlačítek my�
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
 #: ../src/dwell-click-applet.c:584
-#| msgid "Dwell Click Type"
 msgid "Dwell Click Applet"
 msgstr "Aplet kliknutí posečkáním"
 
@@ -171,32 +164,26 @@ msgstr "Oblast uzamčení kurzoru"
 
 #: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
 #: ../src/pointer-capture-applet.c:439
-#| msgid "Pointer Capture"
 msgid "Pointer Capture Applet"
 msgstr "Aplet zachycení kurzoru"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-#| msgid "Show a click-type window"
 msgid "Button style of the click-type window."
 msgstr "Styl tlačítka pro okno typů kliknutí."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
-#| msgid "Click-type window X position"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "Geometrie okna typů kliknutí"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-#| msgid "Click-type window X position"
 msgid "Click-type window orientation"
 msgstr "Orientace okna typů kliknutí"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-#| msgid "Click-type window X position"
 msgid "Click-type window style"
 msgstr "Styl okna typů kliknutí"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-#| msgid "Show a click-type window"
 msgid "Orientation of the click-type window."
 msgstr "Orientace okna typů kliknutí."
 
@@ -221,12 +208,10 @@ msgid "\"Shift\" keyboard modifier"
 msgstr "Klávesový modifikátor „Shift“"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-#| msgid "Mouse _button:"
 msgid "Mouse button"
 msgstr "Tlačítko myši"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-#| msgid "Mouse button used to capture the pointer"
 msgid "Mouse button used to capture or release the pointer."
 msgstr "Tlačítko myši použité k zachycení nebo uvolnění kurzoru"
 
@@ -238,44 +223,44 @@ msgstr "Velikost oblasti zachycení"
 msgid "Width of the capture area in pixels."
 msgstr "Šířka oblasti zachycení v pixelech."
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "Zapnout simulované kliknutí pravým tlačítkem"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "Doba čekání před kliknutím posečkáním"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "Doba čekání před simulovaným kliknutím pravým tlačítkem"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Nastavit aktivní režim kliknutí posečkáním"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Zobrazit okno typů kliknutí"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Ignorovat nepatrné pohyby kurzoru"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Vypnout mousetweaks"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "Spustit mousetweaks jako démon"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Spustit mousetweaks v režimu přihlášení"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Démon pro zpřístupnění myši v GNOME"
 
@@ -310,6 +295,10 @@ msgstr "Uzamčeno"
 #: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
 msgstr "Selhalo otevření panelu univerzálního zpřístupnění"
+
+#~| msgid "Dwell Click Type"
+#~ msgid "Dwell Click-Type"
+#~ msgstr "Typ kliknutí posečkáním"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"

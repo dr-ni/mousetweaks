@@ -6,21 +6,21 @@
 # Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
 # Meixome <meixome@mancomun.org>, 2009.
 # Antón Méixome <meixome@mancomun.org>, 2009.
-# Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010.
+# Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks-master-po-gl-70471\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-20 01:25+0100\n"
-"PO-Revision-Date: 2010-11-20 01:26+0100\n"
-"Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
-"Language-Team: Galician <gnome-gl-list@gnome.org>\n"
+"POT-Creation-Date: 2011-03-15 15:49+0100\n"
+"PO-Revision-Date: 2011-03-15 15:49+0100\n"
+"Last-Translator: Fran Diéguez <frandieguez@gnome.org>\n"
+"Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: ../data/dwell-click-applet.ui.h:1
@@ -43,7 +43,7 @@ msgstr "Dobre clic"
 msgid "Drag Click"
 msgstr "Clic de arrastre"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "Activar o clic de espera"
 
@@ -116,14 +116,14 @@ msgstr "Estilo de botón"
 msgid "Drag"
 msgstr "Arrastrar"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Dwell Click-Type"
-msgstr "Tipo de pulsación ao pousarse"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "Horizontal"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "Pulsación ao pasar por enriba"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
@@ -172,7 +172,7 @@ msgstr "Miniaplicatipo Captura do punteiro"
 msgid "Button style of the click-type window."
 msgstr "Estilo do botón da xanela do tipo de pulsación."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "Xeometría da xanela do tipo de pulsación"
 
@@ -224,44 +224,44 @@ msgstr "Tamaño da área de captura"
 msgid "Width of the capture area in pixels."
 msgstr "Largura da área de captura en píxeles."
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "Activar o clic secundario simulado"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "O tempo de espera antes dun clic de espera"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "O tempo de espera antes de simular un clic secundario"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Estabelecer modo de espera como activo"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Mostrar a xanela de tipo de clic"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Ignorar os pequenos movementos do punteiro"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Pechar os Axustes finos do rato"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "Iniciar Axustes finos do rato como daemon do sistema"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Iniciar Axustes finos do rato no modo de inicio de sesión"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- «Daemon» de accesibilidade do rato do GNOME"
 
@@ -296,6 +296,9 @@ msgstr "Bloqueado"
 #: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
 msgstr "Produciuse un fallo ao abrir o Panel de Acceso Universal"
+
+#~ msgid "Dwell Click-Type"
+#~ msgstr "Tipo de pulsación ao pousarse"
 
 #~ msgid "Dwell Click"
 #~ msgstr "Clic automático"

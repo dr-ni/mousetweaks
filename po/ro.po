@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-11-15 15:45+0000\n"
+"POT-Creation-Date: 2011-03-09 17:58+0000\n"
 "PO-Revision-Date: 2010-10-28 23:00+0200\n"
 "Last-Translator: Daniel Șerbănescu <cyber19rider@gmail.com>\n"
 "Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
@@ -41,7 +41,7 @@ msgstr "Clic dublu"
 msgid "Drag Click"
 msgstr "Clic tragere"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "Activează clicul staționar"
 
@@ -114,14 +114,16 @@ msgstr "Stil buton"
 msgid "Drag"
 msgstr "Trage"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Dwell Click-Type"
-msgstr "Tip clic staționar"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "Orizontală"
+
+#: ../data/mousetweaks.ui.h:7
+#, fuzzy
+#| msgid "Double Click"
+msgid "Hover Click"
+msgstr "Clic dublu"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
@@ -148,39 +150,31 @@ msgstr "Doar text"
 msgid "Vertical"
 msgstr "Verticală"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:586
-msgid "Dwell Click"
-msgstr "Clic staționar"
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr ""
 
-#: ../data/DwellClick_Factory.server.in.in.h:2
-msgid "Select dwelling click type"
-msgstr "Alegere tip clic staționar"
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+#, fuzzy
+#| msgid "Dwell Click-Type"
+msgid "Dwell Click Applet"
+msgstr "Tip clic staționar"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr "Zonă de blocare indicator"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:2
-msgid "Pointer Capture"
-msgstr "Capturează indicatorul"
-
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
-msgid "_About"
-msgstr "_Despre"
-
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
-msgid "_Help"
-msgstr "_Ajutor"
-
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
-msgid "_Preferences"
-msgstr "_Preferințe"
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+msgid "Pointer Capture Applet"
+msgstr "Miniaplicația de capturare a indicatorului mausului"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
 msgstr "Stilul butoanelor ferestrei de tip clic."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "Geometria ferestrei de tip clic"
 
@@ -232,44 +226,44 @@ msgstr "Dimensiunea zonei de captură"
 msgid "Width of the capture area in pixels."
 msgstr "Lățimea în pixeli a zonei de captură."
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "Activează clicul secundar simulat"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "Timp de așteptare înainte de un clic staționar"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "Timp de așteptare înainte de un clic secundar simulat"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Definește modul clicului staționar activ"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Afișează o fereastră de tip clic"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Ignoră mișcările minore ale indicatorului"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Închide mousetweaks"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "Pornește mousetweaks ca un serviciu de fundal"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Pornește mousetweaks în mod autentificare"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- serviciul GNOME de accesibilitate a mausului"
 
@@ -277,25 +271,42 @@ msgstr "- serviciul GNOME de accesibilitate a mausului"
 msgid "Failed to Display Help"
 msgstr "Afișarea ajutorului a eșuat"
 
-#: ../src/pointer-capture-applet.c:71
+#: ../src/pointer-capture-applet.c:79
 msgid "Capture area"
 msgstr "Zona de captură"
 
-#: ../src/pointer-capture-applet.c:72
+#: ../src/pointer-capture-applet.c:80
 msgid "Temporarily lock the mouse pointer"
 msgstr "Blochează temporar indicatorul mausului"
 
-#: ../src/pointer-capture-applet.c:434
-msgid "Pointer Capture Applet"
-msgstr "Miniaplicația de capturare a indicatorului mausului"
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "_Preferințe"
 
-#: ../src/pointer-capture-applet.c:480
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "_Ajutor"
+
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "_Despre"
+
+#: ../src/pointer-capture-applet.c:490
 msgid "Locked"
 msgstr "Blocat"
 
-#: ../src/dwell-click-applet.c:449
+#: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
 msgstr "Deschiderea panoului Acces universal a eșuat"
+
+#~ msgid "Dwell Click"
+#~ msgstr "Clic staționar"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Alegere tip clic staționar"
+
+#~ msgid "Pointer Capture"
+#~ msgstr "Capturează indicatorul"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"

@@ -4,9 +4,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks help\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-27 17:32+0000\n"
-"PO-Revision-Date: 2010-03-29 02:29+0300\n"
-"Last-Translator: Marios Zindilis <m.zindilis@dmajor.org>\n"
+"POT-Creation-Date: 2010-09-27 19:46+0000\n"
+"PO-Revision-Date: 2010-10-07 17:13+0200\n"
+"Last-Translator: Bakaoukas Nikolaos <nikolaos.x1@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,267 +17,134 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:222(None) C/mousetweaks.xml:299(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
-msgstr ""
-"@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
+#: C/mousetweaks.xml:239(None)
+#: C/mousetweaks.xml:316(None)
+msgid "@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
+msgstr "@@image: 'figures/mouse-a11y-tab.png'; md5=e932b73762cf5607752fd38934f9aa19"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:239(None) C/mousetweaks.xml:420(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-ssc-checkbox.png'; "
-"md5=3f19228551e955ba0afda595b4bfd9bb"
-msgstr ""
-"@@image: 'figures/mouse-a11y-ssc-checkbox.png'; "
-"md5=3f19228551e955ba0afda595b4bfd9bb"
+#: C/mousetweaks.xml:256(None)
+#: C/mousetweaks.xml:439(None)
+msgid "@@image: 'figures/mouse-a11y-ssc-checkbox.png'; md5=3f19228551e955ba0afda595b4bfd9bb"
+msgstr "@@image: 'figures/mouse-a11y-ssc-checkbox.png'; md5=3f19228551e955ba0afda595b4bfd9bb"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:316(None) C/mousetweaks.xml:457(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
-"md5=690dde37df60c6953b4c7e9b256c7a43"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-checkbox.png'; "
-"md5=690dde37df60c6953b4c7e9b256c7a43"
+#: C/mousetweaks.xml:333(None)
+#: C/mousetweaks.xml:476(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-checkbox.png'; md5=690dde37df60c6953b4c7e9b256c7a43"
+msgstr "@@image: 'figures/mouse-a11y-dwell-checkbox.png'; md5=690dde37df60c6953b4c7e9b256c7a43"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:361(None) C/mousetweaks.xml:486(None)
-#: C/mousetweaks.xml:811(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-"md5=8a8c96ae1353f93e286c9fca09c9b8ce"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; "
-"md5=8a8c96ae1353f93e286c9fca09c9b8ce"
+#: C/mousetweaks.xml:378(None)
+#: C/mousetweaks.xml:505(None)
+#: C/mousetweaks.xml:853(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; md5=8a8c96ae1353f93e286c9fca09c9b8ce"
+msgstr "@@image: 'figures/mouse-a11y-dwell-click-type-applet.png'; md5=8a8c96ae1353f93e286c9fca09c9b8ce"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:510(None) C/mousetweaks.xml:979(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; "
-"md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
-msgstr ""
-"@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; "
-"md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
+#: C/mousetweaks.xml:529(None)
+#: C/mousetweaks.xml:1023(None)
+msgid "@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
+msgstr "@@image: 'figures/mouse-a11y-pointer-capture-context-menu.png'; md5=b030645f1f3fccb4b6c61f6bdb3ce19a"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:558(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; "
-"md5=c09db81cacad7d507a28b568d238da79"
-msgstr ""
-"@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; "
-"md5=c09db81cacad7d507a28b568d238da79"
-
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:747(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; "
-"md5=eff4b5afa3ebc4287f244b72924e1fbf"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; "
-"md5=eff4b5afa3ebc4287f244b72924e1fbf"
-
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:773(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; "
-"md5=251686214f1a9b6e6cf4cc22a66b4b23"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; "
-"md5=251686214f1a9b6e6cf4cc22a66b4b23"
+#: C/mousetweaks.xml:577(None)
+msgid "@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; md5=c09db81cacad7d507a28b568d238da79"
+msgstr "@@image: 'figures/mouse-a11y-ssc-delay-slider.png'; md5=c09db81cacad7d507a28b568d238da79"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/mousetweaks.xml:789(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; "
-"md5=ede77b0adbc7ac3d1ae1187096c8a51f"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; "
-"md5=ede77b0adbc7ac3d1ae1187096c8a51f"
+msgid "@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; md5=eff4b5afa3ebc4287f244b72924e1fbf"
+msgstr "@@image: 'figures/mouse-a11y-dwell-mode-choice.png'; md5=eff4b5afa3ebc4287f244b72924e1fbf"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:887(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; "
-"md5=e939b50cdd7f6ee7937f9fc311f31e58"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; "
-"md5=e939b50cdd7f6ee7937f9fc311f31e58"
+#: C/mousetweaks.xml:815(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; md5=251686214f1a9b6e6cf4cc22a66b4b23"
+msgstr "@@image: 'figures/mouse-a11y-dwell-click-type-window.png'; md5=251686214f1a9b6e6cf4cc22a66b4b23"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:914(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
-"md5=8d87a631347995c6a770bab22af9b65a"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; "
-"md5=8d87a631347995c6a770bab22af9b65a"
+#: C/mousetweaks.xml:831(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; md5=ede77b0adbc7ac3d1ae1187096c8a51f"
+msgstr "@@image: 'figures/mouse-a11y-dwell-ctw-checkbox.png'; md5=ede77b0adbc7ac3d1ae1187096c8a51f"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:937(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; "
-"md5=da1313e8d5588a82dfb8321fc0b65eaa"
-msgstr ""
-"@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; "
-"md5=da1313e8d5588a82dfb8321fc0b65eaa"
+#: C/mousetweaks.xml:929(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; md5=e939b50cdd7f6ee7937f9fc311f31e58"
+msgstr "@@image: 'figures/mouse-a11y-dwell-gesture-mapping.png'; md5=e939b50cdd7f6ee7937f9fc311f31e58"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:989(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; "
-"md5=87295c217ba3b41a685bffbcedf92fb6"
-msgstr ""
-"@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; "
-"md5=87295c217ba3b41a685bffbcedf92fb6"
+#: C/mousetweaks.xml:956(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; md5=8d87a631347995c6a770bab22af9b65a"
+msgstr "@@image: 'figures/mouse-a11y-dwell-delay-slider.png'; md5=8d87a631347995c6a770bab22af9b65a"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/mousetweaks.xml:1006(None)
-msgid ""
-"@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; "
-"md5=a90ff1216071e8c2187be2464cf099ba"
-msgstr ""
-"@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; "
-"md5=a90ff1216071e8c2187be2464cf099ba"
+#: C/mousetweaks.xml:979(None)
+msgid "@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; md5=da1313e8d5588a82dfb8321fc0b65eaa"
+msgstr "@@image: 'figures/mouse-a11y-dwell-motion-treshold.png'; md5=da1313e8d5588a82dfb8321fc0b65eaa"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/mousetweaks.xml:1033(None)
+msgid "@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; md5=87295c217ba3b41a685bffbcedf92fb6"
+msgstr "@@image: 'figures/mouse-a11y-pointer-capture-locked.png'; md5=87295c217ba3b41a685bffbcedf92fb6"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/mousetweaks.xml:1050(None)
+msgid "@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; md5=a90ff1216071e8c2187be2464cf099ba"
+msgstr "@@image: 'figures/mouse-a11y-pointer-capture-preferences.png'; md5=a90ff1216071e8c2187be2464cf099ba"
 
 #: C/mousetweaks.xml:13(title)
 msgid "Mousetweaks Manual"
 msgstr "Εγχειρίδιο του Mousetweaks"
 
 #: C/mousetweaks.xml:16(para)
-msgid ""
-"<application>Mousetweaks</application> provides mouse accessibility "
-"enhancements for the GNOME Desktop."
-msgstr ""
-"Το <application>Mousetweaks</application> παρέχει βελτιώσεις για την "
-"προσιτότητα του ποντικιού για την επιφάνεια εργασία του Gnome."
+msgid "<application>Mousetweaks</application> provides mouse accessibility enhancements for the GNOME Desktop."
+msgstr "Το <application>Mousetweaks</application> παρέχει βελτιώσεις για την προσιτότητα του ποντικιού για την επιφάνεια εργασία του Gnome."
 
 #: C/mousetweaks.xml:21(year)
-msgid "2007 - 2009"
-msgstr "2007 - 2009"
+#| msgid "2007 - 2009"
+msgid "2007 - 2010"
+msgstr "2007 - 2010"
 
 #: C/mousetweaks.xml:23(holder)
 msgid "Francesco Fumanti"
 msgstr "Francesco Fumanti"
 
 #: C/mousetweaks.xml:3(para)
-msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.3 or any "
-"later version published by the Free Software Foundation; with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/"
-"fdl-1.3.txt\">link</ulink> or in the the top-level directory of the "
-"Mousetweaks source package."
-msgstr ""
-"Χορηγείται η άδεια για αντιγραφή, διανομή ή/και τροποποίηση του παρόντος "
-"εγγράφου υπό τους όρους του GNU Free Documentation License (GFDL), έκδοσης "
-"1.3 ή οποιαδήποτε μετέπειτα έκδοση που δημοσιεύτηκε από το Free Software "
-"Foundation, χωρίς αναλλοίωτα μέρη, χωρίς κείμενα εξώφυλλου και χωρίς κείμενα "
-"οπισθόφυλλου. Μπορείτε να βρείτε ένα αντίγραφο του GFDL στον εξής <ulink "
-"type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt\">σύνδεσμο</"
-"ulink> ή στον πιο πάνω κατάλογο του πηγαίου πακέτου Mousetweaks."
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt\">link</ulink> or in the the top-level directory of the Mousetweaks source package."
+msgstr "Χορηγείται η άδεια για αντιγραφή, διανομή ή/και τροποποίηση του παρόντος εγγράφου υπό τους όρους του GNU Free Documentation License (GFDL), έκδοσης 1.3 ή οποιαδήποτε μετέπειτα έκδοση που δημοσιεύτηκε από το Free Software Foundation, χωρίς αναλλοίωτα μέρη, χωρίς κείμενα εξώφυλλου και χωρίς κείμενα οπισθόφυλλου. Μπορείτε να βρείτε ένα αντίγραφο του GFDL στον εξής <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt\">σύνδεσμο</ulink> ή στον πιο πάνω κατάλογο του πηγαίου πακέτου Mousetweaks."
 
 #: C/mousetweaks.xml:11(para)
-msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
-"GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in "
-"section 6 of the license."
-msgstr ""
-"Αυτός ο οδηγός είναι μέρος μιας συλλογής οδηγών του GNOME που διανέμονται "
-"υπό το GFDL. Αν επιθυμείτε να διανείμετε αυτόν τον οδηγό ξεχωριστά από τη "
-"συλλογή, μπορείτε να το πραγματοποιήσετε προσθέτοντας ένα αντίγραφο της "
-"άδειας στον οδηγό, όπως περιγράφεται στο 6ο τμήμα της άδειας."
+msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
+msgstr "Αυτός ο οδηγός είναι μέρος μιας συλλογής οδηγών του GNOME που διανέμονται υπό το GFDL. Αν επιθυμείτε να διανείμετε αυτόν τον οδηγό ξεχωριστά από τη συλλογή, μπορείτε να το πραγματοποιήσετε προσθέτοντας ένα αντίγραφο της άδειας στον οδηγό, όπως περιγράφεται στο 6ο τμήμα της άδειας."
 
 #: C/mousetweaks.xml:16(para)
-msgid ""
-"Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
-"aware of those trademarks, then the names are in capital letters or initial "
-"capital letters."
-msgstr ""
-"Πολλά από τα ονόματα που χρησιμοποιούνται από επιχειρήσεις για να διακρίνουν "
-"τα προϊόντα τους και τις υπηρεσίες ζητούνται σαν εμπορικά σήματα. Όπου "
-"εμφανίζονται αυτά τα ονόματα σε κάποια τεκμηρίωση του GNOME, και τα μέλη του "
-"GNOME Documentation Project γνωρίουν για αυτά τα εμπορικά σήματα, τότε τα "
-"ονόματα είναι με κεφαλαία γράμματα ή με αρχικά κεφαλαία γράμματα."
+msgid "Many of the names used by companies to distinguish their products and services are claimed as trademarks. Where those names appear in any GNOME documentation, and the members of the GNOME Documentation Project are made aware of those trademarks, then the names are in capital letters or initial capital letters."
+msgstr "Πολλά από τα ονόματα που χρησιμοποιούνται από επιχειρήσεις για να διακρίνουν τα προϊόντα τους και τις υπηρεσίες ζητούνται σαν εμπορικά σήματα. Όπου εμφανίζονται αυτά τα ονόματα σε κάποια τεκμηρίωση του GNOME, και τα μέλη του GNOME Documentation Project γνωρίουν για αυτά τα εμπορικά σήματα, τότε τα ονόματα είναι με κεφαλαία γράμματα ή με αρχικά κεφαλαία γράμματα."
 
 #: C/mousetweaks.xml:26(para)
-msgid ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
-msgstr ""
-"ΤΟ ΕΓΓΡΑΦΟ ΠΑΡΕΧΕΤΑΙ ΣΕ ΜΙΑ \"ΩΣ ΕΧΕΙ\" ΒΑΣΗ, ΧΩΡΙΣ ΕΓΓΥΗΣΗ ΚΑΘΕ ΕΙΔΟΥΣ, "
-"ΕΙΤΕ ΕΚΦΡΑΣΜΕΝΗ Ή ΕΜΜΕΣΗ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΤΩΝ "
-"ΕΓΓΥΗΣΕΩΝ ΠΩΣ ΤΟ ΕΓΓΡΑΦΟ Ή ΤΟ ΤΡΟΠΟΠΟΙΗΜΕΝΟ ΕΓΓΡΑΦΟ ΕΙΝΑΙ ΕΛΕΥΘΕΡΟ ΑΠΟ "
-"ΕΛΑΤΤΩΜΑΤΑ ΕΜΠΟΡΕΥΣΙΜΑ, ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΓΙΑ ΕΝΑ ΕΙΔΙΚΟ ΣΚΟΠΟ Ή ΧΩΡΙΣ ΣΥΝΔΕΣΗ. "
-"Ο ΕΝΙΑΙΟΣ ΚΙΝΔΥΝΟΣ ΩΣ ΠΡΟΣ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΤΗΝ ΑΚΡΙΒΕΙΑ, ΚΑΙ ΤΗΝ ΕΜΦΑΝΙΣΗ ΤΗΣ "
-"ΤΕΚΜΗΡΙΩΣΗΣ Ή ΤΗΣ ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΟΥ ΕΙΝΑΙ ΜΑΖΙ ΣΑΣ. ΘΑ ΕΠΡΕΠΕ ΚΑΘΕ "
-"ΤΕΚΜΗΡΙΩΣΗ Ή ΤΕΚΜΗΡΙΩΜΕΝΗ ΕΚΔΟΣΗ ΤΗΣ ΝΑ ΑΠΟΔΕΙΚΝΥΕΤΑΙ ΑΤΕΛΗΣ ΜΕ ΚΑΘΕ "
-"ΣΕΒΑΣΜΟ, ΕΣΕΙΣ (ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΔΗΜΙΟΥΡΓΟΣ Ή ΑΛΛΟΣ ΒΟΗΘΟΣ ΤΗΣ "
-"ΣΥΓΓΡΑΦΗΣ) ΘΕΩΡΕΙΣΤΕ ΤΟ ΚΟΣΤΟΣ ΚΑΘΕ ΑΠΑΡΑΙΤΗΤΗΣ ΥΠΗΡΕΣΙΑΣ, ΕΠΙΣΚΕΥΗΣ Ή "
-"ΔΙΟΡΘΩΣΗΣ. ΑΥΤΗ Η ΔΙΑΨΕΥΣΗ ΤΗΣ ΕΓΓΥΗΣΗΣ ΑΝΤΙΚΕΙΤΑΙ ΣΤΟ ΒΑΣΙΚΟ ΜΕΡΟΣ ΤΗΣ "
-"ΑΔΕΙΑΣ. Η ΜΗ ΧΡΗΣΗ ΚΑΠΟΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΗΣ "
-"ΕΞΟΥΣΙΟΔΟΤΕΙΤΑΙ ΕΔΩ ΚΑΤΩ ΕΚΤΟΣ ΑΠΟ ΑΥΤΗ ΤΗ ΔΙΑΨΕΥΣΗ; ΚΑΙ"
+msgid "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr "ΤΟ ΕΓΓΡΑΦΟ ΠΑΡΕΧΕΤΑΙ ΣΕ ΜΙΑ \"ΩΣ ΕΧΕΙ\" ΒΑΣΗ, ΧΩΡΙΣ ΕΓΓΥΗΣΗ ΚΑΘΕ ΕΙΔΟΥΣ, ΕΙΤΕ ΕΚΦΡΑΣΜΕΝΗ Ή ΕΜΜΕΣΗ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΤΩΝ ΕΓΓΥΗΣΕΩΝ ΠΩΣ ΤΟ ΕΓΓΡΑΦΟ Ή ΤΟ ΤΡΟΠΟΠΟΙΗΜΕΝΟ ΕΓΓΡΑΦΟ ΕΙΝΑΙ ΕΛΕΥΘΕΡΟ ΑΠΟ ΕΛΑΤΤΩΜΑΤΑ ΕΜΠΟΡΕΥΣΙΜΑ, ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΓΙΑ ΕΝΑ ΕΙΔΙΚΟ ΣΚΟΠΟ Ή ΧΩΡΙΣ ΣΥΝΔΕΣΗ. Ο ΕΝΙΑΙΟΣ ΚΙΝΔΥΝΟΣ ΩΣ ΠΡΟΣ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΤΗΝ ΑΚΡΙΒΕΙΑ, ΚΑΙ ΤΗΝ ΕΜΦΑΝΙΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΤΗΣ ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΟΥ ΕΙΝΑΙ ΜΑΖΙ ΣΑΣ. ΘΑ ΕΠΡΕΠΕ ΚΑΘΕ ΤΕΚΜΗΡΙΩΣΗ Ή ΤΕΚΜΗΡΙΩΜΕΝΗ ΕΚΔΟΣΗ ΤΗΣ ΝΑ ΑΠΟΔΕΙΚΝΥΕΤΑΙ ΑΤΕΛΗΣ ΜΕ ΚΑΘΕ ΣΕΒΑΣΜΟ, ΕΣΕΙΣ (ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΔΗΜΙΟΥΡΓΟΣ Ή ΑΛΛΟΣ ΒΟΗΘΟΣ ΤΗΣ ΣΥΓΓΡΑΦΗΣ) ΘΕΩΡΕΙΣΤΕ ΤΟ ΚΟΣΤΟΣ ΚΑΘΕ ΑΠΑΡΑΙΤΗΤΗΣ ΥΠΗΡΕΣΙΑΣ, ΕΠΙΣΚΕΥΗΣ Ή ΔΙΟΡΘΩΣΗΣ. ΑΥΤΗ Η ΔΙΑΨΕΥΣΗ ΤΗΣ ΕΓΓΥΗΣΗΣ ΑΝΤΙΚΕΙΤΑΙ ΣΤΟ ΒΑΣΙΚΟ ΜΕΡΟΣ ΤΗΣ ΑΔΕΙΑΣ. Η ΜΗ ΧΡΗΣΗ ΚΑΠΟΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΗΣ ΕΞΟΥΣΙΟΔΟΤΕΙΤΑΙ ΕΔΩ ΚΑΤΩ ΕΚΤΟΣ ΑΠΟ ΑΥΤΗ ΤΗ ΔΙΑΨΕΥΣΗ; ΚΑΙ"
 
 #: C/mousetweaks.xml:41(para)
-msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
-msgstr ""
-"ΣΕ ΚΑΘΕ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΜΗ ΝΟΜΙΜΗ ΘΕΩΡΙΑ, ΟΠΟΥ ΥΠΑΡΧΕΙ ΑΔΙΚΟΠΡΑΞΙΑ "
-"(ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ ΤΗΣ ΑΜΕΛΕΙΑΣ) Η ΣΥΜΒΑΣΗ, Ή ΑΛΛΙΩΣ, ΣΥΜΦΩΝΑ ΜΕ ΤΟ "
-"ΣΥΓΓΡΑΦΕΑ, ΔΗΜΙΟΥΡΓΟ Ή ΑΛΛΟ ΒΟΗΘΟ Ή ΔΙΑΝΟΜΕΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή "
-"ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΗΣ, Ή ΟΠΟΙΟΝΔΗΠΟΤΕ ΠΑΡΟΧΕΑ ΤΜΗΜΑΤΩΝ ΤΗΣ, ΘΑ "
-"ΥΠΟΚΕΙΝΤΑΙ ΣΕ ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
-"CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
-"DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
-"MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
-"RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN "
-"IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES."
+msgid "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES."
+msgstr "ΣΕ ΚΑΘΕ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΜΗ ΝΟΜΙΜΗ ΘΕΩΡΙΑ, ΟΠΟΥ ΥΠΑΡΧΕΙ ΑΔΙΚΟΠΡΑΞΙΑ (ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ ΤΗΣ ΑΜΕΛΕΙΑΣ) Η ΣΥΜΒΑΣΗ, Ή ΑΛΛΙΩΣ, ΣΥΜΦΩΝΑ ΜΕ ΤΟ ΣΥΓΓΡΑΦΕΑ, ΔΗΜΙΟΥΡΓΟ Ή ΑΛΛΟ ΒΟΗΘΟ Ή ΔΙΑΝΟΜΕΑ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΤΗΣ, Ή ΟΠΟΙΟΝΔΗΠΟΤΕ ΠΑΡΟΧΕΑ ΤΜΗΜΑΤΩΝ ΤΗΣ, ΘΑ ΥΠΟΚΕΙΝΤΑΙ ΣΕ ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES."
 
 #: C/mousetweaks.xml:22(para)
-msgid ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
-msgstr ""
-"ΤΟ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΠΡΟΩΘΟΥΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΟΥ "
-"GNU FREE DOCUMENTATION LICENSE ΜΕ ΤΗΝ ΠΡΟΣΘΕΤΗ ΔΙΑΠΙΣΤΩΣΗ ΟΤΙ: <placeholder-"
-"1/>"
+msgid "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: <placeholder-1/>"
+msgstr "ΤΟ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΠΡΟΩΘΟΥΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΟΥ GNU FREE DOCUMENTATION LICENSE ΜΕ ΤΗΝ ΠΡΟΣΘΕΤΗ ΔΙΑΠΙΣΤΩΣΗ ΟΤΙ: <placeholder-1/>"
 
 #: C/mousetweaks.xml:30(firstname)
 msgid "Francesco"
@@ -292,1404 +159,757 @@ msgid "frfumanti@svn.gnome.org"
 msgstr "frfumanti@svn.gnome.org"
 
 #: C/mousetweaks.xml:42(revnumber)
+#| msgid "Version 2.30"
+msgid "Version 2.32"
+msgstr "Έκδοση 2.32"
+
+#: C/mousetweaks.xml:44(date)
+msgid "August 2010"
+msgstr "Αύγουστος 2010"
+
+#: C/mousetweaks.xml:47(para)
+#| msgid ""
+#| "Adapt the manual to the changes done to mousetweaks for GNOME 2.30. "
+#| "Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgid "Adapt the manual to the changes done to mousetweaks for GNOME 2.32. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgstr "Προσαρμογή του εγχειριδίου στις αλλαγές που έγιναν στο mousetweaks για το GNOME 2.32. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+
+#: C/mousetweaks.xml:54(revnumber)
 msgid "Version 2.30"
 msgstr "Έκδοση 2.30"
 
-#: C/mousetweaks.xml:44(date)
+#: C/mousetweaks.xml:56(date)
 msgid "March 2010"
 msgstr "Μάρτιος 2010"
 
-#: C/mousetweaks.xml:47(para)
-msgid ""
-"Adapt the manual to the changes done to mousetweaks for GNOME 2.30. "
-"Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
-msgstr ""
-"Προσαρμογή του εγχειριδίου στις αλλαγές που έγιναν στο mousetweaks για το "
-"GNOME 2.30. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+#: C/mousetweaks.xml:59(para)
+msgid "Adapt the manual to the changes done to mousetweaks for GNOME 2.30. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgstr "Προσαρμογή του εγχειριδίου στις αλλαγές που έγιναν στο mousetweaks για το GNOME 2.30. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 
-#: C/mousetweaks.xml:54(revnumber)
+#: C/mousetweaks.xml:66(revnumber)
 msgid "Version 2.28"
 msgstr "έκδοση 2.28"
 
-#: C/mousetweaks.xml:56(date)
+#: C/mousetweaks.xml:68(date)
 msgid "September 2009"
 msgstr "Σεπτέμβριος 2009"
 
-#: C/mousetweaks.xml:59(para)
-msgid ""
-"Adapt the manual to the changes done to mousetweaks for GNOME 2.28. "
-"Francesco Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
-msgstr ""
-"Προσαρμογή του εγχειριδίου στις αλλαγές που έγιναν στο mousetweaks για το "
-"GNOME 2.28. Francesco Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
+#: C/mousetweaks.xml:71(para)
+msgid "Adapt the manual to the changes done to mousetweaks for GNOME 2.28. Francesco Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
+msgstr "Προσαρμογή του εγχειριδίου στις αλλαγές που έγιναν στο mousetweaks για το GNOME 2.28. Francesco Fumanti <email>frfumanti@svn.gnome.org&gt;</email>"
 
-#: C/mousetweaks.xml:66(revnumber)
+#: C/mousetweaks.xml:78(revnumber)
 msgid "version 2.25.90"
 msgstr "έκδοση 2.25.90"
 
-#: C/mousetweaks.xml:68(date)
+#: C/mousetweaks.xml:80(date)
 msgid "February 2nd 2009"
 msgstr "2 Φεβρουαρίου 2009"
 
-#: C/mousetweaks.xml:71(para)
-msgid ""
-"The manual has been edited to match the changes done to mousetweaks for "
-"GNOME 2.26. Moreover, the license of the manual has been raised to GFDL 1.3. "
-"Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
-msgstr ""
-"Το εγχειρίδιο έχει προσαρμοστεί για να ταιριάζει στις αλλαγές που έγιναν στο "
-"mousetweaks για το GNOME 2.26. Επιπλέον, η άδεια της τεκμηρίωσης έχει "
-"μεταβεί στην GFDL 1.3. Francesco Fumanti <email>frfumanti@svn.gnome.org</"
-"email>"
+#: C/mousetweaks.xml:83(para)
+msgid "The manual has been edited to match the changes done to mousetweaks for GNOME 2.26. Moreover, the license of the manual has been raised to GFDL 1.3. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgstr "Το εγχειρίδιο έχει προσαρμοστεί για να ταιριάζει στις αλλαγές που έγιναν στο mousetweaks για το GNOME 2.26. Επιπλέον, η άδεια της τεκμηρίωσης έχει μεταβεί στην GFDL 1.3. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 
-#: C/mousetweaks.xml:79(revnumber)
+#: C/mousetweaks.xml:91(revnumber)
 msgid "version 2.24"
 msgstr "έκδοση 2.24"
 
-#: C/mousetweaks.xml:81(date)
+#: C/mousetweaks.xml:93(date)
 msgid "July 2008"
 msgstr "Ιούλιος 2008"
 
-#: C/mousetweaks.xml:84(para)
-msgid ""
-"The contents of the manual have been upgraded to integrate the improvements "
-"done to mousetweaks for GNOME 2.24. Francesco Fumanti <email>frfumanti@svn."
-"gnome.org</email>"
-msgstr ""
-"Τα περιεχόμενα του εγχειριδίου έχουν αναπροσαρμοστεί στις βελτιώσεις που "
-"εφαρμόζονται στο mousetweaks για το GNOME 2.24. Francesco Fumanti "
-"<email>frfumanti@svn.gnome.org</email>"
+#: C/mousetweaks.xml:96(para)
+msgid "The contents of the manual have been upgraded to integrate the improvements done to mousetweaks for GNOME 2.24. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgstr "Τα περιεχόμενα του εγχειριδίου έχουν αναπροσαρμοστεί στις βελτιώσεις που εφαρμόζονται στο mousetweaks για το GNOME 2.24. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 
-#: C/mousetweaks.xml:91(revnumber)
+#: C/mousetweaks.xml:103(revnumber)
 msgid "version 2.21.5"
 msgstr " Έκδοση 2.21.5"
 
-#: C/mousetweaks.xml:93(date)
+#: C/mousetweaks.xml:105(date)
 msgid "January 2008"
 msgstr "Ιανουάριος 2008"
 
-#: C/mousetweaks.xml:96(para)
-msgid ""
-"The contents of the manual have been adapted to the changes applied to "
-"mousetweaks for its integration into GNOME 2.22. Francesco Fumanti "
-"<email>frfumanti@svn.gnome.org</email>"
-msgstr ""
-"Τα περιεχόμενα του οδηγού έχουν αναπροσαρμοστεί στις αλλαγές που "
-"εφαρμόζονται στο mousetweaks για την ολοκλήρωση του στο GNOME 2.22. "
-"Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+#: C/mousetweaks.xml:108(para)
+msgid "The contents of the manual have been adapted to the changes applied to mousetweaks for its integration into GNOME 2.22. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
+msgstr "Τα περιεχόμενα του οδηγού έχουν αναπροσαρμοστεί στις αλλαγές που εφαρμόζονται στο mousetweaks για την ολοκλήρωση του στο GNOME 2.22. Francesco Fumanti <email>frfumanti@svn.gnome.org</email>"
 
-#: C/mousetweaks.xml:104(revnumber)
+#: C/mousetweaks.xml:116(revnumber)
 msgid "version 0.2"
 msgstr "έκδοση 0.2"
 
-#: C/mousetweaks.xml:106(date)
+#: C/mousetweaks.xml:118(date)
 msgid "November 2007"
 msgstr "Νοέμβριος 2007"
 
-#: C/mousetweaks.xml:109(para)
-msgid ""
-"The contents of the manual have been adapted to the default theme of GNOME, "
-"called Clearlooks. This version is included with the release 0.2.6 of "
-"Mousetweaks. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
-msgstr ""
-"Τα πριεχόμενα του οδηγού έχουν αναπροσαρμοστεί στο προεπιλεγμένο θέμα του "
-"GNOME, που ονομάζεται Clearbooks. Αυτή η έκδοση συμπεριλαμβάνεται με την "
-"ελευθέρωση του 0.2.6 του Mousetweaks. Francesco Fumanti <email>francesco."
-"fumanti@gmx.net</email>"
+#: C/mousetweaks.xml:121(para)
+msgid "The contents of the manual have been adapted to the default theme of GNOME, called Clearlooks. This version is included with the release 0.2.6 of Mousetweaks. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
+msgstr "Τα πριεχόμενα του οδηγού έχουν αναπροσαρμοστεί στο προεπιλεγμένο θέμα του GNOME, που ονομάζεται Clearbooks. Αυτή η έκδοση συμπεριλαμβάνεται με την ελευθέρωση του 0.2.6 του Mousetweaks. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
 
-#: C/mousetweaks.xml:117(revnumber)
+#: C/mousetweaks.xml:129(revnumber)
 msgid "version 0.1"
 msgstr "έκδοση 0.1"
 
-#: C/mousetweaks.xml:119(date)
+#: C/mousetweaks.xml:131(date)
 msgid "October 2007"
 msgstr "Οκτώβριος 2007"
 
-#: C/mousetweaks.xml:122(para)
-msgid ""
-"First draft of the manual. Francesco Fumanti <email>francesco.fumanti@gmx."
-"net</email>"
-msgstr ""
-"Το πρώτο προσχέδιο του οδηγού. Francesco Fumanti <email>francesco."
-"fumanti@gmx.net</email>"
+#: C/mousetweaks.xml:134(para)
+msgid "First draft of the manual. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
+msgstr "Το πρώτο προσχέδιο του οδηγού. Francesco Fumanti <email>francesco.fumanti@gmx.net</email>"
 
-#: C/mousetweaks.xml:128(releaseinfo)
-msgid ""
-"This manual describes the accessibility tools provided by mousetweaks and "
-"their graphical user interfaces, which consist of the accessibility tab of "
-"the mouse control panel and two panel applets."
-msgstr ""
-"Η παρούσα τεκμηρίωση περιγράφει τα εργαλεία προσιτότητας που παρέχονται από "
-"το mousetweaks και τη γραφική διεπαφή χρήστη γι' αυτά, που αποτελείται από "
-"την καρτέλα Προσιτότητα της εφαρμογής ελέγχου του ποντικιού και δύο "
-"μικροεφαρμογές."
+#: C/mousetweaks.xml:140(releaseinfo)
+msgid "This manual describes the accessibility tools provided by mousetweaks and their graphical user interfaces, which consist of the accessibility tab of the mouse control panel and two panel applets."
+msgstr "Η παρούσα τεκμηρίωση περιγράφει τα εργαλεία προσιτότητας που παρέχονται από το mousetweaks και τη γραφική διεπαφή χρήστη γι' αυτά, που αποτελείται από την καρτέλα Προσιτότητα της εφαρμογής ελέγχου του ποντικιού και δύο μικροεφαρμογές."
 
-#: C/mousetweaks.xml:133(contrib)
-msgid ""
-"To report a bug or make a suggestion regarding the Mousetweaks application "
-"or this manual, please go to GNOME's Bugzilla."
-msgstr ""
-"Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σε σχέση με την εφαρμογή "
-"Mousetweaks ή την παρούσα τεκμηρίωση, παρακαλώ μεταβείτε στο GNOME's "
-"Bugzilla."
+#: C/mousetweaks.xml:145(contrib)
+msgid "To report a bug or make a suggestion regarding the Mousetweaks application or this manual, please go to GNOME's Bugzilla."
+msgstr "Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σε σχέση με την εφαρμογή Mousetweaks ή την παρούσα τεκμηρίωση, παρακαλώ μεταβείτε στο GNOME's Bugzilla."
 
-#: C/mousetweaks.xml:137(title) C/mousetweaks.xml:1071(title)
+#: C/mousetweaks.xml:149(title)
+#: C/mousetweaks.xml:1115(title)
 msgid "Feedback"
 msgstr "Ανάδραση"
 
-#: C/mousetweaks.xml:139(para)
-msgid ""
-"To report a bug or make a suggestion regarding <application>the mousetweaks "
-"module</application> (i.e.: mouse accessibility), its user interface or its "
-"manual, please use the facilities provided by <ulink type=\"http\" url="
-"\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>."
-msgstr ""
-"Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σε σχέση με την ενότητα "
-"<application>mousetweaks</application> (π.χ. προσιτότητα ποντικιού), τη "
-"διεπαφή του χρήστη ή την τεκμηρίωσή του, παρακαλώ χρησιμοποιήστε τις "
-"διευκολύνσεις που παρέχονται από το σύνδεσμο <ulink type=\"http\" url="
-"\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>."
+#: C/mousetweaks.xml:151(para)
+msgid "To report a bug or make a suggestion regarding <application>the mousetweaks module</application> (i.e.: mouse accessibility), its user interface or its manual, please use the facilities provided by <ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>."
+msgstr "Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σε σχέση με την ενότητα <application>mousetweaks</application> (π.χ. προσιτότητα ποντικιού), τη διεπαφή του χρήστη ή την τεκμηρίωσή του, παρακαλώ χρησιμοποιήστε τις διευκολύνσεις που παρέχονται από το σύνδεσμο <ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>."
 
-#: C/mousetweaks.xml:148(primary)
+#: C/mousetweaks.xml:160(primary)
 msgid "Mousetweaks"
 msgstr "Mousetweaks"
 
-#: C/mousetweaks.xml:152(primary) C/mousetweaks.xml:438(command)
-#: C/mousetweaks.xml:474(command)
+#: C/mousetweaks.xml:164(primary)
+#: C/mousetweaks.xml:457(command)
+#: C/mousetweaks.xml:493(command)
 msgid "mousetweaks"
 msgstr "mousetweaks"
 
-#: C/mousetweaks.xml:156(title)
+#: C/mousetweaks.xml:168(title)
 msgid "Introduction"
 msgstr "Εισαγωγή"
 
-#: C/mousetweaks.xml:158(para)
-msgid ""
-"<application>Mousetweaks</application> provides mouse accessibility "
-"enhancements for the GNOME Desktop. Indeed, it offers the following "
-"functions to the user:"
-msgstr ""
-"Το <application>Mousetweaks</application> παρέχει βελτιώσεις για την "
-"προσιτότητα του ποντικιού για την επιφάνεια εργασίας του Gnome. Πράγματι, "
-"παρέχει τις ακόλουθες λειτουργίες για το χρήστη:"
-
-#: C/mousetweaks.xml:164(para)
-msgid ""
-"Simulated secondary click: it allows the user to perform a secondary click "
-"(menu click) by holding down the primary mouse button while keeping the "
-"pointer motionless."
-msgstr ""
-"Προσομοιωμένο δευτερεύον κλικ: επιτρέπει στο χρήστη να πραγματοποιεί ένα "
-"δευτεύον κλικ (κλικ μενού) κρατώντας το πρωτεύον κουμπί του ποντικιού ενώ "
-"διατηρεί το δείκτη ακίνητο."
-
 #: C/mousetweaks.xml:170(para)
-msgid ""
-"Dwell click: it allows the user to perform the various clicks without "
-"pressing any <hardware>hardware button</hardware>."
-msgstr ""
-"Κρατημένο κλικ: επιτρέπει στο χρήστη να πραγματοποιήσει τα διάφορα κλικ "
-"χωρίς να πιέζει κανένα <hardware>κουμπί υλικού</hardware>."
+msgid "<application>Mousetweaks</application> provides mouse accessibility enhancements for the GNOME Desktop. Indeed, it offers the following functions to the user:"
+msgstr "Το <application>Mousetweaks</application> παρέχει βελτιώσεις για την προσιτότητα του ποντικιού για την επιφάνεια εργασίας του Gnome. Πράγματι, παρέχει τις ακόλουθες λειτουργίες για το χρήστη:"
 
-#: C/mousetweaks.xml:175(para)
-msgid ""
-"Pointer capture: it allows the user to lock the pointer in a determined area "
-"of the panel until the user releases it by a predefined keystroke or mouse "
-"button."
-msgstr ""
-"Σύλληψη δείκτη: επιτρέπει στο χρήστη να κλειδώσει το δείκτη σε μια "
-"προσδιορισμένη περιοχή του πίνακα εφαρμογών μέχρι ο χρήστης να το "
-"ελευθερώσει με μια ορισμένη εκ των προτέρων πληκτρολόγηση ή με ένα κουμπί "
-"του ποντικιού."
+#: C/mousetweaks.xml:176(para)
+msgid "Simulated secondary click: it allows the user to perform a secondary click (menu click) by holding down the primary mouse button while keeping the pointer motionless."
+msgstr "Προσομοιωμένο δευτερεύον κλικ: επιτρέπει στο χρήστη να πραγματοποιεί ένα δευτεύον κλικ (κλικ μενού) κρατώντας το πρωτεύον κουμπί του ποντικιού ενώ διατηρεί το δείκτη ακίνητο."
 
-#: C/mousetweaks.xml:183(title)
+#: C/mousetweaks.xml:182(para)
+msgid "Dwell click: it allows the user to perform the various clicks without pressing any <hardware>hardware button</hardware>."
+msgstr "Κρατημένο κλικ: επιτρέπει στο χρήστη να πραγματοποιήσει τα διάφορα κλικ χωρίς να πιέζει κανένα <hardware>κουμπί υλικού</hardware>."
+
+#: C/mousetweaks.xml:187(para)
+msgid "Pointer capture: it allows the user to lock the pointer in a determined area of the panel until the user releases it by a predefined keystroke or mouse button."
+msgstr "Σύλληψη δείκτη: επιτρέπει στο χρήστη να κλειδώσει το δείκτη σε μια προσδιορισμένη περιοχή του πίνακα εφαρμογών μέχρι ο χρήστης να το ελευθερώσει με μια ορισμένη εκ των προτέρων πληκτρολόγηση ή με ένα κουμπί του ποντικιού."
+
+#: C/mousetweaks.xml:194(para)
+msgid "Since version 2.31.3, mousetweaks does not depend any more on the AT-SPI accessibility framework."
+msgstr "Από την έκδοση 2.31.3, το mousetweaks δεν εξαρτάται άλλο από το πλαίσιο δυνατοτήτων πρόσβασης AT-SPI."
+
+#: C/mousetweaks.xml:200(title)
 msgid "How To Start The Functions"
 msgstr "Πώς να ξεκινήσετε τις λειτουργίες"
 
-#: C/mousetweaks.xml:185(para)
-msgid ""
-"The simulated secondary click and the dwell click depend on the mousetweaks "
-"process; however the pointer capture applet depends on the GNOME panel. "
-"Consequently, also the methods to start them vary."
-msgstr ""
-"Το προσομοιωμένο δευτερεύον κλικ και το κρατημένο κλικ εξαρτώνται από τη "
-"διεργασία του mousetweaks. Παρόλα αυτά η μικροεφαρμογή της σύλληψης του "
-"δείκτη εξαρτάται από τον πίνακα εφαρμογών του GNOME. Επομένως, επίσης και οι "
-"μέθοδοι για την εκκίνησή τους ποικίλουν."
+#: C/mousetweaks.xml:202(para)
+msgid "The simulated secondary click and the dwell click depend on the mousetweaks process; however the pointer capture applet depends on the GNOME panel. Consequently, also the methods to start them vary."
+msgstr "Το προσομοιωμένο δευτερεύον κλικ και το κρατημένο κλικ εξαρτώνται από τη διεργασία του mousetweaks. Παρόλα αυτά η μικροεφαρμογή της σύλληψης του δείκτη εξαρτάται από τον πίνακα εφαρμογών του GNOME. Επομένως, επίσης και οι μέθοδοι για την εκκίνησή τους ποικίλουν."
 
-#: C/mousetweaks.xml:190(title)
+#: C/mousetweaks.xml:207(title)
 msgid "Starting The Simulated Secondary Click Function"
 msgstr "Ξεκινώντας τη λειτουργία του προσομοιωμένου δευτερεύοντος κλικ"
 
-#: C/mousetweaks.xml:192(para)
+#: C/mousetweaks.xml:209(para)
 msgid "You can start the Simulated Secondary Click in two ways:"
-msgstr ""
-"Μπορείτε να ξεκινήσετε το προσομοιωμένο δευτερεύον κλικ με δύο τρόπους:"
+msgstr "Μπορείτε να ξεκινήσετε το προσομοιωμένο δευτερεύον κλικ με δύο τρόπους:"
 
-#: C/mousetweaks.xml:196(para)
+#: C/mousetweaks.xml:213(para)
 msgid "from the graphical user interface"
 msgstr "από τη γραφική διεπαφή του χρήστη"
 
-#: C/mousetweaks.xml:200(para) C/mousetweaks.xml:272(para)
+#: C/mousetweaks.xml:217(para)
+#: C/mousetweaks.xml:289(para)
 msgid "from the command line"
 msgstr "από τη γραμμή εντολών"
 
-#: C/mousetweaks.xml:205(title)
+#: C/mousetweaks.xml:222(title)
 msgid "Start From The Graphical User Interface"
 msgstr "Αρχή από τη γραφική διεπαφή του χρήστη"
 
-#: C/mousetweaks.xml:207(para)
-msgid ""
-"The graphical user interface to start the simulated secondary click is "
-"located in the Accessibility tab of the Mouse control panel. To open it, "
-"choose the menu <menuchoice><guimenu>System</"
-"guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Control Center</"
-"guimenuitem></menuchoice> and the Control Center will open. By clicking on "
-"Mouse in the Control Center, the Mouse control panel will open and after "
-"clicking on the Accessibility tab, you will see the following settings:"
-msgstr ""
-"Η γραφική διεπαφή του χρήστη για να ξεκινήσετε το προσομοιωμένο δευτερεύον "
-"κλικ τοποθετείται στην καρτέλα Προσιτότητα του πίνακα εφαρμογών για τον "
-"έλεγχο του ποντικιού. Για να το ανοίξετε, επιλέξτε από το μενού "
-"<menuchoice><guimenu>Σύστημα</guimenu><guisubmenu>Προτιμήσεις</"
-"guisubmenu><guimenuitem>Κέντρο ελέγχου</guimenuitem></menuchoice> και το "
-"Κέντρο ελέγχου θα ανοίξει. Κάνοντας κλικ στο Ποντίκι στο Κέντρο ελέγχου, ο "
-"πίνακας εφαρμογών ελέγχου του ποντικιού θα ανοίξει και ύστερα από κλικ στην "
-"καρτέλα Προσιτότητα, θα δείτε τις ακόλουθες ρυθμίσεις:"
+#: C/mousetweaks.xml:224(para)
+msgid "The graphical user interface to start the simulated secondary click is located in the Accessibility tab of the Mouse control panel. To open it, choose the menu <menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Control Center</guimenuitem></menuchoice> and the Control Center will open. By clicking on Mouse in the Control Center, the Mouse control panel will open and after clicking on the Accessibility tab, you will see the following settings:"
+msgstr "Η γραφική διεπαφή του χρήστη για να ξεκινήσετε το προσομοιωμένο δευτερεύον κλικ τοποθετείται στην καρτέλα Προσιτότητα του πίνακα εφαρμογών για τον έλεγχο του ποντικιού. Για να το ανοίξετε, επιλέξτε από το μενού <menuchoice><guimenu>Σύστημα</guimenu><guisubmenu>Προτιμήσεις</guisubmenu><guimenuitem>Κέντρο ελέγχου</guimenuitem></menuchoice> και το Κέντρο ελέγχου θα ανοίξει. Κάνοντας κλικ στο Ποντίκι στο Κέντρο ελέγχου, ο πίνακας εφαρμογών ελέγχου του ποντικιού θα ανοίξει και ύστερα από κλικ στην καρτέλα Προσιτότητα, θα δείτε τις ακόλουθες ρυθμίσεις:"
 
-#: C/mousetweaks.xml:226(para) C/mousetweaks.xml:303(para)
+#: C/mousetweaks.xml:243(para)
+#: C/mousetweaks.xml:320(para)
 msgid "Picture of the Mouse control panel"
 msgstr "Εικόνα από τον πίνακα εφαρμογών ελέγχου του ποντικιού"
 
-#: C/mousetweaks.xml:230(para)
-msgid ""
-"To start the simulated secondary click function, put a checkmark into the "
-"checkbox that says:"
-msgstr ""
-"Για να ξεκινήσετε τη λειτουργία του προσομοιωμένου δευτερεύοντος κλικ, βάλτε "
-"ένα τικ στο κουτί ελέγχου που λέει:"
+#: C/mousetweaks.xml:247(para)
+msgid "To start the simulated secondary click function, put a checkmark into the checkbox that says:"
+msgstr "Για να ξεκινήσετε τη λειτουργία του προσομοιωμένου δευτερεύοντος κλικ, βάλτε ένα τικ στο κουτί ελέγχου που λέει:"
 
-#: C/mousetweaks.xml:233(quote)
+#: C/mousetweaks.xml:250(quote)
 msgid "Trigger secondary click by holding down the primary button"
-msgstr ""
-"Ενεργοποίηση του δευτερεύοντος κλικ διατηρώντας πατημένο το πρωτεύον κουμπί "
-"του ποντικιού"
+msgstr "Ενεργοποίηση του δευτερεύοντος κλικ διατηρώντας πατημένο το πρωτεύον κουμπί του ποντικιού"
 
-#: C/mousetweaks.xml:243(para)
+#: C/mousetweaks.xml:260(para)
 msgid "Picture of the checkbox to start the simulated secondary click"
-msgstr ""
-"Εικόνα από το κουτί ελέγχου για να ξεικινήσετε το προσομοιωμένο δευτερεύον "
-"κλικ"
+msgstr "Εικόνα από το κουτί ελέγχου για να ξεικινήσετε το προσομοιωμένο δευτερεύον κλικ"
 
-#: C/mousetweaks.xml:250(title) C/mousetweaks.xml:327(title)
+#: C/mousetweaks.xml:267(title)
+#: C/mousetweaks.xml:344(title)
 msgid "Start From The Command Line"
 msgstr "Αρχή από τη γραμμή εντολών"
 
-#: C/mousetweaks.xml:252(para)
-msgid ""
-"To start the simulated secondary click from the command line, open the "
-"<application>Terminal</application> and type the following:"
-msgstr ""
-"Για να ξεκινήσετε το προσομοιωμένο δευτερεύον κλικ από τη γραμμή εντολών, "
-"ανοίξτε το <application>Τερματικό</application> και πληκτρολογήστε τα εξής:"
+#: C/mousetweaks.xml:269(para)
+msgid "To start the simulated secondary click from the command line, open the <application>Terminal</application> and type the following:"
+msgstr "Για να ξεκινήσετε το προσομοιωμένο δευτερεύον κλικ από τη γραμμή εντολών, ανοίξτε το <application>Τερματικό</application> και πληκτρολογήστε τα εξής:"
 
-#: C/mousetweaks.xml:257(parameter)
-msgid "--enable-secondary"
-msgstr "--enable-secondary"
+#: C/mousetweaks.xml:274(parameter)
+msgid "--ssc"
+msgstr "--ssc"
 
-#: C/mousetweaks.xml:256(command) C/mousetweaks.xml:333(command)
+#: C/mousetweaks.xml:273(command)
+#: C/mousetweaks.xml:350(command)
 msgid "mousetweaks <placeholder-1/>"
 msgstr "mousetweaks <placeholder-1/>"
 
-#: C/mousetweaks.xml:262(title)
+#: C/mousetweaks.xml:279(title)
 msgid "Starting The Dwell Click Function"
 msgstr "Ξεκινώντας τη λειτουργία του κρατημένου κλικ"
 
-#: C/mousetweaks.xml:264(para)
+#: C/mousetweaks.xml:281(para)
 msgid "You can start the dwell click function in three ways:"
-msgstr ""
-"Μπορείτε να ξεκινήσετε τη λειτουργία του κρατημένου κλικ με τρεις τρόπους:"
+msgstr "Μπορείτε να ξεκινήσετε τη λειτουργία του κρατημένου κλικ με τρεις τρόπους:"
 
-#: C/mousetweaks.xml:268(para)
+#: C/mousetweaks.xml:285(para)
 msgid "from the Accessibility tab of the Mouse control panel"
 msgstr "από την καρτέλα Προσιτότητα στον πίνακα ελέγχου του ποντικιού"
 
-#: C/mousetweaks.xml:276(para)
+#: C/mousetweaks.xml:293(para)
 msgid "from the On/Off button on the Dwell Click panel applet"
-msgstr ""
-"από το κουμπί Ενεργό/Ανενεργό στη μικροεφαρμογή για το κρατημένο κλικ του "
-"πίνακα εφαρμογών"
+msgstr "από το κουμπί Ενεργό/Ανενεργό στη μικροεφαρμογή για το κρατημένο κλικ του πίνακα εφαρμογών"
 
-#: C/mousetweaks.xml:281(title)
+#: C/mousetweaks.xml:298(title)
 msgid "Start From The Accessibility tab of the Mouse control panel"
 msgstr "Εκκίνηση από την καρτέλα Προσιτότητα στον πίνακα ελέγχου του ποντικιού"
 
-#: C/mousetweaks.xml:284(para)
-msgid ""
-"The graphical user interface to start the dwell click is located in the "
-"Accessibility tab of the Mouse control panel. To open it, choose the menu "
-"<menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</"
-"guisubmenu><guimenuitem>Control Center</guimenuitem></menuchoice> and the "
-"Control Center will open. By clicking on Mouse in the Control Center, the "
-"Mouse control panel will open and after clicking on the Accessibility tab, "
-"you will see the following settings:"
-msgstr ""
-"Η γραφική διεπαφή του χρήστη για να ξεκινήσετε το κρατημένο κλικ "
-"τοποθετείται στην καρτέλα Προσιτότητα στον πίνακα εφαρμογών ελέγχου του "
-"ποντικιού. Για να το ανοίξετε, επιλέξτε από το μενού "
-"<menuchoice><guimenu>Σύστημα</guimenu><guisubmenu>Προτιμήσεις</"
-"guisubmenu><guimenuitem>Κέντρο ελέγχου</guimenuitem></menuchoice> και το "
-"Κέντρο ελέγχου θα ανοίξει. Κάνοντας κλικ στο Ποντίκι στο Κέντρο ελέγχου, ο "
-"πίνακας εφαρμογών ελέγχου του ποντικιού θα ανοίξει και ύστερα από κλικ στην "
-"καρτέλα Προσιτότητα, θα δείτε τις ακόλουθες ρυθμίσεις:"
+#: C/mousetweaks.xml:301(para)
+msgid "The graphical user interface to start the dwell click is located in the Accessibility tab of the Mouse control panel. To open it, choose the menu <menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Control Center</guimenuitem></menuchoice> and the Control Center will open. By clicking on Mouse in the Control Center, the Mouse control panel will open and after clicking on the Accessibility tab, you will see the following settings:"
+msgstr "Η γραφική διεπαφή του χρήστη για να ξεκινήσετε το κρατημένο κλικ τοποθετείται στην καρτέλα Προσιτότητα στον πίνακα εφαρμογών ελέγχου του ποντικιού. Για να το ανοίξετε, επιλέξτε από το μενού <menuchoice><guimenu>Σύστημα</guimenu><guisubmenu>Προτιμήσεις</guisubmenu><guimenuitem>Κέντρο ελέγχου</guimenuitem></menuchoice> και το Κέντρο ελέγχου θα ανοίξει. Κάνοντας κλικ στο Ποντίκι στο Κέντρο ελέγχου, ο πίνακας εφαρμογών ελέγχου του ποντικιού θα ανοίξει και ύστερα από κλικ στην καρτέλα Προσιτότητα, θα δείτε τις ακόλουθες ρυθμίσεις:"
 
-#: C/mousetweaks.xml:307(para)
-msgid ""
-"To start the dwell click function, put a checkmark into the checkbox that "
-"says:"
-msgstr ""
-"Για να ξεκινήσετε τη λειτουργία του κρατημένου κλικ, κάνετε ένα τικ στο "
-"κουτί ελέγχου που λέει:"
+#: C/mousetweaks.xml:324(para)
+msgid "To start the dwell click function, put a checkmark into the checkbox that says:"
+msgstr "Για να ξεκινήσετε τη λειτουργία του κρατημένου κλικ, κάνετε ένα τικ στο κουτί ελέγχου που λέει:"
 
-#: C/mousetweaks.xml:310(quote)
+#: C/mousetweaks.xml:327(quote)
 msgid "Initiate click when stopping pointer movement"
 msgstr "Εκκίνηση κλικ όταν σταματάει η κίνηση του δείκτη"
 
-#: C/mousetweaks.xml:320(para)
-msgid "Picture of the checkbox to start the dwell click function"
-msgstr ""
-"Εικόνα από το κουτί ελέγχου για να ξεκινήσετε τη λειτουργία του κρατημένου "
-"κλικ"
-
-#: C/mousetweaks.xml:329(para)
-msgid ""
-"To start the dwell click function and show the click type window from the "
-"command line, open the <application>Terminal</application> and type the "
-"following:"
-msgstr ""
-"Για να ξεκινήσετε τη λειτουργία του κρατημένου κλικ και να εμφανίσετε το "
-"παράθυρο με τα είδη κλικ από τη γραμμή εντολών, ανοίξτε το "
-"<application>Τερματικό</application> και πληκτρολογήστε τα εξής:"
-
-#: C/mousetweaks.xml:333(parameter)
-msgid "--enable-dwell --show-ctw"
-msgstr "--enable-dwell --show-ctw"
-
 #: C/mousetweaks.xml:337(para)
-msgid ""
-"The starting parameters --login and --daemonize were added to allow GDM to "
-"start and quit mousetweaks: the first disables the check for the Assistive "
-"Technologies framework at the start of mousetweaks; by not passing the "
-"second, mousetweaks will keep the pid that it got when it started, allowing "
-"GDM to shut it down by using the pid."
-msgstr ""
-"Προστέθηκαν οι παράμετροι εκκίνησης --login και --daemonize για να "
-"επιτρέπουν στο GDM να εκκινεί και να σταματά το mousetweaks: η πρώτη "
-"απενεργοποιεί τον έλεγχο για το πλαίσιο λειτουργίας των Βοηθητικών "
-"Τεχνολογιών. Η δεύτερη, αν δεν περαστεί, το mousetweaks θα κρατήσει το "
-"αναγνωριστικό διεργασίας pid που είχε όταν εκκινήθηκε, επιτρέποντας στο GDM "
-"να το κλείσει χρησιμοποιώντας το pid."
+msgid "Picture of the checkbox to start the dwell click function"
+msgstr "Εικόνα από το κουτί ελέγχου για να ξεκινήσετε τη λειτουργία του κρατημένου κλικ"
 
-#: C/mousetweaks.xml:347(title)
+#: C/mousetweaks.xml:346(para)
+msgid "To start the dwell click function and show the click type window from the command line, open the <application>Terminal</application> and type the following:"
+msgstr "Για να ξεκινήσετε τη λειτουργία του κρατημένου κλικ και να εμφανίσετε το παράθυρο με τα είδη κλικ από τη γραμμή εντολών, ανοίξτε το <application>Τερματικό</application> και πληκτρολογήστε τα εξής:"
+
+#: C/mousetweaks.xml:350(parameter)
+#| msgid "--enable-dwell --show-ctw"
+msgid "--dwell --show-ctw"
+msgstr "--dwell --show-ctw"
+
+#: C/mousetweaks.xml:354(para)
+msgid "The starting parameters --login and --daemonize were added to allow GDM to start and quit mousetweaks: the first disables the check for the Assistive Technologies framework at the start of mousetweaks; by not passing the second, mousetweaks will keep the pid that it got when it started, allowing GDM to shut it down by using the pid."
+msgstr "Προστέθηκαν οι παράμετροι εκκίνησης --login και --daemonize για να επιτρέπουν στο GDM να εκκινεί και να σταματά το mousetweaks: η πρώτη απενεργοποιεί τον έλεγχο για το πλαίσιο λειτουργίας των Βοηθητικών Τεχνολογιών. Η δεύτερη, αν δεν περαστεί, το mousetweaks θα κρατήσει το αναγνωριστικό διεργασίας pid που είχε όταν εκκινήθηκε, επιτρέποντας στο GDM να το κλείσει χρησιμοποιώντας το pid."
+
+#: C/mousetweaks.xml:364(title)
 msgid "Start From The On/Off button On The Dwell Click Panel Applet"
-msgstr ""
-"Εκκίνηση από το κουμπί Ενεργό/Ανενεργό στη μικροεφαρμογή για το κρατημένο "
-"κλικ του πίνακα εφαρμογών"
+msgstr "Εκκίνηση από το κουμπί Ενεργό/Ανενεργό στη μικροεφαρμογή για το κρατημένο κλικ του πίνακα εφαρμογών"
 
-#: C/mousetweaks.xml:350(para)
-msgid ""
-"It is possible to start the Dwell Click by simply resting (dwelling) for a "
-"little delay with the pointer on the mouse icon displayed by the Dwell Click "
-"panel applet. In fact, this mouse icon is a dwellable On/Off button that "
-"provides feedback of the passing dwell time by filling its frame with "
-"another colour. When the frame is completely filled, the button displays its "
-"active state and the dwell click gets started."
-msgstr ""
-"Είναι δυνατό να ξεκινήσετε τη λειτουργία του κρατημένου κλικ απλά "
-"αναμένοντας για μία μικρή καθυστέρηση με το δείκτη πάνω από το εικονίδιο του "
-"ποντικιού της μικροεφαρμογής για το κρατημένο κλικ του πίνακα εφαρμογών. Για "
-"την ακρίβεια, αυτό το εικονίδιο είναι ένα κουμπί ενεργοποίησης/"
-"απενεργοποίησης το οποίο παρέχει ανάδραση του περασμένου χρόνου καθυστέρησης "
-"συμπληρώνοντας το πλάισιό του με κάποιο άλλο χρώμα. Όταν το πλαίσιο "
-"συμπληρωθεί, το κουμπί εμφανίζει την ενεργή του κατάσταση και το κρατημένο "
-"κλικ ξεκινά."
+#: C/mousetweaks.xml:367(para)
+msgid "It is possible to start the Dwell Click by simply resting (dwelling) for a little delay with the pointer on the mouse icon displayed by the Dwell Click panel applet. In fact, this mouse icon is a dwellable On/Off button that provides feedback of the passing dwell time by filling its frame with another colour. When the frame is completely filled, the button displays its active state and the dwell click gets started."
+msgstr "Είναι δυνατό να ξεκινήσετε τη λειτουργία του κρατημένου κλικ απλά αναμένοντας για μία μικρή καθυστέρηση με το δείκτη πάνω από το εικονίδιο του ποντικιού της μικροεφαρμογής για το κρατημένο κλικ του πίνακα εφαρμογών. Για την ακρίβεια, αυτό το εικονίδιο είναι ένα κουμπί ενεργοποίησης/απενεργοποίησης το οποίο παρέχει ανάδραση του περασμένου χρόνου καθυστέρησης συμπληρώνοντας το πλάισιό του με κάποιο άλλο χρώμα. Όταν το πλαίσιο συμπληρωθεί, το κουμπί εμφανίζει την ενεργή του κατάσταση και το κρατημένο κλικ ξεκινά."
 
-#: C/mousetweaks.xml:365(para) C/mousetweaks.xml:490(para)
-#: C/mousetweaks.xml:815(para)
+#: C/mousetweaks.xml:382(para)
+#: C/mousetweaks.xml:509(para)
+#: C/mousetweaks.xml:857(para)
 msgid "Picture showing the click type applet at the right of the GNOME menus"
-msgstr ""
-"Εικόνα που εμφανίζει τη μικροεφαρμογή για το είδος του κλικ στα αριστερά των "
-"μενού του Gnome"
+msgstr "Εικόνα που εμφανίζει τη μικροεφαρμογή για το είδος του κλικ στα αριστερά των μενού του Gnome"
 
-#: C/mousetweaks.xml:372(link) C/mousetweaks.xml:380(title)
-#: C/mousetweaks.xml:972(link)
+#: C/mousetweaks.xml:388(para)
+#| msgid ""
+#| "For instructions about how to install the Dwell Click applet on the GNOME "
+#| "panel, please have a look at <placeholder-1/> where you can see how it is "
+#| "done for the Pointer Capture panel applet. The procedure for the Dwell "
+#| "Click panel applet is similar."
+msgid "For instructions about how to install the Dwell Click applet on the GNOME panel, please have a look at <link linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture Function</link> where you can see how it is done for the Pointer Capture panel applet. The procedure for the Dwell Click panel applet is similar."
+msgstr "Για οδηγίες σχετικά με τον τρόπο εγκατάσταση της μικροεφαρμογής για το Κρατημένο κλικ στον πίνακα εφαρμογών του Gnome, παρακαλώ ρίξτε μια ματιά στο <link linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture Function</link> όπου μπορείτε να δείτε πώς εκτελείται για τη μικροεφαρμογή σύλληψης του δείκτη. Η διαδικασία για τη μικροεφαρμογή Κρατημένο κλικ του πίνακα εφαρμογών είναι παρόμοια."
+
+#: C/mousetweaks.xml:399(title)
 msgid "Starting The Pointer Capture Function"
 msgstr "Ξεκινώντας τη λειτουργία της σύλληψης του δείκτη"
 
-#: C/mousetweaks.xml:370(remark)
-msgid ""
-"For instructions about how to install the Dwell Click applet on the GNOME "
-"panel, please have a look at <placeholder-1/> where you can see how it is "
-"done for the Pointer Capture panel applet. The procedure for the Dwell Click "
-"panel applet is similar."
-msgstr ""
-"Για οδηγίες σχετικά με τον τρόπο εγκατάσταση της μικροεφαρμογής για το "
-"κρατημένο κλικ στον πίνακα εφαρμογών του Gnome, παρακαλώ ρίξτε μια ματιά στο "
-"<placeholder-1/> όπου μπορείτε να δείτε πώς γίνεται αυτό για τη "
-"μικροεφαρμογή σύλληψης του δείκτη. Η διαδικασία για τη μικροεφαρμογή "
-"Κρατημένο κλικ του πίνακα εφαρμογών είναι παρόμοια."
+#: C/mousetweaks.xml:401(para)
+msgid "As the Pointer Capture applet comes in the from of a panel applet, its starting method has to follow the rules dictated by the GNOME panel. Thus, to start the Pointer Capture function, you only have to install it on the panel and it will automatically run."
+msgstr "Όπως η μικροεφαρμογή σύλληψης του δείκτη βρίσκεται στη μορφή μικροεφαρμογής του πίνακα εφαρμογών, η αρχική μέθοδος πρέπει να ακολουθεί τους κανόνες που παρέχονται από τον πίνακα εφαρμογών του GNOME. Επιπλέον, για να ξεκινήσετε τη λειτουργία σύλληψης του δείκτη, πρέπει μόνο να την εγκαταστήσετε στον πίνακα εφαρμογών και θα εκτελεστεί αυτόματα."
 
-#: C/mousetweaks.xml:382(para)
-msgid ""
-"As the Pointer Capture applet comes in the from of a panel applet, its "
-"starting method has to follow the rules dictated by the GNOME panel. Thus, "
-"to start the Pointer Capture function, you only have to install it on the "
-"panel and it will automatically run."
-msgstr ""
-"Όπως η μικροεφαρμογή σύλληψης του δείκτη βρίσκεται στη μορφή μικροεφαρμογής "
-"του πίνακα εφαρμογών, η αρχική μέθοδος πρέπει να ακολουθεί τους κανόνες που "
-"παρέχονται από τον πίνακα εφαρμογών του GNOME. Επιπλέον, για να ξεκινήσετε "
-"τη λειτουργία σύλληψης του δείκτη, πρέπει μόνο να την εγκαταστήσετε στον "
-"πίνακα εφαρμογών και θα εκτελεστεί αυτόματα."
+#: C/mousetweaks.xml:406(para)
+msgid "In order to add it to the panel, proceed as you do with any panel applet: perform a secondary click on the panel to open its contextual menu, choose <guimenuitem>Add to Panel</guimenuitem>, and you will get the window showing all the applets that can be installed on the GNOME panel."
+msgstr "Για να το προσθέσετε στον πίνακα εφαρμογών, προχωρήστε όπως κάνετε με οποιαδήποτε μοκροεφαρμογή του πίνακα εφαρμογών: εφαρμόστε ένα δευτερεύον κλικ στο πίνακα εφαρμογών για να ανοίξετε το συμφραζόμενο μενού του, επιλέξτε <guimenuitem>Προσθήκη στον πίνακα εφαρμογών</guimenuitem>, και θα λάβετε το παράθυρο που θα εμφανίζει όλες τις μικροεφαρμογές που μπορούν να εγκατασταθούν στον πίνακα εφαρμογών του Gnome."
 
-#: C/mousetweaks.xml:387(para)
-msgid ""
-"In order to add it to the panel, proceed as you do with any panel applet: "
-"perform a secondary click on the panel to open its contextual menu, choose "
-"<guimenuitem>Add to Panel</guimenuitem>, and you will get the window showing "
-"all the applets that can be installed on the GNOME panel."
-msgstr ""
-"Για να το προσθέσετε στον πίνακα εφαρμογών, προχωρήστε όπως κάνετε με "
-"οποιαδήποτε μοκροεφαρμογή του πίνακα εφαρμογών: εφαρμόστε ένα δευτερεύον "
-"κλικ στο πίνακα εφαρμογών για να ανοίξετε το συμφραζόμενο μενού του, "
-"επιλέξτε <guimenuitem>Προσθήκη στον πίνακα εφαρμογών</guimenuitem>, και θα "
-"λάβετε το παράθυρο που θα εμφανίζει όλες τις μικροεφαρμογές που μπορούν να "
-"εγκατασταθούν στον πίνακα εφαρμογών του Gnome."
+#: C/mousetweaks.xml:412(para)
+msgid "By double clicking on the <guilabel>Pointer Capture</guilabel> item in the Add to Panel window, the Pointer Capture applet will be added to the panel, and it will run until it is removed from the GNOME panel."
+msgstr "Κάνοντας διπλό κλικ στο στοιχείο <guilabel>Σύλληψη δείκτη</guilabel> στο παράθυρο Προσθήκη στον πίνακα εφαρμογών, η μικροεφαρμογή για τη σύλληψη του δείκτη θα προστεθεί στον πίνακα εφαρμογών, και θα εκτελεστεί μέχρι να αφαιρεθεί από τον πίνακα εφαρμογών του Gnome."
 
-#: C/mousetweaks.xml:393(para)
-msgid ""
-"By double clicking on the <guilabel>Pointer Capture</guilabel> item in the "
-"Add to Panel window, the Pointer Capture applet will be added to the panel, "
-"and it will run until it is removed from the GNOME panel."
-msgstr ""
-"Κάνοντας διπλό κλικ στο στοιχείο <guilabel>Σύλληψη δείκτη</guilabel> στο "
-"παράθυρο Προσθήκη στον πίνακα εφαρμογών, η μικροεφαρμογή για τη σύλληψη του "
-"δείκτη θα προστεθεί στον πίνακα εφαρμογών, και θα εκτελεστεί μέχρι να "
-"αφαιρεθεί από τον πίνακα εφαρμογών του Gnome."
-
-#: C/mousetweaks.xml:401(title)
+#: C/mousetweaks.xml:420(title)
 msgid "How To Quit The Functions"
 msgstr "Πώς θα τερματίζονται οι λειτουργίες"
 
-#: C/mousetweaks.xml:403(para)
-msgid ""
-"Similar to the starting of the functions, their quitting also depends on the "
-"feature that you want to quit."
-msgstr ""
-"Παρόμοια με την εκκίνηση των λειτουργιών, ο τερματισμός τους εξαρτάται "
-"επίσης από τη λειτουργία που επιθυμείτε να τερματίσετε."
+#: C/mousetweaks.xml:422(para)
+msgid "Similar to the starting of the functions, their quitting also depends on the feature that you want to quit."
+msgstr "Παρόμοια με την εκκίνηση των λειτουργιών, ο τερματισμός τους εξαρτάται επίσης από τη λειτουργία που επιθυμείτε να τερματίσετε."
 
-#: C/mousetweaks.xml:407(title)
+#: C/mousetweaks.xml:426(title)
 msgid "Quitting The Simulated Secondary Click"
 msgstr "Τερματισμός του προσομοιωμένου δευτερεύοντος κλικ"
 
-#: C/mousetweaks.xml:409(para)
+#: C/mousetweaks.xml:428(para)
 msgid "It is possible to quit the Simulated Secondary Click in two ways:"
-msgstr ""
-"Είναι δυνατό να τερματίσετε το Προσομοιωμένο δευτερεύον κλικ με δύο τρόπους:"
+msgstr "Είναι δυνατό να τερματίσετε το Προσομοιωμένο δευτερεύον κλικ με δύο τρόπους:"
 
-#: C/mousetweaks.xml:414(para) C/mousetweaks.xml:451(para)
-msgid ""
-"By removing the mark from the corresponding checkbox in the control panel of "
-"<application>Mousetweaks</application>."
-msgstr ""
-"Αναιρώντας την επιλογή του πεδίου ελέγχου στον πίνακα ελέγχου του "
-"<application>Mousetweaks</application>."
+#: C/mousetweaks.xml:433(para)
+#: C/mousetweaks.xml:470(para)
+msgid "By removing the mark from the corresponding checkbox in the control panel of <application>Mousetweaks</application>."
+msgstr "Αναιρώντας την επιλογή του πεδίου ελέγχου στον πίνακα ελέγχου του <application>Mousetweaks</application>."
 
-#: C/mousetweaks.xml:424(para)
+#: C/mousetweaks.xml:443(para)
 msgid "Picture of the checkbox to start the simulated right click feature"
-msgstr ""
-"Εικόνα από το πεδίο ελέγχου για να ξεκινήσετε το προσομοιωμένο δευτερεύον "
-"κλικ"
+msgstr "Εικόνα από το πεδίο ελέγχου για να ξεκινήσετε το προσομοιωμένο δευτερεύον κλικ"
 
-#: C/mousetweaks.xml:429(para)
-msgid ""
-"Please refer to <link linkend=\"mouse-a11y-start-ssc-by-gui\">Start The "
-"Simulated Secondary Click From The Graphical User Interface</link> to locate "
-"the checkbox."
-msgstr ""
-"Παρακαλώ απευθυνθείτε στην <link linkend=\"mouse-a11y-start-ssc-by-gui"
-"\">Εκκίνηση του προσομοιωμένου δευτερεύοντος κλικ από τη γραφική διεπαφή "
-"χρήστη</link> για να εντοπίσετε το πεδίο ελέγχου."
+#: C/mousetweaks.xml:448(para)
+msgid "Please refer to <link linkend=\"mouse-a11y-start-ssc-by-gui\">Start The Simulated Secondary Click From The Graphical User Interface</link> to locate the checkbox."
+msgstr "Παρακαλώ απευθυνθείτε στην <link linkend=\"mouse-a11y-start-ssc-by-gui\">Εκκίνηση του προσομοιωμένου δευτερεύοντος κλικ από τη γραφική διεπαφή χρήστη</link> για να εντοπίσετε το πεδίο ελέγχου."
 
-#: C/mousetweaks.xml:436(para) C/mousetweaks.xml:472(para)
+#: C/mousetweaks.xml:455(para)
+#: C/mousetweaks.xml:491(para)
 msgid "By typing the following command at the command line:"
 msgstr "Πληκτρολογώντας την ακόλουθη εντολή στη γραμμή εντολών:"
 
-#: C/mousetweaks.xml:439(parameter) C/mousetweaks.xml:475(parameter)
+#: C/mousetweaks.xml:458(parameter)
+#: C/mousetweaks.xml:494(parameter)
 msgid "--shutdown"
 msgstr "--shutdown"
 
-#: C/mousetweaks.xml:445(title)
+#: C/mousetweaks.xml:464(title)
 msgid "Quitting The Dwell Click"
 msgstr "Τερματισμός του κρατημένου κλικ"
 
-#: C/mousetweaks.xml:447(para)
-msgid "It is possible to quit the dwell click in three ways:"
-msgstr ""
-"Είναι δυνατό να τερματίσετε τη λειτουργία του κρατημένου κλικ με τρεις "
-"τρόπους:"
-
-#: C/mousetweaks.xml:461(para)
-msgid "Picture of the checkbox to start the buttonless click feature"
-msgstr ""
-"Εικόνα του πεδίου ελέγχου για να ξεκινά το χαρακτηριστικό για κλικ χωρίς "
-"πάτημα"
-
 #: C/mousetweaks.xml:466(para)
-msgid ""
-"Please refer to <link linkend=\"mouse-a11y-start-dwell-by-gui\">Start The "
-"Dwell Click From The Graphical User Interface</link> to locate the checkbox."
-msgstr ""
-"Παρακαλώ απευθυνθείτε στο σύνδεσμο <link linkend=\"mouse-a11y-start-dwell-by-"
-"gui\">Εκκίνηση του κρατημένου κλικ από τη γραφική διεπαφή του χρήστη</link>"
+msgid "It is possible to quit the dwell click in three ways:"
+msgstr "Είναι δυνατό να τερματίσετε τη λειτουργία του κρατημένου κλικ με τρεις τρόπους:"
 
-#: C/mousetweaks.xml:479(para)
-msgid ""
-"If the Dwell Click applet has been installed on the GNOME panel, the Dwell "
-"Click can be disabled by dwelling with the pointer on its On/Off button."
-msgstr ""
-"Αν η μικροεφαρμογή για το κρατημένο κλικ έχει εγκατασταθεί στον πίνακα "
-"εφαρμογών του GNOME, αυτή μπορεί να απενεργοποιηθεί κρατώντας πατημένο το "
-"δείκτη στο κουμπί Ενεργό/Ανενεργό."
+#: C/mousetweaks.xml:480(para)
+msgid "Picture of the checkbox to start the buttonless click feature"
+msgstr "Εικόνα του πεδίου ελέγχου για να ξεκινά το χαρακτηριστικό για κλικ χωρίς πάτημα"
 
-#: C/mousetweaks.xml:499(title)
+#: C/mousetweaks.xml:485(para)
+msgid "Please refer to <link linkend=\"mouse-a11y-start-dwell-by-gui\">Start The Dwell Click From The Graphical User Interface</link> to locate the checkbox."
+msgstr "Παρακαλώ απευθυνθείτε στο σύνδεσμο <link linkend=\"mouse-a11y-start-dwell-by-gui\">Εκκίνηση του κρατημένου κλικ από τη γραφική διεπαφή του χρήστη</link>"
+
+#: C/mousetweaks.xml:498(para)
+msgid "If the Dwell Click applet has been installed on the GNOME panel, the Dwell Click can be disabled by dwelling with the pointer on its On/Off button."
+msgstr "Αν η μικροεφαρμογή για το κρατημένο κλικ έχει εγκατασταθεί στον πίνακα εφαρμογών του GNOME, αυτή μπορεί να απενεργοποιηθεί κρατώντας πατημένο το δείκτη στο κουμπί Ενεργό/Ανενεργό."
+
+#: C/mousetweaks.xml:518(title)
 msgid "Quitting The Pointer Capture Function"
 msgstr "Τερματισμός της λειτουργίας σύλληψης του δείκτη"
 
-#: C/mousetweaks.xml:501(para)
-msgid ""
-"As the Pointer Capture function comes in the form of a panel applet, you "
-"have to quit it the same way that you do it with other applets: you have to "
-"remove it from the GNOME panel. To do it, perform a right click on the "
-"handle of the applet and choose <guimenuitem>Remove From Panel</guimenuitem> "
-"from its contextual menu."
-msgstr ""
-"Ενώ η λειτουργία σύλληψης του δείκτη βρίσκεται στη μορφή μιας μικροεφαρμογής "
-"του πίνακα εφαρμογών, πρέπει να την τερματίσετε με τον ίδιο τρόπο που "
-"εφαρμόζετε και με τις άλλες μικροεφαρμογές: πρέπει να την αφαιρέσετε από τον "
-"πίνακα εφαρμογών του Gnome. Για να το πραγματοποιήσετε αυτό, κάντε δεξί κλικ "
-"στο χειριστή της μικροεφαρμογής και επιλέξτε <guimenuitem>Αφαίρεση από τον "
-"πίνακα εφαρμογών</guimenuitem> από το συμφραζόμενο μενού του."
-
-#: C/mousetweaks.xml:514(para) C/mousetweaks.xml:983(para)
-msgid ""
-"Picture showing the pointer capture area (green) with its contextual menu"
-msgstr ""
-"Εικόνα που εμφανίζει την (πράσινη) περιοχή σύλληψης του δείκτη με το μενού "
-"περιεχομένου"
-
 #: C/mousetweaks.xml:520(para)
-msgid ""
-"When using the default GNOME theme, the handle of the Pointer Capture applet "
-"are the two vertical dotted lines at the left of the pointer capture area."
-msgstr ""
-"Όταν χρησιμοποιείτε το προεπιλεγμένο θέμα του GNOME, ο χειριστής της "
-"μικροεφαρμογής σύλληψης του δείκτη είναι οι δύο κατακόρυφες γραμμές με "
-"κουκκίδες στα αριστερά της περιοχής της σύλληψης του δείκτη."
+msgid "As the Pointer Capture function comes in the form of a panel applet, you have to quit it the same way that you do it with other applets: you have to remove it from the GNOME panel. To do it, perform a right click on the handle of the applet and choose <guimenuitem>Remove From Panel</guimenuitem> from its contextual menu."
+msgstr "Ενώ η λειτουργία σύλληψης του δείκτη βρίσκεται στη μορφή μιας μικροεφαρμογής του πίνακα εφαρμογών, πρέπει να την τερματίσετε με τον ίδιο τρόπο που εφαρμόζετε και με τις άλλες μικροεφαρμογές: πρέπει να την αφαιρέσετε από τον πίνακα εφαρμογών του Gnome. Για να το πραγματοποιήσετε αυτό, κάντε δεξί κλικ στο χειριστή της μικροεφαρμογής και επιλέξτε <guimenuitem>Αφαίρεση από τον πίνακα εφαρμογών</guimenuitem> από το συμφραζόμενο μενού του."
 
-#: C/mousetweaks.xml:528(title)
+#: C/mousetweaks.xml:533(para)
+#: C/mousetweaks.xml:1027(para)
+msgid "Picture showing the pointer capture area (green) with its contextual menu"
+msgstr "Εικόνα που εμφανίζει την (πράσινη) περιοχή σύλληψης του δείκτη με το μενού περιεχομένου"
+
+#: C/mousetweaks.xml:539(para)
+msgid "When using the default GNOME theme, the handle of the Pointer Capture applet are the two vertical dotted lines at the left of the pointer capture area."
+msgstr "Όταν χρησιμοποιείτε το προεπιλεγμένο θέμα του GNOME, ο χειριστής της μικροεφαρμογής σύλληψης του δείκτη είναι οι δύο κατακόρυφες γραμμές με κουκκίδες στα αριστερά της περιοχής της σύλληψης του δείκτη."
+
+#: C/mousetweaks.xml:547(title)
 msgid "Description Of The Functions"
 msgstr "Περιγραφή των λειτουργιών"
 
-#: C/mousetweaks.xml:530(para)
-msgid ""
-"Mousetweaks offers three pointer accessibility functions to the user. In "
-"this section you will find the description of the three functions: "
-"<placeholder-1/>"
-msgstr ""
-"Το mousetweaks παρέχει στο χρήστη τρεις λειτουργίες προσιτότητας του δείκτη. "
-"Στην ενότητα αυτή θα βρείτε την περιγραφή των τριών αυτών λειτουργιών: <"
-"placeholder-1/>"
+#: C/mousetweaks.xml:549(para)
+msgid "Mousetweaks offers three pointer accessibility functions to the user. In this section you will find the description of the three functions: <placeholder-1/>"
+msgstr "Το mousetweaks παρέχει στο χρήστη τρεις λειτουργίες προσιτότητας του δείκτη. Στην ενότητα αυτή θα βρείτε την περιγραφή των τριών αυτών λειτουργιών: <placeholder-1/>"
 
-#: C/mousetweaks.xml:548(title)
+#: C/mousetweaks.xml:567(title)
 msgid "Simulated Secondary Click Description"
 msgstr "Περιγραφή προσομοιωμένου δευτερεύοντος κλικ"
 
-#: C/mousetweaks.xml:550(para)
-msgid ""
-"When the user activates this feature, he will be able to perform secondary "
-"clicks by using the <mousebutton>primary mouse button</mousebutton>. This is "
-"especially useful for users that have only one <mousebutton>mouse button</"
-"mousebutton> at their disposal."
-msgstr ""
-"Όταν ο χρήστης ενεργοποιεί τη λειτουργία αυτή, μπορεί να εφαρμόσει "
-"δευτερεύοντα κλικ χρησιμοποιώντας το <mousebutton>κουμπί του πρωτεύοντος "
-"ποντικιού</mousebutton>. Αυτό είναι χρήσιμο ειδικά για χρήστες που έχουν "
-"μόνο ένα <mousebutton>κουμπί ποντικιού</mousebutton> στη διάθεσή τους."
+#: C/mousetweaks.xml:569(para)
+msgid "When the user activates this feature, he will be able to perform secondary clicks by using the <mousebutton>primary mouse button</mousebutton>. This is especially useful for users that have only one <mousebutton>mouse button</mousebutton> at their disposal."
+msgstr "Όταν ο χρήστης ενεργοποιεί τη λειτουργία αυτή, μπορεί να εφαρμόσει δευτερεύοντα κλικ χρησιμοποιώντας το <mousebutton>κουμπί του πρωτεύοντος ποντικιού</mousebutton>. Αυτό είναι χρήσιμο ειδικά για χρήστες που έχουν μόνο ένα <mousebutton>κουμπί ποντικιού</mousebutton> στη διάθεσή τους."
 
-#: C/mousetweaks.xml:562(para)
-msgid ""
-"Picture showing the settings belonging to the Simulated Secondary Click."
-msgstr ""
-"Εικόνα που εμφανίζει τις ρυθμίσεις που ανήκουν στο Προσομοιωμένο δευτερεύον "
-"κλικ."
+#: C/mousetweaks.xml:581(para)
+msgid "Picture showing the settings belonging to the Simulated Secondary Click."
+msgstr "Εικόνα που εμφανίζει τις ρυθμίσεις που ανήκουν στο Προσομοιωμένο δευτερεύον κλικ."
 
-#: C/mousetweaks.xml:568(title) C/mousetweaks.xml:723(title)
+#: C/mousetweaks.xml:587(title)
+#: C/mousetweaks.xml:765(title)
 msgid "How Does It Work?"
 msgstr "Πώς λειτουργεί αυτό;"
 
-#: C/mousetweaks.xml:570(para)
-msgid ""
-"Let us assume that the user has enabled the Simulated Secondary Click "
-"feature."
-msgstr ""
-"Ας θεωρήσουμε ότι ο χρήστης έχει ενεργοποιήσει τη λειτουργία του "
-"προσομοιωμένου δευτερεύοντος κλικ."
+#: C/mousetweaks.xml:589(para)
+msgid "Let us assume that the user has enabled the Simulated Secondary Click feature."
+msgstr "Ας θεωρήσουμε ότι ο χρήστης έχει ενεργοποιήσει τη λειτουργία του προσομοιωμένου δευτερεύοντος κλικ."
 
-#: C/mousetweaks.xml:573(para)
-msgid ""
-"To perform a simulated secondary click, the user has to keep the "
-"<mousebutton>primary mouse button</mousebutton> pressed without moving the "
-"pointer for the time determined by the delay slider of the Simulated "
-"Secondary Click feature. While the <mousebutton>primary mouse button</"
-"mousebutton> is kept pressed, the arrow of the pointer will be filled with a "
-"different color to give feedback about the passing time."
-msgstr ""
-"Για να εφαρμόσει ένα προσομοιωμένο δευτερεύον κλικ, ο χρήστης θα πρέπει να "
-"διατηρήσει πατημένο το <mousebutton>πρωτεύον κουμπί του ποντικιού</"
-"mousebutton> χωρίς να μετακινεί το δείκτη για το χρόνο που καθορίζεται από "
-"τον ολισθητή καθυστέρησης του χαρακτηριστικού Εξομοίωσης δευτερεύοντος κλικ. "
-"Ενόσω το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton> είναι "
-"πατημένο, το βέλος του δείκτη θα γεμίζει με ένα διαφορετικό χρώμα ώστε να "
-"παρέχει ανάδραση για το χρόνο που περνά."
+#: C/mousetweaks.xml:592(para)
+msgid "To perform a simulated secondary click, the user has to keep the <mousebutton>primary mouse button</mousebutton> pressed without moving the pointer for the time determined by the delay slider of the Simulated Secondary Click feature. While the <mousebutton>primary mouse button</mousebutton> is kept pressed, the arrow of the pointer will be filled with a different color to give feedback about the passing time."
+msgstr "Για να εφαρμόσει ένα προσομοιωμένο δευτερεύον κλικ, ο χρήστης θα πρέπει να διατηρήσει πατημένο το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton> χωρίς να μετακινεί το δείκτη για το χρόνο που καθορίζεται από τον ολισθητή καθυστέρησης του χαρακτηριστικού Εξομοίωσης δευτερεύοντος κλικ. Ενόσω το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton> είναι πατημένο, το βέλος του δείκτη θα γεμίζει με ένα διαφορετικό χρώμα ώστε να παρέχει ανάδραση για το χρόνο που περνά."
 
-#: C/mousetweaks.xml:581(para)
-msgid ""
-"If the user releases the <mousebutton>primary mouse button</mousebutton> "
-"before the arrow of the pointer has been completely filled with the new "
-"color, the system will only receive the information of the "
-"<mousebutton>primary mouse button</mousebutton> press and release."
-msgstr ""
-"Αν ο χρήστης ελευθερώσει το <mousebutton>πρωτεύον κουμπί του ποντικιού</"
-"mousebutton> πριν το βέλος του δείκτη γεμίσει εντελώς με το νέο χρώμα, τότε "
-"το σύστημα λαμβάνει μόνο την πληροφορία για το πάτημα και την ελευθέρωση του "
-"<mousebutton>πρωτεύοντος κουμπιού του ποντικιού</mousebutton>."
-
-#: C/mousetweaks.xml:587(para)
-msgid ""
-"If the user releases the <mousebutton>primary mouse button</mousebutton> "
-"after the arrow of pointer has been completely filled with the new color, "
-"the <mousebutton>primary mouse button</mousebutton> events will be followed "
-"by a <mousebutton>secondary mouse button</mousebutton> click. In fact, "
-"mousetweaks creates this simulated <mousebutton>scondary mouse button</"
-"mousebutton> click as soon as the user releases the the <mousebutton>primary "
-"mouse button</mousebutton>."
-msgstr ""
-"Αν ο χρήστης ελευθερώσει το <mousebutton>πρωτεύον κουμπί του ποντικιού</"
-"mousebutton> μετά που το βέλος του δείκτη θα έχει γεμίζει πλήρως με το νέο "
-"χρώμα, τότε το γεγονός του <mousebutton>πρωτεύοντος κουμπιού του ποντικιού</"
-"mousebutton> θα ακολουθηθεί από ένα κλικ του <mousebutton>δευτερεύοντος "
-"κουμπιού του ποντικιού</mousebutton>. Στην πραγματικότητα το mousetweaks "
-"δημιουργεία αυτό το εξομοιωμένο κλικ του <mousebutton>δευτερεύοντος κουμπιού "
-"του ποντικιού</mousebutton> αμέσως μόλις ο χρήστης απελευθερώσει το "
-"<mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton>."
-
-#: C/mousetweaks.xml:597(para)
-msgid ""
-"On browser links, the simulated secondary click behaves differently: it does "
-"not wait for the user to release the <mousebutton>primary mouse button</"
-"mousebutton> before creating the simulated secondary click; the secondary "
-"click is created as soon as the time delay has elapsed. Previous versions of "
-"mousetweaks always behaved like this; but this behaviour had to be modified "
-"because of changes to the X server."
-msgstr ""
-"Πάνω σε συνδέσμους περιηγητή, το εξομοιωμένο δευτερεύον κλικ συμπεριφέρεται "
-"διαφορετικά: δεν περιμένει το χρήστη να απελευθερώσει το "
-"<mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton> προτού δημιουργήσει "
-"το εξομοιωμένο δευτερεύον κλικ. Το δευτερεύον κλικ δημιουργείται αμέσως "
-"μόλις περάσει ο χρόνος καθυστέρησης. Οι προηγούμενες εκδόσεις του "
-"mousetweaks δούλευαν με αυτόν τον τρόπο από πάντα, αλλά αυτή η συμπεριφορά "
-"έπρεπε να αλλάξει λόγω αλλαγών στον εξυπηρετητή X."
+#: C/mousetweaks.xml:600(para)
+msgid "If the user releases the <mousebutton>primary mouse button</mousebutton> before the arrow of the pointer has been completely filled with the new color, the system will only receive the information of the <mousebutton>primary mouse button</mousebutton> press and release."
+msgstr "Αν ο χρήστης ελευθερώσει το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton> πριν το βέλος του δείκτη γεμίσει εντελώς με το νέο χρώμα, τότε το σύστημα λαμβάνει μόνο την πληροφορία για το πάτημα και την ελευθέρωση του <mousebutton>πρωτεύοντος κουμπιού του ποντικιού</mousebutton>."
 
 #: C/mousetweaks.xml:606(para)
-msgid ""
-"The explanations above assumed that the pointer did not move between the "
-"<mousebutton>primary mouse button</mousebutton> press and release. If the "
-"pointer gets moved before the <mousebutton>primary mouse button</"
-"mousebutton> is released, no simulated secondary click will be created. "
-"Consequently, to cancel an initiated secondary click, the user only has to "
-"move the pointer before releasing the <mousebutton>primary mouse button</"
-"mousebutton>."
-msgstr ""
-"Στις πιο πάνω εξηγήσεις νοείται ότι ο δείκτης δε μετακινήθηκε μεταξύ του "
-"πατήματος και της ελευθέρωσης του <mousebutton>πρωτεύοντος κουμπιού του "
-"ποντικιού</mousebutton>. Αν ο δείκτης μετακινηθεί προτού το "
-"<mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton> ελευθερωθεί, τότε "
-"δε θα δημιουργηθεί εξομοιωμένο δευτερεύον κλικ. Συνεπώς, για να ακυρώσετε "
-"ένα ξεκινημένο δευτερεύον κλικ, μετακινήστε το δείκτη προτού ελευθερώσετε το "
-"<mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton>."
+#| msgid ""
+#| "If the user releases the <mousebutton>primary mouse button</mousebutton> "
+#| "after the arrow of pointer has been completely filled with the new color, "
+#| "the <mousebutton>primary mouse button</mousebutton> events will be "
+#| "followed by a <mousebutton>secondary mouse button</mousebutton> click. In "
+#| "fact, mousetweaks creates this simulated <mousebutton>scondary mouse "
+#| "button</mousebutton> click as soon as the user releases the the "
+#| "<mousebutton>primary mouse button</mousebutton>."
+msgid "If the user releases the <mousebutton>primary mouse button</mousebutton> after the arrow of pointer has been completely filled with the new color, the <mousebutton>primary mouse button</mousebutton> events will be followed by a <mousebutton>secondary mouse button</mousebutton> click. In fact, mousetweaks creates this simulated <mousebutton>secondary mouse button</mousebutton> click as soon as the user releases the the <mousebutton>primary mouse button</mousebutton>."
+msgstr "Αν ο χρήστης ελευθερώσει το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton> αφού το βέλος του δείκτη έχει γεμίζει πλήρως με το νέο χρώμα, τότε το γεγονός του <mousebutton>πρωτεύοντος κουμπιού του ποντικιού</mousebutton> θα ακολουθηθεί από ένα κλικ του <mousebutton>δευτερεύοντος κουμπιού του ποντικιού</mousebutton>. Στην πραγματικότητα το mousetweaks δημιουργεί αυτό το εξομοιωμένο κλικ του <mousebutton>δευτερεύοντος κουμπιού του ποντικιού</mousebutton> αμέσως μόλις ο χρήστης απελευθερώσει το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton>."
 
-#: C/mousetweaks.xml:616(title)
+#: C/mousetweaks.xml:615(para)
+msgid "The explanations above assumed that the pointer did not move between the <mousebutton>primary mouse button</mousebutton> press and release. If the pointer gets moved before the <mousebutton>primary mouse button</mousebutton> is released, no simulated secondary click will be created. Consequently, to cancel an initiated secondary click, the user only has to move the pointer before releasing the <mousebutton>primary mouse button</mousebutton>."
+msgstr "Στις πιο πάνω εξηγήσεις νοείται ότι ο δείκτης δε μετακινήθηκε μεταξύ του πατήματος και της ελευθέρωσης του <mousebutton>πρωτεύοντος κουμπιού του ποντικιού</mousebutton>. Αν ο δείκτης μετακινηθεί προτού το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton> ελευθερωθεί, τότε δε θα δημιουργηθεί εξομοιωμένο δευτερεύον κλικ. Συνεπώς, για να ακυρώσετε ένα ξεκινημένο δευτερεύον κλικ, μετακινήστε το δείκτη προτού ελευθερώσετε το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton>."
+
+#: C/mousetweaks.xml:623(para)
+msgid "Moreover, the fact that the simulated secondary click is immediately preceded by a left click makes it behave differently than expected when the preceding left click has an incidence on the object that is to receive the simulated secondary click. Please, have a look at the section about the <link linkend=\"mouse-a11y-ssc-pecularities\">Differences To The Normal Secondary Click</link> for more details."
+msgstr "Επιπλέον, το γεγονός ότι η εξομοίωση του δευτερεύοντος κλικ προηγείται αμέσως από ένα αριστερό κλικ το κάνει να συμπεριφέρεται διαφορετικά από το αναμενόμενο όταν το αριστερό κλικ που προηγήθηκε ενεργεί πάνω στο αντικείμενο που θα δεχθεί την εξομοίωση του δευτερεύοντος κλικ. Παρακαλώ, ρίχνει μια ματιά στο τμήμα <link linkend=\"mouse-a11y-ssc-pecularities\"> Οι διαφορές μεταξύ πρωτεύοντος και δευτερεύοντος κλικ</link> για περισσότερες λεπτομέρειες."
+
+#: C/mousetweaks.xml:633(title)
 msgid "The Delay Slider"
 msgstr "Ο Ολισθητής καθυστέρησης"
 
-#: C/mousetweaks.xml:618(para)
-msgid ""
-"How long the user has to hold the <mousebutton>primary mouse button</"
-"mousebutton> pressed, is determined by the <guilabel>Delay</guilabel> slider "
-"located under the activation checkbox. By using this slider, the user can "
-"choose the delay most appropriate to him."
-msgstr ""
-"Το πόσο ο χρήστης θα πρέπει να διατηρεί πατημένο το <mousebutton>πρωτεύον "
-"κουμπί του ποντικιού</mousebutton>, καθορίζεται από τον ολισθητή "
-"<guilabel>Καθυστέρηση</guilabel> που βρίσκεται στο πεδίο ελέγχου "
-"ενεργοποίησης. Χρησιμοποιώντας αυτόν τον ολισθητή, ο χρήστης μπορεί να "
-"επιλέξει την πιο κατάλληλη για τον ίδιο καθυστέρηση."
+#: C/mousetweaks.xml:635(para)
+msgid "How long the user has to hold the <mousebutton>primary mouse button</mousebutton> pressed, is determined by the <guilabel>Delay</guilabel> slider located under the activation checkbox. By using this slider, the user can choose the delay most appropriate to him."
+msgstr "Το πόσο ο χρήστης θα πρέπει να διατηρεί πατημένο το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton>, καθορίζεται από τον ολισθητή <guilabel>Καθυστέρηση</guilabel> που βρίσκεται στο πεδίο ελέγχου ενεργοποίησης. Χρησιμοποιώντας αυτόν τον ολισθητή, ο χρήστης μπορεί να επιλέξει την πιο κατάλληλη για τον ίδιο καθυστέρηση."
 
-#: C/mousetweaks.xml:626(title)
+#: C/mousetweaks.xml:643(title)
 msgid "Motion Threshold"
 msgstr "Κατώφλι κίνησης"
 
-#: C/mousetweaks.xml:628(para)
-msgid ""
-"People that have trouble to keep the pointer completely motionless can use "
-"the Motion Threshold slider of the Dwell Click feature. This setting makes "
-"mousetweaks ignore little mouse movements, so that the simulated secondary "
-"click is issued even if the pointer is not completely motionless. Please "
-"have a look at the section of the <link linkend=\"mouse-a11y-dwell-motion-"
-"treshold\">Motion Threshold slider of the Dwell Click feature</link> for "
-"more information about it."
-msgstr ""
-"Τα άτομα που έχουν πρόβλημα στο να διατηρήσουν το δείκτη απολύτως στατικό "
-"μπορούν να χρησιμοποιήσουν τον ολισθητή Κατώφλι κίνησης της λειτουργίας "
-"Κρατημένο κλικ. Η ρύθμιση αυτή κάνει το mousetweaks να παραβλέπει μικρές "
-"κινήσεις του ποντικιού, έτσι ώστε το προσομοιωμένο δευτερεύον κλικ  να "
-"εκδίδεται ακόμη κι αν ο δείκτης δεν είναι απόλυτα στατικός. Παρακαλώ ρίξτε "
-"μία ματιά στην ενότητα για το <link linkend=\"mouse-a11y-dwell-motion-"
-"treshold\">Κατώφλι κίνησης της λειτουργίας για το κρατημένο κλικ</link> για "
-"περισσότερες πληροφορίες σχετικά με αυτόν."
+#: C/mousetweaks.xml:645(para)
+msgid "People that have trouble to keep the pointer completely motionless can use the Motion Threshold slider of the Dwell Click feature. This setting makes mousetweaks ignore little mouse movements, so that the simulated secondary click is issued even if the pointer is not completely motionless. Please have a look at the section of the <link linkend=\"mouse-a11y-dwell-motion-treshold\">Motion Threshold slider of the Dwell Click feature</link> for more information about it."
+msgstr "Τα άτομα που έχουν πρόβλημα στο να διατηρήσουν το δείκτη απολύτως στατικό μπορούν να χρησιμοποιήσουν τον ολισθητή Κατώφλι κίνησης της λειτουργίας Κρατημένο κλικ. Η ρύθμιση αυτή κάνει το mousetweaks να παραβλέπει μικρές κινήσεις του ποντικιού, έτσι ώστε το προσομοιωμένο δευτερεύον κλικ  να εκδίδεται ακόμη κι αν ο δείκτης δεν είναι απόλυτα στατικός. Παρακαλώ ρίξτε μία ματιά στην ενότητα για το <link linkend=\"mouse-a11y-dwell-motion-treshold\">Κατώφλι κίνησης της λειτουργίας για το κρατημένο κλικ</link> για περισσότερες πληροφορίες σχετικά με αυτόν."
 
-#: C/mousetweaks.xml:638(para)
-msgid ""
-"The <guilabel>Motion Threshold</guilabel> slider that is located under the "
-"<guilabel>Dwell Click</guilabel> feature is also effective for the "
-"<guilabel>Simulated Secondary Click</guilabel> feature, even if the "
-"<guilabel>Dwell Click</guilabel> feature is disabled."
-msgstr ""
-"Ο ολισθητής <guilabel>Κατώφλι κίνησης</guilabel> που βρίσκεται στη "
-"λειτουργία <guilabel>Κρατημένο κλικ</guilabel> έχει αποτέλεσμα επίσης και "
-"για τη λειτουργία <guilabel>Προσομοιωμένο δευτερεύον κλικ</guilabel>, ακόμη "
-"κι αν είναι απενεργοποιημένη η λειτουργία <guilabel>Κρατημένο κλικ</"
-"guilabel>."
+#: C/mousetweaks.xml:655(para)
+msgid "The <guilabel>Motion Threshold</guilabel> slider that is located under the <guilabel>Dwell Click</guilabel> feature is also effective for the <guilabel>Simulated Secondary Click</guilabel> feature, even if the <guilabel>Dwell Click</guilabel> feature is disabled."
+msgstr "Ο ολισθητής <guilabel>Κατώφλι κίνησης</guilabel> που βρίσκεται στη λειτουργία <guilabel>Κρατημένο κλικ</guilabel> έχει αποτέλεσμα επίσης και για τη λειτουργία <guilabel>Προσομοιωμένο δευτερεύον κλικ</guilabel>, ακόμη κι αν είναι απενεργοποιημένη η λειτουργία <guilabel>Κρατημένο κλικ</guilabel>."
 
-#: C/mousetweaks.xml:647(title)
+#: C/mousetweaks.xml:664(title)
 msgid "Differences To The Normal Secondary Click"
 msgstr "Διαφορές στο κανονικό δευτερεύον κλικ"
 
-#: C/mousetweaks.xml:649(para)
-msgid ""
-"As the Simulated Secondary Click does not discard the<mousebutton> primary "
-"mouse button</mousebutton> press and release, the resulting primary click "
-"occurs just before the secondary click created by mousetweaks. Consequently, "
-"the simulated secondary click behaves a bit differently than the normal "
-"secondary click, because the latter is usually not preceeded immediately by "
-"a <mousebutton>primary mouse button</mousebutton> click. For example:"
-msgstr ""
-"Επειδή το προσομοιωμένο δευτερεύον κλικ δεν απορρίπτει το πάτημα του "
-"<mousebutton>πρωτεύοντος κουμπιού του ποντικιού</mousebutton>, υπάρχει πάντα "
-"ένα πρωτεύον κλικ πριν το προσομοιωμένο δευτερεύον κλικ. Συνεπώς, το "
-"προσομοιωμένο δευτερεύον κλικ συμπεριφέρεται λίγο διαφορετικά σχετικά με το "
-"κανονικό δευτερεύον κλικ, επειδή του τελευταίου συνήθως δεν προηγείται άμεσα "
-"ένα κλικ του <mousebutton>πρωτεύοντος κουμπιού του ποντικιού</mousebutton>. "
-"Για παράδειγμα:"
+#: C/mousetweaks.xml:666(para)
+#| msgid ""
+#| "As the Simulated Secondary Click does not discard the<mousebutton> "
+#| "primary mouse button</mousebutton> press and release, the resulting "
+#| "primary click occurs just before the secondary click created by "
+#| "mousetweaks. Consequently, the simulated secondary click behaves a bit "
+#| "differently than the normal secondary click, because the latter is "
+#| "usually not preceeded immediately by a <mousebutton>primary mouse button</"
+#| "mousebutton> click. For example:"
+msgid "As the Simulated Secondary Click does not discard the<mousebutton> primary mouse button</mousebutton> press and release, the resulting primary click occurs just before the secondary click created by mousetweaks. Consequently, the simulated secondary click behaves a bit differently than the normal secondary click, because the latter is usually not preceded immediately by a <mousebutton>primary mouse button</mousebutton> click. For example:"
+msgstr "Επειδή το προσομοιωμένο δευτερεύον κλικ δεν απορρίπτει το πάτημα και απελευθέρωση του <mousebutton>πρωτεύοντος κουμπιού του ποντικιού</mousebutton>, υπάρχει πάντα ένα πρωτεύον κλικ πριν το προσομοιωμένο δευτερεύον κλικ. Συνεπώς, το προσομοιωμένο δευτερεύον κλικ συμπεριφέρεται λίγο διαφορετικά σχετικά με το κανονικό δευτερεύον κλικ, επειδή του τελευταίου συνήθως δεν προηγείται άμεσα ενός κλικ του <mousebutton>πρωτεύοντος κουμπιού του ποντικιού</mousebutton>. Για παράδειγμα:"
 
-#: C/mousetweaks.xml:659(para)
-msgid ""
-"It is not possible to perform a secondary click on multiple items because "
-"the primary click issued before the secondary click deselects the items."
-msgstr ""
-"Δεν είναι δυνατό να πραγματοποιηθεί το δευτερεύον κλικ σε πολλαπλά "
-"αντικείμενα επειδή το πρωτεύον κλικ εκδόθηκε πριν αποεπιλέξει το δευτερεύον "
-"κλικ τα στοιχεία."
+#: C/mousetweaks.xml:676(para)
+msgid "It is not possible to perform a secondary click on multiple items because the primary click issued before the secondary click deselects the items."
+msgstr "Δεν είναι δυνατό να πραγματοποιηθεί το δευτερεύον κλικ σε πολλαπλά αντικείμενα επειδή το πρωτεύον κλικ εκδόθηκε πριν αποεπιλέξει το δευτερεύον κλικ τα στοιχεία."
 
-#: C/mousetweaks.xml:665(para)
-msgid ""
-"When the simulated secondary click is performed on the trash icon in the "
-"panel, not only does the contextual menu appear, but the trash folder also "
-"opens. (The former is caused by the secondary click, the latter by the "
-"primary click preceding the secondary click.)"
-msgstr ""
-"Όταν εφαρμοστεί το προσομοιωμένο δευτερεύον κλικ στο εικονίδιο των "
-"απορριμάτων στον πίνακα εφαρμογών, δεν εμφανίζεται μόνο το μενού "
-"περιεχομένου, αλλά ανοίγει επίσης και ο φάκελος απορριμάτων. (Το πρώτο "
-"προκαλείται από το δευτερεύον κλικ, το δεύτερο από το πρωτεύον κλικ πριν από "
-"το δευτερεύον κλικ.)"
+#: C/mousetweaks.xml:682(para)
+msgid "When performing a simulated secondary click on a link in a web page, the primary click, that precedes the simulated secondary click, opens the referenced page before the simulated secondary click has a chance to open the contextual menu of the link."
+msgstr "Κατά την εκτέλεση μιας εξομοίωσης του δευτερεύοντος κλικ σε μια σύνδεση ιστοσελίδας, το πρωτεύον κλικ, που προηγείται της εξομοίωσης του δευτερεύοντος κλικ, ανοίγει την εν λόγο ιστοσελίδα προτού η εξομοίωση του δευτερεύοντος κλικ προλάβει να ανοίξει τις αντίστοιχες επιλογές της σύνδεσης."
 
-#: C/mousetweaks.xml:674(para)
-msgid ""
-"It is not possible to provide a list of all diverging behaviours, because it "
-"depends on the reaction of the application receiving the secondary click "
-"preceded by a primary click."
-msgstr ""
-"Δεν είναι δυνατό να γίνει η παροχή μιας λίστας με όλες τις αποκλίνουσες "
-"συμπεριφορές, επειδή αυτό εξαρτάται από την αντίδραση της λήψης της "
-"εφαρμογής του δευτερεύοντος κλικ που ακολουθεί ένα πρωτεύον κλικ."
+#: C/mousetweaks.xml:688(para)
+msgid "The contextual menu of a link in a web page can be opened by performing a simulated secondary click while keeping the Ctrl modifier pressed. This works because the referenced page opens in a new tab when the link receives a primary click in conjunction with a pressed Ctrl modifier; which is also what happens as a side effect when opening the contextual menu of a link by using the simulated secondary click in conjunction with the Ctrl modifier."
+msgstr "Οι αντίστοιχες επιλογές μιας σύνδεσης σε μία ιστοσελίδα μπορούν να ανοίξουν με την εκτέλεση μιας εξομοίωσης του δευτερεύοντος κλικ κρατώντας το πλήκτρο τροποποιητή CTRL πατημένο. Αυτή η μέθοδος δουλεύει επειδή η εν λόγο ιστοσελίδα ανοίγει σε μια νέα καρτέλα όταν λαμβάνει το πρωτεύον κλικ με συνδυασμό με το πατημένο πλήκτρο τροποποιητή CTRL˙ που είναι επίσης αυτό που συμβαίνει ως παρενέργεια όταν ανοίγουμε τις αντίστοιχες επιλογές μιας σύνδεσης με τη χρήση εξομοίωσης του δευτερεύοντος κλικ από κοινού με τον πλήκτρο τροποποιητή CTRL."
 
-#: C/mousetweaks.xml:679(para)
-msgid ""
-"Looking at it the other way, it is no possible to perform a long motionless "
-"<mousebutton>primary mouse button</mousebutton> press, without also "
-"triggering the secondary click. This may also have unexpected consequences "
-"for some users. For example:"
-msgstr ""
-"Βλέποντάς το από την άλλη πλευρά, δεν είναι δυνατό να εφαρμοστεί ένα στατικό "
-"κλικ με μακρά διάρκεια με το <mousebutton>πρωτεύον κουμπί του ποντικιού</"
-"mousebutton>, χωρίς την ενεργοποίηση και του δευτερεύοντος κλικ. Αυτό μπορεί "
-"επίσης να έχει απρόσμενες επιπτώσεις για μερικούς χρήστες. Για παράδειγμα:"
+#: C/mousetweaks.xml:697(para)
+msgid "However the browser has to be configured to not automatically switch to the new tab when it opens; otherwise the page with the link disappears as the new tab becomes visible and the contextual menu does not appear."
+msgstr "Εντούτοις ο φυλλομετρητής θα πρέπει να διαμορφωθεί να μη μεταπηδά αυτόματα στη νέα καρτέλα όταν ανοίγει˙ διαφορετικά η σελίδα με τη σύνδεση μαζί με τις ανάλογες επιλογές εξαφανίζονται καθώς η νέα καρτέλα γίνεται ορατή."
 
-#: C/mousetweaks.xml:686(para)
-msgid ""
-"When releasing the primary button after keeping it pressed on the arrow of a "
-"scrollbar for more than the delay time, the scrollbar jumps to the bottom. "
-"This is in fact the normal behaviour of a secondary click on an arrow of a "
-"scrollbar."
-msgstr ""
-"Όταν ελευθερωθεί το πρωτεύον κουμπί μετά που θα διατηρηθεί πατημένο πάνω από "
-"το βέλος μίας γραμμής κύλισης για περισσότερο από το χρόνο καθυστέρησης, η "
-"γραμμή κύλισης μεταβαίνει προς τα κάτω μέχρι το τέλος. Αυτή είναι πράγματι η "
-"κανονική συμπεριφορά ενός δευτερεύοντος κλικ σε ένα βέλος της γραμμής "
-"κύλισης."
+#: C/mousetweaks.xml:705(para)
+msgid "When the simulated secondary click is performed on the trash icon in the panel, not only does the contextual menu appear, but the trash folder also opens. (The former is caused by the secondary click, the latter by the primary click preceding the secondary click.)"
+msgstr "Όταν εφαρμοστεί το προσομοιωμένο δευτερεύον κλικ στο εικονίδιο των απορριμάτων στον πίνακα εφαρμογών, δεν εμφανίζεται μόνο το μενού περιεχομένου, αλλά ανοίγει επίσης και ο φάκελος απορριμάτων. (Το πρώτο προκαλείται από το δευτερεύον κλικ, το δεύτερο από το πρωτεύον κλικ πριν από το δευτερεύον κλικ.)"
 
-#: C/mousetweaks.xml:692(para)
-msgid ""
-"To avoid that the scrollbar jumps to the bottom, simply move the pointer "
-"away from the arrow of the scrollbar before releasing the primary button; "
-"this way, the initiated simulated secondary click gets canceled."
-msgstr ""
-"Για να αποφύγετε τη μετακίνηση της μπάρας κύλισης στο τέλος της, απλά "
-"μετακινήστε το δείκτη από το βέλος αμέσως αφού πιέσετε το πρωτεύον κουμπί "
-"του ποντικιού. Με τον τρόπο αυτό ακυρώνεται το προσομοιωμένο δευτερεύον κλικ."
+#: C/mousetweaks.xml:714(para)
+msgid "It is not possible to provide a list of all diverging behaviours, because it depends on the reaction of the application receiving the secondary click preceded by a primary click."
+msgstr "Δεν είναι δυνατό να γίνει η παροχή μιας λίστας με όλες τις αποκλίνουσες συμπεριφορές, επειδή αυτό εξαρτάται από την αντίδραση της λήψης της εφαρμογής του δευτερεύοντος κλικ που ακολουθεί ένα πρωτεύον κλικ."
 
-#: C/mousetweaks.xml:703(title)
+#: C/mousetweaks.xml:719(para)
+#| msgid ""
+#| "Looking at it the other way, it is no possible to perform a long "
+#| "motionless <mousebutton>primary mouse button</mousebutton> press, without "
+#| "also triggering the secondary click. This may also have unexpected "
+#| "consequences for some users. For example:"
+msgid "Looking at it the other way, it is not possible to perform a long motionless <mousebutton>primary mouse button</mousebutton> press without also triggering the secondary click, unless the pointer is moved before the <mousebutton>primary mouse button</mousebutton> release. This may also have unexpected consequences for some users. For example:"
+msgstr "Βλέποντάς το από την άλλη πλευρά, δεν είναι δυνατό να εφαρμοστεί ένα στατικό κλικ με μακρά διάρκεια με το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton>, χωρίς την ενεργοποίηση και του δευτερεύοντος κλικ, εκτός αν ο δείκτης κινηθεί πριν απελευθερωθεί το <mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton>. Αυτό μπορεί επίσης να έχει απρόσμενες επιπτώσεις για μερικούς χρήστες. Για παράδειγμα:"
+
+#: C/mousetweaks.xml:728(para)
+msgid "When releasing the primary button after keeping it pressed on the arrow of a scrollbar for more than the delay time, the scrollbar jumps to the bottom. This is in fact the normal behaviour of a secondary click on an arrow of a scrollbar."
+msgstr "Όταν ελευθερωθεί το πρωτεύον κουμπί μετά που θα διατηρηθεί πατημένο πάνω από το βέλος μίας γραμμής κύλισης για περισσότερο από το χρόνο καθυστέρησης, η γραμμή κύλισης μεταβαίνει προς τα κάτω μέχρι το τέλος. Αυτή είναι πράγματι η κανονική συμπεριφορά ενός δευτερεύοντος κλικ σε ένα βέλος της γραμμής κύλισης."
+
+#: C/mousetweaks.xml:734(para)
+#| msgid ""
+#| "To avoid that the scrollbar jumps to the bottom, simply move the pointer "
+#| "away from the arrow of the scrollbar before releasing the primary button; "
+#| "this way, the initiated simulated secondary click gets canceled."
+msgid "To avoid that the scrollbar jumps to the bottom, simply move the pointer away from the arrow of the scrollbar before releasing the primary button; this way, the initiated simulated secondary click gets cancelled."
+msgstr "Για να αποφύγετε τη μετακίνηση της μπάρας κύλισης προς το τέλος της, απλά μετακινήστε το δείκτη από το βέλος της μπάρας κύλισης αμέσως αφού πιέσετε το πρωτεύον κουμπί του ποντικιού. Με τον τρόπο αυτό ακυρώνεται το προσομοιωμένο δευτερεύον κλικ."
+
+#: C/mousetweaks.xml:745(title)
 msgid "Dwell Click Description"
 msgstr "Περιγραφή κρατημένου κλικ"
 
-#: C/mousetweaks.xml:705(para)
-msgid ""
-"There are users that cannot use any hardware button. By activating the "
-"<guilabel>Dwell Click</guilabel>, they can have the mouse perform the "
-"various clicks without pressing any mouse button. The click types that can "
-"be performed are: single primary click, double click, drag click and "
-"secondary click."
-msgstr ""
-"Υπάρχουν χρήστες δεν μπορούν να χρησιμοποιήσουν κάποιο κουμπί. "
-"Ενεργοποιώντας το <guilabel>Κρατημένο κλικ</guilabel>, μπορούν να έχουν το "
-"ποντίκι τους να εφαρμόζει τα διάφορα κλικ χωρίς να πιέζουν κάποιο κλικ του "
-"ποντικιού. Οι τύποι κλικ που μπορούν να εφαρμοστούν είναι: το απλό πρωτεύον "
-"κλικ, το διπλό κλικ, το συρόμενο κλικ και το δευτερεύον κλικ."
+#: C/mousetweaks.xml:747(para)
+msgid "There are users that cannot use any hardware button. By activating the <guilabel>Dwell Click</guilabel>, they can have the mouse perform the various clicks without pressing any mouse button. The click types that can be performed are: single primary click, double click, drag click and secondary click."
+msgstr "Υπάρχουν χρήστες δεν μπορούν να χρησιμοποιήσουν κάποιο κουμπί. Ενεργοποιώντας το <guilabel>Κρατημένο κλικ</guilabel>, μπορούν να έχουν το ποντίκι τους να εφαρμόζει τα διάφορα κλικ χωρίς να πιέζουν κάποιο κλικ του ποντικιού. Οι τύποι κλικ που μπορούν να εφαρμοστούν είναι: το απλό πρωτεύον κλικ, το διπλό κλικ, το συρόμενο κλικ και το δευτερεύον κλικ."
 
-#: C/mousetweaks.xml:712(para)
-msgid ""
-"When the dwell click is active, the <mousebutton>mouse buttons</mousebutton> "
-"remain functional and it is still possible to click with the "
-"<mousebutton>mouse buttons</mousebutton>. Moreover, If the user performs a "
-"click with a <mousebutton>mouse button</mousebutton> while a dwell click is "
-"in progress, the dwell click gets stopped and no dwell click is generated; "
-"to initiate a new dwell click, the user has to move and stop moving the "
-"mouse as usual for the dwell click."
-msgstr ""
-"Όταν είναι ενεργοποιημένο το κρατημένο κλικ, τα <mousebutton>κουμπιά του "
-"ποντικιού</mousebutton> παραμένουν ενεργά και μπορούν να χρησιμοποιηθούν "
-"κανονικά. Επιπλέον, αν ο χρήστης πατήσει ένα από τα <mousebutton>κουμπιά του "
-"ποντικιού</mousebutton> ενώ βρίσκεται σε εξέλιξη ένα κρατημένο κλικ, τότε το "
-"κρατημένο κλικ σταματά και δεν παράγεται άλλο κρατημένο κλικ. Για να "
-"ξεκινήσει ένα νέο κρατημένο κλικ, ο χρήστης πρέπει να μετακινήσει και μετά "
-"να σταματήσει να μετακινεί το ποντίκι όπως συνήθως συμβαίνει με το κρατημένο "
-"κλικ."
+#: C/mousetweaks.xml:754(para)
+msgid "When the dwell click is active, the <mousebutton>mouse buttons</mousebutton> remain functional and it is still possible to click with the <mousebutton>mouse buttons</mousebutton>. Moreover, If the user performs a click with a <mousebutton>mouse button</mousebutton> while a dwell click is in progress, the dwell click gets stopped and no dwell click is generated; to initiate a new dwell click, the user has to move and stop moving the mouse as usual for the dwell click."
+msgstr "Όταν είναι ενεργοποιημένο το κρατημένο κλικ, τα <mousebutton>κουμπιά του ποντικιού</mousebutton> παραμένουν ενεργά και μπορούν να χρησιμοποιηθούν κανονικά. Επιπλέον, αν ο χρήστης πατήσει ένα από τα <mousebutton>κουμπιά του ποντικιού</mousebutton> ενώ βρίσκεται σε εξέλιξη ένα κρατημένο κλικ, τότε το κρατημένο κλικ σταματά και δεν παράγεται άλλο κρατημένο κλικ. Για να ξεκινήσει ένα νέο κρατημένο κλικ, ο χρήστης πρέπει να μετακινήσει και μετά να σταματήσει να μετακινεί το ποντίκι όπως συνήθως συμβαίνει με το κρατημένο κλικ."
 
-#: C/mousetweaks.xml:725(para)
-msgid ""
-"Each time the pointer stops moving, a dwell click is initiated. To give "
-"feedback to the user, mousetweaks will fill the arrow of the pointer with "
-"another color while it is counting down the time before the click completion "
-"kicks in."
-msgstr ""
-"Κάθε φορά που ο δείκτης σταματά να κινείται, εφαρμόζεται ένα κρατημένο κλικ. "
-"Για να δοθεί ανάδραση στο χρήστη, το mousetweaks θα συμπληρώσει το βέλος του "
-"δείκτη με άλλο χρώμα ενώ θα μετρά τον χρόνο πριν η ολοκλήρωση του κλικ "
-"εφαρμοστεί."
+#: C/mousetweaks.xml:767(para)
+msgid "Each time the pointer stops moving, a dwell click is initiated. To give feedback to the user, mousetweaks will fill the arrow of the pointer with another color while it is counting down the time before the click completion kicks in."
+msgstr "Κάθε φορά που ο δείκτης σταματά να κινείται, εφαρμόζεται ένα κρατημένο κλικ. Για να δοθεί ανάδραση στο χρήστη, το mousetweaks θα συμπληρώσει το βέλος του δείκτη με άλλο χρώμα ενώ θα μετρά τον χρόνο πριν η ολοκλήρωση του κλικ εφαρμοστεί."
 
-#: C/mousetweaks.xml:730(para)
-msgid ""
-"How the click is completed and how the click type is chosen depends on what "
-"dwell mode the user has selected. The two available modes are:"
-msgstr ""
-"Ο τρόπος με τον οποίο συμπληρώνεται και επιλέγεται ο τύπος του κλικ "
-"εξαρτάται από τη λειτουργία του κρατημένου κλικ που έχει επιλέξει ο χρήστης. "
-"Οι δύο διαθέσιμες λειτουργίες είναι οι εξής:"
+#: C/mousetweaks.xml:772(para)
+msgid "How the click is completed and how the click type is chosen depends on what dwell mode the user has selected. The two available modes are:"
+msgstr "Ο τρόπος με τον οποίο συμπληρώνεται και επιλέγεται ο τύπος του κλικ εξαρτάται από τη λειτουργία του κρατημένου κλικ που έχει επιλέξει ο χρήστης. Οι δύο διαθέσιμες λειτουργίες είναι οι εξής:"
 
-#: C/mousetweaks.xml:736(para)
+#: C/mousetweaks.xml:778(para)
 msgid "Choose type of click beforehand"
 msgstr "Επιλέξτε πρώτα τον τύπο του κλικ"
 
-#: C/mousetweaks.xml:740(para)
+#: C/mousetweaks.xml:782(para)
 msgid "Choose type of click with mouse gestures"
 msgstr "Επιλέξτε τον τύπο του κλικ με κινήσεις του ποντικιού"
 
-#: C/mousetweaks.xml:751(para)
+#: C/mousetweaks.xml:793(para)
 msgid "Picture showing the radio buttons to select dwell mode"
-msgstr ""
-"Εικόνα που εμφανίζει τα κουμπιά εκπομπής για την επιλογή της λειτουργίας "
-"κρατήματος κλικ"
+msgstr "Εικόνα που εμφανίζει τα κουμπιά εκπομπής για την επιλογή της λειτουργίας κρατήματος κλικ"
 
-#: C/mousetweaks.xml:756(para)
-msgid ""
-"To select the mode, the user only has to click on the radio button that "
-"corresponds to his choice."
-msgstr ""
-"Για να επιλέξει τη λειτουργία, ο χρήστης πρέπει μόνο να κάνει κλικ στο "
-"κουμπί εκπομπής που αντιστοιχεί στην επιλογή του."
+#: C/mousetweaks.xml:798(para)
+msgid "To select the mode, the user only has to click on the radio button that corresponds to his choice."
+msgstr "Για να επιλέξει τη λειτουργία, ο χρήστης πρέπει μόνο να κάνει κλικ στο κουμπί εκπομπής που αντιστοιχεί στην επιλογή του."
 
-#: C/mousetweaks.xml:760(title)
+#: C/mousetweaks.xml:802(title)
 msgid "Automatic Click Completion With Click Type Choice Beforehand"
 msgstr "Ολοκλήρωση αυτόματου κλικ με πρόωρη επιλογή του τύπου κλικ"
 
-#: C/mousetweaks.xml:763(para)
-msgid ""
-"This mode is active when the user selects <guilabel>Choose type of click "
-"beforehand</guilabel>. In fact, after the mouse has been motionless for the "
-"time defined by the <guilabel>Delay</guilabel> slider, the system will "
-"automatically perform the click type that is selected in the Click Type "
-"Window shown here:"
-msgstr ""
-"Η λειτουργία αυτή είναι ενεργή όταν ο χρήστης επιλέγει <guilabel>Επιλογή "
-"πρώτα του τύπου για το κλικ</guilabel>. Πράγματι, αφού γίνει στατικό το "
-"ποντίκι για το χρόνο που καθορίστηκε από τον ολισθητή <guilabel>Καθυστέρηση</"
-"guilabel>, το σύστημα θα εφαρμόσει αυτόματα τον τύπου του κλικ που "
-"επιλέχθηκε στο παράθυρο με τα είδη κλικ που εμφανίζεται εδώ:"
+#: C/mousetweaks.xml:805(para)
+msgid "This mode is active when the user selects <guilabel>Choose type of click beforehand</guilabel>. In fact, after the mouse has been motionless for the time defined by the <guilabel>Delay</guilabel> slider, the system will automatically perform the click type that is selected in the Click Type Window shown here:"
+msgstr "Η λειτουργία αυτή είναι ενεργή όταν ο χρήστης επιλέγει <guilabel>Επιλογή πρώτα του τύπου για το κλικ</guilabel>. Πράγματι, αφού γίνει στατικό το ποντίκι για το χρόνο που καθορίστηκε από τον ολισθητή <guilabel>Καθυστέρηση</guilabel>, το σύστημα θα εφαρμόσει αυτόματα τον τύπου του κλικ που επιλέχθηκε στο παράθυρο με τα είδη κλικ που εμφανίζεται εδώ:"
 
-#: C/mousetweaks.xml:777(para)
+#: C/mousetweaks.xml:819(para)
 msgid "Picture showing the click type window"
 msgstr "Εικόνα που εμφανίζει το παράθυρο με τα είδη για κλικ"
 
-#: C/mousetweaks.xml:781(para)
-msgid ""
-"To display the <guimenu>Click Type Window</guimenu> on the screen, the user "
-"has to put a checkmark <application>in the checkbox named "
-"<quote><guilabel>Show click type window</guilabel></quote>:</application>"
-msgstr ""
-"Για να εμφανιστεί το <guimenu>Παράθυρο με τα είδη κλικ</guimenu> στην οθόνη, "
-"ο χρήστης θα πρέπει να επιλέξει το <application>πεδίο ελέγχου που ονομάζεται "
-"<quote><guilabel>παράθυρο Εμφάνιση τύπου κλικ</guilabel></quote>:</"
-"application>"
-
-#: C/mousetweaks.xml:793(para)
-msgid "Picture with the checkbox to display the click type window"
-msgstr ""
-"Εικόνα με το πεδίο ελέγχου για την εμφάνιση του παραθύρου για τον τύπο κλικ"
-
-#: C/mousetweaks.xml:798(para)
-msgid ""
-"After the click has occurred, the single click type will be automatically "
-"restored. In order to choose another click type, the user has to perform an "
-"automatic click on the <guibutton>button</guibutton> in the <guilabel>Click "
-"Type Window</guilabel> that corresponds to his click type choice."
-msgstr ""
-"Αφού εφαρμοστεί το κλικ, ο απλός τύπος κλικ θα επανέλθει αυτόματα. Για να "
-"επιλέξει κάποιον άλλο τύπο κλικ, ο χρήστης θα πρέπει να εφαρμόσει ένα "
-"αυτόματο κλικ στο <guibutton>κουμπί</guibutton> στο <guilabel>παράθυρο για "
-"τον τύπο κλικ</guilabel> που αντιστοιχεί στην επιλογή του για τον τύπο κλικ."
-
-#: C/mousetweaks.xml:804(para)
-msgid ""
-"Instead of the Click Type Window some users might prefer to use the "
-"<guilabel>Dwell Click</guilabel> panel applet, that has some advantages:."
-msgstr ""
-"Αντί για το παράθυρο για τον τύπο του κλικ μερικοί χρήστες προτιμούν να "
-"χρησιμοποιούν τη μικροεφαρμογή του πίνακα εφαρμογών για το "
-"<guilabel>Κρατημένο κλικ</guilabel>, η οποία έχει μερικά πλεονεκτήματα:."
-
 #: C/mousetweaks.xml:823(para)
-msgid ""
-"The user does not need the <guilabel>Click Type Window</guilabel> that might "
-"cover other windows on the desktop."
-msgstr ""
-"Οι χρήστες δεν χρειάζονται το <guilabel>παράθυρο για τον τύπο κλικ</"
-"guilabel> που ενδεχομένως να καλύπτει άλλα παράθυρα στην επιφάνεια εργασίας."
+msgid "To display the <guimenu>Click Type Window</guimenu> on the screen, the user has to put a checkmark <application>in the checkbox named <quote><guilabel>Show click type window</guilabel></quote>:</application>"
+msgstr "Για να εμφανιστεί το <guimenu>Παράθυρο με τα είδη κλικ</guimenu> στην οθόνη, ο χρήστης θα πρέπει να επιλέξει το <application>πεδίο ελέγχου που ονομάζεται <quote><guilabel>παράθυρο Εμφάνιση τύπου κλικ</guilabel></quote>:</application>"
 
-#: C/mousetweaks.xml:829(para)
-msgid ""
-"The user has a direct way to start and stop the dwell click by using the "
-"<guilabel>On/Off</guilabel> button of the <guilabel>Dwell Click</guilabel> "
-"applet. This is especially useful when he wants to disable dwelling for a "
-"little while to read some text without the interference of a dwell click."
-msgstr ""
-"Ο χρήστης έχει έναν απευθείας τρόπο για να ξεκινήσει και να διακόψει το "
-"κρατημένο κλικ χρησιμοποιώντας το κουμπί <guilabel>Ενεργό/Ανενεργό</"
-"guilabel> της εφαρμογής για το <guilabel>Κρατημένο κλικ</guilabel>. Αυτό "
-"είναι χρήσιμο ειδικά όταν επιθυμεί να απενεργοποιήσει το κρατημένο κλικ για "
-"λίγο ενώ θα διαβάζει κάποιο κείμενο χωρίς την παρέμβαση ενός κρατημένου κλικ."
+#: C/mousetweaks.xml:835(para)
+msgid "Picture with the checkbox to display the click type window"
+msgstr "Εικόνα με το πεδίο ελέγχου για την εμφάνιση του παραθύρου για τον τύπο κλικ"
 
-#: C/mousetweaks.xml:820(para)
-msgid ""
-"Indeed, by using the <guilabel>Dwell Click</guilabel> panel applet: "
-"<placeholder-1/>"
-msgstr ""
-"Πράγματι, χρησιμοποιώντας τη μικροεφαρμογή <guilabel>Κρατημένο κλικ</"
-"guilabel> του πίνακα εφαρμογών: <placeholder-1/>"
+#: C/mousetweaks.xml:840(para)
+msgid "After the click has occurred, the single click type will be automatically restored. In order to choose another click type, the user has to perform an automatic click on the <guibutton>button</guibutton> in the <guilabel>Click Type Window</guilabel> that corresponds to his click type choice."
+msgstr "Αφού εφαρμοστεί το κλικ, ο απλός τύπος κλικ θα επανέλθει αυτόματα. Για να επιλέξει κάποιον άλλο τύπο κλικ, ο χρήστης θα πρέπει να εφαρμόσει ένα αυτόματο κλικ στο <guibutton>κουμπί</guibutton> στο <guilabel>παράθυρο για τον τύπο κλικ</guilabel> που αντιστοιχεί στην επιλογή του για τον τύπο κλικ."
 
-#: C/mousetweaks.xml:838(para)
-msgid ""
-"To display the <guilabel>Dwell Click</guilabel> applet on the GNOME panel, "
-"the user has to follow the usual procedure to add applets to the GNOME "
-"panel. An example about how to do it can be found in the section <link "
-"linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture "
-"Function</link>."
-msgstr ""
-"Για να εμφανίσει τη μικροεφαρμογή <guilabel>Κρατημένο κλικ</guilabel> στον "
-"πίνακα εφαρμογών του Gnome, ο χρήστης θα πρέπει να ακολουθήσει τη συνήθη "
-"διαδικασία της προφθήκης μικροεφαρμογών στον πίνακα εφαρμογών του Gnome. Ένα "
-"παράδειγμα σχετικά με τον τρόπο που θα γίνει αυτό μπορεί να βρεθεί στην "
-"ενότητα <link linkend=\"mouse-a11y-start-pointer-capture\">Εκκίνηση της "
-"λειτουργίας σύλληψης του δείκτη</link>."
+#: C/mousetweaks.xml:846(para)
+msgid "Instead of the Click Type Window some users might prefer to use the <guilabel>Dwell Click</guilabel> panel applet, that has some advantages:."
+msgstr "Αντί για το παράθυρο για τον τύπο του κλικ μερικοί χρήστες προτιμούν να χρησιμοποιούν τη μικροεφαρμογή του πίνακα εφαρμογών για το <guilabel>Κρατημένο κλικ</guilabel>, η οποία έχει μερικά πλεονεκτήματα:."
 
-#: C/mousetweaks.xml:845(para)
-msgid ""
-"The <guilabel>Click Type Window</guilabel> and the <guilabel>Dwell Click</"
-"guilabel> applet can be used simultaneously or each on its own."
-msgstr ""
-"Η μικροεφαρμογή <guilabel>παράθυρο για τον τύπο κλικ</guilabel> και το "
-"<guilabel>κρατημένο κλικ</guilabel> μπορούν να χρησιμοποιηθούν ταυτόχρονα ή "
-"μόνες τους."
+#: C/mousetweaks.xml:865(para)
+msgid "The user does not need the <guilabel>Click Type Window</guilabel> that might cover other windows on the desktop."
+msgstr "Οι χρήστες δεν χρειάζονται το <guilabel>παράθυρο για τον τύπο κλικ</guilabel> που ενδεχομένως να καλύπτει άλλα παράθυρα στην επιφάνεια εργασίας."
 
-#: C/mousetweaks.xml:851(title)
+#: C/mousetweaks.xml:871(para)
+msgid "The user has a direct way to start and stop the dwell click by using the <guilabel>On/Off</guilabel> button of the <guilabel>Dwell Click</guilabel> applet. This is especially useful when he wants to disable dwelling for a little while to read some text without the interference of a dwell click."
+msgstr "Ο χρήστης έχει έναν απευθείας τρόπο για να ξεκινήσει και να διακόψει το κρατημένο κλικ χρησιμοποιώντας το κουμπί <guilabel>Ενεργό/Ανενεργό</guilabel> της εφαρμογής για το <guilabel>Κρατημένο κλικ</guilabel>. Αυτό είναι χρήσιμο ειδικά όταν επιθυμεί να απενεργοποιήσει το κρατημένο κλικ για λίγο ενώ θα διαβάζει κάποιο κείμενο χωρίς την παρέμβαση ενός κρατημένου κλικ."
+
+#: C/mousetweaks.xml:862(para)
+msgid "Indeed, by using the <guilabel>Dwell Click</guilabel> panel applet: <placeholder-1/>"
+msgstr "Πράγματι, χρησιμοποιώντας τη μικροεφαρμογή <guilabel>Κρατημένο κλικ</guilabel> του πίνακα εφαρμογών: <placeholder-1/>"
+
+#: C/mousetweaks.xml:880(para)
+msgid "To display the <guilabel>Dwell Click</guilabel> applet on the GNOME panel, the user has to follow the usual procedure to add applets to the GNOME panel. An example about how to do it can be found in the section <link linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture Function</link>."
+msgstr "Για να εμφανίσει τη μικροεφαρμογή <guilabel>Κρατημένο κλικ</guilabel> στον πίνακα εφαρμογών του Gnome, ο χρήστης θα πρέπει να ακολουθήσει τη συνήθη διαδικασία της προφθήκης μικροεφαρμογών στον πίνακα εφαρμογών του Gnome. Ένα παράδειγμα σχετικά με τον τρόπο που θα γίνει αυτό μπορεί να βρεθεί στην ενότητα <link linkend=\"mouse-a11y-start-pointer-capture\">Εκκίνηση της λειτουργίας σύλληψης του δείκτη</link>."
+
+#: C/mousetweaks.xml:887(para)
+msgid "The <guilabel>Click Type Window</guilabel> and the <guilabel>Dwell Click</guilabel> applet can be used simultaneously or each on its own."
+msgstr "Η μικροεφαρμογή <guilabel>παράθυρο για τον τύπο κλικ</guilabel> και το <guilabel>κρατημένο κλικ</guilabel> μπορούν να χρησιμοποιηθούν ταυτόχρονα ή μόνες τους."
+
+#: C/mousetweaks.xml:893(title)
 msgid "Click Completion And Click Type Choice By Mouse Gesture"
 msgstr "Ολοκλήρωση κλικ και επιλογή τύπου κλικ με κίνηση του ποντικιού"
 
-#: C/mousetweaks.xml:854(para)
-msgid ""
-"This mode is active when the user selects <guilabel>Choose type of click "
-"with mouse gestures</guilabel>. In fact, after the mouse has been motionless "
-"for the delay defined by the <link linkend=\"mouse-a11y-dwell-delay\">Delay "
-"slider</link>, the shape of the pointer will change for a little time lapse; "
-"let's call this shape the gesture shape:"
-msgstr ""
-"Η λειτουργία αυτή είναι ενεργή όταν ο χρήστης επιλέγει <guilabel>Επιλογή "
-"τύπου κλικ με κινήσεις του ποντικιού</guilabel>. Πράγματι, αφού ο δείκτης "
-"έχει γίνει στατικός για την καθυστέρηση που καθορίστηκε από τον <link "
-"linkend=\"mouse-a11y-dwell-delay\">Ολισθητή καθυστέρησης</link>, το σχήμα "
-"του δείκτη θα τροποποιηθεί για μία μικρή χρονική παρέκκλιση. Ας ονομάσουμε "
-"το σχήμα αυτό ως σχήμα κίνησης:"
-
-#: C/mousetweaks.xml:863(para)
-msgid ""
-"If the user moves the pointer while it is showing the gesture shape, a click "
-"is performed at the location where the pointer was last motionless; finally "
-"the pointer returns to its normal shape. The type of click performed depends "
-"on the direction of the movement of the mouse. During the movement of the "
-"pointer, a line is drawn following the movement of the pointer to give "
-"feedback to the user."
-msgstr ""
-"Αν ο χρήστη μετακινήσει το δείκτη ενώ εμφανίζεται το σχήμα της κίνησής του, "
-"εφαρμόζεται ένα κλικ στην περιοχή όπου ο δείκτης ήταν στατικός για τελευταία "
-"φορά. Τελικά ο δείκτης επιστρέφει στο κανονικό του σχήμα. Ο τύπος του κλικ "
-"που εφαρμόζεται εξαρτάται από την κατεύθυνση της κίνησης του ποντικιού. Κατά "
-"τη διάρκεια της κίνησης του δείκτη, σχεδιάζεται μία γραμμή που ακολουθεί την "
-"κίνησή του ώστε να δοθεί ανάδραση προς το χρήστη."
-
-#: C/mousetweaks.xml:873(para)
-msgid ""
-"If the user keeps the pointer motionless until it returns to its normal "
-"shape, the user can move the mouse without a click being performed. The next "
-"dwell click can be performed at the next pointer stop."
-msgstr ""
-"Αν ο χρήστης διατηρεί στατικό το δείκτη μέχρι αυτός να επιστρέψει στο "
-"κανονικό του σχήμα, τότε μπορεί να μετακινήσει το ποντίκι του χωρίς να "
-"εφαρμόσει κάποιο κλικ. Το επόμενο κρατημένο κλικ μπορεί να εφαρμοστεί στην "
-"επόμενη διακοπή κίνησης του δέικτη."
-
-#: C/mousetweaks.xml:880(para)
-msgid ""
-"The user also has the possibility to match click type with movement "
-"direction by using the 4 <guimenu>popups</guimenu> available:"
-msgstr ""
-"Ο χρήστης έχει τη δυνατότητα επίσης να ταιριάξει τον τύπο του κλικ με την "
-"κατεύθυνση της κίνησης χρησιμοποιώντας τα 4 διαθέσιμα <guimenu>αναδυόμενα "
-"παράθυρα</guimenu>:"
-
-#: C/mousetweaks.xml:891(para)
-msgid ""
-"Picture showing the configuration options to map click type to movement "
-"direction"
-msgstr ""
-"Εικόνα που εμφανίζει τις επιλογές για τις ρυθμίσεις που θα προδιαγράφουν τον "
-"τύπο του κλικ με την κατεύθυνση της κίνησης"
-
 #: C/mousetweaks.xml:896(para)
-msgid ""
-"There is also a <guimenuitem>Disabled</guimenuitem> menu item in each "
-"<guimenu>popup</guimenu>. The user can select it if he does not want some "
-"click types to be performed automatically. This is especially interesting "
-"for users that have problems with only certain click types."
-msgstr ""
-"Υπάρχει επίσης ένα <guimenuitem>Απενεργοποιημένο</guimenuitem> στοιχείο του "
-"μενού σε κάθε <guimenu>αναδυόμενο παράθυρο</guimenu>. Ο χρήστης μπορεί να το "
-"επιλέξει αν δεν επιθυμεί μερικοί τύποι κλικ να εφαρμόζονται αυτόματα. Αυτό "
-"είναι ενδιαφέρον ειδικά για χρήστες που έχουν προβλήματα με μόνο μερικούς "
-"τύπους κλικ."
+msgid "This mode is active when the user selects <guilabel>Choose type of click with mouse gestures</guilabel>. In fact, after the mouse has been motionless for the delay defined by the <link linkend=\"mouse-a11y-dwell-delay\">Delay slider</link>, the shape of the pointer will change for a little time lapse; let's call this shape the gesture shape:"
+msgstr "Η λειτουργία αυτή είναι ενεργή όταν ο χρήστης επιλέγει <guilabel>Επιλογή τύπου κλικ με κινήσεις του ποντικιού</guilabel>. Πράγματι, αφού ο δείκτης έχει γίνει στατικός για την καθυστέρηση που καθορίστηκε από τον <link linkend=\"mouse-a11y-dwell-delay\">Ολισθητή καθυστέρησης</link>, το σχήμα του δείκτη θα τροποποιηθεί για μία μικρή χρονική παρέκκλιση. Ας ονομάσουμε το σχήμα αυτό ως σχήμα κίνησης:"
 
-#: C/mousetweaks.xml:905(title)
+#: C/mousetweaks.xml:905(para)
+msgid "If the user moves the pointer while it is showing the gesture shape, a click is performed at the location where the pointer was last motionless; finally the pointer returns to its normal shape. The type of click performed depends on the direction of the movement of the mouse. During the movement of the pointer, a line is drawn following the movement of the pointer to give feedback to the user."
+msgstr "Αν ο χρήστη μετακινήσει το δείκτη ενώ εμφανίζεται το σχήμα της κίνησής του, εφαρμόζεται ένα κλικ στην περιοχή όπου ο δείκτης ήταν στατικός για τελευταία φορά. Τελικά ο δείκτης επιστρέφει στο κανονικό του σχήμα. Ο τύπος του κλικ που εφαρμόζεται εξαρτάται από την κατεύθυνση της κίνησης του ποντικιού. Κατά τη διάρκεια της κίνησης του δείκτη, σχεδιάζεται μία γραμμή που ακολουθεί την κίνησή του ώστε να δοθεί ανάδραση προς το χρήστη."
+
+#: C/mousetweaks.xml:915(para)
+msgid "If the user keeps the pointer motionless until it returns to its normal shape, the user can move the mouse without a click being performed. The next dwell click can be performed at the next pointer stop."
+msgstr "Αν ο χρήστης διατηρεί στατικό το δείκτη μέχρι αυτός να επιστρέψει στο κανονικό του σχήμα, τότε μπορεί να μετακινήσει το ποντίκι του χωρίς να εφαρμόσει κάποιο κλικ. Το επόμενο κρατημένο κλικ μπορεί να εφαρμοστεί στην επόμενη διακοπή κίνησης του δέικτη."
+
+#: C/mousetweaks.xml:922(para)
+msgid "The user also has the possibility to match click type with movement direction by using the 4 <guimenu>popups</guimenu> available:"
+msgstr "Ο χρήστης έχει τη δυνατότητα επίσης να ταιριάξει τον τύπο του κλικ με την κατεύθυνση της κίνησης χρησιμοποιώντας τα 4 διαθέσιμα <guimenu>αναδυόμενα παράθυρα</guimenu>:"
+
+#: C/mousetweaks.xml:933(para)
+msgid "Picture showing the configuration options to map click type to movement direction"
+msgstr "Εικόνα που εμφανίζει τις επιλογές για τις ρυθμίσεις που θα προδιαγράφουν τον τύπο του κλικ με την κατεύθυνση της κίνησης"
+
+#: C/mousetweaks.xml:938(para)
+msgid "There is also a <guimenuitem>Disabled</guimenuitem> menu item in each <guimenu>popup</guimenu>. The user can select it if he does not want some click types to be performed automatically. This is especially interesting for users that have problems with only certain click types."
+msgstr "Υπάρχει επίσης ένα <guimenuitem>Απενεργοποιημένο</guimenuitem> στοιχείο του μενού σε κάθε <guimenu>αναδυόμενο παράθυρο</guimenu>. Ο χρήστης μπορεί να το επιλέξει αν δεν επιθυμεί μερικοί τύποι κλικ να εφαρμόζονται αυτόματα. Αυτό είναι ενδιαφέρον ειδικά για χρήστες που έχουν προβλήματα με μόνο μερικούς τύπους κλικ."
+
+#: C/mousetweaks.xml:947(title)
 msgid "Dwell Delay Setting"
 msgstr "Ρύθμιση για την καθυστέρηση του κλικ"
 
-#: C/mousetweaks.xml:907(para)
-msgid ""
-"With the <guilabel>Delay</guilabel> slider, the user can configure how long "
-"the pointer has to be motionless for the click to be initiated."
-msgstr ""
-"Με τον ολισθητή <guilabel>Καθυστέρηση</guilabel>, ο χρήστης μπορεί να "
-"ρυθμίσει για πόσο πρέπει να παραμείνει στατικός ο δείκτης μέχρι να "
-"εφαρμοστεί το κλικ."
+#: C/mousetweaks.xml:949(para)
+msgid "With the <guilabel>Delay</guilabel> slider, the user can configure how long the pointer has to be motionless for the click to be initiated."
+msgstr "Με τον ολισθητή <guilabel>Καθυστέρηση</guilabel>, ο χρήστης μπορεί να ρυθμίσει για πόσο πρέπει να παραμείνει στατικός ο δείκτης μέχρι να εφαρμοστεί το κλικ."
 
-#: C/mousetweaks.xml:918(para)
+#: C/mousetweaks.xml:960(para)
 msgid "Picture showing the delay slider of the dwell click"
 msgstr "Εικόνα που εμφανίζει τον ολισθητή καθυστέρησης για το κρατημένο κλικ"
 
-#: C/mousetweaks.xml:923(para)
+#: C/mousetweaks.xml:965(para)
 msgid "The dwell delay only works in the context of the dwell click."
 msgstr "Η καθυστέρηση λειτουργεί μόνο στο περιβάλλον του κρατημένου κλικ."
 
-#: C/mousetweaks.xml:929(title)
+#: C/mousetweaks.xml:971(title)
 msgid "Motion Threshold Setting"
 msgstr "Ρύθμιση για το κατώφλι κίνησης"
 
-#: C/mousetweaks.xml:931(para)
-msgid ""
-"For people that have trouble to keep the mouse motionless, there is the "
-"<guilabel>Motion Threshold</guilabel> slider."
-msgstr ""
-"Για άτομα που έχουν πρόβλημα ώστε να διατηρούν στατικό το ποντίκι, υπάρχει ο "
-"ολισθητής <guilabel>Κατώφλι κίνησης</guilabel>."
+#: C/mousetweaks.xml:973(para)
+msgid "For people that have trouble to keep the mouse motionless, there is the <guilabel>Motion Threshold</guilabel> slider."
+msgstr "Για άτομα που έχουν πρόβλημα ώστε να διατηρούν στατικό το ποντίκι, υπάρχει ο ολισθητής <guilabel>Κατώφλι κίνησης</guilabel>."
 
-#: C/mousetweaks.xml:941(para)
+#: C/mousetweaks.xml:983(para)
 msgid "Picture showing the motion threshold slider of the dwell click"
-msgstr ""
-"Εικόνα που εμφανίζει τον ολισθητή για το κατώφλι κίνησης για το κρατημένο "
-"κλικ"
+msgstr "Εικόνα που εμφανίζει τον ολισθητή για το κατώφλι κίνησης για το κρατημένο κλικ"
 
-#: C/mousetweaks.xml:946(para)
-msgid ""
-"When the slider is set towards low, even little mouse movements are "
-"considered; however, by setting a higher threshold, the pointer has to "
-"travel a bigger distance before it is considered as moving."
-msgstr ""
-"Όταν ο ολισθητής καθορίζεται προς τα κάτω, λαμβάνονται υπόψη ακ'όμα και "
-"μικρές κινήσεις του ποντικιού. Παρόλα αυτά, καθορίζοντας ένα υψηλότερο "
-"κατώφλι, ο δείκτης πρέπει να διαγράφει μία μεγαλύτερη απόσταση πριν θεωρηθεί "
-"ότι κινείται."
+#: C/mousetweaks.xml:988(para)
+msgid "When the slider is set towards low, even little mouse movements are considered; however, by setting a higher threshold, the pointer has to travel a bigger distance before it is considered as moving."
+msgstr "Όταν ο ολισθητής καθορίζεται προς τα κάτω, λαμβάνονται υπόψη ακ'όμα και μικρές κινήσεις του ποντικιού. Παρόλα αυτά, καθορίζοντας ένα υψηλότερο κατώφλι, ο δείκτης πρέπει να διαγράφει μία μεγαλύτερη απόσταση πριν θεωρηθεί ότι κινείται."
 
-#: C/mousetweaks.xml:952(para)
-msgid ""
-"The Motion Threshold setting does not only work for the Dwell Click, but "
-"also for the Simulated Secondary Click, even if the Dwell Click is disabled."
-msgstr ""
-"Η ρύθμιση για το κατώφλι κίνησης δε λειτουργεί μόνο για το κρατημένο κλικ, "
-"αλλά επίσης για το προσομοιωμένο δευτερεύον κλικ, ακόμη κι αν αυτό είναι "
-"απενεργοποιημένο."
+#: C/mousetweaks.xml:994(para)
+msgid "The Motion Threshold setting does not only work for the Dwell Click, but also for the Simulated Secondary Click, even if the Dwell Click is disabled."
+msgstr "Η ρύθμιση για το κατώφλι κίνησης δε λειτουργεί μόνο για το κρατημένο κλικ, αλλά επίσης για το προσομοιωμένο δευτερεύον κλικ, ακόμη κι αν αυτό είναι απενεργοποιημένο."
 
-#: C/mousetweaks.xml:960(title)
+#: C/mousetweaks.xml:1002(title)
 msgid "Locking The Pointer Description"
 msgstr "Κλείδωμα της περιγραφής δείκτη"
 
-#: C/mousetweaks.xml:962(para)
-msgid ""
-"There are people that have to use their pointing device not only for the "
-"computer. These people would welcome a way to lock the pointer into an area "
-"of the screen, so that they can use their pointing device for other tasks."
-msgstr ""
-"Υπάρχουν άτομα που πρέπει να χρησιμοποιούν το ποντίκι τους όχι μόνο για τον "
-"υπολογιστή. Τα άτομα αυτά θα προτιμούσαν έναν τρόπο ώστε να κλειδώνουν το "
-"δείκτη σε μία περιοχή της οθόνης, έτσι ώστε να μπορούν να χρησιμοποιήσουν το "
-"ποντίκι τους για άλλες εργασίες."
+#: C/mousetweaks.xml:1004(para)
+msgid "There are people that have to use their pointing device not only for the computer. These people would welcome a way to lock the pointer into an area of the screen, so that they can use their pointing device for other tasks."
+msgstr "Υπάρχουν άτομα που πρέπει να χρησιμοποιούν το ποντίκι τους όχι μόνο για τον υπολογιστή. Τα άτομα αυτά θα προτιμούσαν έναν τρόπο ώστε να κλειδώνουν το δείκτη σε μία περιοχή της οθόνης, έτσι ώστε να μπορούν να χρησιμοποιήσουν το ποντίκι τους για άλλες εργασίες."
 
-#: C/mousetweaks.xml:967(para)
-msgid ""
-"In fact, the Pointer Capture panel applet creates an area on the panel, into "
-"which the user can lock the pointer until he releases it in a determined way."
-msgstr ""
-"Πράγματι, η μικροεφαρμογή του πίνακα εφαρμογών της σύλληψης του δείκτη "
-"δημιουργεί μία περιοχή στο πίνακα εφαρμογών, στην οποία μπορεί να κλειδωθεί "
-"ο δείκτης μέχρι να απελευθερωθεί αυτός με ένα καθορισμένο τρόπο."
+#: C/mousetweaks.xml:1009(para)
+msgid "In fact, the Pointer Capture panel applet creates an area on the panel, into which the user can lock the pointer until he releases it in a determined way."
+msgstr "Πράγματι, η μικροεφαρμογή του πίνακα εφαρμογών της σύλληψης του δείκτη δημιουργεί μία περιοχή στο πίνακα εφαρμογών, στην οποία μπορεί να κλειδωθεί ο δείκτης μέχρι να απελευθερωθεί αυτός με ένα καθορισμένο τρόπο."
 
-#: C/mousetweaks.xml:971(remark)
-msgid ""
-"Have a look at <placeholder-1/> for instructions about how to install the "
-"pointer capture applet on the GNOME panel."
-msgstr ""
-"Ρίξτε μία ματιά στο <placeholder-1/> για οδηγίες σχετικά με τον τρόπο "
-"εγκατάστασης της μικροεφαρμογής σύλληψης του δείκτη στον πίνακα εφαρμογών "
-"του GNOME."
+#: C/mousetweaks.xml:1014(para)
+#| msgid ""
+#| "Have a look at <placeholder-1/> for instructions about how to install the "
+#| "pointer capture applet on the GNOME panel."
+msgid "Have a look at <link linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture Function</link> for instructions about how to install the pointer capture applet on the GNOME panel."
+msgstr "Ρίξτε μία ματιά στο <link linkend=\"mouse-a11y-start-pointer-capture\"> για οδηγίες σχετικά με τον τρόπο εγκατάστασης της μικροεφαρμογής σύλληψης του δείκτη στον πίνακα εφαρμογών του GNOME."
 
-#: C/mousetweaks.xml:993(para)
+#: C/mousetweaks.xml:1037(para)
 msgid "Picture of the pointer capture area when the pointer has been captured"
-msgstr ""
-"Εικόνα με την περιοχή της σύλληψης του δείκτη όταν έχει συλληφθεί ο δείκτης"
+msgstr "Εικόνα με την περιοχή της σύλληψης του δείκτη όταν έχει συλληφθεί ο δείκτης"
 
-#: C/mousetweaks.xml:998(para)
-msgid ""
-"By choosing <guimenu>Preferences</guimenu> in the contextual menu of the "
-"<guilabel>Pointer Capture</guilabel> applet, the user gets a window with the "
-"options of the <guilabel>Pointer Capture</guilabel> applet:"
-msgstr ""
-"Επιλέγοντας <guimenu>Προτιμήσεις</guimenu> στο συμφραζόμενο μενού της "
-"μικροεφαρμογής <guilabel>Σύλληψη δείκτη</guilabel>, ο χρήστης οδηγείται σε "
-"ένα παράθυρο με τις επιλογές της μικροεφαρμογής <guilabel>Σύλληψη δείκτη<"
-"/guilabel>:"
+#: C/mousetweaks.xml:1042(para)
+msgid "By choosing <guimenu>Preferences</guimenu> in the contextual menu of the <guilabel>Pointer Capture</guilabel> applet, the user gets a window with the options of the <guilabel>Pointer Capture</guilabel> applet:"
+msgstr "Επιλέγοντας <guimenu>Προτιμήσεις</guimenu> στο συμφραζόμενο μενού της μικροεφαρμογής <guilabel>Σύλληψη δείκτη</guilabel>, ο χρήστης οδηγείται σε ένα παράθυρο με τις επιλογές της μικροεφαρμογής <guilabel>Σύλληψη δείκτη</guilabel>:"
 
-#: C/mousetweaks.xml:1010(para)
+#: C/mousetweaks.xml:1054(para)
 msgid "Picture showing the preferences of the Pointer Capture applet"
 msgstr "Εικόνα που εμφανίζει τις προτιμήσεις της μικροεφαρμογής Σύλληψη δείκτη"
 
-#: C/mousetweaks.xml:1015(para)
-msgid ""
-"The <guilabel>Preferences</guilabel> window of the <guilabel>Pointer "
-"Capture</guilabel> applet has three sections:"
-msgstr ""
-"Το παράθυρο <guilabel>Προτιμήσεις</guilabel> της μικροεφαρμογής "
-"<guilabel>Σύλληψη δείκτη</guilabel> περιέχει τρεις ενότητες:"
+#: C/mousetweaks.xml:1059(para)
+msgid "The <guilabel>Preferences</guilabel> window of the <guilabel>Pointer Capture</guilabel> applet has three sections:"
+msgstr "Το παράθυρο <guilabel>Προτιμήσεις</guilabel> της μικροεφαρμογής <guilabel>Σύλληψη δείκτη</guilabel> περιέχει τρεις ενότητες:"
 
-#: C/mousetweaks.xml:1020(para)
-msgid ""
-"In the <guilabel>Capture Pointer</guilabel> section, the user can specify "
-"under what circumstances the pointer gets captured when it moves into the "
-"capture area. For example: if the control modifier is checked, the pointer "
-"gets captured when it is over the capture area and the user presses the "
-"Control modifier key. If no modifier is checked and the mouse button is set "
-"to 0, the pointer only has to move into the capture area to get locked."
-msgstr ""
-"Στην ενότητα <guilabel>Σύλληψη δείκτη</guilabel>, ο χρήστης μπορεί να "
-"προσδιορίσει κάτω από ποιες συνθήκες θα περιορίζεται η κίνηση του δείκτη "
-"όταν αυτός κινείται στην περιοχή σύλληψης. Για παράδειγμα, αν είναι "
-"επιλεγμένη η τροποποίηση του δείκτη, αυτός περιορίζεται όταν βρίσκεται πάνω "
-"από την περιοχή σύλληψης και ο χρήστης πιέζει το πλήκτρο του μετατροπέα του "
-"δείκτη. Αν δεν έχει επιλεγεί κάποιος μετατροπέας και το κουμπί του ποντικιού "
-"σας καθορίζεται ως 0, ο δείκτης πρέπει να κινείται στην περιοχή σύλληψης "
-"ώστε να κλειδωθεί."
+#: C/mousetweaks.xml:1064(para)
+msgid "In the <guilabel>Capture Pointer</guilabel> section, the user can specify under what circumstances the pointer gets captured when it moves into the capture area. For example: if the control modifier is checked, the pointer gets captured when it is over the capture area and the user presses the Control modifier key. If no modifier is checked and the mouse button is set to 0, the pointer only has to move into the capture area to get locked."
+msgstr "Στην ενότητα <guilabel>Σύλληψη δείκτη</guilabel>, ο χρήστης μπορεί να προσδιορίσει κάτω από ποιες συνθήκες θα περιορίζεται η κίνηση του δείκτη όταν αυτός κινείται στην περιοχή σύλληψης. Για παράδειγμα, αν είναι επιλεγμένη η τροποποίηση του δείκτη, αυτός περιορίζεται όταν βρίσκεται πάνω από την περιοχή σύλληψης και ο χρήστης πιέζει το πλήκτρο του μετατροπέα του δείκτη. Αν δεν έχει επιλεγεί κάποιος μετατροπέας και το κουμπί του ποντικιού σας καθορίζεται ως 0, ο δείκτης πρέπει να κινείται στην περιοχή σύλληψης ώστε να κλειδωθεί."
 
-#: C/mousetweaks.xml:1028(para) C/mousetweaks.xml:1037(para)
-msgid ""
-"It is also possible to specify a combination of modifiers and mouse button."
-msgstr ""
-"Είναι δυνατό να προσδιορίσετε ένα συνδυασμό μετατροπέων και το κουμπί του "
-"ποντικιού σας."
+#: C/mousetweaks.xml:1072(para)
+#: C/mousetweaks.xml:1081(para)
+msgid "It is also possible to specify a combination of modifiers and mouse button."
+msgstr "Είναι δυνατό να προσδιορίσετε ένα συνδυασμό μετατροπέων και το κουμπί του ποντικιού σας."
 
-#: C/mousetweaks.xml:1033(para)
-msgid ""
-"In the <guilabel>Release Pointer</guilabel> section, the user can specify "
-"what modifier or mouse button releases the pointer."
-msgstr ""
-"Στην ενότητα <guilabel>Απελευθέρωση δείκτη</guilabel>, ο χρήστης μπορεί να "
-"προσδιορίσει ποιος μετατροπέας ή ποιο κουμπί του ποντικιού σας θα "
-"απελευθερώνει το δείκτη."
+#: C/mousetweaks.xml:1077(para)
+msgid "In the <guilabel>Release Pointer</guilabel> section, the user can specify what modifier or mouse button releases the pointer."
+msgstr "Στην ενότητα <guilabel>Απελευθέρωση δείκτη</guilabel>, ο χρήστης μπορεί να προσδιορίσει ποιος μετατροπέας ή ποιο κουμπί του ποντικιού σας θα απελευθερώνει το δείκτη."
 
-#: C/mousetweaks.xml:1042(para)
-msgid ""
-"In the <guilabel>Size of Capture Area</guilabel> section, the user can "
-"specify the width of the capture area on the GNOME panel."
-msgstr ""
-"Στην ενότητα <guilabel>Μέγεθος περιοχής σύλληψης</guilabel>, ο χρήστης "
-"μπορεί να προσδιορίσει το πλάτος της περιοχής σύλληψης στον πίνακα εφαρμογών "
-"του Gnome."
+#: C/mousetweaks.xml:1086(para)
+msgid "In the <guilabel>Size of Capture Area</guilabel> section, the user can specify the width of the capture area on the GNOME panel."
+msgstr "Στην ενότητα <guilabel>Μέγεθος περιοχής σύλληψης</guilabel>, ο χρήστης μπορεί να προσδιορίσει το πλάτος της περιοχής σύλληψης στον πίνακα εφαρμογών του Gnome."
 
-#: C/mousetweaks.xml:1051(title)
+#: C/mousetweaks.xml:1095(title)
 msgid "About <application>Mousetweaks</application>"
 msgstr "Σχετικά με το <application>Mousetweaks</application>"
 
-#: C/mousetweaks.xml:1054(title)
+#: C/mousetweaks.xml:1098(title)
 msgid "Authors and hosting site"
 msgstr "Συγγραφείς και ιστοσελίδα φιλοξενίας"
 
-#: C/mousetweaks.xml:1056(para)
-msgid ""
-"<application>Mousetweaks</application> is based on a <ulink type=\"https\" "
-"url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks"
-"\">specification</ulink> hosted on Launchpad. It was implemented by Gerd "
-"Kohlberger ( <email>gerdk@svn.gnome.org</email> ), and I "
-"( <email>frfumanti@svn.gnome.org</email> ) helped with testing and logistics."
-msgstr ""
-"Η εφαρμογή <application>Mousetweaks</application> βασίζεται στο <ulink type="
-"\"https\" url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks"
-"\">χαρακτηριστικό</ulink> που φιλοξενείταο στο Launchpad. Πραγματοποιήθηκε "
-"από τον Gerd Kohlberger ( <email>gerdk@svn.gnome.org</email> ), και τον "
-"( <email>frfumanti@svn.gnome.org</email> ) ο οποίος βοήθησε στις δοκιμές και "
-"στην οργάνωση."
+#: C/mousetweaks.xml:1100(para)
+msgid "<application>Mousetweaks</application> is based on a <ulink type=\"https\" url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks\">specification</ulink> hosted on Launchpad. It was implemented by Gerd Kohlberger ( <email>gerdk@svn.gnome.org</email> ), and I ( <email>frfumanti@svn.gnome.org</email> ) helped with testing and logistics."
+msgstr "Η εφαρμογή <application>Mousetweaks</application> βασίζεται στο <ulink type=\"https\" url=\"https://wiki.ubuntu.com/Accessibility/Specs/MouseTweaks\">χαρακτηριστικό</ulink> που φιλοξενείταο στο Launchpad. Πραγματοποιήθηκε από τον Gerd Kohlberger ( <email>gerdk@svn.gnome.org</email> ), και τον ( <email>frfumanti@svn.gnome.org</email> ) ο οποίος βοήθησε στις δοκιμές και στην οργάνωση."
 
-#: C/mousetweaks.xml:1064(para)
-msgid ""
-"You can find more informations about Mousetweaks on <ulink type=\"https\" "
-"url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> and on <ulink "
-"url=\"http://live.gnome.org//Mousetweaks/Home\">GNOME Live</ulink>."
-msgstr ""
-"Μπορείτε να βρείτε περισσότερες πληροφορίες σχετικά με το Mousetweaks στο "
-"<ulink type=\"https\" url=\"https://launchpad.net/mousetweaks\">Launchpad</"
-"ulink> και στο <ulink url=\"http://live.gnome.org//Mousetweaks/Home\">GNOME "
-"Live</ulink>."
+#: C/mousetweaks.xml:1108(para)
+msgid "You can find more informations about Mousetweaks on <ulink type=\"https\" url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> and on <ulink url=\"http://live.gnome.org//Mousetweaks/Home\">GNOME Live</ulink>."
+msgstr "Μπορείτε να βρείτε περισσότερες πληροφορίες σχετικά με το Mousetweaks στο <ulink type=\"https\" url=\"https://launchpad.net/mousetweaks\">Launchpad</ulink> και στο <ulink url=\"http://live.gnome.org//Mousetweaks/Home\">GNOME Live</ulink>."
 
-#: C/mousetweaks.xml:1073(para)
-msgid ""
-"To report a bug or make a suggestion regarding <application>the mousetweaks</"
-"application> module, its user interface or its manual, please use the "
-"facilities provided by <ulink type=\"http\" url=\"http://bugzilla.gnome.org/"
-"\">GNOME's Bugzilla</ulink>. If it concerns the layout of the Accessibility "
-"tab of the Mouse control panel, please file it against the gnome-control-"
-"center module; for anything else regarding mousetweaks, please file it "
-"against the mousetweaks module."
-msgstr ""
-"Για να αναφέρετε κάποιο σφάλμα ή για να κάνετε μια πρόταση σε σχέση με την "
-"ενότητα <application>mousetweaks</application>, τη διεπαφή του χρήστη ή την "
-"τεκμηρίωσή του, παρακαλώ δοκιμάστε τις διευκολύνσεις που παρέχονται από το "
-"σύνδεσμο <ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">GNOME's "
-"Bugzilla</ulink>. Αν θεωρείται η διάταξη της καρτέλας Προσιτότητα του πίνακα "
-"ελέγχου του ποντικιού, παρακαλώ αρχειοθετήστε το ενάντια με την ενότητα του "
-"κέντρου ελέγχου του gnome. Για οτιδήποτε άλλο σε σχέση με το mousetweaks, "
-"παρακαλώ αρχειοθετήστε το ενάντια με την ενότητα mousetweaks."
+#: C/mousetweaks.xml:1117(para)
+msgid "To report a bug or make a suggestion regarding <application>the mousetweaks</application> module, its user interface or its manual, please use the facilities provided by <ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>. If it concerns the layout of the Accessibility tab of the Mouse control panel, please file it against the gnome-control-center module; for anything else regarding mousetweaks, please file it against the mousetweaks module."
+msgstr "Για να αναφέρετε κάποιο σφάλμα ή για να κάνετε μια πρόταση σε σχέση με την ενότητα <application>mousetweaks</application>, τη διεπαφή του χρήστη ή την τεκμηρίωσή του, παρακαλώ δοκιμάστε τις διευκολύνσεις που παρέχονται από το σύνδεσμο <ulink type=\"http\" url=\"http://bugzilla.gnome.org/\">GNOME's Bugzilla</ulink>. Αν θεωρείται η διάταξη της καρτέλας Προσιτότητα του πίνακα ελέγχου του ποντικιού, παρακαλώ αρχειοθετήστε το ενάντια με την ενότητα του κέντρου ελέγχου του gnome. Για οτιδήποτε άλλο σε σχέση με το mousetweaks, παρακαλώ αρχειοθετήστε το ενάντια με την ενότητα mousetweaks."
 
-#: C/mousetweaks.xml:1084(title)
+#: C/mousetweaks.xml:1128(title)
 msgid "License"
 msgstr "Άδεια διάθεσης"
 
-#: C/mousetweaks.xml:1086(para)
-msgid ""
-"Mousetweaks is distributed under the terms of the GNU General Public License "
-"as published by the Free Software Foundation; either version 3 of the "
-"License, or (at your option) any later version. A copy of the license can be "
-"found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/gpl-3.0."
-"txt\">link</ulink>, or in the file COPYING.GPL included with the source code "
-"of this program."
-msgstr ""
-"Το Mousetweaks διανέμεται υπό τους όρους της GNU General Public License όπως "
-"δημοσιεύτηκε από το Free Software Foundation, με έκδοση 3 της άδειας, ή "
-"(κατά τη γνώμη σας) με κάθε νεότερη έκδοση. Ένα αντίγραφο της άδειας μπορεί "
-"να βρεθεί σε αυτόν το <ulink type=\"http\" url=\"http://www.gnu.org/licenses/"
-"gpl-3.0.txt\">σύνδεσμο</ulink>, ή στο αρχείο COPYING.GPL που "
-"συμπεριλαμβάνεται στο πηγαίο κώδικα του προγράμματος αυτού."
+#: C/mousetweaks.xml:1130(para)
+msgid "Mousetweaks is distributed under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A copy of the license can be found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/gpl-3.0.txt\">link</ulink>, or in the file COPYING.GPL included with the source code of this program."
+msgstr "Το Mousetweaks διανέμεται υπό τους όρους της GNU General Public License όπως δημοσιεύτηκε από το Free Software Foundation, με έκδοση 3 της άδειας, ή (κατά τη γνώμη σας) με κάθε νεότερη έκδοση. Ένα αντίγραφο της άδειας μπορεί να βρεθεί σε αυτόν το <ulink type=\"http\" url=\"http://www.gnu.org/licenses/gpl-3.0.txt\">σύνδεσμο</ulink>, ή στο αρχείο COPYING.GPL που συμπεριλαμβάνεται στο πηγαίο κώδικα του προγράμματος αυτού."
 
-#: C/mousetweaks.xml:1093(para)
-msgid ""
-"This manual is distributed under the terms of the The GNU Free Documentation "
-"License as published by the Free Software Foundation; either version 1.3 of "
-"the License, or (at your option) any later version. A copy of the license "
-"can be found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/"
-"fdl-1.3.txt\">link</ulink>, or in the file COPYING.FDL included with the "
-"source code of this program."
-msgstr ""
-"Η τεκμηρίωση αυτή διανέμεται υπό τους όρους της GNU Free Documentation "
-"License όπως δημοσιεύτηκε από το Free Software Foundation, με έκδοση 1.3 της "
-"άδειας, ή (κατά τη γνώμη σας) με κάθε νεότερη έκδοση. Ένα αντίγραφο της "
-"άδειας μπορεί να βρεθεί σε αυτόν το <ulink type=\"http\" url=\"http://www."
-"gnu.org/licenses/fdl-1.3.txt\">σύνδεσμο</ulink>, ή στο αρχείο COPYING.FDL "
-"που συμπεριλαμβάνεται στο πηγαίο κώδικα του προγράμματος αυτού."
+#: C/mousetweaks.xml:1137(para)
+msgid "This manual is distributed under the terms of the The GNU Free Documentation License as published by the Free Software Foundation; either version 1.3 of the License, or (at your option) any later version. A copy of the license can be found at this <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt\">link</ulink>, or in the file COPYING.FDL included with the source code of this program."
+msgstr "Η τεκμηρίωση αυτή διανέμεται υπό τους όρους της GNU Free Documentation License όπως δημοσιεύτηκε από το Free Software Foundation, με έκδοση 1.3 της άδειας, ή (κατά τη γνώμη σας) με κάθε νεότερη έκδοση. Ένα αντίγραφο της άδειας μπορεί να βρεθεί σε αυτόν το <ulink type=\"http\" url=\"http://www.gnu.org/licenses/fdl-1.3.txt\">σύνδεσμο</ulink>, ή στο αρχείο COPYING.FDL που συμπεριλαμβάνεται στο πηγαίο κώδικα του προγράμματος αυτού."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/mousetweaks.xml:0(None)
@@ -1700,6 +920,25 @@ msgstr ""
 " Σίμος Ξενιτέλλης <simos@gnome.org>\n"
 "\n"
 "Για περισσότερα δείτε http://www.gnome.gr/"
+
+#~ msgid "--enable-secondary"
+#~ msgstr "--enable-secondary"
+
+#~ msgid ""
+#~ "On browser links, the simulated secondary click behaves differently: it "
+#~ "does not wait for the user to release the <mousebutton>primary mouse "
+#~ "button</mousebutton> before creating the simulated secondary click; the "
+#~ "secondary click is created as soon as the time delay has elapsed. "
+#~ "Previous versions of mousetweaks always behaved like this; but this "
+#~ "behaviour had to be modified because of changes to the X server."
+#~ msgstr ""
+#~ "Πάνω σε συνδέσμους περιηγητή, το εξομοιωμένο δευτερεύον κλικ "
+#~ "συμπεριφέρεται διαφορετικά: δεν περιμένει το χρήστη να απελευθερώσει το "
+#~ "<mousebutton>πρωτεύον κουμπί του ποντικιού</mousebutton> προτού "
+#~ "δημιουργήσει το εξομοιωμένο δευτερεύον κλικ. Το δευτερεύον κλικ "
+#~ "δημιουργείται αμέσως μόλις περάσει ο χρόνος καθυστέρησης. Οι προηγούμενες "
+#~ "εκδόσεις του mousetweaks δούλευαν με αυτόν τον τρόπο από πάντα, αλλά αυτή "
+#~ "η συμπεριφορά έπρεπε να αλλάξει λόγω αλλαγών στον εξυπηρετητή X."
 
 #~ msgid ""
 #~ "While the <mousebutton>primary mouse button</mousebutton> is being held "

@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweak master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-11-20 00:27+0000\n"
-"PO-Revision-Date: 2010-11-20 12:46+0800\n"
-"Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-18 17:26+0000\n"
+"PO-Revision-Date: 2011-03-19 09:16+0800\n"
+"Last-Translator: TeliuTe <teliute@163.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,9 +36,9 @@ msgstr "双击"
 
 #: ../data/dwell-click-applet.ui.h:5
 msgid "Drag Click"
-msgstr "拖动"
+msgstr "拖动点击"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "启用悬停点击"
 
@@ -111,14 +111,14 @@ msgstr "按钮样式"
 msgid "Drag"
 msgstr "拖动"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Dwell Click-Type"
-msgstr "悬停点击类型"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "水平"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "悬浮点击"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
@@ -130,7 +130,7 @@ msgstr "方向"
 
 #: ../data/mousetweaks.ui.h:10
 msgid "Secondary Click"
-msgstr "次要点击"
+msgstr "次要按钮(右键)点击"
 
 #: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
@@ -147,12 +147,12 @@ msgstr "竖直"
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
 msgid "Control your desktop without using mouse buttons"
-msgstr "不使用鼠标按键即可控制您的桌面"
+msgstr "不使用鼠标按钮即可控制您的桌面"
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
 #: ../src/dwell-click-applet.c:584
 msgid "Dwell Click Applet"
-msgstr "增强型点击小程序"
+msgstr "悬停点击小程序"
 
 #: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
@@ -167,7 +167,7 @@ msgstr "指针锁定小程序"
 msgid "Button style of the click-type window."
 msgstr "点击类型窗口的按钮样式。"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "点击类型窗口的几何尺寸"
 
@@ -191,23 +191,23 @@ msgstr "点击类型窗口的大小和位置。格式为标准的 X 窗口系统
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
-msgstr "“Alt”键盘修饰键"
+msgstr "“Alt”键"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
 msgid "\"Control\" keyboard modifier"
-msgstr "“Control”键盘修饰键"
+msgstr "“Ctrl”键"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
 msgid "\"Shift\" keyboard modifier"
-msgstr "“Shift”键盘修饰键"
+msgstr "“Shift”键"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
 msgid "Mouse button"
-msgstr "鼠标按键"
+msgstr "鼠标按钮"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
 msgid "Mouse button used to capture or release the pointer."
-msgstr "用于捕获或释放指针的鼠标按键"
+msgstr "用于捕获或释放指针的鼠标按钮"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
@@ -217,44 +217,44 @@ msgstr "捕获区域的大小"
 msgid "Width of the capture area in pixels."
 msgstr "捕获区域的宽度(像素)"
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "启用模拟次要按键钮(右键)点击"
 
-#: ../src/mt-main.c:596
-msgid "Time to wait before a dwell click"
-msgstr "悬停点击前等候的时间"
-
 #: ../src/mt-main.c:598
+msgid "Time to wait before a dwell click"
+msgstr "悬停点击前等待的时间"
+
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "模拟次要按键(右键)点击前等待的时间"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "设置活动悬停模式"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "显示点击类型窗口"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "忽略鼠标指针轻微的移动"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "关闭 mousetweaks"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "作为守护进程启动 mousetweaks"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "以登录模式启动 mousetweaks"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME 鼠标辅助功能守护程序"
 
@@ -289,6 +289,9 @@ msgstr "已锁定"
 #: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
 msgstr "无法打开通用访问面板"
+
+#~ msgid "Dwell Click-Type"
+#~ msgstr "悬停点击类型"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"

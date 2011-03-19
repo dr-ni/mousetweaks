@@ -1,0 +1,294 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Rudolfs <rudolfs.mazurs@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-16 21:29+0000\n"
+"PO-Revision-Date: 2011-03-17 20:18+0200\n"
+"Last-Translator: Rudolfs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? "
+"1 : 2);\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Sīklietotne, lai izvēlētos dažādus apstājas klikšķa veidus.\n"
+"Daļa no Mousetweaks"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "Klikšķa veida logs"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
+msgid "Double Click"
+msgstr "Dubultklikšķis"
+
+#: ../data/dwell-click-applet.ui.h:5
+msgid "Drag Click"
+msgstr "Vilktais klikšķis"
+
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
+msgid "Enable dwell click"
+msgstr "Aktivēt apstājas klikšķi"
+
+#: ../data/dwell-click-applet.ui.h:7
+msgid "Right Click"
+msgstr "Labais klikšķis"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
+msgid "Single Click"
+msgstr "Viens klikšķis"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid ""
+"Area to lock the pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Laukums uz paneļa, kurā pieslēgt rādītāju.\n"
+"Daļa no Mousetweaks"
+
+#: ../data/pointer-capture-applet.ui.h:3
+msgid "C_trl"
+msgstr "C_trl"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "Capture and Release Controls"
+msgstr "Satvert un atlaist vadīklas"
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Keyboard modifier:"
+msgstr "Tastatūras modifikators:"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Pointer Capture Preferences"
+msgstr "Rādītāja satveršanas iestatījumi"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Izvēloties Button 0, rādītājs tiks tverts nekavējoties"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Size of the Capture Area"
+msgstr "Tveršanas laukuma izmērs"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "_Mouse button:"
+msgstr "-Peles poga:"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "_Shift"
+msgstr "_Shift"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "_Width:"
+msgstr "_Platums:"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "pixels"
+msgstr "pikseļi"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Button Style"
+msgstr "Pogas stils"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:4
+msgid "Drag"
+msgstr "Vilkt"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:6
+msgid "Horizontal"
+msgstr "Horizontāli"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "Virs-novietošanas klikšķis"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Icons only"
+msgstr "Tikai ikonas"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Orientation"
+msgstr "Novietojums"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Secondary Click"
+msgstr "Sekundārais klikšķis"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Text and Icons"
+msgstr "Teksts un ikonas"
+
+#: ../data/mousetweaks.ui.h:13
+msgid "Text only"
+msgstr "Tikai teksts"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertikāli"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr "Kontrolējiet savu darbvirsmu, neizmantojot peles pogas"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+msgid "Dwell Click Applet"
+msgstr "Apstājas klikšķa sīklietotne"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Laukums, kurā pieslēgt rādītāju"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+msgid "Pointer Capture Applet"
+msgstr "Rādītāja tveršanas iestatījumi"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Button style of the click-type window."
+msgstr "Pogas stils klikšķa veida logam."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+msgid "Click-type window geometry"
+msgstr "Klikšķa veida loga ģeometrija"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Klikšķa veida loga novietojums"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Click-type window style"
+msgstr "Klikšķa veida loga stils"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+msgid "Orientation of the click-type window."
+msgstr "Novietojums klikšķa veida logam."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Izmērs un novietojums klikšķa veida logam. Formāts ir standarta X "
+"Window System ģeometrijas virkne."
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
+msgid "\"Alt\" keyboard modifier"
+msgstr "\"Alt\" tastatūras modifikators"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
+msgid "\"Control\" keyboard modifier"
+msgstr "\"Control\" tastatūras modifikators"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
+msgid "\"Shift\" keyboard modifier"
+msgstr "\"Shift\" tastatūras modifikators"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
+msgid "Mouse button"
+msgstr "Peles poga"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
+msgid "Mouse button used to capture or release the pointer."
+msgstr "Peles poga, ko izmantot, lai satvertu vai atlaistu rādītāju."
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
+msgid "Size of capture area"
+msgstr "Tveršanas laukuma izmērs"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
+msgid "Width of the capture area in pixels."
+msgstr "Tveršanas laukuma platums pikseļos."
+
+#: ../src/mt-main.c:596
+msgid "Enable simulated secondary click"
+msgstr "Aktivēt simulēto sekundāro klikšķi"
+
+#: ../src/mt-main.c:598
+msgid "Time to wait before a dwell click"
+msgstr "Laiks, ko gaidīt pirms apstājas klikšķa"
+
+#: ../src/mt-main.c:600
+msgid "Time to wait before a simulated secondary click"
+msgstr "Laiks, ko gaidīt pirms simulētā sekundārā klikšķa"
+
+#: ../src/mt-main.c:602
+msgid "Set the active dwell mode"
+msgstr "Iestatīt aktīvo apstājas režīmu"
+
+#: ../src/mt-main.c:604
+msgid "Show a click-type window"
+msgstr "Rādīt klikšķa veida logu"
+
+#: ../src/mt-main.c:606
+msgid "Ignore small pointer movements"
+msgstr "Ignorēt nelielas rādītāja kustības"
+
+#: ../src/mt-main.c:610
+msgid "Shut down mousetweaks"
+msgstr "Izslēgt mousetweaks"
+
+#: ../src/mt-main.c:612
+msgid "Start mousetweaks as a daemon"
+msgstr "Palaist mousetweaks kā dēmonu"
+
+#: ../src/mt-main.c:614
+msgid "Start mousetweaks in login mode"
+msgstr "Palaist mousetweaks ierakstīšanās režīmā"
+
+#. parse
+#: ../src/mt-main.c:632
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME peles pieejamības dēmons"
+
+#: ../src/mt-common.c:74
+msgid "Failed to Display Help"
+msgstr "Neizdevās parādīt palīdzību"
+
+#: ../src/pointer-capture-applet.c:79
+msgid "Capture area"
+msgstr "Tveršanas laukums"
+
+#: ../src/pointer-capture-applet.c:80
+msgid "Temporarily lock the mouse pointer"
+msgstr "Uz laiku pieslēgt peles rādītāju"
+
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "_Iestatījumi"
+
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "_Palīdzība"
+
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "P_ar"
+
+#: ../src/pointer-capture-applet.c:490
+msgid "Locked"
+msgstr "Pieslēgts"
+
+#: ../src/dwell-click-applet.c:450
+msgid "Failed to Open the Universal Access Panel"
+msgstr "Neizdevās atvērt universālā piekļuves paneli"
+

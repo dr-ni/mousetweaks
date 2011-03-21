@@ -1,3 +1,42 @@
+Version 2.91.92
+---------------
+
+Misc changes, improvements and fixes:
+
+    - Fix compiler warnings
+    - Add GTK option group
+    - Change click-type window title to "Hover Click"
+    - Bump dependency to stable GTK 3.0 release
+    - Use G_SETTINGS_BIND_GET for settings that never get modified
+    - Load existing cursors from the library
+    - Sync schema path with gsettings-desktop-schemas
+
+New and updated translations:
+
+    [ca] Gil Forcada
+    [cs] Marek Černocký
+    [el] Michael Kotsarinis
+    [en_GB] Bruce Cowan
+    [es] Jorge González
+    [fr] Claude Paroz
+    [gl] Fran Diéguez
+    [he] Yaron Shahrabani
+    [hu] Gabor Kelemen
+    [ko] Changwoo Ryu
+    [lv] Rudolfs Mazurs
+    [pl] Piotr Drąg
+    [pt] Duarte Loreto
+    [ro] Lucian Adrian Grijincu
+    [sk] Roman Mátyus
+    [sl] Matej Urbančič
+    [sv] Daniel Nylander
+    [uk] Daniel Korostil
+    [zh_CN] Teliute
+
+New and updated manual translation:
+
+    [el] Bakaoukas Nikolaos
+
 Version 2.91.91
 ---------------
 

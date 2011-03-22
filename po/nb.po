@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mousetweaks 2.31.x\n"
+"Project-Id-Version: mousetweaks 2.91.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-24 11:33+0100\n"
-"PO-Revision-Date: 2011-02-24 11:36+0100\n"
+"POT-Creation-Date: 2011-03-22 11:20+0100\n"
+"PO-Revision-Date: 2011-03-22 11:22+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language:\n"
@@ -37,7 +37,7 @@ msgstr "Dobbeltklikk"
 msgid "Drag Click"
 msgstr "Dra-og-klikk"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "Aktiver dwell-klikk"
 
@@ -110,14 +110,14 @@ msgstr "Stil for knapp"
 msgid "Drag"
 msgstr "Dra"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Dwell Click-Type"
-msgstr "Type dwell-klikk"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "Horisontal"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "Hvileklikk"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
@@ -166,7 +166,7 @@ msgstr "Panelprogram for fangst av pekeren"
 msgid "Button style of the click-type window."
 msgstr "Knappestil for klikk-type vindu."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "Geometri for klikk-type vindu"
 
@@ -186,28 +186,27 @@ msgstr "Orientering for klikk-type vindu."
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
-msgstr ""
+msgstr "Størrelse og posisjon for klikk-type vinduet. Formatet er en standard geometristreng for X Window System."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
-msgstr ""
+msgstr "«Alt» endringstast for tastatur"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
 msgid "\"Control\" keyboard modifier"
-msgstr ""
+msgstr "«Control» endringstast for tastatur"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
 msgid "\"Shift\" keyboard modifier"
-msgstr ""
+msgstr "«Shift» endringstast for tastatur"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
 msgid "Mouse button"
 msgstr "Musknapp"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-#, fuzzy
 msgid "Mouse button used to capture or release the pointer."
-msgstr "Musknapp som brukes til å fange pekeren"
+msgstr "Musknapp som brukes til å fange eller slippe løs pekeren."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
@@ -217,44 +216,44 @@ msgstr "Størrelse på fangstområde"
 msgid "Width of the capture area in pixels."
 msgstr "Bredde på fangstområde i piksler."
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "Slå på simulert andreklikk"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "Tidsavbrudd før dwell-klikk"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tidsavbrudd før et simulert andreklikk"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Sett aktiv dwell-modus"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Vis et klikk-type vindu"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Ignorer små pekerbevegelser"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Slå av mousetweaks"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "Start mousetweaks som en tjeneste"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Start mousetweaks i påloggingsmodus"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME tjeneste for tilgjengelighet for mus"
 

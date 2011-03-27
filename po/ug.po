@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-12-20 12:14+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-18 17:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Gheyret Kenji<gheyret@yahoo.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -35,7 +35,7 @@ msgstr "قوش چەك"
 msgid "Drag Click"
 msgstr ""
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr ""
 
@@ -106,14 +106,15 @@ msgstr "توپچا ئۇسلۇبى"
 msgid "Drag"
 msgstr "سۆرە"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Dwell Click-Type"
-msgstr ""
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
-msgstr "توغرىسىغا"
+msgstr "توغرا"
+
+#: ../data/mousetweaks.ui.h:7
+#| msgid "Double Click"
+msgid "Hover Click"
+msgstr "لەيلىتىپ چەك"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
@@ -138,7 +139,7 @@ msgstr "تېكىستلا"
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
-msgstr "بويىغا"
+msgstr "تىك"
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
 msgid "Control your desktop without using mouse buttons"
@@ -146,7 +147,6 @@ msgstr ""
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
 #: ../src/dwell-click-applet.c:584
-#| msgid "Dwell Click"
 msgid "Dwell Click Applet"
 msgstr ""
 
@@ -163,7 +163,7 @@ msgstr ""
 msgid "Button style of the click-type window."
 msgstr ""
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr ""
 
@@ -213,44 +213,44 @@ msgstr ""
 msgid "Width of the capture area in pixels."
 msgstr ""
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr ""
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr ""
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr ""
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr ""
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr ""
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr ""
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr ""
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr ""
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr ""
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr ""
 

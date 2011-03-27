@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-03-12 11:01+0000\n"
-"PO-Revision-Date: 2011-03-18 15:14+0100\n"
+"POT-Creation-Date: 2011-03-19 18:38+0000\n"
+"PO-Revision-Date: 2011-03-20 11:56+0100\n"
 "Last-Translator: Roman Mátyus <romanmatyus@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -105,7 +105,7 @@ msgstr "pixelov"
 msgid "Button Style"
 msgstr "Štýl tlačidla"
 
-#PŠ: "drag and drop" je "ťahaj a pusť", tak prečo "chyť"?
+# PŠ: "drag and drop" je "ťahaj a pusť", tak prečo "chyť"?
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
 msgid "Drag"
@@ -147,7 +147,7 @@ msgstr "Vertikálne"
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
 msgid "Control your desktop without using mouse buttons"
-msgstr ""
+msgstr "Ovládanie vašej plochy bez použitia tlačidiel myši"
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
 #: ../src/dwell-click-applet.c:584
@@ -156,7 +156,7 @@ msgstr "Aplet kliknutia zotrvaním"
 
 #: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
-msgstr "Oblasť uzamknutia kurzora"
+msgstr "Oblasť na uzamknutie kurzora"
 
 #: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
 #: ../src/pointer-capture-applet.c:439

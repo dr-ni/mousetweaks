@@ -20,10 +20,6 @@
 #ifndef __MT_COMMON_H__
 #define __MT_COMMON_H__
 
-#ifdef HAVE_CONFIG_H
-#include "config.h"
-#endif
-
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 #include <gdk/gdkx.h>

@@ -1,22 +1,26 @@
 # Indonesian translation for mousetweaks.
 # Copyright (C) 2010 mousetweaks's COPYRIGHT HOLDER
 # This file is distributed under the same license as the mousetweaks package.
+#
 # sandra <sandra.yuwana@gmail.com>, 2010.
 # Andika Triwidada <andika@gmail.com>, 2011.
-#
+# Dirgita <dirgitadevina@yahoo.co.id>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-12-20 12:14+0000\n"
-"PO-Revision-Date: 2011-01-11 14:16+0700\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-"Language-Team: GNOME Indonesian Translation Team <gnome@i15n.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-25 17:26+0000\n"
+"PO-Revision-Date: 2011-03-27 11:13+0700\n"
+"Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
+"Language-Team: Indonesian <gnome@i15n.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Indonesian\n"
 "X-Poedit-Country: Indonesia\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../data/dwell-click-applet.ui.h:1
 msgid ""
@@ -30,8 +34,7 @@ msgstr ""
 msgid "Click Type Window"
 msgstr "Jendela Jenis Klik"
 
-#: ../data/dwell-click-applet.ui.h:4
-#: ../data/mousetweaks.ui.h:2
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
 msgid "Double Click"
 msgstr "Klik Ganda"
 
@@ -39,8 +42,7 @@ msgstr "Klik Ganda"
 msgid "Drag Click"
 msgstr "Klik Seret"
 
-#: ../data/dwell-click-applet.ui.h:6
-#: ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "Mengaktifkan klik-menetap"
 
@@ -48,8 +50,7 @@ msgstr "Mengaktifkan klik-menetap"
 msgid "Right Click"
 msgstr "Klik Kanan"
 
-#: ../data/dwell-click-applet.ui.h:8
-#: ../data/mousetweaks.ui.h:11
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
 msgid "Single Click"
 msgstr "Klik Tunggal "
 
@@ -90,12 +91,10 @@ msgid "_Alt"
 msgstr "_Alt"
 
 #: ../data/pointer-capture-applet.ui.h:10
-#| msgid "Mouse _button:"
 msgid "_Mouse button:"
 msgstr "To_mbol tetikus:"
 
 #: ../data/pointer-capture-applet.ui.h:11
-#| msgid "S_hift"
 msgid "_Shift"
 msgstr "_Shift"
 
@@ -108,7 +107,6 @@ msgid "pixels"
 msgstr "piksel"
 
 #: ../data/mousetweaks.ui.h:1
-#| msgid "Button style"
 msgid "Button Style"
 msgstr "Gaya Tombol"
 
@@ -117,18 +115,16 @@ msgstr "Gaya Tombol"
 msgid "Drag"
 msgstr "Seret"
 
-#: ../data/mousetweaks.ui.h:5
-#| msgid "Dwell Click Type"
-msgid "Dwell Click-Type"
-msgstr "Jenis Klik Menetap"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "Horisontal"
 
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "Klik Bergerak"
+
 #: ../data/mousetweaks.ui.h:8
-#| msgid "Show Icons only"
 msgid "Icons only"
 msgstr "Hanya ikon"
 
@@ -137,7 +133,6 @@ msgid "Orientation"
 msgstr "Orientasi"
 
 #: ../data/mousetweaks.ui.h:10
-#| msgid "Secondary click time"
 msgid "Secondary Click"
 msgstr "Klik Sekunder"
 
@@ -146,7 +141,6 @@ msgid "Text and Icons"
 msgstr "Teks dan Ikon"
 
 #: ../data/mousetweaks.ui.h:13
-#| msgid "Show Text only"
 msgid "Text only"
 msgstr "Hanya teks"
 
@@ -161,7 +155,6 @@ msgstr "Kendalikan desktop Anda tanpa memakai tombol tetikus"
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
 #: ../src/dwell-click-applet.c:584
-#| msgid "Dwell Click Type"
 msgid "Dwell Click Applet"
 msgstr "Aplet Klik Menetap"
 
@@ -171,39 +164,36 @@ msgstr "Area untuk mengunci pointer"
 
 #: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
 #: ../src/pointer-capture-applet.c:439
-#| msgid "Pointer Capture"
 msgid "Pointer Capture Applet"
 msgstr "Aplet Menangkap Pointer"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-#| msgid "Show a click-type window"
 msgid "Button style of the click-type window."
 msgstr "Gaya tombol dari jendela jenis klik."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
-#: ../src/mt-main.c:606
-#| msgid "Click-type window X position"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "Geometri jendela jenis klik"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-#| msgid "Click-type window X position"
 msgid "Click-type window orientation"
 msgstr "Orientasi jendela jenis klik"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-#| msgid "Click-type window X position"
 msgid "Click-type window style"
 msgstr "Gaya jendela jenis klik"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-#| msgid "Show a click-type window"
 msgid "Orientation of the click-type window."
 msgstr "Orientasi dari jendela jenis klik."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
-msgid "Size and position of the click-type window. The format is a standard X Window System geometry string."
-msgstr "Ukuran dan posisi jendela jenis klik. Format adalah string geometri starndar Sistem X Window."
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Ukuran dan posisi jendela jenis klik. Format adalah string geometri starndar "
+"Sistem X Window."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
@@ -218,12 +208,10 @@ msgid "\"Shift\" keyboard modifier"
 msgstr "Modifier papan tik \"Shift\""
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-#| msgid "Mouse _button:"
 msgid "Mouse button"
 msgstr "Tombol tetikus"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-#| msgid "Mouse button used to capture the pointer"
 msgid "Mouse button used to capture or release the pointer."
 msgstr "Tombol tetikus yang digunakan untuk menangkap atau melepas pointer."
 
@@ -235,44 +223,44 @@ msgstr "Ukuran area penangkapan"
 msgid "Width of the capture area in pixels."
 msgstr "Lebar area penangkapan dalam piksel."
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "Mengaktifkan klik sekunder yang disimulasikan"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "Waktu untuk menunggu sebelum klik-menetap"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "Waktu untuk menunggu sebelum klik sekunder disimulasikan"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Mengatur modus menetap yang aktif"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Tampilkan jendela jenis klik"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Abaikan gerakan kecil pointer"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Matikan mousetweaks"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "Mulai mousetweaks sebagai daemon"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Mulai mousetweaks di modus login"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME daemon aksesibilitas tetikus"
 
@@ -288,18 +276,15 @@ msgstr "Area penangkapan"
 msgid "Temporarily lock the mouse pointer"
 msgstr "Sementara mengunci pointer tetikus"
 
-#: ../src/pointer-capture-applet.c:175
-#: ../src/dwell-click-applet.c:80
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
 msgid "_Preferences"
 msgstr "_Preferensi"
 
-#: ../src/pointer-capture-applet.c:177
-#: ../src/dwell-click-applet.c:82
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
 msgid "_Help"
 msgstr "_Bantuan"
 
-#: ../src/pointer-capture-applet.c:179
-#: ../src/dwell-click-applet.c:84
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
 msgid "_About"
 msgstr "Tent_ang"
 
@@ -310,6 +295,10 @@ msgstr "Terkunci"
 #: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
 msgstr "Gagal Membuka Panel Akses Universal"
+
+#~| msgid "Dwell Click Type"
+#~ msgid "Dwell Click-Type"
+#~ msgstr "Jenis Klik Menetap"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"

@@ -811,22 +811,23 @@ main (int argc, char **argv)
         int ret;
 
         if ((ret = mt_pidfile_kill_wait (SIGINT, 5)) < 0)
-            g_print ("Shutdown failed or nothing to shut down.\n");
+            g_print (_("Shutdown failed or nothing to shut down.\n"));
         else
-            g_print ("Shutdown successful.\n");
+            g_print (_("Shutdown successful.\n"));
 
         return ret < 0 ? 1 : 0;
     }
 
     if ((pid = mt_pidfile_is_running ()) >= 0)
     {
-        g_print ("Mousetweaks is already running. (PID %u)\n", pid);
+        /* i18n: PID here means "Process Identifier" */
+        g_print (_("Mousetweaks is already running. (PID %u)\n"), pid);
         return 1;
     }
 
     if (cli_args.daemonize)
     {
-        g_print ("Starting daemon.\n");
+        g_print (_("Starting daemon.\n"));
         if ((pid = fork ()) < 0)
         {
             g_error ("fork() failed.");

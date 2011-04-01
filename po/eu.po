@@ -2,20 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2009, 2010.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008, 2009, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-27 18:36+0100\n"
-"PO-Revision-Date: 2010-03-27 18:37+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-18 17:26+0000\n"
+"PO-Revision-Date: 2011-04-01 12:38+0200\n"
 "Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
 "Language-Team: Basque <itzulpena@euskalgnu.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 
 #: ../data/dwell-click-applet.ui.h:1
 msgid ""
@@ -29,464 +29,285 @@ msgstr ""
 msgid "Click Type Window"
 msgstr "Klik motaren leihoa"
 
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
 msgid "Double Click"
 msgstr "Klik bikoitza"
 
-#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
+#: ../data/dwell-click-applet.ui.h:5
 msgid "Drag Click"
 msgstr "Arrastatzeko klik"
 
-#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:869
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "Gaitu klik-tenporizatua"
 
-#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
+#: ../data/dwell-click-applet.ui.h:7
 msgid "Right Click"
 msgstr "Eskuineko klik"
 
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
 msgid "Single Click"
 msgstr "Klik bakuna"
 
 #: ../data/pointer-capture-applet.ui.h:1
-msgid "A_lt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:2
+#| msgid ""
+#| "Area to freeze the mouse pointer on the panel.\n"
+#| "Part of Mousetweaks"
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
-"Saguaren erakuslea izozteko area panelean.\n"
+"Erakuslea panelean izozteko area.\n"
 "Mousetweaks-en zati da"
 
-#: ../data/pointer-capture-applet.ui.h:4
+#: ../data/pointer-capture-applet.ui.h:3
 msgid "C_trl"
 msgstr "_Ktrl"
 
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "Capture and Release Controls"
+msgstr "Kapturatu eta askatu kontrolak"
+
 #: ../data/pointer-capture-applet.ui.h:5
-msgid "Capture Pointer"
-msgstr "Kapturatu erakuslea"
+msgid "Keyboard modifier:"
+msgstr "Teklatuaren aldatzailea:"
 
 #: ../data/pointer-capture-applet.ui.h:6
-msgid "Ct_rl"
-msgstr "K_trl"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Modifier:"
-msgstr "Aldatzailea:"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Mouse _button:"
-msgstr "Saguaren _botoia:"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "Mouse b_utton:"
-msgstr "Saguaren b_otoia:"
-
-#: ../data/pointer-capture-applet.ui.h:10
 msgid "Pointer Capture Preferences"
 msgstr "Erakuslearen kapturaren hobespenak"
 
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "Release Pointer"
-msgstr "Askatu erakuslea"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "S_hift"
-msgstr "_Maius"
-
-#: ../data/pointer-capture-applet.ui.h:13
+#: ../data/pointer-capture-applet.ui.h:7
 msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "0 botoia hautatzeak erakuslea berehala kapturatuko du"
 
-#: ../data/pointer-capture-applet.ui.h:14
-msgid "Sh_ift"
-msgstr "Ma_ius"
-
-#: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
+#: ../data/pointer-capture-applet.ui.h:8
+#| msgid "Size of Capture Area"
+msgid "Size of the Capture Area"
 msgstr "Kaptura-arearen tamaina"
 
-#: ../data/pointer-capture-applet.ui.h:16
+#: ../data/pointer-capture-applet.ui.h:9
 msgid "_Alt"
 msgstr "_Alt"
 
-#: ../data/pointer-capture-applet.ui.h:17
+#: ../data/pointer-capture-applet.ui.h:10
+#| msgid "Mouse _button:"
+msgid "_Mouse button:"
+msgstr "Saguaren _botoia:"
+
+#: ../data/pointer-capture-applet.ui.h:11
+#| msgid "S_hift"
+msgid "_Shift"
+msgstr "_Maius"
+
+#: ../data/pointer-capture-applet.ui.h:12
 msgid "_Width:"
 msgstr "_Zabalera:"
 
-#: ../data/pointer-capture-applet.ui.h:18
+#: ../data/pointer-capture-applet.ui.h:13
 msgid "pixels"
 msgstr "pixel"
 
-#: ../data/mousetweaks.ui.h:3
-msgid "Dwell Click Type"
-msgstr "Klik-tenporizatu mota"
+#: ../data/mousetweaks.ui.h:1
+#| msgid "Button style"
+msgid "Button Style"
+msgstr "Botoi-estiloa"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Show Icons and Text"
-msgstr "Erakutsi ikonoak eta testua"
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:4
+msgid "Drag"
+msgstr "Arrastatu"
 
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:6
-msgid "Show Icons only"
-msgstr "Erakutsi ikonoak bakarrik"
+msgid "Horizontal"
+msgstr "Horizontala"
 
 #: ../data/mousetweaks.ui.h:7
-msgid "Show Text only"
-msgstr "Erakutsi testua soilik"
+#| msgid "Double Click"
+msgid "Hover Click"
+msgstr "Gainean egotean klik egitea"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:561
-msgid "Dwell Click"
-msgstr "Klik-tenporizatua"
+#: ../data/mousetweaks.ui.h:8
+#| msgid "Show Icons only"
+msgid "Icons only"
+msgstr "Ikonoak soilik"
 
-#: ../data/DwellClick_Factory.server.in.in.h:2
-msgid "Select dwelling click type"
-msgstr "Hautatu klik-tenporizatu mota"
+#: ../data/mousetweaks.ui.h:9
+msgid "Orientation"
+msgstr "Orientazioa"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:1
+#: ../data/mousetweaks.ui.h:10
+#| msgid "Secondary click time"
+msgid "Secondary Click"
+msgstr "2. mailako klik egitea"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Text and Icons"
+msgstr "Testua eta ikonoak"
+
+#: ../data/mousetweaks.ui.h:13
+#| msgid "Show Text only"
+msgid "Text only"
+msgstr "Testua soilik"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Bertikala"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr "Kontrolatu zure mahaigaina saguaren botoiak erabili gabe"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+#| msgid "Dwell Click Type"
+msgid "Dwell Click Applet"
+msgstr "Klik-tenporizatuaren miniaplikazioa"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
 msgstr "Area erakuslea blokeatzeko"
 
-#: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
-msgid "Pointer Capture"
-msgstr "Erakuslearen kaptura"
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+#| msgid "Pointer Capture"
+msgid "Pointer Capture Applet"
+msgstr "Erakuslearen kapturaren miniaplikazioa"
 
-#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
-msgid "_About"
-msgstr "Honi _buruz"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#| msgid "Show a click-type window"
+msgid "Button style of the click-type window."
+msgstr "Klik motaren leihoaren botoi-estiloa."
 
-#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
-msgid "_Help"
-msgstr "_Laguntza"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+#| msgid "Click-type window X position"
+msgid "Click-type window geometry"
+msgstr "Klik motaren leihoaren geometria"
 
-#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
-msgid "_Preferences"
-msgstr "_Hobespenak"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#| msgid "Click-type window X position"
+msgid "Click-type window orientation"
+msgstr "Klik motaren leihoaren orientazioa"
 
-#: ../data/mousetweaks.schemas.in.h:1
-msgid "Animate cursor"
-msgstr "Animatu kurtsorea"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#| msgid "Click-type window X position"
+msgid "Click-type window style"
+msgstr "Klik motaren leihoaren estiloa"
 
-#: ../data/mousetweaks.schemas.in.h:2
-msgid "Button style"
-msgstr "Botoi-estiloa"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+#| msgid "Show a click-type window"
+msgid "Orientation of the click-type window."
+msgstr "Klik motaren leihoaren orientazioa."
 
-#: ../data/mousetweaks.schemas.in.h:3
-msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
-msgstr "Botoi-estiloa klik motaren leihoan (\"0\"=testua, \"1\"=ikonoa, \"2\"=biak)"
-
-#: ../data/mousetweaks.schemas.in.h:4
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
-"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
 msgstr ""
-"Norabidea klik bikoitza lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2"
-"\"=gora, \"3\"=behera)"
+"Klik motaren leihoaren tamaina eta posizioa. Formatua X "
+"leiho-zerbitzariaren geometriaren kate estandarra da."
 
-#: ../data/mousetweaks.schemas.in.h:5
-msgid ""
-"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
-"\"3\" = Down)"
-msgstr ""
-"Norabidea arrastatzeko klik-a lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2"
-"\"=gora, \"3\"=behera)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
+msgid "\"Alt\" keyboard modifier"
+msgstr "\"Alt\" teklatuko aldatzailea"
 
-#: ../data/mousetweaks.schemas.in.h:6
-msgid ""
-"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Norabidea 2. mailako klik-a lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2"
-"\"=gora, \"3\"=behera)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
+msgid "\"Control\" keyboard modifier"
+msgstr "\"Kontrol\" teklatuko aldatzailea"
 
-#: ../data/mousetweaks.schemas.in.h:7
-msgid ""
-"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-"Up, \"3\" = Down)"
-msgstr ""
-"Norabidea klik bakuna lantzeko (\"0\"=ezkerrera, \"1\"=eskuinera, \"2"
-"\"=gora, \"3\"=behera)"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
+msgid "\"Shift\" keyboard modifier"
+msgstr "\"Maius\" teklatuko aldatzailea"
 
-#: ../data/mousetweaks.schemas.in.h:8
-msgid "Distance in pixels before movement will be recognized"
-msgstr "Distantzia pixeletan mugimendua antzeman aurretik"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
+#| msgid "Mouse _button:"
+msgid "Mouse button"
+msgstr "Saguaren botoia"
 
-#: ../data/mousetweaks.schemas.in.h:9
-msgid "Dwell click mode"
-msgstr "Klik-tenporizatuaren modua"
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
+#| msgid "Mouse button used to capture the pointer"
+msgid "Mouse button used to capture or release the pointer."
+msgstr "Erakuslea kapturatzeko edo askatzeko erabilik den saguaren botoia."
 
-#: ../data/mousetweaks.schemas.in.h:10
-msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
-msgstr "Klik-tenporizatuaren modua (\"0\" = leiho-modua, \"1\" = keinu-modua)"
-
-#: ../data/mousetweaks.schemas.in.h:11
-msgid "Dwell click time"
-msgstr "Klik-tenporizatuaren denbora"
-
-#: ../data/mousetweaks.schemas.in.h:13
-msgid "Enable secondary click"
-msgstr "Gaitu 2. mailako klik-a"
-
-#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:871
-msgid "Enable simulated secondary click"
-msgstr "Gaitu simulatutako 2. mailako klik-a"
-
-#: ../data/mousetweaks.schemas.in.h:15
-msgid "Gesture double click"
-msgstr "Klik bikoitzaren keinua"
-
-#: ../data/mousetweaks.schemas.in.h:16
-msgid "Gesture drag click"
-msgstr "Arrastatzeko klik-aren keinua"
-
-#: ../data/mousetweaks.schemas.in.h:17
-msgid "Gesture secondary click"
-msgstr "2. mailako klik-aren keinua"
-
-#: ../data/mousetweaks.schemas.in.h:18
-msgid "Gesture single click"
-msgstr "Klik bakunaren keinua"
-
-#: ../data/mousetweaks.schemas.in.h:19
-msgid "Movement threshold"
-msgstr "Mugimenduaren atalasea"
-
-#: ../data/mousetweaks.schemas.in.h:20
-msgid "Secondary click time"
-msgstr "2. mailako klik-aren denbora"
-
-#: ../data/mousetweaks.schemas.in.h:21
-msgid "Show click type window"
-msgstr "Erakutsi klik motaren leihoa"
-
-#: ../data/mousetweaks.schemas.in.h:22
-msgid "Show elapsed time as cursor overlay."
-msgstr "Erakutsi atzerapena kurtsorearen gainean."
-
-#: ../data/mousetweaks.schemas.in.h:23
-msgid "Time in seconds before a click is triggered"
-msgstr "Denbora segundotan klik bat abiarazi aurretik"
-
-#: ../data/mousetweaks.schemas.in.h:24
-msgid "Time in seconds before a secondary click is triggered"
-msgstr "Denbora segundotan 2. mailako klik bat abiarazi aurretik"
-
-#: ../data/pointer-capture-applet.schemas.in.h:1
-msgid "Capture pointer only if Alt is pressed"
-msgstr "Kapturatu erakuslea soilik Alt sakatzen bada"
-
-#: ../data/pointer-capture-applet.schemas.in.h:2
-msgid "Capture pointer only if Ctrl is pressed"
-msgstr "Kapturatu erakuslea soilik Ktrl sakatzen bada"
-
-#: ../data/pointer-capture-applet.schemas.in.h:3
-msgid "Capture pointer only if Shift is pressed"
-msgstr "Kapturatu erakuslea soilik Maius sakatzen bada"
-
-#: ../data/pointer-capture-applet.schemas.in.h:4
-msgid "Mouse button used to capture the pointer"
-msgstr "Saguaren botoia erakuslea kapturatzeko"
-
-#: ../data/pointer-capture-applet.schemas.in.h:5
-msgid "Mouse button used to release the pointer"
-msgstr "Saguaren botoia erakuslea askatzeko"
-
-#: ../data/pointer-capture-applet.schemas.in.h:6
-msgid "Release pointer only if Alt is pressed"
-msgstr "Askatu erakuslea soilik Alt sakatzen bada"
-
-#: ../data/pointer-capture-applet.schemas.in.h:7
-msgid "Release pointer only if Ctrl is pressed"
-msgstr "Askatu erakuslea soilik Ktrl sakatzen bada"
-
-#: ../data/pointer-capture-applet.schemas.in.h:8
-msgid "Release pointer only if Shift is pressed"
-msgstr "Askatu erakuslea soilik Maius sakatzen bada"
-
-#: ../data/pointer-capture-applet.schemas.in.h:9
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
 msgstr "Kaptura-arearen tamaina"
 
-#: ../data/pointer-capture-applet.schemas.in.h:10
-msgid ""
-"This mouse button must be pressed to release the pointer from the capture "
-"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
-"\"3\" for right button."
-msgstr ""
-"Saguaren botoi hau sakatu behar da erakuslea askatzeko kapturaren areatik. "
-"Balio erabilgarriak: \"1\" ezkerreko botoia, \"2\" erdiko botoia, eta \"3\" "
-"eskuineko botoia."
-
-#: ../data/pointer-capture-applet.schemas.in.h:11
-msgid ""
-"This mouse button must be pressed while the pointer is over the capture area "
-"in order to capture the pointer. Valid values are \"0\" if no button is "
-"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
-"button."
-msgstr ""
-"Saguaren botoi hau sakatu behar da erakuslea kapturatzeko kapturaren arearen "
-"gainean dagoenean. Balio erabilgarriak: \"0\" botoirik ez bada behar, \"1\" "
-"ezkerreko botoia, \"2\" erdiko botoia, eta \"3\" eskuineko botoia."
-
-#: ../data/pointer-capture-applet.schemas.in.h:12
-msgid ""
-"Whether the Alt key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Alt key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Erakuslea kapturako arearen gainean dagoenean kapturatzeko Alt tekla sakatu "
-"behar den ala ez. Aukera hau TRUE (egia) ezartzen bada eta saguaren botoi "
-"bat ezartzen bada \"capture_button\" gakoan, orduan Alt tekla sakatu beharko "
-"da saguaren botoia sakatzean."
-
-#: ../data/pointer-capture-applet.schemas.in.h:13
-msgid ""
-"Whether the Alt key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Erakuslea kapturako areatik askatzeko \"release_button\" gakoan ezarritako "
-"saguaren botoiarekin Alt tekla sakatu behar den ala ez."
-
-#: ../data/pointer-capture-applet.schemas.in.h:14
-msgid ""
-"Whether the Ctrl key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Ctrl key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Erakuslea kapturako arearen gainean dagoenean kapturatzeko Ktrl tekla sakatu "
-"behar den ala ez. Aukera hau TRUE (egia) ezartzen bada eta saguaren botoi "
-"bat ezartzen bada \"capture_button\" gakoan, orduan Ktrl tekla sakatu "
-"beharko da saguaren botoia sakatzean."
-
-#: ../data/pointer-capture-applet.schemas.in.h:15
-msgid ""
-"Whether the Ctrl key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Erakuslea kapturako areatik askatzeko \"release_button\" gakoan ezarritako "
-"saguaren botoiarekin Ktrl tekla sakatu behar den ala ez."
-
-#: ../data/pointer-capture-applet.schemas.in.h:16
-msgid ""
-"Whether the Shift key must be pressed for the pointer to be captured while "
-"it's over the capture area. If this option is set as true, and a mouse "
-"button is set in the \"capture_button\" key, then the Shift key must be "
-"pressed while the mouse button is pressed."
-msgstr ""
-"Erakuslea kapturako arearen gainean dagoenean kapturatzeko Maius tekla "
-"sakatu behar den ala ez. Aukera hau TRUE (egia) ezartzen bada eta saguaren "
-"botoi bat ezartzen bada \"capture_button\" gakoan, orduan Maius tekla sakatu "
-"beharko da saguaren botoia sakatzean."
-
-#: ../data/pointer-capture-applet.schemas.in.h:17
-msgid ""
-"Whether the Shift key must be pressed with the mouse button set in "
-"\"release_button\" for the pointer to be released from the capture area."
-msgstr ""
-"Erakuslea kapturako areatik askatzeko \"release_button\" gakoan ezarritako "
-"saguaren botoiarekin Maius tekla sakatu behar den ala ez."
-
-#: ../data/pointer-capture-applet.schemas.in.h:18
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
 msgid "Width of the capture area in pixels."
 msgstr "Kaptura-arearen zabalera (pixeletan)"
 
-#: ../src/mt-main.c:774
-msgid "Assistive Technology Support is not Enabled"
-msgstr "Laguntza-teknologia euskarria ez dago gaituta"
+#: ../src/mt-main.c:596
+msgid "Enable simulated secondary click"
+msgstr "Gaitu simulatutako 2. mailako klik-a"
 
-#: ../src/mt-main.c:775
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press "
-"\"Enable and Log Out\"."
-msgstr ""
-"MouseTweaks-ek laguntza-teknologia behar du zure saioan gaitua izateko.\n"
-"\n"
-"Laguntza-teknologiaren euskarria gaitzeko eta saioa berrabiarazteko, sakatu "
-"\"Gaitu eta amaitu saioa\"."
-
-#: ../src/mt-main.c:873
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "Denbora klik-tenporizatua landu aurretik"
 
-#: ../src/mt-main.c:875
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "Denbora simulatutako 2. mailako klik-a landu aurretik"
 
-#: ../src/mt-main.c:877
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "Ezarri tenporizazioaren modu aktiboa"
 
-#: ../src/mt-main.c:879
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "Erakutsi klik motaren leihoa"
 
-#: ../src/mt-main.c:881
-msgid "Click-type window X position"
-msgstr "Klik motaren leihoaren x posizioa"
-
-#: ../src/mt-main.c:883
-msgid "Click-type window Y position"
-msgstr "Klik motaren leihoaren x posizioa"
-
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "Ez ikusi egin erakuslearen mugimendu txikiei"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "Itzali 'mousetweaks'"
 
-#: ../src/mt-main.c:889
-msgid "Disable cursor animations"
-msgstr "Desgaitu kurtsorearen animazioak"
-
-#: ../src/mt-main.c:891
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "Abiarazi mousetweaks daemon gisa"
 
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "Abiarazi mousetweaks saio-hasierako moduan"
 
 #. parse
-#: ../src/mt-main.c:911
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOMEko saguaren erabilgarritasunaren daemon-a"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-common.c:74
 msgid "Failed to Display Help"
 msgstr "Huts egin du laguntza bistaratzean"
 
-#: ../src/mt-common.c:66
-msgid "Enable and Log Out"
-msgstr "Gaitu eta amaitu saioa"
-
-#: ../src/pointer-capture-applet.c:213
-msgid "Locked"
-msgstr "Blokeatuta"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:216
-msgid "L"
-msgstr "B"
-
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:79
 msgid "Capture area"
 msgstr "Kapturatu area"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:80
 msgid "Temporarily lock the mouse pointer"
 msgstr "Blokeatu saguaren erakuslea aldi baterako"
 
-#: ../src/dwell-click-applet.c:334
-msgid "Failed to Launch Mouse Preferences"
-msgstr "Huts egin du saguaren hobespenak abiaraztean"
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "_Hobespenak"
+
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "_Laguntza"
+
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "Honi _buruz"
+
+#: ../src/pointer-capture-applet.c:490
+msgid "Locked"
+msgstr "Blokeatuta"
+
+#: ../src/dwell-click-applet.c:450
+msgid "Failed to Open the Universal Access Panel"
+msgstr "Huts egin du Sarbidetza Unibertsalaren Panela irekitzean"
 

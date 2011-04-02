@@ -447,7 +447,7 @@ msgstr "Εικόνα που εμφανίζει τη μικροεφαρμογή �
 #| "done for the Pointer Capture panel applet. The procedure for the Dwell "
 #| "Click panel applet is similar."
 msgid "For instructions about how to install the Dwell Click applet on the GNOME panel, please have a look at <link linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture Function</link> where you can see how it is done for the Pointer Capture panel applet. The procedure for the Dwell Click panel applet is similar."
-msgstr "Για οδηγίες σχετικά με τον τρόπο εγκατάσταση της μικροεφαρμογής για το Κρατημένο κλικ στον πίνακα εφαρμογών του Gnome, παρακαλώ ρίξτε μια ματιά στο <link linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture Function</link> όπου μπορείτε να δείτε πώς εκτελείται για τη μικροεφαρμογή σύλληψης του δείκτη. Η διαδικασία για τη μικροεφαρμογή Κρατημένο κλικ του πίνακα εφαρμογών είναι παρόμοια."
+msgstr "Για οδηγίες σχετικά με τον τρόπο εγκατάσταση της μικροεφαρμογής για το Κρατημένο κλικ στον πίνακα εφαρμογών του Gnome, παρακαλώ ρίξτε μια ματιά στο <link linkend=\"mouse-a11y-start-pointer-capture\">Ξεκινώντας τη λειτουργία της σύλληψης του δείκτη</link> όπου μπορείτε να δείτε πώς εκτελείται για τη μικροεφαρμογή σύλληψης του δείκτη. Η διαδικασία για τη μικροεφαρμογή Κρατημένο κλικ του πίνακα εφαρμογών είναι παρόμοια."
 
 #: C/mousetweaks.xml:399(title)
 msgid "Starting The Pointer Capture Function"
@@ -757,7 +757,7 @@ msgstr "Πράγματι, χρησιμοποιώντας τη μικροεφαρ
 
 #: C/mousetweaks.xml:880(para)
 msgid "To display the <guilabel>Dwell Click</guilabel> applet on the GNOME panel, the user has to follow the usual procedure to add applets to the GNOME panel. An example about how to do it can be found in the section <link linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture Function</link>."
-msgstr "Για να εμφανίσει τη μικροεφαρμογή <guilabel>Κρατημένο κλικ</guilabel> στον πίνακα εφαρμογών του Gnome, ο χρήστης θα πρέπει να ακολουθήσει τη συνήθη διαδικασία της προφθήκης μικροεφαρμογών στον πίνακα εφαρμογών του Gnome. Ένα παράδειγμα σχετικά με τον τρόπο που θα γίνει αυτό μπορεί να βρεθεί στην ενότητα <link linkend=\"mouse-a11y-start-pointer-capture\">Εκκίνηση της λειτουργίας σύλληψης του δείκτη</link>."
+msgstr "Για να εμφανίσει τη μικροεφαρμογή <guilabel>Κρατημένο κλικ</guilabel> στον πίνακα εφαρμογών του Gnome, ο χρήστης θα πρέπει να ακολουθήσει τη συνήθη διαδικασία της προφθήκης μικροεφαρμογών στον πίνακα εφαρμογών του Gnome. Ένα παράδειγμα σχετικά με τον τρόπο που θα γίνει αυτό μπορεί να βρεθεί στην ενότητα <link linkend=\"mouse-a11y-start-pointer-capture\">Ξεκινώντας τη λειτουργία της σύλληψης του δείκτη</link>."
 
 #: C/mousetweaks.xml:887(para)
 msgid "The <guilabel>Click Type Window</guilabel> and the <guilabel>Dwell Click</guilabel> applet can be used simultaneously or each on its own."
@@ -844,7 +844,7 @@ msgstr "Πράγματι, η μικροεφαρμογή του πίνακα εφ
 #| "Have a look at <placeholder-1/> for instructions about how to install the "
 #| "pointer capture applet on the GNOME panel."
 msgid "Have a look at <link linkend=\"mouse-a11y-start-pointer-capture\">Starting The Pointer Capture Function</link> for instructions about how to install the pointer capture applet on the GNOME panel."
-msgstr "Ρίξτε μία ματιά στο <link linkend=\"mouse-a11y-start-pointer-capture\"> για οδηγίες σχετικά με τον τρόπο εγκατάστασης της μικροεφαρμογής σύλληψης του δείκτη στον πίνακα εφαρμογών του GNOME."
+msgstr "Ρίξτε μία ματιά στο <link linkend=\"mouse-a11y-start-pointer-capture\">Ξεκινώντας τη λειτουργία της σύλληψης του δείκτη</link> για οδηγίες σχετικά με τον τρόπο εγκατάστασης της μικροεφαρμογής σύλληψης του δείκτη στον πίνακα εφαρμογών του GNOME."
 
 #: C/mousetweaks.xml:1037(para)
 msgid "Picture of the pointer capture area when the pointer has been captured"

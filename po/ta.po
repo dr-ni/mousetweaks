@@ -6,20 +6,20 @@
 # Dr.T.Vasudevan <agnihot3@gmail.com>, 2008.
 # I. Felix <ifelix@redhat.com>, 2008.
 # Dr.T.Vasudevan <agnihot3@gmail.com>, 2009, 2010.
-# Dr,T,Vasudevan <agnihot3@gmail.com>, 2010.
+# Dr,T,Vasudevan <agnihot3@gmail.com>, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweak.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-03 18:53+0530\n"
-"PO-Revision-Date: 2010-12-03 19:37+0530\n"
-"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
-"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
-"Language: ta\n"
+"POT-Creation-Date: 2011-04-02 05:44+0530\n"
+"PO-Revision-Date: 2011-04-02 05:45+0530\n"
+"Last-Translator: \n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"Language: ta\n"
+"X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
@@ -44,7 +44,7 @@ msgstr "இரட்டை சொடுக்கு"
 msgid "Drag Click"
 msgstr "சொடுக்கு இழுப்பு"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
 msgid "Enable dwell click"
 msgstr "நிலை சொடுக்கு செயல்படுத்து"
 
@@ -117,14 +117,14 @@ msgstr "பொத்தான் பாங்கு"
 msgid "Drag"
 msgstr "இழுப்பு"
 
-#: ../data/mousetweaks.ui.h:5
-msgid "Dwell Click-Type"
-msgstr "நிலை சொடுக்கு வகை"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "கிடைமட்டம்"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "ஹோவர் சொடுக்கு"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Icons only"
@@ -173,7 +173,7 @@ msgstr "சுட்டி சுட்டு பிடிப்பு குற
 msgid "Button style of the click-type window."
 msgstr "சொடுக்கு வகை சாளரத்தின் பொத்தானின் பாங்கு"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
 msgid "Click-type window geometry"
 msgstr "சொடுக்கு வகை சாளரத்தின் வடிவநிலை"
 
@@ -194,8 +194,8 @@ msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
-"சொடுக்கு வகை சாளரத்துக்கு அளவும் இடமும். இந்த ஒழுங்கு செந்தர எக்ஸ் "
-"சாளர அமைப்பு வடிவ இயல் சரம்."
+"சொடுக்கு வகை சாளரத்துக்கு அளவும் இடமும். இந்த ஒழுங்கு செந்தர எக்ஸ் சாளர அமைப்பு வடிவ "
+"இயல் சரம்."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
@@ -225,44 +225,44 @@ msgstr "பிடிப்பு பரப்பின் அளவு "
 msgid "Width of the capture area in pixels."
 msgstr "பிடிப்பு பரப்பின் அகலம் பிக்ஸல்களில்."
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:596
 msgid "Enable simulated secondary click"
 msgstr "மெய்நிகர் இரண்டாம்  சொடுக்கு செயல்படுத்து"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:598
 msgid "Time to wait before a dwell click"
 msgstr "நிலை சொடுக்குக்கு காத்திருக்க வேண்டிய நேரம்"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:600
 msgid "Time to wait before a simulated secondary click"
 msgstr "மெய்நிகர் இரண்டாம்  சொடுக்கு செயல்பட காத்திருக்க வேண்டிய நேரம்."
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:602
 msgid "Set the active dwell mode"
 msgstr "நிலை சொடுக்கு முறைமை அமை"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:604
 msgid "Show a click-type window"
 msgstr "ஒ ருசொடுக்கு வகை சாளரத்தை காட்டு "
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
 msgstr "சிறு சுட்டி நகர்வுகளை உதாசீனம் செய்க."
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:610
 msgid "Shut down mousetweaks"
 msgstr "மவுஸ்ட்வீக்ஸ் செயல்களை பணி நிறுத்தம் செய்க"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:612
 msgid "Start mousetweaks as a daemon"
 msgstr "- க்னோம்  மவுஸ்ட்வீக்ஸ் கிங்கரன் ஐ துவக்குக"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
 msgstr "மவுஸ்ட்வீக்ஸ் ஐ உள்நுழை  பாங்கில் துவகக்கு"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:632
 msgid "- GNOME mouse accessibility daemon"
 msgstr "க்னோம் சொடுக்கி அணுகல் கிங்கரன்"
 
@@ -297,6 +297,9 @@ msgstr "பூட்டப்பட்டது"
 #: ../src/dwell-click-applet.c:450
 msgid "Failed to Open the Universal Access Panel"
 msgstr "பிரபஞ்ச அளவு அணுகல் பலகத்தை திறத்தல் தோல்வி"
+
+#~ msgid "Dwell Click-Type"
+#~ msgstr "நிலை சொடுக்கு வகை"
 
 #~ msgid "A_lt"
 #~ msgstr "(_l) ஆல்ட்"
@@ -335,8 +338,8 @@ msgstr "பிரபஞ்ச அளவு அணுகல் பலகத்த
 #~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
 #~ "Both)"
 #~ msgstr ""
-#~ "சொடுக்கு வகை சாளரத்தில் பொத்தான் பாங்கு (\"0\" = உரை, \"1\"= சின்னம், "
-#~ "\"2\"=இரண்டும்)"
+#~ "சொடுக்கு வகை சாளரத்தில் பொத்தான் பாங்கு (\"0\" = உரை, \"1\"= சின்னம், \"2"
+#~ "\"=இரண்டும்)"
 
 #~ msgid ""
 #~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
@@ -353,8 +356,8 @@ msgstr "பிரபஞ்ச அளவு அணுகல் பலகத்த
 #~ "\"3\" = கீழ்)"
 
 #~ msgid ""
-#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
-#~ "\"2\" = Up, \"3\" = Down)"
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
 #~ msgstr ""
 #~ "இரண்டாவது சொடுக்கு செய்ய வழிகாட்டி (\"0\" = இடது, \"1\" = வலது, \"2\" = மேலே, "
 #~ "\"3\" = கீழ்)"
@@ -363,8 +366,8 @@ msgstr "பிரபஞ்ச அளவு அணுகல் பலகத்த
 #~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 #~ "Up, \"3\" = Down)"
 #~ msgstr ""
-#~ "தனி சொடுக்கு செய்ய வழிகாட்டி (\"0\" = இடது, \"1\" = வலது, \"2\" = மேலே, "
-#~ "\"3\" = கீழ்)"
+#~ "தனி சொடுக்கு செய்ய வழிகாட்டி (\"0\" = இடது, \"1\" = வலது, \"2\" = மேலே, \"3"
+#~ "\" = கீழ்)"
 
 #~ msgid "Distance in pixels before movement will be recognized"
 #~ msgstr "அசைவு அடையாளம் காணப்பட குறைந்த பட்ச நகர்வு தொலைவு  பிக்ஸல்களில்."

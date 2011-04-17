@@ -5,8 +5,6 @@
 [type: gettext/ini]data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in
 data/org.gnome.mousetweaks.gschema.xml.in
 data/org.gnome.pointer-capture.gschema.xml.in
-data/DwellClick_Factory.server.in
-data/PointerCapture_Factory.server.in
 src/mt-main.c
 src/mt-ctw.c
 src/mt-common.c

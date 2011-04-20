@@ -1,0 +1,292 @@
+# Esperanto translation for mousetweaks
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the mousetweaks package.
+# Aisano < >, 2011.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-04-11 13:38+0000\n"
+"PO-Revision-Date: 2011-04-20 19:01+0200\n"
+"Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
+"Language-Team: Esperanto <ubuntu-l10n-eo@lists.launchpad.net>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-20 16:52+0000\n"
+"X-Generator: Launchpad (build 12847)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"Aplikaĵeto por elekti diversajn prokrast-klaktipojn.\n"
+"Parto de Mousetweaks"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "Fenestro de la klaktipoj"
+
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
+msgid "Double Click"
+msgstr "Duobla klako"
+
+#: ../data/dwell-click-applet.ui.h:5
+msgid "Drag Click"
+msgstr "Tren-klako"
+
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
+msgid "Enable dwell click"
+msgstr "Enŝalti prokrast-klakon"
+
+#: ../data/dwell-click-applet.ui.h:7
+msgid "Right Click"
+msgstr "Dekstra klako"
+
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
+msgid "Single Click"
+msgstr "Sola klako"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid ""
+"Area to lock the pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+
+#: ../data/pointer-capture-applet.ui.h:3
+msgid "C_trl"
+msgstr ""
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "Capture and Release Controls"
+msgstr ""
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Keyboard modifier:"
+msgstr "Klavara modifilo:"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Pointer Capture Preferences"
+msgstr "Agordoj pri kaptado de la musmontrilo"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "Premado de butono 0 tuj kaptas la musmontrilon"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Size of the Capture Area"
+msgstr "Grando de la kapta areo"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "_Mouse button:"
+msgstr "_Musbutono:"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "_Shift"
+msgstr "_Majuskliga klavo"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "_Width:"
+msgstr "_Larĝo:"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "pixels"
+msgstr "bilderoj"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Button Style"
+msgstr "Butona stilo"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:4
+msgid "Drag"
+msgstr "Treni"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:6
+msgid "Horizontal"
+msgstr "Horizontale"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "Pertuŝa klako"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Icons only"
+msgstr "Nur piktogramoj"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Orientation"
+msgstr "Orientiĝo"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Secondary Click"
+msgstr "Duaranga klako"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Text and Icons"
+msgstr "Teksto kaj piktogramoj"
+
+#: ../data/mousetweaks.ui.h:13
+msgid "Text only"
+msgstr "Nur teksto"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertikale"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr "Regi vian labortablon sen uzo de musaj butonoj"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+msgid "Dwell Click Applet"
+msgstr "Prokrast-klaka aplikaĵeto"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "Areo por ŝlosi  la montrilon"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+msgid "Pointer Capture Applet"
+msgstr "Montril-kapta aplikaĵeto"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Button style of the click-type window."
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+msgid "Click-type window geometry"
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Click-type window style"
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+msgid "Orientation of the click-type window."
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
+msgid "\"Alt\" keyboard modifier"
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
+msgid "\"Control\" keyboard modifier"
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
+msgid "\"Shift\" keyboard modifier"
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
+msgid "Mouse button"
+msgstr "Musbutono"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
+msgid "Mouse button used to capture or release the pointer."
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
+msgid "Size of capture area"
+msgstr ""
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
+msgid "Width of the capture area in pixels."
+msgstr ""
+
+#: ../src/mt-main.c:596
+msgid "Enable simulated secondary click"
+msgstr ""
+
+#: ../src/mt-main.c:598
+msgid "Time to wait before a dwell click"
+msgstr ""
+
+#: ../src/mt-main.c:600
+msgid "Time to wait before a simulated secondary click"
+msgstr ""
+
+#: ../src/mt-main.c:602
+msgid "Set the active dwell mode"
+msgstr ""
+
+#: ../src/mt-main.c:604
+msgid "Show a click-type window"
+msgstr ""
+
+#: ../src/mt-main.c:606
+msgid "Ignore small pointer movements"
+msgstr ""
+
+#: ../src/mt-main.c:610
+msgid "Shut down mousetweaks"
+msgstr ""
+
+#: ../src/mt-main.c:612
+msgid "Start mousetweaks as a daemon"
+msgstr ""
+
+#: ../src/mt-main.c:614
+msgid "Start mousetweaks in login mode"
+msgstr ""
+
+#. parse
+#: ../src/mt-main.c:632
+msgid "- GNOME mouse accessibility daemon"
+msgstr ""
+
+#: ../src/mt-common.c:74
+msgid "Failed to Display Help"
+msgstr ""
+
+#: ../src/pointer-capture-applet.c:79
+msgid "Capture area"
+msgstr ""
+
+#: ../src/pointer-capture-applet.c:80
+msgid "Temporarily lock the mouse pointer"
+msgstr ""
+
+#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+msgid "_Preferences"
+msgstr "_Agordoj"
+
+#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+msgid "_Help"
+msgstr "_Helpo"
+
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+msgid "_About"
+msgstr "_Pri"
+
+#: ../src/pointer-capture-applet.c:490
+msgid "Locked"
+msgstr "Ŝlosite"
+
+#: ../src/dwell-click-applet.c:450
+msgid "Failed to Open the Universal Access Panel"
+msgstr ""

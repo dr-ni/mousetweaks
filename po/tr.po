@@ -1,25 +1,25 @@
 # Turkish translation of MouseTweaks,
 # Copyright (C) 2008 THE MouseTweak'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the MouseTweaks package.
-#
-#
 # Emrah Ünal <eunall@gmail.com>, 2008.
 # Baris Cicek <baris@teamforce.name.tr>, 2008, 2009, 2011.
+# Muhammet Kara <muhammet.k@gmail.com>, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-04 05:31+0300\n"
-"PO-Revision-Date: 2011-04-01 13:01+0300\n"
-"Last-Translator: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-04-04 02:31+0000\n"
+"PO-Revision-Date: 2011-04-25 00:59+0300\n"
+"Last-Translator: Muhammet Kara <muhammet.k@gmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
-"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
 "X-Generator: Lokalize 1.1\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../data/dwell-click-applet.ui.h:1
 msgid ""
@@ -54,7 +54,6 @@ msgid "Single Click"
 msgstr "Tek Tıklama"
 
 #: ../data/pointer-capture-applet.ui.h:1
-#, fuzzy
 msgid ""
 "Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
@@ -71,9 +70,8 @@ msgid "Capture and Release Controls"
 msgstr "Yakalama ve Bırakma Kontrolleri"
 
 #: ../data/pointer-capture-applet.ui.h:5
-#, fuzzy
 msgid "Keyboard modifier:"
-msgstr "Yakalama değiştirici"
+msgstr "Klavye değiştirgesi:"
 
 #: ../data/pointer-capture-applet.ui.h:6
 msgid "Pointer Capture Preferences"
@@ -84,36 +82,32 @@ msgid "Selecting Button 0 will capture the pointer immediately"
 msgstr "Düğme 0 seçildiğinde imleç hemen yakalanacaktır"
 
 #: ../data/pointer-capture-applet.ui.h:8
-#, fuzzy
 msgid "Size of the Capture Area"
-msgstr "Yakalama alanının büyüklüğü"
+msgstr "Yakalama Alanının Büyüklüğü"
 
 #: ../data/pointer-capture-applet.ui.h:9
 msgid "_Alt"
 msgstr "_Alt"
 
 #: ../data/pointer-capture-applet.ui.h:10
-#, fuzzy
 msgid "_Mouse button:"
-msgstr "Fare _düğmesi:"
+msgstr "_Fare düğmesi:"
 
 #: ../data/pointer-capture-applet.ui.h:11
-#, fuzzy
 msgid "_Shift"
-msgstr "S_hift"
+msgstr "_Üst Karakter (Shift)"
 
 #: ../data/pointer-capture-applet.ui.h:12
 msgid "_Width:"
-msgstr "_Genişlik"
+msgstr "_Genişlik:"
 
 #: ../data/pointer-capture-applet.ui.h:13
 msgid "pixels"
 msgstr "piksel"
 
 #: ../data/mousetweaks.ui.h:1
-#, fuzzy
 msgid "Button Style"
-msgstr "Düğme türü"
+msgstr "Düğme Biçimi"
 
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
@@ -126,32 +120,28 @@ msgid "Horizontal"
 msgstr "Yatay"
 
 #: ../data/mousetweaks.ui.h:7
-#, fuzzy
 msgid "Hover Click"
-msgstr "Çift tıklama"
+msgstr "Durağan Tıklama"
 
 #: ../data/mousetweaks.ui.h:8
-#, fuzzy
 msgid "Icons only"
-msgstr "Yalnızca Simgeleri Göster"
+msgstr "Sadece simgeler"
 
 #: ../data/mousetweaks.ui.h:9
 msgid "Orientation"
 msgstr "Yönelim"
 
 #: ../data/mousetweaks.ui.h:10
-#, fuzzy
 msgid "Secondary Click"
-msgstr "İkincil tıklama süresi"
+msgstr "İkincil Tıklama"
 
 #: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
-msgstr "Metinler ve simgeler"
+msgstr "Metin ve Simgeler"
 
 #: ../data/mousetweaks.ui.h:13
-#, fuzzy
 msgid "Text only"
-msgstr "Yalnızca Yazıyı göster"
+msgstr "Sadece metin"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
@@ -177,59 +167,53 @@ msgid "Pointer Capture Applet"
 msgstr "İmleç Yakalama Uygulamacığı"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-#, fuzzy
 msgid "Button style of the click-type window."
-msgstr "Tıklama türü penceresini göster"
+msgstr "Tıklama türü penceresinin düğme biçimi."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
-#, fuzzy
 msgid "Click-type window geometry"
-msgstr "Tıklama Türü Penceresi"
+msgstr "Tıklama Türü Pencere Geometrisi"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-#, fuzzy
 msgid "Click-type window orientation"
-msgstr "Tıklama Türü Penceresi"
+msgstr "Tıklama türü pencere yönelimi"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-#, fuzzy
 msgid "Click-type window style"
-msgstr "Tıklama Türü Penceresi"
+msgstr "Tıklama türü pencere biçimi"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-#, fuzzy
 msgid "Orientation of the click-type window."
-msgstr "Tıklama türü penceresini göster"
+msgstr "Tıklama türü penceresinin yönelimi."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
+"Tıklama türü penceresinin boyutu ve konumu. Standart X Pencere Sistemi "
+"geometri dizgesi biçimindedir."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-#, fuzzy
 msgid "\"Alt\" keyboard modifier"
-msgstr "Bırakma değiştirici"
+msgstr "\"Alt\" klavye değiştirici"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-#, fuzzy
 msgid "\"Control\" keyboard modifier"
-msgstr "Yakalama değiştirici"
+msgstr "\"Control\" klavy değiştirici"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
 msgid "\"Shift\" keyboard modifier"
-msgstr "\"Shift\" klavye düzenleyici"
+msgstr "\"Üst karakter\" klavye değiştirici"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-#, fuzzy
 msgid "Mouse button"
-msgstr "Fare _düğmesi:"
+msgstr "Fare düğmesi"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-#, fuzzy
 msgid "Mouse button used to capture or release the pointer."
-msgstr "Belirteci yakalamak için kullanılacak fare düğmesi"
+msgstr ""
+"İşaretçiyi yakalamak ya da serbest bırakmak için kullanılan fare düğmesi."
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
@@ -252,14 +236,12 @@ msgid "Time to wait before a simulated secondary click"
 msgstr "Benzetimli ikincil tıklamayı etkinleştirmek için beklenecek süre"
 
 #: ../src/mt-main.c:602
-#, fuzzy
 msgid "Set the active dwell mode"
-msgstr "Durağan kipi kullan"
+msgstr "Etkin bekleme kipini ayarla"
 
 #: ../src/mt-main.c:604
-#, fuzzy
 msgid "Show a click-type window"
-msgstr "Tıklama türü penceresini göster"
+msgstr "Tıklama türü penceresi göster"
 
 #: ../src/mt-main.c:606
 msgid "Ignore small pointer movements"
@@ -270,9 +252,8 @@ msgid "Shut down mousetweaks"
 msgstr "Fare Ayarlayıcısını kapat"
 
 #: ../src/mt-main.c:612
-#, fuzzy
 msgid "Start mousetweaks as a daemon"
-msgstr "- GNOME fare ayarlayıcı servisi"
+msgstr "Mousetweaks'i hizmet olarak başlat"
 
 #: ../src/mt-main.c:614
 msgid "Start mousetweaks in login mode"
@@ -280,9 +261,8 @@ msgstr "mousetweaks'i giriş modunda başlat"
 
 #. parse
 #: ../src/mt-main.c:632
-#, fuzzy
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- GNOME fare ayarlayıcı servisi"
+msgstr "- GNOME fare erişilebilirlik hizmeti"
 
 #: ../src/mt-common.c:74
 msgid "Failed to Display Help"

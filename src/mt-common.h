@@ -17,6 +17,10 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #ifndef __MT_COMMON_H__
 #define __MT_COMMON_H__
 

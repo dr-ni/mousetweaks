@@ -1,7 +1,7 @@
 AM_CPPFLAGS =                               \
     $(WARN_CFLAGS)                          \
     -DDATADIR=\"$(datadir)/mousetweaks\"    \
-    -DLOCALEDIR=\"$(datadir)/locale\"
+    -DGNOMELOCALEDIR=\"$(datadir)/locale\"
 
 if BUILD_PCA
 pca_bin = pointer-capture-applet

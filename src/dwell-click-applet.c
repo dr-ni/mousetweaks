@@ -577,10 +577,6 @@ fill_applet (PanelApplet *applet)
     GtkActionGroup *group;
     PanelAppletOrient orient;
 
-    bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-    textdomain (GETTEXT_PACKAGE);
-
     g_set_application_name (_("Dwell Click Applet"));
     gtk_window_set_default_icon_name (MT_ICON_NAME);
 

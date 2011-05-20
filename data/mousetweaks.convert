@@ -1,3 +1,2 @@
 [org.gnome.mousetweaks]
 click-type-window-style = /desktop/gnome/accessibility/mouse/button_layout
-animate-cursor = /desktop/gnome/accessibility/mouse/animate_cursor

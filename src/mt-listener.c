@@ -102,19 +102,7 @@ mt_event_free (MtEvent *event)
     g_free (event);
 }
 
-GType
-mt_event_get_type (void)
-{
-    static GType event = 0;
-
-    if (G_UNLIKELY (event == 0))
-    {
-        event = g_boxed_type_register_static (g_intern_static_string ("MtEvent"),
-                                              (GBoxedCopyFunc) mt_event_copy,
-                                              (GBoxedFreeFunc) mt_event_free);
-    }
-    return event;
-}
+G_DEFINE_BOXED_TYPE (MtEvent, mt_event, mt_event_copy, mt_event_free)
 
 static void
 mt_listener_emit_button_event (MtListener *listener,

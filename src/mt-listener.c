@@ -42,12 +42,8 @@ enum
 
 static guint signals[LAST_SIGNAL] = { 0, };
 
-static void              mt_listener_grab_buttons     (void);
-static void              mt_listener_ungrab_buttons   (void);
-static gboolean          mt_listener_mouse_idle       (gpointer   data);
-static GdkFilterReturn   mt_listener_event_filter     (GdkXEvent *gdk_xevent,
-                                                       GdkEvent  *gdk_event,
-                                                       gpointer   data);
+static gboolean mt_listener_mouse_idle (gpointer data);
+
 
 G_DEFINE_TYPE (MtListener, mt_listener, G_TYPE_OBJECT)
 
@@ -57,17 +53,13 @@ mt_listener_init (MtListener *listener)
     listener->priv = G_TYPE_INSTANCE_GET_PRIVATE (listener,
                                                   MT_TYPE_LISTENER,
                                                   MtListenerPrivate);
-
-    gdk_window_add_filter (NULL, mt_listener_event_filter, listener);
-    mt_listener_grab_buttons ();
     mt_listener_mouse_idle (listener);
 }
 
 static void
 mt_listener_finalize (GObject *object)
 {
-    gdk_window_remove_filter (NULL, mt_listener_event_filter, object);
-    mt_listener_ungrab_buttons ();
+    mt_listener_ungrab_mouse_wheel (MT_LISTENER (object));
 
     G_OBJECT_CLASS (mt_listener_parent_class)->finalize (object);
 }
@@ -199,10 +191,6 @@ mt_listener_maybe_emit (MtListener *listener, guint mask)
         button = 3;
         pressed = TRUE;
     }
-    /*
-     * scroll-wheel events come in press-release pairs,
-     * so this is mostly an exercise in futility.
-     */
     else if (!(mask & Button4Mask) && (priv->mask_state & Button4Mask))
     {
         priv->mask_state &= ~Button4Mask;
@@ -292,32 +280,6 @@ mt_listener_mouse_idle (gpointer data)
 }
 
 static void
-mt_listener_grab_buttons (void)
-{
-    Display *dpy;
-
-    dpy = mt_common_get_xdisplay ();
-    mt_common_xtrap_push ();
-    XGrabButton (dpy, AnyButton, AnyModifier,
-                 XDefaultRootWindow (dpy),
-                 True, ButtonPressMask | ButtonReleaseMask,
-                 GrabModeSync, GrabModeAsync, None, None);
-    XSync (dpy, False);
-    mt_common_xtrap_pop ();
-}
-
-static void
-mt_listener_ungrab_buttons (void)
-{
-    Display *dpy;
-
-    dpy = mt_common_get_xdisplay ();
-    mt_common_xtrap_push ();
-    XUngrabButton (dpy, AnyButton, AnyModifier, XDefaultRootWindow (dpy));
-    mt_common_xtrap_pop ();
-}
-
-static void
 mt_listener_forward_button_event (MtListener *listener, XButtonEvent *bev)
 {
     MtListenerPrivate *priv = listener->priv;
@@ -386,4 +348,41 @@ mt_listener_get_default (void)
         g_object_add_weak_pointer (G_OBJECT (listener), (gpointer *) &listener);
     }
     return listener;
+}
+
+void
+mt_listener_grab_mouse_wheel (MtListener *listener)
+{
+    Display *dpy;
+
+    dpy = mt_common_get_xdisplay ();
+
+    mt_common_xtrap_push ();
+    XGrabButton (dpy, Button4, AnyModifier,
+                 XDefaultRootWindow (dpy),
+                 True, ButtonPressMask | ButtonReleaseMask,
+                 GrabModeSync, GrabModeAsync, None, None);
+
+    XGrabButton (dpy, Button5, AnyModifier,
+                 XDefaultRootWindow (dpy),
+                 True, ButtonPressMask | ButtonReleaseMask,
+                 GrabModeSync, GrabModeAsync, None, None);
+    mt_common_xtrap_pop ();
+
+    gdk_window_add_filter (NULL, mt_listener_event_filter, listener);
+}
+
+void
+mt_listener_ungrab_mouse_wheel (MtListener *listener)
+{
+    Display *dpy;
+
+    dpy = mt_common_get_xdisplay ();
+
+    mt_common_xtrap_push ();
+    XUngrabButton (dpy, Button4, AnyModifier, XDefaultRootWindow (dpy));
+    XUngrabButton (dpy, Button5, AnyModifier, XDefaultRootWindow (dpy));
+    mt_common_xtrap_pop ();
+
+    gdk_window_remove_filter (NULL, mt_listener_event_filter, listener);
 }

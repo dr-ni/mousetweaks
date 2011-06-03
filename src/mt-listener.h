@@ -55,10 +55,12 @@ struct _MtEvent
     gint        button;
 };
 
-GType              mt_event_get_type          (void) G_GNUC_CONST;
-GType              mt_listener_get_type       (void) G_GNUC_CONST;
+GType              mt_event_get_type              (void) G_GNUC_CONST;
+GType              mt_listener_get_type           (void) G_GNUC_CONST;
 
-MtListener *       mt_listener_get_default    (void);
+MtListener *       mt_listener_get_default        (void);
+void               mt_listener_grab_mouse_wheel   (MtListener *listener);
+void               mt_listener_ungrab_mouse_wheel (MtListener *listener);
 
 G_END_DECLS
 

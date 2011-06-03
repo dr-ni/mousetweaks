@@ -741,6 +741,10 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
 
     /* init mouse listener */
     listener = mt_listener_get_default ();
+
+    if (ms->dwell_enabled)
+        mt_listener_grab_mouse_wheel (listener);
+
     g_signal_connect (listener, "motion_event",
                       G_CALLBACK (global_motion_event), mt);
     g_signal_connect (listener, "button_event",

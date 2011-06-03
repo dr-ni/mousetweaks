@@ -663,6 +663,8 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
         return;
     }
 
+    gdk_disable_multidevice ();
+
     gtk_init (&argc, &argv);
 
     sigh = mt_sig_handler_get_default ();

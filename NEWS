@@ -1,3 +1,21 @@
+Version 3.1.2
+-------------
+
+Misc changes, improvements and fixes:
+
+    - Fix up the config.h includes
+    - Remove animate-cursor key from mousetweaks.convert
+    - Limit passive mouse button grabs to the mouse wheel
+    - Use new macro for boxed gtypes
+    - Disable multidevice support in gdk
+    - Rename LOCALEDIR to GNOMELOCALEDIR
+    - Raise dependency from libpanel-applet-3-0 to libpanel-applet-4-0
+
+New and updated translations:
+
+    [ac@valencia] Carles Ferrando
+    [ug] Abduxukur Abdurixit 
+
 Version 3.1.1
 -------------
 

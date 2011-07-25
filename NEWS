@@ -1,3 +1,20 @@
+Version 3.1.4
+-------------
+
+Misc changes, improvements and fixes:
+
+    - Delete wrong statement about dependency raising in section 3.1.2 of
+      NEWS file, bgo #652529
+
+New and updated translations:
+
+    [lt] Aurimas Černius
+
+Version 3.1.3
+-------------
+
+There is no 3.1.3 release of mousetweaks
+
 Version 3.1.2
 -------------
 
@@ -9,7 +26,6 @@ Misc changes, improvements and fixes:
     - Use new macro for boxed gtypes
     - Disable multidevice support in gdk
     - Rename LOCALEDIR to GNOMELOCALEDIR
-    - Raise dependency from libpanel-applet-3-0 to libpanel-applet-4-0
 
 New and updated translations:
 

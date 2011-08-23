@@ -1,0 +1,297 @@
+# Persian translation for mousetweaks.
+# Copyright (C) 2011 mousetweaks's COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousetweaks package.
+# Arash Mousavi <mousavi.arash@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-07-25 20:05+0000\n"
+"PO-Revision-Date: 2011-08-24 00:12+0330\n"
+"Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
+"Language-Team: Persian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../data/dwell-click-applet.ui.h:1
+msgid ""
+"Applet to select different dwell-click types.\n"
+"Part of Mousetweaks"
+msgstr ""
+"یک برنامک جهت انتخاب انواع مختلف کلیک ساکن.\n"
+"بخشی از برنامه نیشگون موشی"
+
+#: ../data/dwell-click-applet.ui.h:3
+msgid "Click Type Window"
+msgstr "پنجره نوع کلیک"
+
+#: ../data/dwell-click-applet.ui.h:4
+#: ../data/mousetweaks.ui.h:2
+msgid "Double Click"
+msgstr "دوبار کلیک"
+
+#: ../data/dwell-click-applet.ui.h:5
+msgid "Drag Click"
+msgstr "کشیدن"
+
+#: ../data/dwell-click-applet.ui.h:6
+#: ../src/mt-main.c:598
+msgid "Enable dwell click"
+msgstr "فعال‌سازی کلیک ساکن"
+
+#: ../data/dwell-click-applet.ui.h:7
+msgid "Right Click"
+msgstr "راست کلیک"
+
+#: ../data/dwell-click-applet.ui.h:8
+#: ../data/mousetweaks.ui.h:11
+msgid "Single Click"
+msgstr "یک کلیک"
+
+#: ../data/pointer-capture-applet.ui.h:1
+msgid ""
+"Area to lock the pointer on the panel.\n"
+"Part of Mousetweaks"
+msgstr ""
+"ناحیه‌ای برای قفل کردن اشاره‌گر در تابلو.\n"
+"بخشی از برنامه نیشگون موشی"
+
+#: ../data/pointer-capture-applet.ui.h:3
+msgid "C_trl"
+msgstr "_مهار"
+
+#: ../data/pointer-capture-applet.ui.h:4
+msgid "Capture and Release Controls"
+msgstr "کنترل‌های گرفتن و رها کردن"
+
+#: ../data/pointer-capture-applet.ui.h:5
+msgid "Keyboard modifier:"
+msgstr "تغییردهنده صفحه‌کلید"
+
+#: ../data/pointer-capture-applet.ui.h:6
+msgid "Pointer Capture Preferences"
+msgstr "ترجیحات گرفتن اشاره‌گر"
+
+#: ../data/pointer-capture-applet.ui.h:7
+msgid "Selecting Button 0 will capture the pointer immediately"
+msgstr "انتخاب دکمه 0 اشاره‌گر را فورا خواهد گرفت"
+
+#: ../data/pointer-capture-applet.ui.h:8
+msgid "Size of the Capture Area"
+msgstr "اندازه ناحیه گرفتن"
+
+#: ../data/pointer-capture-applet.ui.h:9
+msgid "_Alt"
+msgstr "_دگرساز"
+
+#: ../data/pointer-capture-applet.ui.h:10
+msgid "_Mouse button:"
+msgstr "_دکمه موشی:"
+
+#: ../data/pointer-capture-applet.ui.h:11
+msgid "_Shift"
+msgstr "_تبدیل"
+
+#: ../data/pointer-capture-applet.ui.h:12
+msgid "_Width:"
+msgstr "_پهنا:"
+
+#: ../data/pointer-capture-applet.ui.h:13
+msgid "pixels"
+msgstr "پیکسل"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Button Style"
+msgstr "سبک دکمه"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:4
+msgid "Drag"
+msgstr "کشیدن"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:6
+msgid "Horizontal"
+msgstr "افقی"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Hover Click"
+msgstr "کلیک شناور"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Icons only"
+msgstr "فقط شمایل‌ها"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Orientation"
+msgstr "جهت"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Secondary Click"
+msgstr "دومین کلیک"
+
+#: ../data/mousetweaks.ui.h:12
+msgid "Text and Icons"
+msgstr "متن و شمایل‌ها"
+
+#: ../data/mousetweaks.ui.h:13
+msgid "Text only"
+msgstr "فقط متن"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "عمودی"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
+msgid "Control your desktop without using mouse buttons"
+msgstr "رومیزی خود را بدون استفاده از موشی کنترل کنید"
+
+#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
+#: ../src/dwell-click-applet.c:584
+msgid "Dwell Click Applet"
+msgstr "برنامک کلیک ساکن"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
+msgid "Area to lock the pointer"
+msgstr "محلی برای قفل کردن اشاره‌گر"
+
+#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
+#: ../src/pointer-capture-applet.c:439
+msgid "Pointer Capture Applet"
+msgstr "برنامک گرفتن اشاره‌گر"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Button style of the click-type window."
+msgstr "سبک دکمه پنجره «نوع کلیک»."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: ../src/mt-main.c:612
+msgid "Click-type window geometry"
+msgstr "مختصات پنجره «نوع کلیک»"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "جهت پنجره «نوع کلید»"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Click-type window style"
+msgstr "سبک پنجره «نوع کلید»"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+msgid "Orientation of the click-type window."
+msgstr "جهت پنجره «نوع کلیک»."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid "Size and position of the click-type window. The format is a standard X Window System geometry string."
+msgstr "اندزه و محل پنجره «نوع کلیک». قالب همان قالب استاندارد رشته‌ی مختصات سیستم پنجره‌ی X است."
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
+msgid "\"Alt\" keyboard modifier"
+msgstr "تغییردهنده صفحه‌کلید «دگرساز»"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
+msgid "\"Control\" keyboard modifier"
+msgstr "تغییردهنده صفحه‌کلید «مهار»"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
+msgid "\"Shift\" keyboard modifier"
+msgstr "تغییردهنده صفحه‌کلید «تبدیل»"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
+msgid "Mouse button"
+msgstr "کلید موشی"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
+msgid "Mouse button used to capture or release the pointer."
+msgstr "کلید موشی استفاده شده جهت گرفتن و رها کردن اشاره‌گر موشی."
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
+msgid "Size of capture area"
+msgstr "اندازه ناحیه گرفتن"
+
+#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
+msgid "Width of the capture area in pixels."
+msgstr "پهنا ناحیه گرفتن بر حسب پیکسل. "
+
+#: ../src/mt-main.c:600
+msgid "Enable simulated secondary click"
+msgstr "فعال کردن شبیه‌سازی کلیک دوم"
+
+#: ../src/mt-main.c:602
+msgid "Time to wait before a dwell click"
+msgstr "زمان جهت انتظار قبل از یک کلیک ساکن"
+
+#: ../src/mt-main.c:604
+msgid "Time to wait before a simulated secondary click"
+msgstr "زمان جهت انتظار قبل از دومین کلیک شبیه‌سازی شده"
+
+#: ../src/mt-main.c:606
+msgid "Set the active dwell mode"
+msgstr "تنظیم حالت ساکن فعال"
+
+#: ../src/mt-main.c:608
+msgid "Show a click-type window"
+msgstr "نمایش یک پنجره «نوع کلیک»"
+
+#: ../src/mt-main.c:610
+msgid "Ignore small pointer movements"
+msgstr "نادیده گرفتن حرکت‌های کوتاه موشی"
+
+#: ../src/mt-main.c:614
+msgid "Shut down mousetweaks"
+msgstr "خاموش کردن نیشگون‌های موشی"
+
+#: ../src/mt-main.c:616
+msgid "Start mousetweaks as a daemon"
+msgstr "شروع نیشگون‌های موشی به حالت شبح"
+
+#: ../src/mt-main.c:618
+msgid "Start mousetweaks in login mode"
+msgstr "شروع نیشگون‌های موشی در حالت ورود به سیستم"
+
+#. parse
+#: ../src/mt-main.c:636
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- شبح دسترسی‌پذیری موشی گنوم"
+
+#: ../src/mt-common.c:78
+msgid "Failed to Display Help"
+msgstr "نمایش راهنما شکست خورد"
+
+#: ../src/pointer-capture-applet.c:83
+msgid "Capture area"
+msgstr "ناحیه گرفتن"
+
+#: ../src/pointer-capture-applet.c:84
+msgid "Temporarily lock the mouse pointer"
+msgstr "نشان‌گر موشی را به طور موقت قفل کن"
+
+#: ../src/pointer-capture-applet.c:179
+#: ../src/dwell-click-applet.c:84
+msgid "_Preferences"
+msgstr "_ترجیحات"
+
+#: ../src/pointer-capture-applet.c:181
+#: ../src/dwell-click-applet.c:86
+msgid "_Help"
+msgstr "_راهنما"
+
+#: ../src/pointer-capture-applet.c:183
+#: ../src/dwell-click-applet.c:88
+msgid "_About"
+msgstr "_درباره"
+
+#: ../src/pointer-capture-applet.c:490
+msgid "Locked"
+msgstr "قفل شد"
+
+#: ../src/dwell-click-applet.c:454
+msgid "Failed to Open the Universal Access Panel"
+msgstr "باز کردن تابلو دسترسی همگانی شکست خورد"
+

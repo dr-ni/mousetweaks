@@ -10,9 +10,9 @@ msgstr ""
 "Project-Id-Version: mousetweaks master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-04-01 10:30+0000\n"
-"PO-Revision-Date: 2011-04-01 22:12+0900\n"
-"Last-Translator: Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>\n"
+"POT-Creation-Date: 2011-09-05 17:01+0000\n"
+"PO-Revision-Date: 2011-09-11 08:23+0900\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +39,7 @@ msgstr "ダブルクリック"
 msgid "Drag Click"
 msgstr "ドラッグクリック"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:598
 msgid "Enable dwell click"
 msgstr "自動クリックの機能を有効にする"
 
@@ -56,7 +56,7 @@ msgid ""
 "Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
-"パネル上のポインタをロックする領域。\n"
+"パネル上のポインターをロックする領域。\n"
 "Mousetweaks の一部"
 
 #: ../data/pointer-capture-applet.ui.h:3
@@ -73,11 +73,11 @@ msgstr "修飾キー:"
 
 #: ../data/pointer-capture-applet.ui.h:6
 msgid "Pointer Capture Preferences"
-msgstr "ポインタの捕獲の設定"
+msgstr "ポインターの捕獲の設定"
 
 #: ../data/pointer-capture-applet.ui.h:7
 msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "ボタン0を選択するとポインタをすぐに捕獲します"
+msgstr "ボタン0を選択するとポインターをすぐに捕獲します"
 
 #: ../data/pointer-capture-applet.ui.h:8
 msgid "Size of the Capture Area"
@@ -157,18 +157,18 @@ msgstr "自動クリックアプレット"
 
 #: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
 msgid "Area to lock the pointer"
-msgstr "ポインタをロックするエリアです"
+msgstr "ポインターをロックするエリアです"
 
 #: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
 #: ../src/pointer-capture-applet.c:439
 msgid "Pointer Capture Applet"
-msgstr "ポインタの捕獲アプレット"
+msgstr "ポインターの捕獲アプレット"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
 msgstr "クリック種別のウィンドウのボタンのスタイル。"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:612
 msgid "Click-type window geometry"
 msgstr "クリック種別のウィンドウの座標"
 
@@ -210,7 +210,7 @@ msgstr "マウスのボタン"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
 msgid "Mouse button used to capture or release the pointer."
-msgstr "ポインタを捕獲したり解放するマウスのボタン。"
+msgstr "ポインターを捕獲したり解放するマウスのボタン。"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
 msgid "Size of capture area"
@@ -220,68 +220,68 @@ msgstr "捕獲エリアの大きさ"
 msgid "Width of the capture area in pixels."
 msgstr "パネルに配置する捕獲エリアの幅 (ピクセル単位) です。"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:600
 msgid "Enable simulated secondary click"
 msgstr "副ボタンのクリックを検出する"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:602
 msgid "Time to wait before a dwell click"
 msgstr "自動クリックするまでの時間を指定する"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:604
 msgid "Time to wait before a simulated secondary click"
 msgstr "副ボタンのクリックとみなすまでの時間を指定する"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:606
 msgid "Set the active dwell mode"
 msgstr "アクティブな自動クリックモードを設定"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:608
 msgid "Show a click-type window"
 msgstr "クリック種別のウィンドウを表示する"
 
-#: ../src/mt-main.c:606
-msgid "Ignore small pointer movements"
-msgstr "小規模なポインタの移動を無視する"
-
 #: ../src/mt-main.c:610
+msgid "Ignore small pointer movements"
+msgstr "小規模なポインターの移動を無視する"
+
+#: ../src/mt-main.c:614
 msgid "Shut down mousetweaks"
 msgstr "MouseTweaks デーモンを終了する"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:616
 msgid "Start mousetweaks as a daemon"
 msgstr "MouseTweaks をデーモンとして起動"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:618
 msgid "Start mousetweaks in login mode"
 msgstr "mousetweaks をログインモードで起動"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:636
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME の マウスアクセシビリティデーモン"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:78
 msgid "Failed to Display Help"
 msgstr "ヘルプを表示できませんでした"
 
-#: ../src/pointer-capture-applet.c:79
+#: ../src/pointer-capture-applet.c:83
 msgid "Capture area"
 msgstr "捕獲エリア"
 
-#: ../src/pointer-capture-applet.c:80
+#: ../src/pointer-capture-applet.c:84
 msgid "Temporarily lock the mouse pointer"
-msgstr "マウスのポインタを捕獲して一時的にロックします"
+msgstr "マウスのポインターを捕獲して一時的にロックします"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
 msgid "_Preferences"
 msgstr "設定(_P)"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+#: ../src/pointer-capture-applet.c:181 ../src/dwell-click-applet.c:86
 msgid "_Help"
 msgstr "ヘルプ(_H)"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+#: ../src/pointer-capture-applet.c:183 ../src/dwell-click-applet.c:88
 msgid "_About"
 msgstr "情報(_A)"
 
@@ -289,6 +289,6 @@ msgstr "情報(_A)"
 msgid "Locked"
 msgstr "ロック中"
 
-#: ../src/dwell-click-applet.c:450
+#: ../src/dwell-click-applet.c:454
 msgid "Failed to Open the Universal Access Panel"
 msgstr "ユニバーサル・アクセス・パネルを開けませんでした"

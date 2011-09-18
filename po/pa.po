@@ -7,17 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
-"cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-12-20 12:14+0000\n"
-"PO-Revision-Date: 2011-01-02 08:04+0530\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-06-13 18:51+0000\n"
+"PO-Revision-Date: 2011-09-18 08:59+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pa\n"
 
 #: ../data/dwell-click-applet.ui.h:1
 msgid ""
@@ -39,7 +40,7 @@ msgstr "ਡਬਲ ਕਲਿੱਕ"
 msgid "Drag Click"
 msgstr "ਡਰੈਗ ਕਲਿੱਕ"
 
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:592
+#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:598
 msgid "Enable dwell click"
 msgstr "ਡੀਵਿਲ ਦਬਾਉ ਚਾਲੂ"
 
@@ -88,12 +89,10 @@ msgid "_Alt"
 msgstr "_Alt"
 
 #: ../data/pointer-capture-applet.ui.h:10
-#| msgid "Mouse _button:"
 msgid "_Mouse button:"
 msgstr "ਮਾਊਸ ਬਟਨ(_M):"
 
 #: ../data/pointer-capture-applet.ui.h:11
-#| msgid "S_hift"
 msgid "_Shift"
 msgstr "ਸਿਫਟ(_S)"
 
@@ -106,7 +105,6 @@ msgid "pixels"
 msgstr "ਪਿਕਸਲ"
 
 #: ../data/mousetweaks.ui.h:1
-#| msgid "Button style"
 msgid "Button Style"
 msgstr "ਬਟਨ ਸਟਾਈਲ"
 
@@ -115,18 +113,17 @@ msgstr "ਬਟਨ ਸਟਾਈਲ"
 msgid "Drag"
 msgstr "ਡਰੈਗ"
 
-#: ../data/mousetweaks.ui.h:5
-#| msgid "Dwell Click Type"
-msgid "Dwell Click-Type"
-msgstr "ਡੀਵਿਲ ਕਲਿੱਕ-ਟਾਈਪ"
-
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:7
+#: ../data/mousetweaks.ui.h:6
 msgid "Horizontal"
 msgstr "ਹਰੀਜੱਟਲ"
 
+#: ../data/mousetweaks.ui.h:7
+#| msgid "Double Click"
+msgid "Hover Click"
+msgstr "ਹੋਵਰ ਕਲਿੱਕ"
+
 #: ../data/mousetweaks.ui.h:8
-#| msgid "Show Icons only"
 msgid "Icons only"
 msgstr "ਕੇਵਲ ਆਈਕਾਨ"
 
@@ -135,7 +132,6 @@ msgid "Orientation"
 msgstr "ਸਥਿਤੀ"
 
 #: ../data/mousetweaks.ui.h:10
-#| msgid "Secondary click time"
 msgid "Secondary Click"
 msgstr "ਸੈਕੰਡਰੀ ਕਲਿੱਕ"
 
@@ -144,7 +140,6 @@ msgid "Text and Icons"
 msgstr "ਟੈਕਸਟ ਤੇ ਆਈਕਾਨ"
 
 #: ../data/mousetweaks.ui.h:13
-#| msgid "Show Text only"
 msgid "Text only"
 msgstr "ਕੇਵਲ ਟੈਕਸਟ"
 
@@ -159,7 +154,6 @@ msgstr "ਬਿਨਾਂ ਮਾਊਸ ਬਟਨ ਵਰਤੇ ਆਪਣੇ ਡੈ�
 
 #: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
 #: ../src/dwell-click-applet.c:584
-#| msgid "Dwell Click Type"
 msgid "Dwell Click Applet"
 msgstr "ਡੀਵਿਲ ਕਲਿੱਕ ਐਪਲਿਟ"
 
@@ -169,32 +163,26 @@ msgstr "ਪੁਆਇੰਟਰ ਨੂੰ ਲਾਕ ਕਰਨ ਲਈ ਖੇਤਰ"
 
 #: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
 #: ../src/pointer-capture-applet.c:439
-#| msgid "Pointer Capture"
 msgid "Pointer Capture Applet"
 msgstr "ਪੁਆਇੰਟਰ ਕੈਪਚਰ ਐਪਲਿਟ"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-#| msgid "Show a click-type window"
 msgid "Button style of the click-type window."
 msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਦਾ ਬਟਨ ਸਟਾਇਲ"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:606
-#| msgid "Click-type window X position"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:612
 msgid "Click-type window geometry"
 msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਜੁਮੈਟਰੀ"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-#| msgid "Click-type window X position"
 msgid "Click-type window orientation"
 msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਸਥਿਤੀ"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-#| msgid "Click-type window X position"
 msgid "Click-type window style"
 msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਸਟਾਇਲ"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-#| msgid "Show a click-type window"
 msgid "Orientation of the click-type window."
 msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਦੀ ਸਥਿਤੀ ਹੈ।"
 
@@ -203,8 +191,7 @@ msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
-"ਕਲਿੱਕ-ਟਾਈਫ ਵਿੰਡੋ ਦਾ ਆਕਾਰ ਅਤੇ ਸਥਿਤੀ। ਫਾਰਮੈਟ ਸਟੈਂਡਰਡ X ਵਿੰਡੋ ਸਿਸਟਮ "
-"ਜੁਮੈਟਰੀ ਲਾਈਨ।"
+"ਕਲਿੱਕ-ਟਾਈਫ ਵਿੰਡੋ ਦਾ ਆਕਾਰ ਅਤੇ ਸਥਿਤੀ। ਫਾਰਮੈਟ ਸਟੈਂਡਰਡ X ਵਿੰਡੋ ਸਿਸਟਮ ਜੁਮੈਟਰੀ ਲਾਈਨ।"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
 msgid "\"Alt\" keyboard modifier"
@@ -219,12 +206,10 @@ msgid "\"Shift\" keyboard modifier"
 msgstr "\"Shift\" ਕੀਬੋਰਡ ਮੋਡੀਫਾਇਰ"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-#| msgid "Mouse _button:"
 msgid "Mouse button"
 msgstr "ਮਾਊਸ ਬਟਨ"
 
 #: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-#| msgid "Mouse button used to capture the pointer"
 msgid "Mouse button used to capture or release the pointer."
 msgstr "ਪੁਆਇੰਟਰ ਫੜਨ ਜਾਂ ਛੱਡਣ ਲਈ ਵਰਤਣ ਵਾਸਤੇ ਮਾਊਂਸ ਬਟਨ ਹੈ।"
 
@@ -236,68 +221,68 @@ msgstr "ਕੈਪਚਰ ਖੇਤਰ ਦਾ ਆਕਾਰ"
 msgid "Width of the capture area in pixels."
 msgstr "ਪਕੜ ਖੇਤਰ ਦੀ ਚੌੜਾਈ ਪਿਕਸਲ ਵਿੱਚ।"
 
-#: ../src/mt-main.c:594
+#: ../src/mt-main.c:600
 msgid "Enable simulated secondary click"
 msgstr "ਸੈਕੰਡਰੀ ਕਲਿੱਕ ਦੀ ਨਕਲ ਚਾਲੂ"
 
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:602
 msgid "Time to wait before a dwell click"
 msgstr "ਇੱਕ ਡੀਵਿਲ ਕਲਿੱਕ ਤੋਂ ਪਹਿਲਾਂ ਉਡੀਕ ਦਾ ਸਮਾਂ"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:604
 msgid "Time to wait before a simulated secondary click"
 msgstr "ਇੱਕ ਸੈਕੰਡਰੀ ਕਲਿੱਕ ਦੀ ਨਕਲ ਤੋਂ ਪਹਿਲਾਂ ਉਡੀਕ ਦਾ ਸਮਾਂ"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:606
 msgid "Set the active dwell mode"
 msgstr "ਐਕਟਿਵ ਡੀਵਿਲ ਮੋਡ ਸੈੱਟ ਕਰੋ"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:608
 msgid "Show a click-type window"
 msgstr "ਕਲਿੱਕ ਟਾਈਪ ਵਿੰਡੋ ਵੇਖੋ"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:610
 msgid "Ignore small pointer movements"
 msgstr "ਛੋਟੀਆਂ ਪੁਆਇੰਟਰ ਚਾਲਾਂ ਅਣਡਿੱਠੀਆਂ"
 
-#: ../src/mt-main.c:608
+#: ../src/mt-main.c:614
 msgid "Shut down mousetweaks"
 msgstr "ਮਾਊਸ-ਸੋਧਾਂ ਬੰਦ ਕਰੋ"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:616
 msgid "Start mousetweaks as a daemon"
 msgstr "ਮਾਊਸਟਵਿਕਸ ਨੂੰ ਡੈਮਨ ਵਜੋਂ ਚਲਾਓ"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:618
 msgid "Start mousetweaks in login mode"
 msgstr "ਮਾਊਸਟਵਿਕਸ ਨੂੰ ਲਾਗਇਨ ਮੋਡ ਵਿੱਚ ਸ਼ੁਰੂ ਕਰੋ"
 
 #. parse
-#: ../src/mt-main.c:630
+#: ../src/mt-main.c:636
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- ਗਨੋਮ ਮਾਊਸ ਸਹੂਲਤ ਡੈਮਨ"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:78
 msgid "Failed to Display Help"
 msgstr "ਮੱਦਦ ਲੱਭਣ ਲਈ ਅਸਮਰੱਥ"
 
-#: ../src/pointer-capture-applet.c:79
+#: ../src/pointer-capture-applet.c:83
 msgid "Capture area"
 msgstr "ਕੈਪਚਰ ਖੇਤਰ"
 
-#: ../src/pointer-capture-applet.c:80
+#: ../src/pointer-capture-applet.c:84
 msgid "Temporarily lock the mouse pointer"
 msgstr "ਮਾਊਸ ਪੁਆਇੰਟਰ ਆਰਜ਼ੀ ਤੌਰ ਉੱਤੇ ਤਾਲਾਬੰਦ ਕਰੋ"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
+#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
 msgid "_Preferences"
 msgstr "ਮੇਰੀ ਪਸੰਦ(_P)"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
+#: ../src/pointer-capture-applet.c:181 ../src/dwell-click-applet.c:86
 msgid "_Help"
 msgstr "ਮੱਦਦ(_H)"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
+#: ../src/pointer-capture-applet.c:183 ../src/dwell-click-applet.c:88
 msgid "_About"
 msgstr "ਇਸ ਬਾਰੇ(_A)"
 
@@ -305,9 +290,13 @@ msgstr "ਇਸ ਬਾਰੇ(_A)"
 msgid "Locked"
 msgstr "ਲਾਕ ਕੀਤਾ"
 
-#: ../src/dwell-click-applet.c:450
+#: ../src/dwell-click-applet.c:454
 msgid "Failed to Open the Universal Access Panel"
 msgstr "ਯੂਨੀਵਰਸਲ ਅਸੈੱਸ ਪੈਨਲ ਖੋਲ੍ਹਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
+
+#~| msgid "Dwell Click Type"
+#~ msgid "Dwell Click-Type"
+#~ msgstr "ਡੀਵਿਲ ਕਲਿੱਕ-ਟਾਈਪ"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"

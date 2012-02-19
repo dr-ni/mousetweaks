@@ -6,7 +6,7 @@
       <_description>Button style of the click-type window.</_description>
     </key>
     <key name="click-type-window-orientation" enum="org.gnome.mousetweaks.MtClickTypeWindowOrientation">
-      <default>'horizontal'</default>
+      <default>'vertical'</default>
       <_summary>Click-type window orientation</_summary>
       <_description>Orientation of the click-type window.</_description>
     </key>

@@ -54,14 +54,13 @@ G_BEGIN_DECLS
 #define KEY_SSC_TIME                "secondary-click-time"
 #define KEY_CTW_VISIBLE             "click-type-window-visible"
 
-#define N_CLICK_TYPES 4
-
 typedef enum
 {
     MT_DWELL_CLICK_TYPE_RIGHT,
     MT_DWELL_CLICK_TYPE_DRAG,
     MT_DWELL_CLICK_TYPE_DOUBLE,
-    MT_DWELL_CLICK_TYPE_SINGLE
+    MT_DWELL_CLICK_TYPE_SINGLE,
+    MT_DWELL_CLICK_TYPE_MIDDLE
 } MtDwellClickType;
 
 typedef enum

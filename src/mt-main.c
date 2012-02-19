@@ -165,10 +165,10 @@ mt_main_do_dwell_click (MtData *mt)
     switch (click_type)
     {
         case MT_DWELL_CLICK_TYPE_SINGLE:
-            mt_main_generate_button_event (mt, 1, CLICK, 60);
+            mt_main_generate_button_event (mt, 1, CLICK, 80);
             break;
         case MT_DWELL_CLICK_TYPE_DOUBLE:
-            mt_main_generate_button_event (mt, 1, DOUBLE_CLICK, 10);
+            mt_main_generate_button_event (mt, 1, DOUBLE_CLICK, 40);
             mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_SINGLE);
             break;
         case MT_DWELL_CLICK_TYPE_DRAG:
@@ -183,14 +183,16 @@ mt_main_do_dwell_click (MtData *mt)
                 mt_main_generate_button_event (mt, 1, RELEASE, CurrentTime);
                 mt_main_set_cursor (mt, GDK_LEFT_PTR);
                 mt->dwell_drag_started = FALSE;
-
                 mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_SINGLE);
             }
             break;
         case MT_DWELL_CLICK_TYPE_RIGHT:
-            mt_main_generate_button_event (mt, 3, CLICK, 10);
+            mt_main_generate_button_event (mt, 3, CLICK, 80);
             mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_SINGLE);
             break;
+        case MT_DWELL_CLICK_TYPE_MIDDLE:
+            mt_main_generate_button_event (mt, 2, CLICK, 80);
+            mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_SINGLE);
         default:
             g_warning ("Unknown click-type.");
             break;

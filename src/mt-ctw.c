@@ -32,9 +32,15 @@ service_click_type_changed (MtService *service, GParamSpec *pspec)
 {
     GSList *group;
     GtkWidget *button;
+    MtDwellClickType ct;
+
+    ct = mt_service_get_click_type (service);
+
+    if (ct == MT_DWELL_CLICK_TYPE_MIDDLE)
+        return;
 
     group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (O ("single")));
-    button = g_slist_nth_data (group, mt_service_get_click_type (service));
+    button = g_slist_nth_data (group, ct);
     gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (button), TRUE);
     gtk_widget_grab_focus (button);
 }
@@ -61,7 +67,7 @@ ctw_style_changed (MtSettings *ms, GParamSpec *pspec)
     const gchar *icon_names[] = { "single_i", "double_i", "drag_i", "right_i" };
     gint i;
 
-    for (i = 0; i < N_CLICK_TYPES; i++)
+    for (i = 0; i < 4; i++)
     {
         label = W (label_names[i]);
         icon = W (icon_names[i]);
@@ -225,7 +231,7 @@ mt_ctw_init (void)
     gtk_window_set_keep_above (GTK_WINDOW (ctw), TRUE);
 
     /* init buttons */
-    for (i = 0; i < N_CLICK_TYPES; i++)
+    for (i = 0; i < 4; i++)
     {
         obj = O (button_names[i]);
         gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (obj), FALSE);

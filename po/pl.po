@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-10 16:55+0100\n"
-"PO-Revision-Date: 2011-03-10 16:56+0100\n"
+"POT-Creation-Date: 2012-02-19 21:48+0100\n"
+"PO-Revision-Date: 2012-02-19 21:49+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -21,93 +21,13 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Aplet do wyboru różnych typów klikania spoczynkowego.\n"
-"Część programu Mousetweaks"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "Okno typów kliknięć"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "Podwójne kliknięcie"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "Przeciągnięcie"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "Włączenie klikania spoczynkowego"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "Kliknięcie prawym przyciskiem"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "Pojedyncze kliknięcie"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Obszar na panelu, na którym kursor myszy może zostać zablokowany.\n"
-"Część programu Mousetweaks"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "Przechwytywanie i zwalnianie sterowania"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "Modyfikator klawiatury:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "Preferencje przechwytywania kursora"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Wybranie przycisku 0 natychmiast przechwyci kursor"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "Rozmiar obszaru przechwytywania"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "Przycisk _myszy:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "_Shift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "_Szerokość:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "pikseli"
-
 #: ../data/mousetweaks.ui.h:1
 msgid "Button Style"
 msgstr "Styl przycisku"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Double Click"
+msgstr "Podwójne kliknięcie"
 
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
@@ -135,6 +55,10 @@ msgstr "Orientacja"
 msgid "Secondary Click"
 msgstr "Kliknięcie drugorzędne"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Single Click"
+msgstr "Pojedyncze kliknięcie"
+
 #: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
 msgstr "Tekst i ikony"
@@ -148,29 +72,11 @@ msgstr "Tylko tekst"
 msgid "Vertical"
 msgstr "Pionowa"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "Kontrolowanie pulpitu bez używania przycisków myszy"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "Aplet klikania spoczynkowego"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "Obszar do zablokowania kursora"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "Aplet przechwytywania kursora"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
 msgstr "Styl przycisków okna typów kliknięć."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:637
 msgid "Click-type window geometry"
 msgstr "Geometria okna typów kliknięć"
 
@@ -194,103 +100,51 @@ msgstr ""
 "Rozmiar i położenie okna typów kliknięć. Format to standardowy ciąg "
 "geometrii systemu X Window."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "Modyfikator klawiatury \"Alt\""
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Włączenie klikania spoczynkowego"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "Modyfikator klawiatury \"Ctrl\""
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "Modyfikator klawiatury \"Shift\""
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "Przycisk myszy"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "Przycisk myszy do przechwycenia i zwalniania wskaźnika."
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "Rozmiar obszaru przechwytywania"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "Szerokość obszaru przechwytywania w pikselach."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "Włączenie symulowanego kliknięcia drugorzędnego"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "Opóźnienie przed kliknięciem spoczynkowym"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "Opóźnienie przed symulowanym kliknięciem drugorzędnym"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "Ustawienie aktywnego trybu spoczynkowego"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "Wyświetlanie okna typów kliknięć"
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Ukrycie okna typów kliknięć"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "Ignorowanie niewielkich ruchów kursora"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "Kończy działanie programu mousetweaks"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "Uruchamia program mousetweaks jako usługę"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "Uruchamia program mousetweaks w trybie logowania"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- usługa dostępności myszy środowiska GNOME"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Wyświetlenie pomocy się nie powiodło"
-
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "Obszar przechwytywania"
-
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "Chwilowe blokowanie kursora myszy"
-
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "_Preferencje"
-
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "Pomo_c"
-
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "_O programie"
-
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "Zablokowany"
-
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "Otwarcie panelu dostępu uniwersalnego się nie powiodło"

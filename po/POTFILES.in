@@ -1,12 +1,5 @@
-[type: gettext/glade]data/dwell-click-applet.ui
-[type: gettext/glade]data/pointer-capture-applet.ui
 [type: gettext/glade]data/mousetweaks.ui
-[type: gettext/ini]data/org.gnome.applets.DwellClickApplet.panel-applet.in.in
-[type: gettext/ini]data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in
 data/org.gnome.mousetweaks.gschema.xml.in
-data/org.gnome.pointer-capture.gschema.xml.in
 src/mt-main.c
 src/mt-ctw.c
 src/mt-common.c
-src/pointer-capture-applet.c
-src/dwell-click-applet.c

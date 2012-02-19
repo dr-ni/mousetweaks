@@ -3,15 +3,7 @@ AM_CPPFLAGS =                               \
     -DDATADIR=\"$(datadir)/mousetweaks\"    \
     -DGNOMELOCALEDIR=\"$(datadir)/locale\"
 
-if BUILD_PCA
-pca_bin = pointer-capture-applet
-endif
-
-if BUILD_DCA 
-dca_bin = dwell-click-applet
-endif
-
-bin_PROGRAMS = mousetweaks $(pca_bin) $(dca_bin)
+bin_PROGRAMS = mousetweaks
 
 mousetweaks_SOURCES =       \
     $(BUILT_SOURCES)        \
@@ -43,31 +35,6 @@ mousetweaks_CFLAGS =        \
 
 mousetweaks_LDADD =         \
     $(DEPENDENCIES_LIBS)
-
-dwell_click_applet_SOURCES =    \
-    $(BUILT_SOURCES)            \
-    dwell-click-applet.c        \
-    mt-common.c                 \
-    mt-common.h
-
-dwell_click_applet_CFLAGS =     \
-    $(AM_CPPFLAGS)              \
-    $(PANELAPPLET_CFLAGS)
-
-dwell_click_applet_LDADD =      \
-    $(PANELAPPLET_LIBS)
-
-pointer_capture_applet_SOURCES =    \
-    pointer-capture-applet.c        \
-    mt-common.c                     \
-    mt-common.h
-
-pointer_capture_applet_CFLAGS =     \
-    $(AM_CPPFLAGS)                  \
-    $(PANELAPPLET_CFLAGS)
-
-pointer_capture_applet_LDADD =      \
-    $(PANELAPPLET_LIBS)
 
 BUILT_SOURCES =                     \
     mt-enum-types.c                 \

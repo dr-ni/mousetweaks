@@ -58,32 +58,6 @@ PKG_CHECK_MODULES(DEPENDENCIES,
     xfixes
     xtst)
 
-dnl *** arguments ***
-
-AC_ARG_ENABLE(pointer-capture,
-  [  --enable-pointer-capture     Enable pointer-capture applet],
-  [build_pca=$enableval], [build_pca=no])
-
-AM_CONDITIONAL(BUILD_PCA, test "x$build_pca" = "xyes")
-if test "$build_pca" = yes; then
-  AC_DEFINE(BUILD_PCA, 1, [Build pointer-capture applet])
-fi
-
-AC_ARG_ENABLE(dwell-click,
-  [  --enable-dwell-click         Enable dwell-click applet],
-  [build_dca=$enableval], [build_dca=no])
-
-AM_CONDITIONAL(BUILD_DCA, test "x$build_dca" = "xyes")
-if test "$build_dca" = yes; then
-  AC_DEFINE(BUILD_DCA, 1, [Build dwell-click applet])
-fi
-
-dnl *** libpanelapplet (OPTIONAL) ***
-
-if test "$build_dca" = yes -o "$build_pca" = yes; then
-	PKG_CHECK_MODULES(PANELAPPLET, libpanelapplet-3.0)
-fi
-
 dnl *** GLib tools ***
 
 GLIB_MKENUMS="$($PKG_CONFIG --variable=glib_mkenums glib-2.0)"
@@ -103,9 +77,3 @@ AC_CONFIG_FILES([
 
 AC_OUTPUT
 
-AC_MSG_RESULT([
-Building panel applets:
------------------------
-  pointer-capture: $build_pca
-  dwell-click:     $build_dca
-])

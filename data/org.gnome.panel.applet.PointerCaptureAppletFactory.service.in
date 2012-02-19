@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.gnome.panel.applet.PointerCaptureAppletFactory
-Exec=@BINDIR@/pointer-capture-applet

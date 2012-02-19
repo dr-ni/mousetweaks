@@ -2,9 +2,7 @@ SUBDIRS = src data pixmaps po help man
 
 DISTCHECK_CONFIGURE_FLAGS =         \
     --disable-schemas-compile       \
-    --disable-scrollkeeper          \
-    --enable-dwell-click            \
-    --enable-pointer-capture
+    --disable-scrollkeeper
 
 EXTRA_DIST =                        \
     $(srcdir)/m4                    \

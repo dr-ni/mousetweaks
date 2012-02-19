@@ -627,8 +627,8 @@ mt_parse_options (int *argc, char ***argv)
             N_("Time to wait before a simulated secondary click"), "[0.5-3.0]"},
         {"dwell-mode", 'm', 0, G_OPTION_ARG_STRING, &ca.mode,
             N_("Set the active dwell mode"), "[window|gesture]"},
-        {"show-ctw", 'c', 0, G_OPTION_ARG_NONE, &ca.ctw,
-            N_("Show a click-type window"), NULL},
+        {"hide-ctw", 'c', 0, G_OPTION_ARG_NONE, &ca.ctw,
+            N_("Hide the click-type window"), NULL},
         {"threshold", 't', 0, G_OPTION_ARG_INT, &ca.threshold,
             N_("Ignore small pointer movements"), "[0-30]"},
         {"geometry", 'g', 0, G_OPTION_ARG_STRING, &ca.geometry,
@@ -737,7 +737,7 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
     if (cli_args.threshold >= 0 && cli_args.threshold <= 30)
         ms->dwell_threshold = cli_args.threshold;
     if (cli_args.ctw)
-        ms->ctw_visible = cli_args.ctw;
+        ms->ctw_visible = !cli_args.ctw;
     if (cli_args.mode)
     {
         if (g_str_equal (cli_args.mode, "gesture"))

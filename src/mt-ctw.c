@@ -197,13 +197,6 @@ ctw_menu_label_set_bold (GtkWidget *item)
     pango_attr_list_unref (list);
 }
 
-static gboolean
-ctw_window_delete (GtkWidget *widget, GdkEvent *event, gpointer data)
-{
-    g_object_set (mt_settings_get_default (), "ctw-visible", FALSE, NULL);
-    return TRUE;
-}
-
 gboolean
 mt_ctw_init (void)
 {
@@ -230,8 +223,6 @@ mt_ctw_init (void)
     ctw = mt_ctw_get_window ();
     gtk_window_stick (GTK_WINDOW (ctw));
     gtk_window_set_keep_above (GTK_WINDOW (ctw), TRUE);
-    g_signal_connect (ctw, "delete-event",
-                      G_CALLBACK (ctw_window_delete), NULL);
 
     /* init buttons */
     for (i = 0; i < N_CLICK_TYPES; i++)

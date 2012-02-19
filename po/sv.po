@@ -1,14 +1,14 @@
 # Swedish translation for mousetweaks.
-# Copyright (C) 2008-2011 Free Software Foundation, Inc.
+# Copyright (C) 2008-2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
-# Daniel Nylander <po@danielnylander.se>, 2008, 2009, 2010, 2011.
+# Daniel Nylander <po@danielnylander.se>, 2008, 2009, 2010, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-13 09:26+0100\n"
-"PO-Revision-Date: 2011-03-13 09:30+0100\n"
+"POT-Creation-Date: 2012-02-19 13:36+0100\n"
+"PO-Revision-Date: 2012-02-19 13:36+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -16,380 +16,380 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Panelprogram för att välja olika typer av uppehållsklick.\n"
-"Del av Musjusteringar"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "Klicktypsfönster"
-
-#: ../data/dwell-click-applet.ui.h:4
-#: ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "Dubbelklick"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "Dragklick"
-
-#: ../data/dwell-click-applet.ui.h:6
-#: ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "Aktivera uppehållsklick"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "Högerklick"
-
-#: ../data/dwell-click-applet.ui.h:8
-#: ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "Enkelklick"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Område att låsa muspekaren på panelen.\n"
-"Del av Musjusteringar"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "Kontroller för fånga och släpp"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "Tangentbordsmodifierare:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "Inställningar för muspekarfångst"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Val av Knapp 0 kommer att fånga muspekaren omedelbart"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "Storlek på fångstområdet"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "Muskna_pp:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "S_kift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "_Bredd:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "bildpunkter"
-
 #: ../data/mousetweaks.ui.h:1
-msgid "Button Style"
-msgstr "Knappstil"
-
-#. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
-msgid "Drag"
-msgstr "Dra"
-
-#. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "Horisontellt"
-
-#: ../data/mousetweaks.ui.h:7
 msgid "Hover Click"
 msgstr "Uppehållsklick"
 
-#: ../data/mousetweaks.ui.h:8
-msgid "Icons only"
-msgstr "Endast ikoner"
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Enkelklick"
 
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "Orientering"
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Dubbelklick"
 
-#: ../data/mousetweaks.ui.h:10
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Dra"
+
+#: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
 msgstr "Sekundärklick"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Knappstil"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Endast text"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Endast ikoner"
+
+#: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
 msgstr "Text och ikoner"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Orientering"
+
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:13
-msgid "Text only"
-msgstr "Endast text"
+msgid "Horizontal"
+msgstr "Horisontellt"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
 msgstr "Vertikalt"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "Styr ditt skrivbord utan att använda musknappar"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "Panelprogram för uppehållsklick"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "Område att låsa muspekaren"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "Panelprogram för muspekarfångst"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-msgid "Button style of the click-type window."
-msgstr "Knappstil för klicktypsfönstret."
+msgid "Click-type window style"
+msgstr "Klicktypsfönstrets stil"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
-#: ../src/mt-main.c:608
-msgid "Click-type window geometry"
-msgstr "Klicktypsfönstrets geometri"
+msgid "Button style of the click-type window."
+msgstr "Knappstil för klicktypsfönstret."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
 msgstr "Klicktypsfönstrets orientering"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-msgid "Click-type window style"
-msgstr "Klicktypsfönstrets stil"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
 msgid "Orientation of the click-type window."
 msgstr "Orientering för klicktypsfönstret."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+#: ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "Klicktypsfönstrets geometri"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid "Size and position of the click-type window. The format is a standard X Window System geometry string."
 msgstr "Storlek och position för klicktypsfönstret. Formatet är en standardsträng för X Window System-geometri."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "\"Alt\"-tangentbordsmodifierare"
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Aktivera uppehållsklick"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "\"Control\"-tangentbordsmodifierare"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "\"Skift\"-tangentbordsmodifierare"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "Musknapp"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "Musknapp som används för att fånga eller släppa muspekaren."
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "Storlek på fångstområde"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "Bredd för fångstområde i bildpunkter."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "Aktivera simulerat sekundärklick"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "Tid att vänta innan ett uppehållsklick"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tid att vänta innan en simulerad sekundärklickning"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "Ställ in aktivt uppehållsläge"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "Visa ett klicktypsfönster"
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Dölj klicktypsfönstret"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "Ignorera mindre muspekarrörelser"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "Stäng av musjusteringar"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "Starta musjusteringar som en bakgrundsprocess"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "Starta musjusteringar i inloggningsläge"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME-mustillgänglighetsdemon"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Kunde inte visa hjälp"
 
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "Fångstområde"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Panelprogram för att välja olika typer av uppehållsklick.\n"
+#~ "Del av Musjusteringar"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "Lås muspekaren temporärt"
+#~ msgid "Click Type Window"
+#~ msgstr "Klicktypsfönster"
 
-#: ../src/pointer-capture-applet.c:175
-#: ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "_Inställningar"
+#~ msgid "Drag Click"
+#~ msgstr "Dragklick"
 
-#: ../src/pointer-capture-applet.c:177
-#: ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "_Hjälp"
+#~ msgid "Right Click"
+#~ msgstr "Högerklick"
 
-#: ../src/pointer-capture-applet.c:179
-#: ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "_Om"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Område att låsa muspekaren på panelen.\n"
+#~ "Del av Musjusteringar"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "Låst"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
 
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "Misslyckades med att öppna panelen för allmän åtkomst"
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Kontroller för fånga och släpp"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Tangentbordsmodifierare:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Inställningar för muspekarfångst"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Val av Knapp 0 kommer att fånga muspekaren omedelbart"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Storlek på fångstområdet"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "Muskna_pp:"
+
+#~ msgid "_Shift"
+#~ msgstr "S_kift"
+
+#~ msgid "_Width:"
+#~ msgstr "_Bredd:"
+
+#~ msgid "pixels"
+#~ msgstr "bildpunkter"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Styr ditt skrivbord utan att använda musknappar"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Panelprogram för uppehållsklick"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Område att låsa muspekaren"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Panelprogram för muspekarfångst"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "\"Alt\"-tangentbordsmodifierare"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "\"Control\"-tangentbordsmodifierare"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "\"Skift\"-tangentbordsmodifierare"
+
+#~ msgid "Mouse button"
+#~ msgstr "Musknapp"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "Musknapp som används för att fånga eller släppa muspekaren."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Storlek på fångstområde"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Bredd för fångstområde i bildpunkter."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Visa ett klicktypsfönster"
+
+#~ msgid "Capture area"
+#~ msgstr "Fångstområde"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Lås muspekaren temporärt"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Inställningar"
+
+#~ msgid "_Help"
+#~ msgstr "_Hjälp"
+
+#~ msgid "_About"
+#~ msgstr "_Om"
+
+#~ msgid "Locked"
+#~ msgstr "Låst"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Misslyckades med att öppna panelen för allmän åtkomst"
 
 #~ msgid "Dwell Click-Type"
 #~ msgstr "Typ av uppehållsklick"
+
 #~ msgid "A_lt"
 #~ msgstr "A_lt"
+
 #~ msgid "Capture Pointer"
 #~ msgstr "Fånga muspekare"
+
 #~ msgid "Ct_rl"
 #~ msgstr "Ct_rl"
+
 #~ msgid "Modifier:"
 #~ msgstr "Modifierare:"
+
 #~ msgid "Mouse b_utton:"
 #~ msgstr "M_usknapp:"
+
 #~ msgid "Release Pointer"
 #~ msgstr "Släpp muspekare"
+
 #~ msgid "Sh_ift"
 #~ msgstr "Sk_ift"
+
 #~ msgid "Show Icons and Text"
 #~ msgstr "Visa ikoner och text"
+
 #~ msgid "Dwell Click"
 #~ msgstr "Uppehållsklick"
+
 #~ msgid "Select dwelling click type"
 #~ msgstr "Välj uppehållsklicktyp"
+
 #~ msgid "Pointer Capture"
 #~ msgstr "Muspekarfångst"
+
 #~ msgid "Animate cursor"
 #~ msgstr "Animera markören"
+
 #~ msgid ""
 #~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
 #~ "Both)"
 #~ msgstr ""
 #~ "Knappstil i klicktypsfönster (\"0\" = Text, \"1\" = Ikon, \"2\" = Båda)"
+
 #~ msgid ""
 #~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 #~ "Up, \"3\" = Down)"
 #~ msgstr ""
 #~ "Riktning att genomföra ett dubbelklick (\"0\" = Vänster, \"1\" = Höger, "
 #~ "\"2\" = Uppåt, \"3\" = Nedåt)"
+
 #~ msgid ""
 #~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
 #~ "Up, \"3\" = Down)"
 #~ msgstr ""
 #~ "Riktning att genomföra en dragklickning (\"0\" = Vänster, \"1\" = Höger, "
 #~ "\"2\" = Uppåt, \"3\" = Nedåt)"
+
 #~ msgid ""
 #~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
 #~ "\"2\" = Up, \"3\" = Down)"
 #~ msgstr ""
 #~ "Riktning att genomföra en sekundärklickning (\"0\" = Vänster, \"1\" = "
 #~ "Höger, \"2\" = Uppåt, \"3\" = Nedåt)"
+
 #~ msgid ""
 #~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 #~ "Up, \"3\" = Down)"
 #~ msgstr ""
 #~ "Riktning att genomföra en enkelklickning (\"0\" = Vänster, \"1\" = Höger, "
 #~ "\"2\" = Uppåt, \"3\" = Nedåt)"
+
 #~ msgid "Distance in pixels before movement will be recognized"
 #~ msgstr "Avstånd i bildpunkter innan rörelse kommer att kännas igen"
+
 #~ msgid "Dwell click mode"
 #~ msgstr "Läge för uppehållsklick"
+
 #~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
 #~ msgstr "Läge för uppehållsklick (\"0\" = Fönsterläge, \"1\" = Gestläge)"
+
 #~ msgid "Dwell click time"
 #~ msgstr "Tid för uppehållsklick"
+
 #~ msgid "Enable secondary click"
 #~ msgstr "Aktivera sekundärklick"
+
 #~ msgid "Gesture double click"
 #~ msgstr "Gest för dubbelklick"
+
 #~ msgid "Gesture drag click"
 #~ msgstr "Gest för dragklick"
+
 #~ msgid "Gesture secondary click"
 #~ msgstr "Gest för sekundärklick"
+
 #~ msgid "Gesture single click"
 #~ msgstr "Gest för enkelklick"
+
 #~ msgid "Movement threshold"
 #~ msgstr "Tröskelvärde för rörelse"
+
 #~ msgid "Show click type window"
 #~ msgstr "Visa klicktypsfönster"
+
 #~ msgid "Show elapsed time as cursor overlay."
 #~ msgstr "Visa åtgången tid som markörtext."
+
 #~ msgid "Time in seconds before a click is triggered"
 #~ msgstr "Tid i sekunder innan en klickning utlöses"
+
 #~ msgid "Time in seconds before a secondary click is triggered"
 #~ msgstr "Tid i sekunder innan en sekundärklickning utlöses"
+
 #~ msgid "Capture pointer only if Alt is pressed"
 #~ msgstr "Fånga muspekare endast om Alt har tryckts ner"
+
 #~ msgid "Capture pointer only if Ctrl is pressed"
 #~ msgstr "Fånga muspekare endast om Ctrl har tryckts ner"
+
 #~ msgid "Capture pointer only if Shift is pressed"
 #~ msgstr "Fånga muspekare endast om Skift har tryckts ner"
+
 #~ msgid "Mouse button used to release the pointer"
 #~ msgstr "Musknapp som används för att släppa muspekaren"
+
 #~ msgid "Release pointer only if Alt is pressed"
 #~ msgstr "Släpp muspekare endast om Alt har tryckts ner"
+
 #~ msgid "Release pointer only if Ctrl is pressed"
 #~ msgstr "Släpp muspekare endast om Ctrl har tryckts ner"
+
 #~ msgid "Release pointer only if Shift is pressed"
 #~ msgstr "Släpp muspekare endast om Ctrl har tryckts ner"
+
 #~ msgid ""
 #~ "This mouse button must be pressed to release the pointer from the capture "
 #~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
@@ -398,6 +398,7 @@ msgstr "Misslyckades med att öppna panelen för allmän åtkomst"
 #~ "Denna musknapp måste tryckas ned för att släppa muspekaren från "
 #~ "fångstområdet. Giltiga värden är \"1\" för vänsterknapp, \"2\" för "
 #~ "mittenknapp och \"3\" för högerknapp."
+
 #~ msgid ""
 #~ "This mouse button must be pressed while the pointer is over the capture "
 #~ "area in order to capture the pointer. Valid values are \"0\" if no button "
@@ -407,6 +408,7 @@ msgstr "Misslyckades med att öppna panelen för allmän åtkomst"
 #~ "Denna musknapp måste tryckas ned när muspekaren är över fångstområdet för "
 #~ "att fånga muspekaren. Giltiga värden är \"0\" om ingen knapp behövs, "
 #~ "\"1\" för vänsterknapp, \"2\" för mittenknapp och \"3\" för högerknapp."
+
 #~ msgid ""
 #~ "Whether the Alt key must be pressed for the pointer to be captured while "
 #~ "it's over the capture area. If this option is set as true, and a mouse "
@@ -417,12 +419,14 @@ msgstr "Misslyckades med att öppna panelen för allmän åtkomst"
 #~ "när den är över fångstområdet. Om detta alternativ är inställt till sant, "
 #~ "och en musknapp är inställd i nyckeln \"capture_button\", så måste Alt-"
 #~ "tangenten tryckas ned samtidigt som musknappen trycks ned."
+
 #~ msgid ""
 #~ "Whether the Alt key must be pressed with the mouse button set in "
 #~ "\"release_button\" for the pointer to be released from the capture area."
 #~ msgstr ""
 #~ "Huruvida Alt-tangenten måste tryckas ned med musknappen som är inställd i "
 #~ "\"release_button\" för att muspekaren ska släppas från fångstområdet."
+
 #~ msgid ""
 #~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
 #~ "it's over the capture area. If this option is set as true, and a mouse "
@@ -433,12 +437,14 @@ msgstr "Misslyckades med att öppna panelen för allmän åtkomst"
 #~ "när den är över fångstområdet. Om detta alternativ är inställt till sant, "
 #~ "och en musknapp är inställd i nyckeln \"capture_button\", så måste Ctrl-"
 #~ "tangenten tryckas ned samtidigt som musknappen trycks ned."
+
 #~ msgid ""
 #~ "Whether the Ctrl key must be pressed with the mouse button set in "
 #~ "\"release_button\" for the pointer to be released from the capture area."
 #~ msgstr ""
 #~ "Huruvida Ctrl-tangenten måste tryckas ned med musknappen som är inställd "
 #~ "i \"release_button\" för att muspekaren ska släppas från fångstområdet."
+
 #~ msgid ""
 #~ "Whether the Shift key must be pressed for the pointer to be captured "
 #~ "while it's over the capture area. If this option is set as true, and a "
@@ -449,22 +455,29 @@ msgstr "Misslyckades med att öppna panelen för allmän åtkomst"
 #~ "när den är över fångstområdet. Om detta alternativ är inställt till sant, "
 #~ "och en musknapp är inställd i nyckeln \"capture_button\", så måste Skift-"
 #~ "tangenten tryckas ned samtidigt som musknappen trycks ned."
+
 #~ msgid ""
 #~ "Whether the Shift key must be pressed with the mouse button set in "
 #~ "\"release_button\" for the pointer to be released from the capture area."
 #~ msgstr ""
 #~ "Huruvida Skift-tangenten måste tryckas ned med musknappen som är inställd "
 #~ "i \"release_button\" för att muspekaren ska släppas från fångstområdet."
+
 #~ msgid "Click-type window Y position"
 #~ msgstr "Klicktypsfönstrets y-position"
+
 #~ msgid "Disable cursor animations"
 #~ msgstr "Inaktivera pekaranimeringar"
+
 #~ msgid "Enable and Log Out"
 #~ msgstr "Aktivera och logga ut"
+
 #~ msgid "Failed to Launch Mouse Preferences"
 #~ msgstr "Misslyckades med att starta musinställningar"
+
 #~ msgid "Assistive Technology Support is not Enabled"
 #~ msgstr "Stöd för hjälpmedelsteknik är inte aktiverat"
+
 #~ msgid ""
 #~ "Mousetweaks requires assistive technologies to be enabled in your "
 #~ "session.\n"
@@ -477,44 +490,63 @@ msgstr "Misslyckades med att öppna panelen för allmän åtkomst"
 #~ "\n"
 #~ "Tryck på \"Aktivera och logga ut\" för att aktivera stöd för "
 #~ "hjälpmedelstekniker och starta om din session."
+
 #~ msgid "L"
 #~ msgstr "L"
+
 #~ msgid "Dwell mode to use"
 #~ msgstr "Läge för uppehållsklick att använda"
+
 #~ msgid "Window y position"
 #~ msgstr "Fönstrets y-position"
+
 #~ msgid "Show elapsed time as cursor overlay"
 #~ msgstr "Visa åtgången tid som markörtext"
+
 #~ msgid "On"
 #~ msgstr "På"
+
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>Storlek på fångstområde</b>"
+
 #~ msgid "Capture modifier key (Alt)"
 #~ msgstr "Tangent för fångstmodifierare (Alt)"
+
 #~ msgid "Capture modifier key (Ctrl)"
 #~ msgstr "Tangent för fångstmodifierare (Ctrl)"
+
 #~ msgid "Capture modifier key (Shift)"
 #~ msgstr "Tangent för fångstmodifierare (Skift)"
+
 #~ msgid "Capture mouse button"
 #~ msgstr "Fånga musknapp"
+
 #~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
 #~ msgstr "Musknapp för att fånga muspekaren (\"0\" = Fånga omedelbart)"
+
 #~ msgid "Release modifier key (Alt)"
 #~ msgstr "Tangent för släppmodifierare (Alt)"
+
 #~ msgid "Release modifier key (Ctrl)"
 #~ msgstr "Tangent för släppmodifierare (Ctrl)"
+
 #~ msgid "Release modifier key (Shift)"
 #~ msgstr "Tangent för släppmodifierare (Skift)"
+
 #~ msgid "Release mouse button"
 #~ msgstr "Släpp musknapp"
+
 #~ msgid "Off"
 #~ msgstr "Av"
+
 #~ msgid "Couldn't display help"
 #~ msgstr "Kunde inte visa hjälp"
+
 #~ msgid "B_utton:"
 #~ msgstr "K_napp:"
+
 #~ msgid "_Button:"
 #~ msgstr "_Knapp:"
+
 #~ msgid "Mousetweaks requires Assistive Technologies."
 #~ msgstr "Musjusteringar kräver hjälpmedelstekniker."
-

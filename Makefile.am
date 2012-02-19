@@ -1,5 +1,7 @@
 SUBDIRS = src data pixmaps po help man
 
+ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
+
 DISTCHECK_CONFIGURE_FLAGS =         \
     --disable-schemas-compile       \
     --disable-scrollkeeper

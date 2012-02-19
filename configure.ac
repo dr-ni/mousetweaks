@@ -1,14 +1,16 @@
-AC_PREREQ(2.63)
+AC_PREREQ([2.64])
 AC_INIT([mousetweaks],
-	[3.3.1],
-	[http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks])
+        [3.3.1],
+        [https://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks],
+        [mousetweaks],
+        [https://live.gnome.org/Mousetweaks/Home])
 
 AC_CONFIG_SRCDIR([src])
 AC_CONFIG_HEADER([config.h])
 AC_CONFIG_MACRO_DIR([m4])
 AC_PREFIX_DEFAULT([/usr])
 
-AM_INIT_AUTOMAKE([1.11 -Wno-portability])
+AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-bzip2 -Wno-portability])
 AM_SILENT_RULES([yes])
 AM_MAINTAINER_MODE([enable])
 
@@ -20,7 +22,6 @@ AM_PROG_CC_C_O
 
 dnl *** GNOME macros ***
 
-GNOME_COMMON_INIT
 GNOME_COMPILE_WARNINGS([maximum])
 GNOME_MAINTAINER_MODE_DEFINES
 

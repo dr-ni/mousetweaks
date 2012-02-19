@@ -83,7 +83,11 @@ typedef struct _MtData
 static void
 mt_main_generate_motion_event (GdkScreen *screen, gint x, gint y)
 {
-    gdk_display_warp_pointer (gdk_display_get_default (), screen, x, y);
+    GdkDevice *cp;
+
+    cp = mt_common_get_client_pointer ();
+    if (cp)
+        gdk_device_warp (cp, screen, x, y);
 }
 
 static void
@@ -138,7 +142,7 @@ mt_main_set_cursor (MtData *mt, GdkCursorType type)
         screen = gdk_display_get_screen (gdk_dpy, i);
         gdk_window_set_cursor (gdk_screen_get_root_window (screen), cursor);
     }
-    gdk_cursor_unref (cursor);
+    g_object_unref (cursor);
 }
 
 static void
@@ -234,12 +238,17 @@ mt_main_analyze_gesture (MtData *mt)
 {
     MtSettings *ms;
     GDesktopMouseDwellDirection direction;
+    GdkDevice *cp;
     gint x, y;
 
     if (mt_service_get_click_type (mt->service) == MT_DWELL_CLICK_TYPE_DRAG)
         return TRUE;
 
-    gdk_display_get_pointer (gdk_display_get_default (), NULL, &x, &y, NULL);
+    cp = mt_common_get_client_pointer ();
+    if (!cp)
+        return FALSE;
+
+    gdk_device_get_position (cp, NULL, &x, &y);
 
     if (below_threshold (mt, x, y))
         return FALSE;
@@ -274,18 +283,24 @@ mt_main_analyze_gesture (MtData *mt)
 static void
 dwell_start_gesture (MtData *mt)
 {
+    GdkDevice *cp;
     GdkCursor *cursor;
     GdkWindow *root;
 
     if (mt->override_cursor)
     {
-        cursor = gdk_cursor_new (GDK_CROSS);
-        root = gdk_screen_get_root_window (mt_common_get_screen ());
-        gdk_pointer_grab (root, FALSE,
-                          GDK_POINTER_MOTION_MASK,
-                          NULL, cursor,
-                          gtk_get_current_event_time ());
-        gdk_cursor_unref (cursor);
+        cp = mt_common_get_client_pointer ();
+        if (cp)
+        {
+            cursor = gdk_cursor_new (GDK_CROSS);
+            root = gdk_screen_get_root_window (mt_common_get_screen ());
+            gdk_device_grab (cp, root,
+                             GDK_OWNERSHIP_NONE, FALSE,
+                             GDK_POINTER_MOTION_MASK,
+                             cursor,
+                             gtk_get_current_event_time ());
+            g_object_unref (cursor);
+        }
     }
     else
     {
@@ -299,10 +314,18 @@ dwell_start_gesture (MtData *mt)
 static void
 dwell_stop_gesture (MtData *mt)
 {
+    GdkDevice *cp;
+
     if (mt->override_cursor)
-        gdk_pointer_ungrab (gtk_get_current_event_time ());
+    {
+        cp = mt_common_get_client_pointer ();
+        if (cp)
+            gdk_device_ungrab (cp, gtk_get_current_event_time ());
+    }
     else
+    {
         mt_main_set_cursor (mt, GDK_LEFT_PTR);
+    }
 
     mt->dwell_gesture_started = FALSE;
     mt_timer_stop (mt->dwell_timer);
@@ -662,8 +685,6 @@ mt_main (int argc, char **argv, MtCliArgs cli_args)
         g_warning ("Couldn't create PID file.");
         return;
     }
-
-    gdk_disable_multidevice ();
 
     gtk_init (&argc, &argv);
 

@@ -83,19 +83,21 @@ typedef enum /*< skip >*/
     MT_MESSAGE_TYPE_WARNING,
 } MtMessageType;
 
-Display *    mt_common_get_xdisplay      (void);
+Display *    mt_common_get_xdisplay       (void);
 
-void         mt_common_xtrap_push        (void);
-void         mt_common_xtrap_pop         (void);
+void         mt_common_xtrap_push         (void);
+void         mt_common_xtrap_pop          (void);
 
-GdkScreen *  mt_common_get_screen        (void);
+GdkDevice *  mt_common_get_client_pointer (void);
 
-void         mt_common_show_help         (GdkScreen     *screen,
-                                          guint32        timestamp);
+GdkScreen *  mt_common_get_screen         (void);
 
-void         mt_common_show_dialog       (const gchar   *primary,
-                                          const gchar   *secondary,
-                                          MtMessageType  type);
+void         mt_common_show_help          (GdkScreen     *screen,
+                                           guint32        timestamp);
+
+void         mt_common_show_dialog        (const gchar   *primary,
+                                           const gchar   *secondary,
+                                           MtMessageType  type);
 
 G_END_DECLS
 

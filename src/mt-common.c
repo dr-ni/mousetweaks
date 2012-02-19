@@ -47,11 +47,26 @@ mt_common_xtrap_pop (void)
     }
 }
 
+GdkDevice *
+mt_common_get_client_pointer (void)
+{
+    GdkDisplay *gdk_dpy;
+    GdkDeviceManager *manager;
+
+    gdk_dpy = gdk_display_get_default ();
+    manager = gdk_display_get_device_manager (gdk_dpy);
+
+    if (manager)
+        return gdk_device_manager_get_client_pointer (manager);
+
+    return NULL;
+}
+
 GdkScreen *
 mt_common_get_screen (void)
 {
     GdkDisplay *gdk_dpy;
-    GdkScreen *screen;
+    GdkScreen *screen = NULL;
     gint n_screens;
 
     gdk_dpy = gdk_display_get_default ();
@@ -59,12 +74,16 @@ mt_common_get_screen (void)
 
     if (n_screens > 1)
     {
-        gdk_display_get_pointer (gdk_dpy, &screen, NULL, NULL, NULL);
+        GdkDevice *cp;
+
+        cp = mt_common_get_client_pointer ();
+        if (cp)
+            gdk_device_get_position (cp, &screen, NULL, NULL);
     }
-    else
-    {
+
+    if (!screen)
         screen = gdk_screen_get_default ();
-    }
+
     return screen;
 }
 

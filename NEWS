@@ -1,3 +1,29 @@
+Version 3.3.90
+--------------
+
+The releases 3.3.1 to 3.3.5, both versions included, do not exist.
+
+Misc changes, improvements and fixes:
+
+    - Fix invalid xml in it.po, by Jiro Matsuzawa
+    - Fix deprecation warnings
+    - Change click-type window default to 'show'
+    - Change default click-type window orientation to vertical
+    - Add support for middle mouse button dwell-clicks
+    - Remove gnome-panel applets; mousetweaks does not offer them anymore
+    - Various build system updates
+    - Edit explicit email address in AUTHORS file
+
+New and updated translations:
+
+    [be] Kasia Bondarava, Ihar Hrachyshka
+    [es] Daniel Mustieles
+    [nb] Kjartan Maraas
+    [pl] Piotr Drąg
+    [sr] Мирослав Николић
+    [sv] Daniel Nylander
+    [te] Krishnababu K
+
 Version 3.2.0
 -------------
 

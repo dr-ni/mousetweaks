@@ -1,47 +1,43 @@
-Mousetweaks 3.3.1
------------------
+Mousetweaks 3.3.90
+------------------
 
 Description:
 
-	The Mousetweaks package provides mouse accessibility enhancements for 
-	the GNOME desktop. These enhancements are:
-	
-	1. It offers a way to perform the various clicks without using any 
-	hardware button.
+    The Mousetweaks package provides mouse accessibility enhancements for
+    the GNOME desktop. These enhancements are created by a daemon and they
+    consist of:
 
-	2. It allows users to perform a right click by doing a click&hold 
-	of the left mousebutton. (For a left-handed mouse user, the termes 
-	left and right have to be inverted.) 
+    1. A way to perform the various clicks without using any hardware
+    button. There are two methods to control what click-type should be
+    automatically performed:
+    - by choosing the next click-type in the click-type window
+    - by performing a determined gesture after the dwell timout
 
-	3. It provides an applet that the user can install on a panel. This
-	applet creates an area on the panel into which the pointer can 
-	be captured until the user releases it with a predefined button
-	and modifier combination.
+    2. A way to perform a right click by doing a click&hold of the left
+    mousebutton. (For a left-handed mouse user, the termes left and right
+    have to be inverted.)
 
-	The options can be accessed through the Accessibility tab of the
-	Mouse Preferences of GNOME Control Center or through command-line.
+    Both features can be started in GNOME in the Universal Access panel of
+    the System Settings. But there is not a graphical interface for all the
+    options of mousetweaks. The graphical interface, apart the click-type
+    window, is not part of the mousetweaks package.
 
-Components of Mousetweaks: 
+    Mousetweaks also offers a command line interface and a dbus interface.
+    The latter can be especially interesting for other distributions, that
+    want to provide a different graphical interface to control the features
+    of the mousetweaks daemon.
 
-	* mousetweaks: daemon that provides the enhancements 1 and 2 of
-	the above description
-	
-	* dwell-click-applet: optional gnome-panel applet to select the
-	click-types when enhancement 1 of the above description is used
-	
-	* pointer-capture-applet: gnome-panel applet that provides
-	enhancement 3 of the above description
 
 Homepage:
 
-	http://live.gnome.org/Mousetweaks/Home
+    http://live.gnome.org/Mousetweaks/Home
 
 Reporting Bugs:
 
-	http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks
+    http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks
 
 License:
 
-	This program is released under the terms of the GNU General Public
-	License. Please see the file COPYING for details.
+    This program is released under the terms of the GNU General Public
+    License. Please see the file COPYING for details.
 

@@ -1,314 +1,273 @@
 # Serbian translation of mousetweaks
-# Courtesy of Prevod.org team (http://www.prevod.org/) -- 2009.
+# Courtesy of Prevod.org team (http://www.prevod.org/) -- 2009—2012.
 # This file is distributed under the same license as the mousetweak package.
-#
 # Maintainer: Milan Skocic <milan.skocic@gmail.com>
 # Miloš Popović <gpopac@gmail.com>, 2010, 2011.
-#
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2011-03-09 17:58+0000\n"
-"PO-Revision-Date: 2011-03-31 11:39+0200\n"
-"Last-Translator: Miloš Popović <gpopac@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mouset"
+"weaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-19 08:27+0000\n"
+"PO-Revision-Date: 2012-02-19 15:34+0200\n"
+"Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4;    plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 :    n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Programče za izbor različitih vremenskih klikova.\n"
-"Deo programa za podešavanje miša"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "Prozor za vrstu klika"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "Dupli klik"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "Prevlačenje"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "Omogući klik sa zadržavanjem"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "Desni klik"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "Jednostruki klik"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Oblast za zamrzavanje pokazivača miša na panelu.\n"
-"Deo programa za podešavanje miša"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "_Kontrol"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "Kontrole hvatanja i puštanja"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "Modifikator tastera:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "Postavke hvatanja pokazivača"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Biranje dugmeta 0 će odmah uhvatiti pokazivač"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "Veličina površine za hvatanje"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-#| msgid "Mouse _button:"
-msgid "_Mouse button:"
-msgstr "_Dugme miša:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-#| msgid "S_hift"
-msgid "_Shift"
-msgstr "_Šift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "Š_irina:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "piksela"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Project-Style: gnome\n"
 
 #: ../data/mousetweaks.ui.h:1
-#| msgid "Button style"
-msgid "Button Style"
-msgstr "Stil dugmeta"
-
-#. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
-msgid "Drag"
-msgstr "Prevuci"
-
-#. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "Horizontalno"
-
-#: ../data/mousetweaks.ui.h:7
-#| msgid "Double Click"
 msgid "Hover Click"
 msgstr "Klik na preklapanje"
 
-#: ../data/mousetweaks.ui.h:8
-#| msgid "Show Icons only"
-msgid "Icons only"
-msgstr "Samo ikonice"
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Jednostruki klik"
 
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "Orjentacija"
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Dupli klik"
 
-#: ../data/mousetweaks.ui.h:10
-#| msgid "Secondary click time"
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Prevuci"
+
+#: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
 msgstr "Sekundarni klik"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Stil dugmeta"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Samo tekst"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Samo ikonice"
+
+#: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
 msgstr "Tekst i ikonice"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Usmerenje"
+
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:13
-#| msgid "Show Text only"
-msgid "Text only"
-msgstr "Samo tekst"
+msgid "Horizontal"
+msgstr "Vodoravno"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
-msgstr "Vertikalno"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "Kontroliše radnu površ bez upotrebe dugmića miša"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-#| msgid "Dwell Click Type"
-msgid "Dwell Click Applet"
-msgstr "Programče vremenskog klika"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "Površina zaključavanja pokizavača"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-#| msgid "Pointer Capture"
-msgid "Pointer Capture Applet"
-msgstr "Programče za hvatanje pokazivača"
+msgstr "Uspravno"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-#| msgid "Show a click-type window"
-msgid "Button style of the click-type window."
-msgstr "Izgled dugmeta za tip klika prozora."
+msgid "Click-type window style"
+msgstr "Stil prozora za vrstu klika"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
-#| msgid "Click-type window X position"
-msgid "Click-type window geometry"
-msgstr "Veličina prozora za tip klika"
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "Izgled dugmeta za prozor vrste klika."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-#| msgid "Click-type window X position"
 msgid "Click-type window orientation"
-msgstr "Orjentacija prozora za tip klika"
+msgstr "Usmerenje prozora za vrstu klika"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-#| msgid "Click-type window X position"
-msgid "Click-type window style"
-msgstr "Stil prozora za tip klika"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-#| msgid "Show a click-type window"
 msgid "Orientation of the click-type window."
-msgstr "Orjentacija prozora za tip klika."
+msgstr "Usmerenje prozora za vrste klika."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "Veličina prozora za vrstu klika"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
-"Veličina u pozicija prozora za tip klika. Ovo je standardna niska geometrije "
-"iz X sistema prozora."
+"Veličina i položaj prozora za vrstu klika. Ovo je standardna niska "
+"geometrije sistema prozora Iksa."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "„Alt“ modifikator tastera"
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Uključuje klik sa zadržavanjem"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "„Kontrol“ modifikator tastera"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "„Šift“ modifikator tastera"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-#| msgid "Mouse _button:"
-msgid "Mouse button"
-msgstr "Dugme miša"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-#| msgid "Mouse button used to capture the pointer"
-msgid "Mouse button used to capture or release the pointer."
-msgstr "Taster miša koje se koristi za hvatanje i puštanje pokazivača."
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "Veličina prihvatne površine"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "Širina prihvatne površine u pikselima."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
-msgstr "Omogući sekundarni simulirani klik"
+msgstr "Uključuje sekundarni simulirani klik"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "Istek vremena pre vremenskog klika"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "Istek vremena pre simuliranog sekundarnog klika"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
-msgstr "Postavi aktivni vremenski klik"
+msgstr "Postavlja aktivni vremenski klik"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "Prikaži prozor za tip klika"
+#: ../src/mt-main.c:633
+#| msgid "Orientation of the click-type window."
+msgid "Hide the click-type window"
+msgstr "Skriva prozorče vrste klika"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
-msgstr "Ignoriši male pokrete pokazivača"
+msgstr "Zanemaruje male pokrete pokazivača"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
-msgstr "Isključi podešavanja miša"
+msgstr "Isključuje podešavanja miša"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
-msgstr "Pokreni podešavanja miša kao upravljački program"
+msgstr "Pokreće podešavanja miša kao demona"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
-msgstr "Pokreni podešavanja miša u režimu za prijavu"
+msgstr "Pokreće podešavanja miša u režimu za prijavu"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "— Gnomov upravljački program za pristupačnost miša"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Ne mogu da prikažem pomoć"
 
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "Prihvatna površ"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Programče za izbor različitih vremenskih klikova.\n"
+#~ "Deo programa za podešavanje miša"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "Privremeno zaključaj pokazivač miša"
+#~ msgid "Click Type Window"
+#~ msgstr "Prozor za vrstu klika"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "_Postavke"
+#~ msgid "Drag Click"
+#~ msgstr "Prevlačenje"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "_Pomoć"
+#~ msgid "Right Click"
+#~ msgstr "Desni klik"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "_O programu"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Oblast za zamrzavanje pokazivača miša na panelu.\n"
+#~ "Deo programa za podešavanje miša"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "Zaključano"
+#~ msgid "C_trl"
+#~ msgstr "_Kontrol"
 
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "Ne mogu da otvorim univerzalni pristup panelu"
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Kontrole hvatanja i puštanja"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Modifikator tastera:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Postavke hvatanja pokazivača"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Biranje dugmeta 0 će odmah uhvatiti pokazivač"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Veličina površine za hvatanje"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~| msgid "Mouse _button:"
+#~ msgid "_Mouse button:"
+#~ msgstr "_Dugme miša:"
+
+#~| msgid "S_hift"
+#~ msgid "_Shift"
+#~ msgstr "_Šift"
+
+#~ msgid "_Width:"
+#~ msgstr "Š_irina:"
+
+#~ msgid "pixels"
+#~ msgstr "piksela"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Kontroliše radnu površ bez upotrebe dugmića miša"
+
+#~| msgid "Dwell Click Type"
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Programče vremenskog klika"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Površina zaključavanja pokizavača"
+
+#~| msgid "Pointer Capture"
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Programče za hvatanje pokazivača"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "„Alt“ modifikator tastera"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "„Kontrol“ modifikator tastera"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "„Šift“ modifikator tastera"
+
+#~| msgid "Mouse _button:"
+#~ msgid "Mouse button"
+#~ msgstr "Dugme miša"
+
+#~| msgid "Mouse button used to capture the pointer"
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "Taster miša koje se koristi za hvatanje i puštanje pokazivača."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Veličina prihvatne površine"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Širina prihvatne površine u pikselima."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Prikaži prozor za tip klika"
+
+#~ msgid "Capture area"
+#~ msgstr "Prihvatna površ"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Privremeno zaključaj pokazivač miša"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Postavke"
+
+#~ msgid "_Help"
+#~ msgstr "_Pomoć"
+
+#~ msgid "_About"
+#~ msgstr "_O programu"
+
+#~ msgid "Locked"
+#~ msgstr "Zaključano"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Ne mogu da otvorim univerzalni pristup panelu"
 
 #~ msgid "A_lt"
 #~ msgstr "_Alt"
@@ -365,8 +324,8 @@ msgstr "Ne mogu da otvorim univerzalni pristup panelu"
 #~ "„3“ = Dole)"
 
 #~ msgid ""
-#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
-#~ "\"2\" = Up, \"3\" = Down)"
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
 #~ msgstr ""
 #~ "Smer da biste izvršili sekundarni klik („0“ = Levo, „1“ = Desno, „2“ = "
 #~ "Gore, „3“ = Dole)"

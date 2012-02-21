@@ -17,8 +17,8 @@ Description:
     mousebutton. (For a left-handed mouse user, the termes left and right
     have to be inverted.)
 
-    Both features can be started in GNOME in the Universal Access panel of
-    the System Settings. But there is not a graphical interface for all the
+    Both features can be started in GNOME 3 by using the Universal Access panel
+    of the System Settings. But there is not a graphical interface for all the
     options of mousetweaks. The graphical interface, apart the click-type
     window, is not part of the mousetweaks package.
 

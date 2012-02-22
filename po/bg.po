@@ -1,15 +1,15 @@
 # Bulgarian translation of mousetweaks po-file.
-# Copyright (C) 2008, 2009, 2010 Free Software Foundation, Inc.
-# Alexander Shopov <ash@kambanaria.org>, 2008, 2009, 2010, 2011.
+# Copyright (C) 2008, 2009, 2010, 2011, 2012 Free Software Foundation, Inc.
+# Alexander Shopov <ash@kambanaria.org>, 2008, 2009, 2010, 2011, 2012.
 # Krasimir Chonov <mk2616@abv.bg>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-27 17:11+0300\n"
-"PO-Revision-Date: 2011-03-27 17:11+0300\n"
-"Last-Translator: Krasimir Chonov <mk2616@abv.bg>\n"
+"POT-Creation-Date: 2012-02-22 19:25+0200\n"
+"PO-Revision-Date: 2012-02-22 19:25+0200\n"
+"Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
@@ -17,93 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Аплет за избор на различните видове натискане чрез задържане.\n"
-"Част от Mousetweaks"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "Прозорец за вида натискане"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "Двойно натискане"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "Натискане с провлачване"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "Включване на натискане чрез задържане"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "Натискане с десен бутон"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "Единично натискане"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Област в панела за прихващане на показалеца.\n"
-"Част от Mousetweaks"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "_Ctrl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "Клавиши за прихващане и освобождаване"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "Клавишен модификатор:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "Настройки на прихващането на показалеца"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Избирането на бутон 0 ще прихващане незабавно показалеца"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "Размер на зоната за прихващане"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "_Бутон на мишката:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "_Shift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "_Широчина:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "пиксела"
-
 #: ../data/mousetweaks.ui.h:1
 msgid "Button Style"
 msgstr "Стил на бутоните"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Double Click"
+msgstr "Двойно натискане"
 
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
@@ -131,6 +51,10 @@ msgstr "Ориентация"
 msgid "Secondary Click"
 msgstr "Двойно натискане"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Single Click"
+msgstr "Единично натискане"
+
 #: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
 msgstr "Текст и икони"
@@ -144,29 +68,11 @@ msgstr "Показване само на текст"
 msgid "Vertical"
 msgstr "Вертикално"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "Управление на плота без бутоните на мишка"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "Аплет за натискане чрез задържане"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "Област за заключване на показалеца"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "Аплет за прихващане на показалеца"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
 msgstr "Стил на бутоните в прозореца за вида натискане"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:637
 msgid "Click-type window geometry"
 msgstr "Геометрия на прозореца за вида натискане"
 
@@ -190,103 +96,51 @@ msgstr ""
 "Размер и позиция на прозореца за натискане. Форматът е стандартният за "
 "геометрия на X Window."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "Клавиш „Alt“"
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Включване на натискане чрез задържане"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "Клавиш „Control“"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "Клавиш „Shift“"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "Бутон на мишката"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "Бутон на мишката за прихващане или освобождаване на показалеца."
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "Размер на зоната за прихващане"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "Широчина на зоната за прихващане в пиксели."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "Включване на симулирано натискане с десен бутон"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "Време за изчакване за натискане чрез задържане"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "Време за изчакване за симулирано натискане с десен бутон"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "Задаване на режима за натискане чрез задържане"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "Показване на прозорец за вида натискане"
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Скриване на прозореца за вида натискане"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "Пренебрегване на малките движения на показалеца"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "Спиране на програмата"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "Стартиране на демона за допълнителните настройки на мишката"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "Стартиране на mousetweaks още при екрана за вход"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "— демон за достъпността на мишката на GNOME"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Неуспех при показването на помощта"
-
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "Област на прихващане"
-
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "Временно заключване на показалеца на мишката"
-
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "_Настройки"
-
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "Помо_щ"
-
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "_Относно"
-
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "Заключено"
-
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "Панелът за универсален достъп не може да се отвори"

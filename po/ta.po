@@ -5,112 +5,32 @@
 #
 # Dr.T.Vasudevan <agnihot3@gmail.com>, 2008.
 # I. Felix <ifelix@redhat.com>, 2008.
-# Dr.T.Vasudevan <agnihot3@gmail.com>, 2009, 2010.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2009, 2010, 2012.
 # Dr,T,Vasudevan <agnihot3@gmail.com>, 2010, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweak.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-02 05:44+0530\n"
-"PO-Revision-Date: 2011-04-02 05:45+0530\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2012-02-28 17:10+0530\n"
+"PO-Revision-Date: 2012-02-28 17:12+0530\n"
+"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ta\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"பல் வகை நிலை சொடுக்கை தேர்வு செய்ய குறுநிரல்.\n"
-"மவுஸ்ட்வீக்ஸ்  இன் பகுதி"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "சொடுக்கு வகை சாளரம்"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "இரட்டை சொடுக்கு"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "சொடுக்கு இழுப்பு"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "நிலை சொடுக்கு செயல்படுத்து"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "வலது சொடுக்கு"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "ஒற்றை சொடுக்கு"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"சொடுக்கியை பலகத்தில்  பூட்ட இடம்\n"
-"மவுஸ்ட்வீக்ஸ்  இன் பகுதி"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "(_t) கண்ட்ரோல்"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "கட்டுப்பாடுகளை பிடி மற்றும் விடுவி"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "விசைப்பலகை மாற்றி:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "சுட்டி பிடிப்பு தேர்வுகள்"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "பொத்தான் 0 ஐ தேர்ந்தெடுத்தால் சுட்டி உடனே பிடிக்கப்படும் "
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "பிடிப்பு பரப்பின் அளவு "
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "(_A) ஆல்ட்"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "(_M) சொடுக்கி பொத்தான்:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "(_S) ஷிப்ட்"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "(_W) அகலம்:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "படதுணுக்குகள்"
-
 #: ../data/mousetweaks.ui.h:1
 msgid "Button Style"
 msgstr "பொத்தான் பாங்கு"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Double Click"
+msgstr "இரட்டை சொடுக்கு"
 
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
@@ -138,6 +58,10 @@ msgstr "நிலை அமைப்பு"
 msgid "Secondary Click"
 msgstr "இரண்டாம் சொடுக்கு நேரம்"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Single Click"
+msgstr "ஒற்றை சொடுக்கு"
+
 #: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
 msgstr "உரை மற்றும் சின்னங்கள்"
@@ -151,29 +75,11 @@ msgstr "உரை மட்டும்"
 msgid "Vertical"
 msgstr "செங்குத்து"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "சொடுக்கி பொத்தான்களை பயன்படுத்தாமல் உங்கள் மேல்மேசையை ஆளுக"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "நிலை சொடுக்கு குறுநிரல்"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "சுட்டியை பூட்ட பரப்பு"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "சுட்டி சுட்டு பிடிப்பு குறுநிரல்"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
 msgstr "சொடுக்கு வகை சாளரத்தின் பொத்தானின் பாங்கு"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:637
 msgid "Click-type window geometry"
 msgstr "சொடுக்கு வகை சாளரத்தின் வடிவநிலை"
 
@@ -197,106 +103,167 @@ msgstr ""
 "சொடுக்கு வகை சாளரத்துக்கு அளவும் இடமும். இந்த ஒழுங்கு செந்தர எக்ஸ் சாளர அமைப்பு வடிவ "
 "இயல் சரம்."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "\"ஆல்ட்\" விசைப்பலகை மாற்றி"
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "நிலை சொடுக்கு செயல்படுத்து"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "\"கன்ட்ரோல்\" விசைப்பலகை மாற்றி"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "\"ஷிப்ட்\" விசைப்பலகை மாற்றி"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "சொடுக்கி பொத்தான்"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "சுட்டியை பிடிக்க அல்லது விட பயன்பட்ட சொடுக்கி பொத்தான் "
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "பிடிப்பு பரப்பின் அளவு "
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "பிடிப்பு பரப்பின் அகலம் பிக்ஸல்களில்."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "மெய்நிகர் இரண்டாம்  சொடுக்கு செயல்படுத்து"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "நிலை சொடுக்குக்கு காத்திருக்க வேண்டிய நேரம்"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "மெய்நிகர் இரண்டாம்  சொடுக்கு செயல்பட காத்திருக்க வேண்டிய நேரம்."
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "நிலை சொடுக்கு முறைமை அமை"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "ஒ ருசொடுக்கு வகை சாளரத்தை காட்டு "
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "சொடுக்கு வகை சாளரத்தை மறை"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "சிறு சுட்டி நகர்வுகளை உதாசீனம் செய்க."
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "மவுஸ்ட்வீக்ஸ் செயல்களை பணி நிறுத்தம் செய்க"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "- க்னோம்  மவுஸ்ட்வீக்ஸ் கிங்கரன் ஐ துவக்குக"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "மவுஸ்ட்வீக்ஸ் ஐ உள்நுழை  பாங்கில் துவகக்கு"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "க்னோம் சொடுக்கி அணுகல் கிங்கரன்"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "உதவியை காட்ட இயலவில்லை"
 
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "பிடிப்பு பரப்பு"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "பல் வகை நிலை சொடுக்கை தேர்வு செய்ய குறுநிரல்.\n"
+#~ "மவுஸ்ட்வீக்ஸ்  இன் பகுதி"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "சொடுக்கி முனையை தற்காலிகமாக பூட்டுக."
+#~ msgid "Click Type Window"
+#~ msgstr "சொடுக்கு வகை சாளரம்"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "முன்னுரிமைகள் (_P)"
+#~ msgid "Drag Click"
+#~ msgstr "சொடுக்கு இழுப்பு"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "உதவி (_H)"
+#~ msgid "Right Click"
+#~ msgstr "வலது சொடுக்கு"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "பற்றி (_A)"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "சொடுக்கியை பலகத்தில்  பூட்ட இடம்\n"
+#~ "மவுஸ்ட்வீக்ஸ்  இன் பகுதி"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "பூட்டப்பட்டது"
+#~ msgid "C_trl"
+#~ msgstr "(_t) கண்ட்ரோல்"
 
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "பிரபஞ்ச அளவு அணுகல் பலகத்தை திறத்தல் தோல்வி"
+#~ msgid "Capture and Release Controls"
+#~ msgstr "கட்டுப்பாடுகளை பிடி மற்றும் விடுவி"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "விசைப்பலகை மாற்றி:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "சுட்டி பிடிப்பு தேர்வுகள்"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "பொத்தான் 0 ஐ தேர்ந்தெடுத்தால் சுட்டி உடனே பிடிக்கப்படும் "
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "பிடிப்பு பரப்பின் அளவு "
+
+#~ msgid "_Alt"
+#~ msgstr "(_A) ஆல்ட்"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "(_M) சொடுக்கி பொத்தான்:"
+
+#~ msgid "_Shift"
+#~ msgstr "(_S) ஷிப்ட்"
+
+#~ msgid "_Width:"
+#~ msgstr "(_W) அகலம்:"
+
+#~ msgid "pixels"
+#~ msgstr "படதுணுக்குகள்"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "சொடுக்கி பொத்தான்களை பயன்படுத்தாமல் உங்கள் மேல்மேசையை ஆளுக"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "நிலை சொடுக்கு குறுநிரல்"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "சுட்டியை பூட்ட பரப்பு"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "சுட்டி சுட்டு பிடிப்பு குறுநிரல்"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "\"ஆல்ட்\" விசைப்பலகை மாற்றி"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "\"கன்ட்ரோல்\" விசைப்பலகை மாற்றி"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "\"ஷிப்ட்\" விசைப்பலகை மாற்றி"
+
+#~ msgid "Mouse button"
+#~ msgstr "சொடுக்கி பொத்தான்"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "சுட்டியை பிடிக்க அல்லது விட பயன்பட்ட சொடுக்கி பொத்தான் "
+
+#~ msgid "Size of capture area"
+#~ msgstr "பிடிப்பு பரப்பின் அளவு "
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "பிடிப்பு பரப்பின் அகலம் பிக்ஸல்களில்."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "ஒ ருசொடுக்கு வகை சாளரத்தை காட்டு "
+
+#~ msgid "Capture area"
+#~ msgstr "பிடிப்பு பரப்பு"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "சொடுக்கி முனையை தற்காலிகமாக பூட்டுக."
+
+#~ msgid "_Preferences"
+#~ msgstr "முன்னுரிமைகள் (_P)"
+
+#~ msgid "_Help"
+#~ msgstr "உதவி (_H)"
+
+#~ msgid "_About"
+#~ msgstr "பற்றி (_A)"
+
+#~ msgid "Locked"
+#~ msgstr "பூட்டப்பட்டது"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "பிரபஞ்ச அளவு அணுகல் பலகத்தை திறத்தல் தோல்வி"
 
 #~ msgid "Dwell Click-Type"
 #~ msgstr "நிலை சொடுக்கு வகை"
@@ -338,8 +305,8 @@ msgstr "பிரபஞ்ச அளவு அணுகல் பலகத்த
 #~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
 #~ "Both)"
 #~ msgstr ""
-#~ "சொடுக்கு வகை சாளரத்தில் பொத்தான் பாங்கு (\"0\" = உரை, \"1\"= சின்னம், \"2"
-#~ "\"=இரண்டும்)"
+#~ "சொடுக்கு வகை சாளரத்தில் பொத்தான் பாங்கு (\"0\" = உரை, \"1\"= சின்னம், "
+#~ "\"2\"=இரண்டும்)"
 
 #~ msgid ""
 #~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
@@ -356,8 +323,8 @@ msgstr "பிரபஞ்ச அளவு அணுகல் பலகத்த
 #~ "\"3\" = கீழ்)"
 
 #~ msgid ""
-#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2"
-#~ "\" = Up, \"3\" = Down)"
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
 #~ msgstr ""
 #~ "இரண்டாவது சொடுக்கு செய்ய வழிகாட்டி (\"0\" = இடது, \"1\" = வலது, \"2\" = மேலே, "
 #~ "\"3\" = கீழ்)"
@@ -366,8 +333,8 @@ msgstr "பிரபஞ்ச அளவு அணுகல் பலகத்த
 #~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 #~ "Up, \"3\" = Down)"
 #~ msgstr ""
-#~ "தனி சொடுக்கு செய்ய வழிகாட்டி (\"0\" = இடது, \"1\" = வலது, \"2\" = மேலே, \"3"
-#~ "\" = கீழ்)"
+#~ "தனி சொடுக்கு செய்ய வழிகாட்டி (\"0\" = இடது, \"1\" = வலது, \"2\" = மேலே, "
+#~ "\"3\" = கீழ்)"
 
 #~ msgid "Distance in pixels before movement will be recognized"
 #~ msgstr "அசைவு அடையாளம் காணப்பட குறைந்த பட்ச நகர்வு தொலைவு  பிக்ஸல்களில்."

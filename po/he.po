@@ -7,102 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-12 12:58+0200\n"
-"PO-Revision-Date: 2011-03-12 12:59+0200\n"
+"POT-Creation-Date: 2012-03-02 14:50+0200\n"
+"PO-Revision-Date: 2012-03-02 14:51+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: he\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Hebrew\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"יישומון לבחירת סוגי לחיצת שהייה שונים.\n"
-"חלק מ־Mousetweaks"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "חלון סוג לחיצה"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "לחיצה כפולה"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "לחיצת גרירה"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "הפעלת לחיצת השהיה"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "לחיצה ימנית"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "לחיצה בודדת"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"אזור לנעילת סמן העכבר בלוח.\n"
-"חלק מ־Mousetweaks"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "לכידה ושחרור של פקדים"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "מקש ההחלפה:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "מאפייני לכידת סמן"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "בחירה בכפתור 0 תגרום ללכידה מיידית"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "גודל אזור הלכידה"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "מ_קש עכבר:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "_Shift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "_רוחב:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "פיקסלים"
-
 #: ../data/mousetweaks.ui.h:1
 msgid "Button Style"
 msgstr "סגנון הלחצנים"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Double Click"
+msgstr "לחיצה כפולה"
 
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
@@ -130,6 +51,10 @@ msgstr "כיווניות"
 msgid "Secondary Click"
 msgstr "לחיצה משנית"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Single Click"
+msgstr "לחיצה בודדת"
+
 #: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
 msgstr "טקסט וסמלים"
@@ -143,29 +68,12 @@ msgstr "טקסט בלבד"
 msgid "Vertical"
 msgstr "אנכי"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "שליטה בשולחן העבודה שלך מבלי להשתמש בלחצני העכבר"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "יישומון לחיצת שהייה"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "אזור לנעילת הסמן"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "יישומון לכידת סמן"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
 msgstr "Button style of the click-type window."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: ../src/mt-main.c:637
 msgid "Click-type window geometry"
 msgstr "Click-type window geometry"
 
@@ -182,113 +90,170 @@ msgid "Orientation of the click-type window."
 msgstr "Orientation of the click-type window."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
-msgid ""
-"Size and position of the click-type window. The format is a standard X "
-"Window System geometry string."
-msgstr ""
-"Size and position of the click-type window. The format is a standard X "
-"Window System geometry string."
+msgid "Size and position of the click-type window. The format is a standard X Window System geometry string."
+msgstr "Size and position of the click-type window. The format is a standard X Window System geometry string."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "מקש ההחלפה \"Alt\""
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "הפעלת לחיצת השהיה"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "מקש ההחלפה \"Control\""
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "מקש ההחלפה \"Shift\""
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "מקש עכבר"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "מקש העכבר המשמש ללכידת או לשחרור הסמן."
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "Size of capture area"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "Width of the capture area in pixels."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "Enable simulated secondary click"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "Time to wait before a dwell click"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "Time to wait before a simulated secondary click"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "Set the active dwell mode"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "Show a click-type window"
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Hide the click-type window"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "Ignore small pointer movements"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "Shut down mousetweaks"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "Start mousetweaks as a daemon"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "Start mousetweaks in login mode"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME mouse accessibility daemon"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
-msgstr "אירע כשל בהצגת העזרה"
+msgstr "הצגת העזרה נכשלה"
 
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "איזור לכידה"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "יישומון לבחירת סוגי לחיצת שהייה שונים.\n"
+#~ "חלק מ־Mousetweaks"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "נעילת סמן העכבר באופן זמני"
+#~ msgid "Click Type Window"
+#~ msgstr "חלון סוג לחיצה"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "ה_עדפות"
+#~ msgid "Drag Click"
+#~ msgstr "לחיצת גרירה"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "ע_זרה"
+#~ msgid "Right Click"
+#~ msgstr "לחיצה ימנית"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "על _אודות"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "אזור לנעילת סמן העכבר בלוח.\n"
+#~ "חלק מ־Mousetweaks"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "נעול"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
 
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "אירע כשל בפתיחת לוח הגישה האוניברסלית"
+#~ msgid "Capture and Release Controls"
+#~ msgstr "לכידה ושחרור של פקדים"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "מקש ההחלפה:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "מאפייני לכידת סמן"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "בחירה בכפתור 0 תגרום ללכידה מיידית"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "גודל אזור הלכידה"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "מ_קש עכבר:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Shift"
+
+#~ msgid "_Width:"
+#~ msgstr "_רוחב:"
+
+#~ msgid "pixels"
+#~ msgstr "פיקסלים"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "שליטה בשולחן העבודה שלך מבלי להשתמש בלחצני העכבר"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "יישומון לחיצת שהייה"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "אזור לנעילת הסמן"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "יישומון לכידת סמן"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "מקש ההחלפה \"Alt\""
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "מקש ההחלפה \"Control\""
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "מקש ההחלפה \"Shift\""
+
+#~ msgid "Mouse button"
+#~ msgstr "מקש עכבר"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "מקש העכבר המשמש ללכידת או לשחרור הסמן."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Size of capture area"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Width of the capture area in pixels."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Show a click-type window"
+
+#~ msgid "Capture area"
+#~ msgstr "איזור לכידה"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "נעילת סמן העכבר באופן זמני"
+
+#~ msgid "_Preferences"
+#~ msgstr "ה_עדפות"
+
+#~ msgid "_Help"
+#~ msgstr "ע_זרה"
+
+#~ msgid "_About"
+#~ msgstr "על _אודות"
+
+#~ msgid "Locked"
+#~ msgstr "נעול"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "אירע כשל בפתיחת לוח הגישה האוניברסלית"
 
 #~ msgid "Dwell Click-Type"
 #~ msgstr "סוג לחיצת ההשהיה"
@@ -329,11 +294,11 @@ msgstr "אירע כשל בפתיחת לוח הגישה האוניברסלית"
 #~ "= Up, \"3\" = Down)"
 
 #~ msgid ""
-#~ "Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, \"2"
-#~ "\" = Up, \"3\" = Down)"
+#~ "Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
 #~ msgstr ""
-#~ "Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, \"2"
-#~ "\" = Up, \"3\" = Down)"
+#~ "Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
 
 #~ msgid ""
 #~ "Direction to perform a single click. (\"0\" = Left, \"1\" = Right, \"2\" "

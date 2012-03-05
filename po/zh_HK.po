@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweak 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-30 21:30+0800\n"
-"PO-Revision-Date: 2011-03-30 21:30+0800\n"
+"POT-Creation-Date: 2012-03-05 21:19+0800\n"
+"PO-Revision-Date: 2012-03-05 21:19+0800\n"
 "Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
 "Language: \n"
@@ -17,93 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"選擇替代點擊類型的面板程式。\n"
-"Mousetweaks 的一部份"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "點擊類型視窗"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "雙點擊"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "拖拉點擊"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "啟動替代點擊"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "右鍵點擊"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "單次點擊"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"在面版上停止鼠標移動的範圍。\n"
-"Mousetweaks 的一部分"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "捕捉和釋放控制"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "鍵盤修飾鍵："
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "指標捕捉偏好設定"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "選擇 0 按鈕將會即時捕捉按鈕"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "捕捉範圍的大小"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "滑鼠按鈕(_M):"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "_Shift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "闊度(_W):"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "像素"
-
 #: ../data/mousetweaks.ui.h:1
 msgid "Button Style"
 msgstr "按鈕類型"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Double Click"
+msgstr "雙點擊"
 
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
@@ -131,6 +51,10 @@ msgstr "方向"
 msgid "Secondary Click"
 msgstr "次要點擊"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Single Click"
+msgstr "單次點擊"
+
 #: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
 msgstr "文字及圖示"
@@ -144,29 +68,11 @@ msgstr "只有文字"
 msgid "Vertical"
 msgstr "垂直"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "不使用滑鼠按鈕而控制你的桌面"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "替代點擊面板程式"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "鎖定指標的範圍"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "指標捕捉面板程式"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
 msgstr "點擊類型視窗的按鈕樣式。"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:637
 msgid "Click-type window geometry"
 msgstr "點擊類型視窗位置大小"
 
@@ -188,106 +94,167 @@ msgid ""
 "Window System geometry string."
 msgstr "點擊類型視窗的大小和位置。格式為標準 X Window System 幾何位置字串。"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "「Alt」鍵盤修飾鍵"
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "啟動替代點擊"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "「Control」鍵盤修飾鍵"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "「Shift」鍵盤修飾鍵"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "滑鼠按鈕"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "用來捕捉或釋放指標的滑鼠按鈕"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "捕捉範圍的大小"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "捕捉區域的闊度，以像素計。"
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "啟動模擬次要點擊"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "在替代點擊之前等待的時間"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "模擬次要點擊之前等待的時間"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "設定要使用的替代點擊模式"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "顯示點擊類型視窗"
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "點擊類型視窗"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "忽略微小的指標移動"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "關閉 Mousetweaks"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "以伺服程式形式啟動 mousetweaks "
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "以登入模式啟動 mousetweaks"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME 滑鼠無障礙功能伺服程式"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "無法顯示說明文件"
 
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "捕捉範圍"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "選擇替代點擊類型的面板程式。\n"
+#~ "Mousetweaks 的一部份"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "暫時鎖定鼠標"
+#~ msgid "Click Type Window"
+#~ msgstr "點擊類型視窗"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "偏好設定(_P)"
+#~ msgid "Drag Click"
+#~ msgstr "拖拉點擊"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "求助(_H)"
+#~ msgid "Right Click"
+#~ msgstr "右鍵點擊"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "關於(_A)"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "在面版上停止滑鼠指標移動的範圍。\n"
+#~ "Mousetweaks 的一部分"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "已鎖定"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
 
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "無法開啟無障礙存取面板"
+#~ msgid "Capture and Release Controls"
+#~ msgstr "捕捉和釋放控制"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "鍵盤修飾鍵："
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "指標捕捉偏好設定"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "選擇 0 按鈕將會即時捕捉按鈕"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "捕捉範圍的大小"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "滑鼠按鈕(_M):"
+
+#~ msgid "_Shift"
+#~ msgstr "_Shift"
+
+#~ msgid "_Width:"
+#~ msgstr "寬度(_W):"
+
+#~ msgid "pixels"
+#~ msgstr "像素"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "不使用滑鼠按鈕而控制您的桌面"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "替代點擊面板程式"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "鎖定指標的範圍"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "指標捕捉面板程式"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "「Alt」鍵盤修飾鍵"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "「Control」鍵盤修飾鍵"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "「Shift」鍵盤修飾鍵"
+
+#~ msgid "Mouse button"
+#~ msgstr "滑鼠按鈕"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "用來捕捉或釋放指標的滑鼠按鈕"
+
+#~ msgid "Size of capture area"
+#~ msgstr "捕捉範圍的大小"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "捕捉區域的寬度，以像素計。"
+
+#~ msgid "Show a click-type window"
+#~ msgstr "顯示點擊類型視窗"
+
+#~ msgid "Capture area"
+#~ msgstr "捕捉範圍"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "暫時鎖定滑鼠指標"
+
+#~ msgid "_Preferences"
+#~ msgstr "偏好設定(_P)"
+
+#~ msgid "_Help"
+#~ msgstr "求助(_H)"
+
+#~ msgid "_About"
+#~ msgstr "關於(_A)"
+
+#~ msgid "Locked"
+#~ msgstr "已鎖定"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "無法開啟無障礙存取面板"
 
 #~ msgid "Dwell Click-Type"
 #~ msgstr "替代點擊類型"

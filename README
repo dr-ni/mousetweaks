@@ -7,15 +7,14 @@ Description:
     the GNOME desktop. These enhancements are:
     
     1. It offers a way to perform the various clicks without using any 
-    hardware button.
+    hardware button. (Hover Click)
 
-    2. It allows users to perform a right click by doing a click&hold 
-    of the left mousebutton. (For a left-handed mouse user, the termes 
-    left and right have to be inverted.) 
+    2. It allows users to perform a secondary click by keeping the primary 
+    mousebutton pressed for a determined amount of time. (Simulated 
+    Secondary Click) 
 
-    The options can be accessed through the Accessibility tab of the
-    Mouse Preferences of the GNOME Control Center or through the
-    the command-line interface.
+    These enhancements can be accessed through the Universal Access panel
+    in the GNOME Control Center or through the command-line interface.
 
 Distribution Notes:
 

@@ -8,24 +8,27 @@
   <shortdesc xml:lang="en">Mouse accessibility enhancements</shortdesc>
   <description>The Mousetweaks package provides mouse accessibility enhancements for 
     the GNOME desktop. These enhancements are:
-
+    
     1. It offers a way to perform the various clicks without using any 
-    hardware button. (hover click)
+    hardware button. (Hover Click)
 
     2. It allows users to perform a secondary click by keeping the primary 
-    mousebutton pressed for a determined amount of time. (simulated 
-    secondary click) 
+    mousebutton pressed for a determined amount of time. (Simulated 
+    Secondary Click) 
 
-    3. For desktops using the gnome-panel, it provides two panel applets
-    that the user can install on the gnome-panels. 
-    - The first applet provides an alternative way to control the hover click. 
-    - The second applet creates an area on the panel into which the pointer
-      can be captured until the user releases it with a predefined button
-      and modifier combination.
+    These enhancements can be accessed through the Universal Access panel
+    in the GNOME Control Center or through the command-line interface.
 
-    The hover click and the simulated secondary click can be accessed through
-    the Universal Access control panel in the GNOME Control Center. The applets
-    however can only be accessed on desktops using the gnome-panel.</description>
+    Distribution Notes:
+
+    Mousetweaks is implemented as a daemon that only runs when one of its
+    features has been enabled.
+
+    Apart the click-type window that can be used to control the type of
+    the next simulated click, there is no graphical user interface
+    shipping with mousetweaks. Distributions can create their own
+    graphical user interface matching their desktop and use dbus to
+    completely control mousetweaks.</description>
   <download-page rdf:resource="http://download.gnome.org/sources/mousetweaks/" />
   <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=mousetweaks" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#desktop" />

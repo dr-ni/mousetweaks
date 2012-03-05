@@ -3,30 +3,30 @@ Mousetweaks 3.3.90
 
 Description:
 
-    The Mousetweaks package provides mouse accessibility enhancements for
-    the GNOME desktop. These enhancements are created by a daemon and they
-    consist of:
+    The Mousetweaks package provides mouse accessibility enhancements for 
+    the GNOME desktop. These enhancements are:
+    
+    1. It offers a way to perform the various clicks without using any 
+    hardware button.
 
-    1. A way to perform the various clicks without using any hardware
-    button. There are two methods to control what click-type should be
-    automatically performed:
-    - by choosing the next click-type in the click-type window
-    - by performing a determined gesture after the dwell timout
+    2. It allows users to perform a right click by doing a click&hold 
+    of the left mousebutton. (For a left-handed mouse user, the termes 
+    left and right have to be inverted.) 
 
-    2. A way to perform a right click by doing a click&hold of the left
-    mousebutton. (For a left-handed mouse user, the termes left and right
-    have to be inverted.)
+    The options can be accessed through the Accessibility tab of the
+    Mouse Preferences of the GNOME Control Center or through the
+    the command-line interface.
 
-    Both features can be started in GNOME 3 by using the Universal Access panel
-    of the System Settings. But there is not a graphical interface for all the
-    options of mousetweaks. The graphical interface, apart the click-type
-    window, is not part of the mousetweaks package.
+Distribution Notes:
 
-    Mousetweaks also offers a command line interface and a dbus interface.
-    The latter can be especially interesting for other distributions, that
-    want to provide a different graphical interface to control the features
-    of the mousetweaks daemon.
+    Mousetweaks is implemented as a daemon that only runs when one of its
+    features has been enabled.
 
+    Apart the click-type window that can be used to control the type of
+    the next simulated click, there is no graphical user interface
+    shipping with mousetweaks. Distributions can create their own
+    graphical user interface matching their desktop and use dbus to
+    completely control mousetweaks.
 
 Homepage:
 

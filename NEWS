@@ -1,3 +1,27 @@
+Version 3.3.91
+--------------
+
+From now on, mousetweaks will use pre-release version increment.
+
+Misc changes, improvements and fixes:
+
+    - Update description in the README file
+    - Update description in the mousetweaks.doap file
+
+New and updated translations:
+
+    [bg] Alexander Shopov
+    [et] Mattias Põldaru
+    [gl] Fran Diéguez
+    [he] Yaron Shahrabani
+    [hu] Gabor Kelemen
+    [it] Milo Casagrande
+    [ru] Yuri Myasoedov
+    [sl] Matej Urbančič
+    [ta] Dr. T. Vasudevan
+    [zh_HK] Chao-Hsiung Liao
+    [zh_TW] Chao-Hsiung Liao
+
 Version 3.3.90
 --------------
 

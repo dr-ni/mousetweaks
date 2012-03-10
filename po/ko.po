@@ -3,16 +3,16 @@
 #
 # based on gnome-control-center translation,
 # Young-Ho Cha <ganadist@chollian.net>, 2002, 2006.
-# Changwoo Ryu <cwryu@debian.org>, 2002-2006, 2007, 2008, 2009, 2010, 2011.
+# Changwoo Ryu <cwryu@debian.org>, 2002-2012.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2011-03-09 17:58+0000\n"
-"PO-Revision-Date: 2011-03-12 22:47+0900\n"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-19 08:27+0000\n"
+"PO-Revision-Date: 2012-03-10 23:01+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -21,274 +21,243 @@ msgstr ""
 "Language: Korean\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"여러가지 자동 누르기 종류를 선택하는 애플릿.\n"
-"마우스트윅스의 일부"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "누르기 종류 창"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "두 번 누르기"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "끌어 누르기"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "자동 누르기 사용"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "오른쪽 단추 누르기"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "한 번 누르기"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"마우스 포인터를 패널에 고정할 영역.\n"
-"마우스트윅스의 일부"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "가두기 및 놓기 조작"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "키보드 변경 키:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "포인터 가두기 기본 설정"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "단추 0을 선택하면 포인터를 즉시 가둡니다"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "가두기 영역의 크기"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "마우스 단추(_M):"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "_Shift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "너비(_W):"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "픽셀"
-
 #: ../data/mousetweaks.ui.h:1
-msgid "Button Style"
-msgstr "단추 방식"
-
-#. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
-msgid "Drag"
-msgstr "끌기"
-
-#. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "가로"
-
-#: ../data/mousetweaks.ui.h:7
 msgid "Hover Click"
 msgstr "자동 누르기"
 
-#: ../data/mousetweaks.ui.h:8
-msgid "Icons only"
-msgstr "아이콘만"
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "한 번 누르기"
 
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "방향"
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "두 번 누르기"
 
-#: ../data/mousetweaks.ui.h:10
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "끌기"
+
+#: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
 msgstr "두번째 누르기"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "단추 방식"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "텍스트만"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "아이콘만"
+
+#: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
 msgstr "텍스트와 아이콘"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "방향"
+
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:13
-msgid "Text only"
-msgstr "텍스트만"
+msgid "Horizontal"
+msgstr "가로"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
 msgstr "세로"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "마우스 단추를 사용하지 않고 데스크톱 조작"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "자동 누르기 애플릿"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "포인터를 잠글 영역"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "포인터 가두기 애플릿"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "누르기 종류 창 방식"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 msgid "Button style of the click-type window."
 msgstr "누르기 종류 창의 단추 방식."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
-msgid "Click-type window geometry"
-msgstr "누르기 종류 창 위치 및 크기"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
 msgstr "누르기 종류 창 방향"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-msgid "Click-type window style"
-msgstr "누르기 종류 창 방식"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
 msgid "Orientation of the click-type window."
 msgstr "누르기 종류 창의 방향."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "누르기 종류 창 위치 및 크기"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
-msgstr "창의 크기 및 위치. 형식은 X 윈도우 시스템의 표준 크기 및 위치 (geometry) 설정과 같습니다."
+msgstr ""
+"창의 크기 및 위치. 형식은 X 윈도우 시스템의 표준 크기 및 위치 (geometry) 설정"
+"과 같습니다."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "\"Alt\" 키보드 변경 키"
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "자동 누르기 사용"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "\"Control\" 키보드 변경 키"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "\"Shift\" 키보드 변경 키"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "마우스 단추"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "포인터를 가두거나 놓을 때 사용하는 마우스 단추."
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "가두기 영역의 크기"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "가두기 영역의 너비, 픽셀 단위."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "두번째 누르기 흉내 내기 사용"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "자동 누르기가 될 때까지 대기할 시간"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "두번째 누르기로 취급할 때까지 대기할 시간"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "자동 누르기 모드를 설정합니다"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "누르기 종류 창 표시"
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "누르기 종류 창을 감춥니다"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "작은 포인터 움직임을 무시합니다"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "마우스트윅스를 마칩니다"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "마우스트윅스를 데몬으로 실행합니다"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "마우스트윅스를 로그인 모드로 실행합니다"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- 그놈 마우스 접근성 기능 데몬"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "도움말을 표시하는 데 실패했습니다"
 
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "가두기 영역"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "여러가지 자동 누르기 종류를 선택하는 애플릿.\n"
+#~ "마우스트윅스의 일부"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "임시로 마우스 포인터 잠그기"
+#~ msgid "Click Type Window"
+#~ msgstr "누르기 종류 창"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "기본 설정(_P)"
+#~ msgid "Drag Click"
+#~ msgstr "끌어 누르기"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "도움말(_H)"
+#~ msgid "Right Click"
+#~ msgstr "오른쪽 단추 누르기"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "정보(_A)"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "마우스 포인터를 패널에 고정할 영역.\n"
+#~ "마우스트윅스의 일부"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "잠금"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
 
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "접근성 패널을 여는데 실패했습니다"
+#~ msgid "Capture and Release Controls"
+#~ msgstr "가두기 및 놓기 조작"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "키보드 변경 키:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "포인터 가두기 기본 설정"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "단추 0을 선택하면 포인터를 즉시 가둡니다"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "가두기 영역의 크기"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "마우스 단추(_M):"
+
+#~ msgid "_Shift"
+#~ msgstr "_Shift"
+
+#~ msgid "_Width:"
+#~ msgstr "너비(_W):"
+
+#~ msgid "pixels"
+#~ msgstr "픽셀"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "마우스 단추를 사용하지 않고 데스크톱 조작"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "자동 누르기 애플릿"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "포인터를 잠글 영역"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "포인터 가두기 애플릿"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "\"Alt\" 키보드 변경 키"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "\"Control\" 키보드 변경 키"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "\"Shift\" 키보드 변경 키"
+
+#~ msgid "Mouse button"
+#~ msgstr "마우스 단추"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "포인터를 가두거나 놓을 때 사용하는 마우스 단추."
+
+#~ msgid "Size of capture area"
+#~ msgstr "가두기 영역의 크기"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "가두기 영역의 너비, 픽셀 단위."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "누르기 종류 창 표시"
+
+#~ msgid "Capture area"
+#~ msgstr "가두기 영역"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "임시로 마우스 포인터 잠그기"
+
+#~ msgid "_Preferences"
+#~ msgstr "기본 설정(_P)"
+
+#~ msgid "_Help"
+#~ msgstr "도움말(_H)"
+
+#~ msgid "_About"
+#~ msgstr "정보(_A)"
+
+#~ msgid "Locked"
+#~ msgstr "잠금"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "접근성 패널을 여는데 실패했습니다"

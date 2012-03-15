@@ -1,300 +1,271 @@
 # translation of mousetweaks.master.te.po to Telugu
-# Copyright (C) 2011 Swecha Telugu Localisation Team <localization@swecha.net>.
+# Copyright (C) 2012 Swecha Telugu Localisation Team <localization@swecha.net>.
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Krishna Babu K <kkrothap@redhat.com>, 2009.
-# Hari krishna <hari@swecha.net>, 2011.
+# Krishna Babu K <kkrothap@redhat.com>, 2009, 2012.
+# Hari krishna <hari@swecha.net>, 2011, 2012.
+# Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.master.te\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2011-03-09 17:58+0000\n"
-"PO-Revision-Date: 2009-08-28 17:18+0530\n"
-"Last-Translator: Hari krishna <hari@swecha.net>\n"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-19 08:27+0000\n"
+"PO-Revision-Date: 2012-03-15 12:57+0530\n"
+"Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <indlinux-telugu@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "\n"
 "\n"
 "\n"
-
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"విభిన్న డ్వెల్-క్లిక్ రకములను యెంచుకొనుటకు ఆప్లెట్.\n"
-"మౌస్‌ట్వీక్లనందు భాగము"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "నొక్కు రకము విండో"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "రెండు నోక్కులు"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "లాగి నోక్కు"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "డ్వెల్ నొక్కను చేతనముచేయి"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "కుడి నొక్కు"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "ఏక నొక్కు"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"మౌస్ సూచకి పానల్ పైన వున్నప్పుడులాక్ చెయవలసిన ప్రాంతము.\n"
-"మౌస్‌ట్వీకుల యొక్క భాగము"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "పట్టుకొనుటకు మరియు విడుదలకు  నియంత్రణలు"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "మీటలపతకము మార్చునది:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "సూచకి కాప్చర్ అభీష్టాలు"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "బటన్ 0 ను యెంపికచేయుటవలన సూచకిని తక్షణమే కాప్చర్ చేస్తుంది"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "కాప్చర్ ప్రాంతముయొక్క పరిమాణము"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "మౌస్ బటన్ (_M):"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "మార్చు(_S)"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "వెడల్పు (_W):"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "పిగ్జెల్సు"
+"Language: te\n"
 
 #: ../data/mousetweaks.ui.h:1
-msgid "Button Style"
-msgstr "బటన్ శైలి"
-
-#. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
-msgid "Drag"
-msgstr "జరుపుట"
-
-#. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "సమతలంగావున్న"
-
-#: ../data/mousetweaks.ui.h:7
 msgid "Hover Click"
 msgstr "పైకి తెచ్చి నోక్కులు"
 
-#: ../data/mousetweaks.ui.h:8
-msgid "Icons only"
-msgstr "ప్రతిమలను మాత్రమే "
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "ఏక నొక్కు"
 
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "పునశ్ఛరణ"
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "రెండు నోక్కులు"
 
-#: ../data/mousetweaks.ui.h:10
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "జరుపుట"
+
+#: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
 msgstr "రెండవ నొక్కు "
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "బటన్ శైలి"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "పాఠ్యమును మాత్రమే "
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "ప్రతిమలను మాత్రమే "
+
+#: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
 msgstr "పాఠములు మరియు ప్రతిమలు"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "పునశ్ఛరణ"
+
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:13
-msgid "Text only"
-msgstr "పాఠ్యమును మాత్రమే "
+msgid "Horizontal"
+msgstr "సమతలంగావున్న"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
 msgstr "నిలువు"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "మౌస్ బటన్ ను ఉపయోగించకుండా మీ రంగస్థలమును నియంత్రించండి "
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "డ్వెల్ నొక్కు యాప్ లెట్"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "సూచకిని లాక్ చేయుటకు ప్రాంతము"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "సూచకి కాప్చర్ యాప్ లెట్"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "నొక్కు రకము విండో శైలి"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 msgid "Button style of the click-type window."
 msgstr "నొక్కు రకము విండో యొక్క బటన్ శైలి"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
-msgid "Click-type window geometry"
-msgstr "నొక్కు రకము విండో క్షేత్రగణితం"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
 msgstr "నొక్కు రకము విండో పునశ్ఛరణ"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-msgid "Click-type window style"
-msgstr "నొక్కు రకము విండో శైలి"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
 msgid "Orientation of the click-type window."
 msgstr "నొక్కు రకము విండో యొక్క  పునశ్ఛరణ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "నొక్కు రకము విండో క్షేత్రగణితం"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
-"నొక్కు రకము విండో యొక్క పరిమానము మరియు స్థానము.ఫార్మాట్ స్టాండర్డ్ X విండో సిస్టం  క్షేత్రగణిత పదబంధము "
+"నొక్కు రకము విండో యొక్క పరిమానము మరియు స్థానము.ఫార్మాట్ స్టాండర్డ్ X విండో "
+"సిస్టం  క్షేత్రగణిత పదబంధము "
 "వంటిది"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "\"Alt\" మీటలపతకాన్ని మార్చునది"
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "డ్వెల్ నొక్కను చేతనముచేయి"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "\"Control\" మీటలపతకాన్ని మార్చునది"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "\"Shift\" మీటలపతకాన్ని మార్చునది"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "మౌస్ బటన్ "
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "సూచకిని కాప్చర్  చేయుటకు లేదా విడిపించుటకు వుపయోగించిన మౌస్ బటన్"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "కాప్చర్ ప్రాంతముయొక్క పరిమాణము"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "కాప్చర్ ప్రాంతముయొక్క వెడల్పు పిగ్జెల్సులో"
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "సిమ్యులేటయిన రెండవ నొక్కును చేతనముచేయి"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "డ్వెల్ నొక్కనకు ముందు వేచివుండవలసిన సమయం"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "సిమ్యులేట్ చేసిన రెండవ నొక్కుకు ముందు వేచివుండవలసిన సమయం"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "క్రియాశీల డ్వెల్ సంవిధానాన్ని అమర్చు"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "నొక్కు రకము విండోను చూపుము"
+#: ../src/mt-main.c:633
+#| msgid "Orientation of the click-type window."
+msgid "Hide the click-type window"
+msgstr "నొక్కు రకము విండోను కనబడకుండా చేయు"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "చిన్న సూచకి కదలికలను పట్టించుకోకు"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "మౌస్‌ట్వీక్లను మూసివేయుము"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "మౌస్‌ట్వీక్సు డెమోన్ ను ప్రారంభిచుము"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "ప్రవేశద్వార సంవిధానం తో మౌస్ ట్వీక్సును ప్రారంభించండి"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME మౌస్‌ అందుబాటు  డెమోన్"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "సహాయమును ప్రదర్శించుటకు విఫలమైంది"
 
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "కాప్చర్ ప్రాంతము"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "విభిన్న డ్వెల్-క్లిక్ రకములను యెంచుకొనుటకు ఆప్లెట్.\n"
+#~ "మౌస్‌ట్వీక్లనందు భాగము"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "మౌస్ సూచకిని తాత్కాలికంగా లాక్ చేయండి"
+#~ msgid "Click Type Window"
+#~ msgstr "నొక్కు రకము విండో"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "_అభీష్టాలు"
+#~ msgid "Drag Click"
+#~ msgstr "లాగి నోక్కు"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "సహాయం(_H)"
+#~ msgid "Right Click"
+#~ msgstr "కుడి నొక్కు"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "గురించి(_A)"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "మౌస్ సూచకి పానల్ పైన వున్నప్పుడులాక్ చెయవలసిన ప్రాంతము.\n"
+#~ "మౌస్‌ట్వీకుల యొక్క భాగము"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "తాళం వేయబడినది"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
 
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "యూనివెర్సల్ సాంగత్య ప్యానెల్ తెరుచుట విఫలం "
+#~ msgid "Capture and Release Controls"
+#~ msgstr "పట్టుకొనుటకు మరియు విడుదలకు  నియంత్రణలు"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "మీటలపతకము మార్చునది:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "సూచకి కాప్చర్ అభీష్టాలు"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "బటన్ 0 ను యెంపికచేయుటవలన సూచకిని తక్షణమే కాప్చర్ చేస్తుంది"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "కాప్చర్ ప్రాంతముయొక్క పరిమాణము"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "మౌస్ బటన్ (_M):"
+
+#~ msgid "_Shift"
+#~ msgstr "మార్చు(_S)"
+
+#~ msgid "_Width:"
+#~ msgstr "వెడల్పు (_W):"
+
+#~ msgid "pixels"
+#~ msgstr "పిగ్జెల్సు"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "మౌస్ బటన్ ను ఉపయోగించకుండా మీ రంగస్థలమును నియంత్రించండి "
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "డ్వెల్ నొక్కు యాప్ లెట్"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "సూచకిని లాక్ చేయుటకు ప్రాంతము"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "సూచకి కాప్చర్ యాప్ లెట్"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "\"Alt\" మీటలపతకాన్ని మార్చునది"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "\"Control\" మీటలపతకాన్ని మార్చునది"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "\"Shift\" మీటలపతకాన్ని మార్చునది"
+
+#~ msgid "Mouse button"
+#~ msgstr "మౌస్ బటన్ "
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "సూచకిని కాప్చర్  చేయుటకు లేదా విడిపించుటకు వుపయోగించిన మౌస్ బటన్"
+
+#~ msgid "Size of capture area"
+#~ msgstr "కాప్చర్ ప్రాంతముయొక్క పరిమాణము"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "కాప్చర్ ప్రాంతముయొక్క వెడల్పు పిగ్జెల్సులో"
+
+#~ msgid "Show a click-type window"
+#~ msgstr "నొక్కు రకము విండోను చూపుము"
+
+#~ msgid "Capture area"
+#~ msgstr "కాప్చర్ ప్రాంతము"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "మౌస్ సూచకిని తాత్కాలికంగా లాక్ చేయండి"
+
+#~ msgid "_Preferences"
+#~ msgstr "_అభీష్టాలు"
+
+#~ msgid "_Help"
+#~ msgstr "సహాయం(_H)"
+
+#~ msgid "_About"
+#~ msgstr "గురించి(_A)"
+
+#~ msgid "Locked"
+#~ msgstr "తాళం వేయబడినది"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "యూనివెర్సల్ సాంగత్య ప్యానెల్ తెరుచుట విఫలం "
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"

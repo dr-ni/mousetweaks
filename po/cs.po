@@ -4,15 +4,15 @@
 #
 # Lucas Lommer <llommer@svn.gnome.org>, 2008.
 # Adrian Guniš <andygun696@gmail.com>, 2008, 2009, 2010.
-# Marek Černocký <marek@manet.cz>, 2011.
+# Marek Černocký <marek@manet.cz>, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2011-03-09 17:58+0000\n"
-"PO-Revision-Date: 2011-03-14 22:15+0100\n"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-19 08:27+0000\n"
+"PO-Revision-Date: 2012-03-15 18:16+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,171 +21,76 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Applet pro výběr různých typů kliknutí posečkáním.\n"
-"Součást Mousetweaks"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "Okno typů kliknutí"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "Dvojklik"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "Táhnutí"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "Zapnout kliknutí posečkáním"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "Kliknutí pravým tlačítkem"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "Kliknutí levým tlačítkem"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Oblast uzamčení kurzoru na panelu.\n"
-"Součást Mousetweaks"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "Ovládání zachycení a uvolnění"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "Klávesový modifikátor:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "Předvolby zachycení kurzoru"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Nastavením tlačítka na 0 dojde ihned k zachycení kurzoru"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "Velikost oblasti zachycení"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "Tlačítko _myši:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "_Shift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "Šíř_ka:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "pixelů"
-
 #: ../data/mousetweaks.ui.h:1
-msgid "Button Style"
-msgstr "Styl tlačítka"
-
-#. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
-msgid "Drag"
-msgstr "Táhnutí"
-
-#. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "Vodorovně"
-
-#: ../data/mousetweaks.ui.h:7
-#| msgid "Double Click"
 msgid "Hover Click"
 msgstr "Kliknutí posečkáním"
 
-#: ../data/mousetweaks.ui.h:8
-msgid "Icons only"
-msgstr "Pouze ikony"
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Kliknutí levým tlačítkem"
 
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "Orientace"
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Dvojklik"
 
-#: ../data/mousetweaks.ui.h:10
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Táhnutí"
+
+#: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
 msgstr "Druhé kliknutí"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Styl tlačítka"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Pouze text"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Pouze ikony"
+
+#: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
 msgstr "Text a ikony"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Orientace"
+
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:13
-msgid "Text only"
-msgstr "Pouze text"
+msgid "Horizontal"
+msgstr "Vodorovně"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
 msgstr "Svisle"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "Ovládání vašeho pracovního prostředí bez použití tlačítek myši"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "Aplet kliknutí posečkáním"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "Oblast uzamčení kurzoru"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "Aplet zachycení kurzoru"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Styl okna typů kliknutí"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 msgid "Button style of the click-type window."
 msgstr "Styl tlačítka pro okno typů kliknutí."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
-msgid "Click-type window geometry"
-msgstr "Geometrie okna typů kliknutí"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
 msgstr "Orientace okna typů kliknutí"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-msgid "Click-type window style"
-msgstr "Styl okna typů kliknutí"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
 msgid "Orientation of the click-type window."
 msgstr "Orientace okna typů kliknutí."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "Geometrie okna typů kliknutí"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
@@ -195,328 +100,51 @@ msgstr ""
 "Velikost a umístění okna typů kliknutí. Formát je v podobě standardního "
 "řetězce geometrie v systému X Window."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "Klávesový modifikátor „Alt“"
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Zapnout kliknutí posečkáním"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "Klávesový modifikátor „Control“"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "Klávesový modifikátor „Shift“"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "Tlačítko myši"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "Tlačítko myši použité k zachycení nebo uvolnění kurzoru"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "Velikost oblasti zachycení"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "Šířka oblasti zachycení v pixelech."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "Zapnout simulované kliknutí pravým tlačítkem"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "Doba čekání před kliknutím posečkáním"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "Doba čekání před simulovaným kliknutím pravým tlačítkem"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "Nastavit aktivní režim kliknutí posečkáním"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "Zobrazit okno typů kliknutí"
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Skrýt okno typů kliknutí."
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "Ignorovat nepatrné pohyby kurzoru"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "Vypnout mousetweaks"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
-msgstr "Spustit mousetweaks jako démon"
+msgstr "Spustit mousetweaks jako démona"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "Spustit mousetweaks v režimu přihlášení"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- Démon pro zpřístupnění myši v GNOME"
+msgstr "– Démon pro zpřístupnění myši v GNOME"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Selhalo zobrazení nápovědy"
-
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "Oblast zachycení"
-
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "Dočasné uzamčení kurzoru myši"
-
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "Před_volby"
-
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "_Nápověda"
-
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "O _aplikaci"
-
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "Uzamčeno"
-
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "Selhalo otevření panelu univerzálního zpřístupnění"
-
-#~| msgid "Dwell Click Type"
-#~ msgid "Dwell Click-Type"
-#~ msgstr "Typ kliknutí posečkáním"
-
-#~ msgid "A_lt"
-#~ msgstr "A_lt"
-
-#~ msgid "Capture Pointer"
-#~ msgstr "Zachycení kurzoru"
-
-#~ msgid "Ct_rl"
-#~ msgstr "Ct_rl"
-
-#~ msgid "Modifier:"
-#~ msgstr "Modifikátor:"
-
-#~ msgid "Mouse b_utton:"
-#~ msgstr "T_lačítko myši:"
-
-#~ msgid "Release Pointer"
-#~ msgstr "Uvolnění kurzoru"
-
-#~ msgid "Sh_ift"
-#~ msgstr "Sh_ift"
-
-#~ msgid "Show Icons and Text"
-#~ msgstr "Zobrazit ikony a text"
-
-#~ msgid "Dwell Click"
-#~ msgstr "Kliknutí počkáním"
-
-#~ msgid "Select dwelling click type"
-#~ msgstr "Zvolit typ kliknutí počkáním"
-
-#~ msgid "Animate cursor"
-#~ msgstr "Animovat kurzor"
-
-#~ msgid ""
-#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
-#~ "Both)"
-#~ msgstr ""
-#~ "Styl tlačítka v okně typů kliknutí (\"0\" = text, \"1\" = ikona, \"2\" = "
-#~ "obojí)"
-
-#~ msgid ""
-#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-#~ "Up, \"3\" = Down)"
-#~ msgstr ""
-#~ "Směr pohybu k provedení dvojkliku (\"0\" = vlevo, \"1\" = vpravo, \"2\" = "
-#~ "nahoru, \"3\" = dolů)"
-
-#~ msgid ""
-#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
-#~ "Up, \"3\" = Down)"
-#~ msgstr ""
-#~ "Směr pohybu k provedení táhnutí (\"0\" = vlevo, \"1\" = vpravo, \"2\" = "
-#~ "nahoru, \"3\" = dolů)"
-
-#~ msgid ""
-#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
-#~ "\"2\" = Up, \"3\" = Down)"
-#~ msgstr ""
-#~ "Směr pohybu k provedení kliknutí pravým tlačítkem (\"0\" = vlevo, \"1\" = "
-#~ "vpravo, \"2\" = nahoru, \"3\" = dolů)"
-
-#~ msgid ""
-#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-#~ "Up, \"3\" = Down)"
-#~ msgstr ""
-#~ "Směr pohybu k provedení kliknutí levým tlačítkem (\"0\" = vlevo, \"1\" = "
-#~ "vpravo, \"2\" = nahoru, \"3\" = dolů)"
-
-#~ msgid "Distance in pixels before movement will be recognized"
-#~ msgstr "Vzdálenost v pixelech potřebná k detekci pohybu"
-
-#~ msgid "Dwell click mode"
-#~ msgstr "Režim kliknutí počkáním"
-
-#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
-#~ msgstr ""
-#~ "Režim kliknutí počkáním (\"0\" = okenní režim, \"1\" = režim pohybu myší)"
-
-#~ msgid "Dwell click time"
-#~ msgstr "Čas nutný pro kliknutí počkáním"
-
-#~ msgid "Enable secondary click"
-#~ msgstr "Zapnout kliknutí pravým tlačítkem"
-
-#~ msgid "Gesture double click"
-#~ msgstr "Dvojklik pohybem myši"
-
-#~ msgid "Gesture drag click"
-#~ msgstr "Táhnutí pohybem myši"
-
-#~ msgid "Gesture secondary click"
-#~ msgstr "Kliknutí pravým tlačítkem pohybem myši"
-
-#~ msgid "Gesture single click"
-#~ msgstr "Kliknutí levým tlačítkem pohybem myši"
-
-#~ msgid "Movement threshold"
-#~ msgstr "Práh pohybu"
-
-#~ msgid "Show click type window"
-#~ msgstr "Zobrazit okno typů kliknutí"
-
-#~ msgid "Show elapsed time as cursor overlay."
-#~ msgstr "Zobrazit uplynulý čas jako překrytí kurzoru."
-
-#~ msgid "Time in seconds before a click is triggered"
-#~ msgstr "Čas v sekundách, než se provede kliknutí"
-
-#~ msgid "Time in seconds before a secondary click is triggered"
-#~ msgstr "Čas v sekundách, než se provede kliknutí pravým tlačítkem"
-
-#~ msgid "Capture pointer only if Alt is pressed"
-#~ msgstr "Zachytit kurzor jen když je stisknut Alt"
-
-#~ msgid "Capture pointer only if Ctrl is pressed"
-#~ msgstr "Zachytit kurzor jen když je stisknuto Ctrl"
-
-#~ msgid "Capture pointer only if Shift is pressed"
-#~ msgstr "Zachytit kurzor jen když je stisknut Shift"
-
-#~ msgid "Mouse button used to release the pointer"
-#~ msgstr "Tlačítko myši použité k uvolnění kurzoru"
-
-#~ msgid "Release pointer only if Alt is pressed"
-#~ msgstr "Uvolnit kurzor jen když je stisknut Alt"
-
-#~ msgid "Release pointer only if Ctrl is pressed"
-#~ msgstr "Uvolnit kurzor jen když je stisknuto Ctrl"
-
-#~ msgid "Release pointer only if Shift is pressed"
-#~ msgstr "Uvolnit kurzor jen když je stisknut Shift"
-
-#~ msgid ""
-#~ "This mouse button must be pressed to release the pointer from the capture "
-#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
-#~ "and \"3\" for right button."
-#~ msgstr ""
-#~ "Toto tlačítko myši musí být stisknuto pro uvolnění ukazatele z oblasti "
-#~ "zachycení. Platné hodnoty jsou \"1\" pro levé, \"2\" pro střední a \"3\" "
-#~ "pro pravé tlačítko."
-
-#~ msgid ""
-#~ "This mouse button must be pressed while the pointer is over the capture "
-#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
-#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
-#~ "right button."
-#~ msgstr ""
-#~ "Toto tlačítko myši musí být stisknuto, pokud je kurzor nad oblastí "
-#~ "zachycení k tomu, aby byl kurzor zachycen. Platné hodnoty jsou \"0\", "
-#~ "takže není potřeba žádné tlačítko, \"1\" pro levé, \"2\" pro střední a "
-#~ "\"3\" pro pravé tlačítko."
-
-#~ msgid ""
-#~ "Whether the Alt key must be pressed for the pointer to be captured while "
-#~ "it's over the capture area. If this option is set as true, and a mouse "
-#~ "button is set in the \"capture_button\" key, then the Alt key must be "
-#~ "pressed while the mouse button is pressed."
-#~ msgstr ""
-#~ "Zda musí být stisknuta klávesa Alt pro zachycení kurzoru, když je nad "
-#~ "oblastí zachycení. Pokud je tato volba nastavena na hodnotu PRAVDA a v "
-#~ "klíči \"capture_button\" je nastaveno tlačítko myši, pak musí být spolu s "
-#~ "tlačítkem myši stisknuta i klávesa Alt."
-
-#~ msgid ""
-#~ "Whether the Alt key must be pressed with the mouse button set in "
-#~ "\"release_button\" for the pointer to be released from the capture area."
-#~ msgstr ""
-#~ "Zda musí být stisknuta klávesa Alt spolu s tlačítkem myši nastaveným v "
-#~ "klíči \"release_button\" k tomu, aby byl uvolněn kurzor z oblasti "
-#~ "zachycení."
-
-#~ msgid ""
-#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
-#~ "it's over the capture area. If this option is set as true, and a mouse "
-#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
-#~ "pressed while the mouse button is pressed."
-#~ msgstr ""
-#~ "Zda musí být stisknuta klávesa Ctrl pro zachycení kurzoru, když je nad "
-#~ "oblastí zachycení. Pokud je tato volba nastavena na hodnotu PRAVDA a v "
-#~ "klíči \"capture_button\" je nastaveno tlačítko myši, pak musí být spolu s "
-#~ "tlačítkem myši stisknuta i klávesa Ctrl."
-
-#~ msgid ""
-#~ "Whether the Ctrl key must be pressed with the mouse button set in "
-#~ "\"release_button\" for the pointer to be released from the capture area."
-#~ msgstr ""
-#~ "Zda musí být stisknuta klávesa Ctrl spolu s tlačítkem myši nastaveným v "
-#~ "klíči \"release_button\" k tomu, aby byl uvolněn kurzor z oblasti "
-#~ "zachycení."
-
-#~ msgid ""
-#~ "Whether the Shift key must be pressed for the pointer to be captured "
-#~ "while it's over the capture area. If this option is set as true, and a "
-#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
-#~ "must be pressed while the mouse button is pressed."
-#~ msgstr ""
-#~ "Zda musí být stisknuta klávesa Shift pro zachycení kurzoru, když je nad "
-#~ "oblastí zachycení. Pokud je tato volba nastavena na hodnotu PRAVDA a v "
-#~ "klíči \"capture_button\" je nastaveno tlačítko myši, pak musí být spolu s "
-#~ "tlačítkem myši stisknuta i klávesa Shift."
-
-#~ msgid ""
-#~ "Whether the Shift key must be pressed with the mouse button set in "
-#~ "\"release_button\" for the pointer to be released from the capture area."
-#~ msgstr ""
-#~ "Zda musí být stisknuta klávesa Shift spolu s tlačítkem myši nastaveným v "
-#~ "klíči \"release_button\" k tomu, aby byl uvolněn kurzor z oblasti "
-#~ "zachycení."
-
-#~ msgid "Click-type window Y position"
-#~ msgstr "Pozice Y okna typů kliknutí"
-
-#~ msgid "Disable cursor animations"
-#~ msgstr "Vypnout animace kurzoru"
-
-#~ msgid "Enable and Log Out"
-#~ msgstr "Povolit a odhlásit"
-
-#~ msgid "Failed to Launch Mouse Preferences"
-#~ msgstr "Nepodařilo se spustit Předvolby myši"

@@ -2,13 +2,13 @@
 # Copyright (C) 2008 Free Software Foundation
 # This file is distributed under the same license as the mousetweaks package
 # Maxim Dziumanenko <dziumanenko@gmail.com>, 2008-2009.
-# Korostil Daniel <ted.korostiled@gmail.com>, 2011.
+# Korostil Daniel <ted.korostiled@gmail.com>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks trunk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-13 17:49+0200\n"
-"PO-Revision-Date: 2011-03-13 19:56+0300\n"
+"POT-Creation-Date: 2012-03-18 17:57+0200\n"
+"PO-Revision-Date: 2012-03-18 17:58+0300\n"
 "Last-Translator: Korostil Daniel <ted.korostiled@gmail.com>\n"
 "Language-Team: translation@linux.org.ua\n"
 "Language: uk\n"
@@ -17,172 +17,78 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Virtaal 0.6.1\n"
-
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Аплет для вибору різних типів клацання при утриманні вказівника миші\n"
-"Є частиною Mousetweaks"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "Вікно налаштовування типу клацання"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "Подвійне клацання"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "Клацання з переносом"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "Увімкнути клацання при утримуванні"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "Клацання правою кнопкою"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "Просте клацання"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Ділянка для блокування вказівника миші на панелі.\n"
-"Є частиною MouseTweaks"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "Керування захопленням і відпусканням"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "Модифікатори клавіатури:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "Параметри захоплення вказівником"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "При виборі кнопки 0 вказівник буде захоплений одразу"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "Розмір ділянки захоплення"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "_Кнопка миші:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "S_hift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "_Ширина:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "пікселів"
+"X-Generator: Virtaal 0.7.1\n"
 
 #: ../data/mousetweaks.ui.h:1
-msgid "Button Style"
-msgstr "Стиль кнопки"
-
-#. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
-msgid "Drag"
-msgstr "Перетягнути"
-
-#. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "Горизонтально"
-
-#: ../data/mousetweaks.ui.h:7
 msgid "Hover Click"
 msgstr "Клацання при наведенні"
 
-#: ../data/mousetweaks.ui.h:8
-msgid "Icons only"
-msgstr "Лише піктограми"
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Просте клацання"
 
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "Орієнтація"
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Подвійне клацання"
 
-#: ../data/mousetweaks.ui.h:10
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Перетягнути"
+
+#: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
 msgstr "Друге клацання"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Стиль кнопки"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Лише текст"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Лише піктограми"
+
+#: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
 msgstr "Текст і піктограми"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Орієнтація"
+
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:13
-msgid "Text only"
-msgstr "Лише текст"
+msgid "Horizontal"
+msgstr "Горизонтально"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
 msgstr "Вертикально"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "Керуйте стільницею без використання кнопок миші"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "Аплет клацання з переносом"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "Ділянка для захоплення вказівника"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "Аплет захоплення вказівника"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Стиль типу клацання вікна"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 msgid "Button style of the click-type window."
 msgstr "Стилі кнопок за типами клацання вікон."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
-msgid "Click-type window geometry"
-msgstr "Геометрія типу клацання вікна"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
 msgstr "Орієнтація типу клацання вікна"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-msgid "Click-type window style"
-msgstr "Стиль типу клацання вікна"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
 msgid "Orientation of the click-type window."
 msgstr "Орієнтація типу клацання вікна."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "Геометрія типу клацання вікна"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
@@ -192,106 +98,167 @@ msgstr ""
 "Розмір і позиції типу клацання вікна. Формат — стандартна геометрія рядка X "
 "Window System."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "Модифікатор клавіатури «Alt»"
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Увімкнути клацання при утримуванні"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "Модифікатор клавіатури «Control»"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "Модифікатор клавіатури «Shift»"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "Кнопка миші"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "Кнопка миші для захоплення або відпущення вказівника"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "Розмір ділянки захоплення"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "Ширина ділянки захоплення у пікселях."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "Увімкнути підтримку другого клацання"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "Час, що очікується перед затриманим клацанням"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "Час, який очікується перед імітацією другого клацання"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "Встановити активний режим клацання при утримуванні"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "Показувати вікно з типами клацання"
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Ховати вікно з типами клацання"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "Ігнорувати невеликі рухи вказівника"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "Вимкнути mousetweaks"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "Запустити службу GNOME mousetweaks"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "Запустити mousetweaks у режимі входу в систему"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "— служба доступності миші GNOME mousetweaks"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Помилка при показі довідки"
 
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "Ділянка захоплення"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Аплет для вибору різних типів клацання при утриманні вказівника миші\n"
+#~ "Є частиною Mousetweaks"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "Тимчасово заблокувати вказівник миші"
+#~ msgid "Click Type Window"
+#~ msgstr "Вікно налаштовування типу клацання"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "_Параметри"
+#~ msgid "Drag Click"
+#~ msgstr "Клацання з переносом"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "_Довідка"
+#~ msgid "Right Click"
+#~ msgstr "Клацання правою кнопкою"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "_Про програму"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Ділянка для блокування вказівника миші на панелі.\n"
+#~ "Є частиною MouseTweaks"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "Заблоковано"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
 
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "Не вдалось відкрити панель універсального доступу"
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Керування захопленням і відпусканням"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Модифікатори клавіатури:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Параметри захоплення вказівником"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "При виборі кнопки 0 вказівник буде захоплений одразу"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Розмір ділянки захоплення"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "_Кнопка миші:"
+
+#~ msgid "_Shift"
+#~ msgstr "S_hift"
+
+#~ msgid "_Width:"
+#~ msgstr "_Ширина:"
+
+#~ msgid "pixels"
+#~ msgstr "пікселів"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Керуйте стільницею без використання кнопок миші"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Аплет клацання з переносом"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Ділянка для захоплення вказівника"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Аплет захоплення вказівника"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "Модифікатор клавіатури «Alt»"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "Модифікатор клавіатури «Control»"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "Модифікатор клавіатури «Shift»"
+
+#~ msgid "Mouse button"
+#~ msgstr "Кнопка миші"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "Кнопка миші для захоплення або відпущення вказівника"
+
+#~ msgid "Size of capture area"
+#~ msgstr "Розмір ділянки захоплення"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Ширина ділянки захоплення у пікселях."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Показувати вікно з типами клацання"
+
+#~ msgid "Capture area"
+#~ msgstr "Ділянка захоплення"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Тимчасово заблокувати вказівник миші"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Параметри"
+
+#~ msgid "_Help"
+#~ msgstr "_Довідка"
+
+#~ msgid "_About"
+#~ msgstr "_Про програму"
+
+#~ msgid "Locked"
+#~ msgstr "Заблоковано"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Не вдалось відкрити панель універсального доступу"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"

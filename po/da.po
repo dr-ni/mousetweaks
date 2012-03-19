@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-02 22:37+0200\n"
-"PO-Revision-Date: 2011-04-02 20:03+0200\n"
+"POT-Creation-Date: 2012-03-19 09:53+0100\n"
+"PO-Revision-Date: 2012-03-18 17:12+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -20,94 +20,13 @@ msgstr ""
 "X-Poedit-Country: DENMARK\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Panelprogram til at vælge forskellige typer hvileklik.\n"
-"Dette er en del af Mousetweaks"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "Kliktypevindue"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "Dobbeltklik"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "Trækkeklik"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "Aktivér hvileklik"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "Højreklik"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "Enkeltklik"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Område hvori markøren låses til panelet.\n"
-"Dette er en del af Mousetweaks"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-# tror det skal læses som "kontroller til indfangning og frigørelse", er dog ikke sikker.  Den korte form virker forhåbentlig uanset hvad
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "Indfang og frigør"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "Tastaturmodifikation:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "Indstillinger for markørindfanging"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Vælges knap 0, vil markøren omgående indfanges"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "Størrelse af indfangningsområdet"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "_Museknap:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "_Skift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "_Bredde:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "pixler"
-
 #: ../data/mousetweaks.ui.h:1
 msgid "Button Style"
 msgstr "Knapstil"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Double Click"
+msgstr "Dobbeltklik"
 
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
@@ -135,6 +54,10 @@ msgstr "Orientering"
 msgid "Secondary Click"
 msgstr "Sekundært klik"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Single Click"
+msgstr "Enkeltklik"
+
 #: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
 msgstr "Tekst og ikoner"
@@ -148,29 +71,11 @@ msgstr "Kun tekst"
 msgid "Vertical"
 msgstr "Lodret"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "Styr dit skrivebord uden brug af museknapper"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "Panelprogram til hvileklik"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "Område hvortil markøren låses"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "Panelprogram til markørindfangning"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
 msgstr "Knapstil for kliktypevindue."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:637
 msgid "Click-type window geometry"
 msgstr "Målene for kliktypevinduet"
 
@@ -194,107 +99,169 @@ msgstr ""
 "Størrelse og placering af kliktypevinduet. Formatet er en standardstreng for "
 "angivelse af vinduesmål for X-vinduessystemet"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "Tastaturmodifikationstasten \"Alt\""
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Aktivér hvileklik"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "Tastaturmodifikationstasten \"Control\""
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "Tastaturmodifikationstasten \"Skift\""
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "Museknap"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "Museknap til at indfange eller frigøre markøren."
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "Størrelse af indfangningsområde"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "Bredde af indfangningsområdet i pixels."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "Aktivér simuleret sekundært klik"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "Ventetid før hvileklik"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "Ventetid før et simuleret sekundært klik"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "Brug aktiv hviletilstand"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "Vis et kliktypevindue"
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Skjul kliktypevinduet"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "Ignorér små markørbevægelser"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "Afslut mousetweaks"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "Start mousetweaks som dæmon"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "Start mousetweaks i logind-tilstand"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Musetilgængelighedsdæmon til GNOME"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Kunne ikke vise hjælp"
 
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "Indfangningsområde"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Panelprogram til at vælge forskellige typer hvileklik.\n"
+#~ "Dette er en del af Mousetweaks"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "Lås musemarkøren midlertidigt"
+#~ msgid "Click Type Window"
+#~ msgstr "Kliktypevindue"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "_Indstillinger"
+#~ msgid "Drag Click"
+#~ msgstr "Trækkeklik"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "_Hjælp"
+#~ msgid "Right Click"
+#~ msgstr "Højreklik"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "_Om"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Område hvori markøren låses til panelet.\n"
+#~ "Dette er en del af Mousetweaks"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "Låst"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+# tror det skal læses som "kontroller til indfangning og frigørelse", er dog ikke sikker.  Den korte form virker forhåbentlig uanset hvad
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Indfang og frigør"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Tastaturmodifikation:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Indstillinger for markørindfanging"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Vælges knap 0, vil markøren omgående indfanges"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Størrelse af indfangningsområdet"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "_Museknap:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Skift"
+
+#~ msgid "_Width:"
+#~ msgstr "_Bredde:"
+
+#~ msgid "pixels"
+#~ msgstr "pixler"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Styr dit skrivebord uden brug af museknapper"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Panelprogram til hvileklik"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Område hvortil markøren låses"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Panelprogram til markørindfangning"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "Tastaturmodifikationstasten \"Alt\""
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "Tastaturmodifikationstasten \"Control\""
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "Tastaturmodifikationstasten \"Skift\""
+
+#~ msgid "Mouse button"
+#~ msgstr "Museknap"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "Museknap til at indfange eller frigøre markøren."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Størrelse af indfangningsområde"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Bredde af indfangningsområdet i pixels."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Vis et kliktypevindue"
+
+#~ msgid "Capture area"
+#~ msgstr "Indfangningsområde"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Lås musemarkøren midlertidigt"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Indstillinger"
+
+#~ msgid "_Help"
+#~ msgstr "_Hjælp"
+
+#~ msgid "_About"
+#~ msgstr "_Om"
+
+#~ msgid "Locked"
+#~ msgstr "Låst"
 
 # navn defineret i gnome-control-center
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "Kunne ikke åbne panelet Tilgængelighed"
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Kunne ikke åbne panelet Tilgængelighed"
 
 #~ msgid "A_lt"
 #~ msgstr "A_lt"

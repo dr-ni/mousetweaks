@@ -1,3 +1,28 @@
+Version 3.3.92
+--------------
+
+Misc changes, improvements and fixes:
+
+    - Fix indentation in the mousetweaks.doap file
+
+New and updated translations:
+
+    [as] Nilamdyuti Goswami
+    [ca] Gil Forcada
+    [ca@valencia] Carles Ferrando
+    [cs] Marek Černocký
+    [da] Kenneth Nielsen
+    [de] Mario Blättermann
+    [en_GB] Bruce Cowan
+    [eu] Iñaki Larrañaga Murgoitio
+    [fa] Arash Mousavi
+    [fr] Bruno Brouard
+    [ko] Changwoo Ryu
+    [lv] Anita Reitere
+    [pt] Duarte Loreto
+    [te] Krishnababu Krothapalli
+    [uk] Daniel Korostil
+
 Version 3.3.91
 --------------
 

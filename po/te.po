@@ -59,7 +59,7 @@ msgstr "ప్రతిమలను మాత్రమే "
 
 #: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
-msgstr "పాఠములు మరియు ప్రతిమలు"
+msgstr "పాఠము మరియు ప్రతిమలు"
 
 #: ../data/mousetweaks.ui.h:11
 msgid "Orientation"

@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of Mousetweaks.
-# Copyright (C) 1999-2009 the Mousetweaks authors.
+# Copyright (C) 1999-2012 the Mousetweaks authors.
 # This file is distributed under the same license as the mousetweaks package.
 # Luiz Armesto <luiz.armesto@gmail.com>, 2008.
 # Enrico Nicoletto <liverig@gmail.com>, 2008.
@@ -7,16 +7,17 @@
 # André Gondim <andregondim@ubuntu.com>, 2009.2011
 # Fabrício Godoy <skarllot@gmail.com>, 2009.
 # Marcelo Odir <marceloodir@gmail.com>, 2010.
+# Enrico Nicoletto <liverig@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-03-22 21:57+0000\n"
-"PO-Revision-Date: 2011-03-24 17:55-0300\n"
-"Last-Translator: André Gondim <andregondim@ubuntu.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-21 15:01-0300\n"
+"PO-Revision-Date: 2012-03-21 09:49-0300\n"
+"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,93 +25,13 @@ msgstr ""
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Miniaplicativo para selecionar diferentes tipos de clique de permanência.\n"
-"Parte do Mousetweaks"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "Janela de tipo de clique"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "Clique duplo"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "Clique de arrasto"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "Habilitar clique de permanência"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "Clique direito"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "Clique único"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Área para bloquear o ponteiro do mouse no painel.\n"
-"Parte do Mousetweaks"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "Capturar ou liberar controles"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "Modificador do teclado:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "Preferências da captura de ponteiro"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Selecionar o botão 0 irá capturar o ponteiro imediatamente"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "Tamanho da área de captura"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "_Botão do mouse:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "_Shift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "_Largura:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "pixels"
-
 #: ../data/mousetweaks.ui.h:1
 msgid "Button Style"
 msgstr "Estilo do botão"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Double Click"
+msgstr "Clique duplo"
 
 #. 'Drag' like in a Drag and Drop operation
 #: ../data/mousetweaks.ui.h:4
@@ -138,6 +59,10 @@ msgstr "Orientação"
 msgid "Secondary Click"
 msgstr "Clique secundário"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Single Click"
+msgstr "Clique único"
+
 #: ../data/mousetweaks.ui.h:12
 msgid "Text and Icons"
 msgstr "Texto e Ícones"
@@ -151,30 +76,11 @@ msgstr "Apenas texto"
 msgid "Vertical"
 msgstr "Vertical"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "Controle sua estação de trabalho sem usar botões do mouse"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-#| msgid "Dwell Click-Type"
-msgid "Dwell Click Applet"
-msgstr "Miniaplicativo de clique de permanência"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "Área para bloquear o ponteiro"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "Miniaplicativo de Captura de Ponteiro"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Button style of the click-type window."
 msgstr "Botão de estilo da janela de tipo de clique"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:637
 msgid "Click-type window geometry"
 msgstr "Geometria da janela de tipo de clique"
 
@@ -198,105 +104,111 @@ msgstr ""
 "Tamanho e posição da janela de tipo de clique. O formato é um expressão "
 "geométrica padrão do sistema X Window."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "\"Alt\" modificador do teclado"
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Habilitar clique de permanência"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "\"Control\" modificador do teclado"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "\"Shift\" modificador do teclado"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "Botão do mouse"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "Botão do mouse usado para capturar ou liberar o ponteiro."
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "Tamanho da área de captura"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "Largura da área de captura, em pixels."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
 msgstr "Habilitar clique secundário simulado"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
 msgstr "Tempo de espera antes de um clique de permanência"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo de espera antes de simular um clique secundário"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:631
 msgid "Set the active dwell mode"
 msgstr "Definir o modo de permanência ativo"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "Mostrar uma janela de tipo de clique"
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Esconder a janela de tipo de clique"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:635
 msgid "Ignore small pointer movements"
 msgstr "Ignorar pequenos movimentos do ponteiro"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:639
 msgid "Shut down mousetweaks"
 msgstr "Desligar o mousetweaks"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:641
 msgid "Start mousetweaks as a daemon"
 msgstr "Iniciar o mousetweaks como um daemon"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:643
 msgid "Start mousetweaks in login mode"
 msgstr "Iniciar o mousetweaks em modo de login"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:661
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Daemon de acessibilidade de mouse do GNOME"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Falha ao exibir a ajuda"
 
-# Mensagem para o ATK
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "Área de captura"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Miniaplicativo para selecionar diferentes tipos de clique de "
+#~ "permanência.\n"
+#~ "Parte do Mousetweaks"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "Bloquear temporariamente o ponteiro do mouse"
+#~ msgid "Click Type Window"
+#~ msgstr "Janela de tipo de clique"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "_Preferências"
+#~ msgid "Drag Click"
+#~ msgstr "Clique de arrasto"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "Aj_uda"
+#~ msgid "Right Click"
+#~ msgstr "Clique direito"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "_Sobre"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Área para bloquear o ponteiro do mouse no painel.\n"
+#~ "Parte do Mousetweaks"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "Bloqueado"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
 
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "Falhou ao abrir o Painel de Acesso Universal"
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Capturar ou liberar controles"
 
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Modificador do teclado:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Preferências da captura de ponteiro"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Selecionar o botão 0 irá capturar o ponteiro imediatamente"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Tamanho da área de captura"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "_Botão do mouse:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Shift"
+
+#~ msgid "_Width:"
+#~ msgstr "_Largura:"
+
+#~ msgid "pixels"
+#~ msgstr "pixels"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Controle sua estação de trabalho sem usar botões do mouse"

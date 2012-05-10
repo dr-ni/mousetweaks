@@ -57,10 +57,11 @@ Start mousetweaks in the background, ie. spawn a child process.
 Start mousetweaks in login mode. Login mode enables workarounds specific
 to GDM. Currently unused.
 .SH FILES
-.I ~/.mousetweaks.pid
+.I mousetweaks.pid
 .RS
-The daemon creates a lock file in the users home directory to keep track
-of its status.
+The daemon creates a lock file in the $XDG_RUNTIME_DIR directory to keep track
+of its state. On systems with no user runtime directory, the $XDG_CACHE_HOME
+directory is used.
 .SH BUGS
 Report bugs to
 .UR http://bugzilla.gnome.org/

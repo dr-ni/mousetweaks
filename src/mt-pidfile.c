@@ -48,8 +48,17 @@ static const char *
 mt_pidfile_proc (void)
 {
     static char fn[512];
+    static int  fn_set = 0;
 
-    snprintf (fn, sizeof (fn), "%s/.mousetweaks.pid", g_get_home_dir ());
+    if (!fn_set)
+    {
+        snprintf (fn, sizeof (fn),
+                  "%s%smousetweaks.pid",
+                  g_get_user_runtime_dir (),
+                  G_DIR_SEPARATOR_S);
+        fn_set = 1;
+    }
+
     return fn;
 }
 

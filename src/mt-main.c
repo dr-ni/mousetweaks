@@ -193,6 +193,7 @@ mt_main_do_dwell_click (MtData *mt)
         case MT_DWELL_CLICK_TYPE_MIDDLE:
             mt_main_generate_button_event (mt, 2, CLICK, 80);
             mt_service_set_click_type (mt->service, MT_DWELL_CLICK_TYPE_SINGLE);
+            break;
         default:
             g_warning ("Unknown click-type.");
             break;

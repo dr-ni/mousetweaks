@@ -72,17 +72,8 @@ mt_settings_dispose (GObject *object)
 {
     MtSettings *ms = MT_SETTINGS (object);
 
-    if (ms->mt_settings)
-    {
-        g_object_unref (ms->mt_settings);
-        ms->mt_settings = NULL;
-    }
-
-    if (ms->a11y_settings)
-    {
-        g_object_unref (ms->a11y_settings);
-        ms->a11y_settings = NULL;
-    }
+    g_clear_object (&ms->mt_settings);
+    g_clear_object (&ms->a11y_settings);
 
     G_OBJECT_CLASS (mt_settings_parent_class)->dispose (object);
 }

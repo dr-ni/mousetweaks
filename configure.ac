@@ -38,10 +38,6 @@ dnl *** gsettings ***
 
 GLIB_GSETTINGS
 
-dnl *** documentation ***
-
-GNOME_DOC_INIT
-
 dnl *** dependencies ***
 
 GLIB_REQUIRED=2.25.3
@@ -72,7 +68,6 @@ AC_CONFIG_FILES([
     data/Makefile
     pixmaps/Makefile
     po/Makefile.in
-    help/Makefile
     man/Makefile
 ])
 

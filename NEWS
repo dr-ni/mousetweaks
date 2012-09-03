@@ -1,3 +1,16 @@
+Version 3.5.91
+--------------
+
+Misc changes, improvements and fixes:
+
+    - Remove outdated help files - bgo#681268
+
+Updated translations:
+
+    [ja] OKANO Takayoshi
+    [lt] Aurimas Černius
+
+
 Version 3.5.4
 -------------
 

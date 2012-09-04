@@ -3,188 +3,94 @@
 # This file is distributed under the same license as the MouseTweaks package.
 # Emrah Ünal <eunall@gmail.com>, 2008.
 # Baris Cicek <baris@teamforce.name.tr>, 2008, 2009, 2011.
-# Muhammet Kara <muhammet.k@gmail.com>, 2011.
+# Muhammet Kara <muhammetk@acikkaynak.name.tr>, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-04-04 02:31+0000\n"
-"PO-Revision-Date: 2011-04-25 00:59+0300\n"
-"Last-Translator: Muhammet Kara <muhammet.k@gmail.com>\n"
-"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"POT-Creation-Date: 2012-07-16 19:07+0000\n"
+"PO-Revision-Date: 2012-08-12 19:42+0300\n"
+"Last-Translator: Muhammet Kara <muhammetk@acikkaynak.name.tr>\n"
+"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "X-Generator: Lokalize 1.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Farklı durağan tıklama türlerini seçecek uygulamacık.\n"
-"MouseTweaks uygulamasının bir parçası"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "Tıklama Türü Penceresi"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "Çift tıklama"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "Sürüklemeli Tıklama"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:594
-msgid "Enable dwell click"
-msgstr "Durağan tıklamayı etkinleştir"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "Sağ Tıklama"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "Tek Tıklama"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"Fare imlecinin panel üzerinde dondurulduğu alan.\n"
-"MouseTweaks uygulamasının parçası"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "Yakalama ve Bırakma Kontrolleri"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "Klavye değiştirgesi:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "İmleç Yakalama Tercihleri"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "Düğme 0 seçildiğinde imleç hemen yakalanacaktır"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "Yakalama Alanının Büyüklüğü"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "_Fare düğmesi:"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "_Üst Karakter (Shift)"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "_Genişlik:"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "piksel"
-
 #: ../data/mousetweaks.ui.h:1
-msgid "Button Style"
-msgstr "Düğme Biçimi"
-
-#. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
-msgid "Drag"
-msgstr "Sürükle"
-
-#. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "Yatay"
-
-#: ../data/mousetweaks.ui.h:7
 msgid "Hover Click"
 msgstr "Durağan Tıklama"
 
-#: ../data/mousetweaks.ui.h:8
-msgid "Icons only"
-msgstr "Sadece simgeler"
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Tek Tıklama"
 
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "Yönelim"
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Çift tıklama"
 
-#: ../data/mousetweaks.ui.h:10
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Sürükle"
+
+#: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
 msgstr "İkincil Tıklama"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Düğme Biçimi"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Sadece metin"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Sadece simgeler"
+
+#: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
 msgstr "Metin ve Simgeler"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Yönelim"
+
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:13
-msgid "Text only"
-msgstr "Sadece metin"
+msgid "Horizontal"
+msgstr "Yatay"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
 msgstr "Dikey"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "Masaüstünüzü fare düğmelerini kullanmadan kontrol edin"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "Durağan Tıklama Uygulamacığı"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "İmleci kilitleyecek alan"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "İmleç Yakalama Uygulamacığı"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Tıklama türü pencere biçimi"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 msgid "Button style of the click-type window."
 msgstr "Tıklama türü penceresinin düğme biçimi."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:608
-msgid "Click-type window geometry"
-msgstr "Tıklama Türü Pencere Geometrisi"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
 msgstr "Tıklama türü pencere yönelimi"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-msgid "Click-type window style"
-msgstr "Tıklama türü pencere biçimi"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
 msgid "Orientation of the click-type window."
 msgstr "Tıklama türü penceresinin yönelimi."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Tıklama Türü Pencere Geometrisi"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
@@ -194,107 +100,168 @@ msgstr ""
 "Tıklama türü penceresinin boyutu ve konumu. Standart X Pencere Sistemi "
 "geometri dizgesi biçimindedir."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "\"Alt\" klavye değiştirici"
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Durağan tıklamayı etkinleştir"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "\"Control\" klavy değiştirici"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "\"Üst karakter\" klavye değiştirici"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "Fare düğmesi"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr ""
-"İşaretçiyi yakalamak ya da serbest bırakmak için kullanılan fare düğmesi."
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "Yakalama alanının büyüklüğü"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "Yakalama alanının piksel cinsinden genişliği."
-
-#: ../src/mt-main.c:596
+#: ../src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Benzetimli ikincil tıklamayı etkinleştir"
 
-#: ../src/mt-main.c:598
+#: ../src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Durak tıklama öncesi beklenecek süre"
 
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Benzetimli ikincil tıklamayı etkinleştirmek için beklenecek süre"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Etkin bekleme kipini ayarla"
 
-#: ../src/mt-main.c:604
-msgid "Show a click-type window"
-msgstr "Tıklama türü penceresi göster"
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Tıklama türü penceresini gizle"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Ufak belirteç hareketlerini yoksay"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Fare Ayarlayıcısını kapat"
 
-#: ../src/mt-main.c:612
+#: ../src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Mousetweaks'i hizmet olarak başlat"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "mousetweaks'i giriş modunda başlat"
 
 #. parse
-#: ../src/mt-main.c:632
+#: ../src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME fare erişilebilirlik hizmeti"
 
-#: ../src/mt-common.c:74
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Yardım Gösterimi Başarısız Oldu"
 
-#: ../src/pointer-capture-applet.c:79
-msgid "Capture area"
-msgstr "Yakalama alanı"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Farklı durağan tıklama türlerini seçecek uygulamacık.\n"
+#~ "MouseTweaks uygulamasının bir parçası"
 
-#: ../src/pointer-capture-applet.c:80
-msgid "Temporarily lock the mouse pointer"
-msgstr "İmleci geçici olarak kilitle"
+#~ msgid "Click Type Window"
+#~ msgstr "Tıklama Türü Penceresi"
 
-#: ../src/pointer-capture-applet.c:175 ../src/dwell-click-applet.c:80
-msgid "_Preferences"
-msgstr "_Tercihler"
+#~ msgid "Drag Click"
+#~ msgstr "Sürüklemeli Tıklama"
 
-#: ../src/pointer-capture-applet.c:177 ../src/dwell-click-applet.c:82
-msgid "_Help"
-msgstr "_Yardım"
+#~ msgid "Right Click"
+#~ msgstr "Sağ Tıklama"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_About"
-msgstr "_Hakkında"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Fare imlecinin panel üzerinde dondurulduğu alan.\n"
+#~ "MouseTweaks uygulamasının parçası"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "Kilitli"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
 
-#: ../src/dwell-click-applet.c:450
-msgid "Failed to Open the Universal Access Panel"
-msgstr "Evrensel Erişim Paneli açılması başarısız"
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Yakalama ve Bırakma Kontrolleri"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Klavye değiştirgesi:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "İmleç Yakalama Tercihleri"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Düğme 0 seçildiğinde imleç hemen yakalanacaktır"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Yakalama Alanının Büyüklüğü"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "_Fare düğmesi:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Üst Karakter (Shift)"
+
+#~ msgid "_Width:"
+#~ msgstr "_Genişlik:"
+
+#~ msgid "pixels"
+#~ msgstr "piksel"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Masaüstünüzü fare düğmelerini kullanmadan kontrol edin"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Durağan Tıklama Uygulamacığı"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "İmleci kilitleyecek alan"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "İmleç Yakalama Uygulamacığı"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "\"Alt\" klavye değiştirici"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "\"Control\" klavy değiştirici"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "\"Üst karakter\" klavye değiştirici"
+
+#~ msgid "Mouse button"
+#~ msgstr "Fare düğmesi"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr ""
+#~ "İşaretçiyi yakalamak ya da serbest bırakmak için kullanılan fare düğmesi."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Yakalama alanının büyüklüğü"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Yakalama alanının piksel cinsinden genişliği."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Tıklama türü penceresi göster"
+
+#~ msgid "Capture area"
+#~ msgstr "Yakalama alanı"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "İmleci geçici olarak kilitle"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Tercihler"
+
+#~ msgid "_Help"
+#~ msgstr "_Yardım"
+
+#~ msgid "_About"
+#~ msgstr "_Hakkında"
+
+#~ msgid "Locked"
+#~ msgstr "Kilitli"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Evrensel Erişim Paneli açılması başarısız"
 
 #~ msgid "Dwell Click"
 #~ msgstr "Durağan Tıklama"

@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2012-02-19 08:27+0000\n"
-"PO-Revision-Date: 2012-03-10 23:01+0900\n"
+"PO-Revision-Date: 2012-09-22 19:33+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -96,9 +96,7 @@ msgstr "누르기 종류 창 위치 및 크기"
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
-msgstr ""
-"창의 크기 및 위치. 형식은 X 윈도우 시스템의 표준 크기 및 위치 (geometry) 설정"
-"과 같습니다."
+msgstr "창의 크기 및 위치. 형식은 X 윈도우 시스템의 표준 크기 및 위치(geometry) 설정과 같습니다."
 
 #: ../src/mt-main.c:623
 msgid "Enable dwell click"
@@ -148,116 +146,3 @@ msgstr "- 그놈 마우스 접근성 기능 데몬"
 #: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "도움말을 표시하는 데 실패했습니다"
-
-#~ msgid ""
-#~ "Applet to select different dwell-click types.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "여러가지 자동 누르기 종류를 선택하는 애플릿.\n"
-#~ "마우스트윅스의 일부"
-
-#~ msgid "Click Type Window"
-#~ msgstr "누르기 종류 창"
-
-#~ msgid "Drag Click"
-#~ msgstr "끌어 누르기"
-
-#~ msgid "Right Click"
-#~ msgstr "오른쪽 단추 누르기"
-
-#~ msgid ""
-#~ "Area to lock the pointer on the panel.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "마우스 포인터를 패널에 고정할 영역.\n"
-#~ "마우스트윅스의 일부"
-
-#~ msgid "C_trl"
-#~ msgstr "C_trl"
-
-#~ msgid "Capture and Release Controls"
-#~ msgstr "가두기 및 놓기 조작"
-
-#~ msgid "Keyboard modifier:"
-#~ msgstr "키보드 변경 키:"
-
-#~ msgid "Pointer Capture Preferences"
-#~ msgstr "포인터 가두기 기본 설정"
-
-#~ msgid "Selecting Button 0 will capture the pointer immediately"
-#~ msgstr "단추 0을 선택하면 포인터를 즉시 가둡니다"
-
-#~ msgid "Size of the Capture Area"
-#~ msgstr "가두기 영역의 크기"
-
-#~ msgid "_Alt"
-#~ msgstr "_Alt"
-
-#~ msgid "_Mouse button:"
-#~ msgstr "마우스 단추(_M):"
-
-#~ msgid "_Shift"
-#~ msgstr "_Shift"
-
-#~ msgid "_Width:"
-#~ msgstr "너비(_W):"
-
-#~ msgid "pixels"
-#~ msgstr "픽셀"
-
-#~ msgid "Control your desktop without using mouse buttons"
-#~ msgstr "마우스 단추를 사용하지 않고 데스크톱 조작"
-
-#~ msgid "Dwell Click Applet"
-#~ msgstr "자동 누르기 애플릿"
-
-#~ msgid "Area to lock the pointer"
-#~ msgstr "포인터를 잠글 영역"
-
-#~ msgid "Pointer Capture Applet"
-#~ msgstr "포인터 가두기 애플릿"
-
-#~ msgid "\"Alt\" keyboard modifier"
-#~ msgstr "\"Alt\" 키보드 변경 키"
-
-#~ msgid "\"Control\" keyboard modifier"
-#~ msgstr "\"Control\" 키보드 변경 키"
-
-#~ msgid "\"Shift\" keyboard modifier"
-#~ msgstr "\"Shift\" 키보드 변경 키"
-
-#~ msgid "Mouse button"
-#~ msgstr "마우스 단추"
-
-#~ msgid "Mouse button used to capture or release the pointer."
-#~ msgstr "포인터를 가두거나 놓을 때 사용하는 마우스 단추."
-
-#~ msgid "Size of capture area"
-#~ msgstr "가두기 영역의 크기"
-
-#~ msgid "Width of the capture area in pixels."
-#~ msgstr "가두기 영역의 너비, 픽셀 단위."
-
-#~ msgid "Show a click-type window"
-#~ msgstr "누르기 종류 창 표시"
-
-#~ msgid "Capture area"
-#~ msgstr "가두기 영역"
-
-#~ msgid "Temporarily lock the mouse pointer"
-#~ msgstr "임시로 마우스 포인터 잠그기"
-
-#~ msgid "_Preferences"
-#~ msgstr "기본 설정(_P)"
-
-#~ msgid "_Help"
-#~ msgstr "도움말(_H)"
-
-#~ msgid "_About"
-#~ msgstr "정보(_A)"
-
-#~ msgid "Locked"
-#~ msgstr "잠금"
-
-#~ msgid "Failed to Open the Universal Access Panel"
-#~ msgstr "접근성 패널을 여는데 실패했습니다"

@@ -1,26 +1,26 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Rudolfs <rudolfs.mazurs@gmail.com>, 2011.
+# Rudolfs <rudolfs.mazurs@gmail.com>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mouset"
-"weaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-02-19 08:27+0000\n"
-"PO-Revision-Date: 2012-03-09 20:12+0200\n"
-"Last-Translator: Anita Reitere <nitalynx@gmail.com>\n"
-"Language-Team: Latviešu <lata-l10n@goglegroups.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-24 16:21+0300\n"
+"PO-Revision-Date: 2012-09-24 16:33+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 1.4\n"
 
 #: ../data/mousetweaks.ui.h:1
 msgid "Hover Click"
-msgstr "Virs-novietošanas klikšķis"
+msgstr "Uzkavēšanās klikšķis"
 
 #: ../data/mousetweaks.ui.h:2
 msgid "Single Click"
@@ -71,75 +71,75 @@ msgstr "Vertikāli"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Click-type window style"
-msgstr "Klikšķa veida loga stils"
+msgstr "Klikšķu rakstīšanas loga stils"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 msgid "Button style of the click-type window."
-msgstr "Pogas stils klikšķa veida logam."
+msgstr "Pogas stils klikšķu rakstīšanas logam."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
-msgstr "Klikšķa veida loga novietojums"
+msgstr "Klikšķu rakstīšanas loga novietojums"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
 msgid "Orientation of the click-type window."
-msgstr "Novietojums klikšķa veida logam."
+msgstr "Novietojums klikšķu rakstīšanas logam."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
 msgid "Click-type window geometry"
-msgstr "Klikšķa veida loga ģeometrija"
+msgstr "Klikšķu rakstīšanas loga ģeometrija"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
-"Izmērs un novietojums klikšķa veida logam. Formāts ir standarta X Window "
+"Izmērs un novietojums klikšķu rakstīšanas logam. Formāts ir standarta X "
+"Window "
 "System ģeometrijas virkne."
 
-#: ../src/mt-main.c:623
+#: ../src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Aktivēt apstājas klikšķi"
 
-#: ../src/mt-main.c:625
+#: ../src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Aktivēt simulēto sekundāro klikšķi"
 
-#: ../src/mt-main.c:627
+#: ../src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Laiks, ko gaidīt pirms apstājas klikšķa"
 
-#: ../src/mt-main.c:629
+#: ../src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Laiks, ko gaidīt pirms simulētā sekundārā klikšķa"
 
-#: ../src/mt-main.c:631
+#: ../src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Iestatīt aktīvo apstājas režīmu"
 
-#: ../src/mt-main.c:633
-#| msgid "Orientation of the click-type window."
+#: ../src/mt-main.c:634
 msgid "Hide the click-type window"
-msgstr "Slēpt klikšķa veida logu"
+msgstr "Slēpt klikšķu rakstīšanas logu"
 
-#: ../src/mt-main.c:635
+#: ../src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Ignorēt nelielas rādītāja kustības"
 
-#: ../src/mt-main.c:639
+#: ../src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Izslēgt mousetweaks"
 
-#: ../src/mt-main.c:641
+#: ../src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Palaist mousetweaks kā dēmonu"
 
-#: ../src/mt-main.c:643
+#: ../src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Palaist mousetweaks ierakstīšanās režīmā"
 
 #. parse
-#: ../src/mt-main.c:661
+#: ../src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME peles pieejamības dēmons"
 

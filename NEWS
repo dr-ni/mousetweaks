@@ -1,3 +1,18 @@
+Version 3.6.0
+-------------
+
+Misc changes, improvements and fixes:
+
+    - Use bug tracker url in README that is also browsable with GNOME account
+    - Sync description in doap file with README and add homepage information
+
+New and updated translations:
+
+    [hi] Rajesh Ranjan
+    [ko] Changwoo Ryu
+    [lv] Rūdolfs Mazurs
+    [tv] Theppitak Karoonboonyanan
+
 Version 3.5.92
 --------------
 

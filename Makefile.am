@@ -22,7 +22,6 @@ MAINTAINERCLEANFILES =              \
     $(srcdir)/mkinstalldirs         \
     $(srcdir)/omf.make              \
     $(srcdir)/xmldocs.make          \
-    $(srcdir)/gnome-doc-utils.make  \
     $(srcdir)/intltool-extract.in   \
     $(srcdir)/intltool-merge.in     \
     $(srcdir)/intltool-update.in

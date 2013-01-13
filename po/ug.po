@@ -8,286 +8,252 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-06-03 07:25+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-08-19 14:36+0000\n"
+"PO-Revision-Date: 2011-11-09 16:10+0900\n"
 "Last-Translator: Gheyret Kenji<gheyret@yahoo.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/dwell-click-applet.ui.h:1
-msgid ""
-"Applet to select different dwell-click types.\n"
-"Part of Mousetweaks"
-msgstr ""
-"ھەر خىل توختىتىپ چېكىش تىپىنى تاللايدىغان قوللانچاق.\n"
-"Mousetweaks نىڭ بىر قىسمى"
-
-#: ../data/dwell-click-applet.ui.h:3
-msgid "Click Type Window"
-msgstr "چېكىش تىپىدىكى كۆزنەك"
-
-#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:2
-msgid "Double Click"
-msgstr "قوش چېكىش"
-
-#: ../data/dwell-click-applet.ui.h:5
-msgid "Drag Click"
-msgstr "سۆرەپ چېكىش"
-
-#: ../data/dwell-click-applet.ui.h:6 ../src/mt-main.c:598
-msgid "Enable dwell click"
-msgstr "توختىتىپ چېكىشنى قوزغات"
-
-#: ../data/dwell-click-applet.ui.h:7
-msgid "Right Click"
-msgstr "ئوڭنى چېكىش"
-
-#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "تاق چېكىش"
-
-#: ../data/pointer-capture-applet.ui.h:1
-msgid ""
-"Area to lock the pointer on the panel.\n"
-"Part of Mousetweaks"
-msgstr ""
-"تاختايدا ئىسترېلكىنى قۇلۇپلاپ قويىدىغان رايون.\n"
-"Mousetweaks نىڭ بىر قىسمى"
-
-#: ../data/pointer-capture-applet.ui.h:3
-msgid "C_trl"
-msgstr "C_trl"
-
-#: ../data/pointer-capture-applet.ui.h:4
-msgid "Capture and Release Controls"
-msgstr "تۇتۇش ۋە قويۇۋېتىش تىزگىنلىرى"
-
-#: ../data/pointer-capture-applet.ui.h:5
-msgid "Keyboard modifier:"
-msgstr "ھەرپتاختا سۈپەتلىگۈچىسى:"
-
-#: ../data/pointer-capture-applet.ui.h:6
-msgid "Pointer Capture Preferences"
-msgstr "ئىسترېلكا تۇتۇش مايىللىقى"
-
-#: ../data/pointer-capture-applet.ui.h:7
-msgid "Selecting Button 0 will capture the pointer immediately"
-msgstr "توپچا 0 تاللانسا ئىسترېلكىنى شۇ ھامان تۇتىدۇ"
-
-#: ../data/pointer-capture-applet.ui.h:8
-msgid "Size of the Capture Area"
-msgstr "تۇتۇش رايونىنىڭ چوڭلۇقى"
-
-#: ../data/pointer-capture-applet.ui.h:9
-msgid "_Alt"
-msgstr "_Alt"
-
-#: ../data/pointer-capture-applet.ui.h:10
-msgid "_Mouse button:"
-msgstr "چاشقىنەك توپچىسى(_M):"
-
-#: ../data/pointer-capture-applet.ui.h:11
-msgid "_Shift"
-msgstr "_Shift"
-
-#: ../data/pointer-capture-applet.ui.h:12
-msgid "_Width:"
-msgstr "كەڭلىك(_W):"
-
-#: ../data/pointer-capture-applet.ui.h:13
-msgid "pixels"
-msgstr "چېكىت"
-
 #: ../data/mousetweaks.ui.h:1
-msgid "Button Style"
-msgstr "توپچا ئۇسلۇبى"
-
-#. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
-msgid "Drag"
-msgstr "سۆرەش"
-
-#. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "توغرا"
-
-#: ../data/mousetweaks.ui.h:7
 msgid "Hover Click"
 msgstr "لەيلىتىپ چەك"
 
-#: ../data/mousetweaks.ui.h:8
-msgid "Icons only"
-msgstr "سىنبەلگىلەرلا"
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "تاق چەك"
 
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "يۆنىلىش"
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "قوش چېكىش"
 
-#: ../data/mousetweaks.ui.h:10
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "سۆرەش"
+
+#: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
 msgstr "ئىككىنچى چېكىش"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "توپچا ئۇسلۇبى"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "تېكىستلا"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "سىنبەلگىلەرلا"
+
+#: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
 msgstr "تېكىست ۋە سىنبەلگىلەر"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "يۆنىلىش"
+
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:13
-msgid "Text only"
-msgstr "تېكىستلا"
+msgid "Horizontal"
+msgstr "توغرا"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
 msgid "Vertical"
 msgstr "تىك"
 
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:1
-msgid "Control your desktop without using mouse buttons"
-msgstr "ئۈستەلئۈستىنى چاشقىنەكسىز باشقۇرۇش"
-
-#: ../data/org.gnome.applets.DwellClickApplet.panel-applet.in.in.h:2
-#: ../src/dwell-click-applet.c:584
-msgid "Dwell Click Applet"
-msgstr "توختىتىپ چېكىش قوللانچىقى"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:1
-msgid "Area to lock the pointer"
-msgstr "ئىسترېلكىنى قۇلۇپلايدىغان رايون"
-
-#: ../data/org.gnome.applets.PointerCaptureApplet.panel-applet.in.in.h:2
-#: ../src/pointer-capture-applet.c:439
-msgid "Pointer Capture Applet"
-msgstr "ئىسترېلكا تۇتۇش قوللانچىقى"
-
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "چېكىش تىپىدىكى كۆزنەكنىڭ ئۇسلۇبى"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 msgid "Button style of the click-type window."
 msgstr "چېكىش تىپىدىكى كۆزنەكتىكى توپچىنىڭ ئۇسلۇبى"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:612
-msgid "Click-type window geometry"
-msgstr "چېكىش تىپىدىكى كۆزنەكنىڭ شەكلى"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
 msgstr "چېكىش تىپىدىكى كۆزنەكنىڭ يۆنىلىشى"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-msgid "Click-type window style"
-msgstr "چېكىش تىپىدىكى كۆزنەكنىڭ ئۇسلۇبى"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
 msgid "Orientation of the click-type window."
 msgstr "چېكىش تىپىدىكى كۆزنەكنىڭ يۆنىلىشى."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "چېكىش تىپىدىكى كۆزنەكنىڭ شەكلى"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
-msgstr ""
-"چېكىش تىپىدىكى كۆزنەكنىڭ چوڭلۇقى ۋە ئورنى. ئۇنىڭ پىچىمى X كۆزنەك "
-"سىستېمىسىدىكى شەكىل تىزىقى ئۆلچىمى بىلەن ئوخشاش."
+msgstr "چېكىش تىپىدىكى كۆزنەكنىڭ چوڭلۇقى ۋە ئورنى. ئۇنىڭ پىچىمى X كۆزنەك سىستېمىسىدىكى شەكىل تىزىقى ئۆلچىمى بىلەن ئوخشاش."
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:1
-msgid "\"Alt\" keyboard modifier"
-msgstr "\"Alt\" ھەرپتاختا سۈپەتلىگۈچىسى"
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "توختىتىپ چېكىشنى قوزغات"
 
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:2
-msgid "\"Control\" keyboard modifier"
-msgstr "\"Control\" ھەرپتاختا سۈپەتلىگۈچىسى"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:3
-msgid "\"Shift\" keyboard modifier"
-msgstr "\"Shift\" ھەرپتاختا سۈپەتلىگۈچىسى"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:4
-msgid "Mouse button"
-msgstr "چاشقىنەك توپچىسى"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:5
-msgid "Mouse button used to capture or release the pointer."
-msgstr "ئىسترېلكىنى تۇتۇش ۋە قويۇۋېتىشتە ئىشلىتىلىدىغان چاشقىنەك توپچىسى."
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:6
-msgid "Size of capture area"
-msgstr "تۇتۇش رايونىنىڭ چوڭلۇقى"
-
-#: ../data/org.gnome.pointer-capture.gschema.xml.in.h:7
-msgid "Width of the capture area in pixels."
-msgstr "تۇتۇش رايونىنىڭ پىكسېل بىلەن ئىپادىلەنگەن كەڭلىكى"
-
-#: ../src/mt-main.c:600
+#: ../src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "تەقلىدلىك ئىككىنچى چېكىشنى قوزغات"
 
-#: ../src/mt-main.c:602
+#: ../src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "توختىتىپ چېكىش ئالدىدىكى كۈتۈش ۋاقتى"
 
-#: ../src/mt-main.c:604
+#: ../src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "تەقلىدلىك ئىككىنچى چېكىش ئالدىدىكى كۈتۈش ۋاقتى"
 
-#: ../src/mt-main.c:606
+#: ../src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "ئاكتىپ توختىتىش(dwell) ھالىتىنى بەلگىلەش"
 
-#: ../src/mt-main.c:608
-msgid "Show a click-type window"
-msgstr "چېكىش تىپىدىكى كۆزنەكنى كۆرسەت"
+#: ../src/mt-main.c:634
+#| msgid "Orientation of the click-type window."
+msgid "Hide the click-type window"
+msgstr "چېكىش تىپىدىكى كۆزنەكنى يوشۇر"
 
-#: ../src/mt-main.c:610
+#: ../src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "ئىسترېلكىنىڭ كىچىك يۆتكىلىشىگە پەرۋا قىلما"
 
-#: ../src/mt-main.c:614
+#: ../src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "mousetweaks نى تاقا"
 
-#: ../src/mt-main.c:616
+#: ../src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
-msgstr "mousetweaks نى daemon شەكلىدە باشلا"
+msgstr "mousetweaks نى مۇئەككەل شەكلىدە باشلا"
 
-#: ../src/mt-main.c:618
+#: ../src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "mousetweaks نى كىرىش(login) شەكلىدە باشلا"
 
 #. parse
-#: ../src/mt-main.c:636
+#: ../src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- GNOME چاشقىنەكنىڭ ياردەمچى ئىقتىدارى daemon"
+msgstr "- گىنوم چاشقىنەكنىڭ ياردەمچى ئىقتىدارى مۇئەككىلى"
 
-#: ../src/mt-common.c:78
+#: ../src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "ياردەم كۆرسىتىش مەغلۇپ بولدى"
 
-#: ../src/pointer-capture-applet.c:83
-msgid "Capture area"
-msgstr "تۇتۇش رايونى"
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "ھەر خىل توختىتىپ چېكىش تىپىنى تاللايدىغان قوللانچاق.\n"
+#~ "Mousetweaks نىڭ بىر قىسمى"
 
-#: ../src/pointer-capture-applet.c:84
-msgid "Temporarily lock the mouse pointer"
-msgstr "چاشقىنەك ئىسترېلكىسىنى ۋاقىتلىق قۇلۇپلا"
+#~ msgid "Click Type Window"
+#~ msgstr "چېكىش تىپىدىكى كۆزنەك"
 
-#: ../src/pointer-capture-applet.c:179 ../src/dwell-click-applet.c:84
-msgid "_Preferences"
-msgstr "مايىللىق(_P)"
+#~ msgid "Drag Click"
+#~ msgstr "سۆرەپ چېكىش"
 
-#: ../src/pointer-capture-applet.c:181 ../src/dwell-click-applet.c:86
-msgid "_Help"
-msgstr "ياردەم(_H)"
+#~ msgid "Right Click"
+#~ msgstr "ئوڭنى چېكىش"
 
-#: ../src/pointer-capture-applet.c:183 ../src/dwell-click-applet.c:88
-msgid "_About"
-msgstr "ھەققىدە(_A)"
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "تاختايدا ئىسترېلكىنى قۇلۇپلاپ قويىدىغان رايون.\n"
+#~ "Mousetweaks نىڭ بىر قىسمى"
 
-#: ../src/pointer-capture-applet.c:490
-msgid "Locked"
-msgstr "قۇلۇپلانغان"
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
 
-#: ../src/dwell-click-applet.c:454
-msgid "Failed to Open the Universal Access Panel"
-msgstr "Universal Access Panel نى ئېچىش مەغلۇپ بولدى"
+#~ msgid "Capture and Release Controls"
+#~ msgstr "تۇتۇش ۋە قويۇۋېتىش تىزگىنلىرى"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "ھەرپتاختا سۈپەتلىگۈچىسى:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "ئىسترېلكا تۇتۇش مايىللىقى"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "توپچا 0 تاللانسا ئىسترېلكىنى شۇ ھامان تۇتىدۇ"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "تۇتۇش رايونىنىڭ چوڭلۇقى"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "چاشقىنەك توپچىسى(_M):"
+
+#~ msgid "_Shift"
+#~ msgstr "_Shift"
+
+#~ msgid "_Width:"
+#~ msgstr "كەڭلىك(_W):"
+
+#~ msgid "pixels"
+#~ msgstr "چېكىت"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "ئۈستەلئۈستىنى چاشقىنەكسىز باشقۇرۇش"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "توختىتىپ چېكىش قوللانچىقى"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "ئىسترېلكىنى قۇلۇپلايدىغان رايون"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "ئىسترېلكا تۇتۇش قوللانچىقى"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "\"Alt\" ھەرپتاختا سۈپەتلىگۈچىسى"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "\"Control\" ھەرپتاختا سۈپەتلىگۈچىسى"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "\"Shift\" ھەرپتاختا سۈپەتلىگۈچىسى"
+
+#~ msgid "Mouse button"
+#~ msgstr "چاشقىنەك توپچىسى"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "ئىسترېلكىنى تۇتۇش ۋە قويۇۋېتىشتە ئىشلىتىلىدىغان چاشقىنەك توپچىسى."
+
+#~ msgid "Size of capture area"
+#~ msgstr "تۇتۇش رايونىنىڭ چوڭلۇقى"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "تۇتۇش رايونىنىڭ پىكسېل بىلەن ئىپادىلەنگەن كەڭلىكى"
+
+#~ msgid "Show a click-type window"
+#~ msgstr "چېكىش تىپىدىكى كۆزنەكنى كۆرسەت"
+
+#~ msgid "Capture area"
+#~ msgstr "تۇتۇش رايونى"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "چاشقىنەك ئىسترېلكىسىنى ۋاقىتلىق قۇلۇپلا"
+
+#~ msgid "_Preferences"
+#~ msgstr "مايىللىق(_P)"
+
+#~ msgid "_Help"
+#~ msgstr "ياردەم(_H)"
+
+#~ msgid "_About"
+#~ msgstr "ھەققىدە(_A)"
+
+#~ msgid "Locked"
+#~ msgstr "قۇلۇپلانغان"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Universal Access Panel نى ئېچىش مەغلۇپ بولدى"

@@ -1,3 +1,18 @@
+Version 3.7.91
+--------------
+
+Misc changes, improvements and fixes:
+
+    - do not mention gnome-doc-utils.make as it doesn't exist
+
+New and updated translations:
+
+    [ar] Ibrahim Saed, Khaled Hosny
+    [fur] TmTFx
+    [ml] Anish A
+    [sk] Roman Mátyus
+    [ug] Gheyret Kenji
+
 Version 3.6.0
 -------------
 

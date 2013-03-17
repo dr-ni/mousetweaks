@@ -1,14 +1,14 @@
 # mousetweaks's Portuguese translation.
-# Copyright © 2008, 2009, 2010, 2011, 2012 mousetweaks
+# Copyright © 2008, 2009, 2010, 2011, 2012, 2013 mousetweaks
 # This file is distributed under the same license as the mousetweaks package.
-# Duarte Loreto <happyguy_pt@hotmail.com>, 2008, 2009, 2010, 2011, 2012.
-#
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2008, 2009, 2010, 2011, 2012, 2013.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: 3.4\n"
+"Project-Id-Version: 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-14 23:55+0000\n"
-"PO-Revision-Date: 2012-03-14 23:55+0000\n"
+"POT-Creation-Date: 2013-03-17 00:09+0000\n"
+"PO-Revision-Date: 2013-03-17 00:10+0000\n"
 "Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
 "Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
 "Language: pt\n"
@@ -83,7 +83,7 @@ msgstr "Orientação da janela de tipo de clique"
 msgid "Orientation of the click-type window."
 msgstr "Orientação da janela de tipo de clique."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
 msgid "Click-type window geometry"
 msgstr "Geometria da janela de tipo de clique"
 
@@ -95,48 +95,48 @@ msgstr ""
 "Tamanho e posição da janela de tipo de clique. O formato é uma expressão "
 "padrão de geometria do Sistema de Janelas X."
 
-#: ../src/mt-main.c:623
+#: ../src/mt-main.c:624
 msgid "Enable dwell click"
-msgstr "Activar o movimento-clique"
+msgstr "Ativar o movimento-clique"
 
-#: ../src/mt-main.c:625
+#: ../src/mt-main.c:626
 msgid "Enable simulated secondary click"
-msgstr "Activar um clique secundário simulado"
+msgstr "Ativar um clique secundário simulado"
 
-#: ../src/mt-main.c:627
+#: ../src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Tempo a aguardar antes de um movimento-clique"
 
-#: ../src/mt-main.c:629
+#: ../src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo a aguardar antes de um clique secundário simulado"
 
-#: ../src/mt-main.c:631
+#: ../src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Definir o modo de movimento-clique"
 
-#: ../src/mt-main.c:633
+#: ../src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Esconder a janela de tipo de clique"
 
-#: ../src/mt-main.c:635
+#: ../src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Ignorar movimentos pequenos do ponteiro"
 
-#: ../src/mt-main.c:639
+#: ../src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Desligar o mousetweaks"
 
-#: ../src/mt-main.c:641
+#: ../src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Iniciar o mousetweaks como um daemon"
 
-#: ../src/mt-main.c:643
+#: ../src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Iniciar o mousetweaks no modo de início de sessão"
 
 #. parse
-#: ../src/mt-main.c:661
+#: ../src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Daemon de acessibilidade do rato do GNOME"
 
@@ -148,7 +148,7 @@ msgstr "Falha ao Apresentar a Ajuda"
 #~ "Applet to select different dwell-click types.\n"
 #~ "Part of Mousetweaks"
 #~ msgstr ""
-#~ "Applet para seleccionar diversos tipos de movimentos-clique.\n"
+#~ "Applet para selecionar diversos tipos de movimentos-clique.\n"
 #~ "Parte integrante do Mousetweaks"
 
 #~ msgid "Click Type Window"
@@ -180,7 +180,7 @@ msgstr "Falha ao Apresentar a Ajuda"
 #~ msgstr "Preferências da Captura de Ponteiro"
 
 #~ msgid "Selecting Button 0 will capture the pointer immediately"
-#~ msgstr "Seleccionar o Botão 0 irá capturar o ponteiro imediatamente"
+#~ msgstr "Selecionar o Botão 0 irá capturar o ponteiro imediatamente"
 
 #~ msgid "Size of the Capture Area"
 #~ msgstr "Tamanho da Área de Captura"
@@ -288,7 +288,7 @@ msgstr "Falha ao Apresentar a Ajuda"
 #~ msgstr "Movimento-Clique"
 
 #~ msgid "Select dwelling click type"
-#~ msgstr "Seleccione o tipo de movimento-clique"
+#~ msgstr "Selecione o tipo de movimento-clique"
 
 #~ msgid "Pointer Capture"
 #~ msgstr "Captura de Ponteiro"
@@ -307,29 +307,29 @@ msgstr "Falha ao Apresentar a Ajuda"
 #~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
 #~ "Up, \"3\" = Down)"
 #~ msgstr ""
-#~ "Direcção para realizar um clique-duplo (\"0\" = Esquerda, \"1\" = "
-#~ "Direita, \"2\" = Acima, \"3\" = Abaixo)"
+#~ "Direção para realizar um clique-duplo (\"0\" = Esquerda, \"1\" = Direita, "
+#~ "\"2\" = Acima, \"3\" = Abaixo)"
 
 #~ msgid ""
 #~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
 #~ "Up, \"3\" = Down)"
 #~ msgstr ""
-#~ "Direcção para realizar um clique-arrastar (\"0\" = Esquerda, \"1\" = "
+#~ "Direção para realizar um clique-arrastar (\"0\" = Esquerda, \"1\" = "
 #~ "Direita, \"2\" = Acima, \"3\" = Abaixo)"
 
 #~ msgid ""
 #~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
 #~ "\"2\" = Up, \"3\" = Down)"
 #~ msgstr ""
-#~ "Direcção para realizar um clique secundário (\"0\" = Esquerda, \"1\" = "
+#~ "Direção para realizar um clique secundário (\"0\" = Esquerda, \"1\" = "
 #~ "Direita, \"2\" = Acima, \"3\" = Abaixo)"
 
 #~ msgid ""
 #~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
 #~ "Up, \"3\" = Down)"
 #~ msgstr ""
-#~ "Direcção para realizar um clique único (\"0\" = Esquerda, \"1\" = "
-#~ "Direita, \"2\" = Acima, \"3\" = Abaixo)"
+#~ "Direção para realizar um clique único (\"0\" = Esquerda, \"1\" = Direita, "
+#~ "\"2\" = Acima, \"3\" = Abaixo)"
 
 #~ msgid "Distance in pixels before movement will be recognized"
 #~ msgstr "Distância em pixels até que o movimento seja reconhecido"
@@ -344,7 +344,7 @@ msgstr "Falha ao Apresentar a Ajuda"
 #~ msgstr "Tempo de movimento-clique"
 
 #~ msgid "Enable secondary click"
-#~ msgstr "Activar o clique secundário"
+#~ msgstr "Ativar o clique secundário"
 
 #~ msgid "Gesture double click"
 #~ msgstr "Gesto de clique-duplo"
@@ -474,16 +474,16 @@ msgstr "Falha ao Apresentar a Ajuda"
 #~ msgstr "Posição Y da janela de tipo de clique"
 
 #~ msgid "Disable cursor animations"
-#~ msgstr "Desactivar as animações de cursor"
+#~ msgstr "Desativar as animações de cursor"
 
 #~ msgid "Enable and Log Out"
-#~ msgstr "Activar e Terminar Sessão"
+#~ msgstr "Ativar e Terminar Sessão"
 
 #~ msgid "Failed to Launch Mouse Preferences"
 #~ msgstr "Falha ao Iniciar as Preferências do Rato"
 
 #~ msgid "Assistive Technology Support is not Enabled"
-#~ msgstr "O Suporte Para Tecnologias Assistivas Não Está Activo"
+#~ msgstr "O Suporte Para Tecnologias Assistivas Não Está Ativo"
 
 #~ msgid ""
 #~ "Mousetweaks requires assistive technologies to be enabled in your "
@@ -492,11 +492,11 @@ msgstr "Falha ao Apresentar a Ajuda"
 #~ "To enable support for assistive technologies and restart your session, "
 #~ "press \"Enable and Log Out\"."
 #~ msgstr ""
-#~ "Mousetweaks requer que as tecnologias assistivas estejam activas na sua "
+#~ "Mousetweaks requer que as tecnologias assistivas estejam ativas na sua "
 #~ "sessão.\n"
 #~ "\n"
-#~ "Para activar o suporte para tecnologias assistivas e reiniciar a sua "
-#~ "sessão, prima \"Activar e Terminar Sessão\"."
+#~ "Para ativar o suporte para tecnologias assistivas e reiniciar a sua "
+#~ "sessão, prima \"Ativar e Terminar Sessão\"."
 
 #~ msgid "L"
 #~ msgstr "L"
@@ -511,7 +511,7 @@ msgstr "Falha ao Apresentar a Ajuda"
 #~ msgstr "Apresentar tempo decorrido sobreposto ao ponteiro"
 
 #~ msgid "On"
-#~ msgstr "Activo"
+#~ msgstr "Ativo"
 
 #~ msgid "<b>Size of Capture Area</b>"
 #~ msgstr "<b>Tamanho da Área de Captura</b>"
@@ -545,7 +545,7 @@ msgstr "Falha ao Apresentar a Ajuda"
 #~ msgstr "Botão do rato de soltar"
 
 #~ msgid "Off"
-#~ msgstr "Inactivo"
+#~ msgstr "Inativo"
 
 #~ msgid "Couldn't display help"
 #~ msgstr "Incapaz de apresentar a ajuda"

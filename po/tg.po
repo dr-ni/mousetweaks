@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Victor Ibragimov <victor.ibragimov@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Tajik Gnome\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-13 10:45+0000\n"
+"PO-Revision-Date: 2013-01-19 17:54+0500\n"
+"Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
+"Language-Team: \n"
+"Language: Tajik\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Дубора зер кардан"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Кашида партофтан"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Танҳо матн"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Танҳо аломатҳо"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr ""
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Самт"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Уфуқӣ"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Амудӣ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr ""
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr ""
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr ""
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr ""
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr ""
+
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr ""
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr ""
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr ""
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr ""
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr ""
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr ""
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr ""

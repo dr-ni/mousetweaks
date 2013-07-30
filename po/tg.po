@@ -9,22 +9,22 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-01-13 10:45+0000\n"
-"PO-Revision-Date: 2013-01-19 17:54+0500\n"
+"PO-Revision-Date: 2013-07-30 15:45-0000\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tajik\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: ../data/mousetweaks.ui.h:1
 msgid "Hover Click"
-msgstr ""
+msgstr "Зеркунии муаллақ"
 
 #: ../data/mousetweaks.ui.h:2
 msgid "Single Click"
-msgstr ""
+msgstr "Зеркунии якбора"
 
 #: ../data/mousetweaks.ui.h:3
 msgid "Double Click"
@@ -37,11 +37,11 @@ msgstr "Кашида партофтан"
 
 #: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
-msgstr ""
+msgstr "Зеркунии дубора"
 
 #: ../data/mousetweaks.ui.h:7
 msgid "Button Style"
-msgstr ""
+msgstr "Сабки тугма"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Text only"
@@ -53,7 +53,7 @@ msgstr "Танҳо аломатҳо"
 
 #: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
-msgstr ""
+msgstr "Матн ва аломатҳо"
 
 #: ../data/mousetweaks.ui.h:11
 msgid "Orientation"
@@ -71,75 +71,77 @@ msgstr "Амудӣ"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Click-type window style"
-msgstr ""
+msgstr "Сабки равзанаи намуди зеркунӣ "
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 msgid "Button style of the click-type window."
-msgstr ""
+msgstr "Сабки тугмаи равзанаи навъи зеркунӣ"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
-msgstr ""
+msgstr "Самти равзанаи навъи зеркунӣ"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
 msgid "Orientation of the click-type window."
-msgstr ""
+msgstr "Самти равзанаи наъи зеркунӣ."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
 msgid "Click-type window geometry"
-msgstr ""
+msgstr "Геометрияи равзанаи навъи зеркунӣ"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
+"Андозҳа ва ҷойгиршавии равзанаи навъи зеркунӣ. Формат сатри геометрии "
+"Системаи стандартии X Window аст."
 
 #: ../src/mt-main.c:624
 msgid "Enable dwell click"
-msgstr ""
+msgstr "Фаъол кардани зеркунии ҳаётӣ"
 
 #: ../src/mt-main.c:626
 msgid "Enable simulated secondary click"
-msgstr ""
+msgstr "Фаъолкунии зеркунии дубораи таҳрикӣ"
 
 #: ../src/mt-main.c:628
 msgid "Time to wait before a dwell click"
-msgstr ""
+msgstr "Замон барои интизорӣ пеш аз зеркунии ҳаётӣ"
 
 #: ../src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
-msgstr ""
+msgstr "Замон барои интизорӣ пеш аз зеркунии дубораи таҳрикӣ"
 
 #: ../src/mt-main.c:632
 msgid "Set the active dwell mode"
-msgstr ""
+msgstr "Танзими ҳолати ҳаётии фаъол"
 
 #: ../src/mt-main.c:634
 msgid "Hide the click-type window"
-msgstr ""
+msgstr "Пнҳон кардани равзанаи навъи зеркунӣ"
 
 #: ../src/mt-main.c:636
 msgid "Ignore small pointer movements"
-msgstr ""
+msgstr "Рад кардани ҳаракатҳои ишоракгари хурд"
 
 #: ../src/mt-main.c:640
 msgid "Shut down mousetweaks"
-msgstr ""
+msgstr "Анҷоми кори твикҳои муш"
 
 #: ../src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
-msgstr ""
+msgstr "Оғози твикҳои муш ҳамчун дев"
 
 #: ../src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
-msgstr ""
+msgstr "Оғози твикҳои муш дар ҳолати ворилшавӣ"
 
 #. parse
 #: ../src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
-msgstr ""
+msgstr "- Деви дастрасии муши GNOME "
 
 #: ../src/mt-common.c:97
 msgid "Failed to Display Help"
-msgstr ""
+msgstr "Намоиши кӯмак қатъ гардид"

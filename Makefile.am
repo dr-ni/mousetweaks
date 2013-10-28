@@ -6,8 +6,7 @@ DISTCHECK_CONFIGURE_FLAGS =         \
     --disable-schemas-compile
 
 EXTRA_DIST =                        \
-    $(srcdir)/m4                    \
-    $(srcdir)/MAINTAINERS
+    $(srcdir)/m4
 
 MAINTAINERCLEANFILES =              \
     $(srcdir)/INSTALL               \

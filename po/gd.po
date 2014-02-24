@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mouset"
 "weaks&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-02-24 10:48+0000\n"
-"PO-Revision-Date: 2014-02-24 12:03+0100\n"
+"PO-Revision-Date: 2014-02-24 12:06+0100\n"
 "Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
 "Language-Team: Fòram na Gàidhlig http://www.foramnagaidhlig.net\n"
 "Language: gd\n"
@@ -39,7 +39,7 @@ msgstr "Slaodadh"
 
 #: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
-msgstr "Dàrna bhriogadh"
+msgstr "Briogadh dàrnach"
 
 #: ../data/mousetweaks.ui.h:7
 msgid "Button Style"

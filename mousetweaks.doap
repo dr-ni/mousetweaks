@@ -6,7 +6,7 @@
 
   <name xml:lang="en">mousetweaks</name>
   <shortdesc xml:lang="en">Mouse accessibility enhancements</shortdesc>
-  <description>    Mousetweaks provides mouse accessibility enhancements for the GNOME
+  <description>Mousetweaks provides mouse accessibility enhancements for the GNOME
 desktop. These enhancements are:
 
 - It offers a way to perform the various clicks without using any
@@ -18,9 +18,9 @@ Secondary Click)
 
 The features can be activated and configured through the Universal Access
 panel of the GNOME Control Center.</description>
-  <homepage rdf:resource="http://live.gnome.org/Mousetweaks/Home" />
+  <homepage rdf:resource="https://wiki.gnome.org/Projects/Mousetweaks" />
   <download-page rdf:resource="http://download.gnome.org/sources/mousetweaks/" />
-  <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=mousetweaks" />
+  <bug-database rdf:resource="https://bugzilla.gnome.org/browse.cgi?product=mousetweaks" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#desktop" />
 
   <maintainer>

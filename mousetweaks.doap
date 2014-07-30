@@ -6,6 +6,7 @@
 
   <name xml:lang="en">mousetweaks</name>
   <shortdesc xml:lang="en">Mouse accessibility enhancements</shortdesc>
+  <category rdf:resource="http://api.gnome.org/doap-extensions#core" />
   <description>Mousetweaks provides mouse accessibility enhancements for the GNOME
 desktop. These enhancements are:
 

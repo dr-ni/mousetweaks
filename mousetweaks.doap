@@ -21,7 +21,7 @@ panel of the GNOME Control Center.</description>
   <homepage rdf:resource="https://wiki.gnome.org/Projects/Mousetweaks" />
   <download-page rdf:resource="http://download.gnome.org/sources/mousetweaks/" />
   <bug-database rdf:resource="https://bugzilla.gnome.org/browse.cgi?product=mousetweaks" />
-  <category rdf:resource="http://api.gnome.org/doap-extensions#desktop" />
+  <category rdf:resource="http://api.gnome.org/doap-extensions#core" />
 
   <maintainer>
     <foaf:Person>

@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2015-01-27 23:01+0000\n"
-"PO-Revision-Date: 2015-02-02 09:14+0000\n"
+"PO-Revision-Date: 2015-02-04 17:50+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
 "Language: is\n"
@@ -37,11 +37,11 @@ msgstr "Draga"
 
 #: ../data/mousetweaks.ui.h:6
 msgid "Secondary Click"
-msgstr ""
+msgstr "Aukasmellur"
 
 #: ../data/mousetweaks.ui.h:7
 msgid "Button Style"
-msgstr ""
+msgstr "Útlit hnappa"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Text only"
@@ -121,7 +121,7 @@ msgstr ""
 
 #: ../src/mt-main.c:636
 msgid "Ignore small pointer movements"
-msgstr ""
+msgstr "Hunsa smáar bendilhreyfingar"
 
 #: ../src/mt-main.c:640
 msgid "Shut down mousetweaks"
@@ -142,6 +142,6 @@ msgstr ""
 
 #: ../src/mt-common.c:97
 msgid "Failed to Display Help"
-msgstr ""
+msgstr "Mistókst að sýna hjálp"
 
 

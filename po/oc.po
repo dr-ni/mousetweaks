@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetw"
-"eaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-05-21 22:39+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-02-18 13:36+0000\n"
 "PO-Revision-Date: 2015-10-31 07:57+0200\n"
 "Last-Translator: Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot en òc (totenoc.eu)\n"
@@ -33,7 +33,7 @@ msgstr "Clic simple"
 msgid "Double Click"
 msgstr "Clic doble"
 
-#. 'Drag' like in a Drag and Drop operation
+#.
 #: ../data/mousetweaks.ui.h:5
 msgid "Drag"
 msgstr "Traïnada"

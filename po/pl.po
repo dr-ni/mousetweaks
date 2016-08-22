@@ -1,28 +1,24 @@
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Aviary.pl
-# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
-# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
-# gnomepl@aviary.pl
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Polish translation for mousetweaks.
+# Copyright © 2008-2016 the mousetweaks authors.
+# This file is distributed under the same license as the mousetweaks package.
 # Tomasz Dominikowski <dominikowski@gmail.com>, 2008-2009.
-# Piotr Drąg <piotrdrag@gmail.com>, 2010-2015.
-# Aviary.pl <gnomepl@aviary.pl>, 2008-2015.
+# Piotr Drąg <piotrdrag@gmail.com>, 2010-2016.
+# Aviary.pl <community-poland@mozilla.org>, 2008-2016.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-25 13:24+0200\n"
-"PO-Revision-Date: 2015-08-25 13:25+0200\n"
+"POT-Creation-Date: 2016-08-22 13:51+0200\n"
+"PO-Revision-Date: 2016-08-22 13:52+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: Poland\n"
 
 #: ../data/mousetweaks.ui.h:1
 msgid "Hover Click"
@@ -59,7 +55,7 @@ msgstr "Tylko ikony"
 
 #: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
-msgstr "Tekst i ikony"
+msgstr "Tekst i ikony"
 
 #: ../data/mousetweaks.ui.h:11
 msgid "Orientation"
@@ -100,16 +96,16 @@ msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
-"Rozmiar i położenie okna typów kliknięć. Format to standardowy ciąg "
+"Rozmiar i położenie okna typów kliknięć. Format to standardowy ciąg "
 "geometrii systemu X Window."
 
 #: ../src/mt-main.c:624
 msgid "Enable dwell click"
-msgstr "Włączenie klikania spoczynkowego"
+msgstr "Włącza klikanie spoczynkowe"
 
 #: ../src/mt-main.c:626
 msgid "Enable simulated secondary click"
-msgstr "Włączenie symulowanego kliknięcia pomocniczego"
+msgstr "Włącza symulowane kliknięcie pomocnicze"
 
 #: ../src/mt-main.c:628
 msgid "Time to wait before a dwell click"
@@ -121,15 +117,15 @@ msgstr "Opóźnienie przed symulowanym kliknięciem pomocniczym"
 
 #: ../src/mt-main.c:632
 msgid "Set the active dwell mode"
-msgstr "Ustawienie aktywnego trybu spoczynkowego"
+msgstr "Ustawia aktywny tryb spoczynkowy"
 
 #: ../src/mt-main.c:634
 msgid "Hide the click-type window"
-msgstr "Ukrycie okna typów kliknięć"
+msgstr "Ukrywa okno typów kliknięć"
 
 #: ../src/mt-main.c:636
 msgid "Ignore small pointer movements"
-msgstr "Ignorowanie niewielkich ruchów kursora"
+msgstr "Ignoruje niewielkie ruchy kursora"
 
 #: ../src/mt-main.c:640
 msgid "Shut down mousetweaks"
@@ -141,7 +137,7 @@ msgstr "Uruchamia program mousetweaks jako usługę"
 
 #: ../src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
-msgstr "Uruchamia program mousetweaks w trybie logowania"
+msgstr "Uruchamia program mousetweaks w trybie logowania"
 
 #. parse
 #: ../src/mt-main.c:662

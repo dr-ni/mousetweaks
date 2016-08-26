@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-19 09:53+0100\n"
+"POT-Creation-Date: 2016-08-26 03:49+0200\n"
 "PO-Revision-Date: 2012-03-18 17:12+0100\n"
 "Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -21,50 +21,50 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../data/mousetweaks.ui.h:1
-msgid "Button Style"
-msgstr "Knapstil"
+msgid "Hover Click"
+msgstr "Svæveklik"
 
 #: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Enkeltklik"
+
+#: ../data/mousetweaks.ui.h:3
 msgid "Double Click"
 msgstr "Dobbeltklik"
 
 #. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
+#: ../data/mousetweaks.ui.h:5
 msgid "Drag"
 msgstr "Træk"
 
-#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "Vandret"
-
-#: ../data/mousetweaks.ui.h:7
-msgid "Hover Click"
-msgstr "Svæveklik"
-
-#: ../data/mousetweaks.ui.h:8
-msgid "Icons only"
-msgstr "Kun ikoner"
-
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "Orientering"
-
-#: ../data/mousetweaks.ui.h:10
 msgid "Secondary Click"
 msgstr "Sekundært klik"
 
-#: ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "Enkeltklik"
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Knapstil"
 
-#: ../data/mousetweaks.ui.h:12
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Kun tekst"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Kun ikoner"
+
+#: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
 msgstr "Tekst og ikoner"
 
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Orientering"
+
+#. Buttons are arranged from left to right in the layout
 #: ../data/mousetweaks.ui.h:13
-msgid "Text only"
-msgstr "Kun tekst"
+msgid "Horizontal"
+msgstr "Vandret"
 
 #. Buttons are arranged from top to bottom in the layout
 #: ../data/mousetweaks.ui.h:15
@@ -72,24 +72,24 @@ msgid "Vertical"
 msgstr "Lodret"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Stilen af kliktypevinduet"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 msgid "Button style of the click-type window."
 msgstr "Knapstil for kliktypevindue."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:637
-msgid "Click-type window geometry"
-msgstr "Målene for kliktypevinduet"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
 msgstr "Orienteringen af kliktypevinduet"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
-msgid "Click-type window style"
-msgstr "Stilen af kliktypevinduet"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
 msgid "Orientation of the click-type window."
 msgstr "Orienteringen af kliktypevinduet."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Målene for kliktypevinduet"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
@@ -97,50 +97,50 @@ msgid ""
 "Window System geometry string."
 msgstr ""
 "Størrelse og placering af kliktypevinduet. Formatet er en standardstreng for "
-"angivelse af vinduesmål for X-vinduessystemet"
+"angivelse af vinduesmål for X-vinduessystemet."
 
-#: ../src/mt-main.c:623
+#: ../src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Aktivér hvileklik"
 
-#: ../src/mt-main.c:625
+#: ../src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Aktivér simuleret sekundært klik"
 
-#: ../src/mt-main.c:627
+#: ../src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Ventetid før hvileklik"
 
-#: ../src/mt-main.c:629
+#: ../src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Ventetid før et simuleret sekundært klik"
 
-#: ../src/mt-main.c:631
+#: ../src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Brug aktiv hviletilstand"
 
-#: ../src/mt-main.c:633
+#: ../src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Skjul kliktypevinduet"
 
-#: ../src/mt-main.c:635
+#: ../src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Ignorér små markørbevægelser"
 
-#: ../src/mt-main.c:639
+#: ../src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Afslut mousetweaks"
 
-#: ../src/mt-main.c:641
+#: ../src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Start mousetweaks som dæmon"
 
-#: ../src/mt-main.c:643
+#: ../src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Start mousetweaks i logind-tilstand"
 
 #. parse
-#: ../src/mt-main.c:661
+#: ../src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Musetilgængelighedsdæmon til GNOME"
 

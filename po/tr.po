@@ -3,22 +3,22 @@
 # This file is distributed under the same license as the MouseTweaks package.
 # Emrah Ünal <eunall@gmail.com>, 2008.
 # Baris Cicek <baris@teamforce.name.tr>, 2008, 2009, 2011.
-# Muhammet Kara <muhammetk@acikkaynak.name.tr>, 2011, 2012.
+# Muhammet Kara <muhammetk@gmail.com>, 2011, 2012, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-07-16 19:07+0000\n"
-"PO-Revision-Date: 2012-08-12 19:42+0300\n"
-"Last-Translator: Muhammet Kara <muhammetk@acikkaynak.name.tr>\n"
+"POT-Creation-Date: 2016-08-22 11:53+0000\n"
+"PO-Revision-Date: 2016-11-30 22:40+0300\n"
+"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Gtranslator 2.91.7\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../data/mousetweaks.ui.h:1
@@ -31,9 +31,9 @@ msgstr "Tek Tıklama"
 
 #: ../data/mousetweaks.ui.h:3
 msgid "Double Click"
-msgstr "Çift tıklama"
+msgstr "Çift Tıklama"
 
-#. 'Drag' like in a Drag and Drop operation
+#.
 #: ../data/mousetweaks.ui.h:5
 msgid "Drag"
 msgstr "Sürükle"
@@ -44,15 +44,15 @@ msgstr "İkincil Tıklama"
 
 #: ../data/mousetweaks.ui.h:7
 msgid "Button Style"
-msgstr "Düğme Biçimi"
+msgstr "Düğme Biçemi"
 
 #: ../data/mousetweaks.ui.h:8
 msgid "Text only"
-msgstr "Sadece metin"
+msgstr "Yalnızca metin"
 
 #: ../data/mousetweaks.ui.h:9
 msgid "Icons only"
-msgstr "Sadece simgeler"
+msgstr "Yalnızca simgeler"
 
 #: ../data/mousetweaks.ui.h:10
 msgid "Text and Icons"
@@ -74,11 +74,11 @@ msgstr "Dikey"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
 msgid "Click-type window style"
-msgstr "Tıklama türü pencere biçimi"
+msgstr "Tıklama türü pencere biçemi"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
 msgid "Button style of the click-type window."
-msgstr "Tıklama türü penceresinin düğme biçimi."
+msgstr "Tıklama türü penceresinin düğme biçemi."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
 msgid "Click-type window orientation"
@@ -90,7 +90,7 @@ msgstr "Tıklama türü penceresinin yönelimi."
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
 msgid "Click-type window geometry"
-msgstr "Tıklama Türü Pencere Geometrisi"
+msgstr "Tıklama türü pencere geometrisi"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
 msgid ""
@@ -110,11 +110,11 @@ msgstr "Benzetimli ikincil tıklamayı etkinleştir"
 
 #: ../src/mt-main.c:628
 msgid "Time to wait before a dwell click"
-msgstr "Durak tıklama öncesi beklenecek süre"
+msgstr "Durağan tıklama öncesi beklenecek süre"
 
 #: ../src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
-msgstr "Benzetimli ikincil tıklamayı etkinleştirmek için beklenecek süre"
+msgstr "Benzetimli ikincil tıklama öncesi beklenecek süre"
 
 #: ../src/mt-main.c:632
 msgid "Set the active dwell mode"
@@ -138,12 +138,12 @@ msgstr "Mousetweaks'i hizmet olarak başlat"
 
 #: ../src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
-msgstr "mousetweaks'i giriş modunda başlat"
+msgstr "mousetweaks'i giriş kipinde başlat"
 
 #. parse
 #: ../src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- GNOME fare erişilebilirlik hizmeti"
+msgstr "- GNOME fare erişilebilirlik artalan süreci"
 
 #: ../src/mt-common.c:97
 msgid "Failed to Display Help"

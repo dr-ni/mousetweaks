@@ -1,20 +1,23 @@
 # Swedish translation for mousetweaks.
-# Copyright (C) 2008-2012 Free Software Foundation, Inc.
+# Copyright (C) 2008-2017 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
 # Daniel Nylander <po@danielnylander.se>, 2008, 2009, 2010, 2011, 2012.
+# Sebastian Rasmussen <sebras@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-19 13:36+0100\n"
-"PO-Revision-Date: 2012-02-19 13:36+0100\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-04-08 15:25+0000\n"
+"PO-Revision-Date: 2017-09-11 01:31+0200\n"
+"Last-Translator: Sebastian Rasmussen <sebras@gmail.com>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
 
 #: ../data/mousetweaks.ui.h:1
 msgid "Hover Click"
@@ -28,7 +31,7 @@ msgstr "Enkelklick"
 msgid "Double Click"
 msgstr "Dubbelklick"
 
-#. 'Drag' like in a Drag and Drop operation
+#.
 #: ../data/mousetweaks.ui.h:5
 msgid "Drag"
 msgstr "Dra"
@@ -83,59 +86,62 @@ msgstr "Klicktypsfönstrets orientering"
 msgid "Orientation of the click-type window."
 msgstr "Orientering för klicktypsfönstret."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-#: ../src/mt-main.c:637
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
 msgid "Click-type window geometry"
 msgstr "Klicktypsfönstrets geometri"
 
 #: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
-msgid "Size and position of the click-type window. The format is a standard X Window System geometry string."
-msgstr "Storlek och position för klicktypsfönstret. Formatet är en standardsträng för X Window System-geometri."
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Storlek och position för klicktypsfönstret. Formatet är en standardsträng "
+"för X Window System-geometri."
 
-#: ../src/mt-main.c:623
+#: ../src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Aktivera uppehållsklick"
 
-#: ../src/mt-main.c:625
+#: ../src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Aktivera simulerat sekundärklick"
 
-#: ../src/mt-main.c:627
+#: ../src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Tid att vänta innan ett uppehållsklick"
 
-#: ../src/mt-main.c:629
+#: ../src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tid att vänta innan en simulerad sekundärklickning"
 
-#: ../src/mt-main.c:631
+#: ../src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Ställ in aktivt uppehållsläge"
 
-#: ../src/mt-main.c:633
+#: ../src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Dölj klicktypsfönstret"
 
-#: ../src/mt-main.c:635
+#: ../src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Ignorera mindre muspekarrörelser"
 
-#: ../src/mt-main.c:639
+#: ../src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Stäng av musjusteringar"
 
-#: ../src/mt-main.c:641
+#: ../src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Starta musjusteringar som en bakgrundsprocess"
 
-#: ../src/mt-main.c:643
+#: ../src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Starta musjusteringar i inloggningsläge"
 
 #. parse
-#: ../src/mt-main.c:661
+#: ../src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- GNOME-mustillgänglighetsdemon"
+msgstr "- GNOME-mushjälpmedelsdemon"
 
 #: ../src/mt-common.c:97
 msgid "Failed to Display Help"

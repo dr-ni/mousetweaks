@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: Gnome Nepali Translation Project\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-04-08 15:25+0000\n"
-"PO-Revision-Date: 2017-07-24 17:31+0545\n"
+"POT-Creation-Date: 2017-07-24 11:47+0000\n"
+"PO-Revision-Date: 2017-10-15 12:37+0545\n"
+"Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
 "Language-Team: Nepali Translation Team <chautari@gmail.com>\n"
+"Language: ne_NP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
-"Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
+"X-Generator: Poedit 2.0.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: ne_NP\n"
 
 #: ../data/mousetweaks.ui.h:1
 msgid "Hover Click"
@@ -95,59 +95,53 @@ msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
+"क्लिक-सञ्झ्यालको आकार र स्थिति। एक मानक X सञ्झ्याल प्रणाली ज्यामिति स्ट्रिंग ढाँचा "
+"हो।"
 
 #: ../src/mt-main.c:624
-#, fuzzy
 msgid "Enable dwell click"
-msgstr "\"%s\" मा स्विच गर्न क्लिक गर्नुहोस्"
+msgstr "बाहिरी क्लिक सक्षम गर्नुहोस्"
 
 #: ../src/mt-main.c:626
-#, fuzzy
 msgid "Enable simulated secondary click"
-msgstr "सिमुलेतेड सेकेन्डरी क्लिक"
+msgstr "सिमुलेतेड सेकेन्डरी क्लिक सक्षम गर्नुहोस्"
 
 #: ../src/mt-main.c:628
 msgid "Time to wait before a dwell click"
-msgstr ""
+msgstr "बाहिरी क्लिक गर्नु अघिको प्रतीक्षा गर्न समय"
 
 #: ../src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
-msgstr ""
+msgstr "सिमुलेटेड द्वितिय क्लिक गर्नु अघिको समय"
 
 #: ../src/mt-main.c:632
-#, fuzzy
 msgid "Set the active dwell mode"
-msgstr "सक्रियतामा तह र बाटो सेट गर्नुहोस्"
+msgstr "सक्रिय बाहिरी मोड सेट गर्नुहोस्"
 
 #: ../src/mt-main.c:634
-#, fuzzy
 msgid "Hide the click-type window"
-msgstr "सञ्झ्याल प्रकार: %s"
+msgstr "क्लिक-सञ्झ्याल प्रकार लुकाउनुहोस्"
 
 #: ../src/mt-main.c:636
 msgid "Ignore small pointer movements"
-msgstr ""
+msgstr "सानो सूचक चाल वेवास्ता गर्नुहोस्"
 
 #: ../src/mt-main.c:640
-#, fuzzy
 msgid "Shut down mousetweaks"
-msgstr "ब्याकइण्ड बन्द गर्न असफल भयो"
+msgstr "माउसट्विकस् बन्द गर्नुहोस्"
 
 #: ../src/mt-main.c:642
-#, fuzzy
 msgid "Start mousetweaks as a daemon"
-msgstr "\"%s\" तान्न सुरु गर्न क्लिक गर्नुहोस्"
+msgstr "माउसट्विकस् डेइमोनको रुपमा सञ्चालन गर्नुहोस्"
 
 #: ../src/mt-main.c:644
-#, fuzzy
 msgid "Start mousetweaks in login mode"
-msgstr "पूरापर्दा मोडमा सुरु गर्नुहोस्"
+msgstr "माउसट्विकस् लगइन मोड मा शुरु गर्नुहोस्"
 
 #. parse
 #: ../src/mt-main.c:662
-#, fuzzy
 msgid "- GNOME mouse accessibility daemon"
-msgstr "ग्नोम सेटिङ व्यबस्थापक  रङ्ग प्लगइन"
+msgstr "- जिनोम माउस पहुँच डेइमन"
 
 #: ../src/mt-common.c:97
 msgid "Failed to Display Help"

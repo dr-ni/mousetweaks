@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../data/mousetweaks.ui.h:1
 msgid "Hover Click"
-msgstr "Clic en mantenir"
+msgstr "Clic en passar per sobre"
 
 #: ../data/mousetweaks.ui.h:2
 msgid "Single Click"
@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../src/mt-main.c:623
 msgid "Enable dwell click"
-msgstr "Habilita el clic en pausa"
+msgstr "Habilita el clic en passar per sobre"
 
 #: ../src/mt-main.c:625
 msgid "Enable simulated secondary click"
@@ -106,7 +106,7 @@ msgstr "Habilita el clic secundari simulat"
 
 #: ../src/mt-main.c:627
 msgid "Time to wait before a dwell click"
-msgstr "Temps d'espera abans d'un clic en pausa"
+msgstr "Temps d'espera abans d'un clic en passar per sobre"
 
 #: ../src/mt-main.c:629
 msgid "Time to wait before a simulated secondary click"

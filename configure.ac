@@ -1,9 +1,9 @@
 AC_PREREQ([2.64])
 AC_INIT([mousetweaks],
         [3.12.0],
-        [https://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks],
+        [https://gitlab.gnome.org/GNOME/mousetweaks/issues],
         [mousetweaks],
-        [https://live.gnome.org/Mousetweaks/Home])
+        [https://wiki.gnome.org/Projects/Mousetweaks])
 
 AC_CONFIG_SRCDIR([src])
 AC_CONFIG_HEADER([config.h])
@@ -27,12 +27,12 @@ GNOME_MAINTAINER_MODE_DEFINES
 
 dnl *** i18n ***
 
-IT_PROG_INTLTOOL([0.40.0])
+AM_GNU_GETTEXT_VERSION([0.19.8])
+AM_GNU_GETTEXT([external])
 
 GETTEXT_PACKAGE=mousetweaks
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Gettext Package])
-AM_GLIB_GNU_GETTEXT
 
 dnl *** gsettings ***
 

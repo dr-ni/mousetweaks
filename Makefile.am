@@ -19,11 +19,7 @@ MAINTAINERCLEANFILES =              \
     $(srcdir)/install-sh            \
     $(srcdir)/missing               \
     $(srcdir)/mkinstalldirs         \
-    $(srcdir)/omf.make              \
-    $(srcdir)/xmldocs.make          \
-    $(srcdir)/intltool-extract.in   \
-    $(srcdir)/intltool-merge.in     \
-    $(srcdir)/intltool-update.in
+    $(srcdir)/xmldocs.make
 
 # Generate ChangeLog
 dist-hook:

@@ -7,9 +7,7 @@ convert_DATA = mousetweaks.convert
 gsettings_ENUM_NAMESPACE = org.gnome.mousetweaks
 gsettings_ENUM_FILES = $(top_srcdir)/src/mt-common.h
 
-gsettings_in_files = org.gnome.mousetweaks.gschema.xml.in
-gsettings_SCHEMAS = $(gsettings_in_files:.xml.in=.xml)
-@INTLTOOL_XML_NOMERGE_RULE@
+gsettings_SCHEMAS = org.gnome.mousetweaks.gschema.xml
 @GSETTINGS_RULES@
 
 EXTRA_DIST =                \

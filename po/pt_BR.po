@@ -1,5 +1,5 @@
 # Brazilian Portuguese translation of Mousetweaks.
-# Copyright (C) 1999-2012 the Mousetweaks authors.
+# Copyright (C) 2019 the Mousetweaks authors.
 # This file is distributed under the same license as the mousetweaks package.
 # Luiz Armesto <luiz.armesto@gmail.com>, 2008.
 # Enrico Nicoletto <liverig@gmail.com>, 2008.
@@ -8,96 +8,95 @@
 # Fabrício Godoy <skarllot@gmail.com>, 2009.
 # Marcelo Odir <marceloodir@gmail.com>, 2010.
 # Enrico Nicoletto <liverig@gmail.com>, 2012.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-02-09 13:36+0000\n"
-"PO-Revision-Date: 2012-03-21 09:49-0300\n"
-"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2019-01-13 10:26+0000\n"
+"PO-Revision-Date: 2019-01-28 15:35-0200\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese - Brazil <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-Language: Portuguese\n"
-"X-Poedit-Country: BRAZIL\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.31.0\n"
 
-#: ../data/mousetweaks.ui.h:1
+#: data/mousetweaks.ui:8
 msgid "Hover Click"
 msgstr "Focar clique"
 
-#: ../data/mousetweaks.ui.h:2
+#: data/mousetweaks.ui:56
 msgid "Single Click"
 msgstr "Clique único"
 
-#: ../data/mousetweaks.ui.h:3
+#: data/mousetweaks.ui:111
 msgid "Double Click"
 msgstr "Clique duplo"
 
-#.
-#: ../data/mousetweaks.ui.h:5
+#. 'Drag' like in a Drag and Drop operation
+#: data/mousetweaks.ui:166
 msgid "Drag"
 msgstr "Arrastar"
 
-#: ../data/mousetweaks.ui.h:6
+#: data/mousetweaks.ui:221
 msgid "Secondary Click"
 msgstr "Clique secundário"
 
-#: ../data/mousetweaks.ui.h:7
+#: data/mousetweaks.ui:249
 msgid "Button Style"
 msgstr "Estilo do botão"
 
-#: ../data/mousetweaks.ui.h:8
+#: data/mousetweaks.ui:257
 msgid "Text only"
 msgstr "Apenas texto"
 
-#: ../data/mousetweaks.ui.h:9
+#: data/mousetweaks.ui:267
 msgid "Icons only"
 msgstr "Apenas ícones"
 
-#: ../data/mousetweaks.ui.h:10
+#: data/mousetweaks.ui:277
 msgid "Text and Icons"
 msgstr "Texto e Ícones"
 
-#: ../data/mousetweaks.ui.h:11
+#: data/mousetweaks.ui:287
 msgid "Orientation"
 msgstr "Orientação"
 
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:13
+#: data/mousetweaks.ui:295
 msgid "Horizontal"
 msgstr "Horizontal"
 
 #. Buttons are arranged from top to bottom in the layout
-#: ../data/mousetweaks.ui.h:15
+#: data/mousetweaks.ui:305
 msgid "Vertical"
 msgstr "Vertical"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#: data/org.gnome.mousetweaks.gschema.xml:5
 msgid "Click-type window style"
 msgstr "Estilo da janela de tipo de clique"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: data/org.gnome.mousetweaks.gschema.xml:6
 msgid "Button style of the click-type window."
 msgstr "Botão de estilo da janela de tipo de clique"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#: data/org.gnome.mousetweaks.gschema.xml:10
 msgid "Click-type window orientation"
 msgstr "Orientação da janela de tipo de clique"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
 msgstr "Orientação da janela de tipo de clique."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
 msgid "Click-type window geometry"
 msgstr "Geometria da janela de tipo de clique"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+#: data/org.gnome.mousetweaks.gschema.xml:16
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
@@ -105,52 +104,70 @@ msgstr ""
 "Tamanho e posição da janela de tipo de clique. O formato é um expressão "
 "geométrica padrão do sistema X Window."
 
-#: ../src/mt-main.c:624
+#: src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Habilitar clique de permanência"
 
-#: ../src/mt-main.c:626
+#: src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Habilitar clique secundário simulado"
 
-#: ../src/mt-main.c:628
+#: src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Tempo de espera antes de um clique de permanência"
 
-#: ../src/mt-main.c:630
+#: src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo de espera antes de simular um clique secundário"
 
-#: ../src/mt-main.c:632
+#: src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Definir o modo de permanência ativo"
 
-#: ../src/mt-main.c:634
+#: src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Esconder a janela de tipo de clique"
 
-#: ../src/mt-main.c:636
+#: src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Ignorar pequenos movimentos do ponteiro"
 
-#: ../src/mt-main.c:640
+#: src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Desligar o mousetweaks"
 
-#: ../src/mt-main.c:642
+#: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Iniciar o mousetweaks como um daemon"
 
-#: ../src/mt-main.c:644
+#: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Iniciar o mousetweaks em modo de login"
 
 #. parse
-#: ../src/mt-main.c:662
+#: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Daemon de acessibilidade de mouse do GNOME"
 
-#: ../src/mt-common.c:97
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Desligamento falhou ou nada para desligar.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Desligamento concluído com sucesso.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks já está em execução. (PID %u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Iniciando daemon.\n"
+
+#: src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Falha ao exibir a ajuda"
 

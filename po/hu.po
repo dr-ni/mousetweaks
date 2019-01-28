@@ -1,97 +1,97 @@
-# translation of mousetweaks to Hungarian
-# Copyright (C) 2008, 2009, 2010, 2011 Free Software Foundation, Inc.
+# Hungarian translation for mousetweaks.
+# Copyright (C) 2008, 2009, 2010, 2011, 2019 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mousetweaks package.
 #
 # Balint Laza <laza at szentkoronaradio dot com>, 2008.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2008, 2009, 2010, 2011, 2012.
+# Balázs Úr <urbalazs at gmail dot com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
-"cgi?product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-02-19 08:27+0000\n"
-"PO-Revision-Date: 2012-02-29 01:56+0100\n"
-"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
-"Language-Team: Magyar <gnome-hu-list at gnome dot org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2019-01-13 10:26+0000\n"
+"PO-Revision-Date: 2019-01-28 23:06+0100\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../data/mousetweaks.ui.h:1
+#: data/mousetweaks.ui:8
 msgid "Hover Click"
 msgstr "Rámutatási kattintás"
 
-#: ../data/mousetweaks.ui.h:2
+#: data/mousetweaks.ui:56
 msgid "Single Click"
 msgstr "Egyszeres kattintás"
 
-#: ../data/mousetweaks.ui.h:3
+#: data/mousetweaks.ui:111
 msgid "Double Click"
 msgstr "Dupla kattintás"
 
 #. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:5
+#: data/mousetweaks.ui:166
 msgid "Drag"
 msgstr "Húzás"
 
-#: ../data/mousetweaks.ui.h:6
+#: data/mousetweaks.ui:221
 msgid "Secondary Click"
 msgstr "Másodlagos kattintás"
 
-#: ../data/mousetweaks.ui.h:7
+#: data/mousetweaks.ui:249
 msgid "Button Style"
 msgstr "Gombstílus"
 
-#: ../data/mousetweaks.ui.h:8
+#: data/mousetweaks.ui:257
 msgid "Text only"
 msgstr "Csak szöveg"
 
-#: ../data/mousetweaks.ui.h:9
+#: data/mousetweaks.ui:267
 msgid "Icons only"
 msgstr "Csak ikonok"
 
-#: ../data/mousetweaks.ui.h:10
+#: data/mousetweaks.ui:277
 msgid "Text and Icons"
 msgstr "Szöveg és ikonok"
 
-#: ../data/mousetweaks.ui.h:11
+#: data/mousetweaks.ui:287
 msgid "Orientation"
 msgstr "Tájolás"
 
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:13
+#: data/mousetweaks.ui:295
 msgid "Horizontal"
 msgstr "Vízszintes"
 
 #. Buttons are arranged from top to bottom in the layout
-#: ../data/mousetweaks.ui.h:15
+#: data/mousetweaks.ui:305
 msgid "Vertical"
 msgstr "Függőleges"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#: data/org.gnome.mousetweaks.gschema.xml:5
 msgid "Click-type window style"
 msgstr "Kattintástípus ablak stílusa"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: data/org.gnome.mousetweaks.gschema.xml:6
 msgid "Button style of the click-type window."
 msgstr "Gombstílus a Kattintástípus ablakban."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#: data/org.gnome.mousetweaks.gschema.xml:10
 msgid "Click-type window orientation"
 msgstr "Kattintástípus ablak tájolása"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
 msgstr "A Kattintástípus ablak tájolása."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
 msgid "Click-type window geometry"
 msgstr "Kattintástípus ablak geometriája"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+#: data/org.gnome.mousetweaks.gschema.xml:16
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
@@ -99,165 +99,70 @@ msgstr ""
 "A Kattintástípus ablak mérete és pozíciója. A formátum az X ablakkezelő "
 "szabványos geometria-karakterlánca."
 
-#: ../src/mt-main.c:623
+#: src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Elidőzési kattintás engedélyezése"
 
-#: ../src/mt-main.c:625
+#: src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Szimulált másodlagos kattintás engedélyezése"
 
-#: ../src/mt-main.c:627
+#: src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Várakozás ideje elidőzési kattintás előtt"
 
-#: ../src/mt-main.c:629
+#: src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Várakozás ideje szimulált másodlagos kattintás előtt"
 
-#: ../src/mt-main.c:631
+#: src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Az aktív elidőzési mód beállítása"
 
-#: ../src/mt-main.c:633
-#| msgid "Orientation of the click-type window."
+#: src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "A Kattintástípus ablak elrejtése"
 
-#: ../src/mt-main.c:635
+#: src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Kis mutatómozgások figyelmen kívül hagyása"
 
-#: ../src/mt-main.c:639
+#: src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "A Mousetweaks leállítása"
 
-#: ../src/mt-main.c:641
+#: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "A Mousetweaks indítása démonként"
 
-#: ../src/mt-main.c:643
+#: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "A Mousetweaks indítása bejelentkezési módban"
 
 #. parse
-#: ../src/mt-main.c:661
+#: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "– GNOME egér-akadálymentesítési démon"
 
-#: ../src/mt-common.c:97
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "A leállítás sikertelen vagy nincs mit leállítani.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "A leállítás sikeres.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "A Mousetweaks már fut (PID %u).\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Démon indítása.\n"
+
+#: src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "A súgó nem jeleníthető meg"
 
-#~ msgid ""
-#~ "Applet to select different dwell-click types.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "Különböző elidőzési kattintások kiválasztása.\n"
-#~ "A Mousetweaks része."
-
-#~ msgid "Click Type Window"
-#~ msgstr "Kattintástípus ablak"
-
-#~ msgid "Drag Click"
-#~ msgstr "Húzási kattintás"
-
-#~ msgid "Right Click"
-#~ msgstr "Jobb kattintás"
-
-#~ msgid ""
-#~ "Area to lock the pointer on the panel.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "Terület a mutató zárolásához a panelen.\n"
-#~ "A Mousetweaks része"
-
-#~ msgid "C_trl"
-#~ msgstr "C_trl"
-
-#~ msgid "Capture and Release Controls"
-#~ msgstr "Elfogás és felengedés vezérlése"
-
-#~ msgid "Keyboard modifier:"
-#~ msgstr "Billentyűzet-módosító:"
-
-#~ msgid "Pointer Capture Preferences"
-#~ msgstr "Mutató elfogásának beállításai"
-
-#~ msgid "Selecting Button 0 will capture the pointer immediately"
-#~ msgstr "A 0. gomb kiválasztása azonnal elfogja a mutatót"
-
-#~ msgid "Size of the Capture Area"
-#~ msgstr "Az elfogási terület mérete"
-
-#~ msgid "_Alt"
-#~ msgstr "_Alt"
-
-#~ msgid "_Mouse button:"
-#~ msgstr "_Egérgomb:"
-
-#~ msgid "_Shift"
-#~ msgstr "_Shift"
-
-#~ msgid "_Width:"
-#~ msgstr "_Szélesség:"
-
-#~ msgid "pixels"
-#~ msgstr "képpont"
-
-#~ msgid "Control your desktop without using mouse buttons"
-#~ msgstr "A számítógép vezérlése egérgombok nélkül"
-
-#~ msgid "Dwell Click Applet"
-#~ msgstr "Elidőzési kattintás"
-
-#~ msgid "Area to lock the pointer"
-#~ msgstr "Terület a mutató zárolására"
-
-#~ msgid "Pointer Capture Applet"
-#~ msgstr "Mutató elfogása"
-
-#~ msgid "\"Alt\" keyboard modifier"
-#~ msgstr "„Alt” billentyűzetmódosító"
-
-#~ msgid "\"Control\" keyboard modifier"
-#~ msgstr "„Control” billentyűzetmódosító"
-
-#~ msgid "\"Shift\" keyboard modifier"
-#~ msgstr "„Shift” billentyűzetmódosító"
-
-#~ msgid "Mouse button"
-#~ msgstr "Egérgomb"
-
-#~ msgid "Mouse button used to capture or release the pointer."
-#~ msgstr "A mutató elfogására vagy felengedésére használt egérgomb."
-
-#~ msgid "Size of capture area"
-#~ msgstr "Az elfogási terület mérete"
-
-#~ msgid "Width of the capture area in pixels."
-#~ msgstr "Az elfogási terület szélessége képpontban."
-
-#~ msgid "Show a click-type window"
-#~ msgstr "A Kattintástípus ablak megjelenítése"
-
-#~ msgid "Capture area"
-#~ msgstr "Elfogási terület"
-
-#~ msgid "Temporarily lock the mouse pointer"
-#~ msgstr "Az egérmutató ideiglenes zárolása"
-
-#~ msgid "_Preferences"
-#~ msgstr "_Beállítások"
-
-#~ msgid "_Help"
-#~ msgstr "_Súgó"
-
-#~ msgid "_About"
-#~ msgstr "_Névjegy"
-
-#~ msgid "Locked"
-#~ msgstr "Zárolva"
-
-#~ msgid "Failed to Open the Universal Access Panel"
-#~ msgstr "Az Akadálymentesítés panel megnyitása meghiúsult"

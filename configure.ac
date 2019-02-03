@@ -10,7 +10,7 @@ AC_CONFIG_HEADER([config.h])
 AC_CONFIG_MACRO_DIR([m4])
 AC_PREFIX_DEFAULT([/usr])
 
-AM_INIT_AUTOMAKE([1.11 no-dist-gzip dist-bzip2 -Wno-portability])
+AM_INIT_AUTOMAKE([1.11 tar-ustar dist-xz no-dist-gzip foreign -Wno-portability])
 AM_SILENT_RULES([yes])
 AM_MAINTAINER_MODE([enable])
 

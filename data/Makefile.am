@@ -12,11 +12,8 @@ gsettings_SCHEMAS = org.gnome.mousetweaks.gschema.xml
 
 EXTRA_DIST =                \
     $(ui_DATA)              \
-    $(gsettings_in_files)   \
+    $(gsettings_SCHEMAS)   \
     $(gsettings_ENUM_FILES) \
     $(convert_DATA)
-
-DISTCLEANFILES =            \
-    $(gsettings_SCHEMAS)
 
 -include $(top_srcdir)/git.mk

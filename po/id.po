@@ -8,93 +8,90 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-04 03:28+0000\n"
-"PO-Revision-Date: 2012-09-04 17:33+0700\n"
-"Last-Translator: Dirgita <dirgitadevina@yahoo.co.id>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2019-01-13 10:26+0000\n"
+"PO-Revision-Date: 2019-02-28 18:09+0700\n"
+"Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Indonesian\n"
-"X-Poedit-Country: Indonesia\n"
-"X-Generator: Lokalize 1.2\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=2; plural= n!=1;\n"
 
-#: ../data/mousetweaks.ui.h:1
+#: data/mousetweaks.ui:8
 msgid "Hover Click"
 msgstr "Klik Bergerak"
 
-#: ../data/mousetweaks.ui.h:2
+#: data/mousetweaks.ui:56
 msgid "Single Click"
-msgstr "Klik Tunggal "
+msgstr "Klik Tunggal"
 
-#: ../data/mousetweaks.ui.h:3
+#: data/mousetweaks.ui:111
 msgid "Double Click"
 msgstr "Klik Ganda"
 
 #. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:5
+#: data/mousetweaks.ui:166
 msgid "Drag"
 msgstr "Seret"
 
-#: ../data/mousetweaks.ui.h:6
+#: data/mousetweaks.ui:221
 msgid "Secondary Click"
 msgstr "Klik Sekunder"
 
-#: ../data/mousetweaks.ui.h:7
+#: data/mousetweaks.ui:249
 msgid "Button Style"
 msgstr "Gaya Tombol"
 
-#: ../data/mousetweaks.ui.h:8
+#: data/mousetweaks.ui:257
 msgid "Text only"
 msgstr "Hanya teks"
 
-#: ../data/mousetweaks.ui.h:9
+#: data/mousetweaks.ui:267
 msgid "Icons only"
 msgstr "Hanya ikon"
 
-#: ../data/mousetweaks.ui.h:10
+#: data/mousetweaks.ui:277
 msgid "Text and Icons"
 msgstr "Teks dan Ikon"
 
-#: ../data/mousetweaks.ui.h:11
+#: data/mousetweaks.ui:287
 msgid "Orientation"
 msgstr "Orientasi"
 
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:13
+#: data/mousetweaks.ui:295
 msgid "Horizontal"
 msgstr "Horisontal"
 
 #. Buttons are arranged from top to bottom in the layout
-#: ../data/mousetweaks.ui.h:15
+#: data/mousetweaks.ui:305
 msgid "Vertical"
 msgstr "Vertikal"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#: data/org.gnome.mousetweaks.gschema.xml:5
 msgid "Click-type window style"
 msgstr "Gaya jendela jenis klik"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: data/org.gnome.mousetweaks.gschema.xml:6
 msgid "Button style of the click-type window."
 msgstr "Gaya tombol dari jendela jenis klik."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#: data/org.gnome.mousetweaks.gschema.xml:10
 msgid "Click-type window orientation"
 msgstr "Orientasi jendela jenis klik"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
 msgstr "Orientasi dari jendela jenis klik."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
 msgid "Click-type window geometry"
 msgstr "Geometri jendela jenis klik"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+#: data/org.gnome.mousetweaks.gschema.xml:16
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
@@ -102,52 +99,69 @@ msgstr ""
 "Ukuran dan posisi jendela jenis klik. Format adalah string geometri starndar "
 "Sistem X Window."
 
-#: ../src/mt-main.c:624
+#: src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Mengaktifkan klik-menetap"
 
-#: ../src/mt-main.c:626
+#: src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Mengaktifkan klik sekunder yang disimulasikan"
 
-#: ../src/mt-main.c:628
+#: src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Waktu untuk menunggu sebelum klik-menetap"
 
-#: ../src/mt-main.c:630
+#: src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Waktu untuk menunggu sebelum klik sekunder disimulasikan"
 
-#: ../src/mt-main.c:632
+#: src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Mengatur modus menetap yang aktif"
 
-#: ../src/mt-main.c:634
+#: src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Sembunyikan jendela berjenis klik"
 
-#: ../src/mt-main.c:636
+#: src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Abaikan gerakan kecil pointer"
 
-#: ../src/mt-main.c:640
+#: src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Matikan mousetweaks"
 
-#: ../src/mt-main.c:642
+#: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Mulai mousetweaks sebagai daemon"
 
-#: ../src/mt-main.c:644
+#: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Mulai mousetweaks di modus login"
 
 #. parse
-#: ../src/mt-main.c:662
+#: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME daemon aksesibilitas tetikus"
 
-#: ../src/mt-common.c:97
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Gagal matikan atau tidak ada yang ditutup.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Matikan sukses.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks sudah berjalan. (PID %u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Memulai daemon.\n"
+
+#: src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Gagal Menampilkan Bantuan"
-

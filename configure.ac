@@ -1,6 +1,6 @@
 AC_PREREQ([2.64])
 AC_INIT([mousetweaks],
-        [3.31.92],
+        [3.32.0],
         [https://gitlab.gnome.org/GNOME/mousetweaks/issues],
         [mousetweaks],
         [https://wiki.gnome.org/Projects/Mousetweaks])

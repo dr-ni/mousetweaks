@@ -7,92 +7,92 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mouset"
-"weaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-02-19 08:27+0000\n"
-"PO-Revision-Date: 2012-02-19 15:34+0200\n"
-"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2019-01-13 10:26+0000\n"
+"PO-Revision-Date: 2019-09-16 08:27+0200\n"
+"Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
-"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
+"X-Generator: Poedit 2.2.3\n"
 
-#: ../data/mousetweaks.ui.h:1
+#: data/mousetweaks.ui:8
 msgid "Hover Click"
 msgstr "Клик на преклапање"
 
-#: ../data/mousetweaks.ui.h:2
+#: data/mousetweaks.ui:56
 msgid "Single Click"
 msgstr "Једноструки клик"
 
-#: ../data/mousetweaks.ui.h:3
+#: data/mousetweaks.ui:111
 msgid "Double Click"
 msgstr "Дупли клик"
 
 #. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:5
+#: data/mousetweaks.ui:166
 msgid "Drag"
 msgstr "Превуци"
 
-#: ../data/mousetweaks.ui.h:6
+#: data/mousetweaks.ui:221
 msgid "Secondary Click"
 msgstr "Секундарни клик"
 
-#: ../data/mousetweaks.ui.h:7
+#: data/mousetweaks.ui:249
 msgid "Button Style"
 msgstr "Стил дугмета"
 
-#: ../data/mousetweaks.ui.h:8
+#: data/mousetweaks.ui:257
 msgid "Text only"
 msgstr "Само текст"
 
-#: ../data/mousetweaks.ui.h:9
+#: data/mousetweaks.ui:267
 msgid "Icons only"
 msgstr "Само иконице"
 
-#: ../data/mousetweaks.ui.h:10
+#: data/mousetweaks.ui:277
 msgid "Text and Icons"
 msgstr "Текст и иконице"
 
-#: ../data/mousetweaks.ui.h:11
+#: data/mousetweaks.ui:287
 msgid "Orientation"
 msgstr "Усмерење"
 
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:13
+#: data/mousetweaks.ui:295
 msgid "Horizontal"
 msgstr "Водоравнo"
 
 #. Buttons are arranged from top to bottom in the layout
-#: ../data/mousetweaks.ui.h:15
+#: data/mousetweaks.ui:305
 msgid "Vertical"
 msgstr "Усправно"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#: data/org.gnome.mousetweaks.gschema.xml:5
 msgid "Click-type window style"
 msgstr "Стил прозора за врсту клика"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: data/org.gnome.mousetweaks.gschema.xml:6
 msgid "Button style of the click-type window."
 msgstr "Изглед дугмета за прозор врсте клика."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#: data/org.gnome.mousetweaks.gschema.xml:10
 msgid "Click-type window orientation"
 msgstr "Усмерење прозора за врсту клика"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
 msgstr "Усмерење прозора за врсте клика."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
 msgid "Click-type window geometry"
 msgstr "Величина прозора за врсту клика"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+#: data/org.gnome.mousetweaks.gschema.xml:16
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
@@ -100,53 +100,70 @@ msgstr ""
 "Величина и положај прозора за врсту клика. Ово је стандардна ниска "
 "геометрије система прозора Икса."
 
-#: ../src/mt-main.c:623
+#: src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Укључује клик са задржавањем"
 
-#: ../src/mt-main.c:625
+#: src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Укључује секундарни симулирани клик"
 
-#: ../src/mt-main.c:627
+#: src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Истек времена пре временског клика"
 
-#: ../src/mt-main.c:629
+#: src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Истек времена пре симулираног секундарног клика"
 
-#: ../src/mt-main.c:631
+#: src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Поставља активни временски клик"
 
-#: ../src/mt-main.c:633
-#| msgid "Orientation of the click-type window."
+#: src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Скрива прозорче врсте клика"
 
-#: ../src/mt-main.c:635
+#: src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Занемарује мале покрете показивача"
 
-#: ../src/mt-main.c:639
+#: src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Искључује подешавања миша"
 
-#: ../src/mt-main.c:641
+#: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Покреће подешавања миша као демона"
 
-#: ../src/mt-main.c:643
+#: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Покреће подешавања миша у режиму за пријаву"
 
 #. parse
-#: ../src/mt-main.c:661
+#: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "— Гномов управљачки програм за приступачност миша"
 
-#: ../src/mt-common.c:97
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Гашење није успело или нема шта да се угаси.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Гашење је успело.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Подешавања миша су већ покренута. (ПИБ %u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Покрећем демона.\n"
+
+#: src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Не могу да прикажем помоћ"
 
@@ -324,8 +341,8 @@ msgstr "Не могу да прикажем помоћ"
 #~ "„3“ = Доле)"
 
 #~ msgid ""
-#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2"
-#~ "\" = Up, \"3\" = Down)"
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
 #~ msgstr ""
 #~ "Смер да бисте извршили секундарни клик („0“ = Лево, „1“ = Десно, „2“ = "
 #~ "Горе, „3“ = Доле)"

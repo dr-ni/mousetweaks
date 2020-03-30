@@ -7,96 +7,95 @@
 # Claude Paroz <claude@2xlibre.net>, 2008-2011
 # Bruno Brouard <annoa.b@gmail.com>, 2008-2009,2011-12
 # Cyril Arnaud <cyril dot arnaud at gmail dot com>, 2010
-# Pierre Michel Augustin <augustinpierremichel@hotmail.com>, 2017 
+# Pierre Michel Augustin <augustinpierremichel@hotmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks.HEAD\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-10-15 06:57+0000\n"
-"PO-Revision-Date: 2017-10-25 20:03-0400\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2020-03-29 12:37+0000\n"
+"PO-Revision-Date: 2020-03-30 13:50-0400\n"
 "Last-Translator: Pierre Michel Augustin <augustinpierremichel@hotmail.com>\n"
 "Language-Team: GNOME Haitian Creole Team <augustinpierremichel@hotmail.com>\n"
 "Language: ht\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.2.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/mousetweaks.ui.h:1
+#: data/mousetweaks.ui:8
 msgid "Hover Click"
 msgstr "Klike sou"
 
-#: ../data/mousetweaks.ui.h:2
+#: data/mousetweaks.ui:56
 msgid "Single Click"
 msgstr "Yon sèl klik"
 
-#: ../data/mousetweaks.ui.h:3
+#: data/mousetweaks.ui:111
 msgid "Double Click"
 msgstr "De klik sou"
 
-#.
-#: ../data/mousetweaks.ui.h:5
+#. 'Drag' like in a Drag and Drop operation
+#: data/mousetweaks.ui:166
 msgid "Drag"
 msgstr "Rale"
 
-#: ../data/mousetweaks.ui.h:6
+#: data/mousetweaks.ui:221
 msgid "Secondary Click"
 msgstr "Dezyèm klik"
 
-#: ../data/mousetweaks.ui.h:7
+#: data/mousetweaks.ui:249
 msgid "Button Style"
 msgstr "Stil bouton"
 
-#: ../data/mousetweaks.ui.h:8
+#: data/mousetweaks.ui:257
 msgid "Text only"
 msgstr "Tèks sèlman"
 
-#: ../data/mousetweaks.ui.h:9
+#: data/mousetweaks.ui:267
 msgid "Icons only"
 msgstr "Ikòn sèlman"
 
-#: ../data/mousetweaks.ui.h:10
+#: data/mousetweaks.ui:277
 msgid "Text and Icons"
 msgstr "Tèks ak ikòn yo"
 
-#: ../data/mousetweaks.ui.h:11
+#: data/mousetweaks.ui:287
 msgid "Orientation"
 msgstr "Oryantasyon"
 
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:13
+#: data/mousetweaks.ui:295
 msgid "Horizontal"
 msgstr "Orizontal"
 
 #. Buttons are arranged from top to bottom in the layout
-#: ../data/mousetweaks.ui.h:15
+#: data/mousetweaks.ui:305
 msgid "Vertical"
 msgstr "Vètikal"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#: data/org.gnome.mousetweaks.gschema.xml:5
 msgid "Click-type window style"
 msgstr "Tip-klik stil fenèt"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: data/org.gnome.mousetweaks.gschema.xml:6
 msgid "Button style of the click-type window."
 msgstr "Mod bouton tip-klik fenèt la."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#: data/org.gnome.mousetweaks.gschema.xml:10
 msgid "Click-type window orientation"
 msgstr "Tip-klikoryantasyon fenèt"
 
 # BUG : same message as "Click-type window orientation" without the dot.
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
 msgstr "Oryantasyon fenèt Tip-klik la."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
 msgid "Click-type window geometry"
 msgstr " fenèt klik-tip jeometri"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+#: data/org.gnome.mousetweaks.gschema.xml:16
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
@@ -104,51 +103,69 @@ msgstr ""
 "Dimansyon ak pozisyon fenèt klik-tip la. Fòma a se yon fisèl jeometri sistèm "
 "fenèt X."
 
-#: ../src/mt-main.c:624
+#: src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Aktive klik rete"
 
-#: ../src/mt-main.c:626
+#: src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Aktive dezyèm klik imite a"
 
-#: ../src/mt-main.c:628
+#: src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Tan pou tann avan yon klik rete"
 
-#: ../src/mt-main.c:630
+#: src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tan pou tann avan yon dezyèm klik imite a"
 
-#: ../src/mt-main.c:632
+#: src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Mete an fonksyon mod rete"
 
-#: ../src/mt-main.c:634
+#: src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Kache fenèt klik-tip la"
 
-#: ../src/mt-main.c:636
+#: src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Neglije mouvman ti pwentè"
 
-#: ../src/mt-main.c:640
+#: src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Fèmen reglaj souri"
 
-#: ../src/mt-main.c:642
+#: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Kòmanse reglaj souri tankou yon sèvis"
 
-#: ../src/mt-main.c:644
+#: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Kòmanse reglaj souri nan mòd ouvri sesyon an"
 
 #. parse
-#: ../src/mt-main.c:662
+#: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME aksè sèvis souri"
 
-#: ../src/mt-common.c:97
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Arè echwe oswa pa gen anyen yo fèmen.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Arè reyisi.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "reglaj souri deja ap kouri. (PID% u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Kòmanse sèvis .\n"
+
+#: src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Echèk montre èd"

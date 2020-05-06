@@ -1,16 +1,18 @@
 # mousetweaks ja.po.
-# Copyright (c) 2007-2011 Rosetta Contributors and Canonical Ltd 2007
+# Copyright (c) 2007-2011, 2020 Rosetta Contributors and Canonical Ltd 2007
 # This file is distributed under the same license as the mousetweaks package.
 # keblo <keblo1@gmail.com>, 2007, 2008.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2008, 2009.
 # Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010, 2011.
+# EnjoySoftware <https://launchpad.net/~enjoysoftware>, 2020.
+# sicklylife <translation@sicklylife.jp>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
 "POT-Creation-Date: 2020-03-29 12:37+0000\n"
-"PO-Revision-Date: 2012-08-19 20:12+0900\n"
+"PO-Revision-Date: 2020-05-06 18:20+0900\n"
 "Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -75,7 +77,7 @@ msgstr "クリック種別のウィンドウのスタイル"
 
 #: data/org.gnome.mousetweaks.gschema.xml:6
 msgid "Button style of the click-type window."
-msgstr "クリック種別のウィンドウのボタンのスタイル。"
+msgstr "クリック種別のウィンドウのボタンのスタイルです。"
 
 #: data/org.gnome.mousetweaks.gschema.xml:10
 msgid "Click-type window orientation"
@@ -83,7 +85,7 @@ msgstr "クリック種別のウィンドウの方向"
 
 #: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
-msgstr "クリック種別のウィンドウの向き。"
+msgstr "クリック種別のウィンドウの向きです。"
 
 #: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
 msgid "Click-type window geometry"
@@ -94,8 +96,8 @@ msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
 msgstr ""
-"クリック種別のウィンドウの大きさと位置。形式は標準的な X ウィンドウの "
-"geometry 文字列です。"
+"クリック種別のウィンドウの大きさと位置です。形式は標準的な X ウィンドウ"
+"システムの geometry 文字列です。"
 
 #: src/mt-main.c:624
 msgid "Enable dwell click"
@@ -115,7 +117,7 @@ msgstr "副ボタンのクリックとみなすまでの時間を指定する"
 
 #: src/mt-main.c:632
 msgid "Set the active dwell mode"
-msgstr "アクティブな自動クリックモードを設定"
+msgstr "アクティブな自動クリックモードを設定する"
 
 #: src/mt-main.c:634
 msgid "Hide the click-type window"
@@ -131,38 +133,38 @@ msgstr "MouseTweaks デーモンを終了する"
 
 #: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
-msgstr "MouseTweaks をデーモンとして起動"
+msgstr "MouseTweaks をデーモンとして起動する"
 
 #: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
-msgstr "mousetweaks をログインモードで起動"
+msgstr "mousetweaks をログインモードで起動する"
 
 #. parse
 #: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- GNOME の マウスアクセシビリティデーモン"
+msgstr "- GNOME のマウスアクセシビリティデーモン"
 
 #: src/mt-main.c:814
 msgid "Shutdown failed or nothing to shut down.\n"
-msgstr ""
+msgstr "終了する対象がない、または終了に失敗しました。\n"
 
 #: src/mt-main.c:816
 msgid "Shutdown successful.\n"
-msgstr ""
+msgstr "終了に成功しました。\n"
 
 #. i18n: PID here means "Process Identifier"
 #: src/mt-main.c:824
 #, c-format
 msgid "Mousetweaks is already running. (PID %u)\n"
-msgstr ""
+msgstr "Mousetweaks はすでに実行中です (PID %u)。\n"
 
 #: src/mt-main.c:830
 msgid "Starting daemon.\n"
-msgstr ""
+msgstr "デーモンを開始しています。\n"
 
 #: src/mt-common.c:97
 msgid "Failed to Display Help"
-msgstr "ヘルプを表示できませんでした"
+msgstr "ヘルプの表示に失敗しました"
 
 #~ msgid ""
 #~ "Applet to select different dwell-click types.\n"
@@ -177,18 +179,12 @@ msgstr "ヘルプを表示できませんでした"
 #~ msgid "Drag Click"
 #~ msgstr "ドラッグクリック"
 
-#~ msgid "Right Click"
-#~ msgstr "右クリック"
-
 #~ msgid ""
 #~ "Area to lock the pointer on the panel.\n"
 #~ "Part of Mousetweaks"
 #~ msgstr ""
 #~ "パネル上のポインターをロックする領域。\n"
 #~ "Mousetweaks の一部"
-
-#~ msgid "C_trl"
-#~ msgstr "Ctrl(_T)"
 
 #~ msgid "Capture and Release Controls"
 #~ msgstr "コントロールの捕獲と解放"
@@ -200,31 +196,13 @@ msgstr "ヘルプを表示できませんでした"
 #~ msgstr "ポインターの捕獲の設定"
 
 #~ msgid "Selecting Button 0 will capture the pointer immediately"
-#~ msgstr "ボタン0を選択するとポインターをすぐに捕獲します"
+#~ msgstr "ボタン　0　を選択するとポインターをすぐに捕獲します"
 
 #~ msgid "Size of the Capture Area"
 #~ msgstr "捕獲エリアの大きさ"
 
-#~ msgid "_Alt"
-#~ msgstr "Alt(_A)"
-
-#~ msgid "_Mouse button:"
-#~ msgstr "マウスのボタン(_M):"
-
-#~ msgid "_Shift"
-#~ msgstr "Shift(_S)"
-
-#~ msgid "_Width:"
-#~ msgstr "幅(_W):"
-
-#~ msgid "pixels"
-#~ msgstr "ピクセル"
-
 #~ msgid "Control your desktop without using mouse buttons"
 #~ msgstr "マウスのボタンを使わずにデスクトップをコントロール"
-
-#~ msgid "Dwell Click Applet"
-#~ msgstr "自動クリックアプレット"
 
 #~ msgid "Area to lock the pointer"
 #~ msgstr "ポインターをロックするエリアです"
@@ -232,20 +210,8 @@ msgstr "ヘルプを表示できませんでした"
 #~ msgid "Pointer Capture Applet"
 #~ msgstr "ポインターの捕獲アプレット"
 
-#~ msgid "\"Alt\" keyboard modifier"
-#~ msgstr "\"Alt\" 修飾キー"
-
-#~ msgid "\"Control\" keyboard modifier"
-#~ msgstr "\"Ctrl\" 修飾キー"
-
-#~ msgid "\"Shift\" keyboard modifier"
-#~ msgstr "\"Shift\" 修飾キー"
-
-#~ msgid "Mouse button"
-#~ msgstr "マウスのボタン"
-
 #~ msgid "Mouse button used to capture or release the pointer."
-#~ msgstr "ポインターを捕獲したり解放するマウスのボタン。"
+#~ msgstr "ポインターを捕獲したり解放するマウスのボタンです。"
 
 #~ msgid "Size of capture area"
 #~ msgstr "捕獲エリアの大きさ"
@@ -261,18 +227,3 @@ msgstr "ヘルプを表示できませんでした"
 
 #~ msgid "Temporarily lock the mouse pointer"
 #~ msgstr "マウスのポインターを捕獲して一時的にロックします"
-
-#~ msgid "_Preferences"
-#~ msgstr "設定(_P)"
-
-#~ msgid "_Help"
-#~ msgstr "ヘルプ(_H)"
-
-#~ msgid "_About"
-#~ msgstr "情報(_A)"
-
-#~ msgid "Locked"
-#~ msgstr "ロック中"
-
-#~ msgid "Failed to Open the Universal Access Panel"
-#~ msgstr "ユニバーサル・アクセス・パネルを開けませんでした"

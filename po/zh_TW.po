@@ -7,139 +7,160 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweak 3.0.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-05 21:19+0800\n"
-"PO-Revision-Date: 2012-02-25 11:31+0800\n"
-"Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/"
+"issues\n"
+"POT-Creation-Date: 2020-03-29 12:37+0000\n"
+"PO-Revision-Date: 2020-05-25 01:25+0800\n"
+"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <zh-l10n@lists.linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
 
-#: ../data/mousetweaks.ui.h:1
-msgid "Button Style"
-msgstr "按鈕類型"
+#: data/mousetweaks.ui:8
+msgid "Hover Click"
+msgstr "停駐點擊"
 
-#: ../data/mousetweaks.ui.h:2
+#: data/mousetweaks.ui:56
+msgid "Single Click"
+msgstr "單次點擊"
+
+#: data/mousetweaks.ui:111
 msgid "Double Click"
 msgstr "雙點擊"
 
 #. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
+#: data/mousetweaks.ui:166
 msgid "Drag"
 msgstr "拖曳"
 
-#. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "水平"
-
-#: ../data/mousetweaks.ui.h:7
-msgid "Hover Click"
-msgstr "停駐點擊"
-
-#: ../data/mousetweaks.ui.h:8
-msgid "Icons only"
-msgstr "只有圖示"
-
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "方向"
-
-#: ../data/mousetweaks.ui.h:10
+#: data/mousetweaks.ui:221
 msgid "Secondary Click"
 msgstr "次要點擊"
 
-#: ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "單次點擊"
+#: data/mousetweaks.ui:249
+msgid "Button Style"
+msgstr "按鈕類型"
 
-#: ../data/mousetweaks.ui.h:12
-msgid "Text and Icons"
-msgstr "文字及圖示"
-
-#: ../data/mousetweaks.ui.h:13
+#: data/mousetweaks.ui:257
 msgid "Text only"
 msgstr "只有文字"
 
+#: data/mousetweaks.ui:267
+msgid "Icons only"
+msgstr "只有圖示"
+
+#: data/mousetweaks.ui:277
+msgid "Text and Icons"
+msgstr "文字及圖示"
+
+#: data/mousetweaks.ui:287
+msgid "Orientation"
+msgstr "方向"
+
+#. Buttons are arranged from left to right in the layout
+#: data/mousetweaks.ui:295
+msgid "Horizontal"
+msgstr "水平"
+
 #. Buttons are arranged from top to bottom in the layout
-#: ../data/mousetweaks.ui.h:15
+#: data/mousetweaks.ui:305
 msgid "Vertical"
 msgstr "垂直"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-msgid "Button style of the click-type window."
-msgstr "點擊類型視窗的按鈕樣式。"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2 ../src/mt-main.c:637
-msgid "Click-type window geometry"
-msgstr "點擊類型視窗位置大小"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-msgid "Click-type window orientation"
-msgstr "點擊類型視窗方向"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: data/org.gnome.mousetweaks.gschema.xml:5
 msgid "Click-type window style"
 msgstr "點擊類型視窗樣式"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+#: data/org.gnome.mousetweaks.gschema.xml:6
+msgid "Button style of the click-type window."
+msgstr "點擊類型視窗的按鈕樣式。"
+
+#: data/org.gnome.mousetweaks.gschema.xml:10
+msgid "Click-type window orientation"
+msgstr "點擊類型視窗方向"
+
+#: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
 msgstr "點擊類型視窗的方向。"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "點擊類型視窗位置大小"
+
+#: data/org.gnome.mousetweaks.gschema.xml:16
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
-msgstr "點擊類型視窗的大小和位置。格式為標準 X Window System 幾何位置字串。"
+msgstr ""
+"點擊類型視窗的大小和位置。格式為標準 X Window System 幾何位置字串。"
 
-#: ../src/mt-main.c:623
+#: src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "啟動替代點擊"
 
-#: ../src/mt-main.c:625
+#: src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "啟動模擬次要點擊"
 
-#: ../src/mt-main.c:627
+#: src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "在替代點擊之前等待的時間"
 
-#: ../src/mt-main.c:629
+#: src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "模擬次要點擊之前等待的時間"
 
-#: ../src/mt-main.c:631
+#: src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "設定要使用的替代點擊模式"
 
-#: ../src/mt-main.c:633
+#: src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "點擊類型視窗"
 
-#: ../src/mt-main.c:635
+#: src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "忽略微小的指標移動"
 
-#: ../src/mt-main.c:639
+#: src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "關閉 Mousetweaks"
 
-#: ../src/mt-main.c:641
+#: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
-msgstr "以伺服程式形式啟動 mousetweaks "
+msgstr "以伺服程式形式啟動 mousetweaks"
 
-#: ../src/mt-main.c:643
+#: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "以登入模式啟動 mousetweaks"
 
 #. parse
-#: ../src/mt-main.c:661
+#: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- GNOME 滑鼠無障礙功能伺服程式"
 
-#: ../src/mt-common.c:97
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "關閉失敗，或是沒有東西需要關閉。\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "關閉成功。\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks 已在執行中。(PID %u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "正在啟動伺服程式。\n"
+
+#: src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "無法顯示說明文件"
 

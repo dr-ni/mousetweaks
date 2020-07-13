@@ -8,11 +8,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetw"
-"eaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-06-22 10:48+0000\n"
-"PO-Revision-Date: 2015-06-22 19:58+0200\n"
-"Last-Translator: Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2020-07-05 10:36+0000\n"
+"PO-Revision-Date: 2020-07-13 14:59+0300\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Gnome Romanian Translation Team\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -20,81 +19,81 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 2.3.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/mousetweaks.ui.h:1
+#: data/mousetweaks.ui:8
 msgid "Hover Click"
 msgstr "Clic plutitor"
 
-#: ../data/mousetweaks.ui.h:2
+#: data/mousetweaks.ui:56
 msgid "Single Click"
 msgstr "Clic simplu"
 
-#: ../data/mousetweaks.ui.h:3
+#: data/mousetweaks.ui:111
 msgid "Double Click"
 msgstr "Clic dublu"
 
 #. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:5
+#: data/mousetweaks.ui:166
 msgid "Drag"
 msgstr "Trage"
 
-#: ../data/mousetweaks.ui.h:6
+#: data/mousetweaks.ui:221
 msgid "Secondary Click"
 msgstr "Clic secundar"
 
-#: ../data/mousetweaks.ui.h:7
+#: data/mousetweaks.ui:249
 msgid "Button Style"
 msgstr "Stil buton"
 
-#: ../data/mousetweaks.ui.h:8
+#: data/mousetweaks.ui:257
 msgid "Text only"
 msgstr "Doar text"
 
-#: ../data/mousetweaks.ui.h:9
+#: data/mousetweaks.ui:267
 msgid "Icons only"
 msgstr "Doar iconițe"
 
-#: ../data/mousetweaks.ui.h:10
+#: data/mousetweaks.ui:277
 msgid "Text and Icons"
 msgstr "Text și iconițe"
 
-#: ../data/mousetweaks.ui.h:11
+#: data/mousetweaks.ui:287
 msgid "Orientation"
 msgstr "Orientare"
 
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:13
+#: data/mousetweaks.ui:295
 msgid "Horizontal"
 msgstr "Orizontală"
 
 #. Buttons are arranged from top to bottom in the layout
-#: ../data/mousetweaks.ui.h:15
+#: data/mousetweaks.ui:305
 msgid "Vertical"
 msgstr "Verticală"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#: data/org.gnome.mousetweaks.gschema.xml:5
 msgid "Click-type window style"
 msgstr "Stilul ferestrei de tip clic"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: data/org.gnome.mousetweaks.gschema.xml:6
 msgid "Button style of the click-type window."
 msgstr "Stilul butoanelor ferestrei de tip clic."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#: data/org.gnome.mousetweaks.gschema.xml:10
 msgid "Click-type window orientation"
 msgstr "Orientarea ferestrei de tip clic"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
 msgstr "Orientarea ferestrei de tip clic."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
 msgid "Click-type window geometry"
 msgstr "Geometria ferestrei de tip clic"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+#: data/org.gnome.mousetweaks.gschema.xml:16
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
@@ -102,53 +101,70 @@ msgstr ""
 "Dimensiunea și poziția ferestrei de tip clic. Formatul este un șir de "
 "geometrie standard al Sistemului de ferestre X."
 
-#: ../src/mt-main.c:624
+#: src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Activează clicul staționar"
 
-#: ../src/mt-main.c:626
+#: src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Activează clicul secundar simulat"
 
-#: ../src/mt-main.c:628
+#: src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Timp de așteptare înainte de un clic staționar"
 
-#: ../src/mt-main.c:630
+#: src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Timp de așteptare înainte de un clic secundar simulat"
 
-#: ../src/mt-main.c:632
+#: src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Definește modul clicului staționar activ"
 
-#: ../src/mt-main.c:634
-#| msgid "Orientation of the click-type window."
+#: src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Ascunde ferestrei de tip clic"
 
-#: ../src/mt-main.c:636
+#: src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Ignoră mișcările minore ale indicatorului"
 
-#: ../src/mt-main.c:640
+#: src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Închide mousetweaks"
 
-#: ../src/mt-main.c:642
+#: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Pornește mousetweaks ca un serviciu de fundal"
 
-#: ../src/mt-main.c:644
+#: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Pornește mousetweaks în mod autentificare"
 
 #. parse
-#: ../src/mt-main.c:662
+#: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- serviciul GNOME de accesibilitate a mausului"
 
-#: ../src/mt-common.c:97
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Oprirea a eșuat sau nu este nimic de oprit.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Oprire cu succes.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks rulează deja. (PID %u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Se pornește serviciul.\n"
+
+#: src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Afișarea ajutorului a eșuat"
 

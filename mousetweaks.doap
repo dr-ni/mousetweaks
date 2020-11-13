@@ -28,14 +28,14 @@ panel of the GNOME Control Center.</description>
   <maintainer>
     <foaf:Person>
       <foaf:name>Francesco Fumanti</foaf:name>
-      <foaf:mbox rdf:resource="mailto:frfumanti@src.gnome.org" />
+      <foaf:mbox rdf:resource="mailto:francesco.fumanti@gmx.net" />
       <gnome:userid>frfumanti</gnome:userid>
     </foaf:Person>
   </maintainer>
   <maintainer>
     <foaf:Person>
       <foaf:name>Gerd Kohlberger</foaf:name>
-      <foaf:mbox rdf:resource="mailto:gerdk@src.gnome.org" />
+      <foaf:mbox rdf:resource="mailto:gerdko gmail com" />
       <gnome:userid>gerdk</gnome:userid>
     </foaf:Person>
   </maintainer>

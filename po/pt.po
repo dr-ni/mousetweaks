@@ -1,96 +1,95 @@
 # mousetweaks's Portuguese translation.
 # Copyright © 2008, 2009, 2010, 2011, 2012, 2013 mousetweaks
 # This file is distributed under the same license as the mousetweaks package.
-# 
-# Duarte Loreto <happyguy_pt@hotmail.com>, 2008, 2009, 2010, 2011, 2012, 2013., 2015.
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2008, 2009, 2010, 2011, 2012, 2013.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 3.8\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-06-07 22:47+0000\n"
-"PO-Revision-Date: 2015-06-17 11:34+0100\n"
-"Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
-"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2020-07-05 10:36+0000\n"
+"PO-Revision-Date: 2021-09-08 17:28+0100\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: Portuguese (https://l10n.gnome.org/teams/pt/)\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 3.0\n"
 
-#: ../data/mousetweaks.ui.h:1
+#: data/mousetweaks.ui:8
 msgid "Hover Click"
 msgstr "Clique ao pairar"
 
-#: ../data/mousetweaks.ui.h:2
+#: data/mousetweaks.ui:56
 msgid "Single Click"
 msgstr "Clique único"
 
-#: ../data/mousetweaks.ui.h:3
+#: data/mousetweaks.ui:111
 msgid "Double Click"
 msgstr "Clique duplo"
 
 #. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:5
+#: data/mousetweaks.ui:166
 msgid "Drag"
 msgstr "Arrastar"
 
-#: ../data/mousetweaks.ui.h:6
+#: data/mousetweaks.ui:221
 msgid "Secondary Click"
 msgstr "Clique secundário"
 
-#: ../data/mousetweaks.ui.h:7
+#: data/mousetweaks.ui:249
 msgid "Button Style"
 msgstr "Estilo do botão"
 
-#: ../data/mousetweaks.ui.h:8
+#: data/mousetweaks.ui:257
 msgid "Text only"
-msgstr "Só texto"
+msgstr "Apenas texto"
 
-#: ../data/mousetweaks.ui.h:9
+#: data/mousetweaks.ui:267
 msgid "Icons only"
-msgstr "Só ícones"
+msgstr "Apenas ícones"
 
-#: ../data/mousetweaks.ui.h:10
+#: data/mousetweaks.ui:277
 msgid "Text and Icons"
 msgstr "Texto e ícones"
 
-#: ../data/mousetweaks.ui.h:11
+#: data/mousetweaks.ui:287
 msgid "Orientation"
 msgstr "Orientação"
 
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:13
+#: data/mousetweaks.ui:295
 msgid "Horizontal"
 msgstr "Horizontal"
 
 #. Buttons are arranged from top to bottom in the layout
-#: ../data/mousetweaks.ui.h:15
+#: data/mousetweaks.ui:305
 msgid "Vertical"
 msgstr "Vertical"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#: data/org.gnome.mousetweaks.gschema.xml:5
 msgid "Click-type window style"
 msgstr "Estilo da janela de tipo de clique"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: data/org.gnome.mousetweaks.gschema.xml:6
 msgid "Button style of the click-type window."
 msgstr "Estilo do botão da janela de tipo de clique."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#: data/org.gnome.mousetweaks.gschema.xml:10
 msgid "Click-type window orientation"
 msgstr "Orientação da janela de tipo de clique"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
 msgstr "Orientação da janela de tipo de clique."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
 msgid "Click-type window geometry"
 msgstr "Geometria da janela de tipo de clique"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+#: data/org.gnome.mousetweaks.gschema.xml:16
 msgid ""
 "Size and position of the click-type window. The format is a standard X "
 "Window System geometry string."
@@ -98,52 +97,70 @@ msgstr ""
 "Tamanho e posição da janela de tipo de clique. O formato é uma expressão "
 "padrão de geometria do sistema de janelas X."
 
-#: ../src/mt-main.c:624
+#: src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Ativar o movimento-clique"
 
-#: ../src/mt-main.c:626
+#: src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Ativar um clique secundário simulado"
 
-#: ../src/mt-main.c:628
+#: src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Tempo a aguardar antes de um movimento-clique"
 
-#: ../src/mt-main.c:630
+#: src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Tempo a aguardar antes de um clique secundário simulado"
 
-#: ../src/mt-main.c:632
+#: src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Definir o modo de movimento-clique"
 
-#: ../src/mt-main.c:634
+#: src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Ocultar a janela de tipo de clique"
 
-#: ../src/mt-main.c:636
+#: src/mt-main.c:636
 msgid "Ignore small pointer movements"
-msgstr "Ignorar movimentos pequenos do ponteiro"
+msgstr "Ignorar movimentos pequenos do cursor"
 
-#: ../src/mt-main.c:640
+#: src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Desligar o mousetweaks"
 
-#: ../src/mt-main.c:642
+#: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Iniciar o mousetweaks como um daemon"
 
-#: ../src/mt-main.c:644
+#: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Iniciar o mousetweaks no modo de início de sessão"
 
 #. parse
-#: ../src/mt-main.c:662
+#: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- Daemon de acessibilidade do rato do GNOME"
 
-#: ../src/mt-common.c:97
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "O encerramento falhou ou nada para encerrar.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Encerramento com êxito.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "O mousetweaks já está em execução. (PID %u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "A iniciar o daemon.\n"
+
+#: src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Falha ao mostrar a ajuda"
 

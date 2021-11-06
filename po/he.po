@@ -6,139 +6,164 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-02 14:50+0200\n"
-"PO-Revision-Date: 2012-03-02 14:51+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2020-07-05 10:36+0000\n"
+"PO-Revision-Date: 2021-11-07 01:41+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: he\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Hebrew\n"
+"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3);\n"
 
-#: ../data/mousetweaks.ui.h:1
-msgid "Button Style"
-msgstr "סגנון הלחצנים"
+#: data/mousetweaks.ui:8
+msgid "Hover Click"
+msgstr "לחיצה במעבר מעל"
 
-#: ../data/mousetweaks.ui.h:2
+#: data/mousetweaks.ui:56
+msgid "Single Click"
+msgstr "לחיצה בודדת"
+
+#: data/mousetweaks.ui:111
 msgid "Double Click"
 msgstr "לחיצה כפולה"
 
 #. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:4
+#: data/mousetweaks.ui:166
 msgid "Drag"
 msgstr "גרירה"
 
-#. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:6
-msgid "Horizontal"
-msgstr "אופקי"
-
-#: ../data/mousetweaks.ui.h:7
-msgid "Hover Click"
-msgstr "לחיצה במעבר מעל"
-
-#: ../data/mousetweaks.ui.h:8
-msgid "Icons only"
-msgstr "סמלים בלבד"
-
-#: ../data/mousetweaks.ui.h:9
-msgid "Orientation"
-msgstr "כיווניות"
-
-#: ../data/mousetweaks.ui.h:10
+#: data/mousetweaks.ui:221
 msgid "Secondary Click"
 msgstr "לחיצה משנית"
 
-#: ../data/mousetweaks.ui.h:11
-msgid "Single Click"
-msgstr "לחיצה בודדת"
+#: data/mousetweaks.ui:249
+msgid "Button Style"
+msgstr "סגנון הלחצנים"
 
-#: ../data/mousetweaks.ui.h:12
-msgid "Text and Icons"
-msgstr "טקסט וסמלים"
-
-#: ../data/mousetweaks.ui.h:13
+#: data/mousetweaks.ui:257
 msgid "Text only"
 msgstr "טקסט בלבד"
 
+#: data/mousetweaks.ui:267
+msgid "Icons only"
+msgstr "סמלים בלבד"
+
+#: data/mousetweaks.ui:277
+msgid "Text and Icons"
+msgstr "טקסט וסמלים"
+
+#: data/mousetweaks.ui:287
+msgid "Orientation"
+msgstr "כיווניות"
+
+#. Buttons are arranged from left to right in the layout
+#: data/mousetweaks.ui:295
+msgid "Horizontal"
+msgstr "אופקי"
+
 #. Buttons are arranged from top to bottom in the layout
-#: ../data/mousetweaks.ui.h:15
+#: data/mousetweaks.ui:305
 msgid "Vertical"
 msgstr "אנכי"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
-msgid "Button style of the click-type window."
-msgstr "Button style of the click-type window."
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
-#: ../src/mt-main.c:637
-msgid "Click-type window geometry"
-msgstr "Click-type window geometry"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
-msgid "Click-type window orientation"
-msgstr "Click-type window orientation"
-
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: data/org.gnome.mousetweaks.gschema.xml:5
 msgid "Click-type window style"
 msgstr "Click-type window style"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
+#: data/org.gnome.mousetweaks.gschema.xml:6
+msgid "Button style of the click-type window."
+msgstr "Button style of the click-type window."
+
+#: data/org.gnome.mousetweaks.gschema.xml:10
+msgid "Click-type window orientation"
+msgstr "Click-type window orientation"
+
+#: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
 msgstr "Orientation of the click-type window."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
-msgid "Size and position of the click-type window. The format is a standard X Window System geometry string."
-msgstr "Size and position of the click-type window. The format is a standard X Window System geometry string."
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Click-type window geometry"
 
-#: ../src/mt-main.c:623
+#: data/org.gnome.mousetweaks.gschema.xml:16
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+
+#: src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "הפעלת לחיצת השהיה"
 
-#: ../src/mt-main.c:625
+#: src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Enable simulated secondary click"
 
-#: ../src/mt-main.c:627
+#: src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Time to wait before a dwell click"
 
-#: ../src/mt-main.c:629
+#: src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Time to wait before a simulated secondary click"
 
-#: ../src/mt-main.c:631
+#: src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Set the active dwell mode"
 
-#: ../src/mt-main.c:633
+#: src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Hide the click-type window"
 
-#: ../src/mt-main.c:635
+#: src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Ignore small pointer movements"
 
-#: ../src/mt-main.c:639
+#: src/mt-main.c:640
 msgid "Shut down mousetweaks"
-msgstr "Shut down mousetweaks"
+msgstr "כיבוי mousetweaks"
 
-#: ../src/mt-main.c:641
+#: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
-msgstr "Start mousetweaks as a daemon"
+msgstr "הפעלת mousetweaks כסוכן"
 
-#: ../src/mt-main.c:643
+#: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
-msgstr "Start mousetweaks in login mode"
+msgstr "הפעלת mousetweaks במצב מסך כניסה"
 
 #. parse
-#: ../src/mt-main.c:661
+#: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- GNOME mouse accessibility daemon"
+msgstr "- סוכן נגישות עכבר של GNOME"
 
-#: ../src/mt-common.c:97
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "הכיבוי נכשל או שאין מה לכבות.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "הכיבוי הצליח.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr ""
+"‫Mousetweaks כבר פעיל. (מזהה תהליך %u)\n"
+"‬\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "הסוכן מופעל.\n"
+
+#: src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "הצגת העזרה נכשלה"
 

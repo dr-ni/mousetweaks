@@ -10,142 +10,162 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ru\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-02-19 08:27+0000\n"
-"PO-Revision-Date: 2012-02-24 12:55+0300\n"
-"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2020-07-05 10:36+0000\n"
+"PO-Revision-Date: 2022-02-24 22:10+1000\n"
+"Last-Translator: Ser82-png <sw@atrus.ru>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Russian\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../data/mousetweaks.ui.h:1
+#: data/mousetweaks.ui:8
 msgid "Hover Click"
 msgstr "Щелчок при наведении"
 
-#: ../data/mousetweaks.ui.h:2
+#: data/mousetweaks.ui:56
 msgid "Single Click"
 msgstr "Одинарный щелчок"
 
-#: ../data/mousetweaks.ui.h:3
+#: data/mousetweaks.ui:111
 msgid "Double Click"
 msgstr "Двойной щелчок"
 
 #. 'Drag' like in a Drag and Drop operation
-#: ../data/mousetweaks.ui.h:5
+#: data/mousetweaks.ui:166
 msgid "Drag"
 msgstr "Перетаскивание"
 
-#: ../data/mousetweaks.ui.h:6
+#: data/mousetweaks.ui:221
 msgid "Secondary Click"
 msgstr "Вторичный щелчок"
 
-#: ../data/mousetweaks.ui.h:7
+#: data/mousetweaks.ui:249
 msgid "Button Style"
 msgstr "Стиль кнопок"
 
-#: ../data/mousetweaks.ui.h:8
+#: data/mousetweaks.ui:257
 msgid "Text only"
 msgstr "Только текст"
 
-#: ../data/mousetweaks.ui.h:9
+#: data/mousetweaks.ui:267
 msgid "Icons only"
 msgstr "Только значки"
 
-#: ../data/mousetweaks.ui.h:10
+#: data/mousetweaks.ui:277
 msgid "Text and Icons"
 msgstr "Текст и значки"
 
-#: ../data/mousetweaks.ui.h:11
+#: data/mousetweaks.ui:287
 msgid "Orientation"
 msgstr "Ориентация"
 
 #. Buttons are arranged from left to right in the layout
-#: ../data/mousetweaks.ui.h:13
+#: data/mousetweaks.ui:295
 msgid "Horizontal"
 msgstr "Горизонтальная"
 
 #. Buttons are arranged from top to bottom in the layout
-#: ../data/mousetweaks.ui.h:15
+#: data/mousetweaks.ui:305
 msgid "Vertical"
 msgstr "Вертикальная"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+#: data/org.gnome.mousetweaks.gschema.xml:5
 msgid "Click-type window style"
 msgstr "Стиль окна с типами щелчков"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+#: data/org.gnome.mousetweaks.gschema.xml:6
 msgid "Button style of the click-type window."
 msgstr "Стиль кнопок окна с типами щелчков."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+#: data/org.gnome.mousetweaks.gschema.xml:10
 msgid "Click-type window orientation"
 msgstr "Положение окна с типами щелчков"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+#: data/org.gnome.mousetweaks.gschema.xml:11
 msgid "Orientation of the click-type window."
 msgstr "Положение окна с типами щелчков."
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5
-#: ../src/mt-main.c:637
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
 msgid "Click-type window geometry"
 msgstr "Геометрия окна с типами щелчков"
 
-#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
-msgid "Size and position of the click-type window. The format is a standard X Window System geometry string."
-msgstr "Размер и положение окна с типами щелчков. "
+#: data/org.gnome.mousetweaks.gschema.xml:16
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Размер и положение окна с типами щелчков. Формат представляет собой "
+"стандартную строку геометрии X Window System."
 
-#: ../src/mt-main.c:623
+#: src/mt-main.c:624
 msgid "Enable dwell click"
 msgstr "Включить щелчок при удерживании"
 
-#: ../src/mt-main.c:625
+#: src/mt-main.c:626
 msgid "Enable simulated secondary click"
 msgstr "Включить симуляцию вторичного щелчка"
 
-#: ../src/mt-main.c:627
+#: src/mt-main.c:628
 msgid "Time to wait before a dwell click"
 msgstr "Задержка до щелчка при удерживании"
 
-#: ../src/mt-main.c:629
+#: src/mt-main.c:630
 msgid "Time to wait before a simulated secondary click"
 msgstr "Задержка до вторичного щелчка"
 
-#: ../src/mt-main.c:631
+#: src/mt-main.c:632
 msgid "Set the active dwell mode"
 msgstr "Установить активный режим удерживания"
 
-#: ../src/mt-main.c:633
-#| msgid "Orientation of the click-type window."
+#: src/mt-main.c:634
 msgid "Hide the click-type window"
 msgstr "Скрыть окно с типами щелчков"
 
-#: ../src/mt-main.c:635
+#: src/mt-main.c:636
 msgid "Ignore small pointer movements"
 msgstr "Игнорировать несущественные перемещения указателя"
 
-#: ../src/mt-main.c:639
+#: src/mt-main.c:640
 msgid "Shut down mousetweaks"
 msgstr "Выключить mousetweaks"
 
-#: ../src/mt-main.c:641
+#: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
 msgstr "Запустить mousetweaks как службу"
 
-#: ../src/mt-main.c:643
+#: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
 msgstr "Запустить mousetweaks в режиме входа в систему"
 
 #. parse
-#: ../src/mt-main.c:661
+#: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
 msgstr "— Служба дополнительных возможностей мыши среды GNOME"
 
-#: ../src/mt-common.c:97
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Завершение работы не удалось или ничего не нужно выключать.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Выключение успешно.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks уже запущено. (PID %u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Запуск фоновой службы.\n"
+
+#: src/mt-common.c:97
 msgid "Failed to Display Help"
 msgstr "Не удалось показать справку"
 

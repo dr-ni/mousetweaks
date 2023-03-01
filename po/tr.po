@@ -4,34 +4,35 @@
 # Emrah Ünal <eunall@gmail.com>, 2008.
 # Baris Cicek <baris@teamforce.name.tr>, 2008, 2009, 2011.
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2012, 2016.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2019.
+# Sabri Ünal <libreajans@gmail.com>, 2023.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2019, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
-"POT-Creation-Date: 2019-01-20 20:25+0000\n"
-"PO-Revision-Date: 2019-02-20 00:33+0300\n"
+"POT-Creation-Date: 2023-01-25 21:18+0000\n"
+"PO-Revision-Date: 2023-03-02 01:20+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 3.30.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: data/mousetweaks.ui:8
 msgid "Hover Click"
-msgstr "Durağan Tıklama"
+msgstr "Durağan Tık"
 
 #: data/mousetweaks.ui:56
 msgid "Single Click"
-msgstr "Tek Tıklama"
+msgstr "Tek Tık"
 
 #: data/mousetweaks.ui:111
 msgid "Double Click"
-msgstr "Çift Tıklama"
+msgstr "Çift Tık"
 
 #. 'Drag' like in a Drag and Drop operation
 #: data/mousetweaks.ui:166
@@ -40,7 +41,7 @@ msgstr "Sürükle"
 
 #: data/mousetweaks.ui:221
 msgid "Secondary Click"
-msgstr "İkincil Tıklama"
+msgstr "İkincil Tık"
 
 #: data/mousetweaks.ui:249
 msgid "Button Style"
@@ -126,28 +127,28 @@ msgstr "Tıklama türü penceresini gizle"
 
 #: src/mt-main.c:636
 msgid "Ignore small pointer movements"
-msgstr "Ufak belirteç hareketlerini yoksay"
+msgstr "Ufak belirteç hareketlerini yok say"
 
 #: src/mt-main.c:640
 msgid "Shut down mousetweaks"
-msgstr "Fare Ayarlayıcısını kapat"
+msgstr "Mousetweaks’i kapat"
 
 #: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
-msgstr "Mousetweaks'i hizmet olarak başlat"
+msgstr "Mousetweaks’i hizmet olarak başlat"
 
 #: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
-msgstr "Mousetweaks'i giriş kipinde başlat"
+msgstr "Mousetweaks’i giriş kipinde başlat"
 
 #. parse
 #: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- GNOME fare erişilebilirlik artalan süreci"
+msgstr "- GNOME fare erişilebilirlik hizmeti"
 
 #: src/mt-main.c:814
 msgid "Shutdown failed or nothing to shut down.\n"
-msgstr "Kapatma başarısız oldu ya da kapanacak bir şey yok.\n"
+msgstr "Kapatılamadı ya da kapanacak bir şey yok.\n"
 
 #: src/mt-main.c:816
 msgid "Shutdown successful.\n"
@@ -161,412 +162,8 @@ msgstr "Mousetweaks zaten çalışıyor. (PID %u)\n"
 
 #: src/mt-main.c:830
 msgid "Starting daemon.\n"
-msgstr "Artalan süreci başlıyor.\n"
+msgstr "Hizmet başlatılıyor.\n"
 
 #: src/mt-common.c:97
 msgid "Failed to Display Help"
-msgstr "Yardım Gösterimi Başarısız Oldu"
-
-#~ msgid ""
-#~ "Applet to select different dwell-click types.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "Farklı durağan tıklama türlerini seçecek uygulamacık.\n"
-#~ "MouseTweaks uygulamasının bir parçası"
-
-#~ msgid "Click Type Window"
-#~ msgstr "Tıklama Türü Penceresi"
-
-#~ msgid "Drag Click"
-#~ msgstr "Sürüklemeli Tıklama"
-
-#~ msgid "Right Click"
-#~ msgstr "Sağ Tıklama"
-
-#~ msgid ""
-#~ "Area to lock the pointer on the panel.\n"
-#~ "Part of Mousetweaks"
-#~ msgstr ""
-#~ "Fare imlecinin panel üzerinde dondurulduğu alan.\n"
-#~ "MouseTweaks uygulamasının parçası"
-
-#~ msgid "C_trl"
-#~ msgstr "C_trl"
-
-#~ msgid "Capture and Release Controls"
-#~ msgstr "Yakalama ve Bırakma Kontrolleri"
-
-#~ msgid "Keyboard modifier:"
-#~ msgstr "Klavye değiştirgesi:"
-
-#~ msgid "Pointer Capture Preferences"
-#~ msgstr "İmleç Yakalama Tercihleri"
-
-#~ msgid "Selecting Button 0 will capture the pointer immediately"
-#~ msgstr "Düğme 0 seçildiğinde imleç hemen yakalanacaktır"
-
-#~ msgid "Size of the Capture Area"
-#~ msgstr "Yakalama Alanının Büyüklüğü"
-
-#~ msgid "_Alt"
-#~ msgstr "_Alt"
-
-#~ msgid "_Mouse button:"
-#~ msgstr "_Fare düğmesi:"
-
-#~ msgid "_Shift"
-#~ msgstr "_Üst Karakter (Shift)"
-
-#~ msgid "_Width:"
-#~ msgstr "_Genişlik:"
-
-#~ msgid "pixels"
-#~ msgstr "piksel"
-
-#~ msgid "Control your desktop without using mouse buttons"
-#~ msgstr "Masaüstünüzü fare düğmelerini kullanmadan kontrol edin"
-
-#~ msgid "Dwell Click Applet"
-#~ msgstr "Durağan Tıklama Uygulamacığı"
-
-#~ msgid "Area to lock the pointer"
-#~ msgstr "İmleci kilitleyecek alan"
-
-#~ msgid "Pointer Capture Applet"
-#~ msgstr "İmleç Yakalama Uygulamacığı"
-
-#~ msgid "\"Alt\" keyboard modifier"
-#~ msgstr "\"Alt\" klavye değiştirici"
-
-#~ msgid "\"Control\" keyboard modifier"
-#~ msgstr "\"Control\" klavy değiştirici"
-
-#~ msgid "\"Shift\" keyboard modifier"
-#~ msgstr "\"Üst karakter\" klavye değiştirici"
-
-#~ msgid "Mouse button"
-#~ msgstr "Fare düğmesi"
-
-#~ msgid "Mouse button used to capture or release the pointer."
-#~ msgstr ""
-#~ "İşaretçiyi yakalamak ya da serbest bırakmak için kullanılan fare düğmesi."
-
-#~ msgid "Size of capture area"
-#~ msgstr "Yakalama alanının büyüklüğü"
-
-#~ msgid "Width of the capture area in pixels."
-#~ msgstr "Yakalama alanının piksel cinsinden genişliği."
-
-#~ msgid "Show a click-type window"
-#~ msgstr "Tıklama türü penceresi göster"
-
-#~ msgid "Capture area"
-#~ msgstr "Yakalama alanı"
-
-#~ msgid "Temporarily lock the mouse pointer"
-#~ msgstr "İmleci geçici olarak kilitle"
-
-#~ msgid "_Preferences"
-#~ msgstr "_Tercihler"
-
-#~ msgid "_Help"
-#~ msgstr "_Yardım"
-
-#~ msgid "_About"
-#~ msgstr "_Hakkında"
-
-#~ msgid "Locked"
-#~ msgstr "Kilitli"
-
-#~ msgid "Failed to Open the Universal Access Panel"
-#~ msgstr "Evrensel Erişim Paneli açılması başarısız"
-
-#~ msgid "Dwell Click"
-#~ msgstr "Durağan Tıklama"
-
-#~ msgid "Select dwelling click type"
-#~ msgstr "Durağan tıklama türünü seçiniz"
-
-#~ msgid "Pointer Capture"
-#~ msgstr "İmleç Yakalama"
-
-#~ msgid "Animate cursor"
-#~ msgstr "İmleci canlandır"
-
-#~ msgid ""
-#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
-#~ "Both)"
-#~ msgstr ""
-#~ "Tıklama türü penceresindeki düğme biçemi (\"0\" = Yazı, \"1\" = Simge, "
-#~ "\"2\" = Her İkisi)"
-
-#~ msgid ""
-#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
-#~ "Up, \"3\" = Down)"
-#~ msgstr ""
-#~ "Çift tıklama yapmak için izlenecek yön (\"0\" = Sol, \"1\" = Sağ, \"2\" = "
-#~ "Yukarı, \"3\" = Aşağı)"
-
-#~ msgid ""
-#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
-#~ "Up, \"3\" = Down)"
-#~ msgstr ""
-#~ "Sürüklemeli·tıklama·yapmak·için·izlenecek·yön·(\"0\" = Sol,·\"1\" = Sağ,·"
-#~ "\"2\" = Yukarı,·\"3\" = Aşağı)"
-
-#~ msgid ""
-#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
-#~ "\"2\" = Up, \"3\" = Down)"
-#~ msgstr ""
-#~ "İkincil bir·tıklama·yapmak·için·izlenecek·yön·(\"0\" = Sol,·\"1\" = Sağ,·"
-#~ "\"2\" = Yukarı,·\"3\" = Aşağı)"
-
-#~ msgid ""
-#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
-#~ "Up, \"3\" = Down)"
-#~ msgstr ""
-#~ "Tek bir·tıklama·yapmak·için·izlenecek·yön·(\"0\" = Sol,·\"1\" = Sağ,·"
-#~ "\"2\" = Yukarı,·\"3\" = Aşağı)"
-
-#~ msgid "Distance in pixels before movement will be recognized"
-#~ msgstr "Hareketin tanınmasından önceki piksel cinsinden uzaklık"
-
-#~ msgid "Dwell click mode"
-#~ msgstr "Durağan tıklama kipi"
-
-#~ msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
-#~ msgstr "Durağan tıklama kipi (\"0\" = Hareket kipi, \"1\" = Pencere kipi)"
-
-#~ msgid "Dwell click time"
-#~ msgstr "Durağan tıklama süresi"
-
-#~ msgid "Enable secondary click"
-#~ msgstr "İkincil tıklamayı etkinleştir"
-
-#~ msgid "Gesture double click"
-#~ msgstr "Hareket tetikleyicili çift tıklama"
-
-#~ msgid "Gesture drag click"
-#~ msgstr "Hareket tetikleyicili sürüklemeli tıklama"
-
-#~ msgid "Gesture secondary click"
-#~ msgstr "Hareket tetikleyicili ikincil tıklama"
-
-#~ msgid "Gesture single click"
-#~ msgstr "Hareket tetikleyicili tek tıklama"
-
-#~ msgid "Movement threshold"
-#~ msgstr "Hareket eşiği"
-
-#~ msgid "Show elapsed time as cursor overlay."
-#~ msgstr "İmleç üzerindeyken geçen zamanı göster."
-
-#~ msgid "Time in seconds before a click is triggered"
-#~ msgstr "Tıklama tetiklenmeden önceki saniye cinsinden süre"
-
-#~ msgid "Time in seconds before a secondary click is triggered"
-#~ msgstr "İkincil tıklama tetiklenmeden önceki saniye cinsinden süre"
-
-#~ msgid "Capture pointer only if Alt is pressed"
-#~ msgstr "Belirteci sadece Alt basılı iken yakala"
-
-#~ msgid "Capture pointer only if Ctrl is pressed"
-#~ msgstr "Belirteci sadece Ctrl basılı iken yakala"
-
-#~ msgid "Capture pointer only if Shift is pressed"
-#~ msgstr "Belirteci sadece Shift basılı iken yakala"
-
-#~ msgid "Mouse button used to release the pointer"
-#~ msgstr "Berliteci bırakmak için kullanılacak fare düğmesi"
-
-#~ msgid "Release pointer only if Alt is pressed"
-#~ msgstr "Belirteci sadece Alt basılı iken bırak"
-
-#~ msgid "Release pointer only if Ctrl is pressed"
-#~ msgstr "Belirteci sadece Ctrl basılı iken bırak"
-
-#~ msgid "Release pointer only if Shift is pressed"
-#~ msgstr "Belirteci sadece Shift basılı iken bırak"
-
-#~ msgid ""
-#~ "This mouse button must be pressed to release the pointer from the capture "
-#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
-#~ "and \"3\" for right button."
-#~ msgstr ""
-#~ "Bu fare düğmesi yakalama alanından belirteci bırakmak için basılı "
-#~ "olmalıdır. Geçerli değerler \"1\" sol düğme için, \"2\" orta düğme için, "
-#~ "ve \"3\" sağ düğme için."
-
-#~ msgid ""
-#~ "This mouse button must be pressed while the pointer is over the capture "
-#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
-#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
-#~ "right button."
-#~ msgstr ""
-#~ "Bu fare düğmesi yakalama alanında belirteci yakalamak için basılı "
-#~ "olmalıdır. Geçerli değerler \"0\" düğme gerekmiyorsa, \"1\" sol düğme "
-#~ "için, \"2\" orta düğme için, ve \"3\" sağ düğme için."
-
-#~ msgid ""
-#~ "Whether the Alt key must be pressed for the pointer to be captured while "
-#~ "it's over the capture area. If this option is set as true, and a mouse "
-#~ "button is set in the \"capture_button\" key, then the Alt key must be "
-#~ "pressed while the mouse button is pressed."
-#~ msgstr ""
-#~ "Yakalama alanı üzerinde belirtecin takalanması için Alt tuşunun basılı "
-#~ "olması. Eğer bu seçenek true ise ve bir \"custom_button\" anahtarında bir "
-#~ "fare düğmesi atanmışsa, Alt tuşu fare düğmesi basılıyken basılı olmalıdır."
-
-#~ msgid ""
-#~ "Whether the Alt key must be pressed with the mouse button set in "
-#~ "\"release_button\" for the pointer to be released from the capture area."
-#~ msgstr ""
-#~ "Belirtecin yakalama alanından bırakılması için \"release_button\" içinde "
-#~ "atanmış fare düğmesi ile Alt tuşunun basılması."
-
-#~ msgid ""
-#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
-#~ "it's over the capture area. If this option is set as true, and a mouse "
-#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
-#~ "pressed while the mouse button is pressed."
-#~ msgstr ""
-#~ "Yakalama alanı üzerinde belirtecin takalanması için Ctrl tuşunun basılı "
-#~ "olması. Eğer bu seçenek true ise ve bir \"custom_button\" anahtarında bir "
-#~ "fare düğmesi atanmışsa, Ctrl tuşu fare düğmesi basılıyken basılı "
-#~ "olmalıdır."
-
-#~ msgid ""
-#~ "Whether the Ctrl key must be pressed with the mouse button set in "
-#~ "\"release_button\" for the pointer to be released from the capture area."
-#~ msgstr ""
-#~ "Belirtecin yakalama alanından bırakılması için \"release_button\" içinde "
-#~ "atanmış fare düğmesi ile Ctrl tuşunun basılması."
-
-#~ msgid ""
-#~ "Whether the Shift key must be pressed for the pointer to be captured "
-#~ "while it's over the capture area. If this option is set as true, and a "
-#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
-#~ "must be pressed while the mouse button is pressed."
-#~ msgstr ""
-#~ "Yakalama alanı üzerinde belirtecin takalanması için Shift tuşunun basılı "
-#~ "olması. Eğer bu seçenek true ise ve bir \"custom_button\" anahtarında bir "
-#~ "fare düğmesi atanmışsa, Shift tuşu fare düğmesi basılıyken basılı "
-#~ "olmalıdır."
-
-#~ msgid ""
-#~ "Whether the Shift key must be pressed with the mouse button set in "
-#~ "\"release_button\" for the pointer to be released from the capture area."
-#~ msgstr ""
-#~ "Belirtecin yakalama alanından bırakılması için \"release_button\" içinde "
-#~ "atanmış fare düğmesi ile Shift tuşunun basılması."
-
-#~ msgid "Assistive Technology Support is not Enabled"
-#~ msgstr "Yardımcı Teknoloji Desteği Etkin Değil"
-
-#~ msgid ""
-#~ "Mousetweaks requires assistive technologies to be enabled in your "
-#~ "session.\n"
-#~ "\n"
-#~ "To enable support for assistive technologies and restart your session, "
-#~ "press \"Enable and Log Out\"."
-#~ msgstr ""
-#~ "Mousetweaks oturumunuzda yardım teknolojilerin etkin olmasını "
-#~ "gerektiriyor.\n"
-#~ "\n"
-#~ "Yardımcı teknoloji desteğini etkinleştirmek ve oturumu yeniden başlatmak "
-#~ "için \"Etkinleştir ve Çıkış Yap\"a basın."
-
-#~ msgid "Dwell mode to use"
-#~ msgstr "Kullanılacak durağan tıklama kipi"
-
-#~ msgid "Window x position"
-#~ msgstr "Pencere x konumu"
-
-#~ msgid "Window y position"
-#~ msgstr "Pencere y konumu"
-
-#~ msgid "Show elapsed time as cursor overlay"
-#~ msgstr "İmleç üzerindeyken geçen zamanı göster"
-
-#~ msgid "Enable and Log Out"
-#~ msgstr "Etkinleştir ve Çıkış Yap"
-
-#~ msgid "L"
-#~ msgstr "K"
-
-#~ msgid "Failed to Launch Mouse Preferences"
-#~ msgstr "Fare Tercihleri Başlatılırken Başarısız Olundu"
-
-#~ msgid "On"
-#~ msgstr "Açık"
-
-#~ msgid "<b>Capture Pointer</b>"
-#~ msgstr "<b>İmleci Yakala</b>"
-
-#~ msgid "<b>Release Pointer</b>"
-#~ msgstr "<b>İmleci Bırak</b>"
-
-#~ msgid "<b>Size of Capture Area</b>"
-#~ msgstr "<b>Yakalama Alanının Büyüklüğü</b>"
-
-#~ msgid "A_lt"
-#~ msgstr "A_lt"
-
-#~ msgid "Ct_rl"
-#~ msgstr "Ct_rl"
-
-#~ msgid "Modifier:"
-#~ msgstr "Değiştirici:"
-
-#~ msgid "Mouse b_utton:"
-#~ msgstr "Fare _düğmesi:"
-
-#~ msgid "Sh_ift"
-#~ msgstr "Sh_ift"
-
-#~ msgid "Dwell Click Type"
-#~ msgstr "Durağan Tıklama Türü"
-
-#~ msgid "Show Icons and Text"
-#~ msgstr "Simge ve Yazıları Göster"
-
-#~ msgid "Capture modifier key (Alt)"
-#~ msgstr "Yakalama değiştirici tuş (Alt)"
-
-#~ msgid "Capture modifier key (Ctrl)"
-#~ msgstr "Yakalama değiştirici tuş (Ctrl)"
-
-#~ msgid "Capture modifier key (Shift)"
-#~ msgstr "Yakalama değiştirici tuş (Shift)"
-
-#~ msgid "Capture mouse button"
-#~ msgstr "Fare düğmesini yakala"
-
-#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
-#~ msgstr "İmleci yakalayacak fare düğmesi (\"0\" = Hemen yakala)"
-
-#~ msgid "Release modifier key (Alt)"
-#~ msgstr "Bırakma değiştirici tuş (Alt)"
-
-#~ msgid "Release modifier key (Ctrl)"
-#~ msgstr "Bırakma değiştirici tuş (Ctrl)"
-
-#~ msgid "Release modifier key (Shift)"
-#~ msgstr "Bırakma değiştirici tuş (Shift)"
-
-#~ msgid "Release mouse button"
-#~ msgstr "Fare düğmesini bırak"
-
-#~ msgid "Off"
-#~ msgstr "Kapalı"
-
-#~ msgid "B_utton:"
-#~ msgstr "_Düğme:"
-
-#~ msgid "_Button:"
-#~ msgstr "_Düğme:"
-
-#~ msgid "Mousetweaks requires Assistive Technologies."
-#~ msgstr ""
-#~ "Fare Ayarlayıcının çalışabilmesi için Yardımcı Teknoloji Desteği "
-#~ "gerekmektedir."
+msgstr "Yardım Gösterilemedi"

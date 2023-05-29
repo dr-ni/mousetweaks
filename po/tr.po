@@ -1,6 +1,7 @@
 # Turkish translation of MouseTweaks,
-# Copyright (C) 2008 THE MouseTweak'S COPYRIGHT HOLDER
+# Copyright (C) 2008-2023 MouseTweak'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the MouseTweaks package.
+#
 # Emrah Ünal <eunall@gmail.com>, 2008.
 # Baris Cicek <baris@teamforce.name.tr>, 2008, 2009, 2011.
 # Muhammet Kara <muhammetk@gmail.com>, 2011, 2012, 2016.
@@ -10,21 +11,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
-"POT-Creation-Date: 2023-01-25 21:18+0000\n"
-"PO-Revision-Date: 2023-03-02 01:20+0300\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
-"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/"
+"issues\n"
+"POT-Creation-Date: 2023-03-01 22:28+0000\n"
+"PO-Revision-Date: 2023-05-27 00:17+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Türkçe <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: data/mousetweaks.ui:8
 msgid "Hover Click"
-msgstr "Durağan Tık"
+msgstr "Durağan Tık"
 
 #: data/mousetweaks.ui:56
 msgid "Single Click"
@@ -135,7 +137,7 @@ msgstr "Mousetweaks’i kapat"
 
 #: src/mt-main.c:642
 msgid "Start mousetweaks as a daemon"
-msgstr "Mousetweaks’i hizmet olarak başlat"
+msgstr "Mousetweaks’i art alan hizmeti olarak başlat"
 
 #: src/mt-main.c:644
 msgid "Start mousetweaks in login mode"
@@ -144,7 +146,7 @@ msgstr "Mousetweaks’i giriş kipinde başlat"
 #. parse
 #: src/mt-main.c:662
 msgid "- GNOME mouse accessibility daemon"
-msgstr "- GNOME fare erişilebilirlik hizmeti"
+msgstr "- GNOME fare erişilebilirlik art alan hizmeti"
 
 #: src/mt-main.c:814
 msgid "Shutdown failed or nothing to shut down.\n"
@@ -162,7 +164,7 @@ msgstr "Mousetweaks zaten çalışıyor. (PID %u)\n"
 
 #: src/mt-main.c:830
 msgid "Starting daemon.\n"
-msgstr "Hizmet başlatılıyor.\n"
+msgstr "Art alan hizmeti başlatılıyor.\n"
 
 #: src/mt-common.c:97
 msgid "Failed to Display Help"

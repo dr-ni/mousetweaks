@@ -16,6 +16,12 @@ Description:
     The features can be activated and configured through the Universal Access
     panel of the GNOME Control Center.
 
+Build:
+    ./autogen.sh
+    ./configure
+    make
+    sudo make install
+
 Homepage:
 
     https://wiki.gnome.org/Projects/Mousetweaks

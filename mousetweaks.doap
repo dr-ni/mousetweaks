@@ -1,0 +1,43 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+
+  <name xml:lang="en">mousetweaks</name>
+  <shortdesc xml:lang="en">Mouse accessibility enhancements</shortdesc>
+  <category rdf:resource="http://api.gnome.org/doap-extensions#core" />
+  <description>Mousetweaks provides mouse accessibility enhancements for the GNOME
+desktop. These enhancements are:
+
+- It offers a way to perform the various clicks without using any
+physical mouse buttons. (Hover Click)
+
+- It allows users to perform a secondary click by keeping the primary
+mouse button pressed for a predetermined amount of time. (Simulated
+Secondary Click)
+
+The features can be activated and configured through the Universal Access
+panel of the GNOME Control Center.</description>
+  <homepage rdf:resource="https://wiki.gnome.org/Projects/Mousetweaks" />
+  <download-page rdf:resource="http://download.gnome.org/sources/mousetweaks/" />
+  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/mousetweaks/issues/" />
+  <category rdf:resource="http://api.gnome.org/doap-extensions#core" />
+  <programming-language>C</programming-language>
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Francesco Fumanti</foaf:name>
+      <foaf:mbox rdf:resource="mailto:francesco.fumanti@gmx.net" />
+      <gnome:userid>frfumanti</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Gerd Kohlberger</foaf:name>
+      <foaf:mbox rdf:resource="mailto:gerdko gmail com" />
+      <gnome:userid>gerdk</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+
+</Project>

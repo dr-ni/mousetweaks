@@ -1,0 +1,149 @@
+# Scottish Gaelic translation for mousetweaks.
+# Copyright (C) 2014 mousetweaks's COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousetweaks package.
+# GunChleoc <fios@foramnagaidhlig.net>, 2014, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mouset"
+"weaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-05-05 13:27+0000\n"
+"PO-Revision-Date: 2018-02-23 09:24+0100\n"
+"Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
+"Language-Team: Fòram na Gàidhlig\n"
+"Language: gd\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "Fan os a chionn ’s briog"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Aon bhriogadh"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Briogadh dùbailte"
+
+#.
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Slaodadh"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "Briogadh dàrnach"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Stoidhle putain"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Teacsa a-mhàin"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Ìomhaigheagan a-mhàin"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "Teacsa agus ìomhgaigheagan"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Comhair"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Còmhnard"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Inghearach"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Stoidhle na h-uinneige briogaidh"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "Stoidhle nam putan aig an uinneag briogaidh."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Comhair na h-uinneige briogaidh"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "A’ chomhair aig an uinneag briogaidh."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Geomatraidh na h-uinneige briogaidh"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Meud agus ionad aig an uinneag briogaidh. ’S e sreang geomatraidh "
+"stannardach aig an t-siostam X Windows a tha san fhòrmat."
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Cuir an comas briogadh le fuireach"
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Cuir an comas briogadh dàrnach mas-fhìor"
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "An ùine feitheimh ro bhriogadh le fuireach"
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "An ùine feitheimh ro bhriogadh dàrnach mas-fhìor"
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Suidhich am modh briogadh le fuireach gnìomhach"
+
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Falaich an uinneag briogaidh"
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Leig seachad gluasadan beaga an tomhaire"
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Fàg mousetweaks"
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Tòisich mousetweaks na dheamhan"
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Tòisich mousetweaks sa mhodh logaidh a-steach"
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Deamhan so-ruigsinneachd luchaige aig GNOME"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Dh’fhàillig le sealltainn na cobharach"

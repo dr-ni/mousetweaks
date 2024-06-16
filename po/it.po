@@ -1,0 +1,167 @@
+# Italian language file for mousetweaks.
+# Copyright (C) 2007, 2008, 2009, 2010, 2012, 2019 The Free Software Foundation.
+# This file is distributed under the same license as the mousetweaks package.
+# Francesco Fumanti <francesco.fumanti@gmx.net>, 2007.
+# Luca Ferretti <elle.uca@libero.it>, 2008
+#
+# Milo Casagrande <milo@ubuntu.com>, 2008-2009, 2009, 2010, 2012, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2019-01-13 10:26+0000\n"
+"PO-Revision-Date: 2019-02-28 15:33+0100\n"
+"Last-Translator: Milo Casagrande <milo@milo.name>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#: data/mousetweaks.ui:8
+msgid "Hover Click"
+msgstr "Clic automatico"
+
+#: data/mousetweaks.ui:56
+msgid "Single Click"
+msgstr "Clic singolo"
+
+#: data/mousetweaks.ui:111
+msgid "Double Click"
+msgstr "Doppio-clic"
+
+#. 'Drag' like in a Drag and Drop operation
+#: data/mousetweaks.ui:166
+msgid "Drag"
+msgstr "Trascina"
+
+#: data/mousetweaks.ui:221
+msgid "Secondary Click"
+msgstr "Clic secondario"
+
+#: data/mousetweaks.ui:249
+msgid "Button Style"
+msgstr "Stile dei pulsanti"
+
+#: data/mousetweaks.ui:257
+msgid "Text only"
+msgstr "Solo testo"
+
+#: data/mousetweaks.ui:267
+msgid "Icons only"
+msgstr "Solo icone"
+
+#: data/mousetweaks.ui:277
+msgid "Text and Icons"
+msgstr "Testo e icone"
+
+#: data/mousetweaks.ui:287
+msgid "Orientation"
+msgstr "Orientamento"
+
+#. Buttons are arranged from left to right in the layout
+#: data/mousetweaks.ui:295
+msgid "Horizontal"
+msgstr "Orizzontale"
+
+#. Buttons are arranged from top to bottom in the layout
+#: data/mousetweaks.ui:305
+msgid "Vertical"
+msgstr "Verticale"
+
+#: data/org.gnome.mousetweaks.gschema.xml:5
+msgid "Click-type window style"
+msgstr "Stile finestra per tipo di clic"
+
+#: data/org.gnome.mousetweaks.gschema.xml:6
+msgid "Button style of the click-type window."
+msgstr "Stile dei pulsanti della finestra per il tipo di clic."
+
+#: data/org.gnome.mousetweaks.gschema.xml:10
+msgid "Click-type window orientation"
+msgstr "Orientamento finestra per tipo di clic"
+
+#: data/org.gnome.mousetweaks.gschema.xml:11
+msgid "Orientation of the click-type window."
+msgstr "L'orientamento della finestra per il tipo di clic."
+
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Geometria finestra per tipo di clic"
+
+#: data/org.gnome.mousetweaks.gschema.xml:16
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Dimensione e posizione della finestra per il tipo di clic. Il formato è la "
+"classica stringa di geometria di X Window System."
+
+#: src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Abilita il clic automatico"
+
+#: src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Abilita il clic secondario simulato"
+
+#: src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "Tempo di attesa prima di un clic automatico"
+
+#: src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "Tempo di attesa prima di un clic secondario"
+
+#: src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Imposta la modalità attiva del clic automatico"
+
+#: src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Nasconde la finestra per il tipo di clic"
+
+#: src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Ignora movimenti piccoli del puntatore"
+
+#: src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Arresta mousetweaks"
+
+#: src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Avvia il programma come un demone"
+
+# (ndt) login o accesso?
+#: src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Avvia il programma in modalità login"
+
+#. parse
+#: src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Demone GNOME accessibilità mouse"
+
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Arresto non riuscito o nulla da arrestare.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Arresto riuscito.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks è già in esecuzione (PID %u).\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Avvio demone.\n"
+
+#: src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Visualizzazione dell'aiuto non riuscita"

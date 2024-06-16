@@ -1,0 +1,531 @@
+# Vietnamese translation for MouseTweaks.
+# Copyright © 2009 GNOME i18n Project for Vietnamese.
+# Clytie Siddall <clytie@riverland.net.au>, 2008-2009.
+# Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2010, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks TRUNK\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-19 08:27+0000\n"
+"PO-Revision-Date: 2012-07-02 15:00+0700\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.8\n"
+
+#: ../data/mousetweaks.ui.h:1
+#| msgid "Double Click"
+msgid "Hover Click"
+msgstr "Nhấn huơ chuột"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Nhấn đơn"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Nhấn đúp"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Kéo"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "Nhấn phụ"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Kiểu nút"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Chỉ chữ"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Chỉ hình"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "Hình và chữ"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Hướng"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Ngang"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Dọc"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Kiểu cửa sổ kiểu nhấn"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "Hiện cửa sổ kiểu nhấn"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Hướng cửa sổ kiểu nhấn"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "Hướng cửa sổ kiểu nhấn."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "Vị trí cửa sổ kiểu nhấn"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Kích thước và vị trí của cửa sổ kiểu nhấn, theo định dạng chuỗi toạ độ chuẩn "
+"của X."
+
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Bật nhấn giữ"
+
+#: ../src/mt-main.c:625
+msgid "Enable simulated secondary click"
+msgstr "Hiệu lực cú nhấn phụ mô phỏng"
+
+#: ../src/mt-main.c:627
+msgid "Time to wait before a dwell click"
+msgstr "Thời gian đợi cú nhấn giữ"
+
+#: ../src/mt-main.c:629
+msgid "Time to wait before a simulated secondary click"
+msgstr "Khoảng thời gian cần đợi trước một cú nhấn phụ mô phỏng."
+
+#: ../src/mt-main.c:631
+msgid "Set the active dwell mode"
+msgstr "Đặt chế độ huơ hoạt động"
+
+#: ../src/mt-main.c:633
+#| msgid "Orientation of the click-type window."
+msgid "Hide the click-type window"
+msgstr "Ẩn cửa số kiểu nhấn"
+
+#: ../src/mt-main.c:635
+msgid "Ignore small pointer movements"
+msgstr "Bỏ qua sự chuyển động nhỏ của con trỏ "
+
+#: ../src/mt-main.c:639
+msgid "Shut down mousetweaks"
+msgstr "Tắt mousetweaks"
+
+#: ../src/mt-main.c:641
+msgid "Start mousetweaks as a daemon"
+msgstr "Khởi chạy mousetweaks dạng trình nền"
+
+#: ../src/mt-main.c:643
+msgid "Start mousetweaks in login mode"
+msgstr "Khởi chạy mousetweaks lúc đăng nhập"
+
+#. parse
+#: ../src/mt-main.c:661
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Trình nền truy cập chuột GNOME"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Lỗi hiển thị Trợ giúp"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Tiểu dụng để chọn các kiểu nhấn khác nhau.\n"
+#~ "Một phần của Mousetweaks."
+
+#~| msgid "Show click type window"
+#~ msgid "Click Type Window"
+#~ msgstr "Cửa sổ kiểu nhấn"
+
+#~| msgid "Dwell Click"
+#~ msgid "Drag Click"
+#~ msgstr "Nhấn kéo"
+
+#~ msgid "Right Click"
+#~ msgstr "Nhấn phải"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Vùng khoá con trỏ trên khung điều khiển.\n"
+#~ "Một phần của Mousetweaks"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Điều khiển bắt và thả"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Phím bổ trợ:"
+
+#~| msgid "Pointer Capture"
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Tuỳ thích bắt con trỏ"
+
+#~| msgid "Mouse button used to capture the pointer"
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Chọn nút không để bắt con trỏ tức thì"
+
+#~| msgid "Size of capture area"
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Kích cỡ vùng bắt"
+
+#~| msgid "_About"
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "_Nút chuột:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Shift"
+
+#~ msgid "_Width:"
+#~ msgstr "_Rộng:"
+
+#~ msgid "pixels"
+#~ msgstr "điểm"
+
+#~| msgid "Dwell Click"
+#~ msgid "Dwell Click-Type"
+#~ msgstr "Kiểu nhấn giữ"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Điều khiển máy tính không cần dùng nút chuột"
+
+#~| msgid "Dwell Click"
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Tiểu dụng Nhấn giữ"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Vùng trong đó cần khoá con trỏ"
+
+#~| msgid "Pointer Capture"
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Tiểu dụng Bắt con trỏ"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "Phím bổ trợ \"Alt\""
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "Phím bổ trợ \"Control\""
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "Phím bổ trợ \"Shift\""
+
+#~ msgid "Mouse button"
+#~ msgstr "Nút chuột"
+
+#~| msgid "Mouse button used to capture the pointer"
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "Nút chuột dùng để bắt và thả con trỏ."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Kích cỡ vùng bắt"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Chiều rộng của vùng bắt (theo điểm ảnh)."
+
+#~| msgid "Show click type window"
+#~ msgid "Show a click-type window"
+#~ msgstr "Hiện cửa sổ kiểu nhấn"
+
+#~ msgid "Capture area"
+#~ msgstr "Vùng bắt"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Khoá tạm thời con trỏ chuột"
+
+#~ msgid "_Preferences"
+#~ msgstr "Tù_y thích"
+
+#~ msgid "_Help"
+#~ msgstr "Trợ g_iúp"
+
+#~ msgid "_About"
+#~ msgstr "_Giới thiệu"
+
+#~ msgid "Locked"
+#~ msgstr "Bị khoá"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Lỗi mở Khung hỗ trợ truy cập"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Chọn cách nhấn giữ"
+
+#~ msgid "Animate cursor"
+#~ msgstr "Hoạt ảnh con trỏ"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr ""
+#~ "Kiểu dáng nút trong cửa sổ kiểu nhấn vào :\n"
+#~ " 0\tnhãn\n"
+#~ " 1\thình\n"
+#~ " 2\tcả hai"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Hướng theo đó cần nhấn đúp:\n"
+#~ " 0\tsang trái\n"
+#~ " 1\tsang phải\n"
+#~ " 2\tlên\n"
+#~ " 3\txuống"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Hướng theo đó cần nhấn kéo:\n"
+#~ " 0\tsang trái\n"
+#~ " 1\tsang phải\n"
+#~ " 2\tlên\n"
+#~ " 3\txuống"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Hướng theo đó cần nhấn phụ:\n"
+#~ " 0\tsang trái\n"
+#~ " 1\tsang phải\n"
+#~ " 2\tlên\n"
+#~ " 3\txuống"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Hướng theo đó cần nhấn đơn:\n"
+#~ " 0\tsang trái\n"
+#~ " 1\tsang phải\n"
+#~ " 2\tlên\n"
+#~ " 3\txuống"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "Khoảng cách theo điểm ảnh trước khi nhận ra con trỏ đang di chuyển"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Chế độ nhấn giữ"
+
+#~ msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+#~ msgstr ""
+#~ "Chế độ nhấn giữ :\n"
+#~ " 0\tchế độ động tác\n"
+#~ " 1\tchế độ cửa sổ"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Thời gian nhấn giữ"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "Bật nhấn phụ"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Nhấn đúp động tác"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Nhấn kéo động tác"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Nhấn phụ động tác"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Ngưỡng di chuyển"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "Hiện thời gian đã qua dưới dạng lớp phủ con trỏ"
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "Thời gian nghỉ theo giây trước khi gây ra cú nhấn"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "Thời gian nghỉ theo giây trước khi gây ra cú nhấn phụ"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Bắt con trỏ chỉ nếu phím Alt được bấm"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Bắt con trỏ chỉ nếu phím Ctrl được bấm"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Bắt con trỏ chỉ nếu phím Shift được bấm"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "Nút chuột dùng để nhả con trỏ"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Nhả con trỏ chỉ nếu phím Alt được bấm"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Nhả con trỏ chỉ nếu phím Ctrl được bấm"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Nhả con trỏ chỉ nếu phím Shift được bấm"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "Cái nút trên con chuột phải được bấm để nhả con trỏ khỏi vùng bắt. Giá "
+#~ "trị hợp lệ:\n"
+#~ " • 1\tnút bên trái\n"
+#~ " • 2\tnút ở giữa\n"
+#~ " • 3\tnút bên phải."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "Cái nút trên con chuột phải được bấm trong khi con trỏ nằm trên vùng bắt, "
+#~ "để bắt con trỏ. Giá trị hợp lệ:\n"
+#~ " • 0\tkhông cần nút\n"
+#~ " • 1\tnút bên trái\n"
+#~ " • 2\tnút ở giữa\n"
+#~ " • 3\tnút bên phải."
+
+#~| msgid ""
+#~| "Whether if Alt must be pressed for the pointer to be captured while it's "
+#~| "over the capture area. If this option is set as true, and a mouse button "
+#~| "is set in the \"capture_button\" key, then the Alt key must be pressed "
+#~| "while the mouse button is pressed."
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Nếu phím Alt phải được bấm để bắt con trỏ trong khi nó nằm trên vùng bắt, "
+#~ "hay không. Đặt tuỳ chọn này là Đúng, và một cái nút con chuột được đặt "
+#~ "trong khoá « capture_button » (bắt cái nút) thì phím Alt phải được bấm "
+#~ "trong khi cái nút con chuột được bấm."
+
+#~| msgid ""
+#~| "Whether if the Alt key must be pressed with the mouse button set in "
+#~| "\"release_button\" for the pointer to be released from the capture area."
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Nếu phím Alt phải được bấm cùng với cái nút con chuột được đặt trong khoá "
+#~ "« release_button » để nhả con trỏ khỏi vùng bắt, hay không."
+
+#~| msgid ""
+#~| "Whether if Ctrl must be pressed for the pointer to be captured while "
+#~| "it's over the capture area. If this option is set as true, and a mouse "
+#~| "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~| "pressed while the mouse button is pressed."
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Nếu phím Ctrl phải được bấm để bắt con trỏ trong khi nó nằm trên vùng "
+#~ "bắt, hay không. Đặt tuỳ chọn này là Đúng, và một cái nút con chuột được "
+#~ "đặt trong khoá « capture_button » (bắt cái nút) thì phím Ctrl phải được "
+#~ "bấm trong khi cái nút con chuột được bấm."
+
+#~| msgid ""
+#~| "Whether if the Ctrl key must be pressed with the mouse button set in "
+#~| "\"release_button\" for the pointer to be released from the capture area."
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Nếu phím Ctrl phải được bấm cùng với cái nút con chuột được đặt trong "
+#~ "khoá « release_button » để nhả con trỏ khỏi vùng bắt, hay không."
+
+#~| msgid ""
+#~| "Whether if Shift must be pressed for the pointer to be captured while "
+#~| "it's over the capture area. If this option is set as true, and a mouse "
+#~| "button is set in the \"capture_button\" key, then the Shift key must be "
+#~| "pressed while the mouse button is pressed."
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Nếu phím Shift phải được bấm để bắt con trỏ trong khi nó nằm trên vùng "
+#~ "bắt, hay không. Đặt tuỳ chọn này là Đúng, và một cái nút con chuột được "
+#~ "đặt trong khoá « capture_button » (bắt cái nút) thì phím Shift phải được "
+#~ "bấm trong khi cái nút con chuột được bấm."
+
+#~| msgid ""
+#~| "Whether if the Shift key must be pressed with the mouse button set in "
+#~| "\"release_button\" for the pointer to be released from the capture area."
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Nếu phím Shift phải được bấm cùng với cái nút con chuột được đặt trong "
+#~ "khoá « release_button » để nhả con trỏ khỏi vùng bắt, hay không."
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "Hỗ trợ Công nghệ Trợ giúp không được Hiệu lực"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Mousetweaks yêu cầu công nghệ trợ giúp được hiệu lực trong buổi hợp đăng "
+#~ "nhập.\n"
+#~ "\n"
+#~ "Để hiệu lực hỗ trợ cho công nghệ trợ giúp và khởi chạy lại buổi hợp,\n"
+#~ "bấm nút « Bật và Đăng xuất »."
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Chế độ ấn giữ cần dùng"
+
+#~ msgid "Window x position"
+#~ msgstr "Vị trí X cửa sổ"
+
+#~ msgid "Window y position"
+#~ msgstr "Vị trí Y cửa sổ"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Hiện thời gian đã qua dưới dạng lớp phủ con trỏ"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "Bật và đăng xuất"
+
+#~ msgid "L"
+#~ msgstr "K"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "Lỗi khởi chạy Tùy thích Chuột"

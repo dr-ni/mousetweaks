@@ -1,0 +1,499 @@
+# translation of mousetweaks.HEAD.po to Punjabi
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Amanpreet Singh Alam <aalam@users.sf.net>, 2008,  2009.
+# A S Alam <aalam@users.sf.net>, 2009, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks.HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-19 08:27+0000\n"
+"PO-Revision-Date: 2012-03-22 16:40+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pa\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "ਹੋਵਰ ਕਲਿੱਕ"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "ਇੱਕਲਾ ਕਲਿੱਕ"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "ਡਬਲ ਕਲਿੱਕ"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "ਡਰੈਗ"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "ਸੈਕੰਡਰੀ ਕਲਿੱਕ"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "ਬਟਨ ਸਟਾਈਲ"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "ਕੇਵਲ ਟੈਕਸਟ"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "ਕੇਵਲ ਆਈਕਾਨ"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "ਟੈਕਸਟ ਤੇ ਆਈਕਾਨ"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "ਸਥਿਤੀ"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "ਹਰੀਜੱਟਲ"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "ਵਰਟੀਕਲ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਸਟਾਇਲ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਦਾ ਬਟਨ ਸਟਾਇਲ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਸਥਿਤੀ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਦੀ ਸਥਿਤੀ ਹੈ।"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਜੁਮੈਟਰੀ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"ਕਲਿੱਕ-ਟਾਈਫ ਵਿੰਡੋ ਦਾ ਆਕਾਰ ਅਤੇ ਸਥਿਤੀ। ਫਾਰਮੈਟ ਸਟੈਂਡਰਡ X ਵਿੰਡੋ ਸਿਸਟਮ ਜੁਮੈਟਰੀ ਲਾਈਨ।"
+
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "ਡੀਵਿਲ ਦਬਾਉ ਚਾਲੂ"
+
+#: ../src/mt-main.c:625
+msgid "Enable simulated secondary click"
+msgstr "ਸੈਕੰਡਰੀ ਕਲਿੱਕ ਦੀ ਨਕਲ ਚਾਲੂ"
+
+#: ../src/mt-main.c:627
+msgid "Time to wait before a dwell click"
+msgstr "ਇੱਕ ਡੀਵਿਲ ਕਲਿੱਕ ਤੋਂ ਪਹਿਲਾਂ ਉਡੀਕ ਦਾ ਸਮਾਂ"
+
+#: ../src/mt-main.c:629
+msgid "Time to wait before a simulated secondary click"
+msgstr "ਇੱਕ ਸੈਕੰਡਰੀ ਕਲਿੱਕ ਦੀ ਨਕਲ ਤੋਂ ਪਹਿਲਾਂ ਉਡੀਕ ਦਾ ਸਮਾਂ"
+
+#: ../src/mt-main.c:631
+msgid "Set the active dwell mode"
+msgstr "ਐਕਟਿਵ ਡੀਵਿਲ ਮੋਡ ਸੈੱਟ ਕਰੋ"
+
+#: ../src/mt-main.c:633
+#| msgid "Orientation of the click-type window."
+msgid "Hide the click-type window"
+msgstr "ਕਲਿੱਕ-ਟਾਈਪ ਵਿੰਡੋ ਓਹਲੇ"
+
+#: ../src/mt-main.c:635
+msgid "Ignore small pointer movements"
+msgstr "ਛੋਟੀਆਂ ਪੁਆਇੰਟਰ ਚਾਲਾਂ ਅਣਡਿੱਠੀਆਂ"
+
+#: ../src/mt-main.c:639
+msgid "Shut down mousetweaks"
+msgstr "ਮਾਊਸ-ਸੋਧਾਂ ਬੰਦ ਕਰੋ"
+
+#: ../src/mt-main.c:641
+msgid "Start mousetweaks as a daemon"
+msgstr "ਮਾਊਸਟਵਿਕਸ ਨੂੰ ਡੈਮਨ ਵਜੋਂ ਚਲਾਓ"
+
+#: ../src/mt-main.c:643
+msgid "Start mousetweaks in login mode"
+msgstr "ਮਾਊਸਟਵਿਕਸ ਨੂੰ ਲਾਗਇਨ ਮੋਡ ਵਿੱਚ ਸ਼ੁਰੂ ਕਰੋ"
+
+#. parse
+#: ../src/mt-main.c:661
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- ਗਨੋਮ ਮਾਊਸ ਸਹੂਲਤ ਡੈਮਨ"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "ਮੱਦਦ ਲੱਭਣ ਲਈ ਅਸਮਰੱਥ"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "ਵੱਖ ਵੱਖ ਡੀਵਿਲ-ਕਲਿੱਕ ਟਾਈਪ ਚੁਣਨ ਲਈ ਐਪਲਿਟ ਹੈ।\n"
+#~ "ਮਾਊਸ-ਸੋਧ ਦਾ ਭਾਗ ਹੈ"
+
+#~ msgid "Click Type Window"
+#~ msgstr "ਕਲਿੱਕ ਟਾਈਪ ਵਿੰਡੋ"
+
+#~ msgid "Drag Click"
+#~ msgstr "ਡਰੈਗ ਕਲਿੱਕ"
+
+#~ msgid "Right Click"
+#~ msgstr "ਸੱਜਾ ਕਲਿੱਕ"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "ਪੈਨਲ ਉੱਤੇ ਪੁਆਇੰਟਰ ਨੂੰ ਲਾਕ ਕਰਨ ਦਾ ਖੇਤਰ ਹੈ।\n"
+#~ "ਮਾਊਸ-ਸੋਧਾਂ ਦਾ ਭਾਗ ਹੈ"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Capture and Release Controls"
+#~ msgstr "ਕੰਟਰੋਲ ਫੜੋ ਤੇ ਛੱਡੋ"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "ਕੀਬੋਰਡ ਮੋਡੀਫਾਇਰ:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "ਪੁਆਇੰਟਰ ਕੈਪਚਰ ਪਸੰਦ"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "ਬਟਨ 0 ਚੁਣਨ ਨਾਲ ਪੁਆਇੰਟਰ ਤਰੁੰਤ ਕੈਪਚਰ ਕੀਤਾ ਜਾਵੇਗਾ"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "ਕੈਪਚਰ ਖੇਤਰ ਦਾ ਸਾਈਜ਼"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "ਮਾਊਸ ਬਟਨ(_M):"
+
+#~ msgid "_Shift"
+#~ msgstr "ਸਿਫਟ(_S)"
+
+#~ msgid "_Width:"
+#~ msgstr "ਚੌੜਾਈ(_W):"
+
+#~ msgid "pixels"
+#~ msgstr "ਪਿਕਸਲ"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "ਬਿਨਾਂ ਮਾਊਸ ਬਟਨ ਵਰਤੇ ਆਪਣੇ ਡੈਸਕਟਾਪ ਨੂੰ ਕੰਟਰੋਲ ਕਰੋ"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "ਡੀਵਿਲ ਕਲਿੱਕ ਐਪਲਿਟ"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "ਪੁਆਇੰਟਰ ਨੂੰ ਲਾਕ ਕਰਨ ਲਈ ਖੇਤਰ"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "ਪੁਆਇੰਟਰ ਕੈਪਚਰ ਐਪਲਿਟ"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "\"Alt\" ਕੀਬੋਰਡ ਮੋਡੀਫਾਇਰ"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "\"Control\" ਕੀਬੋਰਡ ਮੋਡੀਫਾਇਰ"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "\"Shift\" ਕੀਬੋਰਡ ਮੋਡੀਫਾਇਰ"
+
+#~ msgid "Mouse button"
+#~ msgstr "ਮਾਊਸ ਬਟਨ"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "ਪੁਆਇੰਟਰ ਫੜਨ ਜਾਂ ਛੱਡਣ ਲਈ ਵਰਤਣ ਵਾਸਤੇ ਮਾਊਂਸ ਬਟਨ ਹੈ।"
+
+#~ msgid "Size of capture area"
+#~ msgstr "ਕੈਪਚਰ ਖੇਤਰ ਦਾ ਆਕਾਰ"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "ਪਕੜ ਖੇਤਰ ਦੀ ਚੌੜਾਈ ਪਿਕਸਲ ਵਿੱਚ।"
+
+#~ msgid "Show a click-type window"
+#~ msgstr "ਕਲਿੱਕ ਟਾਈਪ ਵਿੰਡੋ ਵੇਖੋ"
+
+#~ msgid "Capture area"
+#~ msgstr "ਕੈਪਚਰ ਖੇਤਰ"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "ਮਾਊਸ ਪੁਆਇੰਟਰ ਆਰਜ਼ੀ ਤੌਰ ਉੱਤੇ ਤਾਲਾਬੰਦ ਕਰੋ"
+
+#~ msgid "_Preferences"
+#~ msgstr "ਮੇਰੀ ਪਸੰਦ(_P)"
+
+#~ msgid "_Help"
+#~ msgstr "ਮੱਦਦ(_H)"
+
+#~ msgid "_About"
+#~ msgstr "ਇਸ ਬਾਰੇ(_A)"
+
+#~ msgid "Locked"
+#~ msgstr "ਲਾਕ ਕੀਤਾ"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "ਯੂਨੀਵਰਸਲ ਅਸੈੱਸ ਪੈਨਲ ਖੋਲ੍ਹਣ ਲਈ ਫੇਲ੍ਹ ਹੈ"
+
+#~| msgid "Dwell Click Type"
+#~ msgid "Dwell Click-Type"
+#~ msgstr "ਡੀਵਿਲ ਕਲਿੱਕ-ਟਾਈਪ"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "ਕੈਪਚਰ ਪੁਆਇੰਟਰ"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "ਮਾਡੀਫਾਇਰ:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "ਮਾਊਸ ਬਟਨ(_u):"
+
+#~ msgid "Release Pointer"
+#~ msgstr "ਰੀਲੀਜ਼ ਪੁਆਇੰਟਰ"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "ਆਈਕਾਨ ਅਤੇ ਟੈਕਸਟ ਵੇਖੋ"
+
+#~ msgid "Dwell Click"
+#~ msgstr "ਡੀਵਿਲ ਕਲਿੱਕ"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "ਡੀਵਿਲ ਕਲਿੱਕ ਟਾਈਪ ਚੁਣੋ"
+
+#~ msgid "Animate cursor"
+#~ msgstr "ਐਨੀਮੇਟ ਕਰਸਰ"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr ""
+#~ "ਦਬਾਉ ਕਿਸਮ ਵਿੰਡੋ ਵਿੱਚ ਬਟਨ ਸ਼ੈਲੀ (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "ਦੂਹਰਾ ਦਬਾਉਣ ਲਈ ਦਿਸ਼ਾ (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "ਇੱਕ ਸੁੱਟਣ ਦਬਾਉ ਕਰਨ ਲਈ ਦਿਸ਼ਾ (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = "
+#~ "Down)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "ਸੈਕੰਡਰੀ ਦਬਾਉਣ ਲਈ ਦਿਸ਼ਾ (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = "
+#~ "Down)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "ਇੱਕਲਾ ਦਬਾਉਣ ਦੀ ਦਿਸ਼ਾ (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "ਚਾਲ ਨੂੰ ਪਛਾਣਨ ਤੋਂ ਪਹਿਲਾਂ ਪਿਕਸਲਾਂ ਵਿੱਚ ਦੂਰੀ"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "ਡੀਵਿਲ ਕਲਿੱਕ ਮੋਡ"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "ਡੀਵਿਲ ਕਲਿੱਕ ਮੋਡ (\"0\" = Window mode, \"1\" = Gesture mode)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "ਡੀਵਿਲ ਕਲਿੱਕ ਸਮਾਂ"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "ਸੈਕੰਡਰੀ ਕਲਿੱਕ ਚਾਲੂ"
+
+#~ msgid "Gesture double click"
+#~ msgstr "ਜੈਸਚਰ ਡਬਲ ਕਲਿੱਕ"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "ਜੈਸਚਰ ਡਰੈਗ ਕਲਿੱਕ"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "ਜੈਸਚਰ ਸੈਕੰਡਰੀ ਕਲਿੱਕ"
+
+#~ msgid "Gesture single click"
+#~ msgstr "ਜੈਸਚਰ ਸਿੰਗਲ ਕਲਿੱਕ"
+
+#~ msgid "Movement threshold"
+#~ msgstr "ਗਤੀ ਮੂਲ"
+
+#~ msgid "Show click type window"
+#~ msgstr "ਕਲਿੱਕ ਟਾਈਪ ਵਿੰਡੋ ਵੇਖੋ"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "ਕਰਸਰ ਸੰਖੇਪ ਵਾਂਗ ਬਾਕੀ ਸਮਾਂ ਵੇਖੋ"
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "ਇੱਕ ਕਲਿੱਕ ਚਾਲੂ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਸਮਾਂ ਸਕਿੰਟਾਂ ਵਿੱਚ"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "ਇੱਕ ਸੈਕੰਡਰੀ ਕਲਿੱਕ ਤੋਂ ਪਹਿਲਾਂ ਸਮਾਂ ਸਕਿੰਟਾਂ ਵਿੱਚ"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "ਜੇ Alt ਦੱਬਿਆ ਜਾਵੇ ਤਾਂ ਹੀ ਪੁਆਇੰਟਰ ਫੜੋ"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "ਪੁਆਇੰਟਰ ਤਾਂ ਹੀ ਫੜੋ, ਜੇ Ctrl ਦੱਬਿਆ ਜਾਵੇ"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "ਪੁਆਇੰਟਰ ਤਾਂ ਹੀ ਫੜੋ, ਜੇ ਸਿਫਟ ਦੱਬਿਆ ਜਾਵੇ"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "ਪੁਆਇੰਟਰ ਛੱਡਣ ਲਈ ਵਰਤਣ ਵਾਸਤੇ ਮਾਊਸ ਬਟਨ"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "ਪੁਆਇੰਟਰ ਤਾਂ ਹੀ ਛੱਡੋ, ਜੇ Alt ਦੱਬਿਆ ਜਾਵੇ"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "ਪੁਆਇੰਟਰ ਤਾਂ ਹੀ ਛੱਡੋ, ਜੇ Ctrl ਦੱਬਿਆ ਜਾਵੇ"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "ਪੁਆਇੰਟਰ ਤਾਂ ਹੀ ਛੱਡੋ, ਜੇ ਸਿਫਟ ਦੱਬਿਆ ਜਾਵੇ"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "ਕੈਪਚਰ ਖੇਤਰ ਤੋਂ ਪੁਆਇੰਟਰ ਨੂੰ ਛੱਡਣ ਲਈ ਇਹ ਮਾਊਸ ਬਟਨ ਦੱਬਣਾ ਪਵੇਗਾ। ਵੈਧ ਮੁੱਲ ਹਨ \"1\" ਖੱਬੇ ਲਈ, \"2"
+#~ "\" ਮੱਧ ਲਈ, \"3\" ਸੱਜੇ ਬਟਨ ਲਈ।"
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "ਪੁਆਇੰਟਰ ਨੂੰ ਕੈਪਚਰ ਖੇਤਰ ਉੱਤੇ ਲਿਜਾ ਕੇ ਫੜਨ ਲਈ ਇਹ ਮਾਊਸ ਬਟਨ ਦੱਬਣਾ ਪਵੇਗਾ। ਸੰਭਵ ਮੁੱਲ ਹਨ \"0\" "
+#~ "ਜੇ ਕੋਈ ਬਟਨ ਲੋੜੀਦਾ ਨਾ ਹੋਵੇ, \"1\" ਖੱਬਾ ਬਟਨ, \"2\" ਮੱਧ ਬਟਨ ਅਤੇ \"3\" ਸੱਜੇ ਬਟਨ ਲਈ।"
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "ਕੀ ਪੁਆਇੰਟਰ ਲਈ Alt ਸਵਿੱਚ ਦੱਬਣੀ ਹੀ ਚਾਹੀਦੀ ਹੈ, ਜਦੋਂ ਇਹ ਕੈਪਚਰ ਖੇਤਰ ਉੱਤੇ ਹੋਵੇ। ਜੇ ਚੋਣ ਕੀਤੀ ਗਈ "
+#~ "ਅਤੇ \"capture_button\" ਸਵਿੱਚ ਸੈੱਟ ਕੀਤੀ ਗਈ ਤਾਂ, ਸਿਫਟ ਸਵਿੱਚ ਨੂੰ ਮਾਊਸ ਬਟਨ ਵਲੋਂ ਦੱਬਿਆ ਹੋਵੇ।"
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "ਕੀ ਪੁਆਇੰਟਰ ਲਈ Alt ਸਵਿੱਚ ਦੱਬਣੀ ਹੀ ਚਾਹੀਦੀ ਹੈ, ਜਦੋਂ ਇਹ ਕੈਪਚਰ ਖੇਤਰ ਉੱਤੇ ਹੋਵੇ। ਜੇ ਚੋਣ ਕੀਤੀ ਗਈ "
+#~ "ਅਤੇ \"release_button\" ਸਵਿੱਚ ਸੈੱਟ ਕੀਤੀ ਗਈ ਤਾਂ, ਸਿਫਟ ਸਵਿੱਚ ਨੂੰ ਮਾਊਸ ਬਟਨ ਵਲੋਂ ਦੱਬਿਆ ਹੋਵੇ।"
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "ਕੀ ਪੁਆਇੰਟਰ ਲਈ Ctrl ਸਵਿੱਚ ਦੱਬਣੀ ਹੀ ਚਾਹੀਦੀ ਹੈ, ਜਦੋਂ ਇਹ ਕੈਪਚਰ ਖੇਤਰ ਉੱਤੇ ਹੋਵੇ। ਜੇ ਚੋਣ ਕੀਤੀ "
+#~ "ਗਈ ਅਤੇ \"capture_button\" ਸਵਿੱਚ ਸੈੱਟ ਕੀਤੀ ਗਈ ਤਾਂ, Ctrl ਸਵਿੱਚ ਦੱਬਣਾ ਲਾਜ਼ਮੀ ਹੈ, ਜਦੋਂ "
+#~ "ਕਿ ਮਾਊਸ ਬਟਨ ਵਲੋਂ ਦੱਬਿਆ ਹੋਵੇ।"
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "ਕੀ ਮਾਊਸ ਬਟਨ ਸੈੱਟ ਨਾਲ \"release_button\" ਵਿੱਚ  Ctrl ਸਵਿੱਚ ਦੱਬਣੀ ਹੀ ਚਾਹੀਦੀ ਹੈ, ਜਦੋਂ "
+#~ "ਕੈਪਚਰ ਖੇਤਰ ਤੋਂ ਪੁਆਇੰਟਰ ਨੂੰ ਛੱਡਿਆ ਜਾਵੇ।"
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "ਕੀ ਪੁਆਇੰਟਰ ਲਈ ਸਿਫਟ ਸਵਿੱਚ ਦੱਬਣੀ ਹੀ ਚਾਹੀਦੀ ਹੈ, ਜਦੋਂ ਇਹ ਕੈਪਚਰ ਖੇਤਰ ਉੱਤੇ ਹੋਵੇ। ਜੇ ਚੋਣ ਕੀਤੀ "
+#~ "ਗਈ ਅਤੇ \"capture_button\" ਸਵਿੱਚ ਸੈੱਟ ਕੀਤੀ ਗਈ ਤਾਂ, ਸਿਫਟ ਸਵਿੱਚ ਨੂੰ ਮਾਊਸ ਬਟਨ ਵਲੋਂ ਦੱਬਿਆ "
+#~ "ਹੋਵੇ।"
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "ਕੀ ਮਾਊਸ ਬਟਨ ਸੈੱਟ ਨਾਲ \"release_button\" ਵਿੱਚ ਸਿਫਟ ਸਵਿੱਚ ਦੱਬਣੀ ਹੀ ਚਾਹੀਦੀ ਹੈ, ਜਦੋਂ "
+#~ "ਕੈਪਚਰ ਖੇਤਰ ਤੋਂ ਪੁਆਇੰਟਰ ਨੂੰ ਛੱਡਿਆ ਜਾਵੇ।"
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "ਕਲਿੱਕ ਟਾਈਪ ਵਿੰਡੋ Y ਸਥਿਤੀ"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "ਕਰਸਰ ਐਨੀਮੇਸ਼ਨ ਬੰਦ ਕਰੋ"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "ਚਾਲੂ ਅਤੇ ਲਾਗ-ਆਉਟ"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "ਮਾਊਸ ਪਸੰਦ ਚਲਾਉਣ ਲਈ ਅਸਫ਼ਲ"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "ਸਹਾਇਕ ਤਕਨਾਲੋਜੀ ਸਹਿਯੋਗ ਚਾਲੂ ਨਹੀਂ ਹੈ"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "ਮਾਊਂਸ-ਸੋਧ ਲਈ ਸਹਾਇਕ ਤਕਨਾਲੋਜੀ ਨੂੰ ਤੁਹਾਡੇ ਸ਼ੈਸ਼ਨ ਵਿੱਚ ਚਾਲੂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।\n"
+#~ "\n"
+#~ "ਸਹਾਇਕ ਤਕਨਾਲੋਨਜੀ ਨੂੰ ਚਾਲੂ ਕਰਨ ਅਤੇ ਆਪਣਾ ਸ਼ੈਸ਼ਨ ਮੁੜ-ਚਾਲੂ ਕਰਨ ਲਈ \"ਚਾਲੂ ਅਤੇ ਲਾਗ-ਆਉਟ\" ਵਰਤੋਂ।"
+
+#~ msgid "L"
+#~ msgstr "L"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "ਵਰਤਣ ਲਈ ਡੀਵਿਲ ਮੋਡ"
+
+#~ msgid "Window y position"
+#~ msgstr "ਵਿੰਡੋ y ਸਥਿਤੀ"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "ਜਿਵੇਂ ਕਰਸਰ ਉੱਤੇ ਆਵੇ ਤਾਂ ਬਾਕੀ ਰਹਿੰਦਾ ਸਮਾਂ ਵੇਖੋ"

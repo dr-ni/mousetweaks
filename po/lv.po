@@ -1,0 +1,261 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Rudolfs <rudolfs.mazurs@gmail.com>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-24 16:21+0300\n"
+"PO-Revision-Date: 2012-09-24 16:33+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "Uzkavēšanās klikšķis"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Viens klikšķis"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Dubultklikšķis"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Vilkt"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "Sekundārais klikšķis"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Pogas stils"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Tikai teksts"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Tikai ikonas"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "Teksts un ikonas"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Novietojums"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Horizontāli"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertikāli"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Klikšķu rakstīšanas loga stils"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "Pogas stils klikšķu rakstīšanas logam."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Klikšķu rakstīšanas loga novietojums"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "Novietojums klikšķu rakstīšanas logam."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Klikšķu rakstīšanas loga ģeometrija"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Izmērs un novietojums klikšķu rakstīšanas logam. Formāts ir standarta X "
+"Window "
+"System ģeometrijas virkne."
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Aktivēt apstājas klikšķi"
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Aktivēt simulēto sekundāro klikšķi"
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "Laiks, ko gaidīt pirms apstājas klikšķa"
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "Laiks, ko gaidīt pirms simulētā sekundārā klikšķa"
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Iestatīt aktīvo apstājas režīmu"
+
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Slēpt klikšķu rakstīšanas logu"
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Ignorēt nelielas rādītāja kustības"
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Izslēgt mousetweaks"
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Palaist mousetweaks kā dēmonu"
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Palaist mousetweaks ierakstīšanās režīmā"
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME peles pieejamības dēmons"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Neizdevās parādīt palīdzību"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Sīklietotne, lai izvēlētos dažādus apstājas klikšķa veidus.\n"
+#~ "Daļa no Mousetweaks"
+
+#~ msgid "Click Type Window"
+#~ msgstr "Klikšķa veida logs"
+
+#~ msgid "Drag Click"
+#~ msgstr "Vilktais klikšķis"
+
+#~ msgid "Right Click"
+#~ msgstr "Labais klikšķis"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Laukums uz paneļa, kurā pieslēgt rādītāju.\n"
+#~ "Daļa no Mousetweaks"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Satvert un atlaist vadīklas"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Tastatūras modifikators:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Rādītāja satveršanas iestatījumi"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Izvēloties Button 0, rādītājs tiks tverts nekavējoties"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Tveršanas laukuma izmērs"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "-Peles poga:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Shift"
+
+#~ msgid "_Width:"
+#~ msgstr "_Platums:"
+
+#~ msgid "pixels"
+#~ msgstr "pikseļi"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Kontrolējiet savu darbvirsmu, neizmantojot peles pogas"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Apstājas klikšķa sīklietotne"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Laukums, kurā pieslēgt rādītāju"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Rādītāja tveršanas iestatījumi"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "\"Alt\" tastatūras modifikators"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "\"Control\" tastatūras modifikators"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "\"Shift\" tastatūras modifikators"
+
+#~ msgid "Mouse button"
+#~ msgstr "Peles poga"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "Peles poga, ko izmantot, lai satvertu vai atlaistu rādītāju."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Tveršanas laukuma izmērs"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Tveršanas laukuma platums pikseļos."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Rādīt klikšķa veida logu"
+
+#~ msgid "Capture area"
+#~ msgstr "Tveršanas laukums"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Uz laiku pieslēgt peles rādītāju"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Iestatījumi"
+
+#~ msgid "_Help"
+#~ msgstr "_Palīdzība"
+
+#~ msgid "_About"
+#~ msgstr "P_ar"
+
+#~ msgid "Locked"
+#~ msgstr "Pieslēgts"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Neizdevās atvērt universālā piekļuves paneli"

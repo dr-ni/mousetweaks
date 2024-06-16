@@ -1,0 +1,122 @@
+# Hiiretuuningute eesti keele tõlge.
+# Estonian translation of Mousetweaks.
+#
+# Copyright (C) 2008–2010 The GNOME Project.
+#
+# This file is distributed under the same license as the mousetweaks package.
+#
+# Ivar Smolin <okul linux ee>, 2008–2010.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks MASTER\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-29 00:57+0000\n"
+"PO-Revision-Date: 2012-02-29 11:08+0200\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Hover Click"
+msgstr "Hiirega üleliikumisel klõps"
+
+msgid "Single Click"
+msgstr "Üksikklõps"
+
+msgid "Double Click"
+msgstr "Topeltklõps"
+
+#. 'Drag' like in a Drag and Drop operation
+msgid "Drag"
+msgstr "Lohistamine"
+
+msgid "Secondary Click"
+msgstr "Teisene klõps"
+
+msgid "Button Style"
+msgstr "Nupu laad"
+
+msgid "Text only"
+msgstr "Ainult tekst"
+
+msgid "Icons only"
+msgstr "Ainult ikoonid"
+
+msgid "Text and Icons"
+msgstr "Tekst ja ikoonid"
+
+msgid "Orientation"
+msgstr "Asend"
+
+#. Buttons are arranged from left to right in the layout
+msgid "Horizontal"
+msgstr "Rõhtne"
+
+#. Buttons are arranged from top to bottom in the layout
+msgid "Vertical"
+msgstr "Püstine"
+
+msgid "Click-type window style"
+msgstr "Klõpsu liigi akna laad"
+
+msgid "Button style of the click-type window."
+msgstr "Klõpsu liigi akna nupu laad."
+
+msgid "Click-type window orientation"
+msgstr "Klõpsu liigi akna asend"
+
+msgid "Orientation of the click-type window."
+msgstr "Klõpsu liigi akna asend."
+
+msgid "Click-type window geometry"
+msgstr "Klõpsu liigi akna geomeetria"
+
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Klõpsu liigi akna suurus ja asukoht, mis on kirjeldatud X Window Systemi "
+"standardse geomeetriastringina."
+
+msgid "Enable dwell click"
+msgstr "Ooteajaga klõpsu lubamine"
+
+msgid "Enable simulated secondary click"
+msgstr "Simuleeritud teisese klõpsu lubamine"
+
+msgid "Time to wait before a dwell click"
+msgstr "Ooteajaga klõpsu ooteaja kestus"
+
+msgid "Time to wait before a simulated secondary click"
+msgstr "Simuleeritud teisese klõpsu ooteaja kestus"
+
+msgid "Set the active dwell mode"
+msgstr "Ooteaja aktiivse režiimi määramine"
+
+msgid "Hide the click-type window"
+msgstr "Klõpsu liigi aken on varjatud"
+
+msgid "Ignore small pointer movements"
+msgstr "Väikeste kursoriliigutuste eiramine"
+
+msgid "Shut down mousetweaks"
+msgstr "Hiiretuuningute seiskamine"
+
+msgid "Start mousetweaks as a daemon"
+msgstr "Hiiretuuningute käivitamine deemonina"
+
+msgid "Start mousetweaks in login mode"
+msgstr "Hiiretuuningute käivitamine sisselogimisrežiimis"
+
+#. parse
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME hiirehõlbustuste deemon"
+
+msgid "Failed to Display Help"
+msgstr "Abiteabe kuvamisel tekkis viga"

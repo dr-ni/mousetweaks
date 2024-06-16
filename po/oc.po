@@ -1,0 +1,152 @@
+# Occitan translation of mousetweaks.
+# Copyright (C) 2007-2012 Listed translators
+# This file is distributed under the same license as the mousetweaks package.
+# Cédric Valmary <cvalmary@yahoo.fr>, 2015.
+# Cédric Valmary (Tot en òc) <cvalmary@yahoo.fr>, 2015.
+# Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks.HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetw"
+"eaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-04-29 13:13+0000\n"
+"PO-Revision-Date: 2016-05-05 21:50+0200\n"
+"Last-Translator: Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>\n"
+"Language-Team: Tot En Òc\n"
+"Language: oc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Launchpad-Export-Date: 2015-05-20 17:00+0000\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "Clic per susvòl"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Clic simple"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Clic doble"
+
+#.
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Traïnada"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "Clic segondari"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Estil de boton"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Sonque lo tèxte"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Sonque las icònas"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "Tèxte e icònas"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Orientacion"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Orizontal"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Estil de la fenèstra de tipe de clic"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "Estil de boton de la fenèstra de tipe de clic."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Orientacion de la fenèstra de tipe de clic"
+
+# BUG : same message as "Click-type window orientation" without the dot.
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "Orientacion de la fenèstra de tipe de clic."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Geometria de la fenèstra de tipe de clic"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Dimension e posicion de la fenèstra de tipe de clic. Lo format es una cadena "
+"de geometria estandarda del sistèma X Window."
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Activar los clics per manteniment"
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Activar los clics segondaris simulats"
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "Relambi abans un clic per manteniment"
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "Relambi abans un clic segondari simulat"
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Definís lo mòde de manteniment actiu"
+
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Amagar la fenèstra de causida del tipe de clic"
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Ignòra los pichons movements del puntador"
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Quita Mousetweaks"
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Avia mousetweaks en tant que servici"
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Avia mousetweaks en mòde connexion"
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Servici d'accessibilitat de mirga GNOME"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "L'afichatge de l'ajuda a fracassat"

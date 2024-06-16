@@ -1,0 +1,5 @@
+data/mousetweaks.ui
+data/org.gnome.mousetweaks.gschema.xml
+src/mt-main.c
+src/mt-ctw.c
+src/mt-common.c

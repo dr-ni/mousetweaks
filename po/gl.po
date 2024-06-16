@@ -1,0 +1,493 @@
+# translation of mousetweaks-master-po-gl-70471.po to Galician
+# Copyright (C)  2010 Fran Diéguez
+# This file is distributed under the same license as the mousetweaks package.
+#
+# Ignacio Casal Quinteiro <icq@svn.gnome.org>, 2008.
+# Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
+# Meixome <meixome@mancomun.org>, 2009.
+# Antón Méixome <meixome@mancomun.org>, 2009.
+# Fran Diéguez <frandieguez@gnome.org>, 2009, 2010, 2011.
+# Fran Dieguez <frandieguez@gnome.org>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks-master-po-gl-70471\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-21 12:02+0100\n"
+"PO-Revision-Date: 2012-02-21 12:02+0100\n"
+"Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
+"Language-Team: Galician <gnome-l10n-gl@gnome.org>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "Pulsación ao pasar por enriba"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Clic único"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Dobre clic"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Arrastrar"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "Pulsación secundaria"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Estilo de botón"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Só texto"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Só iconas"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "Iconas e texto"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Orientación"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Estilo da xanela do tipo de pulsación"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "Estilo do botón da xanela do tipo de pulsación."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Orientación da xanela do tipo de pulsación"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "Orientación da xanela do tipo de botón."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "Xeometría da xanela do tipo de pulsación"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Tamaño e posición da xanela do tipo de pulsación. O formato é unha cadea de "
+"xeometría estándar do sistema X Window."
+
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Activar o clic de espera"
+
+#: ../src/mt-main.c:625
+msgid "Enable simulated secondary click"
+msgstr "Activar o clic secundario simulado"
+
+#: ../src/mt-main.c:627
+msgid "Time to wait before a dwell click"
+msgstr "O tempo de espera antes dun clic de espera"
+
+#: ../src/mt-main.c:629
+msgid "Time to wait before a simulated secondary click"
+msgstr "O tempo de espera antes de simular un clic secundario"
+
+#: ../src/mt-main.c:631
+msgid "Set the active dwell mode"
+msgstr "Estabelecer modo de espera como activo"
+
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Ocultar a xanela do tipo de pulsación"
+
+#: ../src/mt-main.c:635
+msgid "Ignore small pointer movements"
+msgstr "Ignorar os pequenos movementos do punteiro"
+
+#: ../src/mt-main.c:639
+msgid "Shut down mousetweaks"
+msgstr "Pechar os Axustes finos do rato"
+
+#: ../src/mt-main.c:641
+msgid "Start mousetweaks as a daemon"
+msgstr "Iniciar Axustes finos do rato como daemon do sistema"
+
+#: ../src/mt-main.c:643
+msgid "Start mousetweaks in login mode"
+msgstr "Iniciar Axustes finos do rato no modo de inicio de sesión"
+
+#. parse
+#: ../src/mt-main.c:661
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- «Daemon» de accesibilidade do rato do GNOME"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Produciuse un erro ao mostrar a axuda"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Miniaplicativo para seleccionar os diferentes tipos de clic de espera.\n"
+#~ "Parte dos Axustes finos do rato"
+
+#~ msgid "Click Type Window"
+#~ msgstr "Xanela de tipo de pulsación"
+
+#~ msgid "Drag Click"
+#~ msgstr "Clic de arrastre"
+
+#~ msgid "Right Click"
+#~ msgstr "Clic dereito"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Área na que bloquear ao punteiro do rato no panel.\n"
+#~ "Parte do Axustes finos do rato"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Controis de captura e liberación"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Modificador de teclado:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Preferencias da captura do punteiro"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Se selecciona Botón 0 capturará o punteiro inmediatamente"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Tamaño da área de captura"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "_Botón do rato:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Maiús"
+
+#~ msgid "_Width:"
+#~ msgstr "_Largura:"
+
+#~ msgid "pixels"
+#~ msgstr "píxeles"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Controle o seu escritorio sen usar os botóns de rato"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Miniaplicativo de clic de pulsación ao pousarse"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Área na que bloquear o punteiro"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Miniaplicatipo Captura do punteiro"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "Modificador de teclado «Alt»"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "Modificador de teclado «Ctrl»"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "Modificador de teclado «Maiús»"
+
+#~ msgid "Mouse button"
+#~ msgstr "Botón do rato"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "Botón do rato usado para capturar ou liberar o punteiro."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Tamaño da área de captura"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Largura da área de captura en píxeles."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Mostrar a xanela de tipo de clic"
+
+#~ msgid "Capture area"
+#~ msgstr "Capturar área"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Bloquear temporalmente o punteiro do rato"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Preferencias"
+
+#~ msgid "_Help"
+#~ msgstr "_Axuda"
+
+#~ msgid "_About"
+#~ msgstr "_Sobre"
+
+#~ msgid "Locked"
+#~ msgstr "Bloqueado"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Produciuse un fallo ao abrir o Panel de Acceso Universal"
+
+#~ msgid "Dwell Click-Type"
+#~ msgstr "Tipo de pulsación ao pousarse"
+
+#~ msgid "Dwell Click"
+#~ msgstr "Clic automático"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Seleccione o tipo de clic de espera"
+
+#~ msgid "Pointer Capture"
+#~ msgstr "Captura do punteiro"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Mostrar iconas e texto"
+
+#~ msgid "Animate cursor"
+#~ msgstr "Animar o cursor"
+
+#~ msgid ""
+#~ "Button style in the click type window. (\"0\" = Text, \"1\" = Icon, \"2\" "
+#~ "= Both)"
+#~ msgstr ""
+#~ "Estilo do botón na tipo de xanela de pulsación («0» = Texto, «1» = Icona, "
+#~ "«2» = Ambos)"
+
+#~ msgid ""
+#~ "Direction to perform a double click. (\"0\" = Left, \"1\" = Right, \"2\" "
+#~ "= Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Dirección para efectuar un dobre clic («0» = Esquerda, «1» = Dereita, «2» "
+#~ "= Arriba, «3» = Abaixo)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click. (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Dirección para efectuar unha pulsación secundaria. («0» = Esquerda, «1» = "
+#~ "Dereita, «2» = Arriba, «3» = Abaixo)"
+
+#~ msgid ""
+#~ "Direction to perform a single click. (\"0\" = Left, \"1\" = Right, \"2\" "
+#~ "= Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Dirección para efectuar unha pulsación sinxela. («0» = Esquerda, «1» = "
+#~ "Dereita, «2» = Arriba, «3» = Abaixo)"
+
+#~ msgid ""
+#~ "Direction to perform dragging. (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+#~ "\"3\" = Down)"
+#~ msgstr ""
+#~ "Dirección para realizar unha pulsación de arrastre («0» = Esquerda, «1» = "
+#~ "Dereita, «2» = Arriba, «3» = Abaixo)"
+
+#~ msgid "Distance in pixels before movement will be recognized."
+#~ msgstr "Distancia en píxeles antes de que se recoñeza o movemento."
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Modo de clic de espera"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Tempo de clic de espera"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Xesto de dobre clic"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Xesto de clic de arrastre"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Xesto de clic secundario"
+
+#~ msgid "Gesture single click"
+#~ msgstr "Xesto de clic único"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Límite de movemento"
+
+#~ msgid "Show click type window"
+#~ msgstr "Mostrar a xanela de tipo de clic"
+
+#~ msgid "Show click type window."
+#~ msgstr "Mostrar a xanela de tipo de pulsación."
+
+#~ msgid "Show elapsed time as a cursor overlay."
+#~ msgstr "Mostrar o tempo transcorrido superposto ao cursor."
+
+#~ msgid ""
+#~ "The active dwell click mode. (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "Modo de clic de espera. («0» = Modo xanela, «1» = Modo xesto)"
+
+#~ msgid "Time in seconds before a click is triggered."
+#~ msgstr "Tempo en segundos antes de que o clic se active."
+
+#~ msgid "Time in seconds before a simulated secondary click is triggered."
+#~ msgstr "Tempo en segundos antes de que o clic secundario se active."
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "Posición x da xanela de tipo clic"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "Desactivar a animación dos cursores"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "Activar e saír da sesión"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "Capturar o punteiro"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Modificador:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "_Botón de captura:"
+
+#~ msgid "Release Pointer"
+#~ msgstr "Soltar o punteiro"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Ma_iús"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "Activar o clic secundario"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Capturar o punteiro só se a tecla Alt está premida"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Capturar o punteiro só se a tecla Ctrl está premida"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Capturar o punteiro só se a tecla Maiús está premida"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "O botón do rato usado para soltar o punteiro"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Soltar o punteiro só se a tecla Alt está premida"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Soltar o punteiro só se a tecla Ctrl está premida"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Soltar o punteiro só se a tecla Maiús está premida"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "Este botón do rato debe ser premido para liberar o punteiro da área de "
+#~ "captura. Os valores válidos \"1\" para o botón esquerdo, \"2\" para o "
+#~ "botón do medio e \"3\" para o botón dereito."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "Este botón do rato debe ser premido mentres o punteiro está sobre a área "
+#~ "de captura, para capturar o punteiro. Os valores válidos son \"0\" se non "
+#~ "é necesario ningún botón, \"1\" para o botón esquerdo, \"2\" para o botón "
+#~ "do medio e \"3\" para o botón dereito."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Se a tecla Alt debe ser premida para capturar o punteiro mentres está "
+#~ "sobre a área de captura. Se se define esta opción como true e un botón do "
+#~ "rato está definido na chave \"capture_button\", entón a tecla Alt debe "
+#~ "ser premida mentres o botón do rato está premido."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Se a tecla Alt debe ser premida co botón do rato definido en "
+#~ "\"release_button\", para que o punteiro sexa liberado da área de captura."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Se a tecla Ctrl debe ser premida para capturar o punteiro mentres está "
+#~ "sobre a área de captura. Se se define esta opción como true e un botón do "
+#~ "rato está definido na chave \"capture_button\", entón a tecla Ctrl debe "
+#~ "ser premida mentres o botón do rato está premido."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Se a tecla Ctrl debe ser premida co botón do rato definido en "
+#~ "\"release_button\", para que o punteiro sexa liberado da área de captura."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Se a tecla Maiús debe ser premida para capturar o punteiro mentres está "
+#~ "sobre a área de captura. Se se define esta opción como true e un botón do "
+#~ "rato está definido na chave \"capture_button\", entón a tecla Maiús debe "
+#~ "ser premida mentres o botón do rato está premido."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Se a tecla Maiús debe ser premida co botón do rato definido en "
+#~ "\"release_button\", para que o punteiro sexa liberado da área de captura."
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "Produciuse un fallo ao iniciar as preferencias do rato"

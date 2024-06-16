@@ -1,0 +1,453 @@
+# translation of mousetweaks.HEAD.po to Arabic
+# Arabic translations for gnome package.
+# Copyright (C) 2008 THE gnome'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome package.
+# Automatically generated, 2008.
+# Usama Akkad <uak@aya.sy>, 2008.
+# Khaled Hosny <khaledhosny@eglug.org>, 2009, 2010, 2012.
+# Ibrahim Saed <ibraheem5000@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-24 14:20+0200\n"
+"PO-Revision-Date: 2012-12-24 14:23+0200\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Virtaal 0.7.0\n"
+"X-Poedit-Language: Arabic\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "النقر السلبي"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "نقر منفرد"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "نقر مزدوج"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "سحب"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "نقر ثانوي (نقر أيمن)"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "نمط الزر"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "نص فقط"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "أيقونات فقط"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "نص وأيقونات"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "الاتجاه"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "أفقي"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "رأسي"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "نمط نافذة نوع النقر"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "نمط الأزرار لنافذة نوع النّقر."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "اتجاه نافذة نوع النقر"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "الاتجاه لنافذة نوع النّقر."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "موقع نافذة نوع النقر"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr "حجم وموقع نافذة نوع النقر. بنسق أبعاد نوافذ X."
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "فعّل النقر الكامن"
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "فعِّل محاكاة النقر الثانوي"
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "وقت الانتظار قبل النقرة الكامنة"
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "وقت الانتظار قبل نقرة ثانوية مقلدة"
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "حدد نمط النقر الكامن المستخدم"
+
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "أخفِ نافذة نوع النّقر"
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "تجاهل حركات المؤشر الطفيفة"
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "أغلق تحسين-الفأرة"
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "شغل تحسين-الفأرة كعفريت في الخلفية"
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "ابدأ تحسين-الفأرة عند الولوج"
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- عفريب إتاحة الفأرة لجنوم"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "فشل في عرض المساعدة"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "بريمج للاختيار بين أنواع النقر الكامن المختلفة.\n"
+#~ "جزء من تحسين-الفأرة"
+
+#~ msgid "Click Type Window"
+#~ msgstr "نافذة نوع النّقر"
+
+#~ msgid "Drag Click"
+#~ msgstr "نقر مع سحب"
+
+#~ msgid "Right Click"
+#~ msgstr "نقر أيمن"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "مساحة لتجميد مؤشر الفأرة على اللوحة.\n"
+#~ "جزء من تحسين-الفأرة"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "التقط المؤشّر"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "مغير:"
+
+#~ msgid "Mouse _button:"
+#~ msgstr "_زر الفأرة:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "ز_ر الفأرة:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "تفضيلات التقاط المؤشّر"
+
+#~ msgid "Release Pointer"
+#~ msgstr "اترك المؤشّر"
+
+#~ msgid "S_hift"
+#~ msgstr "S_hift"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "اختيار زر 0 سيمسك المؤشّر مباشرة"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "حجم مساحة الالتقاط"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Width:"
+#~ msgstr "ال_عرض:"
+
+#~ msgid "pixels"
+#~ msgstr "بكسل"
+
+#~ msgid "Dwell Click Type"
+#~ msgstr "نوع النقر الكامن"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "اعرض نص و أيقونات"
+
+#~ msgid "Dwell Click"
+#~ msgstr "نقر كامن"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "اختر نوع النقر الكامن"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "مساحة لتثبيت المؤشّر"
+
+#~ msgid "Pointer Capture"
+#~ msgstr "التقاط المؤشّر"
+
+#~ msgid "_About"
+#~ msgstr "_عن"
+
+#~ msgid "_Help"
+#~ msgstr "_مساعدة"
+
+#~ msgid "_Preferences"
+#~ msgstr "ال_تفضيلات"
+
+#~ msgid "Animate cursor"
+#~ msgstr "حرك المؤشر"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr ""
+#~ "طراز الزر في نافذة نوع النقر (\"0\" = نص، \"1\" = رمز، \"2\" = كلاهما)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "اتجاه أداء النقرة المزدوجة (\"0\" = يسار، \"1\" = يمين، \"2\" = أعلى، "
+#~ "\"3\" = أسفل)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "اتجاه أداء نقرة السحب (\"0\" = يسار، \"1\" = يمين، \"2\" = أعلى، \"3\" = "
+#~ "أسفل)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "اتجاه أداء النقرة الثانوية (\"0\" = يسار، \"1\" = يمين، \"2\" = أعلى، "
+#~ "\"3\" = أسفل)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "اتجاه أداء النقرة المفردة (\"0\" = يسار، \"1\" = يمين، \"2\" = أعلى، "
+#~ "\"3\" = أسفل)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "المسافة بالبكسل حتى يَتِمَّ التعرف على الحركة"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "نمط النقر الكامن"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "نمط النقرة الكامنة (\"0\" = نمط النافذة، \"1\" = نمط الحركة)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "وقت النقر الكامن"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "فعّل النقر الثانوي"
+
+#~ msgid "Gesture double click"
+#~ msgstr "حركة نقر مزدوج"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "حركة نقر السحب"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "حركة النقر الثانوي"
+
+#~ msgid "Gesture single click"
+#~ msgstr "حركة نقر مفرد"
+
+#~ msgid "Movement threshold"
+#~ msgstr "عتبة الحركة"
+
+#~ msgid "Show click type window"
+#~ msgstr "اعرض نافذة نوع النّقر"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "أظهر الوقت المنقضي كغطاء للمؤشر."
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "الوقت بالثوان قبل إطلاق نقر"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "الوقت بالثوان قبل إطلاق نقر ثانوي"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "التقط المؤشر فقط إذا كان Alt مضغوطا"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "التقط المؤشر فقط إذا كان Ctrl مضغوطا"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "التقط المؤشر فقط إذا كان Shift مضغوطا"
+
+#~ msgid "Mouse button used to capture the pointer"
+#~ msgstr "زر الفأرة المستخدم لالتقاط المؤشر"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "زر الفأرة المستخدم لترك المؤشر"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "اترك المؤشر فقط إذا كان Alt مضغوطا"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "اترك المؤشر فقط إذا كان Ctrl مضغوطا"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "اترك المؤشر فقط إذا كان Shift مضغوطا"
+
+#~ msgid "Size of capture area"
+#~ msgstr "حجم مساحة الإمساك"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "عرض مساحة الإمساك بالبكسل."
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "موقع ص لنافذة نوع النقر"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "عطل تحريك شكل المؤشر"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "فعّل و اخرج"
+
+#~ msgid "Capture area"
+#~ msgstr "مساحة الإمساك"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "ثبّت مؤشّر الفأرة مؤقّتا"
+
+#~ msgid "Locked"
+#~ msgstr "مثبّت"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "فشل إطلاق تفضيلات الفأرة"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "دعم التقنية المعينة غير مفعل"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "يتطلب تحسين-الفأرة تفعيل التقنية المعينة في جلستك.\n"
+#~ "\n"
+#~ "لتفعيل دعم التقنية المعينة و إعادة تشغيل الجلسة, اضغط \"فعّل و اخرج\"."
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "النمط الكامن لاستخدامه"
+
+#~ msgid "Window y position"
+#~ msgstr "موقع ص للنافذة"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "اعرض الوقت المنقضي كغطاء للمؤشر"
+
+#~ msgid "L"
+#~ msgstr "م"
+
+#~ msgid "On"
+#~ msgstr "يعمل"
+
+#~ msgid "<b>Size of Capture Area</b>"
+#~ msgstr "<b>حجم مساحة الإمساك</b>"
+
+#~ msgid "Capture modifier"
+#~ msgstr "متغيّر الإمساك"
+
+#~ msgid "Capture modifier key (Alt)"
+#~ msgstr "التقاط مفتاح مُغير (Alt)"
+
+#~ msgid "Capture modifier key (Ctrl)"
+#~ msgstr "التقاط مفتاح مُغير (Ctrl)"
+
+#~ msgid "Capture modifier key (Shift)"
+#~ msgstr "التقاط مفتاح مُغير (Shift)"
+
+#~ msgid "Capture mouse button"
+#~ msgstr "التقط زر الفأرة"
+
+#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+#~ msgstr "زر الفأرة ليلتقط المؤشر (\"0\" = التقط فورا)"
+
+#~ msgid "Release modifier"
+#~ msgstr "متغيّر التّرك"
+
+#~ msgid "Release modifier key (Alt)"
+#~ msgstr "اترك "
+
+#~ msgid "Release modifier key (Ctrl)"
+#~ msgstr "اترك مفتاح مُغير(Ctrl)"
+
+#~ msgid "Release modifier key (Shift)"
+#~ msgstr "اترك مفتاح مُغير(Shift)"
+
+#~ msgid "Release mouse button"
+#~ msgstr "أرسل زر الفأرة"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "بريمج التقاط المؤشر"
+
+#~ msgid "Off"
+#~ msgstr "مغلق"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "بريمج النقر الكامن"

@@ -1,0 +1,475 @@
+# Finnish messages for mousetweaks
+# Copyright (C) 2008-2009 Free Software Foundation, Inc.
+# Ilkka Tuohela <hile@iki.fi> 2008-2009.
+#
+# pysenäpsäytys -> pysenapsautus
+# nappi -> painike
+#
+# Timo Jyrinki <timo.jyrinki@iki.fi>, 2008.
+# Tommi Vainikainen <thv@iki.fi>, 2010.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 201, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-24 19:19+0200\n"
+"PO-Revision-Date: 2013-03-24 15:01+0200\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
+"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "Napsautus kohdistamalla"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Napsautus"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Kaksoisnapsautus"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Vedä"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "Toissijainen napsautus"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Painikkeen tyyli"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Pelkkä teksti"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Pelkät kuvakkeet"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "Teksti ja kuvakkeet"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Suunta"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Vaaka"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Pysty"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr ""
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Ota pysenapsautus käyttöön"
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Ota oikean painikkeen pysenapsautus käyttöön"
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "Odotettava aika ennen pysenapsautusta"
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "Odotettava aika ennen simuloitua oikean painikkeen painallusta"
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Aseta aktiivinen pysenapsautustila"
+
+#: ../src/mt-main.c:634
+#, fuzzy
+msgid "Hide the click-type window"
+msgstr "Näytä napsautustyyppi-ikkuna"
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Jätä vähäiset kohdistimen liikkeet huomiotta"
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Sammuta mousetweaks"
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Käynnistä mousetweaks-palvelin"
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Käynnistä mousetweaks sisäänkirjautumistilassa"
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Gnomen mousetweaks-esteettömyys-palvelin"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Ohjetta ei voitu näyttää"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Sovelma erityyppisten pysenäpsäytysten valintaan.\n"
+#~ "Osa Mousetweaks-pakettia"
+
+#~ msgid "Click Type Window"
+#~ msgstr "Napsautustyyppi-ikkuna"
+
+#~ msgid "Drag Click"
+#~ msgstr "Raahausnapsautus"
+
+#~ msgid "Right Click"
+#~ msgstr "Oikean napin napssautus"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Kohdistimen kaappauksen asetukset"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Napin 0 valintaa kaappaa osoittimen heti"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "_Hiiren painike:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Shift"
+
+#~ msgid "_Width:"
+#~ msgstr "_Leveys:"
+
+#~ msgid "pixels"
+#~ msgstr "pikseliä"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Hallitse työpöytääsi käyttämättä hiiren painikkeita"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Pysenapsautus-sovelma"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Alue, jolla hiiren kohdistin lukitaan"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Kohdistimen kaappaus-sovelma"
+
+#~ msgid "Mouse button"
+#~ msgstr "Hiiren painike"
+
+#~ msgid "Size of capture area"
+#~ msgstr "Kaappausalueen koko"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Kaappausalueen leveys pikseleinä."
+
+#~ msgid "Capture area"
+#~ msgstr "Kaappausalue"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Lukitse hiiren kohdistin väliaikaisesti"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Asetukset"
+
+#~ msgid "_Help"
+#~ msgstr "O_hje"
+
+#~ msgid "_About"
+#~ msgstr "_Tietoja"
+
+#~ msgid "Locked"
+#~ msgstr "Lukittu"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "Hiiriasetuksia ei voitu käynnistää"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "Ota käyttöön ja kirjaudu ulos"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "Näytä kulunut aika kohdistimen päällä."
+
+#~ msgid "Animate cursor"
+#~ msgstr "Animoitu kohdistin"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Valitse pysenapsautuksen tyyppi"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Pysenapsautuksen aika"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Liikkeen kynnysarvo"
+
+#~ msgid "Dwell Click"
+#~ msgstr "Pysenapsautus"
+
+#~ msgid "Show click type window"
+#~ msgstr "Näytä napsautustyyppi-ikkuna"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "Aika sekunteina, ennen kuin oikea napsautus tapahtuu"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Pysenapsautustila"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Kaksoisnapsautus hiirieleillä"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "Etäisyys pikseleinä, jonka jälkeen liike tunnistetaan"
+
+#~ msgid "Pointer Capture"
+#~ msgstr "Kohdistimen kaappaus"
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "Aika sekunteina, ennen kuin napsautus tapahtuu"
+
+#~ msgid "Gesture single click"
+#~ msgstr "Napsautus hiirieleillä"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Oikea napsautus hiirieleillä"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Vetonapsautus hiirieleillä"
+
+#~ msgid "Secondary click time"
+#~ msgstr "Oikean napsautuksen aika"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "Ota oikea napsautus käyttöön"
+
+#~ msgid "Button style"
+#~ msgstr "Napin tyyli"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Kaappaa kohdistin vain jos Alt on painettuna"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Kaappaa kohdistin vain jos Ctrl on painettuna"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Kaappaa kohdistin vain jos Shift on painettuna"
+
+#~ msgid "Mouse button used to capture the pointer"
+#~ msgstr "Hiiren nappi, jolla kohdistin kaapataan"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "Hiiren nappi, jolla kohdistin vapautetaan"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Vapauta kohdistin vain, jos Alt on painettuna"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Vapauta kohdistin vain, jos Ctrl on painettuna"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Vapauta kohdistin vain, jos Shift on painettuna"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "Kaappaa osoitin"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Muokkain:"
+
+#~ msgid "Mouse _button:"
+#~ msgstr "Hiiren _nappi:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "Hiiren n_appi:"
+
+#~ msgid "Release Pointer"
+#~ msgstr "Vapauta osoitin"
+
+#~ msgid "S_hift"
+#~ msgstr "S_hift"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Dwell Click Type"
+#~ msgstr "Pysenapsautuksen tyyppi"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Näytä kuvakkeet ja teksti"
+
+#~ msgid "Show Icons only"
+#~ msgstr "Näytä vain kuvakkeet"
+
+#~ msgid "Show Text only"
+#~ msgstr "Näytä vain teksti"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr ""
+#~ "Napsautustyyppi-ikkunan nappien tyyli (”0” teksti, ”1” kuvake, ”2” "
+#~ "molemmat)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Suunta kaksoisnapsautukselle (”0” vasen, ”1” oikea, ”2” ylös, ”3” alas)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Suunta vetonapsautukselle (”0” vasen, ”1” oikea, ”2” ylös, ”3” alas)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Suunta oikealle napsautukselle (”0” vasen, ”1” oikea, ”2” ylös, ”3” alas)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Suunta tavalliselle napsautukselle (”0” vasen, ”1” oikea, ”2” ylös, ”3” "
+#~ "alas)"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "Pysenapsautuksen tila (”0” ikkunatila, ”1” hiirieletila)"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "Tätä hiiren nappia täytyy painaa, kun haluat vapauttaa kohdistimen "
+#~ "kaappausalueelta. Kelvolliset arvot ovat ”1” (vasen nappi), ”2” "
+#~ "keskinappi) ja ”3” (oikea nappi)."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "Tätä hiiren nappia täytyy painaa kohdistimen ollessa kaappausalueen "
+#~ "päällä, kun haluat kaapata kohdistimen. Kelvolliset arvot ovat ”1” (vasen "
+#~ "nappi), ”2” keskinappi) ja ”3” (oikea nappi)."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Täytyykö Alt-näppäintä painaa kaappaamaan kohdistin kaappausaueelle "
+#~ "kohdistimen ollessa kaappausalueen päällä. Jos tämä arvo on tosi ja "
+#~ "hiiren nappi on asetettu ”capture_button”-avaimessa, täytyy Alt-näppäintä "
+#~ "painaa asetetun hiiren napin kanssa samanaikaisesti."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Täytyykö Alt-näppäintä painaa yhdessä avaimessa ”release_button” asetetun "
+#~ "hiiren näppäimen kanssa, jotta kohdistin vapautetaan kaappausalueelta."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Täytyykö Ctrl-näppäintä painaa kaappaamaan kohdistin kaappausaueelle "
+#~ "kohdistimen ollessa kaappausalueen päällä. Jos tämä arvo on tosi ja "
+#~ "hiiren nappi on asetettu ”capture_button”-avaimessa, täytyy Ctrl-"
+#~ "näppäintä painaa asetetun hiiren napin kanssa samanaikaisesti."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Täytyykö Ctrl-näppäintä painaa yhdessä avaimessa ”release_button” "
+#~ "asetetun hiiren näppäimen kanssa, jotta kohdistin vapautetaan "
+#~ "kaappausalueelta."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Täytyykö Shift-näppäintä painaa kaappaamaan kohdistin kaappausaueelle "
+#~ "kohdistimen ollessa kaappausalueen päällä. Jos tämä arvo on tosi ja "
+#~ "hiiren nappi on asetettu ”capture_button”-avaimessa, täytyy Shift-"
+#~ "näppäintä painaa asetetun hiiren napin kanssa samanaikaisesti."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Täytyykö Shift-näppäintä painaa yhdessä avaimessa ”release_button” "
+#~ "asetetun hiiren näppäimen kanssa, jotta kohdistin vapautetaan "
+#~ "kaappausalueelta."
+
+#~ msgid "Click-type window X position"
+#~ msgstr "Napsautustyyppi-ikkunan x-sijainti"
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "Napsautustyyppi-ikkunan y-sijainti"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "Poista kohdistimen animaatiot käytöstä"

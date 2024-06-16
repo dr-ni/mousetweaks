@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-02-26 23:14+0000\n"
+"PO-Revision-Date: 2015-02-04 16:17+0000\n"
+"Last-Translator: Samir Ribić <Unknown>\n"
+"Language-Team: Bosnian <bs@li.org>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-02-05 07:03+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "Klik nadlijetanjem"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Jednostruki klik"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Dupli klik"
+
+#. 'Drag' liki in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Povlačenje"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "Sekundarni klik"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Stil dugmeta"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Samo tekst"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Samo ikone"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "Tekst i ikone"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Orijentacija"
+
+#. Buttons are arranged from lift to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Horizontalno"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertikalno"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Prozorski stil za tip klika"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "Stil dugmeta klikajućeg prozora."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Prozorska orijentacija za tip klika"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "Orijentacija za prozor tip klika."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Prozorska geometrija za tip klika"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Veličina i pozicija prozora tip klika. Format je standardni geometrijski "
+"string za X Window sistem."
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Omogući klik sa zadržavanjem"
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Omogući sekundarni simulirani klik"
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "Istek vremena prije vremenskog klika"
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "Istek vremena prije simuliranog sekundarnog klika"
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Postavi aktivni vremenski klik"
+
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Sakrij prozor klik-tipa"
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Ignoriši male pokrete pokazivača"
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Isključi podešavanja miša"
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Pokreni podešavanja miša kao upravljački program"
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Pokreni podešavanja miša u režimu za prijavu"
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME upravljački program za pristupačnost miša"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Ne mogu da prikažem pomoć"

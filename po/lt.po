@@ -1,0 +1,198 @@
+# Lithuanian translation of mousetweaks package.
+# Copyright © 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mousetweaks package.
+# Gintautas Miliauskas <gintas@akl.lt>, 2008.
+# Vytautas Liuolia <vytautas.liuolia@gmail.com>, 2008.
+# Žygimantas Beručka <zygis@gnome.org>, 2010.
+# Aurimas Černius <aurisc4@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks gnome-2-32\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2019-01-13 10:26+0000\n"
+"PO-Revision-Date: 2019-03-16 16:09+0200\n"
+"Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
+"Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Generator: Gtranslator 3.30.1\n"
+
+#: data/mousetweaks.ui:8
+msgid "Hover Click"
+msgstr "Delsiantis spustelėjimas"
+
+#: data/mousetweaks.ui:56
+msgid "Single Click"
+msgstr "Spustelėjimas"
+
+#: data/mousetweaks.ui:111
+msgid "Double Click"
+msgstr "Dvigubas spustelėjimas"
+
+#. 'Drag' like in a Drag and Drop operation
+#: data/mousetweaks.ui:166
+msgid "Drag"
+msgstr "Tempti"
+
+#: data/mousetweaks.ui:221
+msgid "Secondary Click"
+msgstr "Antrinis spustelėjimas"
+
+#: data/mousetweaks.ui:249
+msgid "Button Style"
+msgstr "Mygtukų stilius"
+
+#: data/mousetweaks.ui:257
+msgid "Text only"
+msgstr "Tik tekstas"
+
+#: data/mousetweaks.ui:267
+msgid "Icons only"
+msgstr "Tik piktogramos"
+
+#: data/mousetweaks.ui:277
+msgid "Text and Icons"
+msgstr "Tekstas ir piktogramos"
+
+#: data/mousetweaks.ui:287
+msgid "Orientation"
+msgstr "Orientacija"
+
+#. Buttons are arranged from left to right in the layout
+#: data/mousetweaks.ui:295
+msgid "Horizontal"
+msgstr "Gulsčiai"
+
+#. Buttons are arranged from top to bottom in the layout
+#: data/mousetweaks.ui:305
+msgid "Vertical"
+msgstr "Stačiai"
+
+#: data/org.gnome.mousetweaks.gschema.xml:5
+msgid "Click-type window style"
+msgstr "Spaudžiamo-rašomo lango stilius"
+
+#: data/org.gnome.mousetweaks.gschema.xml:6
+msgid "Button style of the click-type window."
+msgstr "Spaudžiamo-rašomo lango mygtukų stilius."
+
+#: data/org.gnome.mousetweaks.gschema.xml:10
+msgid "Click-type window orientation"
+msgstr "Spaudžiamo-rašomo lango orientacija"
+
+#: data/org.gnome.mousetweaks.gschema.xml:11
+msgid "Orientation of the click-type window."
+msgstr "Spaudžiamo-rašomo lango orientacija."
+
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Spaudžiamo-rašomo lango geometrija"
+
+#: data/org.gnome.mousetweaks.gschema.xml:16
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Spaudžiamo-rašomo lango dydis ir padėtis. Formatas yra standartinė X langų "
+"sistemos geometrijos eilutė."
+
+#: src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Įjungti lūkuriuojantį spustelėjimą"
+
+#: src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Įjungti simuliuotą antrinį spustelėjimą"
+
+#: src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "Kiek laukti prieš lūkuriuojantį spustelėjimą"
+
+#: src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "Kiek laukti prieš imituotą antrinį spustelėjimą"
+
+#: src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Nustatyti suaktyvintąją lūkuriuojančią veikseną"
+
+#: src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Slėpti spaudžiamą-rašomą langą"
+
+#: src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Ignoruoti mažus rodyklės judesius"
+
+#: src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Išjungti mousetweaks"
+
+#: src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Paleisti mousetweaks kaip tarnybą"
+
+#: src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Paleisti mousetweaks prisijungimo veiksenoje"
+
+#. parse
+#: src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "– GNOME pelės pritaikymo neįgaliesiems tarnyba"
+
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Nepavyko arba nėra ką išjungti.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Sėkmingai išjungta.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks jau veikia. (PID %u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Paleidžiama tarnyba.\n"
+
+#: src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Nepavyko parodyti žinyno"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Įtaisas lūkuriuojančio spustelėjimo tipui pasirinkti.\n"
+#~ "Mousetweaks dalis"
+
+#~ msgid "Click Type Window"
+#~ msgstr "Spustelėjimo tipo langas"
+
+#~ msgid "Drag Click"
+#~ msgstr "Vilkimas"
+
+#~ msgid "Right Click"
+#~ msgstr "Dešinysis spustelėjimas"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Sritis užrakinti pelės žymekliui skydelyje.\n"
+#~ "Mousetweaks dalis"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Pagauti ir paleisti valdiklius"

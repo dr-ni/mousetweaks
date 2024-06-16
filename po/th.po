@@ -1,0 +1,496 @@
+# Thai translation of mousetweaks
+# Copyright (C) 2008-2012 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mousetweaks package.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2008-2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-08-19 14:36+0000\n"
+"PO-Revision-Date: 2012-09-21 20:12+0700\n"
+"Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "คลิกด้วยการวางแช่"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "คลิกเดียว"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "ดับเบิลคลิก"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "ลาก"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "คลิกที่สอง"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "รูปแบบของปุ่ม"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "ข้อความเท่านั้น"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "ไอคอนเท่านั้น"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "ข้อความและไอคอน"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "แนววาง"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "แนวนอน"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "แนวตั้ง"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "รูปแบบปุ่มของหน้าต่างชนิดของการคลิก"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "รูปแบบปุ่มของหน้าต่างชนิดของการคลิก"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "แนววางของหน้าต่างชนิดของการคลิก"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "แนววางของหน้าต่างชนิดของการคลิก"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "เรขาคณิตของหน้าต่างชนิดของการคลิก"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr "ขนาดและตำแหน่งของหน้าต่างชนิดของการคลิก ในรูปสตริงเรขาคณิตของเอ็กซ์วินโดว์มาตรฐาน"
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "เปิดใช้การคลิกด้วยการวางแช่"
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "เปิดใช้การจำลองคลิกที่สอง"
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "ระยะเวลาที่จะรอในการคลิกด้วยการวางแช่"
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "ระยะเวลาที่จะรอในการจำลองคลิกที่สอง"
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "กำหนดโหมดการวางแช่ที่จะใช้"
+
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "ซ่อนหน้าต่างชนิดของการคลิก"
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "ไม่สนใจการขยับเมาส์เล็กๆ น้อยๆ"
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "ปิด mousetweaks"
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "เรียก mousetweaks ทำงานในแบบดีมอน"
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "เรียก mousetweaks ทำงานในโหมดเข้าระบบ"
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- ดีมอนจัดการเทคโนโลยีสิ่งอำนวยความสะดวกสำหรับเมาส์ของ GNOME"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "ไม่สามารถแสดงคู่มือวิธีใช้"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "แอพเพล็ตสำหรับเลือกชนิดต่างๆ ของการคลิกด้วยการวางแช่\n"
+#~ "เป็นส่วนหนึ่งของ Mousetweaks"
+
+#~ msgid "Click Type Window"
+#~ msgstr "หน้าต่างชนิดการคลิก"
+
+#~ msgid "Drag Click"
+#~ msgstr "คลิกเพื่อลาก"
+
+#~ msgid "Right Click"
+#~ msgstr "คลิกขวา"
+
+#~ msgid ""
+#~ "Area to freeze the mouse pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "พื้นที่กักตัวชี้เมาส์ไว้ในพาเนล\n"
+#~ "เป็นส่วนหนึ่งของ Mousetweaks"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "กักตัวชี้"
+
+#~ msgid "Modifier:"
+#~ msgstr "ปุ่มประกอบ"
+
+#~ msgid "Mouse _button:"
+#~ msgstr "ปุ่มเ_มาส์:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "ปุ่มเมา_ส์:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "ปรับแต่งการกักตัวชี้"
+
+#~ msgid "Release Pointer"
+#~ msgstr "ปล่อยคืนตัวชี้"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "ถ้าเลือกปุ่ม 0 จะกักตัวชี้ทันที"
+
+#~ msgid "Size of Capture Area"
+#~ msgstr "ขนาดของพื้นที่กักตัวชี้"
+
+#~ msgid "_Width:"
+#~ msgstr "ความ_กว้าง:"
+
+#~ msgid "pixels"
+#~ msgstr "พิกเซล"
+
+#~ msgid "Dwell Click Type"
+#~ msgstr "ชนิดของการคลิกด้วยการวางแช่"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "แสดงไอคอนและข้อความ"
+
+#~ msgid "Dwell Click"
+#~ msgstr "การคลิกด้วยการวางแช่"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "เลือกชนิดของการคลิกด้วยการวางแช่"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "พื้นที่กักตัวชี้"
+
+#~ msgid "Pointer Capture"
+#~ msgstr "กักตัวชี้"
+
+#~ msgid "_About"
+#~ msgstr "เ_กี่ยวกับ"
+
+#~ msgid "_Help"
+#~ msgstr "_วิธีใช้"
+
+#~ msgid "_Preferences"
+#~ msgstr "_ปรับแต่ง"
+
+#~ msgid "Animate cursor"
+#~ msgstr "แสดงภาพเคลื่อนไหวในตัวชี้"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr ""
+#~ "รูปแบบของปุ่มในหน้าต่างเลือกชนิดของการคลิก (\"0\"=ข้อความ, \"1\"=ไอคอน, "
+#~ "\"2\"=ทั้งสองอย่าง)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr "ทิศทางที่จะทำดับเบิลคลิก (\"0\"=ซ้าย, \"1\"=ขวา, \"2\"=ขึ้น, \"3\"=ลง)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr "ทิศทางที่จะทำคลิกเพื่อลาก (\"0\"=ซ้าย, \"1\"=ขวา, \"2\"=ขึ้น, \"3\"=ลง)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+#~ msgstr "ทิศทางที่จะทำคลิกที่สอง (\"0\"=ซ้าย, \"1\"=ขวา, \"2\"=ขึ้น, \"3\"=ลง)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr "ทิศทางที่จะทำคลิกเดียว (\"0\"=ซ้าย, \"1\"=ขวา, \"2\"=ขึ้น, \"3\"=ลง)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "ระยะทางเป็นพิกเซลก่อนจะเริ่มจับการเคลื่อนที่"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "โหมดการคลิกด้วยการวางแช่"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "โหมดการคลิกด้วยการวางแช่ (\"0\"=โหมดหน้าต่าง, \"1\"=โหมดท่าขยับ)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "ระยะเวลาการคลิกด้วยการวางแช่"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "เปิดใช้คลิกที่สอง"
+
+#~ msgid "Gesture double click"
+#~ msgstr "ท่าขยับดับเบิลคลิก"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "ท่าขยับคลิกเพื่อลาก"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "ท่าขยับคลิกที่สอง"
+
+#~ msgid "Gesture single click"
+#~ msgstr "ท่าขยับคลิกเดียว"
+
+#~ msgid "Movement threshold"
+#~ msgstr "ระยะเริ่มเคลื่อน"
+
+#~ msgid "Show click type window"
+#~ msgstr "แสดงหน้าต่างชนิดของการคลิก"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "แสดงเวลาที่ผ่านไปทับบนตัวชี้"
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "ระยะเวลาเป็นวินาทีก่อนที่จะสร้างการคลิก"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "ระยะเวลาเป็นวินาทีก่อนที่จะสร้างคลิกที่สอง"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "กักตัวชี้เมื่อมีการกด Alt เท่านั้น"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "กักตัวชี้เมื่อมีการกด Ctrl เท่านั้น"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "กักตัวชี้เมื่อมีการกด Shift เท่านั้น"
+
+#~ msgid "Mouse button used to capture the pointer"
+#~ msgstr "ปุ่มเมาส์ที่จะใช้กักตัวชี้"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "ปุ่มเมาส์ที่จะใช้ปล่อยคืนตัวชี้"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "ปล่อยคืนตัวชี้เมื่อมีการกด Alt เท่านั้น"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "ปล่อยคืนตัวชี้เมื่อมีการกด Ctrl เท่านั้น"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "ปล่อยคืนตัวชี้เมื่อมีการกด Shift เท่านั้น"
+
+#~ msgid "Size of capture area"
+#~ msgstr "ขนาดของพื้นที่กักตัวชี้"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "จะต้องกดเมาส์ปุ่มนี้เพื่อจะปล่อยคืนตัวชี้จากพื้นที่กักกัน ค่าที่ใช้ได้คือ \"1\" สำหรับปุ่มซ้าย, \"2\" "
+#~ "สำหรับปุ่มกลาง และ \"3\" สำหรับปุ่มขวา"
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "จะต้องกดเมาส์ปุ่มนี้ขณะที่ตัวชี้อยู่บนพื้นที่กักกันเพื่อจะกักตัวชี้ ค่าที่ใช้ได้คือ \"0\" "
+#~ "ถ้าไม่ต้องกดปุ่มใดเลย \"1\" สำหรับปุ่มซ้าย, \"2\" สำหรับปุ่มกลาง และ \"3\" สำหรับปุ่มขวา"
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "จะต้องกดปุ่ม Alt หรือไม่เพื่อที่จะกักตัวชี้ขณะที่ตัวชี้อยู่บนพื้นที่กักกัน ถ้าตัวเลือกนี้เป็นค่าจริง "
+#~ "และมีการกำหนดปุ่มเมาส์ในคีย์ \"capture_button\" ก็จะต้องกดปุ่ม Alt ขณะที่กดปุ่มเมาส์ด้วย"
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "จะต้องกดปุ่ม Alt ร่วมกับปุ่มเมาส์ที่กำหนดในคีย์ \"release_button\" ด้วยหรือไม่ "
+#~ "เพื่อที่จะปล่อยคืนตัวชี้จากพื้นที่กักกัน"
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "จะต้องกดปุ่ม Ctrl หรือไม่เพื่อที่จะกักตัวชี้ขณะที่ตัวชี้อยู่บนพื้นที่กักกัน ถ้าตัวเลือกนี้เป็นค่าจริง "
+#~ "และมีการกำหนดปุ่มเมาส์ในคีย์ \"capture_button\" ก็จะต้องกดปุ่ม Ctrl ขณะที่กดปุ่มเมาส์ด้วย"
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "จะต้องกดปุ่ม Ctrl ร่วมกับปุ่มเมาส์ที่กำหนดในคีย์ \"release_button\" ด้วยหรือไม่ "
+#~ "เพื่อที่จะปล่อยคืนตัวชี้จากพื้นที่กักกัน"
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "จะต้องกดปุ่ม Shift หรือไม่เพื่อที่จะกักตัวชี้ขณะที่ตัวชี้อยู่บนพื้นที่กักกัน ถ้าตัวเลือกนี้เป็นค่าจริง "
+#~ "และมีการกำหนดปุ่มเมาส์ในคีย์ \"capture_button\" ก็จะต้องกดปุ่ม Shift ขณะที่กดปุ่มเมาส์ด้วย"
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "จะต้องกดปุ่ม Shift ร่วมกับปุ่มเมาส์ที่กำหนดในคีย์ \"release_button\" ด้วยหรือไม่ "
+#~ "เพื่อที่จะปล่อยคืนตัวชี้จากพื้นที่กักกัน"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "ความกว้างของพื้นที่กักตัวชี้ในหน่วยพิกเซล"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "ไม่ได้เปิดใช้เทคโนโลยีสิ่งอำนวยความสะดวก"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Mousetweaks จะทำงานเมื่อมีการเปิดใช้เทคโนโลยีสิ่งอำนวยความสะดวกในวาระเท่านั้น\n"
+#~ "\n"
+#~ "หากต้องการเปิดใช้เทคโนโลยีสิ่งอำนวยความสะดวกแล้วเริ่มวาระใหม่ ก็ให้กดปุ่ม "
+#~ "\"เปิดใช้และออกจากระบบ\""
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "ตำแหน่ง Y ของหน้าต่างชนิดของการคลิก"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "ปิดการทำเคอร์เซอร์เป็นภาพเคลื่อนไหว"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "เปิดใช้และออกจากระบบ"
+
+#~ msgid "Locked"
+#~ msgstr "ล็อค"
+
+#~ msgid "Capture area"
+#~ msgstr "พื้นที่กักตัวชี้"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "ล็อคตัวชี้เมาส์ชั่วคราว"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "ไม่สามารถเรียกใช้การปรับแต่งเมาส์"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "โหมดการวางแช่ที่จะใช้"
+
+#~ msgid "Window y position"
+#~ msgstr "ตำแหน่ง y ของหน้าต่าง"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "แสดงเวลาที่ผ่านไปทับบนตัวชี้"
+
+#~ msgid "On"
+#~ msgstr "เปิด"
+
+#~ msgid "<b>Size of Capture Area</b>"
+#~ msgstr "<b>ขนาดของพื้นที่กักตัวชี้</b>"
+
+#~ msgid "Capture modifier"
+#~ msgstr "ปุ่มประกอบปุ่มเริ่มกัก"
+
+#~ msgid "Capture modifier key (Alt)"
+#~ msgstr "ปุ่มประกอบปุ่มเริ่มกัก (Alt)"
+
+#~ msgid "Capture modifier key (Ctrl)"
+#~ msgstr "ปุ่มประกอบปุ่มเริ่มกัก (Ctrl)"
+
+#~ msgid "Capture modifier key (Shift)"
+#~ msgstr "ปุ่มประกอบปุ่มเริ่มกัก (Shift)"
+
+#~ msgid "Capture mouse button"
+#~ msgstr "ปุ่มเมาส์สำหรับเริ่มกัก"
+
+#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+#~ msgstr "ปุ่มเมาส์ที่จะเริ่มการกักตัวชี้ (\"0\"=กักทันที)"
+
+#~ msgid "Release modifier"
+#~ msgstr "ปุ่มประกอบปุ่มปล่อยคืน"
+
+#~ msgid "Release modifier key (Alt)"
+#~ msgstr "ปุ่มประกอบปุ่มปล่อยคืน (Alt)"
+
+#~ msgid "Release modifier key (Ctrl)"
+#~ msgstr "ปุ่มประกอบปุ่มปล่อยคืน (Ctrl)"
+
+#~ msgid "Release modifier key (Shift)"
+#~ msgstr "ปุ่มประกอบปุ่มปล่อยคืน (Shift)"
+
+#~ msgid "Release mouse button"
+#~ msgstr "ปุ่มเมาส์สำหรับปล่อยคืน"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "กักตัวชี้"
+
+#~ msgid "Off"
+#~ msgstr "ปิด"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "คลิกด้วยการวางแช่"
+
+#~ msgid "Couldn't display help"
+#~ msgstr "ไม่สามารถแสดงคู่มือวิธีใช้"
+
+#~ msgid "B_utton:"
+#~ msgstr "ปุ่_ม:"
+
+#~ msgid "_Button:"
+#~ msgstr "_ปุ่ม:"
+
+#~ msgid "Mousetweaks requires Assistive Technologies."
+#~ msgstr "Mousetweaks ต้องทำงานโดยมีเทคโนโลยีสิ่งอำนวยความสะดวกด้วย"

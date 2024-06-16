@@ -1,0 +1,287 @@
+# German language file for mousetweaks.
+# Copyright (C) 2007 Gerd Kohlberger <lowfi@chello.at>
+# This file is distributed under the same license as the mousetweaks package.
+# Gerd Kohlberger <lowfi@chello.at>, 2008.
+# Hendrik Brandt <heb@gnome-de.org>, 2008.
+# Hendrik Richter <hendrikr@gnome.org>, 2008.
+# Wolfgang Stöggl <c72578@yahoo.de>, 2009, 2011.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2012.
+# Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2010, 2011.
+# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2010, 2011.
+# Jürgen Benvenuti <gastornis@posteo.org>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/"
+"issues\n"
+"POT-Creation-Date: 2022-02-25 18:40+0000\n"
+"PO-Revision-Date: 2022-07-08 17:32+0200\n"
+"Last-Translator: Jürgen Benvenuti <gastornis@posteo.org>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1\n"
+
+#: data/mousetweaks.ui:8
+msgid "Hover Click"
+msgstr "Überfahrklick (Hover-Klick)"
+
+#: data/mousetweaks.ui:56
+msgid "Single Click"
+msgstr "Einfacher Klick"
+
+#: data/mousetweaks.ui:111
+msgid "Double Click"
+msgstr "Doppelklick"
+
+#. 'Drag' like in a Drag and Drop operation
+#: data/mousetweaks.ui:166
+msgid "Drag"
+msgstr "Ziehen"
+
+#: data/mousetweaks.ui:221
+msgid "Secondary Click"
+msgstr "Kontextklick"
+
+#: data/mousetweaks.ui:249
+msgid "Button Style"
+msgstr "Knopfstil"
+
+#: data/mousetweaks.ui:257
+msgid "Text only"
+msgstr "Nur Text"
+
+#: data/mousetweaks.ui:267
+msgid "Icons only"
+msgstr "Nur Symbole"
+
+#: data/mousetweaks.ui:277
+msgid "Text and Icons"
+msgstr "Text und Symbole"
+
+#: data/mousetweaks.ui:287
+msgid "Orientation"
+msgstr "Orientierung"
+
+#. Buttons are arranged from left to right in the layout
+#: data/mousetweaks.ui:295
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#. Buttons are arranged from top to bottom in the layout
+#: data/mousetweaks.ui:305
+msgid "Vertical"
+msgstr "Vertikal"
+
+#: data/org.gnome.mousetweaks.gschema.xml:5
+msgid "Click-type window style"
+msgstr "Stil des Klicktyp-Fensters"
+
+#: data/org.gnome.mousetweaks.gschema.xml:6
+msgid "Button style of the click-type window."
+msgstr "Knopfstil des Klicktyp-Fensters."
+
+#: data/org.gnome.mousetweaks.gschema.xml:10
+msgid "Click-type window orientation"
+msgstr "Orientierung des Klicktyp-Fensters"
+
+#: data/org.gnome.mousetweaks.gschema.xml:11
+msgid "Orientation of the click-type window."
+msgstr "Orientierung des Klicktyp-Fensters."
+
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Größe des Klicktyp-Fensters"
+
+#: data/org.gnome.mousetweaks.gschema.xml:16
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Größe und Position des Klicktyp-Fensters. Das Format ist eine Standard-"
+"Zeichenkette für X-Fenstersystem-Geometrie."
+
+#: src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Verzögerten Klick einschalten"
+
+#: src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Simulierten Kontextklick einschalten"
+
+#: src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "Zeitdauer, ehe ein verzögerter Klick ausgelöst wird"
+
+#: src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "Zeitdauer, ehe ein simulierter Kontextklick ausgelöst wird"
+
+#: src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Den aktiven Verzögerungsmodus festlegen"
+
+#: src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Das Klicktyp-Fenster verbergen"
+
+#: src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Kleine Bewegungen des Zeigers ignorieren"
+
+#: src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Mousetweaks beenden"
+
+#: src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Mousetweaks als Hintergrunddienst starten"
+
+#: src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Mousetweaks im Anmeldemodus starten"
+
+#. parse
+#: src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "– GNOME-Dienst zur Barrierefreiheit der Maus"
+
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Beenden fehlgeschlagen, oder es gibt nichts zu beenden.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Beenden erfolgreich.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks läuft bereits (PID %u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Hintergrunddienst wird gestartet.\n"
+
+#: src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Hilfe konnte nicht angezeigt werden"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Applet zur Auswahl verzögerter Klickarten der Maus.\n"
+#~ "Teil von Mousetweaks"
+
+#~ msgid "Click Type Window"
+#~ msgstr "Fenster der Klickarten"
+
+#~ msgid "Drag Click"
+#~ msgstr "Mitzieh-Klick"
+
+#~ msgid "Right Click"
+#~ msgstr "Rechtsklick"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Bereich auf dem Panel, in dem der Mauszeiger eingefangen wird.\n"
+#~ "Teil von Mousetweaks"
+
+#~ msgid "C_trl"
+#~ msgstr "_Strg"
+
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Einfang- und Freigabesteuerung"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Modifikatortasten:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Einstellungen zum Einfangen des Mauszeigers"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr ""
+#~ "Durch die Auswahl der Taste 0 wird der Mauszeiger sofort festgehalten"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Größe des Einfangbereiches"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "Maus_taste:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Umschalttaste"
+
+#~ msgid "_Width:"
+#~ msgstr "_Breite:"
+
+#~ msgid "pixels"
+#~ msgstr "Pixel"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Steuern Sie Ihre Arbeitsumgebung ohne die Maustasten"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Verzögerter Mausklick"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Bereich, in dem der Mauszeiger gesperrt wird"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Mauszeiger einfangen"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "»Alt«-Modifikatortaste"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "»Strg«-Modifikatortaste"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "»Umschalt«-Modifikatortaste"
+
+#~ msgid "Mouse button"
+#~ msgstr "Maustaste"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "Maustaste zum Einfangen oder Freigeben des Mauszeigers."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Größe des Einfangbereiches"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Breite des Einfangbereiches in Pixel."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Ein Klicktyp-Fenster anzeigen"
+
+#~ msgid "Capture area"
+#~ msgstr "Einfangbereich"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Vorübergehend den Mauszeiger sperren"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Einstellungen"
+
+#~ msgid "_Help"
+#~ msgstr "_Hilfe"
+
+#~ msgid "_About"
+#~ msgstr "_Info"
+
+#~ msgid "Locked"
+#~ msgstr "Gesperrt"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Das »Universal Access Panel« konnte nicht geöffnet werden"

@@ -1,0 +1,146 @@
+# Friulian translation for mousetweaks.
+# Copyright (C) 2012 mousetweaks's COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousetweaks package.
+# TmTFx <f.t.public@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks gnome-3-6\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-24 22:37+0000\n"
+"PO-Revision-Date: 2012-12-28 14:08+0100\n"
+"Last-Translator: TmTFx <f.t.public@gmail.com>\n"
+"Language-Team: Friulian <fur@li.org>\n"
+"Language: fur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "Clic automatic"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Singul Clic"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Dopli Clic"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Strisine"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "Clic Secondari"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Stîl dal pipul"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Nome test"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Nome iconis"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "Test e iconis"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Orientament"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Orizontâl"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Verticâl"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Stîl barcon par tipo di clic"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "Stîl dai pipui dal barcon par il tipo di clic"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Orientament barcon par tipo di clic"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "Orientament dal barcon par tipo di clic"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Geometrie barcon par tipo di clic"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Dimension e posizion dal barcon par il tipo di clic. Il formât a j'è la "
+"classiche stringhe di geometrie di X Window System"
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Abilite il clic automatic"
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Abilite il clic secondari simulât"
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "Timp di spietâ prime di un clic automatic"
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "Timp di spietâ prime di un clic secondari"
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Imposte la modalitât ative dal clic automatic"
+
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Nascuint il barcon par il tipo di clic"
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Ignore i moviments piçui dal puntadôr"
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Stude mousetweaks"
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Fâs partî mousetweaks come un demoni"
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Fâs partî mousetweaks in modalitât login"
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- daemoni di acessibilitât dal mouse GNOME"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Falît a Mostrâ il Jutori"

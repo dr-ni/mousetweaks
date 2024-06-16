@@ -1,0 +1,556 @@
+# English (British) translation.
+# Copyright (C) 2008 mousetweaks'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousetweaks package.
+# Philip Withnall <philip@tecnocode.co.uk>, 2009, 2010.
+# Bruce Cowan <bruce@bcowan.me.uk>, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-16 14:13+0000\n"
+"PO-Revision-Date: 2012-03-16 14:13+0100\n"
+"Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
+"Language-Team: British English <en@li.org>\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "Hover Click"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Single Click"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Double Click"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Drag"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "Secondary Click"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Button Style"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Text only"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Icons only"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "Text and Icons"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Orientation"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Click-type window style"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "Button style of the click-type window."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Click-type window orientation"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "Orientation of the click-type window."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "Click-type window geometry"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Enable dwell click"
+
+#: ../src/mt-main.c:625
+msgid "Enable simulated secondary click"
+msgstr "Enable simulated secondary click"
+
+#: ../src/mt-main.c:627
+msgid "Time to wait before a dwell click"
+msgstr "Time to wait before a dwell click"
+
+#: ../src/mt-main.c:629
+msgid "Time to wait before a simulated secondary click"
+msgstr "Time to wait before a simulated secondary click"
+
+#: ../src/mt-main.c:631
+msgid "Set the active dwell mode"
+msgstr "Set the active dwell mode"
+
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Hide the click-type window"
+
+#: ../src/mt-main.c:635
+msgid "Ignore small pointer movements"
+msgstr "Ignore small pointer movements"
+
+#: ../src/mt-main.c:639
+msgid "Shut down mousetweaks"
+msgstr "Shut down mousetweaks"
+
+#: ../src/mt-main.c:641
+msgid "Start mousetweaks as a daemon"
+msgstr "Start mousetweaks as a daemon"
+
+#: ../src/mt-main.c:643
+msgid "Start mousetweaks in login mode"
+msgstr "Start mousetweaks in login mode"
+
+#. parse
+#: ../src/mt-main.c:661
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME mouse accessibility daemon"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Failed to Display Help"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+
+#~ msgid "Click Type Window"
+#~ msgstr "Click Type Window"
+
+#~ msgid "Drag Click"
+#~ msgstr "Drag Click"
+
+#~ msgid "Right Click"
+#~ msgstr "Right Click"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Capture and Release Controls"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Keyboard modifier:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Pointer Capture Preferences"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Selecting Button 0 will capture the pointer immediately"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Size of the Capture Area"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "_Mouse button:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Shift"
+
+#~ msgid "_Width:"
+#~ msgstr "_Width:"
+
+#~ msgid "pixels"
+#~ msgstr "pixels"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Control your desktop without using mouse buttons"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Dwell Click Applet"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Area to lock the pointer"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Pointer Capture Applet"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "\"Alt\" keyboard modifier"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "\"Control\" keyboard modifier"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "\"Shift\" keyboard modifier"
+
+#~ msgid "Mouse button"
+#~ msgstr "Mouse button"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "Mouse button used to capture or release the pointer."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Size of capture area"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Width of the capture area in pixels."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Show a click-type window"
+
+#~ msgid "Capture area"
+#~ msgstr "Capture area"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Temporarily lock the mouse pointer"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Preferences"
+
+#~ msgid "_Help"
+#~ msgstr "_Help"
+
+#~ msgid "_About"
+#~ msgstr "_About"
+
+#~ msgid "Locked"
+#~ msgstr "Locked"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Failed to Open the Universal Access Panel"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "Capture Pointer"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Modifier:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "Mouse b_utton:"
+
+#~ msgid "Release Pointer"
+#~ msgstr "Release Pointer"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Dwell Click Type"
+#~ msgstr "Dwell Click Type"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Show Icons and Text"
+
+#~ msgid "Dwell Click"
+#~ msgstr "Dwell Click"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Select dwelling click type"
+
+#~ msgid "Pointer Capture"
+#~ msgstr "Pointer Capture"
+
+#~ msgid "Animate cursor"
+#~ msgstr "Animate cursor"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "Distance in pixels before movement will be recognized"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Dwell click mode"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Dwell click time"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "Enable secondary click"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Gesture double click"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Gesture drag click"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Gesture secondary click"
+
+#~ msgid "Gesture single click"
+#~ msgstr "Gesture single click"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Movement threshold"
+
+#~ msgid "Show click type window"
+#~ msgstr "Show click type window"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "Show elapsed time as cursor overlay."
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "Time in seconds before a click is triggered"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "Time in seconds before a secondary click is triggered"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Capture pointer only if Alt is pressed"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Capture pointer only if Ctrl is pressed"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Capture pointer only if Shift is pressed"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "Mouse button used to release the pointer"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Release pointer only if Alt is pressed"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Release pointer only if Ctrl is pressed"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Release pointer only if Shift is pressed"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "Click-type window Y position"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "Disable cursor animations"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "Enable and Log Out"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "Failed to Launch Mouse Preferences"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "Assistive Technology Support is not Enabled"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+
+#~ msgid "L"
+#~ msgstr "L"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Dwell mode to use"
+
+#~ msgid "Window y position"
+#~ msgstr "Window y position"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Show elapsed time as cursor overlay"
+
+#~ msgid "On"
+#~ msgstr "On"
+
+#~ msgid "<b>Size of Capture Area</b>"
+#~ msgstr "<b>Size of Capture Area</b>"
+
+#~ msgid "Capture modifier key (Alt)"
+#~ msgstr "Capture modifier key (Alt)"
+
+#~ msgid "Capture modifier key (Ctrl)"
+#~ msgstr "Capture modifier key (Ctrl)"
+
+#~ msgid "Capture modifier key (Shift)"
+#~ msgstr "Capture modifier key (Shift)"
+
+#~ msgid "Capture mouse button"
+#~ msgstr "Capture mouse button"
+
+#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+#~ msgstr "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+
+#~ msgid "Release modifier key (Alt)"
+#~ msgstr "Release modifier key (Alt)"
+
+#~ msgid "Release modifier key (Ctrl)"
+#~ msgstr "Release modifier key (Ctrl)"
+
+#~ msgid "Release modifier key (Shift)"
+#~ msgstr "Release modifier key (Shift)"
+
+#~ msgid "Release mouse button"
+#~ msgstr "Release mouse button"
+
+#~ msgid "Off"
+#~ msgstr "Off"
+
+#~ msgid "B_utton:"
+#~ msgstr "B_utton:"
+
+#~ msgid "_Button:"
+#~ msgstr "_Button:"
+
+#~ msgid "Mousetweaks requires Assistive Technologies."
+#~ msgstr "Mousetweaks requires Assistive Technologies."

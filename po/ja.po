@@ -1,0 +1,229 @@
+# mousetweaks ja.po.
+# Copyright (c) 2007-2011, 2020 Rosetta Contributors and Canonical Ltd 2007
+# This file is distributed under the same license as the mousetweaks package.
+# keblo <keblo1@gmail.com>, 2007, 2008.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2008, 2009.
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2010, 2011.
+# EnjoySoftware <https://launchpad.net/~enjoysoftware>, 2020.
+# sicklylife <translation@sicklylife.jp>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2020-03-29 12:37+0000\n"
+"PO-Revision-Date: 2020-05-06 18:20+0900\n"
+"Last-Translator: OKANO Takayoshi <kano@na.rim.or.jp>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/mousetweaks.ui:8
+msgid "Hover Click"
+msgstr "ホバークリック"
+
+#: data/mousetweaks.ui:56
+msgid "Single Click"
+msgstr "シングルクリック"
+
+#: data/mousetweaks.ui:111
+msgid "Double Click"
+msgstr "ダブルクリック"
+
+#. 'Drag' like in a Drag and Drop operation
+#: data/mousetweaks.ui:166
+msgid "Drag"
+msgstr "ドラッグ"
+
+#: data/mousetweaks.ui:221
+msgid "Secondary Click"
+msgstr "副ボタンのクリック"
+
+#: data/mousetweaks.ui:249
+msgid "Button Style"
+msgstr "ボタンのスタイル"
+
+#: data/mousetweaks.ui:257
+msgid "Text only"
+msgstr "テキストのみ"
+
+#: data/mousetweaks.ui:267
+msgid "Icons only"
+msgstr "アイコンのみ"
+
+#: data/mousetweaks.ui:277
+msgid "Text and Icons"
+msgstr "テキストとアイコン"
+
+#: data/mousetweaks.ui:287
+msgid "Orientation"
+msgstr "方向"
+
+#. Buttons are arranged from left to right in the layout
+#: data/mousetweaks.ui:295
+msgid "Horizontal"
+msgstr "水平"
+
+#. Buttons are arranged from top to bottom in the layout
+#: data/mousetweaks.ui:305
+msgid "Vertical"
+msgstr "垂直"
+
+#: data/org.gnome.mousetweaks.gschema.xml:5
+msgid "Click-type window style"
+msgstr "クリック種別のウィンドウのスタイル"
+
+#: data/org.gnome.mousetweaks.gschema.xml:6
+msgid "Button style of the click-type window."
+msgstr "クリック種別のウィンドウのボタンのスタイルです。"
+
+#: data/org.gnome.mousetweaks.gschema.xml:10
+msgid "Click-type window orientation"
+msgstr "クリック種別のウィンドウの方向"
+
+#: data/org.gnome.mousetweaks.gschema.xml:11
+msgid "Orientation of the click-type window."
+msgstr "クリック種別のウィンドウの向きです。"
+
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "クリック種別のウィンドウの座標"
+
+#: data/org.gnome.mousetweaks.gschema.xml:16
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"クリック種別のウィンドウの大きさと位置です。形式は標準的な X ウィンドウ"
+"システムの geometry 文字列です。"
+
+#: src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "自動クリックの機能を有効にする"
+
+#: src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "副ボタンのクリックを検出する"
+
+#: src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "自動クリックするまでの時間を指定する"
+
+#: src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "副ボタンのクリックとみなすまでの時間を指定する"
+
+#: src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "アクティブな自動クリックモードを設定する"
+
+#: src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "クリック種別のウィンドウを隠す"
+
+#: src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "小規模なポインターの移動を無視する"
+
+#: src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "MouseTweaks デーモンを終了する"
+
+#: src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "MouseTweaks をデーモンとして起動する"
+
+#: src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "mousetweaks をログインモードで起動する"
+
+#. parse
+#: src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME のマウスアクセシビリティデーモン"
+
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "終了する対象がない、または終了に失敗しました。\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "終了に成功しました。\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks はすでに実行中です (PID %u)。\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "デーモンを開始しています。\n"
+
+#: src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "ヘルプの表示に失敗しました"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "さまざまな自動クリックの種別を選択するアプレットです。\n"
+#~ "Mousetweaks の一部です"
+
+#~ msgid "Click Type Window"
+#~ msgstr "クリック種別のウィンドウ"
+
+#~ msgid "Drag Click"
+#~ msgstr "ドラッグクリック"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "パネル上のポインターをロックする領域。\n"
+#~ "Mousetweaks の一部"
+
+#~ msgid "Capture and Release Controls"
+#~ msgstr "コントロールの捕獲と解放"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "修飾キー:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "ポインターの捕獲の設定"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "ボタン　0　を選択するとポインターをすぐに捕獲します"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "捕獲エリアの大きさ"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "マウスのボタンを使わずにデスクトップをコントロール"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "ポインターをロックするエリアです"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "ポインターの捕獲アプレット"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "ポインターを捕獲したり解放するマウスのボタンです。"
+
+#~ msgid "Size of capture area"
+#~ msgstr "捕獲エリアの大きさ"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "パネルに配置する捕獲エリアの幅 (ピクセル単位) です。"
+
+#~ msgid "Show a click-type window"
+#~ msgstr "クリック種別のウィンドウを表示する"
+
+#~ msgid "Capture area"
+#~ msgstr "捕獲エリア"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "マウスのポインターを捕獲して一時的にロックします"

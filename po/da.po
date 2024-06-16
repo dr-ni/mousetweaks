@@ -1,0 +1,576 @@
+# Danish translation of mousetweaks
+# Copyright (C) 2009-10, Free Software Foundation
+# This file is distributed under the same license as the mousetweaks package.
+#
+# Per Kongstad <p_kongstad@op.pl>, 2009.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2008, 10.
+# Alan Mortensen <alanmortensen.am@gmail.com>, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2019-01-13 10:26+0000\n"
+"PO-Revision-Date: 2019-01-26 15:33+0100\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: data/mousetweaks.ui:8
+msgid "Hover Click"
+msgstr "Svæveklik"
+
+#: data/mousetweaks.ui:56
+msgid "Single Click"
+msgstr "Enkeltklik"
+
+#: data/mousetweaks.ui:111
+msgid "Double Click"
+msgstr "Dobbeltklik"
+
+#. 'Drag' like in a Drag and Drop operation
+#: data/mousetweaks.ui:166
+msgid "Drag"
+msgstr "Træk"
+
+#: data/mousetweaks.ui:221
+msgid "Secondary Click"
+msgstr "Sekundært klik"
+
+#: data/mousetweaks.ui:249
+msgid "Button Style"
+msgstr "Knapstil"
+
+#: data/mousetweaks.ui:257
+msgid "Text only"
+msgstr "Kun tekst"
+
+#: data/mousetweaks.ui:267
+msgid "Icons only"
+msgstr "Kun ikoner"
+
+#: data/mousetweaks.ui:277
+msgid "Text and Icons"
+msgstr "Tekst og ikoner"
+
+#: data/mousetweaks.ui:287
+msgid "Orientation"
+msgstr "Orientering"
+
+#. Buttons are arranged from left to right in the layout
+#: data/mousetweaks.ui:295
+msgid "Horizontal"
+msgstr "Vandret"
+
+#. Buttons are arranged from top to bottom in the layout
+#: data/mousetweaks.ui:305
+msgid "Vertical"
+msgstr "Lodret"
+
+#: data/org.gnome.mousetweaks.gschema.xml:5
+msgid "Click-type window style"
+msgstr "Stilen af kliktypevinduet"
+
+#: data/org.gnome.mousetweaks.gschema.xml:6
+msgid "Button style of the click-type window."
+msgstr "Knapstil for kliktypevindue."
+
+#: data/org.gnome.mousetweaks.gschema.xml:10
+msgid "Click-type window orientation"
+msgstr "Orienteringen af kliktypevinduet"
+
+#: data/org.gnome.mousetweaks.gschema.xml:11
+msgid "Orientation of the click-type window."
+msgstr "Orienteringen af kliktypevinduet."
+
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Målene for kliktypevinduet"
+
+#: data/org.gnome.mousetweaks.gschema.xml:16
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Størrelse og placering af kliktypevinduet. Formatet er en standardstreng for "
+"angivelse af vinduesmål for X-vinduessystemet."
+
+#: src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Aktivér hvileklik"
+
+#: src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Aktivér simuleret sekundært klik"
+
+#: src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "Ventetid før hvileklik"
+
+#: src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "Ventetid før et simuleret sekundært klik"
+
+#: src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Brug aktiv hviletilstand"
+
+#: src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Skjul kliktypevinduet"
+
+#: src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Ignorér små markørbevægelser"
+
+#: src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Afslut mousetweaks"
+
+#: src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Start mousetweaks som dæmon"
+
+#: src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Start mousetweaks i logind-tilstand"
+
+#. parse
+#: src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- Musetilgængelighedsdæmon til GNOME"
+
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Kunne ikke lukke ned, eller der er ikke noget at lukke ned.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Nedlukning lykkedes.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks kører allerede (PID %u).\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Starter dæmonen.\n"
+
+#: src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Kunne ikke vise hjælp"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Panelprogram til at vælge forskellige typer hvileklik.\n"
+#~ "Dette er en del af Mousetweaks"
+
+#~ msgid "Click Type Window"
+#~ msgstr "Kliktypevindue"
+
+#~ msgid "Drag Click"
+#~ msgstr "Trækkeklik"
+
+#~ msgid "Right Click"
+#~ msgstr "Højreklik"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "Område hvori markøren låses til panelet.\n"
+#~ "Dette er en del af Mousetweaks"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+# tror det skal læses som "kontroller til indfangning og frigørelse", er dog ikke sikker.  Den korte form virker forhåbentlig uanset hvad
+#~ msgid "Capture and Release Controls"
+#~ msgstr "Indfang og frigør"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "Tastaturmodifikation:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "Indstillinger for markørindfanging"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "Vælges knap 0, vil markøren omgående indfanges"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "Størrelse af indfangningsområdet"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "_Museknap:"
+
+#~ msgid "_Shift"
+#~ msgstr "_Skift"
+
+#~ msgid "_Width:"
+#~ msgstr "_Bredde:"
+
+#~ msgid "pixels"
+#~ msgstr "pixler"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "Styr dit skrivebord uden brug af museknapper"
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "Panelprogram til hvileklik"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "Område hvortil markøren låses"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "Panelprogram til markørindfangning"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "Tastaturmodifikationstasten “Alt”"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "Tastaturmodifikationstasten “Control”"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "Tastaturmodifikationstasten “Skift”"
+
+#~ msgid "Mouse button"
+#~ msgstr "Museknap"
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "Museknap til at indfange eller frigøre markøren."
+
+#~ msgid "Size of capture area"
+#~ msgstr "Størrelse af indfangningsområde"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "Bredde af indfangningsområdet i pixels."
+
+#~ msgid "Show a click-type window"
+#~ msgstr "Vis et kliktypevindue"
+
+#~ msgid "Capture area"
+#~ msgstr "Indfangningsområde"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "Lås musemarkøren midlertidigt"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Indstillinger"
+
+#~ msgid "_Help"
+#~ msgstr "_Hjælp"
+
+#~ msgid "_About"
+#~ msgstr "_Om"
+
+#~ msgid "Locked"
+#~ msgstr "Låst"
+
+# navn defineret i gnome-control-center
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "Kunne ikke åbne panelet Tilgængelighed"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "Indfang markør"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "Modifikation:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "Musek_nap:"
+
+#~ msgid "Release Pointer"
+#~ msgstr "Frigiv markør"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Dwell Click Type"
+#~ msgstr "Hvileklik-type"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "Vis ikoner og tekst"
+
+#~ msgid "Dwell Click"
+#~ msgstr "Hvileklik"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "Vælg type af hvileklik"
+
+#~ msgid "Pointer Capture"
+#~ msgstr "Markørindfangning"
+
+#~ msgid "Animate cursor"
+#~ msgstr "Animér markør"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr "Knapstil i kliktype-vinduet (“0” = Tekst, “1” = Ikon, “2” = Begge)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Retning for et dobbeltklik (“0” = Venstre, “1” = Højre, “2” = Op, “3” = "
+#~ "Ned)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Retning for et træk-klik (“0” = Venstre, “1” = Højre, “2” = Op, “3” = Ned)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, "
+#~ "\"2\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Retning for et sekundært klik (“0” = Venstre, “1” = Højre, “2” = Op, “3” "
+#~ "= Ned)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "Retning for et enkeltklik (“0” = Venstre, “1” = Højre, “2” = Op, “3” = "
+#~ "Ned)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "Afstand i pixels før bevægelsen anerkendes"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "Hvileklik-tilstand"
+
+#~ msgid "Dwell click mode (\"0\" = Window mode, \"1\" = Gesture mode)"
+#~ msgstr "Hvileklik-tilstand (“0” = Vinduestilstand, “1” = Gestustilstand)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "Hvileklik-tid"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "Aktivér sekundært klik"
+
+#~ msgid "Gesture double click"
+#~ msgstr "Bevægelsesbestemt dobbeltklik"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "Bevægelsesbestemt træk-klik"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "Bevægelsesbestemt sekundært klik"
+
+#~ msgid "Gesture single click"
+#~ msgstr "Bevægelsesbestemt enkeltklik"
+
+#~ msgid "Movement threshold"
+#~ msgstr "Bevægelsestærskel"
+
+#~ msgid "Show click type window"
+#~ msgstr "Vis kliktype-vindue"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "Vis forløbet tid ved markør."
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "Tid i sekunder før et klik udløses"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "Tid i sekunder før et sekundært klik udløses"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Indfang kun markøren hvis Alt holdes nede"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Indfang kun markøren hvis Ctrl holdes nede"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Indfang kun markøren hvis SKift holdes nede"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "Museknap til at frigive markøren"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Frigiv kun markøren hvis Alt holdes nede"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Frigiv kun markøren hvis Ctrl holdes nede"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Frigiv kun markøren hvis Skift holdes nede"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "Denne museknap skal være trykket for at løslade markøren fra "
+#~ "fangstområdet. Gyldige værdier er “1” til venstreknap, “2” til "
+#~ "midterknap, og “3” til højreknap."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "Denne museknap skal være trykket mens markøren befinder sig over "
+#~ "fangstområdet for at kunne fange markøren. Gyldige værdier er “0” til "
+#~ "ingen knap er krævet, “1” til venstreknap, “2” til midterknap, og “3” til "
+#~ "højreknap."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Om Alt-tasten skal være trykket for at markøren vil blive fanget mens den "
+#~ "er over fangstområdet. Hvis denne er indstillet til sand og en museknap "
+#~ "er indstillet i “capture_button”-taster, så skal Alt-tasten være trykket "
+#~ "mens museknappen holdes nede."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Om Alt-tasten skal være trykket med museknappen indstillet i "
+#~ "“release_button” for at markøren skal løslades fra fangstområdet."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Om Ctrl-tasten skal være trykket for at markøren vil blive fanget mens "
+#~ "den er over fangstområdet. Hvis denne er indstillet til sand og en "
+#~ "museknap er indstillet i “capture_button”-taster, så skal Ctrl-tasten "
+#~ "være trykket mens museknappen holdes nede."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Om Ctrl-tasten skal være trykket med museknappen indstillet i "
+#~ "“release_button” for at markøren skal løslades fra fangstområdet."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "Om Skift-tasten skal være trykket for at markøren vil blive fanget mens "
+#~ "den er over fangstområdet. Hvis denne er indstillet til sand og en "
+#~ "museknap er indstillet i “capture_button”-taster, så skal Skift-tasten "
+#~ "være trykket mens museknappen holdes nede."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "Om Skipt-tasten skal være trykket med museknappen indstillet i "
+#~ "“release_button” for at markøren skal løslades fra fangstområdet."
+
+#~ msgid "Click-type window Y position"
+#~ msgstr "Kliktypevindues y-position"
+
+#~ msgid "Disable cursor animations"
+#~ msgstr "Deaktivér markøranimationer"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "Aktivér og log ud"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "Kunne ikke starte museindstillinger"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "Understøttelse af tilgængelighedsteknologier er ikke aktiveret"
+
+# (knap-etiket er konsistent)
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Mousetweaks kræver at tilgængelighedsteknologi er aktiveret i din "
+#~ "session.\n"
+#~ "\n"
+#~ "Tryk “Aktivér og log ud” for at aktivere understøttelse af "
+#~ "tilgængelighedsteknologier, og genstart sessionen."
+
+#~ msgid "L"
+#~ msgstr "L"
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "Anvendt hviletilstand"
+
+#~ msgid "Window y position"
+#~ msgstr "Vinduesposition y"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "Vis forløbet tid ved markør"
+
+#~ msgid "On"
+#~ msgstr "På"
+
+#~ msgid "<b>Size of Capture Area</b>"
+#~ msgstr "<b>Størrelse af indfangningsområde</b>"
+
+#~ msgid "Capture modifier key (Alt)"
+#~ msgstr "Indfang modifikationstast (Alt)"
+
+#~ msgid "Capture modifier key (Ctrl)"
+#~ msgstr "Indfang modifikationstast (Ctrl)"
+
+#~ msgid "Capture modifier key (Shift)"
+#~ msgstr "Indfang modifikationstast (Skift)"
+
+#~ msgid "Capture mouse button"
+#~ msgstr "Indfang museknap"
+
+#~ msgid "Mouse button to capture the pointer (\"0\" = Capture immediately)"
+#~ msgstr "Museknap til markørindfangning (“0” = Indfang omgående)"
+
+#~ msgid "Release modifier key (Alt)"
+#~ msgstr "Frigiv modifikationstast (Alt)"
+
+#~ msgid "Release modifier key (Ctrl)"
+#~ msgstr "Frigiv modifikationstast (Ctrl)"
+
+#~ msgid "Release modifier key (Shift)"
+#~ msgstr "Frigiv modifikationstast (Skift)"
+
+#~ msgid "Release mouse button"
+#~ msgstr "Frigiv museknap"
+
+#~ msgid "Off"
+#~ msgstr "Fra"
+
+#~ msgid "B_utton:"
+#~ msgstr "K_nap:"
+
+#~ msgid "_Button:"
+#~ msgstr "_Knap:"
+
+#~ msgid "Mousetweaks requires Assistive Technologies."
+#~ msgstr "Mousetweaks kræver tiltængelighedsteknologier."

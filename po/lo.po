@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-06-22 14:03+0700\n"
+"PO-Revision-Date: 2016-06-22 14:25+0700\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: lo_LA\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "ເລື່ອນຄິກ"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "ຄິກຄັ້ງດຽວ"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "ຄິກສອງຄັ້ງຊ້ອນ"
+
+#.
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "ລາກ"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "ຄິກຄັ້ງທີສອງ"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "ຮູບແບບຂອງປຸ່ມກົດ"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "ຕົວຫນັງສືເທົ່ານັ້ນ"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "ໄອຄອນເທົ່ານັ້ນ"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "ຕົວຫນັງສື ແລະ ໄອຄອນ"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "ແນວວາງ"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "ແນວນອນ"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "ແນວຕັ້ງ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "ຮູບແບບຂອງວິນໂດຂອງການຄິກ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "ຮູບແບບປຸ່ມຂອງວິນໂດຂອງການຄິກ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "ແນວວາງຂອງວິນໂດຂອງການຄິກ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "ແນວວາງຂອງວິນໂດຂອງການຄິກ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "ຮູບຮ່າງຂອງວິນໂດຂອງການຄິກ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"ຂະຫນາດ ແລະ ຕຳແຫນ່ງຂອງວິນໂດຂອງການຄິກ ໃນຮູບແບບມາດຕະຖານຂອງສະຕຣິງຂອງວິນໂດ X."
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "ເປີດນຳໃຊ້ການຄິກແບບ dwell"
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "ເປີດນຳໃຊ້ຕົວຈຳລອງການຄິກທີ່ສອງ"
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "ໄລຍະເວລາທີ່ຖ້າໃນການຄິກແບບ dwell"
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "ໄລຍະເວລາທີ່ຖ້າໃນການຄິກແບບ dwell ຄັ້ງທີ່ສອງ"
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "ການກຳຫນົດໂຫມດ dwell ທີ່ຈຳນຳໃຊ້"
+
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "ເຊື່ອງຊະນິດວິນໂດຂອງການຄິກ"
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "ບໍ່ຕ້ອງສົນໃຈການເຫນັງຕີງເມົ້າເຫລັກໆນ້ອຍໆ"
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "ປິດ mousetweaks"
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "ເອີ້ນ mousetweaks ທຳງານໃນແບບດີມອນ"
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "ເອີ້ນ mousetweaks ທຳງານໃນໂຫມດເຂົ້າສູ່ລະບົບ"
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- ດີມອນຈັດການເທັກໂນໂລຍີສິ່ງອຳນວຍຄວາມສະດວກສຳລັບເມົ້າຂອງ GNOME"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "ລົ້ມເຫລວໃນການສະແດງຄວາມຊ່ວຍເຫລືອ"

@@ -1,0 +1,169 @@
+# Turkish translation of MouseTweaks,
+# Copyright (C) 2008 THE MouseTweak'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the MouseTweaks package.
+# Emrah Ünal <eunall@gmail.com>, 2008.
+# Baris Cicek <baris@teamforce.name.tr>, 2008, 2009, 2011.
+# Muhammet Kara <muhammetk@gmail.com>, 2011, 2012, 2016.
+# Sabri Ünal <libreajans@gmail.com>, 2023.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2019, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/mousetweaks/issues\n"
+"POT-Creation-Date: 2023-01-25 21:18+0000\n"
+"PO-Revision-Date: 2023-03-02 01:20+0300\n"
+"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: data/mousetweaks.ui:8
+msgid "Hover Click"
+msgstr "Durağan Tık"
+
+#: data/mousetweaks.ui:56
+msgid "Single Click"
+msgstr "Tek Tık"
+
+#: data/mousetweaks.ui:111
+msgid "Double Click"
+msgstr "Çift Tık"
+
+#. 'Drag' like in a Drag and Drop operation
+#: data/mousetweaks.ui:166
+msgid "Drag"
+msgstr "Sürükle"
+
+#: data/mousetweaks.ui:221
+msgid "Secondary Click"
+msgstr "İkincil Tık"
+
+#: data/mousetweaks.ui:249
+msgid "Button Style"
+msgstr "Düğme Biçemi"
+
+#: data/mousetweaks.ui:257
+msgid "Text only"
+msgstr "Yalnızca metin"
+
+#: data/mousetweaks.ui:267
+msgid "Icons only"
+msgstr "Yalnızca simgeler"
+
+#: data/mousetweaks.ui:277
+msgid "Text and Icons"
+msgstr "Metin ve Simgeler"
+
+#: data/mousetweaks.ui:287
+msgid "Orientation"
+msgstr "Yönelim"
+
+#. Buttons are arranged from left to right in the layout
+#: data/mousetweaks.ui:295
+msgid "Horizontal"
+msgstr "Yatay"
+
+#. Buttons are arranged from top to bottom in the layout
+#: data/mousetweaks.ui:305
+msgid "Vertical"
+msgstr "Dikey"
+
+#: data/org.gnome.mousetweaks.gschema.xml:5
+msgid "Click-type window style"
+msgstr "Tıklama türü pencere biçemi"
+
+#: data/org.gnome.mousetweaks.gschema.xml:6
+msgid "Button style of the click-type window."
+msgstr "Tıklama türü penceresinin düğme biçemi."
+
+#: data/org.gnome.mousetweaks.gschema.xml:10
+msgid "Click-type window orientation"
+msgstr "Tıklama türü pencere yönelimi"
+
+#: data/org.gnome.mousetweaks.gschema.xml:11
+msgid "Orientation of the click-type window."
+msgstr "Tıklama türü penceresinin yönelimi."
+
+#: data/org.gnome.mousetweaks.gschema.xml:15 src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "Tıklama türü pencere geometrisi"
+
+#: data/org.gnome.mousetweaks.gschema.xml:16
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Tıklama türü penceresinin boyutu ve konumu. Standart X Pencere Sistemi "
+"geometri dizgesi biçimindedir."
+
+#: src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "Durağan tıklamayı etkinleştir"
+
+#: src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "Benzetimli ikincil tıklamayı etkinleştir"
+
+#: src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "Durağan tıklama öncesi beklenecek süre"
+
+#: src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "Benzetimli ikincil tıklama öncesi beklenecek süre"
+
+#: src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "Etkin bekleme kipini ayarla"
+
+#: src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "Tıklama türü penceresini gizle"
+
+#: src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "Ufak belirteç hareketlerini yok say"
+
+#: src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "Mousetweaks’i kapat"
+
+#: src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "Mousetweaks’i hizmet olarak başlat"
+
+#: src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "Mousetweaks’i giriş kipinde başlat"
+
+#. parse
+#: src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME fare erişilebilirlik hizmeti"
+
+#: src/mt-main.c:814
+msgid "Shutdown failed or nothing to shut down.\n"
+msgstr "Kapatılamadı ya da kapanacak bir şey yok.\n"
+
+#: src/mt-main.c:816
+msgid "Shutdown successful.\n"
+msgstr "Kapatma başarılı.\n"
+
+#. i18n: PID here means "Process Identifier"
+#: src/mt-main.c:824
+#, c-format
+msgid "Mousetweaks is already running. (PID %u)\n"
+msgstr "Mousetweaks zaten çalışıyor. (PID %u)\n"
+
+#: src/mt-main.c:830
+msgid "Starting daemon.\n"
+msgstr "Hizmet başlatılıyor.\n"
+
+#: src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Yardım Gösterilemedi"

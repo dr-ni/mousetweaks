@@ -1,0 +1,497 @@
+# translation of mousetweaks.master.te.po to Telugu
+# Copyright (C) 2012 Swecha Telugu Localisation Team <localization@swecha.net>.
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Krishna Babu K <kkrothap@redhat.com>, 2009, 2012.
+# Hari krishna <hari@swecha.net>, 2011, 2012.
+# Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks.master.te\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-19 08:27+0000\n"
+"PO-Revision-Date: 2012-03-15 12:57+0530\n"
+"Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
+"Language-Team: Telugu <indlinux-telugu@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+"Language: te\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "పైకి తెచ్చి నోక్కులు"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "ఏక నొక్కు"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "రెండు నోక్కులు"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "జరుపుట"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "రెండవ నొక్కు "
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "బటన్ శైలి"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "పాఠ్యమును మాత్రమే "
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "ప్రతిమలను మాత్రమే "
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "పాఠము మరియు ప్రతిమలు"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "పునశ్ఛరణ"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "సమతలంగావున్న"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "నిలువు"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "నొక్కు రకము విండో శైలి"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "నొక్కు రకము విండో యొక్క బటన్ శైలి"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "నొక్కు రకము విండో పునశ్ఛరణ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "నొక్కు రకము విండో యొక్క  పునశ్ఛరణ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "నొక్కు రకము విండో క్షేత్రగణితం"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"నొక్కు రకము విండో యొక్క పరిమానము మరియు స్థానము.ఫార్మాట్ స్టాండర్డ్ X విండో "
+"సిస్టం  క్షేత్రగణిత పదబంధము "
+"వంటిది"
+
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "డ్వెల్ నొక్కను చేతనముచేయి"
+
+#: ../src/mt-main.c:625
+msgid "Enable simulated secondary click"
+msgstr "సిమ్యులేటయిన రెండవ నొక్కును చేతనముచేయి"
+
+#: ../src/mt-main.c:627
+msgid "Time to wait before a dwell click"
+msgstr "డ్వెల్ నొక్కనకు ముందు వేచివుండవలసిన సమయం"
+
+#: ../src/mt-main.c:629
+msgid "Time to wait before a simulated secondary click"
+msgstr "సిమ్యులేట్ చేసిన రెండవ నొక్కుకు ముందు వేచివుండవలసిన సమయం"
+
+#: ../src/mt-main.c:631
+msgid "Set the active dwell mode"
+msgstr "క్రియాశీల డ్వెల్ సంవిధానాన్ని అమర్చు"
+
+#: ../src/mt-main.c:633
+#| msgid "Orientation of the click-type window."
+msgid "Hide the click-type window"
+msgstr "నొక్కు రకము విండోను కనబడకుండా చేయు"
+
+#: ../src/mt-main.c:635
+msgid "Ignore small pointer movements"
+msgstr "చిన్న సూచకి కదలికలను పట్టించుకోకు"
+
+#: ../src/mt-main.c:639
+msgid "Shut down mousetweaks"
+msgstr "మౌస్‌ట్వీక్లను మూసివేయుము"
+
+#: ../src/mt-main.c:641
+msgid "Start mousetweaks as a daemon"
+msgstr "మౌస్‌ట్వీక్సు డెమోన్ ను ప్రారంభిచుము"
+
+#: ../src/mt-main.c:643
+msgid "Start mousetweaks in login mode"
+msgstr "ప్రవేశద్వార సంవిధానం తో మౌస్ ట్వీక్సును ప్రారంభించండి"
+
+#. parse
+#: ../src/mt-main.c:661
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME మౌస్‌ అందుబాటు  డెమోన్"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "సహాయమును ప్రదర్శించుటకు విఫలమైంది"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "విభిన్న డ్వెల్-క్లిక్ రకములను యెంచుకొనుటకు ఆప్లెట్.\n"
+#~ "మౌస్‌ట్వీక్లనందు భాగము"
+
+#~ msgid "Click Type Window"
+#~ msgstr "నొక్కు రకము విండో"
+
+#~ msgid "Drag Click"
+#~ msgstr "లాగి నోక్కు"
+
+#~ msgid "Right Click"
+#~ msgstr "కుడి నొక్కు"
+
+#~ msgid ""
+#~ "Area to lock the pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "మౌస్ సూచకి పానల్ పైన వున్నప్పుడులాక్ చెయవలసిన ప్రాంతము.\n"
+#~ "మౌస్‌ట్వీకుల యొక్క భాగము"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
+
+#~ msgid "Capture and Release Controls"
+#~ msgstr "పట్టుకొనుటకు మరియు విడుదలకు  నియంత్రణలు"
+
+#~ msgid "Keyboard modifier:"
+#~ msgstr "మీటలపతకము మార్చునది:"
+
+#~ msgid "Pointer Capture Preferences"
+#~ msgstr "సూచకి కాప్చర్ అభీష్టాలు"
+
+#~ msgid "Selecting Button 0 will capture the pointer immediately"
+#~ msgstr "బటన్ 0 ను యెంపికచేయుటవలన సూచకిని తక్షణమే కాప్చర్ చేస్తుంది"
+
+#~ msgid "Size of the Capture Area"
+#~ msgstr "కాప్చర్ ప్రాంతముయొక్క పరిమాణము"
+
+#~ msgid "_Alt"
+#~ msgstr "_Alt"
+
+#~ msgid "_Mouse button:"
+#~ msgstr "మౌస్ బటన్ (_M):"
+
+#~ msgid "_Shift"
+#~ msgstr "మార్చు(_S)"
+
+#~ msgid "_Width:"
+#~ msgstr "వెడల్పు (_W):"
+
+#~ msgid "pixels"
+#~ msgstr "పిగ్జెల్సు"
+
+#~ msgid "Control your desktop without using mouse buttons"
+#~ msgstr "మౌస్ బటన్ ను ఉపయోగించకుండా మీ రంగస్థలమును నియంత్రించండి "
+
+#~ msgid "Dwell Click Applet"
+#~ msgstr "డ్వెల్ నొక్కు యాప్ లెట్"
+
+#~ msgid "Area to lock the pointer"
+#~ msgstr "సూచకిని లాక్ చేయుటకు ప్రాంతము"
+
+#~ msgid "Pointer Capture Applet"
+#~ msgstr "సూచకి కాప్చర్ యాప్ లెట్"
+
+#~ msgid "\"Alt\" keyboard modifier"
+#~ msgstr "\"Alt\" మీటలపతకాన్ని మార్చునది"
+
+#~ msgid "\"Control\" keyboard modifier"
+#~ msgstr "\"Control\" మీటలపతకాన్ని మార్చునది"
+
+#~ msgid "\"Shift\" keyboard modifier"
+#~ msgstr "\"Shift\" మీటలపతకాన్ని మార్చునది"
+
+#~ msgid "Mouse button"
+#~ msgstr "మౌస్ బటన్ "
+
+#~ msgid "Mouse button used to capture or release the pointer."
+#~ msgstr "సూచకిని కాప్చర్  చేయుటకు లేదా విడిపించుటకు వుపయోగించిన మౌస్ బటన్"
+
+#~ msgid "Size of capture area"
+#~ msgstr "కాప్చర్ ప్రాంతముయొక్క పరిమాణము"
+
+#~ msgid "Width of the capture area in pixels."
+#~ msgstr "కాప్చర్ ప్రాంతముయొక్క వెడల్పు పిగ్జెల్సులో"
+
+#~ msgid "Show a click-type window"
+#~ msgstr "నొక్కు రకము విండోను చూపుము"
+
+#~ msgid "Capture area"
+#~ msgstr "కాప్చర్ ప్రాంతము"
+
+#~ msgid "Temporarily lock the mouse pointer"
+#~ msgstr "మౌస్ సూచకిని తాత్కాలికంగా లాక్ చేయండి"
+
+#~ msgid "_Preferences"
+#~ msgstr "_అభీష్టాలు"
+
+#~ msgid "_Help"
+#~ msgstr "సహాయం(_H)"
+
+#~ msgid "_About"
+#~ msgstr "గురించి(_A)"
+
+#~ msgid "Locked"
+#~ msgstr "తాళం వేయబడినది"
+
+#~ msgid "Failed to Open the Universal Access Panel"
+#~ msgstr "యూనివెర్సల్ సాంగత్య ప్యానెల్ తెరుచుట విఫలం "
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid "Capture Pointer"
+#~ msgstr "కాప్చర్ సూచకి"
+
+#~ msgid "Ct_rl"
+#~ msgstr "Ct_rl"
+
+#~ msgid "Modifier:"
+#~ msgstr "సవరణి:"
+
+#~ msgid "Mouse b_utton:"
+#~ msgstr "మౌస్ బటన్ (_u):"
+
+#~ msgid "Release Pointer"
+#~ msgstr "విడుదల సూచకి"
+
+#~ msgid "Sh_ift"
+#~ msgstr "Sh_ift"
+
+#~ msgid "Show Icons and Text"
+#~ msgstr "ప్రతిమలను మరియు పాఠ్యమును చూపుము"
+
+#~ msgid "Dwell Click"
+#~ msgstr "డ్వెల్ నొక్కు"
+
+#~ msgid "Select dwelling click type"
+#~ msgstr "డ్వెల్లింగ్ నొక్కు రకమును యెంపికచేయుము"
+
+#~ msgid "Animate cursor"
+#~ msgstr "కర్సర్‌ను యానిమేట్ చేయుము"
+
+#~ msgid ""
+#~ "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = "
+#~ "Both)"
+#~ msgstr "నొక్క రకము విండోనందు బటన్ శైలి (\"0\" = పాఠ్యము, \"1\" = ప్రతిమ, \"2\" = రెండూ)"
+
+#~ msgid ""
+#~ "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "రెండు నొక్కలను జరుపుటకు దిశ (\"0\" = ఎడమ, \"1\" = కుడి, \"2\" = పైకి, \"3\" = "
+#~ "క్రిందకు)"
+
+#~ msgid ""
+#~ "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "లాగి నొక్కుటకు దిశ (\"0\" = ఎడమ, \"1\" = కుడి, \"2\" = పైకి, \"3\" = క్రిందకు)"
+
+#~ msgid ""
+#~ "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2"
+#~ "\" = Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "రెండవ నొక్క నొక్కుటకు దిశ (\"0\" = ఎడమ, \"1\" = కుడి, \"2\" = పైకి, \"3\" = క్రిందకు)"
+
+#~ msgid ""
+#~ "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+#~ "Up, \"3\" = Down)"
+#~ msgstr ""
+#~ "ఒంటరి నొక్కు నొక్కుటకు దిశ (\"0\" = ఎడమ, \"1\" = కుడి, \"2\" = పైకి, \"3\" = "
+#~ "క్రిందకు)"
+
+#~ msgid "Distance in pixels before movement will be recognized"
+#~ msgstr "కదలిక గుర్తించబడటానికి ముందు దూరము పిగ్జెల్సులో"
+
+#~ msgid "Dwell click mode"
+#~ msgstr "డ్వెల్ నొక్కు రీతి"
+
+#~ msgid "Dwell click mode (\"0\" = Gesture mode, \"1\" = Window mode)"
+#~ msgstr "డ్వెల్ నొక్కు రీతి (\"0\" = గెస్ట్రూ రీతి, \"1\" = విండో రీతి)"
+
+#~ msgid "Dwell click time"
+#~ msgstr "డ్వెల్ నొక్కు సమయం"
+
+#~ msgid "Enable secondary click"
+#~ msgstr "రెండవ నొక్కును చేతనముచేయి"
+
+#~ msgid "Gesture double click"
+#~ msgstr "గెస్ట్చర్ రెండు నొక్కులు"
+
+#~ msgid "Gesture drag click"
+#~ msgstr "గెస్ట్చర్ లాగు నొక్కు"
+
+#~ msgid "Gesture secondary click"
+#~ msgstr "గెస్ట్చర్ రెండవ నొక్కు"
+
+#~ msgid "Gesture single click"
+#~ msgstr "గెస్ట్చర్ వొంటరి నొక్కు"
+
+#~ msgid "Movement threshold"
+#~ msgstr "కదలిక త్రెష్‌హోల్డు"
+
+#~ msgid "Show elapsed time as cursor overlay."
+#~ msgstr "గడిచిన సమయాన్ని కర్సర్ వోవర్‌లే వలె చూపుము."
+
+#~ msgid "Time in seconds before a click is triggered"
+#~ msgstr "ఒక నొక్కు ట్రిగ్గర్ చేయుటకు ముందు సమయం క్షణాలలో"
+
+#~ msgid "Time in seconds before a secondary click is triggered"
+#~ msgstr "రెండవ నొక్కు ట్రిగ్గర్ చేయుటకు ముందు సమయం క్షణాలలో"
+
+#~ msgid "Capture pointer only if Alt is pressed"
+#~ msgstr "Alt వత్తబడితే సూచకి మాత్రమే కాప్చర్ చేయుము"
+
+#~ msgid "Capture pointer only if Ctrl is pressed"
+#~ msgstr "Ctrl వత్తబడితే సూచకి మాత్రమే కాప్చర్ చేయుము"
+
+#~ msgid "Capture pointer only if Shift is pressed"
+#~ msgstr "Shift వత్తబడితే సూచకి మాత్రమే కాప్చర్ చేయుము"
+
+#~ msgid "Mouse button used to release the pointer"
+#~ msgstr "సూచకిని విడుదల చేయుటకు వుపయోగించిన మౌస్ బటన్"
+
+#~ msgid "Release pointer only if Alt is pressed"
+#~ msgstr "Alt వత్తబడితే విడుదల సూచిక మాత్రమే"
+
+#~ msgid "Release pointer only if Ctrl is pressed"
+#~ msgstr "Ctrl వత్తబడితే విడుదల సూచకి మాత్రమే"
+
+#~ msgid "Release pointer only if Shift is pressed"
+#~ msgstr "Shift వత్తబడితే విడుదల సూచకి మాత్రమే"
+
+#~ msgid ""
+#~ "This mouse button must be pressed to release the pointer from the capture "
+#~ "area. Valid values are \"1\" for left button, \"2\" for middle button, "
+#~ "and \"3\" for right button."
+#~ msgstr ""
+#~ "కాప్చర్ ప్రాంతమునుండి సూచకిని విడుదల చేయుటకు ఈ మౌస్ బటన్ తప్పక వత్తాలి. చెల్లునటువంటి విలువలు "
+#~ "\"1\" ఎడమ బటన్ కొరకు, \"2\" మధ్య బటన్ కొరకు, మరియు \"3\" కుడి బటన్ కొరకు."
+
+#~ msgid ""
+#~ "This mouse button must be pressed while the pointer is over the capture "
+#~ "area in order to capture the pointer. Valid values are \"0\" if no button "
+#~ "is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for "
+#~ "right button."
+#~ msgstr ""
+#~ "సూచకి కాప్చర్ ప్రాంతముపై వున్నప్పుడు సూచకిని కాప్చర్ చేయుటకు మౌస్ బటన్ తప్పక వత్తాలి. "
+#~ "చెల్లునటువంటి విలువలు \"0\" ఏ బటన్ అవసరలేక పోతే, \"1\" ఎడమ బటన్ కొరకు, \"2\" మధ్య "
+#~ "బటన్ కొరకు, మరియు \"3\" కుడి బటన్ కొరకు."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Alt key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "సూచికి కాప్చర్ ప్రాంతముపై వున్నప్పుడు అది కాప్చర్ చేయబడుటకు Alt కీను వత్తవలెనా. ఈ ఐచ్చికము "
+#~ "సత్యము వలె అమర్చితే, మరియు మౌస్ బటన్ \"capture_button\" కీనందు అమర్చితే, అప్పుడు మౌస్ బటన్ "
+#~ "వత్తునప్పుడు Alt కీ తప్పక వత్తవలెను."
+
+#~ msgid ""
+#~ "Whether the Alt key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "కాప్చర్ ప్రాంతమునుండి సూచకి విడుదల అగుటకు \"release_button\" నందు అమర్చిన మౌస్ బటన్‌తో "
+#~ "Alt కీ వత్తవలెనా."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed for the pointer to be captured while "
+#~ "it's over the capture area. If this option is set as true, and a mouse "
+#~ "button is set in the \"capture_button\" key, then the Ctrl key must be "
+#~ "pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "సూచికి కాప్చర్ ప్రాంతముపై వున్నప్పుడు అది కాప్చర్ చేయబడుటకు Ctrl కీను వత్తవలెనా. ఈ ఐచ్చికము "
+#~ "సత్యము వలె అమర్చితే, మరియు మౌస్ బటన్ \"capture_button\" కీనందు అమర్చితే, అప్పుడు మౌస్ బటన్ "
+#~ "వత్తునప్పుడు Ctrl కీ తప్పక వత్తవలెను."
+
+#~ msgid ""
+#~ "Whether the Ctrl key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "కాప్చర్ ప్రాంతమునుండి సూచకి విడుదల అగుటకు \"release_button\" నందు అమర్చిన మౌస్ బటన్‌తో "
+#~ "Ctrl కీ వత్తవలెనా."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed for the pointer to be captured "
+#~ "while it's over the capture area. If this option is set as true, and a "
+#~ "mouse button is set in the \"capture_button\" key, then the Shift key "
+#~ "must be pressed while the mouse button is pressed."
+#~ msgstr ""
+#~ "సూచికి కాప్చర్ ప్రాంతముపై వున్నప్పుడు అది కాప్చర్ చేయబడుటకు Shift కీను వత్తవలెనా. ఈ ఐచ్చికము "
+#~ "సత్యము వలె అమర్చితే, మరియు మౌస్ బటన్ \"capture_button\" కీనందు అమర్చితే, అప్పుడు మౌస్ బటన్ "
+#~ "వత్తునప్పుడు Shift కీ తప్పక వత్తవలెను."
+
+#~ msgid ""
+#~ "Whether the Shift key must be pressed with the mouse button set in "
+#~ "\"release_button\" for the pointer to be released from the capture area."
+#~ msgstr ""
+#~ "కాప్చర్ ప్రాంతమునుండి సూచకి విడుదల అగుటకు \"release_button\" నందు అమర్చిన మౌస్ బటన్‌తో "
+#~ "Shift కీ వత్తవలెనా."
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "సహాయక సాంకేతికత మద్దతు చేతనము చేయబడలేదు"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "మౌస్‌ట్వీక్సునకు మీ సెషన్‌నందు సహాయక సాంకేతికతలు చేతనంగా కావాలి.\n"
+#~ "\n"
+#~ "సహాయక సాంకేతికతలను చేతనము చేయుటకు మరియు మీ సెషన్‌ను పునఃప్రారంభించుటకు, \"చేతనముచేయి మరియు "
+#~ "లాగవుట్ అవ్వు\" వత్తుము."
+
+#~ msgid "Dwell mode to use"
+#~ msgstr "ఉపయోగించుటకు డ్వెల్ రీతి"
+
+#~ msgid "Window x position"
+#~ msgstr "విండో x స్థానము"
+
+#~ msgid "Window y position"
+#~ msgstr "విండో y స్థానము"
+
+#~ msgid "Show elapsed time as cursor overlay"
+#~ msgstr "కర్సర్ వోవర్‌లే వలె గడిచిన సమయాన్ని చూపుము"
+
+#~ msgid "Enable and Log Out"
+#~ msgstr "క్రియాశీలించు మరియు నమోదు బయటికి"
+
+#~ msgid "L"
+#~ msgstr "L"
+
+#~ msgid "Failed to Launch Mouse Preferences"
+#~ msgstr "మౌస్ అభీష్టాలను ఆరంభించుటకు విఫలమైంది"

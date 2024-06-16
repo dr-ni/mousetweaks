@@ -1,0 +1,146 @@
+# Norwegian bokmål translation of mousetweaks.
+# Copyright (C) 1999-2005 Free Software Foundation, Inc.
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2012.
+# Terance Edward Sola <terance@lyse.net>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks 2.91.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-20 11:19+0100\n"
+"PO-Revision-Date: 2012-02-20 11:20+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "Hvileklikk"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "Enkeltklikk"
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "Dobbeltklikk"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "Dra"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "Sekundært klikk"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "Stil for knapp"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "Kun tekst"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "Kun ikoner"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "Tekst og ikoner"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "Orientering"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "Horisontal"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "Vertikal"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "Stil for klikk-type vindu"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "Knappestil for klikk-type vindu."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "Orientering for klikk-type vindu"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "Orientering for klikk-type vindu."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:637
+msgid "Click-type window geometry"
+msgstr "Geometri for klikk-type vindu"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"Størrelse og posisjon for klikk-type vinduet. Formatet er en standard "
+"geometristreng for X Window System."
+
+#: ../src/mt-main.c:623
+msgid "Enable dwell click"
+msgstr "Aktiver dwell-klikk"
+
+#: ../src/mt-main.c:625
+msgid "Enable simulated secondary click"
+msgstr "Slå på simulert andreklikk"
+
+#: ../src/mt-main.c:627
+msgid "Time to wait before a dwell click"
+msgstr "Tidsavbrudd før dwell-klikk"
+
+#: ../src/mt-main.c:629
+msgid "Time to wait before a simulated secondary click"
+msgstr "Tidsavbrudd før et simulert andreklikk"
+
+#: ../src/mt-main.c:631
+msgid "Set the active dwell mode"
+msgstr "Sett aktiv dwell-modus"
+
+#: ../src/mt-main.c:633
+msgid "Hide the click-type window"
+msgstr "Skjul klikk-type vindu"
+
+#: ../src/mt-main.c:635
+msgid "Ignore small pointer movements"
+msgstr "Ignorer små pekerbevegelser"
+
+#: ../src/mt-main.c:639
+msgid "Shut down mousetweaks"
+msgstr "Slå av mousetweaks"
+
+#: ../src/mt-main.c:641
+msgid "Start mousetweaks as a daemon"
+msgstr "Start mousetweaks som en tjeneste"
+
+#: ../src/mt-main.c:643
+msgid "Start mousetweaks in login mode"
+msgstr "Start mousetweaks i påloggingsmodus"
+
+#. parse
+#: ../src/mt-main.c:661
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- GNOME tjeneste for tilgjengelighet for mus"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "Kunne ikke vise hjelp"

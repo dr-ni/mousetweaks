@@ -1,0 +1,181 @@
+# translation of mousetweaks.master.ml.po to
+# Malayalam translation of mousetweaks.
+# Copyright (C) 2008 mousetweaks' COPYRIGHT HOLDER
+# This file is distributed under the same license as the mousetweaks package.
+# Arun.K.R|അരുണ്‍.കെ.ആര്‍ <code333@gmail.com>, 2008.
+# Harivishnu VN <harivishnu@gmail.com>, 2008
+# മണിലാല്‍ കെ.എം|Manilal K M <libregeek@gmail.com>
+# Akhilan <akhilkrishnans@gmail.com>
+# Anish A <aneesh.nl@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: mousetweaks.master.ml\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-02-12 09:05+0000\n"
+"PO-Revision-Date: 2013-02-15 00:55+0530\n"
+"Last-Translator: Anish A <aneesh.nl@gmail.com>\n"
+"Language-Team: Swatantra Malayalam Computing\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Poedit-Language: Malayalam\n"
+"X-Poedit-Country: INDIA\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/mousetweaks.ui.h:1
+msgid "Hover Click"
+msgstr "ക്ലിക്ക് ചെയ്യുക"
+
+#: ../data/mousetweaks.ui.h:2
+msgid "Single Click"
+msgstr "ഒറ്റ ഞെക്കു് "
+
+#: ../data/mousetweaks.ui.h:3
+msgid "Double Click"
+msgstr "ഇരട്ട ഞെക്കു്"
+
+#. 'Drag' like in a Drag and Drop operation
+#: ../data/mousetweaks.ui.h:5
+msgid "Drag"
+msgstr "വലിച്ചുമാറ്റുക"
+
+#: ../data/mousetweaks.ui.h:6
+msgid "Secondary Click"
+msgstr "രണ്ടാമത്തെ ഞെക്ക്"
+
+#: ../data/mousetweaks.ui.h:7
+msgid "Button Style"
+msgstr "ബട്ടണിന്റെ ശൈലി"
+
+#: ../data/mousetweaks.ui.h:8
+msgid "Text only"
+msgstr "വാചകം മാത്രം"
+
+#: ../data/mousetweaks.ui.h:9
+msgid "Icons only"
+msgstr "ചിഹ്നം മാത്രം"
+
+#: ../data/mousetweaks.ui.h:10
+msgid "Text and Icons"
+msgstr "എഴുത്തുകളും സൂചകങ്ങളും"
+
+#: ../data/mousetweaks.ui.h:11
+msgid "Orientation"
+msgstr "വിന്യാസം"
+
+#. Buttons are arranged from left to right in the layout
+#: ../data/mousetweaks.ui.h:13
+msgid "Horizontal"
+msgstr "തിരശ്ചീനം"
+
+#. Buttons are arranged from top to bottom in the layout
+#: ../data/mousetweaks.ui.h:15
+msgid "Vertical"
+msgstr "ലംബമായി"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:1
+msgid "Click-type window style"
+msgstr "ഞെക്കുന്ന-ടെപ്പ് ജാലകത്തിന്റെ രീതി"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:2
+msgid "Button style of the click-type window."
+msgstr "ഞെക്കുന്ന-ടൈപ്പ് ജാലകത്തിന്റെ ബട്ടന്‍ രീതി."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:3
+msgid "Click-type window orientation"
+msgstr "ഞെക്കുന്ന-ടെപ്പ് ജാലകത്തിന്റെ ദിശ"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:4
+msgid "Orientation of the click-type window."
+msgstr "ഞെക്കുന്ന-ടൈപ്പ് ജാലകത്തിന്റെ ദിശ."
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:5 ../src/mt-main.c:638
+msgid "Click-type window geometry"
+msgstr "ഞെക്കുന്ന-ടെപ്പ് ജാലകത്തിന്റെ ജ്യാമിതി"
+
+#: ../data/org.gnome.mousetweaks.gschema.xml.in.h:6
+msgid ""
+"Size and position of the click-type window. The format is a standard X "
+"Window System geometry string."
+msgstr ""
+"ഞെക്കുന്ന തരത്തിലുള്ള ജാലകത്തെന്റെ വലിപ്പവും സ്ഥാനവും. സ്വതേയുള്ള എക്സ് ജാലകസംവിധാനകത്തിന്റെ "
+"തരത്തിനു അനുസൃതമാകണം"
+
+#: ../src/mt-main.c:624
+msgid "Enable dwell click"
+msgstr "ഡ്വല്‍ ഞെക്കു് പ്രാവര്‍ത്തികമാക്കുക"
+
+#: ../src/mt-main.c:626
+msgid "Enable simulated secondary click"
+msgstr "രണ്ടാമതു ഞെക്കു് അനുകരിക്കുന്നത് പ്രാവര്‍ത്തികമാക്കുക"
+
+#: ../src/mt-main.c:628
+msgid "Time to wait before a dwell click"
+msgstr "ഡ്വെല്‍ ക്ലിക്കിനു മുമ്പ് കാത്തിരിക്കേണ്ട സമയം"
+
+#: ../src/mt-main.c:630
+msgid "Time to wait before a simulated secondary click"
+msgstr "രണ്ടാമതു ഞെക്കു് അനുകരിക്കുന്നതിനു മുമ്പ് കാത്തിരിക്കേണ്ട സമയം"
+
+#: ../src/mt-main.c:632
+msgid "Set the active dwell mode"
+msgstr "സജീവമായ ഡ്വെല്‍ ഞെക്ക് രീതി പ്രാവര്‍ത്തികമാക്കുക"
+
+#: ../src/mt-main.c:634
+msgid "Hide the click-type window"
+msgstr "ഞെക്കുന്ന-ടൈപ്പ് ജാലകം മറയ്ക്കുക"
+
+#: ../src/mt-main.c:636
+msgid "Ignore small pointer movements"
+msgstr "ചെറിയ പൊയിന്റര്‍ അനക്കങ്ങള്‍ അവഗണിക്കുക"
+
+#: ../src/mt-main.c:640
+msgid "Shut down mousetweaks"
+msgstr "മൌസ്‌ട്വീക്കുകള്‍ നിര്‍ത്തിവയ്ക്കുക"
+
+#: ../src/mt-main.c:642
+msgid "Start mousetweaks as a daemon"
+msgstr "മൌസ്‌ട്വീക്സ് ഡീമണ്‍ ആയി തുടങ്ങുക"
+
+#: ../src/mt-main.c:644
+msgid "Start mousetweaks in login mode"
+msgstr "മൗസ്‌‌ട്വീക്കുകള്‍ പ്രവേശനസമയത്തു തുടങ്ങുക"
+
+#. parse
+#: ../src/mt-main.c:662
+msgid "- GNOME mouse accessibility daemon"
+msgstr "- ഗ്നോം മൌസ്‌ സാര്‍വ്വജനികലഭ്യത ഡീമണ്‍"
+
+#: ../src/mt-common.c:97
+msgid "Failed to Display Help"
+msgstr "സഹായം കാണിക്കുവാന്‍ സാധിക്കുന്നില്ല"
+
+#~ msgid ""
+#~ "Applet to select different dwell-click types.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "ഡ്വല്ല്  ഞെക്കു് രീതികള്‍ തെരഞ്ഞെടുക്കുന്നതിനുള്ള ലഘുപ്രയോഗം.\n"
+#~ "മൌസ്‌ട്വീക്സിന്റെ ഭാഗം"
+
+#~ msgid "Drag Click"
+#~ msgstr "വലിച്ചിടുന്ന ഞെക്കു്"
+
+#~ msgid "Right Click"
+#~ msgstr "വലതു് ഞെക്കു്"
+
+#~ msgid "A_lt"
+#~ msgstr "A_lt"
+
+#~ msgid ""
+#~ "Area to freeze the mouse pointer on the panel.\n"
+#~ "Part of Mousetweaks"
+#~ msgstr ""
+#~ "പാളിയില്‍ മൌസ്‌ട്വീക്സിനെ മരവിപ്പിക്കാനുള്ള സ്ഥലം.\n"
+#~ "മൌസ്‌ട്വീക്സിന്റെ ഭാഗം"
+
+#~ msgid "C_trl"
+#~ msgstr "C_trl"
